@@ -1,4 +1,6 @@
 ---
+import { sitePath } from "../utils/paths";
+
 interface Props {
   name: string;
   description: string;
@@ -8,7 +10,7 @@ const { name, description, href } = Astro.props;
 ---
 
 <a
-  href={href}
+  href={sitePath(href)}
   class="group flex flex-col justify-between border border-line p-6 transition-colors hover:border-wire/40"
 >
   <div>
