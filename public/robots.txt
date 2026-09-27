@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://alldaoofficial.github.io/rwa-wire/sitemap.xml
+Sitemap: https://therwawire.com/sitemap.xml
