@@ -30,6 +30,8 @@ jobs:
       - name: Checkout repository
         if: github.event_name == 'push'
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
       - name: Load approved manifest
         if: github.event_name == 'push'
