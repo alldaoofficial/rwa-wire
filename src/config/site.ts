@@ -13,26 +13,15 @@ export const SITE = {
   description:
     "News, research and explainers on real-world assets, tokenization and the infrastructure transforming global finance.",
   // Used for canonical URLs / Open Graph / sitemap. Must match astro.config.mjs `site`.
-  url: "https://alldaoofficial.github.io",
-  base: "/rwa-wire",
+  url: "https://therwawire.com",
+  base: "/",
   locale: "en_US",
   twitterHandle: "",
 };
 
-// Update this in one place to change where every "Join Telegram" / "Get the
-// signal" button on the site points.
 export const TELEGRAM_URL = "https://t.me/RWAWireHQ";
-
 export const X_URL = "";
 
-// -----------------------------------------------------------------------------
-// Affiliate / trading CTA
-//
-// RWA Wire will eventually monetize through crypto exchange affiliate
-// partnerships. Change AFFILIATE_URL and AFFILIATE_PARTNER_NAME here and every
-// <TradingCTA /> on the site updates automatically. Nothing else in the
-// codebase should hardcode an exchange name or affiliate link.
-// -----------------------------------------------------------------------------
 export const AFFILIATE_PARTNER_NAME = "Bitunix";
 export const AFFILIATE_URL = "https://www.bitunix.com/register?vipCode=0xcrlt";
 
@@ -68,32 +57,11 @@ export const CATEGORIES: Record<
   CategorySlug,
   { label: string; description: string }
 > = {
-  news: {
-    label: "News",
-    description: "Timely coverage of the tokenized economy.",
-  },
-  rwa: {
-    label: "RWA",
-    description: "Real-world assets moving onchain.",
-  },
-  tokenization: {
-    label: "Tokenization",
-    description: "How traditional assets become programmable.",
-  },
-  institutions: {
-    label: "Institutions",
-    description: "Banks, asset managers and financial infrastructure.",
-  },
-  markets: {
-    label: "Markets",
-    description: "Market developments and trading-relevant information.",
-  },
-  projects: {
-    label: "Projects",
-    description: "Neutral profiles of the infrastructure being built.",
-  },
-  learn: {
-    label: "Learn",
-    description: "Evergreen explainers on tokenization and RWAs.",
-  },
+  news: { label: "News", description: "Timely coverage of the tokenized economy." },
+  rwa: { label: "RWA", description: "Real-world assets moving onchain." },
+  tokenization: { label: "Tokenization", description: "How traditional assets become programmable." },
+  institutions: { label: "Institutions", description: "Banks, asset managers and financial infrastructure." },
+  markets: { label: "Markets", description: "Market developments and trading-relevant information." },
+  projects: { label: "Projects", description: "Neutral profiles of the infrastructure being built." },
+  learn: { label: "Learn", description: "Evergreen explainers on tokenization and RWAs." },
 };
