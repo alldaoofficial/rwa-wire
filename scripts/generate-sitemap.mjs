@@ -4,7 +4,7 @@ import path from "node:path";
 const ROOT = process.cwd();
 const ARTICLES = path.join(ROOT, "src/content/articles");
 const OUT = path.join(ROOT, "public/sitemap.xml");
-const BASE = "https://alldaoofficial.github.io/rwa-wire";
+const BASE = "https://therwawire.com";
 
 const staticPaths = [
   "/", "/news/", "/rwa/", "/tokenization/", "/institutions/", "/markets/",
