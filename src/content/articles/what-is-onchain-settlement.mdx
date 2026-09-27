@@ -2,27 +2,284 @@
 type: "EXPLAINER"
 category: "learn"
 title: "What Is Onchain Settlement?"
-description: "Onchain settlement replaces the multi-step reconciliation process behind traditional trades with a single, shared ledger update. Here's how it works."
-pubDate: "2026-09-03"
-readingTime: "4 min read"
-tags: ["Infrastructure", "Settlement"]
-relatedSlugs: ["how-does-asset-tokenization-work", "what-is-tokenization", "rwa-infrastructure-explained"]
+description: "A guide to onchain settlement: how tokenized assets and digital money can complete transactions, how delivery versus payment works, and why settlement infrastructure matters."
+pubDate: "2026-09-27"
+readingTime: "9 min read"
+tags: ["Settlement", "Tokenization", "Infrastructure", "DvP", "Institutions"]
+relatedSlugs: ["how-does-asset-tokenization-work", "stablecoins-vs-tokenized-deposits", "tokenized-treasuries-explained", "the-clearing-house-quant-on-chain-money"]
+showTradingCTA: false
 keyTakeaways:
-  - "Onchain settlement finalizes a trade by directly updating a shared ledger, rather than reconciling separate records across intermediaries."
-  - "This can shrink settlement time from multiple business days to minutes or seconds."
-  - "Onchain settlement reduces certain counterparty risks but introduces dependence on the underlying blockchain's reliability."
+  - "Settlement is the point at which the asset and payment obligations of a transaction are actually completed."
+  - "Onchain settlement can coordinate tokenized assets and digital money on programmable infrastructure, potentially reducing reconciliation and settlement friction."
+  - "Delivery versus payment can link the asset and cash legs so that one transfer occurs only if the other can complete."
+  - "Fast blockchain transactions do not automatically equal legal settlement finality; the legal, monetary and operational layers still matter."
 ---
 
-In traditional markets, "settlement" is the step where a trade actually completes — cash changes hands and legal ownership transfers. Getting there typically requires several intermediaries (brokers, custodians, clearing houses) each updating their own separate records and then reconciling with one another, a process that commonly takes one or more business days for securities trades.
+A trade and a settled trade are not the same thing.
 
-## How onchain settlement is different
+When two parties agree to buy and sell a financial asset, execution records the transaction. **Settlement** is the later process through which the buyer receives the asset and the seller receives payment.
 
-When an asset and its corresponding payment both exist as tokens on the same blockchain, a trade can settle by updating a single shared ledger in one atomic transaction — the asset and payment move simultaneously, with no separate reconciliation step needed between parties. This is often described as "atomic settlement," because either the entire exchange happens or none of it does, removing the risk that one side of a trade completes without the other.
+That distinction is fundamental to financial markets.
 
-## What this changes
+Tokenization creates the possibility of changing this process by representing both financial assets and money on programmable infrastructure. This is the idea behind **onchain settlement**.
 
-Faster settlement reduces the window of counterparty risk between when a trade is agreed and when it's finalized, and it frees up capital that would otherwise sit aside as settlement buffer. It also reduces the operational overhead of reconciling records across multiple institutions.
+But the term is often oversimplified. Moving two tokens between wallets is not automatically equivalent to final settlement of a regulated financial transaction.
 
-## What it doesn't remove
+To understand why, we need to look at what settlement actually does.
 
-Onchain settlement shifts reliance onto the blockchain's own reliability, the smart contracts governing the transaction, and the custody arrangements protecting the private keys involved. It's a different risk profile, not the absence of risk.
+## What is settlement?
+
+Imagine an investor buys a bond.
+
+The trade can be agreed almost instantly, but several things still need to happen:
+
+- the buyer must deliver money;
+- the seller must deliver the bond;
+- ownership records must be updated;
+- custodians and other intermediaries may need to update their books;
+- the transaction must become final according to the relevant market rules.
+
+Traditional market infrastructure coordinates these processes through exchanges, brokers, clearing systems, central securities depositories, custodians, banks and payment systems.
+
+These institutions do more than move database entries. They manage obligations, risk and legal finality across the transaction lifecycle.
+
+## What does “onchain settlement” mean?
+
+Onchain settlement uses blockchain or distributed-ledger infrastructure as part of the process through which transaction obligations are completed.
+
+In the simplest model, both sides of a transaction exist digitally:
+
+**Asset leg:** a tokenized bond, fund share, Treasury product or other financial asset.
+
+**Cash leg:** stablecoin, tokenized commercial-bank deposit, central-bank money or another eligible digital settlement asset.
+
+Programmable infrastructure can then coordinate the transfer of the two.
+
+Instead of separately instructing multiple systems and reconciling their records afterward, participants can potentially use a shared transaction environment.
+
+That is where much of the efficiency argument comes from.
+
+## Delivery versus payment
+
+One of the most important concepts in securities settlement is **delivery versus payment**, usually shortened to **DvP**.
+
+The principle is simple:
+
+> The asset should be delivered if and only if the corresponding payment is made.
+
+Without DvP, one party could deliver its side of the transaction while the other side fails.
+
+Programmable ledgers can coordinate these transfers. If the system is designed correctly, the asset and payment instructions can be linked so that both complete according to the same transaction logic.
+
+This can reduce **principal risk** — the risk of delivering an asset without receiving the payment owed in return.
+
+## Is DvP the same as atomic settlement?
+
+Not necessarily.
+
+“Atomic settlement” is commonly used to describe a transaction in which all required components execute together or none execute.
+
+That can be useful on programmable infrastructure, but the financial meaning of settlement depends on more than technical atomicity.
+
+A transaction can be technically final on a blockchain while questions remain about legal ownership, the finality of the payment asset or whether the ledger is recognized as the authoritative record.
+
+So there are at least two layers to consider:
+
+**Technical finality** — when the network considers the transaction irreversible under its rules.
+
+**Legal settlement finality** — when the transfer is recognized as final and enforceable under the relevant legal framework.
+
+Institutional markets need both.
+
+## Why settlement takes time today
+
+Traditional settlement is not slow simply because financial institutions use old computers.
+
+Time can serve several functions.
+
+Market infrastructure may need to validate instructions, calculate obligations, manage liquidity, net transactions, move securities and money between institutions and provide legally robust finality.
+
+Netting is particularly important.
+
+Instead of settling every trade individually, a clearing system can offset participants' obligations and settle only the resulting net amounts. This can dramatically reduce the amount of cash and securities required.
+
+That means **faster is not automatically better in every dimension**.
+
+Near-instant gross settlement may reduce counterparty exposure but increase intraday liquidity requirements because participants lose some benefits of netting.
+
+The optimal design depends on the market.
+
+## What tokenization can change
+
+Programmable settlement infrastructure can potentially improve several parts of the process.
+
+### Shared records
+
+Participants can work from synchronized transaction data rather than repeatedly reconciling separate databases.
+
+### Automation
+
+Smart contracts or programmable systems can coordinate transaction rules and post-trade processes.
+
+### Shorter settlement cycles
+
+If asset ownership, payment and compliance can be coordinated digitally, some transactions may settle much faster than conventional workflows.
+
+### Reduced reconciliation
+
+A shared ledger can reduce discrepancies between separate institutional records, although internal books and regulatory records may still exist.
+
+### Programmable DvP
+
+Asset delivery and payment can be linked directly within the transaction logic.
+
+### Extended operating hours
+
+Digital infrastructure can operate outside conventional market hours, subject to the availability of the surrounding banking, liquidity, custody and redemption systems.
+
+## The cash leg is critical
+
+A tokenized security cannot settle by itself.
+
+The seller needs money.
+
+This is why the future of tokenized markets is closely connected to the future of digital money.
+
+Several models are being developed:
+
+### Stablecoins
+
+Privately issued fiat-referenced tokens can provide highly portable settlement assets, particularly on public blockchain networks.
+
+### Tokenized commercial-bank deposits
+
+Banks can represent deposit liabilities on programmable infrastructure, bringing existing commercial-bank money into tokenized transactions.
+
+### Central-bank money
+
+Central banks are exploring ways for tokenized wholesale financial markets to settle in central-bank money, which is generally the preferred settlement asset for systemically important transactions because it does not carry commercial-bank credit risk in the same way.
+
+These models can coexist.
+
+Read [Stablecoins vs Tokenized Deposits](/rwa-wire/learn/stablecoins-vs-tokenized-deposits/) for the differences between two of these forms of digital money.
+
+## Why central-bank money matters
+
+In traditional wholesale markets, central-bank money plays a central role in final settlement.
+
+Tokenized markets create a challenge: if the asset exists on distributed-ledger infrastructure but central-bank money remains on separate conventional systems, the two legs need a reliable connection.
+
+Central banks are actively working on this problem.
+
+The Eurosystem's work on DLT settlement is one example. Its **Pontes** initiative is designed to connect distributed-ledger platforms with TARGET Services so eligible DLT-based transactions can settle in central-bank money.
+
+This illustrates an important point: institutional onchain finance may develop through **connections between new ledgers and existing financial infrastructure**, rather than replacing everything at once.
+
+## Interoperability and settlement
+
+Another challenge is fragmentation.
+
+A tokenized bond might exist on one network. The buyer's tokenized deposits may exist on another. A central-bank settlement system may use separate infrastructure again.
+
+If those systems cannot communicate reliably, tokenization can create new silos.
+
+Interoperability therefore needs to coordinate more than token transfers. It can involve:
+
+- transaction messages;
+- identity and compliance information;
+- asset ownership;
+- payment instructions;
+- liquidity; and
+- settlement finality.
+
+This is why interoperability providers and established payment infrastructure are becoming part of the RWA story.
+
+The Clearing House's On-Chain Money Initiative is a current example. The project is designed around tokenized commercial-bank deposits and connections to established U.S. payment rails including RTP and CHIPS.
+
+Read our coverage: [The Clearing House Selects Quant for U.S. Tokenized Deposit Network](/rwa-wire/news/the-clearing-house-quant-on-chain-money/).
+
+## Does onchain settlement remove clearing houses?
+
+Not automatically.
+
+Clearing and settlement are related but different functions.
+
+Clearing can include trade matching, calculating obligations, netting positions and managing counterparty risk. Settlement completes the resulting transfers.
+
+A blockchain may automate or restructure parts of these processes, but that does not mean every market benefits from removing central counterparties, netting or established risk-management mechanisms.
+
+In some cases, tokenized infrastructure may integrate with existing clearing institutions rather than replace them.
+
+## What risks remain?
+
+Onchain settlement changes the risk architecture. It does not eliminate risk.
+
+**Smart-contract risk:** Faulty transaction logic can cause losses or operational disruption.
+
+**Network risk:** A ledger can experience outages, congestion, governance problems or attacks.
+
+**Liquidity risk:** Faster settlement can increase the need to have cash and securities available at the exact time of settlement.
+
+**Legal risk:** Technical ledger finality may not map cleanly to legally recognized settlement finality.
+
+**Interoperability risk:** Cross-network transactions can introduce additional dependencies.
+
+**Custody and key-management risk:** Participants must securely control digital assets and signing credentials.
+
+**Settlement-asset risk:** The quality of the money used for payment matters. A stablecoin, bank deposit and central-bank liability have different risk profiles.
+
+**Operational risk:** Institutions still need resilient systems, controls and contingency procedures.
+
+## T+1 versus onchain settlement
+
+In May 2024, the U.S. securities market shortened the standard settlement cycle for many transactions from T+2 to **T+1**.
+
+That means eligible trades generally settle one business day after the trade date.
+
+Onchain infrastructure raises the possibility of going further — potentially toward same-day or near-real-time settlement for some markets.
+
+But the objective should not simply be “T+0 at all costs.”
+
+Market designers need to balance counterparty risk, liquidity needs, netting efficiency, operational resilience and legal finality.
+
+The better question is:
+
+**Which parts of the settlement process benefit from programmability and shorter cycles, and which existing market functions remain valuable?**
+
+## An example: tokenized Treasury transaction
+
+Imagine Institution A sells a tokenized Treasury fund interest to Institution B.
+
+Institution A holds the asset token.
+
+Institution B holds an eligible tokenized form of money.
+
+A programmable settlement mechanism verifies that both participants meet the required conditions. It then coordinates the transaction so that Institution A receives the money and Institution B receives the asset.
+
+After settlement, the relevant ownership records reflect the completed transaction.
+
+This sounds simple, but institutional-grade execution still requires answers about legal ownership, custody, identity, the settlement asset and transaction finality.
+
+That is why our [How Does Asset Tokenization Work?](/rwa-wire/learn/how-does-asset-tokenization-work/) guide treats settlement as one layer of a much larger stack.
+
+## The bigger picture
+
+Tokenization becomes economically meaningful when assets can do more than exist on a blockchain.
+
+They need to **move, exchange and settle against trusted money**.
+
+That makes settlement infrastructure one of the central battlegrounds of tokenized finance.
+
+The eventual architecture may combine public and permissioned ledgers, commercial-bank money, central-bank settlement systems, stablecoins and existing market infrastructure.
+
+If those components can interoperate while preserving legal certainty and financial stability, onchain settlement could become one of the most consequential applications of tokenization.
+
+The future of tokenized finance therefore depends not only on what assets move onchain — but on **how transactions become final once they get there**.
+
+## Sources
+
+- Bank for International Settlements — research on tokenisation, unified ledgers and next-generation monetary and financial systems
+- Bank for International Settlements / CPMI — work on delivery versus payment and settlement risk
+- European Central Bank / Eurosystem — work on settling DLT-based transactions in central-bank money and Pontes
+- U.S. Securities and Exchange Commission — transition to the T+1 standard settlement cycle
+- The Clearing House — On-Chain Money Initiative, September 2026
