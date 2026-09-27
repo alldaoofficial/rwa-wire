@@ -1,0 +1,15 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { TELEGRAM_URL } from "@/config/site";
+---
+<BaseLayout title="Contact" description="Contact RWA Wire for news tips, corrections, partnerships and general enquiries.">
+<section class="wire-container max-w-3xl py-16 sm:py-24">
+  <p class="eyebrow text-wire">CONTACT //</p>
+  <h1 class="mt-4 font-serif text-4xl font-medium text-ink sm:text-5xl">Contact RWA Wire</h1>
+  <div class="prose prose-invert mt-10 max-w-none">
+    <p>For news tips, corrections, partnership enquiries or general feedback, contact RWA Wire through our official Telegram channel.</p>
+    <p><a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">RWA Wire on Telegram</a></p>
+    <p>Please do not send private keys, seed phrases, passwords or other sensitive account information.</p>
+  </div>
+</section>
+</BaseLayout>
