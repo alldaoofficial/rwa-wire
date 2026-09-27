@@ -81,6 +81,7 @@ jobs:
           python3 - <<'PY'
           import json
           import os
+          import pathlib
           import urllib.parse
           import urllib.request
 
@@ -105,7 +106,7 @@ jobs:
               image_bytes = cairosvg.svg2png(bytestring=image_bytes)
           story = Image.open(BytesIO(image_bytes)).convert("RGB")
 
-          partner = Image.open("public/images/partners/bitunix.jpg").convert("RGB")
+          partner_svg = pathlib.Path("public/images/partners/bitunix.svg").read_bytes()\n          partner = Image.open(BytesIO(cairosvg.svg2png(bytestring=partner_svg))).convert("RGB")
           strip_h = max(120, int(story.height * 0.13))
           canvas = Image.new("RGB", (story.width, story.height + strip_h), "#080A0D")
           canvas.paste(story, (0, 0))
