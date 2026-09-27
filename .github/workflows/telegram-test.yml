@@ -138,7 +138,7 @@ jobs:
           fields = {
               "chat_id": chat_id,
               "caption": caption,
-              "reply_markup": json.dumps({"inline_keyboard": [[{"text": "◼ Trade on Bitunix ↗", "url": affiliate_url}]])
+              "reply_markup": json.dumps({"inline_keyboard": [[{"text": "◼ Trade on Bitunix ↗", "url": affiliate_url}]]})
           }
           body = bytearray()
           for key, value in fields.items():
