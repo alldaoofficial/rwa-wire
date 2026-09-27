@@ -1,28 +1,233 @@
 ---
 type: "EXPLAINER"
 category: "learn"
-title: "Stablecoins vs Tokenized Deposits"
-description: "Both aim to move dollars onchain, but stablecoins and tokenized deposits are structured very differently and carry different guarantees."
-pubDate: "2026-08-29"
-readingTime: "4 min read"
-tags: ["Stablecoins", "Institutions"]
-relatedSlugs: ["stablecoins-explained", "cbdcs-vs-stablecoins", "tokenized-treasuries-explained"]
+title: "Stablecoins vs Tokenized Deposits: What's the Difference?"
+description: "Stablecoins and tokenized bank deposits can both move money on programmable networks, but they represent different legal claims, balance-sheet structures and settlement models."
+pubDate: "2026-09-27"
+readingTime: "9 min read"
+tags: ["Stablecoins", "Tokenized Deposits", "Payments", "Settlement", "Institutions"]
+relatedSlugs: ["stablecoins-explained", "cbdcs-vs-stablecoins", "what-is-onchain-settlement", "the-clearing-house-quant-on-chain-money"]
+showTradingCTA: false
 keyTakeaways:
-  - "Stablecoins are issued by non-bank entities and backed by reserves; tokenized deposits are bank liabilities."
-  - "Tokenized deposits may carry deposit insurance and bank regulatory protections that most stablecoins do not."
-  - "Stablecoins are generally more portable across platforms; tokenized deposits are typically tied to the issuing bank's network."
+  - "A stablecoin and a tokenized deposit can both represent dollar-denominated value, but they are not the same financial instrument."
+  - "A tokenized commercial-bank deposit is a liability of a bank; a stablecoin holder's claim depends on the stablecoin's issuer and legal structure."
+  - "Stablecoins have generally been designed for portability across digital markets, while tokenized deposits are being developed around regulated banking relationships and institutional settlement."
+  - "The future may involve several forms of digital money coexisting and interoperating rather than one model replacing all others."
 ---
 
-Stablecoins and tokenized deposits both aim to let dollars move with the speed and programmability of a blockchain, but they represent fundamentally different legal claims.
+Stablecoins and tokenized bank deposits can look similar from the outside.
 
-## Stablecoins
+Both can represent dollar-denominated value digitally. Both can move across programmable infrastructure. Both can potentially settle transactions faster than conventional payment workflows.
 
-A stablecoin is typically issued by a non-bank entity and represents a claim on a pool of reserves — cash and short-term instruments — held by the issuer. It is not a bank deposit and, in most jurisdictions, is not covered by deposit insurance. Its value depends on the issuer's solvency and the quality of its reserve management.
+But economically and legally, they are different forms of money.
 
-## Tokenized deposits
+That difference becomes increasingly important as banks, payment networks, stablecoin issuers and central banks build infrastructure for tokenized finance.
 
-A tokenized deposit is a digital representation of an actual deposit at a regulated bank. It is a direct liability of that bank, generally covered by the same deposit insurance and regulatory protections as a conventional bank account. Several large banks have piloted tokenized deposit programs aimed at enabling near-instant settlement between institutional clients on the same platform.
+## The simplest distinction
 
-## The practical trade-off
+A **tokenized commercial-bank deposit** is a digital representation of a deposit liability issued by a bank.
 
-Stablecoins tend to be more portable — usable across many platforms, protocols and blockchains without needing a relationship with a specific bank. Tokenized deposits offer stronger regulatory protections but are generally limited to the issuing bank's network and client base, at least in current pilot programs. Which is preferable depends heavily on whether portability or institutional-grade protection matters more for a given use case.
+A **stablecoin** is a digital token issued under a separate legal structure, typically designed to maintain a stable value against a reference currency such as the U.S. dollar.
+
+In other words:
+
+**Tokenized deposit → claim on a commercial bank.**
+
+**Stablecoin → claim or redemption right defined by the stablecoin issuer and applicable legal framework.**
+
+The fact that both may trade at approximately one dollar does not make their balance-sheet structures identical.
+
+## How ordinary bank deposits work
+
+When money appears in a commercial bank account, the customer generally holds a claim against the bank.
+
+The bank records that deposit as a liability on its balance sheet. The banking system operates within a regulatory framework that includes capital, liquidity, supervision and — where applicable — deposit-protection arrangements.
+
+Most bank deposits are already digital in the everyday sense. The innovation in a **tokenized deposit** is therefore not turning paper cash into electronic money.
+
+It is changing the infrastructure through which the deposit can be represented, transferred and used.
+
+## What is a tokenized deposit?
+
+A tokenized deposit applies programmable-ledger technology to commercial-bank money.
+
+Depending on the design, a bank can represent deposit claims on a distributed ledger and allow eligible customers or institutions to transfer them using that infrastructure.
+
+The Bank for International Settlements has examined tokenized commercial-bank money as part of a broader architecture in which central-bank reserves, bank money and financial assets can coexist on programmable platforms.
+
+The important feature is that the money remains connected to the issuing bank's balance sheet.
+
+Tokenization changes the **technical representation and transaction layer**, not necessarily the underlying nature of the bank liability.
+
+## What is a stablecoin?
+
+Stablecoins are crypto tokens designed to maintain a relatively stable value against another asset, most commonly a fiat currency.
+
+Fiat-referenced stablecoins typically rely on an issuer and reserves intended to support redemption. Those reserves can include cash and high-quality liquid assets depending on the product and regulatory framework.
+
+The holder's rights therefore depend on the issuer, reserve structure, redemption terms and applicable law.
+
+This is different from holding a conventional deposit directly at a commercial bank.
+
+For a broader introduction, see [Stablecoins Explained](/rwa-wire/learn/stablecoins-explained/).
+
+## Stablecoin vs tokenized deposit: side by side
+
+| | Stablecoin | Tokenized deposit |
+|---|---|---|
+| **Issuer** | Stablecoin issuer | Commercial bank |
+| **Underlying claim** | Defined by issuer structure and redemption terms | Deposit liability of issuing bank |
+| **Primary role** | Digital value transfer, payments, trading and settlement | Programmable commercial-bank money |
+| **Infrastructure** | Often public blockchain infrastructure | Can use permissioned, public or hybrid infrastructure |
+| **Access** | Can be broadly transferable depending on token and jurisdiction | Typically tied to eligible bank customers or institutional participants |
+| **Redemption** | According to issuer's terms | Claim against issuing bank |
+| **Key risk** | Issuer, reserve, redemption, regulatory and technology risk | Bank credit, operational, network and technology risk |
+
+This is a conceptual comparison. Individual products can differ significantly.
+
+## What about deposit insurance?
+
+This topic requires precision.
+
+A conventional eligible bank deposit may receive statutory deposit protection up to applicable limits in a given jurisdiction. But it should **not** be assumed that every tokenized deposit automatically receives identical protection.
+
+Coverage depends on the product's legal structure, the issuing institution, the account relationship and the rules of the relevant deposit-insurance regime.
+
+Likewise, a stablecoin should not be assumed to have bank-deposit protection simply because its reserves include cash or government securities.
+
+The correct question is not:
+
+*“Is it tokenized?”*
+
+It is:
+
+**“What legal claim do I hold, against whom, and what protections apply to that specific claim?”**
+
+## Why stablecoins became important first
+
+Stablecoins solved an immediate problem for crypto markets: moving fiat-referenced value between exchanges, wallets and blockchain applications without relying on a bank transfer for every transaction.
+
+That portability helped stablecoins become a core settlement asset across digital-asset markets.
+
+They can operate across borders and outside conventional banking hours, although access, redemption and regulation still involve offchain institutions.
+
+This gives stablecoins an important network advantage: many digital markets already know how to use them.
+
+## Why banks are interested in tokenized deposits
+
+Banks approach the problem from another direction.
+
+Instead of creating a new non-bank digital instrument, tokenized deposits attempt to make existing commercial-bank money compatible with programmable financial infrastructure.
+
+That can be attractive for institutional use cases where participants already maintain regulated banking relationships and want digital assets to settle against bank money.
+
+Potential applications include:
+
+- institutional payments;
+- tokenized securities settlement;
+- treasury management;
+- cross-border transactions;
+- programmable payments; and
+- collateral and wholesale-market workflows.
+
+## The settlement question
+
+Tokenized assets need money.
+
+If a tokenized bond moves from one institution to another, the transaction still requires a payment leg. The quality and legal nature of that settlement asset matter.
+
+This is why stablecoins, tokenized deposits and central-bank money increasingly appear in the same institutional discussion.
+
+The goal is often **delivery versus payment (DvP)**: the asset and money should transfer in a coordinated way so that one side is not completed without the other.
+
+Read [What Is Onchain Settlement?](/rwa-wire/learn/what-is-onchain-settlement/) for the deeper infrastructure layer.
+
+## The interoperability problem
+
+A tokenized deposit issued by Bank A is a liability of Bank A.
+
+A deposit issued by Bank B is a liability of Bank B.
+
+That creates a challenge: how do different forms of bank money move across institutions and networks while maintaining the singleness of money — the expectation that one dollar of commercial-bank money exchanges at par with another dollar?
+
+This is where shared infrastructure and interoperability become important.
+
+In September 2026, **The Clearing House selected Quant for the interoperability and transaction-management layer of its On-Chain Money Initiative**, a project designed around tokenized commercial-bank deposits and connections to established U.S. payment rails including RTP and CHIPS.
+
+That initiative illustrates the direction institutional infrastructure is taking: rather than asking one bank's token to become the universal form of money, networks can coordinate multiple regulated institutions.
+
+Read our coverage: [The Clearing House Selects Quant for U.S. Tokenized Deposit Network](/rwa-wire/news/the-clearing-house-quant-on-chain-money/).
+
+## Could stablecoins and tokenized deposits coexist?
+
+Yes.
+
+They solve overlapping problems but come from different parts of the financial system.
+
+Stablecoins can offer broad digital distribution and interoperability with crypto-native markets. Tokenized deposits can bring existing commercial-bank money and banking relationships into programmable environments.
+
+Central-bank money adds another layer for systemically important settlement.
+
+The Bank for International Settlements has argued for a tokenized monetary architecture built around the coexistence of central-bank reserves, commercial-bank money and financial assets rather than a financial system based solely on privately issued bearer-style digital instruments.
+
+The eventual market could therefore include several forms of digital money serving different users and transaction types.
+
+## Are tokenized deposits “better” than stablecoins?
+
+There is no universal answer.
+
+The appropriate instrument depends on the use case.
+
+A crypto application that needs broad public-chain portability has different requirements from a regulated financial institution settling a tokenized security with another bank.
+
+Useful questions include:
+
+- Who issues the instrument?
+- What legal claim does the holder have?
+- How does redemption work?
+- What regulatory protections apply?
+- Who can hold and transfer it?
+- Which networks support it?
+- Can it interact with the asset being settled?
+- What happens if the issuer or infrastructure fails?
+
+Those questions reveal far more than the label attached to the token.
+
+## Where CBDCs fit
+
+A central bank digital currency is another category entirely.
+
+Central-bank money is a liability of the central bank rather than a commercial bank or private stablecoin issuer.
+
+Wholesale central-bank money is particularly relevant to institutional tokenization because financial institutions may want tokenized securities to settle in the safest available form of money.
+
+That creates a three-part distinction:
+
+**Stablecoins → privately issued digital instruments**
+
+**Tokenized deposits → commercial-bank money**
+
+**CBDC / tokenized central-bank money → central-bank liabilities**
+
+Our guide [CBDCs vs Stablecoins](/rwa-wire/learn/cbdcs-vs-stablecoins/) examines that distinction further.
+
+## The bigger picture
+
+The debate is not simply about whether stablecoins or banks will “win.”
+
+The deeper transition is that **money itself is becoming part of programmable financial infrastructure**.
+
+Assets can only move efficiently onchain if a trusted form of money can move with them. Stablecoins demonstrated the usefulness of digitally native settlement. Banks are now working on tokenized deposits, while central banks are developing ways to provide central-bank money to tokenized markets.
+
+The important question is therefore not which token looks most like a dollar.
+
+It is **which legal claims, networks and settlement systems can interoperate safely at scale**.
+
+That is where the next phase of tokenized finance is being built.
+
+## Sources
+
+- Bank for International Settlements — *The next-generation monetary and financial system*, Annual Economic Report 2025
+- Bank for International Settlements — research on tokenisation, unified ledgers and commercial-bank money
+- The Clearing House — *The Clearing House Selects Quant to Power Interoperability for On-Chain Money*, September 24, 2026
+- Quant — announcement regarding The Clearing House On-Chain Money Initiative, September 24, 2026
