@@ -1,7 +1,16 @@
-name: Publish RWA Wire Telegram Post
+name: RWA Wire Telegram Publisher
 
 on:
   workflow_dispatch:
+    inputs:
+      caption:
+        description: "Telegram caption"
+        required: true
+        type: string
+      image_url:
+        description: "Public image URL"
+        required: true
+        type: string
 
 permissions:
   contents: read
@@ -10,10 +19,12 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Publish Clearing House x Quant story
+      - name: Publish approved RWA Wire post
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: "@RWAWireHQ"
+          TELEGRAM_CAPTION: ${{ inputs.caption }}
+          TELEGRAM_IMAGE_URL: ${{ inputs.image_url }}
         run: |
           python3 - <<'PY'
           import json
@@ -23,31 +34,11 @@ jobs:
 
           token = os.environ["TELEGRAM_BOT_TOKEN"]
           chat_id = os.environ["TELEGRAM_CHAT_ID"]
-          image_url = "https://raw.githubusercontent.com/alldaoofficial/rwa-wire/main/public/images/news/clearing-house-quant-tokenized-deposits.png"
+          caption = os.environ["TELEGRAM_CAPTION"]
+          image_url = os.environ["TELEGRAM_IMAGE_URL"]
 
-          lines = [
-              "INSTITUTIONS // U.S. BANKING INFRASTRUCTURE MOVES ONCHAIN 🇺🇸",
-              "",
-              "The Clearing House has selected Quant to power key infrastructure for its On-Chain Money Initiative.",
-              "",
-              "The network is designed to clear and settle tokenized commercial-bank deposits while connecting onchain transactions with established U.S. payment rails including RTP and CHIPS.",
-              "",
-              "The Clearing House operates payment networks clearing and settling more than $2 trillion per day.",
-              "",
-              "WHY IT MATTERS //",
-              "",
-              "Tokenized assets need tokenized money.",
-              "",
-              "This initiative is building a bridge between programmable commercial-bank deposits and existing U.S. payment infrastructure — an important piece of the institutional settlement layer for tokenized finance.",
-              "",
-              "The network is expected to become available to participating institutions in H1 2027.",
-              "",
-              "Read the full RWA Wire story ↓",
-              "https://alldaoofficial.github.io/rwa-wire/news/the-clearing-house-quant-on-chain-money/",
-              "",
-              "RWA WIRE // No hype. Just signal.",
-          ]
-          caption = "\n".join(lines)
+          if len(caption) > 1024:
+              raise SystemExit("Caption exceeds Telegram photo-caption limit.")
 
           data = urllib.parse.urlencode({
               "chat_id": chat_id,
@@ -67,5 +58,5 @@ jobs:
           if not result.get("ok"):
               raise SystemExit("Telegram API did not confirm publication.")
 
-          print("RWA Wire Telegram story published successfully.")
+          print("Approved RWA Wire post published successfully.")
           PY
