@@ -2,34 +2,276 @@
 type: "EXPLAINER"
 category: "learn"
 title: "How Does Asset Tokenization Work?"
-description: "A step-by-step look at how an asset moves from a traditional legal structure to a tradable, blockchain-based token."
-pubDate: "2026-08-08"
-readingTime: "6 min read"
-tags: ["Tokenization", "Infrastructure"]
-relatedSlugs: ["what-is-tokenization", "what-are-real-world-assets", "rwa-infrastructure-explained"]
+description: "A step-by-step guide to asset tokenization, from legal structuring and custody to token issuance, compliance, trading, settlement and redemption."
+pubDate: "2026-09-27"
+readingTime: "10 min read"
+tags: ["Tokenization", "RWA", "Settlement", "Infrastructure"]
+relatedSlugs: ["what-is-tokenization", "what-are-real-world-assets", "what-is-onchain-settlement", "rwa-infrastructure-explained"]
+showTradingCTA: false
 keyTakeaways:
-  - "Tokenization typically involves a legal wrapper, an issuance platform, a blockchain settlement layer and a custody or transfer-agent function."
-  - "Compliance controls — like whitelisting and transfer restrictions — are usually enforced at the smart-contract level."
-  - "Most institutional tokenization today happens on permissioned or hybrid infrastructure rather than fully public, unrestricted chains."
-draft: true
+  - "Asset tokenization starts with legal rights and asset structure, not with minting a token."
+  - "The digital token must be connected to authoritative ownership records, custody and compliance processes."
+  - "Issuance, transfer and settlement can be automated, but offchain institutions and legal obligations remain essential."
+  - "A complete lifecycle also needs servicing, corporate actions, redemption and a reliable settlement asset."
 ---
 
-Tokenizing an asset generally involves four layers working together: a legal structure, an issuance platform, a blockchain settlement layer, and ongoing servicing.
+Asset tokenization is often described as if the process were simple: take an asset, put it on a blockchain and issue tokens.
 
-## 1. Legal structuring
+In practice, the blockchain is only one layer.
 
-Before anything is written to a blockchain, the asset is placed into a legal vehicle — a fund, trust or special purpose vehicle — that defines who owns what and what rights token holders actually have. This step is what makes the token an enforceable claim rather than a purely digital artifact.
+A functioning tokenized asset requires a chain of legal, operational and technical components connecting the underlying asset to its digital representation. The exact structure differs between government securities, investment funds, private credit, real estate and bank deposits, but the basic lifecycle is similar.
 
-## 2. Issuance
+This guide follows that lifecycle from beginning to end.
 
-An issuance platform mints tokens representing shares or units in that legal vehicle. This step typically includes KYC/AML checks on investors, jurisdictional eligibility rules, and minimum investment thresholds, all encoded so that only eligible wallets can hold or receive the token.
+## Step 1: Define the underlying asset
 
-## 3. Settlement
+Tokenization begins with an asset or financial claim.
 
-Once issued, tokens can be transferred and settled on a blockchain. Transfers that would traditionally take one or more business days to clear through intermediaries can settle in minutes, because ownership records update directly rather than through a chain of reconciled ledgers.
+That could be a Treasury security, a bond, a fund interest, a loan, a property-related interest or another instrument. Before any token is created, the issuer needs to establish what exists offchain and what economic rights investors are supposed to receive.
 
-## 4. Servicing
+This matters because a token cannot create a sound asset structure out of nothing.
 
-After issuance, the asset still needs ongoing administration: interest or dividend distributions, redemptions, reporting and corporate actions. Increasingly, this servicing is automated through smart contracts, though many programs still rely on a traditional transfer agent or administrator operating alongside the token.
+If the underlying claim is unclear, poorly documented or difficult to enforce, recording it on a blockchain does not solve the problem.
 
-Most institutional tokenization programs today run on permissioned or hybrid infrastructure — blockchains or blockchain modules with built-in access controls — rather than fully open public networks, reflecting the compliance requirements attached to regulated securities.
+## Step 2: Create the legal structure
+
+Next comes one of the most important parts of tokenization: defining the relationship between the digital token and the underlying asset.
+
+Depending on the product, the token holder might own:
+
+- the security itself;
+- a beneficial or contractual interest;
+- a share in a fund or special-purpose vehicle;
+- a debt claim against an issuer; or
+- a third-party instrument whose value references another asset.
+
+These are not equivalent.
+
+The U.S. Securities and Exchange Commission's 2026 statement on tokenized securities emphasizes this distinction. A security may be tokenized by or on behalf of its issuer, while a third party can also create a tokenized product linked to an underlying security. The holder's legal rights and counterparty exposure can therefore differ significantly.
+
+This is why **legal architecture comes before token architecture**.
+
+## Step 3: Establish custody and authoritative records
+
+For an asset that exists outside the blockchain, someone must establish how the digital supply corresponds to the underlying asset or claim.
+
+A custodian may hold securities or commodities. A transfer agent or fund administrator may maintain official records. A bank may be responsible for a deposit liability. A special-purpose entity may hold property or loans.
+
+The exact arrangement varies, but the system needs an authoritative answer to two questions:
+
+**What backs the token?**
+
+**Which record determines legal ownership if systems disagree?**
+
+Institutional tokenization depends heavily on getting those answers right.
+
+## Step 4: Choose the ledger and token architecture
+
+Only now does the blockchain or distributed ledger become the central technical question.
+
+The issuer must decide where the token will exist and how it will behave. A system might use a public blockchain, a permissioned network or another form of distributed ledger.
+
+The token architecture can encode functions such as:
+
+- issuance and destruction;
+- transfer restrictions;
+- investor eligibility;
+- administrative controls;
+- transaction logic;
+- interoperability with other systems; and
+- interactions with settlement assets.
+
+The choice involves trade-offs between openness, privacy, performance, governance, compliance and interoperability.
+
+## Step 5: Onboard eligible participants
+
+Institutional tokenized assets are not necessarily permissionless.
+
+Securities laws, sanctions requirements, anti-money-laundering controls and product-specific eligibility rules may determine who can participate.
+
+A tokenization platform can therefore link digital addresses to approved identities or credentials. Smart-contract rules can restrict transfers to eligible wallets or require transactions to pass specified checks.
+
+This illustrates an important point: **programmability can be used to enforce restrictions as well as enable openness.**
+
+## Step 6: Issue the tokens
+
+Once the asset, legal structure, custody model, ledger and investor rules are in place, tokens can be issued.
+
+Depending on the structure, issuance may happen when an investor subscribes for an asset, when an existing security is digitally represented, or when an issuer creates a new instrument directly on tokenized infrastructure.
+
+The number of tokens and their relationship to the underlying asset must remain consistent with the product's legal terms.
+
+Issuance is therefore not simply a technical minting event. It is part of the asset's official lifecycle.
+
+## Step 7: Transfer and trade
+
+After issuance, eligible holders may transfer the token according to the rules of the system.
+
+This is where tokenization can begin to change market infrastructure.
+
+Traditional transfers can involve multiple messages and records across brokers, custodians, exchanges, clearing systems and settlement infrastructure. On programmable platforms, some of these functions can potentially be combined or coordinated more directly.
+
+But a technically transferable token is not automatically a liquid market.
+
+Liquidity still requires buyers, sellers, market makers, reliable pricing and confidence in the legal asset.
+
+## Step 8: Settle the transaction
+
+A trade is not complete merely because an asset token changes wallets.
+
+The seller also needs to receive payment.
+
+This creates the **cash leg** of tokenization — one of the most important challenges in institutional digital markets.
+
+Possible settlement assets can include tokenized commercial-bank money, stablecoins, central-bank money or other regulated digital cash structures, depending on the market and jurisdiction.
+
+Ideally, asset delivery and payment can be coordinated so that one happens if and only if the other happens. This is commonly known as **delivery versus payment (DvP)**.
+
+The Bank for International Settlements has made this integration of assets and money a central part of its work on tokenized financial infrastructure.
+
+Our guide [What Is Onchain Settlement?](/rwa-wire/learn/what-is-onchain-settlement/) examines this layer in detail.
+
+## Step 9: Service the asset
+
+Tokenized assets continue to exist after a trade settles.
+
+Bonds pay interest and principal. Funds process distributions and redemptions. Companies perform corporate actions. Loans generate repayments. Real-estate structures may distribute income.
+
+These events need to reach token holders correctly.
+
+Programmable infrastructure can automate parts of this process, but the relevant offchain facts still need to enter the system accurately. This can require issuers, administrators, custodians, data providers and other service providers.
+
+Tokenization therefore changes the workflow without eliminating the underlying economic obligations.
+
+## Step 10: Redeem or retire the token
+
+Many tokenized structures eventually need a mechanism to convert the digital claim back into cash, another security or the underlying asset.
+
+When redemption occurs, the token may be burned or otherwise removed from circulation so that the digital supply remains aligned with outstanding claims.
+
+A credible redemption process is especially important for products whose value depends on confidence that the token can be exchanged for what it represents.
+
+## The complete tokenization stack
+
+Seen together, asset tokenization involves several interconnected layers:
+
+**Asset layer** — the bond, fund, deposit, loan, property interest or other underlying claim.
+
+**Legal layer** — the contracts, ownership rights and regulatory classification.
+
+**Custody and administration layer** — institutions responsible for safeguarding assets and maintaining authoritative records.
+
+**Identity and compliance layer** — investor verification and transfer rules.
+
+**Ledger layer** — the blockchain or programmable infrastructure recording token ownership and transactions.
+
+**Data layer** — information needed for valuations, corporate actions and offchain events.
+
+**Trading layer** — venues and mechanisms through which participants transact.
+
+**Settlement layer** — the money used to complete transactions.
+
+**Servicing and redemption layer** — payments, distributions, corporate actions and eventual redemption.
+
+This is why serious RWA infrastructure is much broader than a token contract.
+
+## Native issuance vs tokenizing an existing asset
+
+There are two broad ways an asset can become tokenized.
+
+### Digitally native issuance
+
+An instrument is created directly on digital infrastructure. Its authoritative ownership record may originate on the ledger from the beginning.
+
+### Digital representation of an existing asset
+
+An already existing offchain security or claim is represented by a token. This requires a mechanism connecting the token to the traditional asset and its authoritative records.
+
+The difference can affect custody, settlement and investor rights.
+
+As tokenized markets mature, digitally native issuance may remove some duplication between traditional and digital records. But many current systems still need to bridge both worlds.
+
+## Public vs permissioned blockchains
+
+There is no single blockchain architecture for institutional tokenization.
+
+Public networks can provide broad accessibility, shared infrastructure and composability. Permissioned systems can offer institutions tighter control over participants, privacy and governance.
+
+Hybrid models are also possible.
+
+The more important question is whether the infrastructure can meet the asset's requirements for legal certainty, compliance, resilience, privacy and interoperability.
+
+## Where oracles fit
+
+Some tokenized assets depend on information that does not originate onchain.
+
+Interest rates, asset prices, corporate actions, payment status or other external events may need to be communicated to smart contracts.
+
+Oracles and other data infrastructure can provide that connection.
+
+This is especially important when automated transactions depend on external facts. A programmable contract is only as reliable as the information and governance surrounding the inputs it receives.
+
+## Where interoperability fits
+
+A future tokenized financial system is unlikely to operate on one ledger.
+
+Banks, asset managers, market infrastructures and public blockchain ecosystems may use different networks. Without interoperability, tokenization risks creating new digital silos instead of removing old ones.
+
+The challenge is therefore not simply moving tokens between chains. Institutions may need to coordinate assets, identity, messages and settlement across different systems while preserving compliance and transaction integrity.
+
+This is one reason interoperability has become a major institutional infrastructure theme.
+
+## What tokenization can improve — and what it cannot
+
+Tokenization can potentially improve:
+
+- transaction automation;
+- reconciliation;
+- settlement coordination;
+- asset servicing;
+- distribution;
+- collateral mobility; and
+- integration between financial applications.
+
+It cannot automatically solve:
+
+- poor asset quality;
+- weak legal rights;
+- issuer default;
+- inaccurate valuations;
+- lack of market demand;
+- custody failures; or
+- bad governance.
+
+Technology can improve the rails. It does not repeal finance.
+
+## A simplified example
+
+Consider a tokenized government-security fund.
+
+The fund owns eligible securities through its established legal and custody structure. Investors complete required onboarding. Fund interests are issued as digital tokens to approved addresses.
+
+An investor transfers eligible settlement money to subscribe. The platform issues the corresponding fund tokens. Those tokens can later move between approved participants subject to transfer rules.
+
+Distributions can be processed according to the fund terms. When an investor redeems, the token is retired and the investor receives the corresponding redemption value.
+
+The blockchain makes parts of ownership and transaction processing programmable. The fund, securities, custodian, legal rights and regulatory obligations still exist.
+
+That combination of **traditional assets and programmable infrastructure** is the essence of institutional tokenization.
+
+## The bigger picture
+
+The question is no longer simply whether an asset can be represented as a token. Technically, that part is relatively straightforward.
+
+The difficult work is connecting the token to legally enforceable rights, trusted custody, compliant participants, reliable data and money that can settle transactions.
+
+That is why the most important tokenization projects increasingly focus on **infrastructure and integration**, not token creation alone.
+
+To understand the two foundations behind this process, read [What Is Tokenization?](/rwa-wire/learn/what-is-tokenization/) and [What Are Real-World Assets?](/rwa-wire/rwa/what-are-real-world-assets/).
+
+## Sources
+
+- U.S. Securities and Exchange Commission — *Statement on Tokenized Securities*, January 28, 2026
+- Bank for International Settlements — *The next-generation monetary and financial system*, Annual Economic Report 2025
+- Bank for International Settlements / Financial Stability Institute — *Financial stability implications of tokenisation*, 2025
+- European Central Bank — work on DLT settlement in central-bank money and tokenised finance
