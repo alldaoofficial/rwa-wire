@@ -36,7 +36,7 @@ jobs:
       - name: Load approved manifest
         if: github.event_name == 'push'
         run: |
-          MANIFEST_PATH=$(git diff --name-only --diff-filter=A HEAD^ HEAD -- "publish/approved/*.json")
+          MANIFEST_PATH=$(git diff --name-only --diff-filter=AM HEAD^ HEAD -- "publish/approved/*.json")
           COUNT=$(printf "%s\n" "$MANIFEST_PATH" | sed '/^$/d' | wc -l)
           if [ "$COUNT" -ne 1 ]; then
             echo "Expected exactly one newly added approval manifest, found $COUNT."
