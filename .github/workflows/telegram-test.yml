@@ -21,7 +21,7 @@ on:
         type: string
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   publish:
@@ -34,8 +34,15 @@ jobs:
       - name: Load approved manifest
         if: github.event_name == 'push'
         env:
-          MANIFEST_PATH: ${{ github.event.head_commit.added[0] }}
         run: |
+          MANIFEST_PATH=$(git diff --name-only --diff-filter=A HEAD^ HEAD -- "publish/approved/*.json")
+          COUNT=$(printf "%s\n" "$MANIFEST_PATH" | sed '/^$/d' | wc -l)
+          if [ "$COUNT" -ne 1 ]; then
+            echo "Expected exactly one newly added approval manifest, found $COUNT."
+            exit 1
+          fi
+          echo "MANIFEST_PATH=$MANIFEST_PATH" >> "$GITHUB_ENV"
+          export MANIFEST_PATH
           python3 - <<'PY'
           import json, os, pathlib
           p = pathlib.Path(os.environ["MANIFEST_PATH"])
@@ -75,7 +82,10 @@ jobs:
 
           token = os.environ["TELEGRAM_BOT_TOKEN"]
           chat_id = os.environ["TELEGRAM_CHAT_ID"]
-          caption = os.environ["TELEGRAM_CAPTION"]
+          caption = os.environ["TELEGRAM_CAPTION"].strip()
+          affiliate_url = "https://www.bitunix.com/register?vipCode=0xcrlt"
+          footer = "\n\n────────────\n◼ BITUNIX // TRADING PARTNER\n" + affiliate_url + "\nAffiliate link · Trading involves risk."
+          caption = caption + footer
           image_url = os.environ.get("TELEGRAM_IMAGE_URL", "").strip()
 
           if len(caption) > 1024:
@@ -88,6 +98,12 @@ jobs:
               "chat_id": chat_id,
               "photo": image_url,
               "caption": caption,
+              "reply_markup": json.dumps({
+                  "inline_keyboard": [[{
+                      "text": "◼ Trade on Bitunix ↗",
+                      "url": affiliate_url
+                  }]]
+              }),
           }).encode()
 
           req = urllib.request.Request(
@@ -104,3 +120,15 @@ jobs:
 
           print("Approved RWA Wire post published successfully.")
           PY
+
+      - name: Mark approved post as published
+        if: github.event_name == 'push' && success()
+        run: |
+          mkdir -p publish/posted
+          printf '{\n  "id": "%s",\n  "status": "published",\n  "source_manifest": "%s"\n}\n' "$APPROVED_PUBLISH_ID" "$MANIFEST_PATH" > "publish/posted/${APPROVED_PUBLISH_ID}.json"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "publish/posted/${APPROVED_PUBLISH_ID}.json"
+          git commit -m "Mark ${APPROVED_PUBLISH_ID} as published"
+          git push
+
