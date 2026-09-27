@@ -13,17 +13,17 @@ export const SITE = {
   description:
     "News, research and explainers on real-world assets, tokenization and the infrastructure transforming global finance.",
   // Used for canonical URLs / Open Graph / sitemap. Must match astro.config.mjs `site`.
-  url: "https://your-username.github.io",
+  url: "https://alldaoofficial.github.io",
   base: "/rwa-wire",
   locale: "en_US",
-  twitterHandle: "@rwawire",
+  twitterHandle: "",
 };
 
 // Update this in one place to change where every "Join Telegram" / "Get the
 // signal" button on the site points.
-export const TELEGRAM_URL = "https://t.me/rwawire_placeholder";
+export const TELEGRAM_URL = "https://t.me/RWAWireHQ";
 
-export const X_URL = "https://x.com/rwawire_placeholder";
+export const X_URL = "";
 
 // -----------------------------------------------------------------------------
 // Affiliate / trading CTA
@@ -33,8 +33,8 @@ export const X_URL = "https://x.com/rwawire_placeholder";
 // <TradingCTA /> on the site updates automatically. Nothing else in the
 // codebase should hardcode an exchange name or affiliate link.
 // -----------------------------------------------------------------------------
-export const AFFILIATE_PARTNER_NAME = "our trading partner";
-export const AFFILIATE_URL = "https://example.com/affiliate-placeholder";
+export const AFFILIATE_PARTNER_NAME = "Bitunix";
+export const AFFILIATE_URL = "https://www.bitunix.com/register?vipCode=0xcrlt";
 
 export const NAV_LINKS = [
   { label: "News", href: "/news/" },
