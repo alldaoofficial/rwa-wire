@@ -1,0 +1,56 @@
+name: Telegram Publisher Test
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  telegram-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send test message to RWA Wire
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: "@RWAWireHQ"
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import urllib.parse
+          import urllib.request
+
+          token = os.environ["TELEGRAM_BOT_TOKEN"]
+          chat_id = os.environ["TELEGRAM_CHAT_ID"]
+
+          message = """RWA WIRE // PUBLISHER TEST
+
+          Publishing infrastructure connected successfully.
+
+          Website ✓
+          GitHub ✓
+          Telegram ✓
+
+          RWA WIRE // No hype. Just signal."""
+
+          data = urllib.parse.urlencode({
+              "chat_id": chat_id,
+              "text": message,
+              "disable_web_page_preview": "true",
+          }).encode()
+
+          req = urllib.request.Request(
+              f"https://api.telegram.org/bot{token}/sendMessage",
+              data=data,
+              method="POST",
+          )
+
+          with urllib.request.urlopen(req) as response:
+              result = json.loads(response.read().decode())
+
+          if not result.get("ok"):
+              raise SystemExit("Telegram API did not confirm the message.")
+
+          print("Telegram test message sent successfully.")
+          PY
