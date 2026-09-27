@@ -1,4 +1,6 @@
 ---
+import { sitePath } from "../utils/paths";
+
 interface Props {
   size?: "sm" | "md" | "lg";
   class?: string;
@@ -6,12 +8,20 @@ interface Props {
 const { size = "md", class: className = "" } = Astro.props;
 
 const sizes = {
-  sm: "text-base",
-  md: "text-lg",
-  lg: "text-2xl sm:text-3xl",
+  sm: { text: "text-base", mark: "h-7 w-7" },
+  md: { text: "text-lg", mark: "h-8 w-8" },
+  lg: { text: "text-2xl sm:text-3xl", mark: "h-10 w-10 sm:h-11 sm:w-11" },
 };
 ---
 
-<span class={`inline-flex items-baseline gap-1 font-sans font-semibold tracking-tight text-ink ${sizes[size]} ${className}`}>
-  RWA WIRE <span class="wire-slash" aria-hidden="true">//</span>
+<span class={`inline-flex items-center gap-2 font-sans font-semibold tracking-tight text-ink ${sizes[size].text} ${className}`}>
+  <img
+    src={sitePath("/logo-mark.svg")}
+    alt=""
+    aria-hidden="true"
+    width="512"
+    height="512"
+    class={`${sizes[size].mark} shrink-0 rounded-sm`}
+  />
+  <span>RWA WIRE <span class="wire-slash" aria-hidden="true">//</span></span>
 </span>
