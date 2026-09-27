@@ -1,4 +1,4 @@
-name: Telegram Publisher Test
+name: Publish RWA Wire Telegram Post
 
 on:
   workflow_dispatch:
@@ -7,50 +7,56 @@ permissions:
   contents: read
 
 jobs:
-  telegram-test:
+  publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Send test message to RWA Wire
+      - name: Publish Clearing House x Quant story
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: "@RWAWireHQ"
         run: |
           python3 - <<'PY'
-          import json
-          import os
-          import urllib.parse
-          import urllib.request
+          import json, os, urllib.parse, urllib.request
 
           token = os.environ["TELEGRAM_BOT_TOKEN"]
           chat_id = os.environ["TELEGRAM_CHAT_ID"]
+          image_url = "https://raw.githubusercontent.com/alldaoofficial/rwa-wire/main/public/images/news/clearing-house-quant-tokenized-deposits.png"
 
-          message = """RWA WIRE // PUBLISHER TEST
+          caption = """INSTITUTIONS // U.S. BANKING INFRASTRUCTURE MOVES ONCHAIN 🇺🇸
 
-          Publishing infrastructure connected successfully.
+The Clearing House has selected Quant to power key infrastructure for its On-Chain Money Initiative.
 
-          Website ✓
-          GitHub ✓
-          Telegram ✓
+The network is designed to clear and settle tokenized commercial-bank deposits while connecting onchain transactions with established U.S. payment rails including RTP and CHIPS.
 
-          RWA WIRE // No hype. Just signal."""
+The Clearing House operates payment networks clearing and settling more than $2 trillion per day.
+
+WHY IT MATTERS //
+
+Tokenized assets need tokenized money.
+
+This initiative is building a bridge between programmable commercial-bank deposits and existing U.S. payment infrastructure — an important piece of the institutional settlement layer for tokenized finance.
+
+The network is expected to become available to participating institutions in H1 2027.
+
+Read the full RWA Wire story ↓
+https://alldaoofficial.github.io/rwa-wire/news/the-clearing-house-quant-on-chain-money/
+
+RWA WIRE // No hype. Just signal."""
 
           data = urllib.parse.urlencode({
               "chat_id": chat_id,
-              "text": message,
-              "disable_web_page_preview": "true",
+              "photo": image_url,
+              "caption": caption,
           }).encode()
 
           req = urllib.request.Request(
-              f"https://api.telegram.org/bot{token}/sendMessage",
+              f"https://api.telegram.org/bot{token}/sendPhoto",
               data=data,
               method="POST",
           )
-
           with urllib.request.urlopen(req) as response:
               result = json.loads(response.read().decode())
-
           if not result.get("ok"):
-              raise SystemExit("Telegram API did not confirm the message.")
-
-          print("Telegram test message sent successfully.")
+              raise SystemExit("Telegram API did not confirm publication.")
+          print("RWA Wire Telegram story published successfully.")
           PY
