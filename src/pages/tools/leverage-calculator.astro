@@ -1,0 +1,78 @@
+---
+import ToolLayout from "@/layouts/ToolLayout.astro";
+---
+
+<ToolLayout
+  title="Leverage Calculator"
+  description="See how leverage affects your position size, required margin and approximate liquidation distance."
+>
+  <form id="calc-form" class="grid grid-cols-1 gap-5 sm:grid-cols-3">
+    <label class="flex flex-col gap-1.5 text-sm text-ink">
+      Margin (USD)
+      <input type="number" id="margin" min="0" step="any" value="1000" class="rounded border border-line bg-bg px-3 py-2.5 text-ink outline-none focus-visible:border-wire" />
+    </label>
+    <label class="flex flex-col gap-1.5 text-sm text-ink">
+      Leverage (x)
+      <input type="number" id="leverage" min="1" step="any" value="10" class="rounded border border-line bg-bg px-3 py-2.5 text-ink outline-none focus-visible:border-wire" />
+    </label>
+    <label class="flex flex-col gap-1.5 text-sm text-ink">
+      Entry price (USD)
+      <input type="number" id="entry" min="0" step="any" value="100" class="rounded border border-line bg-bg px-3 py-2.5 text-ink outline-none focus-visible:border-wire" />
+    </label>
+  </form>
+
+  <div class="mt-7 grid grid-cols-1 gap-4 border-t border-line pt-6 sm:grid-cols-3">
+    <div>
+      <p class="eyebrow">Position size</p>
+      <p class="mt-1 font-serif text-2xl font-medium text-ink" id="out-size">$10,000.00</p>
+    </div>
+    <div>
+      <p class="eyebrow">Units controlled</p>
+      <p class="mt-1 font-serif text-2xl font-medium text-ink" id="out-units">100.00</p>
+    </div>
+    <div>
+      <p class="eyebrow">Approx. liquidation move</p>
+      <p class="mt-1 font-serif text-2xl font-medium text-wire" id="out-liq">&minus;10.0%</p>
+    </div>
+  </div>
+
+  <script>
+    function calc() {
+      const margin = parseFloat((document.getElementById("margin") as HTMLInputElement).value) || 0;
+      const leverage = parseFloat((document.getElementById("leverage") as HTMLInputElement).value) || 0;
+      const entry = parseFloat((document.getElementById("entry") as HTMLInputElement).value) || 0;
+
+      const size = margin * leverage;
+      const units = entry > 0 ? size / entry : 0;
+      // Simplified, fee-free approximation: at 100% margin loss the adverse
+      // price move is roughly 1/leverage of the entry price.
+      const liqPct = leverage > 0 ? 100 / leverage : 0;
+
+      document.getElementById("out-size")!.textContent =
+        "$" + size.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      document.getElementById("out-units")!.textContent = units.toLocaleString("en-US", { maximumFractionDigits: 4 });
+      document.getElementById("out-liq")!.textContent = "\u2212" + liqPct.toFixed(1) + "%";
+    }
+    document.getElementById("calc-form")?.addEventListener("input", calc);
+    calc();
+  </script>
+
+  <Fragment slot="explanation">
+    <h2>How this works</h2>
+    <p>
+      Leverage lets you control a larger position than your margin alone
+      would allow, by borrowing the difference from your exchange or broker.
+      This calculator shows the total position size your margin and leverage
+      combination controls, and a simplified estimate of how far the price
+      would need to move against you before your margin is wiped out.
+    </p>
+    <p>
+      The liquidation estimate here is simplified and does not account for
+      trading fees, funding rates or an exchange's specific maintenance
+      margin requirements — all of which move your actual liquidation price
+      closer to your entry than this estimate suggests. Always check your
+      exchange's own liquidation calculator before opening a leveraged
+      position.
+    </p>
+  </Fragment>
+</ToolLayout>

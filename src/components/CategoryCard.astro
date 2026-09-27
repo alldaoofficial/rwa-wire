@@ -1,0 +1,21 @@
+---
+interface Props {
+  label: string;
+  description: string;
+  href: string;
+}
+const { label, description, href } = Astro.props;
+---
+
+<a
+  href={href}
+  class="group flex flex-col justify-between border border-line p-6 transition-colors hover:border-wire/40"
+>
+  <div>
+    <h3 class="font-serif text-xl font-medium text-ink">{label}</h3>
+    <p class="mt-2 text-sm leading-relaxed text-ink-muted">{description}</p>
+  </div>
+  <span class="mt-6 text-xs font-medium uppercase tracking-[0.08em] text-ink-muted group-hover:text-wire">
+    View section
+  </span>
+</a>

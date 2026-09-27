@@ -1,0 +1,76 @@
+---
+import { sitePath } from "../utils/paths";
+import Logo from "@/components/Logo.astro";
+import { NAV_LINKS, FOOTER_LINKS, TELEGRAM_URL, X_URL, SITE } from "@/config/site";
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-line">
+  <div class="wire-container grid grid-cols-1 gap-10 py-14 md:grid-cols-[1.3fr_1fr_1fr]">
+    <div>
+      <Logo size="md" />
+      <p class="mt-4 max-w-xs text-sm leading-relaxed text-ink-muted">
+        {SITE.tagline}
+      </p>
+      <div class="mt-6 flex gap-3">
+        <a
+          href={TELEGRAM_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="rounded border border-line px-3 py-1.5 text-xs font-medium text-ink hover:border-wire/50 hover:text-wire"
+        >
+          Telegram
+        </a>
+        <a
+          href={X_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="rounded border border-line px-3 py-1.5 text-xs font-medium text-ink hover:border-wire/50 hover:text-wire"
+        >
+          X
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <p class="eyebrow mb-4">Sections</p>
+      <ul class="space-y-2.5">
+        {
+          NAV_LINKS.map((link) => (
+            <li>
+              <a href={sitePath(link.href)} class="text-sm text-ink-muted hover:text-ink">
+                {link.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+
+    <div>
+      <p class="eyebrow mb-4">Site</p>
+      <ul class="space-y-2.5">
+        {
+          FOOTER_LINKS.map((link) => (
+            <li>
+              <a href={sitePath(link.href)} class="text-sm text-ink-muted hover:text-ink">
+                {link.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-line py-6">
+    <div class="wire-container flex flex-col gap-2 text-xs text-ink-muted sm:flex-row sm:items-center sm:justify-between">
+      <p>&copy; {year} RWA Wire. All rights reserved.</p>
+      <p>
+        RWA Wire is independent financial media. Nothing on this site is
+        investment advice. See our
+        <a href={sitePath("/affiliate-disclosure/")} class="underline hover:text-ink">affiliate disclosure</a>.
+      </p>
+    </div>
+  </div>
+</footer>

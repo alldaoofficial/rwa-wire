@@ -1,0 +1,46 @@
+---
+import { TELEGRAM_URL } from "@/config/site";
+
+interface Props {
+  compact?: boolean;
+}
+const { compact = false } = Astro.props;
+---
+
+{
+  compact ? (
+    <div class="flex flex-col items-start gap-4 border border-line bg-surface p-6 sm:flex-row sm:items-center sm:justify-between">
+      <p class="text-sm font-medium text-ink">
+        Get the signal before the timeline does.
+      </p>
+      <a
+        href={TELEGRAM_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="shrink-0 rounded bg-wire px-5 py-2.5 text-sm font-semibold text-bg hover:bg-wire/90"
+      >
+        Join on Telegram
+      </a>
+    </div>
+  ) : (
+    <section class="border-y border-line bg-surface">
+      <div class="wire-container flex flex-col items-start gap-6 py-16 sm:items-center sm:py-20 sm:text-center">
+        <h2 class="max-w-xl font-serif text-3xl font-medium leading-tight text-ink sm:text-4xl">
+          Get the signal before the timeline does.
+        </h2>
+        <p class="max-w-md text-sm leading-relaxed text-ink-muted">
+          Follow RWA developments, institutional news, market movements and
+          important tokenization updates.
+        </p>
+        <a
+          href={TELEGRAM_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="rounded bg-wire px-6 py-3 text-sm font-semibold text-bg hover:bg-wire/90"
+        >
+          Join RWA Wire on Telegram
+        </a>
+      </div>
+    </section>
+  )
+}

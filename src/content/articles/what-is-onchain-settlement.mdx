@@ -1,0 +1,28 @@
+---
+type: "EXPLAINER"
+category: "learn"
+title: "What Is Onchain Settlement?"
+description: "Onchain settlement replaces the multi-step reconciliation process behind traditional trades with a single, shared ledger update. Here's how it works."
+pubDate: "2026-09-03"
+readingTime: "4 min read"
+tags: ["Infrastructure", "Settlement"]
+relatedSlugs: ["how-does-asset-tokenization-work", "what-is-tokenization", "rwa-infrastructure-explained"]
+keyTakeaways:
+  - "Onchain settlement finalizes a trade by directly updating a shared ledger, rather than reconciling separate records across intermediaries."
+  - "This can shrink settlement time from multiple business days to minutes or seconds."
+  - "Onchain settlement reduces certain counterparty risks but introduces dependence on the underlying blockchain's reliability."
+---
+
+In traditional markets, "settlement" is the step where a trade actually completes — cash changes hands and legal ownership transfers. Getting there typically requires several intermediaries (brokers, custodians, clearing houses) each updating their own separate records and then reconciling with one another, a process that commonly takes one or more business days for securities trades.
+
+## How onchain settlement is different
+
+When an asset and its corresponding payment both exist as tokens on the same blockchain, a trade can settle by updating a single shared ledger in one atomic transaction — the asset and payment move simultaneously, with no separate reconciliation step needed between parties. This is often described as "atomic settlement," because either the entire exchange happens or none of it does, removing the risk that one side of a trade completes without the other.
+
+## What this changes
+
+Faster settlement reduces the window of counterparty risk between when a trade is agreed and when it's finalized, and it frees up capital that would otherwise sit aside as settlement buffer. It also reduces the operational overhead of reconciling records across multiple institutions.
+
+## What it doesn't remove
+
+Onchain settlement shifts reliance onto the blockchain's own reliability, the smart contracts governing the transaction, and the custody arrangements protecting the private keys involved. It's a different risk profile, not the absence of risk.

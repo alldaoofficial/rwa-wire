@@ -1,0 +1,17 @@
+---
+interface Props {
+  size?: "sm" | "md" | "lg";
+  class?: string;
+}
+const { size = "md", class: className = "" } = Astro.props;
+
+const sizes = {
+  sm: "text-base",
+  md: "text-lg",
+  lg: "text-2xl sm:text-3xl",
+};
+---
+
+<span class={`inline-flex items-baseline gap-1 font-sans font-semibold tracking-tight text-ink ${sizes[size]} ${className}`}>
+  RWA WIRE <span class="wire-slash" aria-hidden="true">//</span>
+</span>

@@ -1,0 +1,36 @@
+---
+import { CATEGORIES, type CategorySlug } from "@/config/site";
+
+interface Props {
+  href: string;
+  title: string;
+  description: string;
+  category: CategorySlug;
+  pubDate: Date;
+  readingTime: string;
+}
+const { href, title, description, category, pubDate, readingTime } = Astro.props;
+
+const dateStr = pubDate.toLocaleDateString("en-US", {
+  month: "short",
+  day: "numeric",
+  year: "numeric",
+});
+---
+
+<article class="group border border-line bg-surface p-7 sm:p-10">
+  <a href={href} class="block">
+    <p class="eyebrow mb-3 text-wire">{CATEGORIES[category].label} &middot; Featured</p>
+    <h2 class="max-w-2xl font-serif text-3xl font-medium leading-tight text-ink group-hover:text-wire sm:text-4xl">
+      {title}
+    </h2>
+    <p class="mt-4 max-w-xl text-base leading-relaxed text-ink-muted">
+      {description}
+    </p>
+    <div class="mt-6 flex items-center gap-2 text-xs text-ink-muted">
+      <time datetime={pubDate.toISOString()}>{dateStr}</time>
+      <span aria-hidden="true">&middot;</span>
+      <span>{readingTime}</span>
+    </div>
+  </a>
+</article>

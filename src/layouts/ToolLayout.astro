@@ -1,0 +1,36 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+
+interface Props {
+  title: string;
+  description: string;
+}
+const { title, description } = Astro.props;
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="wire-container max-w-content py-10 sm:py-14">
+    <Breadcrumbs
+      items={[
+        { label: "Tools", href: "/tools/" },
+        { label: title, href: Astro.url.pathname },
+      ]}
+    />
+    <h1 class="mt-4 font-serif text-3xl font-medium text-ink sm:text-4xl">{title}</h1>
+    <p class="mt-2 text-base text-ink-muted">{description}</p>
+
+    <div class="mt-10 border border-line bg-surface p-6 sm:p-8">
+      <slot />
+    </div>
+
+    <p class="mt-4 text-xs text-ink-muted">
+      This calculator is for informational purposes only and is not
+      investment advice. All calculations happen locally in your browser.
+    </p>
+
+    <div class="prose prose-invert prose-wire mt-10 max-w-none">
+      <slot name="explanation" />
+    </div>
+  </div>
+</BaseLayout>

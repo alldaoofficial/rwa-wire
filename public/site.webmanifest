@@ -1,0 +1,16 @@
+{
+  "name": "RWA Wire",
+  "short_name": "RWA Wire",
+  "description": "The intelligence layer for the tokenized economy.",
+  "start_url": "/rwa-wire/",
+  "display": "standalone",
+  "background_color": "#080A0D",
+  "theme_color": "#080A0D",
+  "icons": [
+    {
+      "src": "/rwa-wire/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

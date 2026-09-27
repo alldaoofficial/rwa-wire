@@ -1,0 +1,83 @@
+---
+import ToolLayout from "@/layouts/ToolLayout.astro";
+---
+
+<ToolLayout
+  title="Position Size Calculator"
+  description="Work out how large a position to take based on your account size, risk tolerance and stop-loss distance."
+>
+  <form id="calc-form" class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+    <label class="flex flex-col gap-1.5 text-sm text-ink">
+      Account size (USD)
+      <input type="number" id="account" min="0" step="any" value="10000" class="rounded border border-line bg-bg px-3 py-2.5 text-ink outline-none focus-visible:border-wire" />
+    </label>
+    <label class="flex flex-col gap-1.5 text-sm text-ink">
+      Risk per trade (%)
+      <input type="number" id="riskPct" min="0" step="any" value="1" class="rounded border border-line bg-bg px-3 py-2.5 text-ink outline-none focus-visible:border-wire" />
+    </label>
+    <label class="flex flex-col gap-1.5 text-sm text-ink">
+      Entry price (USD)
+      <input type="number" id="entry" min="0" step="any" value="100" class="rounded border border-line bg-bg px-3 py-2.5 text-ink outline-none focus-visible:border-wire" />
+    </label>
+    <label class="flex flex-col gap-1.5 text-sm text-ink">
+      Stop-loss price (USD)
+      <input type="number" id="stop" min="0" step="any" value="95" class="rounded border border-line bg-bg px-3 py-2.5 text-ink outline-none focus-visible:border-wire" />
+    </label>
+  </form>
+
+  <div class="mt-7 grid grid-cols-1 gap-4 border-t border-line pt-6 sm:grid-cols-3">
+    <div>
+      <p class="eyebrow">Amount at risk</p>
+      <p class="mt-1 font-serif text-2xl font-medium text-ink" id="out-risk">$100.00</p>
+    </div>
+    <div>
+      <p class="eyebrow">Position size (units)</p>
+      <p class="mt-1 font-serif text-2xl font-medium text-ink" id="out-units">20.00</p>
+    </div>
+    <div>
+      <p class="eyebrow">Position value</p>
+      <p class="mt-1 font-serif text-2xl font-medium text-ink" id="out-value">$2,000.00</p>
+    </div>
+  </div>
+
+  <script>
+    function fmt(n: number) {
+      return n.toLocaleString("en-US", { style: "currency", currency: "USD" });
+    }
+    function calc() {
+      const account = parseFloat((document.getElementById("account") as HTMLInputElement).value) || 0;
+      const riskPct = parseFloat((document.getElementById("riskPct") as HTMLInputElement).value) || 0;
+      const entry = parseFloat((document.getElementById("entry") as HTMLInputElement).value) || 0;
+      const stop = parseFloat((document.getElementById("stop") as HTMLInputElement).value) || 0;
+
+      const riskAmount = account * (riskPct / 100);
+      const perUnitRisk = Math.abs(entry - stop);
+      const units = perUnitRisk > 0 ? riskAmount / perUnitRisk : 0;
+      const value = units * entry;
+
+      document.getElementById("out-risk")!.textContent = fmt(riskAmount);
+      document.getElementById("out-units")!.textContent = units.toLocaleString("en-US", { maximumFractionDigits: 4 });
+      document.getElementById("out-value")!.textContent = fmt(value);
+    }
+    document.getElementById("calc-form")?.addEventListener("input", calc);
+    calc();
+  </script>
+
+  <Fragment slot="explanation">
+    <h2>How this works</h2>
+    <p>
+      Position sizing answers one question: given how much you're willing to
+      lose on a single trade, how large should that trade actually be? This
+      calculator takes your account size and a risk percentage to determine
+      a fixed dollar amount you're willing to risk, then divides that by the
+      distance between your entry and stop-loss price to find how many units
+      you can hold.
+    </p>
+    <p>
+      A common starting point among discretionary traders is risking 0.5% to
+      2% of an account per trade, though the right number depends heavily on
+      your own risk tolerance, strategy win rate and how many concurrent
+      positions you hold.
+    </p>
+  </Fragment>
+</ToolLayout>

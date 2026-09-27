@@ -1,0 +1,48 @@
+---
+import { sitePath } from "../../utils/paths";
+import { getCollection } from "astro:content";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import ArticleCard from "@/components/ArticleCard.astro";
+import { CATEGORIES, type CategorySlug } from "@/config/site";
+
+export async function getStaticPaths() {
+  return (Object.keys(CATEGORIES) as CategorySlug[]).map((category) => ({
+    params: { category },
+  }));
+}
+
+const { category } = Astro.params as { category: CategorySlug };
+const meta = CATEGORIES[category];
+
+const articles = (await getCollection("articles", ({ data }) => !data.draft && data.category === category)).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+
+<BaseLayout title={meta.label} description={meta.description}>
+  <div class="wire-container py-10 sm:py-14">
+    <Breadcrumbs items={[{ label: meta.label, href: `/${category}/` }]} />
+    <h1 class="mt-4 font-serif text-3xl font-medium text-ink sm:text-4xl">{meta.label}</h1>
+    <p class="mt-2 max-w-xl text-base text-ink-muted">{meta.description}</p>
+
+    <div class="mt-10 max-w-content">
+      {
+        articles.length > 0 ? (
+          articles.map((entry) => (
+            <ArticleCard
+              href={sitePath(`/${category}/${entry.slug}/`)}
+              title={entry.data.title}
+              description={entry.data.description}
+              category={entry.data.category}
+              pubDate={entry.data.pubDate}
+              readingTime={entry.data.readingTime}
+            />
+          ))
+        ) : (
+          <p class="text-sm text-ink-muted">No articles published in this section yet.</p>
+        )
+      }
+    </div>
+  </div>
+</BaseLayout>

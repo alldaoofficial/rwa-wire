@@ -1,0 +1,73 @@
+---
+import ToolLayout from "@/layouts/ToolLayout.astro";
+---
+
+<ToolLayout
+  title="Risk / Reward Calculator"
+  description="Compare potential upside against potential downside for a planned trade before you enter it."
+>
+  <form id="calc-form" class="grid grid-cols-1 gap-5 sm:grid-cols-3">
+    <label class="flex flex-col gap-1.5 text-sm text-ink">
+      Entry price (USD)
+      <input type="number" id="entry" min="0" step="any" value="100" class="rounded border border-line bg-bg px-3 py-2.5 text-ink outline-none focus-visible:border-wire" />
+    </label>
+    <label class="flex flex-col gap-1.5 text-sm text-ink">
+      Stop-loss price (USD)
+      <input type="number" id="stop" min="0" step="any" value="95" class="rounded border border-line bg-bg px-3 py-2.5 text-ink outline-none focus-visible:border-wire" />
+    </label>
+    <label class="flex flex-col gap-1.5 text-sm text-ink">
+      Take-profit price (USD)
+      <input type="number" id="target" min="0" step="any" value="115" class="rounded border border-line bg-bg px-3 py-2.5 text-ink outline-none focus-visible:border-wire" />
+    </label>
+  </form>
+
+  <div class="mt-7 grid grid-cols-1 gap-4 border-t border-line pt-6 sm:grid-cols-3">
+    <div>
+      <p class="eyebrow">Risk per unit</p>
+      <p class="mt-1 font-serif text-2xl font-medium text-ink" id="out-risk">$5.00</p>
+    </div>
+    <div>
+      <p class="eyebrow">Reward per unit</p>
+      <p class="mt-1 font-serif text-2xl font-medium text-ink" id="out-reward">$15.00</p>
+    </div>
+    <div>
+      <p class="eyebrow">Risk / reward ratio</p>
+      <p class="mt-1 font-serif text-2xl font-medium text-wire" id="out-ratio">1 : 3.00</p>
+    </div>
+  </div>
+
+  <script>
+    function calc() {
+      const entry = parseFloat((document.getElementById("entry") as HTMLInputElement).value) || 0;
+      const stop = parseFloat((document.getElementById("stop") as HTMLInputElement).value) || 0;
+      const target = parseFloat((document.getElementById("target") as HTMLInputElement).value) || 0;
+
+      const risk = Math.abs(entry - stop);
+      const reward = Math.abs(target - entry);
+      const ratio = risk > 0 ? reward / risk : 0;
+
+      document.getElementById("out-risk")!.textContent = "$" + risk.toFixed(2);
+      document.getElementById("out-reward")!.textContent = "$" + reward.toFixed(2);
+      document.getElementById("out-ratio")!.textContent = `1 : ${ratio.toFixed(2)}`;
+    }
+    document.getElementById("calc-form")?.addEventListener("input", calc);
+    calc();
+  </script>
+
+  <Fragment slot="explanation">
+    <h2>How this works</h2>
+    <p>
+      The risk/reward ratio compares how much you stand to lose if a trade
+      hits your stop-loss against how much you stand to gain if it hits your
+      take-profit target. A ratio of 1:3 means you're risking one dollar to
+      potentially make three.
+    </p>
+    <p>
+      Risk/reward is only half the picture — it needs to be weighed against
+      your strategy's actual win rate. A high ratio with a very low win rate
+      can still be unprofitable over time, and a lower ratio with a high win
+      rate can still work. Neither number alone tells you whether a strategy
+      is sound.
+    </p>
+  </Fragment>
+</ToolLayout>

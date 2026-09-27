@@ -1,0 +1,25 @@
+---
+interface Props {
+  label: string;
+  href?: string;
+  active?: boolean;
+}
+const { label, href, active = false } = Astro.props;
+
+const classes = [
+  "inline-flex items-center rounded-sm border px-2.5 py-1 text-[11px] font-medium uppercase tracking-[0.06em]",
+  active
+    ? "border-wire/40 bg-wire-soft text-wire"
+    : "border-line text-ink-muted",
+].join(" ");
+---
+
+{
+  href ? (
+    <a href={href} class={`${classes} hover:border-wire/40 hover:text-wire`}>
+      {label}
+    </a>
+  ) : (
+    <span class={classes}>{label}</span>
+  )
+}

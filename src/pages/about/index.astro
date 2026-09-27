@@ -1,0 +1,41 @@
+---
+import { sitePath } from "../../utils/paths";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+---
+
+<BaseLayout
+  title="About"
+  description="RWA Wire is independent media covering real-world assets, tokenization and institutional finance."
+>
+  <div class="wire-container max-w-content py-10 sm:py-14">
+    <Breadcrumbs items={[{ label: "About", href: "/about/" }]} />
+    <h1 class="mt-4 font-serif text-3xl font-medium text-ink sm:text-4xl">About RWA Wire</h1>
+
+    <div class="prose prose-invert prose-wire mt-8 max-w-none">
+      <p>
+        RWA Wire is an independent media and research publication covering
+        real-world assets, tokenization, institutional finance and the
+        infrastructure connecting traditional markets to blockchain rails.
+      </p>
+      <p>
+        We write for people who take this space seriously: allocators,
+        builders, analysts and anyone trying to understand how tokenization
+        is actually being adopted, rather than how it's marketed. Our
+        editorial approach is factual and analytical. We don't publish price
+        predictions, "next 100x" calls, or guaranteed-return claims, and we
+        cover projects and companies neutrally rather than as endorsements.
+      </p>
+      <p>
+        RWA Wire is supported in part through affiliate partnerships with
+        relevant financial platforms, disclosed on every page where they
+        appear. See our <a href={sitePath("/affiliate-disclosure/")}>affiliate disclosure</a>
+        for details.
+      </p>
+      <p>
+        Have a tip, correction or story idea? Reach out via our
+        <a href={sitePath("/contact/")}>contact page</a>.
+      </p>
+    </div>
+  </div>
+</BaseLayout>

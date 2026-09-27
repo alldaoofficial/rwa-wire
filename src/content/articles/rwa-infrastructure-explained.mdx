@@ -1,0 +1,36 @@
+---
+type: "RESEARCH"
+category: "tokenization"
+title: "RWA Infrastructure Explained"
+description: "A research overview of the infrastructure stack behind tokenized real-world assets: issuance platforms, oracles, custody and interoperability layers."
+pubDate: "2026-09-19"
+readingTime: "6 min read"
+tags: ["Tokenization", "Infrastructure", "Research"]
+relatedSlugs: ["how-does-asset-tokenization-work", "quant-network-explained", "chainlink-and-tokenization-explained"]
+keyTakeaways:
+  - "RWA infrastructure spans issuance platforms, custody providers, oracle networks and interoperability protocols, usually supplied by different specialized companies."
+  - "Most institutional programs combine several of these components rather than relying on a single, vertically integrated provider."
+  - "Standardization across this stack is still developing, which currently limits how easily tokenized assets move between platforms."
+---
+
+Issuing and operating a tokenized real-world asset relies on a stack of infrastructure components, typically provided by several specialized companies working together rather than a single integrated platform.
+
+## Issuance and tokenization platforms
+
+These provide the tooling to mint tokens representing shares in a legal structure, apply investor eligibility rules, and manage the cap table of token holders. This layer is often the most visible part of a tokenization program, since it's what issuers and investors interact with directly.
+
+## Custody
+
+Custody providers secure the private keys controlling tokenized assets, whether for the issuer's own operational wallets or on behalf of end investors. Institutional custody for tokenized assets has matured considerably, with several established custodians and qualified custodians now offering services aimed specifically at regulated tokenized securities.
+
+## Oracles and data
+
+Because blockchains cannot natively verify information about the outside world, oracle networks supply data such as reserve attestations, benchmark rates or asset prices needed for a tokenized instrument to function correctly — for example, confirming that a tokenized fund's onchain supply matches its actual underlying holdings.
+
+## Interoperability
+
+As tokenization programs run on different, often incompatible blockchains, interoperability protocols aim to let tokens, data and instructions move between networks. This remains one of the least standardized parts of the stack, and it currently limits how easily an asset tokenized on one platform can be used on another.
+
+## The overall picture
+
+No single company currently provides all of these functions end to end for most institutional programs. Instead, a tokenization initiative typically involves choosing and integrating providers across several of these categories — a process that adds complexity but also allows institutions to select best-in-class providers for each function.

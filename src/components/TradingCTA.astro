@@ -1,0 +1,28 @@
+---
+import { sitePath } from "../utils/paths";
+// A single, reusable affiliate CTA. Placement is deliberately contextual —
+// only used on market/trading-relevant articles via `showTradingCTA` in
+// article frontmatter — and never hardcodes a specific exchange name.
+// Change the destination and partner name in `src/config/site.ts`.
+import { AFFILIATE_URL, AFFILIATE_PARTNER_NAME } from "@/config/site";
+---
+
+<aside class="border border-line p-6">
+  <p class="eyebrow text-ink-muted">Sponsored</p>
+  <p class="mt-2 text-sm leading-relaxed text-ink-muted">
+    RWA Wire has a paid partnership with {AFFILIATE_PARTNER_NAME}. If you open
+    an account through the link below, we may earn a commission at no extra
+    cost to you. This is not investment advice — see our
+    <a href={sitePath("/affiliate-disclosure/")} class="text-ink underline hover:text-wire">
+      affiliate disclosure
+    </a>.
+  </p>
+  <a
+    href={AFFILIATE_URL}
+    target="_blank"
+    rel="noopener noreferrer sponsored"
+    class="mt-4 inline-flex rounded bg-wire px-5 py-2.5 text-sm font-semibold text-bg hover:bg-wire/90"
+  >
+    Explore trading tools
+  </a>
+</aside>

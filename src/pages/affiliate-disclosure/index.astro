@@ -1,0 +1,43 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import { AFFILIATE_PARTNER_NAME } from "@/config/site";
+---
+
+<BaseLayout
+  title="Affiliate Disclosure"
+  description="How RWA Wire discloses affiliate partnerships and sponsored links."
+>
+  <div class="wire-container max-w-content py-10 sm:py-14">
+    <Breadcrumbs items={[{ label: "Affiliate Disclosure", href: "/affiliate-disclosure/" }]} />
+    <h1 class="mt-4 font-serif text-3xl font-medium text-ink sm:text-4xl">Affiliate Disclosure</h1>
+
+    <div class="prose prose-invert prose-wire mt-8 max-w-none">
+      <p>
+        RWA Wire is independently operated and, in part, supported through
+        affiliate partnerships with relevant financial and trading platforms,
+        currently including {AFFILIATE_PARTNER_NAME}. If you click an
+        affiliate link on this site and open an account or take another
+        qualifying action, RWA Wire may earn a commission at no additional
+        cost to you.
+      </p>
+      <p>
+        Affiliate links are marked as "Sponsored" wherever they appear and
+        are only placed where contextually relevant — for example, on
+        market or trading-focused articles — rather than throughout the
+        site. Affiliate relationships never influence our editorial
+        coverage of specific assets, projects or companies: we do not accept
+        payment to cover a project favorably, and we avoid hype language,
+        price predictions and guaranteed-return claims across all content,
+        sponsored or not.
+      </p>
+      <p>
+        Nothing on RWA Wire, including content adjacent to an affiliate
+        link, constitutes financial, investment, legal or tax advice.
+        Trading and holding tokenized and digital assets carries risk,
+        including the risk of loss. Always do your own research and consult
+        a qualified professional before making financial decisions.
+      </p>
+    </div>
+  </div>
+</BaseLayout>

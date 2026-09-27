@@ -1,0 +1,25 @@
+---
+interface Props {
+  name: string;
+  ticker?: string;
+  category: string;
+  description: string;
+  href: string;
+}
+const { name, ticker, category, description, href } = Astro.props;
+---
+
+<a
+  href={href}
+  class="group flex flex-col border border-line p-6 transition-colors hover:border-wire/40"
+>
+  <div class="flex items-center justify-between">
+    <h3 class="font-serif text-lg font-medium text-ink">{name}</h3>
+    {ticker && <span class="text-xs text-ink-muted">{ticker}</span>}
+  </div>
+  <p class="eyebrow mt-1 text-ink-muted">{category}</p>
+  <p class="mt-3 text-sm leading-relaxed text-ink-muted">{description}</p>
+  <span class="mt-5 text-xs font-medium uppercase tracking-[0.08em] text-ink-muted group-hover:text-wire">
+    Read the profile
+  </span>
+</a>

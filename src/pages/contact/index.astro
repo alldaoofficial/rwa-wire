@@ -1,0 +1,30 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import { TELEGRAM_URL, X_URL } from "@/config/site";
+---
+
+<BaseLayout
+  title="Contact"
+  description="Get in touch with RWA Wire with tips, corrections or partnership inquiries."
+>
+  <div class="wire-container max-w-content py-10 sm:py-14">
+    <Breadcrumbs items={[{ label: "Contact", href: "/contact/" }]} />
+    <h1 class="mt-4 font-serif text-3xl font-medium text-ink sm:text-4xl">Contact</h1>
+
+    <div class="prose prose-invert prose-wire mt-8 max-w-none">
+      <p>
+        For editorial tips, corrections, or partnership inquiries, reach us
+        at
+        <a href="mailto:hello@rwawire.example">hello@rwawire.example</a>
+        (placeholder address — replace with a real inbox before launch).
+      </p>
+      <p>
+        You can also reach us on
+        <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">Telegram</a>
+        or
+        <a href={X_URL} target="_blank" rel="noopener noreferrer">X</a>.
+      </p>
+    </div>
+  </div>
+</BaseLayout>

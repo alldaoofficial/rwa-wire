@@ -1,0 +1,28 @@
+---
+type: "EXPLAINER"
+category: "learn"
+title: "What Is Programmable Money?"
+description: "Programmable money lets payment logic — conditions, schedules, restrictions — be built directly into how a currency moves. Here's what that enables."
+pubDate: "2026-09-05"
+readingTime: "4 min read"
+tags: ["Fundamentals", "Infrastructure"]
+relatedSlugs: ["what-is-onchain-settlement", "stablecoins-explained", "cbdcs-vs-stablecoins"]
+keyTakeaways:
+  - "Programmable money embeds conditional logic directly into how funds move, rather than relying on external systems to enforce rules."
+  - "Common applications include automated payments, escrow, compliance restrictions and conditional settlement."
+  - "The tradeoff is added complexity and reliance on the correctness of the code enforcing those rules."
+---
+
+Programmable money refers to digital currency that carries its own rules for how, when and to whom it can move, encoded directly into the token or the platform it runs on, rather than enforced by a separate system layered on top of a traditional payment rail.
+
+## What it enables
+
+A tokenized payment could be programmed to release automatically once a delivery is confirmed, to split a payment across multiple recipients according to preset shares, to restrict transfers to a whitelist of approved wallets for regulatory compliance, or to schedule recurring payments without manual initiation each time. In tokenized markets specifically, programmable money is what enables atomic settlement — a payment and an asset transfer that are contractually forced to happen together or not at all.
+
+## Where it's being used today
+
+Institutional pilots have used programmable payment logic for conditional trade settlement, automated interest or dividend distribution on tokenized securities, and escrow arrangements in trade finance. Corporate treasury teams have also explored programmable stablecoin payments for automating parts of supplier payment workflows.
+
+## The trade-off
+
+Encoding rules directly into how money moves means those rules are only as reliable as the code enforcing them. A flaw in a smart contract's logic can cause funds to behave unexpectedly, which is why institutional programmable-money deployments typically involve extensive auditing and, often, permissioned environments with additional safeguards.

@@ -1,0 +1,74 @@
+---
+import ToolLayout from "@/layouts/ToolLayout.astro";
+---
+
+<ToolLayout
+  title="Trading Fee Calculator"
+  description="Estimate maker and taker fees on a trade, and see what they cost as a share of your position."
+>
+  <form id="calc-form" class="grid grid-cols-1 gap-5 sm:grid-cols-3">
+    <label class="flex flex-col gap-1.5 text-sm text-ink">
+      Position value (USD)
+      <input type="number" id="value" min="0" step="any" value="10000" class="rounded border border-line bg-bg px-3 py-2.5 text-ink outline-none focus-visible:border-wire" />
+    </label>
+    <label class="flex flex-col gap-1.5 text-sm text-ink">
+      Maker fee (%)
+      <input type="number" id="maker" min="0" step="any" value="0.02" class="rounded border border-line bg-bg px-3 py-2.5 text-ink outline-none focus-visible:border-wire" />
+    </label>
+    <label class="flex flex-col gap-1.5 text-sm text-ink">
+      Taker fee (%)
+      <input type="number" id="taker" min="0" step="any" value="0.05" class="rounded border border-line bg-bg px-3 py-2.5 text-ink outline-none focus-visible:border-wire" />
+    </label>
+  </form>
+
+  <div class="mt-7 grid grid-cols-1 gap-4 border-t border-line pt-6 sm:grid-cols-3">
+    <div>
+      <p class="eyebrow">Maker fee cost</p>
+      <p class="mt-1 font-serif text-2xl font-medium text-ink" id="out-maker">$2.00</p>
+    </div>
+    <div>
+      <p class="eyebrow">Taker fee cost</p>
+      <p class="mt-1 font-serif text-2xl font-medium text-ink" id="out-taker">$5.00</p>
+    </div>
+    <div>
+      <p class="eyebrow">Round-trip (open + close, taker)</p>
+      <p class="mt-1 font-serif text-2xl font-medium text-wire" id="out-roundtrip">$10.00</p>
+    </div>
+  </div>
+
+  <script>
+    function calc() {
+      const value = parseFloat((document.getElementById("value") as HTMLInputElement).value) || 0;
+      const maker = parseFloat((document.getElementById("maker") as HTMLInputElement).value) || 0;
+      const taker = parseFloat((document.getElementById("taker") as HTMLInputElement).value) || 0;
+
+      const makerCost = value * (maker / 100);
+      const takerCost = value * (taker / 100);
+      const roundTrip = takerCost * 2;
+
+      document.getElementById("out-maker")!.textContent = "$" + makerCost.toFixed(2);
+      document.getElementById("out-taker")!.textContent = "$" + takerCost.toFixed(2);
+      document.getElementById("out-roundtrip")!.textContent = "$" + roundTrip.toFixed(2);
+    }
+    document.getElementById("calc-form")?.addEventListener("input", calc);
+    calc();
+  </script>
+
+  <Fragment slot="explanation">
+    <h2>How this works</h2>
+    <p>
+      Most exchanges charge different fees depending on whether an order
+      adds liquidity to the order book ("maker") or removes it ("taker").
+      Maker fees are typically lower, or even negative on some exchanges, as
+      an incentive for providing liquidity. Market orders are almost always
+      taker orders.
+    </p>
+    <p>
+      The round-trip figure estimates the total fee cost of both opening and
+      closing a position at the taker rate — useful for judging how much a
+      trade's expected profit needs to clear before fees make it worthwhile.
+      Actual fee tiers vary by exchange and often decrease at higher trading
+      volumes.
+    </p>
+  </Fragment>
+</ToolLayout>

@@ -1,0 +1,79 @@
+---
+import { sitePath } from "../utils/paths";
+import { NAV_LINKS, TELEGRAM_URL } from "@/config/site";
+
+const path = Astro.url.pathname;
+function isActive(href: string) {
+  return path === sitePath(href) || (href !== "/" && path.startsWith(sitePath(href)));
+}
+---
+
+<details class="group relative md:hidden" id="mobile-menu">
+  <summary
+    class="flex h-9 w-9 cursor-pointer list-none items-center justify-center rounded border border-line text-ink [&::-webkit-details-marker]:hidden"
+    aria-label="Open menu"
+  >
+    <svg
+      class="h-5 w-5 group-open:hidden"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.75"
+      aria-hidden="true"
+    >
+      <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" />
+    </svg>
+    <svg
+      class="hidden h-5 w-5 group-open:block"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.75"
+      aria-hidden="true"
+    >
+      <path stroke-linecap="round" d="M6 6l12 12M18 6L6 18" />
+    </svg>
+  </summary>
+
+  <nav
+    class="fixed inset-x-0 top-[57px] z-40 h-[calc(100vh-57px)] overflow-y-auto border-t border-line bg-bg px-5 py-6"
+    aria-label="Mobile"
+  >
+    <ul class="flex flex-col divide-y divide-line">
+      {
+        NAV_LINKS.map((link) => (
+          <li>
+            <a
+              href={sitePath(link.href)}
+              class:list={[
+                "block py-3.5 text-base font-medium",
+                isActive(link.href) ? "text-wire" : "text-ink",
+              ]}
+              aria-current={isActive(link.href) ? "page" : undefined}
+            >
+              {link.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <a
+      href={TELEGRAM_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="mt-6 flex w-full items-center justify-center rounded border border-wire/40 bg-wire-soft px-4 py-3 text-sm font-semibold text-wire"
+    >
+      Telegram
+    </a>
+  </nav>
+</details>
+
+<script>
+  // Close the mobile menu when a nav link is tapped or the route changes.
+  const menu = document.getElementById("mobile-menu") as HTMLDetailsElement | null;
+  menu?.querySelectorAll("a").forEach((a) => {
+    a.addEventListener("click", () => {
+      menu.open = false;
+    });
+  });
+</script>

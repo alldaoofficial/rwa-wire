@@ -1,0 +1,46 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import ToolCard from "@/components/ToolCard.astro";
+
+const tools = [
+  {
+    name: "Position Size Calculator",
+    description: "Work out how large a position to take based on your account size and risk tolerance.",
+    href: "/tools/position-size-calculator/",
+  },
+  {
+    name: "Risk / Reward Calculator",
+    description: "Compare potential upside against potential downside for a planned trade.",
+    href: "/tools/risk-reward-calculator/",
+  },
+  {
+    name: "Leverage Calculator",
+    description: "See how leverage affects your position size, margin requirement and liquidation distance.",
+    href: "/tools/leverage-calculator/",
+  },
+  {
+    name: "Trading Fee Calculator",
+    description: "Estimate maker and taker fees on a trade before you place it.",
+    href: "/tools/trading-fee-calculator/",
+  },
+];
+---
+
+<BaseLayout
+  title="Tools"
+  description="Free calculators for position sizing, risk/reward, leverage and trading fees."
+>
+  <div class="wire-container py-10 sm:py-14">
+    <Breadcrumbs items={[{ label: "Tools", href: "/tools/" }]} />
+    <h1 class="mt-4 font-serif text-3xl font-medium text-ink sm:text-4xl">Tools</h1>
+    <p class="mt-2 max-w-xl text-base text-ink-muted">
+      Simple, transparent calculators for planning and reviewing trades. All
+      calculations run locally in your browser — nothing is sent anywhere.
+    </p>
+
+    <div class="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
+      {tools.map((tool) => <ToolCard {...tool} />)}
+    </div>
+  </div>
+</BaseLayout>
