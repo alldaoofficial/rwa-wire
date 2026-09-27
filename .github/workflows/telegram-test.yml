@@ -7,17 +7,9 @@ on:
 
   workflow_dispatch:
     inputs:
-      caption:
-        description: "Telegram caption"
+      manifest_path:
+        description: "Approved manifest path (publish/approved/*.json)"
         required: true
-        type: string
-      image_url:
-        description: "Public PNG/JPG image URL"
-        required: false
-        type: string
-      svg_url:
-        description: "Optional public SVG visual URL (converted to PNG before Telegram upload)"
-        required: false
         type: string
 
 permissions:
@@ -28,15 +20,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        if: github.event_name == 'push'
         uses: actions/checkout@v4
         with:
           fetch-depth: 2
 
       - name: Load approved manifest
-        if: github.event_name == 'push'
+        env:
+          MANUAL_MANIFEST_PATH: ${{ inputs.manifest_path }}
         run: |
-          MANIFEST_PATH=$(git diff --name-only --diff-filter=AM HEAD^ HEAD -- "publish/approved/*.json")
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            MANIFEST_PATH="$MANUAL_MANIFEST_PATH"
+          else
+            MANIFEST_PATH=$(git diff --name-only --diff-filter=AM HEAD^ HEAD -- "publish/approved/*.json")
+          fi
           COUNT=$(printf "%s\n" "$MANIFEST_PATH" | sed '/^$/d' | wc -l)
           if [ "$COUNT" -ne 1 ]; then
             echo "Expected exactly one newly added approval manifest, found $COUNT."
@@ -75,8 +71,8 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: "@RWAWireHQ"
-          TELEGRAM_CAPTION: ${{ github.event_name == 'push' && env.APPROVED_CAPTION || inputs.caption }}
-          TELEGRAM_IMAGE_URL: ${{ github.event_name == 'push' && env.APPROVED_IMAGE_URL || inputs.image_url }}
+          TELEGRAM_CAPTION: ${{ env.APPROVED_CAPTION }}
+          TELEGRAM_IMAGE_URL: ${{ env.APPROVED_IMAGE_URL }}
         run: |
           python3 - <<'PY'
           import json
@@ -84,6 +80,7 @@ jobs:
           import pathlib
           import urllib.parse
           import urllib.request
+          import cairosvg
 
           token = os.environ["TELEGRAM_BOT_TOKEN"]
           chat_id = os.environ["TELEGRAM_CHAT_ID"]
@@ -102,7 +99,6 @@ jobs:
           with urllib.request.urlopen(image_url) as response:
               image_bytes = response.read()
           if image_url.lower().split("?")[0].endswith(".svg"):
-              import cairosvg
               image_bytes = cairosvg.svg2png(bytestring=image_bytes)
           story = Image.open(BytesIO(image_bytes)).convert("RGB")
 
@@ -163,7 +159,7 @@ jobs:
           PY
 
       - name: Mark approved post as published
-        if: github.event_name == 'push' && success()
+        if: success()
         run: |
           mkdir -p publish/posted
           printf '{\n  "id": "%s",\n  "status": "published",\n  "source_manifest": "%s"\n}\n' "$APPROVED_PUBLISH_ID" "$MANIFEST_PATH" > "publish/posted/${APPROVED_PUBLISH_ID}.json"
