@@ -33,7 +33,6 @@ jobs:
 
       - name: Load approved manifest
         if: github.event_name == 'push'
-        env:
         run: |
           MANIFEST_PATH=$(git diff --name-only --diff-filter=A HEAD^ HEAD -- "publish/approved/*.json")
           COUNT=$(printf "%s\n" "$MANIFEST_PATH" | sed '/^$/d' | wc -l)
