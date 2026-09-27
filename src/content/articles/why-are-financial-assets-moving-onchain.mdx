@@ -1,32 +1,391 @@
 ---
-type: "RESEARCH"
-category: "institutions"
+type: "EXPLAINER"
+category: "tokenization"
 title: "Why Are Financial Assets Moving Onchain?"
-description: "A look at the structural reasons banks, asset managers and market infrastructure providers are building tokenization programs."
-pubDate: "2026-08-11"
-readingTime: "6 min read"
-tags: ["Institutions", "Market Structure"]
-relatedSlugs: ["what-is-tokenization", "the-companies-building-tokenized-finance", "rwa-infrastructure-explained"]
+description: "Why banks, asset managers and market infrastructures are experimenting with tokenized finance — and what programmable ownership, settlement and interoperability could change."
+pubDate: "2026-09-27"
+readingTime: "10 min read"
+tags: ["Tokenization", "Institutions", "Markets", "Settlement", "RWA"]
+relatedSlugs: ["what-is-tokenization", "rwa-infrastructure-explained", "how-does-asset-tokenization-work", "what-is-onchain-settlement"]
+showTradingCTA: false
 keyTakeaways:
-  - "Settlement efficiency, collateral mobility and distribution reach are the three most commonly cited institutional motivations."
-  - "Large asset managers and banks are treating tokenization as market-infrastructure modernization rather than a crypto strategy."
-  - "Adoption is concentrated in cash-equivalents and collateral use cases before expanding into more complex asset classes."
+  - "Financial assets are moving onchain primarily because institutions are testing whether programmable infrastructure can reduce fragmentation across issuance, ownership, servicing and settlement."
+  - "The strongest institutional use cases focus on market infrastructure rather than speculative token creation."
+  - "Tokenization can improve automation, interoperability and settlement coordination, but it does not automatically create liquidity or eliminate intermediaries."
+  - "The transition is likely to be hybrid, connecting public and permissioned ledgers with existing financial systems."
 ---
 
-Tokenization has moved from an experimental blockchain use case to a stated infrastructure priority for a growing list of banks, asset managers and exchanges. Three motivations come up repeatedly in public statements from institutions running live programs.
+Financial markets are already digital.
 
-## Settlement efficiency
+Stocks are not moved around as paper certificates after every trade. Banks maintain electronic account records. Securities depositories, custodians and payment systems operate enormous digital databases.
 
-Traditional securities settlement — particularly across borders — still relies on multiple intermediaries reconciling separate ledgers, a process that can take one to several business days. Tokenized instruments settle on a shared ledger, cutting settlement time and the operational risk that comes with it.
+So why are financial institutions interested in moving assets **onchain**?
 
-## Collateral mobility
+The answer is not simply that blockchain makes assets digital.
 
-Tokenized money market funds and Treasuries can be used as collateral and moved between counterparties far faster than assets held in traditional custodial accounts. For trading desks that need to post and recall collateral throughout the day, this speed has direct funding-cost implications.
+It is that today's financial system is digital but highly **fragmented**.
 
-## Distribution reach
+Different institutions maintain different records. Messages move between systems. Ownership, cash, compliance and settlement can live in separate infrastructures. Participants repeatedly reconcile their versions of the same transaction.
 
-A tokenized fund share can, in principle, be distributed to a broader and more programmable set of platforms and wallets than a traditional share class registered through conventional transfer agents — though this depends heavily on the regulatory permissions attached to each program.
+Tokenization offers a different model: financial assets and money can potentially exist on shared, programmable infrastructure where ownership and transaction logic interact more directly.
 
-## Where adoption is concentrated
+That is the real reason assets are moving onchain.
 
-Most live institutional deployments today involve cash-equivalents — tokenized Treasuries and money market funds — used primarily as collateral or short-duration cash management tools. More complex asset classes, such as private equity or structured credit, are earlier in their tokenization roadmaps and typically involve smaller pilot programs.
+## What does “moving onchain” actually mean?
+
+An asset moves onchain when blockchain or distributed-ledger infrastructure becomes part of its issuance, ownership, transfer, servicing or settlement process.
+
+This can take several forms.
+
+A fund can issue digital shares.
+
+A bond can be issued on distributed-ledger infrastructure.
+
+A traditional security can be represented by a token.
+
+A bank can represent commercial-bank deposits on a programmable ledger.
+
+A market infrastructure can connect tokenized assets to central-bank settlement systems.
+
+These structures are not identical, and not every token becomes the legally authoritative record.
+
+“Onchain” should therefore be understood as an **infrastructure model**, not a single product category.
+
+## Problem 1: Financial markets operate across separate ledgers
+
+A modern securities transaction can involve brokers, trading venues, custodians, clearing institutions, securities depositories, banks and payment systems.
+
+Each participant can maintain its own records.
+
+That creates a need for messaging and reconciliation: institutions must ensure that their databases agree about what happened and who owns what.
+
+This architecture works at enormous scale, but it can create operational complexity.
+
+Programmable shared ledgers offer the possibility of reducing some of that duplication.
+
+If authorized participants can rely on synchronized transaction data, fewer processes may be needed simply to make separate records agree.
+
+## Problem 2: Assets and money often live in different systems
+
+A financial transaction has at least two sides.
+
+The buyer receives an asset.
+
+The seller receives money.
+
+In traditional markets, those two legs can travel through separate infrastructure and need to be coordinated.
+
+Tokenization creates the possibility of bringing assets and digital money into compatible transaction environments.
+
+This is particularly important for **delivery versus payment (DvP)**, where the transfer of the security is linked to the corresponding payment.
+
+If both sides can be coordinated programmatically, settlement can potentially become more integrated.
+
+Read [What Is Onchain Settlement?](/rwa-wire/learn/what-is-onchain-settlement/) for the deeper mechanics.
+
+## Problem 3: Financial assets are difficult to program
+
+Traditional securities are governed by rules, but those rules are often implemented through separate operational systems and manual processes.
+
+Tokenized infrastructure can make some of those rules machine-readable.
+
+Depending on the structure, software can help enforce:
+
+- investor eligibility;
+- transfer restrictions;
+- transaction conditions;
+- distributions;
+- redemptions;
+- collateral rules; and
+- other lifecycle events.
+
+This is what people mean by **programmable assets**.
+
+The value is not that a bond suddenly becomes more exciting. The value is that parts of its lifecycle can interact directly with software.
+
+## Reason 1: Automation
+
+Automation is one of the clearest arguments for tokenization.
+
+Financial products generate ongoing operational work after issuance.
+
+Funds process subscriptions and redemptions. Bonds pay coupons and principal. Securities undergo corporate actions. Loans generate repayments. Compliance rules determine who can transact.
+
+Programmable infrastructure can automate parts of these workflows.
+
+That can reduce manual intervention and potentially lower operational friction.
+
+But automation does not eliminate responsibility. Institutions still need governance, controls, reliable data and legal accountability.
+
+## Reason 2: Faster and more flexible settlement
+
+Many tokenized systems are designed to shorten the time between trade execution and final settlement.
+
+Shorter settlement can reduce the period during which counterparties remain exposed to one another.
+
+It can also reduce some reconciliation and operational processes.
+
+However, faster is not always universally better.
+
+Traditional markets use mechanisms such as netting to reduce the amount of cash and securities participants need to settle. Moving every transaction toward immediate gross settlement can increase intraday liquidity demands.
+
+The goal is therefore not simply **maximum speed**.
+
+It is more efficient settlement design.
+
+## Reason 3: Programmable money
+
+Tokenized assets become far more useful when money can operate on compatible infrastructure.
+
+Several models are emerging:
+
+- stablecoins;
+- tokenized commercial-bank deposits;
+- wholesale central-bank money; and
+- other regulated digital settlement instruments.
+
+Each represents a different legal claim.
+
+Stablecoins demonstrated that fiat-referenced value can move continuously across blockchain networks. Banks are now developing tokenized deposits, while central banks are exploring how tokenized markets can settle in central-bank money.
+
+Read [Stablecoins Explained](/rwa-wire/learn/stablecoins-explained/) and [Stablecoins vs Tokenized Deposits](/rwa-wire/learn/stablecoins-vs-tokenized-deposits/) for the monetary layer.
+
+## Reason 4: Collateral can become more mobile
+
+Collateral is fundamental to financial markets.
+
+Government securities and other high-quality assets are pledged across lending, derivatives and liquidity-management activities.
+
+But collateral can become trapped inside particular custodians, accounts, networks or operating hours.
+
+Tokenized infrastructure could make eligible collateral easier to identify, transfer and use across compatible systems.
+
+This is one reason tokenized government securities are strategically interesting beyond their investment returns.
+
+A tokenized Treasury product can potentially become a programmable collateral asset.
+
+Our guide [Tokenized Treasuries Explained](/rwa-wire/tokenization/tokenized-treasuries-explained/) explores this use case.
+
+## Reason 5: Distribution can become more digital
+
+Tokenization can make financial products easier to integrate into digital platforms.
+
+Digital ownership records can support smaller denominations, automated onboarding and new distribution channels.
+
+This is often described as **fractionalization** or democratization.
+
+But the claim should be treated carefully.
+
+Smaller token units do not automatically make an asset suitable for every investor, and regulation can still restrict access.
+
+Tokenization can lower some technical distribution barriers. It does not eliminate investor-protection rules or economic risk.
+
+## Reason 6: Assets can become composable
+
+One of blockchain's distinctive characteristics is that digital assets can interact with other applications through shared technical standards.
+
+In crypto markets, this is often called **composability**.
+
+Applied to regulated finance, the concept is more constrained but still important.
+
+A tokenized asset could potentially interact with:
+
+- settlement systems;
+- collateral platforms;
+- lending infrastructure;
+- automated treasury tools;
+- identity systems; and
+- other financial applications.
+
+For institutions, this does not mean unrestricted “money legos.”
+
+It means financial components can potentially become easier to integrate through standardized programmable interfaces.
+
+## Reason 7: Markets can operate across broader time windows
+
+Blockchain networks can operate continuously.
+
+That creates the technical possibility of moving assets outside traditional market hours.
+
+But there is an important caveat.
+
+A token may transfer 24/7 while its custodian, bank, redemption mechanism, underlying market or liquidity providers do not.
+
+So **24/7 transferability is not the same as 24/7 institutional liquidity and final settlement**.
+
+The surrounding financial infrastructure has to evolve as well.
+
+## Why tokenized Treasuries became an early use case
+
+Tokenized Treasury products demonstrate several advantages of connecting traditional assets to digital infrastructure.
+
+Government securities have established pricing, deep traditional markets and a central role in collateral and liquidity management.
+
+Tokenization can make exposure to these assets accessible through programmable platforms while creating a bridge between traditional yield and digital markets.
+
+But the most important long-term use case may not be simply buying Treasury exposure from a wallet.
+
+It may be making high-quality collateral usable inside tokenized financial infrastructure.
+
+## Why asset managers are experimenting
+
+Asset managers can use tokenization to explore new forms of fund issuance, distribution and servicing.
+
+Digital fund shares can potentially integrate ownership records, transfer controls and transaction workflows.
+
+This does not mean traditional funds disappear.
+
+Instead, the fund can remain legally familiar while its operating infrastructure changes.
+
+That pattern — **traditional financial product, new transaction rails** — is likely to characterize much of institutional tokenization.
+
+## Why banks are experimenting
+
+Banks sit at the center of payments, deposits, credit and settlement.
+
+For them, tokenization is not only about assets.
+
+It is also about money.
+
+Tokenized deposits can allow commercial-bank liabilities to operate on programmable infrastructure, potentially enabling institutional payments and settlement of tokenized securities.
+
+The Clearing House's On-Chain Money Initiative is a current U.S. example. The project is designed around tokenized commercial-bank deposits and connections to existing payment rails including RTP and CHIPS.
+
+Read our coverage: [The Clearing House Selects Quant for U.S. Tokenized Deposit Network](/rwa-wire/news/the-clearing-house-quant-on-chain-money/).
+
+## Why central banks are involved
+
+Central banks care because settlement infrastructure is part of the monetary system.
+
+If large financial markets move onto distributed ledgers, institutions may still want to settle systemically important transactions in central-bank money.
+
+This has led central banks to test ways of connecting DLT-based assets with existing settlement infrastructure.
+
+The Eurosystem's Pontes initiative is one example of this direction.
+
+The objective is not necessarily to move the entire central-bank balance sheet onto a public blockchain.
+
+It is to make trusted settlement money available to new forms of financial-market infrastructure.
+
+## Why everything will not move to one blockchain
+
+The future of tokenized finance is unlikely to be one universal chain.
+
+Different markets have different requirements for:
+
+- privacy;
+- governance;
+- compliance;
+- performance;
+- resilience;
+- accessibility; and
+- transaction finality.
+
+Banks may operate permissioned systems. Asset managers may use public networks. Central banks may maintain separate settlement infrastructure.
+
+This makes **interoperability** one of the central challenges of tokenized finance.
+
+The question becomes:
+
+**Can assets and money move across different systems without losing legal certainty, compliance or settlement integrity?**
+
+Our [RWA Infrastructure Explained](/rwa-wire/rwa/rwa-infrastructure-explained/) guide maps the full stack behind that problem.
+
+## What tokenization does not solve
+
+The excitement around onchain finance can obscure a basic reality.
+
+Tokenization cannot fix a bad asset.
+
+It does not eliminate:
+
+- credit risk;
+- issuer risk;
+- fraud;
+- poor governance;
+- inaccurate valuations;
+- custody failures;
+- regulatory obligations; or
+- lack of market demand.
+
+A tokenized private loan can still default.
+
+A tokenized property can still be difficult to sell.
+
+A tokenized fund can still lose money.
+
+A smart contract can automate a process, but it cannot make the underlying economics disappear.
+
+## Does tokenization remove intermediaries?
+
+Sometimes it can reduce particular intermediaries or operational steps.
+
+But institutional tokenization often creates a different result: **intermediaries change roles**.
+
+Custodians may safeguard assets and digital keys.
+
+Banks may issue tokenized deposits.
+
+Transfer agents can maintain authoritative ownership functions.
+
+Oracle providers can supply external data.
+
+Interoperability providers can coordinate multiple networks.
+
+Market infrastructures can integrate blockchain technology into existing settlement systems.
+
+The financial system may become more programmable without becoming institution-free.
+
+## The hybrid transition
+
+This is perhaps the most important point.
+
+The transition to tokenized finance is unlikely to happen through a clean replacement of traditional markets.
+
+Instead, we are seeing a hybrid model emerge.
+
+Traditional assets connect to blockchain networks.
+
+Blockchain networks connect to banks.
+
+Banks connect tokenized deposits to existing payment rails.
+
+Central-bank systems connect to DLT platforms.
+
+Public and permissioned networks interact through interoperability infrastructure.
+
+This hybrid phase can look less revolutionary than replacing Wall Street with a blockchain.
+
+But from an infrastructure perspective, it may be far more realistic — and far more consequential.
+
+## The bigger picture
+
+Financial assets are moving onchain because institutions are testing whether programmable infrastructure can make markets **more integrated**.
+
+The objective is not merely to create digital versions of bonds, funds and deposits.
+
+Those assets are already digital.
+
+The deeper opportunity is to connect:
+
+**ownership + compliance + data + money + settlement**
+
+inside infrastructure that can coordinate those functions more directly.
+
+If tokenization succeeds, the biggest change may eventually become invisible to end users.
+
+Investors may still see funds, bonds and bank balances.
+
+Underneath them, however, the rails used to issue, transfer and settle those assets could look very different.
+
+That is why the movement of financial assets onchain is not primarily a crypto story.
+
+It is a **financial infrastructure story**.
+
+## Sources
+
+- Bank for International Settlements — *The next-generation monetary and financial system*, Annual Economic Report 2025
+- Bank for International Settlements / Financial Stability Institute — *Financial stability implications of tokenisation*, 2025
+- U.S. Securities and Exchange Commission — *Statement on Tokenized Securities*, January 28, 2026
+- European Central Bank / Eurosystem — work on tokenised finance, DLT settlement and Pontes
+- The Clearing House — On-Chain Money Initiative, September 2026
