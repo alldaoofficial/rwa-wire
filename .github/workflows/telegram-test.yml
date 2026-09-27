@@ -1,6 +1,10 @@
 name: RWA Wire Telegram Publisher
 
 on:
+  push:
+    paths:
+      - "publish/approved/*.json"
+
   workflow_dispatch:
     inputs:
       caption:
