@@ -41,7 +41,7 @@ jobs:
           echo "MANIFEST_PATH=$MANIFEST_PATH" >> "$GITHUB_ENV"
           export MANIFEST_PATH
           python3 - <<'PY'
-          import json, os, pathlib
+          import json, os, pathlib, urllib.request
           p = pathlib.Path(os.environ["MANIFEST_PATH"])
           if not str(p).startswith("publish/approved/") or p.suffix != ".json":
               raise SystemExit("Invalid approval manifest path.")
@@ -53,7 +53,7 @@ jobs:
           if marker.exists():
               raise SystemExit("This publish id has already been posted.")
           caption = str(post["caption"]).strip()
-          image_url = str(post["image_url"]).strip()
+          image_url = str(post["image_url"]).strip()\n          article_url = str(post.get("article_url", "")).strip()
           if not caption or len(caption) > 1024:
               raise SystemExit("Invalid Telegram caption.")
           if not image_url.startswith("https://"):
