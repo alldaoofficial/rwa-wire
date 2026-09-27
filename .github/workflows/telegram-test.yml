@@ -66,6 +66,9 @@ jobs:
               out.write("APPROVED_PUBLISH_ID=" + publish_id + "\n")
           PY
 
+      - name: Install visual renderer
+        run: python3 -m pip install --quiet cairosvg
+
       - name: Publish approved RWA Wire post
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -94,7 +97,11 @@ jobs:
           from io import BytesIO
 
           with urllib.request.urlopen(image_url) as response:
-              story = Image.open(BytesIO(response.read())).convert("RGB")
+              image_bytes = response.read()
+          if image_url.lower().split("?")[0].endswith(".svg"):
+              import cairosvg
+              image_bytes = cairosvg.svg2png(bytestring=image_bytes)
+          story = Image.open(BytesIO(image_bytes)).convert("RGB")
 
           partner = Image.open("public/images/partners/bitunix.jpg").convert("RGB")
           strip_h = max(120, int(story.height * 0.13))
