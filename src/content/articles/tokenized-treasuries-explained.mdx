@@ -1,28 +1,242 @@
 ---
 type: "EXPLAINER"
-category: "rwa"
+category: "tokenization"
 title: "Tokenized Treasuries Explained"
-description: "Tokenized U.S. Treasuries have become the largest category of real-world assets onchain. Here's how they work and why they've grown so quickly."
-pubDate: "2026-08-15"
-readingTime: "5 min read"
-tags: ["RWA", "Treasuries", "Yield"]
-relatedSlugs: ["what-are-real-world-assets", "tokenized-funds-explained", "stablecoins-vs-tokenized-deposits"]
+description: "How tokenized U.S. Treasury products work, why institutions use them, how structures differ, and what investors should understand about custody, liquidity and settlement."
+pubDate: "2026-09-27"
+readingTime: "9 min read"
+tags: ["Tokenized Treasuries", "RWA", "Tokenization", "Government Bonds"]
+relatedSlugs: ["what-is-tokenization", "what-are-real-world-assets", "how-does-asset-tokenization-work", "what-is-onchain-settlement"]
+showTradingCTA: false
 keyTakeaways:
-  - "Tokenized Treasury products typically wrap short-duration U.S. government debt inside a fund structure, then issue tokens representing fund shares."
-  - "They've become popular as a yield-bearing, onchain alternative to holding idle stablecoins."
-  - "Redemption terms, eligible investors and yield distribution mechanics vary meaningfully between issuers."
+  - "Tokenized Treasury products use blockchain infrastructure to represent exposure or legal rights connected to U.S. government securities."
+  - "The token itself is not necessarily a Treasury security; structures can involve fund shares, beneficial interests or other claims backed by Treasury assets."
+  - "Their appeal includes programmable ownership, digital distribution and the ability to connect low-risk traditional collateral with onchain markets."
+  - "Investors still face structural, issuer, custody, liquidity, technology and regulatory risks."
 ---
 
-Tokenized Treasuries are digital tokens representing shares in a fund that holds short-duration U.S. government debt — typically Treasury bills with maturities under a year. The fund structure is what makes the token a legal claim; the blockchain layer is what makes it transferable and, on some platforms, usable as collateral.
+Tokenized U.S. Treasuries have become one of the clearest examples of real-world assets moving onto blockchain infrastructure.
 
-## Why they've grown
+The basic idea is straightforward: investors gain digitally represented exposure to U.S. government securities or funds that hold them. But the phrase **“tokenized Treasury”** can describe several different legal and operational structures.
 
-Onchain participants — from trading desks to decentralized finance protocols — often hold significant balances in stablecoins, which by design earn no yield for the holder. Tokenized Treasuries offer a way to hold a similar, dollar-denominated, low-volatility instrument while earning a yield tied to prevailing short-term rates. That combination has made them one of the fastest-growing RWA categories by assets under management.
+Understanding those differences matters.
 
-## How they typically work
+A blockchain token might represent a share in a regulated fund holding Treasury bills. It might represent another form of beneficial interest or claim linked to government securities. In some structures, the security itself can be digitally issued or represented.
 
-An investor sends stablecoins or another accepted asset to the issuer, who uses the proceeds to purchase Treasuries inside the fund. The investor receives tokens representing their share of the fund. As the underlying Treasuries earn interest, that is reflected either through a growing token balance, a rising token price, or periodic distributions, depending on the issuer's structure.
+So a tokenized Treasury product should not automatically be understood as “a Treasury bill turned into a crypto token.”
 
-## What varies between issuers
+## Why Treasuries are a natural tokenization use case
 
-Not all tokenized Treasury products are alike. Redemption speed, minimum investment size, eligible investor categories (some are restricted to qualified or institutional investors), and which blockchains a token is available on all differ by issuer. Reading the fund's offering documents remains essential — the token wrapper does not change the underlying legal terms.
+U.S. Treasury securities have several characteristics that make them attractive for tokenized finance.
+
+They are widely used as high-quality liquid assets in traditional markets, have established pricing and market infrastructure, and can generate yield without requiring exposure to the economics of a crypto-native token.
+
+That makes them useful for testing a larger idea: can traditional financial assets become more programmable and easier to use within digital financial infrastructure?
+
+For institutions, the question extends beyond investment access. Government securities are fundamental to collateral, liquidity management and financial-market plumbing.
+
+Connecting them to programmable settlement infrastructure could therefore have consequences well beyond retail investment products.
+
+## What does a tokenized Treasury token actually represent?
+
+There is no single answer.
+
+### Tokenized fund shares
+
+One common structure involves a fund that owns short-term government securities, Treasury-related instruments and/or cash equivalents. Investors receive digital tokens representing shares or interests in that fund.
+
+In this case, the investor owns a fund interest according to the fund's legal documents — not an individual Treasury bill sitting directly in a blockchain wallet.
+
+### Tokenized securities
+
+A security can also be issued or represented directly using distributed-ledger infrastructure, depending on the legal and market structure.
+
+### Third-party representations
+
+A third party can create a token or instrument whose economics reference another security. This can introduce an additional layer of counterparty exposure.
+
+The SEC's 2026 taxonomy for tokenized securities highlights the importance of distinguishing issuer-sponsored tokenization from third-party tokenized products.
+
+The key question remains:
+
+**What legal right does the token give its holder?**
+
+## How tokenized Treasury products work
+
+A simplified structure can look like this:
+
+**1. Assets are acquired.**  
+A fund, issuer or other vehicle holds eligible government securities or related assets.
+
+**2. Legal ownership is defined.**  
+Offering documents determine what investors own and what redemption rights they have.
+
+**3. Investors are onboarded.**  
+Identity, jurisdiction and eligibility checks may apply.
+
+**4. Tokens are issued.**  
+Digital tokens represent the relevant fund shares, securities or claims.
+
+**5. Ownership is recorded on programmable infrastructure.**  
+Transfers can be subject to compliance rules encoded into the system.
+
+**6. Income is handled according to the product structure.**  
+Treasury income may be reflected through distributions, changes in token value or another mechanism.
+
+**7. Investors can redeem according to the applicable terms.**  
+Tokens may be burned or retired when the underlying claim is redeemed.
+
+The exact process differs significantly between products, which is why the legal documentation matters more than the label.
+
+## Why use a blockchain?
+
+If Treasury markets already work at enormous scale, why tokenize them?
+
+The potential benefits are mostly about **infrastructure**.
+
+### Digital distribution
+
+Tokenized products can integrate with digital platforms and wallets, potentially expanding the ways eligible investors access traditional assets.
+
+### Programmability
+
+Transfer restrictions, investor eligibility and transaction logic can be built into digital workflows.
+
+### Settlement integration
+
+Tokenized assets can potentially interact with tokenized forms of money, allowing the asset and payment sides of a transaction to become more closely coordinated.
+
+### Collateral mobility
+
+Government securities are important collateral in traditional finance. Representing them on compatible programmable infrastructure could make them easier to mobilize across digital financial applications.
+
+### Operational automation
+
+Issuance, transfer, servicing and reconciliation can potentially be streamlined when participants share compatible infrastructure.
+
+These benefits are not automatic. They depend on legal structure, interoperability and adoption across the financial system.
+
+## Tokenized Treasuries and stablecoins are different
+
+Both can bring traditional financial value into blockchain markets, but their economic roles differ.
+
+A fiat-backed stablecoin is generally designed to function as a stable digital payment or settlement instrument.
+
+A tokenized Treasury product is an investment or financial instrument whose value and return are linked to government securities or a vehicle holding them.
+
+That distinction matters when considering liquidity, redemption, yield, investor protections and how the asset can be used.
+
+In a mature tokenized market, the two may complement each other: one can serve as an asset, while another form of digital money can provide the settlement leg.
+
+## Why onchain investors care about Treasury yield
+
+Crypto markets historically relied heavily on crypto-native sources of yield, including lending, staking and liquidity incentives.
+
+Tokenized Treasury products create another possibility: digitally accessible exposure to yield generated by traditional government securities.
+
+That can be useful for treasury management and collateral strategies, but it does not make the product risk-free.
+
+The yield ultimately comes from the underlying financial structure, while the token adds additional operational and technological layers.
+
+## Why institutions care
+
+For institutions, tokenized government securities are potentially more important as **financial building blocks** than as standalone investment products.
+
+If tokenized securities can move efficiently between eligible institutions and settle against trusted digital money, they could be used in collateralized transactions, liquidity management and other wholesale financial workflows.
+
+The Bank for International Settlements has placed tokenized government bonds alongside central-bank reserves and commercial-bank money in its vision for next-generation programmable financial infrastructure.
+
+Central banks and market infrastructures are also testing how tokenized securities can settle in central-bank money — a key requirement for institutional-scale markets.
+
+## What are the risks?
+
+The credit risk of a short-term U.S. government security may be very different from the risks introduced by the tokenization structure surrounding it.
+
+### Structural risk
+
+The token may represent a fund share or contractual claim rather than direct ownership of a Treasury security.
+
+### Issuer and counterparty risk
+
+Investors may depend on an issuer, fund manager, administrator or other intermediary to maintain the product and process redemptions.
+
+### Custody risk
+
+The underlying assets must be held and accounted for correctly.
+
+### Smart-contract and wallet risk
+
+The digital representation introduces software, key-management and network risks that do not exist in the same form for conventional holdings.
+
+### Liquidity risk
+
+A token can technically transfer 24/7 while the underlying securities, redemption mechanisms or market makers operate on different schedules.
+
+### Regulatory risk
+
+The applicable rules depend on the product structure, investor location and jurisdiction.
+
+### Settlement mismatch
+
+An asset may exist onchain while its cash, custody or redemption processes remain partly offchain. That can limit some of the efficiency tokenization is intended to create.
+
+## Does tokenization make Treasuries trade 24/7?
+
+It can make the **token** transferable outside traditional market hours if the product and platform permit it.
+
+That does not necessarily mean the underlying Treasury market, fund administration, banking system or redemption process operates continuously.
+
+This distinction is important.
+
+A 24/7 digital interface does not automatically create 24/7 underlying liquidity or settlement finality.
+
+## What should investors check?
+
+Before evaluating a tokenized Treasury product, useful questions include:
+
+- What exactly does the token represent?
+- Who issued it?
+- Who holds the underlying assets?
+- What assets are actually held?
+- Who is eligible to own or transfer the token?
+- How are yield and distributions handled?
+- How does redemption work?
+- Which blockchain or ledger is used?
+- What happens if the platform, issuer or custodian fails?
+- Is secondary-market liquidity available?
+- Which laws and investor protections apply?
+
+These questions are more informative than simply comparing advertised yields.
+
+## Tokenized Treasuries as part of the RWA stack
+
+Tokenized government securities sit at the intersection of several themes RWA Wire follows:
+
+**Real-world assets** provide the underlying economic claim.
+
+**Tokenization** creates the programmable representation and transaction layer.
+
+**Digital money** provides the potential settlement asset.
+
+**Interoperability** connects different networks and institutions.
+
+**Regulation and legal structure** determine what ownership actually means.
+
+This is why tokenized Treasuries are such a useful case study. They show both the potential and the complexity of moving established financial instruments onto programmable infrastructure.
+
+## The bigger picture
+
+The long-term significance of tokenized Treasuries may not be that investors can buy government-bond exposure through a wallet.
+
+It may be that one of the world's most important forms of collateral becomes capable of interacting directly with programmable money and digital financial infrastructure.
+
+If that happens at scale, tokenized Treasuries could become a foundational component of onchain capital markets.
+
+But the technology is only one part of the transition. Legal rights, custody, liquidity, settlement and interoperability will determine whether the infrastructure actually works.
+
+## Sources
+
+- U.S. Securities and Exchange Commission — *Statement on Tokenized Securities*, January 28, 2026
+- Bank for International Settlements — *The next-generation monetary and financial system*, Annual Economic Report 2025
+- Bank for International Settlements / Financial Stability Institute — *Financial stability implications of tokenisation*, 2025
+- European Central Bank — work on settlement of DLT-based transactions in central-bank money
