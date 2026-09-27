@@ -1,28 +1,362 @@
 ---
 type: "EXPLAINER"
 category: "learn"
-title: "Stablecoins Explained"
-description: "Stablecoins are digital tokens designed to hold a stable value, usually pegged to a fiat currency. Here's how the major models work."
-pubDate: "2026-08-27"
-readingTime: "5 min read"
-tags: ["Stablecoins", "Fundamentals"]
-relatedSlugs: ["stablecoins-vs-tokenized-deposits", "cbdcs-vs-stablecoins", "what-is-programmable-money"]
+title: "Stablecoins Explained: How Digital Dollars Work"
+description: "A practical guide to stablecoins: how fiat-backed digital dollars work, what backs them, how redemption and reserves matter, and why they are becoming settlement infrastructure."
+pubDate: "2026-09-27"
+readingTime: "10 min read"
+tags: ["Stablecoins", "Digital Money", "Payments", "Settlement", "Tokenization"]
+relatedSlugs: ["stablecoins-vs-tokenized-deposits", "cbdcs-vs-stablecoins", "what-is-onchain-settlement", "tokenized-treasuries-explained"]
+showTradingCTA: false
 keyTakeaways:
-  - "Stablecoins aim to maintain a stable value, most commonly a 1:1 peg to the U.S. dollar."
-  - "Fiat-backed, reserve-holding stablecoins are the dominant model by market share today."
-  - "Reserve composition, redemption rights and issuer transparency are the key factors separating stablecoins in practice."
+  - "Stablecoins are digital tokens designed to maintain a stable value relative to a reference asset, most commonly a fiat currency such as the U.S. dollar."
+  - "Fiat-backed stablecoins depend on the issuer, reserve assets, custody arrangements and redemption mechanism that support the token."
+  - "Stablecoins have evolved from crypto trading infrastructure into an increasingly important payments and settlement layer."
+  - "A stable price does not eliminate issuer, reserve, liquidity, technology, regulatory or redemption risk."
 ---
 
-A stablecoin is a blockchain-based token designed to maintain a stable value relative to a reference asset, most commonly the U.S. dollar. Unlike volatile crypto assets, a stablecoin's core design goal is price stability, which makes it useful as a medium of exchange and a settlement asset within onchain markets.
+Stablecoins are one of the most important pieces of infrastructure connecting traditional money with blockchain networks.
 
-## The dominant model: fiat-backed reserves
+At first glance, the concept appears simple: create a digital token worth one U.S. dollar.
 
-The largest stablecoins by market capitalization are backed by reserves of cash and short-duration, high-quality assets like Treasury bills, held by the issuer and, in principle, redeemable one-for-one for the pegged currency. The credibility of this model rests on the quality of the reserves and the transparency of how they're reported and audited.
+But maintaining that value reliably — across billions of dollars of transactions, multiple blockchains, exchanges and market conditions — requires far more than attaching “USD” to a token.
 
-## Other models
+A stablecoin is ultimately a **monetary structure**.
 
-Some stablecoins use over-collateralized crypto reserves, locking a larger value of volatile crypto assets to back a smaller stablecoin issuance, with automated mechanisms to manage that collateral ratio. Algorithmic models that rely primarily on market incentives rather than collateral have proven considerably more fragile historically and represent a much smaller share of the market today.
+Understanding who issues it, what backs it, how redemption works and what legal claim the holder has is essential to understanding the asset itself.
 
-## Why they matter to tokenized finance
+## What is a stablecoin?
 
-Stablecoins function as the primary settlement asset across most tokenized markets — the "cash leg" used to buy and sell tokenized Treasuries, bonds and funds. Their reliability directly affects the reliability of the broader onchain financial system built on top of them.
+A stablecoin is a digital token designed to maintain a relatively stable value against a reference asset.
+
+The reference is most commonly a fiat currency such as the U.S. dollar, although stablecoins can theoretically reference other currencies or assets.
+
+The defining characteristic is not the blockchain on which the token exists. It is the mechanism intended to keep the token close to its reference value.
+
+Different stablecoins use very different mechanisms to achieve that goal.
+
+## Why do stablecoins exist?
+
+Public blockchain networks can move digital assets continuously, but traditional bank money does not natively operate inside those networks.
+
+Stablecoins bridge that gap.
+
+Instead of requiring a bank transfer every time users move between crypto assets and fiat-referenced value, stablecoins allow dollar-like units to circulate directly on blockchain infrastructure.
+
+This made them useful for:
+
+- trading;
+- payments;
+- cross-border transfers;
+- decentralized finance;
+- collateral;
+- treasury management; and
+- settlement between digital assets.
+
+Their role has since expanded beyond crypto trading.
+
+Stablecoins are increasingly being discussed as part of broader payment and tokenized-finance infrastructure.
+
+## How fiat-backed stablecoins work
+
+Consider a simplified fiat-backed stablecoin.
+
+**1. A user provides funds to the issuer or an authorized intermediary.**
+
+**2. The issuer creates the corresponding stablecoins.**
+
+**3. Reserve assets are held according to the product's structure.**
+
+**4. The tokens circulate on supported blockchain networks.**
+
+**5. Eligible holders can redeem according to the issuer's terms.**
+
+**6. Redeemed tokens are removed from circulation.**
+
+In principle, issuance and redemption help keep the market price close to the reference currency.
+
+If a stablecoin trades meaningfully above one dollar, market participants may have an incentive to create new tokens at par and sell them.
+
+If it trades below one dollar and reliable redemption remains available, eligible participants may buy discounted tokens and redeem them.
+
+This arbitrage mechanism depends heavily on confidence in redemption.
+
+## What backs a stablecoin?
+
+The answer depends on the product.
+
+Fiat-backed stablecoin reserves can include assets such as:
+
+- cash;
+- bank deposits;
+- short-term government securities;
+- repurchase agreements; and
+- other high-quality liquid assets permitted by the relevant structure.
+
+Reserve quality matters because holders expect the issuer to meet redemption requests.
+
+A stablecoin backed by liquid, transparent assets presents a different risk profile from one dependent on volatile collateral or opaque investments.
+
+The word **“backed”** should therefore lead to several follow-up questions:
+
+**Backed by what?**
+
+**Held by whom?**
+
+**For whose benefit?**
+
+**How quickly can the reserves become cash?**
+
+**What happens if the issuer fails?**
+
+## Stablecoin reserves vs tokenized Treasuries
+
+Stablecoin reserves and tokenized Treasury products can both involve U.S. government securities, but they serve different purposes.
+
+A stablecoin issuer may hold Treasury securities as reserve assets supporting a payment-oriented token.
+
+A tokenized Treasury product gives investors an investment exposure or legal interest connected to government securities or a vehicle holding them.
+
+The holder of a stablecoin does not automatically own the Treasury securities in the issuer's reserve portfolio.
+
+That distinction matters when assessing ownership, yield and risk.
+
+Read [Tokenized Treasuries Explained](/rwa-wire/tokenization/tokenized-treasuries-explained/) for the asset side of this relationship.
+
+## Do stablecoin holders receive the reserve yield?
+
+Not necessarily.
+
+If an issuer holds interest-bearing government securities in its reserve portfolio, those assets can generate income.
+
+Whether holders receive any of that economic benefit depends entirely on the stablecoin's structure.
+
+Many payment-oriented stablecoins are designed to remain worth approximately one unit of currency rather than pass reserve income directly to token holders.
+
+This creates a major difference between holding a stablecoin and holding a tokenized money-market or Treasury product.
+
+## Types of stablecoins
+
+“Stablecoin” is an umbrella term covering several designs.
+
+### Fiat-backed stablecoins
+
+These rely on an issuer and reserve assets intended to support redemption at or near par.
+
+This is the model most directly connected to traditional financial infrastructure.
+
+### Crypto-collateralized stablecoins
+
+These use crypto assets or tokenized assets as collateral, often with overcollateralization and automated liquidation mechanisms.
+
+Their stability depends on collateral value, protocol design and market liquidity.
+
+### Algorithmic designs
+
+Some systems attempt to maintain a target price through incentives, supply adjustments or linked tokens rather than fully liquid reserve assets.
+
+History has shown that these mechanisms can fail dramatically when confidence and market incentives break down.
+
+The label “stablecoin” therefore does not imply equal stability across designs.
+
+## Why redemption matters
+
+A stablecoin's market price can be influenced by exchanges and secondary-market liquidity, but the ability to redeem is fundamental to many fiat-backed models.
+
+Redemption creates a connection between the blockchain token and the offchain financial system.
+
+If market participants trust that eligible tokens can be converted into the reference currency at par, deviations from the target price can attract arbitrage.
+
+If redemption becomes uncertain, that anchor weakens.
+
+This is why issuer solvency, reserve liquidity, banking access and operational resilience can matter even when the token itself continues functioning normally onchain.
+
+## Why stablecoins can lose their peg
+
+A stablecoin can deviate from its target for several reasons.
+
+**Reserve concerns:** Markets may question whether sufficient high-quality assets exist.
+
+**Issuer or banking problems:** Access to reserve assets or payment infrastructure can become uncertain.
+
+**Liquidity stress:** Heavy selling can overwhelm available market liquidity.
+
+**Smart-contract or protocol failures:** Technical problems can damage confidence or impair functionality.
+
+**Collateral declines:** Crypto-backed structures can become undercollateralized.
+
+**Regulatory action:** Restrictions can affect issuance, redemption or market access.
+
+**Loss of confidence:** Stablecoins are monetary instruments; confidence in convertibility matters.
+
+A temporary market-price deviation does not always mean the structure has failed, but it signals that the mechanism maintaining parity is under pressure.
+
+## Stablecoins vs bank deposits
+
+A stablecoin is not automatically a bank deposit.
+
+A conventional commercial-bank deposit is a liability of the bank to its customer.
+
+A stablecoin is a claim or digital instrument governed by the stablecoin issuer's legal and reserve structure.
+
+This distinction affects regulation, redemption, insolvency treatment and potential protections.
+
+Banks are also developing **tokenized deposits**, which use programmable infrastructure while retaining the underlying commercial-bank liability.
+
+Read [Stablecoins vs Tokenized Deposits](/rwa-wire/learn/stablecoins-vs-tokenized-deposits/) for the full comparison.
+
+## Stablecoins vs CBDCs
+
+A central bank digital currency is a liability of a central bank.
+
+A privately issued stablecoin is not.
+
+That difference matters because the credit standing, legal framework and role in the monetary system are different.
+
+Wholesale central-bank digital money can be especially relevant to institutional settlement, while stablecoins have generally developed through private digital markets.
+
+The two can use similar technologies without being the same form of money.
+
+See [CBDCs vs Stablecoins](/rwa-wire/learn/cbdcs-vs-stablecoins/) for the deeper distinction.
+
+## Stablecoins as settlement infrastructure
+
+Stablecoins become particularly important when we stop thinking about them only as assets and start thinking about them as **transaction infrastructure**.
+
+A tokenized financial system needs a way to pay for tokenized assets.
+
+If a bond, fund share or other security can move on a blockchain but the cash side remains trapped in a separate banking process, the transaction still depends on disconnected systems.
+
+Stablecoins can provide an onchain cash leg.
+
+This allows programmable transactions in which digital money interacts directly with digital assets.
+
+The concept is closely related to **delivery versus payment (DvP)**, where asset delivery and payment are coordinated.
+
+Our guide [What Is Onchain Settlement?](/rwa-wire/learn/what-is-onchain-settlement/) explains why the cash leg is one of the most important parts of institutional tokenization.
+
+## Why stablecoins matter beyond crypto
+
+Stablecoins can move continuously across compatible blockchain networks and digital applications.
+
+That creates potential uses in:
+
+- international payments;
+- remittances;
+- merchant settlement;
+- institutional treasury operations;
+- digital securities;
+- machine-to-machine payments; and
+- programmable financial transactions.
+
+But blockchain availability does not mean the entire system operates without traditional finance.
+
+Stablecoin issuers still interact with banks, custodians, government securities markets and regulatory frameworks.
+
+The product is onchain. Much of the infrastructure supporting it remains connected to the conventional financial system.
+
+## The regulatory direction
+
+Stablecoin regulation is increasingly focused on the same questions that matter economically:
+
+- Who may issue them?
+- Which reserve assets are permitted?
+- How are reserves safeguarded?
+- What redemption rights do holders have?
+- What disclosures are required?
+- How are operational and financial risks managed?
+
+Different jurisdictions are taking different approaches.
+
+The European Union's Markets in Crypto-Assets framework created specific categories and requirements for asset-referenced and e-money tokens.
+
+In the United States, the GENIUS Act established a federal framework for payment stablecoins in 2025, including requirements around permitted issuers, reserves and redemption.
+
+The regulatory details matter because stablecoins increasingly sit between crypto infrastructure and the regulated monetary system.
+
+## Stablecoins and the “singleness of money”
+
+One concern raised by central banks is whether different privately issued forms of digital money can reliably exchange at par.
+
+In the traditional monetary system, users generally expect a dollar in one commercial bank to be worth the same as a dollar in another bank.
+
+This property is sometimes described as the **singleness of money**.
+
+A fragmented digital ecosystem containing many issuers, networks and redemption structures can challenge that expectation if instruments trade at different values or cannot move easily between systems.
+
+Interoperability and credible redemption therefore matter not only for convenience but for the monetary architecture itself.
+
+## Are stablecoins risk-free digital dollars?
+
+No.
+
+Even a stablecoin that has maintained its peg for years can carry several forms of risk.
+
+**Issuer risk** — the entity responsible for the token can fail operationally or financially.
+
+**Reserve risk** — assets supporting redemption can lose value or become inaccessible.
+
+**Custody risk** — reserve assets depend on banks, custodians and other intermediaries.
+
+**Liquidity risk** — market liquidity can disappear during stress.
+
+**Redemption risk** — holders may face restrictions, delays or eligibility requirements.
+
+**Technology risk** — smart contracts, blockchains, bridges and wallets can fail or be compromised.
+
+**Regulatory risk** — laws can alter how the token is issued, distributed or redeemed.
+
+**Network risk** — congestion, outages or governance problems can affect transfers.
+
+Stable value is a design objective, not a guarantee of zero risk.
+
+## Stablecoins in the RWA stack
+
+Stablecoins occupy an unusual position in tokenized finance.
+
+They can be considered real-world-connected digital assets because their value depends on offchain money and reserves.
+
+But their more important role may be as the **money layer** that allows other tokenized assets to transact.
+
+This creates a stack such as:
+
+**Tokenized asset**  
+↓  
+**Trading / transaction logic**  
+↓  
+**Stablecoin or other digital money**  
+↓  
+**Settlement**  
+↓  
+**Traditional banking and reserve infrastructure**
+
+That relationship explains why stablecoins, tokenized deposits, central-bank money and tokenized securities increasingly appear in the same institutional discussions.
+
+## The bigger picture
+
+Stablecoins began as a practical solution for moving fiat-referenced value around crypto markets.
+
+They are becoming something larger.
+
+As securities, funds, deposits and other assets move onto programmable infrastructure, the financial system needs forms of money capable of moving with them.
+
+Stablecoins are one answer.
+
+Tokenized bank deposits are another.
+
+Central-bank settlement infrastructure is a third.
+
+The long-term question is not simply whether stablecoins grow.
+
+It is **how different forms of digital money connect to each other and to tokenized financial assets while preserving redemption, legal certainty and monetary stability**.
+
+That is why stablecoins are no longer just a crypto-market story.
+
+They are becoming part of the infrastructure debate around the tokenized economy.
+
+## Sources
+
+- Bank for International Settlements — research on stablecoins, tokenisation and next-generation monetary systems
+- European Central Bank — analysis of stablecoins, tokenised finance and digital money
+- European Union — Markets in Crypto-Assets Regulation (MiCA)
+- U.S. Congress / federal law — GENIUS Act payment-stablecoin framework, 2025
