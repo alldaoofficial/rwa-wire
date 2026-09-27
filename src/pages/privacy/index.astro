@@ -2,36 +2,18 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 ---
-
-<BaseLayout
-  title="Privacy Policy"
-  description="RWA Wire's privacy policy covering what data we collect and how it's used."
->
+<BaseLayout title="Privacy Policy" description="Privacy information for visitors to RWA Wire.">
   <div class="wire-container max-w-content py-10 sm:py-14">
     <Breadcrumbs items={[{ label: "Privacy", href: "/privacy/" }]} />
     <h1 class="mt-4 font-serif text-3xl font-medium text-ink sm:text-4xl">Privacy Policy</h1>
-    <p class="mt-3 text-sm text-ink-muted">Last updated: placeholder — replace before launch.</p>
-
+    <p class="mt-3 text-sm text-ink-muted">Last updated: September 27, 2026</p>
     <div class="prose prose-invert prose-wire mt-8 max-w-none">
-      <p>
-        <strong>This is placeholder content.</strong> Replace it with a
-        privacy policy reviewed by qualified counsel before launch. It
-        should cover, at minimum:
-      </p>
-      <ul>
-        <li>What data RWA Wire collects (e.g. analytics, newsletter or Telegram sign-ups)</li>
-        <li>How that data is used and with whom it may be shared</li>
-        <li>Cookie and tracking technology usage</li>
-        <li>User rights regarding their data (access, deletion, opt-out) under applicable law</li>
-        <li>How to contact RWA Wire with privacy questions</li>
-      </ul>
-      <p>
-        Because this site is designed as a static site with no backend or
-        database by default, it does not collect personal data directly
-        unless analytics or third-party embeds (e.g. Telegram, a newsletter
-        provider) are added later — update this policy if and when those are
-        introduced.
-      </p>
+      <p>RWA Wire is currently a static website hosted through GitHub Pages. We do not currently operate user accounts, a newsletter database or an on-site payment system.</p>
+      <p>When you visit the site, the hosting provider and services reached through external links may process technical information such as IP addresses, browser information and request logs according to their own policies.</p>
+      <h2>External links</h2>
+      <p>RWA Wire links to third-party services, including Telegram and affiliate partners. When you follow an external link, the destination service's privacy practices apply.</p>
+      <h2>Changes</h2>
+      <p>This notice will be updated if RWA Wire adds analytics, newsletters, advertising, accounts or other services that change how data is processed.</p>
     </div>
   </div>
 </BaseLayout>
