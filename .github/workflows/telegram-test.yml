@@ -59,7 +59,16 @@ jobs:
               raise SystemExit("Invalid Telegram caption.")
           if not image_url.startswith("https://"):
               raise SystemExit("image_url must use HTTPS.")
-          if not article_url.startswith("https://therwawire.com/news/"):\n              raise SystemExit("A valid RWA Wire news article_url is required before Telegram publication.")\n          req = urllib.request.Request(article_url, headers={"User-Agent": "RWA-Wire-Publisher/1.0"})\n          try:\n              with urllib.request.urlopen(req, timeout=20) as response:\n                  if response.status != 200:\n                      raise SystemExit(f"Article URL returned HTTP {response.status}.")\n          except Exception as exc:\n              raise SystemExit(f"RWA Wire article is not live; Telegram publication blocked: {exc}")\n          with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as out:
+          if not article_url.startswith("https://therwawire.com/news/"):
+              raise SystemExit("A valid RWA Wire news article_url is required before Telegram publication.")
+          req = urllib.request.Request(article_url, headers={"User-Agent": "RWA-Wire-Publisher/1.0"})
+          try:
+              with urllib.request.urlopen(req, timeout=20) as response:
+                  if response.status != 200:
+                      raise SystemExit(f"Article URL returned HTTP {response.status}.")
+          except Exception as exc:
+              raise SystemExit(f"RWA Wire article is not live; Telegram publication blocked: {exc}")
+          with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as out:
               out.write("APPROVED_CAPTION<<RWAEOF\n" + caption + "\nRWAEOF\n")
               out.write("APPROVED_IMAGE_URL=" + image_url + "\n")
               out.write("APPROVED_PUBLISH_ID=" + publish_id + "\n")
