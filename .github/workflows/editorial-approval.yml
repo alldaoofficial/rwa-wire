@@ -1,0 +1,33 @@
+name: RWA Wire Editorial Approval
+
+on:
+  workflow_dispatch:
+    inputs:
+      candidate_path:
+        description: "Candidate manifest path (publish/candidates/*.json)"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  request-approval:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Send editorial approval card
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_REVIEW_CHAT_ID: ${{ secrets.TELEGRAM_REVIEW_CHAT_ID }}
+          CANDIDATE_PATH: ${{ inputs.candidate_path }}
+        run: |
+          python3 scripts/editorial_approval.py request "$CANDIDATE_PATH"
+
+  process-decision:
+    if: ${{ false }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Reserved for webhook-driven approval decisions."
