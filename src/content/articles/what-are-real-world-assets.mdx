@@ -1,26 +1,239 @@
 ---
 type: "EXPLAINER"
-category: "learn"
-title: "What Are Real-World Assets?"
-description: "Real-world assets, or RWAs, are off-chain assets brought onto a blockchain through tokenization. Here's what qualifies, and what doesn't."
-pubDate: "2026-08-06"
-readingTime: "4 min read"
-tags: ["RWA", "Fundamentals"]
-relatedSlugs: ["what-is-tokenization", "tokenized-treasuries-explained", "how-does-asset-tokenization-work"]
+category: "rwa"
+title: "What Are Real-World Assets (RWAs)?"
+description: "A practical guide to real-world assets in crypto and tokenized finance: what RWAs are, how they move onchain, major asset classes, benefits, risks and institutional use cases."
+pubDate: "2026-09-27"
+readingTime: "10 min read"
+tags: ["RWA", "Tokenization", "Institutional Finance", "Fundamentals"]
+relatedSlugs: ["what-is-tokenization", "how-does-asset-tokenization-work", "tokenized-treasuries-explained", "rwa-infrastructure-explained"]
+showTradingCTA: false
 keyTakeaways:
-  - "RWAs are traditional, off-chain assets — like Treasuries, real estate, credit or commodities — represented onchain via tokenization."
-  - "An RWA token derives its value from a legal claim on the underlying asset, not from the token itself."
-  - "RWA is now one of the largest growth categories in onchain finance, led by tokenized Treasuries and private credit."
+  - "Real-world assets are assets or financial claims whose economic value originates outside a blockchain and can be represented on programmable infrastructure."
+  - "RWAs can include government securities, bonds, funds, private credit, real estate, commodities and certain forms of money."
+  - "The token is only one layer: legal rights, custody, compliance, servicing and settlement determine what holders actually own."
+  - "Tokenization can improve financial infrastructure, but it does not automatically create liquidity or remove legal, credit and operational risk."
 ---
 
-Real-world assets, shortened to RWAs, refer to tangible or traditionally-structured financial assets — government debt, corporate bonds, real estate, private credit, commodities, invoices — that are represented onchain through a token.
+Real-world assets — usually shortened to **RWAs** — have become one of the most important categories in tokenized finance.
 
-An RWA token is not the asset itself. It's a digital claim, typically backed by a legal agreement, that entitles the holder to some right associated with the underlying asset: a share of income, a redemption right, or beneficial ownership. The legal structure connecting the token to the asset — a trust, a special purpose vehicle, a fund share class — is what makes the claim enforceable.
+The term sounds simple, but it is often used too loosely. An RWA is not merely a physical object that has been “put on a blockchain.” In modern financial markets, the category also includes traditional financial claims — such as government securities, fund interests, bonds, bank deposits and private credit — represented or issued using programmable digital infrastructure.
 
-## Common RWA categories
+A useful definition is therefore:
 
-Tokenized government debt, especially short-duration U.S. Treasuries, has become the largest and most liquid RWA category, used by both institutions and onchain protocols as a yield-bearing cash equivalent. Private credit — direct lending tokenized into onchain vehicles — has grown quickly as an alternative to bank lending. Real estate, trade finance, commodities and carbon credits make up smaller but growing segments.
+> **A real-world asset is an asset or financial claim whose economic value and legal rights originate outside a blockchain, but which can be represented, transferred or serviced using tokenized infrastructure.**
 
-## What RWAs are not
+That definition immediately separates RWAs from crypto-native assets such as Bitcoin, whose existence and ownership are native to their blockchain.
 
-RWAs are distinct from native crypto assets like ether or bitcoin, which have no off-chain legal claim behind them, and distinct from purely synthetic instruments that reference a price without any underlying legal ownership. The defining feature of an RWA is the legal bridge back to something that exists off-chain.
+## What counts as an RWA?
+
+The RWA category can cover many different asset classes.
+
+### Government securities
+
+Government bonds and Treasury securities are among the clearest institutional use cases. Their existing legal and financial structure can be combined with digital issuance, ownership records or settlement infrastructure.
+
+### Bonds and other debt
+
+Corporate, sovereign and supranational debt can be issued or represented using distributed-ledger technology. Tokenization can affect issuance, servicing, transfer and settlement without changing the fundamental fact that the instrument is debt.
+
+### Investment funds
+
+Shares or units in money-market funds and other investment vehicles can be represented as tokens. The token gives investors whatever rights are defined by the fund and its legal structure; it is not a substitute for that structure.
+
+### Private credit
+
+Loans and other private-credit claims can be represented onchain. This may improve administration or distribution, but the underlying borrower can still default. Tokenization does not remove credit risk.
+
+### Real estate
+
+Property-related tokens can represent interests in a company, fund or special-purpose vehicle that owns real estate, or another contractual claim connected to property. A token does not necessarily mean that its holder directly owns a fraction of a building.
+
+### Commodities
+
+Gold and other commodities can be represented through tokens linked to assets held by custodians. Here, custody and redemption arrangements are especially important.
+
+### Money and deposits
+
+Tokenized commercial-bank deposits and other forms of regulated money are increasingly part of the same infrastructure discussion because tokenized assets need a reliable settlement asset on the other side of a transaction.
+
+## How does an RWA get onchain?
+
+The phrase “bringing an asset onchain” can make the process sound easier than it is.
+
+A robust RWA structure normally has several layers.
+
+**1. The underlying asset exists.**  
+A bond is issued, cash is deposited, a property is owned, or a loan agreement creates a claim.
+
+**2. Legal rights are defined.**  
+The issuer must establish exactly what a token holder owns or can claim. This can be direct ownership, a security entitlement, a fund interest, a debt claim or another contractual right.
+
+**3. The asset or claim is represented digitally.**  
+Tokens are issued on a blockchain or another programmable ledger according to the chosen structure.
+
+**4. Custody and servicing connect the two worlds.**  
+For offchain assets, institutions may still be required to safeguard assets, maintain records, collect payments, manage redemptions or process corporate actions.
+
+**5. Compliance controls govern transfers.**  
+Institutional RWA systems can incorporate identity requirements, investor eligibility and transfer restrictions.
+
+**6. Settlement completes the transaction.**  
+The asset token ultimately needs to exchange against money. This is why tokenized deposits, central-bank money and other settlement mechanisms matter so much to institutional tokenization.
+
+For the full process, see [How Does Asset Tokenization Work?](/rwa-wire/learn/how-does-asset-tokenization-work/).
+
+## The token is not the legal structure
+
+This is the most important concept to understand about RWAs.
+
+A blockchain can record that a wallet holds a token. It cannot, by itself, determine whether that token gives the holder an enforceable claim on a Treasury security, a building or a pool of loans.
+
+That relationship is created through contracts, securities law, property law, custody arrangements and the issuer's structure.
+
+The U.S. Securities and Exchange Commission made a similar distinction in its 2026 taxonomy for tokenized securities. A security can be tokenized by or on behalf of its issuer, or a third party can create a tokenized instrument linked to another security. Those structures can give holders different rights.
+
+So when evaluating an RWA product, one of the first questions should be:
+
+**What exactly does the token holder legally own or have a claim against?**
+
+## Why put real-world assets onchain?
+
+The investment itself may remain familiar. The potential change lies in the infrastructure surrounding it.
+
+### Programmable ownership
+
+Tokens can interact with software rules governing transfers, eligibility and transaction workflows.
+
+### More integrated transactions
+
+Traditional markets often separate messaging, recordkeeping, reconciliation and settlement across different systems. The Bank for International Settlements has highlighted tokenization's potential to combine more of these functions on programmable platforms.
+
+### Faster settlement
+
+Where the asset and payment infrastructure are compatible, transactions may settle more quickly and with less reconciliation between separate ledgers.
+
+### Automation
+
+Smart contracts and programmable systems can automate parts of servicing, compliance and transaction processing.
+
+### Fractionalization and distribution
+
+Digital representation can make it technically easier to divide economic interests into smaller units and distribute them through digital platforms. That does not mean every fractional structure is legally or economically efficient.
+
+### Collateral mobility
+
+Assets represented on compatible infrastructure may eventually be easier to transfer or use as collateral across financial applications, provided the relevant legal and operational frameworks support it.
+
+## Why institutions are interested
+
+RWA tokenization is increasingly an institutional infrastructure topic rather than just a crypto-sector narrative.
+
+The Bank for International Settlements has described tokenization as a way of recording claims on real or financial assets on programmable platforms and has explored a financial architecture combining tokenized central-bank reserves, commercial-bank money and government bonds.
+
+Europe has moved from experimentation toward operational infrastructure. In September 2026, the Eurosystem launched **Pontes**, enabling wholesale transactions in tokenized assets to settle in central-bank money. The ECB also announced preparations to invest a small portion of its own funds in tokenized securities.
+
+In the United States, the SEC's 2026 work on tokenized securities has focused on how existing securities can be represented on crypto networks and how different tokenization structures affect investor rights.
+
+These developments matter because institutional adoption depends on more than creating tokens. It requires credible money, settlement, legal certainty and market infrastructure.
+
+## RWA vs tokenization: what is the difference?
+
+The terms overlap but are not interchangeable.
+
+**RWA describes what is being represented:** an offchain asset or traditional financial claim.
+
+**Tokenization describes the process or infrastructure:** representing rights or claims digitally on a programmable ledger.
+
+A Treasury security can therefore be an RWA, while tokenization is the mechanism used to represent or transact it digitally.
+
+Our guide [What Is Tokenization?](/rwa-wire/learn/what-is-tokenization/) explains that infrastructure layer in detail.
+
+## RWA vs crypto-native assets
+
+The distinction becomes clearer when comparing the source of the asset's value and rights.
+
+Bitcoin is crypto-native. Its ownership record and transfer mechanism exist on its blockchain.
+
+A tokenized Treasury security depends on a legal and financial instrument outside the blockchain. A tokenized property interest depends on ownership and contractual structures in the physical world. A tokenized bank deposit ultimately depends on a regulated bank's liability to its customer.
+
+This creates an important feature of RWAs: **onchain technology does not eliminate offchain dependencies.**
+
+## What are the risks of RWAs?
+
+RWAs can inherit risks from both traditional finance and blockchain infrastructure.
+
+**Legal and structural risk:** The token may not provide the rights an investor assumes it does.
+
+**Issuer and counterparty risk:** The institution responsible for issuing, redeeming or servicing the asset may fail.
+
+**Custody risk:** Assets held offchain depend on custody arrangements and accurate reconciliation with token supply.
+
+**Credit risk:** Tokenizing debt does not improve the borrower's ability to repay.
+
+**Liquidity risk:** A token can trade around the clock and still have few buyers or sellers.
+
+**Smart-contract and infrastructure risk:** Software errors, compromised keys, network failures and interoperability problems can affect tokenized systems.
+
+**Regulatory risk:** The legal treatment of tokenized assets differs by asset class and jurisdiction and continues to develop.
+
+**Valuation risk:** Assets such as private credit and real estate may remain difficult to price even when represented digitally.
+
+The BIS and other financial authorities have repeatedly noted that many expected efficiency and liquidity benefits remain dependent on scale, interoperability, sound regulation and robust infrastructure.
+
+## Does tokenization make an RWA more liquid?
+
+Not automatically.
+
+Liquidity comes from active buyers and sellers, market makers, transparent pricing, accessible venues and confidence in the asset.
+
+Tokenization can remove technical barriers to transfer and potentially broaden distribution. But turning an illiquid asset into a token does not create demand by itself.
+
+This distinction is particularly important for private markets and real estate, where the underlying asset may remain difficult to value or exit.
+
+## Are stablecoins RWAs?
+
+There is no single universal taxonomy.
+
+Some crypto-market datasets group fiat-backed stablecoins within the broader RWA ecosystem because their value is linked to offchain assets and issuer liabilities. Other frameworks separate stablecoins from tokenized securities and other RWAs because their economic function is primarily money and payments.
+
+For RWA Wire, the useful approach is to distinguish **tokenized assets** from **tokenized or digitally represented money**, while covering both because they increasingly interact within the same financial infrastructure.
+
+## The RWA stack
+
+A mature tokenized-asset market requires more than a blockchain.
+
+It can involve:
+
+- Asset issuers
+- Banks and payment infrastructure
+- Custodians
+- Transfer agents and administrators
+- Identity and compliance systems
+- Oracles and data providers
+- Smart-contract platforms
+- Trading venues
+- Settlement infrastructure
+- Legal and regulatory frameworks
+
+This is why RWA Wire treats tokenization as an **infrastructure transition**, not simply a new token category.
+
+## The bigger picture
+
+The most significant RWA developments may ultimately be the least visible to end users.
+
+If bonds, funds, deposits and collateral can move across programmable infrastructure while preserving legal certainty and trusted settlement, users may simply experience faster and more integrated financial services without thinking about the underlying ledger.
+
+The important question is therefore not whether “everything will become a token.”
+
+It is whether tokenization can improve the way real financial assets are **issued, owned, transferred, serviced and settled**.
+
+That is the RWA transition worth watching.
+
+## Sources
+
+- Bank for International Settlements — *The next-generation monetary and financial system*, Annual Economic Report 2025
+- Bank for International Settlements / Financial Stability Institute — *Financial stability implications of tokenisation*, 2025
+- U.S. Securities and Exchange Commission — *Statement on Tokenized Securities*, January 28, 2026
+- European Central Bank — *Towards an efficient and integrated digital capital market in Europe*, April 2026
+- European Central Bank — *Eurosystem brings central bank money to tokenised finance*, September 21, 2026
