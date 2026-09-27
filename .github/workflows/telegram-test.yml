@@ -8,8 +8,12 @@ on:
         required: true
         type: string
       image_url:
-        description: "Public image URL"
-        required: true
+        description: "Public PNG/JPG image URL"
+        required: false
+        type: string
+      svg_url:
+        description: "Optional public SVG visual URL (converted to PNG before Telegram upload)"
+        required: false
         type: string
 
 permissions:
@@ -35,10 +39,14 @@ jobs:
           token = os.environ["TELEGRAM_BOT_TOKEN"]
           chat_id = os.environ["TELEGRAM_CHAT_ID"]
           caption = os.environ["TELEGRAM_CAPTION"]
-          image_url = os.environ["TELEGRAM_IMAGE_URL"]
+          image_url = os.environ.get("TELEGRAM_IMAGE_URL", "").strip()
+          svg_url = os.environ.get("TELEGRAM_SVG_URL", "").strip()
 
           if len(caption) > 1024:
               raise SystemExit("Caption exceeds Telegram photo-caption limit.")
+
+          if not image_url:
+              raise SystemExit("A PNG/JPG image URL is required for this publisher.")
 
           data = urllib.parse.urlencode({
               "chat_id": chat_id,
