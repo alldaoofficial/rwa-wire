@@ -140,10 +140,10 @@ jobs:
           }
           body = bytearray()
           for key, value in fields.items():
-              body.extend(f"--{boundary}\r\nContent-Disposition: form-data; name="{key}"\r\n\r\n{value}\r\n".encode())
+              body.extend(f'--{boundary}\r\nContent-Disposition: form-data; name=\"{key}\"\r\n\r\n{value}\r\n'.encode())
           with open("telegram-branded.jpg", "rb") as fh:
               photo = fh.read()
-          body.extend(f"--{boundary}\r\nContent-Disposition: form-data; name="photo"; filename="rwa-wire.jpg"\r\nContent-Type: image/jpeg\r\n\r\n".encode())
+          body.extend(f'--{boundary}\r\nContent-Disposition: form-data; name=\"photo\"; filename=\"rwa-wire.jpg\"\r\nContent-Type: image/jpeg\r\n\r\n'.encode())
           body.extend(photo)
           body.extend(f"\r\n--{boundary}--\r\n".encode())
           req = urllib.request.Request(f"https://api.telegram.org/bot{token}/sendPhoto", data=bytes(body), method="POST")
