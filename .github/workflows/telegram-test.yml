@@ -27,12 +27,38 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        if: github.event_name == 'push'
+        uses: actions/checkout@v4
+
+      - name: Load approved manifest
+        if: github.event_name == 'push'
+        env:
+          MANIFEST_PATH: ${{ github.event.head_commit.added[0] }}
+        run: |
+          python3 - <<'PY'
+          import json, os, pathlib
+          p = pathlib.Path(os.environ["MANIFEST_PATH"])
+          if not str(p).startswith("publish/approved/") or p.suffix != ".json":
+              raise SystemExit("Invalid approval manifest path.")
+          post = json.loads(p.read_text(encoding="utf-8"))
+          caption = str(post["caption"]).strip()
+          image_url = str(post["image_url"]).strip()
+          if not caption or len(caption) > 1024:
+              raise SystemExit("Invalid Telegram caption.")
+          if not image_url.startswith("https://"):
+              raise SystemExit("image_url must use HTTPS.")
+          with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as out:
+              out.write("APPROVED_CAPTION<<RWAEOF\n" + caption + "\nRWAEOF\n")
+              out.write("APPROVED_IMAGE_URL=" + image_url + "\n")
+          PY
+
       - name: Publish approved RWA Wire post
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: "@RWAWireHQ"
-          TELEGRAM_CAPTION: ${{ inputs.caption }}
-          TELEGRAM_IMAGE_URL: ${{ inputs.image_url }}
+          TELEGRAM_CAPTION: ${{ github.event_name == 'push' && env.APPROVED_CAPTION || inputs.caption }}
+          TELEGRAM_IMAGE_URL: ${{ github.event_name == 'push' && env.APPROVED_IMAGE_URL || inputs.image_url }}
         run: |
           python3 - <<'PY'
           import json
@@ -44,7 +70,6 @@ jobs:
           chat_id = os.environ["TELEGRAM_CHAT_ID"]
           caption = os.environ["TELEGRAM_CAPTION"]
           image_url = os.environ.get("TELEGRAM_IMAGE_URL", "").strip()
-          svg_url = os.environ.get("TELEGRAM_SVG_URL", "").strip()
 
           if len(caption) > 1024:
               raise SystemExit("Caption exceeds Telegram photo-caption limit.")
