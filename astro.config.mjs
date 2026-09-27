@@ -2,8 +2,8 @@ import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
 
 export default defineConfig({
-  site: "https://alldaoofficial.github.io",
-  base: "/rwa-wire",
+  site: "https://therwawire.com",
+  base: "/",
   trailingSlash: "always",
 
   integrations: [
