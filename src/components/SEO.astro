@@ -20,8 +20,8 @@ const {
   noindex = false,
 } = Astro.props;
 
-const canonicalURL = new URL(Astro.url.pathname, SITE.url).toString();
-const imageURL = new URL(image, SITE.url).toString();
+const canonicalURL = new URL(Astro.url.pathname, `${SITE.url}${SITE.base}/`).toString();
+const imageURL = new URL(image, `${SITE.url}${SITE.base}/`).toString();
 const fullTitle = title === SITE.name ? title : `${title} | ${SITE.name}`;
 ---
 
@@ -41,7 +41,7 @@ const fullTitle = title === SITE.name ? title : `${title} | ${SITE.name}`;
 {modifiedTime && <meta property="article:modified_time" content={modifiedTime.toISOString()} />}
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content={SITE.twitterHandle} />
+{SITE.twitterHandle && <meta name="twitter:site" content={SITE.twitterHandle} />}
 <meta name="twitter:title" content={fullTitle} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={imageURL} />
