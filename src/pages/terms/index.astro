@@ -2,34 +2,15 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 ---
-
-<BaseLayout
-  title="Terms of Use"
-  description="Terms governing use of the RWA Wire website."
->
+<BaseLayout title="Terms of Use" description="Terms and general information governing use of RWA Wire.">
   <div class="wire-container max-w-content py-10 sm:py-14">
     <Breadcrumbs items={[{ label: "Terms", href: "/terms/" }]} />
     <h1 class="mt-4 font-serif text-3xl font-medium text-ink sm:text-4xl">Terms of Use</h1>
-    <p class="mt-3 text-sm text-ink-muted">Last updated: placeholder — replace before launch.</p>
-
+    <p class="mt-3 text-sm text-ink-muted">Last updated: September 27, 2026</p>
     <div class="prose prose-invert prose-wire mt-8 max-w-none">
-      <p>
-        <strong>This is placeholder content.</strong> Replace it with terms
-        of use reviewed by qualified counsel before launch. It should cover,
-        at minimum:
-      </p>
-      <ul>
-        <li>That content on RWA Wire is for informational purposes only and does not constitute investment, legal or tax advice</li>
-        <li>Intellectual property ownership over site content</li>
-        <li>Acceptable use of the site and its tools (including the calculators in the Tools section)</li>
-        <li>Disclaimers of warranty and limitation of liability</li>
-        <li>Governing law and jurisdiction</li>
-      </ul>
-      <p>
-        Every article and tool on this site is written to avoid financial
-        promises, guaranteed returns or investment recommendations — these
-        terms should formalize that editorial stance as a legal disclaimer.
-      </p>
+      <p>RWA Wire publishes news, research and educational information about digital assets, tokenization and financial infrastructure. Content is provided for general informational purposes and does not constitute personalized investment, financial, legal or tax advice.</p>
+      <p>While we aim for accuracy and may update or correct material, information can become outdated and we do not guarantee that every item is complete or error-free. Readers remain responsible for independently evaluating information before making financial decisions.</p>
+      <p>Third-party names, trademarks and services belong to their respective owners. External links are provided for convenience and do not place third-party services under RWA Wire's control.</p>
     </div>
   </div>
 </BaseLayout>
