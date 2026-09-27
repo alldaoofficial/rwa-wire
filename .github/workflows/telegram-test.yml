@@ -42,6 +42,12 @@ jobs:
           if not str(p).startswith("publish/approved/") or p.suffix != ".json":
               raise SystemExit("Invalid approval manifest path.")
           post = json.loads(p.read_text(encoding="utf-8"))
+          publish_id = str(post.get("id", p.stem)).strip()
+          if not publish_id or any(ch not in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_" for ch in publish_id):
+              raise SystemExit("Invalid publish id.")
+          marker = pathlib.Path("publish/posted") / (publish_id + ".json")
+          if marker.exists():
+              raise SystemExit("This publish id has already been posted.")
           caption = str(post["caption"]).strip()
           image_url = str(post["image_url"]).strip()
           if not caption or len(caption) > 1024:
@@ -51,6 +57,7 @@ jobs:
           with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as out:
               out.write("APPROVED_CAPTION<<RWAEOF\n" + caption + "\nRWAEOF\n")
               out.write("APPROVED_IMAGE_URL=" + image_url + "\n")
+              out.write("APPROVED_PUBLISH_ID=" + publish_id + "\n")
           PY
 
       - name: Publish approved RWA Wire post
