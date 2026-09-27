@@ -96,8 +96,6 @@ jobs:
           chat_id = os.environ["TELEGRAM_CHAT_ID"]
           caption = os.environ["TELEGRAM_CAPTION"].strip()
           affiliate_url = "https://www.bitunix.com/register?vipCode=0xcrlt"
-          footer = "\n\n────────────\n◼ BITUNIX // TRADING PARTNER\n" + affiliate_url + "\nAffiliate link · Trading involves risk."
-          caption = caption + footer
           image_url = os.environ.get("TELEGRAM_IMAGE_URL", "").strip()
 
           # Download the editorial visual and append a fixed Bitunix partner strip.
