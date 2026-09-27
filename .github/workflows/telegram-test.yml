@@ -88,29 +88,60 @@ jobs:
           caption = caption + footer
           image_url = os.environ.get("TELEGRAM_IMAGE_URL", "").strip()
 
+          # Download the editorial visual and append a fixed Bitunix partner strip.
+          # Pillow is available on the GitHub-hosted runner; the supplied affiliate
+          # brand asset lives in the repository so every post uses the same mark.
+          from PIL import Image, ImageDraw, ImageFont
+          from io import BytesIO
+
+          with urllib.request.urlopen(image_url) as response:
+              story = Image.open(BytesIO(response.read())).convert("RGB")
+
+          partner = Image.open("public/images/partners/bitunix.jpg").convert("RGB")
+          strip_h = max(120, int(story.height * 0.13))
+          canvas = Image.new("RGB", (story.width, story.height + strip_h), "#080A0D")
+          canvas.paste(story, (0, 0))
+          draw = ImageDraw.Draw(canvas)
+          draw.line((0, story.height, story.width, story.height), fill="#2ED47A", width=max(2, story.width // 500))
+
+          pad = max(24, story.width // 30)
+          label_font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", max(18, story.width // 45))
+          small_font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", max(14, story.width // 65))
+          draw.text((pad, story.height + strip_h * 0.28), "TRADING PARTNER", font=label_font, fill="#F5F7FA")
+          draw.text((pad, story.height + strip_h * 0.62), "Affiliate partnership · Trading involves risk", font=small_font, fill="#8B949E")
+
+          # Preserve the supplied Bitunix logo artwork and fit it into the right side.
+          logo_box_w = int(story.width * 0.28)
+          logo_box_h = int(strip_h * 0.72)
+          partner.thumbnail((logo_box_w, logo_box_h), Image.Resampling.LANCZOS)
+          x = story.width - pad - partner.width
+          y = story.height + (strip_h - partner.height) // 2
+          canvas.paste(partner, (x, y))
+          canvas.save("telegram-branded.jpg", "JPEG", quality=92, optimize=True)
+
           if len(caption) > 1024:
               raise SystemExit("Caption exceeds Telegram photo-caption limit.")
 
           if not image_url:
               raise SystemExit("A PNG/JPG image URL is required for this publisher.")
 
-          data = urllib.parse.urlencode({
+          import uuid
+          boundary = "----RWAWire" + uuid.uuid4().hex
+          fields = {
               "chat_id": chat_id,
-              "photo": image_url,
               "caption": caption,
-              "reply_markup": json.dumps({
-                  "inline_keyboard": [[{
-                      "text": "◼ Trade on Bitunix ↗",
-                      "url": affiliate_url
-                  }]]
-              }),
-          }).encode()
-
-          req = urllib.request.Request(
-              f"https://api.telegram.org/bot{token}/sendPhoto",
-              data=data,
-              method="POST",
-          )
+              "reply_markup": json.dumps({"inline_keyboard": [[{"text": "◼ Trade on Bitunix ↗", "url": affiliate_url}]])
+          }
+          body = bytearray()
+          for key, value in fields.items():
+              body.extend(f"--{boundary}\\r\\nContent-Disposition: form-data; name=\\\"{key}\\\"\\r\\n\\r\\n{value}\\r\\n".encode())
+          with open("telegram-branded.jpg", "rb") as fh:
+              photo = fh.read()
+          body.extend(f"--{boundary}\\r\\nContent-Disposition: form-data; name=\\\"photo\\\"; filename=\\\"rwa-wire.jpg\\\"\\r\\nContent-Type: image/jpeg\\r\\n\\r\\n".encode())
+          body.extend(photo)
+          body.extend(f"\\r\\n--{boundary}--\\r\\n".encode())
+          req = urllib.request.Request(f"https://api.telegram.org/bot{token}/sendPhoto", data=bytes(body), method="POST")
+          req.add_header("Content-Type", f"multipart/form-data; boundary={boundary}")
 
           with urllib.request.urlopen(req) as response:
               result = json.loads(response.read().decode())
