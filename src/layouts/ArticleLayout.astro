@@ -8,6 +8,7 @@ import TradingCTA from "@/components/TradingCTA.astro";
 import { CATEGORIES, SITE, type CategorySlug } from "@/config/site";
 import { getCollection, type CollectionEntry } from "astro:content";
 import { relationshipsFor } from "@/data/relationships";
+import PlainEnglish from "@/components/PlainEnglish.astro";
 
 interface Props {
   entry: CollectionEntry<"articles">;
@@ -190,6 +191,8 @@ const jsonLd = {
         />
       )
     }
+
+    <PlainEnglish />
 
     <div class="article-reading mx-auto prose prose-invert prose-wire mt-12 max-w-[720px] text-[17px]">
       <slot />
