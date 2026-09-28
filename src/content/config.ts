@@ -33,6 +33,8 @@ const articles = defineCollection({
       products: z.array(z.string()).default([]),
       status: z.string().default("Active"),
     }).optional(),
+    // Structured institution links used by the Intelligence Graph.
+    institutions: z.array(z.string()).default([]),
     // Slugs of related articles (must match the MDX filename without extension).
     relatedSlugs: z.array(z.string()).default([]),
     // Show the affiliate/trading CTA on this article. Off by default; only
