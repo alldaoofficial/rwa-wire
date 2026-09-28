@@ -4,18 +4,18 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 
 const projects=(await getCollection("articles",({data})=>!data.draft&&data.category==="projects"&&Boolean(data.projectMeta))).sort((a,b)=>a.data.title.localeCompare(b.data.title));
-const payload=projects.map(p=>({slug:p.slug,title:p.data.title,description:p.data.description,...p.data.projectMeta}));
+const payload=projects.map(p=>({slug:p.slug,title:p.data.title.replace(/ Explained$/,""),description:p.data.description,...p.data.projectMeta}));
 ---
 <BaseLayout title="Compare RWA Infrastructure" description="Compare the market role, asset exposure, networks and products of tokenization infrastructure projects.">
 <div class="wire-container py-10 sm:py-14">
   <Breadcrumbs items={[{label:"Projects",href:"/projects/"},{label:"Compare",href:"/projects/compare/"}]} />
   <div class="mt-4 border-b border-line pb-9"><p class="data-label text-wire">RWA Wire // Research Tool</p><h1 class="mt-3 font-serif text-4xl text-ink sm:text-5xl">Compare RWA infrastructure.</h1><p class="mt-4 max-w-2xl text-base leading-relaxed text-ink-muted">Compare structured project intelligence side by side. The tool describes different roles and infrastructure models; it does not rank projects or provide investment recommendations.</p></div>
   <section class="mt-8 grid gap-3 sm:grid-cols-2">
-    <label class="block"><span class="data-label">Project A</span><select id="compare-a" class="mt-2 w-full border border-line bg-bg px-4 py-3 text-sm text-ink outline-none focus:border-wire">{projects.map((p,i)=><option value={p.slug} selected={i===0}>{p.data.title}</option>)}</select></label>
+    <label class="block"><span class="data-label">Project A</span><select id="compare-a" class="mt-2 w-full border border-line bg-bg px-4 py-3 text-sm text-ink outline-none focus:border-wire">{projects.map((p,i)=><option value={p.slug} selected={i===0}>{p.data.title.replace(/ Explained$/,"")}</option>)}</select></label>
     <label class="block"><span class="data-label">Project B</span><select id="compare-b" class="mt-2 w-full border border-line bg-bg px-4 py-3 text-sm text-ink outline-none focus:border-wire">{projects.map((p,i)=><option value={p.slug} selected={i===1}>{p.data.title}</option>)}</select></label>
   </section>
   <section class="mt-8 overflow-x-auto border-y border-line">
-    <table class="w-full min-w-[680px] border-collapse text-left">
+    <table class="w-full min-w-[620px] border-collapse text-left">
       <thead><tr class="border-b border-line"><th class="w-40 py-5 pr-5 data-label">Intelligence field</th><th id="head-a" class="px-5 py-5 font-serif text-2xl text-ink">—</th><th id="head-b" class="border-l border-line px-5 py-5 font-serif text-2xl text-ink">—</th></tr></thead>
       <tbody id="comparison-body"></tbody>
     </table>
