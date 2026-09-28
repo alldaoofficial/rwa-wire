@@ -6,13 +6,13 @@ const assets = [
   { id: "polymesh", symbol: "POLYX" },
 ];
 ---
-<section class="border-b border-line bg-surface/60" aria-label="RWA market ticker">
-  <div class="wire-container flex min-h-11 items-center gap-5 overflow-x-auto py-2 [scrollbar-width:none]">
-    <div class="flex shrink-0 items-center gap-2 border-r border-line pr-5">
+<section class="border-b border-line bg-surface/60" aria-label="RWA ecosystem token ticker">
+  <div class="wire-container flex min-h-10 items-center gap-4 overflow-x-auto py-1.5 [scrollbar-width:none]">
+    <div class="flex shrink-0 items-center gap-2 border-r border-line pr-4">
       <span class="h-1.5 w-1.5 rounded-full bg-wire"></span>
-      <span class="text-[10px] font-semibold uppercase tracking-[.15em] text-wire">RWA Markets // Live</span>
+      <span class="text-[10px] font-semibold uppercase tracking-[.15em] text-wire">RWA Ecosystem // Live</span>
     </div>
-    <div id="rwa-market-ticker" class="flex items-center gap-6">
+    <div id="rwa-market-ticker" class="flex items-center gap-5">
       {assets.map((asset) => (
         <div class="flex shrink-0 items-baseline gap-2" data-market={asset.id}>
           <span class="text-[11px] font-semibold tracking-[.08em] text-ink">{asset.symbol}</span>
