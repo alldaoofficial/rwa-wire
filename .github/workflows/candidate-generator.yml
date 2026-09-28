@@ -55,7 +55,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/content/articles public/images/news publish/candidates
+          git add -A
           git diff --cached --quiet && { echo "Nothing generated"; exit 1; }
           git commit -m "Generate RWA Wire story candidate"
           git pull --rebase origin main
