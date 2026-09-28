@@ -3,8 +3,19 @@
   <url><loc>https://therwawire.com/</loc></url>
   <url><loc>https://therwawire.com/about/</loc></url>
   <url><loc>https://therwawire.com/affiliate-disclosure/</loc></url>
+  <url><loc>https://therwawire.com/assets/</loc></url>
+  <url><loc>https://therwawire.com/assets/benji/</loc></url>
+  <url><loc>https://therwawire.com/assets/buidl/</loc></url>
+  <url><loc>https://therwawire.com/assets/jpm-coin/</loc></url>
   <url><loc>https://therwawire.com/contact/</loc></url>
+  <url><loc>https://therwawire.com/glossary/</loc></url>
   <url><loc>https://therwawire.com/institutions/</loc></url>
+  <url><loc>https://therwawire.com/institutions/intelligence/</loc></url>
+  <url><loc>https://therwawire.com/institutions/intelligence/blackrock/</loc></url>
+  <url><loc>https://therwawire.com/institutions/intelligence/dtcc/</loc></url>
+  <url><loc>https://therwawire.com/institutions/intelligence/franklin-templeton/</loc></url>
+  <url><loc>https://therwawire.com/institutions/intelligence/jpmorgan/</loc></url>
+  <url><loc>https://therwawire.com/institutions/intelligence/securitize/</loc></url>
   <url><loc>https://therwawire.com/institutions/the-companies-building-tokenized-finance/</loc></url>
   <url><loc>https://therwawire.com/learn/</loc></url>
   <url><loc>https://therwawire.com/learn/how-does-asset-tokenization-work/</loc></url>
@@ -14,15 +25,30 @@
   <url><loc>https://therwawire.com/learn/what-is-onchain-settlement/</loc></url>
   <url><loc>https://therwawire.com/learn/what-is-programmable-money/</loc></url>
   <url><loc>https://therwawire.com/learn/what-is-tokenization/</loc></url>
+  <url><loc>https://therwawire.com/map/</loc></url>
   <url><loc>https://therwawire.com/markets/</loc></url>
   <url><loc>https://therwawire.com/markets/tokenized-treasuries-market-update/</loc></url>
   <url><loc>https://therwawire.com/news/</loc></url>
   <url><loc>https://therwawire.com/news/ark-invest-tokenizes-ark-venture-fund-through-securitize/</loc></url>
   <url><loc>https://therwawire.com/news/canada-six-banks-tokenized-deposits/</loc></url>
+  <url><loc>https://therwawire.com/news/franklin-templeton-turns-686m-tokenized-fund-shares-into-bybit-collateral/</loc></url>
   <url><loc>https://therwawire.com/news/the-clearing-house-quant-on-chain-money/</loc></url>
   <url><loc>https://therwawire.com/news/uk-banks-live-tokenised-sterling-deposits/</loc></url>
   <url><loc>https://therwawire.com/privacy/</loc></url>
   <url><loc>https://therwawire.com/projects/</loc></url>
+  <url><loc>https://therwawire.com/projects/backed-explained/</loc></url>
+  <url><loc>https://therwawire.com/projects/centrifuge-explained/</loc></url>
+  <url><loc>https://therwawire.com/projects/chainlink-and-tokenization-explained/</loc></url>
+  <url><loc>https://therwawire.com/projects/compare/</loc></url>
+  <url><loc>https://therwawire.com/projects/figure-explained/</loc></url>
+  <url><loc>https://therwawire.com/projects/goldfinch-explained/</loc></url>
+  <url><loc>https://therwawire.com/projects/maple-finance-explained/</loc></url>
+  <url><loc>https://therwawire.com/projects/ondo-finance-explained/</loc></url>
+  <url><loc>https://therwawire.com/projects/plume-network-explained/</loc></url>
+  <url><loc>https://therwawire.com/projects/polymesh-explained/</loc></url>
+  <url><loc>https://therwawire.com/projects/quant-network-explained/</loc></url>
+  <url><loc>https://therwawire.com/projects/securitize-explained/</loc></url>
+  <url><loc>https://therwawire.com/projects/superstate-explained/</loc></url>
   <url><loc>https://therwawire.com/rwa/</loc></url>
   <url><loc>https://therwawire.com/rwa/rwa-infrastructure-explained/</loc></url>
   <url><loc>https://therwawire.com/rwa/tokenized-bonds-explained/</loc></url>
@@ -39,4 +65,10 @@
   <url><loc>https://therwawire.com/tools/position-size-calculator/</loc></url>
   <url><loc>https://therwawire.com/tools/risk-reward-calculator/</loc></url>
   <url><loc>https://therwawire.com/tools/trading-fee-calculator/</loc></url>
+  <url><loc>https://therwawire.com/topics/</loc></url>
+  <url><loc>https://therwawire.com/topics/institutional-tokenization/</loc></url>
+  <url><loc>https://therwawire.com/topics/private-credit/</loc></url>
+  <url><loc>https://therwawire.com/topics/real-world-assets/</loc></url>
+  <url><loc>https://therwawire.com/topics/tokenized-securities/</loc></url>
+  <url><loc>https://therwawire.com/topics/tokenized-treasuries/</loc></url>
 </urlset>

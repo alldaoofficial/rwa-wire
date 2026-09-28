@@ -159,6 +159,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"backed-explained.mdx": {
+	id: "backed-explained.mdx";
+  slug: "backed-explained";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "canada-six-banks-tokenized-deposits.mdx": {
 	id: "canada-six-banks-tokenized-deposits.mdx";
   slug: "canada-six-banks-tokenized-deposits";
@@ -194,6 +201,27 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"figure-explained.mdx": {
+	id: "figure-explained.mdx";
+  slug: "figure-explained";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
+"franklin-templeton-turns-686m-tokenized-fund-shares-into-bybit-collateral.mdx": {
+	id: "franklin-templeton-turns-686m-tokenized-fund-shares-into-bybit-collateral.mdx";
+  slug: "franklin-templeton-turns-686m-tokenized-fund-shares-into-bybit-collateral";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
+"goldfinch-explained.mdx": {
+	id: "goldfinch-explained.mdx";
+  slug: "goldfinch-explained";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "how-does-asset-tokenization-work.mdx": {
 	id: "how-does-asset-tokenization-work.mdx";
   slug: "how-does-asset-tokenization-work";
@@ -201,9 +229,30 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"maple-finance-explained.mdx": {
+	id: "maple-finance-explained.mdx";
+  slug: "maple-finance-explained";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "ondo-finance-explained.mdx": {
 	id: "ondo-finance-explained.mdx";
   slug: "ondo-finance-explained";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
+"plume-network-explained.mdx": {
+	id: "plume-network-explained.mdx";
+  slug: "plume-network-explained";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
+"polymesh-explained.mdx": {
+	id: "polymesh-explained.mdx";
+  slug: "polymesh-explained";
   body: string;
   collection: "articles";
   data: InferEntrySchema<"articles">
@@ -218,6 +267,13 @@ declare module 'astro:content' {
 "rwa-infrastructure-explained.mdx": {
 	id: "rwa-infrastructure-explained.mdx";
   slug: "rwa-infrastructure-explained";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
+"securitize-explained.mdx": {
+	id: "securitize-explained.mdx";
+  slug: "securitize-explained";
   body: string;
   collection: "articles";
   data: InferEntrySchema<"articles">
@@ -239,6 +295,13 @@ declare module 'astro:content' {
 "stablecoins-vs-tokenized-deposits.mdx": {
 	id: "stablecoins-vs-tokenized-deposits.mdx";
   slug: "stablecoins-vs-tokenized-deposits";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
+"superstate-explained.mdx": {
+	id: "superstate-explained.mdx";
+  slug: "superstate-explained";
   body: string;
   collection: "articles";
   data: InferEntrySchema<"articles">
