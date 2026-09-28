@@ -1,0 +1,14 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+const topics=[
+["Real-World Assets","/topics/real-world-assets/","Asset classes, legal structures and RWA infrastructure."],
+["Tokenized Treasuries","/topics/tokenized-treasuries/","Treasury-backed funds, market structure and onchain collateral."],
+["Tokenized Securities","/topics/tokenized-securities/","Equities, bonds, funds and regulated digital securities."],
+["Private Credit","/topics/private-credit/","Onchain lending and private-credit infrastructure."],
+["Institutional Tokenization","/topics/institutional-tokenization/","Banks, asset managers, deposits and settlement infrastructure."]
+];
+---
+<BaseLayout title="RWA Intelligence Topics" description="Explore RWA Wire research by major real-world asset and tokenization themes.">
+<div class="wire-container py-10 sm:py-14"><Breadcrumbs items={[{label:"Topics",href:"/topics/"}]} /><header class="mt-5 border-b border-line pb-9"><p class="data-label text-wire">RWA Wire // Research Map</p><h1 class="mt-3 font-serif text-4xl text-ink sm:text-5xl">Intelligence by topic.</h1><p class="mt-4 max-w-2xl text-base leading-relaxed text-ink-muted">Navigate the tokenized economy through connected research, market coverage and project intelligence.</p></header><div class="mt-8 grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-3">{topics.map(([title,href,desc],i)=><a href={href} class="group bg-bg p-6 hover:bg-surface"><p class="font-mono text-[10px] text-wire">0{i+1}</p><h2 class="mt-3 font-serif text-2xl text-ink group-hover:text-wire">{title}</h2><p class="mt-3 text-sm leading-relaxed text-ink-muted">{desc}</p><p class="mt-5 text-[10px] uppercase tracking-[.1em] text-wire">Explore intelligence →</p></a>)}</div></div>
+</BaseLayout>
