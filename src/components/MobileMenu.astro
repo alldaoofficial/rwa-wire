@@ -36,9 +36,10 @@ function isActive(href: string) {
   </summary>
 
   <nav
-    class="fixed inset-x-0 top-[94px] z-40 h-[calc(100dvh-94px)] overflow-y-auto border-t border-line bg-bg/98 px-5 py-6 backdrop-blur-xl"
+    class="fixed inset-x-0 top-[94px] z-[60] h-[calc(100dvh-94px)] overflow-y-auto border-t border-line bg-[#080A0D] px-5 py-6 shadow-2xl"
     aria-label="Mobile"
   >
+    <div class="mb-5 flex items-center justify-between border-b border-line pb-4"><p class="text-[10px] font-semibold uppercase tracking-[.16em] text-wire">RWA Wire // Navigation</p><p class="text-[10px] uppercase tracking-[.1em] text-ink-muted">Menu</p></div>
     <ul class="flex flex-col divide-y divide-line">
       {
         NAV_LINKS.map((link) => (
@@ -61,7 +62,7 @@ function isActive(href: string) {
       href={TELEGRAM_URL}
       target="_blank"
       rel="noopener noreferrer"
-      class="mt-6 flex w-full items-center justify-center rounded border border-wire/40 bg-wire-soft px-4 py-3 text-sm font-semibold text-wire"
+      class="mt-7 flex w-full items-center justify-center border border-wire bg-wire-soft px-4 py-3 text-[11px] font-semibold uppercase tracking-[.1em] text-wire"
     >
       Telegram
     </a>
