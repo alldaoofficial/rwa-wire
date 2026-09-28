@@ -1,24 +1,33 @@
 ---
-/** Privacy-friendly first-party interaction measurement.
- * No cookies, fingerprinting or personal identifiers. Events are sent only when
- * PUBLIC_ANALYTICS_ENDPOINT is configured at build time.
+/**
+ * RWA Wire growth instrumentation.
+ * Cloudflare Web Analytics measures page traffic and paths. Custom events remain
+ * optional because Cloudflare Web Analytics does not currently accept them.
+ * If PUBLIC_ANALYTICS_ENDPOINT is configured later, the same interaction layer
+ * can forward privacy-friendly first-party events without changing components.
  */
 const endpoint = import.meta.env.PUBLIC_ANALYTICS_ENDPOINT || "";
 ---
-{endpoint && <script is:inline define:vars={{ endpoint }}>
+<script is:inline define:vars={{ endpoint }}>
 (() => {
-  const send = (event, target = "") => {
-    const payload = JSON.stringify({ event, path: location.pathname, target, referrer: document.referrer ? new URL(document.referrer).hostname : "", ts: new Date().toISOString() });
-    if (navigator.sendBeacon) navigator.sendBeacon(endpoint, new Blob([payload], {type:"application/json"}));
-    else fetch(endpoint,{method:"POST",headers:{"content-type":"application/json"},body:payload,keepalive:true}).catch(()=>{});
+  const classify = (href) => {
+    if (href.includes("t.me/RWAWireHQ")) return ["telegram_click","telegram"];
+    if (href.startsWith("/topics/")) return ["topic_click",href];
+    if (href.startsWith("/projects/")) return ["project_click",href];
+    return null;
   };
   document.addEventListener("click", e => {
     const a = e.target.closest("a");
     if (!a) return;
-    const href = a.getAttribute("href") || "";
-    if (href.includes("t.me/RWAWireHQ")) send("telegram_click","telegram");
-    else if (href.startsWith("/topics/")) send("topic_click",href);
-    else if (href.startsWith("/projects/")) send("project_click",href);
+    const hit = classify(a.getAttribute("href") || "");
+    if (!hit || !endpoint) return;
+    const payload = JSON.stringify({
+      event: hit[0], path: location.pathname, target: hit[1],
+      referrer: document.referrer ? new URL(document.referrer).hostname : "",
+      ts: new Date().toISOString()
+    });
+    if (navigator.sendBeacon) navigator.sendBeacon(endpoint,new Blob([payload],{type:"application/json"}));
+    else fetch(endpoint,{method:"POST",headers:{"content-type":"application/json"},body:payload,keepalive:true}).catch(()=>{});
   });
 })();
-</script>}
+</script>
