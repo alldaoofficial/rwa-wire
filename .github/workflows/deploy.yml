@@ -35,6 +35,40 @@ jobs:
       - name: Build Astro site
         run: npm run build
 
+      - name: Verify generated pages and assets
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re, sys
+
+          dist = Path("dist")
+          pages = list(dist.rglob("*.html"))
+          if not pages:
+              sys.exit("No generated HTML pages found")
+
+          missing = []
+          css_links = 0
+          for page in pages:
+              html = page.read_text(encoding="utf-8")
+              for href in re.findall(r'href=["\']([^"\']+\.css(?:\?[^"\']*)?)["\']', html):
+                  css_links += 1
+                  clean = href.split("?", 1)[0]
+                  if clean.startswith("/"):
+                      asset = dist / clean.lstrip("/")
+                  else:
+                      asset = page.parent / clean
+                  if not asset.exists() or asset.stat().st_size == 0:
+                      missing.append(f"{page}: {href}")
+
+          if css_links == 0:
+              sys.exit("No CSS references found in generated HTML")
+          if missing:
+              print("\n".join(missing))
+              sys.exit(f"{len(missing)} generated CSS asset reference(s) are missing")
+
+          print(f"Verified {len(pages)} HTML pages and {css_links} CSS references.")
+          PY
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
