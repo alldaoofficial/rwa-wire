@@ -16,11 +16,11 @@ export const SITE = {
   url: "https://therwawire.com",
   base: "/",
   locale: "en_US",
-  twitterHandle: "",
+  twitterHandle: "@RWAWireHQ",
 };
 
 export const TELEGRAM_URL = "https://t.me/RWAWireHQ";
-export const X_URL = "";
+export const X_URL = "https://x.com/RWAWireHQ";
 
 export const AFFILIATE_PARTNER_NAME = "Bitunix";
 export const AFFILIATE_URL = "https://www.bitunix.com/register?vipCode=0xcrlt";
