@@ -1,0 +1,55 @@
+---
+const assets = [
+  { id: "ondo-finance", symbol: "ONDO", name: "Ondo", segment: "Tokenized securities" },
+  { id: "chainlink", symbol: "LINK", name: "Chainlink", segment: "Oracle infrastructure" },
+  { id: "centrifuge", symbol: "CFG", name: "Centrifuge", segment: "RWA credit infrastructure" },
+  { id: "polymesh", symbol: "POLYX", name: "Polymesh", segment: "Regulated asset infrastructure" },
+];
+---
+<section class="mt-10 border-y border-line">
+  <div class="flex flex-col gap-3 border-b border-line py-5 sm:flex-row sm:items-end sm:justify-between">
+    <div><p class="data-label text-wire">RWA Markets // Live intelligence</p><h2 class="mt-2 font-serif text-2xl text-ink sm:text-3xl">Tokenization market watch</h2></div>
+    <div class="text-left sm:text-right"><p id="markets-updated" class="data-label">Loading market data</p><p class="mt-1 text-[10px] text-ink-muted">USD · 24H market data</p></div>
+  </div>
+  <div class="overflow-x-auto">
+    <table class="w-full min-w-[760px] border-collapse text-left">
+      <thead><tr class="border-b border-line text-[10px] uppercase tracking-[.13em] text-ink-muted">
+        <th class="py-4 pr-5 font-medium">Asset</th><th class="px-5 py-4 font-medium">Segment</th><th class="px-5 py-4 text-right font-medium">Price</th><th class="px-5 py-4 text-right font-medium">24H</th><th class="px-5 py-4 text-right font-medium">Market cap</th><th class="py-4 pl-5 text-right font-medium">24H volume</th>
+      </tr></thead>
+      <tbody id="rwa-market-table">
+        {assets.map((a) => <tr class="border-b border-line/70" data-market-row={a.id}>
+          <td class="py-5 pr-5"><span class="font-semibold text-ink">{a.symbol}</span><span class="ml-2 text-xs text-ink-muted">{a.name}</span></td>
+          <td class="px-5 py-5 text-xs text-ink-muted">{a.segment}</td>
+          <td class="market-price px-5 py-5 text-right font-mono text-sm text-ink">—</td>
+          <td class="market-change px-5 py-5 text-right font-mono text-xs text-ink-muted">—</td>
+          <td class="market-cap px-5 py-5 text-right font-mono text-xs text-ink-muted">—</td>
+          <td class="market-volume py-5 pl-5 text-right font-mono text-xs text-ink-muted">—</td>
+        </tr>)}
+      </tbody>
+    </table>
+  </div>
+  <div class="flex flex-col gap-2 py-4 text-[10px] text-ink-muted sm:flex-row sm:justify-between">
+    <p>Market data is informational and may be delayed or unavailable.</p><p>Source: CoinGecko · Auto-refresh 60s</p>
+  </div>
+</section>
+<script>
+  const ids = ["ondo-finance","chainlink","centrifuge","polymesh"];
+  const endpoint = "https://api.coingecko.com/api/v3/simple/price?ids="+ids.join(",")+"&vs_currencies=usd&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true&include_last_updated_at=true";
+  const money=(n:number)=>n>=1e9?"$"+(n/1e9).toFixed(2)+"B":n>=1e6?"$"+(n/1e6).toFixed(1)+"M":n>=1e3?"$"+(n/1e3).toFixed(1)+"K":"$"+n.toFixed(2);
+  const price=(n:number)=>n>=100?"$"+n.toLocaleString(undefined,{maximumFractionDigits:2}):n>=1?"$"+n.toFixed(2):"$"+n.toFixed(4);
+  async function loadMarkets(){
+    const updated=document.getElementById("markets-updated");
+    try{
+      const res=await fetch(endpoint,{headers:{accept:"application/json"}}); if(!res.ok) throw new Error();
+      const data=await res.json(); let freshest=0;
+      ids.forEach(id=>{const d=data[id],row=document.querySelector<HTMLElement>(`[data-market-row="${id}"]`);if(!d||!row)return;
+        const set=(s:string,v:string)=>{const e=row.querySelector<HTMLElement>(s);if(e)e.textContent=v};
+        set(".market-price",price(d.usd)); set(".market-cap",money(d.usd_market_cap)); set(".market-volume",money(d.usd_24h_vol));
+        const ch=d.usd_24h_change,el=row.querySelector<HTMLElement>(".market-change"); if(el){el.textContent=Number.isFinite(ch)?(ch>=0?"+":"")+ch.toFixed(2)+"%":"—";el.className="market-change px-5 py-5 text-right font-mono text-xs "+(ch>=0?"text-wire":"text-red-400")}
+        freshest=Math.max(freshest,d.last_updated_at||0);
+      });
+      if(updated) updated.textContent=freshest?"Updated "+new Date(freshest*1000).toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"}):"Market data live";
+    }catch{if(updated)updated.textContent="Market data unavailable"}
+  }
+  loadMarkets(); window.setInterval(loadMarkets,60000);
+</script>
