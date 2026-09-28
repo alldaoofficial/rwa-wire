@@ -24,7 +24,7 @@ const assets = [
     <span id="market-status" class="ml-auto shrink-0 text-[9px] uppercase tracking-[.1em] text-ink-muted">Loading</span>
   </div>
 </section>
-<script is:inline>
+<script is:inline define:vars={{}}>
 (() => {
   const ids = ["ondo-finance","chainlink","centrifuge","polymesh"];
   const endpoint = "https://api.coingecko.com/api/v3/simple/price?ids=" + ids.join(",") + "&vs_currencies=usd&include_24hr_change=true";
