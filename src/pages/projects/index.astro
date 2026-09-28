@@ -1,0 +1,31 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import ArticleCard from "@/components/ArticleCard.astro";
+import { sitePath } from "@/utils/paths";
+
+const projects=(await getCollection("articles",({data})=>!data.draft&&data.category==="projects")).sort((a,b)=>b.data.pubDate.valueOf()-a.data.pubDate.valueOf());
+const all=(await getCollection("articles",({data})=>data.category==="projects")).sort((a,b)=>a.data.title.localeCompare(b.data.title));
+const segments=[
+  ["Tokenized securities","Issuers and platforms bringing funds, Treasuries and securities onchain."],
+  ["Credit infrastructure","Protocols connecting private credit and structured assets with digital markets."],
+  ["Interoperability","Networks linking blockchains, data and traditional financial infrastructure."],
+  ["Settlement rails","Technology supporting programmable money, payments and onchain settlement."]
+];
+---
+<BaseLayout title="RWA Project Directory" description="Independent profiles of projects and infrastructure shaping tokenized finance.">
+  <div class="wire-container py-10 sm:py-14">
+    <Breadcrumbs items={[{label:"Projects",href:"/projects/"}]} />
+    <div class="mt-4 grid gap-8 border-b border-line pb-10 lg:grid-cols-[1fr_300px] lg:items-end">
+      <div><p class="data-label text-wire">RWA Wire // Intelligence Directory</p><h1 class="mt-3 max-w-3xl font-serif text-4xl font-medium leading-tight text-ink sm:text-5xl">Infrastructure behind the tokenized economy.</h1><p class="mt-4 max-w-2xl text-base leading-relaxed text-ink-muted">Independent, source-led profiles of issuers, protocols and financial infrastructure. Built for research and orientation — not token promotion.</p></div>
+      <div class="border-l border-line pl-5"><p class="data-label">Coverage standard</p><p class="mt-3 text-sm leading-relaxed text-ink-muted">Profiles focus on what a project builds, where it sits in the market structure and which risks or limitations matter.</p></div>
+    </div>
+    <section class="mt-8"><div class="grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-4">{segments.map(([title,desc],i)=><div class="bg-bg p-5"><p class="font-mono text-[10px] text-wire">0{i+1}</p><h2 class="mt-3 font-serif text-xl text-ink">{title}</h2><p class="mt-2 text-xs leading-relaxed text-ink-muted">{desc}</p></div>)}</div></section>
+    <section class="mt-12 grid gap-10 lg:grid-cols-[1fr_280px]">
+      <div><div class="border-b border-line pb-4"><p class="data-label text-wire">Published intelligence</p><h2 class="mt-2 font-serif text-2xl text-ink">Project profiles</h2></div>
+      <div class="mt-6">{projects.length?projects.map(entry=><ArticleCard href={sitePath(\`/projects/\${entry.slug}/\`)} title={entry.data.title} description={entry.data.description} category={entry.data.category} pubDate={entry.data.pubDate} readingTime={entry.data.readingTime}/>):<p class="text-sm text-ink-muted">Profiles are moving through editorial review.</p>}</div></div>
+      <aside class="border-t border-line pt-5 lg:border-l lg:border-t-0 lg:pl-6 lg:pt-0"><p class="data-label">Research pipeline</p><p class="mt-3 text-sm text-ink-muted">Coverage universe</p><p class="mt-1 font-mono text-3xl text-ink">{String(all.length).padStart(2,"0")}</p><div class="mt-6 space-y-3">{all.slice(0,8).map(p=><div class="border-b border-line/70 pb-3"><p class="text-sm text-ink">{p.data.title}</p><p class="mt-1 text-[10px] uppercase tracking-[.1em] text-ink-muted">{p.data.draft?"Editorial review":"Published"}</p></div>)}</div></aside>
+    </section>
+  </div>
+</BaseLayout>
