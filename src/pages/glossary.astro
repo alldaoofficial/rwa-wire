@@ -1,0 +1,12 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import { glossary } from "@/data/glossary";
+---
+<BaseLayout title="RWA Glossary" description="Plain-English definitions for the terms used across tokenization, real-world assets and institutional onchain finance.">
+<div class="wire-container py-10 sm:py-14">
+  <Breadcrumbs items={[{label:"Learn",href:"/learn/"},{label:"Glossary",href:"/glossary/"}]} />
+  <header class="relative mt-5 overflow-hidden border-b border-line pb-10"><div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_0%,rgba(46,212,122,.08),transparent_38%)]"></div><div class="relative"><p class="data-label text-wire">RWA Wire // Plain English</p><h1 class="mt-3 max-w-4xl font-serif text-4xl text-ink sm:text-5xl">The language of tokenized finance, decoded.</h1><p class="mt-4 max-w-2xl text-base leading-relaxed text-ink-muted">Short definitions for the terminology used across RWA Wire. Built for quick orientation — not to interrupt deeper research.</p></div></header>
+  <section class="mt-8 grid gap-px bg-line md:grid-cols-2">{glossary.map(item=><article id={item.slug} class="scroll-mt-28 bg-bg p-6"><p class="data-label text-wire">{item.short}</p><h2 class="mt-2 font-serif text-2xl text-ink">{item.term}</h2><p class="mt-3 text-sm leading-relaxed text-ink-muted">{item.definition}</p>{item.example&&<p class="mt-4 border-l border-wire/50 pl-3 text-xs leading-relaxed text-ink-muted"><span class="text-ink">Example:</span> {item.example}</p>}</article>)}</section>
+</div>
+</BaseLayout>
