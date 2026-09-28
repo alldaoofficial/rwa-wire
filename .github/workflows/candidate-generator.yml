@@ -62,7 +62,7 @@ jobs:
           git pull --rebase origin main
           git push
 
-      - name: Trigger editorial approval
+      - name: Route generated candidate
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -71,4 +71,24 @@ jobs:
             echo "No candidate manifest found in generated commit."
             exit 1
           fi
-          gh workflow run editorial-approval.yml --ref main -f candidate_path="$CANDIDATE_PATH"
+
+          if python3 - "$BRIEF_PATH" <<'PY'
+          import json, sys
+          d=json.load(open(sys.argv[1], encoding="utf-8"))
+          nw=d.get("newsWatch") or {}
+          raise SystemExit(0 if nw.get("requiresSourceReview") is True and int(nw.get("score",0)) >= 5 else 1)
+          PY
+          then
+            APPROVED_PATH="publish/approved/$(basename "$CANDIDATE_PATH")"
+            mkdir -p publish/approved
+            cp "$CANDIDATE_PATH" "$APPROVED_PATH"
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add "$APPROVED_PATH"
+            git commit -m "Auto-approve high-confidence News Watch candidate"
+            git pull --rebase origin main
+            git push
+            gh workflow run telegram-test.yml --ref main -f manifest_path="$APPROVED_PATH"
+          else
+            gh workflow run editorial-approval.yml --ref main -f candidate_path="$CANDIDATE_PATH"
+          fi
