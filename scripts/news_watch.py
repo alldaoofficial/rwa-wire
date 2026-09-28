@@ -49,7 +49,16 @@ def fetch(url):
 def main():
     state=json.loads(STATE.read_text()) if STATE.exists() else {"seen":[]}
     seen=set(state.get("seen",[]))
-    existing=" ".join(p.stem for p in INBOX.glob("*.json")) if INBOX.exists() else ""
+    # Deduplicate against every pipeline stage, not only the inbox. A story that
+    # has already moved to candidate/approved/posted must never re-enter later.
+    pipeline_dirs=[ROOT/"publish/inbox", ROOT/"publish/candidates", ROOT/"publish/approved", ROOT/"publish/posted"]
+    existing_slugs=set()
+    for folder in pipeline_dirs:
+        if folder.exists():
+            existing_slugs.update(p.stem[11:] if re.match(r"^\d{4}-\d{2}-\d{2}-",p.stem) else p.stem for p in folder.glob("*.json"))
+    article_dir=ROOT/"src/content/articles"
+    if article_dir.exists():
+        existing_slugs.update(p.stem for p in article_dir.glob("*.mdx"))
     now=datetime.now(timezone.utc); items=[]
     for q in QUERIES:
         url="https://news.google.com/rss/search?"+urllib.parse.urlencode({"q":q+" when:2d","hl":"en-US","gl":"US","ceid":"US:en"})
@@ -63,11 +72,15 @@ def main():
             except Exception: published=now
             hay=(title+" "+desc).lower()
             score=sum(weight for k,weight in STRONG.items() if k in hay)+sum(weight for k,weight in INSTITUTIONAL.items() if k in hay)-sum(8 for k in BLOCK if k in hay)
-            if guid in seen or slugify(title) in existing or now-published>timedelta(hours=48): continue
+            normalized_title=title.rsplit(" - ",1)[0] if " - " in title else title
+            if guid in seen or slugify(normalized_title) in existing_slugs or now-published>timedelta(hours=48): continue
             # Require an actual tokenization/RWA signal; institution names alone are not enough.
             has_rwa_signal=any(k in hay for k in STRONG if k != "stablecoin")
             if score>=6 and has_rwa_signal: items.append((score,published,title,link,desc,guid))
     if not items:
+        state["lastRun"]=now.isoformat()
+        state["lastResult"]="no-qualified-story"
+        STATE.write_text(json.dumps(state,indent=2)+"\n")
         print("No new high-confidence story found."); return
     items.sort(key=lambda x:(x[0],x[1]),reverse=True)
     score,published,title,link,desc,guid=items[0]
@@ -95,7 +108,7 @@ def main():
       "sources":[{"name":source_name,"url":link}],"newsWatch":{"score":score,"discoveredAt":now.isoformat(),"requiresSourceReview":True}}
     INBOX.mkdir(parents=True,exist_ok=True); path=INBOX/f"{day}-{slug}.json"
     path.write_text(json.dumps(brief,indent=2,ensure_ascii=False)+"\n")
-    seen.add(guid); state["seen"]=list(seen)[-500:]; state["lastRun"]=now.isoformat(); state["lastCandidate"]=str(path.relative_to(ROOT))
+    seen.add(guid); state["seen"]=list(seen)[-500:]; state["lastRun"]=now.isoformat(); state["lastResult"]="candidate"; state["lastCandidate"]=str(path.relative_to(ROOT))
     STATE.write_text(json.dumps(state,indent=2)+"\n")
     print(path.relative_to(ROOT))
 
