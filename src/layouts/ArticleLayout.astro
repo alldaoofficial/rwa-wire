@@ -42,14 +42,16 @@ const related = relatedSlugs
 
 const projectEntries = allArticles.filter((a) => a.data.type === "PROJECT" && a.data.projectMeta);
 const normalize = (s: string) => s.toLowerCase();
+const stopTerms = new Set(["tokenized","tokenization","assets","asset","finance","financial","market","markets","infrastructure","project","products","product","onchain","network","networks"]);
+const intelligenceTerms = (values: string[]) => [...new Set(values
+  .flatMap((v) => normalize(v).split(/[^a-z0-9]+/))
+  .filter((v) => v.length > 4 && !stopTerms.has(v)))];
 const articleHaystack = normalize([title, description, category, ...tags, ...keyTakeaways].join(" "));
 const scoredProjects = type === "PROJECT" ? [] : projectEntries
   .map((p) => {
     const meta = p.data.projectMeta!;
-    const terms = [p.data.title.replace(/ explained$/i, ""), meta.sector, meta.role, meta.assetExposure, ...meta.products]
-      .flatMap((v) => normalize(v).split(/[^a-z0-9]+/))
-      .filter((v) => v.length > 4);
-    const score = new Set(terms).size ? [...new Set(terms)].filter((term) => articleHaystack.includes(term)).length : 0;
+    const terms = intelligenceTerms([p.data.title.replace(/ explained$/i, ""), meta.sector, meta.role, meta.assetExposure, ...meta.products]);
+    const score = terms.filter((term) => articleHaystack.includes(term)).length;
     return { p, score };
   })
   .filter(({ score }) => score > 0)
@@ -61,9 +63,8 @@ const projectNews = type === "PROJECT" && projectMeta ? allArticles
   .filter((a) => a.slug !== entry.slug && a.data.type !== "PROJECT")
   .map((a) => {
     const hay = normalize([a.data.title,a.data.description,...a.data.tags,...a.data.keyTakeaways].join(" "));
-    const terms = [title.replace(/ explained$/i,""), projectMeta.sector, projectMeta.role, ...projectMeta.products]
-      .flatMap((v) => normalize(v).split(/[^a-z0-9]+/)).filter((v) => v.length > 4);
-    return { a, score: [...new Set(terms)].filter((term) => hay.includes(term)).length };
+    const terms = intelligenceTerms([title.replace(/ explained$/i,""), projectMeta.sector, projectMeta.role, ...projectMeta.products]);
+    return { a, score: terms.filter((term) => hay.includes(term)).length };
   }).filter(({score}) => score > 0).sort((a,b)=>b.score-a.score || b.a.data.pubDate.valueOf()-a.a.data.pubDate.valueOf()).slice(0,3).map(({a})=>a) : [];
 
 const dateStr = pubDate.toLocaleDateString("en-US", {
