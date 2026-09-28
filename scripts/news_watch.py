@@ -34,7 +34,11 @@ INSTITUTIONAL={
   "asset manager":2,"securities":2,"treasury":2,"institution":1,"settlement":2,
   "exchange":1,"custody":1,"regulator":1,
 }
-BLOCK=["price prediction","airdrop","presale","memecoin","meme coin","casino","100x","price target","giveaway"]
+BLOCK=["price prediction","airdrop","presale","memecoin","meme coin","casino","100x","price target","giveaway",
+  "best crypto","best altcoin","to invest in","top crypto","next crypto","buy now","massive gains",
+  "explosive growth","hidden gem","moonshot","can x reach","price forecast","price outlook",
+  "sponsored","press release","partner content","promoted content"]
+HARD_BLOCK=["best crypto","to invest in","presale","100x","price prediction","price target","giveaway","moonshot","sponsored","promoted content"]
 
 def clean(s):
     return re.sub(r"\s+"," ",html.unescape(re.sub(r"<[^>]+>"," ",s or ""))).strip()
@@ -97,8 +101,11 @@ def main():
             try: published=parsedate_to_datetime(x.findtext("pubDate")).astimezone(timezone.utc)
             except Exception: published=now
             hay=(title+" "+desc).lower()
-            score=sum(weight for k,weight in STRONG.items() if k in hay)+sum(weight for k,weight in INSTITUTIONAL.items() if k in hay)-sum(8 for k in BLOCK if k in hay)
             normalized_title=title.rsplit(" - ",1)[0] if " - " in title else title
+            headline=normalized_title.lower()
+            if any(k in headline for k in HARD_BLOCK):
+                continue
+            score=sum(weight for k,weight in STRONG.items() if k in hay)+sum(weight for k,weight in INSTITUTIONAL.items() if k in hay)-sum(10 for k in BLOCK if k in hay)
             if guid in seen or slugify(normalized_title) in existing_slugs or any(same_story(normalized_title,t) for t in existing_titles) or now-published>timedelta(hours=48): continue
             # Require an actual tokenization/RWA signal; institution names alone are not enough.
             has_rwa_signal=any(k in hay for k in STRONG if k != "stablecoin")
