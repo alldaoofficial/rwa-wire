@@ -3,46 +3,21 @@ import { sitePath } from "../utils/paths";
 import Logo from "@/components/Logo.astro";
 import MobileMenu from "@/components/MobileMenu.astro";
 import { NAV_LINKS, TELEGRAM_URL } from "@/config/site";
-
 const path = Astro.url.pathname;
-function isActive(href: string) {
-  return path === sitePath(href) || (href !== "/" && path.startsWith(sitePath(href)));
-}
+function isActive(href: string) { return path === sitePath(href) || (href !== "/" && path.startsWith(sitePath(href))); }
 ---
-
-<header class="sticky top-0 z-50 border-b border-line bg-bg/90 backdrop-blur">
-  <div class="wire-container flex h-[57px] items-center justify-between gap-6">
-    <a href={sitePath("/")} class="shrink-0">
-      <Logo size="sm" />
-    </a>
-
-    <nav class="hidden flex-1 items-center justify-center gap-6 md:flex" aria-label="Primary">
-      {
-        NAV_LINKS.map((link) => (
-          <a
-            href={sitePath(link.href)}
-            class:list={[
-              "text-xs font-medium uppercase tracking-[0.08em] text-ink-muted hover:text-ink",
-              isActive(link.href) && "text-ink",
-            ]}
-            aria-current={isActive(link.href) ? "page" : undefined}
-          >
-            {link.label}
-          </a>
-        ))
-      }
-    </nav>
-
-    <div class="flex items-center gap-3">
-      <a
-        href={TELEGRAM_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hidden items-center gap-1.5 rounded border border-line px-3.5 py-1.5 text-xs font-medium uppercase tracking-[0.08em] text-ink transition-colors hover:border-wire/50 hover:text-wire sm:inline-flex"
-      >
-        Telegram
-      </a>
-      <MobileMenu />
+<header class="sticky top-0 z-50 border-b border-line bg-bg/95 backdrop-blur-xl">
+  <div class="border-b border-line/70">
+    <div class="wire-container flex h-7 items-center justify-between text-[10px] font-medium uppercase tracking-[0.16em] text-ink-muted">
+      <span>Independent intelligence for the tokenized economy</span>
+      <span class="hidden items-center gap-2 sm:flex"><i class="h-1.5 w-1.5 rounded-full bg-wire"></i> Editorial desk online</span>
     </div>
+  </div>
+  <div class="wire-container flex h-[66px] items-center justify-between gap-6">
+    <a href={sitePath("/")} class="shrink-0"><Logo size="md" /></a>
+    <nav class="hidden flex-1 items-center justify-center gap-5 lg:flex" aria-label="Primary">
+      {NAV_LINKS.map((link) => <a href={sitePath(link.href)} class:list={["text-[11px] font-semibold uppercase tracking-[0.11em] text-ink-muted hover:text-ink",isActive(link.href)&&"text-wire"]}>{link.label}</a>)}
+    </nav>
+    <div class="flex items-center gap-3"><a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer" class="hidden border border-line bg-surface px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.12em] text-ink hover:border-wire/60 hover:text-wire sm:inline-flex">Join the wire</a><MobileMenu /></div>
   </div>
 </header>
