@@ -13,6 +13,12 @@ const assets = [
 ];
 ---
 <section class="mt-10 border-y border-line">
+  <div class="grid gap-px border-b border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
+    <div class="bg-bg p-5"><p class="data-label">Market pulse</p><p id="pulse-state" class="mt-3 font-serif text-2xl text-ink">Loading</p><p class="mt-1 text-[10px] text-ink-muted">Breadth across tracked RWA protocols</p></div>
+    <div class="bg-bg p-5"><p class="data-label">Advancers</p><p id="pulse-advancers" class="mt-3 font-mono text-2xl text-ink">—</p><p class="mt-1 text-[10px] text-ink-muted">Positive over 24H</p></div>
+    <div class="bg-bg p-5"><p class="data-label">Top mover</p><p id="pulse-leader" class="mt-3 font-mono text-2xl text-ink">—</p><p id="pulse-leader-change" class="mt-1 text-[10px] text-ink-muted">24H change</p></div>
+    <div class="bg-bg p-5"><p class="data-label">Tracked market cap</p><p id="pulse-cap" class="mt-3 font-mono text-2xl text-ink">—</p><p class="mt-1 text-[10px] text-ink-muted">Available assets in watchlist</p></div>
+  </div>
   <div class="flex flex-col gap-3 border-b border-line py-5 sm:flex-row sm:items-end sm:justify-between">
     <div><p class="data-label text-wire">RWA Markets // Live intelligence</p><h2 class="mt-2 font-serif text-2xl text-ink sm:text-3xl">Tokenization market watch</h2></div>
     <div class="text-left sm:text-right"><p id="markets-updated" class="data-label">Loading market data</p><p class="mt-1 text-[10px] text-ink-muted">USD · 24H market data</p></div>
@@ -47,14 +53,24 @@ const assets = [
     const updated=document.getElementById("markets-updated");
     try{
       const res=await fetch(endpoint,{headers:{accept:"application/json"}}); if(!res.ok) throw new Error();
-      const data=await res.json(); let freshest=0;
+      const data=await res.json(); let freshest=0; let advancers=0; let decliners=0; let capTotal=0; let capCount=0; let leader={symbol:"—",change:-Infinity};
       ids.forEach(id=>{const d=data[id],row=document.querySelector<HTMLElement>(`[data-market-row="${id}"]`);if(!d||!row)return;
         const set=(s:string,v:string)=>{const e=row.querySelector<HTMLElement>(s);if(e)e.textContent=v};
         set(".market-price",price(d.usd)); set(".market-cap",money(d.usd_market_cap)); set(".market-volume",money(d.usd_24h_vol));
         const ch=d.usd_24h_change,el=row.querySelector<HTMLElement>(".market-change"); if(el){el.textContent=Number.isFinite(ch)?(ch>=0?"+":"")+ch.toFixed(2)+"%":"—";el.className="market-change px-5 py-5 text-right font-mono text-xs "+(ch>=0?"text-wire":"text-red-400")}
+        if(Number.isFinite(ch)){if(ch>0)advancers++;else if(ch<0)decliners++; const symbol=row.querySelector("td span")?.textContent||id.toUpperCase(); if(ch>leader.change)leader={symbol,change:ch};}
+        if(Number.isFinite(d.usd_market_cap)){capTotal+=d.usd_market_cap;capCount++;}
         freshest=Math.max(freshest,d.last_updated_at||0);
       });
       if(updated) updated.textContent=freshest?"Updated "+new Date(freshest*1000).toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"}):"Market data live";
+      const byId=(id:string)=>document.getElementById(id);
+      const breadth=advancers+decliners; const ratio=breadth?advancers/breadth:.5;
+      const state=ratio>=.7?"Risk-on":ratio<=.3?"Risk-off":"Mixed";
+      if(byId("pulse-state")) byId("pulse-state")!.textContent=state;
+      if(byId("pulse-advancers")) byId("pulse-advancers")!.textContent=advancers+"/"+breadth;
+      if(byId("pulse-leader")) byId("pulse-leader")!.textContent=leader.symbol;
+      if(byId("pulse-leader-change")) byId("pulse-leader-change")!.textContent=Number.isFinite(leader.change)?(leader.change>=0?"+":"")+leader.change.toFixed(2)+"% // 24H":"24H change";
+      if(byId("pulse-cap")) byId("pulse-cap")!.textContent=capCount?money(capTotal):"—";
     }catch{if(updated)updated.textContent="Market data unavailable"}
   }
   loadMarkets(); window.setInterval(loadMarkets,60000);
