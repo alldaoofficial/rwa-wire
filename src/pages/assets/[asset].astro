@@ -1,0 +1,19 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import { assets } from "@/data/assets";
+import { relationshipsFor } from "@/data/relationships";
+export function getStaticPaths(){return assets.map(asset=>({params:{asset:asset.slug},props:{asset}}));}
+const { asset }=Astro.props;
+const graph=relationshipsFor("asset",asset.slug);
+const entityHref=(e:any)=>e.kind==="institution"?`/institutions/intelligence/${e.slug}/`:e.kind==="project"?`/projects/${e.slug}/`:e.kind==="asset"?`/assets/${e.slug}/`:"";
+---
+<BaseLayout title={`${asset.name} Asset Intelligence`} description={asset.summary}>
+<div class="wire-container py-10 sm:py-14">
+  <Breadcrumbs items={[{label:"Assets",href:"/assets/"},{label:asset.name,href:Astro.url.pathname}]} />
+  <header class="mt-5 border-b border-line pb-10"><p class="data-label text-wire">RWA Wire // Asset Profile</p><h1 class="mt-3 font-serif text-5xl text-ink">{asset.name}</h1><p class="mt-2 text-sm text-ink-muted">{asset.fullName}</p><p class="mt-5 max-w-2xl text-base leading-relaxed text-ink-muted">{asset.summary}</p></header>
+  <section class="mt-8"><p class="data-label text-wire">01 // At a glance</p><h2 class="mt-2 font-serif text-2xl text-ink">What this asset is</h2><div class="mt-5 grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-4"><div class="bg-bg p-5"><p class="data-label">Asset class</p><p class="mt-2 text-sm text-ink">{asset.assetClass}</p></div><div class="bg-bg p-5"><p class="data-label">Manager</p><p class="mt-2 text-sm text-ink">{asset.manager}</p></div><div class="bg-bg p-5"><p class="data-label">Tokenization</p><p class="mt-2 text-sm text-ink">{asset.tokenizationPlatform}</p></div><div class="bg-bg p-5"><p class="data-label">Access</p><p class="mt-2 text-sm text-ink">{asset.access}</p></div></div><div class="mt-px bg-surface p-5"><p class="data-label">Underlying exposure</p><p class="mt-2 text-sm text-ink">{asset.exposure}</p></div></section>
+  <section class="mt-12 border-y border-line py-7"><p class="data-label text-wire">02 // Connections</p><h2 class="mt-2 font-serif text-2xl text-ink">How {asset.name} fits into the market</h2><div class="mt-5 grid gap-px bg-line sm:grid-cols-2">{graph.map(r=>{const other=r.from.kind==="asset"&&r.from.slug===asset.slug?r.to:r.from;const href=entityHref(other);return <div class="bg-bg p-5"><div class="flex justify-between gap-3"><p class="data-label">{r.label}</p><span class="font-mono text-[9px] text-ink-muted">{r.asOf}</span></div>{href?<a href={href} class="mt-3 block font-serif text-xl text-ink hover:text-wire">{other.label} →</a>:<p class="mt-3 font-serif text-xl text-ink">{other.label}</p>}<p class="mt-2 text-[10px] uppercase tracking-[.08em] text-ink-muted">{other.kind}</p><a href={r.source} target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-[10px] uppercase tracking-[.08em] text-wire hover:underline">Verify source →</a></div>})}</div></section>
+  <section class="mt-10"><p class="data-label text-wire">03 // Networks</p><h2 class="mt-2 font-serif text-2xl text-ink">Where it is available</h2><div class="mt-4 flex flex-wrap gap-2">{asset.networks.map(n=><span class="border border-line px-3 py-2 text-[10px] uppercase tracking-[.08em] text-ink-muted">{n}</span>)}</div><p class="mt-4 text-xs text-ink-muted">Profile reviewed through {asset.asOf}. Network availability can change.</p><a href={asset.primarySource} target="_blank" rel="noopener noreferrer" class="mt-3 inline-block text-[10px] uppercase tracking-[.08em] text-wire hover:underline">Primary source // {asset.sourceLabel} →</a></section>
+</div>
+</BaseLayout>
