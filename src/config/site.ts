@@ -30,8 +30,8 @@ export const NAV_LINKS = [
   { label: "Markets", href: "/markets/" },
   { label: "Map", href: "/map/" },
   { label: "Projects", href: "/projects/" },
+  { label: "Institutions", href: "/institutions/" },
   { label: "Learn", href: "/learn/" },
-  { label: "Tools", href: "/tools/" },
 ];
 
 export const FOOTER_LINKS = [
