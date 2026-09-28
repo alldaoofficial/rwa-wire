@@ -1,0 +1,24 @@
+---
+/** Privacy-friendly first-party interaction measurement.
+ * No cookies, fingerprinting or personal identifiers. Events are sent only when
+ * PUBLIC_ANALYTICS_ENDPOINT is configured at build time.
+ */
+const endpoint = import.meta.env.PUBLIC_ANALYTICS_ENDPOINT || "";
+---
+{endpoint && <script is:inline define:vars={{ endpoint }}>
+(() => {
+  const send = (event, target = "") => {
+    const payload = JSON.stringify({ event, path: location.pathname, target, referrer: document.referrer ? new URL(document.referrer).hostname : "", ts: new Date().toISOString() });
+    if (navigator.sendBeacon) navigator.sendBeacon(endpoint, new Blob([payload], {type:"application/json"}));
+    else fetch(endpoint,{method:"POST",headers:{"content-type":"application/json"},body:payload,keepalive:true}).catch(()=>{});
+  };
+  document.addEventListener("click", e => {
+    const a = e.target.closest("a");
+    if (!a) return;
+    const href = a.getAttribute("href") || "";
+    if (href.includes("t.me/RWAWireHQ")) send("telegram_click","telegram");
+    else if (href.startsWith("/topics/")) send("topic_click",href);
+    else if (href.startsWith("/projects/")) send("project_click",href);
+  });
+})();
+</script>}
