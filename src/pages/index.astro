@@ -31,32 +31,19 @@ const exploreCategories: Array<keyof typeof CATEGORIES> = [
   title="RWA Wire — The intelligence layer for the tokenized economy"
   description="News, research and explainers on real-world assets, tokenization and the infrastructure transforming global finance."
 >
-  <!-- HERO -->
+  <!-- NEWSROOM MASTHEAD -->
   <section class="border-b border-line">
-    <div class="wire-container py-16 sm:py-24">
-      <p class="eyebrow text-wire">RWA &middot; Tokenization &middot; Institutions &middot; Markets</p>
-      <h1 class="mt-5 max-w-3xl font-serif text-4xl font-medium leading-[1.08] text-ink sm:text-5xl lg:text-6xl">
-        The financial system is moving onchain.
-      </h1>
-      <p class="mt-6 max-w-xl text-lg leading-relaxed text-ink-muted">
-        News, research and explainers on real-world assets, tokenization and
-        the infrastructure transforming global finance.
-      </p>
-      <div class="mt-9 flex flex-wrap items-center gap-4">
-        <a
-          href={sitePath("/news/")}
-          class="rounded bg-wire px-6 py-3 text-sm font-semibold text-bg hover:bg-wire/90"
-        >
-          Explore the latest
-        </a>
-        <a
-          href={TELEGRAM_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="rounded border border-line px-6 py-3 text-sm font-semibold text-ink hover:border-wire/50 hover:text-wire"
-        >
-          Join Telegram
-        </a>
+    <div class="wire-container py-12 sm:py-16">
+      <div class="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
+        <div>
+          <p class="eyebrow text-wire">RWA · Tokenization · Institutions · Markets</p>
+          <h1 class="mt-4 max-w-4xl font-serif text-4xl font-medium leading-[.98] tracking-[-.025em] text-ink sm:text-6xl lg:text-7xl">Intelligence for the<br/><span class="text-ink-muted">tokenized economy.</span></h1>
+        </div>
+        <div class="max-w-sm border-l border-line pl-5">
+          <p class="data-label">RWA Wire // Briefing</p>
+          <p class="mt-3 text-sm leading-relaxed text-ink-muted">Independent reporting on assets, institutions and infrastructure moving global finance onchain.</p>
+          <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-[10px] font-semibold uppercase tracking-[.14em] text-wire">Get the wire →</a>
+        </div>
       </div>
     </div>
   </section>
@@ -66,13 +53,13 @@ const exploreCategories: Array<keyof typeof CATEGORIES> = [
     featured && (
       <section class="wire-container py-14 sm:py-20">
         <div class="mb-8 flex items-center justify-between">
-          <h2 class="font-serif text-2xl font-medium text-ink sm:text-3xl">Latest</h2>
+          <div><p class="eyebrow text-wire">Live desk //</p><h2 class="mt-1 font-serif text-2xl font-medium text-ink sm:text-3xl">Latest intelligence</h2></div>
           <a href={sitePath("/news/")} class="text-xs font-medium uppercase tracking-[0.08em] text-ink-muted hover:text-wire">
             View all
           </a>
         </div>
 
-        <div class="grid grid-cols-1 gap-10 lg:grid-cols-[1.15fr_1fr]">
+        <div class="grid grid-cols-1 gap-10">
           <FeaturedArticle
             href={sitePath(`/${featured.data.category}/${featured.slug}/`)}
             title={featured.data.title}
@@ -80,8 +67,9 @@ const exploreCategories: Array<keyof typeof CATEGORIES> = [
             category={featured.data.category}
             pubDate={featured.data.pubDate}
             readingTime={featured.data.readingTime}
+            heroImage={featured.data.heroImage}
           />
-          <div class="divide-y divide-line">
+          <div class="grid border-t border-line pt-6 lg:grid-cols-2 lg:gap-x-10 lg:[&>article:nth-child(-n+2)]:border-t-0">
             {latest.map((entry) => (
               <ArticleCard
                 compact
