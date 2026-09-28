@@ -36,19 +36,17 @@ const exploreCategories: Array<keyof typeof CATEGORIES> = [
   title="RWA Wire — The intelligence layer for the tokenized economy"
   description="News, research and explainers on real-world assets, tokenization and the infrastructure transforming global finance."
 >
-  <!-- NEWSROOM MASTHEAD -->
-  <section class="border-b border-line">
-    <div class="wire-container py-10 sm:py-12">
-      <div class="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
-        <div>
-          <p class="eyebrow text-wire">RWA · Tokenization · Institutions · Markets</p>
-          <h1 class="mt-4 max-w-4xl font-serif text-4xl font-medium leading-[.98] tracking-[-.025em] text-ink sm:text-5xl lg:text-6xl">Intelligence for the<br/><span class="text-ink-muted">tokenized economy.</span></h1>
-        </div>
-        <div class="max-w-sm border-l border-line pl-5">
-          <p class="data-label">RWA Wire // Briefing</p>
-          <p class="mt-3 text-sm leading-relaxed text-ink-muted">Independent reporting on assets, institutions and infrastructure moving global finance onchain.</p>
-          <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-[10px] font-semibold uppercase tracking-[.14em] text-wire">Get the wire →</a>
-        </div>
+  <!-- START HERE -->
+  <section class="relative overflow-hidden border-b border-line">
+    <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_10%,rgba(46,212,122,.10),transparent_34%),linear-gradient(180deg,rgba(17,21,26,.35),transparent_75%)]"></div>
+    <div class="wire-container relative py-12 sm:py-16">
+      <p class="eyebrow text-wire">RWA Wire // Start here</p>
+      <h1 class="mt-4 max-w-4xl font-serif text-4xl font-medium leading-[.98] tracking-[-.025em] text-ink sm:text-5xl lg:text-6xl">Understand how traditional finance is moving <span class="text-ink-muted">onchain.</span></h1>
+      <p class="mt-5 max-w-2xl text-base leading-relaxed text-ink-muted">Follow the latest institutional moves, learn the fundamentals, or explore the companies building tokenized finance.</p>
+      <div class="mt-7 grid gap-3 sm:grid-cols-3">
+        <a href="#latest" class="group border border-line bg-bg/70 p-4 hover:border-wire/60"><span class="font-mono text-[10px] text-wire">01 // TODAY</span><p class="mt-2 text-sm font-medium text-ink">See what changed</p><p class="mt-1 text-xs text-ink-muted">Latest news and market developments.</p></a>
+        <a href="/learn/" class="group border border-line bg-bg/70 p-4 hover:border-wire/60"><span class="font-mono text-[10px] text-wire">02 // NEW HERE</span><p class="mt-2 text-sm font-medium text-ink">Learn the basics</p><p class="mt-1 text-xs text-ink-muted">Plain-English guides to RWA and tokenization.</p></a>
+        <a href="/projects/" class="group border border-line bg-bg/70 p-4 hover:border-wire/60"><span class="font-mono text-[10px] text-wire">03 // GO DEEPER</span><p class="mt-2 text-sm font-medium text-ink">Explore the infrastructure</p><p class="mt-1 text-xs text-ink-muted">Projects, institutions and connected research.</p></a>
       </div>
     </div>
   </section>
@@ -56,7 +54,7 @@ const exploreCategories: Array<keyof typeof CATEGORIES> = [
   <!-- LATEST -->
   {
     featured && (
-      <section class="wire-container py-12 sm:py-16">
+      <section id="latest" class="wire-container py-12 sm:py-16">
         <div class="mb-8 flex items-center justify-between">
           <div><p class="eyebrow text-wire">Live desk //</p><h2 class="mt-1 font-serif text-2xl font-medium text-ink sm:text-3xl">Latest intelligence</h2></div>
           <a href={sitePath("/news/")} class="text-xs font-medium uppercase tracking-[0.08em] text-ink-muted hover:text-wire">
