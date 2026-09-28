@@ -1,0 +1,39 @@
+name: RWA Wire Candidate Generator
+
+on:
+  workflow_dispatch:
+    inputs:
+      brief_path:
+        description: "Reviewed story brief JSON path (publish/inbox/*.json)"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate input path
+        env:
+          BRIEF_PATH: ${{ inputs.brief_path }}
+        run: |
+          case "$BRIEF_PATH" in publish/inbox/*.json) ;; *) echo "Invalid brief path"; exit 1;; esac
+      - name: Generate article, visual and candidate
+        env:
+          BRIEF_PATH: ${{ inputs.brief_path }}
+        run: python3 scripts/candidate_generator.py "$BRIEF_PATH"
+      - name: Build site
+        run: |
+          npm install
+          npm run build
+      - name: Commit generated story package
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/content/articles public/images/news publish/candidates
+          git diff --cached --quiet && { echo "Nothing generated"; exit 1; }
+          git commit -m "Generate RWA Wire story candidate"
+          git push
