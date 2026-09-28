@@ -1,0 +1,36 @@
+{
+  "title": "Bullish, Equiniti and Market Infrastructure Firms Form Coalition for Issuer-Sponsored Tokenized Securities",
+  "description": "Bullish and Equiniti formed the Issuer Sponsored Token Coalition with Alpaca, Apex Fintech Solutions and DriveWealth to develop standards and infrastructure for tokenized public securities tied to authoritative shareholder records.",
+  "why_it_matters": "The initiative targets a central market-structure problem in tokenized equities: preserving shareholder rights and authoritative ownership records while connecting blockchain rails with traditional securities infrastructure.",
+  "pubDate": "2026-09-24",
+  "category": "news",
+  "tags": [
+    "Tokenized Securities",
+    "Tokenized Equities",
+    "Institutions",
+    "Market Infrastructure",
+    "SEC",
+    "RWA"
+  ],
+  "keyTakeaways": [
+    "The coalition includes Bullish, Equiniti, Alpaca, Apex Fintech Solutions and DriveWealth.",
+    "Its issuer-sponsored model is intended to connect tokenized securities to authoritative shareholder registers and preserve ownership rights and corporate actions.",
+    "The work covers interoperability, issuance, transfer, settlement, custody and secondary-market trading; no live tokenized-stock product was launched.",
+    "The initiative follows the SEC's September 17 temporary Innovation Exemption for limited onchain trading of tokenized NMS stocks."
+  ],
+  "body": "Bullish and Equiniti have formed the **Issuer Sponsored Token Coalition**, with Alpaca, Apex Fintech Solutions and DriveWealth among the first market-infrastructure participants. The group is focused on standards for tokenized public securities that remain connected to issuer records.\n\n## What the coalition plans to build\n\nThe initiative is a standards and infrastructure effort, not the launch of a new tokenized-stock product. Its planned work covers shareholder rights, interoperability between traditional and blockchain infrastructure, issuance, transfer, settlement, custody and secondary-market trading. The group also expects to evaluate blockchain and smart-contract architectures and develop prototypes and pilots.\n\nParticipation is non-binding. Members are not required to issue or list securities, provide liquidity or support a particular product.\n\n## Why authoritative ownership records matter\n\nThe coalition argues that tokenized securities should preserve the legal and operational relationship between issuers and shareholders. Its issuer-sponsored model is designed to connect digital representations directly to authoritative shareholder registers, helping preserve voting, dividend and corporate-action rights.\n\nThat distinction matters because some products can provide economic exposure to a stock without making the holder the shareholder of the underlying company.\n\n## The SEC backdrop\n\nThe coalition launched one week after the **U.S. Securities and Exchange Commission issued its Innovation Exemption on September 17**. The temporary, conditional framework permits limited trading of tokenized National Market System stocks through qualifying Tokenized Securities Venues using permissioned automated market makers and liquidity pools.\n\nAmong its conditions, a venue must verify that a tokenized NMS stock provides holders the same rights and privileges as the equivalent traditional stock. For stock tokenized by an unaffiliated third party, the issuer must receive notice and an opportunity to object. The relief is temporary and subject to limits and other conditions; it is not a blanket authorization for unrestricted tokenized-stock trading.\n\n## Connecting traditional and onchain markets\n\nThe coalition plans to explore interoperability across traditional clearing and settlement infrastructure and blockchain networks. Members are scheduled to meet issuers and other capital-market participants at the New York Stock Exchange on October 27.\n\nThe next signal to watch is whether the working group produces concrete technical standards, pilots and issuer participation. For RWA markets, that would mark another step from tokenization experiments toward infrastructure capable of supporting regulated securities at institutional scale.",
+  "sources": [
+    {
+      "name": "Bullish — Coalition announcement",
+      "url": "https://investors.bullish.com/news-releases/news-release-details/leading-market-infrastructure-firms-form-coalition-advance"
+    },
+    {
+      "name": "U.S. SEC — Innovation Exemption press release",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-90-sec-issues-innovation-exemption-facilitate-trading-tokenized-nms-stock-request-comment"
+    },
+    {
+      "name": "U.S. SEC — Release No. 34-106402 / File No. 4-927",
+      "url": "https://www.sec.gov/rules-regulations/2026/09/4-927"
+    }
+  ]
+}
