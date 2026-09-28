@@ -1,22 +1,9 @@
 ---
-const metrics = [
-  { label: "RWA Active AUM", value: "$30.52B", note: "+0.26% 24H", href: "https://defillama.com/rwa" },
-  { label: "RWA Onchain AUM", value: "$33.31B", note: "91.6% active / onchain", href: "https://defillama.com/rwa" },
-  { label: "DeFi Active TVL", value: "$3.76B", note: "12.3% utilization", href: "https://defillama.com/rwa" },
-];
-const categories = [
-  ["Bond & MMF Funds","$16.71B","$18.41B"],
-  ["Gold & Commodities","$5.81B","$6.01B"],
-  ["Private Credit","$4.58B","$4.71B"],
-  ["Stocks & Equities","$3.98B","$4.64B"],
-  ["Crypto Funds","$476.98M","$477.15M"],
-  ["Real Estate","$74.68M","$99.41M"],
-];
-const chains = [
-  ["Ethereum","$14.50B"],["BSC","$4.88B"],["Stellar","$2.70B"],
-  ["Solana","$2.45B"],["ZKsync Lite","$961.97M"],["Avalanche","$901.01M"],
-  ["Arbitrum","$854.18M"],["Aptos","$768.58M"],
-];
+import market from "@/data/rwa-market.json";
+const metrics = market.metrics.map(([label,value]) => ({ label, value }));
+const categories = market.categories;
+const chains = market.chains;
+const updated = new Date(market.updated).toLocaleString("en-US", { month:"short", day:"numeric", year:"numeric", hour:"2-digit", minute:"2-digit", timeZone:"UTC" }) + " UTC";
 ---
 <section class="mt-14">
   <div class="flex items-end justify-between border-b border-line pb-5">
@@ -24,8 +11,8 @@ const chains = [
     <span class="hidden text-[10px] uppercase tracking-[.12em] text-ink-muted sm:block">DefiLlama snapshot // USD</span>
   </div>
   <div class="grid gap-px bg-line sm:grid-cols-3">
-    {metrics.map((m) => <a href={m.href} target="_blank" rel="noopener noreferrer" class="bg-bg p-6 hover:bg-surface">
-      <p class="data-label">{m.label}</p><p class="mt-4 font-mono text-3xl text-ink">{m.value}</p><p class="mt-2 text-xs text-wire">{m.note}</p>
+    {metrics.map((m) => <a href="https://defillama.com/rwa" target="_blank" rel="noopener noreferrer" class="bg-bg p-6 hover:bg-surface">
+      <p class="data-label">{m.label}</p><p class="mt-4 font-mono text-3xl text-ink">{m.value}</p><p class="mt-2 text-xs text-wire">DefiLlama market snapshot</p>
     </a>)}
   </div>
 
@@ -41,5 +28,5 @@ const chains = [
       <p class="mt-2 text-right text-[9px] uppercase tracking-[.1em] text-ink-muted">Active RWA market cap</p>
     </div>
   </div>
-  <p class="mt-6 text-[10px] leading-relaxed text-ink-muted">Data snapshot: DefiLlama RWA dashboards, checked 28 Sep 2026. Values may change between RWA Wire updates. Protocol-token prices above update separately in real time.</p>
+  <p class="mt-6 text-[10px] leading-relaxed text-ink-muted">Automated DefiLlama RWA snapshot · Updated {updated}. Values may change between scheduled updates. Protocol-token prices above update separately in real time.</p>
 </section>
