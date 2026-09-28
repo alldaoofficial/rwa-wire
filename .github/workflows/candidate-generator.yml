@@ -33,7 +33,7 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             BRIEF_PATH="$MANUAL_BRIEF_PATH"
           else
-            BRIEF_PATH=$(git diff --name-only --diff-filter=A HEAD^ HEAD -- "publish/inbox/*.json")
+            BRIEF_PATH=$(git diff --name-only --diff-filter=AM HEAD^ HEAD -- "publish/inbox/*.json")
           fi
           COUNT=$(printf "%s\n" "$BRIEF_PATH" | sed '/^$/d' | wc -l)
           if [ "$COUNT" -ne 1 ]; then
