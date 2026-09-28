@@ -1,0 +1,43 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import { relationships } from "@/data/relationships";
+
+const groups = [
+  { kind:"institution", label:"Institution", hint:"Who owns, manages or funds the activity" },
+  { kind:"asset", label:"Asset", hint:"The financial product moving onchain" },
+  { kind:"project", label:"Infrastructure", hint:"Who issues, tokenizes or services it" },
+  { kind:"network", label:"Network", hint:"Where the asset can operate" },
+];
+const nodes = Array.from(new Map(relationships.flatMap(r=>[r.from,r.to]).map(n=>[`${n.kind}:${n.slug}`,n])).values());
+const href=(n:any)=>n.kind==="institution"?`/institutions/intelligence/${n.slug}/`:n.kind==="asset"?`/assets/${n.slug}/`:n.kind==="project"?`/projects/${n.slug}/`:"";
+---
+<BaseLayout title="RWA Market Map" description="A visual guide to the institutions, assets, infrastructure and networks connected across tokenized finance.">
+<div class="wire-container py-10 sm:py-14">
+  <Breadcrumbs items={[{label:"Market Map",href:"/map/"}]} />
+  <header class="relative mt-5 overflow-hidden border-b border-line pb-10">
+    <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(46,212,122,.09),transparent_42%)]"></div>
+    <div class="relative"><p class="data-label text-wire">RWA Wire // Market Map</p><h1 class="mt-3 max-w-4xl font-serif text-4xl text-ink sm:text-5xl">See how tokenized finance fits together.</h1><p class="mt-4 max-w-2xl text-base leading-relaxed text-ink-muted">Read the market from left to right: who is involved, what financial asset is tokenized, which infrastructure supports it and which blockchain rails it uses.</p></div>
+  </header>
+
+  <section class="mt-8 grid gap-3 md:grid-cols-4">
+    {groups.map((g,i)=><div class="border border-line bg-surface/60 p-4"><p class="font-mono text-[10px] text-wire">0{i+1} // {g.label.toUpperCase()}</p><p class="mt-2 text-xs leading-relaxed text-ink-muted">{g.hint}</p></div>)}
+  </section>
+
+  <section class="mt-10 overflow-x-auto border-y border-line py-8">
+    <p class="data-label text-wire">Verified example // BUIDL</p>
+    <div class="mt-5 min-w-[760px] grid grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr] items-center gap-3">
+      <a href="/institutions/intelligence/blackrock/" class="border border-line bg-bg p-5 hover:border-wire/60"><p class="data-label">Institution</p><p class="mt-2 font-serif text-2xl text-ink">BlackRock</p><p class="mt-2 text-xs text-ink-muted">Investment manager</p></a>
+      <span class="font-mono text-wire">→</span>
+      <a href="/assets/buidl/" class="border border-wire/50 bg-[radial-gradient(circle_at_top,rgba(46,212,122,.10),transparent_70%)] p-5"><p class="data-label text-wire">Asset</p><p class="mt-2 font-serif text-2xl text-ink">BUIDL</p><p class="mt-2 text-xs text-ink-muted">Tokenized Treasury fund</p></a>
+      <span class="font-mono text-wire">→</span>
+      <a href="/projects/securitize-explained/" class="border border-line bg-bg p-5 hover:border-wire/60"><p class="data-label">Infrastructure</p><p class="mt-2 font-serif text-2xl text-ink">Securitize</p><p class="mt-2 text-xs text-ink-muted">Tokenization & transfer agent</p></a>
+      <span class="font-mono text-wire">→</span>
+      <div class="border border-line bg-bg p-5"><p class="data-label">Networks</p><p class="mt-2 font-serif text-xl text-ink">Ethereum + others</p><p class="mt-2 text-xs text-ink-muted">Public blockchain rails</p></div>
+    </div>
+    <p class="mt-4 text-xs text-ink-muted">Arrows explain market roles, not ownership. Open a node for sourced details and dates.</p>
+  </section>
+
+  <section class="mt-10"><p class="data-label text-wire">Explore the graph</p><h2 class="mt-2 font-serif text-2xl text-ink">Entities currently connected</h2><div class="mt-5 grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-4">{groups.map(g=><div class="bg-bg p-5"><p class="data-label text-wire">{g.label}</p><div class="mt-4 space-y-3">{nodes.filter(n=>n.kind===g.kind).map(n=>{const url=href(n);return url?<a href={url} class="block border-b border-line pb-3 text-sm text-ink hover:text-wire">{n.label} →</a>:<div class="border-b border-line pb-3 text-sm text-ink">{n.label}</div>})}</div></div>)}</div></section>
+</div>
+</BaseLayout>
