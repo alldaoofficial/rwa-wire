@@ -4,10 +4,9 @@ import { getCollection } from "astro:content";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import FeaturedArticle from "@/components/FeaturedArticle.astro";
 import ArticleCard from "@/components/ArticleCard.astro";
-import CategoryCard from "@/components/CategoryCard.astro";
 import ProjectCard from "@/components/ProjectCard.astro";
 import TelegramCTA from "@/components/TelegramCTA.astro";
-import { CATEGORIES, TELEGRAM_URL } from "@/config/site";
+import { TELEGRAM_URL } from "@/config/site";
 
 const allArticles = (await getCollection("articles", ({ data }) => !data.draft)).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -24,12 +23,6 @@ const latest = editorialRest.slice(0, 6);
 const learnArticles = allArticles.filter((a) => a.data.category === "learn").slice(0, 6);
 const projectArticles = allArticles.filter((a) => a.data.category === "projects").slice(0, 5);
 
-const exploreCategories: Array<keyof typeof CATEGORIES> = [
-  "rwa",
-  "tokenization",
-  "institutions",
-  "markets",
-];
 ---
 
 <BaseLayout
