@@ -22,11 +22,11 @@ const year = new Date().getFullYear();
       </div>
       <div>
         <p class="data-label mb-5">Coverage</p>
-        <ul class="space-y-3">{NAV_LINKS.slice(0,5).map((link) => <li><a href={sitePath(link.href)} class="text-sm text-ink-muted hover:text-ink">{link.label}</a></li>)}</ul>
+        <ul class="space-y-3">{[{label:"News",href:"/news/"},{label:"RWA",href:"/rwa/"},{label:"Tokenization",href:"/tokenization/"},{label:"Institutions",href:"/institutions/"},{label:"Markets",href:"/markets/"}].map((link) => <li><a href={sitePath(link.href)} class="text-sm text-ink-muted hover:text-ink">{link.label}</a></li>)}</ul>
       </div>
       <div>
         <p class="data-label mb-5">Intelligence</p>
-        <ul class="space-y-3">{NAV_LINKS.slice(5).map((link) => <li><a href={sitePath(link.href)} class="text-sm text-ink-muted hover:text-ink">{link.label}</a></li>)}</ul>
+        <ul class="space-y-3">{[{label:"Map",href:"/map/"},{label:"Assets",href:"/assets/"},{label:"Projects",href:"/projects/"},{label:"Topics",href:"/topics/"},{label:"Learn",href:"/learn/"},{label:"Tools",href:"/tools/"}].map((link) => <li><a href={sitePath(link.href)} class="text-sm text-ink-muted hover:text-ink">{link.label}</a></li>)}</ul>
       </div>
       <div>
         <p class="data-label mb-5">RWA Wire</p>
