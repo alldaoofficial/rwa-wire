@@ -9,15 +9,15 @@ import { institutions } from "@/data/institutions";
     <header class="mt-4 border-b border-line pb-10">
       <p class="data-label text-wire">RWA Wire // Institution Intelligence</p>
       <h1 class="mt-3 max-w-4xl font-serif text-4xl font-medium leading-tight text-ink sm:text-5xl">Institutions shaping the tokenized economy.</h1>
-      <p class="mt-4 max-w-2xl text-base leading-relaxed text-ink-muted">A structured research layer connecting financial institutions with tokenization activity, market infrastructure, networks and RWA Wire coverage.</p>
+      <p class="mt-4 max-w-2xl text-base leading-relaxed text-ink-muted">See which banks, asset managers and market operators are active in tokenized finance — and follow their connections without needing to decode the whole market first.</p><div class="mt-6 grid max-w-3xl gap-2 sm:grid-cols-3"><div class="border border-line bg-surface/60 p-3"><p class="font-mono text-[10px] text-wire">01</p><p class="mt-1 text-xs text-ink">Choose an institution</p></div><div class="border border-line bg-surface/60 p-3"><p class="font-mono text-[10px] text-wire">02</p><p class="mt-1 text-xs text-ink">See what it is connected to</p></div><div class="border border-line bg-surface/60 p-3"><p class="font-mono text-[10px] text-wire">03</p><p class="mt-1 text-xs text-ink">Open the underlying coverage</p></div></div>
     </header>
-    <section class="mt-8 grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-3">
+    <section class="mt-8"><div class="mb-4"><p class="data-label text-wire">Step 1 // Choose</p><h2 class="mt-2 font-serif text-2xl text-ink">Institution directory</h2></div><div class="grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-3">
       {institutions.map(i => <a href={`/institutions/intelligence/${i.slug}/`} class="group bg-bg p-6 hover:bg-surface">
         <div class="flex items-center justify-between gap-3"><p class="data-label text-wire">{i.type}</p><span class="font-mono text-[10px] text-ink-muted">{i.status}</span></div>
         <h2 class="mt-4 font-serif text-2xl text-ink group-hover:text-wire">{i.name}</h2>
         <p class="mt-3 text-sm leading-relaxed text-ink-muted">{i.role}</p>
         <div class="mt-5 flex flex-wrap gap-1.5">{i.focus.map(x=><span class="border border-line px-2 py-1 text-[9px] uppercase tracking-[.08em] text-ink-muted">{x}</span>)}</div>
       </a>)}
-    </section>
+    </div></section>
   </div>
 </BaseLayout>
