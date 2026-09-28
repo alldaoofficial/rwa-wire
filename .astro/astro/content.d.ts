@@ -285,6 +285,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"september-2026-global-regulatory-brief-token-securities-stablecoins-and-tokenized-bonds.mdx": {
+	id: "september-2026-global-regulatory-brief-token-securities-stablecoins-and-tokenized-bonds.mdx";
+  slug: "september-2026-global-regulatory-brief-token-securities-stablecoins-and-tokenized-bonds";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "stablecoin-market-structure-shifts.mdx": {
 	id: "stablecoin-market-structure-shifts.mdx";
   slug: "stablecoin-market-structure-shifts";
