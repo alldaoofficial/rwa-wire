@@ -8,7 +8,7 @@ const BASE = "https://therwawire.com";
 
 const staticPaths = [
   "/", "/news/", "/rwa/", "/tokenization/", "/institutions/", "/markets/",
-  "/projects/", "/projects/compare/", "/learn/", "/tools/", "/about/", "/contact/", "/privacy/",
+  "/projects/", "/projects/compare/", "/topics/", "/topics/real-world-assets/", "/topics/tokenized-treasuries/", "/topics/tokenized-securities/", "/topics/private-credit/", "/topics/institutional-tokenization/", "/learn/", "/tools/", "/about/", "/contact/", "/privacy/",
   "/terms/", "/affiliate-disclosure/",
   "/tools/position-size-calculator/", "/tools/risk-reward-calculator/",
   "/tools/leverage-calculator/", "/tools/trading-fee-calculator/"
