@@ -81,7 +81,7 @@ def main():
       "tags: "+json.dumps(tags,ensure_ascii=False),'relatedSlugs: []',"showTradingCTA: false","keyTakeaways:"
     ]+[f"  - {esc_yaml(x)}" for x in take]+["---"]
     article="\n".join(fm)+"\n\n"+body+"\n\n---\n\n**Primary sources**\n\n"+sources+"\n\n*RWA Wire covers real-world assets, tokenization and the infrastructure transforming global finance.*\n"
-    caption=d.get("caption") or f'{d["title"]}\n\n{d["why_it_matters"]}\n\nRead the full story →\n{article_url}\n\nTrading partner: Bitunix · Affiliate link · Trading involves risk.'
+    caption=d.get("caption") or f'RWA WIRE // {d.get("reviewCategory",d.get("category","news")).upper()}\n\n{d["title"]}\n\n{d["why_it_matters"]}\n\nRead the full story →\n{article_url}'
     if len(caption)>1024: raise ValueError("generated caption exceeds Telegram limit")
     candidate_id=f"{pub}-{slug}"[:55].rstrip("-")
     social=d.get("social") or {}
