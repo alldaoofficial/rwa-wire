@@ -76,11 +76,19 @@ def main():
     source_name=title.rsplit(" - ",1)[-1] if " - " in title else "Google News source"
     clean_title=title.rsplit(" - ",1)[0] if " - " in title else title
     summary=desc or f"A new institutional tokenization development has been reported: {clean_title}."
-    if len(summary)>500: summary=summary[:497].rstrip()+"..."
-    why="This development matched RWA Wire's institutional tokenization radar because it connects a concrete RWA/onchain signal with financial infrastructure or an identifiable market participant. The automated brief does not add claims beyond the discovered source metadata."
-    body=(f"**{clean_title}** has entered the RWA Wire news watch after matching our institutional tokenization filters.\n\n"
-          f"{summary}\n\n## Why RWA Wire is watching\n\n{why}\n\n"
-          "## Source note\n\nRWA Wire discovered this development through its automated institutional tokenization monitor. Details should be read together with the linked primary/reporting source.")
+    # RSS descriptions often repeat the headline and publisher name. Do not turn
+    # that discovery noise into public-facing copy.
+    if source_name and summary.endswith(source_name):
+        summary=summary[:-len(source_name)].strip(" -|")
+    if summary.strip().lower()==clean_title.strip().lower() or len(summary)<40:
+        summary=f"{clean_title}. RWA Wire is tracking the development for its relevance to institutional tokenization."
+    if len(summary)>420: summary=summary[:417].rstrip()+"..."
+    why="The development connects tokenized assets with institutional financial infrastructure, showing how onchain instruments are moving into practical market workflows."
+    body=(f"{summary}\n\n"
+          "## Why it matters\n\n"
+          f"{why}\n\n"
+          "## What to watch\n\n"
+          "Watch for additional details on eligibility, custody, settlement and how the tokenized asset is used in production. RWA Wire will update coverage as stronger source material becomes available.")
     day=published.date().isoformat(); slug=slugify(clean_title)
     brief={"title":clean_title,"description":summary,"why_it_matters":why,"pubDate":day,"category":"news",
       "tags":["Tokenization","Institutions","News Watch"],"keyTakeaways":[summary,why],"body":body,
