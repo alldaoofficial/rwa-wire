@@ -1,0 +1,31 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
+import { getCollection } from "astro:content";
+import { institutions } from "@/data/institutions";
+
+export function getStaticPaths() {
+  return institutions.map((institution) => ({ params:{ institution: institution.slug }, props:{ institution } }));
+}
+const { institution } = Astro.props;
+const articles = (await getCollection("articles",({data})=>!data.draft)).filter(a =>
+  a.data.institutions.includes(institution.slug) ||
+  [a.data.title,a.data.description,...a.data.tags].join(" ").toLowerCase().includes(institution.name.toLowerCase())
+).sort((a,b)=>b.data.pubDate.valueOf()-a.data.pubDate.valueOf());
+---
+<BaseLayout title={`${institution.name} Intelligence`} description={`RWA Wire intelligence profile for ${institution.name}: role, focus, networks and related tokenization coverage.`}>
+  <div class="wire-container py-10 sm:py-14">
+    <Breadcrumbs items={[{label:"Institutions",href:"/institutions/"},{label:"Intelligence",href:"/institutions/intelligence/"},{label:institution.name,href:Astro.url.pathname}]} />
+    <header class="mt-4 grid gap-8 border-b border-line pb-10 lg:grid-cols-[1fr_300px]">
+      <div><p class="data-label text-wire">RWA Wire // Institution Profile</p><h1 class="mt-3 font-serif text-5xl font-medium text-ink">{institution.name}</h1><p class="mt-4 max-w-2xl text-base leading-relaxed text-ink-muted">{institution.role}</p></div>
+      <div class="border-l border-line pl-5"><p class="data-label">Institution type</p><p class="mt-2 text-sm text-ink">{institution.type}</p><p class="data-label mt-5">Coverage status</p><p class="mt-2 font-mono text-sm text-wire">{institution.status}</p></div>
+    </header>
+    <section class="mt-8 grid gap-px bg-line sm:grid-cols-2">
+      <div class="bg-bg p-5"><p class="data-label">Intelligence focus</p><div class="mt-3 flex flex-wrap gap-2">{institution.focus.map(x=><span class="border border-line px-2 py-1 text-[10px] uppercase tracking-[.08em] text-ink-muted">{x}</span>)}</div></div>
+      <div class="bg-bg p-5"><p class="data-label">Networks / rails</p><div class="mt-3 flex flex-wrap gap-2">{institution.networks.map(x=><span class="border border-line px-2 py-1 text-[10px] uppercase tracking-[.08em] text-ink-muted">{x}</span>)}</div></div>
+    </section>
+    <section class="mt-12"><p class="data-label text-wire">Connected intelligence</p><h2 class="mt-2 font-serif text-2xl text-ink">RWA Wire coverage</h2>
+      <div class="mt-5 grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-3">{articles.length ? articles.slice(0,9).map(a=><a href={`/${a.data.category}/${a.slug}/`} class="group bg-bg p-5 hover:bg-surface"><p class="data-label">{a.data.category} // {a.data.type}</p><h3 class="mt-2 font-serif text-xl leading-tight text-ink group-hover:text-wire">{a.data.title}</h3><p class="mt-3 text-xs leading-relaxed text-ink-muted">{a.data.description}</p></a>) : <p class="bg-bg p-5 text-sm text-ink-muted">Coverage connections are being indexed.</p>}</div>
+    </section>
+  </div>
+</BaseLayout>
