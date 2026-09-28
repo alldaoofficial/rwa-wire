@@ -33,11 +33,11 @@ const exploreCategories: Array<keyof typeof CATEGORIES> = [
 >
   <!-- NEWSROOM MASTHEAD -->
   <section class="border-b border-line">
-    <div class="wire-container py-12 sm:py-16">
+    <div class="wire-container py-10 sm:py-12">
       <div class="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
         <div>
           <p class="eyebrow text-wire">RWA · Tokenization · Institutions · Markets</p>
-          <h1 class="mt-4 max-w-4xl font-serif text-4xl font-medium leading-[.98] tracking-[-.025em] text-ink sm:text-6xl lg:text-7xl">Intelligence for the<br/><span class="text-ink-muted">tokenized economy.</span></h1>
+          <h1 class="mt-4 max-w-4xl font-serif text-4xl font-medium leading-[.98] tracking-[-.025em] text-ink sm:text-5xl lg:text-6xl">Intelligence for the<br/><span class="text-ink-muted">tokenized economy.</span></h1>
         </div>
         <div class="max-w-sm border-l border-line pl-5">
           <p class="data-label">RWA Wire // Briefing</p>
@@ -51,7 +51,7 @@ const exploreCategories: Array<keyof typeof CATEGORIES> = [
   <!-- LATEST -->
   {
     featured && (
-      <section class="wire-container py-14 sm:py-20">
+      <section class="wire-container py-12 sm:py-16">
         <div class="mb-8 flex items-center justify-between">
           <div><p class="eyebrow text-wire">Live desk //</p><h2 class="mt-1 font-serif text-2xl font-medium text-ink sm:text-3xl">Latest intelligence</h2></div>
           <a href={sitePath("/news/")} class="text-xs font-medium uppercase tracking-[0.08em] text-ink-muted hover:text-wire">
@@ -69,7 +69,7 @@ const exploreCategories: Array<keyof typeof CATEGORIES> = [
             readingTime={featured.data.readingTime}
             heroImage={featured.data.heroImage}
           />
-          <div class="grid border-t border-line pt-6 lg:grid-cols-2 lg:gap-x-10 lg:[&>article:nth-child(-n+2)]:border-t-0">
+          <div><div class="mb-1 flex items-center justify-between border-b border-line pb-3"><p class="data-label">Intelligence feed</p><p class="data-label">Latest coverage</p></div><div class="grid lg:grid-cols-2 lg:gap-x-10">
             {latest.map((entry) => (
               <ArticleCard
                 compact
