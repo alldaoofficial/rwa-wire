@@ -22,6 +22,7 @@ const segments=[
       <div class="border-l border-line pl-5"><p class="data-label">Coverage standard</p><p class="mt-3 text-sm leading-relaxed text-ink-muted">Profiles focus on what a project builds, where it sits in the market structure and which risks or limitations matter.</p></div>
     </div>
     <section class="mt-8"><div class="grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-4">{segments.map(([title,desc],i)=><div class="bg-bg p-5"><p class="font-mono text-[10px] text-wire">0{i+1}</p><h2 class="mt-3 font-serif text-xl text-ink">{title}</h2><p class="mt-2 text-xs leading-relaxed text-ink-muted">{desc}</p></div>)}</div></section>
+    <div class="mt-8 flex flex-col gap-4 border border-line bg-surface p-5 sm:flex-row sm:items-center sm:justify-between"><div><p class="data-label text-wire">Research tool</p><h2 class="mt-2 font-serif text-xl text-ink">Compare RWA infrastructure</h2><p class="mt-1 text-xs text-ink-muted">Place two published project profiles side by side across sector, market role, asset exposure, networks and products.</p></div><a href="/projects/compare/" class="shrink-0 border border-wire px-4 py-2.5 text-[10px] font-semibold uppercase tracking-[.12em] text-wire hover:bg-wire hover:text-bg">Open comparison →</a></div>
     <section class="mt-12">
       <div class="flex flex-col gap-4 border-y border-line py-5 sm:flex-row sm:items-center sm:justify-between">
         <div><p class="data-label text-wire">Directory controls</p><p id="project-count" class="mt-1 text-xs text-ink-muted">{projects.length} published profiles</p></div>
