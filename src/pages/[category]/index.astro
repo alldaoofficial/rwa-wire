@@ -28,9 +28,11 @@ const articles = (await getCollection("articles", ({ data }) => !data.draft && d
     <h1 class="mt-4 font-serif text-3xl font-medium text-ink sm:text-4xl">{meta.label}</h1>
     <p class="mt-2 max-w-xl text-base text-ink-muted">{meta.description}</p>
 
+    {category === "markets" && <div class="mt-8 border-l-2 border-wire pl-4 py-1"><p class="data-label text-wire">RWA Wire // Intelligence Terminal</p><p class="mt-1 max-w-3xl text-sm leading-relaxed text-ink-muted">A consolidated view of tokenization-linked protocol markets and the underlying real-world asset economy. Live protocol data is separated from sourced market snapshots for clarity.</p></div>}
     {category === "markets" && <><MarketsDashboard /><AssetIntelligence /></>}
 
-    <div class="mt-10 max-w-content">
+    <div class="mt-14 border-t border-line pt-8 max-w-content">
+      {category === "markets" && <div class="mb-5"><p class="data-label text-wire">Market intelligence // Latest coverage</p><h2 class="mt-2 font-serif text-2xl text-ink">Stories shaping the tokenized economy</h2></div>}
       {
         articles.length > 0 ? (
           articles.map((entry) => (
