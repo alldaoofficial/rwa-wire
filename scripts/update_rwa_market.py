@@ -6,11 +6,18 @@ OUT=ROOT/"src/data/rwa-market.json"
 URLS={"overview":"https://defillama.com/rwa","categories":"https://defillama.com/rwa/categories","chains":"https://defillama.com/rwa/chains"}
 
 def get(url):
-    req=urllib.request.Request(url,headers={"User-Agent":"Mozilla/5.0 RWA-Wire/1.0"})
-    with urllib.request.urlopen(req,timeout=30) as r: return r.read().decode("utf-8","ignore")
+    # DefiLlama renders RWA values client-side for plain HTTP clients.
+    # Use Jina Reader as a rendering transport while DefiLlama remains the data source.
+    reader="https://r.jina.ai/"+url
+    req=urllib.request.Request(reader,headers={"User-Agent":"RWA-Wire/1.0","Accept":"text/plain"})
+    with urllib.request.urlopen(req,timeout=45) as r:
+        text=r.read().decode("utf-8","ignore")
+    if len(text)<500: raise ValueError("rendered source too small")
+    return text
 
 def money(text,label):
     plain=re.sub(r"<[^>]+>"," ",text)
+    plain=plain.replace("**","").replace("##"," ")
     plain=re.sub(r"\\s+"," ",plain)
     aliases={
       "Total RWA Active Mcap":["Total RWA Active Mcap","RWA Active AUM","Active Mcap","Active Market Cap"],
