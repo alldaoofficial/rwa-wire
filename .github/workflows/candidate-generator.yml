@@ -59,8 +59,18 @@ jobs:
           git add -A
           git diff --cached --quiet && { echo "Nothing generated"; exit 1; }
           git commit -m "Generate RWA Wire story candidate"
-          git pull --rebase origin main
-          git push
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push; then
+              break
+            fi
+            if [ "$attempt" -eq 3 ]; then
+              echo "Push failed after 3 rebased attempts."
+              exit 1
+            fi
+            echo "Remote changed during push; retrying after rebase..."
+            sleep 3
+          done
 
       - name: Route generated candidate
         env:
