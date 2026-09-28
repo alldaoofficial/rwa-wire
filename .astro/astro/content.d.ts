@@ -166,6 +166,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"bybit-adds-franklin-templeton-tokenized-funds-as-off-exchange-collateral.mdx": {
+	id: "bybit-adds-franklin-templeton-tokenized-funds-as-off-exchange-collateral.mdx";
+  slug: "bybit-adds-franklin-templeton-tokenized-funds-as-off-exchange-collateral";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "canada-six-banks-tokenized-deposits.mdx": {
 	id: "canada-six-banks-tokenized-deposits.mdx";
   slug: "canada-six-banks-tokenized-deposits";
