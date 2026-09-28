@@ -18,8 +18,13 @@ def money(text,label):
       "DeFi Active TVL":["DeFi Active TVL","Active TVL"],
     }
     for key in aliases.get(label,[label]):
-        m=re.search(re.escape(key)+r'.{0,800}?\\$\\s*([0-9.,]+)\\s*([bmk]?)',plain,re.I|re.S)
-        if m: return "$"+m.group(1)+m.group(2).upper()
+        i=plain.lower().find(key.lower())
+        if i>=0:
+            chunk=plain[max(0,i-300):i+1200]
+            vals=re.findall(r'\\$\\s*([0-9][0-9.,]*)\\s*([bmk]?)',chunk,re.I)
+            if vals:
+                n,u=vals[0]
+                return "$"+n+u.upper()
     raise ValueError("missing "+label)
 
 def rows(text,names):
