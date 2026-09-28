@@ -46,7 +46,19 @@ const stopTerms = new Set(["tokenized","tokenization","assets","asset","finance"
 const intelligenceTerms = (values: string[]) => [...new Set(values
   .flatMap((v) => normalize(v).split(/[^a-z0-9]+/))
   .filter((v) => v.length > 4 && !stopTerms.has(v)))];
-const articleHaystack = normalize([title, description, category, ...tags, ...keyTakeaways].join(" "));
+const articleHaystack = normalize([title, description, category, ...tags, ...keyTakeaways, projectMeta?.sector ?? "", projectMeta?.role ?? "", projectMeta?.assetExposure ?? "", ...(projectMeta?.products ?? [])].join(" "));
+const topicDefs = [
+  { slug:"real-world-assets", title:"Real-World Assets", terms:["rwa","real-world assets","real world assets"] },
+  { slug:"tokenized-treasuries", title:"Tokenized Treasuries", terms:["treasur","government securities"] },
+  { slug:"tokenized-securities", title:"Tokenized Securities", terms:["tokenized securities","tokenized stocks","equities","bonds","funds"] },
+  { slug:"private-credit", title:"Private Credit", terms:["private credit","credit infrastructure","lending"] },
+  { slug:"institutional-tokenization", title:"Institutional Tokenization", terms:["institution","banks","asset managers","settlement","deposits"] },
+];
+const matchedTopics = topicDefs
+  .map(topic => ({...topic, score: topic.terms.filter(term => articleHaystack.includes(term)).length}))
+  .filter(topic => topic.score > 0)
+  .sort((a,b)=>b.score-a.score)
+  .slice(0,3);
 const scoredProjects = type === "PROJECT" ? [] : projectEntries
   .map((p) => {
     const meta = p.data.projectMeta!;
@@ -208,6 +220,15 @@ const jsonLd = {
         </div>
       )
     }
+
+    {matchedTopics.length > 0 && (
+      <section class="mt-10 border-t border-line pt-6">
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div><p class="data-label text-wire">Explore this topic</p><p class="mt-1 text-sm text-ink-muted">Continue through RWA Wire's connected research map.</p></div>
+          <div class="flex flex-wrap gap-2">{matchedTopics.map(topic => <a href={`/topics/${topic.slug}/`} class="border border-line px-3 py-2 text-[10px] uppercase tracking-[.08em] text-ink-muted hover:border-wire hover:text-wire">{topic.title} →</a>)}</div>
+        </div>
+      </section>
+    )}
 
     {(scoredProjects.length > 0 || projectNews.length > 0) && (
       <section class="mt-12 border-y border-line py-6">
