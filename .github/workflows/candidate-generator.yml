@@ -1,6 +1,9 @@
 name: RWA Wire Candidate Generator
 
 on:
+  push:
+    paths:
+      - "publish/inbox/*.json"
   workflow_dispatch:
     inputs:
       brief_path:
@@ -11,24 +14,43 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: rwa-wire-candidate-generator
+  cancel-in-progress: false
+
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Validate input path
+        with:
+          fetch-depth: 2
+
+      - name: Resolve story brief
         env:
-          BRIEF_PATH: ${{ inputs.brief_path }}
+          MANUAL_BRIEF_PATH: ${{ inputs.brief_path }}
         run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            BRIEF_PATH="$MANUAL_BRIEF_PATH"
+          else
+            BRIEF_PATH=$(git diff --name-only --diff-filter=A HEAD^ HEAD -- "publish/inbox/*.json")
+          fi
+          COUNT=$(printf "%s\n" "$BRIEF_PATH" | sed '/^$/d' | wc -l)
+          if [ "$COUNT" -ne 1 ]; then
+            echo "Expected exactly one new story brief, found $COUNT."
+            exit 1
+          fi
           case "$BRIEF_PATH" in publish/inbox/*.json) ;; *) echo "Invalid brief path"; exit 1;; esac
+          echo "BRIEF_PATH=$BRIEF_PATH" >> "$GITHUB_ENV"
+
       - name: Generate article, visual and candidate
-        env:
-          BRIEF_PATH: ${{ inputs.brief_path }}
         run: python3 scripts/candidate_generator.py "$BRIEF_PATH"
+
       - name: Build site
         run: |
           npm install
           npm run build
+
       - name: Commit generated story package
         run: |
           git config user.name "github-actions[bot]"
@@ -36,4 +58,5 @@ jobs:
           git add src/content/articles public/images/news publish/candidates
           git diff --cached --quiet && { echo "Nothing generated"; exit 1; }
           git commit -m "Generate RWA Wire story candidate"
+          git pull --rebase origin main
           git push
