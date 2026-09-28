@@ -72,6 +72,14 @@ jobs:
             sleep 3
           done
 
+      - name: Deploy generated article
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Commits made with GITHUB_TOKEN do not reliably trigger another
+          # workflow via push, so dispatch Pages explicitly.
+          gh workflow run deploy.yml --ref main
+
       - name: Route generated candidate
         env:
           GH_TOKEN: ${{ github.token }}
