@@ -112,6 +112,14 @@ const exploreCategories: Array<keyof typeof CATEGORIES> = [
     </div>
   </section>
 
+  <!-- TOPIC INTELLIGENCE -->
+  <section class="border-t border-line">
+    <div class="wire-container py-12 sm:py-16">
+      <div class="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between"><div><p class="data-label text-wire">Research map</p><h2 class="mt-2 font-serif text-2xl font-medium text-ink sm:text-3xl">Explore intelligence by topic</h2><p class="mt-2 max-w-xl text-sm text-ink-muted">Connected research across the core markets and infrastructure shaping tokenized finance.</p></div><a href="/topics/" class="text-xs font-medium uppercase tracking-[.08em] text-wire">View topic map →</a></div>
+      <div class="mt-7 flex flex-wrap gap-2">{[["Real-World Assets","real-world-assets"],["Tokenized Treasuries","tokenized-treasuries"],["Tokenized Securities","tokenized-securities"],["Private Credit","private-credit"],["Institutional Tokenization","institutional-tokenization"]].map(([label,slug])=><a href={`/topics/${slug}/`} class="border border-line px-4 py-2.5 text-[11px] uppercase tracking-[.08em] text-ink-muted hover:border-wire hover:text-wire">{label}</a>)}</div>
+    </div>
+  </section>
+
   <!-- LEARN -->
   <section class="wire-container py-14 sm:py-20">
     <div class="mb-8 flex items-center justify-between">
