@@ -32,25 +32,19 @@ const projectArticles = allArticles.filter((a) => a.data.category === "projects"
   <!-- START HERE -->
   <section class="relative overflow-hidden border-b border-line">
     <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_10%,rgba(46,212,122,.10),transparent_34%),linear-gradient(180deg,rgba(17,21,26,.35),transparent_75%)]"></div>
-    <div class="wire-container relative py-12 sm:py-16">
-      <p class="eyebrow text-wire">RWA Wire // Start here</p>
-      <h1 class="mt-4 max-w-4xl font-serif text-4xl font-medium leading-[.98] tracking-[-.025em] text-ink sm:text-5xl lg:text-6xl">Understand how traditional finance is moving <span class="text-ink-muted">onchain.</span></h1>
-      <p class="mt-5 max-w-2xl text-base leading-relaxed text-ink-muted">Follow the latest institutional moves, learn the fundamentals, or explore the companies building tokenized finance.</p>
-      <div class="mt-7 grid gap-3 sm:grid-cols-3">
-        <a href="#latest" class="group border border-line bg-bg/70 p-4 hover:border-wire/60"><span class="font-mono text-[10px] text-wire">01 // TODAY</span><p class="mt-2 text-sm font-medium text-ink">See what changed</p><p class="mt-1 text-xs text-ink-muted">Latest news and market developments.</p></a>
-        <a href="/learn/" class="group border border-line bg-bg/70 p-4 hover:border-wire/60"><span class="font-mono text-[10px] text-wire">02 // NEW HERE</span><p class="mt-2 text-sm font-medium text-ink">Learn the basics</p><p class="mt-1 text-xs text-ink-muted">Plain-English guides to RWA and tokenization.</p></a>
-        <a href="/projects/" class="group border border-line bg-bg/70 p-4 hover:border-wire/60"><span class="font-mono text-[10px] text-wire">03 // GO DEEPER</span><p class="mt-2 text-sm font-medium text-ink">Explore the infrastructure</p><p class="mt-1 text-xs text-ink-muted">Projects, institutions and connected research.</p></a>
+    <div class="wire-container relative py-10 sm:py-12">
+      <div class="grid gap-7 lg:grid-cols-[1fr_340px] lg:items-end">
+        <div>
+          <p class="eyebrow text-wire">RWA Wire // Tokenized finance, decoded</p>
+          <h1 class="mt-3 max-w-4xl font-serif text-4xl font-medium leading-[.98] tracking-[-.025em] text-ink sm:text-5xl lg:text-[56px]">Follow what matters as traditional finance moves <span class="text-ink-muted">onchain.</span></h1>
+          <p class="mt-4 max-w-2xl text-[15px] leading-relaxed text-ink-muted">Institutional moves, market developments and the infrastructure behind real-world asset tokenization — without the noise.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-px border border-line bg-line">
+          <a href="#latest" class="group bg-bg p-4 hover:bg-surface"><span class="font-mono text-[9px] text-wire">01 // LATEST</span><p class="mt-1.5 text-sm font-medium text-ink">What changed →</p></a>
+          <a href="/learn/" class="group bg-bg p-4 hover:bg-surface"><span class="font-mono text-[9px] text-wire">02 // LEARN</span><p class="mt-1.5 text-sm font-medium text-ink">Start with RWA →</p></a>
+          <a href="/map/" class="group col-span-2 bg-bg p-4 hover:bg-surface"><span class="font-mono text-[9px] text-wire">03 // MARKET MAP</span><p class="mt-1.5 text-sm font-medium text-ink">See how institutions, assets and infrastructure connect →</p></a>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- MARKET MAP -->
-  <section class="border-b border-line bg-surface/40">
-    <div class="wire-container py-8">
-      <a href="/map/" class="group grid gap-5 border border-line bg-[radial-gradient(circle_at_15%_0%,rgba(46,212,122,.08),transparent_42%)] p-5 sm:grid-cols-[1fr_auto] sm:items-center hover:border-wire/60">
-        <div><p class="data-label text-wire">New // Visual market map</p><h2 class="mt-2 font-serif text-2xl text-ink">Not sure how the pieces connect?</h2><p class="mt-2 max-w-2xl text-sm text-ink-muted">See institutions → assets → infrastructure → networks in one simple view before going deeper.</p></div>
-        <span class="text-[10px] font-semibold uppercase tracking-[.1em] text-wire">Open the map →</span>
-      </a>
     </div>
   </section>
 
