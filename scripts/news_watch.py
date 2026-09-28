@@ -14,13 +14,27 @@ ROOT=pathlib.Path(__file__).resolve().parents[1]
 STATE=ROOT/"publish/news-watch-state.json"
 INBOX=ROOT/"publish/inbox"
 QUERIES=[
-  '"tokenized fund" OR "tokenized treasury" OR "tokenized securities"',
-  '"tokenized deposits" OR "deposit token" OR "onchain finance"',
-  '"real world assets" tokenization institution OR bank OR fund',
+  '"tokenized fund" OR "tokenized treasury" OR "tokenized securities" OR "tokenized stocks"',
+  '"tokenized deposits" OR "deposit token" OR "tokenized money market" OR "onchain finance"',
+  '"real world assets" tokenization institution OR bank OR fund OR securities',
+  'BlackRock OR Franklin Templeton OR JPMorgan OR DTCC tokenized OR tokenization OR onchain',
+  'Securitize OR Ondo OR Centrifuge OR Chainlink "real world assets" OR tokenization',
+  '"tokenized private credit" OR "tokenized bonds" OR "digital bonds" OR "tokenized real estate"',
+  'stablecoin bank settlement institution tokenized deposits regulation',
 ]
-STRONG=["tokenized","tokenization","onchain","deposit token","real world asset","rwa"]
-INSTITUTIONAL=["bank","fund","asset manager","securities","treasury","institution","settlement","dtcc","blackrock","jpmorgan","franklin","securitize"]
-BLOCK=["price prediction","airdrop","presale","memecoin","meme coin","casino"]
+STRONG={
+  "tokenized":3,"tokenization":3,"tokenized fund":4,"tokenized treasury":4,
+  "tokenized securities":4,"tokenized stocks":4,"tokenized deposits":4,
+  "deposit token":4,"onchain finance":3,"real world asset":3,"rwa":2,
+  "digital bond":3,"private credit":2,"stablecoin":1,
+}
+INSTITUTIONAL={
+  "blackrock":3,"franklin templeton":3,"jpmorgan":3,"j.p. morgan":3,"dtcc":3,
+  "securitize":2,"ondo":2,"centrifuge":2,"chainlink":2,"bank":1,"fund":1,
+  "asset manager":2,"securities":2,"treasury":2,"institution":1,"settlement":2,
+  "exchange":1,"custody":1,"regulator":1,
+}
+BLOCK=["price prediction","airdrop","presale","memecoin","meme coin","casino","100x","price target","giveaway"]
 
 def clean(s):
     return re.sub(r"\s+"," ",html.unescape(re.sub(r"<[^>]+>"," ",s or ""))).strip()
@@ -48,23 +62,25 @@ def main():
             try: published=parsedate_to_datetime(x.findtext("pubDate")).astimezone(timezone.utc)
             except Exception: published=now
             hay=(title+" "+desc).lower()
-            score=sum(3 for k in STRONG if k in hay)+sum(1 for k in INSTITUTIONAL if k in hay)-sum(8 for k in BLOCK if k in hay)
+            score=sum(weight for k,weight in STRONG.items() if k in hay)+sum(weight for k,weight in INSTITUTIONAL.items() if k in hay)-sum(8 for k in BLOCK if k in hay)
             if guid in seen or slugify(title) in existing or now-published>timedelta(hours=48): continue
-            if score>=5: items.append((score,published,title,link,desc,guid))
+            # Require an actual tokenization/RWA signal; institution names alone are not enough.
+            has_rwa_signal=any(k in hay for k in STRONG if k != "stablecoin")
+            if score>=6 and has_rwa_signal: items.append((score,published,title,link,desc,guid))
     if not items:
         print("No new high-confidence story found."); return
     items.sort(key=lambda x:(x[0],x[1]),reverse=True)
     score,published,title,link,desc,guid=items[0]
-    # Google News descriptions are deliberately treated only as discovery metadata.
-    # Keep the generated brief conservative; a human approval remains mandatory.
+    # Google News descriptions are discovery metadata, not independent verification.
+    # Keep automated copy conservative and source-attributed.
     source_name=title.rsplit(" - ",1)[-1] if " - " in title else "Google News source"
     clean_title=title.rsplit(" - ",1)[0] if " - " in title else title
     summary=desc or f"A new institutional tokenization development has been reported: {clean_title}."
     if len(summary)>500: summary=summary[:497].rstrip()+"..."
-    why="This story matched RWA Wire's institutional tokenization watchlist. Review the linked source before approval; the automated draft intentionally avoids adding facts beyond discovery metadata."
+    why="This development matched RWA Wire's institutional tokenization radar because it connects a concrete RWA/onchain signal with financial infrastructure or an identifiable market participant. The automated brief does not add claims beyond the discovered source metadata."
     body=(f"**{clean_title}** has entered the RWA Wire news watch after matching our institutional tokenization filters.\n\n"
           f"{summary}\n\n## Why RWA Wire is watching\n\n{why}\n\n"
-          "## Editorial status\n\nThis is an automated discovery draft. The linked source should be checked in the private editorial preview before publication.")
+          "## Source note\n\nRWA Wire discovered this development through its automated institutional tokenization monitor. Details should be read together with the linked primary/reporting source.")
     day=published.date().isoformat(); slug=slugify(clean_title)
     brief={"title":clean_title,"description":summary,"why_it_matters":why,"pubDate":day,"category":"news",
       "tags":["Tokenization","Institutions","News Watch"],"keyTakeaways":[summary,why],"body":body,
