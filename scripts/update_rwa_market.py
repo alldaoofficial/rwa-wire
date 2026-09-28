@@ -10,9 +10,17 @@ def get(url):
     with urllib.request.urlopen(req,timeout=30) as r: return r.read().decode("utf-8","ignore")
 
 def money(text,label):
-    m=re.search(re.escape(label)+r'.{0,300}?\$([0-9.,]+)([bmk]?)',text,re.I|re.S)
-    if not m: raise ValueError("missing "+label)
-    return "$"+m.group(1)+m.group(2).upper()
+    plain=re.sub(r"<[^>]+>"," ",text)
+    plain=re.sub(r"\\s+"," ",plain)
+    aliases={
+      "Total RWA Active Mcap":["Total RWA Active Mcap","RWA Active AUM","Active Mcap","Active Market Cap"],
+      "Total RWA Onchain Mcap":["Total RWA Onchain Mcap","RWA Onchain AUM","Onchain Mcap","Onchain Market Cap"],
+      "DeFi Active TVL":["DeFi Active TVL","Active TVL"],
+    }
+    for key in aliases.get(label,[label]):
+        m=re.search(re.escape(key)+r'.{0,800}?\\$\\s*([0-9.,]+)\\s*([bmk]?)',plain,re.I|re.S)
+        if m: return "$"+m.group(1)+m.group(2).upper()
+    raise ValueError("missing "+label)
 
 def rows(text,names):
     out=[]
