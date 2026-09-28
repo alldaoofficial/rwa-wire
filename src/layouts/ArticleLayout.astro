@@ -75,7 +75,7 @@ const jsonLd = {
   modifiedTime={updatedDate}
   image={heroImage}
 >
-  <article class="wire-container max-w-content py-10 sm:py-14">
+  <article class="wire-container py-10 sm:py-16">\n    <div class="mx-auto max-w-[900px]">
     <Breadcrumbs
       items={[
         { label: CATEGORIES[category as CategorySlug].label, href: `/${category}/` },
@@ -84,10 +84,10 @@ const jsonLd = {
     />
 
     <p class="eyebrow mt-6 text-wire">{CATEGORIES[category as CategorySlug].label} &middot; {type}</p>
-    <h1 class="mt-3 font-serif text-3xl font-medium leading-tight text-ink sm:text-4xl">
+    <h1 class="mt-4 max-w-4xl font-serif text-4xl font-medium leading-[1.02] tracking-[-.02em] text-ink sm:text-5xl lg:text-6xl">
       {title}
     </h1>
-    <p class="mt-4 text-lg leading-relaxed text-ink-muted">{description}</p>
+    <p class="mt-6 max-w-3xl text-xl leading-relaxed text-ink-muted">{description}</p>
 
     <div class="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-ink-muted">
       <span>{author}</span>
@@ -116,7 +116,7 @@ const jsonLd = {
       )
     }
 
-    <div class="prose prose-invert prose-wire mt-10 max-w-none text-[17px]">
+    <div class="mx-auto prose prose-invert prose-wire mt-12 max-w-[720px] text-[17px]">
       <slot />
     </div>
 
@@ -148,7 +148,7 @@ const jsonLd = {
       )
     }
 
-    <div class="mt-12 space-y-10">
+    <div class="mx-auto mt-12 max-w-[720px] space-y-10">
       <RelatedArticles items={related} />
       {showTradingCTA && <TradingCTA />}
     </div>
