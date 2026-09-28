@@ -5,72 +5,41 @@ import { NAV_LINKS, FOOTER_LINKS, TELEGRAM_URL, X_URL, SITE } from "@/config/sit
 const year = new Date().getFullYear();
 ---
 
-<footer class="border-t border-line">
-  <div class="wire-container grid grid-cols-1 gap-10 py-14 md:grid-cols-[1.3fr_1fr_1fr]">
-    <div>
-      <Logo size="md" />
-      <p class="mt-4 max-w-xs text-sm leading-relaxed text-ink-muted">
-        {SITE.tagline}
-      </p>
-      <div class="mt-6 flex gap-3">
-        <a
-          href={TELEGRAM_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="rounded border border-line px-3 py-1.5 text-xs font-medium text-ink hover:border-wire/50 hover:text-wire"
-        >
-          Telegram
-        </a>
-        <a
-          href={X_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="rounded border border-line px-3 py-1.5 text-xs font-medium text-ink hover:border-wire/50 hover:text-wire"
-        >
-          X
-        </a>
+<footer class="border-t border-line bg-[#090c0f]">
+  <div class="wire-container py-12 sm:py-16">
+    <div class="grid gap-10 border-b border-line pb-12 lg:grid-cols-[1.35fr_.75fr_.75fr_1fr]">
+      <div>
+        <Logo size="md" />
+        <p class="mt-5 max-w-sm font-serif text-2xl leading-tight text-ink">{SITE.tagline}</p>
+        <p class="mt-4 max-w-md text-sm leading-relaxed text-ink-muted">
+          Independent reporting and analysis on real-world assets, tokenization,
+          institutions and the infrastructure moving global finance onchain.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer" class="border border-line px-4 py-2 text-[10px] font-semibold uppercase tracking-[.14em] text-ink hover:border-wire/60 hover:text-wire">Telegram // Live Wire</a>
+          {X_URL && <a href={X_URL} target="_blank" rel="noopener noreferrer" class="border border-line px-4 py-2 text-[10px] font-semibold uppercase tracking-[.14em] text-ink hover:border-wire/60 hover:text-wire">X</a>}
+        </div>
+      </div>
+      <div>
+        <p class="data-label mb-5">Coverage</p>
+        <ul class="space-y-3">{NAV_LINKS.slice(0,5).map((link) => <li><a href={sitePath(link.href)} class="text-sm text-ink-muted hover:text-ink">{link.label}</a></li>)}</ul>
+      </div>
+      <div>
+        <p class="data-label mb-5">Intelligence</p>
+        <ul class="space-y-3">{NAV_LINKS.slice(5).map((link) => <li><a href={sitePath(link.href)} class="text-sm text-ink-muted hover:text-ink">{link.label}</a></li>)}</ul>
+      </div>
+      <div>
+        <p class="data-label mb-5">RWA Wire</p>
+        <ul class="space-y-3">{FOOTER_LINKS.map((link) => <li><a href={sitePath(link.href)} class="text-sm text-ink-muted hover:text-ink">{link.label}</a></li>)}</ul>
+        <div class="mt-6 border-l border-wire/50 pl-4">
+          <p class="text-[10px] font-semibold uppercase tracking-[.14em] text-wire">Editorial independence</p>
+          <p class="mt-2 text-xs leading-relaxed text-ink-muted">Commercial relationships are kept separate from editorial coverage.</p>
+        </div>
       </div>
     </div>
-
-    <div>
-      <p class="eyebrow mb-4">Sections</p>
-      <ul class="space-y-2.5">
-        {
-          NAV_LINKS.map((link) => (
-            <li>
-              <a href={sitePath(link.href)} class="text-sm text-ink-muted hover:text-ink">
-                {link.label}
-              </a>
-            </li>
-          ))
-        }
-      </ul>
-    </div>
-
-    <div>
-      <p class="eyebrow mb-4">Site</p>
-      <ul class="space-y-2.5">
-        {
-          FOOTER_LINKS.map((link) => (
-            <li>
-              <a href={sitePath(link.href)} class="text-sm text-ink-muted hover:text-ink">
-                {link.label}
-              </a>
-            </li>
-          ))
-        }
-      </ul>
-    </div>
-  </div>
-
-  <div class="border-t border-line py-6">
-    <div class="wire-container flex flex-col gap-2 text-xs text-ink-muted sm:flex-row sm:items-center sm:justify-between">
-      <p>&copy; {year} RWA Wire. All rights reserved.</p>
-      <p>
-        RWA Wire is independent financial media. Nothing on this site is
-        investment advice. See our
-        <a href={sitePath("/affiliate-disclosure/")} class="underline hover:text-ink">affiliate disclosure</a>.
-      </p>
+    <div class="flex flex-col gap-4 pt-6 text-[10px] uppercase tracking-[.08em] text-ink-muted lg:flex-row lg:items-center lg:justify-between">
+      <p>&copy; {year} RWA Wire // Independent financial media</p>
+      <p class="max-w-3xl normal-case tracking-normal">Information only — not investment, legal or tax advice. Digital and tokenized assets involve risk. <a href={sitePath("/affiliate-disclosure/")} class="underline underline-offset-2 hover:text-ink">Affiliate disclosure</a>.</p>
     </div>
   </div>
 </footer>
