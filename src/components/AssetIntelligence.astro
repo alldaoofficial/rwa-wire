@@ -1,0 +1,26 @@
+---
+const segments = [
+  { label: "Tokenized RWA AUM", value: "$28.7B", note: "Tracked active AUM", source: "DefiLlama", href: "https://defillama.com/" },
+  { label: "Stablecoins", value: "$306.6B", note: "Total market capitalization", source: "DefiLlama", href: "https://defillama.com/stablecoins" },
+  { label: "Market structure", value: "LIVE", note: "Treasuries · credit · commodities", source: "RWA Wire", href: "/markets/" },
+];
+---
+<section class="mt-14">
+  <div class="flex items-end justify-between border-b border-line pb-5">
+    <div><p class="data-label text-wire">Tokenized Asset Intelligence</p><h2 class="mt-2 font-serif text-2xl text-ink sm:text-3xl">The onchain real-world economy</h2></div>
+    <span class="hidden text-[10px] uppercase tracking-[.12em] text-ink-muted sm:block">Market snapshot // USD</span>
+  </div>
+  <div class="grid gap-px bg-line sm:grid-cols-3">
+    {segments.map((s) => <article class="bg-bg p-6">
+      <p class="data-label">{s.label}</p><p class="mt-4 font-mono text-3xl text-ink">{s.value}</p>
+      <p class="mt-2 text-xs text-ink-muted">{s.note}</p>
+      <a href={s.href} target={s.href.startsWith("http") ? "_blank" : undefined} rel={s.href.startsWith("http") ? "noopener noreferrer" : undefined} class="mt-5 inline-block text-[10px] uppercase tracking-[.12em] text-wire">Source // {s.source}</a>
+    </article>)}
+  </div>
+  <div class="mt-6 grid gap-4 lg:grid-cols-3">
+    <div class="border border-line p-5"><p class="data-label">01 // Treasuries</p><h3 class="mt-3 font-serif text-xl text-ink">Tokenized government debt</h3><p class="mt-2 text-sm leading-relaxed text-ink-muted">Track the institutional shift of short-duration government securities onto blockchain rails.</p></div>
+    <div class="border border-line p-5"><p class="data-label">02 // Private credit</p><h3 class="mt-3 font-serif text-xl text-ink">Onchain lending markets</h3><p class="mt-2 text-sm leading-relaxed text-ink-muted">Credit originated or represented onchain, including institutional and asset-backed lending.</p></div>
+    <div class="border border-line p-5"><p class="data-label">03 // Commodities</p><h3 class="mt-3 font-serif text-xl text-ink">Tokenized hard assets</h3><p class="mt-2 text-sm leading-relaxed text-ink-muted">Digital representations of gold and other real-world commodities with onchain settlement.</p></div>
+  </div>
+  <p class="mt-4 text-[10px] leading-relaxed text-ink-muted">Snapshot metrics are sourced from DefiLlama and may change between updates. RWA Wire separates protocol-token market data from underlying tokenized-asset metrics.</p>
+</section>
