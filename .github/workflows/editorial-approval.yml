@@ -34,11 +34,11 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             CANDIDATE_PATH="$MANUAL_CANDIDATE_PATH"
           else
-            CANDIDATE_PATH=$(git diff --name-only --diff-filter=A HEAD^ HEAD -- "publish/candidates/*.json")
+            CANDIDATE_PATH=$(git diff --name-only --diff-filter=AM HEAD^ HEAD -- "publish/candidates/*.json")
           fi
           COUNT=$(printf "%s\n" "$CANDIDATE_PATH" | sed '/^$/d' | wc -l)
           if [ "$COUNT" -ne 1 ]; then
-            echo "Expected exactly one newly added candidate manifest, found $COUNT."
+            echo "Expected exactly one candidate manifest, found $COUNT."
             exit 1
           fi
           case "$CANDIDATE_PATH" in
