@@ -13,6 +13,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: rwa-wire-candidate-generator
@@ -60,3 +61,14 @@ jobs:
           git commit -m "Generate RWA Wire story candidate"
           git pull --rebase origin main
           git push
+
+      - name: Trigger editorial approval
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          CANDIDATE_PATH=$(git diff-tree --no-commit-id --name-only -r HEAD -- "publish/candidates/*.json" | head -n 1)
+          if [ -z "$CANDIDATE_PATH" ]; then
+            echo "No candidate manifest found in generated commit."
+            exit 1
+          fi
+          gh workflow run editorial-approval.yml --ref main -f candidate_path="$CANDIDATE_PATH"
