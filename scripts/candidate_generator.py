@@ -84,8 +84,16 @@ def main():
     caption=d.get("caption") or f'{d["title"]}\n\n{d["why_it_matters"]}\n\nRead the full story →\n{article_url}\n\nTrading partner: Bitunix · Affiliate link · Trading involves risk.'
     if len(caption)>1024: raise ValueError("generated caption exceeds Telegram limit")
     candidate_id=f"{pub}-{slug}"[:55].rstrip("-")
+    social=d.get("social") or {}
+    distribution={
+      "telegram": caption,
+      "x": social.get("x") or f'{d["title"]}\n\n{d["why_it_matters"]}\n\n{article_url}',
+      "breaking": social.get("breaking") or f'RWA WIRE // {d.get("reviewCategory",d.get("category","news")).upper()}\n\n{d["title"]}\n\n{article_url}',
+      "summary": social.get("summary") or d["description"],
+    }
     candidate={"id":candidate_id,"title":d["title"],"category":d.get("reviewCategory",d.get("category","news")).upper(),
-      "why_it_matters":d["why_it_matters"],"article_url":article_url,"image_url":image_url,"caption":caption,"sources":d["sources"]}
+      "why_it_matters":d["why_it_matters"],"article_url":article_url,"image_url":image_url,"caption":caption,
+      "distribution":distribution,"sources":d["sources"]}
     for p in (ARTICLES/f"{slug}.mdx",IMAGES/f"{slug}.svg",CANDIDATES/f'{candidate["id"]}.json'):
         if p.exists(): raise ValueError(f"Refusing overwrite: {p.relative_to(ROOT)}")
     ARTICLES.mkdir(parents=True,exist_ok=True); IMAGES.mkdir(parents=True,exist_ok=True); CANDIDATES.mkdir(parents=True,exist_ok=True)
