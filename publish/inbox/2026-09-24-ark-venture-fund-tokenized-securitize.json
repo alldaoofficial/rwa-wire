@@ -1,0 +1,30 @@
+{
+  "title": "ARK Invest Tokenizes ARK Venture Fund Through Securitize",
+  "description": "ARK Invest and Securitize have announced the tokenization of the ARK Venture Fund, bringing an established interval fund with exposure to private and public innovation companies onto tokenized capital-markets infrastructure.",
+  "why_it_matters": "The deal moves an existing regulated investment fund—not a newly created crypto vehicle—onto tokenized infrastructure, extending institutional tokenization further into venture and private-market exposure while preserving the fund's existing interval-fund liquidity constraints.",
+  "pubDate": "2026-09-24",
+  "category": "news",
+  "tags": [
+    "Tokenization",
+    "Funds",
+    "Private Markets",
+    "ARK Invest",
+    "Securitize"
+  ],
+  "keyTakeaways": [
+    "ARK Invest and Securitize announced the tokenization of the existing ARK Venture Fund (ARKVX) on September 24.",
+    "Securitize says the tokenized fund will be available on Ethereum, with its infrastructure supporting onchain issuance and the investor experience.",
+    "Tokenization does not turn ARKVX into a continuously liquid exchange-traded product: the underlying vehicle remains a closed-end interval fund with periodic repurchase mechanics."
+  ],
+  "body": "ARK Invest and Securitize have announced the tokenization of the **ARK Venture Fund (ARKVX)**, moving an established investment product onto tokenized capital-markets infrastructure.\n\nThe September 24 announcement is notable because ARKVX is not a newly created crypto fund. It is an actively managed closed-end interval fund that invests across private and public companies associated with disruptive innovation. Securitize is providing the infrastructure for the fund's onchain issuance and investor experience.\n\n## What is being tokenized\n\nThe transaction brings ownership and administration of an existing regulated fund onto tokenized infrastructure. According to Securitize, tokenized ARKVX will be available on Ethereum upon release.\n\nThat distinction matters. The announcement is about tokenizing fund interests and their supporting infrastructure; it does not mean the fund's underlying portfolio companies themselves are being tokenized.\n\nARK says the move is intended to broaden the ways investors can access its venture strategy while using blockchain-based capital-markets infrastructure.\n\n## Private-market exposure moves onchain\n\nARKVX invests across both private and public companies, giving investors exposure to a part of the market that has historically been harder for individual investors to access than listed equities.\n\nPutting the fund on tokenized rails therefore extends the institutional tokenization trend beyond Treasury products and money-market-style instruments into venture and private-market exposure.\n\nThe development also deepens an existing relationship between ARK and Securitize. ARK made a strategic investment in Securitize in October 2025, with the firms saying they intended to advance institutional adoption of tokenized securities and regulated investment products.\n\n## Tokenization does not remove the liquidity constraints\n\nThe onchain structure should not be confused with an always-liquid token.\n\nARKVX remains a closed-end interval fund. ARK's fund materials state that the vehicle conducts periodic repurchase offers and that investors should consider its shares illiquid. The shares are not expected to trade on a conventional securities exchange simply because the fund has been tokenized.\n\nThat is an important distinction for the broader RWA market: blockchain infrastructure can change issuance, ownership records and investor servicing without automatically changing the legal or economic terms of the underlying investment product.\n\n## Why it matters for tokenized capital markets\n\nTokenized funds are becoming one of the clearest institutional use cases for blockchain infrastructure.\n\nMuch of the early momentum has centered on highly liquid instruments such as government securities and cash-management products. ARK's move shows the same infrastructure model being applied to a fund whose strategy includes private-market exposure.\n\nThe bigger signal is not that venture capital suddenly becomes liquid onchain. It is that established asset managers are increasingly treating tokenization as an additional distribution and administration layer for existing regulated products.\n\nIf that model continues to expand, tokenized fund interests could become an important bridge between traditional asset-management structures and programmable financial infrastructure.",
+  "sources": [
+    {
+      "name": "Securitize — ARK Invest Tokenizes ARK Venture Fund (ARKVX) with Securitize",
+      "url": "https://investors.securitize.io/news/news-details/2026/ARK-Invest-Tokenizes-ARK-Venture-Fund-ARKVX-with-Securitize/default.aspx"
+    },
+    {
+      "name": "ARK Invest — ARK Venture Fund",
+      "url": "https://www.ark-funds.com/"
+    }
+  ]
+}
