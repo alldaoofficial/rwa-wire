@@ -1,0 +1,53 @@
+---
+const assets = [
+  { id: "ondo-finance", symbol: "ONDO" },
+  { id: "chainlink", symbol: "LINK" },
+  { id: "centrifuge", symbol: "CFG" },
+  { id: "polymesh", symbol: "POLYX" },
+];
+---
+<section class="border-b border-line bg-surface/60" aria-label="RWA market ticker">
+  <div class="wire-container flex min-h-11 items-center gap-5 overflow-x-auto py-2 [scrollbar-width:none]">
+    <div class="flex shrink-0 items-center gap-2 border-r border-line pr-5">
+      <span class="h-1.5 w-1.5 rounded-full bg-wire"></span>
+      <span class="text-[10px] font-semibold uppercase tracking-[.15em] text-wire">RWA Markets // Live</span>
+    </div>
+    <div id="rwa-market-ticker" class="flex items-center gap-6">
+      {assets.map((asset) => (
+        <div class="flex shrink-0 items-baseline gap-2" data-market={asset.id}>
+          <span class="text-[11px] font-semibold tracking-[.08em] text-ink">{asset.symbol}</span>
+          <span class="market-price font-mono text-[11px] text-ink-muted">—</span>
+          <span class="market-change font-mono text-[10px] text-ink-muted">—</span>
+        </div>
+      ))}
+    </div>
+    <span id="market-status" class="ml-auto shrink-0 text-[9px] uppercase tracking-[.1em] text-ink-muted">Loading</span>
+  </div>
+</section>
+<script is:inline>
+(() => {
+  const ids = ["ondo-finance","chainlink","centrifuge","polymesh"];
+  const endpoint = "https://api.coingecko.com/api/v3/simple/price?ids=" + ids.join(",") + "&vs_currencies=usd&include_24hr_change=true";
+  const price = (n) => n >= 100 ? "$"+n.toLocaleString(undefined,{maximumFractionDigits:2}) : n >= 1 ? "$"+n.toFixed(2) : "$"+n.toFixed(4);
+  async function refreshMarkets() {
+    const status=document.getElementById("market-status");
+    try {
+      const res=await fetch(endpoint,{headers:{accept:"application/json"}});
+      if(!res.ok) throw new Error("market data unavailable");
+      const data=await res.json();
+      ids.forEach(id=>{
+        const row=document.querySelector('[data-market="'+id+'"]'), item=data[id];
+        if(!row||!item) return;
+        row.querySelector(".market-price").textContent=price(item.usd);
+        const ch=item.usd_24h_change;
+        const el=row.querySelector(".market-change");
+        el.textContent=Number.isFinite(ch)?(ch>=0?"+":"")+ch.toFixed(2)+"%":"—";
+        el.className="market-change font-mono text-[10px] "+(ch>=0?"text-wire":"text-red-400");
+      });
+      status.textContent="Updated "+new Date().toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"});
+    } catch(e) { status.textContent="Data unavailable"; }
+  }
+  refreshMarkets();
+  setInterval(refreshMarkets,60000);
+})();
+</script>
