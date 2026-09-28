@@ -1,36 +1,18 @@
 ---
 import { CATEGORIES, type CategorySlug } from "@/config/site";
-
-interface Props {
-  href: string;
-  title: string;
-  description: string;
-  category: CategorySlug;
-  pubDate: Date;
-  readingTime: string;
-}
-const { href, title, description, category, pubDate, readingTime } = Astro.props;
-
-const dateStr = pubDate.toLocaleDateString("en-US", {
-  month: "short",
-  day: "numeric",
-  year: "numeric",
-});
+interface Props { href:string; title:string; description:string; category:CategorySlug; pubDate:Date; readingTime:string; heroImage?:string; }
+const {href,title,description,category,pubDate,readingTime,heroImage}=Astro.props;
+const dateStr=pubDate.toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"});
 ---
-
-<article class="group border border-line bg-surface p-7 sm:p-10">
-  <a href={href} class="block">
-    <p class="eyebrow mb-3 text-wire">{CATEGORIES[category].label} &middot; Featured</p>
-    <h2 class="max-w-2xl font-serif text-3xl font-medium leading-tight text-ink group-hover:text-wire sm:text-4xl">
-      {title}
-    </h2>
-    <p class="mt-4 max-w-xl text-base leading-relaxed text-ink-muted">
-      {description}
-    </p>
-    <div class="mt-6 flex items-center gap-2 text-xs text-ink-muted">
-      <time datetime={pubDate.toISOString()}>{dateStr}</time>
-      <span aria-hidden="true">&middot;</span>
-      <span>{readingTime}</span>
+<article class="group overflow-hidden border border-line bg-surface">
+  <a href={href} class="grid min-h-[460px] lg:grid-cols-[1.12fr_.88fr]">
+    <div class="relative min-h-[270px] overflow-hidden border-b border-line bg-bg lg:border-b-0 lg:border-r">
+      {heroImage ? <img src={heroImage} alt="" class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.015]" width="1200" height="675" /> : <div class="absolute inset-0 editorial-grid"></div>}
+      <div class="absolute left-5 top-5 border border-line bg-bg/90 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[.14em] text-wire">Lead intelligence</div>
+    </div>
+    <div class="flex flex-col justify-between p-7 sm:p-9 lg:p-10">
+      <div><p class="eyebrow mb-4 text-wire">{CATEGORIES[category].label} // Featured</p><h2 class="font-serif text-3xl font-medium leading-[1.05] text-ink group-hover:text-wire sm:text-4xl lg:text-[44px]">{title}</h2><p class="mt-5 text-base leading-relaxed text-ink-muted">{description}</p></div>
+      <div class="mt-8 flex items-center justify-between border-t border-line pt-5 text-[11px] uppercase tracking-[.08em] text-ink-muted"><span>{dateStr} · {readingTime}</span><span class="text-wire">Read briefing →</span></div>
     </div>
   </a>
 </article>
