@@ -11,14 +11,14 @@ const copy = context === "article"
 {compact ? (
   <div class="flex flex-col items-start gap-4 border border-line bg-surface p-6 sm:flex-row sm:items-center sm:justify-between">
     <div><p class="data-label text-wire">{copy.label}</p><p class="mt-2 text-sm font-medium text-ink">{copy.title}</p></div>
-    <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer" class="shrink-0 border border-wire px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[.08em] text-wire hover:bg-wire hover:text-bg">Open Telegram →</a>
+    <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer" data-growth="telegram" class="shrink-0 border border-wire px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[.08em] text-wire hover:bg-wire hover:text-bg">Open Telegram →</a>
   </div>
 ) : (
   <section class="border-y border-line bg-surface">
     <div class="wire-container py-14 sm:py-16">
       <div class="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
         <div><p class="data-label text-wire">{copy.label}</p><h2 class="mt-3 max-w-xl font-serif text-3xl font-medium leading-tight text-ink sm:text-4xl">{copy.title}</h2><p class="mt-4 max-w-xl text-sm leading-relaxed text-ink-muted">{copy.body}</p></div>
-        <div class="lg:text-right"><a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer" class="inline-block border border-wire px-6 py-3 text-[11px] font-semibold uppercase tracking-[.1em] text-wire hover:bg-wire hover:text-bg">Join the live feed →</a><p class="mt-3 text-[10px] uppercase tracking-[.08em] text-ink-muted">News · Research · Market intelligence</p></div>
+        <div class="lg:text-right"><a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer" data-growth="telegram" class="inline-block border border-wire px-6 py-3 text-[11px] font-semibold uppercase tracking-[.1em] text-wire hover:bg-wire hover:text-bg">Join the live feed →</a><p class="mt-3 text-[10px] uppercase tracking-[.08em] text-ink-muted">News · Research · Market intelligence</p></div>
       </div>
     </div>
   </section>
