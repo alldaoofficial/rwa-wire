@@ -98,13 +98,12 @@ jobs:
           token = os.environ["TELEGRAM_BOT_TOKEN"]
           chat_id = os.environ["TELEGRAM_CHAT_ID"]
           caption = os.environ["TELEGRAM_CAPTION"].strip()
-          affiliate_url = "https://www.bitunix.com/register?vipCode=0xcrlt"
           image_url = os.environ.get("TELEGRAM_IMAGE_URL", "").strip()
 
-          # Download the editorial visual and append a fixed Bitunix partner strip.
-          # Pillow is available on the GitHub-hosted runner; the supplied affiliate
-          # brand asset lives in the repository so every post uses the same mark.
-          from PIL import Image, ImageDraw, ImageFont
+          # Keep editorial news visuals independent from commercial placements.
+          # Affiliate/sponsored promotions are handled separately and never injected
+          # into every newsroom post.
+          from PIL import Image
           from io import BytesIO
 
           with urllib.request.urlopen(image_url) as response:
@@ -112,29 +111,7 @@ jobs:
           if image_url.lower().split("?")[0].endswith(".svg"):
               image_bytes = cairosvg.svg2png(bytestring=image_bytes)
           story = Image.open(BytesIO(image_bytes)).convert("RGB")
-
-          partner_svg = pathlib.Path("public/images/partners/bitunix.svg").read_bytes()
-          partner = Image.open(BytesIO(cairosvg.svg2png(bytestring=partner_svg))).convert("RGB")
-          strip_h = max(120, int(story.height * 0.13))
-          canvas = Image.new("RGB", (story.width, story.height + strip_h), "#080A0D")
-          canvas.paste(story, (0, 0))
-          draw = ImageDraw.Draw(canvas)
-          draw.line((0, story.height, story.width, story.height), fill="#2ED47A", width=max(2, story.width // 500))
-
-          pad = max(24, story.width // 30)
-          label_font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", max(18, story.width // 45))
-          small_font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", max(14, story.width // 65))
-          draw.text((pad, story.height + strip_h * 0.28), "TRADING PARTNER", font=label_font, fill="#F5F7FA")
-          draw.text((pad, story.height + strip_h * 0.62), "Affiliate partnership · Trading involves risk", font=small_font, fill="#8B949E")
-
-          # Preserve the supplied Bitunix logo artwork and fit it into the right side.
-          logo_box_w = int(story.width * 0.28)
-          logo_box_h = int(strip_h * 0.72)
-          partner.thumbnail((logo_box_w, logo_box_h), Image.Resampling.LANCZOS)
-          x = story.width - pad - partner.width
-          y = story.height + (strip_h - partner.height) // 2
-          canvas.paste(partner, (x, y))
-          canvas.save("telegram-branded.jpg", "JPEG", quality=92, optimize=True)
+          story.save("telegram-editorial.jpg", "JPEG", quality=92, optimize=True)
 
           if len(caption) > 1024:
               raise SystemExit("Caption exceeds Telegram photo-caption limit.")
@@ -146,13 +123,12 @@ jobs:
           boundary = "----RWAWire" + uuid.uuid4().hex
           fields = {
               "chat_id": chat_id,
-              "caption": caption,
-              "reply_markup": json.dumps({"inline_keyboard": [[{"text": "◼ Trade on Bitunix ↗", "url": affiliate_url}]]})
+              "caption": caption
           }
           body = bytearray()
           for key, value in fields.items():
               body.extend(f'--{boundary}\r\nContent-Disposition: form-data; name=\"{key}\"\r\n\r\n{value}\r\n'.encode())
-          with open("telegram-branded.jpg", "rb") as fh:
+          with open("telegram-editorial.jpg", "rb") as fh:
               photo = fh.read()
           body.extend(f'--{boundary}\r\nContent-Disposition: form-data; name=\"photo\"; filename=\"rwa-wire.jpg\"\r\nContent-Type: image/jpeg\r\n\r\n'.encode())
           body.extend(photo)
