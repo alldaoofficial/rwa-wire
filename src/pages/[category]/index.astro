@@ -5,6 +5,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import ArticleCard from "@/components/ArticleCard.astro";
 import MarketsDashboard from "@/components/MarketsDashboard.astro";
+import AssetIntelligence from "@/components/AssetIntelligence.astro";
 import { CATEGORIES, type CategorySlug } from "@/config/site";
 
 export async function getStaticPaths() {
@@ -27,7 +28,7 @@ const articles = (await getCollection("articles", ({ data }) => !data.draft && d
     <h1 class="mt-4 font-serif text-3xl font-medium text-ink sm:text-4xl">{meta.label}</h1>
     <p class="mt-2 max-w-xl text-base text-ink-muted">{meta.description}</p>
 
-    {category === "markets" && <MarketsDashboard />}
+    {category === "markets" && <><MarketsDashboard /><AssetIntelligence /></>}
 
     <div class="mt-10 max-w-content">
       {
