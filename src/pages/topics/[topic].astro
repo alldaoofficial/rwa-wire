@@ -4,7 +4,6 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import { sitePath } from "@/utils/paths";
 
-const all = await getCollection("articles", ({data}) => !data.draft);
 const topicDefs = [
   { slug:"real-world-assets", title:"Real-World Assets", description:"The foundations of RWA markets: asset classes, legal structures and the infrastructure connecting offchain value to programmable networks.", terms:["rwa","real-world assets","real world assets"], primary:"what-are-real-world-assets" },
   { slug:"tokenized-treasuries", title:"Tokenized Treasuries", description:"Research, market structure and infrastructure for blockchain-based exposure to U.S. government securities and Treasury-backed funds.", terms:["treasur","government securities"], primary:"tokenized-treasuries-explained" },
@@ -12,12 +11,13 @@ const topicDefs = [
   { slug:"private-credit", title:"Private Credit", description:"Onchain lending, private-credit funds and the infrastructure connecting borrowers, asset managers and digital capital markets.", terms:["private credit","credit infrastructure","lending"], primary:"maple-finance-explained" },
   { slug:"institutional-tokenization", title:"Institutional Tokenization", description:"Banks, asset managers and market infrastructure building programmable issuance, deposits, settlement and distribution.", terms:["institution","banks","asset managers","settlement","deposits"], primary:"the-companies-building-tokenized-finance" },
 ];
-const topic = topicDefs.find(t=>t.slug===Astro.params.topic)!;
+export function getStaticPaths(){return topicDefs.map(topic=>({params:{topic:topic.slug},props:{topic}}));}
+const { topic } = Astro.props;
+const all = await getCollection("articles", ({data}) => !data.draft);
 const hay=(a:any)=>[a.data.title,a.data.description,...a.data.tags,a.data.projectMeta?.sector,a.data.projectMeta?.role,a.data.projectMeta?.assetExposure,...(a.data.projectMeta?.products??[])].filter(Boolean).join(" ").toLowerCase();
 const matches=all.map(a=>({a,score:topic.terms.reduce((n,t)=>n+(hay(a).includes(t)?1:0),0)+(a.slug===topic.primary?5:0)})).filter(x=>x.score>0).sort((x,y)=>y.score-x.score||y.a.data.pubDate.valueOf()-x.a.data.pubDate.valueOf());
 const projects=matches.filter(x=>x.a.data.type==="PROJECT").slice(0,6);
 const editorial=matches.filter(x=>x.a.data.type!=="PROJECT").slice(0,10);
-export function getStaticPaths(){return topicDefs.map(topic=>({params:{topic:topic.slug}}));}
 ---
 <BaseLayout title={topic.title} description={topic.description}>
 <div class="wire-container py-10 sm:py-14">
