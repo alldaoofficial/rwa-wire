@@ -24,6 +24,15 @@ const articles = defineCollection({
     heroImage: z.string().optional(),
     heroImageAlt: z.string().optional(),
     tags: z.array(z.string()).default([]),
+    // Optional structured intelligence fields used by PROJECT profiles.
+    projectMeta: z.object({
+      sector: z.string(),
+      role: z.string(),
+      assetExposure: z.string(),
+      networks: z.array(z.string()).default([]),
+      products: z.array(z.string()).default([]),
+      status: z.string().default("Active"),
+    }).optional(),
     // Slugs of related articles (must match the MDX filename without extension).
     relatedSlugs: z.array(z.string()).default([]),
     // Show the affiliate/trading CTA on this article. Off by default; only
