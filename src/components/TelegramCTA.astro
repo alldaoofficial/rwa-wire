@@ -1,46 +1,25 @@
 ---
 import { TELEGRAM_URL } from "@/config/site";
-
-interface Props {
-  compact?: boolean;
-}
-const { compact = false } = Astro.props;
+interface Props { compact?: boolean; context?: "article" | "research" | "default"; }
+const { compact = false, context = "default" } = Astro.props;
+const copy = context === "article"
+  ? { label:"RWA Wire // Distribution", title:"Follow the story beyond the article.", body:"Join the RWA Wire Telegram feed for new institutional developments, tokenization coverage and market intelligence as it is published." }
+  : context === "research"
+  ? { label:"RWA Wire // Research Feed", title:"Stay connected to the tokenized economy.", body:"New research, project intelligence and material market developments — distributed through the RWA Wire Telegram feed." }
+  : { label:"RWA Wire // Live Feed", title:"The wire, delivered directly.", body:"Follow RWA developments, institutional news, market movements and important tokenization updates." };
 ---
-
-{
-  compact ? (
-    <div class="flex flex-col items-start gap-4 border border-line bg-surface p-6 sm:flex-row sm:items-center sm:justify-between">
-      <p class="text-sm font-medium text-ink">
-        Get the signal before the timeline does.
-      </p>
-      <a
-        href={TELEGRAM_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="shrink-0 rounded bg-wire px-5 py-2.5 text-sm font-semibold text-bg hover:bg-wire/90"
-      >
-        Join on Telegram
-      </a>
-    </div>
-  ) : (
-    <section class="border-y border-line bg-surface">
-      <div class="wire-container flex flex-col items-start gap-6 py-16 sm:items-center sm:py-20 sm:text-center">
-        <h2 class="max-w-xl font-serif text-3xl font-medium leading-tight text-ink sm:text-4xl">
-          Get the signal before the timeline does.
-        </h2>
-        <p class="max-w-md text-sm leading-relaxed text-ink-muted">
-          Follow RWA developments, institutional news, market movements and
-          important tokenization updates.
-        </p>
-        <a
-          href={TELEGRAM_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="rounded bg-wire px-6 py-3 text-sm font-semibold text-bg hover:bg-wire/90"
-        >
-          Join RWA Wire on Telegram
-        </a>
+{compact ? (
+  <div class="flex flex-col items-start gap-4 border border-line bg-surface p-6 sm:flex-row sm:items-center sm:justify-between">
+    <div><p class="data-label text-wire">{copy.label}</p><p class="mt-2 text-sm font-medium text-ink">{copy.title}</p></div>
+    <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer" class="shrink-0 border border-wire px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[.08em] text-wire hover:bg-wire hover:text-bg">Open Telegram →</a>
+  </div>
+) : (
+  <section class="border-y border-line bg-surface">
+    <div class="wire-container py-14 sm:py-16">
+      <div class="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
+        <div><p class="data-label text-wire">{copy.label}</p><h2 class="mt-3 max-w-xl font-serif text-3xl font-medium leading-tight text-ink sm:text-4xl">{copy.title}</h2><p class="mt-4 max-w-xl text-sm leading-relaxed text-ink-muted">{copy.body}</p></div>
+        <div class="lg:text-right"><a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer" class="inline-block border border-wire px-6 py-3 text-[11px] font-semibold uppercase tracking-[.1em] text-wire hover:bg-wire hover:text-bg">Join the live feed →</a><p class="mt-3 text-[10px] uppercase tracking-[.08em] text-ink-muted">News · Research · Market intelligence</p></div>
       </div>
-    </section>
-  )
-}
+    </div>
+  </section>
+)}
