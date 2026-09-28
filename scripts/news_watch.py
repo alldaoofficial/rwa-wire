@@ -1,0 +1,78 @@
+#!/usr/bin/env python3
+"""Scheduled discovery for RWA Wire.
+
+Discovers timely RWA/tokenization stories from Google News RSS, scores them,
+deduplicates against repository state and writes ONE conservative inbox brief.
+The downstream candidate generator + private Telegram approval remain the gate.
+"""
+import html, json, pathlib, re, sys, urllib.parse, urllib.request
+import xml.etree.ElementTree as ET
+from datetime import datetime, timezone, timedelta
+from email.utils import parsedate_to_datetime
+
+ROOT=pathlib.Path(__file__).resolve().parents[1]
+STATE=ROOT/"publish/news-watch-state.json"
+INBOX=ROOT/"publish/inbox"
+QUERIES=[
+  '"tokenized fund" OR "tokenized treasury" OR "tokenized securities"',
+  '"tokenized deposits" OR "deposit token" OR "onchain finance"',
+  '"real world assets" tokenization institution OR bank OR fund',
+]
+STRONG=["tokenized","tokenization","onchain","deposit token","real world asset","rwa"]
+INSTITUTIONAL=["bank","fund","asset manager","securities","treasury","institution","settlement","dtcc","blackrock","jpmorgan","franklin","securitize"]
+BLOCK=["price prediction","airdrop","presale","memecoin","meme coin","casino"]
+
+def clean(s):
+    return re.sub(r"\s+"," ",html.unescape(re.sub(r"<[^>]+>"," ",s or ""))).strip()
+
+def slugify(s):
+    return re.sub(r"[^a-z0-9]+","-",s.lower()).strip("-")[:80].rstrip("-")
+
+def fetch(url):
+    req=urllib.request.Request(url,headers={"User-Agent":"RWA-Wire-News-Watch/1.0"})
+    with urllib.request.urlopen(req,timeout=25) as r:return r.read()
+
+def main():
+    state=json.loads(STATE.read_text()) if STATE.exists() else {"seen":[]}
+    seen=set(state.get("seen",[]))
+    existing=" ".join(p.stem for p in INBOX.glob("*.json")) if INBOX.exists() else ""
+    now=datetime.now(timezone.utc); items=[]
+    for q in QUERIES:
+        url="https://news.google.com/rss/search?"+urllib.parse.urlencode({"q":q+" when:2d","hl":"en-US","gl":"US","ceid":"US:en"})
+        try: root=ET.fromstring(fetch(url))
+        except Exception as e:
+            print("feed error",q,e,file=sys.stderr); continue
+        for x in root.findall(".//item"):
+            title=clean(x.findtext("title")); link=clean(x.findtext("link")); desc=clean(x.findtext("description"))
+            guid=clean(x.findtext("guid")) or link
+            try: published=parsedate_to_datetime(x.findtext("pubDate")).astimezone(timezone.utc)
+            except Exception: published=now
+            hay=(title+" "+desc).lower()
+            score=sum(3 for k in STRONG if k in hay)+sum(1 for k in INSTITUTIONAL if k in hay)-sum(8 for k in BLOCK if k in hay)
+            if guid in seen or slugify(title) in existing or now-published>timedelta(hours=48): continue
+            if score>=5: items.append((score,published,title,link,desc,guid))
+    if not items:
+        print("No new high-confidence story found."); return
+    items.sort(key=lambda x:(x[0],x[1]),reverse=True)
+    score,published,title,link,desc,guid=items[0]
+    # Google News descriptions are deliberately treated only as discovery metadata.
+    # Keep the generated brief conservative; a human approval remains mandatory.
+    source_name=title.rsplit(" - ",1)[-1] if " - " in title else "Google News source"
+    clean_title=title.rsplit(" - ",1)[0] if " - " in title else title
+    summary=desc or f"A new institutional tokenization development has been reported: {clean_title}."
+    if len(summary)>500: summary=summary[:497].rstrip()+"..."
+    why="This story matched RWA Wire's institutional tokenization watchlist. Review the linked source before approval; the automated draft intentionally avoids adding facts beyond discovery metadata."
+    body=(f"**{clean_title}** has entered the RWA Wire news watch after matching our institutional tokenization filters.\n\n"
+          f"{summary}\n\n## Why RWA Wire is watching\n\n{why}\n\n"
+          "## Editorial status\n\nThis is an automated discovery draft. The linked source should be checked in the private editorial preview before publication.")
+    day=published.date().isoformat(); slug=slugify(clean_title)
+    brief={"title":clean_title,"description":summary,"why_it_matters":why,"pubDate":day,"category":"news",
+      "tags":["Tokenization","Institutions","News Watch"],"keyTakeaways":[summary,why],"body":body,
+      "sources":[{"name":source_name,"url":link}],"newsWatch":{"score":score,"discoveredAt":now.isoformat(),"requiresSourceReview":True}}
+    INBOX.mkdir(parents=True,exist_ok=True); path=INBOX/f"{day}-{slug}.json"
+    path.write_text(json.dumps(brief,indent=2,ensure_ascii=False)+"\n")
+    seen.add(guid); state["seen"]=list(seen)[-500:]; state["lastRun"]=now.isoformat(); state["lastCandidate"]=str(path.relative_to(ROOT))
+    STATE.write_text(json.dumps(state,indent=2)+"\n")
+    print(path.relative_to(ROOT))
+
+if __name__=="__main__": main()
