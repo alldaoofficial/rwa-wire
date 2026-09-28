@@ -62,7 +62,8 @@ def main():
     article="\n".join(fm)+"\n\n"+body+"\n\n---\n\n**Primary sources**\n\n"+sources+"\n\n*RWA Wire covers real-world assets, tokenization and the infrastructure transforming global finance.*\n"
     caption=d.get("caption") or f'{d["title"]}\n\n{d["why_it_matters"]}\n\nRead the full story →\n{article_url}\n\nTrading partner: Bitunix · Affiliate link · Trading involves risk.'
     if len(caption)>1024: raise ValueError("generated caption exceeds Telegram limit")
-    candidate={"id":f"{pub}-{slug}","title":d["title"],"category":d.get("reviewCategory",d.get("category","news")).upper(),
+    candidate_id=f"{pub}-{slug}"[:55].rstrip("-")
+    candidate={"id":candidate_id,"title":d["title"],"category":d.get("reviewCategory",d.get("category","news")).upper(),
       "why_it_matters":d["why_it_matters"],"article_url":article_url,"image_url":image_url,"caption":caption,"sources":d["sources"]}
     for p in (ARTICLES/f"{slug}.mdx",IMAGES/f"{slug}.svg",CANDIDATES/f'{candidate["id"]}.json'):
         if p.exists(): raise ValueError(f"Refusing overwrite: {p.relative_to(ROOT)}")
