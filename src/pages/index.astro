@@ -6,6 +6,7 @@ import FeaturedArticle from "@/components/FeaturedArticle.astro";
 import ArticleCard from "@/components/ArticleCard.astro";
 import ProjectCard from "@/components/ProjectCard.astro";
 import TelegramCTA from "@/components/TelegramCTA.astro";
+import MarketTicker from "@/components/MarketTicker.astro";
  
 
 const allArticles = (await getCollection("articles", ({ data }) => !data.draft)).sort(
@@ -29,6 +30,8 @@ const projectArticles = allArticles.filter((a) => a.data.category === "projects"
   title="RWA Wire — The intelligence layer for the tokenized economy"
   description="News, research and explainers on real-world assets, tokenization and the infrastructure transforming global finance."
 >
+  <MarketTicker />
+
   <!-- START HERE -->
   <section class="relative overflow-hidden border-b border-line">
     <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_10%,rgba(46,212,122,.10),transparent_34%),linear-gradient(180deg,rgba(17,21,26,.35),transparent_75%)]"></div>
