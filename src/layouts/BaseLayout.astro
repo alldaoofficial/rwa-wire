@@ -15,6 +15,14 @@ interface Props {
   noindex?: boolean;
 }
 const { title, description, image, type, publishedTime, modifiedTime, noindex } = Astro.props;
+const organizationLd = {
+  "@context": "https://schema.org",
+  "@type": "NewsMediaOrganization",
+  name: "RWA Wire",
+  url: "https://therwawire.com/",
+  logo: "https://therwawire.com/favicon.svg",
+  description: "Independent intelligence on real-world assets, tokenization and institutional digital finance.",
+};
 ---
 
 <!doctype html>
@@ -36,6 +44,7 @@ const { title, description, image, type, publishedTime, modifiedTime, noindex } 
       modifiedTime={modifiedTime}
       noindex={noindex}
     />
+      <script type="application/ld+json" set:html={JSON.stringify(organizationLd)} />
   </head>
   <body class="flex min-h-screen flex-col">
     <a
