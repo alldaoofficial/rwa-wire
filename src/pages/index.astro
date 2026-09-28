@@ -13,8 +13,13 @@ const allArticles = (await getCollection("articles", ({ data }) => !data.draft))
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 
-const [featured, ...rest] = allArticles;
-const latest = rest.slice(0, 4);
+const editorialArticles = allArticles.filter(
+  (a) =>
+    ["news", "rwa", "tokenization", "institutions", "markets"].includes(a.data.category) &&
+    a.data.type !== "EXPLAINER"
+);
+const [featured, ...editorialRest] = editorialArticles;
+const latest = editorialRest.slice(0, 6);
 
 const learnArticles = allArticles.filter((a) => a.data.category === "learn").slice(0, 6);
 const projectArticles = allArticles.filter((a) => a.data.category === "projects").slice(0, 5);
