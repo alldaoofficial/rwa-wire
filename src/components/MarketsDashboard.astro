@@ -1,9 +1,15 @@
 ---
 const assets = [
-  { id: "ondo-finance", symbol: "ONDO", name: "Ondo", segment: "Tokenized securities" },
   { id: "chainlink", symbol: "LINK", name: "Chainlink", segment: "Oracle infrastructure" },
+  { id: "ondo-finance", symbol: "ONDO", name: "Ondo", segment: "Tokenized securities" },
+  { id: "maple-finance", symbol: "SYRUP", name: "Maple Finance", segment: "Private credit" },
+  { id: "zebec-protocol", symbol: "ZBCN", name: "Zebec Network", segment: "Real-time payments" },
+  { id: "plume", symbol: "PLUME", name: "Plume", segment: "RWA chain & infrastructure" },
   { id: "centrifuge", symbol: "CFG", name: "Centrifuge", segment: "RWA credit infrastructure" },
   { id: "polymesh", symbol: "POLYX", name: "Polymesh", segment: "Regulated asset infrastructure" },
+  { id: "goldfinch", symbol: "GFI", name: "Goldfinch", segment: "Private credit" },
+  { id: "clearpool", symbol: "CPOOL", name: "Clearpool", segment: "Institutional credit" },
+  { id: "mantra-dao", symbol: "MANTRA", name: "MANTRA", segment: "RWA chain & compliance" },
 ];
 ---
 <section class="mt-10 border-y border-line">
@@ -33,7 +39,7 @@ const assets = [
   </div>
 </section>
 <script>
-  const ids = ["ondo-finance","chainlink","centrifuge","polymesh"];
+  const ids = ["chainlink","ondo-finance","maple-finance","zebec-protocol","plume","centrifuge","polymesh","goldfinch","clearpool","mantra-dao"];
   const endpoint = "https://api.coingecko.com/api/v3/simple/price?ids="+ids.join(",")+"&vs_currencies=usd&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true&include_last_updated_at=true";
   const money=(n:number)=>n>=1e9?"$"+(n/1e9).toFixed(2)+"B":n>=1e6?"$"+(n/1e6).toFixed(1)+"M":n>=1e3?"$"+(n/1e3).toFixed(1)+"K":"$"+n.toFixed(2);
   const price=(n:number)=>n>=100?"$"+n.toLocaleString(undefined,{maximumFractionDigits:2}):n>=1?"$"+n.toFixed(2):"$"+n.toFixed(4);
