@@ -41,8 +41,18 @@ jobs:
             exit 0
           fi
           git commit -m "News Watch: add qualified RWA story"
-          git pull --rebase origin main
-          git push
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push; then
+              break
+            fi
+            if [ "$attempt" -eq 3 ]; then
+              echo "Push failed after 3 rebased attempts."
+              exit 1
+            fi
+            echo "Remote changed during push; retrying after rebase..."
+            sleep 3
+          done
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
       - name: Trigger candidate generator
