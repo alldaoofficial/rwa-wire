@@ -5,10 +5,10 @@ const {href,title,description,category,pubDate,readingTime,heroImage}=Astro.prop
 const dateStr=pubDate.toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"});
 ---
 <article class="group overflow-hidden border border-line bg-surface">
-  <a href={href} class="grid min-h-[460px] lg:grid-cols-[1.12fr_.88fr]">
-    <div class="relative min-h-[270px] overflow-hidden border-b border-line bg-bg lg:border-b-0 lg:border-r">
-      {heroImage ? <img src={heroImage} alt="" class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.015]" width="1200" height="675" /> : <div class="absolute inset-0 editorial-grid"></div>}
-      <div class="absolute left-5 top-5 border border-line bg-bg/90 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[.14em] text-wire">Lead intelligence</div>
+  <a href={href} class="grid lg:grid-cols-[minmax(0,1.05fr)_minmax(360px,.95fr)]">
+    <div class="relative flex min-h-[250px] items-center justify-center overflow-hidden border-b border-line bg-bg p-5 sm:min-h-[320px] sm:p-7 lg:min-h-[430px] lg:border-b-0 lg:border-r lg:p-8">
+      {heroImage ? <img src={heroImage} alt="" class="block h-auto max-h-full w-full object-contain transition duration-500 group-hover:scale-[1.01]" width="1200" height="675" /> : <div class="absolute inset-0 editorial-grid"></div>}
+      <div class="absolute left-5 top-5 border border-line bg-bg/95 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[.14em] text-wire">Lead intelligence</div>
     </div>
     <div class="flex flex-col justify-between p-7 sm:p-9 lg:p-10">
       <div><p class="eyebrow mb-4 text-wire">{CATEGORIES[category].label} // Featured</p><h2 class="font-serif text-3xl font-medium leading-[1.05] text-ink group-hover:text-wire sm:text-4xl lg:text-[44px]">{title}</h2><p class="mt-5 text-base leading-relaxed text-ink-muted">{description}</p></div>
