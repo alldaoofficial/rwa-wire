@@ -80,12 +80,14 @@ const updatedStr = updatedDate?.toLocaleDateString("en-US", {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "Article",
+  "@type": type === "NEWS" ? "NewsArticle" : "Article",
   headline: title,
   description,
   datePublished: pubDate.toISOString(),
   dateModified: (updatedDate ?? pubDate).toISOString(),
   author: { "@type": "Organization", name: author },
+  articleSection: CATEGORIES[category as CategorySlug].label,
+  keywords: tags.join(", "),
   publisher: {
     "@type": "Organization",
     name: SITE.name,
