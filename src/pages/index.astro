@@ -18,10 +18,10 @@ const editorialArticles = allArticles.filter(
     a.data.type !== "EXPLAINER"
 );
 const [featured, ...editorialRest] = editorialArticles;
-const latest = editorialRest.slice(0, 6);
+const latest = editorialRest.slice(0, 4);
 
-const learnArticles = allArticles.filter((a) => a.data.category === "learn").slice(0, 6);
-const projectArticles = allArticles.filter((a) => a.data.category === "projects").slice(0, 5);
+const learnArticles = allArticles.filter((a) => a.data.category === "learn").slice(0, 3);
+const projectArticles = allArticles.filter((a) => a.data.category === "projects").slice(0, 3);
 
 ---
 
@@ -99,17 +99,10 @@ const projectArticles = allArticles.filter((a) => a.data.category === "projects"
     )
   }
 
-  <!-- AUDIENCE SIGNAL -->
-  <section class="border-t border-line">
-    <div class="wire-container py-8">
-      <TelegramCTA compact />
-    </div>
-  </section>
-
   <!-- LEARN -->
   <section class="wire-container py-14 sm:py-20">
     <div class="mb-8 flex items-center justify-between">
-      <h2 class="font-serif text-2xl font-medium text-ink sm:text-3xl">Learn</h2>
+      <div><p class="data-label text-wire">New to the market?</p><h2 class="mt-2 font-serif text-2xl font-medium text-ink sm:text-3xl">Learn the fundamentals</h2></div>
       <a href={sitePath("/learn/")} class="text-xs font-medium uppercase tracking-[0.08em] text-ink-muted hover:text-wire">
         View all
       </a>
@@ -135,7 +128,7 @@ const projectArticles = allArticles.filter((a) => a.data.category === "projects"
   <section class="border-t border-line bg-surface">
     <div class="wire-container py-14 sm:py-20">
       <div class="mb-8 flex items-center justify-between">
-        <h2 class="font-serif text-2xl font-medium text-ink sm:text-3xl">Projects</h2>
+        <div><p class="data-label text-wire">Go deeper</p><h2 class="mt-2 font-serif text-2xl font-medium text-ink sm:text-3xl">Explore the infrastructure</h2></div>
         <a href={sitePath("/projects/")} class="text-xs font-medium uppercase tracking-[0.08em] text-ink-muted hover:text-wire">
           View all
         </a>
