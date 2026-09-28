@@ -24,30 +24,57 @@ const assets = [
     <span id="market-status" class="ml-auto shrink-0 text-[9px] uppercase tracking-[.1em] text-ink-muted">Loading</span>
   </div>
 </section>
-<script is:inline define:vars={{}}>
-(() => {
-  const ids = ["ondo-finance","chainlink","centrifuge","polymesh"];
-  const endpoint = "https://api.coingecko.com/api/v3/simple/price?ids=" + ids.join(",") + "&vs_currencies=usd&include_24hr_change=true";
-  const price = (n) => n >= 100 ? "$"+n.toLocaleString(undefined,{maximumFractionDigits:2}) : n >= 1 ? "$"+n.toFixed(2) : "$"+n.toFixed(4);
+<script>
+  const ids = ["ondo-finance", "chainlink", "centrifuge", "polymesh"];
+  const endpoint =
+    "https://api.coingecko.com/api/v3/simple/price?ids=" +
+    ids.join(",") +
+    "&vs_currencies=usd&include_24hr_change=true";
+
+  const formatPrice = (n: number) =>
+    n >= 100
+      ? "$" + n.toLocaleString(undefined, { maximumFractionDigits: 2 })
+      : n >= 1
+        ? "$" + n.toFixed(2)
+        : "$" + n.toFixed(4);
+
   async function refreshMarkets() {
-    const status=document.getElementById("market-status");
+    const status = document.getElementById("market-status");
     try {
-      const res=await fetch(endpoint,{headers:{accept:"application/json"}});
-      if(!res.ok) throw new Error("market data unavailable");
-      const data=await res.json();
-      ids.forEach(id=>{
-        const row=document.querySelector('[data-market="'+id+'"]'), item=data[id];
-        if(!row||!item) return;
-        row.querySelector(".market-price").textContent=price(item.usd);
-        const ch=item.usd_24h_change;
-        const el=row.querySelector(".market-change");
-        el.textContent=Number.isFinite(ch)?(ch>=0?"+":"")+ch.toFixed(2)+"%":"—";
-        el.className="market-change font-mono text-[10px] "+(ch>=0?"text-wire":"text-red-400");
+      const res = await fetch(endpoint, { headers: { accept: "application/json" } });
+      if (!res.ok) throw new Error("market data unavailable");
+      const data = await res.json();
+
+      ids.forEach((id) => {
+        const row = document.querySelector<HTMLElement>(`[data-market="${id}"]`);
+        const item = data[id];
+        if (!row || !item) return;
+
+        const priceEl = row.querySelector<HTMLElement>(".market-price");
+        const changeEl = row.querySelector<HTMLElement>(".market-change");
+        if (priceEl) priceEl.textContent = formatPrice(item.usd);
+
+        const change = item.usd_24h_change;
+        if (changeEl) {
+          changeEl.textContent = Number.isFinite(change)
+            ? (change >= 0 ? "+" : "") + change.toFixed(2) + "%"
+            : "—";
+          changeEl.className =
+            "market-change font-mono text-[10px] " +
+            (change >= 0 ? "text-wire" : "text-red-400");
+        }
       });
-      status.textContent="Updated "+new Date().toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"});
-    } catch(e) { status.textContent="Data unavailable"; }
+
+      if (status) {
+        status.textContent =
+          "Updated " +
+          new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+      }
+    } catch {
+      if (status) status.textContent = "Data unavailable";
+    }
   }
+
   refreshMarkets();
-  setInterval(refreshMarkets,60000);
-})();
+  window.setInterval(refreshMarkets, 60000);
 </script>
