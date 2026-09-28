@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "7,37 * * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/news-watch.yml"
+      - "scripts/news_watch.py"
 
 permissions:
   contents: write
