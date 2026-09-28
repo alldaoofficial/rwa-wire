@@ -12,7 +12,13 @@ import Breadcrumbs from "@/components/Breadcrumbs.astro";
     <Breadcrumbs items={[{ label: "About", href: "/about/" }]} />
     <h1 class="mt-4 font-serif text-3xl font-medium text-ink sm:text-4xl">About RWA Wire</h1>
 
-    <div class="prose prose-invert prose-wire mt-8 max-w-none">
+    <div class="mt-8 grid gap-px border border-line bg-line sm:grid-cols-3">
+      <div class="bg-bg p-5"><p class="data-label">Editorial model</p><p class="mt-2 text-sm text-ink">Independent // Source-led</p></div>
+      <div class="bg-bg p-5"><p class="data-label">Core coverage</p><p class="mt-2 text-sm text-ink">RWA // Tokenization // Institutions</p></div>
+      <div class="bg-bg p-5"><p class="data-label">Commercial policy</p><p class="mt-2 text-sm text-ink">Editorial and affiliate activity separated</p></div>
+    </div>
+
+    <div class="prose prose-invert prose-wire mt-10 max-w-none">
       <p>
         RWA Wire is an independent media and research publication covering
         real-world assets, tokenization, institutional finance and the
