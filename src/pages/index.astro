@@ -69,18 +69,24 @@ const exploreCategories: Array<keyof typeof CATEGORIES> = [
             readingTime={featured.data.readingTime}
             heroImage={featured.data.heroImage}
           />
-          <div><div class="mb-1 flex items-center justify-between border-b border-line pb-3"><p class="data-label">Intelligence feed</p><p class="data-label">Latest coverage</p></div><div class="grid lg:grid-cols-2 lg:gap-x-10">
-            {latest.map((entry) => (
-              <ArticleCard
-                compact
-                href={sitePath(`/${entry.data.category}/${entry.slug}/`)}
-                title={entry.data.title}
-                description={entry.data.description}
-                category={entry.data.category}
-                pubDate={entry.data.pubDate}
-                readingTime={entry.data.readingTime}
-              />
-            ))}
+          <div>
+            <div class="mb-1 flex items-center justify-between border-b border-line pb-3">
+              <p class="data-label">Intelligence feed</p>
+              <p class="data-label">Latest coverage</p>
+            </div>
+            <div class="grid lg:grid-cols-2 lg:gap-x-10">
+              {latest.map((entry) => (
+                <ArticleCard
+                  compact
+                  href={sitePath(`/${entry.data.category}/${entry.slug}/`)}
+                  title={entry.data.title}
+                  description={entry.data.description}
+                  category={entry.data.category}
+                  pubDate={entry.data.pubDate}
+                  readingTime={entry.data.readingTime}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </section>
