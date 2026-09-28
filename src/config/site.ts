@@ -32,6 +32,7 @@ export const NAV_LINKS = [
   { label: "Institutions", href: "/institutions/" },
   { label: "Markets", href: "/markets/" },
   { label: "Projects", href: "/projects/" },
+  { label: "Map", href: "/map/" },
   { label: "Learn", href: "/learn/" },
   { label: "Tools", href: "/tools/" },
 ];
