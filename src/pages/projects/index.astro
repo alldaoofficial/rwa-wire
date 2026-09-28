@@ -22,10 +22,37 @@ const segments=[
       <div class="border-l border-line pl-5"><p class="data-label">Coverage standard</p><p class="mt-3 text-sm leading-relaxed text-ink-muted">Profiles focus on what a project builds, where it sits in the market structure and which risks or limitations matter.</p></div>
     </div>
     <section class="mt-8"><div class="grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-4">{segments.map(([title,desc],i)=><div class="bg-bg p-5"><p class="font-mono text-[10px] text-wire">0{i+1}</p><h2 class="mt-3 font-serif text-xl text-ink">{title}</h2><p class="mt-2 text-xs leading-relaxed text-ink-muted">{desc}</p></div>)}</div></section>
-    <section class="mt-12 grid gap-10 lg:grid-cols-[1fr_280px]">
+    <section class="mt-12">
+      <div class="flex flex-col gap-4 border-y border-line py-5 sm:flex-row sm:items-center sm:justify-between">
+        <div><p class="data-label text-wire">Directory controls</p><p id="project-count" class="mt-1 text-xs text-ink-muted">{projects.length} published profiles</p></div>
+        <div class="flex flex-1 flex-col gap-3 sm:max-w-2xl sm:flex-row">
+          <input id="project-search" type="search" placeholder="Search projects, sectors, products…" class="min-w-0 flex-1 border border-line bg-bg px-4 py-2.5 text-sm text-ink outline-none placeholder:text-ink-muted focus:border-wire" />
+          <select id="project-filter" class="border border-line bg-bg px-4 py-2.5 text-xs uppercase tracking-[.08em] text-ink outline-none focus:border-wire">
+            <option value="all">All sectors</option>
+            <option value="tokenized securities">Tokenized securities</option>
+            <option value="private credit">Private credit</option>
+            <option value="interoperability">Interoperability</option>
+          </select>
+        </div>
+      </div>
+    </section>
+    <section class="mt-10 grid gap-10 lg:grid-cols-[1fr_280px]">
       <div><div class="border-b border-line pb-4"><p class="data-label text-wire">Published intelligence</p><h2 class="mt-2 font-serif text-2xl text-ink">Project profiles</h2></div>
-      <div class="mt-6">{projects.length?projects.map(entry=><ArticleCard href={sitePath(`/projects/${entry.slug}/`)} title={entry.data.title} description={entry.data.description} category={entry.data.category} pubDate={entry.data.pubDate} readingTime={entry.data.readingTime}/>):<p class="text-sm text-ink-muted">Profiles are moving through editorial review.</p>}</div></div>
+      <div id="project-grid" class="mt-6 grid gap-px bg-line sm:grid-cols-2">{projects.length?projects.map(entry=>{const meta=entry.data.projectMeta;const search=[entry.data.title,entry.data.description,meta?.sector,meta?.role,meta?.assetExposure,...(meta?.networks??[]),...(meta?.products??[])].filter(Boolean).join(" ").toLowerCase();return <a href={sitePath(`/projects/${entry.slug}/`)} data-project data-sector={(meta?.sector??"").toLowerCase()} data-search={search} class="group bg-bg p-6 hover:bg-surface"><div class="flex items-center justify-between"><p class="data-label text-wire">{meta?.sector??"Project intelligence"}</p><span class="font-mono text-[10px] text-ink-muted">{meta?.status??"Active"}</span></div><h3 class="mt-4 font-serif text-2xl leading-tight text-ink group-hover:text-wire">{entry.data.title}</h3><p class="mt-3 text-sm leading-relaxed text-ink-muted">{entry.data.description}</p>{meta&&<div class="mt-5 border-t border-line pt-4"><p class="text-[10px] uppercase tracking-[.1em] text-ink-muted">{meta.role}</p><p class="mt-2 text-xs text-ink">{meta.assetExposure}</p><div class="mt-3 flex flex-wrap gap-1.5">{meta.networks.slice(0,3).map(n=><span class="border border-line px-2 py-1 text-[9px] uppercase tracking-[.08em] text-ink-muted">{n}</span>)}</div></div>}</a>}) : <p class="bg-bg p-5 text-sm text-ink-muted">Profiles are moving through editorial review.</p>}</div><p id="project-empty" class="mt-6 hidden text-sm text-ink-muted">No published profiles match this search yet.</p></div>
       <aside class="border-t border-line pt-5 lg:border-l lg:border-t-0 lg:pl-6 lg:pt-0"><p class="data-label">Research pipeline</p><p class="mt-3 text-sm text-ink-muted">Coverage universe</p><p class="mt-1 font-mono text-3xl text-ink">{String(all.length).padStart(2,"0")}</p><div class="mt-6 space-y-3">{all.slice(0,8).map(p=><div class="border-b border-line/70 pb-3"><p class="text-sm text-ink">{p.data.title}</p><p class="mt-1 text-[10px] uppercase tracking-[.1em] text-ink-muted">{p.data.draft?"Editorial review":"Published"}</p></div>)}</div></aside>
     </section>
   </div>
+  <script>
+    const search=document.getElementById("project-search") as HTMLInputElement|null;
+    const filter=document.getElementById("project-filter") as HTMLSelectElement|null;
+    const rows=[...document.querySelectorAll<HTMLElement>("[data-project]")];
+    const count=document.getElementById("project-count");
+    const empty=document.getElementById("project-empty");
+    function apply(){
+      const q=(search?.value||"").trim().toLowerCase(), sector=filter?.value||"all"; let visible=0;
+      rows.forEach(row=>{const matchQ=!q||(row.dataset.search||"").includes(q);const matchSector=sector==="all"||(row.dataset.sector||"")===sector;const show=matchQ&&matchSector;row.classList.toggle("hidden",!show);if(show)visible++;});
+      if(count)count.textContent=visible+" published "+(visible===1?"profile":"profiles");if(empty)empty.classList.toggle("hidden",visible!==0);
+    }
+    search?.addEventListener("input",apply);filter?.addEventListener("change",apply);
+  </script>
 </BaseLayout>
