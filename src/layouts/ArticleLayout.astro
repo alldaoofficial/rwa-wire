@@ -75,7 +75,8 @@ const jsonLd = {
   modifiedTime={updatedDate}
   image={heroImage}
 >
-  <article class="wire-container py-10 sm:py-16">\n    <div class="mx-auto max-w-[900px]">
+  <article class="wire-container py-10 sm:py-16">
+    <div class="mx-auto max-w-[900px]">
     <Breadcrumbs
       items={[
         { label: CATEGORIES[category as CategorySlug].label, href: `/${category}/` },
@@ -152,7 +153,8 @@ const jsonLd = {
       <RelatedArticles items={related} />
       {showTradingCTA && <TradingCTA />}
     </div>
-    </div>\n  </article>
+    </div>
+  </article>
 
   <TelegramCTA />
 
