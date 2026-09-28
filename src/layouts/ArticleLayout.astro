@@ -247,7 +247,7 @@ const jsonLd = {
     </div>
   </article>
 
-  <TelegramCTA />
+  <TelegramCTA context={type === "PROJECT" || type === "RESEARCH" ? "research" : "article"} />
 
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 </BaseLayout>
