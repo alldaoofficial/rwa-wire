@@ -1,0 +1,6 @@
+{
+  "updated": "2026-09-28T08:45:00+00:00",
+  "metrics": [["RWA Active AUM","$30.435B"],["RWA Onchain AUM","$33.299B"],["DeFi Active TVL","$3.921B"]],
+  "categories": [["Bond & MMF Funds","$17.009B","$18.854B"],["Gold & Commodities","$5.757B","$5.967B"],["Private Credit","$4.338B","$4.47B"],["Stocks & Equities","$2.557B","$3.125B"],["Crypto Funds","$427.03M","$427.04M"],["Real Estate","$86.59M","$111.71M"]],
+  "chains": [["Ethereum","$15.189B"],["BSC","$5.031B"],["Stellar","$2.526B"],["Solana","$2.021B"],["Avalanche","$1.08B"],["Arbitrum","$868.47M"],["Zksync_era","$581.73M"],["Kinesis","$550.41M"]]
+}
