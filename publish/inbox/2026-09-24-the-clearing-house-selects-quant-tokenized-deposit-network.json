@@ -1,0 +1,31 @@
+{
+  "title": "The Clearing House Selects Quant to Power U.S. Tokenized Deposit Network",
+  "description": "The Clearing House has selected Quant to provide the interoperability, orchestration and transaction-management layer for its On-Chain Money Initiative, a planned U.S. network for clearing and settling tokenized deposits.",
+  "why_it_matters": "The project moves tokenized deposits toward shared U.S. banking infrastructure rather than isolated bank deployments, with planned connectivity to existing RTP and CHIPS payment rails and availability to participating institutions targeted for the first half of 2027.",
+  "pubDate": "2026-09-24",
+  "category": "news",
+  "tags": [
+    "Tokenized Deposits",
+    "The Clearing House",
+    "Quant",
+    "Payments",
+    "Banks",
+    "United States"
+  ],
+  "keyTakeaways": [
+    "The Clearing House selected Quant to power key technology for its On-Chain Money Initiative.",
+    "The planned network is intended to let financial institutions clear and settle tokenized deposit transactions while connecting with existing fiat payment systems including RTP and CHIPS.",
+    "The network is not yet live for participating institutions; availability is expected in the first half of 2027."
+  ],
+  "body": "The Clearing House has selected Quant to provide core technology for its **On-Chain Money Initiative**, a planned interoperable U.S. payments network for tokenized deposits.\n\nUnder the partnership announced on September 24, Quant will provide the network's interoperability, orchestration and transaction-management layer. The system is intended to coordinate the clearing and settlement of tokenized deposit transactions while connecting with existing payment infrastructure used by financial institutions and their customers, including The Clearing House's RTP and CHIPS networks.\n\n## What is being built\n\nThe On-Chain Money Initiative is designed as shared infrastructure through which participating financial institutions can clear and settle tokenized deposits.\n\nTokenized deposits are digital representations of commercial-bank deposit liabilities. Unlike a privately issued stablecoin, the instrument remains a claim on the issuing bank and sits within the banking relationship and regulatory framework applicable to that institution.\n\nThe Clearing House says the network is intended to support use cases including corporate treasury, liquidity management, cross-border payments and digital-asset settlement.\n\nQuant's role is focused on the technology layer connecting and coordinating transactions across the network and existing payment systems.\n\n## Why interoperability matters\n\nMany early tokenized-deposit projects have operated inside individual institutions or limited networks. That can demonstrate programmability, but it does not by itself create an interbank market in which digital commercial-bank money can move across institutions.\n\nA shared clearing and settlement network addresses a different problem: how deposits issued by separate banks can participate in coordinated transactions while the banks retain their own liabilities and customer relationships.\n\nThe connection to RTP and CHIPS is therefore significant. Rather than positioning tokenized deposits as a replacement for the existing banking system, the initiative is being designed to connect on-chain capabilities with established U.S. payment rails.\n\n## Not live yet\n\nThe announcement is an infrastructure development milestone, not the launch of a production network available to banks today.\n\nThe Clearing House and Quant expect the network to become available to participating financial institutions in the **first half of 2027**. Additional details on participation and specific use cases are expected as development progresses.\n\nThat distinction matters: the project should not be described as a live nationwide tokenized-deposit network.\n\n## The broader shift\n\nThe initiative adds the United States to a growing set of markets exploring shared infrastructure for tokenized commercial-bank money.\n\nThe underlying direction is increasingly clear. Banks are moving beyond experiments focused only on issuing a digital representation of deposits and toward the harder infrastructure problem: enabling regulated bank money to move across institutions and interact with other financial assets.\n\nIf the On-Chain Money Initiative reaches production as planned, it could become an important U.S. settlement layer for programmable commercial-bank money — including the cash side of future tokenized-asset transactions.",
+  "sources": [
+    {
+      "name": "Quant — The Clearing House Partners with Quant to Advance the On-Chain Money Initiative",
+      "url": "https://quant.network/press-releases/the-clearing-house-partners-with-quant-to-advance-the-on-chain-money-initiative/"
+    },
+    {
+      "name": "Quant — Quant powers The Clearing House’s On-Chain Money Initiative in the US",
+      "url": "https://quant.network/news/quant-powers-the-clearing-houses-on-chain-money-initiative-in-the-us/"
+    }
+  ]
+}
