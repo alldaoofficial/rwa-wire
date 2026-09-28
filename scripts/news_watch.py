@@ -40,6 +40,29 @@ BLOCK=["price prediction","airdrop","presale","memecoin","meme coin","casino","1
   "sponsored","press release","partner content","promoted content"]
 HARD_BLOCK=["best crypto","to invest in","presale","100x","price prediction","price target","giveaway","moonshot","sponsored","promoted content"]
 
+# Source trust is intentionally conservative. Google News is discovery only;
+# publisher identity controls whether a story may enter the autonomous route.
+PRIMARY_SOURCES={
+  "blackrock","franklin templeton","jpmorgan","j.p. morgan","dtcc","securitize",
+  "ondo finance","centrifuge","chainlink","sec.gov","u.s. securities and exchange commission",
+  "federal reserve","ecb","european central bank","bis","bank for international settlements",
+}
+TRUSTED_MEDIA={
+  "reuters","bloomberg","financial times","the wall street journal","wsj",
+  "coindesk","the block","fortune","forbes","cnbc","decrypt",
+}
+LOW_TRUST_HINTS={
+  "coinmarketcap","investing.com","tradingview","benzinga","cryptopolitan",
+  "coinpedia","u.today","the crypto basic","crypto news flash","blockchain reporter",
+}
+
+def source_tier(name):
+    s=(name or "").strip().lower()
+    if any(k in s for k in PRIMARY_SOURCES): return "primary"
+    if any(k in s for k in TRUSTED_MEDIA): return "trusted"
+    if any(k in s for k in LOW_TRUST_HINTS): return "low"
+    return "unknown"
+
 def clean(s):
     return re.sub(r"\s+"," ",html.unescape(re.sub(r"<[^>]+>"," ",s or ""))).strip()
 
@@ -98,6 +121,8 @@ def main():
         for x in root.findall(".//item"):
             title=clean(x.findtext("title")); link=clean(x.findtext("link")); desc=clean(x.findtext("description"))
             guid=clean(x.findtext("guid")) or link
+            source_name=title.rsplit(" - ",1)[-1] if " - " in title else ""
+            trust=source_tier(source_name)
             try: published=parsedate_to_datetime(x.findtext("pubDate")).astimezone(timezone.utc)
             except Exception: published=now
             hay=(title+" "+desc).lower()
@@ -109,17 +134,20 @@ def main():
             if guid in seen or slugify(normalized_title) in existing_slugs or any(same_story(normalized_title,t) for t in existing_titles) or now-published>timedelta(hours=48): continue
             # Require an actual tokenization/RWA signal; institution names alone are not enough.
             has_rwa_signal=any(k in hay for k in STRONG if k != "stablecoin")
-            if score>=6 and has_rwa_signal: items.append((score,published,title,link,desc,guid))
+            # Unknown/low-trust publishers are discovery leads only. They do
+            # not create autonomous publication candidates from RSS metadata.
+            if trust in {"primary","trusted"} and score>=6 and has_rwa_signal:
+                items.append((score,published,title,link,desc,guid,trust,source_name))
     if not items:
         state["lastRun"]=now.isoformat()
         state["lastResult"]="no-qualified-story"
         STATE.write_text(json.dumps(state,indent=2)+"\n")
         print("No new high-confidence story found."); return
     items.sort(key=lambda x:(x[0],x[1]),reverse=True)
-    score,published,title,link,desc,guid=items[0]
+    score,published,title,link,desc,guid,trust,source_name=items[0]
     # Google News descriptions are discovery metadata, not independent verification.
     # Keep automated copy conservative and source-attributed.
-    source_name=title.rsplit(" - ",1)[-1] if " - " in title else "Google News source"
+    source_name=source_name or "Google News source"
     clean_title=title.rsplit(" - ",1)[0] if " - " in title else title
     summary=desc or f"A new institutional tokenization development has been reported: {clean_title}."
     # RSS descriptions often repeat the headline and publisher name. Do not turn
@@ -138,7 +166,7 @@ def main():
     day=published.date().isoformat(); slug=slugify(clean_title)
     brief={"title":clean_title,"description":summary,"why_it_matters":why,"pubDate":day,"category":"news",
       "tags":["Tokenization","Institutions","News Watch"],"keyTakeaways":[summary,why],"body":body,
-      "sources":[{"name":source_name,"url":link}],"newsWatch":{"score":score,"discoveredAt":now.isoformat(),"requiresSourceReview":True}}
+      "sources":[{"name":source_name,"url":link}],"newsWatch":{"score":score,"sourceTrust":trust,"discoveredAt":now.isoformat(),"requiresSourceReview":True,"autoPublishEligible":trust in {"primary","trusted"}}}
     INBOX.mkdir(parents=True,exist_ok=True); path=INBOX/f"{day}-{slug}.json"
     path.write_text(json.dumps(brief,indent=2,ensure_ascii=False)+"\n")
     seen.add(guid); state["seen"]=list(seen)[-500:]; state["lastRun"]=now.isoformat(); state["lastResult"]="candidate"; state["lastCandidate"]=str(path.relative_to(ROOT))
