@@ -13,6 +13,42 @@ export interface IntelligenceRelationship {
 
 export const relationships: IntelligenceRelationship[] = [
   {
+    from:{kind:"institution",slug:"franklin-templeton",label:"Franklin Templeton"},
+    to:{kind:"asset",slug:"benji",label:"BENJI"},
+    type:"manages", label:"Fund manager",
+    source:"https://www.franklintempleton.com/press-releases/news-room/2026/franklin-templeton-stellar-development-foundation-mark-five-years-of-benji-the-first-u.s.-registered-tokenized-money-market-fund",
+    sourceLabel:"Franklin Templeton BENJI announcement", asOf:"2026-04-30"
+  },
+  {
+    from:{kind:"asset",slug:"benji",label:"BENJI"},
+    to:{kind:"network",slug:"stellar",label:"Stellar"},
+    type:"issued_on", label:"Original public blockchain",
+    source:"https://www.franklintempleton.com/press-releases/news-room/2026/franklin-templeton-stellar-development-foundation-mark-five-years-of-benji-the-first-u.s.-registered-tokenized-money-market-fund",
+    sourceLabel:"Franklin Templeton BENJI announcement", asOf:"2026-04-30"
+  },
+  {
+    from:{kind:"institution",slug:"jpmorgan",label:"JPMorgan"},
+    to:{kind:"asset",slug:"jpm-coin",label:"JPM Coin"},
+    type:"manages", label:"Issuer",
+    source:"https://www.jpmorgan.com/kinexys/jpm-coin",
+    sourceLabel:"J.P. Morgan JPM Coin product page", asOf:"2026-04-28"
+  },
+  {
+    from:{kind:"asset",slug:"jpm-coin",label:"JPM Coin"},
+    to:{kind:"network",slug:"base",label:"Base"},
+    type:"issued_on", label:"Public blockchain rail",
+    source:"https://www.jpmorgan.com/payments/newsroom/kinexys-milestones-2026",
+    sourceLabel:"Kinexys 2026 milestones", asOf:"2026-04-28"
+  },
+  {
+    from:{kind:"institution",slug:"dtcc",label:"DTCC"},
+    to:{kind:"network",slug:"stellar",label:"Stellar"},
+    type:"issued_on", label:"Planned tokenization-service network",
+    source:"https://www.dtcc.com/press-releases/2026/tokenization-service-to-connect-with-stellar-public-blockchain-as-dtc-advances-multi-chain-strategy",
+    sourceLabel:"DTCC multi-chain announcement", asOf:"2026-05-27"
+  },
+
+  {
     from:{kind:"institution",slug:"blackrock",label:"BlackRock"},
     to:{kind:"asset",slug:"buidl",label:"BUIDL"},
     type:"manages", label:"Investment manager",
