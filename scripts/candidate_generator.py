@@ -36,11 +36,32 @@ def validate(d):
 
 def svg(title, category):
     t=html.escape(title); c=html.escape(category.upper())
+    words=t.split()
+    lines=[]; line=""
+    for word in words:
+        test=(line+" "+word).strip()
+        if len(test)>30 and line:
+            lines.append(line); line=word
+        else:
+            line=test
+    if line: lines.append(line)
+    lines=lines[:4]
+    tspans="".join(f'<tspan x="86" dy="{0 if i==0 else 68}">{x}</tspan>' for i,x in enumerate(lines))
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
-<rect width="1200" height="675" fill="#080A0D"/><path d="M70 92h1060" stroke="#2ED47A" stroke-width="4"/>
-<text x="70" y="155" fill="#8B949E" font-family="Arial,sans-serif" font-size="26" font-weight="700">RWA WIRE // {c}</text>
-<foreignObject x="70" y="210" width="1040" height="300"><div xmlns="http://www.w3.org/1999/xhtml" style="font:700 58px Arial,sans-serif;color:#F5F7FA;line-height:1.12">{t}</div></foreignObject>
-<text x="70" y="610" fill="#2ED47A" font-family="Arial,sans-serif" font-size="24">THE INTELLIGENCE LAYER FOR THE TOKENIZED ECONOMY.</text>
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0D1217"/><stop offset="1" stop-color="#080A0D"/></linearGradient>
+  <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#1A2229" stroke-width="1"/></pattern>
+</defs>
+<rect width="1200" height="675" fill="url(#g)"/><rect width="1200" height="675" fill="url(#grid)" opacity=".7"/>
+<rect x="0" width="10" height="675" fill="#2ED47A"/>
+<text x="86" y="82" fill="#2ED47A" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="4">RWA WIRE // {c}</text>
+<text x="1114" y="82" text-anchor="end" fill="#66717B" font-family="Arial,sans-serif" font-size="14" letter-spacing="3">INTELLIGENCE BRIEF</text>
+<path d="M86 112H1114" stroke="#263038"/>
+<text x="86" y="206" fill="#F5F7FA" font-family="Georgia,serif" font-size="58" font-weight="600">{tspans}</text>
+<g transform="translate(905 440)" opacity=".9"><circle cx="100" cy="70" r="96" fill="none" stroke="#263038"/><circle cx="100" cy="70" r="58" fill="none" stroke="#2ED47A"/><path d="M4 70h192M100-26v192" stroke="#263038"/><circle cx="100" cy="70" r="7" fill="#2ED47A"/></g>
+<path d="M86 566H1114" stroke="#263038"/>
+<text x="86" y="610" fill="#8B949E" font-family="Arial,sans-serif" font-size="15" letter-spacing="2">REAL-WORLD ASSETS · TOKENIZATION · INSTITUTIONS · MARKETS</text>
+<text x="1114" y="610" text-anchor="end" fill="#2ED47A" font-family="Arial,sans-serif" font-size="15" font-weight="700">THERWAWIRE.COM</text>
 </svg>'''
 
 def main():
