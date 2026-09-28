@@ -74,6 +74,9 @@ jobs:
               out.write("APPROVED_PUBLISH_ID=" + publish_id + "\n")
           PY
 
+      - name: Prepare approved distribution package
+        run: python3 scripts/distribution_package.py "$MANIFEST_PATH"
+
       - name: Install visual renderer
         run: python3 -m pip install --quiet cairosvg
 
@@ -173,7 +176,7 @@ jobs:
           printf '{\n  "id": "%s",\n  "status": "published",\n  "source_manifest": "%s"\n}\n' "$APPROVED_PUBLISH_ID" "$MANIFEST_PATH" > "publish/posted/${APPROVED_PUBLISH_ID}.json"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "publish/posted/${APPROVED_PUBLISH_ID}.json"
-          git commit -m "Mark ${APPROVED_PUBLISH_ID} as published"
+          git add "publish/posted/${APPROVED_PUBLISH_ID}.json" "publish/distribution/${APPROVED_PUBLISH_ID}.json"
+          git commit -m "Publish distribution package for ${APPROVED_PUBLISH_ID}"
           git push
 
