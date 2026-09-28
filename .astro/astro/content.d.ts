@@ -383,6 +383,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"united-states-oil-tokenized-fund-ondo-price-usoon-usd-today-live-price-market-cap-chart.mdx": {
+	id: "united-states-oil-tokenized-fund-ondo-price-usoon-usd-today-live-price-market-cap-chart.mdx";
+  slug: "united-states-oil-tokenized-fund-ondo-price-usoon-usd-today-live-price-market-cap-chart";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "what-are-real-world-assets.mdx": {
 	id: "what-are-real-world-assets.mdx";
   slug: "what-are-real-world-assets";
