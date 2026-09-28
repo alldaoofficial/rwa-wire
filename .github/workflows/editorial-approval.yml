@@ -1,6 +1,9 @@
 name: RWA Wire Editorial Approval
 
 on:
+  push:
+    paths:
+      - "publish/candidates/*.json"
   workflow_dispatch:
     inputs:
       candidate_path:
@@ -9,7 +12,11 @@ on:
         type: string
 
 permissions:
-  contents: write
+  contents: read
+
+concurrency:
+  group: rwa-wire-editorial-review
+  cancel-in-progress: false
 
 jobs:
   request-approval:
@@ -17,17 +24,32 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Resolve candidate manifest
+        env:
+          MANUAL_CANDIDATE_PATH: ${{ inputs.candidate_path }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            CANDIDATE_PATH="$MANUAL_CANDIDATE_PATH"
+          else
+            CANDIDATE_PATH=$(git diff --name-only --diff-filter=A HEAD^ HEAD -- "publish/candidates/*.json")
+          fi
+          COUNT=$(printf "%s\n" "$CANDIDATE_PATH" | sed '/^$/d' | wc -l)
+          if [ "$COUNT" -ne 1 ]; then
+            echo "Expected exactly one newly added candidate manifest, found $COUNT."
+            exit 1
+          fi
+          case "$CANDIDATE_PATH" in
+            publish/candidates/*.json) ;;
+            *) echo "Invalid candidate path."; exit 1 ;;
+          esac
+          echo "CANDIDATE_PATH=$CANDIDATE_PATH" >> "$GITHUB_ENV"
 
       - name: Send editorial approval card
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_REVIEW_CHAT_ID: ${{ secrets.TELEGRAM_REVIEW_CHAT_ID }}
-          CANDIDATE_PATH: ${{ inputs.candidate_path }}
         run: |
           python3 scripts/editorial_approval.py request "$CANDIDATE_PATH"
-
-  process-decision:
-    if: ${{ false }}
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Reserved for webhook-driven approval decisions."
