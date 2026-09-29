@@ -4,16 +4,20 @@ on:
   push:
     paths:
       - "publish/approved/*.json"
-
+      - "publish/market-pulse-telegram-ready/*.json"
   workflow_dispatch:
     inputs:
       manifest_path:
-        description: "Approved manifest path (publish/approved/*.json)"
+        description: "Approved news manifest or Market Pulse ready package"
         required: true
         type: string
 
 permissions:
   contents: write
+
+concurrency:
+  group: rwa-wire-telegram-publisher
+  cancel-in-progress: false
 
 jobs:
   publish:
@@ -24,77 +28,77 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Load approved manifest
+      - name: Resolve package type
         env:
           MANUAL_MANIFEST_PATH: ${{ inputs.manifest_path }}
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             MANIFEST_PATH="$MANUAL_MANIFEST_PATH"
           else
-            MANIFEST_PATH=$(git diff --name-only --diff-filter=AM HEAD^ HEAD -- "publish/approved/*.json")
+            MANIFEST_PATH=$(git diff --name-only --diff-filter=A HEAD^ HEAD -- "publish/approved/*.json" "publish/market-pulse-telegram-ready/*.json" | head -n 1)
           fi
-          COUNT=$(printf "%s\n" "$MANIFEST_PATH" | sed '/^$/d' | wc -l)
-          if [ "$COUNT" -ne 1 ]; then
-            echo "Expected exactly one newly added approval manifest, found $COUNT."
-            exit 1
-          fi
+          if [ -z "$MANIFEST_PATH" ]; then echo "No publishable Telegram package."; exit 1; fi
           echo "MANIFEST_PATH=$MANIFEST_PATH" >> "$GITHUB_ENV"
-          export MANIFEST_PATH
+          case "$MANIFEST_PATH" in
+            publish/market-pulse-telegram-ready/*.json) echo "PACKAGE_TYPE=market_pulse" >> "$GITHUB_ENV" ;;
+            publish/approved/*.json) echo "PACKAGE_TYPE=news" >> "$GITHUB_ENV" ;;
+            *) echo "Invalid Telegram package path"; exit 1 ;;
+          esac
+
+      - name: Publish Market Pulse to Telegram
+        if: env.PACKAGE_TYPE == 'market_pulse'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: "@RWAWireHQ"
+        run: |
           python3 - <<'PY'
-          import json, os, pathlib, time, urllib.error, urllib.request
-          p = pathlib.Path(os.environ["MANIFEST_PATH"])
-          if not str(p).startswith("publish/approved/") or p.suffix != ".json":
-              raise SystemExit("Invalid approval manifest path.")
-          post = json.loads(p.read_text(encoding="utf-8"))
-          publish_id = str(post.get("id", p.stem)).strip()
-          if not publish_id or any(ch not in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_" for ch in publish_id):
-              raise SystemExit("Invalid publish id.")
-          marker = pathlib.Path("publish/posted") / (publish_id + ".json")
-          if marker.exists():
-              raise SystemExit("This publish id has already been posted.")
-          caption = str(post["caption"]).strip()
-          image_url = str(post["image_url"]).strip()
-          article_url = str(post.get("article_url", "")).strip()
-          if not caption or len(caption) > 1024:
-              raise SystemExit("Invalid Telegram caption.")
-          if not image_url.startswith("https://"):
-              raise SystemExit("image_url must use HTTPS.")
-          if not article_url.startswith("https://therwawire.com/news/"):
-              raise SystemExit("A valid RWA Wire news article_url is required before Telegram publication.")
-          # GitHub Pages can lag behind the repository commit. Publication waits
-          # for the canonical article instead of treating a temporary 404 as a
-          # permanent failure.
-          live = False
-          last_error = None
-          for attempt in range(1, 31):
-              req = urllib.request.Request(article_url, headers={"User-Agent": "RWA-Wire-Publisher/1.0"})
-              try:
-                  with urllib.request.urlopen(req, timeout=20) as response:
-                      if response.status == 200:
-                          live = True
-                          print(f"Article live on attempt {attempt}.")
-                          break
-                      last_error = f"HTTP {response.status}"
-              except Exception as exc:
-                  last_error = str(exc)
-              print(f"Article not live yet (attempt {attempt}/30): {last_error}")
-              if attempt < 30:
-                  time.sleep(10)
-          if not live:
-              raise SystemExit(f"RWA Wire article did not become live within 5 minutes; Telegram publication blocked: {last_error}")
-          with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as out:
-              out.write("APPROVED_CAPTION<<RWAEOF\n" + caption + "\nRWAEOF\n")
-              out.write("APPROVED_IMAGE_URL=" + image_url + "\n")
-              out.write("APPROVED_PUBLISH_ID=" + publish_id + "\n")
+          import json, os, pathlib, urllib.parse, urllib.request
+          p=pathlib.Path(os.environ['MANIFEST_PATH']); d=json.loads(p.read_text(encoding='utf-8'))
+          pid=str(d.get('id',p.stem)); text=str(d.get('text','')).strip(); chat=os.environ['TELEGRAM_CHAT_ID']
+          marker=pathlib.Path('publish/market-pulse-telegram-posted')/(pid+'.json')
+          if marker.exists(): raise SystemExit('Market Pulse already posted to Telegram')
+          if not text or len(text)>4096: raise SystemExit('Invalid Market Pulse Telegram text')
+          body=urllib.parse.urlencode({'chat_id':chat,'text':text,'disable_web_page_preview':'true'}).encode()
+          req=urllib.request.Request('https://api.telegram.org/bot'+os.environ['TELEGRAM_BOT_TOKEN']+'/sendMessage',data=body,method='POST')
+          with urllib.request.urlopen(req,timeout=30) as r: result=json.loads(r.read().decode())
+          if not result.get('ok'): raise SystemExit('Telegram API did not confirm Market Pulse publication')
+          marker.parent.mkdir(parents=True,exist_ok=True)
+          marker.write_text(json.dumps({'id':pid,'status':'published','message_id':(result.get('result') or {}).get('message_id')},indent=2)+'\n')
+          print('Market Pulse published successfully to Telegram.')
           PY
 
-      - name: Prepare approved distribution package
+      - name: Load approved news manifest
+        if: env.PACKAGE_TYPE == 'news'
+        run: |
+          python3 - <<'PY'
+          import json, os, pathlib, time, urllib.request
+          p=pathlib.Path(os.environ['MANIFEST_PATH']); post=json.loads(p.read_text(encoding='utf-8')); publish_id=str(post.get('id',p.stem)).strip()
+          marker=pathlib.Path('publish/posted')/(publish_id+'.json')
+          if marker.exists(): raise SystemExit('This publish id has already been posted.')
+          caption=str(post['caption']).strip(); image_url=str(post['image_url']).strip(); article_url=str(post.get('article_url','')).strip()
+          if not caption or len(caption)>1024 or not image_url.startswith('https://') or not article_url.startswith('https://therwawire.com/news/'): raise SystemExit('Invalid approved news manifest')
+          live=False
+          for attempt in range(30):
+            try:
+              with urllib.request.urlopen(urllib.request.Request(article_url,headers={'User-Agent':'RWA-Wire-Publisher/1.0'}),timeout=20) as r:
+                if r.status==200: live=True; break
+            except Exception: pass
+            if attempt<29: time.sleep(10)
+          if not live: raise SystemExit('Article did not become live within 5 minutes')
+          with open(os.environ['GITHUB_ENV'],'a') as out:
+            out.write('APPROVED_CAPTION<<RWAEOF\n'+caption+'\nRWAEOF\nAPPROVED_IMAGE_URL='+image_url+'\nAPPROVED_PUBLISH_ID='+publish_id+'\n')
+          PY
+
+      - name: Prepare approved news distribution package
+        if: env.PACKAGE_TYPE == 'news'
         run: python3 scripts/distribution_package.py "$MANIFEST_PATH"
 
-      - name: Install visual renderer
-        run: python3 -m pip install --quiet cairosvg
+      - name: Install news visual renderer
+        if: env.PACKAGE_TYPE == 'news'
+        run: python3 -m pip install --quiet cairosvg pillow
 
-      - name: Publish approved RWA Wire post
+      - name: Publish approved news to Telegram
+        if: env.PACKAGE_TYPE == 'news'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: "@RWAWireHQ"
@@ -102,71 +106,33 @@ jobs:
           TELEGRAM_IMAGE_URL: ${{ env.APPROVED_IMAGE_URL }}
         run: |
           python3 - <<'PY'
-          import json
-          import os
-          import pathlib
-          import urllib.parse
-          import urllib.request
-          import cairosvg
-
-          token = os.environ["TELEGRAM_BOT_TOKEN"]
-          chat_id = os.environ["TELEGRAM_CHAT_ID"]
-          caption = os.environ["TELEGRAM_CAPTION"].strip()
-          image_url = os.environ.get("TELEGRAM_IMAGE_URL", "").strip()
-
-          # Keep editorial news visuals independent from commercial placements.
-          # Affiliate/sponsored promotions are handled separately and never injected
-          # into every newsroom post.
+          import json, os, urllib.request, uuid, cairosvg
           from PIL import Image
           from io import BytesIO
-
-          with urllib.request.urlopen(image_url) as response:
-              image_bytes = response.read()
-          if image_url.lower().split("?")[0].endswith(".svg"):
-              image_bytes = cairosvg.svg2png(bytestring=image_bytes)
-          story = Image.open(BytesIO(image_bytes)).convert("RGB")
-          story.save("telegram-editorial.jpg", "JPEG", quality=92, optimize=True)
-
-          if len(caption) > 1024:
-              raise SystemExit("Caption exceeds Telegram photo-caption limit.")
-
-          if not image_url:
-              raise SystemExit("A PNG/JPG image URL is required for this publisher.")
-
-          import uuid
-          boundary = "----RWAWire" + uuid.uuid4().hex
-          fields = {
-              "chat_id": chat_id,
-              "caption": caption
-          }
-          body = bytearray()
-          for key, value in fields.items():
-              body.extend(f'--{boundary}\r\nContent-Disposition: form-data; name=\"{key}\"\r\n\r\n{value}\r\n'.encode())
-          with open("telegram-editorial.jpg", "rb") as fh:
-              photo = fh.read()
-          body.extend(f'--{boundary}\r\nContent-Disposition: form-data; name=\"photo\"; filename=\"rwa-wire.jpg\"\r\nContent-Type: image/jpeg\r\n\r\n'.encode())
-          body.extend(photo)
-          body.extend(f"\r\n--{boundary}--\r\n".encode())
-          req = urllib.request.Request(f"https://api.telegram.org/bot{token}/sendPhoto", data=bytes(body), method="POST")
-          req.add_header("Content-Type", f"multipart/form-data; boundary={boundary}")
-
-          with urllib.request.urlopen(req) as response:
-              result = json.loads(response.read().decode())
-
-          if not result.get("ok"):
-              raise SystemExit("Telegram API did not confirm publication.")
-
-          print("Approved RWA Wire post published successfully.")
+          image_url=os.environ['TELEGRAM_IMAGE_URL']; caption=os.environ['TELEGRAM_CAPTION'].strip()
+          with urllib.request.urlopen(image_url) as response: image_bytes=response.read()
+          if image_url.lower().split('?')[0].endswith('.svg'): image_bytes=cairosvg.svg2png(bytestring=image_bytes)
+          Image.open(BytesIO(image_bytes)).convert('RGB').save('telegram-editorial.jpg','JPEG',quality=92,optimize=True)
+          boundary='----RWAWire'+uuid.uuid4().hex; body=bytearray()
+          for key,value in {'chat_id':os.environ['TELEGRAM_CHAT_ID'],'caption':caption}.items(): body.extend(f'--{boundary}\r\nContent-Disposition: form-data; name="{key}"\r\n\r\n{value}\r\n'.encode())
+          photo=open('telegram-editorial.jpg','rb').read(); body.extend(f'--{boundary}\r\nContent-Disposition: form-data; name="photo"; filename="rwa-wire.jpg"\r\nContent-Type: image/jpeg\r\n\r\n'.encode()); body.extend(photo); body.extend(f'\r\n--{boundary}--\r\n'.encode())
+          req=urllib.request.Request('https://api.telegram.org/bot'+os.environ['TELEGRAM_BOT_TOKEN']+'/sendPhoto',data=bytes(body),method='POST'); req.add_header('Content-Type',f'multipart/form-data; boundary={boundary}')
+          with urllib.request.urlopen(req) as response: result=json.loads(response.read().decode())
+          if not result.get('ok'): raise SystemExit('Telegram API did not confirm publication')
           PY
 
-      - name: Mark approved post as published
-        if: success()
+      - name: Persist publication marker
         run: |
-          mkdir -p publish/posted
-          printf '{\n  "id": "%s",\n  "status": "published",\n  "source_manifest": "%s"\n}\n' "$APPROVED_PUBLISH_ID" "$MANIFEST_PATH" > "publish/posted/${APPROVED_PUBLISH_ID}.json"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "publish/posted/${APPROVED_PUBLISH_ID}.json" "publish/distribution/${APPROVED_PUBLISH_ID}.json"
-          git commit -m "Publish distribution package for ${APPROVED_PUBLISH_ID}"
-          git push
-
+          if [ "$PACKAGE_TYPE" = "market_pulse" ]; then
+            git add publish/market-pulse-telegram-posted/
+            git commit -m "Mark Market Pulse Telegram post published"
+          else
+            mkdir -p publish/posted
+            printf '{\n  "id": "%s",\n  "status": "published",\n  "source_manifest": "%s"\n}\n' "$APPROVED_PUBLISH_ID" "$MANIFEST_PATH" > "publish/posted/${APPROVED_PUBLISH_ID}.json"
+            git add "publish/posted/${APPROVED_PUBLISH_ID}.json" "publish/distribution/${APPROVED_PUBLISH_ID}.json"
+            git commit -m "Publish distribution package for ${APPROVED_PUBLISH_ID}"
+          fi
+          for attempt in 1 2 3; do git pull --rebase origin main && git push && exit 0; sleep 3; done
+          exit 1
