@@ -24,18 +24,30 @@ jobs:
       - name: Scan RWA news
         run: python3 scripts/news_watch.py
 
-      - name: Commit one qualified discovery
+      - name: Commit News Watch state and discovery
         id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A publish/
+
           if git diff --cached --quiet; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "No qualified story."
+            echo "story_changed=false" >> "$GITHUB_OUTPUT"
+            echo "No News Watch changes."
             exit 0
           fi
-          git commit -m "News Watch: add qualified RWA story"
+
+          BRIEF_PATH=$(git diff --cached --name-only --diff-filter=A -- 'publish/inbox/*.json' | head -n 1)
+          if [ -n "$BRIEF_PATH" ]; then
+            echo "story_changed=true" >> "$GITHUB_OUTPUT"
+            echo "brief_path=$BRIEF_PATH" >> "$GITHUB_OUTPUT"
+            COMMIT_MESSAGE="News Watch: add qualified RWA story"
+          else
+            echo "story_changed=false" >> "$GITHUB_OUTPUT"
+            COMMIT_MESSAGE="News Watch: update scan state"
+          fi
+
+          git commit -m "$COMMIT_MESSAGE"
           for attempt in 1 2 3; do
             git pull --rebase origin main
             if git push; then
@@ -48,16 +60,12 @@ jobs:
             echo "Remote changed during push; retrying after rebase..."
             sleep 3
           done
-          echo "changed=true" >> "$GITHUB_OUTPUT"
 
       - name: Trigger candidate generator
-        if: steps.commit.outputs.changed == 'true'
+        if: steps.commit.outputs.story_changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
+          BRIEF_PATH: ${{ steps.commit.outputs.brief_path }}
         run: |
-          BRIEF_PATH=$(git diff-tree --no-commit-id --name-only -r HEAD -- "publish/inbox/*.json" | head -n 1)
-          if [ -z "$BRIEF_PATH" ]; then
-            echo "No inbox brief in News Watch commit."
-            exit 1
-          fi
+          echo "Triggering candidate generator for $BRIEF_PATH"
           gh workflow run candidate-generator.yml --ref main -f brief_path="$BRIEF_PATH"
