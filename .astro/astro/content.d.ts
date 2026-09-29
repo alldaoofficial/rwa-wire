@@ -369,6 +369,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"tokenized-stocks-just-did-20-9-billion-in-dex-trading-in-30-days.mdx": {
+	id: "tokenized-stocks-just-did-20-9-billion-in-dex-trading-in-30-days.mdx";
+  slug: "tokenized-stocks-just-did-20-9-billion-in-dex-trading-in-30-days";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "tokenized-treasuries-explained.mdx": {
 	id: "tokenized-treasuries-explained.mdx";
   slug: "tokenized-treasuries-explained";
