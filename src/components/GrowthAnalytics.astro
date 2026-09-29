@@ -16,8 +16,16 @@ const endpoint = "https://dqeakkrsbgxnexucuyld.supabase.co/functions/v1/growth-e
       metadata,
       referrer: document.referrer ? (() => { try { return new URL(document.referrer).hostname; } catch { return ""; } })() : ""
     });
-    if (navigator.sendBeacon) navigator.sendBeacon(endpoint,new Blob([payload],{type:"application/json"}));
-    else fetch(endpoint,{method:"POST",headers:{"content-type":"application/json"},body:payload,keepalive:true}).catch(()=>{});
+    // Use fetch rather than sendBeacon: the analytics endpoint validates Origin,
+    // and fetch reliably includes it for our cross-origin JSON request.
+    fetch(endpoint, {
+      method: "POST",
+      mode: "cors",
+      headers: { "content-type": "application/json" },
+      body: payload,
+      keepalive: true,
+      credentials: "omit"
+    }).catch(() => {});
   };
 
   window.rwaAnalytics = { track: send };
