@@ -16,6 +16,9 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    outputs:
+      pulse_path: ${{ steps.paths.outputs.pulse_path }}
+      telegram_path: ${{ steps.paths.outputs.telegram_path }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -25,22 +28,23 @@ jobs:
           COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
         run: python3 scripts/update_market_data.py
       - name: Generate Market Pulse
-        run: |
-          python3 scripts/market_pulse.py
-          echo "PULSE_PATH=$(ls -t publish/market-pulse/*.json | head -n 1)" >> "$GITHUB_ENV"
-      - name: Prepare Telegram Market Pulse
+        run: python3 scripts/market_pulse.py
+      - name: Prepare Telegram package and paths
+        id: paths
         env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: "@RWAWireHQ"
         run: |
-          python3 - <<'PY'
-          import json, os, pathlib
-          p=pathlib.Path(os.environ['PULSE_PATH']); d=json.loads(p.read_text())
-          text=str(d['telegram']).strip()
+          PULSE_PATH=$(ls -t publish/market-pulse/*.json | head -n 1)
+          python3 - "$PULSE_PATH" <<'PY'
+          import json, pathlib, sys
+          p=pathlib.Path(sys.argv[1]); d=json.loads(p.read_text()); text=str(d['telegram']).strip()
           if not text or len(text)>4096: raise SystemExit('Invalid Telegram Market Pulse')
           out=pathlib.Path('publish/market-pulse-telegram-ready'); out.mkdir(parents=True,exist_ok=True)
-          (out/(p.stem+'.json')).write_text(json.dumps({'id':p.stem,'chat_id':os.environ['TELEGRAM_CHAT_ID'],'text':text},ensure_ascii=False,indent=2)+'\n')
+          (out/(p.stem+'.json')).write_text(json.dumps({'id':p.stem,'chat_id':'@RWAWireHQ','text':text},ensure_ascii=False,indent=2)+'\n')
           PY
+          TELEGRAM_PATH="publish/market-pulse-telegram-ready/$(basename "$PULSE_PATH")"
+          echo "pulse_path=$PULSE_PATH" >> "$GITHUB_OUTPUT"
+          echo "telegram_path=$TELEGRAM_PATH" >> "$GITHUB_OUTPUT"
       - name: Persist Market Pulse snapshot
         run: |
           git config user.name "github-actions[bot]"
@@ -49,3 +53,22 @@ jobs:
           git commit -m "Market Pulse: add production snapshot"
           for attempt in 1 2 3; do git pull --rebase origin main && git push && exit 0; sleep 3; done
           exit 1
+
+  telegram:
+    needs: generate
+    uses: ./.github/workflows/telegram-test.yml
+    with:
+      manifest_path: ${{ needs.generate.outputs.telegram_path }}
+    secrets:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+
+  x:
+    needs: generate
+    uses: ./.github/workflows/x-publisher.yml
+    with:
+      package_path: ${{ needs.generate.outputs.pulse_path }}
+    secrets:
+      X_API_KEY: ${{ secrets.X_API_KEY }}
+      X_API_SECRET: ${{ secrets.X_API_SECRET }}
+      X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+      X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
