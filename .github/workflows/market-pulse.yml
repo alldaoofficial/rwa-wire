@@ -20,21 +20,32 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 2
-
       - name: Refresh shared market cache
         env:
           COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
         run: python3 scripts/update_market_data.py
-
       - name: Generate Market Pulse
-        run: python3 scripts/market_pulse.py
-
+        run: |
+          python3 scripts/market_pulse.py
+          echo "PULSE_PATH=$(ls -t publish/market-pulse/*.json | head -n 1)" >> "$GITHUB_ENV"
+      - name: Prepare Telegram Market Pulse
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: "@RWAWireHQ"
+        run: |
+          python3 - <<'PY'
+          import json, os, pathlib
+          p=pathlib.Path(os.environ['PULSE_PATH']); d=json.loads(p.read_text())
+          text=str(d['telegram']).strip()
+          if not text or len(text)>4096: raise SystemExit('Invalid Telegram Market Pulse')
+          out=pathlib.Path('publish/market-pulse-telegram-ready'); out.mkdir(parents=True,exist_ok=True)
+          (out/(p.stem+'.json')).write_text(json.dumps({'id':p.stem,'chat_id':os.environ['TELEGRAM_CHAT_ID'],'text':text},ensure_ascii=False,indent=2)+'\n')
+          PY
       - name: Persist Market Pulse snapshot
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/markets.json publish/market-pulse/
-          if git diff --cached --quiet; then exit 0; fi
-          git commit -m "Market Pulse: add snapshot"
-          git pull --rebase origin main
-          git push
+          git add public/data/markets.json publish/market-pulse/ publish/market-pulse-telegram-ready/
+          git commit -m "Market Pulse: add production snapshot"
+          for attempt in 1 2 3; do git pull --rebase origin main && git push && exit 0; sleep 3; done
+          exit 1
