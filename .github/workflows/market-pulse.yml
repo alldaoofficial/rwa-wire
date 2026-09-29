@@ -1,0 +1,47 @@
+name: RWA Wire Market Pulse
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Dry-run collection windows. UTC: 09:00 / 18:00 = 11:00 / 20:00 CEST.
+    - cron: '0 9,18 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rwa-wire-market-pulse
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Refresh shared market cache
+        env:
+          COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
+        run: python3 scripts/update_market_data.py
+
+      - name: Generate Market Pulse dry run
+        run: python3 scripts/market_pulse.py
+
+      - name: Persist dry-run sample
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/markets.json publish/market-pulse/
+          if git diff --cached --quiet; then
+            echo "No Market Pulse changes."
+            exit 0
+          fi
+          git commit -m "Market Pulse: add dry-run snapshot"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push; then exit 0; fi
+            sleep 3
+          done
+          exit 1
