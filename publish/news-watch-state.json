@@ -6,7 +6,63 @@
     "CBMiekFVX3lxTE9oNGpzRHNSRGljbEJ5cGF1QTZiaGNuQWhZek1uc29TYnZTSlh1WkRLVDJFR056V25laDI2UVBrcXMycFhsdTFwc2hjbm10TEp6WXB6dFJCS3hfcDlsTGtuTUNYS0hOUVZzT0tGUWw0Z3NmX0lhVVk2NHVR",
     "CBMilgFBVV95cUxNLVg4N3VvMHFBbGcyQlAzOFpPbjRDOERCakpmNmI0NjQtRTB3azdISmRTcmE3YXRxNENfMWFzRm92eXFFYmtRY1hPaVBQcGZUOE93WHBuQ2pRNDBEQ1pUZzJfNk5PeV9YaWt0X3VBQk9ucHYxa1ZyUDh6NXczUUJ5YzE2VG5IbUlwb2JhcF9ObzB3UnY1a0E"
   ],
-  "lastRun": "2026-09-29T11:45:14.439337+00:00",
+  "lastRun": "2026-09-29T11:50:38.592176+00:00",
   "lastCandidate": "publish/inbox/2026-09-27-tokenized-stocks-just-did-20-9-billion-in-dex-trading-in-30-days.json",
-  "lastResult": "no-qualified-story"
+  "lastResult": "no-qualified-story",
+  "lastDiagnostics": {
+    "rawItems": 239,
+    "queriesOk": 9,
+    "queriesFailed": 0,
+    "breaking": 0,
+    "important": 0,
+    "watchlist": 69,
+    "sourceTiers": {
+      "unknown": 212,
+      "low": 20,
+      "trusted": 6,
+      "primary": 1
+    },
+    "rejections": {
+      "watchlist_unknown": 64,
+      "seen_guid": 8,
+      "watchlist_low": 5,
+      "no_rwa_signal": 87,
+      "duplicate_story": 44,
+      "score_below_4": 23,
+      "hard_block": 8
+    },
+    "feedErrors": [],
+    "topWatchlist": [
+      {
+        "title": "Tokenized Fund Assets Top $1.2 Billion as WisdomTree Launches Onchain",
+        "source": "securities.io",
+        "score": 12,
+        "trust": "unknown"
+      },
+      {
+        "title": "Tokenized Fund Assets Top $1.2 Billion as WisdomTree Launches Onchain",
+        "source": "securities.io",
+        "score": 12,
+        "trust": "unknown"
+      },
+      {
+        "title": "Oracle Integrates With Swift’s Blockchain Ledger to Connect Banks’ Tokenized Deposits Across Institutions",
+        "source": "FinanceFeeds",
+        "score": 11,
+        "trust": "unknown"
+      },
+      {
+        "title": "Oracle Integrates With Swift’s Blockchain Ledger to Connect Banks’ Tokenized Deposits Across Institutions",
+        "source": "FinanceFeeds",
+        "score": 11,
+        "trust": "unknown"
+      },
+      {
+        "title": "WisdomTree Introduces WisdomTree Onchain™ as Tokenized Fund Assets Surpass $1.2 Billion",
+        "source": "Business Wire",
+        "score": 10,
+        "trust": "unknown"
+      }
+    ]
+  }
 }
