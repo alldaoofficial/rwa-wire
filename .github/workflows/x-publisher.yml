@@ -11,6 +11,20 @@ on:
         description: "Distribution or Market Pulse package path"
         required: true
         type: string
+  workflow_call:
+    inputs:
+      package_path:
+        required: true
+        type: string
+    secrets:
+      X_API_KEY:
+        required: true
+      X_API_SECRET:
+        required: true
+      X_ACCESS_TOKEN:
+        required: true
+      X_ACCESS_TOKEN_SECRET:
+        required: true
 
 permissions:
   contents: write
@@ -28,12 +42,12 @@ jobs:
           fetch-depth: 2
       - name: Resolve package
         env:
-          MANUAL_PACKAGE: ${{ inputs.package_path }}
+          REQUESTED_PACKAGE: ${{ inputs.package_path }}
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            PACKAGE_PATH="$MANUAL_PACKAGE"
-          else
+          if [ "${{ github.event_name }}" = "push" ]; then
             PACKAGE_PATH=$(git diff --name-only --diff-filter=A HEAD^ HEAD -- 'publish/distribution/*.json' 'publish/market-pulse/*.json' | head -n 1)
+          else
+            PACKAGE_PATH="$REQUESTED_PACKAGE"
           fi
           if [ -z "$PACKAGE_PATH" ]; then echo "SKIP_X=true" >> "$GITHUB_ENV"; else echo "PACKAGE_PATH=$PACKAGE_PATH" >> "$GITHUB_ENV"; fi
       - name: Publish to X
