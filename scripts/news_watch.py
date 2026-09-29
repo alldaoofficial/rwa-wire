@@ -20,46 +20,25 @@ QUERIES=[
   'tokenization pilot bank asset manager exchange settlement custody',
   'digital asset securities tokenization regulator infrastructure',
 ]
-STRONG={
-  "tokenized":3,"tokenization":3,"tokenized fund":4,"tokenized treasury":4,
-  "tokenized securities":4,"tokenized stocks":4,"tokenized deposits":4,
-  "deposit token":4,"onchain finance":3,"real world asset":3,"rwa":2,
-  "digital bond":3,"private credit":2,"stablecoin":1,"digital securities":3,
-  "tokenization pilot":3,
-}
-INSTITUTIONAL={
-  "blackrock":3,"franklin templeton":3,"jpmorgan":3,"j.p. morgan":3,"dtcc":3,
-  "securitize":2,"ondo":2,"centrifuge":2,"chainlink":2,"bank":1,"fund":1,
-  "asset manager":2,"securities":2,"treasury":2,"institution":1,"settlement":2,
-  "exchange":1,"custody":1,"regulator":1,"clearstream":2,"euroclear":2,
-  "swift":2,"mastercard":2,"visa":2,"state street":2,"fidelity":2,"wisdomtree":2,
-}
-BLOCK=["price prediction","airdrop","presale","memecoin","meme coin","casino","100x","price target","giveaway",
-  "best crypto","best altcoin","to invest in","top crypto","next crypto","buy now","massive gains",
-  "explosive growth","hidden gem","moonshot","can x reach","price forecast","price outlook",
-  "sponsored","press release","partner content","promoted content"]
+STRONG={"tokenized":3,"tokenization":3,"tokenized fund":4,"tokenized treasury":4,"tokenized securities":4,"tokenized stocks":4,"tokenized deposits":4,"deposit token":4,"onchain finance":3,"real world asset":3,"rwa":2,"digital bond":3,"private credit":2,"stablecoin":1,"digital securities":3,"tokenization pilot":3}
+INSTITUTIONAL={"blackrock":3,"franklin templeton":3,"jpmorgan":3,"j.p. morgan":3,"dtcc":3,"securitize":2,"ondo":2,"centrifuge":2,"chainlink":2,"bank":1,"fund":1,"asset manager":2,"securities":2,"treasury":2,"institution":1,"settlement":2,"exchange":1,"custody":1,"regulator":1,"clearstream":2,"euroclear":2,"swift":2,"mastercard":2,"visa":2,"state street":2,"fidelity":2,"wisdomtree":2}
+BLOCK=["price prediction","airdrop","presale","memecoin","meme coin","casino","100x","price target","giveaway","best crypto","best altcoin","to invest in","top crypto","next crypto","buy now","massive gains","explosive growth","hidden gem","moonshot","can x reach","price forecast","price outlook","sponsored","partner content","promoted content"]
 HARD_BLOCK=["best crypto","to invest in","presale","100x","price prediction","price target","giveaway","moonshot","sponsored","promoted content"]
-PRIMARY_SOURCES={
-  "blackrock","franklin templeton","jpmorgan","j.p. morgan","dtcc","securitize","ondo finance",
-  "centrifuge","chainlink","sec.gov","u.s. securities and exchange commission","federal reserve",
-  "ecb","european central bank","bis","bank for international settlements","swift","euroclear",
-  "clearstream","state street","fidelity","wisdomtree","mastercard","visa","bank of england",
-  "monetary authority of singapore","mas","hong kong monetary authority","hkma",
-}
-TRUSTED_MEDIA={
-  "reuters","bloomberg","financial times","the wall street journal","wsj","coindesk","the block",
-  "fortune","forbes","cnbc","decrypt","dl news","blockworks","ledger insights","american banker",
-}
-LOW_TRUST_HINTS={
-  "coinmarketcap","investing.com","tradingview","benzinga","cryptopolitan","coinpedia","u.today",
-  "the crypto basic","crypto news flash","blockchain reporter",
-}
+PRIMARY_SOURCES={"blackrock","franklin templeton","jpmorgan","j.p. morgan","dtcc","securitize","ondo finance","centrifuge","chainlink","sec.gov","u.s. securities and exchange commission","federal reserve","ecb","european central bank","bis","bank for international settlements","swift","euroclear","clearstream","state street","fidelity","wisdomtree","mastercard","visa","bank of england","monetary authority of singapore","mas","hong kong monetary authority","hkma"}
+TRUSTED_MEDIA={"reuters","bloomberg","financial times","the wall street journal","wsj","coindesk","the block","fortune","forbes","cnbc","decrypt","dl news","blockworks","ledger insights","american banker"}
+# Specialist outlets are useful discovery/confirmation sources, but never get
+# autonomous publication authority solely from their publisher name.
+SPECIALIST_MEDIA={"securities.io","financefeeds","fintech futures","the digital banker","globalcustodian","funds europe","finextra","banking dive","pymnts"}
+WIRE_SERVICES={"business wire","pr newswire","globe newswire","accesswire"}
+LOW_TRUST_HINTS={"coinmarketcap","investing.com","tradingview","benzinga","cryptopolitan","coinpedia","u.today","the crypto basic","crypto news flash","blockchain reporter"}
 STOPWORDS={"the","a","an","and","or","of","to","in","on","for","as","with","its","is","are","adds","turns","brings","into","from","at","by"}
 
 def source_tier(name):
     s=(name or "").strip().lower()
     if any(k in s for k in PRIMARY_SOURCES): return "primary"
     if any(k in s for k in TRUSTED_MEDIA): return "trusted"
+    if any(k in s for k in SPECIALIST_MEDIA): return "specialist"
+    if any(k in s for k in WIRE_SERVICES): return "wire"
     if any(k in s for k in LOW_TRUST_HINTS): return "low"
     return "unknown"
 
@@ -73,18 +52,18 @@ def same_story(a,b):
     return overlap>=4 and overlap/min(len(aa),len(bb))>=0.55
 
 def fetch(url):
-    req=urllib.request.Request(url,headers={"User-Agent":"RWA-Wire-News-Watch/1.1"})
+    req=urllib.request.Request(url,headers={"User-Agent":"RWA-Wire-News-Watch/1.2"})
     with urllib.request.urlopen(req,timeout=25) as r:return r.read()
 
 def classify(score,trust,has_rwa_signal):
     if has_rwa_signal and trust in {"primary","trusted"} and score>=9:return "breaking"
     if has_rwa_signal and trust in {"primary","trusted"} and score>=6:return "important"
+    # Specialist/wire sources remain review-only leads even at high scores.
     if has_rwa_signal and score>=4:return "watchlist"
     return "reject"
 
 def main():
-    state=json.loads(STATE.read_text()) if STATE.exists() else {"seen":[]}
-    seen=set(state.get("seen",[]))
+    state=json.loads(STATE.read_text()) if STATE.exists() else {"seen":[]}; seen=set(state.get("seen",[]))
     pipeline_dirs=[ROOT/"publish/inbox",ROOT/"publish/candidates",ROOT/"publish/approved",ROOT/"publish/posted"]
     existing_slugs=set()
     for folder in pipeline_dirs:
@@ -100,7 +79,7 @@ def main():
                     if t:existing_titles.append(t)
                 except Exception:pass
 
-    now=datetime.now(timezone.utc); qualified=[]; watchlist=[]
+    now=datetime.now(timezone.utc); qualified=[]; watchlist=[]; scan_titles=[]; scan_guids=set()
     metrics=Counter(); rejection=Counter(); source_counts=Counter(); feed_errors=[]
     for q in QUERIES:
         url="https://news.google.com/rss/search?"+urllib.parse.urlencode({"q":q+" when:2d","hl":"en-US","gl":"US","ceid":"US:en"})
@@ -114,6 +93,10 @@ def main():
             try:published=parsedate_to_datetime(x.findtext("pubDate")).astimezone(timezone.utc)
             except Exception:published=now
             hay=(title+" "+desc).lower(); normalized_title=title.rsplit(" - ",1)[0] if " - " in title else title; headline=normalized_title.lower()
+            # Collapse duplicate Google News results across our overlapping queries
+            # before scoring, so diagnostics reflect unique stories rather than query hits.
+            if guid in scan_guids or any(same_story(normalized_title,t) for t in scan_titles): rejection["duplicate_in_scan"]+=1; continue
+            scan_guids.add(guid); scan_titles.append(normalized_title); metrics["unique_items"]+=1
             if any(k in headline for k in HARD_BLOCK): rejection["hard_block"]+=1; continue
             score=sum(w for k,w in STRONG.items() if k in hay)+sum(w for k,w in INSTITUTIONAL.items() if k in hay)-sum(10 for k in BLOCK if k in hay)
             if guid in seen: rejection["seen_guid"]+=1; continue
@@ -121,8 +104,7 @@ def main():
             if any(same_story(normalized_title,t) for t in existing_titles): rejection["duplicate_story"]+=1; continue
             if now-published>timedelta(hours=48): rejection["too_old"]+=1; continue
             has_rwa_signal=any(k in hay for k in STRONG if k!="stablecoin")
-            band=classify(score,trust,has_rwa_signal)
-            record=(score,published,title,link,desc,guid,trust,source_name,band)
+            band=classify(score,trust,has_rwa_signal); record=(score,published,title,link,desc,guid,trust,source_name,band)
             if band in {"breaking","important"}: qualified.append(record); metrics[band]+=1
             elif band=="watchlist": watchlist.append(record); metrics["watchlist"]+=1; rejection[f"watchlist_{trust}"]+=1
             else:
@@ -130,22 +112,13 @@ def main():
                 elif score<4: rejection["score_below_4"]+=1
                 else: rejection["below_publish_threshold"]+=1
 
-    top_watch=sorted(watchlist,key=lambda x:(x[0],x[1]),reverse=True)[:5]
-    diagnostics={
-      "rawItems":metrics["raw_items"],"queriesOk":metrics["queries_ok"],"queriesFailed":metrics["queries_failed"],
-      "breaking":metrics["breaking"],"important":metrics["important"],"watchlist":metrics["watchlist"],
-      "sourceTiers":dict(source_counts),"rejections":dict(rejection),"feedErrors":feed_errors[:3],
-      "topWatchlist":[{"title":r[2].rsplit(" - ",1)[0],"source":r[7],"score":r[0],"trust":r[6]} for r in top_watch]
-    }
-    state["lastRun"]=now.isoformat(); state["lastDiagnostics"]=diagnostics
-    print("News Watch diagnostics:",json.dumps(diagnostics,ensure_ascii=False))
-
+    top_watch=sorted(watchlist,key=lambda x:(x[0],x[1]),reverse=True)[:8]
+    diagnostics={"rawItems":metrics["raw_items"],"uniqueItems":metrics["unique_items"],"queriesOk":metrics["queries_ok"],"queriesFailed":metrics["queries_failed"],"breaking":metrics["breaking"],"important":metrics["important"],"watchlist":metrics["watchlist"],"sourceTiers":dict(source_counts),"rejections":dict(rejection),"feedErrors":feed_errors[:3],"topWatchlist":[{"title":r[2].rsplit(" - ",1)[0],"source":r[7],"score":r[0],"trust":r[6]} for r in top_watch]}
+    state["lastRun"]=now.isoformat(); state["lastDiagnostics"]=diagnostics; print("News Watch diagnostics:",json.dumps(diagnostics,ensure_ascii=False))
     if not qualified:
-        state["lastResult"]="no-qualified-story"; STATE.write_text(json.dumps(state,indent=2,ensure_ascii=False)+"\n")
-        print("No new high-confidence story found."); return
+        state["lastResult"]="no-qualified-story"; STATE.write_text(json.dumps(state,indent=2,ensure_ascii=False)+"\n"); print("No new high-confidence story found."); return
 
-    qualified.sort(key=lambda x:(x[0],x[1]),reverse=True)
-    score,published,title,link,desc,guid,trust,source_name,band=qualified[0]
+    qualified.sort(key=lambda x:(x[0],x[1]),reverse=True); score,published,title,link,desc,guid,trust,source_name,band=qualified[0]
     source_name=source_name or "Google News source"; clean_title=title.rsplit(" - ",1)[0] if " - " in title else title
     summary=desc or f"A new institutional tokenization development has been reported: {clean_title}."
     if source_name and summary.endswith(source_name): summary=summary[:-len(source_name)].strip(" -|")
