@@ -9,33 +9,33 @@
     "CBMiugFBVV95cUxQU1hMal9aa3A3S0t2MVFjSVF0amVHcF9hdlBNNFkzSTFHWnROVWw0WHh6OThtcGlHXzltTzI5NkhJZGszVnFRMTJrd0lZdWxMdWw2ZGFCUGlqWmo1aUozM0w3aTRRSnR6anAyS3NUYmxOMXZ6YXc4bjhBeWpCdWxaY0s0ZGVhUnZHUEZYeXp6M3Q3T2kwcms5ODNUSkRaWkhPTWtDOHd0dEl2bDJ3N2hXaXo1NTljMjlEM1E",
     "CBMisAFBVV95cUxPdFNZMG1WZmM2S25oQXZsa1RnNDNRaWVYZmhYU0I3Tmo1aTlHQU9zTmN4R1Q4dEludkRZaW9vZnpYaWM3U25xbkR6ZmZzQ1VZWUpRTW12VWNwQjJ0UmlIMjhoZ1hSRUJmYTdRNmFlT093bTZyQjViRmhMbHpTV28tV1N5UmMySlFvRC1JbFF5NGMyNEx1cm4tQUVTQld3c3JzY19RSlhGM0ttbWR1WTZYYg"
   ],
-  "lastRun": "2026-09-29T14:07:13.066179+00:00",
+  "lastRun": "2026-09-29T14:37:13.177251+00:00",
   "lastCandidate": "publish/inbox/2026-09-29-real-world-assets-on-injective-how-do-tokenized-stocks-and-commodities-actually.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 252,
-    "uniqueItems": 149,
+    "rawItems": 254,
+    "uniqueItems": 153,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 38,
+    "watchlist": 40,
     "sourceTiers": {
       "wire": 3,
-      "unknown": 198,
-      "low": 29,
-      "primary": 9,
+      "unknown": 205,
+      "low": 24,
+      "primary": 10,
       "specialist": 6,
-      "trusted": 7
+      "trusted": 6
     },
     "rejections": {
       "watchlist_wire": 1,
       "duplicate_story": 8,
       "seen_guid": 5,
       "watchlist_low": 5,
-      "watchlist_unknown": 32,
-      "duplicate_in_scan": 103,
-      "no_rwa_signal": 75,
+      "watchlist_unknown": 34,
+      "duplicate_in_scan": 101,
+      "no_rwa_signal": 77,
       "score_below_4": 17,
       "hard_block": 6
     },
@@ -71,7 +71,7 @@
       },
       {
         "title": "Banks risk losing $230 billion in payments revenue as stablecoins and tokenized deposits go mainstream",
-        "source": "adviservoice.com.au",
+        "source": "AdviserVoice",
         "normalizedSource": "adviservoice",
         "score": 9,
         "trust": "unknown"
