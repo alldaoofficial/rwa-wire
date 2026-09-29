@@ -1,0 +1,110 @@
+{
+  "version": "2.1",
+  "generatedAt": "2026-09-29T22:03:18Z",
+  "status": "dry_run",
+  "source": "CoinPaprika",
+  "sourceFetchedAt": "2026-09-29T22:03:18.517598Z",
+  "assetCount": 8,
+  "basket": {
+    "average24h": -0.9462500065565109,
+    "median24h": -1.8350000381469727,
+    "up": 2,
+    "down": 6,
+    "flat": 0,
+    "spreadPctPoints": 10.109999895095825
+  },
+  "leader": {
+    "id": "maple-finance",
+    "symbol": "SYRUP",
+    "name": "Maple",
+    "price": 0.23833945005658955,
+    "change24h": 6.329999923706055,
+    "volume24h": 32775981.363011505
+  },
+  "weakest": {
+    "id": "centrifuge",
+    "symbol": "CFG",
+    "name": "Centrifuge",
+    "price": 0.15254828150260413,
+    "change24h": -3.7799999713897705,
+    "volume24h": 16123346.401489116
+  },
+  "highestVolume": {
+    "id": "chainlink",
+    "symbol": "LINK",
+    "name": "Chainlink",
+    "price": 14.69923422868018,
+    "change24h": -3.7300000190734863,
+    "volume24h": 772865487.2829306
+  },
+  "marketRead": "Breadth is weak with 2/8 tracked assets positive. Dispersion is elevated: 10.1 percentage points separate the strongest and weakest tracked assets. LINK has the highest reported 24h volume in the tracked basket at $772.9M.",
+  "xMarketRead": "Broad weakness: 6/8 tracked assets are red. Performance spread: 10.1 pts.",
+  "assets": [
+    {
+      "id": "maple-finance",
+      "symbol": "SYRUP",
+      "name": "Maple",
+      "price": 0.23833945005658955,
+      "change24h": 6.329999923706055,
+      "volume24h": 32775981.363011505
+    },
+    {
+      "id": "polymesh",
+      "symbol": "POLYX",
+      "name": "Polymesh",
+      "price": 0.042924468183376994,
+      "change24h": 1.190000057220459,
+      "volume24h": 928163.4051150873
+    },
+    {
+      "id": "clearpool",
+      "symbol": "CPOOL",
+      "name": "Clearpool",
+      "price": 0.03563974901173031,
+      "change24h": -1.3799999952316284,
+      "volume24h": 1163672.0628468692
+    },
+    {
+      "id": "ondo-finance",
+      "symbol": "ONDO",
+      "name": "Ondo",
+      "price": 0.5077874060496453,
+      "change24h": -1.4500000476837158,
+      "volume24h": 303511896.5544269
+    },
+    {
+      "id": "goldfinch",
+      "symbol": "GFI",
+      "name": "Goldfinch",
+      "price": 0.04267456773961826,
+      "change24h": -2.2200000286102295,
+      "volume24h": 322099.7321648116
+    },
+    {
+      "id": "plume",
+      "symbol": "PLUME",
+      "name": "Plume",
+      "price": 0.017776568143441678,
+      "change24h": -2.5299999713897705,
+      "volume24h": 16503552.614580404
+    },
+    {
+      "id": "chainlink",
+      "symbol": "LINK",
+      "name": "Chainlink",
+      "price": 14.69923422868018,
+      "change24h": -3.7300000190734863,
+      "volume24h": 772865487.2829306
+    },
+    {
+      "id": "centrifuge",
+      "symbol": "CFG",
+      "name": "Centrifuge",
+      "price": 0.15254828150260413,
+      "change24h": -3.7799999713897705,
+      "volume24h": 16123346.401489116
+    }
+  ],
+  "telegram": "RWA WIRE // MARKET PULSE\n\nTracked RWA tokens are broadly lower over 24h.\nBreadth: 2 up / 6 down\nBasket: avg -0.9% · median -1.8%\n\nTop movers\n▲ SYRUP +6.3% · $0.2383\n▲ POLYX +1.2% · $0.0429\n▼ CPOOL -1.4% · $0.0356\n\nWeakest movers\n▼ PLUME -2.5% · $0.0178\n▼ LINK -3.7% · $14.70\n▼ CFG -3.8% · $0.1525\n\nMARKET READ\nBreadth is weak with 2/8 tracked assets positive. Dispersion is elevated: 10.1 percentage points separate the strongest and weakest tracked assets. LINK has the highest reported 24h volume in the tracked basket at $772.9M.\n\nData: CoinPaprika · 24h change",
+  "x": "RWA WIRE // MARKET PULSE\n\nRWA basket: -0.9% avg · 2/8 green\nSYRUP +6.3% | POLYX +1.2% | CPOOL -1.4%\n\nBroad weakness: 6/8 tracked assets are red. Performance spread: 10.1 pts.\n\nData: CoinPaprika"
+}
