@@ -1,0 +1,45 @@
+name: RWA Wire Market Data
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rwa-wire-market-data
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Refresh market cache
+        env:
+          COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
+        run: |
+          if ! python3 scripts/update_market_data.py; then
+            echo "Market provider unavailable; preserving last known-good cache."
+            exit 0
+          fi
+
+      - name: Commit cache when changed
+        run: |
+          if [ ! -f public/data/markets.json ]; then
+            echo "No cache file produced."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/markets.json
+          if git diff --cached --quiet; then
+            echo "Market cache unchanged."
+            exit 0
+          fi
+          git commit -m "Market data: refresh cache"
+          git pull --rebase origin main
+          git push
