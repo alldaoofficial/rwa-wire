@@ -4,7 +4,12 @@ on:
   push:
     branches:
       - main
-
+    paths-ignore:
+      # Publication receipts are operational state only; they do not change the site.
+      - "publish/posted/**"
+      - "publish/x-posted/**"
+      - "publish/market-pulse-telegram-posted/**"
+      - "publish/market-pulse-x-posted/**"
   workflow_dispatch:
 
 permissions:
@@ -13,8 +18,9 @@ permissions:
   id-token: write
 
 concurrency:
+  # Only the newest site state matters. Superseded queued/running deploys can stop.
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
