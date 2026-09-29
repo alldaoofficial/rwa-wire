@@ -9,34 +9,34 @@
     "CBMiugFBVV95cUxQU1hMal9aa3A3S0t2MVFjSVF0amVHcF9hdlBNNFkzSTFHWnROVWw0WHh6OThtcGlHXzltTzI5NkhJZGszVnFRMTJrd0lZdWxMdWw2ZGFCUGlqWmo1aUozM0w3aTRRSnR6anAyS3NUYmxOMXZ6YXc4bjhBeWpCdWxaY0s0ZGVhUnZHUEZYeXp6M3Q3T2kwcms5ODNUSkRaWkhPTWtDOHd0dEl2bDJ3N2hXaXo1NTljMjlEM1E",
     "CBMisAFBVV95cUxPdFNZMG1WZmM2S25oQXZsa1RnNDNRaWVYZmhYU0I3Tmo1aTlHQU9zTmN4R1Q4dEludkRZaW9vZnpYaWM3U25xbkR6ZmZzQ1VZWUpRTW12VWNwQjJ0UmlIMjhoZ1hSRUJmYTdRNmFlT093bTZyQjViRmhMbHpTV28tV1N5UmMySlFvRC1JbFF5NGMyNEx1cm4tQUVTQld3c3JzY19RSlhGM0ttbWR1WTZYYg"
   ],
-  "lastRun": "2026-09-29T20:39:30.445191+00:00",
+  "lastRun": "2026-09-29T21:07:12.463592+00:00",
   "lastCandidate": "publish/inbox/2026-09-29-real-world-assets-on-injective-how-do-tokenized-stocks-and-commodities-actually.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
     "rawItems": 273,
-    "uniqueItems": 150,
+    "uniqueItems": 153,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
     "watchlist": 43,
     "sourceTiers": {
-      "unknown": 210,
+      "unknown": 207,
       "wire": 3,
-      "low": 36,
+      "low": 37,
       "specialist": 8,
       "primary": 10,
-      "trusted": 6
+      "trusted": 8
     },
     "rejections": {
       "watchlist_unknown": 35,
       "watchlist_wire": 1,
       "duplicate_story": 5,
-      "duplicate_in_scan": 123,
+      "duplicate_in_scan": 120,
       "seen_guid": 4,
       "watchlist_low": 6,
-      "no_rwa_signal": 79,
-      "score_below_4": 14,
+      "no_rwa_signal": 81,
+      "score_below_4": 15,
       "watchlist_specialist": 1,
       "hard_block": 5
     },
@@ -78,14 +78,14 @@
         "trust": "low"
       },
       {
-        "title": "Metaplex Launches MPL-3643 Standard for Tokenized Securities",
-        "source": "Cryptonews.net",
-        "normalizedSource": "cryptonews",
+        "title": "Pantera Capital: 81% of tokenized Treasury value is held, not traded",
+        "source": "Crypto Briefing",
+        "normalizedSource": "crypto briefing",
         "score": 9,
         "trust": "unknown"
       },
       {
-        "title": "Pantera Capital: 81% of tokenized Treasury value is held, not traded",
+        "title": "Metaplex introduces MPL-3643 standard for tokenized securities on Solana",
         "source": "Crypto Briefing",
         "normalizedSource": "crypto briefing",
         "score": 9,
