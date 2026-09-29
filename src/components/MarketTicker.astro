@@ -8,73 +8,29 @@ const assets = [
 ---
 <section class="border-b border-line bg-surface/60" aria-label="RWA ecosystem token ticker">
   <div class="wire-container flex min-h-10 items-center gap-4 overflow-x-auto py-1.5 [scrollbar-width:none]">
-    <div class="flex shrink-0 items-center gap-2 border-r border-line pr-4">
-      <span class="h-1.5 w-1.5 rounded-full bg-wire"></span>
-      <span class="text-[10px] font-semibold uppercase tracking-[.15em] text-wire">RWA Ecosystem // Live</span>
-    </div>
+    <div class="flex shrink-0 items-center gap-2 border-r border-line pr-4"><span class="h-1.5 w-1.5 rounded-full bg-wire"></span><span class="text-[10px] font-semibold uppercase tracking-[.15em] text-wire">RWA Ecosystem // Live</span></div>
     <div id="rwa-market-ticker" class="flex items-center gap-5">
-      {assets.map((asset) => (
-        <div class="flex shrink-0 items-baseline gap-2" data-market={asset.id}>
-          <span class="text-[11px] font-semibold tracking-[.08em] text-ink">{asset.symbol}</span>
-          <span class="market-price font-mono text-[11px] text-ink-muted">—</span>
-          <span class="market-change font-mono text-[10px] text-ink-muted">—</span>
-        </div>
-      ))}
+      {assets.map((asset) => <div class="flex shrink-0 items-baseline gap-2" data-market={asset.id}><span class="text-[11px] font-semibold tracking-[.08em] text-ink">{asset.symbol}</span><span class="market-price font-mono text-[11px] text-ink-muted">—</span><span class="market-change font-mono text-[10px] text-ink-muted">—</span></div>)}
     </div>
     <span id="market-status" class="ml-auto shrink-0 text-[9px] uppercase tracking-[.1em] text-ink-muted">Loading</span>
   </div>
 </section>
 <script>
-  const ids = ["ondo-finance", "chainlink", "centrifuge", "polymesh"];
-  const endpoint =
-    "https://api.coingecko.com/api/v3/simple/price?ids=" +
-    ids.join(",") +
-    "&vs_currencies=usd&include_24hr_change=true";
-
-  const formatPrice = (n: number) =>
-    n >= 100
-      ? "$" + n.toLocaleString(undefined, { maximumFractionDigits: 2 })
-      : n >= 1
-        ? "$" + n.toFixed(2)
-        : "$" + n.toFixed(4);
-
-  async function refreshMarkets() {
-    const status = document.getElementById("market-status");
-    try {
-      const res = await fetch(endpoint, { headers: { accept: "application/json" } });
-      if (!res.ok) throw new Error("market data unavailable");
-      const data = await res.json();
-
-      ids.forEach((id) => {
-        const row = document.querySelector<HTMLElement>(`[data-market="${id}"]`);
-        const item = data[id];
-        if (!row || !item) return;
-
-        const priceEl = row.querySelector<HTMLElement>(".market-price");
-        const changeEl = row.querySelector<HTMLElement>(".market-change");
-        if (priceEl) priceEl.textContent = formatPrice(item.usd);
-
-        const change = item.usd_24h_change;
-        if (changeEl) {
-          changeEl.textContent = Number.isFinite(change)
-            ? (change >= 0 ? "+" : "") + change.toFixed(2) + "%"
-            : "—";
-          changeEl.className =
-            "market-change font-mono text-[10px] " +
-            (change >= 0 ? "text-wire" : "text-red-400");
-        }
-      });
-
-      if (status) {
-        status.textContent =
-          "Updated " +
-          new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
-      }
-    } catch {
-      if (status) status.textContent = "Data unavailable";
-    }
+  const ids=["ondo-finance","chainlink","centrifuge","polymesh"];
+  const cacheUrl=new URL("data/markets.json",document.baseURI).toString();
+  const liveUrl="https://api.coingecko.com/api/v3/simple/price?ids="+ids.join(",")+"&vs_currencies=usd&include_24hr_change=true";
+  const formatPrice=(n:number)=>n>=100?"$"+n.toLocaleString(undefined,{maximumFractionDigits:2}):n>=1?"$"+n.toFixed(2):"$"+n.toFixed(4);
+  function render(data:any,label:string){
+    let rendered=0;
+    ids.forEach(id=>{const row=document.querySelector<HTMLElement>(`[data-market="${id}"]`),item=data[id];if(!row||!item||!Number.isFinite(item.usd))return;rendered++;
+      const p=row.querySelector<HTMLElement>(".market-price"),c=row.querySelector<HTMLElement>(".market-change");if(p)p.textContent=formatPrice(item.usd);const ch=item.usd_24h_change;if(c){c.textContent=Number.isFinite(ch)?(ch>=0?"+":"")+ch.toFixed(2)+"%":"—";c.className="market-change font-mono text-[10px] "+(ch>=0?"text-wire":"text-red-400")}}
+    );
+    const status=document.getElementById("market-status");if(status&&rendered)status.textContent=label;return rendered>0;
   }
-
-  refreshMarkets();
-  window.setInterval(refreshMarkets, 60000);
+  async function refreshMarkets(){
+    const status=document.getElementById("market-status");let cached=false;
+    try{const res=await fetch(cacheUrl,{cache:"no-store"});if(res.ok){const payload=await res.json();const age=payload.fetchedAt?Math.max(0,Date.now()-new Date(payload.fetchedAt).getTime()):0;const mins=Math.round(age/60000);cached=render(payload.assets||{},mins>20?`Cached ${mins}m`:`Updated ${mins}m ago`);}}catch{}
+    try{const res=await fetch(liveUrl,{headers:{accept:"application/json"}});if(!res.ok)throw new Error();const data=await res.json();render(data,"Live · "+new Date().toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"}));}catch{if(status&&!cached)status.textContent="Data temporarily unavailable";}
+  }
+  refreshMarkets();window.setInterval(refreshMarkets,60000);
 </script>
