@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: rwa-wire-market-data
@@ -24,18 +25,23 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Refresh market cache
+        id: refresh
         env:
           COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
         run: |
           if ! python3 scripts/update_market_data.py; then
             echo "Market provider unavailable; preserving last known-good cache."
+            echo "produced=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
+          echo "produced=true" >> "$GITHUB_OUTPUT"
 
       - name: Commit cache when changed
+        id: commit
+        if: steps.refresh.outputs.produced == 'true'
         run: |
           if [ ! -f public/data/markets.json ]; then
-            echo "No cache file produced."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git config user.name "github-actions[bot]"
@@ -43,6 +49,7 @@ jobs:
           git add public/data/markets.json
           if git diff --cached --quiet; then
             echo "Market cache unchanged."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git commit -m "Market data: refresh cache"
@@ -52,3 +59,13 @@ jobs:
             if [ "$attempt" -eq 3 ]; then exit 1; fi
             sleep 3
           done
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Deploy refreshed cache
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Commits pushed with GITHUB_TOKEN do not start another push workflow,
+          # so explicitly dispatch Pages after the cache commit lands on main.
+          gh workflow run deploy.yml --ref main
