@@ -8,13 +8,20 @@ if dist_root not in p.parents or p.suffix!=".json": raise SystemExit("Invalid di
 d=json.loads(p.read_text(encoding="utf-8")); publish_id=str(d.get("id",p.stem)).strip()
 text=str(d.get("x","")).strip(); article=str(d.get("article_url","")).strip()
 if not text: raise SystemExit("Distribution package has no X copy")
-if article and article not in text: text=f"{text}\n\n{article}"
-# X shortens URLs server-side, but keep editorial copy compact before submission.
-if len(text)>280:
-    reserve=len(article)+2 if article else 0
-    body=text.replace(article,"").strip() if article else text
-    body=body[:max(40,277-reserve)].rstrip(" .,-")+"…"
-    text=f"{body}\n\n{article}" if article else body
+if article and article not in text: text=f"{text}\n\nFull story ↓\n{article}"
+# X counts every URL as a fixed t.co length. Budget against that instead of the raw URL.
+TCO_URL_LENGTH=23
+def weighted_length(s):
+    if not article or article not in s: return len(s)
+    return len(s)-len(article)+TCO_URL_LENGTH
+if weighted_length(text)>280:
+    suffix=f"\n\nFull story ↓\n{article}" if article else ""
+    body=text.replace(article,"").replace("Full story ↓","").strip()
+    budget=280-weighted_length(suffix)-1
+    body=body[:max(40,budget)].rstrip(" .,-:;")
+    if len(body)<len(text.replace(article,"" ).strip()): body += "…"
+    text=f"{body}{suffix}" if suffix else body
+if weighted_length(text)>280: raise SystemExit("Generated X copy exceeds 280 weighted characters")
 marker=ROOT/"publish/x-posted"/f"{publish_id}.json"
 if marker.exists(): raise SystemExit("This publish id has already been posted to X")
 ck=os.environ["X_API_KEY"]; cs=os.environ["X_API_SECRET"]; at=os.environ["X_ACCESS_TOKEN"]; ats=os.environ["X_ACCESS_TOKEN_SECRET"]
@@ -25,7 +32,7 @@ param="&".join(f"{enc(k)}={enc(v)}" for k,v in sorted(oauth.items()))
 base="&".join([method,enc(url),enc(param)]); key=f"{enc(cs)}&{enc(ats)}"
 oauth["oauth_signature"]=base64.b64encode(hmac.new(key.encode(),base.encode(),hashlib.sha1).digest()).decode()
 auth="OAuth "+", ".join(f'{enc(k)}="{enc(v)}"' for k,v in sorted(oauth.items()))
-req=urllib.request.Request(url,data=json.dumps({"text":text}).encode(),method=method,headers={"Authorization":auth,"Content-Type":"application/json","User-Agent":"RWA-Wire-X-Publisher/1.0"})
+req=urllib.request.Request(url,data=json.dumps({"text":text}).encode(),method=method,headers={"Authorization":auth,"Content-Type":"application/json","User-Agent":"RWA-Wire-X-Publisher/1.1"})
 try:
     with urllib.request.urlopen(req,timeout=30) as r: result=json.loads(r.read().decode())
 except urllib.error.HTTPError as e:
