@@ -5,8 +5,9 @@ const assets = [
   { id: "centrifuge", symbol: "CFG" },
   { id: "polymesh", symbol: "POLYX" },
 ];
+const marketCacheUrl = `${import.meta.env.BASE_URL}data/markets.json`;
 ---
-<section class="border-b border-line bg-surface/60" aria-label="RWA ecosystem token ticker">
+<section class="border-b border-line bg-surface/60" aria-label="RWA ecosystem token ticker" data-market-cache-url={marketCacheUrl}>
   <div class="wire-container flex min-h-10 items-center gap-4 overflow-x-auto py-1.5 [scrollbar-width:none]">
     <div class="flex shrink-0 items-center gap-2 border-r border-line pr-4"><span class="h-1.5 w-1.5 rounded-full bg-wire"></span><span class="text-[10px] font-semibold uppercase tracking-[.15em] text-wire">RWA Ecosystem // Live</span></div>
     <div id="rwa-market-ticker" class="flex items-center gap-5">
@@ -17,7 +18,8 @@ const assets = [
 </section>
 <script>
   const ids=["ondo-finance","chainlink","centrifuge","polymesh"];
-  const cacheUrl=new URL("data/markets.json",document.baseURI).toString();
+  const ticker=document.querySelector<HTMLElement>("[data-market-cache-url]");
+  const cacheUrl=ticker?.dataset.marketCacheUrl||"/data/markets.json";
   const liveUrl="https://api.coingecko.com/api/v3/simple/price?ids="+ids.join(",")+"&vs_currencies=usd&include_24hr_change=true";
   const formatPrice=(n:number)=>n>=100?"$"+n.toLocaleString(undefined,{maximumFractionDigits:2}):n>=1?"$"+n.toFixed(2):"$"+n.toFixed(4);
   function render(data:any,label:string){
