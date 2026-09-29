@@ -257,6 +257,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"oracle-ibm-cosmos-build-routes-into-swift-s-ledger-as-vendors-bet-on-tokenized-deposits.mdx": {
+	id: "oracle-ibm-cosmos-build-routes-into-swift-s-ledger-as-vendors-bet-on-tokenized-deposits.mdx";
+  slug: "oracle-ibm-cosmos-build-routes-into-swift-s-ledger-as-vendors-bet-on-tokenized-deposits";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "plume-network-explained.mdx": {
 	id: "plume-network-explained.mdx";
   slug: "plume-network-explained";
