@@ -18,6 +18,11 @@ function isActive(href: string) { return path === sitePath(href) || (href !== "/
     <nav class="hidden flex-1 items-center justify-center gap-5 lg:flex" aria-label="Primary">
       {NAV_LINKS.map((link) => <a href={sitePath(link.href)} class:list={["text-[11px] font-semibold uppercase tracking-[0.11em] text-ink-muted hover:text-ink",isActive(link.href)&&"text-wire"]}>{link.label}</a>)}
     </nav>
-    <div class="flex items-center gap-3"><a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer" class="hidden border border-line bg-surface px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.12em] text-ink hover:border-wire/60 hover:text-wire sm:inline-flex">Join the wire</a><MobileMenu /></div>
+    <div class="flex items-center gap-2 sm:gap-3">
+      <a href={sitePath("/search/")} class:list={["flex h-9 w-9 items-center justify-center border border-line bg-surface text-ink-muted hover:border-wire/60 hover:text-wire",isActive("/search/")&&"border-wire/60 text-wire"]} aria-label="Search RWA Wire" title="Search RWA Wire">
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path stroke-linecap="round" d="m16 16 4 4"/></svg>
+      </a>
+      <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer" class="hidden border border-line bg-surface px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.12em] text-ink hover:border-wire/60 hover:text-wire sm:inline-flex">Join the wire</a><MobileMenu />
+    </div>
   </div>
 </header>
