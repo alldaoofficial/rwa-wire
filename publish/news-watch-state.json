@@ -9,12 +9,12 @@
     "CBMiugFBVV95cUxQU1hMal9aa3A3S0t2MVFjSVF0amVHcF9hdlBNNFkzSTFHWnROVWw0WHh6OThtcGlHXzltTzI5NkhJZGszVnFRMTJrd0lZdWxMdWw2ZGFCUGlqWmo1aUozM0w3aTRRSnR6anAyS3NUYmxOMXZ6YXc4bjhBeWpCdWxaY0s0ZGVhUnZHUEZYeXp6M3Q3T2kwcms5ODNUSkRaWkhPTWtDOHd0dEl2bDJ3N2hXaXo1NTljMjlEM1E",
     "CBMisAFBVV95cUxPdFNZMG1WZmM2S25oQXZsa1RnNDNRaWVYZmhYU0I3Tmo1aTlHQU9zTmN4R1Q4dEludkRZaW9vZnpYaWM3U25xbkR6ZmZzQ1VZWUpRTW12VWNwQjJ0UmlIMjhoZ1hSRUJmYTdRNmFlT093bTZyQjViRmhMbHpTV28tV1N5UmMySlFvRC1JbFF5NGMyNEx1cm4tQUVTQld3c3JzY19RSlhGM0ttbWR1WTZYYg"
   ],
-  "lastRun": "2026-09-29T20:37:12.771932+00:00",
+  "lastRun": "2026-09-29T20:39:30.445191+00:00",
   "lastCandidate": "publish/inbox/2026-09-29-real-world-assets-on-injective-how-do-tokenized-stocks-and-commodities-actually.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 274,
-    "uniqueItems": 153,
+    "rawItems": 273,
+    "uniqueItems": 150,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
@@ -23,7 +23,7 @@
     "sourceTiers": {
       "unknown": 210,
       "wire": 3,
-      "low": 37,
+      "low": 36,
       "specialist": 8,
       "primary": 10,
       "trusted": 6
@@ -32,10 +32,10 @@
       "watchlist_unknown": 35,
       "watchlist_wire": 1,
       "duplicate_story": 5,
-      "duplicate_in_scan": 121,
+      "duplicate_in_scan": 123,
       "seen_guid": 4,
       "watchlist_low": 6,
-      "no_rwa_signal": 82,
+      "no_rwa_signal": 79,
       "score_below_4": 14,
       "watchlist_specialist": 1,
       "hard_block": 5
