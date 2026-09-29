@@ -285,6 +285,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"real-world-assets-on-injective-how-do-tokenized-stocks-and-commodities-actually-work-onchain.mdx": {
+	id: "real-world-assets-on-injective-how-do-tokenized-stocks-and-commodities-actually-work-onchain.mdx";
+  slug: "real-world-assets-on-injective-how-do-tokenized-stocks-and-commodities-actually-work-onchain";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "rwa-infrastructure-explained.mdx": {
 	id: "rwa-infrastructure-explained.mdx";
   slug: "rwa-infrastructure-explained";
