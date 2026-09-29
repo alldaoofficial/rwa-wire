@@ -236,6 +236,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"kakao-pay-securities-eyes-global-push-with-tokenized-stocks.mdx": {
+	id: "kakao-pay-securities-eyes-global-push-with-tokenized-stocks.mdx";
+  slug: "kakao-pay-securities-eyes-global-push-with-tokenized-stocks";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "maple-finance-explained.mdx": {
 	id: "maple-finance-explained.mdx";
   slug: "maple-finance-explained";
