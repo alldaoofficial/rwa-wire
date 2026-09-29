@@ -1,0 +1,109 @@
+{
+  "version": 2,
+  "generatedAt": "2026-09-29T14:28:57Z",
+  "status": "dry_run",
+  "source": "CoinPaprika",
+  "sourceFetchedAt": "2026-09-29T14:28:57.583319Z",
+  "assetCount": 8,
+  "basket": {
+    "average24h": 6.4712500046007335,
+    "median24h": 5.3500001430511475,
+    "up": 8,
+    "down": 0,
+    "flat": 0,
+    "spreadPctPoints": 19.079999390989542
+  },
+  "leader": {
+    "id": "maple-finance",
+    "symbol": "SYRUP",
+    "name": "Maple",
+    "price": 0.24966398806158285,
+    "change24h": 19.139999389648438,
+    "volume24h": 29459042.60844813
+  },
+  "weakest": {
+    "id": "ondo-finance",
+    "symbol": "ONDO",
+    "name": "Ondo",
+    "price": 0.5154776543075096,
+    "change24h": 0.05999999865889549,
+    "volume24h": 343141213.0004018
+  },
+  "highestVolume": {
+    "id": "chainlink",
+    "symbol": "LINK",
+    "name": "Chainlink",
+    "price": 15.018545966029869,
+    "change24h": 5.860000133514404,
+    "volume24h": 1080168744.0171213
+  },
+  "marketRead": "Breadth is strong with 8/8 tracked assets positive. SYRUP is the standout move at +19.1%. Dispersion is elevated: 19.1 percentage points separate the strongest and weakest tracked assets.",
+  "assets": [
+    {
+      "id": "maple-finance",
+      "symbol": "SYRUP",
+      "name": "Maple",
+      "price": 0.24966398806158285,
+      "change24h": 19.139999389648438,
+      "volume24h": 29459042.60844813
+    },
+    {
+      "id": "plume",
+      "symbol": "PLUME",
+      "name": "Plume",
+      "price": 0.018828139664119403,
+      "change24h": 7.130000114440918,
+      "volume24h": 17946450.778253287
+    },
+    {
+      "id": "centrifuge",
+      "symbol": "CFG",
+      "name": "Centrifuge",
+      "price": 0.1593604610279775,
+      "change24h": 6.900000095367432,
+      "volume24h": 18452085.761027135
+    },
+    {
+      "id": "chainlink",
+      "symbol": "LINK",
+      "name": "Chainlink",
+      "price": 15.018545966029869,
+      "change24h": 5.860000133514404,
+      "volume24h": 1080168744.0171213
+    },
+    {
+      "id": "goldfinch",
+      "symbol": "GFI",
+      "name": "Goldfinch",
+      "price": 0.04296213118174735,
+      "change24h": 4.840000152587891,
+      "volume24h": 410316.85795423307
+    },
+    {
+      "id": "polymesh",
+      "symbol": "POLYX",
+      "name": "Polymesh",
+      "price": 0.043832972596837286,
+      "change24h": 4.670000076293945,
+      "volume24h": 1089236.9763118469
+    },
+    {
+      "id": "clearpool",
+      "symbol": "CPOOL",
+      "name": "Clearpool",
+      "price": 0.03538319639523659,
+      "change24h": 3.1700000762939453,
+      "volume24h": 1470186.3268356496
+    },
+    {
+      "id": "ondo-finance",
+      "symbol": "ONDO",
+      "name": "Ondo",
+      "price": 0.5154776543075096,
+      "change24h": 0.05999999865889549,
+      "volume24h": 343141213.0004018
+    }
+  ],
+  "telegram": "RWA WIRE // MARKET PULSE\n\nTracked RWA tokens are broadly higher over 24h.\nBreadth: 8 up / 0 down\nBasket: avg +6.5% · median +5.4%\n\nTop movers\n▲ SYRUP +19.1% · $0.2497\n▲ PLUME +7.1% · $0.0188\n▲ CFG +6.9% · $0.1594\n\nLower movers\n▲ POLYX +4.7% · $0.0438\n▲ CPOOL +3.2% · $0.0354\n▲ ONDO +0.1% · $0.5155\n\nMARKET READ\nBreadth is strong with 8/8 tracked assets positive. SYRUP is the standout move at +19.1%. Dispersion is elevated: 19.1 percentage points separate the strongest and weakest tracked assets.\n\nData: CoinPaprika · 24h change",
+  "x": "RWA WIRE // MARKET PULSE\n\nRWA basket: +6.5% avg · 8/8 green\nSYRUP +19.1% | PLUME +7.1% | CFG +6.9%\n\nBreadth is strong with 8/8 tracked assets positive. SYRUP is the standout move at +19.1%. Dispersion is elevated: 19.1 percentage points separate the strongest and weakest trac…"
+}
