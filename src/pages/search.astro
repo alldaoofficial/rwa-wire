@@ -3,86 +3,53 @@ import { getCollection } from "astro:content";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import { sitePath } from "../utils/paths";
+import { institutions } from "@/data/institutions";
+import { glossary } from "@/data/glossary";
 
-const articles = (await getCollection("articles", ({ data }) => !data.draft))
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-  .map((article) => ({
-    title: article.data.title,
-    description: article.data.description,
-    category: article.data.category,
-    type: article.data.type,
-    tags: article.data.tags,
-    date: article.data.pubDate.toISOString(),
-    url: sitePath(`/${article.data.category}/${article.slug}/`),
-  }));
+const articleItems = (await getCollection("articles", ({ data }) => !data.draft)).map((article) => ({
+  title: article.data.title,
+  description: article.data.description,
+  category: article.data.category,
+  type: article.data.type,
+  tags: article.data.tags,
+  date: article.data.pubDate.toISOString(),
+  url: sitePath(`/${article.data.category}/${article.slug}/`),
+  kind: article.data.category === "projects" ? "Project" : "Article",
+}));
+
+const topics = [
+  ["Real-World Assets","real-world-assets","Asset classes, legal structures and RWA infrastructure."],
+  ["Tokenized Treasuries","tokenized-treasuries","Treasury-backed funds, market structure and onchain collateral."],
+  ["Tokenized Securities","tokenized-securities","Equities, bonds, funds and regulated digital securities."],
+  ["Private Credit","private-credit","Onchain lending and private-credit infrastructure."],
+  ["Institutional Tokenization","institutional-tokenization","Banks, asset managers, deposits and settlement infrastructure."],
+].map(([title,slug,description]) => ({ title, description, category:"topics", type:"TOPIC", tags:[title,"research","intelligence"], date:"", url:sitePath(`/topics/${slug}/`), kind:"Topic" }));
+
+const institutionItems = institutions.map(i => ({ title:i.name, description:i.role, category:"institutions", type:i.type.toUpperCase(), tags:[...i.focus,...i.networks,i.status], date:"", url:sitePath(`/institutions/intelligence/${i.slug}/`), kind:"Institution" }));
+const glossaryItems = glossary.map(g => ({ title:g.term, description:g.definition, category:"glossary", type:"GLOSSARY", tags:[g.short,g.example??""].filter(Boolean), date:"", url:sitePath(`/glossary/#${g.slug}`), kind:"Glossary" }));
+const searchItems = [...articleItems, ...topics, ...institutionItems, ...glossaryItems];
 ---
-<BaseLayout title="Search RWA Intelligence" description="Search RWA Wire news, research, explainers, markets and project intelligence.">
+<BaseLayout title="Search RWA Intelligence" description="Search RWA Wire news, research, topics, institutions, projects and glossary intelligence.">
   <div class="wire-container py-10 sm:py-14">
     <Breadcrumbs items={[{ label: "Search", href: "/search/" }]} />
-    <header class="mt-5 border-b border-line pb-8">
-      <p class="data-label text-wire">RWA Wire // Intelligence Search</p>
-      <h1 class="mt-3 font-serif text-4xl text-ink sm:text-5xl">Find the signal.</h1>
-      <p class="mt-4 max-w-2xl text-base leading-relaxed text-ink-muted">Search across RWA Wire news, research, explainers, market coverage and project intelligence.</p>
-    </header>
-
+    <header class="mt-5 border-b border-line pb-8"><p class="data-label text-wire">RWA Wire // Intelligence Search</p><h1 class="mt-3 font-serif text-4xl text-ink sm:text-5xl">Find the signal.</h1><p class="mt-4 max-w-2xl text-base leading-relaxed text-ink-muted">One search across coverage, projects, institutions, research topics and the language of tokenized finance.</p></header>
     <section class="mt-8" aria-label="Search intelligence">
       <label for="wire-search" class="sr-only">Search RWA Wire</label>
-      <div class="flex items-center border border-line bg-surface focus-within:border-wire/70">
-        <svg class="ml-4 h-5 w-5 shrink-0 text-wire" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
-        <input id="wire-search" type="search" autocomplete="off" placeholder="Search tokenized treasuries, BlackRock, private credit…" class="w-full bg-transparent px-4 py-4 text-base text-ink outline-none placeholder:text-ink-muted/60" />
-        <span class="mr-4 hidden border border-line px-2 py-1 font-mono text-[9px] uppercase tracking-wider text-ink-muted sm:block">/</span>
-      </div>
-      <div class="mt-3 flex flex-wrap gap-2" id="quick-searches">
-        {['Tokenized treasuries','Private credit','Stablecoins','Institutions','Real-world assets'].map((term) => <button type="button" data-term={term} class="border border-line bg-bg px-3 py-1.5 text-[10px] uppercase tracking-[.08em] text-ink-muted hover:border-wire/50 hover:text-wire">{term}</button>)}
-      </div>
+      <div class="flex items-center border border-line bg-surface focus-within:border-wire/70"><svg class="ml-4 h-5 w-5 shrink-0 text-wire" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="wire-search" type="search" autocomplete="off" placeholder="Search BlackRock, tokenized treasuries, settlement…" class="w-full bg-transparent px-4 py-4 text-base text-ink outline-none placeholder:text-ink-muted/60" /><span class="mr-4 hidden border border-line px-2 py-1 font-mono text-[9px] uppercase tracking-wider text-ink-muted sm:block">/</span></div>
+      <div class="mt-3 flex flex-wrap gap-2">{['BlackRock','Tokenized treasuries','Private credit','Settlement','Tokenization'].map(term => <button type="button" data-term={term} class="border border-line bg-bg px-3 py-1.5 text-[10px] uppercase tracking-[.08em] text-ink-muted hover:border-wire/50 hover:text-wire">{term}</button>)}</div>
     </section>
-
-    <div class="mt-9 flex items-end justify-between border-b border-line pb-3">
-      <div><p class="data-label text-ink-muted">Intelligence index</p><p id="result-summary" class="mt-1 text-sm text-ink">Start typing to search the archive.</p></div>
-      <button id="clear-search" type="button" class="hidden text-[10px] uppercase tracking-[.1em] text-wire hover:text-ink">Clear search</button>
-    </div>
-
-    <div id="search-results" class="divide-y divide-line"></div>
-    <div id="empty-state" class="hidden py-14 text-center"><p class="font-serif text-2xl text-ink">No signal found.</p><p class="mt-2 text-sm text-ink-muted">Try a broader company, asset class, protocol or tokenization term.</p></div>
+    <div class="mt-9 flex flex-col gap-3 border-b border-line pb-3 sm:flex-row sm:items-end sm:justify-between"><div><p class="data-label text-ink-muted">Intelligence index</p><p id="result-summary" class="mt-1 text-sm text-ink">Start typing to search {searchItems.length} indexed records.</p></div><div class="flex items-center gap-3"><div id="kind-filters" class="hidden flex-wrap gap-1.5"><button data-kind="all" class="border border-wire px-2.5 py-1 text-[9px] uppercase tracking-[.08em] text-wire">All</button>{['Article','Project','Institution','Topic','Glossary'].map(kind=><button data-kind={kind} class="border border-line px-2.5 py-1 text-[9px] uppercase tracking-[.08em] text-ink-muted hover:text-wire">{kind}</button>)}</div><button id="clear-search" type="button" class="hidden text-[10px] uppercase tracking-[.1em] text-wire hover:text-ink">Clear</button></div></div>
+    <div id="search-results" class="divide-y divide-line"></div><div id="empty-state" class="hidden py-14 text-center"><p class="font-serif text-2xl text-ink">No signal found.</p><p class="mt-2 text-sm text-ink-muted">Try a broader institution, asset class, protocol or tokenization term.</p></div>
   </div>
-
-  <script type="application/json" id="search-index" set:html={JSON.stringify(articles).replace(/</g, '\\u003c')} />
+  <script type="application/json" id="search-index" set:html={JSON.stringify(searchItems).replace(/</g, '\\u003c')} />
   <script>
-    type SearchItem = { title:string; description:string; category:string; type:string; tags:string[]; date:string; url:string };
-    const input = document.getElementById('wire-search') as HTMLInputElement | null;
-    const results = document.getElementById('search-results');
-    const summary = document.getElementById('result-summary');
-    const empty = document.getElementById('empty-state');
-    const clear = document.getElementById('clear-search');
-    const raw = document.getElementById('search-index')?.textContent || '[]';
-    const index: SearchItem[] = JSON.parse(raw);
-    const escapeHtml = (value:string) => value.replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c] || c));
-    const normalise = (value:string) => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
-
-    function score(item:SearchItem, query:string) {
-      const terms = normalise(query).split(/\s+/).filter(Boolean);
-      const title = normalise(item.title), description = normalise(item.description), tags = normalise(item.tags.join(' ')), category = normalise(item.category), type = normalise(item.type);
-      if (!terms.every(term => title.includes(term) || description.includes(term) || tags.includes(term) || category.includes(term) || type.includes(term))) return -1;
-      return terms.reduce((total, term) => total + (title.includes(term)?8:0) + (tags.includes(term)?5:0) + (category.includes(term)?3:0) + (type.includes(term)?2:0) + (description.includes(term)?1:0), 0);
-    }
-
-    function render() {
-      if (!input || !results || !summary || !empty || !clear) return;
-      const q = input.value.trim();
-      const params = new URLSearchParams(location.search);
-      q ? params.set('q',q) : params.delete('q');
-      history.replaceState(null,'',`${location.pathname}${params.toString()?`?${params}`:''}`);
-      if (!q) { results.innerHTML=''; summary.textContent='Start typing to search the archive.'; empty.classList.add('hidden'); clear.classList.add('hidden'); return; }
-      clear.classList.remove('hidden');
-      const matches = index.map(item => ({item,score:score(item,q)})).filter(x => x.score >= 0).sort((a,b) => b.score-a.score || +new Date(b.item.date)-+new Date(a.item.date)).slice(0,40);
-      summary.textContent = `${matches.length} result${matches.length===1?'':'s'} for “${q}”`;
-      empty.classList.toggle('hidden', matches.length !== 0);
-      results.innerHTML = matches.map(({item}) => `<a href="${item.url}" class="group block py-6"><div class="flex flex-wrap items-center gap-2 font-mono text-[9px] uppercase tracking-[.12em]"><span class="text-wire">${escapeHtml(item.type)}</span><span class="text-ink-muted">//</span><span class="text-ink-muted">${escapeHtml(item.category)}</span><span class="ml-auto text-ink-muted">${new Date(item.date).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'})}</span></div><h2 class="mt-2 font-serif text-2xl text-ink group-hover:text-wire">${escapeHtml(item.title)}</h2><p class="mt-2 max-w-3xl text-sm leading-relaxed text-ink-muted">${escapeHtml(item.description)}</p><div class="mt-3 flex flex-wrap gap-2">${item.tags.slice(0,4).map(tag=>`<span class="text-[9px] uppercase tracking-[.08em] text-ink-muted">#${escapeHtml(tag)}</span>`).join('')}</div></a>`).join('');
-    }
-    input?.addEventListener('input', render);
-    document.querySelectorAll<HTMLButtonElement>('[data-term]').forEach(button => button.addEventListener('click', () => { if(input){ input.value=button.dataset.term || ''; render(); input.focus(); }}));
-    clear?.addEventListener('click', () => { if(input){ input.value=''; render(); input.focus(); }});
-    document.addEventListener('keydown', e => { if(e.key==='/' && document.activeElement!==input){ e.preventDefault(); input?.focus(); }});
-    const initial = new URLSearchParams(location.search).get('q'); if(input && initial){ input.value=initial; render(); }
+    type SearchItem={title:string;description:string;category:string;type:string;tags:string[];date:string;url:string;kind:string};
+    const input=document.getElementById('wire-search') as HTMLInputElement|null, results=document.getElementById('search-results'), summary=document.getElementById('result-summary'), empty=document.getElementById('empty-state'), clear=document.getElementById('clear-search'), filters=document.getElementById('kind-filters');
+    const index:SearchItem[]=JSON.parse(document.getElementById('search-index')?.textContent||'[]'); let activeKind='all';
+    const escapeHtml=(value:string)=>value.replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]||c));
+    const normalise=(value:string)=>value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+    function score(item:SearchItem,query:string){const terms=normalise(query).split(/\s+/).filter(Boolean),title=normalise(item.title),description=normalise(item.description),tags=normalise(item.tags.join(' ')),category=normalise(item.category),type=normalise(item.type),kind=normalise(item.kind);if(!terms.every(t=>title.includes(t)||description.includes(t)||tags.includes(t)||category.includes(t)||type.includes(t)||kind.includes(t)))return -1;return terms.reduce((n,t)=>n+(title.includes(t)?10:0)+(tags.includes(t)?5:0)+(kind.includes(t)?4:0)+(category.includes(t)?3:0)+(type.includes(t)?2:0)+(description.includes(t)?1:0),0)}
+    function render(){if(!input||!results||!summary||!empty||!clear||!filters)return;const q=input.value.trim(),params=new URLSearchParams(location.search);q?params.set('q',q):params.delete('q');history.replaceState(null,'',`${location.pathname}${params.toString()?`?${params}`:''}`);if(!q){results.innerHTML='';summary.textContent=`Start typing to search ${index.length} indexed records.`;empty.classList.add('hidden');clear.classList.add('hidden');filters.classList.add('hidden');return;}clear.classList.remove('hidden');filters.classList.remove('hidden');const matches=index.map(item=>({item,score:score(item,q)})).filter(x=>x.score>=0&&(activeKind==='all'||x.item.kind===activeKind)).sort((a,b)=>b.score-a.score||(+new Date(b.item.date||0)-+new Date(a.item.date||0))).slice(0,50);summary.textContent=`${matches.length} result${matches.length===1?'':'s'} for “${q}”${activeKind==='all'?'':` in ${activeKind}`}`;empty.classList.toggle('hidden',matches.length!==0);results.innerHTML=matches.map(({item})=>`<a href="${item.url}" class="group block py-6"><div class="flex flex-wrap items-center gap-2 font-mono text-[9px] uppercase tracking-[.12em]"><span class="border border-line px-1.5 py-0.5 text-wire">${escapeHtml(item.kind)}</span><span class="text-ink-muted">${escapeHtml(item.type)}</span><span class="text-ink-muted">// ${escapeHtml(item.category)}</span>${item.date?`<span class="ml-auto text-ink-muted">${new Date(item.date).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'})}</span>`:''}</div><h2 class="mt-2 font-serif text-2xl text-ink group-hover:text-wire">${escapeHtml(item.title)}</h2><p class="mt-2 max-w-3xl text-sm leading-relaxed text-ink-muted">${escapeHtml(item.description)}</p><div class="mt-3 flex flex-wrap gap-2">${item.tags.filter(Boolean).slice(0,4).map(tag=>`<span class="text-[9px] uppercase tracking-[.08em] text-ink-muted">#${escapeHtml(tag)}</span>`).join('')}</div></a>`).join('')}
+    input?.addEventListener('input',render);document.querySelectorAll<HTMLButtonElement>('[data-term]').forEach(b=>b.addEventListener('click',()=>{if(input){input.value=b.dataset.term||'';activeKind='all';render();input.focus()}}));document.querySelectorAll<HTMLButtonElement>('[data-kind]').forEach(b=>b.addEventListener('click',()=>{activeKind=b.dataset.kind||'all';document.querySelectorAll<HTMLElement>('[data-kind]').forEach(x=>{const on=x.dataset.kind===activeKind;x.classList.toggle('border-wire',on);x.classList.toggle('text-wire',on);x.classList.toggle('border-line',!on);x.classList.toggle('text-ink-muted',!on)});render()}));clear?.addEventListener('click',()=>{if(input){input.value='';activeKind='all';render();input.focus()}});document.addEventListener('keydown',e=>{if(e.key==='/'&&document.activeElement!==input){e.preventDefault();input?.focus()}});const initial=new URLSearchParams(location.search).get('q');if(input&&initial){input.value=initial;render()}
   </script>
 </BaseLayout>
