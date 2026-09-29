@@ -1,6 +1,11 @@
 name: RWA Wire Market Data
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/market-data.yml"
+      - "scripts/update_market_data.py"
   schedule:
     - cron: "*/15 * * * *"
   workflow_dispatch:
@@ -41,5 +46,9 @@ jobs:
             exit 0
           fi
           git commit -m "Market data: refresh cache"
-          git pull --rebase origin main
-          git push
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push; then break; fi
+            if [ "$attempt" -eq 3 ]; then exit 1; fi
+            sleep 3
+          done
