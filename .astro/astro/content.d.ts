@@ -159,6 +159,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"avalanche-is-pulling-ahead-in-tokenized-stocks.mdx": {
+	id: "avalanche-is-pulling-ahead-in-tokenized-stocks.mdx";
+  slug: "avalanche-is-pulling-ahead-in-tokenized-stocks";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "backed-explained.mdx": {
 	id: "backed-explained.mdx";
   slug: "backed-explained";
