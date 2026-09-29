@@ -1,9 +1,13 @@
 name: RWA Wire News Watch
 
 on:
+  # GitHub's scheduler remains only as a backup. The primary trigger is an
+  # external scheduler calling workflow_dispatch.
   schedule:
     - cron: "7,37 * * * *"
   workflow_dispatch:
+  repository_dispatch:
+    types: [rwa-news-watch]
 
 permissions:
   contents: write
@@ -20,6 +24,9 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 2
+
+      - name: Report trigger
+        run: echo "News Watch triggered by ${{ github.event_name }} at $(date -u +%Y-%m-%dT%H:%M:%SZ)"
 
       - name: Scan RWA news
         run: python3 scripts/news_watch.py
