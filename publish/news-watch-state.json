@@ -7,44 +7,43 @@
     "CBMisAFBVV95cUxPdFNZMG1WZmM2S25oQXZsa1RnNDNRaWVYZmhYU0I3Tmo1aTlHQU9zTmN4R1Q4dEludkRZaW9vZnpYaWM3U25xbkR6ZmZzQ1VZWUpRTW12VWNwQjJ0UmlIMjhoZ1hSRUJmYTdRNmFlT093bTZyQjViRmhMbHpTV28tV1N5UmMySlFvRC1JbFF5NGMyNEx1cm4tQUVTQld3c3JzY19RSlhGM0ttbWR1WTZYYg",
     "CBMieEFVX3lxTE1TVm1ReGdydTFGWGdTLWpWSzQtVHN5OUJ4bHBHYW5rMTQya1NnSkhhOVRobmk2MlQ1UzFyUHhYRm93RUs1dEllalg1RDhRRGduS3Rqd2prVUEwUXl4eW1GeWhvRjJJQ1dWd19DamRPSXIzalprU2dIaQ"
   ],
-  "lastRun": "2026-09-29T12:13:33.705388+00:00",
+  "lastRun": "2026-09-29T12:37:12.209844+00:00",
   "lastCandidate": "publish/inbox/2026-09-29-kakao-pay-securities-eyes-global-push-with-tokenized-stocks.json",
-  "lastResult": "candidate",
+  "lastResult": "no-qualified-story",
   "lastDiagnostics": {
     "rawItems": 241,
-    "uniqueItems": 145,
+    "uniqueItems": 147,
     "queriesOk": 9,
     "queriesFailed": 0,
-    "breaking": 1,
+    "breaking": 0,
     "important": 0,
     "watchlist": 40,
     "sourceTiers": {
-      "wire": 3,
+      "unknown": 205,
       "trusted": 8,
-      "low": 21,
-      "unknown": 202,
+      "low": 20,
       "specialist": 6,
+      "wire": 1,
       "primary": 1
     },
     "rejections": {
-      "watchlist_wire": 1,
-      "no_rwa_signal": 71,
-      "watchlist_unknown": 35,
-      "seen_guid": 4,
-      "watchlist_low": 4,
-      "duplicate_in_scan": 96,
+      "watchlist_unknown": 37,
+      "seen_guid": 5,
+      "no_rwa_signal": 72,
+      "duplicate_in_scan": 94,
+      "watchlist_low": 3,
+      "hard_block": 8,
       "score_below_4": 17,
-      "hard_block": 7,
       "duplicate_story": 5
     },
     "feedErrors": [],
     "topWatchlist": [
       {
         "title": "WisdomTree Introduces WisdomTree Onchain™ as Tokenized Fund Assets Surpass $1.2 Billion",
-        "source": "Business Wire",
-        "normalizedSource": "business wire",
+        "source": "businesswire.com",
+        "normalizedSource": "businesswire",
         "score": 10,
-        "trust": "wire"
+        "trust": "unknown"
       },
       {
         "title": "Tokenized securities and stablecoin projects ad...",
@@ -90,7 +89,7 @@
       },
       {
         "title": "US bank group taps Quant for tokenized deposits, but QNT’s role is left in doubt",
-        "source": "cryptoslate.com",
+        "source": "CryptoSlate",
         "normalizedSource": "cryptoslate",
         "score": 8,
         "trust": "unknown"
