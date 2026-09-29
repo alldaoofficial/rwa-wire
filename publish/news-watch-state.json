@@ -6,61 +6,83 @@
     "CBMiekFVX3lxTE9oNGpzRHNSRGljbEJ5cGF1QTZiaGNuQWhZek1uc29TYnZTSlh1WkRLVDJFR056V25laDI2UVBrcXMycFhsdTFwc2hjbm10TEp6WXB6dFJCS3hfcDlsTGtuTUNYS0hOUVZzT0tGUWw0Z3NmX0lhVVk2NHVR",
     "CBMilgFBVV95cUxNLVg4N3VvMHFBbGcyQlAzOFpPbjRDOERCakpmNmI0NjQtRTB3azdISmRTcmE3YXRxNENfMWFzRm92eXFFYmtRY1hPaVBQcGZUOE93WHBuQ2pRNDBEQ1pUZzJfNk5PeV9YaWt0X3VBQk9ucHYxa1ZyUDh6NXczUUJ5YzE2VG5IbUlwb2JhcF9ObzB3UnY1a0E"
   ],
-  "lastRun": "2026-09-29T11:50:38.592176+00:00",
+  "lastRun": "2026-09-29T11:55:19.689094+00:00",
   "lastCandidate": "publish/inbox/2026-09-27-tokenized-stocks-just-did-20-9-billion-in-dex-trading-in-30-days.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 239,
+    "rawItems": 237,
+    "uniqueItems": 143,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 69,
+    "watchlist": 41,
     "sourceTiers": {
-      "unknown": 212,
-      "low": 20,
+      "unknown": 202,
+      "low": 17,
       "trusted": 6,
+      "specialist": 10,
+      "wire": 1,
       "primary": 1
     },
     "rejections": {
-      "watchlist_unknown": 64,
-      "seen_guid": 8,
-      "watchlist_low": 5,
-      "no_rwa_signal": 87,
-      "duplicate_story": 44,
-      "score_below_4": 23,
-      "hard_block": 8
+      "watchlist_unknown": 37,
+      "no_rwa_signal": 70,
+      "seen_guid": 4,
+      "watchlist_low": 4,
+      "duplicate_in_scan": 94,
+      "hard_block": 8,
+      "score_below_4": 15,
+      "duplicate_story": 5
     },
     "feedErrors": [],
     "topWatchlist": [
       {
-        "title": "Tokenized Fund Assets Top $1.2 Billion as WisdomTree Launches Onchain",
-        "source": "securities.io",
-        "score": 12,
-        "trust": "unknown"
-      },
-      {
-        "title": "Tokenized Fund Assets Top $1.2 Billion as WisdomTree Launches Onchain",
-        "source": "securities.io",
-        "score": 12,
-        "trust": "unknown"
-      },
-      {
-        "title": "Oracle Integrates With Swift’s Blockchain Ledger to Connect Banks’ Tokenized Deposits Across Institutions",
-        "source": "FinanceFeeds",
-        "score": 11,
-        "trust": "unknown"
-      },
-      {
-        "title": "Oracle Integrates With Swift’s Blockchain Ledger to Connect Banks’ Tokenized Deposits Across Institutions",
-        "source": "FinanceFeeds",
-        "score": 11,
-        "trust": "unknown"
-      },
-      {
         "title": "WisdomTree Introduces WisdomTree Onchain™ as Tokenized Fund Assets Surpass $1.2 Billion",
-        "source": "Business Wire",
+        "source": "businesswire.com",
         "score": 10,
+        "trust": "unknown"
+      },
+      {
+        "title": "Tokenized securities and stablecoin projects ad...",
+        "source": "Pluang",
+        "score": 10,
+        "trust": "unknown"
+      },
+      {
+        "title": "Oracle Corporation (ORCL) Integrates With Swift Ledger to Connect Banks’ Tokenized Deposits",
+        "source": "TradingView",
+        "score": 10,
+        "trust": "low"
+      },
+      {
+        "title": "Kakao Pay Securities eyes global push with tokenized stocks",
+        "source": "The Korea Herald",
+        "score": 9,
+        "trust": "unknown"
+      },
+      {
+        "title": "Ondo Perps Launches 24/7 Spot Trading for Tokenized Stocks and ETFs",
+        "source": "tokenpost.com",
+        "score": 9,
+        "trust": "unknown"
+      },
+      {
+        "title": "Banks risk losing $230 billion in payments revenue as stablecoins and tokenized deposits go mainstream",
+        "source": "AdviserVoice",
+        "score": 9,
+        "trust": "unknown"
+      },
+      {
+        "title": "Oracle, IBM, Cosmos build routes into Swift’s Ledger as vendors bet on tokenized deposits",
+        "source": "ledgerinsights.com",
+        "score": 9,
+        "trust": "unknown"
+      },
+      {
+        "title": "XRP Pauses Below $1.60 as Ledger Upgrade Slips and Tokenized Treasury Rails Open",
+        "source": "AD HOC NEWS",
+        "score": 9,
         "trust": "unknown"
       }
     ]
