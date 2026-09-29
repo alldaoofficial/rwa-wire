@@ -25,6 +25,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      PUBLIC_SUPABASE_URL: ${{ vars.PUBLIC_SUPABASE_URL }}
+      PUBLIC_SUPABASE_PUBLISHABLE_KEY: ${{ vars.PUBLIC_SUPABASE_PUBLISHABLE_KEY }}
 
     steps:
       - name: Checkout repository
@@ -37,6 +40,21 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Verify public Supabase build config
+        shell: bash
+        run: |
+          test -n "$PUBLIC_SUPABASE_URL" || { echo "PUBLIC_SUPABASE_URL is missing"; exit 1; }
+          test -n "$PUBLIC_SUPABASE_PUBLISHABLE_KEY" || { echo "PUBLIC_SUPABASE_PUBLISHABLE_KEY is missing"; exit 1; }
+          case "$PUBLIC_SUPABASE_URL" in
+            https://*.supabase.co) ;;
+            *) echo "PUBLIC_SUPABASE_URL has an unexpected format"; exit 1 ;;
+          esac
+          case "$PUBLIC_SUPABASE_PUBLISHABLE_KEY" in
+            sb_publishable_*) ;;
+            *) echo "PUBLIC_SUPABASE_PUBLISHABLE_KEY is not a publishable key"; exit 1 ;;
+          esac
+          echo "Public Supabase build config is present."
 
       - name: Build Astro site
         run: npm run build
