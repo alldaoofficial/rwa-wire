@@ -39,7 +39,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 2
+      - name: Sync latest main for requested package
+        if: github.event_name != 'push'
+        run: git pull --ff-only origin main
       - name: Resolve package
         env:
           REQUESTED_PACKAGE: ${{ inputs.package_path }}
