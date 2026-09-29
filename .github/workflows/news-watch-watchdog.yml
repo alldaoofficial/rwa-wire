@@ -28,7 +28,8 @@ jobs:
 
           repo=os.environ["REPO"]
           raw=subprocess.check_output([
-              "gh","api",f"repos/{repo}/actions/workflows/news-watch.yml/runs",
+              "gh","api","--method","GET",
+              f"repos/{repo}/actions/workflows/news-watch.yml/runs",
               "-f","per_page=10"
           ], text=True)
           runs=json.loads(raw).get("workflow_runs",[])
