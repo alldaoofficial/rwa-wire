@@ -9,43 +9,50 @@
     "CBMiugFBVV95cUxQU1hMal9aa3A3S0t2MVFjSVF0amVHcF9hdlBNNFkzSTFHWnROVWw0WHh6OThtcGlHXzltTzI5NkhJZGszVnFRMTJrd0lZdWxMdWw2ZGFCUGlqWmo1aUozM0w3aTRRSnR6anAyS3NUYmxOMXZ6YXc4bjhBeWpCdWxaY0s0ZGVhUnZHUEZYeXp6M3Q3T2kwcms5ODNUSkRaWkhPTWtDOHd0dEl2bDJ3N2hXaXo1NTljMjlEM1E",
     "CBMisAFBVV95cUxPdFNZMG1WZmM2S25oQXZsa1RnNDNRaWVYZmhYU0I3Tmo1aTlHQU9zTmN4R1Q4dEludkRZaW9vZnpYaWM3U25xbkR6ZmZzQ1VZWUpRTW12VWNwQjJ0UmlIMjhoZ1hSRUJmYTdRNmFlT093bTZyQjViRmhMbHpTV28tV1N5UmMySlFvRC1JbFF5NGMyNEx1cm4tQUVTQld3c3JzY19RSlhGM0ttbWR1WTZYYg"
   ],
-  "lastRun": "2026-09-29T18:07:13.736694+00:00",
+  "lastRun": "2026-09-29T18:37:12.915175+00:00",
   "lastCandidate": "publish/inbox/2026-09-29-real-world-assets-on-injective-how-do-tokenized-stocks-and-commodities-actually.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 266,
-    "uniqueItems": 153,
+    "rawItems": 265,
+    "uniqueItems": 151,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
     "watchlist": 42,
     "sourceTiers": {
+      "unknown": 209,
       "wire": 3,
-      "unknown": 212,
-      "low": 31,
+      "low": 33,
       "primary": 9,
       "specialist": 5,
       "trusted": 6
     },
     "rejections": {
+      "watchlist_unknown": 36,
       "watchlist_wire": 1,
-      "duplicate_story": 6,
-      "duplicate_in_scan": 113,
+      "duplicate_story": 5,
+      "duplicate_in_scan": 114,
       "seen_guid": 4,
-      "watchlist_low": 4,
-      "watchlist_unknown": 37,
-      "no_rwa_signal": 79,
-      "score_below_4": 17,
+      "watchlist_low": 5,
+      "no_rwa_signal": 80,
+      "score_below_4": 15,
       "hard_block": 5
     },
     "feedErrors": [],
     "topWatchlist": [
       {
         "title": "\"T+1, Tokenized Securities Discussed\" Eokwon Lee Meets with Nasdaq, DTCC, and HKEX Representatives",
-        "source": "asiae.co.kr",
-        "normalizedSource": "asiae",
+        "source": "아시아경제",
+        "normalizedSource": "",
         "score": 12,
+        "trust": "unknown"
+      },
+      {
+        "title": "Tokenized Securities Venues Will Not Challenge Traditional Exchanges",
+        "source": "Markets Media",
+        "normalizedSource": "markets media",
+        "score": 10,
         "trust": "unknown"
       },
       {
@@ -87,13 +94,6 @@
         "title": "Ondo Perps Launches 24/7 Spot Trading for Tokenized Stocks and ETFs",
         "source": "tokenpost.com",
         "normalizedSource": "tokenpost",
-        "score": 9,
-        "trust": "unknown"
-      },
-      {
-        "title": "Banks risk losing $230 billion in payments revenue as stablecoins and tokenized deposits go mainstream",
-        "source": "adviservoice.com.au",
-        "normalizedSource": "adviservoice",
         "score": 9,
         "trust": "unknown"
       }
