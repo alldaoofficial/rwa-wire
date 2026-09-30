@@ -1,42 +1,43 @@
 {
   "seen": [
+    "CBMiuAFBVV95cUxNenVBMzhzNWlPQnhPaEcxaVpzQV91T3FhakZ5N1R4MnExY24tOXMzMWZaT0g1WmJVbnVVUVdWazVXTWVISC1jQjJPbGU3Q29tLUFyUkg4VGxwdDQ4MW9JaGpMSzZuQXhtQUZLRHdMTndwWTg5Uk9LMjRHTFQzemhLRml6WE1QZXNGZllpNDJMblhXVFdmWTcySnhPRG9jNGdpd0FwZlp0XzRIY0xVZVgzNU84enNLN1Fp",
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg",
-    "CBMiO0FVX3lxTFBsOXlVOUJNb0JSMGRvcUV0Uk8xYVd6aXh3S2NGTTNlRkJMTGdUd2RfUTR0ZGpyeDc3WnQw",
-    "CBMiV0FVX3lxTE5mZlpwTENPelRjN3E5d1ViNlZFRHJHbmUxUEN6SmZwOU1oeW13UDNHTG1zN19WR2JqSzFrR0NHeXIwdmN1NnNTUW9SRzFwYWRubjFIUXhoUQ",
-    "CBMieEFVX3lxTE1TVm1ReGdydTFGWGdTLWpWSzQtVHN5OUJ4bHBHYW5rMTQya1NnSkhhOVRobmk2MlQ1UzFyUHhYRm93RUs1dEllalg1RDhRRGduS3Rqd2prVUEwUXl4eW1GeWhvRjJJQ1dWd19DamRPSXIzalprU2dIaQ",
-    "CBMikwFBVV95cUxNOFdDTmJxWDRPMDl0RGFfUVMtaG9iZzVheVlTamotaHYyUVlvdHRSQy1Kc3JsWmNPdEtXMVYxd213ODlwNnJHcmp2ZWpkbEY4eGktVHU5QjBGakdLaVVaeDZVRXdGV2l3WWI3ZG9oSWhrVS1WM2RKNmdfLWZ3U1BBSUlsS1JDYmZ3ZTNPbEg3QW5qa0k",
-    "CBMihwFBVV95cUxQTGZEcXlJQVhReFowSGlXLW5VQXBObEdpcmlIcTB6bjRjWDBYc3VSZkFkRkxkekM3LW96NEExNi1iQm9pOVNGME1PMHJSTzNwNmExalFLeGdEenQ1YkJ3UmtjendiSlZOOVlEYThqTlZ4Z29xRVc4SU1HVXlJTjI2MlBsdTM5MXc",
-    "CBMilgFBVV95cUxNLVg4N3VvMHFBbGcyQlAzOFpPbjRDOERCakpmNmI0NjQtRTB3azdISmRTcmE3YXRxNENfMWFzRm92eXFFYmtRY1hPaVBQcGZUOE93WHBuQ2pRNDBEQ1pUZzJfNk5PeV9YaWt0X3VBQk9ucHYxa1ZyUDh6NXczUUJ5YzE2VG5IbUlwb2JhcF9ObzB3UnY1a0E",
     "CBMisAFBVV95cUxPdFNZMG1WZmM2S25oQXZsa1RnNDNRaWVYZmhYU0I3Tmo1aTlHQU9zTmN4R1Q4dEludkRZaW9vZnpYaWM3U25xbkR6ZmZzQ1VZWUpRTW12VWNwQjJ0UmlIMjhoZ1hSRUJmYTdRNmFlT093bTZyQjViRmhMbHpTV28tV1N5UmMySlFvRC1JbFF5NGMyNEx1cm4tQUVTQld3c3JzY19RSlhGM0ttbWR1WTZYYg",
+    "CBMihwFBVV95cUxQTGZEcXlJQVhReFowSGlXLW5VQXBObEdpcmlIcTB6bjRjWDBYc3VSZkFkRkxkekM3LW96NEExNi1iQm9pOVNGME1PMHJSTzNwNmExalFLeGdEenQ1YkJ3UmtjendiSlZOOVlEYThqTlZ4Z29xRVc4SU1HVXlJTjI2MlBsdTM5MXc",
     "CBMiO0FVX3lxTE04bEFhWXZyMjlGZlM2SHozbHB2ZVVGSk8tVEpkbEV6ZFlIdkhBSHpDakVja01IVGIySFRZ",
     "CBMiugFBVV95cUxQU1hMal9aa3A3S0t2MVFjSVF0amVHcF9hdlBNNFkzSTFHWnROVWw0WHh6OThtcGlHXzltTzI5NkhJZGszVnFRMTJrd0lZdWxMdWw2ZGFCUGlqWmo1aUozM0w3aTRRSnR6anAyS3NUYmxOMXZ6YXc4bjhBeWpCdWxaY0s0ZGVhUnZHUEZYeXp6M3Q3T2kwcms5ODNUSkRaWkhPTWtDOHd0dEl2bDJ3N2hXaXo1NTljMjlEM1E",
+    "CBMiV0FVX3lxTE5mZlpwTENPelRjN3E5d1ViNlZFRHJHbmUxUEN6SmZwOU1oeW13UDNHTG1zN19WR2JqSzFrR0NHeXIwdmN1NnNTUW9SRzFwYWRubjFIUXhoUQ",
+    "CBMiO0FVX3lxTFBsOXlVOUJNb0JSMGRvcUV0Uk8xYVd6aXh3S2NGTTNlRkJMTGdUd2RfUTR0ZGpyeDc3WnQw",
+    "CBMilgFBVV95cUxNLVg4N3VvMHFBbGcyQlAzOFpPbjRDOERCakpmNmI0NjQtRTB3azdISmRTcmE3YXRxNENfMWFzRm92eXFFYmtRY1hPaVBQcGZUOE93WHBuQ2pRNDBEQ1pUZzJfNk5PeV9YaWt0X3VBQk9ucHYxa1ZyUDh6NXczUUJ5YzE2VG5IbUlwb2JhcF9ObzB3UnY1a0E",
+    "CBMikwFBVV95cUxNOFdDTmJxWDRPMDl0RGFfUVMtaG9iZzVheVlTamotaHYyUVlvdHRSQy1Kc3JsWmNPdEtXMVYxd213ODlwNnJHcmp2ZWpkbEY4eGktVHU5QjBGakdLaVVaeDZVRXdGV2l3WWI3ZG9oSWhrVS1WM2RKNmdfLWZ3U1BBSUlsS1JDYmZ3ZTNPbEg3QW5qa0k",
+    "CBMieEFVX3lxTE1TVm1ReGdydTFGWGdTLWpWSzQtVHN5OUJ4bHBHYW5rMTQya1NnSkhhOVRobmk2MlQ1UzFyUHhYRm93RUs1dEllalg1RDhRRGduS3Rqd2prVUEwUXl4eW1GeWhvRjJJQ1dWd19DamRPSXIzalprU2dIaQ",
     "CBMiekFVX3lxTE9oNGpzRHNSRGljbEJ5cGF1QTZiaGNuQWhZek1uc29TYnZTSlh1WkRLVDJFR056V25laDI2UVBrcXMycFhsdTFwc2hjbm10TEp6WXB6dFJCS3hfcDlsTGtuTUNYS0hOUVZzT0tGUWw0Z3NmX0lhVVk2NHVR"
   ],
-  "lastRun": "2026-09-30T17:07:12.249800+00:00",
-  "lastCandidate": "publish/inbox/2026-09-30-securitize-adds-adi-chain-to-multichain-tokenization-ecosystem.json",
-  "lastResult": "no-qualified-story",
+  "lastRun": "2026-09-30T17:37:15.130538+00:00",
+  "lastCandidate": "publish/inbox/2026-09-30-after-joining-agor-wells-fargo-cfo-calls-for-atomic-settlement-of-tokenized-depo.json",
+  "lastResult": "candidate",
   "lastDiagnostics": {
-    "rawItems": 286,
-    "uniqueItems": 165,
+    "rawItems": 284,
+    "uniqueItems": 166,
     "queriesOk": 9,
     "queriesFailed": 0,
-    "breaking": 0,
+    "breaking": 1,
     "important": 0,
     "watchlist": 43,
     "sourceTiers": {
-      "unknown": 184,
-      "specialist": 39,
-      "low": 32,
-      "wire": 3,
+      "unknown": 185,
+      "low": 33,
+      "specialist": 34,
+      "wire": 4,
       "primary": 17,
       "trusted": 11
     },
     "rejections": {
-      "watchlist_unknown": 29,
+      "watchlist_unknown": 30,
       "duplicate_story": 9,
-      "duplicate_in_scan": 121,
-      "watchlist_specialist": 8,
+      "duplicate_in_scan": 118,
       "watchlist_low": 5,
+      "watchlist_specialist": 7,
       "watchlist_wire": 1,
       "seen_guid": 5,
       "no_rwa_signal": 93,
@@ -53,10 +54,10 @@
       },
       {
         "title": "Tokenized Securities Venues Will Not Challenge Traditional Exchanges",
-        "source": "Markets Media",
-        "normalizedSource": "markets media",
+        "source": "marketsmedia.com",
+        "normalizedSource": "marketsmedia",
         "score": 10,
-        "trust": "specialist"
+        "trust": "unknown"
       },
       {
         "title": "WisdomTree Introduces WisdomTree Onchain™ as Tokenized Fund Assets Surpass $1.2 Billion",
@@ -102,5 +103,5 @@
       }
     ]
   },
-  "lastCandidatePriority": "important"
+  "lastCandidatePriority": "breaking"
 }
