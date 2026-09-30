@@ -11,36 +11,36 @@
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg",
     "CBMiO0FVX3lxTE04bEFhWXZyMjlGZlM2SHozbHB2ZVVGSk8tVEpkbEV6ZFlIdkhBSHpDakVja01IVGIySFRZ"
   ],
-  "lastRun": "2026-09-30T12:07:12.879619+00:00",
+  "lastRun": "2026-09-30T12:25:37.051407+00:00",
   "lastCandidate": "publish/inbox/2026-09-30-binance-will-add-7-bstocks-tokenized-securities-as-collateral-asset-2026-09-30.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 290,
-    "uniqueItems": 160,
+    "rawItems": 285,
+    "uniqueItems": 157,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 47,
+    "watchlist": 46,
     "sourceTiers": {
-      "unknown": 190,
-      "specialist": 39,
-      "low": 35,
+      "unknown": 188,
+      "specialist": 38,
+      "low": 34,
       "wire": 2,
-      "primary": 17,
+      "primary": 16,
       "trusted": 7
     },
     "rejections": {
-      "watchlist_unknown": 33,
+      "watchlist_unknown": 32,
       "duplicate_story": 6,
       "watchlist_specialist": 8,
       "watchlist_low": 5,
-      "duplicate_in_scan": 130,
+      "duplicate_in_scan": 128,
       "watchlist_wire": 1,
       "seen_guid": 6,
-      "no_rwa_signal": 86,
+      "no_rwa_signal": 83,
       "hard_block": 3,
-      "score_below_4": 12
+      "score_below_4": 13
     },
     "feedErrors": [],
     "topWatchlist": [
