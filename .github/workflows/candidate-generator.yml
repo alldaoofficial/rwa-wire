@@ -26,32 +26,21 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 2
-
       - name: Resolve story brief
         env:
           MANUAL_BRIEF_PATH: ${{ inputs.brief_path }}
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            BRIEF_PATH="$MANUAL_BRIEF_PATH"
-          else
-            BRIEF_PATH=$(git diff --name-only --diff-filter=AM HEAD^ HEAD -- "publish/inbox/*.json")
-          fi
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then BRIEF_PATH="$MANUAL_BRIEF_PATH"; else BRIEF_PATH=$(git diff --name-only --diff-filter=AM HEAD^ HEAD -- "publish/inbox/*.json"); fi
           COUNT=$(printf "%s\n" "$BRIEF_PATH" | sed '/^$/d' | wc -l)
-          if [ "$COUNT" -ne 1 ]; then
-            echo "Expected exactly one new story brief, found $COUNT."
-            exit 1
-          fi
+          if [ "$COUNT" -ne 1 ]; then echo "Expected exactly one new story brief, found $COUNT."; exit 1; fi
           case "$BRIEF_PATH" in publish/inbox/*.json) ;; *) echo "Invalid brief path"; exit 1;; esac
           echo "BRIEF_PATH=$BRIEF_PATH" >> "$GITHUB_ENV"
-
       - name: Generate article, visual and candidate
         run: python3 scripts/candidate_generator.py "$BRIEF_PATH"
-
       - name: Build site
         run: |
           npm install
           npm run build
-
       - name: Commit generated story package
         run: |
           git config user.name "github-actions[bot]"
@@ -59,42 +48,24 @@ jobs:
           git add -A
           git diff --cached --quiet && { echo "Nothing generated"; exit 1; }
           git commit -m "Generate RWA Wire story candidate"
-          for attempt in 1 2 3; do
-            git pull --rebase origin main
-            if git push; then
-              break
-            fi
-            if [ "$attempt" -eq 3 ]; then
-              echo "Push failed after 3 rebased attempts."
-              exit 1
-            fi
-            echo "Remote changed during push; retrying after rebase..."
-            sleep 3
-          done
-
+          for attempt in 1 2 3; do git pull --rebase origin main && git push && break; if [ "$attempt" -eq 3 ]; then exit 1; fi; sleep 3; done
       - name: Deploy generated article
         env:
           GH_TOKEN: ${{ github.token }}
-        run: |
-          # Commits made with GITHUB_TOKEN do not reliably trigger another
-          # workflow via push, so dispatch Pages explicitly.
-          gh workflow run deploy.yml --ref main
-
+        run: gh workflow run deploy.yml --ref main
       - name: Route generated candidate
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           CANDIDATE_PATH=$(git diff-tree --no-commit-id --name-only -r HEAD -- "publish/candidates/*.json" | head -n 1)
-          if [ -z "$CANDIDATE_PATH" ]; then
-            echo "No candidate manifest found in generated commit."
-            exit 1
-          fi
-
+          if [ -z "$CANDIDATE_PATH" ]; then echo "No candidate manifest found in generated commit."; exit 1; fi
           if python3 - "$BRIEF_PATH" <<'PY'
           import json, sys
-          d=json.load(open(sys.argv[1], encoding="utf-8"))
-          nw=d.get("newsWatch") or {}
-          raise SystemExit(0 if nw.get("autoPublishEligible") is True and nw.get("sourceTrust") in {"primary","trusted"} and int(nw.get("score",0)) >= 6 else 1)
+          d=json.load(open(sys.argv[1], encoding='utf-8'))
+          nw=d.get('newsWatch') or {}; cw=d.get('cryptoWatch') or {}
+          rwa_ok=nw.get('autoPublishEligible') is True and nw.get('sourceTrust') in {'primary','trusted'} and int(nw.get('score',0))>=6
+          crypto_ok=cw.get('autoPublishEligible') is True and cw.get('sourceTrust') in {'primary','trusted'} and int(cw.get('score',0))>=4
+          raise SystemExit(0 if rwa_ok or crypto_ok else 1)
           PY
           then
             APPROVED_PATH="publish/approved/$(basename "$CANDIDATE_PATH")"
@@ -103,7 +74,7 @@ jobs:
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add "$APPROVED_PATH"
-            git commit -m "Auto-approve high-confidence News Watch candidate"
+            git commit -m "Auto-approve high-confidence RWA Wire candidate"
             git pull --rebase origin main
             git push
             gh workflow run telegram-test.yml --ref main -f manifest_path="$APPROVED_PATH"
