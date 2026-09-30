@@ -11,43 +11,43 @@
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg",
     "CBMiO0FVX3lxTE04bEFhWXZyMjlGZlM2SHozbHB2ZVVGSk8tVEpkbEV6ZFlIdkhBSHpDakVja01IVGIySFRZ"
   ],
-  "lastRun": "2026-09-30T11:07:13.564272+00:00",
+  "lastRun": "2026-09-30T11:37:15.222975+00:00",
   "lastCandidate": "publish/inbox/2026-09-30-binance-will-add-7-bstocks-tokenized-securities-as-collateral-asset-2026-09-30.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 292,
-    "uniqueItems": 154,
+    "rawItems": 293,
+    "uniqueItems": 156,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 45,
+    "watchlist": 47,
     "sourceTiers": {
-      "unknown": 192,
-      "specialist": 38,
+      "unknown": 193,
+      "specialist": 37,
       "low": 36,
       "wire": 3,
-      "primary": 16,
+      "primary": 17,
       "trusted": 7
     },
     "rejections": {
-      "watchlist_unknown": 30,
+      "watchlist_unknown": 32,
       "watchlist_specialist": 8,
       "watchlist_low": 6,
-      "duplicate_in_scan": 138,
+      "duplicate_in_scan": 137,
       "watchlist_wire": 1,
       "duplicate_story": 4,
-      "no_rwa_signal": 84,
       "seen_guid": 6,
+      "no_rwa_signal": 82,
       "hard_block": 3,
-      "score_below_4": 12
+      "score_below_4": 14
     },
     "feedErrors": [],
     "topWatchlist": [
       {
         "title": "FSC Chairman Lee Eok-weon Discusses Tokenized Securities With Nasdaq, DTCC, HKEX",
-        "source": "en.bloomingbit.io",
-        "normalizedSource": "en bloomingbit",
+        "source": "bloomingbit",
+        "normalizedSource": "bloomingbit",
         "score": 12,
         "trust": "specialist"
       },
@@ -67,7 +67,7 @@
       },
       {
         "title": "Tokenized securities and stablecoin projects ad...",
-        "source": "pluang.com",
+        "source": "Pluang",
         "normalizedSource": "pluang",
         "score": 10,
         "trust": "unknown"
@@ -80,9 +80,16 @@
         "trust": "low"
       },
       {
+        "title": "SEC transfer-agent overhaul tests tokenized securities framework",
+        "source": "Traders Union",
+        "normalizedSource": "traders union",
+        "score": 9,
+        "trust": "unknown"
+      },
+      {
         "title": "Meritz Securities to Launch Fractional Ship Investment in November, Expand Into Tokenized Securities Next Year",
-        "source": "en.bloomingbit.io",
-        "normalizedSource": "en bloomingbit",
+        "source": "bloomingbit",
+        "normalizedSource": "bloomingbit",
         "score": 9,
         "trust": "specialist"
       },
@@ -92,13 +99,6 @@
         "normalizedSource": "tokenpost",
         "score": 9,
         "trust": "specialist"
-      },
-      {
-        "title": "Pantera Capital: 81% of tokenized Treasury value is held, not traded",
-        "source": "Crypto Briefing",
-        "normalizedSource": "crypto briefing",
-        "score": 9,
-        "trust": "unknown"
       }
     ]
   },
