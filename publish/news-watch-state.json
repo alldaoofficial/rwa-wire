@@ -1,43 +1,44 @@
 {
   "seen": [
-    "CBMiO0FVX3lxTFBsOXlVOUJNb0JSMGRvcUV0Uk8xYVd6aXh3S2NGTTNlRkJMTGdUd2RfUTR0ZGpyeDc3WnQw",
-    "CBMiO0FVX3lxTE04bEFhWXZyMjlGZlM2SHozbHB2ZVVGSk8tVEpkbEV6ZFlIdkhBSHpDakVja01IVGIySFRZ",
-    "CBMiV0FVX3lxTE5mZlpwTENPelRjN3E5d1ViNlZFRHJHbmUxUEN6SmZwOU1oeW13UDNHTG1zN19WR2JqSzFrR0NHeXIwdmN1NnNTUW9SRzFwYWRubjFIUXhoUQ",
     "CBMiugFBVV95cUxQU1hMal9aa3A3S0t2MVFjSVF0amVHcF9hdlBNNFkzSTFHWnROVWw0WHh6OThtcGlHXzltTzI5NkhJZGszVnFRMTJrd0lZdWxMdWw2ZGFCUGlqWmo1aUozM0w3aTRRSnR6anAyS3NUYmxOMXZ6YXc4bjhBeWpCdWxaY0s0ZGVhUnZHUEZYeXp6M3Q3T2kwcms5ODNUSkRaWkhPTWtDOHd0dEl2bDJ3N2hXaXo1NTljMjlEM1E",
-    "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg",
     "CBMilgFBVV95cUxNLVg4N3VvMHFBbGcyQlAzOFpPbjRDOERCakpmNmI0NjQtRTB3azdISmRTcmE3YXRxNENfMWFzRm92eXFFYmtRY1hPaVBQcGZUOE93WHBuQ2pRNDBEQ1pUZzJfNk5PeV9YaWt0X3VBQk9ucHYxa1ZyUDh6NXczUUJ5YzE2VG5IbUlwb2JhcF9ObzB3UnY1a0E",
-    "CBMiekFVX3lxTE9oNGpzRHNSRGljbEJ5cGF1QTZiaGNuQWhZek1uc29TYnZTSlh1WkRLVDJFR056V25laDI2UVBrcXMycFhsdTFwc2hjbm10TEp6WXB6dFJCS3hfcDlsTGtuTUNYS0hOUVZzT0tGUWw0Z3NmX0lhVVk2NHVR",
+    "CBMiV0FVX3lxTE5mZlpwTENPelRjN3E5d1ViNlZFRHJHbmUxUEN6SmZwOU1oeW13UDNHTG1zN19WR2JqSzFrR0NHeXIwdmN1NnNTUW9SRzFwYWRubjFIUXhoUQ",
     "CBMieEFVX3lxTE1TVm1ReGdydTFGWGdTLWpWSzQtVHN5OUJ4bHBHYW5rMTQya1NnSkhhOVRobmk2MlQ1UzFyUHhYRm93RUs1dEllalg1RDhRRGduS3Rqd2prVUEwUXl4eW1GeWhvRjJJQ1dWd19DamRPSXIzalprU2dIaQ",
-    "CBMisAFBVV95cUxPdFNZMG1WZmM2S25oQXZsa1RnNDNRaWVYZmhYU0I3Tmo1aTlHQU9zTmN4R1Q4dEludkRZaW9vZnpYaWM3U25xbkR6ZmZzQ1VZWUpRTW12VWNwQjJ0UmlIMjhoZ1hSRUJmYTdRNmFlT093bTZyQjViRmhMbHpTV28tV1N5UmMySlFvRC1JbFF5NGMyNEx1cm4tQUVTQld3c3JzY19RSlhGM0ttbWR1WTZYYg"
+    "CBMiO0FVX3lxTFBsOXlVOUJNb0JSMGRvcUV0Uk8xYVd6aXh3S2NGTTNlRkJMTGdUd2RfUTR0ZGpyeDc3WnQw",
+    "CBMisAFBVV95cUxPdFNZMG1WZmM2S25oQXZsa1RnNDNRaWVYZmhYU0I3Tmo1aTlHQU9zTmN4R1Q4dEludkRZaW9vZnpYaWM3U25xbkR6ZmZzQ1VZWUpRTW12VWNwQjJ0UmlIMjhoZ1hSRUJmYTdRNmFlT093bTZyQjViRmhMbHpTV28tV1N5UmMySlFvRC1JbFF5NGMyNEx1cm4tQUVTQld3c3JzY19RSlhGM0ttbWR1WTZYYg",
+    "CBMiekFVX3lxTE9oNGpzRHNSRGljbEJ5cGF1QTZiaGNuQWhZek1uc29TYnZTSlh1WkRLVDJFR056V25laDI2UVBrcXMycFhsdTFwc2hjbm10TEp6WXB6dFJCS3hfcDlsTGtuTUNYS0hOUVZzT0tGUWw0Z3NmX0lhVVk2NHVR",
+    "CBMihwFBVV95cUxQTGZEcXlJQVhReFowSGlXLW5VQXBObEdpcmlIcTB6bjRjWDBYc3VSZkFkRkxkekM3LW96NEExNi1iQm9pOVNGME1PMHJSTzNwNmExalFLeGdEenQ1YkJ3UmtjendiSlZOOVlEYThqTlZ4Z29xRVc4SU1HVXlJTjI2MlBsdTM5MXc",
+    "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg",
+    "CBMiO0FVX3lxTE04bEFhWXZyMjlGZlM2SHozbHB2ZVVGSk8tVEpkbEV6ZFlIdkhBSHpDakVja01IVGIySFRZ"
   ],
-  "lastRun": "2026-09-30T10:07:19.932046+00:00",
-  "lastCandidate": "publish/inbox/2026-09-29-avalanche-is-pulling-ahead-in-tokenized-stocks.json",
-  "lastResult": "no-qualified-story",
+  "lastRun": "2026-09-30T10:27:35.388068+00:00",
+  "lastCandidate": "publish/inbox/2026-09-30-binance-will-add-7-bstocks-tokenized-securities-as-collateral-asset-2026-09-30.json",
+  "lastResult": "candidate",
   "lastDiagnostics": {
-    "rawItems": 294,
+    "rawItems": 293,
     "uniqueItems": 156,
     "queriesOk": 9,
     "queriesFailed": 0,
-    "breaking": 0,
+    "breaking": 1,
     "important": 0,
-    "watchlist": 46,
+    "watchlist": 44,
     "sourceTiers": {
-      "unknown": 229,
-      "low": 33,
+      "unknown": 195,
+      "specialist": 37,
+      "low": 34,
       "wire": 3,
-      "specialist": 11,
-      "primary": 10,
+      "primary": 16,
       "trusted": 8
     },
     "rejections": {
-      "watchlist_unknown": 38,
+      "watchlist_unknown": 30,
+      "watchlist_specialist": 7,
       "watchlist_low": 6,
-      "duplicate_in_scan": 138,
+      "duplicate_in_scan": 137,
       "duplicate_story": 5,
       "watchlist_wire": 1,
-      "no_rwa_signal": 84,
+      "no_rwa_signal": 85,
       "seen_guid": 5,
-      "watchlist_specialist": 1,
       "hard_block": 3,
       "score_below_4": 13
     },
@@ -48,14 +49,14 @@
         "source": "bloomingbit",
         "normalizedSource": "bloomingbit",
         "score": 12,
-        "trust": "unknown"
+        "trust": "specialist"
       },
       {
         "title": "Tokenized Securities Venues Will Not Challenge Traditional Exchanges",
         "source": "Markets Media",
         "normalizedSource": "markets media",
         "score": 10,
-        "trust": "unknown"
+        "trust": "specialist"
       },
       {
         "title": "WisdomTree Introduces WisdomTree Onchain™ as Tokenized Fund Assets Surpass $1.2 Billion",
@@ -66,7 +67,7 @@
       },
       {
         "title": "Tokenized securities and stablecoin projects ad...",
-        "source": "pluang.com",
+        "source": "Pluang",
         "normalizedSource": "pluang",
         "score": 10,
         "trust": "unknown"
@@ -83,23 +84,23 @@
         "source": "bloomingbit",
         "normalizedSource": "bloomingbit",
         "score": 9,
-        "trust": "unknown"
-      },
-      {
-        "title": "Binance Will Add 7 bStocks Tokenized Securities as Collateral Asset - 2026-09-30",
-        "source": "Binance",
-        "normalizedSource": "binance",
-        "score": 9,
-        "trust": "unknown"
+        "trust": "specialist"
       },
       {
         "title": "Metaplex Introduces MPL-3643 for Tokenized Securities on Solana",
         "source": "tokenpost.com",
         "normalizedSource": "tokenpost",
         "score": 9,
+        "trust": "specialist"
+      },
+      {
+        "title": "Pantera Capital: 81% of tokenized Treasury value is held, not traded",
+        "source": "Crypto Briefing",
+        "normalizedSource": "crypto briefing",
+        "score": 9,
         "trust": "unknown"
       }
     ]
   },
-  "lastCandidatePriority": "important"
+  "lastCandidatePriority": "breaking"
 }
