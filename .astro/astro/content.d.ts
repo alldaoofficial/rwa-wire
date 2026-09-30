@@ -152,6 +152,13 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"articles": {
+"after-joining-agor-wells-fargo-cfo-calls-for-atomic-settlement-of-tokenized-deposits.mdx": {
+	id: "after-joining-agor-wells-fargo-cfo-calls-for-atomic-settlement-of-tokenized-deposits.mdx";
+  slug: "after-joining-agor-wells-fargo-cfo-calls-for-atomic-settlement-of-tokenized-deposits";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "ark-invest-tokenizes-ark-venture-fund-through-securitize.mdx": {
 	id: "ark-invest-tokenizes-ark-venture-fund-through-securitize.mdx";
   slug: "ark-invest-tokenizes-ark-venture-fund-through-securitize";
