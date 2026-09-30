@@ -11,36 +11,36 @@
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg",
     "CBMiO0FVX3lxTE04bEFhWXZyMjlGZlM2SHozbHB2ZVVGSk8tVEpkbEV6ZFlIdkhBSHpDakVja01IVGIySFRZ"
   ],
-  "lastRun": "2026-09-30T12:25:37.051407+00:00",
+  "lastRun": "2026-09-30T12:37:13.528044+00:00",
   "lastCandidate": "publish/inbox/2026-09-30-binance-will-add-7-bstocks-tokenized-securities-as-collateral-asset-2026-09-30.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 285,
-    "uniqueItems": 157,
+    "rawItems": 282,
+    "uniqueItems": 158,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 46,
+    "watchlist": 45,
     "sourceTiers": {
-      "unknown": 188,
+      "unknown": 183,
       "specialist": 38,
-      "low": 34,
+      "low": 36,
       "wire": 2,
       "primary": 16,
       "trusted": 7
     },
     "rejections": {
-      "watchlist_unknown": 32,
-      "duplicate_story": 6,
+      "watchlist_unknown": 31,
+      "duplicate_story": 7,
       "watchlist_specialist": 8,
       "watchlist_low": 5,
-      "duplicate_in_scan": 128,
+      "duplicate_in_scan": 124,
       "watchlist_wire": 1,
       "seen_guid": 6,
-      "no_rwa_signal": 83,
+      "no_rwa_signal": 85,
       "hard_block": 3,
-      "score_below_4": 13
+      "score_below_4": 12
     },
     "feedErrors": [],
     "topWatchlist": [
@@ -60,8 +60,8 @@
       },
       {
         "title": "WisdomTree Introduces WisdomTree Onchain™ as Tokenized Fund Assets Surpass $1.2 Billion",
-        "source": "businesswire.com",
-        "normalizedSource": "businesswire",
+        "source": "Business Wire",
+        "normalizedSource": "business wire",
         "score": 10,
         "trust": "wire"
       },
