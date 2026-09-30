@@ -13,42 +13,42 @@
     "CBMieEFVX3lxTE1TVm1ReGdydTFGWGdTLWpWSzQtVHN5OUJ4bHBHYW5rMTQya1NnSkhhOVRobmk2MlQ1UzFyUHhYRm93RUs1dEllalg1RDhRRGduS3Rqd2prVUEwUXl4eW1GeWhvRjJJQ1dWd19DamRPSXIzalprU2dIaQ",
     "CBMiekFVX3lxTE9oNGpzRHNSRGljbEJ5cGF1QTZiaGNuQWhZek1uc29TYnZTSlh1WkRLVDJFR056V25laDI2UVBrcXMycFhsdTFwc2hjbm10TEp6WXB6dFJCS3hfcDlsTGtuTUNYS0hOUVZzT0tGUWw0Z3NmX0lhVVk2NHVR"
   ],
-  "lastRun": "2026-09-30T18:37:12.780117+00:00",
+  "lastRun": "2026-09-30T19:07:12.753256+00:00",
   "lastCandidate": "publish/inbox/2026-09-30-after-joining-agor-wells-fargo-cfo-calls-for-atomic-settlement-of-tokenized-depo.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 281,
-    "uniqueItems": 168,
+    "rawItems": 279,
+    "uniqueItems": 167,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 45,
+    "watchlist": 46,
     "sourceTiers": {
-      "unknown": 185,
-      "low": 31,
+      "unknown": 184,
       "specialist": 36,
+      "low": 31,
       "wire": 3,
       "primary": 17,
-      "trusted": 9
+      "trusted": 8
     },
     "rejections": {
-      "watchlist_unknown": 31,
+      "watchlist_unknown": 32,
       "duplicate_story": 9,
-      "duplicate_in_scan": 113,
-      "watchlist_low": 5,
+      "duplicate_in_scan": 112,
       "watchlist_specialist": 8,
+      "watchlist_low": 5,
       "watchlist_wire": 1,
       "seen_guid": 5,
-      "no_rwa_signal": 93,
-      "score_below_4": 16
+      "no_rwa_signal": 92,
+      "score_below_4": 15
     },
     "feedErrors": [],
     "topWatchlist": [
       {
         "title": "FSC Chairman Lee Eok-weon Discusses Tokenized Securities With Nasdaq, DTCC, HKEX",
-        "source": "en.bloomingbit.io",
-        "normalizedSource": "en bloomingbit",
+        "source": "bloomingbit",
+        "normalizedSource": "bloomingbit",
         "score": 12,
         "trust": "specialist"
       },
@@ -74,6 +74,13 @@
         "trust": "unknown"
       },
       {
+        "title": "Ondo Finance’s tokenized stocks hit a record $1.26 billion in TVL",
+        "source": "Crypto Briefing",
+        "normalizedSource": "crypto briefing",
+        "score": 9,
+        "trust": "unknown"
+      },
+      {
         "title": "SEC transfer-agent overhaul tests tokenized securities framework",
         "source": "Traders Union",
         "normalizedSource": "traders union",
@@ -82,8 +89,8 @@
       },
       {
         "title": "Meritz Securities to Launch Fractional Ship Investment in November, Expand Into Tokenized Securities Next Year",
-        "source": "en.bloomingbit.io",
-        "normalizedSource": "en bloomingbit",
+        "source": "bloomingbit",
+        "normalizedSource": "bloomingbit",
         "score": 9,
         "trust": "specialist"
       },
@@ -93,13 +100,6 @@
         "normalizedSource": "tokenpost",
         "score": 9,
         "trust": "specialist"
-      },
-      {
-        "title": "Pantera Capital: 81% of tokenized Treasury value is held, not traded",
-        "source": "Crypto Briefing",
-        "normalizedSource": "crypto briefing",
-        "score": 9,
-        "trust": "unknown"
       }
     ]
   },
