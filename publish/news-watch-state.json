@@ -12,35 +12,35 @@
     "CBMiugFBVV95cUxQU1hMal9aa3A3S0t2MVFjSVF0amVHcF9hdlBNNFkzSTFHWnROVWw0WHh6OThtcGlHXzltTzI5NkhJZGszVnFRMTJrd0lZdWxMdWw2ZGFCUGlqWmo1aUozM0w3aTRRSnR6anAyS3NUYmxOMXZ6YXc4bjhBeWpCdWxaY0s0ZGVhUnZHUEZYeXp6M3Q3T2kwcms5ODNUSkRaWkhPTWtDOHd0dEl2bDJ3N2hXaXo1NTljMjlEM1E",
     "CBMiekFVX3lxTE9oNGpzRHNSRGljbEJ5cGF1QTZiaGNuQWhZek1uc29TYnZTSlh1WkRLVDJFR056V25laDI2UVBrcXMycFhsdTFwc2hjbm10TEp6WXB6dFJCS3hfcDlsTGtuTUNYS0hOUVZzT0tGUWw0Z3NmX0lhVVk2NHVR"
   ],
-  "lastRun": "2026-09-30T14:37:12.836918+00:00",
+  "lastRun": "2026-09-30T15:07:21.142725+00:00",
   "lastCandidate": "publish/inbox/2026-09-30-securitize-adds-adi-chain-to-multichain-tokenization-ecosystem.json",
-  "lastResult": "candidate",
+  "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 272,
-    "uniqueItems": 160,
+    "rawItems": 283,
+    "uniqueItems": 162,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
-    "important": 1,
-    "watchlist": 46,
+    "important": 0,
+    "watchlist": 45,
     "sourceTiers": {
-      "unknown": 170,
-      "specialist": 38,
+      "unknown": 179,
+      "specialist": 39,
       "low": 32,
-      "wire": 3,
+      "wire": 2,
       "primary": 19,
-      "trusted": 10
+      "trusted": 12
     },
     "rejections": {
-      "watchlist_unknown": 32,
+      "watchlist_unknown": 31,
       "duplicate_story": 7,
       "watchlist_specialist": 8,
       "watchlist_low": 5,
-      "duplicate_in_scan": 112,
+      "duplicate_in_scan": 121,
       "watchlist_wire": 1,
-      "seen_guid": 6,
-      "no_rwa_signal": 86,
-      "score_below_4": 14
+      "seen_guid": 7,
+      "no_rwa_signal": 90,
+      "score_below_4": 13
     },
     "feedErrors": [],
     "topWatchlist": [
