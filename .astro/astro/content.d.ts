@@ -313,6 +313,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"securitize-adds-adi-chain-to-multichain-tokenization-ecosystem.mdx": {
+	id: "securitize-adds-adi-chain-to-multichain-tokenization-ecosystem.mdx";
+  slug: "securitize-adds-adi-chain-to-multichain-tokenization-ecosystem";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "securitize-explained.mdx": {
 	id: "securitize-explained.mdx";
   slug: "securitize-explained";
