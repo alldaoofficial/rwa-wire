@@ -13,29 +13,29 @@
     "CBMieEFVX3lxTE1TVm1ReGdydTFGWGdTLWpWSzQtVHN5OUJ4bHBHYW5rMTQya1NnSkhhOVRobmk2MlQ1UzFyUHhYRm93RUs1dEllalg1RDhRRGduS3Rqd2prVUEwUXl4eW1GeWhvRjJJQ1dWd19DamRPSXIzalprU2dIaQ",
     "CBMiekFVX3lxTE9oNGpzRHNSRGljbEJ5cGF1QTZiaGNuQWhZek1uc29TYnZTSlh1WkRLVDJFR056V25laDI2UVBrcXMycFhsdTFwc2hjbm10TEp6WXB6dFJCS3hfcDlsTGtuTUNYS0hOUVZzT0tGUWw0Z3NmX0lhVVk2NHVR"
   ],
-  "lastRun": "2026-09-30T21:07:14.770810+00:00",
+  "lastRun": "2026-09-30T21:37:11.891880+00:00",
   "lastCandidate": "publish/inbox/2026-09-30-after-joining-agor-wells-fargo-cfo-calls-for-atomic-settlement-of-tokenized-depo.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 283,
-    "uniqueItems": 167,
+    "rawItems": 281,
+    "uniqueItems": 166,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 48,
+    "watchlist": 47,
     "sourceTiers": {
       "unknown": 190,
-      "specialist": 36,
+      "specialist": 35,
       "wire": 3,
-      "low": 29,
+      "low": 28,
       "primary": 17,
       "trusted": 8
     },
     "rejections": {
-      "watchlist_unknown": 34,
+      "watchlist_unknown": 33,
       "duplicate_story": 9,
-      "duplicate_in_scan": 116,
+      "duplicate_in_scan": 115,
       "watchlist_specialist": 8,
       "watchlist_wire": 1,
       "watchlist_low": 5,
@@ -75,16 +75,16 @@
         "trust": "unknown"
       },
       {
-        "title": "Securitize Integrates ADI Chain: Tokenized BlackRock Funds Now Have UAE Sovereign Rails",
-        "source": "Tech Times",
-        "normalizedSource": "tech times",
+        "title": "Ondo Finance's tokenized stocks hit $1.26B TVL,...",
+        "source": "Pluang",
+        "normalizedSource": "pluang",
         "score": 9,
         "trust": "unknown"
       },
       {
-        "title": "Ondo Finance’s tokenized stocks hit a record $1.26 billion in TVL",
-        "source": "Crypto Briefing",
-        "normalizedSource": "crypto briefing",
+        "title": "Securitize Integrates ADI Chain: Tokenized BlackRock Funds Now Have UAE Sovereign Rails",
+        "source": "Tech Times",
+        "normalizedSource": "tech times",
         "score": 9,
         "trust": "unknown"
       },
