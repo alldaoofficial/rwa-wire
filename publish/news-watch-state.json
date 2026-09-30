@@ -11,21 +11,21 @@
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg",
     "CBMiO0FVX3lxTE04bEFhWXZyMjlGZlM2SHozbHB2ZVVGSk8tVEpkbEV6ZFlIdkhBSHpDakVja01IVGIySFRZ"
   ],
-  "lastRun": "2026-09-30T10:27:35.388068+00:00",
+  "lastRun": "2026-09-30T10:37:14.072565+00:00",
   "lastCandidate": "publish/inbox/2026-09-30-binance-will-add-7-bstocks-tokenized-securities-as-collateral-asset-2026-09-30.json",
-  "lastResult": "candidate",
+  "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 293,
+    "rawItems": 294,
     "uniqueItems": 156,
     "queriesOk": 9,
     "queriesFailed": 0,
-    "breaking": 1,
+    "breaking": 0,
     "important": 0,
     "watchlist": 44,
     "sourceTiers": {
-      "unknown": 195,
+      "unknown": 194,
       "specialist": 37,
-      "low": 34,
+      "low": 36,
       "wire": 3,
       "primary": 16,
       "trusted": 8
@@ -34,11 +34,11 @@
       "watchlist_unknown": 30,
       "watchlist_specialist": 7,
       "watchlist_low": 6,
-      "duplicate_in_scan": 137,
+      "duplicate_in_scan": 138,
       "duplicate_story": 5,
       "watchlist_wire": 1,
       "no_rwa_signal": 85,
-      "seen_guid": 5,
+      "seen_guid": 6,
       "hard_block": 3,
       "score_below_4": 13
     },
@@ -46,8 +46,8 @@
     "topWatchlist": [
       {
         "title": "FSC Chairman Lee Eok-weon Discusses Tokenized Securities With Nasdaq, DTCC, HKEX",
-        "source": "bloomingbit",
-        "normalizedSource": "bloomingbit",
+        "source": "en.bloomingbit.io",
+        "normalizedSource": "en bloomingbit",
         "score": 12,
         "trust": "specialist"
       },
@@ -60,14 +60,14 @@
       },
       {
         "title": "WisdomTree Introduces WisdomTree Onchain™ as Tokenized Fund Assets Surpass $1.2 Billion",
-        "source": "Business Wire",
-        "normalizedSource": "business wire",
+        "source": "businesswire.com",
+        "normalizedSource": "businesswire",
         "score": 10,
         "trust": "wire"
       },
       {
         "title": "Tokenized securities and stablecoin projects ad...",
-        "source": "Pluang",
+        "source": "pluang.com",
         "normalizedSource": "pluang",
         "score": 10,
         "trust": "unknown"
@@ -81,8 +81,8 @@
       },
       {
         "title": "Meritz Securities to Launch Fractional Ship Investment in November, Expand Into Tokenized Securities Next Year",
-        "source": "bloomingbit",
-        "normalizedSource": "bloomingbit",
+        "source": "en.bloomingbit.io",
+        "normalizedSource": "en bloomingbit",
         "score": 9,
         "trust": "specialist"
       },
