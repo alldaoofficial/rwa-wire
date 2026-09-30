@@ -13,43 +13,42 @@
     "CBMieEFVX3lxTE1TVm1ReGdydTFGWGdTLWpWSzQtVHN5OUJ4bHBHYW5rMTQya1NnSkhhOVRobmk2MlQ1UzFyUHhYRm93RUs1dEllalg1RDhRRGduS3Rqd2prVUEwUXl4eW1GeWhvRjJJQ1dWd19DamRPSXIzalprU2dIaQ",
     "CBMiekFVX3lxTE9oNGpzRHNSRGljbEJ5cGF1QTZiaGNuQWhZek1uc29TYnZTSlh1WkRLVDJFR056V25laDI2UVBrcXMycFhsdTFwc2hjbm10TEp6WXB6dFJCS3hfcDlsTGtuTUNYS0hOUVZzT0tGUWw0Z3NmX0lhVVk2NHVR"
   ],
-  "lastRun": "2026-09-30T19:37:25.420460+00:00",
+  "lastRun": "2026-09-30T20:07:13.826432+00:00",
   "lastCandidate": "publish/inbox/2026-09-30-after-joining-agor-wells-fargo-cfo-calls-for-atomic-settlement-of-tokenized-depo.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 278,
+    "rawItems": 279,
     "uniqueItems": 166,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 48,
+    "watchlist": 47,
     "sourceTiers": {
-      "unknown": 185,
-      "specialist": 36,
-      "low": 30,
+      "unknown": 186,
+      "specialist": 35,
       "wire": 3,
-      "primary": 16,
+      "low": 30,
+      "primary": 17,
       "trusted": 8
     },
     "rejections": {
-      "watchlist_unknown": 34,
+      "watchlist_unknown": 33,
       "duplicate_story": 9,
-      "duplicate_in_scan": 112,
+      "duplicate_in_scan": 113,
       "watchlist_specialist": 8,
-      "watchlist_low": 5,
       "watchlist_wire": 1,
-      "seen_guid": 4,
-      "existing_slug": 1,
-      "no_rwa_signal": 90,
+      "watchlist_low": 5,
+      "seen_guid": 5,
+      "no_rwa_signal": 91,
       "score_below_4": 14
     },
     "feedErrors": [],
     "topWatchlist": [
       {
         "title": "FSC Chairman Lee Eok-weon Discusses Tokenized Securities With Nasdaq, DTCC, HKEX",
-        "source": "en.bloomingbit.io",
-        "normalizedSource": "en bloomingbit",
+        "source": "bloomingbit",
+        "normalizedSource": "bloomingbit",
         "score": 12,
         "trust": "specialist"
       },
@@ -69,16 +68,9 @@
       },
       {
         "title": "Tokenized securities and stablecoin projects ad...",
-        "source": "pluang.com",
+        "source": "Pluang",
         "normalizedSource": "pluang",
         "score": 10,
-        "trust": "unknown"
-      },
-      {
-        "title": "Securitize Integrates ADI Chain: Tokenized BlackRock Funds Now Have UAE Sovereign Rails",
-        "source": "Tech Times",
-        "normalizedSource": "tech times",
-        "score": 9,
         "trust": "unknown"
       },
       {
@@ -97,8 +89,15 @@
       },
       {
         "title": "Meritz Securities to Launch Fractional Ship Investment in November, Expand Into Tokenized Securities Next Year",
-        "source": "en.bloomingbit.io",
-        "normalizedSource": "en bloomingbit",
+        "source": "bloomingbit",
+        "normalizedSource": "bloomingbit",
+        "score": 9,
+        "trust": "specialist"
+      },
+      {
+        "title": "Metaplex Introduces MPL-3643 for Tokenized Securities on Solana",
+        "source": "tokenpost.com",
+        "normalizedSource": "tokenpost",
         "score": 9,
         "trust": "specialist"
       }
