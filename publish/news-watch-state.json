@@ -13,7 +13,7 @@
     "CBMieEFVX3lxTE1TVm1ReGdydTFGWGdTLWpWSzQtVHN5OUJ4bHBHYW5rMTQya1NnSkhhOVRobmk2MlQ1UzFyUHhYRm93RUs1dEllalg1RDhRRGduS3Rqd2prVUEwUXl4eW1GeWhvRjJJQ1dWd19DamRPSXIzalprU2dIaQ",
     "CBMiekFVX3lxTE9oNGpzRHNSRGljbEJ5cGF1QTZiaGNuQWhZek1uc29TYnZTSlh1WkRLVDJFR056V25laDI2UVBrcXMycFhsdTFwc2hjbm10TEp6WXB6dFJCS3hfcDlsTGtuTUNYS0hOUVZzT0tGUWw0Z3NmX0lhVVk2NHVR"
   ],
-  "lastRun": "2026-09-30T18:06:04.849359+00:00",
+  "lastRun": "2026-09-30T18:07:14.906029+00:00",
   "lastCandidate": "publish/inbox/2026-09-30-after-joining-agor-wells-fargo-cfo-calls-for-atomic-settlement-of-tokenized-depo.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
@@ -23,24 +23,24 @@
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 45,
+    "watchlist": 44,
     "sourceTiers": {
-      "unknown": 182,
+      "unknown": 184,
       "low": 32,
-      "specialist": 36,
+      "specialist": 35,
       "wire": 4,
-      "primary": 17,
-      "trusted": 12
+      "primary": 18,
+      "trusted": 10
     },
     "rejections": {
-      "watchlist_unknown": 31,
+      "watchlist_unknown": 30,
       "duplicate_story": 9,
       "duplicate_in_scan": 115,
       "watchlist_low": 5,
       "watchlist_specialist": 8,
       "watchlist_wire": 1,
       "seen_guid": 6,
-      "no_rwa_signal": 92,
+      "no_rwa_signal": 93,
       "score_below_4": 16
     },
     "feedErrors": [],
