@@ -1,0 +1,54 @@
+name: RWA Wire Crypto Market Watch
+
+on:
+  schedule:
+    - cron: "22 * * * *"
+  workflow_dispatch:
+  repository_dispatch:
+    types: [crypto-market-watch]
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: rwa-wire-crypto-market-watch
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Scan high-signal crypto market news
+        run: python3 scripts/crypto_market_watch.py
+      - name: Commit Crypto Market Watch state and discovery
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A publish/
+          if git diff --cached --quiet; then
+            echo "story_changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          BRIEF_PATH=$(git diff --cached --name-only --diff-filter=A -- 'publish/inbox/*.json' | head -n 1)
+          if [ -n "$BRIEF_PATH" ]; then
+            echo "story_changed=true" >> "$GITHUB_OUTPUT"
+            echo "brief_path=$BRIEF_PATH" >> "$GITHUB_OUTPUT"
+            MSG="Crypto Market Watch: add qualified market story"
+          else
+            echo "story_changed=false" >> "$GITHUB_OUTPUT"
+            MSG="Crypto Market Watch: update scan state"
+          fi
+          git commit -m "$MSG"
+          for attempt in 1 2 3; do git pull --rebase origin main && git push && exit 0; sleep 3; done
+          exit 1
+      - name: Trigger candidate generator
+        if: steps.commit.outputs.story_changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRIEF_PATH: ${{ steps.commit.outputs.brief_path }}
+        run: gh workflow run candidate-generator.yml --ref main -f brief_path="$BRIEF_PATH"
