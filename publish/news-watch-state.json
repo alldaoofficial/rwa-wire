@@ -11,36 +11,36 @@
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg",
     "CBMiO0FVX3lxTE04bEFhWXZyMjlGZlM2SHozbHB2ZVVGSk8tVEpkbEV6ZFlIdkhBSHpDakVja01IVGIySFRZ"
   ],
-  "lastRun": "2026-09-30T13:07:50.025056+00:00",
+  "lastRun": "2026-09-30T13:37:15.580611+00:00",
   "lastCandidate": "publish/inbox/2026-09-30-binance-will-add-7-bstocks-tokenized-securities-as-collateral-asset-2026-09-30.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 276,
-    "uniqueItems": 158,
+    "rawItems": 274,
+    "uniqueItems": 159,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 46,
+    "watchlist": 44,
     "sourceTiers": {
       "unknown": 182,
-      "specialist": 38,
-      "low": 29,
+      "specialist": 37,
+      "low": 25,
       "wire": 4,
-      "primary": 16,
-      "trusted": 7
+      "primary": 17,
+      "trusted": 9
     },
     "rejections": {
-      "watchlist_unknown": 31,
+      "watchlist_unknown": 30,
       "duplicate_story": 7,
-      "watchlist_specialist": 8,
+      "watchlist_specialist": 7,
       "watchlist_low": 5,
-      "duplicate_in_scan": 118,
+      "duplicate_in_scan": 115,
       "watchlist_wire": 2,
       "seen_guid": 6,
-      "no_rwa_signal": 84,
-      "hard_block": 3,
-      "score_below_4": 12
+      "no_rwa_signal": 87,
+      "hard_block": 2,
+      "score_below_4": 13
     },
     "feedErrors": [],
     "topWatchlist": [
@@ -73,13 +73,6 @@
         "trust": "unknown"
       },
       {
-        "title": "Tech giant Oracle integrates with Swift blockchain ledger to connect banks’ tokenized deposits",
-        "source": "Cryptonews.net",
-        "normalizedSource": "cryptonews",
-        "score": 10,
-        "trust": "unknown"
-      },
-      {
         "title": "SEC transfer-agent overhaul tests tokenized securities framework",
         "source": "Traders Union",
         "normalizedSource": "traders union",
@@ -99,6 +92,13 @@
         "normalizedSource": "tokenpost",
         "score": 9,
         "trust": "specialist"
+      },
+      {
+        "title": "Pantera Capital: 81% of tokenized Treasury value is held, not traded",
+        "source": "Crypto Briefing",
+        "normalizedSource": "crypto briefing",
+        "score": 9,
+        "trust": "unknown"
       }
     ]
   },
