@@ -24,9 +24,11 @@ STRONG={"tokenized":3,"tokenization":3,"tokenized fund":4,"tokenized treasury":4
 INSTITUTIONAL={"blackrock":3,"franklin templeton":3,"jpmorgan":3,"j.p. morgan":3,"dtcc":3,"securitize":2,"ondo":2,"centrifuge":2,"chainlink":2,"bank":1,"fund":1,"asset manager":2,"securities":2,"treasury":2,"institution":1,"settlement":2,"exchange":1,"custody":1,"regulator":1,"clearstream":2,"euroclear":2,"swift":2,"mastercard":2,"visa":2,"state street":2,"fidelity":2,"wisdomtree":2}
 BLOCK=["price prediction","airdrop","presale","memecoin","meme coin","casino","100x","price target","giveaway","best crypto","best altcoin","to invest in","top crypto","next crypto","buy now","massive gains","explosive growth","hidden gem","moonshot","can x reach","price forecast","price outlook","sponsored","partner content","promoted content"]
 HARD_BLOCK=["best crypto","to invest in","presale","100x","price prediction","price target","giveaway","moonshot","sponsored","promoted content"]
-PRIMARY_SOURCES={"blackrock","franklin templeton","jpmorgan","j p morgan","dtcc","securitize","ondo finance","centrifuge","chainlink","sec gov","u s securities and exchange commission","federal reserve","ecb","european central bank","bis","bank for international settlements","swift","euroclear","clearstream","state street","fidelity","wisdomtree","mastercard","visa","bank of england","monetary authority of singapore","mas","hong kong monetary authority","hkma"}
+# Primary means the publisher itself is an institution, issuer, exchange, regulator or infrastructure provider.
+PRIMARY_SOURCES={"blackrock","franklin templeton","jpmorgan","j p morgan","dtcc","securitize","ondo finance","centrifuge","chainlink","sec gov","u s securities and exchange commission","federal reserve","ecb","european central bank","bis","bank for international settlements","swift","euroclear","clearstream","state street","fidelity","wisdomtree","mastercard","visa","bank of england","monetary authority of singapore","mas","hong kong monetary authority","hkma","binance","coinbase","kraken","nasdaq","new york stock exchange","nyse","london stock exchange","lseg","deutsche boerse","six group","solana foundation","metaplex"}
 TRUSTED_MEDIA={"reuters","bloomberg","financial times","the wall street journal","wsj","coindesk","the block","fortune","forbes","cnbc","decrypt","dl news","blockworks","ledger insights","ledgerinsights","american banker"}
-SPECIALIST_MEDIA={"securities io","securities","financefeeds","fintech futures","the digital banker","globalcustodian","funds europe","finextra","banking dive","pymnts"}
+# Specialist outlets stay below auto-publish trust, but are classified correctly for diagnostics/review.
+SPECIALIST_MEDIA={"securities io","securities","financefeeds","fintech futures","the digital banker","globalcustodian","global custodian","funds europe","finextra","banking dive","pymnts","markets media","tokenpost","bloomingbit","rwa xyz","rwa.io"}
 WIRE_SERVICES={"business wire","businesswire","pr newswire","prnewswire","globe newswire","globenewswire","accesswire"}
 LOW_TRUST_HINTS={"coinmarketcap","investing com","investing","tradingview","benzinga","cryptopolitan","coinpedia","u today","the crypto basic","crypto news flash","blockchain reporter"}
 STOPWORDS={"the","a","an","and","or","of","to","in","on","for","as","with","its","is","are","adds","turns","brings","into","from","at","by"}
@@ -36,7 +38,7 @@ def normalize_source(name):
     return re.sub(r"[^a-z0-9]+"," ",s).strip()
 def source_tier(name):
     raw=(name or "").strip().lower(); s=normalize_source(raw); variants={raw,s,s.replace(" ","")}
-    def hit(keys): return any(any(k in v or v in k for v in variants if v) for k in keys)
+    def hit(keys): return any(any(k==v or (len(k)>=5 and (k in v or v in k)) for v in variants if v) for k in keys)
     if hit(PRIMARY_SOURCES): return "primary"
     if hit(TRUSTED_MEDIA): return "trusted"
     if hit(SPECIALIST_MEDIA): return "specialist"
@@ -51,10 +53,10 @@ def same_story(a,b):
     if not aa or not bb:return False
     overlap=len(aa & bb); return overlap>=4 and overlap/min(len(aa),len(bb))>=0.55
 def fetch(url):
-    req=urllib.request.Request(url,headers={"User-Agent":"RWA-Wire-News-Watch/1.4"})
+    req=urllib.request.Request(url,headers={"User-Agent":"RWA-Wire-News-Watch/1.5"})
     with urllib.request.urlopen(req,timeout=25) as r:return r.read()
 def classify(score,trust,has_rwa_signal):
-    # Keep breaking strict. Slightly widen only primary/trusted important stories.
+    # Breaking remains strict. Only primary/trusted publishers can auto-qualify.
     if has_rwa_signal and trust in {"primary","trusted"} and score>=9:return "breaking"
     if has_rwa_signal and trust in {"primary","trusted"} and score>=5:return "important"
     if has_rwa_signal and score>=4:return "watchlist"
