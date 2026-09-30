@@ -11,36 +11,36 @@
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg",
     "CBMiO0FVX3lxTE04bEFhWXZyMjlGZlM2SHozbHB2ZVVGSk8tVEpkbEV6ZFlIdkhBSHpDakVja01IVGIySFRZ"
   ],
-  "lastRun": "2026-09-30T11:37:15.222975+00:00",
+  "lastRun": "2026-09-30T12:07:12.879619+00:00",
   "lastCandidate": "publish/inbox/2026-09-30-binance-will-add-7-bstocks-tokenized-securities-as-collateral-asset-2026-09-30.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 293,
-    "uniqueItems": 156,
+    "rawItems": 290,
+    "uniqueItems": 160,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
     "watchlist": 47,
     "sourceTiers": {
-      "unknown": 193,
-      "specialist": 37,
-      "low": 36,
-      "wire": 3,
+      "unknown": 190,
+      "specialist": 39,
+      "low": 35,
+      "wire": 2,
       "primary": 17,
       "trusted": 7
     },
     "rejections": {
-      "watchlist_unknown": 32,
+      "watchlist_unknown": 33,
+      "duplicate_story": 6,
       "watchlist_specialist": 8,
-      "watchlist_low": 6,
-      "duplicate_in_scan": 137,
+      "watchlist_low": 5,
+      "duplicate_in_scan": 130,
       "watchlist_wire": 1,
-      "duplicate_story": 4,
       "seen_guid": 6,
-      "no_rwa_signal": 82,
+      "no_rwa_signal": 86,
       "hard_block": 3,
-      "score_below_4": 14
+      "score_below_4": 12
     },
     "feedErrors": [],
     "topWatchlist": [
@@ -73,11 +73,11 @@
         "trust": "unknown"
       },
       {
-        "title": "Oracle Corporation (ORCL) Integrates With Swift Ledger to Connect Banks’ Tokenized Deposits",
-        "source": "TradingView",
-        "normalizedSource": "tradingview",
+        "title": "Tech giant Oracle integrates with Swift blockchain ledger to connect banks' tokenized deposits",
+        "source": "Crypto Briefing",
+        "normalizedSource": "crypto briefing",
         "score": 10,
-        "trust": "low"
+        "trust": "unknown"
       },
       {
         "title": "SEC transfer-agent overhaul tests tokenized securities framework",
