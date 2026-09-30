@@ -173,6 +173,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"binance-will-add-7-bstocks-tokenized-securities-as-collateral-asset-2026-09-30.mdx": {
+	id: "binance-will-add-7-bstocks-tokenized-securities-as-collateral-asset-2026-09-30.mdx";
+  slug: "binance-will-add-7-bstocks-tokenized-securities-as-collateral-asset-2026-09-30";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "bybit-adds-franklin-templeton-tokenized-funds-as-off-exchange-collateral.mdx": {
 	id: "bybit-adds-franklin-templeton-tokenized-funds-as-off-exchange-collateral.mdx";
   slug: "bybit-adds-franklin-templeton-tokenized-funds-as-off-exchange-collateral";
