@@ -10,7 +10,7 @@
     "CBMieEFVX3lxTE1TVm1ReGdydTFGWGdTLWpWSzQtVHN5OUJ4bHBHYW5rMTQya1NnSkhhOVRobmk2MlQ1UzFyUHhYRm93RUs1dEllalg1RDhRRGduS3Rqd2prVUEwUXl4eW1GeWhvRjJJQ1dWd19DamRPSXIzalprU2dIaQ",
     "CBMisAFBVV95cUxPdFNZMG1WZmM2S25oQXZsa1RnNDNRaWVYZmhYU0I3Tmo1aTlHQU9zTmN4R1Q4dEludkRZaW9vZnpYaWM3U25xbkR6ZmZzQ1VZWUpRTW12VWNwQjJ0UmlIMjhoZ1hSRUJmYTdRNmFlT093bTZyQjViRmhMbHpTV28tV1N5UmMySlFvRC1JbFF5NGMyNEx1cm4tQUVTQld3c3JzY19RSlhGM0ttbWR1WTZYYg"
   ],
-  "lastRun": "2026-09-30T00:37:11.793438+00:00",
+  "lastRun": "2026-09-30T01:07:11.898726+00:00",
   "lastCandidate": "publish/inbox/2026-09-29-avalanche-is-pulling-ahead-in-tokenized-stocks.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
@@ -20,23 +20,23 @@
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 45,
+    "watchlist": 43,
     "sourceTiers": {
-      "unknown": 216,
-      "low": 38,
+      "unknown": 214,
+      "low": 40,
       "wire": 3,
       "specialist": 8,
       "primary": 11,
       "trusted": 9
     },
     "rejections": {
-      "watchlist_unknown": 36,
-      "duplicate_in_scan": 128,
+      "watchlist_unknown": 34,
       "watchlist_low": 7,
       "watchlist_wire": 1,
       "duplicate_story": 5,
+      "duplicate_in_scan": 128,
       "seen_guid": 5,
-      "no_rwa_signal": 82,
+      "no_rwa_signal": 84,
       "score_below_4": 15,
       "watchlist_specialist": 1,
       "hard_block": 5
@@ -44,9 +44,9 @@
     "feedErrors": [],
     "topWatchlist": [
       {
-        "title": "\"T+1, Tokenized Securities Discussed\" Eokwon Lee Meets with Nasdaq, DTCC, and HKEX Representatives",
-        "source": "아시아경제",
-        "normalizedSource": "",
+        "title": "FSC Chairman Lee Eog-won Discusses Tokenized Securities With Nasdaq, DTCC and HKEX",
+        "source": "bloomingbit",
+        "normalizedSource": "bloomingbit",
         "score": 12,
         "trust": "unknown"
       },
@@ -59,8 +59,8 @@
       },
       {
         "title": "WisdomTree Introduces WisdomTree Onchain™ as Tokenized Fund Assets Surpass $1.2 Billion",
-        "source": "businesswire.com",
-        "normalizedSource": "businesswire",
+        "source": "Business Wire",
+        "normalizedSource": "business wire",
         "score": 10,
         "trust": "wire"
       },
@@ -87,8 +87,8 @@
       },
       {
         "title": "Pantera Capital: 81% of tokenized Treasury value is held, not traded",
-        "source": "Crypto Briefing",
-        "normalizedSource": "crypto briefing",
+        "source": "cryptobriefing.com",
+        "normalizedSource": "cryptobriefing",
         "score": 9,
         "trust": "unknown"
       },
