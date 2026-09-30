@@ -12,7 +12,7 @@
     "CBMiugFBVV95cUxQU1hMal9aa3A3S0t2MVFjSVF0amVHcF9hdlBNNFkzSTFHWnROVWw0WHh6OThtcGlHXzltTzI5NkhJZGszVnFRMTJrd0lZdWxMdWw2ZGFCUGlqWmo1aUozM0w3aTRRSnR6anAyS3NUYmxOMXZ6YXc4bjhBeWpCdWxaY0s0ZGVhUnZHUEZYeXp6M3Q3T2kwcms5ODNUSkRaWkhPTWtDOHd0dEl2bDJ3N2hXaXo1NTljMjlEM1E",
     "CBMiekFVX3lxTE9oNGpzRHNSRGljbEJ5cGF1QTZiaGNuQWhZek1uc29TYnZTSlh1WkRLVDJFR056V25laDI2UVBrcXMycFhsdTFwc2hjbm10TEp6WXB6dFJCS3hfcDlsTGtuTUNYS0hOUVZzT0tGUWw0Z3NmX0lhVVk2NHVR"
   ],
-  "lastRun": "2026-09-30T16:07:12.972438+00:00",
+  "lastRun": "2026-09-30T16:37:12.640014+00:00",
   "lastCandidate": "publish/inbox/2026-09-30-securitize-adds-adi-chain-to-multichain-tokenization-ecosystem.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
@@ -22,25 +22,25 @@
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 44,
+    "watchlist": 43,
     "sourceTiers": {
-      "unknown": 181,
-      "specialist": 41,
-      "low": 31,
+      "unknown": 183,
+      "specialist": 40,
+      "low": 33,
       "wire": 3,
-      "primary": 19,
-      "trusted": 12
+      "primary": 17,
+      "trusted": 11
     },
     "rejections": {
-      "watchlist_unknown": 30,
+      "watchlist_unknown": 29,
       "duplicate_story": 9,
       "watchlist_specialist": 8,
       "watchlist_low": 5,
       "watchlist_wire": 1,
       "duplicate_in_scan": 122,
       "seen_guid": 5,
-      "no_rwa_signal": 94,
-      "score_below_4": 13
+      "no_rwa_signal": 93,
+      "score_below_4": 15
     },
     "feedErrors": [],
     "topWatchlist": [
@@ -60,8 +60,8 @@
       },
       {
         "title": "WisdomTree Introduces WisdomTree Onchain™ as Tokenized Fund Assets Surpass $1.2 Billion",
-        "source": "Business Wire",
-        "normalizedSource": "business wire",
+        "source": "businesswire.com",
+        "normalizedSource": "businesswire",
         "score": 10,
         "trust": "wire"
       },
