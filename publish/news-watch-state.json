@@ -12,42 +12,42 @@
     "CBMiugFBVV95cUxQU1hMal9aa3A3S0t2MVFjSVF0amVHcF9hdlBNNFkzSTFHWnROVWw0WHh6OThtcGlHXzltTzI5NkhJZGszVnFRMTJrd0lZdWxMdWw2ZGFCUGlqWmo1aUozM0w3aTRRSnR6anAyS3NUYmxOMXZ6YXc4bjhBeWpCdWxaY0s0ZGVhUnZHUEZYeXp6M3Q3T2kwcms5ODNUSkRaWkhPTWtDOHd0dEl2bDJ3N2hXaXo1NTljMjlEM1E",
     "CBMiekFVX3lxTE9oNGpzRHNSRGljbEJ5cGF1QTZiaGNuQWhZek1uc29TYnZTSlh1WkRLVDJFR056V25laDI2UVBrcXMycFhsdTFwc2hjbm10TEp6WXB6dFJCS3hfcDlsTGtuTUNYS0hOUVZzT0tGUWw0Z3NmX0lhVVk2NHVR"
   ],
-  "lastRun": "2026-09-30T15:37:28.362783+00:00",
+  "lastRun": "2026-09-30T16:07:12.972438+00:00",
   "lastCandidate": "publish/inbox/2026-09-30-securitize-adds-adi-chain-to-multichain-tokenization-ecosystem.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 288,
-    "uniqueItems": 163,
+    "rawItems": 287,
+    "uniqueItems": 165,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 43,
+    "watchlist": 44,
     "sourceTiers": {
-      "unknown": 189,
+      "unknown": 181,
       "specialist": 41,
-      "low": 25,
-      "wire": 2,
+      "low": 31,
+      "wire": 3,
       "primary": 19,
       "trusted": 12
     },
     "rejections": {
-      "watchlist_unknown": 29,
-      "duplicate_story": 8,
+      "watchlist_unknown": 30,
+      "duplicate_story": 9,
       "watchlist_specialist": 8,
       "watchlist_low": 5,
-      "duplicate_in_scan": 125,
       "watchlist_wire": 1,
-      "seen_guid": 6,
-      "no_rwa_signal": 93,
+      "duplicate_in_scan": 122,
+      "seen_guid": 5,
+      "no_rwa_signal": 94,
       "score_below_4": 13
     },
     "feedErrors": [],
     "topWatchlist": [
       {
         "title": "FSC Chairman Lee Eok-weon Discusses Tokenized Securities With Nasdaq, DTCC, HKEX",
-        "source": "en.bloomingbit.io",
-        "normalizedSource": "en bloomingbit",
+        "source": "bloomingbit",
+        "normalizedSource": "bloomingbit",
         "score": 12,
         "trust": "specialist"
       },
@@ -67,7 +67,7 @@
       },
       {
         "title": "Tokenized securities and stablecoin projects ad...",
-        "source": "pluang.com",
+        "source": "Pluang",
         "normalizedSource": "pluang",
         "score": 10,
         "trust": "unknown"
@@ -81,8 +81,8 @@
       },
       {
         "title": "Meritz Securities to Launch Fractional Ship Investment in November, Expand Into Tokenized Securities Next Year",
-        "source": "en.bloomingbit.io",
-        "normalizedSource": "en bloomingbit",
+        "source": "bloomingbit",
+        "normalizedSource": "bloomingbit",
         "score": 9,
         "trust": "specialist"
       },
