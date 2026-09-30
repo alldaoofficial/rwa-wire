@@ -13,21 +13,26 @@ const meta: Record<string, AssetMeta> = {
   "clearpool": { symbol: "CPOOL", name: "Clearpool" },
 };
 
-const assets = Object.entries(markets.assets ?? {}).map(([id, asset]) => ({
-  id,
-  ...(meta[id] ?? { symbol: id.toUpperCase(), name: id }),
-  price: asset.usd,
-  change: asset.usd_24h_change,
-  volume: asset.usd_24h_vol,
-  marketCap: asset.usd_market_cap,
-})).filter((a) => Number.isFinite(a.price) && Number.isFinite(a.change));
+const assets = Object.entries(markets.assets ?? {}).flatMap(([id, asset]) => {
+  const price = asset.usd;
+  const change = asset.usd_24h_change;
+  if (typeof price !== "number" || !Number.isFinite(price) || typeof change !== "number" || !Number.isFinite(change)) return [];
+  return [{
+    id,
+    ...(meta[id] ?? { symbol: id.toUpperCase(), name: id }),
+    price,
+    change,
+    volume: typeof asset.usd_24h_vol === "number" && Number.isFinite(asset.usd_24h_vol) ? asset.usd_24h_vol : 0,
+    marketCap: typeof asset.usd_market_cap === "number" && Number.isFinite(asset.usd_market_cap) ? asset.usd_market_cap : 0,
+  }];
+});
 
 const ranked = [...assets].sort((a,b) => b.change - a.change);
 const up = assets.filter((a) => a.change > 0).length;
 const down = assets.filter((a) => a.change < 0).length;
 const average = assets.length ? assets.reduce((sum,a) => sum + a.change, 0) / assets.length : 0;
 const leader = ranked[0];
-const totalVolume = assets.reduce((sum,a) => sum + (Number.isFinite(a.volume) ? a.volume : 0), 0);
+const totalVolume = assets.reduce((sum,a) => sum + a.volume, 0);
 const breadth = assets.length ? up / assets.length : 0;
 const read = breadth >= .75 ? "Broad strength" : down / Math.max(assets.length,1) >= .75 ? "Broad weakness" : "Mixed market";
 const fetched = new Date(markets.fetchedAt);
@@ -53,7 +58,7 @@ const money = (v: number) => v >= 1e9 ? `$${(v/1e9).toFixed(1)}B` : v >= 1e6 ? `
     <div class="mt-5 grid gap-5 lg:grid-cols-[1fr_280px]">
       <div class="overflow-hidden border border-line bg-bg">
         <div class="grid grid-cols-[1fr_auto_auto] gap-4 border-b border-line px-4 py-3 font-mono text-[9px] uppercase tracking-[.08em] text-ink-muted sm:grid-cols-[1fr_110px_110px_120px]"><span>Asset</span><span class="hidden text-right sm:block">Price</span><span class="text-right">24h</span><span class="text-right">Volume</span></div>
-        {ranked.map((asset) => <div class="grid grid-cols-[1fr_auto_auto] items-center gap-4 border-b border-line/70 px-4 py-3 last:border-0 sm:grid-cols-[1fr_110px_110px_120px]"><div class="min-w-0"><span class="font-mono text-sm font-semibold text-ink">{asset.symbol}</span><span class="ml-2 hidden text-xs text-ink-muted md:inline">{asset.name}</span></div><span class="hidden text-right font-mono text-xs text-ink-muted sm:block">{price(asset.price)}</span><span class:list={["text-right font-mono text-xs font-semibold", asset.change >= 0 ? "text-wire" : "text-red-400"]}>{pct(asset.change)}</span><span class="text-right font-mono text-xs text-ink-muted">{money(asset.volume ?? 0)}</span></div>)}
+        {ranked.map((asset) => <div class="grid grid-cols-[1fr_auto_auto] items-center gap-4 border-b border-line/70 px-4 py-3 last:border-0 sm:grid-cols-[1fr_110px_110px_120px]"><div class="min-w-0"><span class="font-mono text-sm font-semibold text-ink">{asset.symbol}</span><span class="ml-2 hidden text-xs text-ink-muted md:inline">{asset.name}</span></div><span class="hidden text-right font-mono text-xs text-ink-muted sm:block">{price(asset.price)}</span><span class:list={["text-right font-mono text-xs font-semibold", asset.change >= 0 ? "text-wire" : "text-red-400"]}>{pct(asset.change)}</span><span class="text-right font-mono text-xs text-ink-muted">{money(asset.volume)}</span></div>)}
       </div>
       <aside class="border border-line bg-bg p-5"><p class="data-label text-wire">Market read</p><p class="mt-3 font-serif text-xl text-ink">{read}</p><p class="mt-2 text-sm leading-relaxed text-ink-muted">{up} of {assets.length} tracked assets are higher over 24h{leader ? `, led by ${leader.symbol} at ${pct(leader.change)}` : ""}.</p><div class="mt-5 border-t border-line pt-4"><div class="flex justify-between text-xs"><span class="text-ink-muted">Advancing</span><span class="font-mono text-wire">{up}</span></div><div class="mt-2 flex justify-between text-xs"><span class="text-ink-muted">Declining</span><span class="font-mono text-ink">{down}</span></div></div><a href="/markets/" class="mt-5 inline-flex text-xs font-medium uppercase tracking-[.08em] text-ink-muted hover:text-wire">Explore market coverage →</a></aside>
     </div>
