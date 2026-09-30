@@ -13,35 +13,35 @@
     "CBMieEFVX3lxTE1TVm1ReGdydTFGWGdTLWpWSzQtVHN5OUJ4bHBHYW5rMTQya1NnSkhhOVRobmk2MlQ1UzFyUHhYRm93RUs1dEllalg1RDhRRGduS3Rqd2prVUEwUXl4eW1GeWhvRjJJQ1dWd19DamRPSXIzalprU2dIaQ",
     "CBMiekFVX3lxTE9oNGpzRHNSRGljbEJ5cGF1QTZiaGNuQWhZek1uc29TYnZTSlh1WkRLVDJFR056V25laDI2UVBrcXMycFhsdTFwc2hjbm10TEp6WXB6dFJCS3hfcDlsTGtuTUNYS0hOUVZzT0tGUWw0Z3NmX0lhVVk2NHVR"
   ],
-  "lastRun": "2026-09-30T17:37:15.130538+00:00",
+  "lastRun": "2026-09-30T18:06:04.849359+00:00",
   "lastCandidate": "publish/inbox/2026-09-30-after-joining-agor-wells-fargo-cfo-calls-for-atomic-settlement-of-tokenized-depo.json",
-  "lastResult": "candidate",
+  "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 284,
-    "uniqueItems": 166,
+    "rawItems": 283,
+    "uniqueItems": 168,
     "queriesOk": 9,
     "queriesFailed": 0,
-    "breaking": 1,
+    "breaking": 0,
     "important": 0,
-    "watchlist": 43,
+    "watchlist": 45,
     "sourceTiers": {
-      "unknown": 185,
-      "low": 33,
-      "specialist": 34,
+      "unknown": 182,
+      "low": 32,
+      "specialist": 36,
       "wire": 4,
       "primary": 17,
-      "trusted": 11
+      "trusted": 12
     },
     "rejections": {
-      "watchlist_unknown": 30,
+      "watchlist_unknown": 31,
       "duplicate_story": 9,
-      "duplicate_in_scan": 118,
+      "duplicate_in_scan": 115,
       "watchlist_low": 5,
-      "watchlist_specialist": 7,
+      "watchlist_specialist": 8,
       "watchlist_wire": 1,
-      "seen_guid": 5,
-      "no_rwa_signal": 93,
-      "score_below_4": 15
+      "seen_guid": 6,
+      "no_rwa_signal": 92,
+      "score_below_4": 16
     },
     "feedErrors": [],
     "topWatchlist": [
@@ -54,10 +54,10 @@
       },
       {
         "title": "Tokenized Securities Venues Will Not Challenge Traditional Exchanges",
-        "source": "marketsmedia.com",
-        "normalizedSource": "marketsmedia",
+        "source": "Markets Media",
+        "normalizedSource": "markets media",
         "score": 10,
-        "trust": "unknown"
+        "trust": "specialist"
       },
       {
         "title": "WisdomTree Introduces WisdomTree Onchain™ as Tokenized Fund Assets Surpass $1.2 Billion",
@@ -75,8 +75,8 @@
       },
       {
         "title": "SEC transfer-agent overhaul tests tokenized securities framework",
-        "source": "Traders Union",
-        "normalizedSource": "traders union",
+        "source": "tradersunion.com",
+        "normalizedSource": "tradersunion",
         "score": 9,
         "trust": "unknown"
       },
