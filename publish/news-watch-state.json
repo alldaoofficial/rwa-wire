@@ -16,12 +16,12 @@
     "CBMikwFBVV95cUxNOFdDTmJxWDRPMDl0RGFfUVMtaG9iZzVheVlTamotaHYyUVlvdHRSQy1Kc3JsWmNPdEtXMVYxd213ODlwNnJHcmp2ZWpkbEY4eGktVHU5QjBGakdLaVVaeDZVRXdGV2l3WWI3ZG9oSWhrVS1WM2RKNmdfLWZ3U1BBSUlsS1JDYmZ3ZTNPbEg3QW5qa0k",
     "CBMiO0FVX3lxTE04bEFhWXZyMjlGZlM2SHozbHB2ZVVGSk8tVEpkbEV6ZFlIdkhBSHpDakVja01IVGIySFRZ"
   ],
-  "lastRun": "2026-10-01T17:37:12.397655+00:00",
+  "lastRun": "2026-10-01T18:07:13.295725+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-synthetic-tokenized-stocks-are-bad-for-american-investors.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 246,
-    "uniqueItems": 175,
+    "rawItems": 247,
+    "uniqueItems": 173,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
@@ -29,8 +29,8 @@
     "watchlist": 50,
     "sourceTiers": {
       "trusted": 12,
-      "unknown": 168,
-      "low": 25,
+      "unknown": 167,
+      "low": 27,
       "specialist": 31,
       "primary": 8,
       "wire": 2
@@ -38,11 +38,11 @@
     "rejections": {
       "seen_guid": 2,
       "watchlist_unknown": 33,
-      "no_rwa_signal": 90,
+      "no_rwa_signal": 91,
       "watchlist_specialist": 10,
-      "duplicate_story": 8,
-      "score_below_4": 23,
-      "duplicate_in_scan": 71,
+      "duplicate_story": 7,
+      "score_below_4": 21,
+      "duplicate_in_scan": 74,
       "watchlist_low": 7,
       "existing_slug": 1,
       "hard_block": 1
