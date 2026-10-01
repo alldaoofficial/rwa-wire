@@ -15,36 +15,36 @@
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg",
     "CBMiO0FVX3lxTFBsOXlVOUJNb0JSMGRvcUV0Uk8xYVd6aXh3S2NGTTNlRkJMTGdUd2RfUTR0ZGpyeDc3WnQw"
   ],
-  "lastRun": "2026-10-01T09:07:13.174585+00:00",
+  "lastRun": "2026-10-01T09:37:11.866861+00:00",
   "lastCandidate": "publish/inbox/2026-09-30-tokenized-stocks-just-crossed-3b-and-the-real-fight-is-only-starting.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 277,
-    "uniqueItems": 178,
+    "rawItems": 274,
+    "uniqueItems": 180,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
     "watchlist": 47,
     "sourceTiers": {
-      "unknown": 190,
+      "unknown": 189,
       "specialist": 27,
       "primary": 18,
       "wire": 3,
-      "low": 29,
+      "low": 27,
       "trusted": 10
     },
     "rejections": {
       "watchlist_unknown": 34,
       "duplicate_story": 8,
-      "duplicate_in_scan": 99,
+      "duplicate_in_scan": 94,
       "watchlist_specialist": 7,
       "seen_guid": 4,
       "watchlist_wire": 1,
       "watchlist_low": 5,
-      "no_rwa_signal": 100,
+      "no_rwa_signal": 101,
       "existing_slug": 1,
-      "score_below_4": 18
+      "score_below_4": 19
     },
     "feedErrors": [],
     "topWatchlist": [
@@ -85,8 +85,8 @@
       },
       {
         "title": "SEC transfer-agent overhaul tests tokenized securities framework",
-        "source": "Traders Union",
-        "normalizedSource": "traders union",
+        "source": "tradersunion.com",
+        "normalizedSource": "tradersunion",
         "score": 9,
         "trust": "unknown"
       },
