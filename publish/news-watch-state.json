@@ -15,43 +15,43 @@
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg",
     "CBMiO0FVX3lxTFBsOXlVOUJNb0JSMGRvcUV0Uk8xYVd6aXh3S2NGTTNlRkJMTGdUd2RfUTR0ZGpyeDc3WnQw"
   ],
-  "lastRun": "2026-10-01T08:37:11.934826+00:00",
+  "lastRun": "2026-10-01T09:07:13.174585+00:00",
   "lastCandidate": "publish/inbox/2026-09-30-tokenized-stocks-just-crossed-3b-and-the-real-fight-is-only-starting.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
     "rawItems": 277,
-    "uniqueItems": 182,
+    "uniqueItems": 178,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
     "watchlist": 47,
     "sourceTiers": {
-      "unknown": 191,
-      "specialist": 26,
-      "primary": 19,
+      "unknown": 190,
+      "specialist": 27,
+      "primary": 18,
       "wire": 3,
-      "low": 28,
+      "low": 29,
       "trusted": 10
     },
     "rejections": {
       "watchlist_unknown": 34,
       "duplicate_story": 8,
-      "duplicate_in_scan": 95,
+      "duplicate_in_scan": 99,
       "watchlist_specialist": 7,
       "seen_guid": 4,
       "watchlist_wire": 1,
       "watchlist_low": 5,
-      "no_rwa_signal": 103,
+      "no_rwa_signal": 100,
       "existing_slug": 1,
-      "score_below_4": 19
+      "score_below_4": 18
     },
     "feedErrors": [],
     "topWatchlist": [
       {
         "title": "FSC Chairman Lee Eok-weon Discusses Tokenized Securities With Nasdaq, DTCC, HKEX",
-        "source": "en.bloomingbit.io",
-        "normalizedSource": "en bloomingbit",
+        "source": "bloomingbit",
+        "normalizedSource": "bloomingbit",
         "score": 12,
         "trust": "specialist"
       },
@@ -85,15 +85,15 @@
       },
       {
         "title": "SEC transfer-agent overhaul tests tokenized securities framework",
-        "source": "tradersunion.com",
-        "normalizedSource": "tradersunion",
+        "source": "Traders Union",
+        "normalizedSource": "traders union",
         "score": 9,
         "trust": "unknown"
       },
       {
         "title": "Meritz Securities to Launch Fractional Ship Investment in November, Expand Into Tokenized Securities Next Year",
-        "source": "en.bloomingbit.io",
-        "normalizedSource": "en bloomingbit",
+        "source": "bloomingbit",
+        "normalizedSource": "bloomingbit",
         "score": 9,
         "trust": "specialist"
       },
