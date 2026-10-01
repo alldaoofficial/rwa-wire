@@ -16,21 +16,21 @@
     "CBMikwFBVV95cUxNOFdDTmJxWDRPMDl0RGFfUVMtaG9iZzVheVlTamotaHYyUVlvdHRSQy1Kc3JsWmNPdEtXMVYxd213ODlwNnJHcmp2ZWpkbEY4eGktVHU5QjBGakdLaVVaeDZVRXdGV2l3WWI3ZG9oSWhrVS1WM2RKNmdfLWZ3U1BBSUlsS1JDYmZ3ZTNPbEg3QW5qa0k",
     "CBMiO0FVX3lxTE04bEFhWXZyMjlGZlM2SHozbHB2ZVVGSk8tVEpkbEV6ZFlIdkhBSHpDakVja01IVGIySFRZ"
   ],
-  "lastRun": "2026-10-01T18:37:15.785758+00:00",
+  "lastRun": "2026-10-01T19:07:14.249737+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-synthetic-tokenized-stocks-are-bad-for-american-investors.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 245,
-    "uniqueItems": 174,
+    "rawItems": 243,
+    "uniqueItems": 175,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
     "watchlist": 50,
     "sourceTiers": {
-      "trusted": 11,
-      "unknown": 169,
-      "low": 23,
+      "trusted": 12,
+      "unknown": 163,
+      "low": 26,
       "specialist": 31,
       "primary": 9,
       "wire": 2
@@ -38,11 +38,11 @@
     "rejections": {
       "seen_guid": 3,
       "watchlist_unknown": 33,
-      "no_rwa_signal": 90,
+      "no_rwa_signal": 92,
       "watchlist_specialist": 10,
-      "duplicate_story": 7,
+      "duplicate_story": 6,
       "score_below_4": 22,
-      "duplicate_in_scan": 71,
+      "duplicate_in_scan": 68,
       "watchlist_low": 7,
       "existing_slug": 1,
       "hard_block": 1
@@ -78,6 +78,13 @@
         "trust": "unknown"
       },
       {
+        "title": "Metaplex Launches MPL-3643 Standard for Permissioned Real-World Assets and Tokenized Securities on Solana",
+        "source": "Crypto Reporter",
+        "normalizedSource": "crypto reporter",
+        "score": 9,
+        "trust": "unknown"
+      },
+      {
         "title": "South Korea maps tokenized securities rules as crypto tax delay calls mount",
         "source": "Cryptopolitan",
         "normalizedSource": "cryptopolitan",
@@ -95,13 +102,6 @@
         "title": "Ondo Finance's tokenized stocks hit $1.26B TVL,...",
         "source": "Pluang",
         "normalizedSource": "pluang",
-        "score": 9,
-        "trust": "unknown"
-      },
-      {
-        "title": "Swift Builds Global Payment Rail Linking Fiat and Tokenized Deposits",
-        "source": "finance.biggo.com",
-        "normalizedSource": "finance biggo",
         "score": 9,
         "trust": "unknown"
       }
