@@ -13,34 +13,34 @@
     "CBMieEFVX3lxTE1TVm1ReGdydTFGWGdTLWpWSzQtVHN5OUJ4bHBHYW5rMTQya1NnSkhhOVRobmk2MlQ1UzFyUHhYRm93RUs1dEllalg1RDhRRGduS3Rqd2prVUEwUXl4eW1GeWhvRjJJQ1dWd19DamRPSXIzalprU2dIaQ",
     "CBMiekFVX3lxTE9oNGpzRHNSRGljbEJ5cGF1QTZiaGNuQWhZek1uc29TYnZTSlh1WkRLVDJFR056V25laDI2UVBrcXMycFhsdTFwc2hjbm10TEp6WXB6dFJCS3hfcDlsTGtuTUNYS0hOUVZzT0tGUWw0Z3NmX0lhVVk2NHVR"
   ],
-  "lastRun": "2026-10-01T03:07:13.329830+00:00",
+  "lastRun": "2026-10-01T03:37:16.859632+00:00",
   "lastCandidate": "publish/inbox/2026-09-30-after-joining-agor-wells-fargo-cfo-calls-for-atomic-settlement-of-tokenized-depo.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 277,
-    "uniqueItems": 171,
+    "rawItems": 278,
+    "uniqueItems": 173,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
     "watchlist": 46,
     "sourceTiers": {
-      "unknown": 191,
+      "unknown": 190,
       "specialist": 35,
       "wire": 3,
       "low": 26,
-      "primary": 15,
+      "primary": 17,
       "trusted": 7
     },
     "rejections": {
       "watchlist_unknown": 32,
       "duplicate_story": 7,
-      "duplicate_in_scan": 106,
+      "duplicate_in_scan": 105,
       "watchlist_specialist": 8,
       "watchlist_wire": 1,
       "watchlist_low": 5,
       "seen_guid": 4,
-      "no_rwa_signal": 97,
+      "no_rwa_signal": 99,
       "existing_slug": 1,
       "score_below_4": 16
     },
@@ -48,8 +48,8 @@
     "topWatchlist": [
       {
         "title": "FSC Chairman Lee Eok-weon Discusses Tokenized Securities With Nasdaq, DTCC, HKEX",
-        "source": "bloomingbit",
-        "normalizedSource": "bloomingbit",
+        "source": "en.bloomingbit.io",
+        "normalizedSource": "en bloomingbit",
         "score": 12,
         "trust": "specialist"
       },
@@ -69,14 +69,14 @@
       },
       {
         "title": "Tokenized securities and stablecoin projects ad...",
-        "source": "Pluang",
+        "source": "pluang.com",
         "normalizedSource": "pluang",
         "score": 10,
         "trust": "unknown"
       },
       {
         "title": "Ondo Finance's tokenized stocks hit $1.26B TVL,...",
-        "source": "Pluang",
+        "source": "pluang.com",
         "normalizedSource": "pluang",
         "score": 9,
         "trust": "unknown"
@@ -90,8 +90,8 @@
       },
       {
         "title": "Meritz Securities to Launch Fractional Ship Investment in November, Expand Into Tokenized Securities Next Year",
-        "source": "bloomingbit",
-        "normalizedSource": "bloomingbit",
+        "source": "en.bloomingbit.io",
+        "normalizedSource": "en bloomingbit",
         "score": 9,
         "trust": "specialist"
       },
