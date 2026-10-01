@@ -15,34 +15,34 @@
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg",
     "CBMiO0FVX3lxTFBsOXlVOUJNb0JSMGRvcUV0Uk8xYVd6aXh3S2NGTTNlRkJMTGdUd2RfUTR0ZGpyeDc3WnQw"
   ],
-  "lastRun": "2026-10-01T08:07:14.254853+00:00",
+  "lastRun": "2026-10-01T08:37:11.934826+00:00",
   "lastCandidate": "publish/inbox/2026-09-30-tokenized-stocks-just-crossed-3b-and-the-real-fight-is-only-starting.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 278,
-    "uniqueItems": 179,
+    "rawItems": 277,
+    "uniqueItems": 182,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
     "watchlist": 47,
     "sourceTiers": {
-      "unknown": 195,
+      "unknown": 191,
       "specialist": 26,
       "primary": 19,
       "wire": 3,
-      "low": 25,
+      "low": 28,
       "trusted": 10
     },
     "rejections": {
       "watchlist_unknown": 34,
-      "duplicate_story": 7,
-      "duplicate_in_scan": 99,
+      "duplicate_story": 8,
+      "duplicate_in_scan": 95,
       "watchlist_specialist": 7,
-      "seen_guid": 5,
+      "seen_guid": 4,
       "watchlist_wire": 1,
       "watchlist_low": 5,
-      "no_rwa_signal": 100,
+      "no_rwa_signal": 103,
       "existing_slug": 1,
       "score_below_4": 19
     },
@@ -50,22 +50,22 @@
     "topWatchlist": [
       {
         "title": "FSC Chairman Lee Eok-weon Discusses Tokenized Securities With Nasdaq, DTCC, HKEX",
-        "source": "bloomingbit",
-        "normalizedSource": "bloomingbit",
+        "source": "en.bloomingbit.io",
+        "normalizedSource": "en bloomingbit",
         "score": 12,
         "trust": "specialist"
       },
       {
         "title": "Tokenized Securities Venues Will Not Challenge Traditional Exchanges",
-        "source": "tradersmagazine.com",
-        "normalizedSource": "tradersmagazine",
+        "source": "Traders Magazine",
+        "normalizedSource": "traders magazine",
         "score": 10,
         "trust": "unknown"
       },
       {
         "title": "WisdomTree Introduces WisdomTree Onchain™ as Tokenized Fund Assets Surpass $1.2 Billion",
-        "source": "businesswire.com",
-        "normalizedSource": "businesswire",
+        "source": "Business Wire",
+        "normalizedSource": "business wire",
         "score": 10,
         "trust": "wire"
       },
@@ -78,7 +78,7 @@
       },
       {
         "title": "Ondo Finance's tokenized stocks hit $1.26B TVL,...",
-        "source": "pluang.com",
+        "source": "Pluang",
         "normalizedSource": "pluang",
         "score": 9,
         "trust": "unknown"
@@ -92,8 +92,8 @@
       },
       {
         "title": "Meritz Securities to Launch Fractional Ship Investment in November, Expand Into Tokenized Securities Next Year",
-        "source": "bloomingbit",
-        "normalizedSource": "bloomingbit",
+        "source": "en.bloomingbit.io",
+        "normalizedSource": "en bloomingbit",
         "score": 9,
         "trust": "specialist"
       },
