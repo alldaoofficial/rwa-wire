@@ -15,96 +15,25 @@
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg",
     "CBMiO0FVX3lxTFBsOXlVOUJNb0JSMGRvcUV0Uk8xYVd6aXh3S2NGTTNlRkJMTGdUd2RfUTR0ZGpyeDc3WnQw"
   ],
-  "lastRun": "2026-10-01T09:37:11.866861+00:00",
+  "lastRun": "2026-10-01T10:07:12.119038+00:00",
   "lastCandidate": "publish/inbox/2026-09-30-tokenized-stocks-just-crossed-3b-and-the-real-fight-is-only-starting.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 274,
-    "uniqueItems": 180,
-    "queriesOk": 9,
-    "queriesFailed": 0,
+    "rawItems": 0,
+    "uniqueItems": 0,
+    "queriesOk": 0,
+    "queriesFailed": 9,
     "breaking": 0,
     "important": 0,
-    "watchlist": 47,
-    "sourceTiers": {
-      "unknown": 189,
-      "specialist": 27,
-      "primary": 18,
-      "wire": 3,
-      "low": 27,
-      "trusted": 10
-    },
-    "rejections": {
-      "watchlist_unknown": 34,
-      "duplicate_story": 8,
-      "duplicate_in_scan": 94,
-      "watchlist_specialist": 7,
-      "seen_guid": 4,
-      "watchlist_wire": 1,
-      "watchlist_low": 5,
-      "no_rwa_signal": 101,
-      "existing_slug": 1,
-      "score_below_4": 19
-    },
-    "feedErrors": [],
-    "topWatchlist": [
-      {
-        "title": "FSC Chairman Lee Eok-weon Discusses Tokenized Securities With Nasdaq, DTCC, HKEX",
-        "source": "bloomingbit",
-        "normalizedSource": "bloomingbit",
-        "score": 12,
-        "trust": "specialist"
-      },
-      {
-        "title": "Tokenized Securities Venues Will Not Challenge Traditional Exchanges",
-        "source": "Traders Magazine",
-        "normalizedSource": "traders magazine",
-        "score": 10,
-        "trust": "unknown"
-      },
-      {
-        "title": "WisdomTree Introduces WisdomTree Onchain™ as Tokenized Fund Assets Surpass $1.2 Billion",
-        "source": "Business Wire",
-        "normalizedSource": "business wire",
-        "score": 10,
-        "trust": "wire"
-      },
-      {
-        "title": "SEC Grants Five-Year Relief for Tokenized Securities Venues",
-        "source": "tokenpost.com",
-        "normalizedSource": "tokenpost",
-        "score": 9,
-        "trust": "specialist"
-      },
-      {
-        "title": "Ondo Finance's tokenized stocks hit $1.26B TVL,...",
-        "source": "Pluang",
-        "normalizedSource": "pluang",
-        "score": 9,
-        "trust": "unknown"
-      },
-      {
-        "title": "SEC transfer-agent overhaul tests tokenized securities framework",
-        "source": "tradersunion.com",
-        "normalizedSource": "tradersunion",
-        "score": 9,
-        "trust": "unknown"
-      },
-      {
-        "title": "Meritz Securities to Launch Fractional Ship Investment in November, Expand Into Tokenized Securities Next Year",
-        "source": "bloomingbit",
-        "normalizedSource": "bloomingbit",
-        "score": 9,
-        "trust": "specialist"
-      },
-      {
-        "title": "Metaplex Introduces MPL-3643 for Tokenized Securities on Solana",
-        "source": "tokenpost.com",
-        "normalizedSource": "tokenpost",
-        "score": 9,
-        "trust": "specialist"
-      }
-    ]
+    "watchlist": 0,
+    "sourceTiers": {},
+    "rejections": {},
+    "feedErrors": [
+      "HTTP Error 503: Service Unavailable",
+      "HTTP Error 503: Service Unavailable",
+      "HTTP Error 503: Service Unavailable"
+    ],
+    "topWatchlist": []
   },
   "lastCandidatePriority": "important"
 }
