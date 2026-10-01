@@ -16,12 +16,12 @@
     "CBMikwFBVV95cUxNOFdDTmJxWDRPMDl0RGFfUVMtaG9iZzVheVlTamotaHYyUVlvdHRSQy1Kc3JsWmNPdEtXMVYxd213ODlwNnJHcmp2ZWpkbEY4eGktVHU5QjBGakdLaVVaeDZVRXdGV2l3WWI3ZG9oSWhrVS1WM2RKNmdfLWZ3U1BBSUlsS1JDYmZ3ZTNPbEg3QW5qa0k",
     "CBMiO0FVX3lxTE04bEFhWXZyMjlGZlM2SHozbHB2ZVVGSk8tVEpkbEV6ZFlIdkhBSHpDakVja01IVGIySFRZ"
   ],
-  "lastRun": "2026-10-01T20:27:35.721807+00:00",
+  "lastRun": "2026-10-01T20:37:13.371084+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-synthetic-tokenized-stocks-are-bad-for-american-investors.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 249,
-    "uniqueItems": 177,
+    "rawItems": 252,
+    "uniqueItems": 180,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
@@ -29,22 +29,22 @@
     "watchlist": 47,
     "sourceTiers": {
       "trusted": 12,
-      "low": 27,
-      "unknown": 169,
+      "low": 25,
+      "unknown": 173,
       "specialist": 28,
       "primary": 11,
-      "wire": 2
+      "wire": 3
     },
     "rejections": {
       "seen_guid": 3,
-      "no_rwa_signal": 96,
-      "watchlist_unknown": 34,
+      "no_rwa_signal": 100,
+      "watchlist_unknown": 35,
       "watchlist_specialist": 8,
       "duplicate_story": 6,
-      "score_below_4": 23,
+      "score_below_4": 22,
       "duplicate_in_scan": 72,
-      "watchlist_low": 5,
       "existing_slug": 1,
+      "watchlist_low": 4,
       "hard_block": 1
     },
     "feedErrors": [],
@@ -79,7 +79,7 @@
       },
       {
         "title": "Metaplex Launches MPL-3643 Standard for Permissioned Real-World Assets and Tokenized Securities on Solana",
-        "source": "Crypto Reporter",
+        "source": "crypto-reporter.com",
         "normalizedSource": "crypto reporter",
         "score": 9,
         "trust": "unknown"
