@@ -16,34 +16,34 @@
     "CBMikwFBVV95cUxNOFdDTmJxWDRPMDl0RGFfUVMtaG9iZzVheVlTamotaHYyUVlvdHRSQy1Kc3JsWmNPdEtXMVYxd213ODlwNnJHcmp2ZWpkbEY4eGktVHU5QjBGakdLaVVaeDZVRXdGV2l3WWI3ZG9oSWhrVS1WM2RKNmdfLWZ3U1BBSUlsS1JDYmZ3ZTNPbEg3QW5qa0k",
     "CBMiO0FVX3lxTE04bEFhWXZyMjlGZlM2SHozbHB2ZVVGSk8tVEpkbEV6ZFlIdkhBSHpDakVja01IVGIySFRZ"
   ],
-  "lastRun": "2026-10-01T19:37:11.733623+00:00",
+  "lastRun": "2026-10-01T20:07:12.917195+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-synthetic-tokenized-stocks-are-bad-for-american-investors.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
     "rawItems": 246,
-    "uniqueItems": 174,
+    "uniqueItems": 175,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 50,
+    "watchlist": 46,
     "sourceTiers": {
-      "trusted": 13,
-      "unknown": 164,
+      "trusted": 12,
       "low": 26,
-      "specialist": 32,
+      "unknown": 168,
+      "specialist": 28,
       "primary": 9,
-      "wire": 2
+      "wire": 3
     },
     "rejections": {
       "seen_guid": 3,
-      "watchlist_unknown": 34,
-      "no_rwa_signal": 92,
-      "watchlist_specialist": 10,
+      "no_rwa_signal": 95,
+      "watchlist_unknown": 33,
+      "watchlist_specialist": 8,
       "duplicate_story": 6,
-      "score_below_4": 21,
-      "duplicate_in_scan": 72,
-      "watchlist_low": 6,
+      "score_below_4": 23,
+      "duplicate_in_scan": 71,
+      "watchlist_low": 5,
       "existing_slug": 1,
       "hard_block": 1
     },
@@ -71,13 +71,6 @@
         "trust": "specialist"
       },
       {
-        "title": "WisdomTree, Inc. Introduces WisdomTree Onchain as Tokenized Fund Assets Surpass $1.2 Billion",
-        "source": "marketscreener.com",
-        "normalizedSource": "marketscreener",
-        "score": 10,
-        "trust": "unknown"
-      },
-      {
         "title": "South Korea maps tokenized securities rules as crypto tax delay calls mount",
         "source": "CryptoRank",
         "normalizedSource": "cryptorank",
@@ -102,6 +95,13 @@
         "title": "Ondo Finance's tokenized stocks hit $1.26B TVL,...",
         "source": "Pluang",
         "normalizedSource": "pluang",
+        "score": 9,
+        "trust": "unknown"
+      },
+      {
+        "title": "Swift Builds Global Payment Rail Linking Fiat and Tokenized Deposits",
+        "source": "finance.biggo.com",
+        "normalizedSource": "finance biggo",
         "score": 9,
         "trust": "unknown"
       }
