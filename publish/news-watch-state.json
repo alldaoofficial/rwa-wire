@@ -16,42 +16,42 @@
     "CBMikwFBVV95cUxNOFdDTmJxWDRPMDl0RGFfUVMtaG9iZzVheVlTamotaHYyUVlvdHRSQy1Kc3JsWmNPdEtXMVYxd213ODlwNnJHcmp2ZWpkbEY4eGktVHU5QjBGakdLaVVaeDZVRXdGV2l3WWI3ZG9oSWhrVS1WM2RKNmdfLWZ3U1BBSUlsS1JDYmZ3ZTNPbEg3QW5qa0k",
     "CBMiO0FVX3lxTE04bEFhWXZyMjlGZlM2SHozbHB2ZVVGSk8tVEpkbEV6ZFlIdkhBSHpDakVja01IVGIySFRZ"
   ],
-  "lastRun": "2026-10-01T15:22:22.534551+00:00",
+  "lastRun": "2026-10-01T15:37:21.611718+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-synthetic-tokenized-stocks-are-bad-for-american-investors.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 250,
-    "uniqueItems": 176,
+    "rawItems": 254,
+    "uniqueItems": 177,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 50,
+    "watchlist": 51,
     "sourceTiers": {
-      "trusted": 10,
-      "unknown": 177,
+      "unknown": 181,
+      "trusted": 11,
       "specialist": 31,
-      "low": 22,
+      "low": 20,
       "primary": 9,
-      "wire": 1
+      "wire": 2
     },
     "rejections": {
+      "watchlist_unknown": 35,
       "seen_guid": 2,
-      "watchlist_unknown": 34,
       "watchlist_specialist": 10,
+      "no_rwa_signal": 96,
       "duplicate_story": 8,
-      "duplicate_in_scan": 74,
       "watchlist_low": 6,
-      "score_below_4": 21,
-      "no_rwa_signal": 94,
+      "score_below_4": 19,
+      "duplicate_in_scan": 77,
       "existing_slug": 1
     },
     "feedErrors": [],
     "topWatchlist": [
       {
         "title": "FSC Chairman Lee Eok-weon Discusses Tokenized Securities With Nasdaq, DTCC, HKEX",
-        "source": "bloomingbit",
-        "normalizedSource": "bloomingbit",
+        "source": "en.bloomingbit.io",
+        "normalizedSource": "en bloomingbit",
         "score": 12,
         "trust": "specialist"
       },
