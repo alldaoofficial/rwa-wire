@@ -425,6 +425,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"tokenized-stocks-just-crossed-3b-and-the-real-fight-is-only-starting.mdx": {
+	id: "tokenized-stocks-just-crossed-3b-and-the-real-fight-is-only-starting.mdx";
+  slug: "tokenized-stocks-just-crossed-3b-and-the-real-fight-is-only-starting";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "tokenized-stocks-just-did-20-9-billion-in-dex-trading-in-30-days.mdx": {
 	id: "tokenized-stocks-just-did-20-9-billion-in-dex-trading-in-30-days.mdx";
   slug: "tokenized-stocks-just-did-20-9-billion-in-dex-trading-in-30-days";
