@@ -16,12 +16,12 @@
     "CBMikwFBVV95cUxNOFdDTmJxWDRPMDl0RGFfUVMtaG9iZzVheVlTamotaHYyUVlvdHRSQy1Kc3JsWmNPdEtXMVYxd213ODlwNnJHcmp2ZWpkbEY4eGktVHU5QjBGakdLaVVaeDZVRXdGV2l3WWI3ZG9oSWhrVS1WM2RKNmdfLWZ3U1BBSUlsS1JDYmZ3ZTNPbEg3QW5qa0k",
     "CBMiO0FVX3lxTE04bEFhWXZyMjlGZlM2SHozbHB2ZVVGSk8tVEpkbEV6ZFlIdkhBSHpDakVja01IVGIySFRZ"
   ],
-  "lastRun": "2026-10-01T22:37:13.060475+00:00",
+  "lastRun": "2026-10-01T23:07:12.556990+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-synthetic-tokenized-stocks-are-bad-for-american-investors.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 248,
-    "uniqueItems": 179,
+    "rawItems": 246,
+    "uniqueItems": 177,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
@@ -29,22 +29,22 @@
     "watchlist": 47,
     "sourceTiers": {
       "trusted": 11,
-      "unknown": 167,
-      "specialist": 31,
+      "unknown": 168,
+      "specialist": 30,
       "primary": 11,
-      "low": 27,
+      "low": 25,
       "wire": 1
     },
     "rejections": {
       "seen_guid": 3,
-      "watchlist_unknown": 34,
+      "watchlist_unknown": 36,
       "watchlist_specialist": 8,
       "duplicate_story": 5,
-      "no_rwa_signal": 101,
+      "no_rwa_signal": 99,
       "score_below_4": 21,
       "duplicate_in_scan": 69,
-      "watchlist_low": 5,
       "existing_slug": 1,
+      "watchlist_low": 3,
       "hard_block": 1
     },
     "feedErrors": [],
@@ -71,13 +71,6 @@
         "trust": "specialist"
       },
       {
-        "title": "HSBC Partners with Ripple-Owned Metaco for Tokenized Securities Custody Platform",
-        "source": "CoinMarketCap",
-        "normalizedSource": "coinmarketcap",
-        "score": 10,
-        "trust": "low"
-      },
-      {
         "title": "South Korea maps tokenized securities rules as crypto tax delay calls mount",
         "source": "CryptoRank",
         "normalizedSource": "cryptorank",
@@ -102,6 +95,13 @@
         "title": "Ondo Finance's tokenized stocks hit $1.26B TVL,...",
         "source": "Pluang",
         "normalizedSource": "pluang",
+        "score": 9,
+        "trust": "unknown"
+      },
+      {
+        "title": "Swift Builds Global Payment Rail Linking Fiat and Tokenized Deposits",
+        "source": "finance.biggo.com",
+        "normalizedSource": "finance biggo",
         "score": 9,
         "trust": "unknown"
       }
