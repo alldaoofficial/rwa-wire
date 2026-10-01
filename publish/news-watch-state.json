@@ -16,34 +16,34 @@
     "CBMikwFBVV95cUxNOFdDTmJxWDRPMDl0RGFfUVMtaG9iZzVheVlTamotaHYyUVlvdHRSQy1Kc3JsWmNPdEtXMVYxd213ODlwNnJHcmp2ZWpkbEY4eGktVHU5QjBGakdLaVVaeDZVRXdGV2l3WWI3ZG9oSWhrVS1WM2RKNmdfLWZ3U1BBSUlsS1JDYmZ3ZTNPbEg3QW5qa0k",
     "CBMiO0FVX3lxTE04bEFhWXZyMjlGZlM2SHozbHB2ZVVGSk8tVEpkbEV6ZFlIdkhBSHpDakVja01IVGIySFRZ"
   ],
-  "lastRun": "2026-10-01T13:08:05.068504+00:00",
+  "lastRun": "2026-10-01T13:37:18.130110+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-synthetic-tokenized-stocks-are-bad-for-american-investors.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 262,
-    "uniqueItems": 178,
+    "rawItems": 257,
+    "uniqueItems": 175,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 49,
+    "watchlist": 51,
     "sourceTiers": {
       "trusted": 10,
-      "unknown": 179,
-      "specialist": 32,
-      "primary": 16,
-      "low": 23,
-      "wire": 2
+      "unknown": 178,
+      "specialist": 33,
+      "primary": 13,
+      "low": 20,
+      "wire": 3
     },
     "rejections": {
       "seen_guid": 4,
-      "watchlist_unknown": 34,
+      "watchlist_unknown": 36,
       "watchlist_specialist": 10,
       "duplicate_story": 7,
-      "duplicate_in_scan": 84,
+      "duplicate_in_scan": 82,
       "watchlist_low": 5,
       "score_below_4": 19,
-      "no_rwa_signal": 98,
+      "no_rwa_signal": 93,
       "existing_slug": 1
     },
     "feedErrors": [],
@@ -57,8 +57,8 @@
       },
       {
         "title": "Tokenized Securities Venues Will Not Challenge Traditional Exchanges",
-        "source": "Traders Magazine",
-        "normalizedSource": "traders magazine",
+        "source": "tradersmagazine.com",
+        "normalizedSource": "tradersmagazine",
         "score": 10,
         "trust": "unknown"
       },
