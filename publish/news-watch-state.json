@@ -16,34 +16,34 @@
     "CBMikwFBVV95cUxNOFdDTmJxWDRPMDl0RGFfUVMtaG9iZzVheVlTamotaHYyUVlvdHRSQy1Kc3JsWmNPdEtXMVYxd213ODlwNnJHcmp2ZWpkbEY4eGktVHU5QjBGakdLaVVaeDZVRXdGV2l3WWI3ZG9oSWhrVS1WM2RKNmdfLWZ3U1BBSUlsS1JDYmZ3ZTNPbEg3QW5qa0k",
     "CBMiO0FVX3lxTE04bEFhWXZyMjlGZlM2SHozbHB2ZVVGSk8tVEpkbEV6ZFlIdkhBSHpDakVja01IVGIySFRZ"
   ],
-  "lastRun": "2026-10-01T19:07:14.249737+00:00",
+  "lastRun": "2026-10-01T19:37:11.733623+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-synthetic-tokenized-stocks-are-bad-for-american-investors.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 243,
-    "uniqueItems": 175,
+    "rawItems": 246,
+    "uniqueItems": 174,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
     "watchlist": 50,
     "sourceTiers": {
-      "trusted": 12,
-      "unknown": 163,
+      "trusted": 13,
+      "unknown": 164,
       "low": 26,
-      "specialist": 31,
+      "specialist": 32,
       "primary": 9,
       "wire": 2
     },
     "rejections": {
       "seen_guid": 3,
-      "watchlist_unknown": 33,
+      "watchlist_unknown": 34,
       "no_rwa_signal": 92,
       "watchlist_specialist": 10,
       "duplicate_story": 6,
-      "score_below_4": 22,
-      "duplicate_in_scan": 68,
-      "watchlist_low": 7,
+      "score_below_4": 21,
+      "duplicate_in_scan": 72,
+      "watchlist_low": 6,
       "existing_slug": 1,
       "hard_block": 1
     },
@@ -78,18 +78,18 @@
         "trust": "unknown"
       },
       {
+        "title": "South Korea maps tokenized securities rules as crypto tax delay calls mount",
+        "source": "CryptoRank",
+        "normalizedSource": "cryptorank",
+        "score": 9,
+        "trust": "unknown"
+      },
+      {
         "title": "Metaplex Launches MPL-3643 Standard for Permissioned Real-World Assets and Tokenized Securities on Solana",
         "source": "Crypto Reporter",
         "normalizedSource": "crypto reporter",
         "score": 9,
         "trust": "unknown"
-      },
-      {
-        "title": "South Korea maps tokenized securities rules as crypto tax delay calls mount",
-        "source": "Cryptopolitan",
-        "normalizedSource": "cryptopolitan",
-        "score": 9,
-        "trust": "low"
       },
       {
         "title": "SEC Grants Five-Year Relief for Tokenized Securities Venues",
