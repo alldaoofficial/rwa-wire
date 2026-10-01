@@ -14,36 +14,36 @@
     "CBMihwFBVV95cUxQTGZEcXlJQVhReFowSGlXLW5VQXBObEdpcmlIcTB6bjRjWDBYc3VSZkFkRkxkekM3LW96NEExNi1iQm9pOVNGME1PMHJSTzNwNmExalFLeGdEenQ1YkJ3UmtjendiSlZOOVlEYThqTlZ4Z29xRVc4SU1HVXlJTjI2MlBsdTM5MXc",
     "CBMiO0FVX3lxTFBsOXlVOUJNb0JSMGRvcUV0Uk8xYVd6aXh3S2NGTTNlRkJMTGdUd2RfUTR0ZGpyeDc3WnQw"
   ],
-  "lastRun": "2026-10-01T04:07:11.191665+00:00",
+  "lastRun": "2026-10-01T04:37:11.597452+00:00",
   "lastCandidate": "publish/inbox/2026-09-30-tokenized-stocks-cross-3b-the-on-chain-economy-is-no-longer-speculation.json",
-  "lastResult": "candidate",
+  "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 277,
-    "uniqueItems": 171,
+    "rawItems": 282,
+    "uniqueItems": 176,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
-    "important": 1,
-    "watchlist": 46,
+    "important": 0,
+    "watchlist": 47,
     "sourceTiers": {
-      "unknown": 189,
-      "primary": 19,
-      "specialist": 34,
+      "unknown": 194,
+      "specialist": 36,
       "wire": 3,
-      "low": 25,
-      "trusted": 7
+      "low": 23,
+      "primary": 18,
+      "trusted": 8
     },
     "rejections": {
-      "watchlist_unknown": 32,
+      "watchlist_unknown": 33,
       "duplicate_story": 7,
       "duplicate_in_scan": 106,
-      "watchlist_specialist": 8,
+      "watchlist_specialist": 9,
       "watchlist_wire": 1,
-      "watchlist_low": 5,
-      "seen_guid": 4,
-      "no_rwa_signal": 96,
+      "watchlist_low": 4,
+      "seen_guid": 5,
+      "no_rwa_signal": 99,
       "existing_slug": 1,
-      "score_below_4": 16
+      "score_below_4": 17
     },
     "feedErrors": [],
     "topWatchlist": [
@@ -76,6 +76,13 @@
         "trust": "unknown"
       },
       {
+        "title": "SEC Grants Five-Year Relief for Tokenized Securities Venues",
+        "source": "tokenpost.com",
+        "normalizedSource": "tokenpost",
+        "score": 9,
+        "trust": "specialist"
+      },
+      {
         "title": "Ondo Finance's tokenized stocks hit $1.26B TVL,...",
         "source": "Pluang",
         "normalizedSource": "pluang",
@@ -84,8 +91,8 @@
       },
       {
         "title": "SEC transfer-agent overhaul tests tokenized securities framework",
-        "source": "Traders Union",
-        "normalizedSource": "traders union",
+        "source": "tradersunion.com",
+        "normalizedSource": "tradersunion",
         "score": 9,
         "trust": "unknown"
       },
@@ -93,13 +100,6 @@
         "title": "Meritz Securities to Launch Fractional Ship Investment in November, Expand Into Tokenized Securities Next Year",
         "source": "bloomingbit",
         "normalizedSource": "bloomingbit",
-        "score": 9,
-        "trust": "specialist"
-      },
-      {
-        "title": "Metaplex Introduces MPL-3643 for Tokenized Securities on Solana",
-        "source": "tokenpost.com",
-        "normalizedSource": "tokenpost",
         "score": 9,
         "trust": "specialist"
       }
