@@ -15,36 +15,36 @@
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg",
     "CBMiO0FVX3lxTFBsOXlVOUJNb0JSMGRvcUV0Uk8xYVd6aXh3S2NGTTNlRkJMTGdUd2RfUTR0ZGpyeDc3WnQw"
   ],
-  "lastRun": "2026-10-01T06:37:11.953212+00:00",
+  "lastRun": "2026-10-01T07:07:13.447202+00:00",
   "lastCandidate": "publish/inbox/2026-09-30-tokenized-stocks-just-crossed-3b-and-the-real-fight-is-only-starting.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 281,
-    "uniqueItems": 180,
+    "rawItems": 280,
+    "uniqueItems": 179,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
     "watchlist": 47,
     "sourceTiers": {
-      "unknown": 196,
-      "specialist": 30,
+      "unknown": 197,
+      "specialist": 28,
       "primary": 19,
       "wire": 3,
-      "low": 26,
-      "trusted": 7
+      "low": 27,
+      "trusted": 6
     },
     "rejections": {
-      "watchlist_unknown": 35,
+      "watchlist_unknown": 34,
       "duplicate_story": 7,
       "duplicate_in_scan": 101,
       "watchlist_specialist": 7,
       "seen_guid": 5,
       "watchlist_wire": 1,
-      "watchlist_low": 4,
-      "no_rwa_signal": 103,
+      "watchlist_low": 5,
+      "no_rwa_signal": 101,
       "existing_slug": 1,
-      "score_below_4": 17
+      "score_below_4": 18
     },
     "feedErrors": [],
     "topWatchlist": [
@@ -64,8 +64,8 @@
       },
       {
         "title": "WisdomTree Introduces WisdomTree Onchain™ as Tokenized Fund Assets Surpass $1.2 Billion",
-        "source": "Business Wire",
-        "normalizedSource": "business wire",
+        "source": "businesswire.com",
+        "normalizedSource": "businesswire",
         "score": 10,
         "trust": "wire"
       },
@@ -85,8 +85,8 @@
       },
       {
         "title": "SEC transfer-agent overhaul tests tokenized securities framework",
-        "source": "Traders Union",
-        "normalizedSource": "traders union",
+        "source": "tradersunion.com",
+        "normalizedSource": "tradersunion",
         "score": 9,
         "trust": "unknown"
       },
