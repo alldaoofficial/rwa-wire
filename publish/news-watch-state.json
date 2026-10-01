@@ -16,21 +16,21 @@
     "CBMikwFBVV95cUxNOFdDTmJxWDRPMDl0RGFfUVMtaG9iZzVheVlTamotaHYyUVlvdHRSQy1Kc3JsWmNPdEtXMVYxd213ODlwNnJHcmp2ZWpkbEY4eGktVHU5QjBGakdLaVVaeDZVRXdGV2l3WWI3ZG9oSWhrVS1WM2RKNmdfLWZ3U1BBSUlsS1JDYmZ3ZTNPbEg3QW5qa0k",
     "CBMiO0FVX3lxTE04bEFhWXZyMjlGZlM2SHozbHB2ZVVGSk8tVEpkbEV6ZFlIdkhBSHpDakVja01IVGIySFRZ"
   ],
-  "lastRun": "2026-10-01T12:07:12.247897+00:00",
+  "lastRun": "2026-10-01T12:37:41.172297+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-synthetic-tokenized-stocks-are-bad-for-american-investors.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 262,
-    "uniqueItems": 176,
+    "rawItems": 264,
+    "uniqueItems": 179,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 49,
+    "watchlist": 50,
     "sourceTiers": {
-      "trusted": 10,
-      "unknown": 182,
-      "specialist": 30,
+      "trusted": 9,
+      "unknown": 184,
+      "specialist": 31,
       "primary": 15,
       "low": 24,
       "wire": 1
@@ -38,12 +38,12 @@
     "rejections": {
       "seen_guid": 4,
       "watchlist_unknown": 35,
-      "watchlist_specialist": 9,
+      "watchlist_specialist": 10,
       "duplicate_story": 7,
-      "duplicate_in_scan": 86,
+      "duplicate_in_scan": 85,
       "watchlist_low": 5,
       "score_below_4": 19,
-      "no_rwa_signal": 96,
+      "no_rwa_signal": 98,
       "existing_slug": 1
     },
     "feedErrors": [],
@@ -98,9 +98,9 @@
         "trust": "unknown"
       },
       {
-        "title": "SEC transfer-agent overhaul tests tokenized securities framework",
-        "source": "Traders Union",
-        "normalizedSource": "traders union",
+        "title": "Swift Builds Global Payment Rail Linking Fiat and Tokenized Deposits",
+        "source": "finance.biggo.com",
+        "normalizedSource": "finance biggo",
         "score": 9,
         "trust": "unknown"
       }
