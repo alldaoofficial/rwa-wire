@@ -15,34 +15,34 @@
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg",
     "CBMiO0FVX3lxTFBsOXlVOUJNb0JSMGRvcUV0Uk8xYVd6aXh3S2NGTTNlRkJMTGdUd2RfUTR0ZGpyeDc3WnQw"
   ],
-  "lastRun": "2026-10-01T07:41:50.882654+00:00",
+  "lastRun": "2026-10-01T08:07:14.254853+00:00",
   "lastCandidate": "publish/inbox/2026-09-30-tokenized-stocks-just-crossed-3b-and-the-real-fight-is-only-starting.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 281,
-    "uniqueItems": 180,
+    "rawItems": 278,
+    "uniqueItems": 179,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
     "watchlist": 47,
     "sourceTiers": {
-      "unknown": 196,
-      "specialist": 29,
+      "unknown": 195,
+      "specialist": 26,
       "primary": 19,
       "wire": 3,
-      "low": 26,
-      "trusted": 8
+      "low": 25,
+      "trusted": 10
     },
     "rejections": {
       "watchlist_unknown": 34,
       "duplicate_story": 7,
-      "duplicate_in_scan": 101,
+      "duplicate_in_scan": 99,
       "watchlist_specialist": 7,
       "seen_guid": 5,
       "watchlist_wire": 1,
       "watchlist_low": 5,
-      "no_rwa_signal": 101,
+      "no_rwa_signal": 100,
       "existing_slug": 1,
       "score_below_4": 19
     },
@@ -57,8 +57,8 @@
       },
       {
         "title": "Tokenized Securities Venues Will Not Challenge Traditional Exchanges",
-        "source": "Traders Magazine",
-        "normalizedSource": "traders magazine",
+        "source": "tradersmagazine.com",
+        "normalizedSource": "tradersmagazine",
         "score": 10,
         "trust": "unknown"
       },
@@ -78,7 +78,7 @@
       },
       {
         "title": "Ondo Finance's tokenized stocks hit $1.26B TVL,...",
-        "source": "Pluang",
+        "source": "pluang.com",
         "normalizedSource": "pluang",
         "score": 9,
         "trust": "unknown"
