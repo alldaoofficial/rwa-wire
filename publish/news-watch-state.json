@@ -13,22 +13,22 @@
     "CBMieEFVX3lxTE1TVm1ReGdydTFGWGdTLWpWSzQtVHN5OUJ4bHBHYW5rMTQya1NnSkhhOVRobmk2MlQ1UzFyUHhYRm93RUs1dEllalg1RDhRRGduS3Rqd2prVUEwUXl4eW1GeWhvRjJJQ1dWd19DamRPSXIzalprU2dIaQ",
     "CBMiekFVX3lxTE9oNGpzRHNSRGljbEJ5cGF1QTZiaGNuQWhZek1uc29TYnZTSlh1WkRLVDJFR056V25laDI2UVBrcXMycFhsdTFwc2hjbm10TEp6WXB6dFJCS3hfcDlsTGtuTUNYS0hOUVZzT0tGUWw0Z3NmX0lhVVk2NHVR"
   ],
-  "lastRun": "2026-09-30T23:37:11.918446+00:00",
+  "lastRun": "2026-10-01T00:07:11.675706+00:00",
   "lastCandidate": "publish/inbox/2026-09-30-after-joining-agor-wells-fargo-cfo-calls-for-atomic-settlement-of-tokenized-depo.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 283,
-    "uniqueItems": 169,
+    "rawItems": 285,
+    "uniqueItems": 171,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
     "watchlist": 46,
     "sourceTiers": {
-      "unknown": 193,
-      "specialist": 37,
+      "unknown": 195,
+      "specialist": 36,
       "wire": 3,
-      "low": 27,
+      "low": 28,
       "primary": 16,
       "trusted": 7
     },
@@ -39,10 +39,10 @@
       "watchlist_specialist": 8,
       "watchlist_wire": 1,
       "watchlist_low": 5,
-      "no_rwa_signal": 96,
+      "no_rwa_signal": 97,
       "seen_guid": 4,
       "existing_slug": 1,
-      "score_below_4": 13
+      "score_below_4": 14
     },
     "feedErrors": [],
     "topWatchlist": [
@@ -62,8 +62,8 @@
       },
       {
         "title": "WisdomTree Introduces WisdomTree Onchain™ as Tokenized Fund Assets Surpass $1.2 Billion",
-        "source": "Business Wire",
-        "normalizedSource": "business wire",
+        "source": "businesswire.com",
+        "normalizedSource": "businesswire",
         "score": 10,
         "trust": "wire"
       },
