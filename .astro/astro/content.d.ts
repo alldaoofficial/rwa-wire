@@ -411,6 +411,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"tokenized-stocks-cross-3b-the-on-chain-economy-is-no-longer-speculation.mdx": {
+	id: "tokenized-stocks-cross-3b-the-on-chain-economy-is-no-longer-speculation.mdx";
+  slug: "tokenized-stocks-cross-3b-the-on-chain-economy-is-no-longer-speculation";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "tokenized-stocks-explained.mdx": {
 	id: "tokenized-stocks-explained.mdx";
   slug: "tokenized-stocks-explained";
