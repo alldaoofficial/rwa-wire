@@ -369,6 +369,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"synthetic-tokenized-stocks-are-bad-for-american-investors.mdx": {
+	id: "synthetic-tokenized-stocks-are-bad-for-american-investors.mdx";
+  slug: "synthetic-tokenized-stocks-are-bad-for-american-investors";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "the-clearing-house-quant-on-chain-money.mdx": {
 	id: "the-clearing-house-quant-on-chain-money.mdx";
   slug: "the-clearing-house-quant-on-chain-money";
