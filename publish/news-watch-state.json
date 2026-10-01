@@ -16,33 +16,33 @@
     "CBMikwFBVV95cUxNOFdDTmJxWDRPMDl0RGFfUVMtaG9iZzVheVlTamotaHYyUVlvdHRSQy1Kc3JsWmNPdEtXMVYxd213ODlwNnJHcmp2ZWpkbEY4eGktVHU5QjBGakdLaVVaeDZVRXdGV2l3WWI3ZG9oSWhrVS1WM2RKNmdfLWZ3U1BBSUlsS1JDYmZ3ZTNPbEg3QW5qa0k",
     "CBMiO0FVX3lxTE04bEFhWXZyMjlGZlM2SHozbHB2ZVVGSk8tVEpkbEV6ZFlIdkhBSHpDakVja01IVGIySFRZ"
   ],
-  "lastRun": "2026-10-01T14:37:12.903462+00:00",
+  "lastRun": "2026-10-01T15:07:13.809625+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-synthetic-tokenized-stocks-are-bad-for-american-investors.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 257,
-    "uniqueItems": 179,
+    "rawItems": 250,
+    "uniqueItems": 177,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
     "watchlist": 51,
     "sourceTiers": {
-      "unknown": 181,
-      "trusted": 11,
+      "unknown": 174,
+      "trusted": 10,
       "specialist": 32,
-      "primary": 11,
-      "low": 20,
+      "low": 22,
+      "primary": 10,
       "wire": 2
     },
     "rejections": {
       "watchlist_unknown": 35,
-      "seen_guid": 3,
+      "seen_guid": 2,
       "watchlist_specialist": 10,
       "score_below_4": 20,
-      "duplicate_in_scan": 78,
+      "duplicate_in_scan": 73,
       "watchlist_low": 6,
-      "no_rwa_signal": 97,
+      "no_rwa_signal": 96,
       "existing_slug": 1,
       "duplicate_story": 7
     },
@@ -50,15 +50,15 @@
     "topWatchlist": [
       {
         "title": "FSC Chairman Lee Eok-weon Discusses Tokenized Securities With Nasdaq, DTCC, HKEX",
-        "source": "en.bloomingbit.io",
-        "normalizedSource": "en bloomingbit",
+        "source": "bloomingbit",
+        "normalizedSource": "bloomingbit",
         "score": 12,
         "trust": "specialist"
       },
       {
         "title": "Tokenized Securities Venues Will Not Challenge Traditional Exchanges",
-        "source": "tradersmagazine.com",
-        "normalizedSource": "tradersmagazine",
+        "source": "Traders Magazine",
+        "normalizedSource": "traders magazine",
         "score": 10,
         "trust": "unknown"
       },
