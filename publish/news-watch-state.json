@@ -17,33 +17,33 @@
     "CBMiZEFVX3lxTFBSYkxFVVNvNWNJeUJxSEF0X3cxaVctX1JteUhmX1lRVGk5ZkctSWVoOE11UGxHVlZ2U0l1WWlOXzI1aW8wbm5ySlE0ZnVadnBWejBBZnhZc2ZNMGJ5YU1hMEdyQ24",
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg"
   ],
-  "lastRun": "2026-10-02T07:37:12.321402+00:00",
+  "lastRun": "2026-10-02T08:07:12.341099+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-ac.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 229,
-    "uniqueItems": 169,
+    "rawItems": 225,
+    "uniqueItems": 165,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 40,
+    "watchlist": 39,
     "sourceTiers": {
-      "low": 24,
+      "unknown": 162,
       "trusted": 11,
-      "unknown": 161,
-      "specialist": 24,
+      "low": 22,
+      "specialist": 21,
       "primary": 8,
       "wire": 1
     },
     "rejections": {
-      "watchlist_low": 3,
+      "watchlist_unknown": 31,
       "seen_guid": 4,
-      "watchlist_unknown": 32,
+      "watchlist_low": 3,
       "duplicate_in_scan": 60,
-      "duplicate_story": 5,
+      "duplicate_story": 4,
       "watchlist_specialist": 5,
-      "no_rwa_signal": 100,
+      "no_rwa_signal": 98,
       "score_below_4": 18,
       "hard_block": 2
     },
@@ -79,10 +79,10 @@
       },
       {
         "title": "South Korea advances tokenized securities rules ahead of 2027 rollout",
-        "source": "TradingView",
-        "normalizedSource": "tradingview",
+        "source": "fxstreet.com",
+        "normalizedSource": "fxstreet",
         "score": 9,
-        "trust": "low"
+        "trust": "unknown"
       },
       {
         "title": "Metaplex Launches MPL-3643 Standard for Permissioned Real-World Assets and Tokenized Securities on Solana",
