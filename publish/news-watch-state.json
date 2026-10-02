@@ -17,35 +17,35 @@
     "CBMiZEFVX3lxTFBSYkxFVVNvNWNJeUJxSEF0X3cxaVctX1JteUhmX1lRVGk5ZkctSWVoOE11UGxHVlZ2U0l1WWlOXzI1aW8wbm5ySlE0ZnVadnBWejBBZnhZc2ZNMGJ5YU1hMEdyQ24",
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg"
   ],
-  "lastRun": "2026-10-02T10:37:14.434219+00:00",
+  "lastRun": "2026-10-02T11:07:12.512708+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-ac.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 224,
-    "uniqueItems": 165,
+    "rawItems": 218,
+    "uniqueItems": 163,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 44,
+    "watchlist": 42,
     "sourceTiers": {
-      "low": 26,
-      "unknown": 157,
-      "trusted": 11,
-      "specialist": 22,
-      "primary": 7,
-      "wire": 1
+      "unknown": 153,
+      "low": 28,
+      "trusted": 10,
+      "specialist": 21,
+      "wire": 1,
+      "primary": 5
     },
     "rejections": {
+      "watchlist_unknown": 34,
       "watchlist_low": 5,
-      "watchlist_unknown": 35,
       "seen_guid": 3,
-      "watchlist_specialist": 4,
+      "watchlist_specialist": 3,
       "duplicate_story": 4,
-      "duplicate_in_scan": 59,
+      "duplicate_in_scan": 55,
       "no_rwa_signal": 91,
-      "score_below_4": 21,
-      "hard_block": 2
+      "score_below_4": 22,
+      "hard_block": 1
     },
     "feedErrors": [],
     "topWatchlist": [
@@ -72,8 +72,8 @@
       },
       {
         "title": "South Korea advances tokenized securities rules ahead of 2027 rollout",
-        "source": "FXStreet",
-        "normalizedSource": "fxstreet",
+        "source": "cryptonews.net",
+        "normalizedSource": "cryptonews",
         "score": 9,
         "trust": "unknown"
       },
