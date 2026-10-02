@@ -17,34 +17,34 @@
     "CBMiZEFVX3lxTFBSYkxFVVNvNWNJeUJxSEF0X3cxaVctX1JteUhmX1lRVGk5ZkctSWVoOE11UGxHVlZ2U0l1WWlOXzI1aW8wbm5ySlE0ZnVadnBWejBBZnhZc2ZNMGJ5YU1hMEdyQ24",
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg"
   ],
-  "lastRun": "2026-10-02T19:37:11.780520+00:00",
+  "lastRun": "2026-10-02T20:07:13.936515+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-ac.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
     "rawItems": 220,
-    "uniqueItems": 157,
+    "uniqueItems": 156,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 49,
+    "watchlist": 50,
     "sourceTiers": {
-      "unknown": 164,
-      "low": 23,
-      "trusted": 6,
+      "unknown": 159,
+      "low": 27,
+      "trusted": 7,
       "primary": 4,
       "specialist": 23
     },
     "rejections": {
-      "score_below_4": 23,
-      "watchlist_unknown": 43,
+      "score_below_4": 22,
+      "watchlist_unknown": 44,
       "seen_guid": 2,
       "watchlist_low": 3,
-      "duplicate_in_scan": 63,
+      "duplicate_in_scan": 64,
       "watchlist_specialist": 3,
-      "no_rwa_signal": 78,
+      "no_rwa_signal": 76,
       "hard_block": 2,
-      "duplicate_story": 3
+      "duplicate_story": 4
     },
     "feedErrors": [],
     "topWatchlist": [
@@ -78,29 +78,29 @@
       },
       {
         "title": "South Korea Sets $2.8 Million Capital Requirement for Tokenized Securities Firms",
-        "source": "financefeeds.com",
+        "source": "FinanceFeeds",
         "normalizedSource": "financefeeds",
         "score": 9,
         "trust": "specialist"
       },
       {
         "title": "Banks Risk Losing $230,000,000,000 in Payments Revenue As Stablecoins and Tokenized Deposits Scale, According to Survey",
-        "source": "dailyhodl.com",
-        "normalizedSource": "dailyhodl",
+        "source": "The Daily Hodl",
+        "normalizedSource": "the daily hodl",
         "score": 9,
         "trust": "unknown"
       },
       {
-        "title": "South Korea advances tokenized securities rules ahead of 2027 rollout",
-        "source": "Cryptonews.net",
-        "normalizedSource": "cryptonews",
+        "title": "South Korea maps tokenized securities rules as crypto tax delay calls mount",
+        "source": "CryptoRank",
+        "normalizedSource": "cryptorank",
         "score": 9,
         "trust": "unknown"
       },
       {
-        "title": "Metaplex Launches MPL-3643 Standard for Permissioned Real-World Assets and Tokenized Securities on Solana",
-        "source": "Crypto Reporter",
-        "normalizedSource": "crypto reporter",
+        "title": "Ondo Finance Tokenized Stocks Reach Record $1.26B in Total Value Locked",
+        "source": "hokanews.com",
+        "normalizedSource": "hokanews",
         "score": 9,
         "trust": "unknown"
       }
