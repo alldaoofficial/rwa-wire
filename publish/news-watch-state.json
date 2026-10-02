@@ -17,11 +17,11 @@
     "CBMiZEFVX3lxTFBSYkxFVVNvNWNJeUJxSEF0X3cxaVctX1JteUhmX1lRVGk5ZkctSWVoOE11UGxHVlZ2U0l1WWlOXzI1aW8wbm5ySlE0ZnVadnBWejBBZnhZc2ZNMGJ5YU1hMEdyQ24",
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg"
   ],
-  "lastRun": "2026-10-02T12:07:11.671186+00:00",
+  "lastRun": "2026-10-02T12:37:11.952093+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-ac.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 218,
+    "rawItems": 220,
     "uniqueItems": 161,
     "queriesOk": 9,
     "queriesFailed": 0,
@@ -29,19 +29,19 @@
     "important": 0,
     "watchlist": 41,
     "sourceTiers": {
-      "unknown": 152,
       "low": 28,
-      "trusted": 9,
-      "specialist": 22,
+      "unknown": 153,
       "primary": 6,
+      "trusted": 10,
+      "specialist": 22,
       "wire": 1
     },
     "rejections": {
-      "watchlist_unknown": 33,
       "watchlist_low": 5,
+      "watchlist_unknown": 33,
+      "duplicate_in_scan": 59,
       "seen_guid": 3,
       "watchlist_specialist": 3,
-      "duplicate_in_scan": 57,
       "score_below_4": 23,
       "no_rwa_signal": 89,
       "hard_block": 2,
@@ -86,7 +86,7 @@
       },
       {
         "title": "Ondo Finance's tokenized stocks hit $1.26B TVL,...",
-        "source": "Pluang",
+        "source": "pluang.com",
         "normalizedSource": "pluang",
         "score": 9,
         "trust": "unknown"
