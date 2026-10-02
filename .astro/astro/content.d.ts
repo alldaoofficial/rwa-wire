@@ -264,6 +264,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-actions-for-tokenized-equities.mdx": {
+	id: "leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-actions-for-tokenized-equities.mdx";
+  slug: "leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-actions-for-tokenized-equities";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "maple-finance-explained.mdx": {
 	id: "maple-finance-explained.mdx";
   slug: "maple-finance-explained";
