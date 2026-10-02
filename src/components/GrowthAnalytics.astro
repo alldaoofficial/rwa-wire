@@ -32,7 +32,7 @@ const endpoint = "https://dqeakkrsbgxnexucuyld.supabase.co/functions/v1/growth-e
     const a = e.target.closest("a");
     if (!a) return;
     const href = a.getAttribute("href") || "";
-    const placement = a.dataset?.analyticsPlacement || "";
+    const placement = a.dataset?.affiliatePlacement || a.dataset?.analyticsPlacement || "";
     if (href.includes("bitunix.com/")) return send("affiliate_click","bitunix",{ placement, href });
     if (href.includes("t.me/RWAWireHQ")) return send("telegram_click","telegram",{ placement });
     if (href.includes("x.com/RWAWireHQ")) return send("x_click","x",{ placement });
