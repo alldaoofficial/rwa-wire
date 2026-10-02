@@ -17,11 +17,11 @@
     "CBMiZEFVX3lxTFBSYkxFVVNvNWNJeUJxSEF0X3cxaVctX1JteUhmX1lRVGk5ZkctSWVoOE11UGxHVlZ2U0l1WWlOXzI1aW8wbm5ySlE0ZnVadnBWejBBZnhZc2ZNMGJ5YU1hMEdyQ24",
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg"
   ],
-  "lastRun": "2026-10-02T04:37:11.060182+00:00",
+  "lastRun": "2026-10-02T05:07:24.967009+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-ac.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 236,
+    "rawItems": 235,
     "uniqueItems": 170,
     "queriesOk": 9,
     "queriesFailed": 0,
@@ -29,23 +29,22 @@
     "important": 0,
     "watchlist": 43,
     "sourceTiers": {
-      "trusted": 10,
-      "unknown": 171,
-      "specialist": 29,
+      "trusted": 9,
+      "unknown": 173,
+      "specialist": 26,
       "primary": 8,
-      "low": 17,
+      "low": 18,
       "wire": 1
     },
     "rejections": {
       "seen_guid": 3,
-      "watchlist_unknown": 35,
-      "watchlist_specialist": 7,
+      "watchlist_unknown": 37,
       "duplicate_story": 5,
-      "no_rwa_signal": 99,
+      "watchlist_specialist": 6,
+      "no_rwa_signal": 100,
       "score_below_4": 17,
-      "duplicate_in_scan": 66,
-      "watchlist_low": 1,
-      "hard_block": 3
+      "duplicate_in_scan": 65,
+      "hard_block": 2
     },
     "feedErrors": [],
     "topWatchlist": [
@@ -62,13 +61,6 @@
         "normalizedSource": "tokenpost",
         "score": 10,
         "trust": "specialist"
-      },
-      {
-        "title": "HSBC Partners with Ripple-Owned Metaco for Tokenized Securities Custody Platform",
-        "source": "CoinMarketCap",
-        "normalizedSource": "coinmarketcap",
-        "score": 10,
-        "trust": "low"
       },
       {
         "title": "South Korea maps tokenized securities rules as crypto tax delay calls mount",
@@ -93,7 +85,7 @@
       },
       {
         "title": "Ondo Finance's tokenized stocks hit $1.26B TVL,...",
-        "source": "pluang.com",
+        "source": "Pluang",
         "normalizedSource": "pluang",
         "score": 9,
         "trust": "unknown"
@@ -102,6 +94,13 @@
         "title": "Swift Builds Global Payment Rail Linking Fiat and Tokenized Deposits",
         "source": "finance.biggo.com",
         "normalizedSource": "finance biggo",
+        "score": 9,
+        "trust": "unknown"
+      },
+      {
+        "title": "SEC transfer-agent overhaul tests tokenized securities framework",
+        "source": "Traders Union",
+        "normalizedSource": "traders union",
         "score": 9,
         "trust": "unknown"
       }
