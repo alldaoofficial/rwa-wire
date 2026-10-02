@@ -17,94 +17,25 @@
     "CBMiZEFVX3lxTFBSYkxFVVNvNWNJeUJxSEF0X3cxaVctX1JteUhmX1lRVGk5ZkctSWVoOE11UGxHVlZ2U0l1WWlOXzI1aW8wbm5ySlE0ZnVadnBWejBBZnhZc2ZNMGJ5YU1hMEdyQ24",
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg"
   ],
-  "lastRun": "2026-10-02T21:07:11.978665+00:00",
+  "lastRun": "2026-10-02T21:15:46.660609+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-ac.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 221,
-    "uniqueItems": 158,
-    "queriesOk": 9,
-    "queriesFailed": 0,
+    "rawItems": 0,
+    "uniqueItems": 0,
+    "queriesOk": 0,
+    "queriesFailed": 9,
     "breaking": 0,
     "important": 0,
-    "watchlist": 52,
-    "sourceTiers": {
-      "unknown": 159,
-      "low": 28,
-      "trusted": 7,
-      "primary": 4,
-      "specialist": 23
-    },
-    "rejections": {
-      "score_below_4": 23,
-      "watchlist_unknown": 45,
-      "seen_guid": 2,
-      "watchlist_low": 4,
-      "duplicate_in_scan": 63,
-      "watchlist_specialist": 3,
-      "no_rwa_signal": 75,
-      "hard_block": 2,
-      "duplicate_story": 4
-    },
-    "feedErrors": [],
-    "topWatchlist": [
-      {
-        "title": "LINK News: Chainlink Expands Swift Partnership Into Tokenized Securities",
-        "source": "Coinpaper",
-        "normalizedSource": "coinpaper",
-        "score": 13,
-        "trust": "unknown"
-      },
-      {
-        "title": "Centrifuge brings tokenized Treasury and credit funds to Arc",
-        "source": "Crypto Briefing",
-        "normalizedSource": "crypto briefing",
-        "score": 12,
-        "trust": "unknown"
-      },
-      {
-        "title": "Centrifuge launches tokenized Treasury and cred...",
-        "source": "Pluang",
-        "normalizedSource": "pluang",
-        "score": 11,
-        "trust": "unknown"
-      },
-      {
-        "title": "Ondo Finance Seeks SEC Approval for Tokenized Securities on Ethereum",
-        "source": "CoinMarketCap",
-        "normalizedSource": "coinmarketcap",
-        "score": 11,
-        "trust": "low"
-      },
-      {
-        "title": "Tokenized Securities Venues Will Not Challenge Traditional Exchanges",
-        "source": "Traders Magazine",
-        "normalizedSource": "traders magazine",
-        "score": 10,
-        "trust": "unknown"
-      },
-      {
-        "title": "South Korea Sets $2.8 Million Capital Requirement for Tokenized Securities Firms",
-        "source": "FinanceFeeds",
-        "normalizedSource": "financefeeds",
-        "score": 9,
-        "trust": "specialist"
-      },
-      {
-        "title": "Banks Risk Losing $230,000,000,000 in Payments Revenue As Stablecoins and Tokenized Deposits Scale, According to Survey",
-        "source": "The Daily Hodl",
-        "normalizedSource": "the daily hodl",
-        "score": 9,
-        "trust": "unknown"
-      },
-      {
-        "title": "South Korea maps tokenized securities rules as crypto tax delay calls mount",
-        "source": "CryptoRank",
-        "normalizedSource": "cryptorank",
-        "score": 9,
-        "trust": "unknown"
-      }
-    ]
+    "watchlist": 0,
+    "sourceTiers": {},
+    "rejections": {},
+    "feedErrors": [
+      "HTTP Error 503: Service Unavailable",
+      "HTTP Error 503: Service Unavailable",
+      "HTTP Error 503: Service Unavailable"
+    ],
+    "topWatchlist": []
   },
   "lastCandidatePriority": "important"
 }
