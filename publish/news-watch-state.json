@@ -17,96 +17,25 @@
     "CBMiZEFVX3lxTFBSYkxFVVNvNWNJeUJxSEF0X3cxaVctX1JteUhmX1lRVGk5ZkctSWVoOE11UGxHVlZ2U0l1WWlOXzI1aW8wbm5ySlE0ZnVadnBWejBBZnhZc2ZNMGJ5YU1hMEdyQ24",
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg"
   ],
-  "lastRun": "2026-10-02T03:37:11.339791+00:00",
+  "lastRun": "2026-10-02T04:07:13.316664+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-ac.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 237,
-    "uniqueItems": 169,
-    "queriesOk": 9,
-    "queriesFailed": 0,
+    "rawItems": 0,
+    "uniqueItems": 0,
+    "queriesOk": 0,
+    "queriesFailed": 9,
     "breaking": 0,
     "important": 0,
-    "watchlist": 43,
-    "sourceTiers": {
-      "trusted": 10,
-      "unknown": 170,
-      "specialist": 27,
-      "primary": 9,
-      "low": 20,
-      "wire": 1
-    },
-    "rejections": {
-      "seen_guid": 3,
-      "watchlist_unknown": 35,
-      "watchlist_specialist": 7,
-      "duplicate_story": 5,
-      "no_rwa_signal": 98,
-      "duplicate_in_scan": 68,
-      "score_below_4": 17,
-      "watchlist_low": 1,
-      "existing_slug": 1,
-      "hard_block": 2
-    },
-    "feedErrors": [],
-    "topWatchlist": [
-      {
-        "title": "Tokenized Securities Venues Will Not Challenge Traditional Exchanges",
-        "source": "Traders Magazine",
-        "normalizedSource": "traders magazine",
-        "score": 10,
-        "trust": "unknown"
-      },
-      {
-        "title": "WisdomTree’s Tokenized Funds Surpass $1.2 Billion Across Eight Networks",
-        "source": "tokenpost.com",
-        "normalizedSource": "tokenpost",
-        "score": 10,
-        "trust": "specialist"
-      },
-      {
-        "title": "HSBC Partners with Ripple-Owned Metaco for Tokenized Securities Custody Platform",
-        "source": "CoinMarketCap",
-        "normalizedSource": "coinmarketcap",
-        "score": 10,
-        "trust": "low"
-      },
-      {
-        "title": "South Korea maps tokenized securities rules as crypto tax delay calls mount",
-        "source": "CryptoRank",
-        "normalizedSource": "cryptorank",
-        "score": 9,
-        "trust": "unknown"
-      },
-      {
-        "title": "Metaplex Launches MPL-3643 Standard for Permissioned Real-World Assets and Tokenized Securities on Solana",
-        "source": "Crypto Reporter",
-        "normalizedSource": "crypto reporter",
-        "score": 9,
-        "trust": "unknown"
-      },
-      {
-        "title": "SEC Grants Five-Year Relief for Tokenized Securities Venues",
-        "source": "tokenpost.com",
-        "normalizedSource": "tokenpost",
-        "score": 9,
-        "trust": "specialist"
-      },
-      {
-        "title": "Ondo Finance's tokenized stocks hit $1.26B TVL,...",
-        "source": "Pluang",
-        "normalizedSource": "pluang",
-        "score": 9,
-        "trust": "unknown"
-      },
-      {
-        "title": "Swift Builds Global Payment Rail Linking Fiat and Tokenized Deposits",
-        "source": "finance.biggo.com",
-        "normalizedSource": "finance biggo",
-        "score": 9,
-        "trust": "unknown"
-      }
-    ]
+    "watchlist": 0,
+    "sourceTiers": {},
+    "rejections": {},
+    "feedErrors": [
+      "HTTP Error 503: Service Unavailable",
+      "HTTP Error 503: Service Unavailable",
+      "HTTP Error 503: Service Unavailable"
+    ],
+    "topWatchlist": []
   },
   "lastCandidatePriority": "important"
 }
