@@ -1,0 +1,165 @@
+---
+type: "EXPLAINER"
+category: "learn"
+title: "Crypto Futures Explained: Perpetuals, Margin, Funding and Liquidation"
+description: "A practical guide to crypto futures and perpetual contracts: how margin, leverage, funding rates, liquidation and trading fees work, and what traders should check before using derivatives."
+pubDate: "2026-10-02"
+readingTime: "9 min read"
+tags: ["Crypto Futures", "Trading", "Derivatives", "Risk"]
+relatedSlugs: ["crypto-leverage-explained", "copy-trading-explained"]
+showTradingCTA: true
+keyTakeaways:
+  - "Crypto futures let traders take long or short exposure without owning the underlying asset, but leverage can amplify losses as well as gains."
+  - "Perpetual futures use funding payments rather than an expiry date to help keep contract prices close to spot markets."
+  - "Margin, liquidation price, fees, funding and position sizing matter more than the headline leverage setting alone."
+  - "Derivatives are high-risk instruments; understanding the mechanics should come before choosing a platform or strategy."
+---
+
+Crypto futures are derivatives that allow traders to take exposure to the price of an asset without necessarily owning that asset in the spot market.
+
+They are widely used for speculation, hedging and market-neutral strategies. They are also one of the easiest places for inexperienced traders to underestimate risk.
+
+This guide explains the mechanics before the platform choice.
+
+## Futures vs spot trading
+
+In spot trading, you buy or sell the underlying crypto asset. If you buy BTC in a spot market, for example, you acquire BTC that can generally be held or withdrawn according to the platform's rules.
+
+A futures position is different. It is a contract whose value changes with the underlying market. A long position benefits when the contract price rises; a short position benefits when it falls. The trader posts margin rather than paying the full notional value of the position.
+
+That difference creates leverage.
+
+## What is a perpetual futures contract?
+
+Traditional futures expire on a specified date. Crypto markets popularized **perpetual futures**, which are designed to continue without a fixed expiry.
+
+Because there is no expiry that naturally pulls the futures price toward the spot price, perpetual markets use a funding mechanism.
+
+When funding is positive, longs generally pay shorts. When it is negative, shorts generally pay longs. The exact schedule and calculation vary by venue and contract.
+
+Funding is not the same as a trading fee. It is a transfer mechanism between market participants designed to help keep the perpetual contract anchored to its underlying market.
+
+## Margin and leverage
+
+Margin is the capital supporting a leveraged position.
+
+If a trader controls a $10,000 position with $1,000 of margin, the economic exposure is much larger than the capital posted. A relatively small adverse price move can therefore create a large percentage loss on the margin.
+
+Read our companion guide [Crypto Leverage Explained](/learn/crypto-leverage-explained/) for the mechanics in more detail.
+
+## Isolated vs cross margin
+
+Many futures venues offer two broad margin modes.
+
+**Isolated margin** allocates a defined amount of margin to a position. Losses on that position are generally contained to the margin assigned to it, subject to the venue's rules.
+
+**Cross margin** allows available account equity to support positions more broadly. This can reduce the chance that one position is liquidated immediately, but it can also expose more of the futures account to losses.
+
+Neither mode removes liquidation risk.
+
+## What is liquidation?
+
+A leveraged position requires sufficient collateral. If losses reduce the account's margin below the maintenance requirement, the platform can forcibly close the position.
+
+That is liquidation.
+
+The liquidation price depends on variables such as entry price, leverage, margin mode, position size, maintenance margin and additional collateral. It should not be treated as a stop-loss strategy.
+
+A trader can lose substantial capital before or during liquidation, especially in fast or illiquid markets.
+
+## Why position size matters more than the leverage button
+
+A common mistake is to think that selecting 10x leverage automatically means taking ten times more risk.
+
+The real risk depends on **position notional relative to account equity**.
+
+A trader can select high leverage while opening a small position, or select lower leverage while committing a very large share of the account. The second trade can still be dangerous.
+
+Useful questions are therefore:
+
+- How much of the account can this trade lose?
+- Where is the invalidation or stop level?
+- What is the notional position size?
+- How far is liquidation from the entry?
+- What happens if the market gaps or slippage increases?
+
+## Trading fees
+
+Futures venues commonly use maker/taker pricing.
+
+A maker order adds liquidity to the order book when it rests before execution. A taker order removes available liquidity by executing against an existing order. Maker fees are often lower.
+
+Fees are normally calculated on the **position notional**, not simply the margin deposited. That means leverage can indirectly increase fee costs when it is used to create a larger position.
+
+Frequent entries and exits can therefore turn apparently small fee percentages into meaningful trading costs.
+
+## Funding costs
+
+Funding can also affect returns when a perpetual position is held across funding timestamps.
+
+A strategy can be directionally correct and still have its return reduced by repeated funding payments. Conversely, a trader may receive funding, but that should not be confused with guaranteed yield because the underlying position still carries market risk.
+
+Funding rates can change as positioning and market conditions change.
+
+## Long and short positions
+
+A futures market allows both directions without requiring the trader to borrow the underlying asset manually.
+
+A **long** position profits when the contract rises relative to the entry price.
+
+A **short** position profits when it falls.
+
+Shorting is useful for hedging and bearish strategies, but losses on a short can grow rapidly when price moves higher, particularly with leverage.
+
+## Risk controls worth understanding
+
+Before trading futures, traders should understand at least:
+
+- position sizing;
+- stop-loss orders and their execution limitations;
+- isolated vs cross margin;
+- maintenance margin;
+- liquidation price;
+- maker/taker fees;
+- funding rates;
+- slippage and liquidity; and
+- counterparty/platform risk.
+
+A stop order is not a guarantee of execution at an exact price during extreme volatility.
+
+## How futures connect to the wider crypto market
+
+Derivatives are not isolated from spot markets. Futures positioning, open interest, funding and liquidations can influence short-term market structure.
+
+Large liquidation cascades can accelerate moves as leveraged positions are forcibly closed. Persistent positive funding can indicate crowded long positioning; negative funding can indicate stronger demand for shorts.
+
+These indicators are context, not standalone trading signals.
+
+For RWA Wire, derivatives matter because the broader crypto liquidity regime affects demand for tokenized assets, stablecoins and onchain collateral. That is why our market coverage tracks major derivatives events without turning the site into a signal service.
+
+## Choosing a futures venue
+
+Rather than choosing purely on advertised leverage, compare:
+
+- liquidity and spreads;
+- supported contracts;
+- fee schedule;
+- funding methodology;
+- margin and liquidation rules;
+- security and custody practices;
+- withdrawal controls;
+- jurisdiction and eligibility;
+- risk controls; and
+- reliability during volatile periods.
+
+RWA Wire maintains a separate [Bitunix trading guide](/bitunix/) for readers evaluating that platform. RWA Wire has an affiliate relationship with Bitunix; that commercial relationship does not change the risk of derivatives or make futures appropriate for every reader.
+
+## The bottom line
+
+Crypto futures are powerful because they make hedging, short exposure and capital-efficient positioning possible.
+
+The same mechanics also make losses accelerate quickly.
+
+The most important concepts are not the maximum leverage advertised by an exchange. They are **notional exposure, margin, liquidation, fees, funding and disciplined position sizing**.
+
+Understand those first. Platform selection comes second.
