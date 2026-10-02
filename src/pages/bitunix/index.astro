@@ -1,0 +1,100 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { AFFILIATE_URL } from "@/config/site";
+
+const feeRows = [
+  ["Spot", "0.0800%", "0.1000%"],
+  ["Futures", "0.0200%", "0.0600%"],
+];
+---
+<BaseLayout
+  title="Bitunix Guide: Fees, Futures, Copy Trading & Risks | RWA Wire"
+  description="An independent RWA Wire guide to Bitunix: spot and futures fees, copy trading mechanics, key risks, and what to check before opening an account."
+>
+  <div class="wire-container py-12 sm:py-16">
+    <div class="mx-auto max-w-[980px]">
+      <p class="eyebrow text-wire">TRADING PLATFORM GUIDE // PARTNER</p>
+      <h1 class="mt-4 max-w-4xl font-serif text-4xl font-medium leading-[1.03] tracking-[-.02em] text-ink sm:text-6xl">Bitunix: what traders should know before opening an account</h1>
+      <p class="mt-6 max-w-3xl text-lg leading-relaxed text-ink-muted">A practical overview of the platform, its standard trading fees, futures and copy-trading mechanics, and the risks that matter. RWA Wire has an affiliate partnership with Bitunix, but this guide is designed to help you evaluate the platform rather than promise trading results.</p>
+
+      <div class="mt-8 border border-wire/40 bg-wire/[.04] p-5">
+        <p class="data-label text-wire">Affiliate disclosure</p>
+        <p class="mt-2 text-sm leading-relaxed text-ink-muted">If you create an account through links on this page, RWA Wire may receive a commission from eligible trading activity at no additional cost to you. This commercial relationship does not change the risks of trading and does not make Bitunix suitable for every reader. Availability and product access can vary by jurisdiction.</p>
+      </div>
+
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href={AFFILIATE_URL} target="_blank" rel="noopener noreferrer sponsored" data-affiliate-placement="bitunix-guide-hero" class="inline-flex rounded bg-wire px-6 py-3 text-sm font-semibold text-bg hover:bg-wire/90">Open Bitunix →</a>
+        <a href="/affiliate-disclosure/" class="inline-flex border border-line px-6 py-3 text-sm font-semibold text-ink hover:border-wire">Read affiliate disclosure</a>
+      </div>
+
+      <div class="mt-14 grid gap-px border border-line bg-line md:grid-cols-3">
+        <div class="bg-bg p-6"><p class="data-label">Markets</p><p class="mt-2 text-sm text-ink">Spot + perpetual futures</p></div>
+        <div class="bg-bg p-6"><p class="data-label">Copy trading</p><p class="mt-2 text-sm text-ink">Futures strategies with follower controls</p></div>
+        <div class="bg-bg p-6"><p class="data-label">Best first check</p><p class="mt-2 text-sm text-ink">Fees, jurisdiction, liquidity and risk limits</p></div>
+      </div>
+
+      <div class="mt-14 grid gap-12 lg:grid-cols-[1fr_280px]">
+        <div class="space-y-12">
+          <section>
+            <p class="eyebrow text-ink-muted">01 // OVERVIEW</p>
+            <h2 class="mt-3 font-serif text-3xl text-ink">What is Bitunix?</h2>
+            <p class="mt-4 leading-7 text-ink-muted">Bitunix is a crypto trading platform offering spot and derivatives markets. For RWA Wire readers, the relevant question is not whether an exchange is “best,” but whether its products, fee structure, execution, controls and regional availability fit the way you intend to trade.</p>
+          </section>
+
+          <section>
+            <p class="eyebrow text-ink-muted">02 // FEES</p>
+            <h2 class="mt-3 font-serif text-3xl text-ink">Standard trading fees</h2>
+            <p class="mt-4 leading-7 text-ink-muted">Bitunix currently lists the following VIP 0 maker/taker rates. Higher VIP tiers can have lower rates. Always verify the live fee page before trading because platform pricing can change.</p>
+            <div class="mt-6 overflow-x-auto border border-line">
+              <table class="w-full text-left text-sm">
+                <thead class="border-b border-line bg-panel"><tr><th class="p-4 data-label">Market</th><th class="p-4 data-label">Maker</th><th class="p-4 data-label">Taker</th></tr></thead>
+                <tbody>{feeRows.map((r) => <tr class="border-b border-line last:border-0"><td class="p-4 text-ink">{r[0]}</td><td class="p-4 font-mono text-ink-muted">{r[1]}</td><td class="p-4 font-mono text-ink-muted">{r[2]}</td></tr>)}</tbody>
+              </table>
+            </div>
+            <p class="mt-3 text-xs leading-5 text-ink-muted">Trading costs can also include funding, spreads, slippage and withdrawal/network costs depending on the product and transaction.</p>
+          </section>
+
+          <section>
+            <p class="eyebrow text-ink-muted">03 // FUTURES</p>
+            <h2 class="mt-3 font-serif text-3xl text-ink">Futures require a different risk framework</h2>
+            <p class="mt-4 leading-7 text-ink-muted">Perpetual futures allow leveraged exposure without owning the underlying asset. Leverage magnifies both gains and losses and can lead to liquidation. Before using futures, understand margin mode, liquidation price, funding rates, order types and the maximum amount of capital you are prepared to lose.</p>
+          </section>
+
+          <section>
+            <p class="eyebrow text-ink-muted">04 // COPY TRADING</p>
+            <h2 class="mt-3 font-serif text-3xl text-ink">Copy trading is automation, not risk removal</h2>
+            <p class="mt-4 leading-7 text-ink-muted">Bitunix supports futures copy trading. Copied positions remain futures positions and can be affected by trading fees, funding, slippage and profit sharing. The platform's current rules state that copy-trading leverage is capped at 10x and that followers can use fixed-amount or fixed-ratio modes. A lead trader's displayed historical return is not a guarantee of a follower's future result.</p>
+          </section>
+
+          <section>
+            <p class="eyebrow text-ink-muted">05 // CHECKLIST</p>
+            <h2 class="mt-3 font-serif text-3xl text-ink">Before creating an account</h2>
+            <div class="mt-5 grid gap-3 sm:grid-cols-2">
+              {["Confirm Bitunix is available where you live.","Read the current spot/futures fee schedule.","Understand custody and withdrawal procedures.","Enable the available account-security controls.","For futures, define leverage and liquidation risk first.","For copy trading, review drawdown — not only ROI."].map((x) => <div class="border border-line p-4 text-sm leading-6 text-ink-muted">{x}</div>)}
+            </div>
+          </section>
+
+          <section class="border-y border-line py-8">
+            <p class="eyebrow text-wire">RWA WIRE VIEW</p>
+            <h2 class="mt-3 font-serif text-3xl text-ink">Who might find the platform relevant?</h2>
+            <p class="mt-4 leading-7 text-ink-muted">The product set is most relevant to readers actively looking for crypto spot, futures or copy-trading functionality. Readers who only want to hold tokenized assets or follow institutional RWA developments do not need an exchange account simply because they read RWA Wire. Platform choice should follow the product you actually need.</p>
+          </section>
+
+          <section>
+            <p class="eyebrow text-ink-muted">06 // SOURCES & UPDATES</p>
+            <h2 class="mt-3 font-serif text-3xl text-ink">Verify live terms before trading</h2>
+            <p class="mt-4 leading-7 text-ink-muted">Fee schedules, product rules and regional access can change. This page is an editorial guide, not a substitute for Bitunix's current terms, risk disclosures or product documentation. RWA Wire will update material details when identified.</p>
+          </section>
+        </div>
+
+        <aside class="h-fit border border-line p-6 lg:sticky lg:top-28">
+          <p class="eyebrow text-wire">PARTNER ACCESS</p>
+          <h2 class="mt-3 font-serif text-2xl text-ink">Explore Bitunix</h2>
+          <p class="mt-3 text-sm leading-6 text-ink-muted">If the platform fits your requirements, you can create an account through our partner link. RWA Wire may earn a commission from eligible trading activity.</p>
+          <a href={AFFILIATE_URL} target="_blank" rel="noopener noreferrer sponsored" data-affiliate-placement="bitunix-guide-sidebar" class="mt-5 inline-flex w-full justify-center rounded bg-wire px-5 py-3 text-sm font-semibold text-bg hover:bg-wire/90">Open Bitunix →</a>
+          <p class="mt-3 text-[11px] leading-5 text-ink-muted">Crypto and derivatives trading involve substantial risk. No profit is guaranteed.</p>
+        </aside>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
