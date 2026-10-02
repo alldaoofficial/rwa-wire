@@ -17,11 +17,11 @@
     "CBMiZEFVX3lxTFBSYkxFVVNvNWNJeUJxSEF0X3cxaVctX1JteUhmX1lRVGk5ZkctSWVoOE11UGxHVlZ2U0l1WWlOXzI1aW8wbm5ySlE0ZnVadnBWejBBZnhZc2ZNMGJ5YU1hMEdyQ24",
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg"
   ],
-  "lastRun": "2026-10-02T05:37:11.762939+00:00",
+  "lastRun": "2026-10-02T06:07:14.937307+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-ac.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 231,
+    "rawItems": 232,
     "uniqueItems": 167,
     "queriesOk": 9,
     "queriesFailed": 0,
@@ -29,22 +29,22 @@
     "important": 0,
     "watchlist": 41,
     "sourceTiers": {
-      "low": 21,
-      "trusted": 10,
-      "unknown": 167,
-      "specialist": 24,
+      "low": 20,
+      "trusted": 9,
+      "unknown": 168,
+      "specialist": 26,
       "primary": 8,
       "wire": 1
     },
     "rejections": {
-      "watchlist_low": 3,
+      "watchlist_low": 2,
       "seen_guid": 3,
       "watchlist_unknown": 33,
-      "duplicate_in_scan": 64,
+      "duplicate_in_scan": 65,
       "duplicate_story": 5,
-      "watchlist_specialist": 5,
-      "no_rwa_signal": 99,
-      "score_below_4": 17,
+      "watchlist_specialist": 6,
+      "no_rwa_signal": 98,
+      "score_below_4": 18,
       "hard_block": 2
     },
     "feedErrors": [],
@@ -71,13 +71,6 @@
         "trust": "specialist"
       },
       {
-        "title": "HSBC Partners with Ripple-Owned Metaco for Tokenized Securities Custody Platform",
-        "source": "CoinMarketCap",
-        "normalizedSource": "coinmarketcap",
-        "score": 10,
-        "trust": "low"
-      },
-      {
         "title": "South Korea advances tokenized securities rules ahead of 2027 rollout",
         "source": "TradingView",
         "normalizedSource": "tradingview",
@@ -90,6 +83,13 @@
         "normalizedSource": "crypto reporter",
         "score": 9,
         "trust": "unknown"
+      },
+      {
+        "title": "SEC Grants Five-Year Relief for Tokenized Securities Venues",
+        "source": "tokenpost.com",
+        "normalizedSource": "tokenpost",
+        "score": 9,
+        "trust": "specialist"
       },
       {
         "title": "Ondo Finance's tokenized stocks hit $1.26B TVL,...",
