@@ -17,32 +17,32 @@
     "CBMiZEFVX3lxTFBSYkxFVVNvNWNJeUJxSEF0X3cxaVctX1JteUhmX1lRVGk5ZkctSWVoOE11UGxHVlZ2U0l1WWlOXzI1aW8wbm5ySlE0ZnVadnBWejBBZnhZc2ZNMGJ5YU1hMEdyQ24",
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg"
   ],
-  "lastRun": "2026-10-02T13:07:11.676014+00:00",
+  "lastRun": "2026-10-02T13:37:13.935240+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-ac.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 186,
-    "uniqueItems": 137,
+    "rawItems": 215,
+    "uniqueItems": 159,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 38,
+    "watchlist": 42,
     "sourceTiers": {
-      "low": 26,
-      "unknown": 131,
-      "primary": 5,
-      "trusted": 4,
-      "specialist": 20
+      "low": 29,
+      "unknown": 155,
+      "primary": 4,
+      "trusted": 5,
+      "specialist": 22
     },
     "rejections": {
       "watchlist_low": 5,
-      "watchlist_unknown": 31,
-      "duplicate_in_scan": 49,
-      "seen_guid": 2,
+      "watchlist_unknown": 35,
+      "duplicate_in_scan": 56,
+      "seen_guid": 3,
       "watchlist_specialist": 2,
-      "score_below_4": 17,
-      "no_rwa_signal": 75,
+      "score_below_4": 22,
+      "no_rwa_signal": 87,
       "hard_block": 2,
       "duplicate_story": 3
     },
@@ -64,7 +64,7 @@
       },
       {
         "title": "WisdomTree Launches Onchain Platform as Tokenized Funds Surpass $1.2 Billion",
-        "source": "Cryptonews.net",
+        "source": "cryptonews.net",
         "normalizedSource": "cryptonews",
         "score": 10,
         "trust": "unknown"
@@ -78,7 +78,7 @@
       },
       {
         "title": "South Korea advances tokenized securities rules ahead of 2027 rollout",
-        "source": "Cryptonews.net",
+        "source": "cryptonews.net",
         "normalizedSource": "cryptonews",
         "score": 9,
         "trust": "unknown"
@@ -92,16 +92,16 @@
       },
       {
         "title": "Ondo Finance's tokenized stocks hit $1.26B TVL,...",
-        "source": "pluang.com",
+        "source": "Pluang",
         "normalizedSource": "pluang",
         "score": 9,
         "trust": "unknown"
       },
       {
-        "title": "UK banks move tokenized deposits toward production",
-        "source": "Crypto Reporter",
-        "normalizedSource": "crypto reporter",
-        "score": 8,
+        "title": "Swift Builds Global Payment Rail Linking Fiat and Tokenized Deposits",
+        "source": "finance.biggo.com",
+        "normalizedSource": "finance biggo",
+        "score": 9,
         "trust": "unknown"
       }
     ]
