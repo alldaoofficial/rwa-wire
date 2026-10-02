@@ -17,11 +17,11 @@
     "CBMiZEFVX3lxTFBSYkxFVVNvNWNJeUJxSEF0X3cxaVctX1JteUhmX1lRVGk5ZkctSWVoOE11UGxHVlZ2U0l1WWlOXzI1aW8wbm5ySlE0ZnVadnBWejBBZnhZc2ZNMGJ5YU1hMEdyQ24",
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg"
   ],
-  "lastRun": "2026-10-02T05:26:42.493203+00:00",
+  "lastRun": "2026-10-02T05:37:11.762939+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-ac.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 233,
+    "rawItems": 231,
     "uniqueItems": 167,
     "queriesOk": 9,
     "queriesFailed": 0,
@@ -29,23 +29,23 @@
     "important": 0,
     "watchlist": 41,
     "sourceTiers": {
-      "low": 19,
+      "low": 21,
       "trusted": 10,
-      "unknown": 169,
-      "specialist": 26,
+      "unknown": 167,
+      "specialist": 24,
       "primary": 8,
       "wire": 1
     },
     "rejections": {
       "watchlist_low": 3,
       "seen_guid": 3,
-      "watchlist_unknown": 32,
-      "duplicate_in_scan": 66,
+      "watchlist_unknown": 33,
+      "duplicate_in_scan": 64,
       "duplicate_story": 5,
-      "watchlist_specialist": 6,
+      "watchlist_specialist": 5,
       "no_rwa_signal": 99,
-      "score_below_4": 16,
-      "hard_block": 3
+      "score_below_4": 17,
+      "hard_block": 2
     },
     "feedErrors": [],
     "topWatchlist": [
@@ -92,16 +92,16 @@
         "trust": "unknown"
       },
       {
-        "title": "SEC Grants Five-Year Relief for Tokenized Securities Venues",
-        "source": "tokenpost.com",
-        "normalizedSource": "tokenpost",
-        "score": 9,
-        "trust": "specialist"
-      },
-      {
         "title": "Ondo Finance's tokenized stocks hit $1.26B TVL,...",
         "source": "Pluang",
         "normalizedSource": "pluang",
+        "score": 9,
+        "trust": "unknown"
+      },
+      {
+        "title": "Swift Builds Global Payment Rail Linking Fiat and Tokenized Deposits",
+        "source": "finance.biggo.com",
+        "normalizedSource": "finance biggo",
         "score": 9,
         "trust": "unknown"
       }
