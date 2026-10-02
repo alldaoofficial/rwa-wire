@@ -54,6 +54,9 @@ jobs:
             PACKAGE_PATH="$REQUESTED_PACKAGE"
           fi
           if [ -z "$PACKAGE_PATH" ]; then echo "SKIP_X=true" >> "$GITHUB_ENV"; else echo "PACKAGE_PATH=$PACKAGE_PATH" >> "$GITHUB_ENV"; fi
+      - name: Install news visual renderer
+        if: env.SKIP_X != 'true'
+        run: python3 -m pip install --quiet cairosvg pillow
       - name: Publish to X
         if: env.SKIP_X != 'true'
         env:
