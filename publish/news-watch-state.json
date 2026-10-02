@@ -17,32 +17,32 @@
     "CBMiZEFVX3lxTFBSYkxFVVNvNWNJeUJxSEF0X3cxaVctX1JteUhmX1lRVGk5ZkctSWVoOE11UGxHVlZ2U0l1WWlOXzI1aW8wbm5ySlE0ZnVadnBWejBBZnhZc2ZNMGJ5YU1hMEdyQ24",
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg"
   ],
-  "lastRun": "2026-10-02T20:07:13.936515+00:00",
+  "lastRun": "2026-10-02T20:37:13.483770+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-ac.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 220,
-    "uniqueItems": 156,
+    "rawItems": 218,
+    "uniqueItems": 158,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 50,
+    "watchlist": 49,
     "sourceTiers": {
       "unknown": 159,
       "low": 27,
-      "trusted": 7,
+      "trusted": 6,
       "primary": 4,
-      "specialist": 23
+      "specialist": 22
     },
     "rejections": {
       "score_below_4": 22,
-      "watchlist_unknown": 44,
+      "watchlist_unknown": 43,
       "seen_guid": 2,
       "watchlist_low": 3,
-      "duplicate_in_scan": 64,
+      "duplicate_in_scan": 60,
       "watchlist_specialist": 3,
-      "no_rwa_signal": 76,
+      "no_rwa_signal": 79,
       "hard_block": 2,
       "duplicate_story": 4
     },
@@ -57,7 +57,7 @@
       },
       {
         "title": "Centrifuge launches tokenized Treasury and cred...",
-        "source": "Pluang",
+        "source": "pluang.com",
         "normalizedSource": "pluang",
         "score": 11,
         "trust": "unknown"
@@ -71,8 +71,8 @@
       },
       {
         "title": "Tokenized Securities Venues Will Not Challenge Traditional Exchanges",
-        "source": "Traders Magazine",
-        "normalizedSource": "traders magazine",
+        "source": "tradersmagazine.com",
+        "normalizedSource": "tradersmagazine",
         "score": 10,
         "trust": "unknown"
       },
@@ -99,7 +99,7 @@
       },
       {
         "title": "Ondo Finance Tokenized Stocks Reach Record $1.26B in Total Value Locked",
-        "source": "hokanews.com",
+        "source": "Hokanews",
         "normalizedSource": "hokanews",
         "score": 9,
         "trust": "unknown"
