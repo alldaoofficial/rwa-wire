@@ -16,36 +16,36 @@
     "CBMikwFBVV95cUxNOFdDTmJxWDRPMDl0RGFfUVMtaG9iZzVheVlTamotaHYyUVlvdHRSQy1Kc3JsWmNPdEtXMVYxd213ODlwNnJHcmp2ZWpkbEY4eGktVHU5QjBGakdLaVVaeDZVRXdGV2l3WWI3ZG9oSWhrVS1WM2RKNmdfLWZ3U1BBSUlsS1JDYmZ3ZTNPbEg3QW5qa0k",
     "CBMiO0FVX3lxTE04bEFhWXZyMjlGZlM2SHozbHB2ZVVGSk8tVEpkbEV6ZFlIdkhBSHpDakVja01IVGIySFRZ"
   ],
-  "lastRun": "2026-10-01T23:37:11.874168+00:00",
+  "lastRun": "2026-10-02T00:06:33.987155+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-synthetic-tokenized-stocks-are-bad-for-american-investors.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 246,
-    "uniqueItems": 178,
+    "rawItems": 244,
+    "uniqueItems": 176,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 49,
+    "watchlist": 47,
     "sourceTiers": {
       "trusted": 11,
-      "unknown": 168,
-      "specialist": 30,
+      "unknown": 171,
+      "specialist": 31,
       "primary": 11,
-      "low": 25,
+      "low": 19,
       "wire": 1
     },
     "rejections": {
       "seen_guid": 3,
-      "watchlist_unknown": 37,
+      "watchlist_unknown": 36,
       "watchlist_specialist": 8,
       "duplicate_story": 5,
-      "no_rwa_signal": 100,
-      "score_below_4": 18,
+      "no_rwa_signal": 101,
+      "score_below_4": 17,
       "duplicate_in_scan": 68,
-      "watchlist_low": 4,
       "existing_slug": 1,
-      "hard_block": 2
+      "hard_block": 2,
+      "watchlist_low": 3
     },
     "feedErrors": [],
     "topWatchlist": [
@@ -69,13 +69,6 @@
         "normalizedSource": "tokenpost",
         "score": 10,
         "trust": "specialist"
-      },
-      {
-        "title": "HSBC Partners with Ripple-Owned Metaco for Tokenized Securities Custody Platform",
-        "source": "CoinMarketCap",
-        "normalizedSource": "coinmarketcap",
-        "score": 10,
-        "trust": "low"
       },
       {
         "title": "South Korea maps tokenized securities rules as crypto tax delay calls mount",
@@ -102,6 +95,13 @@
         "title": "Ondo Finance's tokenized stocks hit $1.26B TVL,...",
         "source": "Pluang",
         "normalizedSource": "pluang",
+        "score": 9,
+        "trust": "unknown"
+      },
+      {
+        "title": "Swift Builds Global Payment Rail Linking Fiat and Tokenized Deposits",
+        "source": "finance.biggo.com",
+        "normalizedSource": "finance biggo",
         "score": 9,
         "trust": "unknown"
       }
