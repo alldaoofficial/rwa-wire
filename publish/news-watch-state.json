@@ -17,33 +17,33 @@
     "CBMiZEFVX3lxTFBSYkxFVVNvNWNJeUJxSEF0X3cxaVctX1JteUhmX1lRVGk5ZkctSWVoOE11UGxHVlZ2U0l1WWlOXzI1aW8wbm5ySlE0ZnVadnBWejBBZnhZc2ZNMGJ5YU1hMEdyQ24",
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg"
   ],
-  "lastRun": "2026-10-02T10:07:14.275648+00:00",
+  "lastRun": "2026-10-02T10:37:14.434219+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-ac.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
     "rawItems": 224,
-    "uniqueItems": 166,
+    "uniqueItems": 165,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
     "watchlist": 44,
     "sourceTiers": {
-      "unknown": 158,
-      "low": 25,
+      "low": 26,
+      "unknown": 157,
       "trusted": 11,
       "specialist": 22,
       "primary": 7,
       "wire": 1
     },
     "rejections": {
-      "watchlist_unknown": 34,
       "watchlist_low": 5,
+      "watchlist_unknown": 35,
       "seen_guid": 3,
-      "watchlist_specialist": 5,
-      "duplicate_in_scan": 58,
+      "watchlist_specialist": 4,
       "duplicate_story": 4,
-      "no_rwa_signal": 92,
+      "duplicate_in_scan": 59,
+      "no_rwa_signal": 91,
       "score_below_4": 21,
       "hard_block": 2
     },
@@ -64,13 +64,6 @@
         "trust": "unknown"
       },
       {
-        "title": "WisdomTree’s Tokenized Funds Surpass $1.2 Billion Across Eight Networks",
-        "source": "tokenpost.com",
-        "normalizedSource": "tokenpost",
-        "score": 10,
-        "trust": "specialist"
-      },
-      {
         "title": "HSBC Partners with Ripple-Owned Metaco for Tokenized Securities Custody Platform",
         "source": "CoinMarketCap",
         "normalizedSource": "coinmarketcap",
@@ -86,7 +79,7 @@
       },
       {
         "title": "Metaplex Launches MPL-3643 Standard for Permissioned Real-World Assets and Tokenized Securities on Solana",
-        "source": "crypto-reporter.com",
+        "source": "Crypto Reporter",
         "normalizedSource": "crypto reporter",
         "score": 9,
         "trust": "unknown"
@@ -102,6 +95,13 @@
         "title": "Swift Builds Global Payment Rail Linking Fiat and Tokenized Deposits",
         "source": "finance.biggo.com",
         "normalizedSource": "finance biggo",
+        "score": 9,
+        "trust": "unknown"
+      },
+      {
+        "title": "SEC transfer-agent overhaul tests tokenized securities framework",
+        "source": "Traders Union",
+        "normalizedSource": "traders union",
         "score": 9,
         "trust": "unknown"
       }
