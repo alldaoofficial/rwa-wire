@@ -19,15 +19,12 @@ on:
     secrets:
       TELEGRAM_BOT_TOKEN:
         required: true
-
 permissions:
   contents: write
   actions: write
-
 concurrency:
   group: rwa-wire-telegram-publisher
   cancel-in-progress: false
-
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -44,18 +41,10 @@ jobs:
         env:
           REQUESTED_MANIFEST_PATH: ${{ inputs.manifest_path }}
         run: |
-          if [ "${{ github.event_name }}" = "push" ]; then
-            MANIFEST_PATH=$(git diff --name-only --diff-filter=A HEAD^ HEAD -- "publish/approved/*.json" "publish/market-pulse-telegram-ready/*.json" | head -n 1)
-          else
-            MANIFEST_PATH="$REQUESTED_MANIFEST_PATH"
-          fi
+          if [ "${{ github.event_name }}" = "push" ]; then MANIFEST_PATH=$(git diff --name-only --diff-filter=A HEAD^ HEAD -- "publish/approved/*.json" "publish/market-pulse-telegram-ready/*.json" | head -n 1); else MANIFEST_PATH="$REQUESTED_MANIFEST_PATH"; fi
           if [ -z "$MANIFEST_PATH" ]; then echo "No publishable Telegram package."; exit 1; fi
           echo "MANIFEST_PATH=$MANIFEST_PATH" >> "$GITHUB_ENV"
-          case "$MANIFEST_PATH" in
-            publish/market-pulse-telegram-ready/*.json) echo "PACKAGE_TYPE=market_pulse" >> "$GITHUB_ENV" ;;
-            publish/approved/*.json) echo "PACKAGE_TYPE=news" >> "$GITHUB_ENV" ;;
-            *) echo "Invalid Telegram package path"; exit 1 ;;
-          esac
+          case "$MANIFEST_PATH" in publish/market-pulse-telegram-ready/*.json) echo "PACKAGE_TYPE=market_pulse" >> "$GITHUB_ENV" ;; publish/approved/*.json) echo "PACKAGE_TYPE=news" >> "$GITHUB_ENV" ;; *) echo "Invalid Telegram package path"; exit 1 ;; esac
       - name: Publish Market Pulse to Telegram
         if: env.PACKAGE_TYPE == 'market_pulse'
         env:
@@ -64,29 +53,25 @@ jobs:
         run: |
           python3 - <<'PY'
           import json, os, pathlib, urllib.parse, urllib.request
-          p=pathlib.Path(os.environ['MANIFEST_PATH']); d=json.loads(p.read_text(encoding='utf-8')); pid=str(d.get('id',p.stem)); text=str(d.get('text','')).strip()
-          marker=pathlib.Path('publish/market-pulse-telegram-posted')/(pid+'.json')
+          p=pathlib.Path(os.environ['MANIFEST_PATH']); d=json.loads(p.read_text()); pid=str(d.get('id',p.stem)); text=str(d.get('text','')).strip(); marker=pathlib.Path('publish/market-pulse-telegram-posted')/(pid+'.json')
           if marker.exists(): raise SystemExit('Market Pulse already posted to Telegram')
-          if not text or len(text)>4096: raise SystemExit('Invalid Market Pulse Telegram text')
-          body=urllib.parse.urlencode({'chat_id':os.environ['TELEGRAM_CHAT_ID'],'text':text,'disable_web_page_preview':'true'}).encode()
-          req=urllib.request.Request('https://api.telegram.org/bot'+os.environ['TELEGRAM_BOT_TOKEN']+'/sendMessage',data=body,method='POST')
+          body=urllib.parse.urlencode({'chat_id':os.environ['TELEGRAM_CHAT_ID'],'text':text,'disable_web_page_preview':'true'}).encode(); req=urllib.request.Request('https://api.telegram.org/bot'+os.environ['TELEGRAM_BOT_TOKEN']+'/sendMessage',data=body,method='POST')
           with urllib.request.urlopen(req,timeout=30) as r: result=json.loads(r.read().decode())
-          if not result.get('ok'): raise SystemExit('Telegram API did not confirm Market Pulse publication')
-          marker.parent.mkdir(parents=True,exist_ok=True); marker.write_text(json.dumps({'id':pid,'status':'published','message_id':(result.get('result') or {}).get('message_id')},indent=2)+'\n')
+          if not result.get('ok'): raise SystemExit('Telegram API did not confirm publication')
+          marker.parent.mkdir(parents=True,exist_ok=True); marker.write_text(json.dumps({'id':pid,'status':'published','message_id':result['result'].get('message_id')},indent=2)+'\n')
           PY
       - name: Load approved news manifest
         if: env.PACKAGE_TYPE == 'news'
         run: |
           python3 - <<'PY'
           import json, os, pathlib, time, urllib.request
-          p=pathlib.Path(os.environ['MANIFEST_PATH']); post=json.loads(p.read_text(encoding='utf-8')); publish_id=str(post.get('id',p.stem)).strip(); marker=pathlib.Path('publish/posted')/(publish_id+'.json')
+          p=pathlib.Path(os.environ['MANIFEST_PATH']); post=json.loads(p.read_text()); publish_id=str(post.get('id',p.stem)).strip(); marker=pathlib.Path('publish/posted')/(publish_id+'.json'); caption=str(post['caption']).strip(); image_url=str(post['image_url']).strip(); article_url=str(post.get('article_url','')).strip()
           if marker.exists(): raise SystemExit('This publish id has already been posted.')
-          caption=str(post['caption']).strip(); image_url=str(post['image_url']).strip(); article_url=str(post.get('article_url','')).strip()
-          if not caption or len(caption)>1024 or not image_url.startswith('https://') or not article_url.startswith('https://therwawire.com/news/'): raise SystemExit('Invalid approved news manifest')
+          if not caption or len(caption)>1024 or not image_url.startswith('https://therwawire.com/') or not article_url.startswith('https://therwawire.com/'): raise SystemExit('Invalid approved manifest')
           live=False
           for attempt in range(30):
             try:
-              with urllib.request.urlopen(urllib.request.Request(article_url,headers={'User-Agent':'RWA-Wire-Publisher/1.0'}),timeout=20) as r:
+              with urllib.request.urlopen(urllib.request.Request(article_url,headers={'User-Agent':'RWA-Wire-Publisher/1.1'}),timeout=20) as r:
                 if r.status==200: live=True; break
             except Exception: pass
             if attempt<29: time.sleep(10)
@@ -117,30 +102,18 @@ jobs:
           Image.open(BytesIO(image_bytes)).convert('RGB').save('telegram-editorial.jpg','JPEG',quality=92,optimize=True)
           boundary='----RWAWire'+uuid.uuid4().hex; body=bytearray()
           for key,value in {'chat_id':os.environ['TELEGRAM_CHAT_ID'],'caption':caption}.items(): body.extend(f'--{boundary}\r\nContent-Disposition: form-data; name="{key}"\r\n\r\n{value}\r\n'.encode())
-          photo=open('telegram-editorial.jpg','rb').read(); body.extend(f'--{boundary}\r\nContent-Disposition: form-data; name="photo"; filename="rwa-wire.jpg"\r\nContent-Type: image/jpeg\r\n\r\n'.encode()); body.extend(photo); body.extend(f'\r\n--{boundary}--\r\n'.encode())
-          req=urllib.request.Request('https://api.telegram.org/bot'+os.environ['TELEGRAM_BOT_TOKEN']+'/sendPhoto',data=bytes(body),method='POST'); req.add_header('Content-Type',f'multipart/form-data; boundary={boundary}')
+          photo=open('telegram-editorial.jpg','rb').read(); body.extend(f'--{boundary}\r\nContent-Disposition: form-data; name="photo"; filename="rwa-wire.jpg"\r\nContent-Type: image/jpeg\r\n\r\n'.encode()); body.extend(photo); body.extend(f'\r\n--{boundary}--\r\n'.encode()); req=urllib.request.Request('https://api.telegram.org/bot'+os.environ['TELEGRAM_BOT_TOKEN']+'/sendPhoto',data=bytes(body),method='POST'); req.add_header('Content-Type',f'multipart/form-data; boundary={boundary}')
           with urllib.request.urlopen(req) as response: result=json.loads(response.read().decode())
           if not result.get('ok'): raise SystemExit('Telegram API did not confirm publication')
           PY
       - name: Persist publication marker
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [ "$PACKAGE_TYPE" = "market_pulse" ]; then
-            git add publish/market-pulse-telegram-posted/; git commit -m "Mark Market Pulse Telegram post published"
-          else
-            mkdir -p publish/posted
-            printf '{\n  "id": "%s",\n  "status": "published",\n  "source_manifest": "%s"\n}\n' "$APPROVED_PUBLISH_ID" "$MANIFEST_PATH" > "publish/posted/${APPROVED_PUBLISH_ID}.json"
-            git add "publish/posted/${APPROVED_PUBLISH_ID}.json" "publish/distribution/${APPROVED_PUBLISH_ID}.json"; git commit -m "Publish distribution package for ${APPROVED_PUBLISH_ID}"
-          fi
-          for attempt in 1 2 3; do git pull --rebase origin main && git push && exit 0; sleep 3; done
-          exit 1
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ "$PACKAGE_TYPE" = "market_pulse" ]; then git add publish/market-pulse-telegram-posted/; git commit -m "Mark Market Pulse Telegram post published"; else mkdir -p publish/posted; printf '{\n  "id": "%s",\n  "status": "published",\n  "source_manifest": "%s"\n}\n' "$APPROVED_PUBLISH_ID" "$MANIFEST_PATH" > "publish/posted/${APPROVED_PUBLISH_ID}.json"; git add "publish/posted/${APPROVED_PUBLISH_ID}.json" "publish/distribution/${APPROVED_PUBLISH_ID}.json"; git commit -m "Publish distribution package for ${APPROVED_PUBLISH_ID}"; fi
+          for attempt in 1 2 3; do git pull --rebase origin main && git push && exit 0; sleep 3; done; exit 1
       - name: Dispatch X publisher for news
         if: env.PACKAGE_TYPE == 'news'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          PACKAGE_PATH="publish/distribution/${APPROVED_PUBLISH_ID}.json"
-          test -f "$PACKAGE_PATH" || { echo "Missing X distribution package: $PACKAGE_PATH"; exit 1; }
-          echo "Dispatching X publisher for $PACKAGE_PATH"
-          gh workflow run x-publisher.yml --ref main -f package_path="$PACKAGE_PATH"
+          PACKAGE_PATH="publish/distribution/${APPROVED_PUBLISH_ID}.json"; test -f "$PACKAGE_PATH" || exit 1; gh workflow run x-publisher.yml --ref main -f package_path="$PACKAGE_PATH"
