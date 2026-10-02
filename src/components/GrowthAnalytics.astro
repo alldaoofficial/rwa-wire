@@ -16,8 +16,6 @@ const endpoint = "https://dqeakkrsbgxnexucuyld.supabase.co/functions/v1/growth-e
       metadata,
       referrer: document.referrer ? (() => { try { return new URL(document.referrer).hostname; } catch { return ""; } })() : ""
     });
-    // Use fetch rather than sendBeacon: the analytics endpoint validates Origin,
-    // and fetch reliably includes it for our cross-origin JSON request.
     fetch(endpoint, {
       method: "POST",
       mode: "cors",
@@ -34,7 +32,10 @@ const endpoint = "https://dqeakkrsbgxnexucuyld.supabase.co/functions/v1/growth-e
     const a = e.target.closest("a");
     if (!a) return;
     const href = a.getAttribute("href") || "";
-    if (href.includes("t.me/RWAWireHQ")) return send("telegram_click","telegram");
+    const placement = a.dataset?.analyticsPlacement || "";
+    if (href.includes("bitunix.com/")) return send("affiliate_click","bitunix",{ placement, href });
+    if (href.includes("t.me/RWAWireHQ")) return send("telegram_click","telegram",{ placement });
+    if (href.includes("x.com/RWAWireHQ")) return send("x_click","x",{ placement });
     if (href.startsWith("/topics/")) return send("topic_click",href);
     if (href.startsWith("/projects/")) return send("project_click",href);
     if (href.startsWith("/markets/")) return send("market_click",href);
