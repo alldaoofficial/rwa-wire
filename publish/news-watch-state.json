@@ -17,20 +17,20 @@
     "CBMiZEFVX3lxTFBSYkxFVVNvNWNJeUJxSEF0X3cxaVctX1JteUhmX1lRVGk5ZkctSWVoOE11UGxHVlZ2U0l1WWlOXzI1aW8wbm5ySlE0ZnVadnBWejBBZnhZc2ZNMGJ5YU1hMEdyQ24",
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg"
   ],
-  "lastRun": "2026-10-02T16:48:16.676949+00:00",
+  "lastRun": "2026-10-02T17:07:12.672265+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-ac.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
     "rawItems": 220,
-    "uniqueItems": 157,
+    "uniqueItems": 159,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
     "watchlist": 48,
     "sourceTiers": {
-      "unknown": 159,
-      "low": 30,
+      "unknown": 158,
+      "low": 31,
       "trusted": 6,
       "primary": 3,
       "specialist": 22
@@ -40,27 +40,27 @@
       "watchlist_low": 5,
       "watchlist_unknown": 40,
       "seen_guid": 3,
-      "duplicate_in_scan": 63,
+      "duplicate_in_scan": 61,
       "watchlist_specialist": 3,
-      "no_rwa_signal": 80,
+      "no_rwa_signal": 82,
       "hard_block": 2,
       "duplicate_story": 3
     },
     "feedErrors": [],
     "topWatchlist": [
       {
+        "title": "Centrifuge brings tokenized Treasury and credit funds to Arc",
+        "source": "Crypto Briefing",
+        "normalizedSource": "crypto briefing",
+        "score": 12,
+        "trust": "unknown"
+      },
+      {
         "title": "Ondo Finance Seeks SEC Approval for Tokenized Securities on Ethereum",
         "source": "CoinMarketCap",
         "normalizedSource": "coinmarketcap",
         "score": 11,
         "trust": "low"
-      },
-      {
-        "title": "Centrifuge Confirms Three Tokenized Funds Are Live on Arc",
-        "source": "The Defiant",
-        "normalizedSource": "the defiant",
-        "score": 10,
-        "trust": "unknown"
       },
       {
         "title": "Tokenized Securities Venues Will Not Challenge Traditional Exchanges",
@@ -78,15 +78,15 @@
       },
       {
         "title": "South Korea Sets $2.8 Million Capital Requirement for Tokenized Securities Firms",
-        "source": "FinanceFeeds",
+        "source": "financefeeds.com",
         "normalizedSource": "financefeeds",
         "score": 9,
         "trust": "specialist"
       },
       {
         "title": "Banks Risk Losing $230,000,000,000 in Payments Revenue As Stablecoins and Tokenized Deposits Scale, According to Survey",
-        "source": "dailyhodl.com",
-        "normalizedSource": "dailyhodl",
+        "source": "The Daily Hodl",
+        "normalizedSource": "the daily hodl",
         "score": 9,
         "trust": "unknown"
       },
@@ -99,7 +99,7 @@
       },
       {
         "title": "Metaplex Launches MPL-3643 Standard for Permissioned Real-World Assets and Tokenized Securities on Solana",
-        "source": "crypto-reporter.com",
+        "source": "Crypto Reporter",
         "normalizedSource": "crypto reporter",
         "score": 9,
         "trust": "unknown"
