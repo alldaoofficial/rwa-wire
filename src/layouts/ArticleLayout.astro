@@ -10,46 +10,38 @@ import { getCollection, type CollectionEntry } from "astro:content";
 import { relationshipsFor } from "@/data/relationships";
 import PlainEnglish from "@/components/PlainEnglish.astro";
 
-interface Props {
-  entry: CollectionEntry<"articles">;
-}
+interface Props { entry: CollectionEntry<"articles">; }
 const { entry } = Astro.props;
-const {
-  type,
-  category,
-  title,
-  description,
-  pubDate,
-  updatedDate,
-  author,
-  readingTime,
-  heroImage,
-  heroImageAlt,
-  tags,
-  relatedSlugs,
-  showTradingCTA,
-  keyTakeaways,
-  projectMeta,
-} = entry.data;
-
+const { type, category, title, description, pubDate, updatedDate, author, readingTime, heroImage, heroImageAlt, tags, relatedSlugs, showTradingCTA, keyTakeaways, projectMeta } = entry.data;
 const allArticles = await getCollection("articles", ({ data }) => !data.draft);
-const related = relatedSlugs
-  .map((slug) => allArticles.find((a) => a.slug === slug))
-  .filter((a): a is CollectionEntry<"articles"> => Boolean(a))
-  .map((a) => ({
-    href: `/${a.data.category}/${a.slug}/`,
-    title: a.data.title,
-    category: a.data.category,
-  }));
+const related = relatedSlugs.map((slug) => allArticles.find((a) => a.slug === slug)).filter((a): a is CollectionEntry<"articles"> => Boolean(a)).map((a) => ({ href: `/${a.data.category}/${a.slug}/`, title: a.data.title, category: a.data.category }));
+
+// Automatic internal discovery supplements hand-curated relatedSlugs. This keeps older
+// stories connected to evergreen guides without requiring every news file to be edited.
+const normalize = (s: string) => s.toLowerCase();
+const stopTerms = new Set(["tokenized","tokenization","assets","asset","finance","financial","market","markets","infrastructure","project","products","product","onchain","network","networks","explained","crypto"]);
+const intelligenceTerms = (values: string[]) => [...new Set(values.flatMap((v) => normalize(v).split(/[^a-z0-9]+/)).filter((v) => v.length > 4 && !stopTerms.has(v)))];
+const articleHaystack = normalize([title, description, category, ...tags, ...keyTakeaways, projectMeta?.sector ?? "", projectMeta?.role ?? "", projectMeta?.assetExposure ?? "", ...(projectMeta?.products ?? [])].join(" "));
+const currentTerms = intelligenceTerms([title, description, ...tags, ...keyTakeaways]);
+const explicitSlugs = new Set([entry.slug, ...relatedSlugs]);
+const autoRelated = allArticles
+  .filter((a) => !explicitSlugs.has(a.slug) && a.data.type !== "PROJECT")
+  .map((a) => {
+    const hay = normalize([a.data.title, a.data.description, ...a.data.tags, ...a.data.keyTakeaways].join(" "));
+    let score = currentTerms.filter((term) => hay.includes(term)).length;
+    if (a.data.category === category) score += 1;
+    if (type === "NEWS" && ["EXPLAINER","RESEARCH"].includes(a.data.type)) score += 2;
+    if (type !== "NEWS" && a.data.type === "NEWS") score -= 1;
+    return { a, score };
+  })
+  .filter(({score}) => score >= 3)
+  .sort((x,y) => y.score-x.score || y.a.data.pubDate.valueOf()-x.a.data.pubDate.valueOf())
+  .slice(0, Math.max(0, 4-related.length))
+  .map(({a}) => ({ href:`/${a.data.category}/${a.slug}/`, title:a.data.title, category:a.data.category }));
+const discoveryItems = [...related, ...autoRelated].slice(0,4);
 
 const projectGraph = type === "PROJECT" ? relationshipsFor("project", entry.slug) : [];
 const projectEntries = allArticles.filter((a) => a.data.type === "PROJECT" && a.data.projectMeta);
-const normalize = (s: string) => s.toLowerCase();
-const stopTerms = new Set(["tokenized","tokenization","assets","asset","finance","financial","market","markets","infrastructure","project","products","product","onchain","network","networks"]);
-const intelligenceTerms = (values: string[]) => [...new Set(values
-  .flatMap((v) => normalize(v).split(/[^a-z0-9]+/))
-  .filter((v) => v.length > 4 && !stopTerms.has(v)))];
-const articleHaystack = normalize([title, description, category, ...tags, ...keyTakeaways, projectMeta?.sector ?? "", projectMeta?.role ?? "", projectMeta?.assetExposure ?? "", ...(projectMeta?.products ?? [])].join(" "));
 const topicDefs = [
   { slug:"real-world-assets", title:"Real-World Assets", terms:["rwa","real-world assets","real world assets"] },
   { slug:"tokenized-treasuries", title:"Tokenized Treasuries", terms:["treasur","government securities"] },
@@ -57,204 +49,32 @@ const topicDefs = [
   { slug:"private-credit", title:"Private Credit", terms:["private credit","credit infrastructure","lending"] },
   { slug:"institutional-tokenization", title:"Institutional Tokenization", terms:["institution","banks","asset managers","settlement","deposits"] },
 ];
-const matchedTopics = topicDefs
-  .map(topic => ({...topic, score: topic.terms.filter(term => articleHaystack.includes(term)).length}))
-  .filter(topic => topic.score > 0)
-  .sort((a,b)=>b.score-a.score)
-  .slice(0,3);
-const scoredProjects = type === "PROJECT" ? [] : projectEntries
-  .map((p) => {
-    const meta = p.data.projectMeta!;
-    const terms = intelligenceTerms([p.data.title.replace(/ explained$/i, ""), meta.sector, meta.role, meta.assetExposure, ...meta.products]);
-    const score = terms.filter((term) => articleHaystack.includes(term)).length;
-    return { p, score };
-  })
-  .filter(({ score }) => score > 0)
-  .sort((a,b) => b.score - a.score)
-  .slice(0,3)
-  .map(({p}) => p);
-
-const projectNews = type === "PROJECT" && projectMeta ? allArticles
-  .filter((a) => a.slug !== entry.slug && a.data.type !== "PROJECT")
-  .map((a) => {
-    const hay = normalize([a.data.title,a.data.description,...a.data.tags,...a.data.keyTakeaways].join(" "));
-    const terms = intelligenceTerms([title.replace(/ explained$/i,""), projectMeta.sector, projectMeta.role, ...projectMeta.products]);
-    return { a, score: terms.filter((term) => hay.includes(term)).length };
-  }).filter(({score}) => score > 0).sort((a,b)=>b.score-a.score || b.a.data.pubDate.valueOf()-a.a.data.pubDate.valueOf()).slice(0,3).map(({a})=>a) : [];
-
-const dateStr = pubDate.toLocaleDateString("en-US", {
-  month: "long",
-  day: "numeric",
-  year: "numeric",
-});
-const updatedStr = updatedDate?.toLocaleDateString("en-US", {
-  month: "long",
-  day: "numeric",
-  year: "numeric",
-});
-
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": type === "NEWS" ? "NewsArticle" : "Article",
-  headline: title,
-  description,
-  datePublished: pubDate.toISOString(),
-  dateModified: (updatedDate ?? pubDate).toISOString(),
-  author: { "@type": "Organization", name: author },
-  articleSection: CATEGORIES[category as CategorySlug].label,
-  keywords: tags.join(", "),
-  publisher: {
-    "@type": "Organization",
-    name: SITE.name,
-    logo: { "@type": "ImageObject", url: new URL("/favicon.svg", SITE.url).toString() },
-  },
-  mainEntityOfPage: new URL(Astro.url.pathname, SITE.url).toString(),
-};
+const matchedTopics = topicDefs.map(topic => ({...topic, score: topic.terms.filter(term => articleHaystack.includes(term)).length})).filter(topic => topic.score > 0).sort((a,b)=>b.score-a.score).slice(0,3);
+const scoredProjects = type === "PROJECT" ? [] : projectEntries.map((p) => { const meta=p.data.projectMeta!; const terms=intelligenceTerms([p.data.title.replace(/ explained$/i,""),meta.sector,meta.role,meta.assetExposure,...meta.products]); return {p,score:terms.filter(term=>articleHaystack.includes(term)).length}; }).filter(({score})=>score>0).sort((a,b)=>b.score-a.score).slice(0,3).map(({p})=>p);
+const projectNews = type === "PROJECT" && projectMeta ? allArticles.filter((a)=>a.slug!==entry.slug&&a.data.type!=="PROJECT").map((a)=>{const hay=normalize([a.data.title,a.data.description,...a.data.tags,...a.data.keyTakeaways].join(" "));const terms=intelligenceTerms([title.replace(/ explained$/i,""),projectMeta.sector,projectMeta.role,...projectMeta.products]);return {a,score:terms.filter(term=>hay.includes(term)).length};}).filter(({score})=>score>0).sort((a,b)=>b.score-a.score||b.a.data.pubDate.valueOf()-a.a.data.pubDate.valueOf()).slice(0,3).map(({a})=>a):[];
+const dateStr=pubDate.toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"});
+const updatedStr=updatedDate?.toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"});
+const jsonLd={"@context":"https://schema.org","@type":type==="NEWS"?"NewsArticle":"Article",headline:title,description,datePublished:pubDate.toISOString(),dateModified:(updatedDate??pubDate).toISOString(),author:{"@type":"Organization",name:author},articleSection:CATEGORIES[category as CategorySlug].label,keywords:tags.join(", "),publisher:{"@type":"Organization",name:SITE.name,logo:{"@type":"ImageObject",url:new URL("/favicon.svg",SITE.url).toString()}},mainEntityOfPage:new URL(Astro.url.pathname,SITE.url).toString()};
 ---
-
-<BaseLayout
-  title={title}
-  description={description}
-  type="article"
-  publishedTime={pubDate}
-  modifiedTime={updatedDate}
-  image={heroImage}
->
-  <article class="wire-container py-10 sm:py-16">
-    <div class="mx-auto max-w-[900px]">
-    <Breadcrumbs
-      items={[
-        { label: CATEGORIES[category as CategorySlug].label, href: `/${category}/` },
-        { label: title, href: Astro.url.pathname },
-      ]}
-    />
-
-    <p class="eyebrow mt-6 text-wire">{CATEGORIES[category as CategorySlug].label} &middot; {type}</p>
-    <h1 class="mt-4 max-w-4xl font-serif text-4xl font-medium leading-[1.02] tracking-[-.02em] text-ink sm:text-5xl lg:text-6xl">
-      {title}
-    </h1>
-    <p class="mt-6 max-w-3xl text-xl leading-relaxed text-ink-muted">{description}</p>
-
-    <div class="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-ink-muted">
-      <span>{author}</span>
-      <span aria-hidden="true">&middot;</span>
-      <time datetime={pubDate.toISOString()}>{dateStr}</time>
-      {updatedStr && (
-        <>
-          <span aria-hidden="true">&middot;</span>
-          <span>Updated {updatedStr}</span>
-        </>
-      )}
-      <span aria-hidden="true">&middot;</span>
-      <span>{readingTime}</span>
-    </div>
-
-    <div class="mt-6 grid gap-3 border-y border-line py-4 sm:grid-cols-3">
-      <div>
-        <p class="data-label">Published by</p>
-        <p class="mt-1 text-xs text-ink">RWA Wire Editorial Desk</p>
-      </div>
-      <div>
-        <p class="data-label">Coverage standard</p>
-        <p class="mt-1 text-xs text-ink">Independent // Source-led</p>
-      </div>
-      <div>
-        <p class="data-label">Corrections & tips</p>
-        <a href="/contact/" class="mt-1 inline-block text-xs text-wire hover:underline">Contact the desk →</a>
-      </div>
-    </div>
-
-    {type === "PROJECT" && projectMeta && (
-      <section class="mt-8 border-y border-line">
-        <div class="grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-4">
-          <div class="bg-bg p-5"><p class="data-label">Sector</p><p class="mt-2 text-sm text-ink">{projectMeta.sector}</p></div>
-          <div class="bg-bg p-5"><p class="data-label">Market role</p><p class="mt-2 text-sm text-ink">{projectMeta.role}</p></div>
-          <div class="bg-bg p-5"><p class="data-label">Asset exposure</p><p class="mt-2 text-sm text-ink">{projectMeta.assetExposure}</p></div>
-          <div class="bg-bg p-5"><p class="data-label">Status</p><p class="mt-2 font-mono text-sm text-wire">{projectMeta.status}</p></div>
-        </div>
-        <div class="grid gap-6 border-t border-line py-5 sm:grid-cols-2">
-          <div><p class="data-label">Networks / rails</p><div class="mt-2 flex flex-wrap gap-2">{projectMeta.networks.map(n => <span class="border border-line px-2 py-1 text-[10px] uppercase tracking-[.08em] text-ink-muted">{n}</span>)}</div></div>
-          <div><p class="data-label">Key products / infrastructure</p><div class="mt-2 flex flex-wrap gap-2">{projectMeta.products.map(n => <span class="border border-line px-2 py-1 text-[10px] uppercase tracking-[.08em] text-ink-muted">{n}</span>)}</div></div>
-        </div>
-      </section>
-    )}
-
-    {
-      heroImage && (
-        <img
-          src={heroImage}
-          alt={heroImageAlt ?? ""}
-          class="mt-8 aspect-[16/9] w-full border border-line object-cover"
-          loading="eager"
-          width="1200"
-          height="675"
-        />
-      )
-    }
-
-    <PlainEnglish />
-
-    <div class="article-reading mx-auto prose prose-invert prose-wire mt-12 max-w-[720px] text-[17px]">
-      <slot />
-    </div>
-
-    {
-      keyTakeaways.length > 0 && (
-        <div class="mt-10 border border-line bg-surface p-6">
-          <p class="eyebrow mb-3">Key takeaways</p>
-          <ul class="space-y-2.5">
-            {keyTakeaways.map((point) => (
-              <li class="flex gap-2.5 text-sm leading-relaxed text-ink">
-                <span class="mt-1 text-wire" aria-hidden="true">
-                  //
-                </span>
-                <span>{point}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )
-    }
-
-    {
-      tags.length > 0 && (
-        <div class="mt-10 flex flex-wrap gap-2">
-          {tags.map((t) => (
-            <Tag label={t} />
-          ))}
-        </div>
-      )
-    }
-
-    {projectGraph.length > 0 && <section class="mt-10 border-y border-line py-6"><p class="data-label text-wire">RWA Wire // Intelligence Graph</p><h2 class="mt-2 font-serif text-2xl text-ink">Verified relationships</h2><div class="mt-5 grid gap-px bg-line sm:grid-cols-2">{projectGraph.map(r => {const other=r.from.kind==="project"&&r.from.slug===entry.slug?r.to:r.from;return <div class="bg-bg p-5"><p class="data-label">{r.label}</p><p class="mt-3 font-serif text-xl text-ink">{title.replace(/ Explained$/,"")} <span class="text-wire">↔</span> {other.label}</p><p class="mt-2 text-[10px] uppercase tracking-[.08em] text-ink-muted">{other.kind} // verified {r.asOf}</p><a href={r.source} target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-[10px] uppercase tracking-[.08em] text-wire hover:underline">Primary source →</a></div>})}</div></section>}
-
-    {matchedTopics.length > 0 && (
-      <section class="mt-10 border-t border-line pt-6">
-        <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-          <div><p class="data-label text-wire">Explore this topic</p><p class="mt-1 text-sm text-ink-muted">Continue through RWA Wire's connected research map.</p></div>
-          <div class="flex flex-wrap gap-2">{matchedTopics.map(topic => <a href={`/topics/${topic.slug}/`} class="border border-line px-3 py-2 text-[10px] uppercase tracking-[.08em] text-ink-muted hover:border-wire hover:text-wire">{topic.title} →</a>)}</div>
-        </div>
-      </section>
-    )}
-
-    {(scoredProjects.length > 0 || projectNews.length > 0) && (
-      <section class="mt-12 border-y border-line py-6">
-        <div class="flex items-end justify-between gap-4"><div><p class="data-label text-wire">RWA Wire // Intelligence Network</p><h2 class="mt-2 font-serif text-2xl text-ink">{type === "PROJECT" ? "Related market intelligence" : "Infrastructure connected to this story"}</h2></div>{type !== "PROJECT" && <a href="/projects/" class="text-[10px] uppercase tracking-[.1em] text-wire hover:underline">Project directory →</a>}</div>
-        <div class="mt-5 grid gap-px bg-line sm:grid-cols-3">
-          {scoredProjects.map((p)=><a href={`/projects/${p.slug}/`} class="group bg-bg p-5 hover:bg-surface"><p class="data-label">{p.data.projectMeta?.sector}</p><h3 class="mt-2 font-serif text-xl text-ink group-hover:text-wire">{p.data.title.replace(/ Explained$/,"")}</h3><p class="mt-2 text-xs leading-relaxed text-ink-muted">{p.data.projectMeta?.role}</p></a>)}
-          {projectNews.map((a)=><a href={`/${a.data.category}/${a.slug}/`} class="group bg-bg p-5 hover:bg-surface"><p class="data-label">{a.data.category} // {a.data.type}</p><h3 class="mt-2 font-serif text-lg leading-tight text-ink group-hover:text-wire">{a.data.title}</h3><p class="mt-2 text-[10px] uppercase tracking-[.08em] text-ink-muted">{a.data.readingTime}</p></a>)}
-        </div>
-      </section>
-    )}
-
-    <div class="mx-auto mt-12 max-w-[720px] space-y-10">
-      <RelatedArticles items={related} />
-      {showTradingCTA && <TradingCTA />}
-    </div>
-    </div>
-  </article>
-
-  <TelegramCTA context={type === "PROJECT" || type === "RESEARCH" ? "research" : "article"} />
-
-  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+<BaseLayout title={title} description={description} type="article" publishedTime={pubDate} modifiedTime={updatedDate} image={heroImage}>
+<article class="wire-container py-10 sm:py-16"><div class="mx-auto max-w-[900px]">
+<Breadcrumbs items={[{label:CATEGORIES[category as CategorySlug].label,href:`/${category}/`},{label:title,href:Astro.url.pathname}]} />
+<p class="eyebrow mt-6 text-wire">{CATEGORIES[category as CategorySlug].label} &middot; {type}</p>
+<h1 class="mt-4 max-w-4xl font-serif text-4xl font-medium leading-[1.02] tracking-[-.02em] text-ink sm:text-5xl lg:text-6xl">{title}</h1>
+<p class="mt-6 max-w-3xl text-xl leading-relaxed text-ink-muted">{description}</p>
+<div class="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-ink-muted"><span>{author}</span><span>·</span><time datetime={pubDate.toISOString()}>{dateStr}</time>{updatedStr&&<><span>·</span><span>Updated {updatedStr}</span></>}<span>·</span><span>{readingTime}</span></div>
+<div class="mt-6 grid gap-3 border-y border-line py-4 sm:grid-cols-3"><div><p class="data-label">Published by</p><p class="mt-1 text-xs text-ink">RWA Wire Editorial Desk</p></div><div><p class="data-label">Coverage standard</p><p class="mt-1 text-xs text-ink">Independent // Source-led</p></div><div><p class="data-label">Corrections & tips</p><a href="/contact/" class="mt-1 inline-block text-xs text-wire hover:underline">Contact the desk →</a></div></div>
+{type==="PROJECT"&&projectMeta&&<section class="mt-8 border-y border-line"><div class="grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-4"><div class="bg-bg p-5"><p class="data-label">Sector</p><p class="mt-2 text-sm text-ink">{projectMeta.sector}</p></div><div class="bg-bg p-5"><p class="data-label">Market role</p><p class="mt-2 text-sm text-ink">{projectMeta.role}</p></div><div class="bg-bg p-5"><p class="data-label">Asset exposure</p><p class="mt-2 text-sm text-ink">{projectMeta.assetExposure}</p></div><div class="bg-bg p-5"><p class="data-label">Status</p><p class="mt-2 font-mono text-sm text-wire">{projectMeta.status}</p></div></div></section>}
+{heroImage&&<img src={heroImage} alt={heroImageAlt??""} class="mt-8 aspect-[16/9] w-full border border-line object-cover" loading="eager" width="1200" height="675"/>}
+<PlainEnglish />
+<div class="article-reading mx-auto prose prose-invert prose-wire mt-12 max-w-[720px] text-[17px]"><slot /></div>
+{keyTakeaways.length>0&&<div class="mt-10 border border-line bg-surface p-6"><p class="eyebrow mb-3">Key takeaways</p><ul class="space-y-2.5">{keyTakeaways.map(point=><li class="flex gap-2.5 text-sm leading-relaxed text-ink"><span class="mt-1 text-wire">//</span><span>{point}</span></li>)}</ul></div>}
+{tags.length>0&&<div class="mt-10 flex flex-wrap gap-2">{tags.map(t=><Tag label={t}/>)}</div>}
+{projectGraph.length>0&&<section class="mt-10 border-y border-line py-6"><p class="data-label text-wire">RWA Wire // Intelligence Graph</p><h2 class="mt-2 font-serif text-2xl text-ink">Verified relationships</h2><div class="mt-5 grid gap-px bg-line sm:grid-cols-2">{projectGraph.map(r=>{const other=r.from.kind==="project"&&r.from.slug===entry.slug?r.to:r.from;return <div class="bg-bg p-5"><p class="data-label">{r.label}</p><p class="mt-3 font-serif text-xl text-ink">{title.replace(/ Explained$/,"")} <span class="text-wire">↔</span> {other.label}</p><a href={r.source} target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-[10px] uppercase tracking-[.08em] text-wire hover:underline">Primary source →</a></div>})}</div></section>}
+{matchedTopics.length>0&&<section class="mt-10 border-t border-line pt-6"><div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between"><div><p class="data-label text-wire">Explore this topic</p><p class="mt-1 text-sm text-ink-muted">Continue through RWA Wire's connected research map.</p></div><div class="flex flex-wrap gap-2">{matchedTopics.map(topic=><a href={`/topics/${topic.slug}/`} class="border border-line px-3 py-2 text-[10px] uppercase tracking-[.08em] text-ink-muted hover:border-wire hover:text-wire">{topic.title} →</a>)}</div></div></section>}
+{(scoredProjects.length>0||projectNews.length>0)&&<section class="mt-12 border-y border-line py-6"><div class="flex items-end justify-between gap-4"><div><p class="data-label text-wire">RWA Wire // Intelligence Network</p><h2 class="mt-2 font-serif text-2xl text-ink">{type==="PROJECT"?"Related market intelligence":"Infrastructure connected to this story"}</h2></div></div><div class="mt-5 grid gap-px bg-line sm:grid-cols-3">{scoredProjects.map(p=><a href={`/projects/${p.slug}/`} class="group bg-bg p-5 hover:bg-surface"><h3 class="font-serif text-xl text-ink group-hover:text-wire">{p.data.title.replace(/ Explained$/,"")}</h3></a>)}{projectNews.map(a=><a href={`/${a.data.category}/${a.slug}/`} class="group bg-bg p-5 hover:bg-surface"><h3 class="font-serif text-lg text-ink group-hover:text-wire">{a.data.title}</h3></a>)}</div></section>}
+<div class="mx-auto mt-12 max-w-[720px] space-y-10"><RelatedArticles items={discoveryItems}/>{showTradingCTA&&<TradingCTA/>}</div>
+</div></article>
+<TelegramCTA context={type==="PROJECT"||type==="RESEARCH"?"research":"article"}/>
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)}/>
 </BaseLayout>
