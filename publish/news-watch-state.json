@@ -17,32 +17,32 @@
     "CBMiZEFVX3lxTFBSYkxFVVNvNWNJeUJxSEF0X3cxaVctX1JteUhmX1lRVGk5ZkctSWVoOE11UGxHVlZ2U0l1WWlOXzI1aW8wbm5ySlE0ZnVadnBWejBBZnhZc2ZNMGJ5YU1hMEdyQ24",
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg"
   ],
-  "lastRun": "2026-10-02T14:07:12.383658+00:00",
+  "lastRun": "2026-10-02T14:37:14.711432+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-ac.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 214,
-    "uniqueItems": 158,
+    "rawItems": 216,
+    "uniqueItems": 160,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 42,
+    "watchlist": 44,
     "sourceTiers": {
       "low": 31,
-      "unknown": 152,
-      "primary": 4,
+      "unknown": 154,
       "trusted": 5,
+      "primary": 4,
       "specialist": 22
     },
     "rejections": {
       "watchlist_low": 5,
-      "watchlist_unknown": 35,
-      "duplicate_in_scan": 56,
+      "watchlist_unknown": 37,
       "seen_guid": 3,
-      "score_below_4": 23,
+      "duplicate_in_scan": 56,
+      "score_below_4": 24,
       "watchlist_specialist": 2,
-      "no_rwa_signal": 85,
+      "no_rwa_signal": 84,
       "hard_block": 2,
       "duplicate_story": 3
     },
@@ -63,13 +63,6 @@
         "trust": "unknown"
       },
       {
-        "title": "WisdomTree Launches Onchain Platform as Tokenized Funds Surpass $1.2 Billion",
-        "source": "Cryptonews.net",
-        "normalizedSource": "cryptonews",
-        "score": 10,
-        "trust": "unknown"
-      },
-      {
         "title": "HSBC Partners with Ripple-Owned Metaco for Tokenized Securities Custody Platform",
         "source": "CoinMarketCap",
         "normalizedSource": "coinmarketcap",
@@ -77,8 +70,15 @@
         "trust": "low"
       },
       {
+        "title": "Banks Risk Losing $230,000,000,000 in Payments Revenue As Stablecoins and Tokenized Deposits Scale, According to Survey",
+        "source": "The Daily Hodl",
+        "normalizedSource": "the daily hodl",
+        "score": 9,
+        "trust": "unknown"
+      },
+      {
         "title": "South Korea advances tokenized securities rules ahead of 2027 rollout",
-        "source": "Cryptonews.net",
+        "source": "cryptonews.net",
         "normalizedSource": "cryptonews",
         "score": 9,
         "trust": "unknown"
