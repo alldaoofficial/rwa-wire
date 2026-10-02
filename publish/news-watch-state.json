@@ -17,31 +17,31 @@
     "CBMiZEFVX3lxTFBSYkxFVVNvNWNJeUJxSEF0X3cxaVctX1JteUhmX1lRVGk5ZkctSWVoOE11UGxHVlZ2U0l1WWlOXzI1aW8wbm5ySlE0ZnVadnBWejBBZnhZc2ZNMGJ5YU1hMEdyQ24",
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg"
   ],
-  "lastRun": "2026-10-02T00:37:12.001995+00:00",
+  "lastRun": "2026-10-02T01:07:48.604155+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-ac.json",
-  "lastResult": "candidate",
+  "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 247,
-    "uniqueItems": 177,
+    "rawItems": 245,
+    "uniqueItems": 175,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
-    "important": 1,
-    "watchlist": 49,
+    "important": 0,
+    "watchlist": 48,
     "sourceTiers": {
       "trusted": 12,
       "unknown": 170,
-      "specialist": 30,
+      "specialist": 28,
       "primary": 11,
       "low": 23,
       "wire": 1
     },
     "rejections": {
-      "seen_guid": 3,
+      "seen_guid": 4,
       "watchlist_unknown": 37,
-      "watchlist_specialist": 8,
+      "watchlist_specialist": 7,
       "duplicate_story": 5,
-      "no_rwa_signal": 99,
+      "no_rwa_signal": 98,
       "score_below_4": 17,
       "duplicate_in_scan": 70,
       "watchlist_low": 4,
@@ -50,13 +50,6 @@
     },
     "feedErrors": [],
     "topWatchlist": [
-      {
-        "title": "FSC Chairman Lee Eok-weon Discusses Tokenized Securities With Nasdaq, DTCC, HKEX",
-        "source": "bloomingbit",
-        "normalizedSource": "bloomingbit",
-        "score": 12,
-        "trust": "specialist"
-      },
       {
         "title": "Tokenized Securities Venues Will Not Challenge Traditional Exchanges",
         "source": "Traders Magazine",
@@ -103,6 +96,13 @@
         "title": "Ondo Finance's tokenized stocks hit $1.26B TVL,...",
         "source": "Pluang",
         "normalizedSource": "pluang",
+        "score": 9,
+        "trust": "unknown"
+      },
+      {
+        "title": "Swift Builds Global Payment Rail Linking Fiat and Tokenized Deposits",
+        "source": "finance.biggo.com",
+        "normalizedSource": "finance biggo",
         "score": 9,
         "trust": "unknown"
       }
