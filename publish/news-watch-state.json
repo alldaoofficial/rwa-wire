@@ -17,23 +17,23 @@
     "CBMiZEFVX3lxTFBSYkxFVVNvNWNJeUJxSEF0X3cxaVctX1JteUhmX1lRVGk5ZkctSWVoOE11UGxHVlZ2U0l1WWlOXzI1aW8wbm5ySlE0ZnVadnBWejBBZnhZc2ZNMGJ5YU1hMEdyQ24",
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg"
   ],
-  "lastRun": "2026-10-02T01:37:12.618124+00:00",
+  "lastRun": "2026-10-02T02:07:12.268763+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-ac.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 241,
-    "uniqueItems": 172,
+    "rawItems": 237,
+    "uniqueItems": 170,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
     "watchlist": 48,
     "sourceTiers": {
-      "trusted": 12,
-      "unknown": 168,
+      "trusted": 10,
+      "unknown": 167,
       "specialist": 28,
       "primary": 9,
-      "low": 23,
+      "low": 22,
       "wire": 1
     },
     "rejections": {
@@ -41,9 +41,9 @@
       "watchlist_unknown": 37,
       "watchlist_specialist": 7,
       "duplicate_story": 5,
-      "no_rwa_signal": 97,
+      "no_rwa_signal": 95,
       "score_below_4": 16,
-      "duplicate_in_scan": 69,
+      "duplicate_in_scan": 67,
       "watchlist_low": 4,
       "existing_slug": 1,
       "hard_block": 2
