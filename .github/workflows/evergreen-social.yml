@@ -38,6 +38,15 @@ jobs:
           fi
           echo "skip=false" >> "$GITHUB_OUTPUT"
           echo "package=$OUTPUT" >> "$GITHUB_OUTPUT"
+      - name: Publish to X
+        if: steps.generate.outputs.skip != 'true'
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          PACKAGE: ${{ steps.generate.outputs.package }}
+        run: python3 scripts/x_publish.py "$PACKAGE"
       - name: Publish to Telegram
         if: steps.generate.outputs.skip != 'true'
         env:
@@ -49,23 +58,22 @@ jobs:
           import json,os,pathlib,urllib.parse,urllib.request
           p=pathlib.Path(os.environ['PACKAGE']); d=json.loads(p.read_text()); text=d['telegram']; pid=d['id']
           marker=pathlib.Path('publish/evergreen-social-posted')/(pid+'.json')
-          if marker.exists(): raise SystemExit('Evergreen guide already published')
+          # The persisted marker is authoritative. If Telegram already succeeded in a
+          # previous attempt, do not send it again; allow the workflow to continue.
+          if marker.exists():
+              old=json.loads(marker.read_text())
+              if old.get('telegram_message_id'):
+                  print(f"Telegram already published for {pid}; skipping duplicate send")
+                  raise SystemExit(0)
           body=urllib.parse.urlencode({'chat_id':os.environ['TELEGRAM_CHAT_ID'],'text':text,'disable_web_page_preview':'false'}).encode()
           req=urllib.request.Request('https://api.telegram.org/bot'+os.environ['TELEGRAM_BOT_TOKEN']+'/sendMessage',data=body,method='POST')
           with urllib.request.urlopen(req,timeout=30) as r: result=json.loads(r.read().decode())
           if not result.get('ok'): raise SystemExit('Telegram did not confirm publication')
           marker.parent.mkdir(parents=True,exist_ok=True)
-          marker.write_text(json.dumps({'id':pid,'telegram_message_id':result['result'].get('message_id'),'status':'telegram_published'},indent=2)+'\n')
+          old=json.loads(marker.read_text()) if marker.exists() else {}
+          old.update({'id':pid,'telegram_message_id':result['result'].get('message_id'),'status':'telegram_published'})
+          marker.write_text(json.dumps(old,indent=2)+'\n')
           PY
-      - name: Publish to X
-        if: steps.generate.outputs.skip != 'true'
-        env:
-          X_API_KEY: ${{ secrets.X_API_KEY }}
-          X_API_SECRET: ${{ secrets.X_API_SECRET }}
-          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
-          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
-          PACKAGE: ${{ steps.generate.outputs.package }}
-        run: python3 scripts/x_publish.py "$PACKAGE"
       - name: Mark evergreen package published
         if: steps.generate.outputs.skip != 'true'
         env:
