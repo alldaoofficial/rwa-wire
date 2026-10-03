@@ -187,6 +187,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"blackrock-s-next-big-tokenization-bet.mdx": {
+	id: "blackrock-s-next-big-tokenization-bet.mdx";
+  slug: "blackrock-s-next-big-tokenization-bet";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "bybit-adds-franklin-templeton-tokenized-funds-as-off-exchange-collateral.mdx": {
 	id: "bybit-adds-franklin-templeton-tokenized-funds-as-off-exchange-collateral.mdx";
   slug: "bybit-adds-franklin-templeton-tokenized-funds-as-off-exchange-collateral";
@@ -218,6 +225,27 @@ declare module 'astro:content' {
 "chainlink-and-tokenization-explained.mdx": {
 	id: "chainlink-and-tokenization-explained.mdx";
   slug: "chainlink-and-tokenization-explained";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
+"copy-trading-explained.mdx": {
+	id: "copy-trading-explained.mdx";
+  slug: "copy-trading-explained";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
+"crypto-futures-explained.mdx": {
+	id: "crypto-futures-explained.mdx";
+  slug: "crypto-futures-explained";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
+"crypto-leverage-explained.mdx": {
+	id: "crypto-leverage-explained.mdx";
+  slug: "crypto-leverage-explained";
   body: string;
   collection: "articles";
   data: InferEntrySchema<"articles">
@@ -316,6 +344,13 @@ declare module 'astro:content' {
 "real-world-assets-on-injective-how-do-tokenized-stocks-and-commodities-actually-work-onchain.mdx": {
 	id: "real-world-assets-on-injective-how-do-tokenized-stocks-and-commodities-actually-work-onchain.mdx";
   slug: "real-world-assets-on-injective-how-do-tokenized-stocks-and-commodities-actually-work-onchain";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
+"rwa-crypto-explained.mdx": {
+	id: "rwa-crypto-explained.mdx";
+  slug: "rwa-crypto-explained";
   body: string;
   collection: "articles";
   data: InferEntrySchema<"articles">
