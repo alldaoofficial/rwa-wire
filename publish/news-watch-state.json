@@ -17,32 +17,32 @@
     "CBMiZEFVX3lxTFBSYkxFVVNvNWNJeUJxSEF0X3cxaVctX1JteUhmX1lRVGk5ZkctSWVoOE11UGxHVlZ2U0l1WWlOXzI1aW8wbm5ySlE0ZnVadnBWejBBZnhZc2ZNMGJ5YU1hMEdyQ24",
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg"
   ],
-  "lastRun": "2026-10-03T08:37:12.486697+00:00",
+  "lastRun": "2026-10-03T09:07:11.942461+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-ac.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 223,
-    "uniqueItems": 154,
+    "rawItems": 225,
+    "uniqueItems": 153,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 56,
+    "watchlist": 57,
     "sourceTiers": {
-      "unknown": 166,
-      "trusted": 6,
+      "unknown": 169,
+      "trusted": 7,
       "low": 29,
-      "specialist": 19,
+      "specialist": 17,
       "primary": 3
     },
     "rejections": {
-      "watchlist_unknown": 46,
+      "watchlist_unknown": 47,
       "score_below_4": 19,
-      "duplicate_in_scan": 69,
+      "duplicate_in_scan": 72,
       "seen_guid": 2,
       "watchlist_low": 6,
       "watchlist_specialist": 4,
-      "no_rwa_signal": 73,
+      "no_rwa_signal": 71,
       "hard_block": 2,
       "duplicate_story": 2
     },
@@ -64,8 +64,8 @@
       },
       {
         "title": "Centrifuge brings tokenized Treasury and credit funds to Arc",
-        "source": "Crypto Briefing",
-        "normalizedSource": "crypto briefing",
+        "source": "cryptobriefing.com",
+        "normalizedSource": "cryptobriefing",
         "score": 12,
         "trust": "unknown"
       },
