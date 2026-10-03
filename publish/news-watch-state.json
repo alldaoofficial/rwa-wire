@@ -18,34 +18,34 @@
     "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB",
     "CBMiugFBVV95cUxQU1hMal9aa3A3S0t2MVFjSVF0amVHcF9hdlBNNFkzSTFHWnROVWw0WHh6OThtcGlHXzltTzI5NkhJZGszVnFRMTJrd0lZdWxMdWw2ZGFCUGlqWmo1aUozM0w3aTRRSnR6anAyS3NUYmxOMXZ6YXc4bjhBeWpCdWxaY0s0ZGVhUnZHUEZYeXp6M3Q3T2kwcms5ODNUSkRaWkhPTWtDOHd0dEl2bDJ3N2hXaXo1NTljMjlEM1E"
   ],
-  "lastRun": "2026-10-03T13:37:12.004499+00:00",
+  "lastRun": "2026-10-03T14:07:12.005843+00:00",
   "lastCandidate": "publish/inbox/2026-10-03-blackrock-s-next-big-tokenization-bet.json",
-  "lastResult": "candidate",
+  "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 205,
-    "uniqueItems": 139,
+    "rawItems": 210,
+    "uniqueItems": 140,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
-    "important": 1,
-    "watchlist": 53,
+    "important": 0,
+    "watchlist": 54,
     "sourceTiers": {
-      "unknown": 159,
-      "low": 26,
-      "specialist": 12,
+      "unknown": 164,
+      "low": 25,
+      "specialist": 13,
       "trusted": 6,
       "primary": 2
     },
     "rejections": {
-      "watchlist_unknown": 45,
-      "duplicate_in_scan": 66,
+      "watchlist_unknown": 46,
+      "duplicate_in_scan": 70,
       "score_below_4": 15,
       "watchlist_low": 6,
       "watchlist_specialist": 2,
       "no_rwa_signal": 65,
       "hard_block": 2,
       "duplicate_story": 2,
-      "seen_guid": 1
+      "seen_guid": 2
     },
     "feedErrors": [],
     "topWatchlist": [
@@ -79,14 +79,14 @@
       },
       {
         "title": "Chainlink automates dividend payments for tokenized stocks across multiple blockchains with Swift.",
-        "source": "Pluang",
+        "source": "pluang.com",
         "normalizedSource": "pluang",
         "score": 11,
         "trust": "unknown"
       },
       {
         "title": "Centrifuge launches tokenized Treasury and cred...",
-        "source": "Pluang",
+        "source": "pluang.com",
         "normalizedSource": "pluang",
         "score": 11,
         "trust": "unknown"
