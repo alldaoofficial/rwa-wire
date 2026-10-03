@@ -18,31 +18,31 @@
     "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB",
     "CBMiugFBVV95cUxQU1hMal9aa3A3S0t2MVFjSVF0amVHcF9hdlBNNFkzSTFHWnROVWw0WHh6OThtcGlHXzltTzI5NkhJZGszVnFRMTJrd0lZdWxMdWw2ZGFCUGlqWmo1aUozM0w3aTRRSnR6anAyS3NUYmxOMXZ6YXc4bjhBeWpCdWxaY0s0ZGVhUnZHUEZYeXp6M3Q3T2kwcms5ODNUSkRaWkhPTWtDOHd0dEl2bDJ3N2hXaXo1NTljMjlEM1E"
   ],
-  "lastRun": "2026-10-03T22:23:42.485790+00:00",
+  "lastRun": "2026-10-03T22:37:11.950858+00:00",
   "lastCandidate": "publish/inbox/2026-10-03-blackrock-s-next-big-tokenization-bet.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 178,
-    "uniqueItems": 114,
+    "rawItems": 177,
+    "uniqueItems": 113,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 47,
+    "watchlist": 46,
     "sourceTiers": {
       "low": 28,
-      "unknown": 139,
+      "unknown": 138,
       "specialist": 8,
       "trusted": 3
     },
     "rejections": {
       "watchlist_low": 6,
-      "score_below_4": 15,
-      "watchlist_unknown": 40,
+      "score_below_4": 14,
+      "watchlist_unknown": 39,
       "duplicate_in_scan": 64,
       "hard_block": 1,
       "watchlist_specialist": 1,
-      "no_rwa_signal": 48,
+      "no_rwa_signal": 49,
       "duplicate_story": 2,
       "seen_guid": 1
     },
@@ -50,7 +50,7 @@
     "topWatchlist": [
       {
         "title": "LINK News: Chainlink Expands Swift Partnership Into Tokenized Securities",
-        "source": "coinpaper.com",
+        "source": "Coinpaper",
         "normalizedSource": "coinpaper",
         "score": 13,
         "trust": "unknown"
