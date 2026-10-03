@@ -17,30 +17,30 @@
     "CBMiZEFVX3lxTFBSYkxFVVNvNWNJeUJxSEF0X3cxaVctX1JteUhmX1lRVGk5ZkctSWVoOE11UGxHVlZ2U0l1WWlOXzI1aW8wbm5ySlE0ZnVadnBWejBBZnhZc2ZNMGJ5YU1hMEdyQ24",
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg"
   ],
-  "lastRun": "2026-10-03T04:07:12.178460+00:00",
+  "lastRun": "2026-10-03T04:37:12.935962+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-ac.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 225,
-    "uniqueItems": 154,
+    "rawItems": 226,
+    "uniqueItems": 156,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 56,
+    "watchlist": 58,
     "sourceTiers": {
-      "unknown": 168,
-      "trusted": 5,
-      "low": 29,
+      "unknown": 166,
+      "trusted": 7,
+      "low": 30,
       "specialist": 20,
       "primary": 3
     },
     "rejections": {
       "score_below_4": 17,
-      "watchlist_unknown": 47,
-      "duplicate_in_scan": 71,
+      "watchlist_unknown": 48,
+      "duplicate_in_scan": 70,
       "seen_guid": 2,
-      "watchlist_low": 5,
+      "watchlist_low": 6,
       "watchlist_specialist": 4,
       "no_rwa_signal": 73,
       "hard_block": 2,
@@ -70,6 +70,13 @@
         "trust": "unknown"
       },
       {
+        "title": "Crypto News: USDY Fund Launches on Sei Network as Ondo Finance Expands Tokenized Treasury Products",
+        "source": "CoinMarketCap",
+        "normalizedSource": "coinmarketcap",
+        "score": 12,
+        "trust": "low"
+      },
+      {
         "title": "Chainlink automates dividend payments for tokenized stocks across multiple blockchains with Swift.",
         "source": "Pluang",
         "normalizedSource": "pluang",
@@ -92,17 +99,10 @@
       },
       {
         "title": "Tokenized Securities Venues Will Not Challenge Traditional Exchanges",
-        "source": "tradersmagazine.com",
-        "normalizedSource": "tradersmagazine",
+        "source": "Traders Magazine",
+        "normalizedSource": "traders magazine",
         "score": 10,
         "trust": "unknown"
-      },
-      {
-        "title": "South Korea Sets $2.8 Million Capital Requirement for Tokenized Securities Firms",
-        "source": "FinanceFeeds",
-        "normalizedSource": "financefeeds",
-        "score": 9,
-        "trust": "specialist"
       }
     ]
   },
