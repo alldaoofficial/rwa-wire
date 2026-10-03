@@ -1,0 +1,12 @@
+{
+  "id": "rwa-infrastructure-explained",
+  "kind": "evergreen",
+  "category": "rwa",
+  "article_url": "https://therwawire.com/rwa/rwa-infrastructure-explained/",
+  "image_url": "https://therwawire.com/generated/social/rwa-infrastructure-explained.jpg",
+  "title": "RWA Infrastructure Explained: The Stack Behind Tokenized Finance",
+  "x": "RWA Infrastructure: The Stack Behind Tokenized Finance: what actually matters.\n\nRWA infrastructure is the full stack connecting legally enforceable offchain assets and financial claims to…\n\nRead the guide ↓\nhttps://therwawire.com/rwa/rwa-infrastructure-explained/",
+  "telegram": "📚 RWA Infrastructure Explained: The Stack Behind Tokenized Finance\n\n• RWA infrastructure is the full stack connecting legally enforceable offchain assets and financial claims to programmable digital markets.\n\n• The blockchain is only one layer; legal structure, custody, identity, data, interoperability and settlement are equally important.\n\n• Institutional tokenization increasingly depends on connecting multiple ledgers and existing financial infrastructure rather than putting everything on one chain.\n\nFull guide (11 min read):\nhttps://therwawire.com/rwa/rwa-infrastructure-explained/",
+  "source_path": "src/content/articles/rwa-infrastructure-explained.mdx",
+  "generated_at": "2026-10-03T18:08:03.569788+00:00"
+}
