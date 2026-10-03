@@ -17,32 +17,32 @@
     "CBMiZEFVX3lxTFBSYkxFVVNvNWNJeUJxSEF0X3cxaVctX1JteUhmX1lRVGk5ZkctSWVoOE11UGxHVlZ2U0l1WWlOXzI1aW8wbm5ySlE0ZnVadnBWejBBZnhZc2ZNMGJ5YU1hMEdyQ24",
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg"
   ],
-  "lastRun": "2026-10-03T09:37:11.738172+00:00",
+  "lastRun": "2026-10-03T10:07:10.437598+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-ac.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
     "rawItems": 227,
-    "uniqueItems": 156,
+    "uniqueItems": 154,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
     "watchlist": 57,
     "sourceTiers": {
-      "unknown": 174,
+      "unknown": 172,
       "trusted": 8,
-      "low": 25,
-      "specialist": 17,
+      "low": 28,
+      "specialist": 16,
       "primary": 3
     },
     "rejections": {
       "watchlist_unknown": 47,
       "score_below_4": 19,
-      "duplicate_in_scan": 71,
+      "duplicate_in_scan": 73,
       "seen_guid": 2,
       "watchlist_low": 6,
       "watchlist_specialist": 4,
-      "no_rwa_signal": 74,
+      "no_rwa_signal": 72,
       "hard_block": 2,
       "duplicate_story": 2
     },
@@ -78,14 +78,14 @@
       },
       {
         "title": "Chainlink automates dividend payments for tokenized stocks across multiple blockchains with Swift.",
-        "source": "pluang.com",
+        "source": "Pluang",
         "normalizedSource": "pluang",
         "score": 11,
         "trust": "unknown"
       },
       {
         "title": "Centrifuge launches tokenized Treasury and cred...",
-        "source": "pluang.com",
+        "source": "Pluang",
         "normalizedSource": "pluang",
         "score": 11,
         "trust": "unknown"
