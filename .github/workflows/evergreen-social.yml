@@ -36,7 +36,7 @@ jobs:
         env:
           PACKAGE: ${{ steps.generate.outputs.package }}
         run: python3 scripts/social_card.py "$PACKAGE"
-      - name: Persist card before publishing
+      - name: Persist generated card
         if: steps.generate.outputs.skip != 'true'
         run: |
           git config user.name "github-actions[bot]"
@@ -44,7 +44,6 @@ jobs:
           git add public/generated/social/ publish/evergreen-social/
           git commit -m "Evergreen Social: generate branded card"
           for attempt in 1 2 3; do git pull --rebase origin main && git push && break; sleep 3; done
-          sleep 45
       - name: Publish to X
         if: steps.generate.outputs.skip != 'true'
         env:
