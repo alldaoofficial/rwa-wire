@@ -17,32 +17,32 @@
     "CBMiZEFVX3lxTFBSYkxFVVNvNWNJeUJxSEF0X3cxaVctX1JteUhmX1lRVGk5ZkctSWVoOE11UGxHVlZ2U0l1WWlOXzI1aW8wbm5ySlE0ZnVadnBWejBBZnhZc2ZNMGJ5YU1hMEdyQ24",
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg"
   ],
-  "lastRun": "2026-10-03T03:37:12.454532+00:00",
+  "lastRun": "2026-10-03T04:07:12.178460+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-ac.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
     "rawItems": 225,
-    "uniqueItems": 153,
+    "uniqueItems": 154,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
     "watchlist": 56,
     "sourceTiers": {
-      "unknown": 169,
+      "unknown": 168,
       "trusted": 5,
-      "low": 28,
+      "low": 29,
       "specialist": 20,
       "primary": 3
     },
     "rejections": {
       "score_below_4": 17,
-      "watchlist_unknown": 48,
-      "duplicate_in_scan": 72,
+      "watchlist_unknown": 47,
+      "duplicate_in_scan": 71,
       "seen_guid": 2,
       "watchlist_low": 5,
-      "watchlist_specialist": 3,
-      "no_rwa_signal": 72,
+      "watchlist_specialist": 4,
+      "no_rwa_signal": 73,
       "hard_block": 2,
       "duplicate_story": 4
     },
@@ -92,8 +92,8 @@
       },
       {
         "title": "Tokenized Securities Venues Will Not Challenge Traditional Exchanges",
-        "source": "Traders Magazine",
-        "normalizedSource": "traders magazine",
+        "source": "tradersmagazine.com",
+        "normalizedSource": "tradersmagazine",
         "score": 10,
         "trust": "unknown"
       },
