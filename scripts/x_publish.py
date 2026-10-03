@@ -24,15 +24,21 @@ ck=os.environ["X_API_KEY"]; cs=os.environ["X_API_SECRET"]; at=os.environ["X_ACCE
 enc=lambda s: urllib.parse.quote(str(s),safe="~-._")
 def auth_header(method,url,extra=None):
  oauth={"oauth_consumer_key":ck,"oauth_nonce":secrets.token_hex(16),"oauth_signature_method":"HMAC-SHA1","oauth_timestamp":str(int(time.time())),"oauth_token":at,"oauth_version":"1.0"}; params={**oauth,**(extra or {})}; param="&".join(f"{enc(k)}={enc(v)}" for k,v in sorted(params.items())); base="&".join([method,enc(url),enc(param)]); key=f"{enc(cs)}&{enc(ats)}"; oauth["oauth_signature"]=base64.b64encode(hmac.new(key.encode(),base.encode(),hashlib.sha1).digest()).decode(); return "OAuth "+", ".join(f'{enc(k)}="{enc(v)}"' for k,v in sorted(oauth.items()))
-def load_news_image(url):
- if not url:return None
- with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'RWA-Wire-X-Publisher/1.4'}),timeout=30) as r: raw=r.read()
- if url.lower().split('?')[0].endswith('.svg') or raw.lstrip().startswith(b'<svg'):
+def normalize_image(raw,is_svg=False):
+ if is_svg or raw.lstrip().startswith(b'<svg'):
   import cairosvg; raw=cairosvg.svg2png(bytestring=raw,output_width=1200,output_height=675)
  from PIL import Image
  im=Image.open(BytesIO(raw)).convert('RGB'); out=BytesIO(); im.save(out,'JPEG',quality=92,optimize=True); return out.getvalue()
+def load_news_image(url):
+ if not url:return None
+ with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'RWA-Wire-X-Publisher/1.5'}),timeout=30) as r: raw=r.read()
+ return normalize_image(raw,url.lower().split('?')[0].endswith('.svg'))
+def load_evergreen_card():
+ card=(ROOT/'public/generated/social'/f'{publish_id}.jpg').resolve(); card_root=(ROOT/'public/generated/social').resolve()
+ if card_root not in card.parents or not card.is_file(): raise SystemExit(f'Local evergreen social card missing: {card.relative_to(ROOT)}')
+ return normalize_image(card.read_bytes())
 def upload_media(raw):
- url='https://upload.twitter.com/1.1/media/upload.json'; boundary='----RWAWire'+uuid.uuid4().hex; body=bytearray(); body.extend(f'--{boundary}\r\nContent-Disposition: form-data; name="media"; filename="rwa-wire.jpg"\r\nContent-Type: image/jpeg\r\n\r\n'.encode()); body.extend(raw); body.extend(f'\r\n--{boundary}--\r\n'.encode()); req=urllib.request.Request(url,data=bytes(body),method='POST',headers={'Authorization':auth_header('POST',url),'Content-Type':f'multipart/form-data; boundary={boundary}','User-Agent':'RWA-Wire-X-Publisher/1.4'})
+ url='https://upload.twitter.com/1.1/media/upload.json'; boundary='----RWAWire'+uuid.uuid4().hex; body=bytearray(); body.extend(f'--{boundary}\r\nContent-Disposition: form-data; name="media"; filename="rwa-wire.jpg"\r\nContent-Type: image/jpeg\r\n\r\n'.encode()); body.extend(raw); body.extend(f'\r\n--{boundary}--\r\n'.encode()); req=urllib.request.Request(url,data=bytes(body),method='POST',headers={'Authorization':auth_header('POST',url),'Content-Type':f'multipart/form-data; boundary={boundary}','User-Agent':'RWA-Wire-X-Publisher/1.5'})
  try:
   with urllib.request.urlopen(req,timeout=45) as r: result=json.loads(r.read().decode())
  except urllib.error.HTTPError as e: raise SystemExit(f"X media upload HTTP {e.code}: {e.read().decode(errors='replace')[:1000]}")
@@ -40,10 +46,12 @@ def upload_media(raw):
  if not mid: raise SystemExit(f'X media upload did not return media id: {result}')
  return mid
 media_id=None
-if not is_pulse and image_url: media_id=upload_media(load_news_image(image_url))
+if not is_pulse:
+ if is_evergreen: media_id=upload_media(load_evergreen_card())
+ elif image_url: media_id=upload_media(load_news_image(image_url))
 url="https://api.x.com/2/tweets"; payload={"text":text}
 if media_id: payload['media']={'media_ids':[media_id]}
-req=urllib.request.Request(url,data=json.dumps(payload).encode(),method='POST',headers={"Authorization":auth_header('POST',url),"Content-Type":"application/json","User-Agent":"RWA-Wire-X-Publisher/1.4"})
+req=urllib.request.Request(url,data=json.dumps(payload).encode(),method='POST',headers={"Authorization":auth_header('POST',url),"Content-Type":"application/json","User-Agent":"RWA-Wire-X-Publisher/1.5"})
 try:
  with urllib.request.urlopen(req,timeout=30) as r: result=json.loads(r.read().decode())
 except urllib.error.HTTPError as e: raise SystemExit(f"X API HTTP {e.code}: {e.read().decode(errors='replace')[:1000]}")
