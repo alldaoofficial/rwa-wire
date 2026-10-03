@@ -17,30 +17,30 @@
     "CBMiZEFVX3lxTFBSYkxFVVNvNWNJeUJxSEF0X3cxaVctX1JteUhmX1lRVGk5ZkctSWVoOE11UGxHVlZ2U0l1WWlOXzI1aW8wbm5ySlE0ZnVadnBWejBBZnhZc2ZNMGJ5YU1hMEdyQ24",
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg"
   ],
-  "lastRun": "2026-10-03T00:07:12.196260+00:00",
+  "lastRun": "2026-10-03T00:37:14.668687+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-ac.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
     "rawItems": 222,
-    "uniqueItems": 153,
+    "uniqueItems": 156,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 51,
+    "watchlist": 54,
     "sourceTiers": {
-      "unknown": 162,
-      "low": 28,
+      "unknown": 165,
+      "low": 27,
       "trusted": 6,
-      "primary": 4,
-      "specialist": 22
+      "specialist": 21,
+      "primary": 3
     },
     "rejections": {
       "score_below_4": 19,
-      "watchlist_unknown": 44,
+      "watchlist_unknown": 47,
       "seen_guid": 2,
       "watchlist_low": 4,
-      "duplicate_in_scan": 69,
+      "duplicate_in_scan": 66,
       "watchlist_specialist": 3,
       "no_rwa_signal": 75,
       "hard_block": 2,
@@ -50,9 +50,16 @@
     "topWatchlist": [
       {
         "title": "LINK News: Chainlink Expands Swift Partnership Into Tokenized Securities",
-        "source": "coinpaper.com",
+        "source": "Coinpaper",
         "normalizedSource": "coinpaper",
         "score": 13,
+        "trust": "unknown"
+      },
+      {
+        "title": "Chainlink Connects Financial Institutions to Swift’s Blockchain Ledger for Tokenized Deposits",
+        "source": "CryptoDaily",
+        "normalizedSource": "cryptodaily",
+        "score": 12,
         "trust": "unknown"
       },
       {
@@ -92,17 +99,10 @@
       },
       {
         "title": "South Korea Sets $2.8 Million Capital Requirement for Tokenized Securities Firms",
-        "source": "financefeeds.com",
+        "source": "FinanceFeeds",
         "normalizedSource": "financefeeds",
         "score": 9,
         "trust": "specialist"
-      },
-      {
-        "title": "Banks Risk Losing $230,000,000,000 in Payments Revenue As Stablecoins and Tokenized Deposits Scale, According to Survey",
-        "source": "The Daily Hodl",
-        "normalizedSource": "the daily hodl",
-        "score": 9,
-        "trust": "unknown"
       }
     ]
   },
