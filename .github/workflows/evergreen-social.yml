@@ -19,6 +19,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 2
+      - name: Install social image dependencies
+        run: python3 -m pip install --disable-pip-version-check pillow cairosvg
       - name: Generate one evergreen social package
         id: generate
         run: |
