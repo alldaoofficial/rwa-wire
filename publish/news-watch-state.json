@@ -17,31 +17,31 @@
     "CBMiZEFVX3lxTFBSYkxFVVNvNWNJeUJxSEF0X3cxaVctX1JteUhmX1lRVGk5ZkctSWVoOE11UGxHVlZ2U0l1WWlOXzI1aW8wbm5ySlE0ZnVadnBWejBBZnhZc2ZNMGJ5YU1hMEdyQ24",
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg"
   ],
-  "lastRun": "2026-10-03T12:37:12.169261+00:00",
+  "lastRun": "2026-10-03T13:07:12.291666+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-ac.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 211,
+    "rawItems": 207,
     "uniqueItems": 139,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 53,
+    "watchlist": 54,
     "sourceTiers": {
-      "unknown": 163,
+      "unknown": 162,
       "low": 26,
-      "specialist": 14,
-      "primary": 3,
-      "trusted": 5
+      "specialist": 13,
+      "trusted": 4,
+      "primary": 2
     },
     "rejections": {
-      "watchlist_unknown": 45,
+      "watchlist_unknown": 46,
       "score_below_4": 16,
-      "duplicate_in_scan": 72,
+      "duplicate_in_scan": 68,
       "watchlist_low": 6,
       "watchlist_specialist": 2,
-      "no_rwa_signal": 65,
+      "no_rwa_signal": 64,
       "hard_block": 2,
       "duplicate_story": 2,
       "seen_guid": 1
@@ -78,14 +78,14 @@
       },
       {
         "title": "Chainlink automates dividend payments for tokenized stocks across multiple blockchains with Swift.",
-        "source": "pluang.com",
+        "source": "Pluang",
         "normalizedSource": "pluang",
         "score": 11,
         "trust": "unknown"
       },
       {
         "title": "Centrifuge launches tokenized Treasury and cred...",
-        "source": "pluang.com",
+        "source": "Pluang",
         "normalizedSource": "pluang",
         "score": 11,
         "trust": "unknown"
