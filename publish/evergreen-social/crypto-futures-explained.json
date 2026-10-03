@@ -1,0 +1,10 @@
+{
+  "id": "crypto-futures-explained",
+  "kind": "evergreen",
+  "article_url": "https://therwawire.com/learn/crypto-futures-explained/",
+  "title": "Crypto Futures Explained: Perpetuals, Margin, Funding and Liquidation",
+  "x": "Crypto Futures: Perpetuals, Margin, Funding and Liquidation: what actually matters.\n\nCrypto futures let traders take long or short exposure without owning the underlying asset, but leverage can amplify…\n\nRead the guide ↓\nhttps://therwawire.com/learn/crypto-futures-explained/",
+  "telegram": "📚 Crypto Futures Explained: Perpetuals, Margin, Funding and Liquidation\n\n• Crypto futures let traders take long or short exposure without owning the underlying asset, but leverage can amplify losses as well as gains.\n\n• Perpetual futures use funding payments rather than an expiry date to help keep contract prices close to spot markets.\n\n• Margin, liquidation price, fees, funding and position sizing matter more than the headline leverage setting alone.\n\nFull guide (9 min read):\nhttps://therwawire.com/learn/crypto-futures-explained/",
+  "source_path": "src/content/articles/crypto-futures-explained.mdx",
+  "generated_at": "2026-10-03T06:45:27.792508+00:00"
+}
