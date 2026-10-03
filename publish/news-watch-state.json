@@ -18,31 +18,31 @@
     "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB",
     "CBMiugFBVV95cUxQU1hMal9aa3A3S0t2MVFjSVF0amVHcF9hdlBNNFkzSTFHWnROVWw0WHh6OThtcGlHXzltTzI5NkhJZGszVnFRMTJrd0lZdWxMdWw2ZGFCUGlqWmo1aUozM0w3aTRRSnR6anAyS3NUYmxOMXZ6YXc4bjhBeWpCdWxaY0s0ZGVhUnZHUEZYeXp6M3Q3T2kwcms5ODNUSkRaWkhPTWtDOHd0dEl2bDJ3N2hXaXo1NTljMjlEM1E"
   ],
-  "lastRun": "2026-10-03T21:07:10.930802+00:00",
+  "lastRun": "2026-10-03T21:37:12.248066+00:00",
   "lastCandidate": "publish/inbox/2026-10-03-blackrock-s-next-big-tokenization-bet.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 179,
-    "uniqueItems": 120,
+    "rawItems": 177,
+    "uniqueItems": 114,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 48,
+    "watchlist": 46,
     "sourceTiers": {
-      "low": 26,
-      "unknown": 137,
-      "specialist": 12,
+      "low": 27,
+      "unknown": 138,
+      "specialist": 8,
       "trusted": 4
     },
     "rejections": {
       "watchlist_low": 6,
       "score_below_4": 14,
-      "watchlist_unknown": 41,
-      "duplicate_in_scan": 59,
+      "watchlist_unknown": 39,
+      "duplicate_in_scan": 63,
       "hard_block": 1,
       "watchlist_specialist": 1,
-      "no_rwa_signal": 54,
+      "no_rwa_signal": 50,
       "duplicate_story": 2,
       "seen_guid": 1
     },
@@ -78,7 +78,7 @@
       },
       {
         "title": "Centrifuge launches tokenized Treasury and cred...",
-        "source": "pluang.com",
+        "source": "Pluang",
         "normalizedSource": "pluang",
         "score": 11,
         "trust": "unknown"
