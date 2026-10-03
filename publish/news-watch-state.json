@@ -17,32 +17,32 @@
     "CBMiZEFVX3lxTFBSYkxFVVNvNWNJeUJxSEF0X3cxaVctX1JteUhmX1lRVGk5ZkctSWVoOE11UGxHVlZ2U0l1WWlOXzI1aW8wbm5ySlE0ZnVadnBWejBBZnhZc2ZNMGJ5YU1hMEdyQ24",
     "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg"
   ],
-  "lastRun": "2026-10-03T00:37:14.668687+00:00",
+  "lastRun": "2026-10-03T00:41:00.145386+00:00",
   "lastCandidate": "publish/inbox/2026-10-01-leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-ac.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 222,
-    "uniqueItems": 156,
+    "rawItems": 221,
+    "uniqueItems": 155,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 54,
+    "watchlist": 55,
     "sourceTiers": {
-      "unknown": 165,
+      "unknown": 164,
       "low": 27,
       "trusted": 6,
       "specialist": 21,
       "primary": 3
     },
     "rejections": {
-      "score_below_4": 19,
-      "watchlist_unknown": 47,
+      "score_below_4": 18,
+      "watchlist_unknown": 48,
       "seen_guid": 2,
       "watchlist_low": 4,
       "duplicate_in_scan": 66,
       "watchlist_specialist": 3,
-      "no_rwa_signal": 75,
+      "no_rwa_signal": 74,
       "hard_block": 2,
       "duplicate_story": 4
     },
@@ -57,7 +57,7 @@
       },
       {
         "title": "Chainlink Connects Financial Institutions to Swift’s Blockchain Ledger for Tokenized Deposits",
-        "source": "CryptoDaily",
+        "source": "cryptodaily.co.uk",
         "normalizedSource": "cryptodaily",
         "score": 12,
         "trust": "unknown"
