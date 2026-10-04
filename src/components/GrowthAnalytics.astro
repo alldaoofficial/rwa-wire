@@ -16,14 +16,7 @@ const endpoint = "https://dqeakkrsbgxnexucuyld.supabase.co/functions/v1/growth-e
       metadata,
       referrer: document.referrer ? (() => { try { return new URL(document.referrer).hostname; } catch { return ""; } })() : ""
     });
-    fetch(endpoint, {
-      method: "POST",
-      mode: "cors",
-      headers: { "content-type": "application/json" },
-      body: payload,
-      keepalive: true,
-      credentials: "omit"
-    }).catch(() => {});
+    fetch(endpoint, { method: "POST", mode: "cors", headers: { "content-type": "application/json" }, body: payload, keepalive: true, credentials: "omit" }).catch(() => {});
   };
 
   window.rwaAnalytics = { track: send };
@@ -33,13 +26,14 @@ const endpoint = "https://dqeakkrsbgxnexucuyld.supabase.co/functions/v1/growth-e
     if (!a) return;
     const href = a.getAttribute("href") || "";
     const placement = a.dataset?.affiliatePlacement || a.dataset?.analyticsPlacement || "";
-    if (href.includes("bitunix.com/")) return send("affiliate_click","bitunix",{ placement, href });
-    if (href.includes("t.me/RWAWireHQ")) return send("telegram_click","telegram",{ placement });
-    if (href.includes("x.com/RWAWireHQ")) return send("x_click","x",{ placement });
-    if (href.startsWith("/topics/")) return send("topic_click",href);
-    if (href.startsWith("/projects/")) return send("project_click",href);
-    if (href.startsWith("/markets/")) return send("market_click",href);
-    if (/^\/(news|rwa|tokenization|institutions|learn)\//.test(href)) return send("content_click",href);
+    if (href.includes("bitunix.com/")) return send("affiliate_click", "bitunix", { placement, href });
+    if (href === "/bitunix/" || href.endsWith("/bitunix/")) return send("bitunix_guide_click", "bitunix-guide", { placement });
+    if (href.includes("t.me/RWAWireHQ")) return send("telegram_click", "telegram", { placement });
+    if (href.includes("x.com/RWAWireHQ")) return send("x_click", "x", { placement });
+    if (href.startsWith("/topics/")) return send("topic_click", href);
+    if (href.startsWith("/projects/")) return send("project_click", href);
+    if (href.startsWith("/markets/")) return send("market_click", href);
+    if (/^\/(news|rwa|tokenization|institutions|learn)\//.test(href)) return send("content_click", href);
   });
 })();
 </script>
