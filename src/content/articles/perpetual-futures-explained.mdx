@@ -1,0 +1,150 @@
+---
+type: "EXPLAINER"
+category: "learn"
+title: "Perpetual Futures Explained: Funding, Leverage and Liquidation"
+description: "Learn how crypto perpetual futures work, including funding rates, leverage, margin, liquidation, mark price and the risks traders should understand before using perps."
+pubDate: "2026-10-04"
+readingTime: "9 min read"
+tags: ["Trading", "Futures", "Perpetuals", "Beginner Guide"]
+relatedSlugs: ["stablecoins-explained", "what-are-real-world-assets-rwa"]
+keyTakeaways:
+  - "Perpetual futures are derivatives that track an underlying market without a fixed expiry date."
+  - "Funding payments help keep perpetual prices near spot prices, but funding can add meaningful holding costs."
+  - "Leverage magnifies both gains and losses, and insufficient margin can lead to forced liquidation."
+showTradingCTA: true
+draft: false
+---
+
+Perpetual futures — often called **perps** — are among the most widely used derivatives in crypto trading. They let traders take long or short exposure to an asset without buying the asset itself and, unlike traditional futures contracts, they do not have a fixed expiry date.
+
+That convenience also makes them easy to misunderstand. Funding, leverage and liquidation can turn a seemingly small position into a much larger risk than a spot trade.
+
+This guide explains the mechanics before the strategy.
+
+## What is a perpetual futures contract?
+
+A perpetual future is a derivative whose value is designed to follow an underlying market such as BTC or ETH.
+
+If you open a **long** position, you generally benefit when the contract price rises. If you open a **short** position, you generally benefit when it falls. You are trading a contract rather than taking ordinary spot ownership of the underlying asset.
+
+The defining feature is that the contract has **no scheduled expiration date**. A position can theoretically remain open as long as the trader maintains sufficient margin and meets the platform's requirements.
+
+## Why doesn't a perpetual drift away from spot price?
+
+Traditional futures eventually converge toward spot because they expire. Perpetuals need another mechanism.
+
+That mechanism is usually the **funding rate**.
+
+At scheduled intervals, one side of the market pays the other. The exact formula and interval depend on the trading venue, but the economic purpose is broadly similar: create an incentive that helps keep the perpetual contract near the underlying reference price.
+
+When perpetuals trade above spot, funding is often positive and longs may pay shorts. When perpetuals trade below spot, funding can become negative and shorts may pay longs.
+
+Funding is not a guaranteed source of profit. Rates change, and a trade that looks attractive because of funding can move against you much more than the funding payment itself.
+
+## What does leverage actually do?
+
+Leverage allows a trader to control a position larger than the margin committed to it.
+
+Suppose a trader uses $100 of margin to open a $1,000 position. That is roughly 10x exposure relative to the posted margin. A 1% move in the underlying market therefore has a much larger percentage effect on the trader's equity than it would on an unleveraged $100 spot position.
+
+Leverage does **not** make a trade more accurate. It simply amplifies exposure.
+
+The higher the leverage, the less adverse price movement the position can usually tolerate before margin becomes insufficient.
+
+## Margin: isolated vs cross
+
+Many derivatives platforms offer at least two margin approaches.
+
+### Isolated margin
+
+Only margin allocated to a particular position is primarily at risk for that position. Traders can more clearly define how much collateral they are assigning to the trade, although exact liquidation mechanics vary by venue.
+
+### Cross margin
+
+Available collateral can be shared across positions. This may give an individual position more room before liquidation, but it can also expose a larger portion of the account to losses.
+
+Neither setting removes risk. Traders should understand the platform's specific margin rules before opening a position.
+
+## What is liquidation?
+
+A leveraged position needs enough collateral to support its losses. If account or position equity falls below the venue's required maintenance margin, the platform can begin closing the position automatically.
+
+That process is **liquidation**.
+
+Liquidation is one of the most important differences between leveraged derivatives and ordinary spot ownership. A spot asset can decline substantially while the holder still owns the same number of units. A leveraged perpetual position can be forcibly closed before the market ever has a chance to recover.
+
+## Mark price vs last traded price
+
+Derivatives venues commonly use a **mark price** or similar reference mechanism when calculating unrealized profit and loss and liquidation thresholds.
+
+The last traded price can temporarily jump because of a thin order book or an isolated trade. A mark-price system attempts to reduce the chance that such a short-lived print alone triggers liquidations.
+
+The exact methodology differs between exchanges, so traders should check how their venue calculates its index and mark price.
+
+## A simple leverage example
+
+Imagine BTC is trading at $100,000 and a trader opens a $1,000 long position using $100 of margin.
+
+If BTC rises 2%, the position's gross move is approximately $20 before fees, funding and other effects. Relative to the $100 margin, that is a large percentage gain.
+
+But the relationship works in reverse. A 2% decline produces approximately a $20 gross loss on the position. Larger adverse moves can rapidly consume the available margin.
+
+Real liquidation prices are more complicated because maintenance margin, fees, additional collateral, entry price and platform rules all matter. The example simply demonstrates why leverage magnifies outcomes.
+
+## Costs traders often overlook
+
+Profit and loss is not determined only by entry and exit prices.
+
+Perpetual traders may encounter:
+
+- trading fees when entering and exiting;
+- recurring funding payments;
+- spread and slippage;
+- liquidation-related costs; and
+- opportunity cost from collateral committed to positions.
+
+A strategy that trades frequently can therefore have a very different result after costs.
+
+## Why traders use perpetual futures
+
+Perps can serve legitimate purposes beyond high-risk speculation.
+
+A trader may use them to hedge spot holdings, gain short exposure, manage portfolio beta or express a view without moving the underlying asset. Professional market participants may also combine spot and derivatives positions in basis or funding strategies.
+
+The instrument is flexible. The risk comes from how it is used.
+
+## The biggest risks
+
+**Leverage risk:** small market moves can create large changes in account equity.
+
+**Liquidation risk:** positions can be forcibly closed at unfavorable moments.
+
+**Funding risk:** holding costs can change and accumulate over time.
+
+**Execution risk:** volatile markets can produce slippage and fast price moves.
+
+**Platform risk:** traders depend on the exchange's matching engine, custody, risk systems and operational reliability.
+
+**Behavioral risk:** easy access to leverage can encourage oversized positions, revenge trading and excessive turnover.
+
+## A sensible checklist before trading perps
+
+Before opening a leveraged position, know:
+
+1. your position size in dollars, not just the leverage number;
+2. how much account equity is actually at risk;
+3. the approximate liquidation level;
+4. whether margin is isolated or cross;
+5. the current funding rate and funding interval;
+6. the trading fees for entry and exit; and
+7. the price or condition that proves your trade thesis wrong.
+
+If those answers are unclear, the position is probably not ready to open.
+
+## The bottom line
+
+Perpetual futures are powerful because they make long, short and leveraged exposure easy to access. Those same features make them considerably less forgiving than spot trading.
+
+Understanding **position size, funding, margin and liquidation** matters more than maximizing the leverage slider.
+
+RWA Wire's exchange guides focus on the mechanics, costs and risks of trading venues rather than promising returns. If you are comparing a platform for perpetual trading, you can continue with our [Bitunix guide](/bitunix/) before deciding whether it fits your needs.
