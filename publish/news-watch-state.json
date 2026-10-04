@@ -18,29 +18,29 @@
     "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB",
     "CBMiugFBVV95cUxQU1hMal9aa3A3S0t2MVFjSVF0amVHcF9hdlBNNFkzSTFHWnROVWw0WHh6OThtcGlHXzltTzI5NkhJZGszVnFRMTJrd0lZdWxMdWw2ZGFCUGlqWmo1aUozM0w3aTRRSnR6anAyS3NUYmxOMXZ6YXc4bjhBeWpCdWxaY0s0ZGVhUnZHUEZYeXp6M3Q3T2kwcms5ODNUSkRaWkhPTWtDOHd0dEl2bDJ3N2hXaXo1NTljMjlEM1E"
   ],
-  "lastRun": "2026-10-04T17:37:11.364279+00:00",
+  "lastRun": "2026-10-04T18:07:13.071863+00:00",
   "lastCandidate": "publish/inbox/2026-10-03-blackrock-s-next-big-tokenization-bet.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 136,
-    "uniqueItems": 80,
+    "rawItems": 134,
+    "uniqueItems": 79,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 31,
+    "watchlist": 30,
     "sourceTiers": {
-      "unknown": 105,
+      "unknown": 103,
       "low": 18,
       "specialist": 6,
       "primary": 5,
       "trusted": 2
     },
     "rejections": {
-      "watchlist_unknown": 28,
+      "watchlist_unknown": 27,
       "watchlist_low": 2,
       "watchlist_specialist": 1,
-      "duplicate_in_scan": 56,
+      "duplicate_in_scan": 55,
       "score_below_4": 13,
       "no_rwa_signal": 34,
       "duplicate_story": 1,
@@ -50,28 +50,14 @@
     "topWatchlist": [
       {
         "title": "LINK News: Chainlink Expands Swift Partnership Into Tokenized Securities",
-        "source": "Coinpaper",
+        "source": "coinpaper.com",
         "normalizedSource": "coinpaper",
         "score": 13,
         "trust": "unknown"
       },
       {
-        "title": "Chainlink Connects Financial Institutions to Swift’s Blockchain Ledger for Tokenized Deposits",
-        "source": "CryptoDaily",
-        "normalizedSource": "cryptodaily",
-        "score": 12,
-        "trust": "unknown"
-      },
-      {
         "title": "Chainlink automates dividend payments for tokenized stocks across multiple blockchains with Swift.",
-        "source": "pluang.com",
-        "normalizedSource": "pluang",
-        "score": 11,
-        "trust": "unknown"
-      },
-      {
-        "title": "Centrifuge launches tokenized Treasury and cred...",
-        "source": "pluang.com",
+        "source": "Pluang",
         "normalizedSource": "pluang",
         "score": 11,
         "trust": "unknown"
@@ -103,6 +89,20 @@
         "normalizedSource": "crowdfund insider",
         "score": 8,
         "trust": "unknown"
+      },
+      {
+        "title": "BlackRock and Ondo Launch Tokenized Income and Growth Portfolios",
+        "source": "BlockTelegraph",
+        "normalizedSource": "blocktelegraph",
+        "score": 8,
+        "trust": "unknown"
+      },
+      {
+        "title": "Tokenization Investment Portfolios Transform With BlackRock Ondo Finance",
+        "source": "en.cryptonomist.ch",
+        "normalizedSource": "en cryptonomist ch",
+        "score": 8,
+        "trust": "unknown"
       }
     ]
   },
@@ -115,19 +115,7 @@
       "specialistMatches": 0
     },
     {
-      "title": "Chainlink Connects Financial Institutions to Swift’s Blockchain Ledger for Tokenized Deposits",
-      "result": "unconfirmed",
-      "highTrustMatches": 0,
-      "specialistMatches": 0
-    },
-    {
       "title": "Chainlink automates dividend payments for tokenized stocks across multiple blockchains with Swift.",
-      "result": "unconfirmed",
-      "highTrustMatches": 0,
-      "specialistMatches": 1
-    },
-    {
-      "title": "Centrifuge launches tokenized Treasury and cred...",
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 0
@@ -143,6 +131,18 @@
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 1
+    },
+    {
+      "title": "South Korea Unveils Rules for Blockchain-Based Tokenized Securities",
+      "result": "unconfirmed",
+      "highTrustMatches": 0,
+      "specialistMatches": 0
+    },
+    {
+      "title": "Coinbase Tokenized Stocks Lead DeFi Deposit Gains, Adding $5.6M Ahead of Robinhood and Binance",
+      "result": "unconfirmed",
+      "highTrustMatches": 0,
+      "specialistMatches": 0
     }
   ]
 }
