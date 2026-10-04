@@ -29,7 +29,7 @@ jobs:
         run: echo "News Watch triggered by ${{ github.event_name }} at $(date -u +%Y-%m-%dT%H:%M:%SZ)"
 
       - name: Scan RWA news
-        run: python3 scripts/news_watch.py
+        run: python3 scripts/news_watch_v2.py
 
       - name: Confirm strong watchlist stories
         run: python3 scripts/news_watch_confirm.py
