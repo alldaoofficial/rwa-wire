@@ -18,32 +18,32 @@
     "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB",
     "CBMiugFBVV95cUxQU1hMal9aa3A3S0t2MVFjSVF0amVHcF9hdlBNNFkzSTFHWnROVWw0WHh6OThtcGlHXzltTzI5NkhJZGszVnFRMTJrd0lZdWxMdWw2ZGFCUGlqWmo1aUozM0w3aTRRSnR6anAyS3NUYmxOMXZ6YXc4bjhBeWpCdWxaY0s0ZGVhUnZHUEZYeXp6M3Q3T2kwcms5ODNUSkRaWkhPTWtDOHd0dEl2bDJ3N2hXaXo1NTljMjlEM1E"
   ],
-  "lastRun": "2026-10-04T07:07:12.400730+00:00",
+  "lastRun": "2026-10-04T07:37:12.426544+00:00",
   "lastCandidate": "publish/inbox/2026-10-03-blackrock-s-next-big-tokenization-bet.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 164,
-    "uniqueItems": 110,
+    "rawItems": 162,
+    "uniqueItems": 107,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 41,
+    "watchlist": 40,
     "sourceTiers": {
-      "unknown": 123,
-      "low": 28,
+      "unknown": 119,
+      "low": 29,
       "specialist": 7,
       "trusted": 4,
-      "primary": 2
+      "primary": 3
     },
     "rejections": {
       "score_below_4": 15,
       "watchlist_low": 5,
-      "watchlist_unknown": 35,
-      "duplicate_in_scan": 54,
-      "no_rwa_signal": 51,
+      "watchlist_unknown": 34,
+      "duplicate_in_scan": 55,
+      "no_rwa_signal": 50,
       "watchlist_specialist": 1,
-      "duplicate_story": 2,
+      "duplicate_story": 1,
       "seen_guid": 1
     },
     "feedErrors": [],
