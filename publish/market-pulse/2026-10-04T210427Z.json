@@ -1,0 +1,118 @@
+{
+  "version": "2.1",
+  "generatedAt": "2026-10-04T21:04:27Z",
+  "status": "dry_run",
+  "source": "CoinGecko",
+  "sourceFetchedAt": "2026-10-04T21:04:27.221487Z",
+  "assetCount": 9,
+  "basket": {
+    "average24h": 3.001336260006219,
+    "median24h": 0.2214809877779173,
+    "up": 6,
+    "down": 3,
+    "flat": 0,
+    "spreadPctPoints": 18.249705578150945
+  },
+  "leader": {
+    "id": "goldfinch",
+    "symbol": "GFI",
+    "name": "Goldfinch",
+    "price": 0.04528526,
+    "change24h": 16.653913804621787,
+    "volume24h": 155732.3010058627
+  },
+  "weakest": {
+    "id": "mantra-dao",
+    "symbol": "OM",
+    "name": "MANTRA",
+    "price": 0.057425,
+    "change24h": -1.5957917735291582,
+    "volume24h": 62.77868984603406
+  },
+  "highestVolume": {
+    "id": "chainlink",
+    "symbol": "LINK",
+    "name": "Chainlink",
+    "price": 14.15,
+    "change24h": 0.8104628008003748,
+    "volume24h": 245813678.66742456
+  },
+  "marketRead": "Breadth is split with 6/9 tracked assets positive. GFI is the standout move at +16.7%. Dispersion is elevated: 18.2 percentage points separate the strongest and weakest tracked assets.",
+  "xMarketRead": "Mixed tape: 6 green, 3 red across 9 tracked assets. GFI leads at +16.7%.",
+  "assets": [
+    {
+      "id": "goldfinch",
+      "symbol": "GFI",
+      "name": "Goldfinch",
+      "price": 0.04528526,
+      "change24h": 16.653913804621787,
+      "volume24h": 155732.3010058627
+    },
+    {
+      "id": "clearpool",
+      "symbol": "CPOOL",
+      "name": "Clearpool",
+      "price": 0.03912311,
+      "change24h": 6.201247754901529,
+      "volume24h": 3489304.3715213286
+    },
+    {
+      "id": "plume",
+      "symbol": "PLUME",
+      "name": "Plume",
+      "price": 0.01882183,
+      "change24h": 5.067166690693143,
+      "volume24h": 11821777.137807468
+    },
+    {
+      "id": "chainlink",
+      "symbol": "LINK",
+      "name": "Chainlink",
+      "price": 14.15,
+      "change24h": 0.8104628008003748,
+      "volume24h": 245813678.66742456
+    },
+    {
+      "id": "zebec-protocol",
+      "symbol": "ZBCN",
+      "name": "Zebec",
+      "price": 0.00088706,
+      "change24h": 0.2214809877779173,
+      "volume24h": 1376.8584556820292
+    },
+    {
+      "id": "centrifuge",
+      "symbol": "CFG",
+      "name": "Centrifuge",
+      "price": 0.150175,
+      "change24h": 0.14037506926739698,
+      "volume24h": 701562.2177372207
+    },
+    {
+      "id": "polymesh",
+      "symbol": "POLYX",
+      "name": "Polymesh",
+      "price": 0.04236141,
+      "change24h": -0.17537876901933006,
+      "volume24h": 314911.8794715133
+    },
+    {
+      "id": "ondo-finance",
+      "symbol": "ONDO",
+      "name": "Ondo",
+      "price": 0.492376,
+      "change24h": -0.31145022545768775,
+      "volume24h": 102942788.04672654
+    },
+    {
+      "id": "mantra-dao",
+      "symbol": "OM",
+      "name": "MANTRA",
+      "price": 0.057425,
+      "change24h": -1.5957917735291582,
+      "volume24h": 62.77868984603406
+    }
+  ],
+  "telegram": "RWA WIRE // MARKET PULSE\n\nTracked RWA tokens are mixed over 24h.\nBreadth: 6 up / 3 down\nBasket: avg +3.0% · median +0.2%\n\nTop movers\n▲ GFI +16.7% · $0.0453\n▲ CPOOL +6.2% · $0.0391\n▲ PLUME +5.1% · $0.0188\n\nWeakest movers\n▼ POLYX -0.2% · $0.0424\n▼ ONDO -0.3% · $0.4924\n▼ OM -1.6% · $0.0574\n\nMARKET READ\nBreadth is split with 6/9 tracked assets positive. GFI is the standout move at +16.7%. Dispersion is elevated: 18.2 percentage points separate the strongest and weakest tracked assets.\n\nData: CoinGecko · 24h change",
+  "x": "RWA WIRE // MARKET PULSE\n\nRWA basket: +3.0% avg · 6/9 green\nGFI +16.7% | CPOOL +6.2% | PLUME +5.1%\n\nMixed tape: 6 green, 3 red across 9 tracked assets. GFI leads at +16.7%.\n\nData: CoinGecko"
+}
