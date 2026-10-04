@@ -32,7 +32,7 @@ jobs:
         run: python3 scripts/news_watch_v2.py
 
       - name: Confirm strong watchlist stories
-        run: python3 scripts/news_watch_confirm.py
+        run: python3 scripts/news_watch_confirm_v2.py
 
       - name: Commit News Watch state and discovery
         id: commit
