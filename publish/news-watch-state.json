@@ -18,31 +18,31 @@
     "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB",
     "CBMiugFBVV95cUxQU1hMal9aa3A3S0t2MVFjSVF0amVHcF9hdlBNNFkzSTFHWnROVWw0WHh6OThtcGlHXzltTzI5NkhJZGszVnFRMTJrd0lZdWxMdWw2ZGFCUGlqWmo1aUozM0w3aTRRSnR6anAyS3NUYmxOMXZ6YXc4bjhBeWpCdWxaY0s0ZGVhUnZHUEZYeXp6M3Q3T2kwcms5ODNUSkRaWkhPTWtDOHd0dEl2bDJ3N2hXaXo1NTljMjlEM1E"
   ],
-  "lastRun": "2026-10-04T10:37:11.986714+00:00",
+  "lastRun": "2026-10-04T11:07:12.212837+00:00",
   "lastCandidate": "publish/inbox/2026-10-03-blackrock-s-next-big-tokenization-bet.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 152,
-    "uniqueItems": 97,
+    "rawItems": 150,
+    "uniqueItems": 92,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 37,
+    "watchlist": 35,
     "sourceTiers": {
-      "unknown": 114,
+      "unknown": 115,
       "specialist": 10,
-      "low": 24,
-      "trusted": 2,
+      "low": 22,
+      "trusted": 1,
       "primary": 2
     },
     "rejections": {
-      "score_below_4": 13,
+      "score_below_4": 12,
       "watchlist_specialist": 1,
+      "watchlist_unknown": 30,
       "watchlist_low": 4,
-      "watchlist_unknown": 32,
-      "duplicate_in_scan": 55,
-      "no_rwa_signal": 45,
+      "duplicate_in_scan": 58,
+      "no_rwa_signal": 43,
       "duplicate_story": 1,
       "seen_guid": 1
     },
@@ -50,7 +50,7 @@
     "topWatchlist": [
       {
         "title": "LINK News: Chainlink Expands Swift Partnership Into Tokenized Securities",
-        "source": "Coinpaper",
+        "source": "coinpaper.com",
         "normalizedSource": "coinpaper",
         "score": 13,
         "trust": "unknown"
@@ -84,6 +84,13 @@
         "trust": "specialist"
       },
       {
+        "title": "South Korea Unveils Rules for Blockchain-Based Tokenized Securities",
+        "source": "Hokanews",
+        "normalizedSource": "hokanews",
+        "score": 9,
+        "trust": "unknown"
+      },
+      {
         "title": "Ondo Tokenized Stocks Win Abu Dhabi Approval on Binance",
         "source": "CoinMarketCap",
         "normalizedSource": "coinmarketcap",
@@ -94,13 +101,6 @@
         "title": "Banks Risk Losing $230,000,000,000 in Payments Revenue As Stablecoins and Tokenized Deposits Scale, According to Survey",
         "source": "The Daily Hodl",
         "normalizedSource": "the daily hodl",
-        "score": 9,
-        "trust": "unknown"
-      },
-      {
-        "title": "South Korea advances tokenized securities rules ahead of 2027 rollout",
-        "source": "Cryptonews.net",
-        "normalizedSource": "cryptonews",
         "score": 9,
         "trust": "unknown"
       }
