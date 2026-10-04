@@ -31,6 +31,9 @@ jobs:
       - name: Scan RWA news
         run: python3 scripts/news_watch.py
 
+      - name: Confirm strong watchlist stories
+        run: python3 scripts/news_watch_confirm.py
+
       - name: Commit News Watch state and discovery
         id: commit
         run: |
