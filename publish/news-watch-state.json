@@ -18,21 +18,21 @@
     "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB",
     "CBMiugFBVV95cUxQU1hMal9aa3A3S0t2MVFjSVF0amVHcF9hdlBNNFkzSTFHWnROVWw0WHh6OThtcGlHXzltTzI5NkhJZGszVnFRMTJrd0lZdWxMdWw2ZGFCUGlqWmo1aUozM0w3aTRRSnR6anAyS3NUYmxOMXZ6YXc4bjhBeWpCdWxaY0s0ZGVhUnZHUEZYeXp6M3Q3T2kwcms5ODNUSkRaWkhPTWtDOHd0dEl2bDJ3N2hXaXo1NTljMjlEM1E"
   ],
-  "lastRun": "2026-10-04T16:01:04.947192+00:00",
+  "lastRun": "2026-10-04T16:07:11.351077+00:00",
   "lastCandidate": "publish/inbox/2026-10-03-blackrock-s-next-big-tokenization-bet.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
     "rawItems": 140,
-    "uniqueItems": 83,
+    "uniqueItems": 82,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
     "watchlist": 30,
     "sourceTiers": {
-      "low": 22,
+      "low": 19,
       "specialist": 8,
-      "unknown": 104,
+      "unknown": 107,
       "primary": 5,
       "trusted": 1
     },
@@ -40,9 +40,9 @@
       "watchlist_low": 2,
       "watchlist_specialist": 1,
       "watchlist_unknown": 27,
-      "duplicate_in_scan": 57,
+      "duplicate_in_scan": 58,
       "score_below_4": 13,
-      "no_rwa_signal": 38,
+      "no_rwa_signal": 37,
       "duplicate_story": 1,
       "seen_guid": 1
     },
@@ -124,7 +124,7 @@
       "title": "Chainlink automates dividend payments for tokenized stocks across multiple blockchains with Swift.",
       "result": "unconfirmed",
       "highTrustMatches": 0,
-      "specialistMatches": 0
+      "specialistMatches": 1
     },
     {
       "title": "Centrifuge launches tokenized Treasury and cred...",
