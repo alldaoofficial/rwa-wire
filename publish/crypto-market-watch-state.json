@@ -1,13 +1,13 @@
 {
   "seen": [],
-  "lastRun": "2026-10-03T21:29:15.067978+00:00",
+  "lastRun": "2026-10-04T01:42:50.571706+00:00",
   "lastDiagnostics": {
-    "rawItems": 122,
-    "uniqueItems": 85,
+    "rawItems": 103,
+    "uniqueItems": 71,
     "qualified": 0,
-    "blocked": 8,
-    "untrusted": 36,
-    "lowSignal": 41
+    "blocked": 7,
+    "untrusted": 33,
+    "lowSignal": 31
   },
   "lastResult": "no-qualified-story"
 }
