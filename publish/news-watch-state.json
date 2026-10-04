@@ -18,30 +18,30 @@
     "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB",
     "CBMiugFBVV95cUxQU1hMal9aa3A3S0t2MVFjSVF0amVHcF9hdlBNNFkzSTFHWnROVWw0WHh6OThtcGlHXzltTzI5NkhJZGszVnFRMTJrd0lZdWxMdWw2ZGFCUGlqWmo1aUozM0w3aTRRSnR6anAyS3NUYmxOMXZ6YXc4bjhBeWpCdWxaY0s0ZGVhUnZHUEZYeXp6M3Q3T2kwcms5ODNUSkRaWkhPTWtDOHd0dEl2bDJ3N2hXaXo1NTljMjlEM1E"
   ],
-  "lastRun": "2026-10-04T00:07:12.221197+00:00",
+  "lastRun": "2026-10-04T00:37:11.789294+00:00",
   "lastCandidate": "publish/inbox/2026-10-03-blackrock-s-next-big-tokenization-bet.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
     "rawItems": 172,
-    "uniqueItems": 111,
+    "uniqueItems": 116,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 44,
+    "watchlist": 48,
     "sourceTiers": {
-      "low": 28,
-      "unknown": 133,
+      "low": 29,
+      "unknown": 130,
       "specialist": 8,
-      "trusted": 3
+      "trusted": 5
     },
     "rejections": {
       "watchlist_low": 6,
-      "score_below_4": 16,
-      "watchlist_unknown": 37,
-      "duplicate_in_scan": 61,
+      "score_below_4": 15,
+      "watchlist_unknown": 41,
+      "duplicate_in_scan": 56,
       "watchlist_specialist": 1,
-      "no_rwa_signal": 48,
+      "no_rwa_signal": 50,
       "duplicate_story": 2,
       "seen_guid": 1
     },
@@ -62,13 +62,6 @@
         "trust": "unknown"
       },
       {
-        "title": "Centrifuge brings tokenized Treasury and credit funds to Arc",
-        "source": "Crypto Briefing",
-        "normalizedSource": "crypto briefing",
-        "score": 12,
-        "trust": "unknown"
-      },
-      {
         "title": "Crypto News: USDY Fund Launches on Sei Network as Ondo Finance Expands Tokenized Treasury Products",
         "source": "CoinMarketCap",
         "normalizedSource": "coinmarketcap",
@@ -77,7 +70,7 @@
       },
       {
         "title": "Centrifuge launches tokenized Treasury and cred...",
-        "source": "Pluang",
+        "source": "pluang.com",
         "normalizedSource": "pluang",
         "score": 11,
         "trust": "unknown"
@@ -88,6 +81,13 @@
         "normalizedSource": "coinmarketcap",
         "score": 11,
         "trust": "low"
+      },
+      {
+        "title": "Centrifuge Confirms Three Tokenized Funds Are Live on Arc",
+        "source": "Cryptonews.net",
+        "normalizedSource": "cryptonews",
+        "score": 10,
+        "trust": "unknown"
       },
       {
         "title": "South Korea Sets $2.8 Million Capital Requirement for Tokenized Securities Firms",
