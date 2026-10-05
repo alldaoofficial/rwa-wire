@@ -19,33 +19,33 @@
     "CBMiV0FVX3lxTE5mZlpwTENPelRjN3E5d1ViNlZFRHJHbmUxUEN6SmZwOU1oeW13UDNHTG1zN19WR2JqSzFrR0NHeXIwdmN1NnNTUW9SRzFwYWRubjFIUXhoUQ",
     "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB"
   ],
-  "lastRun": "2026-10-05T11:37:13.007284+00:00",
+  "lastRun": "2026-10-05T12:07:12.180881+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-okx-and-nyse-owner-ice-plan-24-7-tokenized-stock-trading-under-sec-exemption.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 141,
-    "uniqueItems": 90,
+    "rawItems": 147,
+    "uniqueItems": 96,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 24,
+    "watchlist": 25,
     "sourceTiers": {
       "specialist": 9,
-      "unknown": 108,
-      "low": 20,
-      "primary": 2,
+      "unknown": 112,
+      "low": 21,
+      "primary": 3,
       "trusted": 2
     },
     "rejections": {
       "watchlist_specialist": 2,
-      "watchlist_unknown": 18,
+      "watchlist_unknown": 20,
       "duplicate_story": 3,
-      "watchlist_low": 4,
       "duplicate_in_scan": 51,
-      "score_below_4": 16,
+      "watchlist_low": 3,
+      "score_below_4": 19,
       "seen_guid": 2,
-      "no_rwa_signal": 45
+      "no_rwa_signal": 47
     },
     "feedErrors": [],
     "topWatchlist": [
@@ -85,13 +85,6 @@
         "trust": "specialist"
       },
       {
-        "title": "Shinhan Asset Management Signs 4-Party MoU for Tokenized Fund on Solana",
-        "source": "CoinMarketCap",
-        "normalizedSource": "coinmarketcap",
-        "score": 8,
-        "trust": "low"
-      },
-      {
         "title": "Coinbase Tokenized Stocks Lead DeFi Deposit Gains, Adding $5.6M Ahead of Robinhood and Binance",
         "source": "Crowdfund Insider",
         "normalizedSource": "crowdfund insider",
@@ -102,6 +95,13 @@
         "title": "BlackRock and Ondo Launch Tokenized Income and Growth Portfolios",
         "source": "BlockTelegraph",
         "normalizedSource": "blocktelegraph",
+        "score": 8,
+        "trust": "unknown"
+      },
+      {
+        "title": "BlackRock and Ondo expand tokenization into onchain portfolios",
+        "source": "Traders Union",
+        "normalizedSource": "traders union",
         "score": 8,
         "trust": "unknown"
       }
@@ -140,7 +140,7 @@
       "specialistMatches": 1
     },
     {
-      "title": "Shinhan Asset Management Signs 4-Party MoU for Tokenized Fund on Solana",
+      "title": "Coinbase Tokenized Stocks Lead DeFi Deposit Gains, Adding $5.6M Ahead of Robinhood and Binance",
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 0
