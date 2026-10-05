@@ -19,32 +19,32 @@
     "CBMiV0FVX3lxTE5mZlpwTENPelRjN3E5d1ViNlZFRHJHbmUxUEN6SmZwOU1oeW13UDNHTG1zN19WR2JqSzFrR0NHeXIwdmN1NnNTUW9SRzFwYWRubjFIUXhoUQ",
     "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB"
   ],
-  "lastRun": "2026-10-05T17:07:12.931860+00:00",
+  "lastRun": "2026-10-05T17:37:16.059523+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-okx-and-nyse-owner-ice-plan-24-7-tokenized-stock-trading-under-sec-exemption.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 156,
-    "uniqueItems": 105,
+    "rawItems": 159,
+    "uniqueItems": 108,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 36,
+    "watchlist": 37,
     "sourceTiers": {
-      "specialist": 6,
-      "unknown": 116,
+      "specialist": 7,
+      "unknown": 118,
       "low": 28,
       "primary": 4,
       "wire": 1,
       "trusted": 1
     },
     "rejections": {
-      "watchlist_specialist": 1,
-      "duplicate_story": 5,
+      "watchlist_specialist": 2,
+      "duplicate_story": 4,
       "duplicate_in_scan": 51,
       "watchlist_low": 5,
       "watchlist_unknown": 29,
-      "no_rwa_signal": 50,
+      "no_rwa_signal": 53,
       "seen_guid": 1,
       "score_below_4": 13,
       "watchlist_wire": 1
@@ -88,7 +88,7 @@
       },
       {
         "title": "South Korea Sets 2027 Launch for Tokenized Securities",
-        "source": "cointrust.com",
+        "source": "CoinTrust",
         "normalizedSource": "cointrust",
         "score": 9,
         "trust": "unknown"
