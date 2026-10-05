@@ -19,41 +19,40 @@
     "CBMiV0FVX3lxTE5mZlpwTENPelRjN3E5d1ViNlZFRHJHbmUxUEN6SmZwOU1oeW13UDNHTG1zN19WR2JqSzFrR0NHeXIwdmN1NnNTUW9SRzFwYWRubjFIUXhoUQ",
     "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB"
   ],
-  "lastRun": "2026-10-05T07:37:11.630137+00:00",
+  "lastRun": "2026-10-05T08:07:14.316377+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-sec-opens-the-floodgates-okx-charges-into-the-us-tokenized-stocks-must-be-truly.json",
-  "lastResult": "candidate",
+  "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 128,
-    "uniqueItems": 80,
+    "rawItems": 125,
+    "uniqueItems": 79,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
-    "important": 1,
+    "important": 0,
     "watchlist": 20,
     "sourceTiers": {
-      "unknown": 96,
-      "low": 16,
+      "unknown": 98,
       "primary": 4,
-      "specialist": 11,
-      "trusted": 1
+      "specialist": 12,
+      "trusted": 2,
+      "low": 9
     },
     "rejections": {
-      "watchlist_unknown": 17,
+      "watchlist_unknown": 19,
       "score_below_4": 22,
-      "watchlist_low": 2,
+      "seen_guid": 2,
       "watchlist_specialist": 1,
-      "no_rwa_signal": 36,
-      "duplicate_in_scan": 48,
-      "seen_guid": 1
+      "no_rwa_signal": 35,
+      "duplicate_in_scan": 46
     },
     "feedErrors": [],
     "topWatchlist": [
       {
-        "title": "Northern Trust Launches Tokenized Treasury Fund Share Class",
-        "source": "CoinMarketCap",
-        "normalizedSource": "coinmarketcap",
-        "score": 10,
-        "trust": "low"
+        "title": "OKXICE joint venture to notify SEC for tokenized securities venue, Jacquelyn Melinek reveals",
+        "source": "Traders Union",
+        "normalizedSource": "traders union",
+        "score": 9,
+        "trust": "unknown"
       },
       {
         "title": "OKXICE to Launch Tokenized Securities Trading",
@@ -63,11 +62,11 @@
         "trust": "unknown"
       },
       {
-        "title": "Citi Forecasts Tokenized Securities Market To Hit Ethereum5.5T by 2030",
-        "source": "CoinMarketCap",
-        "normalizedSource": "coinmarketcap",
+        "title": "OKX, ICE plan tokenized securities venue under SEC exemption",
+        "source": "Tech in Asia",
+        "normalizedSource": "tech in asia",
         "score": 9,
-        "trust": "low"
+        "trust": "unknown"
       },
       {
         "title": "Nate Geraci: SEC and CFTC advance new guidance on tokenized securities and software developers",
@@ -109,7 +108,19 @@
   "lastCandidatePriority": "important",
   "confirmationAttempts": [
     {
+      "title": "OKXICE joint venture to notify SEC for tokenized securities venue, Jacquelyn Melinek reveals",
+      "result": "unconfirmed",
+      "highTrustMatches": 0,
+      "specialistMatches": 0
+    },
+    {
       "title": "OKXICE to Launch Tokenized Securities Trading",
+      "result": "unconfirmed",
+      "highTrustMatches": 0,
+      "specialistMatches": 0
+    },
+    {
+      "title": "OKX, ICE plan tokenized securities venue under SEC exemption",
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 0
@@ -131,18 +142,6 @@
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 2
-    },
-    {
-      "title": "Coinbase Tokenized Stocks Lead DeFi Deposit Gains, Adding $5.6M Ahead of Robinhood and Binance",
-      "result": "unconfirmed",
-      "highTrustMatches": 0,
-      "specialistMatches": 0
-    },
-    {
-      "title": "BlackRock and Ondo expand tokenization into onchain portfolios",
-      "result": "unconfirmed",
-      "highTrustMatches": 0,
-      "specialistMatches": 0
     }
   ]
 }
