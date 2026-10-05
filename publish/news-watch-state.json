@@ -20,96 +20,25 @@
     "CBMiowFBVV95cUxPd2h3dXpvWXp1R0o5ZWZTR2Rud0Ntc05wUTBmRDhDaWp3UElIeFF4UTI3MjZ1UmpTaC1SU0ROQXprcDRWX1o4eGc0bU9ndXkxRS1nN3IxMWIwTnplS3BaOUVpMjR4NXpuUGFjdlJzOWtCT3lPaXR6YXAtX0JXVjR6SEtCNVVqaFhaOTlxV1ZxdjRCbmk5eUF3M3dBTWlVd2ZaMC1B",
     "CBMieEFVX3lxTE1TVm1ReGdydTFGWGdTLWpWSzQtVHN5OUJ4bHBHYW5rMTQya1NnSkhhOVRobmk2MlQ1UzFyUHhYRm93RUs1dEllalg1RDhRRGduS3Rqd2prVUEwUXl4eW1GeWhvRjJJQ1dWd19DamRPSXIzalprU2dIaQ"
   ],
-  "lastRun": "2026-10-05T22:07:13.071181+00:00",
+  "lastRun": "2026-10-05T22:31:05.009662+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-rwa-tokenization-in-2026-tokenized-stocks-drive-the-next-phase.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 166,
-    "uniqueItems": 117,
-    "queriesOk": 9,
-    "queriesFailed": 0,
+    "rawItems": 0,
+    "uniqueItems": 0,
+    "queriesOk": 0,
+    "queriesFailed": 9,
     "breaking": 0,
     "important": 0,
-    "watchlist": 42,
-    "sourceTiers": {
-      "specialist": 10,
-      "unknown": 121,
-      "low": 29,
-      "trusted": 1,
-      "primary": 4,
-      "wire": 1
-    },
-    "rejections": {
-      "watchlist_specialist": 2,
-      "duplicate_story": 4,
-      "watchlist_low": 6,
-      "seen_guid": 2,
-      "duplicate_in_scan": 49,
-      "watchlist_unknown": 33,
-      "no_rwa_signal": 55,
-      "score_below_4": 13,
-      "hard_block": 1,
-      "watchlist_wire": 1
-    },
-    "feedErrors": [],
-    "topWatchlist": [
-      {
-        "title": "Tagged: Tokenized Securities Venue",
-        "source": "crowdfundinsider.com",
-        "normalizedSource": "crowdfundinsider",
-        "score": 10,
-        "trust": "unknown"
-      },
-      {
-        "title": "Northern Trust Launches Tokenized Treasury Fund Share Class",
-        "source": "CoinMarketCap",
-        "normalizedSource": "coinmarketcap",
-        "score": 10,
-        "trust": "low"
-      },
-      {
-        "title": "Transforming the Stock Market with Tokenized Securities",
-        "source": "OneSafe",
-        "normalizedSource": "onesafe",
-        "score": 9,
-        "trust": "unknown"
-      },
-      {
-        "title": "OKXICE Files to Launch Tokenized Securities Venue",
-        "source": "Markets Media",
-        "normalizedSource": "markets media",
-        "score": 9,
-        "trust": "specialist"
-      },
-      {
-        "title": "Citi Forecasts Tokenized Securities Market To Hit Ethereum5.5T by 2030",
-        "source": "CoinMarketCap",
-        "normalizedSource": "coinmarketcap",
-        "score": 9,
-        "trust": "low"
-      },
-      {
-        "title": "Nate Geraci: SEC and CFTC advance new guidance on tokenized securities and software developers",
-        "source": "Traders Union",
-        "normalizedSource": "traders union",
-        "score": 9,
-        "trust": "unknown"
-      },
-      {
-        "title": "South Korea Sets 2027 Launch for Tokenized Securities",
-        "source": "CoinTrust",
-        "normalizedSource": "cointrust",
-        "score": 9,
-        "trust": "unknown"
-      },
-      {
-        "title": "Ondo Tokenized Stocks Hit Record $1.26B TVL as ONDO Tests Key Support",
-        "source": "Blockonomi",
-        "normalizedSource": "blockonomi",
-        "score": 9,
-        "trust": "unknown"
-      }
-    ]
+    "watchlist": 0,
+    "sourceTiers": {},
+    "rejections": {},
+    "feedErrors": [
+      "HTTP Error 503: Service Unavailable",
+      "HTTP Error 503: Service Unavailable",
+      "HTTP Error 503: Service Unavailable"
+    ],
+    "topWatchlist": []
   },
   "lastCandidatePriority": "breaking",
   "confirmationAttempts": [
