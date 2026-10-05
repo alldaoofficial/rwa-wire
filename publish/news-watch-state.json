@@ -20,36 +20,34 @@
     "CBMiowFBVV95cUxPd2h3dXpvWXp1R0o5ZWZTR2Rud0Ntc05wUTBmRDhDaWp3UElIeFF4UTI3MjZ1UmpTaC1SU0ROQXprcDRWX1o4eGc0bU9ndXkxRS1nN3IxMWIwTnplS3BaOUVpMjR4NXpuUGFjdlJzOWtCT3lPaXR6YXAtX0JXVjR6SEtCNVVqaFhaOTlxV1ZxdjRCbmk5eUF3M3dBTWlVd2ZaMC1B",
     "CBMieEFVX3lxTE1TVm1ReGdydTFGWGdTLWpWSzQtVHN5OUJ4bHBHYW5rMTQya1NnSkhhOVRobmk2MlQ1UzFyUHhYRm93RUs1dEllalg1RDhRRGduS3Rqd2prVUEwUXl4eW1GeWhvRjJJQ1dWd19DamRPSXIzalprU2dIaQ"
   ],
-  "lastRun": "2026-10-05T23:07:13.930774+00:00",
+  "lastRun": "2026-10-05T23:37:11.720798+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-rwa-tokenization-in-2026-tokenized-stocks-drive-the-next-phase.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 164,
-    "uniqueItems": 114,
+    "rawItems": 153,
+    "uniqueItems": 106,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 40,
+    "watchlist": 39,
     "sourceTiers": {
-      "specialist": 11,
-      "unknown": 119,
-      "low": 27,
+      "unknown": 120,
+      "low": 21,
       "trusted": 1,
       "primary": 5,
-      "wire": 1
+      "specialist": 6
     },
     "rejections": {
-      "watchlist_specialist": 2,
-      "duplicate_story": 4,
+      "watchlist_unknown": 33,
+      "duplicate_story": 6,
       "watchlist_low": 5,
       "seen_guid": 2,
-      "duplicate_in_scan": 50,
-      "watchlist_unknown": 32,
-      "no_rwa_signal": 53,
-      "score_below_4": 14,
-      "hard_block": 1,
-      "watchlist_wire": 1
+      "duplicate_in_scan": 47,
+      "no_rwa_signal": 45,
+      "watchlist_specialist": 1,
+      "score_below_4": 13,
+      "hard_block": 1
     },
     "feedErrors": [],
     "topWatchlist": [
@@ -76,15 +74,22 @@
       },
       {
         "title": "OKXICE Files to Launch Tokenized Securities Venue",
-        "source": "Markets Media",
-        "normalizedSource": "markets media",
+        "source": "marketsmedia.com",
+        "normalizedSource": "marketsmedia",
         "score": 9,
-        "trust": "specialist"
+        "trust": "unknown"
+      },
+      {
+        "title": "Citi Forecasts Tokenized Securities Market To Hit Ethereum5.5T by 2030",
+        "source": "CoinMarketCap",
+        "normalizedSource": "coinmarketcap",
+        "score": 9,
+        "trust": "low"
       },
       {
         "title": "Nate Geraci: SEC and CFTC advance new guidance on tokenized securities and software developers",
-        "source": "tradersunion.com",
-        "normalizedSource": "tradersunion",
+        "source": "Traders Union",
+        "normalizedSource": "traders union",
         "score": 9,
         "trust": "unknown"
       },
@@ -101,13 +106,6 @@
         "normalizedSource": "investing",
         "score": 8,
         "trust": "low"
-      },
-      {
-        "title": "Chainlink Collaborates with Swift to Enhance Tokenized Payments for Financial Institutions",
-        "source": "SSBCrack",
-        "normalizedSource": "ssbcrack",
-        "score": 8,
-        "trust": "unknown"
       }
     ]
   },
@@ -138,13 +136,13 @@
       "specialistMatches": 0
     },
     {
-      "title": "Nate Geraci: SEC and CFTC advance new guidance on tokenized securities and software developers",
+      "title": "Citi Forecasts Tokenized Securities Market To Hit Ethereum5.5T by 2030",
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 0
     },
     {
-      "title": "South Korea Sets 2027 Launch for Tokenized Securities",
+      "title": "Nate Geraci: SEC and CFTC advance new guidance on tokenized securities and software developers",
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 0
