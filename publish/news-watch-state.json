@@ -20,32 +20,33 @@
     "CBMiowFBVV95cUxPd2h3dXpvWXp1R0o5ZWZTR2Rud0Ntc05wUTBmRDhDaWp3UElIeFF4UTI3MjZ1UmpTaC1SU0ROQXprcDRWX1o4eGc0bU9ndXkxRS1nN3IxMWIwTnplS3BaOUVpMjR4NXpuUGFjdlJzOWtCT3lPaXR6YXAtX0JXVjR6SEtCNVVqaFhaOTlxV1ZxdjRCbmk5eUF3M3dBTWlVd2ZaMC1B",
     "CBMieEFVX3lxTE1TVm1ReGdydTFGWGdTLWpWSzQtVHN5OUJ4bHBHYW5rMTQya1NnSkhhOVRobmk2MlQ1UzFyUHhYRm93RUs1dEllalg1RDhRRGduS3Rqd2prVUEwUXl4eW1GeWhvRjJJQ1dWd19DamRPSXIzalprU2dIaQ"
   ],
-  "lastRun": "2026-10-05T18:37:13.354272+00:00",
+  "lastRun": "2026-10-05T19:07:21.182959+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-rwa-tokenization-in-2026-tokenized-stocks-drive-the-next-phase.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 157,
-    "uniqueItems": 108,
+    "rawItems": 159,
+    "uniqueItems": 112,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 38,
+    "watchlist": 40,
     "sourceTiers": {
-      "unknown": 119,
+      "unknown": 118,
       "specialist": 7,
-      "low": 26,
+      "trusted": 1,
+      "low": 28,
       "primary": 4,
       "wire": 1
     },
     "rejections": {
       "duplicate_story": 4,
       "watchlist_specialist": 2,
-      "watchlist_unknown": 30,
-      "duplicate_in_scan": 49,
-      "watchlist_low": 5,
-      "no_rwa_signal": 53,
-      "seen_guid": 1,
+      "seen_guid": 2,
+      "watchlist_unknown": 31,
+      "duplicate_in_scan": 47,
+      "watchlist_low": 6,
+      "no_rwa_signal": 54,
       "score_below_4": 12,
       "watchlist_wire": 1
     },
@@ -88,8 +89,8 @@
       },
       {
         "title": "Nate Geraci: SEC and CFTC advance new guidance on tokenized securities and software developers",
-        "source": "Traders Union",
-        "normalizedSource": "traders union",
+        "source": "tradersunion.com",
+        "normalizedSource": "tradersunion",
         "score": 9,
         "trust": "unknown"
       },
@@ -101,11 +102,11 @@
         "trust": "unknown"
       },
       {
-        "title": "How AI, Tokenized Stocks and Celebrity Deals Are Reshaping Crypto Exchanges",
-        "source": "Investing.com",
-        "normalizedSource": "investing",
-        "score": 8,
-        "trust": "low"
+        "title": "Ondo Tokenized Stocks Hit Record $1.26B TVL as ONDO Tests Key Support",
+        "source": "Blockonomi",
+        "normalizedSource": "blockonomi",
+        "score": 9,
+        "trust": "unknown"
       }
     ]
   },
