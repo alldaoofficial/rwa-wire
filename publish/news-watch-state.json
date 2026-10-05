@@ -19,20 +19,20 @@
     "CBMiV0FVX3lxTE5mZlpwTENPelRjN3E5d1ViNlZFRHJHbmUxUEN6SmZwOU1oeW13UDNHTG1zN19WR2JqSzFrR0NHeXIwdmN1NnNTUW9SRzFwYWRubjFIUXhoUQ",
     "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB"
   ],
-  "lastRun": "2026-10-05T15:07:16.588200+00:00",
+  "lastRun": "2026-10-05T15:37:51.891550+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-okx-and-nyse-owner-ice-plan-24-7-tokenized-stock-trading-under-sec-exemption.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 159,
-    "uniqueItems": 104,
+    "rawItems": 161,
+    "uniqueItems": 106,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 31,
+    "watchlist": 33,
     "sourceTiers": {
-      "specialist": 7,
-      "unknown": 120,
+      "specialist": 8,
+      "unknown": 121,
       "low": 25,
       "primary": 4,
       "trusted": 2,
@@ -40,17 +40,24 @@
     },
     "rejections": {
       "watchlist_specialist": 1,
-      "duplicate_story": 3,
+      "duplicate_story": 5,
       "duplicate_in_scan": 55,
-      "watchlist_unknown": 25,
+      "watchlist_unknown": 27,
       "watchlist_low": 4,
       "no_rwa_signal": 53,
       "seen_guid": 1,
-      "score_below_4": 16,
+      "score_below_4": 14,
       "watchlist_wire": 1
     },
     "feedErrors": [],
     "topWatchlist": [
+      {
+        "title": "Tagged: Tokenized Securities Venue",
+        "source": "crowdfundinsider.com",
+        "normalizedSource": "crowdfundinsider",
+        "score": 10,
+        "trust": "unknown"
+      },
       {
         "title": "Northern Trust Launches Tokenized Treasury Fund Share Class",
         "source": "CoinMarketCap",
@@ -99,18 +106,17 @@
         "normalizedSource": "coinmarketcap",
         "score": 8,
         "trust": "low"
-      },
-      {
-        "title": "BlackRock launches tokenized portfolios with Ondo Finance as real-world assets near $9B",
-        "source": "Bitget",
-        "normalizedSource": "bitget",
-        "score": 8,
-        "trust": "unknown"
       }
     ]
   },
   "lastCandidatePriority": "important",
   "confirmationAttempts": [
+    {
+      "title": "Tagged: Tokenized Securities Venue",
+      "result": "unconfirmed",
+      "highTrustMatches": 0,
+      "specialistMatches": 0
+    },
     {
       "title": "Northern Trust Launches Tokenized Treasury Fund Share Class",
       "result": "unconfirmed",
@@ -140,12 +146,6 @@
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 1
-    },
-    {
-      "title": "Chainlink Collaborates with Swift to Enhance Tokenized Payments for Financial Institutions",
-      "result": "unconfirmed",
-      "highTrustMatches": 0,
-      "specialistMatches": 0
     }
   ],
   "lastConfirmation": {
