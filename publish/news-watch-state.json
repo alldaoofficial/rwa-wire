@@ -18,30 +18,30 @@
     "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB",
     "CBMiugFBVV95cUxQU1hMal9aa3A3S0t2MVFjSVF0amVHcF9hdlBNNFkzSTFHWnROVWw0WHh6OThtcGlHXzltTzI5NkhJZGszVnFRMTJrd0lZdWxMdWw2ZGFCUGlqWmo1aUozM0w3aTRRSnR6anAyS3NUYmxOMXZ6YXc4bjhBeWpCdWxaY0s0ZGVhUnZHUEZYeXp6M3Q3T2kwcms5ODNUSkRaWkhPTWtDOHd0dEl2bDJ3N2hXaXo1NTljMjlEM1E"
   ],
-  "lastRun": "2026-10-05T03:07:12.100554+00:00",
+  "lastRun": "2026-10-05T03:37:11.396259+00:00",
   "lastCandidate": "publish/inbox/2026-10-03-blackrock-s-next-big-tokenization-bet.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 127,
+    "rawItems": 128,
     "uniqueItems": 76,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 20,
+    "watchlist": 19,
     "sourceTiers": {
-      "unknown": 96,
-      "low": 16,
+      "unknown": 98,
+      "low": 15,
       "specialist": 9,
       "primary": 4,
       "trusted": 2
     },
     "rejections": {
-      "watchlist_unknown": 18,
+      "watchlist_unknown": 17,
       "watchlist_low": 1,
       "watchlist_specialist": 1,
-      "score_below_4": 15,
-      "duplicate_in_scan": 51,
+      "score_below_4": 16,
+      "duplicate_in_scan": 52,
       "no_rwa_signal": 40,
       "seen_guid": 1
     },
@@ -129,7 +129,7 @@
       "title": "BlackRock launches tokenized portfolios with Ondo Finance as real-world assets near $9B",
       "result": "unconfirmed",
       "highTrustMatches": 0,
-      "specialistMatches": 1
+      "specialistMatches": 2
     },
     {
       "title": "Coinbase Tokenized Stocks Lead DeFi Deposit Gains, Adding $5.6M Ahead of Robinhood and Binance",
