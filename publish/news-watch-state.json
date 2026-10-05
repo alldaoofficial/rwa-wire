@@ -19,34 +19,34 @@
     "CBMiV0FVX3lxTE5mZlpwTENPelRjN3E5d1ViNlZFRHJHbmUxUEN6SmZwOU1oeW13UDNHTG1zN19WR2JqSzFrR0NHeXIwdmN1NnNTUW9SRzFwYWRubjFIUXhoUQ",
     "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB"
   ],
-  "lastRun": "2026-10-05T12:37:11.404211+00:00",
+  "lastRun": "2026-10-05T13:07:14.153264+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-okx-and-nyse-owner-ice-plan-24-7-tokenized-stock-trading-under-sec-exemption.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 150,
-    "uniqueItems": 97,
+    "rawItems": 153,
+    "uniqueItems": 100,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 27,
+    "watchlist": 28,
     "sourceTiers": {
-      "specialist": 9,
-      "unknown": 114,
-      "low": 21,
-      "primary": 3,
-      "trusted": 2,
+      "specialist": 6,
+      "unknown": 118,
+      "low": 23,
+      "primary": 4,
+      "trusted": 1,
       "wire": 1
     },
     "rejections": {
-      "watchlist_specialist": 2,
-      "watchlist_unknown": 21,
-      "duplicate_story": 3,
-      "duplicate_in_scan": 53,
+      "watchlist_specialist": 1,
+      "duplicate_story": 4,
+      "watchlist_unknown": 23,
       "watchlist_low": 3,
+      "duplicate_in_scan": 53,
+      "no_rwa_signal": 48,
       "score_below_4": 19,
-      "seen_guid": 2,
-      "no_rwa_signal": 46,
+      "seen_guid": 1,
       "watchlist_wire": 1
     },
     "feedErrors": [],
@@ -66,13 +66,6 @@
         "trust": "specialist"
       },
       {
-        "title": "Citi Forecasts Tokenized Securities Market To Hit Ethereum5.5T by 2030",
-        "source": "CoinMarketCap",
-        "normalizedSource": "coinmarketcap",
-        "score": 9,
-        "trust": "low"
-      },
-      {
         "title": "Nate Geraci: SEC and CFTC advance new guidance on tokenized securities and software developers",
         "source": "Traders Union",
         "normalizedSource": "traders union",
@@ -80,11 +73,18 @@
         "trust": "unknown"
       },
       {
-        "title": "South Korea Proposes $2.8 Million Capital Rule for Tokenized Securities Firms",
-        "source": "tokenpost.com",
-        "normalizedSource": "tokenpost",
+        "title": "South Korea Sets 2027 Launch for Tokenized Securities",
+        "source": "CoinTrust",
+        "normalizedSource": "cointrust",
         "score": 9,
-        "trust": "specialist"
+        "trust": "unknown"
+      },
+      {
+        "title": "Shinhan Asset Management Signs 4-Party MoU for Tokenized Fund on Solana",
+        "source": "CoinMarketCap",
+        "normalizedSource": "coinmarketcap",
+        "score": 8,
+        "trust": "low"
       },
       {
         "title": "Coinbase Tokenized Stocks Lead DeFi Deposit Gains, Adding $5.6M Ahead of Robinhood and Binance",
@@ -124,22 +124,22 @@
       "specialistMatches": 0
     },
     {
-      "title": "Citi Forecasts Tokenized Securities Market To Hit Ethereum5.5T by 2030",
-      "result": "unconfirmed",
-      "highTrustMatches": 0,
-      "specialistMatches": 0
-    },
-    {
       "title": "Nate Geraci: SEC and CFTC advance new guidance on tokenized securities and software developers",
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 0
     },
     {
-      "title": "South Korea Proposes $2.8 Million Capital Rule for Tokenized Securities Firms",
+      "title": "South Korea Sets 2027 Launch for Tokenized Securities",
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 1
+    },
+    {
+      "title": "Shinhan Asset Management Signs 4-Party MoU for Tokenized Fund on Solana",
+      "result": "unconfirmed",
+      "highTrustMatches": 0,
+      "specialistMatches": 0
     },
     {
       "title": "Coinbase Tokenized Stocks Lead DeFi Deposit Gains, Adding $5.6M Ahead of Robinhood and Binance",
