@@ -19,20 +19,20 @@
     "CBMiV0FVX3lxTE5mZlpwTENPelRjN3E5d1ViNlZFRHJHbmUxUEN6SmZwOU1oeW13UDNHTG1zN19WR2JqSzFrR0NHeXIwdmN1NnNTUW9SRzFwYWRubjFIUXhoUQ",
     "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB"
   ],
-  "lastRun": "2026-10-05T10:07:11.818145+00:00",
-  "lastCandidate": "publish/inbox/2026-10-05-sec-opens-the-floodgates-okx-charges-into-the-us-tokenized-stocks-must-be-truly.json",
-  "lastResult": "no-qualified-story",
+  "lastRun": "2026-10-05T10:37:12.769971+00:00",
+  "lastCandidate": "publish/inbox/2026-10-05-okx-and-nyse-owner-ice-plan-24-7-tokenized-stock-trading-under-sec-exemption.json",
+  "lastResult": "candidate-confirmed",
   "lastDiagnostics": {
-    "rawItems": 138,
-    "uniqueItems": 85,
+    "rawItems": 136,
+    "uniqueItems": 83,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 22,
+    "watchlist": 21,
     "sourceTiers": {
       "specialist": 11,
-      "unknown": 103,
+      "unknown": 101,
       "low": 20,
       "primary": 3,
       "trusted": 1
@@ -40,8 +40,8 @@
     "rejections": {
       "watchlist_specialist": 2,
       "watchlist_unknown": 17,
-      "score_below_4": 20,
-      "watchlist_low": 3,
+      "score_below_4": 19,
+      "watchlist_low": 2,
       "seen_guid": 2,
       "no_rwa_signal": 40,
       "duplicate_in_scan": 53,
@@ -71,13 +71,6 @@
         "trust": "unknown"
       },
       {
-        "title": "Citi Forecasts Tokenized Securities Market To Hit Ethereum5.5T by 2030",
-        "source": "CoinMarketCap",
-        "normalizedSource": "coinmarketcap",
-        "score": 9,
-        "trust": "low"
-      },
-      {
         "title": "Nate Geraci: SEC and CFTC advance new guidance on tokenized securities and software developers",
         "source": "Traders Union",
         "normalizedSource": "traders union",
@@ -104,6 +97,13 @@
         "normalizedSource": "blocktelegraph",
         "score": 8,
         "trust": "unknown"
+      },
+      {
+        "title": "Tokenization Investment Portfolios Transform With BlackRock Ondo Finance",
+        "source": "The Cryptonomist",
+        "normalizedSource": "the cryptonomist",
+        "score": 8,
+        "trust": "unknown"
       }
     ]
   },
@@ -123,27 +123,19 @@
     },
     {
       "title": "OKX, ICE plan tokenized securities venue under SEC exemption",
-      "result": "unconfirmed",
-      "highTrustMatches": 0,
-      "specialistMatches": 0
-    },
-    {
-      "title": "Citi Forecasts Tokenized Securities Market To Hit Ethereum5.5T by 2030",
-      "result": "unconfirmed",
-      "highTrustMatches": 0,
-      "specialistMatches": 0
-    },
-    {
-      "title": "Nate Geraci: SEC and CFTC advance new guidance on tokenized securities and software developers",
-      "result": "unconfirmed",
-      "highTrustMatches": 0,
-      "specialistMatches": 0
-    },
-    {
-      "title": "South Korea Proposes $2.8 Million Capital Rule for Tokenized Securities Firms",
-      "result": "unconfirmed",
-      "highTrustMatches": 0,
-      "specialistMatches": 1
+      "result": "confirmed",
+      "sources": [
+        "Decrypt News"
+      ],
+      "mode": "independent-high-trust-source"
     }
-  ]
+  ],
+  "lastConfirmation": {
+    "original": "Tech in Asia",
+    "confirmedBy": [
+      "Decrypt News"
+    ],
+    "trust": "trusted",
+    "mode": "independent-high-trust-source"
+  }
 }
