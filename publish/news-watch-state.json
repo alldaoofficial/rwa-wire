@@ -19,34 +19,34 @@
     "CBMiV0FVX3lxTE5mZlpwTENPelRjN3E5d1ViNlZFRHJHbmUxUEN6SmZwOU1oeW13UDNHTG1zN19WR2JqSzFrR0NHeXIwdmN1NnNTUW9SRzFwYWRubjFIUXhoUQ",
     "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB"
   ],
-  "lastRun": "2026-10-05T13:37:14.150930+00:00",
+  "lastRun": "2026-10-05T14:07:14.979074+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-okx-and-nyse-owner-ice-plan-24-7-tokenized-stock-trading-under-sec-exemption.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 159,
-    "uniqueItems": 105,
+    "rawItems": 155,
+    "uniqueItems": 103,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 31,
+    "watchlist": 29,
     "sourceTiers": {
       "specialist": 7,
-      "unknown": 121,
-      "low": 25,
+      "unknown": 118,
+      "low": 24,
       "primary": 4,
       "trusted": 1,
       "wire": 1
     },
     "rejections": {
       "watchlist_specialist": 1,
-      "duplicate_story": 5,
-      "watchlist_unknown": 25,
-      "watchlist_low": 4,
-      "duplicate_in_scan": 54,
+      "duplicate_story": 4,
+      "watchlist_unknown": 24,
+      "watchlist_low": 3,
+      "duplicate_in_scan": 52,
       "no_rwa_signal": 51,
       "seen_guid": 1,
-      "score_below_4": 17,
+      "score_below_4": 18,
       "watchlist_wire": 1
     },
     "feedErrors": [],
@@ -64,13 +64,6 @@
         "normalizedSource": "markets media",
         "score": 9,
         "trust": "specialist"
-      },
-      {
-        "title": "Citi Forecasts Tokenized Securities Market To Hit Ethereum5.5T by 2030",
-        "source": "CoinMarketCap",
-        "normalizedSource": "coinmarketcap",
-        "score": 9,
-        "trust": "low"
       },
       {
         "title": "Nate Geraci: SEC and CFTC advance new guidance on tokenized securities and software developers",
@@ -94,17 +87,24 @@
         "trust": "low"
       },
       {
-        "title": "Coinbase Tokenized Stocks Lead DeFi Deposit Gains, Adding $5.6M Ahead of Robinhood and Binance",
-        "source": "crowdfundinsider.com",
-        "normalizedSource": "crowdfundinsider",
+        "title": "BlackRock launches tokenized portfolios with Ondo Finance as real-world assets near $9B",
+        "source": "Bitget",
+        "normalizedSource": "bitget",
         "score": 8,
         "trust": "unknown"
       },
       {
-        "title": "BlackRock and Ondo Launch Tokenized Income and Growth Portfolios",
-        "source": "BlockTelegraph",
-        "normalizedSource": "blocktelegraph",
+        "title": "Coinbase Tokenized Stocks Lead DeFi Deposit Gains, Adding $5.6M Ahead of Robinhood and Binance",
+        "source": "Crowdfund Insider",
+        "normalizedSource": "crowdfund insider",
         "score": 8,
+        "trust": "unknown"
+      },
+      {
+        "title": "IBM Bets on Sovereign Tech and Tokenized Deposits While Shares Sit Deep in the Red",
+        "source": "AD HOC NEWS",
+        "normalizedSource": "ad hoc news",
+        "score": 7,
         "trust": "unknown"
       }
     ]
@@ -119,12 +119,6 @@
     },
     {
       "title": "OKXICE Files to Launch Tokenized Securities Venue",
-      "result": "unconfirmed",
-      "highTrustMatches": 0,
-      "specialistMatches": 0
-    },
-    {
-      "title": "Citi Forecasts Tokenized Securities Market To Hit Ethereum5.5T by 2030",
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 0
@@ -146,6 +140,12 @@
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 0
+    },
+    {
+      "title": "BlackRock launches tokenized portfolios with Ondo Finance as real-world assets near $9B",
+      "result": "unconfirmed",
+      "highTrustMatches": 0,
+      "specialistMatches": 1
     }
   ],
   "lastConfirmation": {
