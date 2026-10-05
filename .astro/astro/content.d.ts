@@ -376,6 +376,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"rwa-tokenization-in-2026-tokenized-stocks-drive-the-next-phase.mdx": {
+	id: "rwa-tokenization-in-2026-tokenized-stocks-drive-the-next-phase.mdx";
+  slug: "rwa-tokenization-in-2026-tokenized-stocks-drive-the-next-phase";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "sec-opens-the-floodgates-okx-charges-into-the-us-tokenized-stocks-must-be-truly-stock-like-offshore-tactics-just-before-the-exam.mdx": {
 	id: "sec-opens-the-floodgates-okx-charges-into-the-us-tokenized-stocks-must-be-truly-stock-like-offshore-tactics-just-before-the-exam.mdx";
   slug: "sec-opens-the-floodgates-okx-charges-into-the-us-tokenized-stocks-must-be-truly-stock-like-offshore-tactics-just-before-the-exam";
