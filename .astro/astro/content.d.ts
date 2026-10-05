@@ -306,6 +306,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"okx-and-nyse-owner-ice-plan-24-7-tokenized-stock-trading-under-sec-exemption.mdx": {
+	id: "okx-and-nyse-owner-ice-plan-24-7-tokenized-stock-trading-under-sec-exemption.mdx";
+  slug: "okx-and-nyse-owner-ice-plan-24-7-tokenized-stock-trading-under-sec-exemption";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "ondo-finance-explained.mdx": {
 	id: "ondo-finance-explained.mdx";
   slug: "ondo-finance-explained";
