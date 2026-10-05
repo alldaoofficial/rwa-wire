@@ -19,47 +19,42 @@
     "CBMiV0FVX3lxTE5mZlpwTENPelRjN3E5d1ViNlZFRHJHbmUxUEN6SmZwOU1oeW13UDNHTG1zN19WR2JqSzFrR0NHeXIwdmN1NnNTUW9SRzFwYWRubjFIUXhoUQ",
     "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB"
   ],
-  "lastRun": "2026-10-05T08:07:14.316377+00:00",
+  "lastRun": "2026-10-05T08:37:12.274113+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-sec-opens-the-floodgates-okx-charges-into-the-us-tokenized-stocks-must-be-truly.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 125,
-    "uniqueItems": 79,
+    "rawItems": 137,
+    "uniqueItems": 84,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 20,
+    "watchlist": 21,
     "sourceTiers": {
-      "unknown": 98,
-      "primary": 4,
       "specialist": 12,
-      "trusted": 2,
-      "low": 9
+      "unknown": 104,
+      "low": 16,
+      "primary": 3,
+      "trusted": 2
     },
     "rejections": {
-      "watchlist_unknown": 19,
-      "score_below_4": 22,
+      "watchlist_specialist": 2,
+      "watchlist_unknown": 17,
+      "score_below_4": 21,
+      "watchlist_low": 2,
       "seen_guid": 2,
-      "watchlist_specialist": 1,
-      "no_rwa_signal": 35,
-      "duplicate_in_scan": 46
+      "no_rwa_signal": 39,
+      "duplicate_in_scan": 53,
+      "duplicate_story": 1
     },
     "feedErrors": [],
     "topWatchlist": [
       {
-        "title": "OKXICE joint venture to notify SEC for tokenized securities venue, Jacquelyn Melinek reveals",
-        "source": "Traders Union",
-        "normalizedSource": "traders union",
+        "title": "OKXICE Files to Launch Tokenized Securities Venue",
+        "source": "Markets Media",
+        "normalizedSource": "markets media",
         "score": 9,
-        "trust": "unknown"
-      },
-      {
-        "title": "OKXICE to Launch Tokenized Securities Trading",
-        "source": "FXDailyReport.Com",
-        "normalizedSource": "fxdailyreport",
-        "score": 9,
-        "trust": "unknown"
+        "trust": "specialist"
       },
       {
         "title": "OKX, ICE plan tokenized securities venue under SEC exemption",
@@ -69,9 +64,16 @@
         "trust": "unknown"
       },
       {
+        "title": "Citi Forecasts Tokenized Securities Market To Hit Ethereum5.5T by 2030",
+        "source": "CoinMarketCap",
+        "normalizedSource": "coinmarketcap",
+        "score": 9,
+        "trust": "low"
+      },
+      {
         "title": "Nate Geraci: SEC and CFTC advance new guidance on tokenized securities and software developers",
-        "source": "Traders Union",
-        "normalizedSource": "traders union",
+        "source": "tradersunion.com",
+        "normalizedSource": "tradersunion",
         "score": 9,
         "trust": "unknown"
       },
@@ -83,13 +85,6 @@
         "trust": "specialist"
       },
       {
-        "title": "BlackRock launches tokenized portfolios with Ondo Finance as real-world assets near $9B",
-        "source": "Bitget",
-        "normalizedSource": "bitget",
-        "score": 8,
-        "trust": "unknown"
-      },
-      {
         "title": "Coinbase Tokenized Stocks Lead DeFi Deposit Gains, Adding $5.6M Ahead of Robinhood and Binance",
         "source": "Crowdfund Insider",
         "normalizedSource": "crowdfund insider",
@@ -97,9 +92,16 @@
         "trust": "unknown"
       },
       {
-        "title": "BlackRock and Ondo expand tokenization into onchain portfolios",
-        "source": "Traders Union",
-        "normalizedSource": "traders union",
+        "title": "BlackRock and Ondo Launch Tokenized Income and Growth Portfolios",
+        "source": "BlockTelegraph",
+        "normalizedSource": "blocktelegraph",
+        "score": 8,
+        "trust": "unknown"
+      },
+      {
+        "title": "Tokenization Investment Portfolios Transform With BlackRock Ondo Finance",
+        "source": "The Cryptonomist",
+        "normalizedSource": "the cryptonomist",
         "score": 8,
         "trust": "unknown"
       }
@@ -108,19 +110,19 @@
   "lastCandidatePriority": "important",
   "confirmationAttempts": [
     {
-      "title": "OKXICE joint venture to notify SEC for tokenized securities venue, Jacquelyn Melinek reveals",
-      "result": "unconfirmed",
-      "highTrustMatches": 0,
-      "specialistMatches": 0
-    },
-    {
-      "title": "OKXICE to Launch Tokenized Securities Trading",
+      "title": "OKXICE Files to Launch Tokenized Securities Venue",
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 0
     },
     {
       "title": "OKX, ICE plan tokenized securities venue under SEC exemption",
+      "result": "unconfirmed",
+      "highTrustMatches": 0,
+      "specialistMatches": 0
+    },
+    {
+      "title": "Citi Forecasts Tokenized Securities Market To Hit Ethereum5.5T by 2030",
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 0
@@ -138,10 +140,10 @@
       "specialistMatches": 1
     },
     {
-      "title": "BlackRock launches tokenized portfolios with Ondo Finance as real-world assets near $9B",
+      "title": "Coinbase Tokenized Stocks Lead DeFi Deposit Gains, Adding $5.6M Ahead of Robinhood and Binance",
       "result": "unconfirmed",
       "highTrustMatches": 0,
-      "specialistMatches": 2
+      "specialistMatches": 0
     }
   ]
 }
