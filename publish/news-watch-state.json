@@ -19,17 +19,17 @@
     "CBMiV0FVX3lxTE5mZlpwTENPelRjN3E5d1ViNlZFRHJHbmUxUEN6SmZwOU1oeW13UDNHTG1zN19WR2JqSzFrR0NHeXIwdmN1NnNTUW9SRzFwYWRubjFIUXhoUQ",
     "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB"
   ],
-  "lastRun": "2026-10-05T14:37:11.779001+00:00",
+  "lastRun": "2026-10-05T15:07:16.588200+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-okx-and-nyse-owner-ice-plan-24-7-tokenized-stock-trading-under-sec-exemption.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
     "rawItems": 159,
-    "uniqueItems": 106,
+    "uniqueItems": 104,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 30,
+    "watchlist": 31,
     "sourceTiers": {
       "specialist": 7,
       "unknown": 120,
@@ -40,13 +40,13 @@
     },
     "rejections": {
       "watchlist_specialist": 1,
-      "duplicate_story": 4,
-      "duplicate_in_scan": 53,
-      "watchlist_unknown": 24,
+      "duplicate_story": 3,
+      "duplicate_in_scan": 55,
+      "watchlist_unknown": 25,
       "watchlist_low": 4,
       "no_rwa_signal": 53,
       "seen_guid": 1,
-      "score_below_4": 18,
+      "score_below_4": 16,
       "watchlist_wire": 1
     },
     "feedErrors": [],
@@ -87,6 +87,13 @@
         "trust": "unknown"
       },
       {
+        "title": "Chainlink Collaborates with Swift to Enhance Tokenized Payments for Financial Institutions",
+        "source": "SSBCrack",
+        "normalizedSource": "ssbcrack",
+        "score": 8,
+        "trust": "unknown"
+      },
+      {
         "title": "Shinhan Asset Management Signs 4-Party MoU for Tokenized Fund on Solana",
         "source": "CoinMarketCap",
         "normalizedSource": "coinmarketcap",
@@ -97,13 +104,6 @@
         "title": "BlackRock launches tokenized portfolios with Ondo Finance as real-world assets near $9B",
         "source": "Bitget",
         "normalizedSource": "bitget",
-        "score": 8,
-        "trust": "unknown"
-      },
-      {
-        "title": "Coinbase Tokenized Stocks Lead DeFi Deposit Gains, Adding $5.6M Ahead of Robinhood and Binance",
-        "source": "Crowdfund Insider",
-        "normalizedSource": "crowdfund insider",
         "score": 8,
         "trust": "unknown"
       }
@@ -142,7 +142,7 @@
       "specialistMatches": 1
     },
     {
-      "title": "Shinhan Asset Management Signs 4-Party MoU for Tokenized Fund on Solana",
+      "title": "Chainlink Collaborates with Swift to Enhance Tokenized Payments for Financial Institutions",
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 0
