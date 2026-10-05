@@ -19,41 +19,41 @@
     "CBMiV0FVX3lxTE5mZlpwTENPelRjN3E5d1ViNlZFRHJHbmUxUEN6SmZwOU1oeW13UDNHTG1zN19WR2JqSzFrR0NHeXIwdmN1NnNTUW9SRzFwYWRubjFIUXhoUQ",
     "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB"
   ],
-  "lastRun": "2026-10-05T16:07:16.886857+00:00",
+  "lastRun": "2026-10-05T16:37:16.114596+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-okx-and-nyse-owner-ice-plan-24-7-tokenized-stock-trading-under-sec-exemption.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 157,
-    "uniqueItems": 102,
+    "rawItems": 156,
+    "uniqueItems": 104,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 35,
+    "watchlist": 36,
     "sourceTiers": {
-      "specialist": 7,
       "unknown": 119,
       "low": 26,
       "primary": 4,
-      "wire": 1
+      "specialist": 5,
+      "wire": 1,
+      "trusted": 1
     },
     "rejections": {
-      "watchlist_specialist": 1,
+      "watchlist_unknown": 30,
       "duplicate_story": 5,
-      "duplicate_in_scan": 55,
+      "duplicate_in_scan": 52,
       "watchlist_low": 5,
-      "watchlist_unknown": 28,
-      "no_rwa_signal": 47,
+      "no_rwa_signal": 49,
       "seen_guid": 1,
-      "score_below_4": 14,
+      "score_below_4": 13,
       "watchlist_wire": 1
     },
     "feedErrors": [],
     "topWatchlist": [
       {
         "title": "Tagged: Tokenized Securities Venue",
-        "source": "crowdfundinsider.com",
-        "normalizedSource": "crowdfundinsider",
+        "source": "Crowdfund Insider",
+        "normalizedSource": "crowdfund insider",
         "score": 10,
         "trust": "unknown"
       },
@@ -66,10 +66,10 @@
       },
       {
         "title": "OKXICE Files to Launch Tokenized Securities Venue",
-        "source": "Markets Media",
-        "normalizedSource": "markets media",
+        "source": "marketsmedia.com",
+        "normalizedSource": "marketsmedia",
         "score": 9,
-        "trust": "specialist"
+        "trust": "unknown"
       },
       {
         "title": "Citi Forecasts Tokenized Securities Market To Hit Ethereum5.5T by 2030",
