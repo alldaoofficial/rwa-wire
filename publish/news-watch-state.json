@@ -19,32 +19,32 @@
     "CBMiV0FVX3lxTE5mZlpwTENPelRjN3E5d1ViNlZFRHJHbmUxUEN6SmZwOU1oeW13UDNHTG1zN19WR2JqSzFrR0NHeXIwdmN1NnNTUW9SRzFwYWRubjFIUXhoUQ",
     "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB"
   ],
-  "lastRun": "2026-10-05T14:07:14.979074+00:00",
+  "lastRun": "2026-10-05T14:37:11.779001+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-okx-and-nyse-owner-ice-plan-24-7-tokenized-stock-trading-under-sec-exemption.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 155,
-    "uniqueItems": 103,
+    "rawItems": 159,
+    "uniqueItems": 106,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 29,
+    "watchlist": 30,
     "sourceTiers": {
       "specialist": 7,
-      "unknown": 118,
-      "low": 24,
+      "unknown": 120,
+      "low": 25,
       "primary": 4,
-      "trusted": 1,
+      "trusted": 2,
       "wire": 1
     },
     "rejections": {
       "watchlist_specialist": 1,
       "duplicate_story": 4,
+      "duplicate_in_scan": 53,
       "watchlist_unknown": 24,
-      "watchlist_low": 3,
-      "duplicate_in_scan": 52,
-      "no_rwa_signal": 51,
+      "watchlist_low": 4,
+      "no_rwa_signal": 53,
       "seen_guid": 1,
       "score_below_4": 18,
       "watchlist_wire": 1
@@ -64,6 +64,13 @@
         "normalizedSource": "markets media",
         "score": 9,
         "trust": "specialist"
+      },
+      {
+        "title": "Citi Forecasts Tokenized Securities Market To Hit Ethereum5.5T by 2030",
+        "source": "CoinMarketCap",
+        "normalizedSource": "coinmarketcap",
+        "score": 9,
+        "trust": "low"
       },
       {
         "title": "Nate Geraci: SEC and CFTC advance new guidance on tokenized securities and software developers",
@@ -99,13 +106,6 @@
         "normalizedSource": "crowdfund insider",
         "score": 8,
         "trust": "unknown"
-      },
-      {
-        "title": "IBM Bets on Sovereign Tech and Tokenized Deposits While Shares Sit Deep in the Red",
-        "source": "AD HOC NEWS",
-        "normalizedSource": "ad hoc news",
-        "score": 7,
-        "trust": "unknown"
       }
     ]
   },
@@ -119,6 +119,12 @@
     },
     {
       "title": "OKXICE Files to Launch Tokenized Securities Venue",
+      "result": "unconfirmed",
+      "highTrustMatches": 0,
+      "specialistMatches": 0
+    },
+    {
+      "title": "Citi Forecasts Tokenized Securities Market To Hit Ethereum5.5T by 2030",
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 0
@@ -140,12 +146,6 @@
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 0
-    },
-    {
-      "title": "BlackRock launches tokenized portfolios with Ondo Finance as real-world assets near $9B",
-      "result": "unconfirmed",
-      "highTrustMatches": 0,
-      "specialistMatches": 1
     }
   ],
   "lastConfirmation": {
