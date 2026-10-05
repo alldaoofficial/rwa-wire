@@ -1,57 +1,73 @@
 {
   "seen": [
-    "CBMisAFBVV95cUxPdFNZMG1WZmM2S25oQXZsa1RnNDNRaWVYZmhYU0I3Tmo1aTlHQU9zTmN4R1Q4dEludkRZaW9vZnpYaWM3U25xbkR6ZmZzQ1VZWUpRTW12VWNwQjJ0UmlIMjhoZ1hSRUJmYTdRNmFlT093bTZyQjViRmhMbHpTV28tV1N5UmMySlFvRC1JbFF5NGMyNEx1cm4tQUVTQld3c3JzY19RSlhGM0ttbWR1WTZYYg",
-    "CBMiowFBVV95cUxPd2h3dXpvWXp1R0o5ZWZTR2Rud0Ntc05wUTBmRDhDaWp3UElIeFF4UTI3MjZ1UmpTaC1SU0ROQXprcDRWX1o4eGc0bU9ndXkxRS1nN3IxMWIwTnplS3BaOUVpMjR4NXpuUGFjdlJzOWtCT3lPaXR6YXAtX0JXVjR6SEtCNVVqaFhaOTlxV1ZxdjRCbmk5eUF3M3dBTWlVd2ZaMC1B",
-    "CBMihwFBVV95cUxQTGZEcXlJQVhReFowSGlXLW5VQXBObEdpcmlIcTB6bjRjWDBYc3VSZkFkRkxkekM3LW96NEExNi1iQm9pOVNGME1PMHJSTzNwNmExalFLeGdEenQ1YkJ3UmtjendiSlZOOVlEYThqTlZ4Z29xRVc4SU1HVXlJTjI2MlBsdTM5MXc",
-    "CBMikwFBVV95cUxNOFdDTmJxWDRPMDl0RGFfUVMtaG9iZzVheVlTamotaHYyUVlvdHRSQy1Kc3JsWmNPdEtXMVYxd213ODlwNnJHcmp2ZWpkbEY4eGktVHU5QjBGakdLaVVaeDZVRXdGV2l3WWI3ZG9oSWhrVS1WM2RKNmdfLWZ3U1BBSUlsS1JDYmZ3ZTNPbEg3QW5qa0k",
-    "CBMiuAFBVV95cUxNenVBMzhzNWlPQnhPaEcxaVpzQV91T3FhakZ5N1R4MnExY24tOXMzMWZaT0g1WmJVbnVVUVdWazVXTWVISC1jQjJPbGU3Q29tLUFyUkg4VGxwdDQ4MW9JaGpMSzZuQXhtQUZLRHdMTndwWTg5Uk9LMjRHTFQzemhLRml6WE1QZXNGZllpNDJMblhXVFdmWTcySnhPRG9jNGdpd0FwZlp0XzRIY0xVZVgzNU84enNLN1Fp",
-    "CBMiekFVX3lxTE9oNGpzRHNSRGljbEJ5cGF1QTZiaGNuQWhZek1uc29TYnZTSlh1WkRLVDJFR056V25laDI2UVBrcXMycFhsdTFwc2hjbm10TEp6WXB6dFJCS3hfcDlsTGtuTUNYS0hOUVZzT0tGUWw0Z3NmX0lhVVk2NHVR",
-    "CBMiO0FVX3lxTFBsOXlVOUJNb0JSMGRvcUV0Uk8xYVd6aXh3S2NGTTNlRkJMTGdUd2RfUTR0ZGpyeDc3WnQw",
-    "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg",
-    "CBMieEFVX3lxTE1TVm1ReGdydTFGWGdTLWpWSzQtVHN5OUJ4bHBHYW5rMTQya1NnSkhhOVRobmk2MlQ1UzFyUHhYRm93RUs1dEllalg1RDhRRGduS3Rqd2prVUEwUXl4eW1GeWhvRjJJQ1dWd19DamRPSXIzalprU2dIaQ",
     "CBMiZEFVX3lxTE5paVRvVEpYekhVSUtWa3lRNFoyVFNJMnZndVBOZndodHpWdzc2S3Rpd2Z3dXRDaUFheUoyOUF3V1lRR2VuTnM3XzVkOUdCMHpPVDc4QU9kaHF3OFNjNnNOTnVnZng",
-    "CBMilgFBVV95cUxNLVg4N3VvMHFBbGcyQlAzOFpPbjRDOERCakpmNmI0NjQtRTB3azdISmRTcmE3YXRxNENfMWFzRm92eXFFYmtRY1hPaVBQcGZUOE93WHBuQ2pRNDBEQ1pUZzJfNk5PeV9YaWt0X3VBQk9ucHYxa1ZyUDh6NXczUUJ5YzE2VG5IbUlwb2JhcF9ObzB3UnY1a0E",
-    "CBMiZEFVX3lxTFBSYkxFVVNvNWNJeUJxSEF0X3cxaVctX1JteUhmX1lRVGk5ZkctSWVoOE11UGxHVlZ2U0l1WWlOXzI1aW8wbm5ySlE0ZnVadnBWejBBZnhZc2ZNMGJ5YU1hMEdyQ24",
-    "CBMiZEFVX3lxTE9RbDVTWkdDLXNWRGxodzZMVGRWcE9qUGgtNUk1cDRiSjVZR0hWd3UxSDBjN002LXZCT1BYZ1E3czZPYlRrMWgtSkk1V085c2h2MzhLbUlncXhsYmtUbDR6LVBLMl8",
+    "CBMihwFBVV95cUxQTGZEcXlJQVhReFowSGlXLW5VQXBObEdpcmlIcTB6bjRjWDBYc3VSZkFkRkxkekM3LW96NEExNi1iQm9pOVNGME1PMHJSTzNwNmExalFLeGdEenQ1YkJ3UmtjendiSlZOOVlEYThqTlZ4Z29xRVc4SU1HVXlJTjI2MlBsdTM5MXc",
+    "CBMiuAFBVV95cUxNenVBMzhzNWlPQnhPaEcxaVpzQV91T3FhakZ5N1R4MnExY24tOXMzMWZaT0g1WmJVbnVVUVdWazVXTWVISC1jQjJPbGU3Q29tLUFyUkg4VGxwdDQ4MW9JaGpMSzZuQXhtQUZLRHdMTndwWTg5Uk9LMjRHTFQzemhLRml6WE1QZXNGZllpNDJMblhXVFdmWTcySnhPRG9jNGdpd0FwZlp0XzRIY0xVZVgzNU84enNLN1Fp",
+    "CBMieEFVX3lxTE1TVm1ReGdydTFGWGdTLWpWSzQtVHN5OUJ4bHBHYW5rMTQya1NnSkhhOVRobmk2MlQ1UzFyUHhYRm93RUs1dEllalg1RDhRRGduS3Rqd2prVUEwUXl4eW1GeWhvRjJJQ1dWd19DamRPSXIzalprU2dIaQ",
+    "CBMiowFBVV95cUxPd2h3dXpvWXp1R0o5ZWZTR2Rud0Ntc05wUTBmRDhDaWp3UElIeFF4UTI3MjZ1UmpTaC1SU0ROQXprcDRWX1o4eGc0bU9ndXkxRS1nN3IxMWIwTnplS3BaOUVpMjR4NXpuUGFjdlJzOWtCT3lPaXR6YXAtX0JXVjR6SEtCNVVqaFhaOTlxV1ZxdjRCbmk5eUF3M3dBTWlVd2ZaMC1B",
     "CBMiO0FVX3lxTE04bEFhWXZyMjlGZlM2SHozbHB2ZVVGSk8tVEpkbEV6ZFlIdkhBSHpDakVja01IVGIySFRZ",
+    "CBMisAFBVV95cUxPdFNZMG1WZmM2S25oQXZsa1RnNDNRaWVYZmhYU0I3Tmo1aTlHQU9zTmN4R1Q4dEludkRZaW9vZnpYaWM3U25xbkR6ZmZzQ1VZWUpRTW12VWNwQjJ0UmlIMjhoZ1hSRUJmYTdRNmFlT093bTZyQjViRmhMbHpTV28tV1N5UmMySlFvRC1JbFF5NGMyNEx1cm4tQUVTQld3c3JzY19RSlhGM0ttbWR1WTZYYg",
+    "CBMiZEFVX3lxTE9KQTlvN284RHh1RS1XbFpwSEZMUWxNdHdoWjBhLVdZckJpaFJfWlFyMGl5dTc2ZHBvcnhzcmtoNF9UZWU3Vk9ieHY1d3Nxb0JXekE3TnlyR1YwcGsyMzFhZU9VN1k",
+    "CBMiZEFVX3lxTE9RbDVTWkdDLXNWRGxodzZMVGRWcE9qUGgtNUk1cDRiSjVZR0hWd3UxSDBjN002LXZCT1BYZ1E3czZPYlRrMWgtSkk1V085c2h2MzhLbUlncXhsYmtUbDR6LVBLMl8",
+    "CBMiO0FVX3lxTFBsOXlVOUJNb0JSMGRvcUV0Uk8xYVd6aXh3S2NGTTNlRkJMTGdUd2RfUTR0ZGpyeDc3WnQw",
+    "CBMikwFBVV95cUxNOFdDTmJxWDRPMDl0RGFfUVMtaG9iZzVheVlTamotaHYyUVlvdHRSQy1Kc3JsWmNPdEtXMVYxd213ODlwNnJHcmp2ZWpkbEY4eGktVHU5QjBGakdLaVVaeDZVRXdGV2l3WWI3ZG9oSWhrVS1WM2RKNmdfLWZ3U1BBSUlsS1JDYmZ3ZTNPbEg3QW5qa0k",
+    "CBMiZEFVX3lxTFBSYkxFVVNvNWNJeUJxSEF0X3cxaVctX1JteUhmX1lRVGk5ZkctSWVoOE11UGxHVlZ2U0l1WWlOXzI1aW8wbm5ySlE0ZnVadnBWejBBZnhZc2ZNMGJ5YU1hMEdyQ24",
+    "CBMilgFBVV95cUxNLVg4N3VvMHFBbGcyQlAzOFpPbjRDOERCakpmNmI0NjQtRTB3azdISmRTcmE3YXRxNENfMWFzRm92eXFFYmtRY1hPaVBQcGZUOE93WHBuQ2pRNDBEQ1pUZzJfNk5PeV9YaWt0X3VBQk9ucHYxa1ZyUDh6NXczUUJ5YzE2VG5IbUlwb2JhcF9ObzB3UnY1a0E",
+    "CBMiugFBVV95cUxQU1hMal9aa3A3S0t2MVFjSVF0amVHcF9hdlBNNFkzSTFHWnROVWw0WHh6OThtcGlHXzltTzI5NkhJZGszVnFRMTJrd0lZdWxMdWw2ZGFCUGlqWmo1aUozM0w3aTRRSnR6anAyS3NUYmxOMXZ6YXc4bjhBeWpCdWxaY0s0ZGVhUnZHUEZYeXp6M3Q3T2kwcms5ODNUSkRaWkhPTWtDOHd0dEl2bDJ3N2hXaXo1NTljMjlEM1E",
+    "CBMiekFVX3lxTE9oNGpzRHNSRGljbEJ5cGF1QTZiaGNuQWhZek1uc29TYnZTSlh1WkRLVDJFR056V25laDI2UVBrcXMycFhsdTFwc2hjbm10TEp6WXB6dFJCS3hfcDlsTGtuTUNYS0hOUVZzT0tGUWw0Z3NmX0lhVVk2NHVR",
+    "CBMi4AFBVV95cUxNeDFreEVEUUxpUDh4QVVpWjVUalhydUUteUNNdlRlVDBoRm5kSUpkd2lWd3VNZFdNSENfSWVRR0hSM1VCckVmNUFxb1FmWktNOHNJYmZic2tnSzNaa3gwQU5ubHJ6RG1rZ1ZORFZiUHEySldzekJMZkFwX0dZblhIQjFYTmU2SWdGaDFVVUlmYUtDUDZGNVI4aGZJQ3ZYU05BQXpxZ0FyU0hyMTdiNjA5Z29ENWNrTXRVd2Nya0tvSV9YTHFQYkVMQTRqTWRyVlZpV1VOMjVOZnZybGVKLUhYSg",
     "CBMiV0FVX3lxTE5mZlpwTENPelRjN3E5d1ViNlZFRHJHbmUxUEN6SmZwOU1oeW13UDNHTG1zN19WR2JqSzFrR0NHeXIwdmN1NnNTUW9SRzFwYWRubjFIUXhoUQ",
-    "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB",
-    "CBMiugFBVV95cUxQU1hMal9aa3A3S0t2MVFjSVF0amVHcF9hdlBNNFkzSTFHWnROVWw0WHh6OThtcGlHXzltTzI5NkhJZGszVnFRMTJrd0lZdWxMdWw2ZGFCUGlqWmo1aUozM0w3aTRRSnR6anAyS3NUYmxOMXZ6YXc4bjhBeWpCdWxaY0s0ZGVhUnZHUEZYeXp6M3Q3T2kwcms5ODNUSkRaWkhPTWtDOHd0dEl2bDJ3N2hXaXo1NTljMjlEM1E"
+    "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB"
   ],
-  "lastRun": "2026-10-05T07:07:12.371291+00:00",
-  "lastCandidate": "publish/inbox/2026-10-03-blackrock-s-next-big-tokenization-bet.json",
-  "lastResult": "no-qualified-story",
+  "lastRun": "2026-10-05T07:37:11.630137+00:00",
+  "lastCandidate": "publish/inbox/2026-10-05-sec-opens-the-floodgates-okx-charges-into-the-us-tokenized-stocks-must-be-truly.json",
+  "lastResult": "candidate",
   "lastDiagnostics": {
-    "rawItems": 122,
-    "uniqueItems": 76,
+    "rawItems": 128,
+    "uniqueItems": 80,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
-    "important": 0,
-    "watchlist": 17,
+    "important": 1,
+    "watchlist": 20,
     "sourceTiers": {
-      "unknown": 94,
+      "unknown": 96,
+      "low": 16,
       "primary": 4,
-      "specialist": 10,
-      "trusted": 2,
-      "low": 12
+      "specialist": 11,
+      "trusted": 1
     },
     "rejections": {
-      "watchlist_unknown": 16,
+      "watchlist_unknown": 17,
       "score_below_4": 22,
-      "no_rwa_signal": 36,
+      "watchlist_low": 2,
       "watchlist_specialist": 1,
-      "duplicate_in_scan": 46,
+      "no_rwa_signal": 36,
+      "duplicate_in_scan": 48,
       "seen_guid": 1
     },
     "feedErrors": [],
     "topWatchlist": [
+      {
+        "title": "Northern Trust Launches Tokenized Treasury Fund Share Class",
+        "source": "CoinMarketCap",
+        "normalizedSource": "coinmarketcap",
+        "score": 10,
+        "trust": "low"
+      },
       {
         "title": "OKXICE to Launch Tokenized Securities Trading",
         "source": "FXDailyReport.Com",
         "normalizedSource": "fxdailyreport",
         "score": 9,
         "trust": "unknown"
+      },
+      {
+        "title": "Citi Forecasts Tokenized Securities Market To Hit Ethereum5.5T by 2030",
+        "source": "CoinMarketCap",
+        "normalizedSource": "coinmarketcap",
+        "score": 9,
+        "trust": "low"
       },
       {
         "title": "Nate Geraci: SEC and CFTC advance new guidance on tokenized securities and software developers",
@@ -86,20 +102,6 @@
         "source": "Traders Union",
         "normalizedSource": "traders union",
         "score": 8,
-        "trust": "unknown"
-      },
-      {
-        "title": "Tokenized stocks as collateral: what the October 14 unlock changes for investors in Germany",
-        "source": "CryptoTicker",
-        "normalizedSource": "cryptoticker",
-        "score": 7,
-        "trust": "unknown"
-      },
-      {
-        "title": "OKX Promotes 24/7 Trading for Tokenized Stocks and ETFs",
-        "source": "Coinfomania",
-        "normalizedSource": "coinfomania",
-        "score": 7,
         "trust": "unknown"
       }
     ]
