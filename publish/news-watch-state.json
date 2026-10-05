@@ -18,31 +18,32 @@
     "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB",
     "CBMiugFBVV95cUxQU1hMal9aa3A3S0t2MVFjSVF0amVHcF9hdlBNNFkzSTFHWnROVWw0WHh6OThtcGlHXzltTzI5NkhJZGszVnFRMTJrd0lZdWxMdWw2ZGFCUGlqWmo1aUozM0w3aTRRSnR6anAyS3NUYmxOMXZ6YXc4bjhBeWpCdWxaY0s0ZGVhUnZHUEZYeXp6M3Q3T2kwcms5ODNUSkRaWkhPTWtDOHd0dEl2bDJ3N2hXaXo1NTljMjlEM1E"
   ],
-  "lastRun": "2026-10-05T03:37:11.396259+00:00",
+  "lastRun": "2026-10-05T04:07:11.785507+00:00",
   "lastCandidate": "publish/inbox/2026-10-03-blackrock-s-next-big-tokenization-bet.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
     "rawItems": 128,
-    "uniqueItems": 76,
+    "uniqueItems": 78,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 19,
+    "watchlist": 18,
     "sourceTiers": {
-      "unknown": 98,
+      "unknown": 95,
       "low": 15,
-      "specialist": 9,
+      "specialist": 10,
       "primary": 4,
+      "wire": 2,
       "trusted": 2
     },
     "rejections": {
-      "watchlist_unknown": 17,
+      "watchlist_unknown": 16,
       "watchlist_low": 1,
       "watchlist_specialist": 1,
-      "score_below_4": 16,
-      "duplicate_in_scan": 52,
-      "no_rwa_signal": 40,
+      "score_below_4": 17,
+      "duplicate_in_scan": 50,
+      "no_rwa_signal": 42,
       "seen_guid": 1
     },
     "feedErrors": [],
@@ -60,13 +61,6 @@
         "normalizedSource": "tokenpost",
         "score": 9,
         "trust": "specialist"
-      },
-      {
-        "title": "South Korea Unveils Rules for Blockchain-Based Tokenized Securities",
-        "source": "Hokanews",
-        "normalizedSource": "hokanews",
-        "score": 9,
-        "trust": "unknown"
       },
       {
         "title": "BlackRock launches tokenized portfolios with Ondo Finance as real-world assets near $9B",
@@ -102,6 +96,13 @@
         "normalizedSource": "coinfomania",
         "score": 7,
         "trust": "unknown"
+      },
+      {
+        "title": "Weiss Ratings points to tokenized stocks as crypto demand grows in the U.S.",
+        "source": "Traders Union",
+        "normalizedSource": "traders union",
+        "score": 7,
+        "trust": "unknown"
       }
     ]
   },
@@ -120,16 +121,10 @@
       "specialistMatches": 1
     },
     {
-      "title": "South Korea Unveils Rules for Blockchain-Based Tokenized Securities",
-      "result": "unconfirmed",
-      "highTrustMatches": 0,
-      "specialistMatches": 0
-    },
-    {
       "title": "BlackRock launches tokenized portfolios with Ondo Finance as real-world assets near $9B",
       "result": "unconfirmed",
       "highTrustMatches": 0,
-      "specialistMatches": 2
+      "specialistMatches": 1
     },
     {
       "title": "Coinbase Tokenized Stocks Lead DeFi Deposit Gains, Adding $5.6M Ahead of Robinhood and Binance",
@@ -139,6 +134,12 @@
     },
     {
       "title": "BlackRock and Ondo expand tokenization into onchain portfolios",
+      "result": "unconfirmed",
+      "highTrustMatches": 0,
+      "specialistMatches": 0
+    },
+    {
+      "title": "South Korea Wants Tokenized Stocks, Bonds and Funds Under the Same Rules as Real Ones",
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 0
