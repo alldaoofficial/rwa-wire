@@ -320,6 +320,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"perpetual-futures-explained.mdx": {
+	id: "perpetual-futures-explained.mdx";
+  slug: "perpetual-futures-explained";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "plume-network-explained.mdx": {
 	id: "plume-network-explained.mdx";
   slug: "plume-network-explained";
@@ -358,6 +365,13 @@ declare module 'astro:content' {
 "rwa-infrastructure-explained.mdx": {
 	id: "rwa-infrastructure-explained.mdx";
   slug: "rwa-infrastructure-explained";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
+"sec-opens-the-floodgates-okx-charges-into-the-us-tokenized-stocks-must-be-truly-stock-like-offshore-tactics-just-before-the-exam.mdx": {
+	id: "sec-opens-the-floodgates-okx-charges-into-the-us-tokenized-stocks-must-be-truly-stock-like-offshore-tactics-just-before-the-exam.mdx";
+  slug: "sec-opens-the-floodgates-okx-charges-into-the-us-tokenized-stocks-must-be-truly-stock-like-offshore-tactics-just-before-the-exam";
   body: string;
   collection: "articles";
   data: InferEntrySchema<"articles">
@@ -512,6 +526,13 @@ declare module 'astro:content' {
 "united-states-oil-tokenized-fund-ondo-price-usoon-usd-today-live-price-market-cap-chart.mdx": {
 	id: "united-states-oil-tokenized-fund-ondo-price-usoon-usd-today-live-price-market-cap-chart.mdx";
   slug: "united-states-oil-tokenized-fund-ondo-price-usoon-usd-today-live-price-market-cap-chart";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
+"what-are-real-world-assets-rwa.mdx": {
+	id: "what-are-real-world-assets-rwa.mdx";
+  slug: "what-are-real-world-assets-rwa";
   body: string;
   collection: "articles";
   data: InferEntrySchema<"articles">
