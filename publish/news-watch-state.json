@@ -19,34 +19,33 @@
     "CBMiV0FVX3lxTE5mZlpwTENPelRjN3E5d1ViNlZFRHJHbmUxUEN6SmZwOU1oeW13UDNHTG1zN19WR2JqSzFrR0NHeXIwdmN1NnNTUW9SRzFwYWRubjFIUXhoUQ",
     "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB"
   ],
-  "lastRun": "2026-10-05T15:51:45.894717+00:00",
+  "lastRun": "2026-10-05T16:07:16.886857+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-okx-and-nyse-owner-ice-plan-24-7-tokenized-stock-trading-under-sec-exemption.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 156,
-    "uniqueItems": 101,
+    "rawItems": 157,
+    "uniqueItems": 102,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 32,
+    "watchlist": 35,
     "sourceTiers": {
-      "specialist": 8,
-      "unknown": 116,
-      "low": 25,
+      "specialist": 7,
+      "unknown": 119,
+      "low": 26,
       "primary": 4,
-      "trusted": 2,
       "wire": 1
     },
     "rejections": {
       "watchlist_specialist": 1,
       "duplicate_story": 5,
       "duplicate_in_scan": 55,
-      "watchlist_unknown": 26,
-      "watchlist_low": 4,
-      "no_rwa_signal": 48,
+      "watchlist_low": 5,
+      "watchlist_unknown": 28,
+      "no_rwa_signal": 47,
       "seen_guid": 1,
-      "score_below_4": 15,
+      "score_below_4": 14,
       "watchlist_wire": 1
     },
     "feedErrors": [],
@@ -94,18 +93,18 @@
         "trust": "unknown"
       },
       {
+        "title": "How AI, Tokenized Stocks and Celebrity Deals Are Reshaping Crypto Exchanges",
+        "source": "Investing.com",
+        "normalizedSource": "investing",
+        "score": 8,
+        "trust": "low"
+      },
+      {
         "title": "Chainlink Collaborates with Swift to Enhance Tokenized Payments for Financial Institutions",
         "source": "SSBCrack",
         "normalizedSource": "ssbcrack",
         "score": 8,
         "trust": "unknown"
-      },
-      {
-        "title": "Shinhan Asset Management Signs 4-Party MoU for Tokenized Fund on Solana",
-        "source": "CoinMarketCap",
-        "normalizedSource": "coinmarketcap",
-        "score": 8,
-        "trust": "low"
       }
     ]
   },
