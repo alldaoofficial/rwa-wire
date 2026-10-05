@@ -19,11 +19,11 @@
     "CBMiV0FVX3lxTE5mZlpwTENPelRjN3E5d1ViNlZFRHJHbmUxUEN6SmZwOU1oeW13UDNHTG1zN19WR2JqSzFrR0NHeXIwdmN1NnNTUW9SRzFwYWRubjFIUXhoUQ",
     "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB"
   ],
-  "lastRun": "2026-10-05T09:37:11.865569+00:00",
+  "lastRun": "2026-10-05T10:07:11.818145+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-sec-opens-the-floodgates-okx-charges-into-the-us-tokenized-stocks-must-be-truly.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 137,
+    "rawItems": 138,
     "uniqueItems": 85,
     "queriesOk": 9,
     "queriesFailed": 0,
@@ -32,7 +32,7 @@
     "watchlist": 22,
     "sourceTiers": {
       "specialist": 11,
-      "unknown": 102,
+      "unknown": 103,
       "low": 20,
       "primary": 3,
       "trusted": 1
@@ -44,7 +44,7 @@
       "watchlist_low": 3,
       "seen_guid": 2,
       "no_rwa_signal": 40,
-      "duplicate_in_scan": 52,
+      "duplicate_in_scan": 53,
       "duplicate_story": 1
     },
     "feedErrors": [],
@@ -93,8 +93,8 @@
       },
       {
         "title": "Coinbase Tokenized Stocks Lead DeFi Deposit Gains, Adding $5.6M Ahead of Robinhood and Binance",
-        "source": "crowdfundinsider.com",
-        "normalizedSource": "crowdfundinsider",
+        "source": "Crowdfund Insider",
+        "normalizedSource": "crowdfund insider",
         "score": 8,
         "trust": "unknown"
       },
