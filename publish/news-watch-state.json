@@ -19,31 +19,32 @@
     "CBMiV0FVX3lxTE5mZlpwTENPelRjN3E5d1ViNlZFRHJHbmUxUEN6SmZwOU1oeW13UDNHTG1zN19WR2JqSzFrR0NHeXIwdmN1NnNTUW9SRzFwYWRubjFIUXhoUQ",
     "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB"
   ],
-  "lastRun": "2026-10-05T16:37:16.114596+00:00",
+  "lastRun": "2026-10-05T17:07:12.931860+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-okx-and-nyse-owner-ice-plan-24-7-tokenized-stock-trading-under-sec-exemption.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
     "rawItems": 156,
-    "uniqueItems": 104,
+    "uniqueItems": 105,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
     "watchlist": 36,
     "sourceTiers": {
-      "unknown": 119,
-      "low": 26,
+      "specialist": 6,
+      "unknown": 116,
+      "low": 28,
       "primary": 4,
-      "specialist": 5,
       "wire": 1,
       "trusted": 1
     },
     "rejections": {
-      "watchlist_unknown": 30,
+      "watchlist_specialist": 1,
       "duplicate_story": 5,
-      "duplicate_in_scan": 52,
+      "duplicate_in_scan": 51,
       "watchlist_low": 5,
-      "no_rwa_signal": 49,
+      "watchlist_unknown": 29,
+      "no_rwa_signal": 50,
       "seen_guid": 1,
       "score_below_4": 13,
       "watchlist_wire": 1
@@ -66,10 +67,10 @@
       },
       {
         "title": "OKXICE Files to Launch Tokenized Securities Venue",
-        "source": "marketsmedia.com",
-        "normalizedSource": "marketsmedia",
+        "source": "Markets Media",
+        "normalizedSource": "markets media",
         "score": 9,
-        "trust": "unknown"
+        "trust": "specialist"
       },
       {
         "title": "Citi Forecasts Tokenized Securities Market To Hit Ethereum5.5T by 2030",
@@ -87,7 +88,7 @@
       },
       {
         "title": "South Korea Sets 2027 Launch for Tokenized Securities",
-        "source": "CoinTrust",
+        "source": "cointrust.com",
         "normalizedSource": "cointrust",
         "score": 9,
         "trust": "unknown"
@@ -144,7 +145,7 @@
       "title": "South Korea Sets 2027 Launch for Tokenized Securities",
       "result": "unconfirmed",
       "highTrustMatches": 0,
-      "specialistMatches": 1
+      "specialistMatches": 0
     }
   ],
   "lastConfirmation": {
