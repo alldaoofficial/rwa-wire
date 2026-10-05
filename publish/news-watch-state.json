@@ -19,36 +19,43 @@
     "CBMiV0FVX3lxTE5mZlpwTENPelRjN3E5d1ViNlZFRHJHbmUxUEN6SmZwOU1oeW13UDNHTG1zN19WR2JqSzFrR0NHeXIwdmN1NnNTUW9SRzFwYWRubjFIUXhoUQ",
     "CBMixwFBVV95cUxNZElzSWdvMjFNd2R5TTlwVkpNQmo4SFA1bmJyS0FMc3Nhb2lzNHRFdkJyanlaZEpWZEhoTmt0Z09fVGlyejE1alVqY1hzUDlpanRHSS1uNjViMkVldkFBMG1LRnBXT1BmeVlrbVk2YTdzQWR1eW05UVBYeU5DU19oOS14NzRBeWFUNDJpOUU1cDRRMFRRQmJCWGh0aWo4N0trQjg2a2d3dV92WTRMT3hQbmhlNnhrTmxId1JwMm5oelFvZWpwbWdB"
   ],
-  "lastRun": "2026-10-05T09:07:13.619248+00:00",
+  "lastRun": "2026-10-05T09:37:11.865569+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-sec-opens-the-floodgates-okx-charges-into-the-us-tokenized-stocks-must-be-truly.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 139,
-    "uniqueItems": 86,
+    "rawItems": 137,
+    "uniqueItems": 85,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 21,
+    "watchlist": 22,
     "sourceTiers": {
-      "specialist": 12,
-      "unknown": 104,
+      "specialist": 11,
+      "unknown": 102,
+      "low": 20,
       "primary": 3,
-      "low": 18,
-      "trusted": 2
+      "trusted": 1
     },
     "rejections": {
       "watchlist_specialist": 2,
       "watchlist_unknown": 17,
       "score_below_4": 20,
+      "watchlist_low": 3,
       "seen_guid": 2,
-      "no_rwa_signal": 42,
-      "duplicate_in_scan": 53,
-      "watchlist_low": 2,
+      "no_rwa_signal": 40,
+      "duplicate_in_scan": 52,
       "duplicate_story": 1
     },
     "feedErrors": [],
     "topWatchlist": [
+      {
+        "title": "Northern Trust Launches Tokenized Treasury Fund Share Class",
+        "source": "CoinMarketCap",
+        "normalizedSource": "coinmarketcap",
+        "score": 10,
+        "trust": "low"
+      },
       {
         "title": "OKXICE Files to Launch Tokenized Securities Venue",
         "source": "Markets Media",
@@ -86,22 +93,15 @@
       },
       {
         "title": "Coinbase Tokenized Stocks Lead DeFi Deposit Gains, Adding $5.6M Ahead of Robinhood and Binance",
-        "source": "Crowdfund Insider",
-        "normalizedSource": "crowdfund insider",
+        "source": "crowdfundinsider.com",
+        "normalizedSource": "crowdfundinsider",
         "score": 8,
         "trust": "unknown"
       },
       {
         "title": "BlackRock and Ondo Launch Tokenized Income and Growth Portfolios",
-        "source": "blocktelegraph.io",
+        "source": "BlockTelegraph",
         "normalizedSource": "blocktelegraph",
-        "score": 8,
-        "trust": "unknown"
-      },
-      {
-        "title": "Tokenization Investment Portfolios Transform With BlackRock Ondo Finance",
-        "source": "The Cryptonomist",
-        "normalizedSource": "the cryptonomist",
         "score": 8,
         "trust": "unknown"
       }
@@ -109,6 +109,12 @@
   },
   "lastCandidatePriority": "important",
   "confirmationAttempts": [
+    {
+      "title": "Northern Trust Launches Tokenized Treasury Fund Share Class",
+      "result": "unconfirmed",
+      "highTrustMatches": 0,
+      "specialistMatches": 0
+    },
     {
       "title": "OKXICE Files to Launch Tokenized Securities Venue",
       "result": "unconfirmed",
@@ -138,12 +144,6 @@
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 1
-    },
-    {
-      "title": "Coinbase Tokenized Stocks Lead DeFi Deposit Gains, Adding $5.6M Ahead of Robinhood and Binance",
-      "result": "unconfirmed",
-      "highTrustMatches": 0,
-      "specialistMatches": 0
     }
   ]
 }
