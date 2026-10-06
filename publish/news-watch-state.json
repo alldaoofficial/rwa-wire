@@ -21,34 +21,34 @@
     "CBMinAFBVV95cUxQekNfVWlXTG5yNW1HVmMtOFdrRExIVnpRZzZoVkRXaVJ1QVk2SXBTTmczLXFJMFdlclhGZlFma19tVEpMdlhjczhFNWZ0ODhOS1ZBbWs3ZWVfU3lYVmVuUE9wOE5IVVR0Y0NqelZFTDR5aUZWOEQ0OXpsMVBhVlpOLUpGMGNxS2FDb2swUE85QXpvYW85T2tnNUc2TGo",
     "CBMiZEFVX3lxTE5paVRvVEpYekhVSUtWa3lRNFoyVFNJMnZndVBOZndodHpWdzc2S3Rpd2Z3dXRDaUFheUoyOUF3V1lRR2VuTnM3XzVkOUdCMHpPVDc4QU9kaHF3OFNjNnNOTnVnZng"
   ],
-  "lastRun": "2026-10-06T12:07:13.180188+00:00",
+  "lastRun": "2026-10-06T12:37:12.562032+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-layer-one-tokenized-stocks-surge-as-cftc-chair-heralds-era-of-mass-tokenization.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 202,
-    "uniqueItems": 143,
+    "rawItems": 201,
+    "uniqueItems": 142,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
     "watchlist": 48,
     "sourceTiers": {
-      "low": 29,
-      "unknown": 154,
-      "trusted": 1,
+      "low": 26,
+      "specialist": 14,
+      "trusted": 4,
+      "unknown": 152,
       "primary": 3,
-      "specialist": 13,
       "wire": 2
     },
     "rejections": {
-      "watchlist_low": 8,
-      "watchlist_unknown": 37,
+      "watchlist_low": 7,
+      "watchlist_specialist": 2,
       "duplicate_story": 5,
       "duplicate_in_scan": 59,
       "seen_guid": 2,
-      "score_below_4": 20,
-      "no_rwa_signal": 67,
-      "watchlist_specialist": 1,
+      "watchlist_unknown": 37,
+      "score_below_4": 21,
+      "no_rwa_signal": 65,
       "hard_block": 1,
       "watchlist_wire": 2
     },
@@ -56,7 +56,7 @@
     "topWatchlist": [
       {
         "title": "Zamanat’s tokenized fund aims to widen access to GCC private credit — the lending risks stay familiar",
-        "source": "enterpriseam.com",
+        "source": "EnterpriseAM",
         "normalizedSource": "enterpriseam",
         "score": 10,
         "trust": "unknown"
@@ -98,10 +98,10 @@
       },
       {
         "title": "OKXICE Files to Launch Tokenized Securities Venue",
-        "source": "marketsmedia.com",
-        "normalizedSource": "marketsmedia",
+        "source": "Markets Media",
+        "normalizedSource": "markets media",
         "score": 9,
-        "trust": "unknown"
+        "trust": "specialist"
       },
       {
         "title": "Citi Forecasts Tokenized Securities Market To Hit Ethereum5.5T by 2030",
