@@ -21,25 +21,96 @@
     "CBMinAFBVV95cUxQekNfVWlXTG5yNW1HVmMtOFdrRExIVnpRZzZoVkRXaVJ1QVk2SXBTTmczLXFJMFdlclhGZlFma19tVEpMdlhjczhFNWZ0ODhOS1ZBbWs3ZWVfU3lYVmVuUE9wOE5IVVR0Y0NqelZFTDR5aUZWOEQ0OXpsMVBhVlpOLUpGMGNxS2FDb2swUE85QXpvYW85T2tnNUc2TGo",
     "CBMiZEFVX3lxTE5paVRvVEpYekhVSUtWa3lRNFoyVFNJMnZndVBOZndodHpWdzc2S3Rpd2Z3dXRDaUFheUoyOUF3V1lRR2VuTnM3XzVkOUdCMHpPVDc4QU9kaHF3OFNjNnNOTnVnZng"
   ],
-  "lastRun": "2026-10-06T03:37:13.756017+00:00",
+  "lastRun": "2026-10-06T04:07:14.558287+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-layer-one-tokenized-stocks-surge-as-cftc-chair-heralds-era-of-mass-tokenization.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 0,
-    "uniqueItems": 0,
-    "queriesOk": 0,
-    "queriesFailed": 9,
+    "rawItems": 172,
+    "uniqueItems": 120,
+    "queriesOk": 9,
+    "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 0,
-    "sourceTiers": {},
-    "rejections": {},
-    "feedErrors": [
-      "HTTP Error 503: Service Unavailable",
-      "HTTP Error 503: Service Unavailable",
-      "HTTP Error 503: Service Unavailable"
-    ],
-    "topWatchlist": []
+    "watchlist": 38,
+    "sourceTiers": {
+      "specialist": 12,
+      "unknown": 127,
+      "low": 24,
+      "trusted": 3,
+      "primary": 5,
+      "wire": 1
+    },
+    "rejections": {
+      "watchlist_specialist": 2,
+      "duplicate_story": 5,
+      "watchlist_low": 5,
+      "seen_guid": 3,
+      "duplicate_in_scan": 52,
+      "watchlist_unknown": 30,
+      "score_below_4": 17,
+      "no_rwa_signal": 56,
+      "hard_block": 1,
+      "watchlist_wire": 1
+    },
+    "feedErrors": [],
+    "topWatchlist": [
+      {
+        "title": "Tagged: Tokenized Securities Venue",
+        "source": "Crowdfund Insider",
+        "normalizedSource": "crowdfund insider",
+        "score": 10,
+        "trust": "unknown"
+      },
+      {
+        "title": "Northern Trust Launches Tokenized Treasury Fund Share Class",
+        "source": "CoinMarketCap",
+        "normalizedSource": "coinmarketcap",
+        "score": 10,
+        "trust": "low"
+      },
+      {
+        "title": "Transforming the Stock Market with Tokenized Securities",
+        "source": "OneSafe",
+        "normalizedSource": "onesafe",
+        "score": 9,
+        "trust": "unknown"
+      },
+      {
+        "title": "Custodia Bank CEO Caitlin Long warns tokenized deposits could outpace stablecoins",
+        "source": "Bitget",
+        "normalizedSource": "bitget",
+        "score": 9,
+        "trust": "unknown"
+      },
+      {
+        "title": "OKXICE Files to Launch Tokenized Securities Venue",
+        "source": "Markets Media",
+        "normalizedSource": "markets media",
+        "score": 9,
+        "trust": "specialist"
+      },
+      {
+        "title": "Citi Forecasts Tokenized Securities Market To Hit Ethereum5.5T by 2030",
+        "source": "CoinMarketCap",
+        "normalizedSource": "coinmarketcap",
+        "score": 9,
+        "trust": "low"
+      },
+      {
+        "title": "Nate Geraci: SEC and CFTC advance new guidance on tokenized securities and software developers",
+        "source": "Traders Union",
+        "normalizedSource": "traders union",
+        "score": 9,
+        "trust": "unknown"
+      },
+      {
+        "title": "How AI, Tokenized Stocks and Celebrity Deals Are Reshaping Crypto Exchanges",
+        "source": "Investing.com",
+        "normalizedSource": "investing",
+        "score": 8,
+        "trust": "low"
+      }
+    ]
   },
   "lastCandidatePriority": "breaking",
   "confirmationAttempts": [
@@ -56,13 +127,13 @@
       "specialistMatches": 0
     },
     {
-      "title": "Custodia Bank CEO Caitlin Long warns tokenized deposits could outpace stablecoins",
+      "title": "Transforming the Stock Market with Tokenized Securities",
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 0
     },
     {
-      "title": "Transforming the Stock Market with Tokenized Securities",
+      "title": "Custodia Bank CEO Caitlin Long warns tokenized deposits could outpace stablecoins",
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 0
