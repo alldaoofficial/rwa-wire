@@ -21,42 +21,42 @@
     "CBMinAFBVV95cUxQekNfVWlXTG5yNW1HVmMtOFdrRExIVnpRZzZoVkRXaVJ1QVk2SXBTTmczLXFJMFdlclhGZlFma19tVEpMdlhjczhFNWZ0ODhOS1ZBbWs3ZWVfU3lYVmVuUE9wOE5IVVR0Y0NqelZFTDR5aUZWOEQ0OXpsMVBhVlpOLUpGMGNxS2FDb2swUE85QXpvYW85T2tnNUc2TGo",
     "CBMiZEFVX3lxTE5paVRvVEpYekhVSUtWa3lRNFoyVFNJMnZndVBOZndodHpWdzc2S3Rpd2Z3dXRDaUFheUoyOUF3V1lRR2VuTnM3XzVkOUdCMHpPVDc4QU9kaHF3OFNjNnNOTnVnZng"
   ],
-  "lastRun": "2026-10-06T07:37:11.791257+00:00",
+  "lastRun": "2026-10-06T08:07:14.000182+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-layer-one-tokenized-stocks-surge-as-cftc-chair-heralds-era-of-mass-tokenization.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 178,
-    "uniqueItems": 126,
+    "rawItems": 182,
+    "uniqueItems": 129,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 42,
+    "watchlist": 43,
     "sourceTiers": {
       "low": 27,
-      "specialist": 11,
-      "unknown": 130,
+      "specialist": 12,
+      "unknown": 131,
       "trusted": 5,
-      "primary": 4,
-      "wire": 1
+      "primary": 5,
+      "wire": 2
     },
     "rejections": {
       "watchlist_low": 5,
       "watchlist_specialist": 2,
       "duplicate_story": 5,
       "seen_guid": 3,
-      "duplicate_in_scan": 52,
+      "duplicate_in_scan": 53,
       "watchlist_unknown": 34,
-      "score_below_4": 16,
-      "no_rwa_signal": 59,
+      "score_below_4": 17,
+      "no_rwa_signal": 60,
       "hard_block": 1,
-      "watchlist_wire": 1
+      "watchlist_wire": 2
     },
     "feedErrors": [],
     "topWatchlist": [
       {
         "title": "BlackRock Rolls Out Two Tokenized Funds, Aims To Become Stablecoin Reserve Manager Ahead Of CLARITY Act",
-        "source": "stocktwits.com",
+        "source": "Stocktwits",
         "normalizedSource": "stocktwits",
         "score": 12,
         "trust": "unknown"
@@ -70,8 +70,8 @@
       },
       {
         "title": "Tagged: Tokenized Securities Venue",
-        "source": "Crowdfund Insider",
-        "normalizedSource": "crowdfund insider",
+        "source": "crowdfundinsider.com",
+        "normalizedSource": "crowdfundinsider",
         "score": 10,
         "trust": "unknown"
       },
