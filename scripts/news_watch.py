@@ -2,7 +2,7 @@
 """Scheduled discovery for RWA Wire with transparent qualification diagnostics."""
 import html, json, pathlib, re, sys, urllib.parse, urllib.request
 import xml.etree.ElementTree as ET
-from collections import Counter
+from collections import Counter, defaultdict
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 
@@ -24,10 +24,8 @@ STRONG={"tokenized":3,"tokenization":3,"tokenized fund":4,"tokenized treasury":4
 INSTITUTIONAL={"blackrock":3,"franklin templeton":3,"jpmorgan":3,"j.p. morgan":3,"dtcc":3,"securitize":2,"ondo":2,"centrifuge":2,"chainlink":2,"bank":1,"fund":1,"asset manager":2,"securities":2,"treasury":2,"institution":1,"settlement":2,"exchange":1,"custody":1,"regulator":1,"clearstream":2,"euroclear":2,"swift":2,"mastercard":2,"visa":2,"state street":2,"fidelity":2,"wisdomtree":2}
 BLOCK=["price prediction","airdrop","presale","memecoin","meme coin","casino","100x","price target","giveaway","best crypto","best altcoin","to invest in","top crypto","next crypto","buy now","massive gains","explosive growth","hidden gem","moonshot","can x reach","price forecast","price outlook","sponsored","partner content","promoted content"]
 HARD_BLOCK=["best crypto","to invest in","presale","100x","price prediction","price target","giveaway","moonshot","sponsored","promoted content"]
-# Primary means the publisher itself is an institution, issuer, exchange, regulator or infrastructure provider.
 PRIMARY_SOURCES={"blackrock","franklin templeton","jpmorgan","j p morgan","dtcc","securitize","ondo finance","centrifuge","chainlink","sec gov","u s securities and exchange commission","federal reserve","ecb","european central bank","bis","bank for international settlements","swift","euroclear","clearstream","state street","fidelity","wisdomtree","mastercard","visa","bank of england","monetary authority of singapore","mas","hong kong monetary authority","hkma","binance","coinbase","kraken","nasdaq","new york stock exchange","nyse","london stock exchange","lseg","deutsche boerse","six group","solana foundation","metaplex"}
 TRUSTED_MEDIA={"reuters","bloomberg","financial times","the wall street journal","wsj","coindesk","the block","fortune","forbes","cnbc","decrypt","dl news","blockworks","ledger insights","ledgerinsights","american banker"}
-# Specialist outlets stay below auto-publish trust, but are classified correctly for diagnostics/review.
 SPECIALIST_MEDIA={"securities io","securities","financefeeds","fintech futures","the digital banker","globalcustodian","global custodian","funds europe","finextra","banking dive","pymnts","markets media","tokenpost","bloomingbit","rwa xyz","rwa.io"}
 WIRE_SERVICES={"business wire","businesswire","pr newswire","prnewswire","globe newswire","globenewswire","accesswire"}
 LOW_TRUST_HINTS={"coinmarketcap","investing com","investing","tradingview","benzinga","cryptopolitan","coinpedia","u today","the crypto basic","crypto news flash","blockchain reporter"}
@@ -53,10 +51,9 @@ def same_story(a,b):
     if not aa or not bb:return False
     overlap=len(aa & bb); return overlap>=4 and overlap/min(len(aa),len(bb))>=0.55
 def fetch(url):
-    req=urllib.request.Request(url,headers={"User-Agent":"RWA-Wire-News-Watch/1.5"})
+    req=urllib.request.Request(url,headers={"User-Agent":"RWA-Wire-News-Watch/1.6"})
     with urllib.request.urlopen(req,timeout=25) as r:return r.read()
 def classify(score,trust,has_rwa_signal):
-    # Breaking remains strict. Only primary/trusted publishers can auto-qualify.
     if has_rwa_signal and trust in {"primary","trusted"} and score>=9:return "breaking"
     if has_rwa_signal and trust in {"primary","trusted"} and score>=5:return "important"
     if has_rwa_signal and score>=4:return "watchlist"
@@ -76,7 +73,7 @@ def main():
                     t=json.loads(p.read_text(encoding="utf-8")).get("title")
                     if t:existing_titles.append(t)
                 except Exception:pass
-    now=datetime.now(timezone.utc); qualified=[]; watchlist=[]; scan_titles=[]; scan_guids=set(); metrics=Counter(); rejection=Counter(); source_counts=Counter(); feed_errors=[]
+    now=datetime.now(timezone.utc); qualified=[]; watchlist=[]; scan_titles=[]; scan_guids=set(); metrics=Counter(); rejection=Counter(); source_counts=Counter(); feed_errors=[]; unknown_stats=defaultdict(lambda:{"count":0,"highScoreCount":0,"maxScore":-999,"titles":[]})
     for q in QUERIES:
         url="https://news.google.com/rss/search?"+urllib.parse.urlencode({"q":q+" when:2d","hl":"en-US","gl":"US","ceid":"US:en"})
         try: root=ET.fromstring(fetch(url)); metrics["queries_ok"]+=1
@@ -87,10 +84,14 @@ def main():
             try:published=parsedate_to_datetime(x.findtext("pubDate")).astimezone(timezone.utc)
             except Exception:published=now
             hay=(title+" "+desc).lower(); normalized_title=title.rsplit(" - ",1)[0] if " - " in title else title; headline=normalized_title.lower()
+            score=sum(w for k,w in STRONG.items() if k in hay)+sum(w for k,w in INSTITUTIONAL.items() if k in hay)-sum(10 for k in BLOCK if k in hay)
+            if trust=="unknown":
+                key=normalize_source(source_name) or "(missing source)"; u=unknown_stats[key]; u["count"]+=1; u["maxScore"]=max(u["maxScore"],score)
+                if score>=7:u["highScoreCount"]+=1
+                if score>=7 and len(u["titles"])<2:u["titles"].append(normalized_title[:150])
             if guid in scan_guids or any(same_story(normalized_title,t) for t in scan_titles): rejection["duplicate_in_scan"]+=1; continue
             scan_guids.add(guid); scan_titles.append(normalized_title); metrics["unique_items"]+=1
             if any(k in headline for k in HARD_BLOCK): rejection["hard_block"]+=1; continue
-            score=sum(w for k,w in STRONG.items() if k in hay)+sum(w for k,w in INSTITUTIONAL.items() if k in hay)-sum(10 for k in BLOCK if k in hay)
             if guid in seen: rejection["seen_guid"]+=1; continue
             if slugify(normalized_title) in existing_slugs: rejection["existing_slug"]+=1; continue
             if any(same_story(normalized_title,t) for t in existing_titles): rejection["duplicate_story"]+=1; continue
@@ -103,7 +104,8 @@ def main():
                 elif score<4: rejection["score_below_4"]+=1
                 else: rejection["below_publish_threshold"]+=1
     top_watch=sorted(watchlist,key=lambda x:(x[0],x[1]),reverse=True)[:8]
-    diagnostics={"rawItems":metrics["raw_items"],"uniqueItems":metrics["unique_items"],"queriesOk":metrics["queries_ok"],"queriesFailed":metrics["queries_failed"],"breaking":metrics["breaking"],"important":metrics["important"],"watchlist":metrics["watchlist"],"sourceTiers":dict(source_counts),"rejections":dict(rejection),"feedErrors":feed_errors[:3],"topWatchlist":[{"title":r[2].rsplit(" - ",1)[0],"source":r[7],"normalizedSource":normalize_source(r[7]),"score":r[0],"trust":r[6]} for r in top_watch]}
+    recurring_unknowns=sorted(({"source":k,"count":v["count"],"highScoreCount":v["highScoreCount"],"maxScore":v["maxScore"],"sampleTitles":v["titles"]} for k,v in unknown_stats.items() if v["count"]>=2 or v["highScoreCount"]>=1),key=lambda x:(x["highScoreCount"],x["maxScore"],x["count"]),reverse=True)[:15]
+    diagnostics={"rawItems":metrics["raw_items"],"uniqueItems":metrics["unique_items"],"queriesOk":metrics["queries_ok"],"queriesFailed":metrics["queries_failed"],"breaking":metrics["breaking"],"important":metrics["important"],"watchlist":metrics["watchlist"],"sourceTiers":dict(source_counts),"rejections":dict(rejection),"feedErrors":feed_errors[:3],"topWatchlist":[{"title":r[2].rsplit(" - ",1)[0],"source":r[7],"normalizedSource":normalize_source(r[7]),"score":r[0],"trust":r[6]} for r in top_watch],"recurringUnknowns":recurring_unknowns}
     state["lastRun"]=now.isoformat(); state["lastDiagnostics"]=diagnostics; print("News Watch diagnostics:",json.dumps(diagnostics,ensure_ascii=False))
     if not qualified:
         state["lastResult"]="no-qualified-story"; STATE.write_text(json.dumps(state,indent=2,ensure_ascii=False)+"\n"); print("No new high-confidence story found."); return
