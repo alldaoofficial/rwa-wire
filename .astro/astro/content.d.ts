@@ -292,6 +292,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"layer-one-tokenized-stocks-surge-as-cftc-chair-heralds-era-of-mass-tokenization.mdx": {
+	id: "layer-one-tokenized-stocks-surge-as-cftc-chair-heralds-era-of-mass-tokenization.mdx";
+  slug: "layer-one-tokenized-stocks-surge-as-cftc-chair-heralds-era-of-mass-tokenization";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-actions-for-tokenized-equities.mdx": {
 	id: "leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-actions-for-tokenized-equities.mdx";
   slug: "leveraging-swift-messaging-and-chainlink-infrastructure-to-automate-corporate-actions-for-tokenized-equities";
