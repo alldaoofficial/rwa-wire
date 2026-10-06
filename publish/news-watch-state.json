@@ -21,22 +21,22 @@
     "CBMinAFBVV95cUxQekNfVWlXTG5yNW1HVmMtOFdrRExIVnpRZzZoVkRXaVJ1QVk2SXBTTmczLXFJMFdlclhGZlFma19tVEpMdlhjczhFNWZ0ODhOS1ZBbWs3ZWVfU3lYVmVuUE9wOE5IVVR0Y0NqelZFTDR5aUZWOEQ0OXpsMVBhVlpOLUpGMGNxS2FDb2swUE85QXpvYW85T2tnNUc2TGo",
     "CBMiZEFVX3lxTE5paVRvVEpYekhVSUtWa3lRNFoyVFNJMnZndVBOZndodHpWdzc2S3Rpd2Z3dXRDaUFheUoyOUF3V1lRR2VuTnM3XzVkOUdCMHpPVDc4QU9kaHF3OFNjNnNOTnVnZng"
   ],
-  "lastRun": "2026-10-06T07:07:12.536414+00:00",
+  "lastRun": "2026-10-06T07:37:11.791257+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-layer-one-tokenized-stocks-surge-as-cftc-chair-heralds-era-of-mass-tokenization.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
     "rawItems": 178,
-    "uniqueItems": 125,
+    "uniqueItems": 126,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 41,
+    "watchlist": 42,
     "sourceTiers": {
-      "low": 28,
+      "low": 27,
       "specialist": 11,
       "unknown": 130,
-      "trusted": 4,
+      "trusted": 5,
       "primary": 4,
       "wire": 1
     },
@@ -45,18 +45,25 @@
       "watchlist_specialist": 2,
       "duplicate_story": 5,
       "seen_guid": 3,
-      "duplicate_in_scan": 53,
-      "watchlist_unknown": 33,
-      "score_below_4": 15,
-      "no_rwa_signal": 60,
+      "duplicate_in_scan": 52,
+      "watchlist_unknown": 34,
+      "score_below_4": 16,
+      "no_rwa_signal": 59,
       "hard_block": 1,
       "watchlist_wire": 1
     },
     "feedErrors": [],
     "topWatchlist": [
       {
+        "title": "BlackRock Rolls Out Two Tokenized Funds, Aims To Become Stablecoin Reserve Manager Ahead Of CLARITY Act",
+        "source": "stocktwits.com",
+        "normalizedSource": "stocktwits",
+        "score": 12,
+        "trust": "unknown"
+      },
+      {
         "title": "Zamanat’s tokenized fund aims to widen access to GCC private credit — the lending risks stay familiar",
-        "source": "enterpriseam.com",
+        "source": "EnterpriseAM",
         "normalizedSource": "enterpriseam",
         "score": 10,
         "trust": "unknown"
@@ -102,18 +109,17 @@
         "normalizedSource": "coinmarketcap",
         "score": 9,
         "trust": "low"
-      },
-      {
-        "title": "Nate Geraci: SEC and CFTC advance new guidance on tokenized securities and software developers",
-        "source": "Traders Union",
-        "normalizedSource": "traders union",
-        "score": 9,
-        "trust": "unknown"
       }
     ]
   },
   "lastCandidatePriority": "breaking",
   "confirmationAttempts": [
+    {
+      "title": "BlackRock Rolls Out Two Tokenized Funds, Aims To Become Stablecoin Reserve Manager Ahead Of CLARITY Act",
+      "result": "unconfirmed",
+      "highTrustMatches": 0,
+      "specialistMatches": 0
+    },
     {
       "title": "Zamanat’s tokenized fund aims to widen access to GCC private credit — the lending risks stay familiar",
       "result": "unconfirmed",
@@ -140,12 +146,6 @@
     },
     {
       "title": "Transforming the Stock Market with Tokenized Securities",
-      "result": "unconfirmed",
-      "highTrustMatches": 0,
-      "specialistMatches": 0
-    },
-    {
-      "title": "OKXICE Files to Launch Tokenized Securities Venue",
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 0
