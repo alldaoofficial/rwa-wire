@@ -21,46 +21,39 @@
     "CBMinAFBVV95cUxQekNfVWlXTG5yNW1HVmMtOFdrRExIVnpRZzZoVkRXaVJ1QVk2SXBTTmczLXFJMFdlclhGZlFma19tVEpMdlhjczhFNWZ0ODhOS1ZBbWs3ZWVfU3lYVmVuUE9wOE5IVVR0Y0NqelZFTDR5aUZWOEQ0OXpsMVBhVlpOLUpGMGNxS2FDb2swUE85QXpvYW85T2tnNUc2TGo",
     "CBMiZEFVX3lxTE5paVRvVEpYekhVSUtWa3lRNFoyVFNJMnZndVBOZndodHpWdzc2S3Rpd2Z3dXRDaUFheUoyOUF3V1lRR2VuTnM3XzVkOUdCMHpPVDc4QU9kaHF3OFNjNnNOTnVnZng"
   ],
-  "lastRun": "2026-10-06T08:07:14.000182+00:00",
+  "lastRun": "2026-10-06T08:37:12.617732+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-layer-one-tokenized-stocks-surge-as-cftc-chair-heralds-era-of-mass-tokenization.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 182,
-    "uniqueItems": 129,
+    "rawItems": 184,
+    "uniqueItems": 131,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 43,
+    "watchlist": 41,
     "sourceTiers": {
-      "low": 27,
-      "specialist": 12,
-      "unknown": 131,
+      "low": 25,
+      "unknown": 136,
       "trusted": 5,
       "primary": 5,
+      "specialist": 11,
       "wire": 2
     },
     "rejections": {
       "watchlist_low": 5,
-      "watchlist_specialist": 2,
+      "watchlist_unknown": 33,
       "duplicate_story": 5,
       "seen_guid": 3,
       "duplicate_in_scan": 53,
-      "watchlist_unknown": 34,
-      "score_below_4": 17,
-      "no_rwa_signal": 60,
+      "score_below_4": 18,
+      "no_rwa_signal": 63,
+      "watchlist_specialist": 1,
       "hard_block": 1,
       "watchlist_wire": 2
     },
     "feedErrors": [],
     "topWatchlist": [
-      {
-        "title": "BlackRock Rolls Out Two Tokenized Funds, Aims To Become Stablecoin Reserve Manager Ahead Of CLARITY Act",
-        "source": "Stocktwits",
-        "normalizedSource": "stocktwits",
-        "score": 12,
-        "trust": "unknown"
-      },
       {
         "title": "Zamanat’s tokenized fund aims to widen access to GCC private credit — the lending risks stay familiar",
         "source": "EnterpriseAM",
@@ -70,8 +63,8 @@
       },
       {
         "title": "Tagged: Tokenized Securities Venue",
-        "source": "crowdfundinsider.com",
-        "normalizedSource": "crowdfundinsider",
+        "source": "Crowdfund Insider",
+        "normalizedSource": "crowdfund insider",
         "score": 10,
         "trust": "unknown"
       },
@@ -91,17 +84,17 @@
       },
       {
         "title": "Transforming the Stock Market with Tokenized Securities",
-        "source": "OneSafe",
+        "source": "onesafe.io",
         "normalizedSource": "onesafe",
         "score": 9,
         "trust": "unknown"
       },
       {
         "title": "OKXICE Files to Launch Tokenized Securities Venue",
-        "source": "Markets Media",
-        "normalizedSource": "markets media",
+        "source": "marketsmedia.com",
+        "normalizedSource": "marketsmedia",
         "score": 9,
-        "trust": "specialist"
+        "trust": "unknown"
       },
       {
         "title": "Citi Forecasts Tokenized Securities Market To Hit Ethereum5.5T by 2030",
@@ -109,17 +102,18 @@
         "normalizedSource": "coinmarketcap",
         "score": 9,
         "trust": "low"
+      },
+      {
+        "title": "Nate Geraci: SEC and CFTC advance new guidance on tokenized securities and software developers",
+        "source": "Traders Union",
+        "normalizedSource": "traders union",
+        "score": 9,
+        "trust": "unknown"
       }
     ]
   },
   "lastCandidatePriority": "breaking",
   "confirmationAttempts": [
-    {
-      "title": "BlackRock Rolls Out Two Tokenized Funds, Aims To Become Stablecoin Reserve Manager Ahead Of CLARITY Act",
-      "result": "unconfirmed",
-      "highTrustMatches": 0,
-      "specialistMatches": 0
-    },
     {
       "title": "Zamanat’s tokenized fund aims to widen access to GCC private credit — the lending risks stay familiar",
       "result": "unconfirmed",
@@ -146,6 +140,12 @@
     },
     {
       "title": "Transforming the Stock Market with Tokenized Securities",
+      "result": "unconfirmed",
+      "highTrustMatches": 0,
+      "specialistMatches": 0
+    },
+    {
+      "title": "OKXICE Files to Launch Tokenized Securities Venue",
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 0
