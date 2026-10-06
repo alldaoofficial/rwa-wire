@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Small regression check for curated News Watch publisher classification."""
+"""Regression checks for curated News Watch publisher classification."""
 import news_watch_v2 as catalog
 
 CASES = {
@@ -7,10 +7,16 @@ CASES = {
     "CryptoDaily.co.uk": "specialist",
     "TokenPost.com": "specialist",
     "ledgerinsights.com": "specialist",
+    "CoinNess": "specialist",
+    "EnterpriseAM": "specialist",
+    "Seoul Economic Daily": "trusted",
     "Reuters.com": "trusted",
     "Circle": "primary",
     "Pluang": "low",
     "Hokanews": "low",
+    "Stocktwits": "low",
+    "Bitget": "low",
+    "Voice of Alexandria": "low",
 }
 
 for source, expected in CASES.items():
