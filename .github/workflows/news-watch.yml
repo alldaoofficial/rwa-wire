@@ -28,36 +28,54 @@ jobs:
       - name: Report trigger
         run: echo "News Watch triggered by ${{ github.event_name }} at $(date -u +%Y-%m-%dT%H:%M:%SZ)"
 
+      - name: Restore News Watch state
+        id: state-cache
+        uses: actions/cache/restore@v4
+        with:
+          path: .news-watch-cache
+          key: news-watch-state-${{ github.run_id }}
+          restore-keys: |
+            news-watch-state-
+
+      - name: Prepare cached News Watch state
+        run: |
+          mkdir -p .news-watch-cache
+          if [ ! -f .news-watch-cache/news-watch-state.json ]; then
+            cp publish/news-watch-state.json .news-watch-cache/news-watch-state.json
+          fi
+          rm -f publish/news-watch-state.json
+          ln -s ../.news-watch-cache/news-watch-state.json publish/news-watch-state.json
+
       - name: Scan RWA news
         run: python3 scripts/news_watch.py
 
       - name: Confirm strong watchlist stories
         run: python3 scripts/news_watch_confirm.py
 
-      - name: Commit News Watch state and discovery
+      - name: Save News Watch state
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .news-watch-cache
+          key: news-watch-state-${{ github.run_id }}
+
+      - name: Commit qualified discovery only
         id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A publish/
+          git add -A publish/inbox/
 
-          if git diff --cached --quiet; then
+          BRIEF_PATH=$(git diff --cached --name-only --diff-filter=A -- 'publish/inbox/*.json' | head -n 1)
+          if [ -z "$BRIEF_PATH" ]; then
             echo "story_changed=false" >> "$GITHUB_OUTPUT"
-            echo "No News Watch changes."
+            echo "No qualified story; main remains unchanged."
             exit 0
           fi
 
-          BRIEF_PATH=$(git diff --cached --name-only --diff-filter=A -- 'publish/inbox/*.json' | head -n 1)
-          if [ -n "$BRIEF_PATH" ]; then
-            echo "story_changed=true" >> "$GITHUB_OUTPUT"
-            echo "brief_path=$BRIEF_PATH" >> "$GITHUB_OUTPUT"
-            COMMIT_MESSAGE="News Watch: add qualified RWA story"
-          else
-            echo "story_changed=false" >> "$GITHUB_OUTPUT"
-            COMMIT_MESSAGE="News Watch: update scan state"
-          fi
-
-          git commit -m "$COMMIT_MESSAGE"
+          echo "story_changed=true" >> "$GITHUB_OUTPUT"
+          echo "brief_path=$BRIEF_PATH" >> "$GITHUB_OUTPUT"
+          git commit -m "News Watch: add qualified RWA story"
           for attempt in 1 2 3; do
             git pull --rebase origin main
             if git push; then
