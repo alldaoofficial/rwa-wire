@@ -20,22 +20,22 @@
     "CBMiowFBVV95cUxPd2h3dXpvWXp1R0o5ZWZTR2Rud0Ntc05wUTBmRDhDaWp3UElIeFF4UTI3MjZ1UmpTaC1SU0ROQXprcDRWX1o4eGc0bU9ndXkxRS1nN3IxMWIwTnplS3BaOUVpMjR4NXpuUGFjdlJzOWtCT3lPaXR6YXAtX0JXVjR6SEtCNVVqaFhaOTlxV1ZxdjRCbmk5eUF3M3dBTWlVd2ZaMC1B",
     "CBMieEFVX3lxTE1TVm1ReGdydTFGWGdTLWpWSzQtVHN5OUJ4bHBHYW5rMTQya1NnSkhhOVRobmk2MlQ1UzFyUHhYRm93RUs1dEllalg1RDhRRGduS3Rqd2prVUEwUXl4eW1GeWhvRjJJQ1dWd19DamRPSXIzalprU2dIaQ"
   ],
-  "lastRun": "2026-10-06T01:07:11.335913+00:00",
+  "lastRun": "2026-10-06T01:37:13.058349+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-rwa-tokenization-in-2026-tokenized-stocks-drive-the-next-phase.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 164,
-    "uniqueItems": 111,
+    "rawItems": 165,
+    "uniqueItems": 113,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 39,
+    "watchlist": 41,
     "sourceTiers": {
       "specialist": 11,
-      "unknown": 120,
-      "low": 25,
-      "trusted": 2,
+      "unknown": 121,
+      "low": 26,
+      "trusted": 1,
       "primary": 5,
       "wire": 1
     },
@@ -44,8 +44,8 @@
       "duplicate_story": 4,
       "watchlist_low": 5,
       "seen_guid": 2,
-      "watchlist_unknown": 31,
-      "duplicate_in_scan": 53,
+      "watchlist_unknown": 33,
+      "duplicate_in_scan": 52,
       "no_rwa_signal": 52,
       "score_below_4": 13,
       "hard_block": 1,
@@ -53,6 +53,13 @@
     },
     "feedErrors": [],
     "topWatchlist": [
+      {
+        "title": "BlackRock Rolls Out Two Tokenized Funds, Aims To Become Stablecoin Reserve Manager Ahead Of CLARITY Act",
+        "source": "Stocktwits",
+        "normalizedSource": "stocktwits",
+        "score": 12,
+        "trust": "unknown"
+      },
       {
         "title": "Tagged: Tokenized Securities Venue",
         "source": "Crowdfund Insider",
@@ -68,8 +75,15 @@
         "trust": "low"
       },
       {
+        "title": "Custodia Bank CEO Caitlin Long warns tokenized deposits could outpace stablecoins",
+        "source": "Bitget",
+        "normalizedSource": "bitget",
+        "score": 9,
+        "trust": "unknown"
+      },
+      {
         "title": "Transforming the Stock Market with Tokenized Securities",
-        "source": "onesafe.io",
+        "source": "OneSafe",
         "normalizedSource": "onesafe",
         "score": 9,
         "trust": "unknown"
@@ -94,25 +108,17 @@
         "normalizedSource": "traders union",
         "score": 9,
         "trust": "unknown"
-      },
-      {
-        "title": "South Korea Sets 2027 Launch for Tokenized Securities",
-        "source": "CoinTrust",
-        "normalizedSource": "cointrust",
-        "score": 9,
-        "trust": "unknown"
-      },
-      {
-        "title": "How AI, Tokenized Stocks and Celebrity Deals Are Reshaping Crypto Exchanges",
-        "source": "Investing.com",
-        "normalizedSource": "investing",
-        "score": 8,
-        "trust": "low"
       }
     ]
   },
   "lastCandidatePriority": "breaking",
   "confirmationAttempts": [
+    {
+      "title": "BlackRock Rolls Out Two Tokenized Funds, Aims To Become Stablecoin Reserve Manager Ahead Of CLARITY Act",
+      "result": "unconfirmed",
+      "highTrustMatches": 0,
+      "specialistMatches": 0
+    },
     {
       "title": "Tagged: Tokenized Securities Venue",
       "result": "unconfirmed",
@@ -126,6 +132,12 @@
       "specialistMatches": 0
     },
     {
+      "title": "Custodia Bank CEO Caitlin Long warns tokenized deposits could outpace stablecoins",
+      "result": "unconfirmed",
+      "highTrustMatches": 0,
+      "specialistMatches": 0
+    },
+    {
       "title": "Transforming the Stock Market with Tokenized Securities",
       "result": "unconfirmed",
       "highTrustMatches": 0,
@@ -133,18 +145,6 @@
     },
     {
       "title": "OKXICE Files to Launch Tokenized Securities Venue",
-      "result": "unconfirmed",
-      "highTrustMatches": 0,
-      "specialistMatches": 0
-    },
-    {
-      "title": "Citi Forecasts Tokenized Securities Market To Hit Ethereum5.5T by 2030",
-      "result": "unconfirmed",
-      "highTrustMatches": 0,
-      "specialistMatches": 0
-    },
-    {
-      "title": "Nate Geraci: SEC and CFTC advance new guidance on tokenized securities and software developers",
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 0
