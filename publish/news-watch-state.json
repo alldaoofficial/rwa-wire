@@ -20,12 +20,12 @@
     "CBMiowFBVV95cUxPd2h3dXpvWXp1R0o5ZWZTR2Rud0Ntc05wUTBmRDhDaWp3UElIeFF4UTI3MjZ1UmpTaC1SU0ROQXprcDRWX1o4eGc0bU9ndXkxRS1nN3IxMWIwTnplS3BaOUVpMjR4NXpuUGFjdlJzOWtCT3lPaXR6YXAtX0JXVjR6SEtCNVVqaFhaOTlxV1ZxdjRCbmk5eUF3M3dBTWlVd2ZaMC1B",
     "CBMieEFVX3lxTE1TVm1ReGdydTFGWGdTLWpWSzQtVHN5OUJ4bHBHYW5rMTQya1NnSkhhOVRobmk2MlQ1UzFyUHhYRm93RUs1dEllalg1RDhRRGduS3Rqd2prVUEwUXl4eW1GeWhvRjJJQ1dWd19DamRPSXIzalprU2dIaQ"
   ],
-  "lastRun": "2026-10-06T00:37:12.829867+00:00",
+  "lastRun": "2026-10-06T01:07:11.335913+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-rwa-tokenization-in-2026-tokenized-stocks-drive-the-next-phase.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
     "rawItems": 164,
-    "uniqueItems": 114,
+    "uniqueItems": 111,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
@@ -33,9 +33,9 @@
     "watchlist": 39,
     "sourceTiers": {
       "specialist": 11,
-      "unknown": 121,
+      "unknown": 120,
       "low": 25,
-      "trusted": 1,
+      "trusted": 2,
       "primary": 5,
       "wire": 1
     },
@@ -45,8 +45,8 @@
       "watchlist_low": 5,
       "seen_guid": 2,
       "watchlist_unknown": 31,
-      "duplicate_in_scan": 50,
-      "no_rwa_signal": 55,
+      "duplicate_in_scan": 53,
+      "no_rwa_signal": 52,
       "score_below_4": 13,
       "hard_block": 1,
       "watchlist_wire": 1
@@ -69,7 +69,7 @@
       },
       {
         "title": "Transforming the Stock Market with Tokenized Securities",
-        "source": "OneSafe",
+        "source": "onesafe.io",
         "normalizedSource": "onesafe",
         "score": 9,
         "trust": "unknown"
