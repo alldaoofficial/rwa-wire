@@ -20,11 +20,11 @@
     "CBMiowFBVV95cUxPd2h3dXpvWXp1R0o5ZWZTR2Rud0Ntc05wUTBmRDhDaWp3UElIeFF4UTI3MjZ1UmpTaC1SU0ROQXprcDRWX1o4eGc0bU9ndXkxRS1nN3IxMWIwTnplS3BaOUVpMjR4NXpuUGFjdlJzOWtCT3lPaXR6YXAtX0JXVjR6SEtCNVVqaFhaOTlxV1ZxdjRCbmk5eUF3M3dBTWlVd2ZaMC1B",
     "CBMieEFVX3lxTE1TVm1ReGdydTFGWGdTLWpWSzQtVHN5OUJ4bHBHYW5rMTQya1NnSkhhOVRobmk2MlQ1UzFyUHhYRm93RUs1dEllalg1RDhRRGduS3Rqd2prVUEwUXl4eW1GeWhvRjJJQ1dWd19DamRPSXIzalprU2dIaQ"
   ],
-  "lastRun": "2026-10-06T01:37:13.058349+00:00",
+  "lastRun": "2026-10-06T02:07:13.198564+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-rwa-tokenization-in-2026-tokenized-stocks-drive-the-next-phase.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 165,
+    "rawItems": 163,
     "uniqueItems": 113,
     "queriesOk": 9,
     "queriesFailed": 0,
@@ -33,7 +33,7 @@
     "watchlist": 41,
     "sourceTiers": {
       "specialist": 11,
-      "unknown": 121,
+      "unknown": 119,
       "low": 26,
       "trusted": 1,
       "primary": 5,
@@ -45,7 +45,7 @@
       "watchlist_low": 5,
       "seen_guid": 2,
       "watchlist_unknown": 33,
-      "duplicate_in_scan": 52,
+      "duplicate_in_scan": 50,
       "no_rwa_signal": 52,
       "score_below_4": 13,
       "hard_block": 1,
