@@ -21,23 +21,23 @@
     "CBMinAFBVV95cUxQekNfVWlXTG5yNW1HVmMtOFdrRExIVnpRZzZoVkRXaVJ1QVk2SXBTTmczLXFJMFdlclhGZlFma19tVEpMdlhjczhFNWZ0ODhOS1ZBbWs3ZWVfU3lYVmVuUE9wOE5IVVR0Y0NqelZFTDR5aUZWOEQ0OXpsMVBhVlpOLUpGMGNxS2FDb2swUE85QXpvYW85T2tnNUc2TGo",
     "CBMiZEFVX3lxTE5paVRvVEpYekhVSUtWa3lRNFoyVFNJMnZndVBOZndodHpWdzc2S3Rpd2Z3dXRDaUFheUoyOUF3V1lRR2VuTnM3XzVkOUdCMHpPVDc4QU9kaHF3OFNjNnNOTnVnZng"
   ],
-  "lastRun": "2026-10-06T04:37:11.798480+00:00",
+  "lastRun": "2026-10-06T05:07:11.051840+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-layer-one-tokenized-stocks-surge-as-cftc-chair-heralds-era-of-mass-tokenization.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 173,
-    "uniqueItems": 121,
+    "rawItems": 178,
+    "uniqueItems": 123,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 41,
+    "watchlist": 42,
     "sourceTiers": {
-      "specialist": 12,
+      "specialist": 11,
       "low": 27,
-      "unknown": 125,
+      "unknown": 132,
       "trusted": 3,
-      "primary": 5,
+      "primary": 4,
       "wire": 1
     },
     "rejections": {
@@ -45,15 +45,22 @@
       "watchlist_low": 5,
       "duplicate_story": 5,
       "seen_guid": 3,
-      "duplicate_in_scan": 52,
-      "watchlist_unknown": 33,
-      "score_below_4": 15,
+      "duplicate_in_scan": 55,
+      "watchlist_unknown": 34,
+      "score_below_4": 16,
       "no_rwa_signal": 56,
       "hard_block": 1,
       "watchlist_wire": 1
     },
     "feedErrors": [],
     "topWatchlist": [
+      {
+        "title": "BlackRock Rolls Out Two Tokenized Funds, Aims To Become Stablecoin Reserve Manager Ahead Of CLARITY Act",
+        "source": "stocktwits.com",
+        "normalizedSource": "stocktwits",
+        "score": 12,
+        "trust": "unknown"
+      },
       {
         "title": "Tagged: Tokenized Securities Venue",
         "source": "Crowdfund Insider",
@@ -102,18 +109,17 @@
         "normalizedSource": "traders union",
         "score": 9,
         "trust": "unknown"
-      },
-      {
-        "title": "How AI, Tokenized Stocks and Celebrity Deals Are Reshaping Crypto Exchanges",
-        "source": "Investing.com",
-        "normalizedSource": "investing",
-        "score": 8,
-        "trust": "low"
       }
     ]
   },
   "lastCandidatePriority": "breaking",
   "confirmationAttempts": [
+    {
+      "title": "BlackRock Rolls Out Two Tokenized Funds, Aims To Become Stablecoin Reserve Manager Ahead Of CLARITY Act",
+      "result": "unconfirmed",
+      "highTrustMatches": 0,
+      "specialistMatches": 0
+    },
     {
       "title": "Tagged: Tokenized Securities Venue",
       "result": "unconfirmed",
@@ -140,12 +146,6 @@
     },
     {
       "title": "OKXICE Files to Launch Tokenized Securities Venue",
-      "result": "unconfirmed",
-      "highTrustMatches": 0,
-      "specialistMatches": 0
-    },
-    {
-      "title": "Citi Forecasts Tokenized Securities Market To Hit Ethereum5.5T by 2030",
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 0
