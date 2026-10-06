@@ -21,33 +21,33 @@
     "CBMinAFBVV95cUxQekNfVWlXTG5yNW1HVmMtOFdrRExIVnpRZzZoVkRXaVJ1QVk2SXBTTmczLXFJMFdlclhGZlFma19tVEpMdlhjczhFNWZ0ODhOS1ZBbWs3ZWVfU3lYVmVuUE9wOE5IVVR0Y0NqelZFTDR5aUZWOEQ0OXpsMVBhVlpOLUpGMGNxS2FDb2swUE85QXpvYW85T2tnNUc2TGo",
     "CBMiZEFVX3lxTE5paVRvVEpYekhVSUtWa3lRNFoyVFNJMnZndVBOZndodHpWdzc2S3Rpd2Z3dXRDaUFheUoyOUF3V1lRR2VuTnM3XzVkOUdCMHpPVDc4QU9kaHF3OFNjNnNOTnVnZng"
   ],
-  "lastRun": "2026-10-06T11:37:12.690467+00:00",
+  "lastRun": "2026-10-06T12:07:13.180188+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-layer-one-tokenized-stocks-surge-as-cftc-chair-heralds-era-of-mass-tokenization.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 199,
-    "uniqueItems": 139,
+    "rawItems": 202,
+    "uniqueItems": 143,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
-    "watchlist": 46,
+    "watchlist": 48,
     "sourceTiers": {
-      "low": 28,
-      "unknown": 147,
-      "trusted": 4,
-      "primary": 5,
+      "low": 29,
+      "unknown": 154,
+      "trusted": 1,
+      "primary": 3,
       "specialist": 13,
       "wire": 2
     },
     "rejections": {
-      "watchlist_low": 6,
+      "watchlist_low": 8,
       "watchlist_unknown": 37,
       "duplicate_story": 5,
-      "duplicate_in_scan": 60,
+      "duplicate_in_scan": 59,
       "seen_guid": 2,
-      "score_below_4": 19,
-      "no_rwa_signal": 66,
+      "score_below_4": 20,
+      "no_rwa_signal": 67,
       "watchlist_specialist": 1,
       "hard_block": 1,
       "watchlist_wire": 2
@@ -56,7 +56,7 @@
     "topWatchlist": [
       {
         "title": "Zamanat’s tokenized fund aims to widen access to GCC private credit — the lending risks stay familiar",
-        "source": "EnterpriseAM",
+        "source": "enterpriseam.com",
         "normalizedSource": "enterpriseam",
         "score": 10,
         "trust": "unknown"
