@@ -21,44 +21,43 @@
     "CBMinAFBVV95cUxQekNfVWlXTG5yNW1HVmMtOFdrRExIVnpRZzZoVkRXaVJ1QVk2SXBTTmczLXFJMFdlclhGZlFma19tVEpMdlhjczhFNWZ0ODhOS1ZBbWs3ZWVfU3lYVmVuUE9wOE5IVVR0Y0NqelZFTDR5aUZWOEQ0OXpsMVBhVlpOLUpGMGNxS2FDb2swUE85QXpvYW85T2tnNUc2TGo",
     "CBMiZEFVX3lxTE5paVRvVEpYekhVSUtWa3lRNFoyVFNJMnZndVBOZndodHpWdzc2S3Rpd2Z3dXRDaUFheUoyOUF3V1lRR2VuTnM3XzVkOUdCMHpPVDc4QU9kaHF3OFNjNnNOTnVnZng"
   ],
-  "lastRun": "2026-10-06T05:07:11.051840+00:00",
+  "lastRun": "2026-10-06T05:37:12.142295+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-layer-one-tokenized-stocks-surge-as-cftc-chair-heralds-era-of-mass-tokenization.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 178,
-    "uniqueItems": 123,
+    "rawItems": 179,
+    "uniqueItems": 126,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
     "important": 0,
     "watchlist": 42,
     "sourceTiers": {
-      "specialist": 11,
-      "low": 27,
-      "unknown": 132,
-      "trusted": 3,
-      "primary": 4,
+      "low": 26,
+      "specialist": 12,
+      "unknown": 135,
+      "primary": 5,
       "wire": 1
     },
     "rejections": {
-      "watchlist_specialist": 2,
       "watchlist_low": 5,
+      "watchlist_specialist": 2,
       "duplicate_story": 5,
       "seen_guid": 3,
-      "duplicate_in_scan": 55,
+      "duplicate_in_scan": 53,
       "watchlist_unknown": 34,
-      "score_below_4": 16,
-      "no_rwa_signal": 56,
+      "score_below_4": 17,
+      "no_rwa_signal": 58,
       "hard_block": 1,
       "watchlist_wire": 1
     },
     "feedErrors": [],
     "topWatchlist": [
       {
-        "title": "BlackRock Rolls Out Two Tokenized Funds, Aims To Become Stablecoin Reserve Manager Ahead Of CLARITY Act",
-        "source": "stocktwits.com",
-        "normalizedSource": "stocktwits",
-        "score": 12,
+        "title": "Zamanat’s tokenized fund aims to widen access to GCC private credit — the lending risks stay familiar",
+        "source": "enterpriseam.com",
+        "normalizedSource": "enterpriseam",
+        "score": 10,
         "trust": "unknown"
       },
       {
@@ -115,7 +114,7 @@
   "lastCandidatePriority": "breaking",
   "confirmationAttempts": [
     {
-      "title": "BlackRock Rolls Out Two Tokenized Funds, Aims To Become Stablecoin Reserve Manager Ahead Of CLARITY Act",
+      "title": "Zamanat’s tokenized fund aims to widen access to GCC private credit — the lending risks stay familiar",
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 0
