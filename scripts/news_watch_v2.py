@@ -13,7 +13,9 @@ PRIMARY = nw.PRIMARY_SOURCES | {
 }
 TRUSTED = nw.TRUSTED_MEDIA | {
     "axios", "bbc", "the economist", "marketwatch", "barrons", "associated press",
-    "ap news", "nikkei asia", "south china morning post", "scmp"
+    "ap news", "nikkei asia", "south china morning post", "scmp",
+    "seoul economic daily", "korea economic daily", "yonhap news agency",
+    "the korea herald", "the korea times"
 }
 SPECIALIST = nw.SPECIALIST_MEDIA | {
     "cointelegraph", "the defiant", "unchained", "cryptoslate", "blockworks",
@@ -21,11 +23,14 @@ SPECIALIST = nw.SPECIALIST_MEDIA | {
     "tokenpost", "blocktelegraph", "block telegraph", "cryptonews", "cryptonews net",
     "cryptonews.net", "coinjournal", "beincrypto", "the block beats", "blockchain news",
     "finbold", "crowdfund insider", "asset servicing times", "securities finance times",
-    "global banking and finance", "fintech global", "fintech magazine"
+    "global banking and finance", "fintech global", "fintech magazine",
+    "coinness", "enterpriseam", "enterprise asset management", "funds global asia",
+    "fund selector asia", "asian investor", "institutional asset manager"
 }
 LOW = nw.LOW_TRUST_HINTS | {
     "pluang", "hokanews", "coincentral", "coingape", "ambcrypto", "newsbtc",
-    "bitcoinist", "daily hodl", "cryptopotato"
+    "bitcoinist", "daily hodl", "cryptopotato", "stocktwits", "bitget",
+    "voice of alexandria"
 }
 
 ALIASES = {
@@ -39,6 +44,9 @@ ALIASES = {
     "theblock co": "the block",
     "coindesk com": "coindesk",
     "reuters com": "reuters",
+    "coinness com": "coinness",
+    "enterpriseam com": "enterpriseam",
+    "sedaily com": "seoul economic daily",
 }
 
 def normalize_source(name):
