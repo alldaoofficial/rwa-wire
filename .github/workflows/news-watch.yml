@@ -47,10 +47,10 @@ jobs:
           ln -s ../.news-watch-cache/news-watch-state.json publish/news-watch-state.json
 
       - name: Scan RWA news
-        run: python3 scripts/news_watch.py
+        run: python3 scripts/news_watch_v2.py
 
       - name: Confirm strong watchlist stories
-        run: python3 scripts/news_watch_confirm.py
+        run: python3 scripts/news_watch_confirm_v2.py
 
       - name: Save News Watch state
         if: always()
