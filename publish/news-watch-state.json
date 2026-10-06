@@ -21,12 +21,12 @@
     "CBMinAFBVV95cUxQekNfVWlXTG5yNW1HVmMtOFdrRExIVnpRZzZoVkRXaVJ1QVk2SXBTTmczLXFJMFdlclhGZlFma19tVEpMdlhjczhFNWZ0ODhOS1ZBbWs3ZWVfU3lYVmVuUE9wOE5IVVR0Y0NqelZFTDR5aUZWOEQ0OXpsMVBhVlpOLUpGMGNxS2FDb2swUE85QXpvYW85T2tnNUc2TGo",
     "CBMiZEFVX3lxTE5paVRvVEpYekhVSUtWa3lRNFoyVFNJMnZndVBOZndodHpWdzc2S3Rpd2Z3dXRDaUFheUoyOUF3V1lRR2VuTnM3XzVkOUdCMHpPVDc4QU9kaHF3OFNjNnNOTnVnZng"
   ],
-  "lastRun": "2026-10-06T09:37:13.540874+00:00",
+  "lastRun": "2026-10-06T10:07:11.355299+00:00",
   "lastCandidate": "publish/inbox/2026-10-05-layer-one-tokenized-stocks-surge-as-cftc-chair-heralds-era-of-mass-tokenization.json",
   "lastResult": "no-qualified-story",
   "lastDiagnostics": {
-    "rawItems": 186,
-    "uniqueItems": 130,
+    "rawItems": 189,
+    "uniqueItems": 132,
     "queriesOk": 9,
     "queriesFailed": 0,
     "breaking": 0,
@@ -34,33 +34,26 @@
     "watchlist": 44,
     "sourceTiers": {
       "low": 27,
-      "unknown": 139,
+      "unknown": 140,
+      "trusted": 4,
+      "primary": 4,
       "specialist": 12,
-      "trusted": 3,
-      "primary": 3,
       "wire": 2
     },
     "rejections": {
       "watchlist_low": 5,
+      "watchlist_unknown": 36,
       "duplicate_story": 5,
-      "watchlist_specialist": 2,
       "seen_guid": 2,
-      "duplicate_in_scan": 56,
-      "watchlist_unknown": 35,
-      "score_below_4": 18,
-      "no_rwa_signal": 60,
+      "duplicate_in_scan": 57,
+      "score_below_4": 19,
+      "no_rwa_signal": 61,
+      "watchlist_specialist": 1,
       "hard_block": 1,
       "watchlist_wire": 2
     },
     "feedErrors": [],
     "topWatchlist": [
-      {
-        "title": "BlackRock Rolls Out Two Tokenized Funds, Aims To Become Stablecoin Reserve Manager Ahead Of CLARITY Act",
-        "source": "Stocktwits",
-        "normalizedSource": "stocktwits",
-        "score": 12,
-        "trust": "unknown"
-      },
       {
         "title": "Zamanat’s tokenized fund aims to widen access to GCC private credit — the lending risks stay familiar",
         "source": "EnterpriseAM",
@@ -70,8 +63,8 @@
       },
       {
         "title": "Tagged: Tokenized Securities Venue",
-        "source": "crowdfundinsider.com",
-        "normalizedSource": "crowdfundinsider",
+        "source": "Crowdfund Insider",
+        "normalizedSource": "crowdfund insider",
         "score": 10,
         "trust": "unknown"
       },
@@ -81,6 +74,13 @@
         "normalizedSource": "coinmarketcap",
         "score": 10,
         "trust": "low"
+      },
+      {
+        "title": "Ondo Perps CEO: Tokenized Stocks to Serve as Collateral",
+        "source": "Seoul Economic Daily",
+        "normalizedSource": "seoul economic daily",
+        "score": 9,
+        "trust": "unknown"
       },
       {
         "title": "Custodia Bank CEO Caitlin Long warns tokenized deposits could outpace stablecoins",
@@ -98,10 +98,10 @@
       },
       {
         "title": "OKXICE Files to Launch Tokenized Securities Venue",
-        "source": "Markets Media",
-        "normalizedSource": "markets media",
+        "source": "marketsmedia.com",
+        "normalizedSource": "marketsmedia",
         "score": 9,
-        "trust": "specialist"
+        "trust": "unknown"
       },
       {
         "title": "Citi Forecasts Tokenized Securities Market To Hit Ethereum5.5T by 2030",
@@ -114,12 +114,6 @@
   },
   "lastCandidatePriority": "breaking",
   "confirmationAttempts": [
-    {
-      "title": "BlackRock Rolls Out Two Tokenized Funds, Aims To Become Stablecoin Reserve Manager Ahead Of CLARITY Act",
-      "result": "unconfirmed",
-      "highTrustMatches": 0,
-      "specialistMatches": 0
-    },
     {
       "title": "Zamanat’s tokenized fund aims to widen access to GCC private credit — the lending risks stay familiar",
       "result": "unconfirmed",
@@ -134,6 +128,12 @@
     },
     {
       "title": "Northern Trust Launches Tokenized Treasury Fund Share Class",
+      "result": "unconfirmed",
+      "highTrustMatches": 0,
+      "specialistMatches": 0
+    },
+    {
+      "title": "Ondo Perps CEO: Tokenized Stocks to Serve as Collateral",
       "result": "unconfirmed",
       "highTrustMatches": 0,
       "specialistMatches": 0
