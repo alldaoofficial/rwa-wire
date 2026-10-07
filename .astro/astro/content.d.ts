@@ -278,6 +278,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"from-6b-to-100b-tokenized-stocks-are-becoming-a-real-on-chain-market.mdx": {
+	id: "from-6b-to-100b-tokenized-stocks-are-becoming-a-real-on-chain-market.mdx";
+  slug: "from-6b-to-100b-tokenized-stocks-are-becoming-a-real-on-chain-market";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "goldfinch-explained.mdx": {
 	id: "goldfinch-explained.mdx";
   slug: "goldfinch-explained";
