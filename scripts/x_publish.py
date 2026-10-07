@@ -2,6 +2,7 @@
 """Publish an approved RWA Wire distribution, Market Pulse, or evergreen package to X."""
 import base64, hashlib, hmac, json, os, pathlib, secrets, sys, time, urllib.parse, urllib.request, urllib.error, uuid
 from io import BytesIO
+from social_links import tracking_url, social_copy
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 if len(sys.argv)!=2: raise SystemExit("Usage: x_publish.py <distribution-or-market-pulse-or-evergreen.json>")
 p=(ROOT/sys.argv[1]).resolve(); dist_root=(ROOT/"publish/distribution").resolve(); pulse_root=(ROOT/"publish/market-pulse").resolve(); evergreen_root=(ROOT/"publish/evergreen-social").resolve()
@@ -10,6 +11,10 @@ if p.suffix!=".json" or not any(r in p.parents for r in roots): raise SystemExit
 d=json.loads(p.read_text(encoding="utf-8")); publish_id=str(d.get("id",p.stem)).strip(); is_pulse=pulse_root in p.parents; is_evergreen=evergreen_root in p.parents
 text=str(d.get("x","")).strip(); article=str(d.get("article_url","")).strip(); image_url=str(d.get("image_url","")).strip()
 if not text: raise SystemExit("Package has no X copy")
+article=article or ("https://therwawire.com/markets/" if is_pulse else "")
+if article:
+ text=social_copy(text,article,"x",publish_id)
+ article=tracking_url(article,"x",publish_id)
 if article and article not in text: text=f"{text}\n\nFull analysis ↓\n{article}"
 TCO_URL_LENGTH=23
 def weighted_length(s): return len(s)-len(article)+TCO_URL_LENGTH if article and article in s else len(s)

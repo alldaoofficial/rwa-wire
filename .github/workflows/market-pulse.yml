@@ -54,6 +54,8 @@ jobs:
           python3 - <<'PY'
           import json, os, pathlib, urllib.parse, urllib.request
           p=pathlib.Path(os.environ['PULSE_PATH']); d=json.loads(p.read_text(encoding='utf-8')); pid=p.stem; text=str(d['telegram']).strip()
+          from scripts.social_links import social_copy
+          text=social_copy(text,'https://therwawire.com/markets/','telegram',pid,4096)
           marker=pathlib.Path('publish/market-pulse-telegram-posted')/(pid+'.json')
           if marker.exists(): raise SystemExit('Market Pulse already posted to Telegram')
           if not text or len(text)>4096: raise SystemExit('Invalid Telegram Market Pulse')

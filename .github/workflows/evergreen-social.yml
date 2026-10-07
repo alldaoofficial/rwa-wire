@@ -63,6 +63,8 @@ jobs:
           python3 - <<'PY'
           import json,os,pathlib,urllib.parse,urllib.request
           p=pathlib.Path(os.environ['PACKAGE']); d=json.loads(p.read_text()); text=d['telegram']; pid=d['id']; marker=pathlib.Path('publish/evergreen-social-posted')/(pid+'.json')
+          from scripts.social_links import social_copy
+          text=social_copy(text,d["article_url"],"telegram",pid,4096)
           if marker.exists():
               old=json.loads(marker.read_text())
               if old.get('telegram_message_id'): print(f"Telegram already published for {pid}; skipping duplicate send"); raise SystemExit(0)
