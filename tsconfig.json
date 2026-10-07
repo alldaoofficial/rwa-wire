@@ -3,7 +3,14 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": [
+        "src/*"
+      ]
     }
-  }
+  },
+  "exclude": [
+    "supabase/functions/**",
+    "node_modules",
+    "dist"
+  ]
 }

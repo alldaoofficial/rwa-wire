@@ -1,0 +1,6 @@
+[functions.newsletter]
+# Public signup authenticates through Turnstile. Confirmation/removal authenticate
+# through random 256-bit capability tokens. No Supabase login is required.
+verify_jwt = false
+[functions.growth-event]
+verify_jwt = false

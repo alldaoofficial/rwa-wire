@@ -19,6 +19,8 @@ jobs:
     env:
       PUBLIC_SUPABASE_URL: ${{ vars.PUBLIC_SUPABASE_URL }}
       PUBLIC_SUPABASE_PUBLISHABLE_KEY: ${{ vars.PUBLIC_SUPABASE_PUBLISHABLE_KEY }}
+      PUBLIC_NEWSLETTER_ENABLED: ${{ vars.PUBLIC_NEWSLETTER_ENABLED }}
+      PUBLIC_TURNSTILE_SITE_KEY: ${{ vars.PUBLIC_TURNSTILE_SITE_KEY }}
 
     steps:
       - name: Checkout repository
@@ -46,6 +48,9 @@ jobs:
             sb_publishable_*) ;;
             *) echo "PUBLIC_SUPABASE_PUBLISHABLE_KEY is not a publishable key"; exit 1 ;;
           esac
+
+      - name: Verify newsletter flow
+        run: node --test tests/newsletter.test.mjs
 
       - name: Build and type-check Astro site
         run: npm run build
