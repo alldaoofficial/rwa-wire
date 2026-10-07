@@ -30,6 +30,7 @@ const endpoint = "https://dqeakkrsbgxnexucuyld.supabase.co/functions/v1/growth-e
     if (href === "/bitunix/" || href.endsWith("/bitunix/")) return send("bitunix_guide_click", "bitunix-guide", { placement });
     if (href.includes("t.me/RWAWireHQ")) return send("telegram_click", "telegram", { placement });
     if (href.includes("x.com/RWAWireHQ")) return send("x_click", "x", { placement });
+    if (placement) send("placement_click", href, { placement });
     if (href.startsWith("/topics/")) return send("topic_click", href);
     if (href.startsWith("/projects/")) return send("project_click", href);
     if (href.startsWith("/markets/")) return send("market_click", href);
