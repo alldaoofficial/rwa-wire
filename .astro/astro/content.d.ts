@@ -411,6 +411,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"securitize-and-lg-cns-to-co-develop-tokenized-funds-and-bonds-in-korea.mdx": {
+	id: "securitize-and-lg-cns-to-co-develop-tokenized-funds-and-bonds-in-korea.mdx";
+  slug: "securitize-and-lg-cns-to-co-develop-tokenized-funds-and-bonds-in-korea";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "securitize-explained.mdx": {
 	id: "securitize-explained.mdx";
   slug: "securitize-explained";
