@@ -481,6 +481,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"tether-tapped-by-kazakhstan-s-central-bank-to-explore-stablecoin-and-tokenization.mdx": {
+	id: "tether-tapped-by-kazakhstan-s-central-bank-to-explore-stablecoin-and-tokenization.mdx";
+  slug: "tether-tapped-by-kazakhstan-s-central-bank-to-explore-stablecoin-and-tokenization";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "the-clearing-house-quant-on-chain-money.mdx": {
 	id: "the-clearing-house-quant-on-chain-money.mdx";
   slug: "the-clearing-house-quant-on-chain-money";
