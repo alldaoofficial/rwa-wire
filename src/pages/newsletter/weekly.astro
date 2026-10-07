@@ -1,0 +1,8 @@
+---
+import {getCollection} from 'astro:content';
+import {selectIssue,renderIssue} from '../../../shared/weekly.mjs';
+const articles=(await getCollection('articles',({data})=>!data.draft)).map(a=>({...a.data,slug:a.slug,pubDate:a.data.pubDate.toISOString(),url:`https://therwawire.com/${a.data.category}/${a.slug}/`}));
+const issue=selectIssue({generatedAt:new Date().toISOString(),articles});
+const preview=issue.stories.length?renderIssue(issue,{name:'RWA Wire Editorial',address:'Preview — sender details pending'},'https://therwawire.com/newsletter/').html:'<p>No news published in the past seven days.</p>';
+---
+<html lang="en"><head><meta name="robots" content="noindex,nofollow"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RWA Wire Weekly — Preview</title></head><body style="margin:0"><div style="padding:12px;text-align:center;background:#effbf4;font:14px Arial">Preview · No email is sent from this page.</div><iframe title="Weekly email preview" srcdoc={preview} style="width:100%;height:1600px;border:0" sandbox="allow-popups allow-popups-to-escape-sandbox"></iframe></body></html>
