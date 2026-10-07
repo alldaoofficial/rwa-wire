@@ -80,12 +80,13 @@ jobs:
         run: |
           python3 - <<'PY'
           import json,os,pathlib
-          p=pathlib.Path(os.environ['PACKAGE']); d=json.loads(p.read_text()); m=pathlib.Path('publish/evergreen-social-posted')/(d['id']+'.json'); old=json.loads(m.read_text()) if m.exists() else {}; old.update({'id':d['id'],'status':'published','article_url':d['article_url']}); m.parent.mkdir(parents=True,exist_ok=True); m.write_text(json.dumps(old,indent=2)+'\n')
+          p=pathlib.Path(os.environ['PACKAGE']); d=json.loads(p.read_text()); m=pathlib.Path('publish/evergreen-social-posted')/(d['id']+'.json'); old=json.loads(m.read_text()) if m.exists() else {}; old.update({'id':d['id'],'status':'published' if (pathlib.Path('publish/x-posted')/(d['id']+'.json')).exists() else 'telegram_published','article_url':d['article_url']}); m.parent.mkdir(parents=True,exist_ok=True); m.write_text(json.dumps(old,indent=2)+'\n')
           PY
       - name: Persist publication markers
-        if: steps.generate.outputs.skip != 'true'
+        if: always() && steps.generate.outputs.skip != 'true' && steps.generate.outputs.package != ''
         run: |
-          git add publish/evergreen-social-posted/ publish/x-posted/
+          for dir in publish/evergreen-social-posted/ publish/x-posted/; do if [ -d "$dir" ]; then git add "$dir"; fi; done
+          git diff --cached --quiet && exit 0
           git commit -m "Evergreen Social: mark daily guide published"
           for attempt in 1 2 3; do git pull --rebase origin main && git push && exit 0; sleep 3; done
           exit 1
