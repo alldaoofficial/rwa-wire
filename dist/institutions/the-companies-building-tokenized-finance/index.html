@@ -1,18 +1,25 @@
 <!DOCTYPE html><html lang="en" class="scroll-smooth"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Astro v4.16.19"><meta name="google-site-verification" content="JydI22fT02exSQZLYQaJ-KMVk21Klb78QlSRYQImrG0"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="manifest" href="/site.webmanifest"><meta name="theme-color" content="#080A0D"><!-- Product analytics must initialize before page-level scripts such as Search. --><script>(function(){const endpoint = "https://dqeakkrsbgxnexucuyld.supabase.co/functions/v1/growth-event";
 
 (() => {
+  const params = new URLSearchParams(location.search);
+  const source = params.get('utm_source');
+  const campaign = params.get('utm_campaign') || '';
+  const acquisition = ['x','telegram'].includes(source) && params.get('utm_medium') === 'social' && /^[a-z0-9_-]{1,160}$/.test(campaign)
+    ? {source,campaign} : {};
   const send = (event, target = "", metadata = {}) => {
     const payload = JSON.stringify({
       event,
       path: location.pathname,
       target,
-      metadata,
+      metadata: {...metadata,...acquisition},
       referrer: document.referrer ? (() => { try { return new URL(document.referrer).hostname; } catch { return ""; } })() : ""
     });
     fetch(endpoint, { method: "POST", mode: "cors", headers: { "content-type": "application/json" }, body: payload, keepalive: true, credentials: "omit" }).catch(() => {});
   };
 
   window.rwaAnalytics = { track: send };
+  if (acquisition.source && !location.pathname.startsWith('/analytics')) send('social_landing', location.pathname);
+
 
   document.addEventListener("click", e => {
     const a = e.target.closest("a");

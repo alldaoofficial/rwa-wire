@@ -285,6 +285,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"five-things-to-know-about-tokenized-stocks.mdx": {
+	id: "five-things-to-know-about-tokenized-stocks.mdx";
+  slug: "five-things-to-know-about-tokenized-stocks";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "franklin-templeton-turns-686m-tokenized-fund-shares-into-bybit-collateral.mdx": {
 	id: "franklin-templeton-turns-686m-tokenized-fund-shares-into-bybit-collateral.mdx";
   slug: "franklin-templeton-turns-686m-tokenized-fund-shares-into-bybit-collateral";
