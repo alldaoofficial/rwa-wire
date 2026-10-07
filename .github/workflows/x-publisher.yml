@@ -66,7 +66,7 @@ jobs:
           X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
         run: python3 scripts/x_publish.py "$PACKAGE_PATH"
       - name: Persist X publication marker
-        if: env.SKIP_X != 'true'
+        if: env.SKIP_X != 'true' && env.X_BLOCKED != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

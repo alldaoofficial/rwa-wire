@@ -73,11 +73,13 @@ jobs:
           X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
         run: python3 scripts/x_publish.py "$PULSE_PATH"
       - name: Persist publication markers
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add publish/market-pulse-telegram-posted/ publish/market-pulse-x-posted/
-          git commit -m "Mark Market Pulse published to Telegram and X"
+          for dir in publish/market-pulse-telegram-posted/ publish/market-pulse-x-posted/; do if [ -d "$dir" ]; then git add "$dir"; fi; done
+          git diff --cached --quiet && exit 0
+          git commit -m "Record completed Market Pulse publications"
           for attempt in 1 2 3; do git pull --rebase origin main && git push && exit 0; sleep 3; done
           exit 1
 

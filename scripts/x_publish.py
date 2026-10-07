@@ -8,6 +8,13 @@ if len(sys.argv)!=2: raise SystemExit("Usage: x_publish.py <distribution-or-mark
 p=(ROOT/sys.argv[1]).resolve(); dist_root=(ROOT/"publish/distribution").resolve(); pulse_root=(ROOT/"publish/market-pulse").resolve(); evergreen_root=(ROOT/"publish/evergreen-social").resolve()
 roots=[dist_root,pulse_root,evergreen_root]
 if p.suffix!=".json" or not any(r in p.parents for r in roots): raise SystemExit("Invalid X package path")
+config_path=ROOT/'publish/channel-config.json'
+config=json.loads(config_path.read_text()) if config_path.exists() else {}
+if config.get('x_enabled') is False:
+ print('X API publishing paused; prepared copy retained. No request or publication marker created.')
+ if os.environ.get('GITHUB_ENV'):
+  with open(os.environ['GITHUB_ENV'],'a') as env_file: env_file.write('X_BLOCKED=true\n')
+ raise SystemExit(0)
 d=json.loads(p.read_text(encoding="utf-8")); publish_id=str(d.get("id",p.stem)).strip(); is_pulse=pulse_root in p.parents; is_evergreen=evergreen_root in p.parents
 text=str(d.get("x","")).strip(); article=str(d.get("article_url","")).strip(); image_url=str(d.get("image_url","")).strip()
 if not text: raise SystemExit("Package has no X copy")
