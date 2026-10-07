@@ -236,6 +236,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"community-bankers-are-interested-in-tokenized-deposits-stablecoins-but-not-rushed.mdx": {
+	id: "community-bankers-are-interested-in-tokenized-deposits-stablecoins-but-not-rushed.mdx";
+  slug: "community-bankers-are-interested-in-tokenized-deposits-stablecoins-but-not-rushed";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "copy-trading-explained.mdx": {
 	id: "copy-trading-explained.mdx";
   slug: "copy-trading-explained";
