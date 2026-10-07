@@ -250,6 +250,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"dnb-commercial-bank-of-dubai-join-cbmt-sandbox-for-tokenized-deposits.mdx": {
+	id: "dnb-commercial-bank-of-dubai-join-cbmt-sandbox-for-tokenized-deposits.mdx";
+  slug: "dnb-commercial-bank-of-dubai-join-cbmt-sandbox-for-tokenized-deposits";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "ethereum-and-the-tokenized-economy.mdx": {
 	id: "ethereum-and-the-tokenized-economy.mdx";
   slug: "ethereum-and-the-tokenized-economy";
