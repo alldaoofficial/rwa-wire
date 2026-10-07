@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Create reusable distribution assets from an approved RWA Wire manifest."""
 import json, pathlib, re, sys
+from social_links import social_copy
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 if len(sys.argv)!=2: raise SystemExit("Usage: distribution_package.py publish/approved/<id>.json")
 p=(ROOT/sys.argv[1]).resolve(); approved=(ROOT/"publish/approved").resolve()
@@ -24,4 +25,6 @@ def x_copy():
  parts += ["", "Full analysis ↓", article]
  return "\n".join(parts).strip()
 out={"id":d.get("id",p.stem),"article_url":article,"image_url":image,"telegram":dist.get("telegram") or caption,"x":x_copy(),"breaking":dist.get("breaking") or f"RWA WIRE // {category}\n\n{title}\n\n{article}","summary":dist.get("summary") or why,"status":"approved_distribution_package"}
+out["x"]=social_copy(out["x"],article,"x",out["id"])
+out["telegram"]=social_copy(out["telegram"],article,"telegram",out["id"],1024)
 target=ROOT/"publish/distribution"/f"{out['id']}.json"; target.parent.mkdir(parents=True,exist_ok=True); target.write_text(json.dumps(out,indent=2,ensure_ascii=False)+"\n",encoding="utf-8"); print(target.relative_to(ROOT))

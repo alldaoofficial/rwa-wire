@@ -1,5 +1,5 @@
 const allowedEvents = new Set([
-  "affiliate_click","bitunix_guide_click","placement_click","x_click",
+  "social_landing","affiliate_click","bitunix_guide_click","placement_click","x_click",
   "newsletter_submit","newsletter_pending","newsletter_error","newsletter_confirmed","newsletter_unsubscribed",
   "telegram_click","topic_click","project_click","search","search_zero_results",
   "search_result_click","market_click","market_asset_click","content_click"
@@ -26,12 +26,18 @@ Deno.serve(async (req: Request) => {
     const body=await req.json();
     const event=String(body.event||"").slice(0,64);
     if (!allowedEvents.has(event)) return new Response("Invalid event",{status:400,headers});
+    const m=body.metadata && typeof body.metadata === 'object' && !Array.isArray(body.metadata) ? {...body.metadata} : {};
+    const source=m.source, campaign=m.campaign;
+    delete m.source; delete m.campaign;
+    const validSource=['x','telegram'].includes(source) && typeof campaign==='string' && /^[a-z0-9_-]{1,160}$/.test(campaign);
+    if(event==='social_landing'&&!validSource)return new Response('Invalid attribution',{status:400,headers});
+    if(validSource){m.source=source;m.campaign=campaign;}
     const row={
       event,
       path:String(body.path||"").slice(0,500),
       target:String(body.target||"").slice(0,500),
       referrer:String(body.referrer||"").slice(0,255),
-      metadata:body.metadata && typeof body.metadata === "object" ? body.metadata : {},
+      metadata:m,
       user_agent:String(req.headers.get("user-agent")||"").slice(0,500),
     };
     const url=Deno.env.get("SUPABASE_URL")!+"/rest/v1/growth_events";

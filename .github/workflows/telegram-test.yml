@@ -68,6 +68,8 @@ jobs:
           p=pathlib.Path(os.environ['MANIFEST_PATH']); post=json.loads(p.read_text()); publish_id=str(post.get('id',p.stem)).strip(); marker=pathlib.Path('publish/posted')/(publish_id+'.json'); caption=str(post['caption']).strip(); image_url=str(post['image_url']).strip(); article_url=str(post.get('article_url','')).strip()
           if marker.exists(): raise SystemExit('This publish id has already been posted.')
           if not caption or len(caption)>1024 or not image_url.startswith('https://therwawire.com/') or not article_url.startswith('https://therwawire.com/'): raise SystemExit('Invalid approved manifest')
+          from scripts.social_links import social_copy
+          caption=social_copy(caption,article_url,"telegram",publish_id,1024)
           live=False
           for attempt in range(30):
             try:

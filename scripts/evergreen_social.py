@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Create one daily social package from a high-value evergreen RWA Wire guide."""
 import json, pathlib, re, datetime
+from social_links import social_copy
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 ART=ROOT/'src/content/articles'; OUT=ROOT/'publish/evergreen-social'; POSTED=ROOT/'publish/evergreen-social-posted'
 BASE='https://therwawire.com'
@@ -38,4 +39,6 @@ x=f"{hook}\n\n{insight}\n\nRead the guide ↓\n{url}"
 tg=f"📚 {d['title']}\n\n"+'\n\n'.join(f"• {shorten(t,260)}" for t in takes)+f"\n\nFull guide ({d.get('readingTime','guide')}):\n{url}"
 card_url=f'{BASE}/generated/social/{slug}.jpg'
 pkg={'id':slug,'kind':'evergreen','category':d.get('category','learn'),'article_url':url,'image_url':card_url,'title':d['title'],'x':x,'telegram':tg,'source_path':str(p.relative_to(ROOT)),'generated_at':datetime.datetime.now(datetime.timezone.utc).isoformat()}
+pkg["x"]=social_copy(pkg["x"],url,"x",slug)
+pkg["telegram"]=social_copy(pkg["telegram"],url,"telegram",slug,4096)
 OUT.mkdir(parents=True,exist_ok=True); dest=OUT/f'{slug}.json'; dest.write_text(json.dumps(pkg,ensure_ascii=False,indent=2)+'\n',encoding='utf-8'); print(dest.relative_to(ROOT))
