@@ -229,6 +229,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"chainlink-s-asia-pacific-head-sees-south-korea-s-tokenization-market-accelerating-from-2027.mdx": {
+	id: "chainlink-s-asia-pacific-head-sees-south-korea-s-tokenization-market-accelerating-from-2027.mdx";
+  slug: "chainlink-s-asia-pacific-head-sees-south-korea-s-tokenization-market-accelerating-from-2027";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "copy-trading-explained.mdx": {
 	id: "copy-trading-explained.mdx";
   slug: "copy-trading-explained";
