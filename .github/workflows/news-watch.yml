@@ -76,6 +76,14 @@ jobs:
           echo "story_changed=true" >> "$GITHUB_OUTPUT"
           echo "brief_path=$BRIEF_PATH" >> "$GITHUB_OUTPUT"
           git commit -m "News Watch: add qualified RWA story"
+
+          # The scanner state lives behind a tracked symlink and is intentionally
+          # not part of the story commit. Restore the tracked working-tree view
+          # before rebasing so cached state can never block git pull --rebase.
+          rm -f publish/news-watch-state.json
+          git checkout -- publish/news-watch-state.json
+          git status --short
+
           for attempt in 1 2 3; do
             git pull --rebase origin main
             if git push; then
