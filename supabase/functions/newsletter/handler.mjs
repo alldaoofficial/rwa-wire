@@ -1,6 +1,6 @@
 export const origins = new Set(['https://therwawire.com', 'https://www.therwawire.com']);
 export const placements = new Set(['homepage-newsletter', 'article-newsletter', 'newsletter-page']);
-export const consentVersion = '2026-10-07-v1';
+export const consentVersion = '2026-10-07-v2-weekly';
 export async function digest(value) {
   return [...new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(value)))].map(x => x.toString(16).padStart(2, '0')).join('');
 }
@@ -55,7 +55,7 @@ export function createHandler(env, fetcher = fetch) {
       if (!reserved) return reply(202, 'check_email');
       const confirmUrl = `https://therwawire.com/newsletter/#confirm=${token}`;
       const unsubscribeUrl = `https://therwawire.com/newsletter/#unsubscribe=${unsubscribeToken}`;
-      const sent = await fetcher('https://api.resend.com/emails', {method:'POST', headers:{authorization:`Bearer ${apiKey}`, 'content-type':'application/json', 'Idempotency-Key':`newsletter-${hash}`}, body:JSON.stringify({from, to:[email], subject:'Confirm your RWA Wire newsletter subscription', text:`You requested RWA Wire news, research and explainers by email. Confirm within 24 hours:\n${confirmUrl}\n\nIf you did not request this, ignore this email.\nCancel this request or unsubscribe:\n${unsubscribeUrl}`, html:`<h1>Confirm your RWA Wire subscription</h1><p>You requested news, research and explainers from RWA Wire.</p><p><a href="${confirmUrl}">Confirm subscription</a> (expires in 24 hours)</p><p>If you did not request this, ignore this email.</p><p><a href="${unsubscribeUrl}">Cancel or unsubscribe</a></p>`})});
+      const sent = await fetcher('https://api.resend.com/emails', {method:'POST', headers:{authorization:`Bearer ${apiKey}`, 'content-type':'application/json', 'Idempotency-Key':`newsletter-${hash}`}, body:JSON.stringify({from, to:[email], subject:'Confirm your RWA Wire newsletter subscription', text:`You requested the weekly RWA Wire newsletter, sent on Fridays. Confirm within 24 hours:\n${confirmUrl}\n\nIf you did not request this, ignore this email.\nCancel this request or unsubscribe:\n${unsubscribeUrl}`, html:`<h1>Confirm your RWA Wire subscription</h1><p>You requested the weekly RWA Wire newsletter, sent on Fridays.</p><p><a href="${confirmUrl}">Confirm subscription</a> (expires in 24 hours)</p><p>If you did not request this, ignore this email.</p><p><a href="${unsubscribeUrl}">Cancel or unsubscribe</a></p>`})});
       if (!sent.ok) return reply(503, 'unavailable');
       return reply(202, 'check_email');
     } catch { return reply(503, 'unavailable'); }

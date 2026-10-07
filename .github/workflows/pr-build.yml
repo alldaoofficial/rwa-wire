@@ -50,7 +50,7 @@ jobs:
           esac
 
       - name: Verify newsletter flow
-        run: node --test tests/newsletter.test.mjs
+        run: node --test tests/newsletter.test.mjs tests/weekly.test.mjs
 
       - name: Build and type-check Astro site
         run: npm run build

@@ -14,7 +14,7 @@ const endpoint = 'https://dqeakkrsbgxnexucuyld.supabase.co/functions/v1/newslett
     <label class="block text-sm text-ink" for={`${placement}-email`}>Email address</label>
     <input id={`${placement}-email`} name="email" type="email" required maxlength="254" autocomplete="email" class="w-full border border-line bg-bg p-3 text-ink focus:border-wire" />
     <div hidden aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off" /></label></div>
-    <label class="flex items-start gap-3 text-xs leading-5 text-ink-muted"><input name="consent" type="checkbox" required class="mt-1" /><span>I agree to receive the RWA Wire newsletter by email. See our <a href={sitePath('/privacy/')} class="text-wire underline">privacy notice</a>.</span></label>
+    <label class="flex items-start gap-3 text-xs leading-5 text-ink-muted"><input name="consent" type="checkbox" required class="mt-1" /><span>I agree to receive the weekly RWA Wire newsletter by email on Fridays. See our <a href={sitePath('/privacy/')} class="text-wire underline">privacy notice</a>.</span></label>
     <div data-newsletter-captcha data-sitekey={siteKey}></div>
     <button type="submit" class="bg-wire px-5 py-3 text-sm font-semibold text-bg disabled:opacity-50">Subscribe</button>
     <p data-newsletter-status role="status" aria-live="polite" class="text-sm text-ink-muted"></p>
