@@ -3,6 +3,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import Tag from "@/components/Tag.astro";
 import RelatedArticles from "@/components/RelatedArticles.astro";
+import NewsletterSignup from "@/components/NewsletterSignup.astro";
 import TelegramCTA from "@/components/TelegramCTA.astro";
 import TradingCTA from "@/components/TradingCTA.astro";
 import { CATEGORIES, SITE, type CategorySlug } from "@/config/site";
@@ -75,6 +76,7 @@ const jsonLd={"@context":"https://schema.org","@type":type==="NEWS"?"NewsArticle
 {(scoredProjects.length>0||projectNews.length>0)&&<section class="mt-12 border-y border-line py-6"><div class="flex items-end justify-between gap-4"><div><p class="data-label text-wire">RWA Wire // Intelligence Network</p><h2 class="mt-2 font-serif text-2xl text-ink">{type==="PROJECT"?"Related market intelligence":"Infrastructure connected to this story"}</h2></div></div><div class="mt-5 grid gap-px bg-line sm:grid-cols-3">{scoredProjects.map(p=><a href={`/projects/${p.slug}/`} class="group bg-bg p-5 hover:bg-surface"><h3 class="font-serif text-xl text-ink group-hover:text-wire">{p.data.title.replace(/ Explained$/,"")}</h3></a>)}{projectNews.map(a=><a href={`/${a.data.category}/${a.slug}/`} class="group bg-bg p-5 hover:bg-surface"><h3 class="font-serif text-lg text-ink group-hover:text-wire">{a.data.title}</h3></a>)}</div></section>}
 <div class="mx-auto mt-12 max-w-[720px] space-y-10"><RelatedArticles items={discoveryItems}/>{showTradingCTA&&<TradingCTA/>}</div>
 </div></article>
+  <div class="wire-container py-10"><NewsletterSignup placement="article-newsletter" /></div>
 <TelegramCTA context={type==="PROJECT"||type==="RESEARCH"?"research":"article"}/>
 <script type="application/ld+json" set:html={JSON.stringify(jsonLd)}/>
 </BaseLayout>

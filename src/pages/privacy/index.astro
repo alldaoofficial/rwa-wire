@@ -6,14 +6,20 @@ import Breadcrumbs from "@/components/Breadcrumbs.astro";
   <div class="wire-container max-w-content py-10 sm:py-14">
     <Breadcrumbs items={[{ label: "Privacy", href: "/privacy/" }]} />
     <h1 class="mt-4 font-serif text-3xl font-medium text-ink sm:text-4xl">Privacy Policy</h1>
-    <p class="mt-3 text-sm text-ink-muted">Last updated: September 27, 2026</p>
+    <p class="mt-3 text-sm text-ink-muted">Last updated: October 7, 2026</p>
     <div class="prose prose-invert prose-wire mt-8 max-w-none">
-      <p>RWA Wire is currently a static website hosted through GitHub Pages. We do not currently operate user accounts, a newsletter database or an on-site payment system.</p>
+      <p>RWA Wire is currently a static website hosted through GitHub Pages. We do not offer visitor accounts or an on-site payment system.</p>
       <p>When you visit the site, the hosting provider and services reached through external links may process technical information such as IP addresses, browser information and request logs according to their own policies.</p>
+      <h2>Analytics</h2>
+      <p>We use Cloudflare Web Analytics for page statistics and Supabase for first-party interaction events such as content, Telegram and newsletter button clicks. Product events contain the page path, placement and event type, rather than an email address or newsletter confirmation token.</p>
+      <h2>Newsletter</h2>
+      <p>Email signup is being prepared and is available only after the delivery service is configured. When signup is open, we collect your email address, explicit consent, the version of the consent notice, signup placement and confirmation time to provide the newsletter. You become a subscriber only after confirming your email. You can withdraw your consent using the unsubscribe link.</p>
+      <p>Newsletter records are stored in Supabase. Resend processes confirmation and newsletter email delivery. Cloudflare Turnstile processes a security check to reduce automated signup abuse. Our signup service stores a daily, secret-salted hash for rate limiting rather than a raw IP address; infrastructure providers may separately process technical request logs.</p>
+      <p>Confirmation links expire after 24 hours. Unconfirmed requests are deleted within eight days, rate-limit records within two days, and unsubscribed email records within 30 days. Active subscription records are retained while you remain subscribed. For questions or deletion requests, use our <a href="/contact/">contact page</a>.</p>
       <h2>External links</h2>
       <p>RWA Wire links to third-party services, including Telegram and affiliate partners. When you follow an external link, the destination service's privacy practices apply.</p>
       <h2>Changes</h2>
-      <p>This notice will be updated if RWA Wire adds analytics, newsletters, advertising, accounts or other services that change how data is processed.</p>
+      <p>This notice will be updated when our services or data processing change.</p>
     </div>
   </div>
 </BaseLayout>
