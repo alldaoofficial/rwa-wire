@@ -271,6 +271,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"dutch-central-bank-regulator-call-for-legal-change-to-keep-up-in-tokenization-race.mdx": {
+	id: "dutch-central-bank-regulator-call-for-legal-change-to-keep-up-in-tokenization-race.mdx";
+  slug: "dutch-central-bank-regulator-call-for-legal-change-to-keep-up-in-tokenization-race";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "ethereum-and-the-tokenized-economy.mdx": {
 	id: "ethereum-and-the-tokenized-economy.mdx";
   slug: "ethereum-and-the-tokenized-economy";
