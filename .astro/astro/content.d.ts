@@ -579,6 +579,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"tokenized-stock-trading-expands-in-the-us-as-securitize-brings-equities-onchain-fxstreet.mdx": {
+	id: "tokenized-stock-trading-expands-in-the-us-as-securitize-brings-equities-onchain-fxstreet.mdx";
+  slug: "tokenized-stock-trading-expands-in-the-us-as-securitize-brings-equities-onchain-fxstreet";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "tokenized-stocks-cross-3b-the-on-chain-economy-is-no-longer-speculation.mdx": {
 	id: "tokenized-stocks-cross-3b-the-on-chain-economy-is-no-longer-speculation.mdx";
   slug: "tokenized-stocks-cross-3b-the-on-chain-economy-is-no-longer-speculation";
