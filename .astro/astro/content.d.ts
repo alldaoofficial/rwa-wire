@@ -467,6 +467,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"securitize-ceo-carlos-domingo-talks-new-rollout-of-tokenized-stocks.mdx": {
+	id: "securitize-ceo-carlos-domingo-talks-new-rollout-of-tokenized-stocks.mdx";
+  slug: "securitize-ceo-carlos-domingo-talks-new-rollout-of-tokenized-stocks";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "securitize-explained.mdx": {
 	id: "securitize-explained.mdx";
   slug: "securitize-explained";
