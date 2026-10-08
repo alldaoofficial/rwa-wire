@@ -411,6 +411,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"richard-teng-says-huge-demand-for-tokenized-stocks-but-bad-information-flow-holds-private-markets-back.mdx": {
+	id: "richard-teng-says-huge-demand-for-tokenized-stocks-but-bad-information-flow-holds-private-markets-back.mdx";
+  slug: "richard-teng-says-huge-demand-for-tokenized-stocks-but-bad-information-flow-holds-private-markets-back";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "rwa-crypto-explained.mdx": {
 	id: "rwa-crypto-explained.mdx";
   slug: "rwa-crypto-explained";
