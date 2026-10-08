@@ -467,6 +467,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"securitize-secz-launches-tokenized-u-s-stocks-on-solana-plans-nyse-and-okxice-trading.mdx": {
+	id: "securitize-secz-launches-tokenized-u-s-stocks-on-solana-plans-nyse-and-okxice-trading.mdx";
+  slug: "securitize-secz-launches-tokenized-u-s-stocks-on-solana-plans-nyse-and-okxice-trading";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "september-2026-global-regulatory-brief-token-securities-stablecoins-and-tokenized-bonds.mdx": {
 	id: "september-2026-global-regulatory-brief-token-securities-stablecoins-and-tokenized-bonds.mdx";
   slug: "september-2026-global-regulatory-brief-token-securities-stablecoins-and-tokenized-bonds";
