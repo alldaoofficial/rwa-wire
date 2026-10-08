@@ -17,7 +17,7 @@ const articles = (await getCollection("articles",({data})=>!data.draft)).filter(
 ---
 <BaseLayout title={`${institution.name} Intelligence`} description={`RWA Wire intelligence profile for ${institution.name}: role, focus, networks and related tokenization coverage.`}>
   <div class="wire-container py-10 sm:py-14">
-    <Breadcrumbs items={[{label:"Institutions",href:"/institutions/"},{label:"Intelligence",href:"/institutions/intelligence/"},{label:institution.name,href:Astro.url.pathname}]} />
+    <Breadcrumbs items={[{label:"Institutions",href:"/institutions/"},{label:institution.name,href:Astro.url.pathname}]} />
     <header class="mt-4 grid gap-8 border-b border-line pb-10 lg:grid-cols-[1fr_300px]">
       <div><p class="data-label text-wire">RWA Wire // Institution Profile</p><h1 class="mt-3 font-serif text-5xl font-medium text-ink">{institution.name}</h1><p class="mt-4 max-w-2xl text-base leading-relaxed text-ink-muted">{institution.role}</p></div>
       <div class="border-l border-line pl-5"><p class="data-label">Institution type</p><p class="mt-2 text-sm text-ink">{institution.type}</p><p class="data-label mt-5">Coverage status</p><p class="mt-2 font-mono text-sm text-wire">{institution.status}</p></div>
