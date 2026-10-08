@@ -467,6 +467,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"securitize-launches-1-1-backed-tokenized-stocks-starting-with-apple-nvidia-strategy-and-more.mdx": {
+	id: "securitize-launches-1-1-backed-tokenized-stocks-starting-with-apple-nvidia-strategy-and-more.mdx";
+  slug: "securitize-launches-1-1-backed-tokenized-stocks-starting-with-apple-nvidia-strategy-and-more";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "securitize-secz-launches-tokenized-u-s-stocks-on-solana-plans-nyse-and-okxice-trading.mdx": {
 	id: "securitize-secz-launches-tokenized-u-s-stocks-on-solana-plans-nyse-and-okxice-trading.mdx";
   slug: "securitize-secz-launches-tokenized-u-s-stocks-on-solana-plans-nyse-and-okxice-trading";
