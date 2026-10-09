@@ -180,6 +180,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"base-creator-jesse-pollak-says-equities-and-non-dollar-stablecoins-will-lead-upcoming-tokenization-supercycle.mdx": {
+	id: "base-creator-jesse-pollak-says-equities-and-non-dollar-stablecoins-will-lead-upcoming-tokenization-supercycle.mdx";
+  slug: "base-creator-jesse-pollak-says-equities-and-non-dollar-stablecoins-will-lead-upcoming-tokenization-supercycle";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "binance-will-add-7-bstocks-tokenized-securities-as-collateral-asset-2026-09-30.mdx": {
 	id: "binance-will-add-7-bstocks-tokenized-securities-as-collateral-asset-2026-09-30.mdx";
   slug: "binance-will-add-7-bstocks-tokenized-securities-as-collateral-asset-2026-09-30";
