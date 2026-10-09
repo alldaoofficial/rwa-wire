@@ -642,6 +642,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"tokenized-stocks-move-from-novelty-to-collateral-as-binance-adds-four-more-bstocks.mdx": {
+	id: "tokenized-stocks-move-from-novelty-to-collateral-as-binance-adds-four-more-bstocks.mdx";
+  slug: "tokenized-stocks-move-from-novelty-to-collateral-as-binance-adds-four-more-bstocks";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "tokenized-treasuries-explained.mdx": {
 	id: "tokenized-treasuries-explained.mdx";
   slug: "tokenized-treasuries-explained";
