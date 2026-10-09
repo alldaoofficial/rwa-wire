@@ -1,0 +1,41 @@
+---
+const uses = [
+  { title: "Funds & securities", text: "A token can represent a fund share or a bond. The useful questions are what the investor owns, who maintains the ownership record and how subscriptions, transfers and redemptions work." },
+  { title: "Bank money & payments", text: "Tokenized deposits represent claims on a commercial bank. They can support programmable payments, but should be assessed separately from fund shares and stablecoins: the issuer and redemption arrangements differ." },
+  { title: "Settlement & collateral", text: "Institutions can coordinate the movement of an asset and its payment, or transfer collateral between participants. The value depends on how the platform connects to cash, custody and existing market systems." },
+];
+const checks = [
+  { title: "Who can use it?", text: "Look for eligibility rules, supported jurisdictions and a working onboarding process. A launch announcement alone does not show that customers can access the service." },
+  { title: "What has actually happened?", text: "Separate a simulated transaction, a limited real-money pilot and recurring commercial activity. Check the date, participants and scope of any reported volumes." },
+  { title: "Can users complete the full cycle?", text: "Issuance is only the beginning. Look for evidence of payments, transfers, redemption and a clear process when an operation fails." },
+  { title: "What remains outside the platform?", text: "Identify the legal ownership record, the custodian and the cash settlement arrangements. A blockchain transaction does not explain every part of the financial transaction." },
+];
+---
+<section id="overview" class="mt-10 scroll-mt-24">
+  <p class="data-label text-wire">The overview // Institutional tokenization</p>
+  <h2 class="mt-2 font-serif text-3xl text-ink">What changes when institutions tokenize finance?</h2>
+  <p class="mt-4 max-w-3xl text-base leading-relaxed text-ink-muted">Institutional tokenization brings financial claims and the rules for moving them onto programmable platforms. Banks, asset managers and market operators use this approach to rethink how assets are issued, held, paid for and transferred. The platform may serve a restricted group of participants or connect to a public network.</p>
+  <p class="mt-3 max-w-3xl text-sm leading-relaxed text-ink-muted">Start with the financial product, then examine the technology. A token's rights depend on the product's terms and legal structure. Easier transfer does not by itself create an unrestricted market or guaranteed liquidity.</p>
+  <div class="mt-6 grid gap-px border border-line bg-line md:grid-cols-3">
+    {uses.map((use, i) => <article class="bg-surface p-6"><p class="data-label text-wire">0{i + 1} // Use case</p><h3 class="mt-3 font-serif text-xl text-ink">{use.title}</h3><p class="mt-3 text-sm leading-relaxed text-ink-muted">{use.text}</p></article>)}
+  </div>
+  <a class="mt-5 inline-block text-sm text-wire underline underline-offset-4" href="/learn/stablecoins-vs-tokenized-deposits/">Understand how tokenized deposits differ from stablecoins →</a>
+</section>
+<section class="mt-10 border-t border-line pt-8">
+  <h2 class="font-serif text-2xl text-ink">Who does what?</h2>
+  <p class="mt-4 max-w-3xl text-sm leading-relaxed text-ink-muted">Asset managers design funds and manage their investments. Banks can provide deposits, payments and financing. Custodians safeguard assets, while transfer agents maintain investor records and process changes in ownership. Market infrastructure providers connect issuance, trading and settlement. One institution may perform several roles; a technology provider does not necessarily issue the asset.</p>
+  <a class="mt-4 inline-block text-sm text-wire underline underline-offset-4" href="/institutions/">Explore the institutions and their roles →</a>
+</section>
+<section class="mt-10 border-t border-line pt-8">
+  <p class="data-label text-wire">RWA Wire // Reading framework</p>
+  <h2 class="mt-2 font-serif text-2xl text-ink">Pilot or production? Four questions to ask</h2>
+  <p class="mt-4 max-w-3xl text-sm leading-relaxed text-ink-muted">We use these questions to read project announcements. A pilot can demonstrate feasibility without establishing broad adoption. A live product can still have limited access or usage.</p>
+  <div class="mt-5 grid gap-5 sm:grid-cols-2">
+    {checks.map(check => <article class="border-l-2 border-wire pl-4"><h3 class="font-serif text-lg text-ink">{check.title}</h3><p class="mt-2 text-sm leading-relaxed text-ink-muted">{check.text}</p></article>)}
+  </div>
+  <p class="mt-5 max-w-3xl text-sm leading-relaxed text-ink-muted">The practical test is whether the arrangement solves a specific problem for its users. Compare access, operating processes and observed usage alongside the headline technology.</p>
+</section>
+<aside class="mt-8 border border-line bg-surface p-5" aria-label="Overview sources">
+  <p class="data-label text-wire">Sources & further reading</p>
+  <p class="mt-2 text-xs leading-relaxed text-ink-muted">Conceptual background: <a href="https://www.bis.org/publ/arpdf/ar2023e3.htm" class="text-wire underline underline-offset-2">BIS Annual Economic Report, Chapter III (2023)</a>; governance and infrastructure risks: <a href="https://www.bis.org/cpmi/publ/d225.htm" class="text-wire underline underline-offset-2">BIS / CPMI tokenisation report (21 October 2024)</a>. The four-question framework above is RWA Wire's editorial synthesis.</p>
+</aside>
