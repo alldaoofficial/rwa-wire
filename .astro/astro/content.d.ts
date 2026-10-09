@@ -614,6 +614,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"tokenized-stocks-bring-radical-change-to-markets-cuomo-says.mdx": {
+	id: "tokenized-stocks-bring-radical-change-to-markets-cuomo-says.mdx";
+  slug: "tokenized-stocks-bring-radical-change-to-markets-cuomo-says";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "tokenized-stocks-cross-3b-the-on-chain-economy-is-no-longer-speculation.mdx": {
 	id: "tokenized-stocks-cross-3b-the-on-chain-economy-is-no-longer-speculation.mdx";
   slug: "tokenized-stocks-cross-3b-the-on-chain-economy-is-no-longer-speculation";
