@@ -25,7 +25,7 @@ export function createHandler(env,fetcher=fetch,pause=ms=>new Promise(r=>setTime
    if(mode==='preview')return reply('preview',200,{issue:issue.id,...renderIssue(issue,footer,'https://therwawire.com/newsletter/')});
    if(!env('RESEND_API_KEY')||!env('NEWSLETTER_FROM'))return reply('unconfigured',503);
    owner=crypto.randomUUID();if(!await rpc('weekly_lock',{p_owner:owner})){owner=undefined;return reply('busy',409);}
-   if(mode==='test')issue={...issue,id:`test-${issue.id}-${await hash(JSON.stringify(issue)).then(s=>s.slice(0,16))}`,subject:`[TEST] ${issue.subject}`};
+   if(mode==='test')issue={...issue,id:`test-${issue.id}-${await hash(JSON.stringify(issue)+renderIssue(issue,footer,'https://therwawire.com/newsletter/').html).then(s=>s.slice(0,16))}`,subject:`[TEST] ${issue.subject}`};
    issue=await rpc('weekly_prepare',{p_issue:issue.id,p_content:issue,p_test:mode==='test'});
    const recipients=await rpc('weekly_candidates',{p_issue:issue.id});let accepted=0;
    const started=performance.now();
