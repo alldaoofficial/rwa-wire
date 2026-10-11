@@ -128,11 +128,10 @@ def main():
         confirmations.sort(key=lambda r: (rank[r[0]], r[1]), reverse=True)
         trust, published, confirmed_title, link, desc, source = confirmations[0]
         band = "breaking" if score >= 9 and trust == "primary" else "important"
-        summary = desc or f"{confirmed_title}. Independent sources confirm the development."
-        if len(summary) > 420:
-            summary = summary[:417].rstrip() + "..."
-        why = "The development connects tokenized assets with institutional financial infrastructure and has been independently corroborated before entering the RWA Wire publishing pipeline."
-        body = f"{summary}\n\n## Why it matters\n\n{why}\n\n## What to watch\n\nWatch for additional details on eligibility, custody, settlement and production use. RWA Wire will update coverage as the story develops."
+        # Corroborating headlines does not establish a substantive article.
+        summary = desc.strip()
+        why = ""
+        body = summary
         day = published.date().isoformat()
         slug = nw.slugify(confirmed_title)
         source_rows = [{"name": m[5], "url": m[3]} for m in confirmations[:2]]
@@ -156,7 +155,8 @@ def main():
                 "originalDiscoverySource": original_source,
                 "confirmationSources": [m[5] for m in confirmations[:2]],
                 "requiresSourceReview": True,
-                "autoPublishEligible": True
+                "autoPublishEligible": False,
+                "contentStatus": "needs-source-enrichment"
             }
         }
         INBOX.mkdir(parents=True, exist_ok=True)

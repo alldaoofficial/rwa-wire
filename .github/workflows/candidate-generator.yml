@@ -35,13 +35,19 @@ jobs:
           if [ "$COUNT" -ne 1 ]; then echo "Expected exactly one new story brief, found $COUNT."; exit 1; fi
           case "$BRIEF_PATH" in publish/inbox/*.json) ;; *) echo "Invalid brief path"; exit 1;; esac
           echo "BRIEF_PATH=$BRIEF_PATH" >> "$GITHUB_ENV"
+      - name: Check content before creating public files
+        id: quality
+        run: python3 scripts/news_quality.py "$BRIEF_PATH" --github-output
       - name: Generate article, visual and candidate
+        if: steps.quality.outputs.eligible == 'true'
         run: python3 scripts/candidate_generator.py "$BRIEF_PATH"
       - name: Build site
+        if: steps.quality.outputs.eligible == 'true'
         run: |
           npm install
           npm run build
       - name: Commit generated story package
+        if: steps.quality.outputs.eligible == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -50,10 +56,12 @@ jobs:
           git commit -m "Generate RWA Wire story candidate"
           for attempt in 1 2 3; do git pull --rebase origin main && git push && break; if [ "$attempt" -eq 3 ]; then exit 1; fi; sleep 3; done
       - name: Deploy generated article
+        if: steps.quality.outputs.eligible == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run deploy.yml --ref main
       - name: Route generated candidate
+        if: steps.quality.outputs.eligible == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |

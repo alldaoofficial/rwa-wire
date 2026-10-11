@@ -110,12 +110,11 @@ def main():
     if not qualified:
         state["lastResult"]="no-qualified-story"; STATE.write_text(json.dumps(state,indent=2,ensure_ascii=False)+"\n"); print("No new high-confidence story found."); return
     qualified.sort(key=lambda x:(x[0],x[1]),reverse=True); score,published,title,link,desc,guid,trust,source_name,band=qualified[0]; source_name=source_name or "Google News source"; clean_title=title.rsplit(" - ",1)[0] if " - " in title else title
-    summary=desc or f"A new institutional tokenization development has been reported: {clean_title}."
+    # Discovery text is a research lead, never a substitute for reported detail.
+    summary=desc.strip()
     if source_name and summary.endswith(source_name): summary=summary[:-len(source_name)].strip(" -|")
-    if summary.strip().lower()==clean_title.strip().lower() or len(summary)<40: summary=f"{clean_title}. RWA Wire is tracking the development for its relevance to institutional tokenization."
-    if len(summary)>420:summary=summary[:417].rstrip()+"..."
-    why="The development connects tokenized assets with institutional financial infrastructure, showing how onchain instruments are moving into practical market workflows."
-    body=f"{summary}\n\n## Why it matters\n\n{why}\n\n## What to watch\n\nWatch for additional details on eligibility, custody, settlement and how the tokenized asset is used in production. RWA Wire will update coverage as stronger source material becomes available."
-    day=published.date().isoformat(); slug=slugify(clean_title); brief={"title":clean_title,"description":summary,"why_it_matters":why,"pubDate":day,"category":"news","tags":["Tokenization","Institutions","News Watch"],"keyTakeaways":[summary,why],"body":body,"sources":[{"name":source_name,"url":link}],"newsWatch":{"score":score,"priority":band,"sourceTrust":trust,"discoveredAt":now.isoformat(),"requiresSourceReview":True,"autoPublishEligible":trust in {"primary","trusted"}}}
+    why=""
+    body=summary
+    day=published.date().isoformat(); slug=slugify(clean_title); brief={"title":clean_title,"description":summary,"why_it_matters":why,"pubDate":day,"category":"news","tags":["Tokenization","Institutions","News Watch"],"keyTakeaways":[summary,why],"body":body,"sources":[{"name":source_name,"url":link}],"newsWatch":{"score":score,"priority":band,"sourceTrust":trust,"discoveredAt":now.isoformat(),"requiresSourceReview":True,"autoPublishEligible":False,"contentStatus":"needs-source-enrichment"}}
     INBOX.mkdir(parents=True,exist_ok=True); path=INBOX/f"{day}-{slug}.json"; path.write_text(json.dumps(brief,indent=2,ensure_ascii=False)+"\n"); seen.add(guid); state["seen"]=list(seen)[-500:]; state["lastResult"]="candidate"; state["lastCandidate"]=str(path.relative_to(ROOT)); state["lastCandidatePriority"]=band; STATE.write_text(json.dumps(state,indent=2,ensure_ascii=False)+"\n"); print(path.relative_to(ROOT))
 if __name__=="__main__":main()
