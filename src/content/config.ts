@@ -43,6 +43,8 @@ const articles = defineCollection({
     // Key takeaways rendered above the related-articles module.
     keyTakeaways: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
+    // Static redirects preserve consolidated article URLs on GitHub Pages.
+    redirectTo: z.string().regex(/^\/(news|rwa|tokenization|institutions|markets|projects|learn)\/[a-z0-9-]+\/$/).optional(),
   }),
 });
 

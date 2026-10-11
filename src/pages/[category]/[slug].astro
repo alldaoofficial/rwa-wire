@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 import ArticleLayout from "@/layouts/ArticleLayout.astro";
 
 export async function getStaticPaths() {
-  const articles = await getCollection("articles", ({ data }) => !data.draft);
+  const articles = await getCollection("articles", ({ data }) => !data.draft || !!data.redirectTo);
   return articles.map((entry) => ({
     params: { category: entry.data.category, slug: entry.slug },
     props: { entry },
@@ -11,9 +11,23 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
+const redirectTo = entry.data.redirectTo;
 const { Content } = await entry.render();
 ---
 
-<ArticleLayout entry={entry}>
-  <Content />
-</ArticleLayout>
+{redirectTo ? (
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Coverage consolidated — RWA Wire</title>
+      <link rel="canonical" href={new URL(redirectTo, "https://therwawire.com").href} />
+      <meta http-equiv="refresh" content={`0;url=${redirectTo}`} />
+    </head>
+    <body><p>This coverage has moved. <a href={redirectTo}>Read the updated article</a>.</p></body>
+  </html>
+) : (
+  <ArticleLayout entry={entry}>
+    <Content />
+  </ArticleLayout>
+)}
