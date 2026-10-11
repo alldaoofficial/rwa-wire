@@ -341,6 +341,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"imf-deputy-director-says-tokenized-securities-should-settle-in-central-bank-money-not-stablecoins.mdx": {
+	id: "imf-deputy-director-says-tokenized-securities-should-settle-in-central-bank-money-not-stablecoins.mdx";
+  slug: "imf-deputy-director-says-tokenized-securities-should-settle-in-central-bank-money-not-stablecoins";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "imf-tokenized-securities-surge-needs-global-rules.mdx": {
 	id: "imf-tokenized-securities-surge-needs-global-rules.mdx";
   slug: "imf-tokenized-securities-surge-needs-global-rules";
