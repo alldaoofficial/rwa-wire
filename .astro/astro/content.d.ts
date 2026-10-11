@@ -355,6 +355,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"kyobo-securities-expands-into-venture-capital-tokenized-securities.mdx": {
+	id: "kyobo-securities-expands-into-venture-capital-tokenized-securities.mdx";
+  slug: "kyobo-securities-expands-into-venture-capital-tokenized-securities";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "layer-one-tokenized-stocks-surge-as-cftc-chair-heralds-era-of-mass-tokenization.mdx": {
 	id: "layer-one-tokenized-stocks-surge-as-cftc-chair-heralds-era-of-mass-tokenization.mdx";
   slug: "layer-one-tokenized-stocks-surge-as-cftc-chair-heralds-era-of-mass-tokenization";
