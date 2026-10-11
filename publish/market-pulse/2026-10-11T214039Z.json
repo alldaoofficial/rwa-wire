@@ -1,0 +1,110 @@
+{
+  "version": "2.1",
+  "generatedAt": "2026-10-11T21:40:39Z",
+  "status": "dry_run",
+  "source": "CoinGecko",
+  "sourceFetchedAt": "2026-10-11T21:40:39.484931Z",
+  "assetCount": 8,
+  "basket": {
+    "average24h": 1.1675221872756434,
+    "median24h": 0.3890094197911027,
+    "up": 4,
+    "down": 4,
+    "flat": 0,
+    "spreadPctPoints": 23.695004203420588
+  },
+  "leader": {
+    "id": "plume",
+    "symbol": "PLUME",
+    "name": "Plume",
+    "price": 0.0219688,
+    "change24h": 16.4523132714324,
+    "volume24h": 39266452.68707114
+  },
+  "weakest": {
+    "id": "mantra-dao",
+    "symbol": "OM",
+    "name": "MANTRA",
+    "price": 0.053873,
+    "change24h": -7.242690931988189,
+    "volume24h": 399.96300798622514
+  },
+  "highestVolume": {
+    "id": "chainlink",
+    "symbol": "LINK",
+    "name": "Chainlink",
+    "price": 13.25,
+    "change24h": 1.2981479916307301,
+    "volume24h": 234948626.5671966
+  },
+  "marketRead": "Breadth is split with 4/8 tracked assets positive. PLUME is the standout move at +16.5%. Dispersion is elevated: 23.7 percentage points separate the strongest and weakest tracked assets.",
+  "xMarketRead": "Mixed tape: 4 green, 4 red across 8 tracked assets. PLUME leads at +16.5%.",
+  "assets": [
+    {
+      "id": "plume",
+      "symbol": "PLUME",
+      "name": "Plume",
+      "price": 0.0219688,
+      "change24h": 16.4523132714324,
+      "volume24h": 39266452.68707114
+    },
+    {
+      "id": "ondo-finance",
+      "symbol": "ONDO",
+      "name": "Ondo",
+      "price": 0.507807,
+      "change24h": 1.796898625120031,
+      "volume24h": 156941735.82694787
+    },
+    {
+      "id": "chainlink",
+      "symbol": "LINK",
+      "name": "Chainlink",
+      "price": 13.25,
+      "change24h": 1.2981479916307301,
+      "volume24h": 234948626.5671966
+    },
+    {
+      "id": "goldfinch",
+      "symbol": "GFI",
+      "name": "Goldfinch",
+      "price": 0.04019368,
+      "change24h": 0.8260312320862457,
+      "volume24h": 50966.510905261945
+    },
+    {
+      "id": "polymesh",
+      "symbol": "POLYX",
+      "name": "Polymesh",
+      "price": 0.04114887,
+      "change24h": -0.04801239250404035,
+      "volume24h": 459095.9265387003
+    },
+    {
+      "id": "clearpool",
+      "symbol": "CPOOL",
+      "name": "Clearpool",
+      "price": 0.0321667,
+      "change24h": -0.9509853330902447,
+      "volume24h": 3630154.2501009027
+    },
+    {
+      "id": "centrifuge",
+      "symbol": "CFG",
+      "name": "Centrifuge",
+      "price": 0.140201,
+      "change24h": -2.7915249644817837,
+      "volume24h": 446363.9176202966
+    },
+    {
+      "id": "mantra-dao",
+      "symbol": "OM",
+      "name": "MANTRA",
+      "price": 0.053873,
+      "change24h": -7.242690931988189,
+      "volume24h": 399.96300798622514
+    }
+  ],
+  "telegram": "RWA WIRE // MARKET PULSE\n\nTracked RWA tokens are mixed over 24h.\nBreadth: 4 up / 4 down\nBasket: avg +1.2% · median +0.4%\n\nTop movers\n▲ PLUME +16.5% · $0.0220\n▲ ONDO +1.8% · $0.5078\n▲ LINK +1.3% · $13.25\n\nWeakest movers\n▼ CPOOL -1.0% · $0.0322\n▼ CFG -2.8% · $0.1402\n▼ OM -7.2% · $0.0539\n\nMARKET READ\nBreadth is split with 4/8 tracked assets positive. PLUME is the standout move at +16.5%. Dispersion is elevated: 23.7 percentage points separate the strongest and weakest tracked assets.\n\nData: CoinGecko · 24h change",
+  "x": "RWA WIRE // MARKET PULSE\n\nRWA basket: +1.2% avg · 4/8 green\nPLUME +16.5% | ONDO +1.8% | LINK +1.3%\n\nMixed tape: 4 green, 4 red across 8 tracked assets. PLUME leads at +16.5%.\n\nData: CoinGecko"
+}
