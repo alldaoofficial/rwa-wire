@@ -80,11 +80,11 @@ def main():
  if not candidates:
   state['lastResult']='no-qualified-story'; STATE.write_text(json.dumps(state,indent=2)+'\n'); print('Crypto Market Watch:',json.dumps(diagnostics)); return
  candidates.sort(key=lambda x:(x[0],x[1]),reverse=True); score,published,title,desc,link,guid,source,trust=candidates[0]
- summary=desc if len(desc)>=50 else f'{title}. RWA Wire is tracking the development for its impact on crypto market structure and institutional risk appetite.'
- summary=summary[:417].rstrip()+('...' if len(summary)>417 else '')
- why='This is a market-wide signal that can affect crypto liquidity, institutional positioning and the environment in which tokenized assets trade and grow.'
- body=f'''{summary}\n\n## Market context\n\n{why}\n\n## Why RWA Wire is watching\n\nBroader crypto liquidity and institutional risk appetite influence capital formation across tokenized finance. We track these market-wide developments without turning RWA Wire into a general altcoin news feed.\n\n## What to watch\n\nWatch follow-through in Bitcoin and Ethereum liquidity, institutional flows, derivatives positioning and any spillover into tokenized-asset markets.'''
- day=published.date().isoformat(); brief={'title':title,'description':summary,'why_it_matters':why,'pubDate':day,'category':'markets','reviewCategory':'CRYPTO MARKET','tags':['Crypto Market','Bitcoin','Ethereum','Institutions'],'keyTakeaways':[summary,why],'body':body,'sources':[{'name':source,'url':link}], 'cryptoWatch':{'score':score,'sourceTrust':trust,'discoveredAt':now.isoformat(),'autoPublishEligible':True}}
+ # Retain discovery without inventing a market-context article.
+ summary=desc.strip()
+ why=''
+ body=summary
+ day=published.date().isoformat(); brief={'title':title,'description':summary,'why_it_matters':why,'pubDate':day,'category':'markets','reviewCategory':'CRYPTO MARKET','tags':['Crypto Market','Bitcoin','Ethereum','Institutions'],'keyTakeaways':[summary,why],'body':body,'sources':[{'name':source,'url':link}], 'cryptoWatch':{'score':score,'sourceTrust':trust,'discoveredAt':now.isoformat(),'autoPublishEligible':False,'requiresSourceReview':True,'contentStatus':'needs-source-enrichment'}}
  INBOX.mkdir(parents=True,exist_ok=True); path=INBOX/f'{day}-{slug(title)}.json'; path.write_text(json.dumps(brief,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
  seen.add(guid); state['seen']=list(seen)[-500:]; state['lastResult']='candidate'; state['lastCandidate']=str(path.relative_to(ROOT)); STATE.write_text(json.dumps(state,indent=2)+'\n'); print('Crypto Market Watch:',json.dumps(diagnostics)); print(path.relative_to(ROOT))
 if __name__=='__main__': main()
