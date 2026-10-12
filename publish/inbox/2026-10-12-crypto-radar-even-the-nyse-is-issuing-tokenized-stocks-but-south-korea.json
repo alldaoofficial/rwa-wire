@@ -28,5 +28,12 @@
     "requiresSourceReview": true,
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-12T23:17:55Z",
+    "reason": "This roundup reuses tokenized-stock developments already captured in existing RWA Wire coverage of NYSE-linked plans, Securitize launches, and South Korea's token-securities framework."
   }
 }
