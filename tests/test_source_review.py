@@ -12,6 +12,7 @@ import source_review as sr
 import news_quality as quality
 import news_watch
 import news_watch_v2 as catalog
+import candidate_generator as generator
 from test_news_quality import good
 
 
@@ -35,6 +36,23 @@ def reviewed():
 
 
 class SourceReviewTests(unittest.TestCase):
+    def test_sealed_brief_generates_candidate_and_changed_brief_writes_nothing(self):
+        for altered in (False, True):
+            with tempfile.TemporaryDirectory() as temp:
+                root = pathlib.Path(temp); d = sr.seal(reviewed())
+                if altered: d["body"] += " Unreviewed new statement."
+                (root/"brief.json").write_text(json.dumps(d))
+                with patch.object(generator, "ROOT", root), patch.object(generator, "ARTICLES", root/"articles"), patch.object(generator, "IMAGES", root/"images"), patch.object(generator, "CANDIDATES", root/"candidates"), patch.object(sys, "argv", ["candidate_generator.py", str(root/"brief.json")]):
+                    if altered:
+                        with self.assertRaisesRegex(ValueError, "source_review_content_changed"): generator.main()
+                        self.assertFalse((root/"articles").exists())
+                        self.assertFalse((root/"candidates").exists())
+                    else:
+                        generator.main()
+                        article = next((root/"articles").glob("*.mdx")).read_text()
+                        self.assertIn(d["body"], article)
+                        self.assertEqual(len(list((root/"candidates").glob("*.json"))), 1)
+
     def test_supported_review_passes_without_auto_approval(self):
         d = sr.seal(reviewed())
         self.assertEqual(quality.quality_reasons(d), [])
