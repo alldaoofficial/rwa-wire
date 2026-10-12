@@ -28,5 +28,12 @@
     "requiresSourceReview": true,
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-12T21:33:59Z",
+    "reason": "Discovery is a Binance Square Community Insights and Market Sentiment collection, not a dated issuer announcement or independent news report."
   }
 }
