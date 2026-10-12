@@ -530,6 +530,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"seoul-exchange-prepares-unlisted-share-token-trading-2027.mdx": {
+	id: "seoul-exchange-prepares-unlisted-share-token-trading-2027.mdx";
+  slug: "seoul-exchange-prepares-unlisted-share-token-trading-2027";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "september-2026-global-regulatory-brief-token-securities-stablecoins-and-tokenized-bonds.mdx": {
 	id: "september-2026-global-regulatory-brief-token-securities-stablecoins-and-tokenized-bonds.mdx";
   slug: "september-2026-global-regulatory-brief-token-securities-stablecoins-and-tokenized-bonds";
