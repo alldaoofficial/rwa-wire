@@ -1,23 +1,31 @@
 {
-  "title": "Seoul Exchange Prepares for Unlisted Stock Trading Ahead of Tokenized Securities System Launch in February 2027: \"We'll Introduce Unlisted Stock Trading to Coincide with the Tokenized Securities System's Implementation.\"",
-  "description": "Seoul Exchange Prepares for Unlisted Stock Trading Ahead of Tokenized Securities System Launch in February 2027: \"We'll Introduce Unlisted Stock Trading to Coincide with the Tokenized Securities System's Implementation.\"",
-  "why_it_matters": "",
-  "pubDate": "2026-10-09",
-  "category": "news",
+  "title": "Seoul Exchange Prepares for Unlisted-Share Token Trading Under Korea's 2027 Framework",
+  "slug": "seoul-exchange-prepares-unlisted-share-token-trading-2027",
+  "description": "Seoul Exchange says it is pursuing an OTC brokerage license and preparing tokenized unlisted-share trading for Korea's first-stage framework in February 2027.",
+  "why_it_matters": "The plan shows how Korea may connect tokenization to licensed securities intermediaries and existing shareholder-rights infrastructure, rather than treating blockchain records as a separate market.",
+  "pubDate": "2026-10-08",
+  "category": "institutions",
+  "reviewCategory": "REGULATION",
   "tags": [
     "Tokenization",
-    "Institutions",
-    "News Watch"
+    "South Korea",
+    "Unlisted Shares",
+    "Market Infrastructure"
   ],
   "keyTakeaways": [
-    "Seoul Exchange Prepares for Unlisted Stock Trading Ahead of Tokenized Securities System Launch in February 2027: \"We'll Introduce Unlisted Stock Trading to Coincide with the Tokenized Securities System's Implementation.\"",
-    ""
+    "Seoul Exchange is preparing the service, but its OTC brokerage authorization remains in progress.",
+    "Korea's first-stage framework includes trust-based tokenization of unlisted shares from February 2027.",
+    "The Financial Services Commission says existing licensed intermediaries may handle token securities within their authorized business scope."
   ],
-  "body": "Seoul Exchange Prepares for Unlisted Stock Trading Ahead of Tokenized Securities System Launch in February 2027: \"We'll Introduce Unlisted Stock Trading to Coincide with the Tokenized Securities System's Implementation.\"",
+  "body": "Seoul Exchange said on October 8 that it is preparing to support tokenized trading in unlisted shares as South Korea approaches the first stage of its token-securities framework. The company is still working through the authorization process for an over-the-counter brokerage, so this is a launch plan rather than a live trading service.\n\n## Regulatory context\n\nThe Financial Services Commission's September policy roadmap places trust-based tokenization of unlisted shares in the first phase scheduled for February 2027. Under the proposed hybrid structure, existing electronic-securities infrastructure would continue to manage share rights while a token-securities ledger records the trust-beneficiary interest.\n\nThe regulator also said it does not plan a separate license solely for token securities. Securities firms and OTC markets may handle them only within the scope of their existing authorization, with OTC venues expected to consult the Financial Supervisory Service before adding token-securities support. Seoul Exchange says it intends to complete its licensing work and prepare distribution infrastructure with securities firms in time for the framework.",
   "sources": [
     {
-      "name": "재경일보",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1VdldrS1dJSDBfM0NtcWV4d0JkVzdjNjRORGRvM1JSTHNvelI4aHBJUVg5VDdvajNCMW9TWGJxUnFvUjJ5d2pQemRBcDhISDZGdU10Ujh6Q3VvWFVkY0dINXZR?oc=5"
+      "name": "Financial Services Commission of Korea",
+      "url": "https://www.fsc.go.kr/no010101/87650"
+    },
+    {
+      "name": "Newsis",
+      "url": "https://files.newsis.com/view/NISX20261008_0003819499"
     }
   ],
   "newsWatch": {
@@ -27,6 +35,56 @@
     "discoveredAt": "2026-10-11T20:37:13.566782+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment"
+    "contentStatus": "source-reviewed"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-12T22:39:54Z",
+    "sources": [
+      {
+        "url": "https://www.fsc.go.kr/no010101/87650",
+        "publishedAt": "2026-09-04",
+        "checkedAt": "2026-10-12T22:39:54Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://files.newsis.com/view/NISX20261008_0003819499",
+        "publishedAt": "2026-10-08",
+        "checkedAt": "2026-10-12T22:39:54Z",
+        "kind": "news",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Korea's first token-securities phase is scheduled for February 2027.",
+        "sourceUrl": "https://www.fsc.go.kr/no010101/87650",
+        "anchor": "‘27.2월 법 시행시"
+      },
+      {
+        "claim": "The first phase includes trust-based tokenization of unlisted shares.",
+        "sourceUrl": "https://www.fsc.go.kr/no010101/87650",
+        "anchor": "비상장주식 신탁방식 토큰화"
+      },
+      {
+        "claim": "The regulator does not plan a separate licensing regime solely for token securities.",
+        "sourceUrl": "https://www.fsc.go.kr/no010101/87650",
+        "anchor": "별도 인가체계는 마련하지 않기로"
+      },
+      {
+        "claim": "Seoul Exchange said it is preparing token-securities trading for unlisted shares.",
+        "sourceUrl": "https://files.newsis.com/view/NISX20261008_0003819499",
+        "anchor": "비상장주식의 토큰증권 거래를 준비하겠다"
+      },
+      {
+        "claim": "Seoul Exchange's over-the-counter brokerage authorization process remains in progress.",
+        "sourceUrl": "https://files.newsis.com/view/NISX20261008_0003819499",
+        "anchor": "인가가 진행 중인 장외거래중개업"
+      }
+    ],
+    "contentSha256": "f8d755d7782712bc1031a6c097d00eb88959110a0b1346725d26e4a31bdd58fd"
   }
 }
