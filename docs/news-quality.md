@@ -15,7 +15,13 @@ Before any article, image or social candidate is written, `news_quality.py` chec
 - For scanner discoveries, a source review recorded as `sourceReview` with
   `status: verified` and a non-empty `reviewedBy`.
 
-These conservative text checks are not a fact-check. An editor must read the
+The hourly source-review task now performs the missing enrichment through the
+connected GitHub app. See [Source enrichment handoff](source-enrichment.md) for
+the queue, required evidence ledger, integrity seal and held/rejected outcomes.
+It updates existing leads; it does not create duplicate discoveries or approve
+social distribution.
+
+These conservative text checks are not a fact-check. A reviewing agent or editor must read the
 original source, verify claims, and add supported details and a specific relevance
 explanation. Only then record the source review. The source-trust score alone
 cannot satisfy this requirement. Never set a review flag to bypass missing facts.
@@ -31,6 +37,6 @@ generation, deployment and distribution are skipped. Reasons appear in the
 workflow log. Calling the generator directly enforces the same checks and fails
 before writing public files.
 
-Existing published articles and already-created distribution packages are not
-rewritten by this change. They require separate review. News discovery keeps its
-existing schedule; no new paid service or external model call is introduced.
+Source enrichment uses the existing ChatGPT hourly task rather than a separately
+billed model API. It reads public publisher sources through web research; the
+checks themselves are offline. News discovery keeps its existing schedule.

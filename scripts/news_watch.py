@@ -84,6 +84,8 @@ def main():
             try:published=parsedate_to_datetime(x.findtext("pubDate")).astimezone(timezone.utc)
             except Exception:published=now
             hay=(title+" "+desc).lower(); normalized_title=title.rsplit(" - ",1)[0] if " - " in title else title; headline=normalized_title.lower()
+            if headline.startswith("#") or any(k in headline for k in ("community insights", "market sentiment | binance square")):
+                rejection["community_feed"]+=1; continue
             score=sum(w for k,w in STRONG.items() if k in hay)+sum(w for k,w in INSTITUTIONAL.items() if k in hay)-sum(10 for k in BLOCK if k in hay)
             if trust=="unknown":
                 key=normalize_source(source_name) or "(missing source)"; u=unknown_stats[key]; u["count"]+=1; u["maxScore"]=max(u["maxScore"],score)

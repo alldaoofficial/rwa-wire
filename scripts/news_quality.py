@@ -57,8 +57,13 @@ def quality_reasons(d):
     # RSS discovery and headline corroboration do not establish source facts.
     if "newsWatch" in d or "cryptoWatch" in d:
         review = d.get("sourceReview") or {}
+        if not isinstance(review, dict):
+            review = {}
         if review.get("status") != "verified" or not clean(review.get("reviewedBy")):
             reasons.append("source_review_required")
+        if review.get("method") == "source-enrichment-v1" or review.get("reviewedBy") == "RWA Wire Source Review":
+            from source_review import review_reasons
+            reasons.extend(review_reasons(d))
     return list(dict.fromkeys(reasons))
 
 def require_quality(d):
