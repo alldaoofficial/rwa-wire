@@ -34,5 +34,12 @@
     "requiresSourceReview": true,
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-12T23:17:55Z",
+    "reason": "The underlying event is the IMF's October 2026 tokenization chapter, already captured by the existing IMF tokenized-securities story and its candidate, approval, and posted records."
   }
 }
