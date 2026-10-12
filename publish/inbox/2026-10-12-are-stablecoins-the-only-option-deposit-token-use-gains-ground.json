@@ -28,5 +28,12 @@
     "requiresSourceReview": true,
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-12T22:39:54Z",
+    "reason": "The Google News discovery could not be resolved to a fully readable direct publisher article, so the underlying event and source claims could not be verified."
   }
 }
