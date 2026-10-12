@@ -53,6 +53,8 @@ jobs:
         run: node --test tests/newsletter.test.mjs tests/weekly.test.mjs tests/acquisition.test.mjs
       - name: Verify news quality and discovery holds
         run: python3 -m unittest discover -s tests -p "test_news_quality.py"
+      - name: Verify source enrichment and review integrity
+        run: python3 -m unittest discover -s tests -p "test_source_review.py"
       - name: Verify social destinations
         run: python3 -m unittest discover -s tests -p "test_social_links.py"
 

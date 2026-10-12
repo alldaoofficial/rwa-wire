@@ -75,6 +75,8 @@ def _hit(value, keys):
 
 def source_tier(name):
     s=normalize_source(name)
+    if "binance square" in s or "community insights" in s:
+        return "low"
     if _hit(s, PRIMARY): return "primary"
     if _hit(s, TRUSTED): return "trusted"
     if _hit(s, SPECIALIST): return "specialist"
