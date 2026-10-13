@@ -57,6 +57,15 @@ class PrimaryTests(unittest.TestCase):
         self.assertEqual(row["published"].year,2026)
         self.assertIsNone(primary.date_value("not-a-date"))
 
+    def test_rdf_dublin_core_publication_date(self):
+        data=b'<rss xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><item><title>Tokenized bonds</title><link>https://www.bis.org/press/test.htm</link><dc:date>2026-10-13T03:00:00Z</dc:date></item></channel></rss>'
+        self.assertEqual(list(primary.rss_rows(data,primary.SOURCES[0]))[0]["published"].hour,3)
+
+    def test_explicit_publication_time_and_nested_schema(self):
+        page=primary.Page();page.feed('<time itemprop="datePublished" datetime="2026-10-13T03:00:00Z">Today</time>')
+        self.assertEqual(primary.date_value(page.published_time).hour,3)
+        self.assertEqual(next(primary.ld_articles({"mainEntity":{"headline":"Test","datePublished":"2026-10-13"}}))["headline"],"Test")
+
     def test_official_hostname_and_redirect_boundaries(self):
         source=primary.SOURCES[0]
         for url in ("https://bis.org.evil.example/story","http://www.bis.org/press/a","https://secret@www.bis.org/press/a","https://www.bis.org:8000/press/a"):
