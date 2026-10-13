@@ -33,7 +33,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-12T22:39:54Z",
-    "reason": "The Google News discovery could not be resolved to a fully readable direct publisher article, so the underlying event and source claims could not be verified."
+    "reviewedAt": "2026-10-13T04:41:23Z",
+    "reason": "A second review still could not resolve the Google News discovery to the specific fully readable Asiae publisher article; related reports do not verify this headline's underlying event and claims."
   }
 }
