@@ -1,23 +1,35 @@
 {
-  "title": "Koscom to Unveil Shared Tokenized Securities Platform at Korea Fintech Week",
-  "description": "Koscom to Unveil Shared Tokenized Securities Platform at Korea Fintech Week Seoul Economic Daily",
-  "why_it_matters": "",
+  "title": "Koscom Plans Token-Securities Platform Showcase at Korea Fintech Week 2026",
+  "slug": "koscom-token-securities-platform-korea-fintech-week-2026",
+  "description": "Koscom plans to demonstrate shared issuance and account-management infrastructure for token securities at Korea Fintech Week in Seoul in November.",
+  "why_it_matters": "A shared platform could lower integration costs for Korean brokerages while keeping tokenized securities connected to established market-account and recordkeeping systems.",
   "pubDate": "2026-10-13",
-  "category": "news",
+  "category": "institutions",
+  "reviewCategory": "INFRASTRUCTURE",
   "tags": [
     "Tokenization",
-    "Institutions",
-    "News Watch"
+    "South Korea",
+    "Market Infrastructure",
+    "Institutions"
   ],
   "keyTakeaways": [
-    "Koscom to Unveil Shared Tokenized Securities Platform at Korea Fintech Week Seoul Economic Daily",
-    ""
+    "Koscom plans to showcase the shared platform at Korea Fintech Week 2026; the announcement is not a commercial launch notice.",
+    "The infrastructure is designed to support token-securities issuance, account management and links with existing brokerage systems.",
+    "Koscom says 13 securities firms have signed cooperation agreements around the token-securities initiative."
   ],
-  "body": "Koscom to Unveil Shared Tokenized Securities Platform at Korea Fintech Week Seoul Economic Daily",
+  "body": "Koscom plans to present its shared token-securities platform at Korea Fintech Week 2026, scheduled for November 25–27 at the aT Center in Seoul. The October 13 report describes an upcoming showcase, not the launch of a live commercial service.\n\n## Shared market infrastructure\n\nThe platform is intended to support issuance, account management and connections to related systems. Koscom says the design can link brokerages' existing ledgers with blockchain-based distributed ledgers. The company also says 13 securities firms have signed cooperation agreements for token-securities business.\n\nKoscom's earlier primary documentation describes the project as common infrastructure that multiple securities firms can use to reduce duplicate system investment. It also records completed testing with Korea Securities Depository for aggregate-supply management and an issuance-infrastructure collaboration with LG CNS. Those milestones establish technical preparation, but they do not by themselves establish production availability or regulatory approval for token-securities offerings.",
   "sources": [
     {
-      "name": "Seoul Economic Daily",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNTkNjdDlucmswemN6ZEZ5VE9lWmdHYWsya2JyN0dKbWdlel9ocVI0M1ZLUEcwS3Viem1rTVQ0U0swTWhsYUtyak5qYnI2eGxqYTIxaWEzMzM0cXlPNHBNbjZXWjlsQ3JaR05CSkpyQUhiX0k2a3lRLXNlaGE5b1pqV3luYkVjQ04tM3cwZWYycC1aNlc3aXJKeFRTZDRpVUE?oc=5"
+      "name": "Financial Services Commission of Korea",
+      "url": "https://www.fsc.go.kr/eng/pr010101/87427"
+    },
+    {
+      "name": "Koscom",
+      "url": "https://www.koscom.co.kr/portal/bbs/B0000064/view.do?nttId=30322&menuNo="
+    },
+    {
+      "name": "Edaily",
+      "url": "https://www1.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02256646645612592"
     }
   ],
   "newsWatch": {
@@ -33,6 +45,68 @@
     ],
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment"
+    "contentStatus": "source-reviewed"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-13T01:18:13Z",
+    "sources": [
+      {
+        "url": "https://www.fsc.go.kr/eng/pr010101/87427",
+        "publishedAt": "2026-07-29",
+        "checkedAt": "2026-10-13T01:18:13Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://www.koscom.co.kr/portal/bbs/B0000064/view.do?nttId=30322&menuNo=",
+        "publishedAt": "2025-08-28",
+        "checkedAt": "2026-10-13T01:18:13Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://www1.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02256646645612592",
+        "publishedAt": "2026-10-13",
+        "checkedAt": "2026-10-13T01:18:13Z",
+        "kind": "news",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Korea Fintech Week 2026 is scheduled for November 25 through November 27 in Seoul.",
+        "sourceUrl": "https://www.fsc.go.kr/eng/pr010101/87427",
+        "anchor": "November 25 to 27"
+      },
+      {
+        "claim": "Koscom documented the project as shared token-securities infrastructure intended for use by multiple securities firms.",
+        "sourceUrl": "https://www.koscom.co.kr/portal/bbs/B0000064/view.do?nttId=30322&menuNo=",
+        "anchor": "다수 증권사가 함께 사용할 수 있는"
+      },
+      {
+        "claim": "Koscom documented completion of an aggregate-supply management testbed with Korea Securities Depository.",
+        "sourceUrl": "https://www.koscom.co.kr/portal/bbs/B0000064/view.do?nttId=30322&menuNo=",
+        "anchor": "총량관리를 위한 테스트베드 실증을 완료"
+      },
+      {
+        "claim": "Koscom plans to showcase the shared platform at the November fintech event.",
+        "sourceUrl": "https://www1.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02256646645612592",
+        "anchor": "공동플랫폼을 중점적으로 소개한다"
+      },
+      {
+        "claim": "The planned infrastructure supports token-securities issuance, account management and related system connections.",
+        "sourceUrl": "https://www1.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02256646645612592",
+        "anchor": "발행과 계좌관리, 관련 시스템 연계"
+      },
+      {
+        "claim": "Koscom has signed token-securities cooperation agreements with 13 securities firms.",
+        "sourceUrl": "https://www1.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02256646645612592",
+        "anchor": "13개 증권사와"
+      }
+    ],
+    "contentSha256": "eb7e4b423a3875845e76516d5dece031e34ef7418a425336698c13c3fd7e9aef"
   }
 }
