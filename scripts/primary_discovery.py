@@ -80,13 +80,13 @@ def rss_rows(raw, source):
         if not official(url, source):
             continue
         yield {"title": nw.clean(value(item, "title")), "url": url,
-               "published": date_value(value(item, "pubDate") or value(item, "published") or value(item, "updated")),
+               "published": date_value(value(item, "pubDate") or value(item, "published") or value(item, "date") or value(item, "updated")),
                "summary": nw.clean(value(item, "description") or value(item, "summary"))}
 
 
 class Page(HTMLParser):
     def __init__(self):
-        super().__init__(); self.links = []; self.recent = []; self.in_recent = False; self.meta = {}; self.ld = []; self.script = None
+        super().__init__(); self.links = []; self.recent = []; self.in_recent = False; self.meta = {}; self.ld = []; self.script = None; self.published_time = None
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
@@ -96,6 +96,8 @@ class Page(HTMLParser):
                 self.recent.append(a["href"])
         if tag == "meta":
             self.meta[a.get("property") or a.get("name")] = a.get("content", "")
+        if tag == "time" and (a.get("itemprop") == "datePublished" or "pubdate" in a):
+            self.published_time = a.get("datetime")
         if tag == "script" and a.get("type", "").lower() == "application/ld+json":
             self.script = []
 
@@ -123,6 +125,8 @@ def ld_articles(value):
             yield value
         if "@graph" in value:
             yield from ld_articles(value["@graph"])
+        if "mainEntity" in value:
+            yield from ld_articles(value["mainEntity"])
 
 
 def html_rows(raw, source, get=fetch, metrics=None):
@@ -141,7 +145,7 @@ def html_rows(raw, source, get=fetch, metrics=None):
             article = Page(); article.feed(get(url, source).decode("utf-8", errors="replace"))
             ld = next(ld_articles(article.ld), {})
             yield {"title": nw.clean(ld.get("headline") or article.meta.get("og:title") or ld.get("name")),
-                   "url": url, "published": date_value(ld.get("datePublished") or article.meta.get("article:published_time")),
+                   "url": url, "published": date_value(ld.get("datePublished") or article.meta.get("article:published_time") or article.published_time),
                    "summary": nw.clean(ld.get("description") or article.meta.get("description") or article.meta.get("og:description"))}
         except Exception:
             if metrics is not None:

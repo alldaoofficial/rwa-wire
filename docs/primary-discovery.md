@@ -9,6 +9,14 @@ that no news exists. No access controls are bypassed.
 
 The parser supports RSS, Atom and HTML articles with publication dates in
 JSON-LD or Open Graph metadata. Recent-post links take priority over older featured
+articles. Dublin Core dates and explicitly marked publication-time elements are
+supported too. When metadata discovery cannot fill the review queue, the existing
+hourly reviewing agent also researches the official newsrooms, verifies dates in
+full sources and may create one genuinely new, already sealed inbox brief. It
+must inspect the entire existing pipeline first and stay within the same limit
+of two reviewed stories per run. A date missing from machine-readable metadata
+is not automatically evidence that the underlying story lacks a verifiable date.
+Recent-post links take priority over older featured
 articles. Each newsroom has a four-article request cap and all requests have time
 and size limits. Redirects and discovered article URLs must remain on that
 publisher's explicit HTTPS hostname; no arbitrary external crawling is allowed.
