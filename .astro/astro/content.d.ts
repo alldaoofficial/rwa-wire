@@ -362,6 +362,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"koscom-token-securities-platform-korea-fintech-week-2026.mdx": {
+	id: "koscom-token-securities-platform-korea-fintech-week-2026.mdx";
+  slug: "koscom-token-securities-platform-korea-fintech-week-2026";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "kyobo-securities-expands-into-venture-capital-tokenized-securities.mdx": {
 	id: "kyobo-securities-expands-into-venture-capital-tokenized-securities.mdx";
   slug: "kyobo-securities-expands-into-venture-capital-tokenized-securities";
