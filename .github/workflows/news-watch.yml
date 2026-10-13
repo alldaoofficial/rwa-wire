@@ -1,6 +1,11 @@
 name: RWA Wire News Watch
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/primary_discovery.py"
+      - ".github/workflows/news-watch.yml"
   # GitHub's scheduler remains only as a backup. The primary trigger is an
   # external scheduler calling workflow_dispatch.
   schedule:
@@ -46,11 +51,17 @@ jobs:
           rm -f publish/news-watch-state.json
           ln -s ../.news-watch-cache/news-watch-state.json publish/news-watch-state.json
 
+      - name: Discover direct primary-source news
+        run: python3 scripts/primary_discovery.py
+
       - name: Scan RWA news
         run: python3 scripts/news_watch_v2.py
 
       - name: Confirm strong watchlist stories
         run: python3 scripts/news_watch_confirm_v2.py
+
+      - name: Report editorial and distribution backlog
+        run: python3 scripts/distribution_audit.py --summary >> "$GITHUB_STEP_SUMMARY"
 
       - name: Save News Watch state
         if: always()

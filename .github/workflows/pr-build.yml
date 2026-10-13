@@ -55,6 +55,8 @@ jobs:
         run: python3 -m unittest discover -s tests -p "test_news_quality.py"
       - name: Verify source enrichment and review integrity
         run: python3 -m unittest discover -s tests -p "test_source_review.py"
+      - name: Verify primary discovery and distribution status
+        run: python3 -m unittest discover -s tests -p "test_primary_discovery.py"
       - name: Verify social destinations
         run: python3 -m unittest discover -s tests -p "test_social_links.py"
 

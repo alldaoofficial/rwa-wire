@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import json, os, pathlib, sys, urllib.parse, urllib.request
+from social_links import social_copy
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 CANDIDATES = ROOT / "publish" / "candidates"
@@ -35,6 +36,11 @@ def request(path_text):
     if not chat:
         raise SystemExit("TELEGRAM_REVIEW_CHAT_ID secret is required.")
     sources=" · ".join(s.get("name","Source") if isinstance(s,dict) else str(s) for s in c["sources"])
+    config_path=ROOT/"publish/channel-config.json"
+    config=json.loads(config_path.read_text()) if config_path.exists() else {}
+    x_paused=config.get("x_enabled") is False
+    x_text=(c.get("distribution") or {}).get("x") or c["title"]
+    x_draft=social_copy(x_text,c["article_url"],"x",c["id"],280)
     text=(
       "RWA WIRE // STORY READY\n\n"
       f"{c['title']}\n\n"
@@ -42,7 +48,10 @@ def request(path_text):
       f"{c['why_it_matters']}\n\n"
       f"Sources: {sources}\n\n"
       "Prepared:\n✓ Article\n✓ Sources\n✓ SEO\n✓ Visual\n✓ Telegram draft\n✓ Duplicate ID\n\n"
-      "Open the preview, then approve or reject."
+      "The article preview is ready; this is not a published social post.\n"
+      "Open the preview, then approve or reject.\n\n"
+      + ("X API is paused. After editorial approval, copy the prepared text below to X manually; no API spending is required.\n\n" if x_paused else "Prepared X copy (publication still requires editorial approval):\n\n")
+      + x_draft
     )
     # Buttons intentionally use deep links to a tiny approval endpoint that will be
     # connected in phase 2. Until then, the review card is safe/read-only.
