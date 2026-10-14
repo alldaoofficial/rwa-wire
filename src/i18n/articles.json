@@ -507,5 +507,75 @@
       ]
     },
     "sourceSha256": "6cd8925ae9a6f17a7cb06ba130496c3212374d3ecf02169031c7e4567fc15f4e"
+  },
+  "bis-aurum-phase-2-privacy": {
+    "path": "/institutions/bis-project-aurum-phase-2-tests-privacy-preserving-digital-cash/",
+    "date": "2026-10-13",
+    "kind": "news",
+    "sources": [
+      [
+        "BIS Innovation Hub — Project Aurum 2.0",
+        "https://www.bis.org/project/aurum-2"
+      ],
+      [
+        "BIS Innovation Hub — Project Aurum Phase 2 report",
+        "https://www.bis.org/publications/project-aurum-phase-2-exploring-privacy-enhancing-technologies-digital-cash"
+      ]
+    ],
+    "de": {
+      "title": "BIS Project Aurum Phase 2 testet datenschutzfreundliches digitales Bargeld",
+      "description": "Ein Prototyp des BIS Innovation Hub kombiniert kryptografische Datenschutzverfahren mit konfigurierbaren Compliance-Kontrollen für digitales Bargeld. Es handelt sich um einen Machbarkeitsnachweis für die Forschung, nicht um ein laufendes Zahlungssystem.",
+      "sections": [
+        [
+          "Datenschutz im Forschungsprototyp",
+          "Der BIS Innovation Hub veröffentlichte am 13. Oktober Project Aurum Phase 2. Der Forschungsprototyp baut auf Aurums zweistufiger Architektur für digitales Bargeld auf und ergänzt auf der Ebene für Endnutzer datenschutzverbessernde Technologien. Er kombiniert Verschlüsselung, BBS+-Signaturen, pseudonymbasiertes Eigentum und Zero-Knowledge-Beweise mit konfigurierbaren Compliance-Mechanismen."
+        ],
+        [
+          "Keine eingeführte CBDC",
+          "Die BIS stellt die Arbeit als explorativen Machbarkeitsnachweis vor, nicht als eingeführte digitale Zentralbankwährung oder öffentlich verfügbaren Zahlungsdienst. Das Projekt untersucht einen Mittelweg zwischen vollständiger Anonymität und vollständiger Transaktionstransparenz. Der Entwurf trennt Zuständigkeiten und Datenzugriff, während Kontrollen zur Wahrung der Zahlungsintegrität bestehen bleiben."
+        ],
+        [
+          "Technische Zielkonflikte",
+          "Der Bericht benennt auch Zielkonflikte: Ein stärkerer Schutz der Privatsphäre kann sich auf Programmierbarkeit, Leistungsfähigkeit und betriebliche Komplexität auswirken. Das Ergebnis ist daher eine technische Referenz für weitere Experimente und die politische Diskussion, kein Beleg dafür, dass eine Zentralbank diese Architektur genehmigt oder eingeführt hat."
+        ]
+      ]
+    },
+    "es": {
+      "title": "BIS Project Aurum Phase 2 prueba efectivo digital con protección de la privacidad",
+      "description": "Un prototipo del BIS Innovation Hub combina herramientas criptográficas de privacidad con controles configurables de cumplimiento para el efectivo digital. Es una prueba de concepto de investigación, no un sistema de pagos en funcionamiento.",
+      "sections": [
+        [
+          "Privacidad en un prototipo de investigación",
+          "El BIS Innovation Hub publicó Project Aurum Phase 2 el 13 de octubre. El prototipo de investigación se basa en la arquitectura de efectivo digital de dos niveles de Aurum e incorpora tecnologías que mejoran la privacidad en la capa minorista. Combina cifrado, firmas BBS+, titularidad basada en seudónimos y pruebas de conocimiento cero con mecanismos configurables de cumplimiento."
+        ],
+        [
+          "No es una CBDC en funcionamiento",
+          "El BIS presenta el trabajo como una prueba de concepto exploratoria, no como una moneda digital de banco central desplegada ni un servicio público de pagos. El proyecto examina una vía intermedia entre el anonimato completo y la transparencia total de las transacciones. Su diseño separa las responsabilidades y el acceso a los datos, manteniendo los controles de integridad de los pagos."
+        ],
+        [
+          "Contrapartidas técnicas",
+          "El informe también identifica contrapartidas: una mayor privacidad puede afectar a la programabilidad, el rendimiento y la complejidad operativa. Por tanto, el resultado es una referencia técnica para seguir experimentando y debatir políticas, no una prueba de que un banco central haya aprobado o puesto en marcha esta arquitectura."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "BIS Project Aurum Phase 2 teste une monnaie numérique protégeant la vie privée",
+      "description": "Un prototype du BIS Innovation Hub associe des outils cryptographiques de protection de la vie privée à des contrôles de conformité configurables pour la monnaie numérique. C’est une preuve de concept de recherche, pas un système de paiement opérationnel.",
+      "sections": [
+        [
+          "La vie privée dans un prototype de recherche",
+          "Le BIS Innovation Hub a publié Project Aurum Phase 2 le 13 octobre. Le prototype de recherche s’appuie sur l’architecture à deux niveaux de monnaie numérique d’Aurum et ajoute des technologies de protection de la vie privée au niveau des paiements de détail. Il combine chiffrement, signatures BBS+, propriété fondée sur des pseudonymes et preuves à divulgation nulle de connaissance avec des mécanismes de conformité configurables."
+        ],
+        [
+          "Pas une monnaie numérique de banque centrale déployée",
+          "La BIS présente ce travail comme une preuve de concept exploratoire, et non comme une monnaie numérique de banque centrale déployée ou un service de paiement ouvert au public. Le projet examine une voie intermédiaire entre l’anonymat complet et la transparence totale des transactions. Sa conception sépare les responsabilités et l’accès aux données tout en conservant les contrôles d’intégrité des paiements."
+        ],
+        [
+          "Des compromis techniques",
+          "Le rapport relève également des compromis : une protection accrue de la vie privée peut avoir des effets sur la programmabilité, les performances et la complexité opérationnelle. Le résultat constitue donc une référence technique pour poursuivre les expérimentations et le débat sur les politiques publiques, pas la preuve qu’une banque centrale a approuvé ou déployé cette architecture."
+        ]
+      ]
+    },
+    "sourceSha256": "65a958aa959bc68833aa1231381d1c76e28d8da45718591277becb7f88cd59fd"
   }
 }
