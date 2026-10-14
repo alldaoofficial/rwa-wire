@@ -1,0 +1,12 @@
+{
+  "id": "2026-10-13-federated-hermes-and-prometheum-plan-tokeniz",
+  "status": "published",
+  "source_manifest": "publish/approved/2026-10-13-federated-hermes-and-prometheum-plan-tokeniz.json",
+  "publishedAt": "2026-10-14T10:27:28Z",
+  "recoveryEvidence": {
+    "workflow_run": 38549666812,
+    "job_id": 115804261175,
+    "publish_step": "success",
+    "reason": "Publication succeeded; receipt push failed because checkout was detached. Recovered without resending."
+  }
+}
