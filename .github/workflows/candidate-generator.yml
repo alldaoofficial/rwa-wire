@@ -51,9 +51,20 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
+          # Stage only the story package; builds modify tracked artifacts.
+          git add -- src/content/articles/ public/images/news/ publish/candidates/
           git diff --cached --quiet && { echo "Nothing generated"; exit 1; }
           git commit -m "Generate RWA Wire story candidate"
+          # Discard only disposable build/dependency output in this clean CI checkout.
+          python3 - <<'PY'
+          import subprocess
+          prefixes = ("dist/", ".astro/", "node_modules/", "scripts/__pycache__/")
+          names = subprocess.check_output(["git", "diff", "--name-only", "-z"]).decode().split("\0")
+          generated = [name for name in names if name.startswith(prefixes) or name in {"public/sitemap.xml", "package-lock.json"}]
+          if generated:
+              subprocess.run(["git", "restore", "--worktree", "--", *generated], check=True)
+          subprocess.run(["git", "clean", "-fd", "--", "dist/", ".astro/", "node_modules/", "scripts/__pycache__/"], check=True)
+          PY
           for attempt in 1 2 3; do git pull --rebase origin main && git push && break; if [ "$attempt" -eq 3 ]; then exit 1; fi; sleep 3; done
       - name: Deploy generated article
         if: steps.quality.outputs.eligible == 'true'

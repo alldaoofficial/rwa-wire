@@ -23,6 +23,12 @@ Visual browser verification was unavailable in the execution environment; genera
 
 ## Extending coverage
 
+Regular translation handoff: the registered article collection now automatically supplies static routes, language alternates, sitemap entries, homepage destinations and news listings. A completed translation therefore changes only `src/i18n/articles.json`; do not maintain parallel manual URL lists. `scripts/verify-translations.mjs` checks complete German/Spanish/French content, original article category/date, existing English source files and HTTPS source links retained from the original before every build.
+
+The recurring translation task reads current main and selects up to two already-public, source-reviewed news/research articles (prefer the last 72 hours and the highest editorial relevance). It translates the checked English text, preserving numbers, dates, attribution, limitations, source URLs and corrections. It never reviews or publishes new English discoveries, approves social distribution, changes newsletter consent, or activates paid APIs. Incomplete translations must not be added to the registry. Use a blob-SHA guard when updating, verify the deployment and avoid routine notifications when nothing changes.
+
+Optional `sourceSha256` records the hash of the English MDX bytes used for translation. The task checks existing hashes to refresh translations after a material English-source correction. This is a record of the source version, not a claim of independent human proofreading.
+
 Second rollout: compact localized guides to tokenized US Treasuries and tokenized stocks, complete localized versions of the Koscom showcase report (13 October 2026) and IMF research discussion (11 October 2026), and localized news indexes. Each keeps its English source date, original link and applicable update date. News source links and the IMF correction are retained. Condensed guides are explicitly labeled; no claim of full verbatim translation is made.
 
 The homepage prefers available translated headlines and destinations while clearly labeling English fallback articles. Localized news indexes contain only completed translations, with an English link for full ongoing coverage. New discoveries are not automatically translated or marked reviewed by this change.

@@ -1,6 +1,7 @@
+import articles from "./articles.json";
 export const languages = { en: "English", de: "Deutsch", es: "Español", fr: "Français" } as const;
 export type Language = keyof typeof languages;
-export const translatedPaths = ["/", "/learn/rwa-crypto-explained/", "/newsletter/", "/bitunix/", "/news/", "/tokenization/tokenized-treasuries-explained/", "/rwa/tokenized-stocks-explained/", "/institutions/koscom-token-securities-platform-korea-fintech-week-2026/", "/news/imf-deputy-director-says-tokenized-securities-should-settle-in-central-bank-money-not-stablecoins/"] as const;
+export const translatedPaths: readonly string[] = ["/", "/learn/rwa-crypto-explained/", "/newsletter/", "/bitunix/", "/news/", ...Object.values(articles).map(article => article.path)];
 export function languageOf(path: string): Language {
   const code = path.split("/")[1];
   return code === "de" || code === "es" || code === "fr" ? code : "en";
