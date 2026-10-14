@@ -1,0 +1,10 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import NewsletterSignup from "@/components/NewsletterSignup.astro";
+import copy from "@/i18n/copy.json";
+import {TELEGRAM_URL} from "@/config/site";
+export function getStaticPaths(){return ["de","es","fr"].map(lang=>({params:{lang}}));}
+const lang=Astro.params.lang as "de"|"es"|"fr"; const c=copy[lang];
+const enabled=import.meta.env.PUBLIC_NEWSLETTER_ENABLED==='true' && Boolean(import.meta.env.PUBLIC_TURNSTILE_SITE_KEY);
+---
+<BaseLayout title={`${c.newsletter} — RWA Wire`} description={c.email.intro}><div class="wire-container max-w-content py-12"><h1 class="font-serif text-4xl text-ink">RWA Wire {c.newsletter}</h1><p class="mt-5 mb-8 text-sm leading-7 text-ink-muted">{c.newsletterNote}</p>{enabled ? <NewsletterSignup placement="newsletter-page" /> : <p class="text-ink-muted">{c.newsletterOff} <a href={TELEGRAM_URL} class="text-wire">Telegram →</a></p>}</div></BaseLayout>

@@ -14,6 +14,11 @@ const staticPaths = [
   "/tools/leverage-calculator/", "/tools/trading-fee-calculator/"
 ];
 
+for (const lang of ["de", "es", "fr"]) {
+  for (const suffix of ["/", "/learn/rwa-crypto-explained/", "/newsletter/", "/bitunix/"]) staticPaths.push(`/${lang}${suffix}`);
+}
+staticPaths.push("/newsletter/", "/bitunix/");
+
 const urls = new Set(staticPaths.map(p => BASE + p));
 for (const file of fs.readdirSync(ARTICLES).filter(f => f.endsWith(".mdx"))) {
   const raw = fs.readFileSync(path.join(ARTICLES, file), "utf8");

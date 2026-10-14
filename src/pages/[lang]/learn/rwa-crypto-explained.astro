@@ -1,0 +1,8 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import guides from "@/i18n/guides.json";
+import copy from "@/i18n/copy.json";
+export function getStaticPaths(){return ["de","es","fr"].map(lang=>({params:{lang}}));}
+const lang=Astro.params.lang as "de"|"es"|"fr"; const g=guides[lang]; const c=copy[lang];
+---
+<BaseLayout title={g.rwaTitle} description={g.rwaIntro}><article class="wire-container py-12 sm:py-16"><div class="mx-auto max-w-3xl"><p class="eyebrow text-wire">RWA Wire // {c.basics}</p><h1 class="mt-4 font-serif text-4xl leading-tight text-ink sm:text-5xl">{g.rwaTitle}</h1><p class="mt-6 text-lg leading-8 text-ink-muted">{g.rwaIntro}</p>{g.rwaSections.map(([heading,...paragraphs])=><section class="mt-10"><h2 class="font-serif text-2xl text-ink">{heading}</h2>{paragraphs.map(text=><p class="mt-4 leading-8 text-ink-muted">{text}</p>)}</section>)}<div class="mt-12 border-t border-line pt-6"><a href="/learn/rwa-crypto-explained/" lang="en" class="text-wire">English original →</a></div></div></article></BaseLayout>

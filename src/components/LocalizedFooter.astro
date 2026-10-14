@@ -1,0 +1,9 @@
+---
+import {languageOf} from "@/i18n/routes";
+import copy from "@/i18n/copy.json";
+import {FOOTER_LINKS, TELEGRAM_URL, X_URL} from "@/config/site";
+import {sitePath} from "@/utils/paths";
+const lang=languageOf(Astro.url.pathname);
+const names={de:["Über uns","Kontakt","Datenschutz","Nutzungsbedingungen","Affiliate-Hinweis"],es:["Quiénes somos","Contacto","Privacidad","Condiciones","Afiliación"],fr:["À propos","Contact","Confidentialité","Conditions","Affiliation"]};
+---
+{lang!=="en" && <footer class="border-t border-line bg-surface"><div class="wire-container py-10"><p class="font-serif text-xl text-ink">RWA Wire</p><p class="mt-3 max-w-3xl text-sm leading-6 text-ink-muted">{copy[lang].footer}</p><p class="mt-5 text-xs text-ink-muted">{copy[lang].legal}</p><nav class="mt-3 flex flex-wrap gap-4">{FOOTER_LINKS.map((link,i)=><a href={sitePath(link.href)} lang="en" class="text-sm text-ink-muted underline">{names[lang][i]}</a>)}</nav><div class="mt-5 flex gap-4"><a href={TELEGRAM_URL} rel="noopener noreferrer" target="_blank" class="text-wire">Telegram</a><a href={X_URL} rel="noopener noreferrer" target="_blank" class="text-wire">X</a></div><p class="mt-6 text-xs text-ink-muted">© {new Date().getFullYear()} RWA Wire</p></div></footer>}
