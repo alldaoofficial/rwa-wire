@@ -299,6 +299,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".mdx"] };
+"federated-hermes-and-prometheum-plan-tokenized-fund-distribution.mdx": {
+	id: "federated-hermes-and-prometheum-plan-tokenized-fund-distribution.mdx";
+  slug: "federated-hermes-and-prometheum-plan-tokenized-fund-distribution";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".mdx"] };
 "figure-explained.mdx": {
 	id: "figure-explained.mdx";
   slug: "figure-explained";
