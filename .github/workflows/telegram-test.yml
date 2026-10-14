@@ -113,7 +113,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if [ "$PACKAGE_TYPE" = "market_pulse" ]; then git add publish/market-pulse-telegram-posted/; git commit -m "Mark Market Pulse Telegram post published"; else mkdir -p publish/posted; printf '{\n  "id": "%s",\n  "status": "published",\n  "source_manifest": "%s"\n}\n' "$APPROVED_PUBLISH_ID" "$MANIFEST_PATH" > "publish/posted/${APPROVED_PUBLISH_ID}.json"; git add "publish/posted/${APPROVED_PUBLISH_ID}.json" "publish/distribution/${APPROVED_PUBLISH_ID}.json"; git commit -m "Publish distribution package for ${APPROVED_PUBLISH_ID}"; fi
-          for attempt in 1 2 3; do git pull --rebase origin main && git push && exit 0; sleep 3; done; exit 1
+          for attempt in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && exit 0; sleep 3; done; exit 1
       - name: Dispatch X publisher for news
         if: env.PACKAGE_TYPE == 'news'
         env:
