@@ -28,5 +28,11 @@
     "requiresSourceReview": true,
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedAt": "2026-10-14T10:01:59.259Z",
+    "reason": "Same October 13 BNY/Citadel Treasury-to-triparty-repo transaction as the primary-source reviewed 2026-10-14 BNY brief; do not generate a second article."
   }
 }
