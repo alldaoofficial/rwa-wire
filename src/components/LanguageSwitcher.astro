@@ -1,0 +1,17 @@
+---
+import { languages, languageOf, alternates, localizedPath } from "@/i18n/routes";
+import type { Language } from "@/i18n/routes";
+import copy from "@/i18n/copy.json";
+import { sitePath } from "@/utils/paths";
+const lang = languageOf(Astro.url.pathname);
+const available = alternates(Astro.url.pathname);
+const links = available.length ? available : (Object.keys(languages) as Language[]).map(code => ({lang:code,path:localizedPath("/",code)}));
+const c = copy[lang];
+---
+<details class="relative shrink-0">
+  <summary class="cursor-pointer list-none border border-line px-2 py-2 text-xs text-ink [&::-webkit-details-marker]:hidden" aria-label={c.language}>{lang.toUpperCase()} <span aria-hidden="true">▾</span></summary>
+  <nav aria-label={c.language} class="absolute right-0 z-[80] mt-2 w-44 border border-line bg-[#080A0D] p-2 shadow-xl">
+    {links.map(link => <a href={sitePath(link.path)} hreflang={link.lang} lang={link.lang} aria-current={lang===link.lang && available.length ? "page" : undefined} class:list={["block px-3 py-2 text-sm hover:text-wire",lang===link.lang?"text-wire":"text-ink"]}>{languages[link.lang]}</a>)}
+    {!available.length && <p class="px-3 py-2 text-xs leading-5 text-ink-muted">{c.fallback}</p>}
+  </nav>
+</details>

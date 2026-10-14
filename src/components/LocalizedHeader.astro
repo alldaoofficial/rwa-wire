@@ -1,0 +1,17 @@
+---
+import Logo from "@/components/Logo.astro";
+import LanguageSwitcher from "@/components/LanguageSwitcher.astro";
+import {languageOf, localizedPath} from "@/i18n/routes";
+import {sitePath} from "@/utils/paths";
+import copy from "@/i18n/copy.json";
+const lang=languageOf(Astro.url.pathname); const c=copy[lang];
+const links=[{label:c.home,path:"/"},{label:c.basics,path:"/learn/rwa-crypto-explained/"},{label:c.newsletter,path:"/newsletter/"},{label:c.guide,path:"/bitunix/"}];
+---
+<header class="sticky top-0 z-50 border-b border-line bg-[#080A0D]">
+  <div class="wire-container py-2 text-[10px] text-ink-muted">{c.tagline}</div>
+  <div class="wire-container flex items-center justify-between gap-3 py-3">
+    <a href={sitePath(localizedPath("/",lang))}><Logo size="md" /></a>
+    <nav class="hidden items-center gap-5 lg:flex" aria-label={c.menu}>{links.map(link=><a href={sitePath(localizedPath(link.path,lang))} class="text-sm text-ink-muted hover:text-wire">{link.label}</a>)}</nav>
+    <div class="flex items-center gap-2"><LanguageSwitcher /><details class="relative lg:hidden"><summary class="cursor-pointer border border-line p-2 text-xs text-ink">{c.menu}</summary><nav class="absolute right-0 z-[70] mt-2 w-60 border border-line bg-[#080A0D] p-3 shadow-xl" aria-label={c.menu}>{links.map(link=><a href={sitePath(localizedPath(link.path,lang))} class="block p-3 text-sm text-ink hover:text-wire">{link.label}</a>)}</nav></details></div>
+  </div>
+</header>

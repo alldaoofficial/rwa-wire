@@ -1,24 +1,27 @@
 ---
+import {languageOf} from '@/i18n/routes';
+import copy from '@/i18n/copy.json';
 import { sitePath } from '@/utils/paths';
 interface Props { placement: 'homepage-newsletter' | 'article-newsletter' | 'newsletter-page'; }
 const { placement } = Astro.props;
+const c=copy[languageOf(Astro.url.pathname)].email;
 const enabled = import.meta.env.PUBLIC_NEWSLETTER_ENABLED === 'true' && Boolean(import.meta.env.PUBLIC_TURNSTILE_SITE_KEY);
 const siteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
 const endpoint = 'https://dqeakkrsbgxnexucuyld.supabase.co/functions/v1/newsletter';
 ---
 {enabled && <section class="border border-line bg-surface p-6 sm:p-8" aria-labelledby={`${placement}-title`}>
-  <p class="data-label text-wire">RWA Wire // In your inbox</p>
-  <h2 id={`${placement}-title`} class="mt-2 font-serif text-2xl text-ink">Keep up with the tokenized economy.</h2>
-  <p class="mt-3 text-sm leading-6 text-ink-muted">News, research and explainers from RWA Wire. Confirm your email to subscribe. Unsubscribe whenever you like.</p>
-  <form data-newsletter-form data-placement={placement} data-endpoint={endpoint} class="mt-5 space-y-4">
-    <label class="block text-sm text-ink" for={`${placement}-email`}>Email address</label>
+  <p class="data-label text-wire">{c.eyebrow}</p>
+  <h2 id={`${placement}-title`} class="mt-2 font-serif text-2xl text-ink">{c.title}</h2>
+  <p class="mt-3 text-sm leading-6 text-ink-muted">{c.intro}</p>
+  <form data-newsletter-form data-placement={placement} data-messages={JSON.stringify(c)} data-endpoint={endpoint} class="mt-5 space-y-4">
+    <label class="block text-sm text-ink" for={`${placement}-email`}>{c.label}</label>
     <input id={`${placement}-email`} name="email" type="email" required maxlength="254" autocomplete="email" class="w-full border border-line bg-bg p-3 text-ink focus:border-wire" />
     <div hidden aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off" /></label></div>
-    <label class="flex items-start gap-3 text-xs leading-5 text-ink-muted"><input name="consent" type="checkbox" required class="mt-1" /><span>I agree to receive the weekly RWA Wire newsletter by email on Fridays. See our <a href={sitePath('/privacy/')} class="text-wire underline">privacy notice</a>.</span></label>
+    <label class="flex items-start gap-3 text-xs leading-5 text-ink-muted"><input name="consent" type="checkbox" required class="mt-1" /><span>{c.consent} <a href={sitePath('/privacy/')} class="text-wire underline">{c.privacy}</a>.</span></label>
     <div data-newsletter-captcha data-sitekey={siteKey}></div>
-    <button type="submit" class="bg-wire px-5 py-3 text-sm font-semibold text-bg disabled:opacity-50">Subscribe</button>
+    <button type="submit" class="bg-wire px-5 py-3 text-sm font-semibold text-bg disabled:opacity-50">{c.button}</button>
     <p data-newsletter-status role="status" aria-live="polite" class="text-sm text-ink-muted"></p>
-    <noscript><p class="text-sm text-ink-muted">Please enable JavaScript to use this secure signup form.</p></noscript>
+    <noscript><p class="text-sm text-ink-muted">{c.noscript}</p></noscript>
   </form>
 </section>}
 <script>
@@ -39,9 +42,10 @@ if (forms.length) {
     event.preventDefault();
     const button = form.querySelector<HTMLButtonElement>('button[type=submit]')!;
     const status = form.querySelector<HTMLElement>('[data-newsletter-status]')!;
+    const messages = JSON.parse(form.dataset.messages || '{}') as Record<string,string>;
     if (button.disabled || !form.reportValidity()) return;
-    if (!form.dataset.captcha) {status.textContent='Please complete the security check.'; return;}
-    button.disabled=true; status.textContent='Sending confirmation…';
+    if (!form.dataset.captcha) {status.textContent=messages.captcha; return;}
+    button.disabled=true; status.textContent=messages.sending;
     const placement = form.dataset.placement || 'newsletter-page';
     win.rwaAnalytics?.track('newsletter_submit','newsletter',{placement});
     try {
@@ -49,10 +53,10 @@ if (forms.length) {
       const result = await fetch(form.dataset.endpoint!, {method:'POST', headers:{'content-type':'application/json'}, credentials:'omit', signal:AbortSignal.timeout(15000), body:JSON.stringify({action:'subscribe', email:fields.get('email'), consent:fields.get('consent')==='on', website:fields.get('website'), placement, captcha:form.dataset.captcha})});
       const data = await result.json();
       if (!result.ok || data.code !== 'check_email') throw new Error(result.status===429?'rate_limited':'unavailable');
-      status.textContent='If confirmation is needed, an email is on its way. Check your inbox and spam folder. You are subscribed only after confirming.';
+      status.textContent=messages.pending;
       form.reset(); win.rwaAnalytics?.track('newsletter_pending','newsletter',{placement});
     } catch(error) {
-      status.textContent=error instanceof Error && error.message==='rate_limited'?'Too many requests. Please try again tomorrow.':'Signup is temporarily unavailable. Please try again later.';
+      status.textContent=error instanceof Error && error.message==='rate_limited'?messages.rate:messages.error;
       win.rwaAnalytics?.track('newsletter_error','newsletter',{placement});
     } finally {button.disabled=false; delete form.dataset.captcha; if(form.dataset.widget) win.turnstile?.reset(form.dataset.widget);}
   }));

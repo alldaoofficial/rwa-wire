@@ -1,4 +1,8 @@
 ---
+import LocalizedHeader from "@/components/LocalizedHeader.astro";
+import LocalizedFooter from "@/components/LocalizedFooter.astro";
+import {languageOf} from "@/i18n/routes";
+import copy from "@/i18n/copy.json";
 import Header from "@/components/Header.astro";
 import MarketTicker from "@/components/MarketTicker.astro";
 import Footer from "@/components/Footer.astro";
@@ -16,6 +20,7 @@ interface Props {
   noindex?: boolean;
 }
 const { title, description, image, type, publishedTime, modifiedTime, noindex } = Astro.props;
+const lang = languageOf(Astro.url.pathname);
 const organizationLd = {
   "@context": "https://schema.org",
   "@type": "NewsMediaOrganization",
@@ -27,7 +32,7 @@ const organizationLd = {
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang={lang} class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -53,10 +58,10 @@ const organizationLd = {
     <script type="application/ld+json" set:html={JSON.stringify(organizationLd)} />
   </head>
   <body class="flex min-h-screen flex-col">
-    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded focus:bg-wire focus:px-4 focus:py-2 focus:text-bg">Skip to content</a>
-    <Header />
-    <MarketTicker />
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded focus:bg-wire focus:px-4 focus:py-2 focus:text-bg">{copy[lang].skip}</a>
+    {lang === "en" ? <Header /> : <LocalizedHeader />}
+    {lang === "en" && <MarketTicker />}
     <main id="main" class="flex-1"><slot /></main>
-    <Footer />
+    {lang === "en" ? <Footer /> : <LocalizedFooter />}
   </body>
 </html>
