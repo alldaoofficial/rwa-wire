@@ -1,0 +1,91 @@
+{
+  "title": "BIS Project Aurum Phase 2 Tests Privacy-Preserving Digital Cash",
+  "description": "A BIS Innovation Hub prototype combines cryptographic privacy tools with configurable compliance controls for digital cash; it is a research proof of concept, not a live payment system.",
+  "why_it_matters": "The prototype gives central banks a concrete architecture for testing whether digital cash can limit routine disclosure of payment data without removing compliance safeguards.",
+  "pubDate": "2026-10-13",
+  "category": "institutions",
+  "tags": [
+    "CBDC",
+    "Digital Cash",
+    "Institutions",
+    "BIS Innovation Hub"
+  ],
+  "keyTakeaways": [
+    "Project Aurum Phase 2 is an exploratory proof of concept rather than a production launch.",
+    "The prototype combines encryption, BBS+ signatures, pseudonymous ownership and zero-knowledge proofs.",
+    "BIS says stronger privacy can introduce trade-offs in performance, programmability and operational complexity."
+  ],
+  "body": "The BIS Innovation Hub published Project Aurum Phase 2 on October 13. The research prototype builds on Aurum's two-tier digital-cash architecture and adds privacy-enhancing technologies at the retail layer. It combines encryption, BBS+ signatures, pseudonym-based ownership and zero-knowledge proofs with configurable compliance mechanisms.\n\nBIS presents the work as an exploratory proof of concept, not a deployed central bank digital currency or public payment service. The project examines a middle ground between complete anonymity and full transaction transparency. Its design separates responsibilities and data access while retaining payment-integrity controls.\n\nThe report also identifies trade-offs: stronger privacy may affect programmability, performance and operational complexity. The result is therefore a technical reference for further experimentation and policy discussion, not evidence that a central bank has approved or launched this architecture.",
+  "sources": [
+    {
+      "name": "BIS Innovation Hub — Project Aurum 2.0",
+      "url": "https://www.bis.org/project/aurum-2"
+    },
+    {
+      "name": "BIS Innovation Hub — Project Aurum Phase 2 report",
+      "url": "https://www.bis.org/publications/project-aurum-phase-2-exploring-privacy-enhancing-technologies-digital-cash"
+    }
+  ],
+  "newsWatch": {
+    "score": 6,
+    "priority": "important",
+    "sourceTrust": "primary",
+    "discoveredAt": "2026-10-14T13:38:00Z",
+    "discoveryMode": "agent-primary",
+    "originalDiscoveryTitle": "Project Aurum Phase 2: exploring privacy-enhancing technologies for digital cash",
+    "originalDiscoverySource": "Bank for International Settlements",
+    "requiresSourceReview": true,
+    "autoPublishEligible": false,
+    "contentStatus": "source-reviewed"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-14T13:38:00Z",
+    "sources": [
+      {
+        "url": "https://www.bis.org/project/aurum-2",
+        "publishedAt": "2026-10-13",
+        "checkedAt": "2026-10-14T13:38:00Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://www.bis.org/publications/project-aurum-phase-2-exploring-privacy-enhancing-technologies-digital-cash",
+        "publishedAt": "2026-10-13",
+        "checkedAt": "2026-10-14T13:38:00Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Project Aurum Phase 2 produced a research prototype rather than a live payment deployment.",
+        "sourceUrl": "https://www.bis.org/project/aurum-2",
+        "anchor": "exploratory proof of concept"
+      },
+      {
+        "claim": "The design uses BBS+ signatures as one of its privacy-enhancing technologies.",
+        "sourceUrl": "https://www.bis.org/project/aurum-2",
+        "anchor": "BBS+ signatures"
+      },
+      {
+        "claim": "The prototype also uses zero-knowledge proofs.",
+        "sourceUrl": "https://www.bis.org/project/aurum-2",
+        "anchor": "zero-knowledge proofs"
+      },
+      {
+        "claim": "Privacy features are implemented in the retail layer alongside compliance controls.",
+        "sourceUrl": "https://www.bis.org/project/aurum-2",
+        "anchor": "retail layer"
+      },
+      {
+        "claim": "BIS published the Phase 2 report on October 13, 2026.",
+        "sourceUrl": "https://www.bis.org/publications/project-aurum-phase-2-exploring-privacy-enhancing-technologies-digital-cash",
+        "anchor": "13 October 2026"
+      }
+    ],
+    "contentSha256": "ba43c23b1a0c32a7e044e06640851789fdfe894b26d051e76c0be10d01c23e50"
+  }
+}
