@@ -14,8 +14,9 @@ const staticPaths = [
   "/tools/leverage-calculator/", "/tools/trading-fee-calculator/"
 ];
 
+const translations = JSON.parse(fs.readFileSync(path.join(ROOT, "src/i18n/articles.json"), "utf8"));
 for (const lang of ["de", "es", "fr"]) {
-  for (const suffix of ["/", "/learn/rwa-crypto-explained/", "/newsletter/", "/bitunix/", "/news/", "/tokenization/tokenized-treasuries-explained/", "/rwa/tokenized-stocks-explained/", "/institutions/koscom-token-securities-platform-korea-fintech-week-2026/", "/news/imf-deputy-director-says-tokenized-securities-should-settle-in-central-bank-money-not-stablecoins/"]) staticPaths.push(`/${lang}${suffix}`);
+  for (const suffix of ["/", "/learn/rwa-crypto-explained/", "/newsletter/", "/bitunix/", "/news/", ...Object.values(translations).map(article => article.path)]) staticPaths.push(`/${lang}${suffix}`);
 }
 staticPaths.push("/newsletter/", "/bitunix/");
 

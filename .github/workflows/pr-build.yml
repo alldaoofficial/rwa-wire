@@ -60,6 +60,9 @@ jobs:
       - name: Verify social destinations
         run: python3 -m unittest discover -s tests -p "test_social_links.py"
 
+      - name: Verify selective story commits under concurrent builds
+        run: python3 -m unittest discover -s tests -p "test_candidate_commit.py"
+
       - name: Build and type-check Astro site
         run: npm run build
 

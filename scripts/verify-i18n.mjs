@@ -3,7 +3,8 @@ import path from "node:path";
 import assert from "node:assert/strict";
 
 // Integration checks against built pages, independent of the routing helpers.
-const paths = ["/", "/learn/rwa-crypto-explained/", "/newsletter/", "/bitunix/", "/news/", "/tokenization/tokenized-treasuries-explained/", "/rwa/tokenized-stocks-explained/", "/institutions/koscom-token-securities-platform-korea-fintech-week-2026/", "/news/imf-deputy-director-says-tokenized-securities-should-settle-in-central-bank-money-not-stablecoins/"];
+const translations = JSON.parse(fs.readFileSync("src/i18n/articles.json", "utf8"));
+const paths = ["/", "/learn/rwa-crypto-explained/", "/newsletter/", "/bitunix/", "/news/", ...Object.values(translations).map(article => article.path)];
 const langs = ["en", "de", "es", "fr"];
 const sitemap = fs.readFileSync("dist/sitemap.xml", "utf8");
 const fileFor = route => path.join("dist", route, "index.html");
