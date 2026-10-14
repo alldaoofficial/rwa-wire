@@ -446,5 +446,66 @@
       ]
     },
     "sourceSha256": "101ce49b442b8fa458034b1abb4c889b80292238730368b73c4da93f87fbf072"
+  },
+  "seoul-exchange-2027-framework": {
+    "path": "/institutions/seoul-exchange-prepares-unlisted-share-token-trading-2027/",
+    "date": "2026-10-08",
+    "kind": "news",
+    "sources": [
+      [
+        "Financial Services Commission of Korea",
+        "https://www.fsc.go.kr/no010101/87650"
+      ],
+      [
+        "Newsis",
+        "https://files.newsis.com/view/NISX20261008_0003819499"
+      ]
+    ],
+    "de": {
+      "title": "Seoul Exchange bereitet Handel mit tokenisierten nicht börsennotierten Aktien für Koreas Rahmen von 2027 vor",
+      "description": "Seoul Exchange bemüht sich nach eigenen Angaben um eine Zulassung für die OTC-Vermittlung und bereitet den Handel mit tokenisierten nicht börsennotierten Aktien für die erste Phase von Koreas Rahmen im Februar 2027 vor.",
+      "sections": [
+        [
+          "Vorbereitung statt laufender Handelsbetrieb",
+          "Seoul Exchange teilte am 8. Oktober mit, den Handel mit tokenisierten nicht börsennotierten Aktien unterstützen zu wollen, während Südkorea sich der ersten Phase seines Rahmens für tokenisierte Wertpapiere nähert. Das Unternehmen befindet sich noch im Zulassungsverfahren für die außerbörsliche Vermittlung. Es handelt sich daher um einen geplanten Start, nicht um einen bereits verfügbaren Handelsdienst."
+        ],
+        [
+          "Regulatorischer Kontext",
+          "Der im September vorgestellte politische Fahrplan der Financial Services Commission sieht die treuhandbasierte Tokenisierung nicht börsennotierter Aktien in der ersten Phase vor, die für Februar 2027 geplant ist. Bei der vorgeschlagenen hybriden Struktur würde die bestehende Infrastruktur für elektronische Wertpapiere weiterhin die Aktienrechte verwalten, während ein Register für tokenisierte Wertpapiere den Anspruch des Treuhandbegünstigten erfasst.",
+          "Die Aufsichtsbehörde erklärte außerdem, keine separate Zulassung ausschließlich für tokenisierte Wertpapiere zu planen. Wertpapierfirmen und außerbörsliche Märkte dürfen solche Instrumente nur innerhalb ihrer bestehenden Zulassung behandeln. Von OTC-Handelsplätzen wird erwartet, vor der Einführung einer Unterstützung für tokenisierte Wertpapiere den Financial Supervisory Service zu konsultieren. Seoul Exchange will nach eigenen Angaben seine Zulassungsarbeiten abschließen und zusammen mit Wertpapierfirmen rechtzeitig die Vertriebsinfrastruktur für den Rahmen vorbereiten."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Seoul Exchange prepara la negociación de acciones no cotizadas tokenizadas para el marco coreano de 2027",
+      "description": "Seoul Exchange afirma que está tramitando una licencia de intermediación extrabursátil y preparando la negociación de acciones no cotizadas tokenizadas para la primera fase del marco coreano en febrero de 2027.",
+      "sections": [
+        [
+          "Preparativos, no un servicio de negociación en funcionamiento",
+          "Seoul Exchange anunció el 8 de octubre que está preparando el soporte para la negociación de acciones no cotizadas tokenizadas, mientras Corea del Sur se acerca a la primera fase de su marco para valores tokenizados. La empresa sigue tramitando la autorización para la intermediación extrabursátil, por lo que se trata de un plan de lanzamiento y no de un servicio de negociación ya disponible."
+        ],
+        [
+          "Contexto regulatorio",
+          "La hoja de ruta de la Financial Services Commission publicada en septiembre sitúa la tokenización de acciones no cotizadas mediante una estructura fiduciaria en la primera fase, prevista para febrero de 2027. Según la estructura híbrida propuesta, la infraestructura existente de valores electrónicos seguiría gestionando los derechos sobre las acciones, mientras un registro de valores tokenizados recogería el derecho del beneficiario de la estructura fiduciaria.",
+          "El regulador también indicó que no prevé una licencia independiente exclusivamente para valores tokenizados. Las firmas de valores y los mercados extrabursátiles solo podrán operar con ellos dentro del alcance de sus autorizaciones existentes. Se espera que los mercados extrabursátiles consulten al Financial Supervisory Service antes de incorporar el soporte para valores tokenizados. Seoul Exchange afirma que pretende completar sus trámites de autorización y preparar la infraestructura de distribución junto con firmas de valores a tiempo para el marco."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Seoul Exchange prépare la négociation d’actions non cotées tokenisées pour le cadre coréen de 2027",
+      "description": "Seoul Exchange indique demander une autorisation de courtage de gré à gré et préparer la négociation d’actions non cotées tokenisées pour la première phase du cadre coréen en février 2027.",
+      "sections": [
+        [
+          "Des préparatifs, pas un service de négociation déjà ouvert",
+          "Seoul Exchange a annoncé le 8 octobre préparer la prise en charge de la négociation d’actions non cotées tokenisées, alors que la Corée du Sud approche de la première phase de son cadre pour les titres tokenisés. L’entreprise est encore engagée dans la procédure d’autorisation pour le courtage de gré à gré : il s’agit donc d’un projet de lancement, et non d’un service de négociation déjà opérationnel."
+        ],
+        [
+          "Contexte réglementaire",
+          "La feuille de route de la Financial Services Commission publiée en septembre place la tokenisation d’actions non cotées au moyen d’une structure fiduciaire dans la première phase, prévue pour février 2027. Selon la structure hybride proposée, l’infrastructure existante des titres électroniques continuerait de gérer les droits sur les actions, tandis qu’un registre de titres tokenisés consignerait les droits du bénéficiaire de la structure fiduciaire.",
+          "Le régulateur a également indiqué ne pas prévoir d’autorisation distincte uniquement pour les titres tokenisés. Les sociétés de valeurs mobilières et les marchés de gré à gré ne pourront les prendre en charge que dans le périmètre de leurs autorisations existantes. Les plateformes de gré à gré devraient consulter le Financial Supervisory Service avant d’ajouter la prise en charge des titres tokenisés. Seoul Exchange indique vouloir achever ses démarches d’autorisation et préparer, avec des sociétés de valeurs mobilières, l’infrastructure de distribution à temps pour le cadre."
+        ]
+      ]
+    },
+    "sourceSha256": "6cd8925ae9a6f17a7cb06ba130496c3212374d3ecf02169031c7e4567fc15f4e"
   }
 }
