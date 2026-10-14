@@ -63,6 +63,9 @@ jobs:
       - name: Verify selective story commits under concurrent builds
         run: python3 -m unittest discover -s tests -p "test_candidate_commit.py"
 
+      - name: Verify source-reviewed automatic social routing
+        run: python3 -m unittest discover -s tests -p "test_verified_autopublish.py"
+
       - name: Build and type-check Astro site
         run: npm run build
 
