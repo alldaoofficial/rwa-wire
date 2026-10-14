@@ -1,27 +1,22 @@
 {
-  "title": "Federated Hermes to Issue Tokenized Funds",
-  "description": "Federated Hermes to Issue Tokenized Funds Markets Media",
-  "why_it_matters": "",
-  "pubDate": "2026-10-14",
-  "category": "news",
+  "title": "Federated Hermes and Prometheum Plan Tokenized Fund Distribution",
+  "description": "The partners target a first product in Q1 2027, with distribution and servicing assigned to separate Prometheum subsidiaries.",
+  "why_it_matters": "The proposal connects fund issuance with brokerage access and custody, making the distribution arrangement as important as the blockchain representation.",
+  "pubDate": "2026-10-13",
+  "category": "institutions",
   "tags": [
     "Tokenization",
     "Institutions",
     "News Watch"
   ],
   "keyTakeaways": [
-    "Federated Hermes to Issue Tokenized Funds Markets Media",
-    ""
+    "First product targeted for Q1 2027."
   ],
-  "body": "Federated Hermes to Issue Tokenized Funds Markets Media",
+  "body": "Federated Hermes and Prometheum announced a partnership on October 13 to bring tokenized fund products through the latter's brokerage infrastructure. Their first product is expected in the first quarter of 2027; the announcement does not describe an already available fund.\n\nProFinancial is assigned distribution responsibilities. Prometheum Capital is expected to handle custody, clearing and settlement for customers and provide access for introducing broker-dealers through its correspondent platform.\n\nThe companies describe an approach intended to reach investors through existing brokerage accounts and adviser relationships. The proposed launch date remains forward-looking rather than a confirmed start of trading.",
   "sources": [
     {
-      "name": "Markets Media",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNS2p4SkZSd0JPVU1aNi1ja2xmbUtoQzcxQ0w0ZzNsOGpfZC05WWZQSXI4SjFVa1pvbTFkTzkxT0Nrc3paODFTQjYwMlRZalJJYVhLWTlTenpZd2dHSTlyRmRCckVkY2M5NDZ0cmc1ZVA3WjAxZk1aWk9nQlpDRlVsRmhiLUJUcTgtQjZTazBQRjhJVjZTVEpqRFJpSEY?oc=5"
-    },
-    {
-      "name": "www.marketscreener.com",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQRDk1cVhTOTlpWVFaek85dHlndUZ1SWJXVFhoSUxOY0dBSWFVdVQyNFl6OVdtR2czdm5FaXBHcTVxRHEtRGNUS1U5ZUFDNlhZZ3hjblR0OWNRbmNBLVhJQVdVUGVtZmgtN3BvaTg2WHhJUXhFMGtYSDYzem51S2xXdGp2MHRUWU04eG5TdFU3SEt3XzBRZDkwSDNfRFNsLVRvMmpOMzRYWlhVV1VXVmowWEhGS3BZdkhadGEwcTZyYU1UTS1ITXRUamtPaUNEVzdzWU53WkNncEdMbTktcFVGcVFzWWI?oc=5"
+      "name": "Prometheum",
+      "url": "https://www.prometheum.com/press-releases/prometheum-and-federated-hermes-announce-strategic-partnership-to-issue-tokenized-securities-funds"
     }
   ],
   "newsWatch": {
@@ -38,6 +33,39 @@
     ],
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment"
+    "contentStatus": "source-reviewed"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "sources": [
+      {
+        "url": "https://www.prometheum.com/press-releases/prometheum-and-federated-hermes-announce-strategic-partnership-to-issue-tokenized-securities-funds",
+        "publishedAt": "2026-10-13",
+        "kind": "primary",
+        "access": "full-text",
+        "checkedAt": "2026-10-14T09:52:49.793824+00:00"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "The firms expect their initial product in early 2027.",
+        "anchor": "Q1 2027",
+        "sourceUrl": "https://www.prometheum.com/press-releases/prometheum-and-federated-hermes-announce-strategic-partnership-to-issue-tokenized-securities-funds"
+      },
+      {
+        "claim": "ProFinancial is assigned distribution responsibilities under the announced partnership.",
+        "anchor": "support distribution",
+        "sourceUrl": "https://www.prometheum.com/press-releases/prometheum-and-federated-hermes-announce-strategic-partnership-to-issue-tokenized-securities-funds"
+      },
+      {
+        "claim": "Prometheum Capital is assigned custody, clearing and settlement functions.",
+        "anchor": "custody, clear, and settle",
+        "sourceUrl": "https://www.prometheum.com/press-releases/prometheum-and-federated-hermes-announce-strategic-partnership-to-issue-tokenized-securities-funds"
+      }
+    ],
+    "reviewedAt": "2026-10-14T09:52:49.793824+00:00",
+    "contentSha256": "3c0adb35839bbd861a445368891ebffe69a13a761634539cf86eb9668014a9d0"
   }
 }
