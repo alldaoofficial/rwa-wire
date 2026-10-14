@@ -1,27 +1,22 @@
 {
-  "title": "BNY, Citadel Securities Complete Triparty Repo Trade Using Tokenized US Treasuries",
-  "description": "BNY, Citadel Securities Complete Triparty Repo Trade Using Tokenized US Treasuries bloomingbit",
-  "why_it_matters": "",
-  "pubDate": "2026-10-14",
-  "category": "news",
+  "title": "BNY and Citadel Complete a Tokenized Treasury Repo Workflow",
+  "description": "A two-year note was recorded on BNY's private ledger, settled within minutes and then pledged for overnight financing, BNY says.",
+  "why_it_matters": "The reported sequence links asset acquisition to collateral funding, demonstrating an operational use beyond issuing or holding a blockchain token.",
+  "pubDate": "2026-10-13",
+  "category": "institutions",
   "tags": [
     "Tokenization",
     "Institutions",
     "News Watch"
   ],
   "keyTakeaways": [
-    "BNY, Citadel Securities Complete Triparty Repo Trade Using Tokenized US Treasuries bloomingbit",
-    ""
+    "Completed workflow; further cash capabilities remain planned."
   ],
-  "body": "BNY, Citadel Securities Complete Triparty Repo Trade Using Tokenized US Treasuries bloomingbit",
+  "body": "BNY announced on October 13 that it had completed a transaction with Citadel Securities involving a digital representation of a two-year US Treasury note. Citadel bought the note through BNY on Tradeweb, according to the bank's account.\n\nThe representation was recorded on BNY's private ledger and settlement took minutes. Citadel subsequently pledged the security in an overnight triparty repo, with BNY supplying cash.\n\nThe account demonstrates a connected purchase-and-financing sequence. It does not establish that every Treasury transaction can now settle continuously. BNY's additional digital cash and deposit capabilities remain plans, distinct from the completed transaction.",
   "sources": [
     {
-      "name": "bloomingbit",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE81cVBsQXdyTlFEVkN0Z2Q1bV9xUXl5Q3dsQWZucnE0Q05aRXJPNFNENXkyQ1JNeDB6ei1UVGE1ZU9oR0R5MXBxMENCeVM0emhZdGVKYg?oc=5"
-    },
-    {
-      "name": "www.marketscreener.com",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPZzhCLTV1Z0xvX3Z1US1mOXc5dFhJekxBbk56c1E0TEtUOUg2MXBoYWUzaGdYb2owWlFoNHVkSzRHTTRpUXdaUmZ0aUJaNUxTaFpfdkhRUDh5bnpXMjlWREJ1SmREUDNfa3QyV3lTS2ZxelhZRE9qMV92bVVEUGszTzZJUDhCVjNFU0ZFRGFySEdwR2tMeld0Q3JaX2M2VVJ2Q1dRRi15MExJcDBqOVk4WVN1Z0ZTY0ZGQkhHRUxnd041dXc3VXVUVjFYUVAzdVBxbzVhLTc5WnpDTlBTOVg1dlJRTQ?oc=5"
+      "name": "BNY",
+      "url": "https://www.bny.com/corporate/global/en/about-us/newsroom/press-release/bny-completes-tokenized-us-treasury-triparty-repo-workflow-with-citadel-securities.html"
     }
   ],
   "newsWatch": {
@@ -38,6 +33,39 @@
     ],
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment"
+    "contentStatus": "source-reviewed"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "sources": [
+      {
+        "url": "https://www.bny.com/corporate/global/en/about-us/newsroom/press-release/bny-completes-tokenized-us-treasury-triparty-repo-workflow-with-citadel-securities.html",
+        "publishedAt": "2026-10-13",
+        "kind": "primary",
+        "access": "full-text",
+        "checkedAt": "2026-10-14T09:52:49.794164+00:00"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Citadel purchased a two-year Treasury note through Tradeweb.",
+        "anchor": "2-year",
+        "sourceUrl": "https://www.bny.com/corporate/global/en/about-us/newsroom/press-release/bny-completes-tokenized-us-treasury-triparty-repo-workflow-with-citadel-securities.html"
+      },
+      {
+        "claim": "The tokenized representation was recorded on BNY's private ledger.",
+        "anchor": "private digital ledger",
+        "sourceUrl": "https://www.bny.com/corporate/global/en/about-us/newsroom/press-release/bny-completes-tokenized-us-treasury-triparty-repo-workflow-with-citadel-securities.html"
+      },
+      {
+        "claim": "The Treasury subsequently served as collateral for overnight financing.",
+        "anchor": "overnight triparty repo",
+        "sourceUrl": "https://www.bny.com/corporate/global/en/about-us/newsroom/press-release/bny-completes-tokenized-us-treasury-triparty-repo-workflow-with-citadel-securities.html"
+      }
+    ],
+    "reviewedAt": "2026-10-14T09:52:49.794164+00:00",
+    "contentSha256": "769aed9bcc2d3253cf6eabf19bdf9e067d9d97ccc3f9bb7ccd4b42f9050c9b39"
   }
 }
