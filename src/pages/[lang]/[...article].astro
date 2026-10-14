@@ -1,0 +1,28 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import articles from "@/i18n/articles.json";
+import {localizedPath} from "@/i18n/routes";
+export function getStaticPaths(){
+  return Object.keys(articles).flatMap(key => ["de","es","fr"].map(lang=>({params:{lang,article:articles[key as keyof typeof articles].path.replace(/^\/|\/$/g,"")},props:{key}})));
+}
+const lang=Astro.params.lang as "de"|"es"|"fr";
+const {key}=Astro.props as {key:keyof typeof articles};
+const article=articles[key]; const text=article[lang];
+const labels={
+ de:{guide:"Grundlagen",news:"Nachrichten",research:"Forschung",date:"Datum der englischen Fassung",updated:"Aktualisiert",note:"Kompakte, übersetzte Fassung des englischen Guides. Die ausführliche Fassung und ihre Quellen findest du im Original.",original:"Englisches Original",sources:"Quellen",more:"Weitere Nachrichten",related:"Weitere Grundlagen",scope:"Übersetzt aus der geprüften englischen Fassung. Aussagen und Einschränkungen beziehen sich auf das dort angegebene Datum."},
+ es:{guide:"Fundamentos",news:"Noticias",research:"Investigación",date:"Fecha de la versión inglesa",updated:"Actualizado",note:"Versión resumida y traducida de la guía inglesa. La versión completa y sus fuentes están en el original.",original:"Original en inglés",sources:"Fuentes",more:"Más noticias",related:"Más fundamentos",scope:"Traducción de la versión inglesa revisada. Las afirmaciones y limitaciones corresponden a la fecha indicada en ella."},
+ fr:{guide:"Comprendre",news:"Actualités",research:"Recherche",date:"Date de la version anglaise",updated:"Mis à jour",note:"Version condensée et traduite du guide anglais. La version complète et ses sources figurent dans l’original.",original:"Original anglais",sources:"Sources",more:"Autres actualités",related:"Autres guides",scope:"Traduction de la version anglaise vérifiée. Les affirmations et réserves correspondent à la date qu’elle indique."},
+};
+const c=labels[lang];
+const date=(value:string)=>new Date(value).toLocaleDateString(lang,{day:"numeric",month:"long",year:"numeric",timeZone:"UTC"});
+---
+<BaseLayout title={text.title} description={text.description} type="article" publishedTime={new Date(article.date)} modifiedTime={'updated' in article ? new Date(article.updated) : undefined}>
+ <article class="wire-container py-12 sm:py-16"><div class="mx-auto max-w-3xl">
+  <p class="eyebrow text-wire">RWA Wire // {c[article.kind as "guide"|"news"|"research"]}</p><h1 class="mt-5 font-serif text-4xl leading-tight text-ink sm:text-5xl">{text.title}</h1><p class="mt-5 text-lg leading-8 text-ink-muted">{text.description}</p>
+  <p class="mt-5 text-xs text-ink-muted">{c.date}: <time datetime={article.date}>{date(article.date)}</time>{'updated' in article && <> · {c.updated}: <time datetime={article.updated}>{date(article.updated)}</time></>}</p>
+  <p class="mt-5 border-l border-wire/40 pl-4 text-sm leading-6 text-ink-muted">{article.kind==='guide'?c.note:c.scope}</p>
+  {text.sections.map(([heading,...paragraphs])=><section class="mt-10"><h2 class="font-serif text-2xl text-ink">{heading}</h2>{paragraphs.map(p=><p class="mt-4 leading-8 text-ink-muted">{p}</p>)}</section>)}
+  <section class="mt-12 border-t border-line pt-6"><h2 class="font-serif text-xl text-ink">{c.sources}</h2>{article.sources.length>0 && <ul class="mt-4 space-y-3">{article.sources.map(([name,url])=><li><a href={url} target="_blank" rel="noopener noreferrer" class="text-wire underline">{name}</a></li>)}</ul>}<a href={article.path} lang="en" class="mt-5 inline-block text-wire underline">{c.original} →</a></section>
+  <nav class="mt-10 border-t border-line pt-6" aria-label={c.related}><h2 class="font-serif text-xl text-ink">{c.related}</h2><ul class="mt-4 space-y-3">{Object.entries(articles).filter(([id,item])=>id!==key && item.kind==='guide').map(([,item])=><li><a href={localizedPath(item.path,lang)} class="text-wire">{item[lang].title} →</a></li>)}</ul><a href={localizedPath('/news/',lang)} class="mt-6 inline-block text-wire">{c.more} →</a></nav>
+ </div></article>
+</BaseLayout>

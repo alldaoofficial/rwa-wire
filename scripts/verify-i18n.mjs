@@ -3,7 +3,7 @@ import path from "node:path";
 import assert from "node:assert/strict";
 
 // Integration checks against built pages, independent of the routing helpers.
-const paths = ["/", "/learn/rwa-crypto-explained/", "/newsletter/", "/bitunix/"];
+const paths = ["/", "/learn/rwa-crypto-explained/", "/newsletter/", "/bitunix/", "/news/", "/tokenization/tokenized-treasuries-explained/", "/rwa/tokenized-stocks-explained/", "/institutions/koscom-token-securities-platform-korea-fintech-week-2026/", "/news/imf-deputy-director-says-tokenized-securities-should-settle-in-central-bank-money-not-stablecoins/"];
 const langs = ["en", "de", "es", "fr"];
 const sitemap = fs.readFileSync("dist/sitemap.xml", "utf8");
 const fileFor = route => path.join("dist", route, "index.html");
@@ -34,6 +34,6 @@ for (const original of paths) {
     checked++;
   }
 }
-const untranslated = fs.readFileSync("dist/news/index.html", "utf8");
-assert.doesNotMatch(untranslated, /<link[^>]+hreflang="(?:de|es|fr)"/, "Do not advertise untranslated news as translated");
+const untranslated = fs.readFileSync("dist/markets/index.html", "utf8");
+assert.doesNotMatch(untranslated, /<link[^>]+hreflang="(?:de|es|fr)"/, "Do not advertise untranslated markets as translated");
 console.log(`Verified ${checked} language variants, reciprocal alternates, canonicals, sitemap and localized links.`);

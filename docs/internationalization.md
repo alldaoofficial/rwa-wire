@@ -23,6 +23,12 @@ Visual browser verification was unavailable in the execution environment; genera
 
 ## Extending coverage
 
+Second rollout: compact localized guides to tokenized US Treasuries and tokenized stocks, complete localized versions of the Koscom showcase report (13 October 2026) and IMF research discussion (11 October 2026), and localized news indexes. Each keeps its English source date, original link and applicable update date. News source links and the IMF correction are retained. Condensed guides are explicitly labeled; no claim of full verbatim translation is made.
+
+The homepage prefers available translated headlines and destinations while clearly labeling English fallback articles. Localized news indexes contain only completed translations, with an English link for full ongoing coverage. New discoveries are not automatically translated or marked reviewed by this change.
+
+The generated-output check now covers 36 English/localized routes and all reciprocal language links. Original sources for this rollout are `src/content/articles/tokenized-treasuries-explained.mdx`, `tokenized-stocks-explained.mdx`, `koscom-token-securities-platform-korea-fintech-week-2026.mdx` and `imf-deputy-director-says-tokenized-securities-should-settle-in-central-bank-money-not-stablecoins.mdx`. Updates to those originals require checking `src/i18n/articles.json` for factual consistency.
+
 Translate the checked English source, preserving numeric values, sources, qualifications and material risk disclosures. Add a route group only after all referenced translations exist, include it in the sitemap generator and integration checks, and label English fallbacks. Keep translations in sync when the original's facts change. Do not change campaign promises or translate unresolved campaign terms as confirmed facts.
 
 Reference: https://developers.google.com/search/docs/specialty/international/localized-versions
