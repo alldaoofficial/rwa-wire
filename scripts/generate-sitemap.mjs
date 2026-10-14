@@ -15,7 +15,7 @@ const staticPaths = [
 ];
 
 for (const lang of ["de", "es", "fr"]) {
-  for (const suffix of ["/", "/learn/rwa-crypto-explained/", "/newsletter/", "/bitunix/"]) staticPaths.push(`/${lang}${suffix}`);
+  for (const suffix of ["/", "/learn/rwa-crypto-explained/", "/newsletter/", "/bitunix/", "/news/", "/tokenization/tokenized-treasuries-explained/", "/rwa/tokenized-stocks-explained/", "/institutions/koscom-token-securities-platform-korea-fintech-week-2026/", "/news/imf-deputy-director-says-tokenized-securities-should-settle-in-central-bank-money-not-stablecoins/"]) staticPaths.push(`/${lang}${suffix}`);
 }
 staticPaths.push("/newsletter/", "/bitunix/");
 

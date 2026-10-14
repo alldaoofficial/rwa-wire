@@ -1,0 +1,11 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import articles from "@/i18n/articles.json";
+import {localizedPath} from "@/i18n/routes";
+export function getStaticPaths(){return ["de","es","fr"].map(lang=>({params:{lang}}));}
+const lang=Astro.params.lang as "de"|"es"|"fr";
+const labels={de:{title:"Nachrichten und Forschung",intro:"Geprüfte RWA-Beiträge in deutscher Übersetzung. Die Sammlung wächst schrittweise; die vollständige laufende Berichterstattung ist auf Englisch verfügbar.",english:"Alle Beiträge auf Englisch",research:"Forschung",news:"Nachricht"},es:{title:"Noticias e investigación",intro:"Artículos de RWA revisados y traducidos al español. La colección crece gradualmente; la cobertura completa está disponible en inglés.",english:"Todos los artículos en inglés",research:"Investigación",news:"Noticia"},fr:{title:"Actualités et recherche",intro:"Articles RWA vérifiés et traduits en français. La collection s’enrichit progressivement ; la couverture complète est disponible en anglais.",english:"Tous les articles en anglais",research:"Recherche",news:"Actualité"}};
+const c=labels[lang];
+const stories=Object.values(articles).filter(a=>a.kind!=='guide').sort((a,b)=>b.date.localeCompare(a.date));
+---
+<BaseLayout title={c.title} description={c.intro}><div class="wire-container py-12 sm:py-16"><h1 class="font-serif text-4xl text-ink sm:text-5xl">{c.title}</h1><p class="mt-5 max-w-3xl leading-8 text-ink-muted">{c.intro}</p><div class="mt-10 grid gap-5 md:grid-cols-2">{stories.map(story=><a href={localizedPath(story.path,lang)} class="border border-line bg-surface p-6 hover:border-wire"><p class="data-label text-wire">{story.kind==='research'?c.research:c.news} · <time datetime={story.date}>{new Date(story.date).toLocaleDateString(lang,{timeZone:'UTC'})}</time></p><h2 class="mt-4 font-serif text-2xl text-ink">{story[lang].title}</h2><p class="mt-4 text-sm leading-7 text-ink-muted">{story[lang].description}</p></a>)}</div><a href="/news/" lang="en" class="mt-8 inline-block text-wire">{c.english} →</a></div></BaseLayout>

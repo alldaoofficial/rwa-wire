@@ -5,7 +5,7 @@ import {languageOf, localizedPath} from "@/i18n/routes";
 import {sitePath} from "@/utils/paths";
 import copy from "@/i18n/copy.json";
 const lang=languageOf(Astro.url.pathname); const c=copy[lang];
-const links=[{label:c.home,path:"/"},{label:c.basics,path:"/learn/rwa-crypto-explained/"},{label:c.newsletter,path:"/newsletter/"},{label:c.guide,path:"/bitunix/"}];
+const links=[{label:c.home,path:"/"},{label:c.newsNav,path:"/news/"},{label:c.basics,path:"/learn/rwa-crypto-explained/"},{label:c.newsletter,path:"/newsletter/"},{label:c.guide,path:"/bitunix/"}];
 ---
 <header class="sticky top-0 z-50 border-b border-line bg-[#080A0D]">
   <div class="wire-container py-2 text-[10px] text-ink-muted">{c.tagline}</div>
