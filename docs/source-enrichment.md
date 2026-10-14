@@ -40,8 +40,10 @@ model API key, paid inference service or new GitHub permission is required.
    inbox file, public article, candidate, approved manifest or posted marker.
 7. Inspect the triggered Candidate Generator run. It generates the article,
    checks the build, deploys the preview and routes the existing editorial card.
-   Leave `autoPublishEligible: false`: source review does not authorize social
-   distribution. Do not directly send Telegram, X, newsletters or test emails.
+   Leave `autoPublishEligible: false`: scanners and source reviews cannot self-approve.
+   The operator-enabled `publish/editorial-policy.json` separately permits fully
+   sealed, relevant RWA packages to route directly through the existing publisher.
+   Do not directly send Telegram, X, newsletters or test emails from source review.
 
 ## Ledger
 
@@ -75,3 +77,7 @@ compatible. Scanners keep their existing schedules, while source enrichment runs
 hourly and depends on the ChatGPT task and GitHub connection remaining available.
 Publication success does not imply social delivery. The existing editorial
 approval path remains responsible for distribution.
+
+## Direct social routing (operator authorization, 14 October 2026)
+
+`verified_autopublish.py` applies the separate operator policy after quality validation. It requires a valid source-enrichment-v1 seal, RWA discovery score at least 6, complete matching candidate copy and no rejection or publication receipt. Scanner flags stay false. Approval records include the source brief and review digest. The existing Telegram publisher verifies live URLs and prevents duplicate IDs; the independent X channel switch remains in effect. Fully reviewed eligible stories do not depend on the external callback approval worker. Its reported invalid-url failure has not been independently diagnosed by this change.

@@ -78,22 +78,15 @@ jobs:
         run: |
           CANDIDATE_PATH=$(git diff-tree --no-commit-id --name-only -r HEAD -- "publish/candidates/*.json" | head -n 1)
           if [ -z "$CANDIDATE_PATH" ]; then echo "No candidate manifest found in generated commit."; exit 1; fi
-          if python3 - "$BRIEF_PATH" <<'PY'
-          import json, sys
-          d=json.load(open(sys.argv[1], encoding='utf-8'))
-          nw=d.get('newsWatch') or {}; cw=d.get('cryptoWatch') or {}
-          rwa_ok=nw.get('autoPublishEligible') is True and nw.get('sourceTrust') in {'primary','trusted'} and int(nw.get('score',0))>=6
-          crypto_ok=cw.get('autoPublishEligible') is True and cw.get('sourceTrust') in {'primary','trusted'} and int(cw.get('score',0))>=4
-          raise SystemExit(0 if rwa_ok or crypto_ok else 1)
-          PY
-          then
-            APPROVED_PATH="publish/approved/$(basename "$CANDIDATE_PATH")"
-            mkdir -p publish/approved
-            cp "$CANDIDATE_PATH" "$APPROVED_PATH"
+          if APPROVED_PATH=$(python3 scripts/verified_autopublish.py "$BRIEF_PATH" "$CANDIDATE_PATH"); then
+            if [ -z "$APPROVED_PATH" ]; then
+              echo "This reviewed package is already posted."
+              exit 0
+            fi
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add "$APPROVED_PATH"
-            git commit -m "Auto-approve high-confidence RWA Wire candidate"
+            git diff --cached --quiet || git commit -m "Auto-approve source-reviewed RWA Wire candidate"
             git pull --rebase origin main
             git push
             gh workflow run telegram-test.yml --ref main -f manifest_path="$APPROVED_PATH"

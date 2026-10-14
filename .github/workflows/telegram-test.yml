@@ -32,7 +32,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          ref: main
+          # Push manifest resolution must use the triggering commit, not a later main.
+          ref: ${{ github.event_name == 'push' && github.sha || 'main' }}
           fetch-depth: 2
       - name: Sync latest main for requested package
         if: github.event_name != 'push'
