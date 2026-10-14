@@ -1,0 +1,43 @@
+{
+  "title": "BNY, Citadel Securities Complete Triparty Repo Trade Using Tokenized US Treasuries",
+  "description": "BNY, Citadel Securities Complete Triparty Repo Trade Using Tokenized US Treasuries bloomingbit",
+  "why_it_matters": "",
+  "pubDate": "2026-10-14",
+  "category": "news",
+  "tags": [
+    "Tokenization",
+    "Institutions",
+    "News Watch"
+  ],
+  "keyTakeaways": [
+    "BNY, Citadel Securities Complete Triparty Repo Trade Using Tokenized US Treasuries bloomingbit",
+    ""
+  ],
+  "body": "BNY, Citadel Securities Complete Triparty Repo Trade Using Tokenized US Treasuries bloomingbit",
+  "sources": [
+    {
+      "name": "bloomingbit",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE81cVBsQXdyTlFEVkN0Z2Q1bV9xUXl5Q3dsQWZucnE0Q05aRXJPNFNENXkyQ1JNeDB6ei1UVGE1ZU9oR0R5MXBxMENCeVM0emhZdGVKYg?oc=5"
+    },
+    {
+      "name": "www.marketscreener.com",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPZzhCLTV1Z0xvX3Z1US1mOXc5dFhJekxBbk56c1E0TEtUOUg2MXBoYWUzaGdYb2owWlFoNHVkSzRHTTRpUXdaUmZ0aUJaNUxTaFpfdkhRUDh5bnpXMjlWREJ1SmREUDNfa3QyV3lTS2ZxelhZRE9qMV92bVVEUGszTzZJUDhCVjNFU0ZFRGFySEdwR2tMeld0Q3JaX2M2VVJ2Q1dRRi15MExJcDBqOVk4WVN1Z0ZTY0ZGQkhHRUxnd041dXc3VXVUVjFYUVAzdVBxbzVhLTc5WnpDTlBTOVg1dlJRTQ?oc=5"
+    }
+  ],
+  "newsWatch": {
+    "score": 11,
+    "priority": "important",
+    "sourceTrust": "specialist",
+    "discoveredAt": "2026-10-14T01:37:20.705527+00:00",
+    "confirmationMode": "two-independent-specialist-sources",
+    "originalDiscoveryTitle": "BNY and Citadel Securities Use Tokenized Treasury in Overnight Repo",
+    "originalDiscoverySource": "The Defiant",
+    "confirmationSources": [
+      "bloomingbit",
+      "www.marketscreener.com"
+    ],
+    "requiresSourceReview": true,
+    "autoPublishEligible": false,
+    "contentStatus": "needs-source-enrichment"
+  }
+}
