@@ -577,5 +577,59 @@
       ]
     },
     "sourceSha256": "65a958aa959bc68833aa1231381d1c76e28d8da45718591277becb7f88cd59fd"
+  },
+  "binance-bstocks-billion-assets": {
+    "path": "/news/binance-says-bstocks-surpassed-1-billion-in-assets/",
+    "date": "2026-10-15",
+    "kind": "news",
+    "sources": [
+      [
+        "Binance — bStocks $1 billion announcement via PR Newswire",
+        "https://www.prnewswire.com/apac/news-releases/binances-bstocks-become-the-fastest-tokenized-equity-product-to-surpass-1-billion-in-assets-under-management-302909932.html"
+      ]
+    ],
+    "de": {
+      "title": "Binance meldet mehr als eine Milliarde US-Dollar an bStocks-Vermögen",
+      "description": "Laut Binance hat das tokenisierte Wertpapierprodukt bStocks rund vier Monate nach dem Start die Marke von einer Milliarde US-Dollar an Vermögen überschritten. Das Unternehmen meldet außerdem ein kumuliertes Volumen von mehr als 40 Milliarden US-Dollar.",
+      "sections": [
+        [
+          "Vom Unternehmen gemeldete Kennzahlen",
+          "Binance gab am 15. Oktober bekannt, dass bStocks rund vier Monate nach dem Start am 11. Juni mehr als eine Milliarde US-Dollar an verwaltetem Vermögen erreicht habe. Das Unternehmen meldete außerdem ein kumuliertes Handelsvolumen von mehr als 40 Milliarden US-Dollar, fast 100 gelistete bStocks und Umwandlungen zwischen direkten Aktienpositionen und bStocks im Umfang von sechs Milliarden US-Dollar. Diese Zahlen stammen vom Emittenten und beruhen teilweise auf Onchain-Daten; es handelt sich nicht um unabhängig geprüfte Ergebnisse."
+        ],
+        [
+          "Wirtschaftliche Beteiligung und ihre Grenzen",
+          "Das Produkt vermittelt ein wirtschaftliches Engagement in US-börsennotierten Aktien und börsengehandelten Fonds und kann außerhalb der üblichen Marktzeiten onchain gehandelt werden. Nach Angaben von Binance entfielen im Juli nur 38 % des bStocks-Volumens auf die regulären US-Handelszeiten. bStocks sind jedoch Zertifikate und keine direkten Aktien der zugrunde liegenden Unternehmen. Die Verfügbarkeit ist nach Rechtsraum und Teilnahmeberechtigung eingeschränkt. Laut der Binance-Mitteilung gilt der genehmigte Rahmen für das öffentliche Angebot im Abu Dhabi Global Market, nicht in den Vereinigten Staaten."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Binance afirma que los activos de bStocks superaron los 1.000 millones de dólares",
+      "description": "Según Binance, su producto de valores tokenizados bStocks superó los 1.000 millones de dólares en activos unos cuatro meses después de su lanzamiento, junto con un volumen acumulado declarado de más de 40.000 millones de dólares.",
+      "sections": [
+        [
+          "Cifras declaradas por la empresa",
+          "Binance anunció el 15 de octubre que bStocks había superado los 1.000 millones de dólares en activos bajo gestión, aproximadamente cuatro meses después de su lanzamiento el 11 de junio. La empresa también comunicó más de 40.000 millones de dólares de volumen de negociación acumulado, cerca de 100 bStocks cotizados y conversiones por valor de 6.000 millones de dólares entre posiciones directas en acciones y bStocks. Son cifras declaradas por el emisor, vinculadas en parte a datos onchain, no resultados auditados de forma independiente."
+        ],
+        [
+          "Exposición económica y sus límites",
+          "El producto ofrece exposición económica a acciones cotizadas en Estados Unidos y fondos cotizados en bolsa, y puede negociarse onchain fuera del horario convencional de mercado. Binance afirmó que solo el 38 % del volumen de bStocks de julio se produjo durante el horario habitual de negociación estadounidense. Sin embargo, bStocks son certificados, no acciones directas de las empresas subyacentes. La disponibilidad está restringida por jurisdicción y requisitos de elegibilidad, y el anuncio de Binance indica que el marco autorizado de oferta pública se aplica en Abu Dhabi Global Market, no en Estados Unidos."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Binance annonce que les actifs de bStocks ont dépassé un milliard de dollars",
+      "description": "Selon Binance, son produit de titres tokenisés bStocks a dépassé un milliard de dollars d’actifs environ quatre mois après son lancement, avec un volume cumulé déclaré supérieur à 40 milliards de dollars.",
+      "sections": [
+        [
+          "Des chiffres déclarés par l’entreprise",
+          "Binance a annoncé le 15 octobre que bStocks avait dépassé un milliard de dollars d’actifs sous gestion, environ quatre mois après son lancement le 11 juin. L’entreprise a également fait état de plus de 40 milliards de dollars de volume cumulé de négociation, de près de 100 bStocks cotés et de six milliards de dollars de conversions entre des positions directes en actions et des bStocks. Ces chiffres sont déclarés par l’émetteur et reposent en partie sur des données onchain ; il ne s’agit pas de résultats audités de manière indépendante."
+        ],
+        [
+          "Une exposition économique et ses limites",
+          "Le produit offre une exposition économique à des actions cotées aux États-Unis et à des fonds négociés en bourse, et peut être négocié onchain en dehors des horaires habituels de marché. Binance indique que seulement 38 % du volume de bStocks en juillet a été réalisé pendant les horaires habituels de négociation aux États-Unis. Toutefois, les bStocks sont des certificats, et non des actions détenues directement dans les entreprises sous-jacentes. Leur disponibilité est limitée selon la juridiction et les conditions d’éligibilité. L’annonce de Binance précise que le cadre autorisé d’offre au public s’applique à Abu Dhabi Global Market, et non aux États-Unis."
+        ]
+      ]
+    },
+    "sourceSha256": "825233d132fb7d6ecff58ae12bd63594cabd97c4223968e2e26d7e6451da87bf"
   }
 }
