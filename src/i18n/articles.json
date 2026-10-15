@@ -631,5 +631,71 @@
       ]
     },
     "sourceSha256": "825233d132fb7d6ecff58ae12bd63594cabd97c4223968e2e26d7e6451da87bf"
+  },
+  "fission-series-a-fund-liquidity": {
+    "path": "/news/fission-raises-10-million-for-tokenized-fund-liquidity/",
+    "date": "2026-10-15",
+    "kind": "news",
+    "sources": [
+      [
+        "Fission Labs — Series A announcement",
+        "https://www.prnewswire.com/news-releases/fission-raises-10m-series-a-led-by-pantera-capital-to-bring-liquidity-to-digital-private-markets-302908670.html"
+      ]
+    ],
+    "de": {
+      "title": "Fission erhält zehn Millionen US-Dollar für Liquidität tokenisierter Fonds",
+      "description": "Fission hat eine von Pantera Capital angeführte Series-A-Runde über zehn Millionen US-Dollar abgeschlossen, um die Liquiditätskapazität für zugelassene Anleger in unterstützten tokenisierten Fonds auszubauen.",
+      "sections": [
+        [
+          "Finanzierungsrunde unter Führung von Pantera Capital",
+          "Fission gab am 15. Oktober den Abschluss einer Series-A-Finanzierungsrunde über zehn Millionen US-Dollar unter Führung von Pantera Capital bekannt. Zu den Teilnehmern zählten Circle Ventures, New Form, gumi Cryptos Capital, Borderless Capital und GTS-Chef Ari Rubenstein."
+        ],
+        [
+          "Zugang zu Kapital für zugelassene Fondsinhaber",
+          "Das Unternehmen stellt Liquiditätsinfrastruktur für unterstützte tokenisierte Fondsprodukte bereit, über die zugelassene Inhaber Kapital erhalten können, ohne auf herkömmliche Rücknahmezyklen der Fonds warten zu müssen. Nach Angaben von Fission ist die Plattform für institutionelle Märkte und Märkte mit beschränktem Zugang konzipiert. Dazu gehören Kontrollen zur Anlegerzulassung, Übertragungsbeschränkungen und Compliance."
+        ],
+        [
+          "Geplanter Ausbau und nicht genannte Kennzahlen",
+          "Die neuen Mittel sollen die Liquiditätskapazität, die Abdeckung unterstützter Vermögenswerte und institutionelle Integrationen erweitern. Fission berichtete außerdem von abgewickelten Transaktionen im Umfang von Millionen US-Dollar, nannte jedoch weder einen genauen Betrag noch eine Unternehmensbewertung oder einen Zeitplan für den Ausbau."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Fission capta 10 millones de dólares para la liquidez de fondos tokenizados",
+      "description": "Fission cerró una ronda de serie A de 10 millones de dólares liderada por Pantera Capital para ampliar la capacidad de liquidez destinada a inversores elegibles en los fondos tokenizados admitidos.",
+      "sections": [
+        [
+          "Una ronda liderada por Pantera Capital",
+          "Fission anunció el 15 de octubre el cierre de una ronda de financiación de serie A de 10 millones de dólares liderada por Pantera Capital. Participaron Circle Ventures, New Form, gumi Cryptos Capital, Borderless Capital y Ari Rubenstein, consejero delegado de GTS."
+        ],
+        [
+          "Acceso a capital para titulares elegibles",
+          "La empresa proporciona infraestructura de liquidez para los productos de fondos tokenizados admitidos, permitiendo a los titulares elegibles acceder a capital sin esperar los ciclos convencionales de reembolso de los fondos. Según Fission, la plataforma está diseñada para mercados institucionales y de acceso autorizado, con controles de elegibilidad de los inversores, restricciones de transferencia y controles de cumplimiento."
+        ],
+        [
+          "Expansión prevista y datos no divulgados",
+          "La nueva financiación se destinará a ampliar la capacidad de liquidez, la cobertura de activos admitidos y las integraciones institucionales. Fission también informó de haber procesado transacciones por millones de dólares, pero no divulgó un importe exacto, una valoración de la empresa ni un calendario de expansión."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Fission lève 10 millions de dollars pour la liquidité des fonds tokenisés",
+      "description": "Fission a bouclé une série A de 10 millions de dollars menée par Pantera Capital pour accroître la capacité de liquidité destinée aux investisseurs éligibles dans les fonds tokenisés pris en charge.",
+      "sections": [
+        [
+          "Une levée menée par Pantera Capital",
+          "Fission a annoncé le 15 octobre avoir bouclé une levée de fonds de série A de 10 millions de dollars menée par Pantera Capital. Circle Ventures, New Form, gumi Cryptos Capital, Borderless Capital et Ari Rubenstein, directeur général de GTS, y ont participé."
+        ],
+        [
+          "Un accès au capital pour les détenteurs éligibles",
+          "L’entreprise fournit une infrastructure de liquidité pour les produits de fonds tokenisés pris en charge, permettant aux détenteurs éligibles d’accéder à des capitaux sans attendre les cycles habituels de rachat des fonds. Selon Fission, sa plateforme est conçue pour les marchés institutionnels et les marchés à accès autorisé, avec des contrôles d’éligibilité des investisseurs, des restrictions de transfert et des contrôles de conformité."
+        ],
+        [
+          "Une expansion prévue et des chiffres non divulgués",
+          "Le nouveau financement doit accroître la capacité de liquidité, élargir la couverture des actifs pris en charge et développer les intégrations institutionnelles. Fission a également déclaré avoir traité des transactions représentant des millions de dollars, sans toutefois communiquer de montant exact, de valorisation de l’entreprise ni de calendrier d’expansion."
+        ]
+      ]
+    },
+    "sourceSha256": "0a8b3cd36a715eb6374683fa29e8f255f3f2252e97d345eff3fdd270a0aaafda"
   }
 }
