@@ -4,22 +4,13 @@
   "why_it_matters": "",
   "pubDate": "2026-10-14",
   "category": "news",
-  "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
-  ],
-  "keyTakeaways": [
-    "FDIC's Hill cites 'more work to do' on tokenized deposits",
-    ""
-  ],
+  "tags": ["Tokenization", "Institutions", "News Watch"],
+  "keyTakeaways": ["FDIC's Hill cites 'more work to do' on tokenized deposits", ""],
   "body": "FDIC's Hill cites 'more work to do' on tokenized deposits",
-  "sources": [
-    {
-      "name": "American Banker",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNa1pnMUdySEJVVzdVSmVVQUktSGxTSFpSNEZvQ3dyX2ZOVVBJSWVXMVV0eU1MRXV5MmVITzlJNVBhVjBzSHhmR0FibFBMa3NaVTJUR0pWNi1wdi1PeXg2dDdtRE81ZHZMMGhqMWl2QWYzRzh6ZUdkVzIzNEVpUkNzdFY4MURyOXZRS1hSY0NxSUllZEho?oc=5"
-    }
-  ],
+  "sources": [{
+    "name": "American Banker",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNa1pnMUdySEJVVzdVSmVVQUktSGxTSFpSNEZvQ3dyX2ZOVVBJSWVXMVV0eU1MRXV5MmVITzlJNVBhVjBzSHhmR0FibFBMa3NaVTJUR0pWNi1wdi1PeXg2dDdtRE81ZHZMMGhqMWl2QWYzRzh6ZUdkVzIzNEVpUkNzdFY4MURyOXZRS1hSY0NxSUllZEho?oc=5"
+  }],
   "newsWatch": {
     "score": 8,
     "priority": "important",
@@ -32,7 +23,7 @@
   "sourceReview": {
     "status": "held",
     "method": "source-enrichment-v1",
-    "reviewedAt": "2026-10-15T12:41:28Z",
-    "reason": "A third retry still could not resolve the Google News lead to a fully readable American Banker article, and no current FDIC primary document was found that substantiates this specific report."
+    "reviewedAt": "2026-10-15T18:43:43Z",
+    "reason": "A fourth retry found only the FDIC's April 2026 rulemaking materials, not a current primary document or fully readable American Banker report supporting this specific October story."
   }
 }
