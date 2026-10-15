@@ -1,23 +1,25 @@
 {
-  "title": "Pantera Capital-backed startup Fission raises $10 million to help investors cash out of tokenized funds faster",
-  "description": "Pantera Capital-backed startup Fission raises $10 million to help investors cash out of tokenized funds faster",
-  "why_it_matters": "",
+  "title": "Fission Raises $10 Million for Tokenized Fund Liquidity",
+  "description": "Fission closed a $10 million Series A led by Pantera Capital to expand liquidity capacity for eligible investors in supported tokenized funds.",
+  "why_it_matters": "The financing targets a persistent market-structure gap: tokenized fund interests can settle digitally while investors may still face conventional redemption constraints.",
   "pubDate": "2026-10-15",
   "category": "news",
   "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Tokenized Funds",
+    "Private Markets",
+    "Liquidity",
+    "Funding"
   ],
   "keyTakeaways": [
-    "Pantera Capital-backed startup Fission raises $10 million to help investors cash out of tokenized funds faster",
-    ""
+    "Pantera Capital led Fission's $10 million Series A, with Circle Ventures and other investors participating.",
+    "Fission says eligible holders of supported tokenized funds can access capital without waiting for conventional redemption cycles.",
+    "The company plans to expand liquidity capacity, asset coverage and institutional integrations."
   ],
-  "body": "Pantera Capital-backed startup Fission raises $10 million to help investors cash out of tokenized funds faster",
+  "body": "Fission announced on October 15 that it closed a $10 million Series A led by Pantera Capital. Participants included Circle Ventures, New Form, gumi Cryptos Capital, Borderless Capital and GTS chief executive Ari Rubenstein. The company provides liquidity infrastructure for supported tokenized fund products, allowing eligible holders to access capital without waiting for conventional fund redemption cycles. Fission says its platform is designed for institutional and permissioned markets, including investor-eligibility, transfer-restriction and compliance controls. The new funding is intended to expand liquidity capacity, supported asset coverage and institutional integrations. Fission also reported processing millions of dollars in transactions, but did not disclose an exact amount, valuation or expansion timetable.",
   "sources": [
     {
-      "name": "Fortune",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQNFBuNVFwWGxsZUQxY25FbUpjMzNFSkNEc2xRcEJsWnBfQ1Z2bzVHQUptLTBwYnU0b2gwSEdSTUd1TlFycFRxVkNFcUtZUmVKakI1Zy10bjRCXzdMVWlweE9yaUROZ0hiRVpOMXBEN0J1X0tHSi0wZUZxUnRLWXlvWjE3Q2gyLUxXbGJZakRWbTJUMEFQYVZFWl9HazJjbEplb1lKbzlxR050dmRzbkE1TDR3Rl9OckZK?oc=5"
+      "name": "Fission Labs — Series A announcement",
+      "url": "https://www.prnewswire.com/news-releases/fission-raises-10m-series-a-led-by-pantera-capital-to-bring-liquidity-to-digital-private-markets-302908670.html"
     }
   ],
   "newsWatch": {
@@ -27,12 +29,49 @@
     "discoveredAt": "2026-10-15T11:07:13.202619+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment"
+    "contentStatus": "source-reviewed"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "verified",
     "method": "source-enrichment-v1",
-    "reviewedAt": "2026-10-15T11:17:56Z",
-    "reason": "The Google News lead points to a Fortune report that was not available as fully readable source text, and no current Fission or Pantera primary announcement or second independent full-text report could be found to substantiate the $10 million funding round."
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-15T18:42:54Z",
+    "sources": [
+      {
+        "url": "https://www.prnewswire.com/news-releases/fission-raises-10m-series-a-led-by-pantera-capital-to-bring-liquidity-to-digital-private-markets-302908670.html",
+        "publishedAt": "2026-10-15",
+        "checkedAt": "2026-10-15T18:42:54Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Fission closed a $10 million Series A financing round.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/fission-raises-10m-series-a-led-by-pantera-capital-to-bring-liquidity-to-digital-private-markets-302908670.html",
+        "anchor": "$10 million Series A"
+      },
+      {
+        "claim": "Pantera Capital led the round with several named participants.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/fission-raises-10m-series-a-led-by-pantera-capital-to-bring-liquidity-to-digital-private-markets-302908670.html",
+        "anchor": "led by Pantera Capital"
+      },
+      {
+        "claim": "Eligible holders can access capital before traditional fund redemption cycles.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/fission-raises-10m-series-a-led-by-pantera-capital-to-bring-liquidity-to-digital-private-markets-302908670.html",
+        "anchor": "eligible holders to access capital"
+      },
+      {
+        "claim": "Fission designed its platform for institutional and permissioned markets.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/fission-raises-10m-series-a-led-by-pantera-capital-to-bring-liquidity-to-digital-private-markets-302908670.html",
+        "anchor": "institutional and permissioned markets"
+      },
+      {
+        "claim": "The funding will support broader asset coverage and liquidity capacity.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/fission-raises-10m-series-a-led-by-pantera-capital-to-bring-liquidity-to-digital-private-markets-302908670.html",
+        "anchor": "expansion across asset coverage"
+      }
+    ],
+    "contentSha256": "1fe2d913f2c0e3173da199c2be6d3708dd5a6a6f0a43b88d1e342650a6d599bc"
   }
 }
