@@ -1,23 +1,25 @@
 {
-  "title": "Binance News | Tokenized Stocks Found Their Market: bStocks Hit $1 Billion With 62% of Volume Trading Out of Hours",
-  "description": "Binance News | Tokenized Stocks Found Their Market: bStocks Hit $1 Billion With 62% of Volume Trading Out of Hours",
-  "why_it_matters": "",
+  "title": "Binance Says bStocks Surpassed $1 Billion in Assets",
+  "description": "Binance says its bStocks tokenized-securities product passed $1 billion in assets about four months after launch, alongside more than $40 billion in reported cumulative volume.",
+  "why_it_matters": "The milestone suggests that equity-linked tokens are attracting meaningful activity beyond market hours, while Binance's own disclosure also underlines the product's jurisdiction, eligibility and ownership limits.",
   "pubDate": "2026-10-15",
   "category": "news",
   "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Tokenized Stocks",
+    "RWA",
+    "Binance",
+    "Market Infrastructure"
   ],
   "keyTakeaways": [
-    "Binance News | Tokenized Stocks Found Their Market: bStocks Hit $1 Billion With 62% of Volume Trading Out of Hours",
-    ""
+    "Binance reported that bStocks exceeded $1 billion in assets roughly four months after its June 11 launch.",
+    "The issuer reported more than $40 billion in cumulative volume, nearly 100 listed assets and $6 billion in conversions.",
+    "bStocks provide economic exposure to U.S. securities but do not give holders direct ownership of the underlying companies' shares."
   ],
-  "body": "Binance News | Tokenized Stocks Found Their Market: bStocks Hit $1 Billion With 62% of Volume Trading Out of Hours",
+  "body": "Binance announced on October 15 that bStocks had exceeded $1 billion in assets under management roughly four months after launching on June 11. The company also reported more than $40 billion in cumulative trading volume, nearly 100 listed bStocks and $6 billion converted between direct stock positions and bStocks. These are issuer-reported figures tied partly to onchain data, not independently audited results.\n\nThe product represents economic exposure to U.S.-listed stocks and exchange-traded funds and can trade onchain outside conventional market hours. Binance said only 38% of July bStocks volume occurred during regular U.S. trading hours. However, bStocks are certificates rather than direct shares in the underlying companies. Availability is restricted by jurisdiction and eligibility, and Binance's announcement says the approved public-offer framework applies in Abu Dhabi Global Market rather than the United States.",
   "sources": [
     {
-      "name": "Binance",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1iX1drYURiWWpCMklRS0RWbDJxTHZjbEJPek92N3M4ZUllWF84Ny03eUo4SV8wVXRDSlpWSEhHNmoyYzhYbVh3VWV5dXVhQm5mRjA1NmtWbnhzXzdSWVF0V0kzTG8?oc=5"
+      "name": "Binance — bStocks $1 billion announcement via PR Newswire",
+      "url": "https://www.prnewswire.com/apac/news-releases/binances-bstocks-become-the-fastest-tokenized-equity-product-to-surpass-1-billion-in-assets-under-management-302909932.html"
     }
   ],
   "newsWatch": {
@@ -27,6 +29,49 @@
     "discoveredAt": "2026-10-15T12:07:14.222668+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment"
+    "contentStatus": "source-reviewed"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-15T12:39:24Z",
+    "sources": [
+      {
+        "url": "https://www.prnewswire.com/apac/news-releases/binances-bstocks-become-the-fastest-tokenized-equity-product-to-surpass-1-billion-in-assets-under-management-302909932.html",
+        "publishedAt": "2026-10-15",
+        "checkedAt": "2026-10-15T12:39:24Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Binance reported that bStocks passed $1 billion in assets under management.",
+        "sourceUrl": "https://www.prnewswire.com/apac/news-releases/binances-bstocks-become-the-fastest-tokenized-equity-product-to-surpass-1-billion-in-assets-under-management-302909932.html",
+        "anchor": "$1 billion in assets under management"
+      },
+      {
+        "claim": "Binance reported more than $40 billion in cumulative trading volume since June 11.",
+        "sourceUrl": "https://www.prnewswire.com/apac/news-releases/binances-bstocks-become-the-fastest-tokenized-equity-product-to-surpass-1-billion-in-assets-under-management-302909932.html",
+        "anchor": "$40 billion in cumulative trading volume"
+      },
+      {
+        "claim": "The announcement said the catalog had grown to nearly 100 bStocks.",
+        "sourceUrl": "https://www.prnewswire.com/apac/news-releases/binances-bstocks-become-the-fastest-tokenized-equity-product-to-surpass-1-billion-in-assets-under-management-302909932.html",
+        "anchor": "Nearly 100 bStocks assets listed"
+      },
+      {
+        "claim": "Binance reported $6 billion of conversions between direct stock positions and bStocks.",
+        "sourceUrl": "https://www.prnewswire.com/apac/news-releases/binances-bstocks-become-the-fastest-tokenized-equity-product-to-surpass-1-billion-in-assets-under-management-302909932.html",
+        "anchor": "$6 billion converted"
+      },
+      {
+        "claim": "Only 38% of reported July volume occurred during regular U.S. market hours.",
+        "sourceUrl": "https://www.prnewswire.com/apac/news-releases/binances-bstocks-become-the-fastest-tokenized-equity-product-to-surpass-1-billion-in-assets-under-management-302909932.html",
+        "anchor": "Only 38%"
+      }
+    ],
+    "contentSha256": "305e1aa0ddd05e5717d380790fca9bad9fd7eaf3bb031351af80109cccbd030e"
   }
 }
