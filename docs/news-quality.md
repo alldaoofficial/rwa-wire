@@ -5,6 +5,16 @@ remain research leads in `publish/inbox/`; they are not source-reviewed articles
 Both scanners set `autoPublishEligible: false` and `contentStatus:
 needs-source-enrichment`. No filler or generic analysis is generated.
 
+When no primary/trusted headline qualifies, the scanner can enqueue one relevant
+watchlist research lead per run: specialists and news wires need a score of at
+least 6, unknown publishers at least 8. Low-trust publishers remain excluded
+from this fallback. Promotion, community, duplicate, 48-hour freshness and valid
+publication-date checks still apply. The original publisher tier is retained;
+`discoveryMode: watchlist-research` is not corroboration or verification. These
+leads enter the existing source-review queue without requiring additional
+headline matches first. All content, source-evidence and publication gates below
+continue to apply unchanged.
+
 Before any article, image or social candidate is written, `news_quality.py` checks:
 
 - A description with meaningful information beyond the headline.

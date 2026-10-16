@@ -29,6 +29,69 @@ Connecting the branches allows treasury teams to evaluate a specific cash-manage
         "category": "news",
     }
 
+class ResearchLeadTests(unittest.TestCase):
+    def scan(self, root, rows):
+        from xml.sax.saxutils import escape
+        rss = '<rss><channel>' + ''.join(
+            '<item><title>' + escape(title + ' - ' + source) + '</title>'
+            '<link>https://news.google.com/rss/articles/' + str(i) + '</link>'
+            '<guid>' + str(i) + '</guid><description>' + escape(title) + '</description>'
+            '<pubDate>' + date + '</pubDate></item>'
+            for i, (title, source, date) in enumerate(rows)) + '</channel></rss>'
+        import news_watch_v2 as catalog
+        with patch.object(news_watch, 'ROOT', root), patch.object(news_watch, 'STATE', root/'publish/state.json'), patch.object(news_watch, 'INBOX', root/'publish/inbox'), patch.object(news_watch, 'fetch', return_value=rss.encode()), patch.object(news_watch, 'QUERIES', ['test']), patch.object(news_watch, 'source_tier', catalog.source_tier):
+            news_watch.main()
+        return [json.loads(p.read_text()) for p in (root/'publish/inbox').glob('*.json')]
+
+    def test_specialist_and_unknown_leads_reach_review_but_cannot_publish(self):
+        from datetime import datetime, timezone
+        from email.utils import format_datetime
+        import source_review
+        for source in ['TokenPost.com', 'New Specialist Journal', 'PR Newswire']:
+            with self.subTest(source=source), tempfile.TemporaryDirectory() as temp:
+                root = pathlib.Path(temp); (root/'publish').mkdir()
+                title = 'Brazil regulator begins tokenized securities settlement pilot'
+                briefs = self.scan(root, [(title, source, format_datetime(datetime.now(timezone.utc)))])
+                self.assertEqual(len(briefs), 1)
+                b = briefs[0]
+                self.assertEqual(b['newsWatch']['discoveryMode'], 'watchlist-research')
+                self.assertFalse(b['newsWatch']['autoPublishEligible'])
+                self.assertTrue(b['newsWatch']['requiresSourceReview'])
+                self.assertNotIn('sourceReview', b)
+                self.assertEqual(len(source_review.queue(root=root)), 1)
+                self.assertIn('source_review_required', q.quality_reasons(b))
+                with self.assertRaisesRegex(ValueError, 'Publication held'):
+                    generator.validate(b)
+
+    def test_low_trust_ads_old_missing_future_and_non_rwa_stay_out(self):
+        from datetime import datetime, timezone, timedelta
+        from email.utils import format_datetime
+        now = datetime.now(timezone.utc)
+        base = 'Brazil regulator begins tokenized securities settlement pilot'
+        cases = [(base, 'Bitget', format_datetime(now)),
+                 (base + ' presale', 'TokenPost', format_datetime(now)),
+                 (base, 'TokenPost', format_datetime(now - timedelta(hours=49))),
+                 (base, 'TokenPost', ''),
+                 (base, 'TokenPost', format_datetime(now + timedelta(days=1))),
+                 ('Bank opens new office', 'TokenPost', format_datetime(now))]
+        for row in cases:
+            with self.subTest(row=row), tempfile.TemporaryDirectory() as temp:
+                root = pathlib.Path(temp); (root/'publish').mkdir()
+                self.assertEqual(self.scan(root, [row]), [])
+
+    def test_one_lead_per_run_and_duplicates_do_not_repeat(self):
+        from datetime import datetime, timezone
+        from email.utils import format_datetime
+        now = format_datetime(datetime.now(timezone.utc))
+        rows = [('Brazil regulator begins tokenized securities settlement pilot', 'TokenPost', now),
+                ('Bank introduces tokenized deposits custody platform', 'Finextra', now)]
+        with tempfile.TemporaryDirectory() as temp:
+            root = pathlib.Path(temp); (root/'publish').mkdir()
+            self.assertEqual(len(self.scan(root, rows)), 1)
+            self.assertEqual(len(self.scan(root, rows)), 2)
+            self.assertEqual(len(self.scan(root, rows)), 2)
+
+
 class QualityTests(unittest.TestCase):
     def test_discovery_retains_lead_without_inventing_article(self):
         from datetime import datetime, timezone
