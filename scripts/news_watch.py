@@ -58,6 +58,11 @@ def classify(score,trust,has_rwa_signal):
     if has_rwa_signal and trust in {"primary","trusted"} and score>=5:return "important"
     if has_rwa_signal and score>=4:return "watchlist"
     return "reject"
+def research_lead(record):
+    """Discovery eligibility only; never a source review or publication approval."""
+    score, _, _, _, _, _, trust, _, _ = record
+    return (trust in {"specialist", "wire"} and score >= 6) or (trust == "unknown" and score >= 8)
+
 def main():
     state=json.loads(STATE.read_text()) if STATE.exists() else {"seen":[]}; seen=set(state.get("seen",[])); pipeline_dirs=[ROOT/"publish/inbox",ROOT/"publish/candidates",ROOT/"publish/approved",ROOT/"publish/posted"]
     existing_slugs=set()
@@ -82,7 +87,8 @@ def main():
             metrics["raw_items"]+=1; title=clean(x.findtext("title")); link=clean(x.findtext("link")); desc=clean(x.findtext("description")); guid=clean(x.findtext("guid")) or link
             source_name=title.rsplit(" - ",1)[-1] if " - " in title else ""; trust=source_tier(source_name); source_counts[trust]+=1
             try:published=parsedate_to_datetime(x.findtext("pubDate")).astimezone(timezone.utc)
-            except Exception:published=now
+            except Exception: rejection["date_missing"]+=1; continue
+            if published > now + timedelta(minutes=10): rejection["future_date"]+=1; continue
             hay=(title+" "+desc).lower(); normalized_title=title.rsplit(" - ",1)[0] if " - " in title else title; headline=normalized_title.lower()
             if headline.startswith("#") or any(k in headline for k in ("community insights", "market sentiment | binance square")):
                 rejection["community_feed"]+=1; continue
@@ -109,8 +115,15 @@ def main():
     recurring_unknowns=sorted(({"source":k,"count":v["count"],"highScoreCount":v["highScoreCount"],"maxScore":v["maxScore"],"sampleTitles":v["titles"]} for k,v in unknown_stats.items() if v["count"]>=2 or v["highScoreCount"]>=1),key=lambda x:(x["highScoreCount"],x["maxScore"],x["count"]),reverse=True)[:15]
     diagnostics={"rawItems":metrics["raw_items"],"uniqueItems":metrics["unique_items"],"queriesOk":metrics["queries_ok"],"queriesFailed":metrics["queries_failed"],"breaking":metrics["breaking"],"important":metrics["important"],"watchlist":metrics["watchlist"],"sourceTiers":dict(source_counts),"rejections":dict(rejection),"feedErrors":feed_errors[:3],"topWatchlist":[{"title":r[2].rsplit(" - ",1)[0],"source":r[7],"normalizedSource":normalize_source(r[7]),"score":r[0],"trust":r[6]} for r in top_watch],"recurringUnknowns":recurring_unknowns}
     state["lastRun"]=now.isoformat(); state["lastDiagnostics"]=diagnostics; print("News Watch diagnostics:",json.dumps(diagnostics,ensure_ascii=False))
+    discovery_mode = "high-trust-headline"
     if not qualified:
-        state["lastResult"]="no-qualified-story"; STATE.write_text(json.dumps(state,indent=2,ensure_ascii=False)+"\n"); print("No new high-confidence story found."); return
+        # A publisher whitelist must not prevent the source reviewer from
+        # investigating a substantive lead. Keep low-trust/community/promotion
+        # exclusions and all date/dedup checks above; take at most one per run.
+        qualified = [r for r in watchlist if research_lead(r)]
+        if not qualified:
+            state["lastResult"]="no-qualified-story"; STATE.write_text(json.dumps(state,indent=2,ensure_ascii=False)+"\n"); print("No new high-confidence story or eligible research lead found."); return
+        discovery_mode = "watchlist-research"
     qualified.sort(key=lambda x:(x[0],x[1]),reverse=True); score,published,title,link,desc,guid,trust,source_name,band=qualified[0]; source_name=source_name or "Google News source"; clean_title=title.rsplit(" - ",1)[0] if " - " in title else title
     # Discovery text is a research lead, never a substitute for reported detail.
     summary=desc.strip()
@@ -118,5 +131,6 @@ def main():
     why=""
     body=summary
     day=published.date().isoformat(); slug=slugify(clean_title); brief={"title":clean_title,"description":summary,"why_it_matters":why,"pubDate":day,"category":"news","tags":["Tokenization","Institutions","News Watch"],"keyTakeaways":[summary,why],"body":body,"sources":[{"name":source_name,"url":link}],"newsWatch":{"score":score,"priority":band,"sourceTrust":trust,"discoveredAt":now.isoformat(),"requiresSourceReview":True,"autoPublishEligible":False,"contentStatus":"needs-source-enrichment"}}
+    brief["newsWatch"]["discoveryMode"] = discovery_mode
     INBOX.mkdir(parents=True,exist_ok=True); path=INBOX/f"{day}-{slug}.json"; path.write_text(json.dumps(brief,indent=2,ensure_ascii=False)+"\n"); seen.add(guid); state["seen"]=list(seen)[-500:]; state["lastResult"]="candidate"; state["lastCandidate"]=str(path.relative_to(ROOT)); state["lastCandidatePriority"]=band; STATE.write_text(json.dumps(state,indent=2,ensure_ascii=False)+"\n"); print(path.relative_to(ROOT))
 if __name__=="__main__":main()
