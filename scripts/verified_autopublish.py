@@ -1,6 +1,7 @@
 """Apply operator policy only to sealed source-reviewed RWA packages."""
 import json
 import pathlib
+import re
 import sys
 from datetime import datetime, timedelta, timezone
 from candidate_generator import slugify
@@ -82,8 +83,52 @@ def approve(brief_path, candidate_path, root=ROOT):
     return str(target.relative_to(root))
 
 
+def reconcile(root=ROOT):
+    """Recover reviewed, already generated stories missed by event-only routing.
+
+    Return only exact approved paths; no network or Telegram calls here. Existing
+    receipts/rejections and every source-review/content check remain authoritative.
+    """
+    root = pathlib.Path(root).resolve()
+    policy = json.loads((root / "publish/editorial-policy.json").read_text())
+    paths = []
+    for bp in sorted((root / "publish/inbox").glob("*.json")):
+        try:
+            brief = json.loads(bp.read_text())
+            if not eligible(brief, policy):
+                continue
+            expected = expected_candidate(brief)
+            cp = root / "publish/candidates" / (expected["id"] + ".json")
+            slug = slugify(brief.get("slug") or brief["title"])
+            article = (root / "src/content/articles" / (slug + ".mdx")).read_text()
+            front, body = article.split("---", 2)[1:]
+            if re.search(r"^draft:\s*true\s*$", front, re.M):
+                continue
+            if not re.search(r'^type:\s*"(?:NEWS|RESEARCH)"\s*$', front, re.M):
+                continue
+            fields = {"title": brief["title"], "pubDate": brief["pubDate"],
+                      "category": brief.get("category", "news")}
+            if any(f"{key}: {json.dumps(value, ensure_ascii=False)}" not in front
+                   for key, value in fields.items()):
+                continue
+            # Never distribute an old brief after an English editorial correction.
+            if body.split("\n\n---\n\n**Sources**", 1)[0].strip() != brief["body"].strip():
+                continue
+            if any(source["url"] not in body for source in brief["sources"]):
+                continue
+            approved = approve(str(bp.relative_to(root)), str(cp.relative_to(root)), root)
+            if approved and approved not in paths:
+                paths.append(approved)
+        except (ValueError, KeyError, TypeError, OSError) as error:
+            print(f"Automatic routing held for {bp.name}: {type(error).__name__}", file=sys.stderr)
+    return paths
+
+
 if __name__ == "__main__":
     try:
+        if sys.argv[1:] == ["--reconcile"]:
+            print("\n".join(reconcile()))
+            raise SystemExit(0)
         if len(sys.argv) != 3:
             raise ValueError("Usage: verified_autopublish.py brief candidate")
         print(approve(sys.argv[1], sys.argv[2]))
