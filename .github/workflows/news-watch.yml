@@ -38,6 +38,8 @@ jobs:
 
       - name: Reconcile source-reviewed Telegram backlog
         id: telegram_queue
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
         run: |
           # Reviews may finish after candidate generation. Revisit existing
           # packages even when discovery found nothing new in this run.
