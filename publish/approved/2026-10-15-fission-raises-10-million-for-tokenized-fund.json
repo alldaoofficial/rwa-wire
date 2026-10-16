@@ -1,0 +1,27 @@
+{
+  "id": "2026-10-15-fission-raises-10-million-for-tokenized-fund",
+  "title": "Fission Raises $10 Million for Tokenized Fund Liquidity",
+  "category": "NEWS",
+  "why_it_matters": "The financing targets a persistent market-structure gap: tokenized fund interests can settle digitally while investors may still face conventional redemption constraints.",
+  "article_url": "https://therwawire.com/news/fission-raises-10-million-for-tokenized-fund-liquidity/",
+  "image_url": "https://therwawire.com/images/news/fission-raises-10-million-for-tokenized-fund-liquidity.svg",
+  "caption": "RWA WIRE // NEWS\n\nFission Raises $10 Million for Tokenized Fund Liquidity\n\nFission closed a $10 million Series A led by Pantera Capital to expand liquidity capacity for eligible investors in supported tokenized funds.\n\nFull analysis →\nhttps://therwawire.com/news/fission-raises-10-million-for-tokenized-fund-liquidity/",
+  "distribution": {
+    "telegram": "RWA WIRE // NEWS\n\nFission Raises $10 Million for Tokenized Fund Liquidity\n\nFission closed a $10 million Series A led by Pantera Capital to expand liquidity capacity for eligible investors in supported tokenized funds.\n\nFull analysis →\nhttps://therwawire.com/news/fission-raises-10-million-for-tokenized-fund-liquidity/",
+    "x": "Fission Raises $10 Million for Tokenized Fund Liquidity\n\nFission closed a $10 million Series A led by Pantera Capital to expand liquidity capacity for eligible investors in supported tokenized funds.\n\nhttps://therwawire.com/news/fission-raises-10-million-for-tokenized-fund-liquidity/",
+    "breaking": "RWA WIRE // NEWS\n\nFission Raises $10 Million for Tokenized Fund Liquidity\n\nhttps://therwawire.com/news/fission-raises-10-million-for-tokenized-fund-liquidity/",
+    "summary": "Fission closed a $10 million Series A led by Pantera Capital to expand liquidity capacity for eligible investors in supported tokenized funds."
+  },
+  "sources": [
+    {
+      "name": "Fission Labs — Series A announcement",
+      "url": "https://www.prnewswire.com/news-releases/fission-raises-10m-series-a-led-by-pantera-capital-to-bring-liquidity-to-digital-private-markets-302908670.html"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-10-15-pantera-capital-backed-startup-fission-raises-10-million-to-help-investors-cash.json",
+    "contentSha256": "1fe2d913f2c0e3173da199c2be6d3708dd5a6a6f0a43b88d1e342650a6d599bc",
+    "approvedAt": "2026-10-16T06:23:43.277812+00:00"
+  }
+}

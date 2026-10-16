@@ -1,0 +1,31 @@
+{
+  "id": "2026-10-13-bis-project-aurum-phase-2-tests-privacy-pres",
+  "title": "BIS Project Aurum Phase 2 Tests Privacy-Preserving Digital Cash",
+  "category": "INSTITUTIONS",
+  "why_it_matters": "The prototype gives central banks a concrete architecture for testing whether digital cash can limit routine disclosure of payment data without removing compliance safeguards.",
+  "article_url": "https://therwawire.com/institutions/bis-project-aurum-phase-2-tests-privacy-preserving-digital-cash/",
+  "image_url": "https://therwawire.com/images/news/bis-project-aurum-phase-2-tests-privacy-preserving-digital-cash.svg",
+  "caption": "RWA WIRE // INSTITUTIONS\n\nBIS Project Aurum Phase 2 Tests Privacy-Preserving Digital Cash\n\nA BIS Innovation Hub prototype combines cryptographic privacy tools with configurable compliance controls for digital cash; it is a research proof of concept, not a live payment system.\n\nFull analysis →\nhttps://therwawire.com/institutions/bis-project-aurum-phase-2-tests-privacy-preserving-digital-cash/",
+  "distribution": {
+    "telegram": "RWA WIRE // INSTITUTIONS\n\nBIS Project Aurum Phase 2 Tests Privacy-Preserving Digital Cash\n\nA BIS Innovation Hub prototype combines cryptographic privacy tools with configurable compliance controls for digital cash; it is a research proof of concept, not a live payment system.\n\nFull analysis →\nhttps://therwawire.com/institutions/bis-project-aurum-phase-2-tests-privacy-preserving-digital-cash/",
+    "x": "BIS Project Aurum Phase 2 Tests Privacy-Preserving Digital Cash\n\nA BIS Innovation Hub prototype combines cryptographic privacy tools with configurable compliance controls for digital cash; it is a research proof of concept, not a live payment system.\n\nhttps://therwawire.com/institutions/bis-project-aurum-phase-2-tests-privacy-preserving-digital-cash/",
+    "breaking": "RWA WIRE // INSTITUTIONS\n\nBIS Project Aurum Phase 2 Tests Privacy-Preserving Digital Cash\n\nhttps://therwawire.com/institutions/bis-project-aurum-phase-2-tests-privacy-preserving-digital-cash/",
+    "summary": "A BIS Innovation Hub prototype combines cryptographic privacy tools with configurable compliance controls for digital cash; it is a research proof of concept, not a live payment system."
+  },
+  "sources": [
+    {
+      "name": "BIS Innovation Hub — Project Aurum 2.0",
+      "url": "https://www.bis.org/project/aurum-2"
+    },
+    {
+      "name": "BIS Innovation Hub — Project Aurum Phase 2 report",
+      "url": "https://www.bis.org/publications/project-aurum-phase-2-exploring-privacy-enhancing-technologies-digital-cash"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-10-13-bis-project-aurum-phase-2-privacy-digital-cash.json",
+    "contentSha256": "ba43c23b1a0c32a7e044e06640851789fdfe894b26d051e76c0be10d01c23e50",
+    "approvedAt": "2026-10-16T06:23:43.273306+00:00"
+  }
+}
