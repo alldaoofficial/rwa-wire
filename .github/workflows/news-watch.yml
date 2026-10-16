@@ -26,6 +26,8 @@ concurrency:
 jobs:
   discover:
     runs-on: ubuntu-latest
+    outputs:
+      telegram_matrix: ${{ steps.telegram_queue.outputs.matrix }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -35,8 +37,7 @@ jobs:
         run: echo "News Watch triggered by ${{ github.event_name }} at $(date -u +%Y-%m-%dT%H:%M:%SZ)"
 
       - name: Reconcile source-reviewed Telegram backlog
-        env:
-          GH_TOKEN: ${{ github.token }}
+        id: telegram_queue
         run: |
           # Reviews may finish after candidate generation. Revisit existing
           # packages even when discovery found nothing new in this run.
@@ -45,6 +46,7 @@ jobs:
           python3 scripts/verified_autopublish.py --reconcile > "$QUEUE_FILE"
           mapfile -t APPROVED_PATHS < <(sed '/^$/d' "$QUEUE_FILE")
           if [ "${#APPROVED_PATHS[@]}" -eq 0 ]; then
+            echo 'matrix={"include":[]}' >> "$GITHUB_OUTPUT"
             echo "No eligible unposted source-reviewed stories."
             exit 0
           fi
@@ -58,11 +60,14 @@ jobs:
             if [ "$attempt" -eq 3 ]; then exit 1; fi
             sleep 3
           done
-          # GITHUB_TOKEN pushes do not trigger another workflow. Dispatch
-          # explicitly, including unchanged approvals whose prior dispatch failed.
-          for APPROVED_PATH in "${APPROVED_PATHS[@]}"; do
-            gh workflow run telegram-test.yml --ref main -f manifest_path="$APPROVED_PATH"
-          done
+          # Explicit reusable jobs avoid GITHUB_TOKEN's push-trigger suppression.
+          # A sequential matrix also avoids replacing Telegram's pending job by
+          # dispatching multiple workflows into its single concurrency group.
+          python3 - "$QUEUE_FILE" >> "$GITHUB_OUTPUT" <<'PY'
+          import json, pathlib, sys
+          paths = pathlib.Path(sys.argv[1]).read_text().splitlines()
+          print('matrix=' + json.dumps({'include': [{'manifest_path': p} for p in paths if p]}))
+          PY
 
       - name: Restore News Watch state
         id: state-cache
@@ -147,3 +152,16 @@ jobs:
         run: |
           echo "Triggering candidate generator for $BRIEF_PATH"
           gh workflow run candidate-generator.yml --ref main -f brief_path="$BRIEF_PATH"
+
+  publish-reviewed-backlog:
+    needs: discover
+    if: needs.discover.outputs.telegram_matrix != '{"include":[]}' && needs.discover.outputs.telegram_matrix != ''
+    strategy:
+      max-parallel: 1
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.discover.outputs.telegram_matrix) }}
+    uses: ./.github/workflows/telegram-test.yml
+    with:
+      manifest_path: ${{ matrix.manifest_path }}
+    secrets:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
