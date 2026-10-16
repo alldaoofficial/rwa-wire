@@ -60,5 +60,33 @@ class VerifiedAutoPublishTests(unittest.TestCase):
             posted=root/"publish/posted"/cp.name; posted.parent.mkdir(); posted.write_text('{"status":"published"}')
             self.assertEqual(auto.approve(str(bp.relative_to(root)),str(cp.relative_to(root)),root),"")
 
+    def test_reconcile_recovers_late_review_and_retries_unposted_approval(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = pathlib.Path(directory); brief = self.fixture()
+            bp = root / "publish/inbox/story.json"; bp.parent.mkdir(parents=True)
+            bp.write_text(json.dumps(brief))
+            (root / "publish/editorial-policy.json").write_text('{"auto_publish_verified_rwa":true}')
+            with patch.object(generator, "ROOT", root), patch.object(generator, "ARTICLES", root/"src/content/articles"), patch.object(generator, "IMAGES", root/"public/images/news"), patch.object(generator, "CANDIDATES", root/"publish/candidates"), patch.object(sys,"argv",["generator",str(bp)]):
+                generator.main()
+            cp = next((root/"publish/candidates").glob("*.json"))
+            article = next((root/"src/content/articles").glob("*.mdx"))
+            original = article.read_text()
+            # A public correction or a draft cannot be sent using an old brief.
+            for altered in [original.replace(brief["body"].strip(), "Editorial correction."),
+                            original.replace('type: "NEWS"', 'type: "NEWS"\ndraft: true')]:
+                article.write_text(altered)
+                self.assertEqual(auto.reconcile(root), [])
+            article.write_text(original)
+            result = auto.reconcile(root)
+            self.assertEqual(result, ["publish/approved/" + cp.name])
+            self.assertEqual(auto.reconcile(root), result)
+            posted = root/"publish/posted"/cp.name; posted.parent.mkdir()
+            posted.write_text('{"status":"published"}')
+            self.assertEqual(auto.reconcile(root), [])
+            posted.unlink()
+            rejected = root/"publish/rejected"/cp.name; rejected.parent.mkdir()
+            rejected.write_text('{}')
+            self.assertEqual(auto.reconcile(root), [])
+
 
 if __name__ == "__main__": unittest.main()
