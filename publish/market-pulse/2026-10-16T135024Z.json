@@ -1,0 +1,118 @@
+{
+  "version": "2.1",
+  "generatedAt": "2026-10-16T13:50:24Z",
+  "status": "dry_run",
+  "source": "CoinGecko",
+  "sourceFetchedAt": "2026-10-16T13:50:24.229373Z",
+  "assetCount": 9,
+  "basket": {
+    "average24h": 4.42974694479691,
+    "median24h": 5.128882657328772,
+    "up": 7,
+    "down": 2,
+    "flat": 0,
+    "spreadPctPoints": 10.166197347458372
+  },
+  "leader": {
+    "id": "ondo-finance",
+    "symbol": "ONDO",
+    "name": "Ondo",
+    "price": 0.466321,
+    "change24h": 9.49508919259675,
+    "volume24h": 165680458.25577822
+  },
+  "weakest": {
+    "id": "mantra-dao",
+    "symbol": "OM",
+    "name": "MANTRA",
+    "price": 0.055971,
+    "change24h": -0.6711081548616217,
+    "volume24h": 18.861658608761562
+  },
+  "highestVolume": {
+    "id": "chainlink",
+    "symbol": "LINK",
+    "name": "Chainlink",
+    "price": 12.52,
+    "change24h": 5.128882657328772,
+    "volume24h": 315988056.5510862
+  },
+  "marketRead": "Breadth is strong with 7/9 tracked assets positive. Dispersion is elevated: 10.2 percentage points separate the strongest and weakest tracked assets. LINK has the highest reported 24h volume in the tracked basket at $316.0M.",
+  "xMarketRead": "Broad strength: 7/9 tracked assets are green. Performance spread: 10.2 pts.",
+  "assets": [
+    {
+      "id": "ondo-finance",
+      "symbol": "ONDO",
+      "name": "Ondo",
+      "price": 0.466321,
+      "change24h": 9.49508919259675,
+      "volume24h": 165680458.25577822
+    },
+    {
+      "id": "goldfinch",
+      "symbol": "GFI",
+      "name": "Goldfinch",
+      "price": 0.03949181,
+      "change24h": 7.444356443674111,
+      "volume24h": 182976.12713764235
+    },
+    {
+      "id": "plume",
+      "symbol": "PLUME",
+      "name": "Plume",
+      "price": 0.01963068,
+      "change24h": 7.201149884605597,
+      "volume24h": 25677873.31357989
+    },
+    {
+      "id": "polymesh",
+      "symbol": "POLYX",
+      "name": "Polymesh",
+      "price": 0.0370621,
+      "change24h": 5.14284868084897,
+      "volume24h": 198347.1835569931
+    },
+    {
+      "id": "chainlink",
+      "symbol": "LINK",
+      "name": "Chainlink",
+      "price": 12.52,
+      "change24h": 5.128882657328772,
+      "volume24h": 315988056.5510862
+    },
+    {
+      "id": "centrifuge",
+      "symbol": "CFG",
+      "name": "Centrifuge",
+      "price": 0.130882,
+      "change24h": 4.115263495807352,
+      "volume24h": 459976.8545737691
+    },
+    {
+      "id": "clearpool",
+      "symbol": "CPOOL",
+      "name": "Clearpool",
+      "price": 0.02880183,
+      "change24h": 2.599680585414262,
+      "volume24h": 1442230.6841541203
+    },
+    {
+      "id": "zebec-protocol",
+      "symbol": "ZBCN",
+      "name": "Zebec",
+      "price": 0.00087181,
+      "change24h": -0.5884402822420057,
+      "volume24h": 24.75054581483741
+    },
+    {
+      "id": "mantra-dao",
+      "symbol": "OM",
+      "name": "MANTRA",
+      "price": 0.055971,
+      "change24h": -0.6711081548616217,
+      "volume24h": 18.861658608761562
+    }
+  ],
+  "telegram": "RWA WIRE // MARKET PULSE\n\nTracked RWA tokens are broadly higher over 24h.\nBreadth: 7 up / 2 down\nBasket: avg +4.4% · median +5.1%\n\nTop movers\n▲ ONDO +9.5% · $0.4663\n▲ GFI +7.4% · $0.0395\n▲ PLUME +7.2% · $0.0196\n\nWeakest movers\n▲ CPOOL +2.6% · $0.0288\n▼ ZBCN -0.6% · $0.0009\n▼ OM -0.7% · $0.0560\n\nMARKET READ\nBreadth is strong with 7/9 tracked assets positive. Dispersion is elevated: 10.2 percentage points separate the strongest and weakest tracked assets. LINK has the highest reported 24h volume in the tracked basket at $316.0M.\n\nData: CoinGecko · 24h change",
+  "x": "RWA WIRE // MARKET PULSE\n\nRWA basket: +4.4% avg · 7/9 green\nONDO +9.5% | GFI +7.4% | PLUME +7.2%\n\nBroad strength: 7/9 tracked assets are green. Performance spread: 10.2 pts.\n\nData: CoinGecko"
+}
