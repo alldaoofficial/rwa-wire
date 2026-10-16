@@ -33,16 +33,16 @@ jobs:
         uses: actions/checkout@v4
         with:
           # Push manifest resolution must use the triggering commit, not a later main.
-          ref: ${{ github.event_name == 'push' && github.sha || 'main' }}
+          ref: ${{ inputs.manifest_path != '' && 'main' || (github.event_name == 'push' && github.sha || 'main') }}
           fetch-depth: 2
       - name: Sync latest main for requested package
-        if: github.event_name != 'push'
+        if: inputs.manifest_path != '' || github.event_name != 'push'
         run: git pull --ff-only origin main
       - name: Resolve package type
         env:
           REQUESTED_MANIFEST_PATH: ${{ inputs.manifest_path }}
         run: |
-          if [ "${{ github.event_name }}" = "push" ]; then MANIFEST_PATH=$(git diff --name-only --diff-filter=A HEAD^ HEAD -- "publish/approved/*.json" "publish/market-pulse-telegram-ready/*.json" | head -n 1); else MANIFEST_PATH="$REQUESTED_MANIFEST_PATH"; fi
+          if [ -n "$REQUESTED_MANIFEST_PATH" ]; then MANIFEST_PATH="$REQUESTED_MANIFEST_PATH"; elif [ "${{ github.event_name }}" = "push" ]; then MANIFEST_PATH=$(git diff --name-only --diff-filter=A HEAD^ HEAD -- "publish/approved/*.json" "publish/market-pulse-telegram-ready/*.json" | head -n 1); else echo "No requested manifest"; exit 1; fi
           if [ -z "$MANIFEST_PATH" ]; then echo "No publishable Telegram package."; exit 1; fi
           echo "MANIFEST_PATH=$MANIFEST_PATH" >> "$GITHUB_ENV"
           case "$MANIFEST_PATH" in publish/market-pulse-telegram-ready/*.json) echo "PACKAGE_TYPE=market_pulse" >> "$GITHUB_ENV" ;; publish/approved/*.json) echo "PACKAGE_TYPE=news" >> "$GITHUB_ENV" ;; *) echo "Invalid Telegram package path"; exit 1 ;; esac
