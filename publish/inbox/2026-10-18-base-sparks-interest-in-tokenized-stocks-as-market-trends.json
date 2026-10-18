@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-18T22:07:00Z",
+    "reason": "The article extrapolates market interest from a Base social-media question and does not document a new launch, transaction or material expansion. Base's primary tokenized-stocks announcement dates to August 24, 2026."
   }
 }
