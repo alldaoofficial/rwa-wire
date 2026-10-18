@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-18T13:21:00Z",
+    "reason": "The discovery resolves to a mixed clickbait/community-style item combining unrelated celebrity and crypto headlines, not a dated publisher report or primary announcement suitable for RWA Wire."
   }
 }
