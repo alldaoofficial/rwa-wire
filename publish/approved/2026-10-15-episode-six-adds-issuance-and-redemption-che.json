@@ -1,0 +1,27 @@
+{
+  "id": "2026-10-15-episode-six-adds-issuance-and-redemption-che",
+  "title": "Episode Six Adds Issuance and Redemption Checks for Tokenized Deposits",
+  "category": "INSTITUTIONS",
+  "why_it_matters": "Checking redemption requests before releasing money addresses an operational risk in tokenized banking, but ledger controls alone cannot establish actual reserve sufficiency.",
+  "article_url": "https://therwawire.com/institutions/episode-six-adds-issuance-and-redemption-checks-for-tokenized-deposits/",
+  "image_url": "https://therwawire.com/images/news/episode-six-adds-issuance-and-redemption-checks-for-tokenized-deposits.svg",
+  "caption": "RWA WIRE // INSTITUTIONS\n\nEpisode Six Adds Issuance and Redemption Checks for Tokenized Deposits\n\nVerified Backing checks funds recorded on the issuer's ledger and outstanding issuance status, while banks retain responsibility for reserve assurance and regulatory obligations.\n\nFull analysis →\nhttps://therwawire.com/institutions/episode-six-adds-issuance-and-redemption-checks-for-tokenized-deposits/",
+  "distribution": {
+    "telegram": "RWA WIRE // INSTITUTIONS\n\nEpisode Six Adds Issuance and Redemption Checks for Tokenized Deposits\n\nVerified Backing checks funds recorded on the issuer's ledger and outstanding issuance status, while banks retain responsibility for reserve assurance and regulatory obligations.\n\nFull analysis →\nhttps://therwawire.com/institutions/episode-six-adds-issuance-and-redemption-checks-for-tokenized-deposits/",
+    "x": "Episode Six Adds Issuance and Redemption Checks for Tokenized Deposits\n\nVerified Backing checks funds recorded on the issuer's ledger and outstanding issuance status, while banks retain responsibility for reserve assurance and regulatory obligations.\n\nhttps://therwawire.com/institutions/episode-six-adds-issuance-and-redemption-checks-for-tokenized-deposits/",
+    "breaking": "RWA WIRE // INSTITUTIONS\n\nEpisode Six Adds Issuance and Redemption Checks for Tokenized Deposits\n\nhttps://therwawire.com/institutions/episode-six-adds-issuance-and-redemption-checks-for-tokenized-deposits/",
+    "summary": "Verified Backing checks funds recorded on the issuer's ledger and outstanding issuance status, while banks retain responsibility for reserve assurance and regulatory obligations."
+  },
+  "sources": [
+    {
+      "name": "Episode Six — official announcement",
+      "url": "https://episodesix.com/blog/episode-six-launches-verified-backing-for-real-time-confidence"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-10-16-episode-six-debuts-real-time-verified-backing-for-bank-issued-tokenized-deposits.json",
+    "contentSha256": "62a5ecef737d2b1617507255532efb0d5c74423438598e563594206e75239f17",
+    "approvedAt": "2026-10-18T10:37:10.162826+00:00"
+  }
+}
