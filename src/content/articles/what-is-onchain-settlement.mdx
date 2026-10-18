@@ -2,8 +2,9 @@
 type: "EXPLAINER"
 category: "learn"
 title: "What Is Onchain Settlement?"
-description: "A guide to onchain settlement: how tokenized assets and digital money can complete transactions, how delivery versus payment works, and why settlement infrastructure matters."
+description: "Onchain settlement explained: delivery versus payment, a simple trade example, T+1 versus atomic settlement, liquidity risks and the Eurosystem's Pontes service."
 pubDate: "2026-09-27"
+updatedDate: "2026-10-18"
 readingTime: "9 min read"
 tags: ["Settlement", "Tokenization", "Infrastructure", "DvP", "Institutions"]
 relatedSlugs: ["how-does-asset-tokenization-work", "stablecoins-vs-tokenized-deposits", "tokenized-treasuries-explained", "the-clearing-house-quant-on-chain-money"]
@@ -14,6 +15,8 @@ keyTakeaways:
   - "Delivery versus payment can link the asset and cash legs so that one transfer occurs only if the other can complete."
   - "Fast blockchain transactions do not automatically equal legal settlement finality; the legal, monetary and operational layers still matter."
 ---
+
+**Onchain settlement uses a blockchain or distributed ledger to complete transaction obligations, such as transferring a tokenized asset in exchange for payment.** The asset transfer, the cash leg and legally recognized finality all matter.
 
 A trade and a settled trade are not the same thing.
 
@@ -72,6 +75,14 @@ Without DvP, one party could deliver its side of the transaction while the other
 Programmable ledgers can coordinate these transfers. If the system is designed correctly, the asset and payment instructions can be linked so that both complete according to the same transaction logic.
 
 This can reduce **principal risk** — the risk of delivering an asset without receiving the payment owed in return.
+
+### A simple DvP example
+
+Suppose a buyer agrees to pay 100 units of an eligible settlement asset for one tokenized fund share. This is an illustration, not a quoted market price.
+
+1. The buyer supplies payment and the seller supplies the share, subject to the product's access and transfer rules.
+2. A DvP arrangement links delivery to payment: the seller should not lose the share without receiving the agreed money.
+3. Completion must satisfy the applicable settlement rules. A blockchain confirmation alone does not answer every question about the fund's ownership register or the payment asset.
 
 ## Is DvP the same as atomic settlement?
 
@@ -161,7 +172,7 @@ Central banks are exploring ways for tokenized wholesale financial markets to se
 
 These models can coexist.
 
-Read [Stablecoins vs Tokenized Deposits](/rwa-wire/learn/stablecoins-vs-tokenized-deposits/) for the differences between two of these forms of digital money.
+Read [Stablecoins vs Tokenized Deposits](/learn/stablecoins-vs-tokenized-deposits/) for the differences between two of these forms of digital money.
 
 ## Why central-bank money matters
 
@@ -171,7 +182,7 @@ Tokenized markets create a challenge: if the asset exists on distributed-ledger 
 
 Central banks are actively working on this problem.
 
-The Eurosystem's work on DLT settlement is one example. Its **Pontes** initiative is designed to connect distributed-ledger platforms with TARGET Services so eligible DLT-based transactions can settle in central-bank money.
+The Eurosystem's **Pontes** service is one example. Its initial launch took place on **September 21, 2026**, connecting eligible market DLT platforms with TARGET Services for settlement in central-bank money. The ECB describes further features as a phased rollout. Participation and operating arrangements still apply; the launch does not mean every tokenized asset can settle through Pontes at any time.
 
 This illustrates an important point: institutional onchain finance may develop through **connections between new ledgers and existing financial infrastructure**, rather than replacing everything at once.
 
@@ -196,7 +207,7 @@ This is why interoperability providers and established payment infrastructure ar
 
 The Clearing House's On-Chain Money Initiative is a current example. The project is designed around tokenized commercial-bank deposits and connections to established U.S. payment rails including RTP and CHIPS.
 
-Read our coverage: [The Clearing House Selects Quant for U.S. Tokenized Deposit Network](/rwa-wire/news/the-clearing-house-quant-on-chain-money/).
+Read our coverage: [The Clearing House Selects Quant for U.S. Tokenized Deposit Network](/news/the-clearing-house-quant-on-chain-money/).
 
 ## Does onchain settlement remove clearing houses?
 
@@ -232,9 +243,16 @@ Onchain settlement changes the risk architecture. It does not eliminate risk.
 
 ## T+1 versus onchain settlement
 
-In May 2024, the U.S. securities market shortened the standard settlement cycle for many transactions from T+2 to **T+1**.
+On **May 28, 2024**, the U.S. securities market shortened the standard settlement cycle for many transactions from T+2 to **T+1**.
 
 That means eligible trades generally settle one business day after the trade date.
+
+| Concept | What it describes | What it does not guarantee |
+| --- | --- | --- |
+| T+1 | A settlement cycle of one business day after the trade date. | That the transaction uses a blockchain. |
+| DvP | A link between delivery of the asset and the corresponding payment. | That every settlement step happens on one ledger. |
+| Atomic settlement | All required transaction components execute together or none execute. | Legal enforceability or the credit quality of the settlement asset. |
+| Onchain settlement | Distributed-ledger infrastructure is part of completing the obligations. | Instant cash availability, uninterrupted operation or the absence of risk. |
 
 Onchain infrastructure raises the possibility of going further — potentially toward same-day or near-real-time settlement for some markets.
 
@@ -260,7 +278,7 @@ After settlement, the relevant ownership records reflect the completed transacti
 
 This sounds simple, but institutional-grade execution still requires answers about legal ownership, custody, identity, the settlement asset and transaction finality.
 
-That is why our [How Does Asset Tokenization Work?](/rwa-wire/learn/how-does-asset-tokenization-work/) guide treats settlement as one layer of a much larger stack.
+That is why our [How Does Asset Tokenization Work?](/learn/how-does-asset-tokenization-work/) guide treats settlement as one layer of a much larger stack.
 
 ## The bigger picture
 
@@ -278,8 +296,7 @@ The future of tokenized finance therefore depends not only on what assets move o
 
 ## Sources
 
-- Bank for International Settlements — research on tokenisation, unified ledgers and next-generation monetary and financial systems
-- Bank for International Settlements / CPMI — work on delivery versus payment and settlement risk
-- European Central Bank / Eurosystem — work on settling DLT-based transactions in central-bank money and Pontes
-- U.S. Securities and Exchange Commission — transition to the T+1 standard settlement cycle
-- The Clearing House — On-Chain Money Initiative, September 2026
+- [BIS — Wholesale central bank money in the context of technological innovation](https://www.bis.org/publications/wholesale-central-bank-money-context-technological-innovation)
+- [BIS / CPMI — Delivery versus payment in securities settlement systems](https://www.bis.org/publications/delivery-versus-payment-securities-settlement-systems)
+- [European Central Bank — Pontes](https://www.ecb.europa.eu/paym/target/pontes/html/index.en.html)
+- [SEC — Transition to T+1 on May 28, 2024](https://www.sec.gov/newsroom/press-releases/2024-62)

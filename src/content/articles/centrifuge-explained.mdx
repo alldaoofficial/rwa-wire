@@ -1,36 +1,74 @@
 ---
 type: "PROJECT"
 category: "projects"
-title: "Centrifuge Explained"
-description: "A neutral profile of Centrifuge, an infrastructure project focused on tokenizing private credit and other structured real-world assets."
+title: "What Is Centrifuge? Tokenized Funds, Pools and CFG"
+description: "How Centrifuge supports tokenized funds, what pools and vaults do, how redemptions work, and why CFG differs from a fund-share token."
 pubDate: "2026-09-17"
-readingTime: "4 min read"
-tags: ["Projects", "Private Credit"]
+updatedDate: "2026-10-18"
+readingTime: "3 min read"
+tags: ["Projects", "Tokenized Funds", "Private Credit"]
 projectMeta:
-  sector: "Private credit"
-  role: "RWA credit infrastructure"
-  assetExposure: "Private credit & structured assets"
+  sector: "Tokenized securities"
+  role: "Onchain asset-management infrastructure"
+  assetExposure: "Tokenized funds, private credit & onchain strategies"
   networks: ["Ethereum", "Multi-chain"]
-  products: ["Centrifuge Pools", "RWA infrastructure"]
+  products: ["Pools", "Share classes", "Vaults"]
   status: "Active"
 relatedSlugs: ["tokenized-bonds-explained", "tokenized-funds-explained", "rwa-infrastructure-explained"]
 keyTakeaways:
-  - "Centrifuge is infrastructure for tokenizing private credit and other structured real-world assets, connecting asset originators with onchain capital."
-  - "The platform provides tooling for legal structuring, onchain pools and investor reporting rather than issuing a single flagship product."
-  - "Private credit tokenization carries asset-specific risks tied to loan quality and borrower performance, distinct from more standardized RWA categories."
+  - "Centrifuge provides infrastructure for onchain asset management, including tokenized funds and private-credit products."
+  - "Pools organize financial products; share tokens and vaults have distinct roles within each product."
+  - "Even vaults with instant deposits use request-based redemptions; CFG is separate from a fund-share token."
 draft: false
 ---
 
-Centrifuge is an infrastructure project built around tokenizing private credit — loans to businesses, trade finance receivables and similar structured lending — connecting originators of that credit with onchain sources of capital.
+Centrifuge is infrastructure for **onchain asset management**. Managers can use it to operate tokenized financial products, including funds and private-credit offerings. It is broader than a marketplace for loans: its manager documentation also covers Treasury, money-market, equity and onchain strategies.
 
-## How the model works
+## How Centrifuge works
 
-Asset originators, such as specialty lenders, bring pools of loans or receivables onto the platform, where they're placed into legal structures and represented as tokenized pools. Investors can provide capital to these pools in exchange for tokens representing a claim on the pool's cash flows, with terms — interest rate, seniority, expected duration — set by the specific pool.
+A manager structures a financial product and configures its onchain operations. These can include investor access, share issuance, pricing, subscriptions and reporting. The onchain setup needs to reflect the product's underlying structure; deploying a token does not establish its legal terms by itself.
 
-## Why private credit is a distinct RWA category
+Three concepts help explain the investor-facing workflow:
 
-Unlike a Treasury bill, private credit doesn't have a standardized, publicly quoted price or a government guarantee behind it. Its risk depends on the specific borrowers, the quality of underwriting by the loan originator, and the structure's protections for investors in a downside scenario. This makes private credit tokenization a meaningfully different risk category from tokenized Treasuries or money market funds, even though both fall under the broader "RWA" label.
+| Component | Role |
+| --- | --- |
+| Pool | Organizes a financial product's accounting, share classes and management permissions. |
+| Share token | Represents a claim associated with the pool; the particular product determines its terms. |
+| Vault | Provides an entry point for investing in or requesting redemption from a share class, using a specified asset and network. |
 
-## Reading this profile
+A pool can coordinate activity across networks. That does not mean every share token is freely transferable: investor permissions and the product's rules still apply.
 
-This is a description of the infrastructure and asset category Centrifuge focuses on, not an evaluation of any specific pool's credit quality or an investment recommendation. Private credit carries default risk that varies significantly by pool and requires its own due diligence.
+For the broader structure, read [how tokenized funds work](/rwa/tokenized-funds-explained/).
+
+## Are deposits and withdrawals instant?
+
+Not necessarily. Centrifuge documents two vault models:
+
+- **Synchronous vaults:** a deposit can return shares in the same transaction, but redemptions remain request-based.
+- **Asynchronous vaults:** investors request deposits or redemptions, the manager processes the orders, and investors then claim the resulting shares or assets.
+
+Request-based processing can accommodate periodic valuations and offchain settlement. A token being transferable on a network therefore does not establish that a fund can redeem it immediately for cash.
+
+## Is CFG the same as a fund-share token?
+
+No. **CFG is Centrifuge's ecosystem token**, documented as an ERC-20 token on Ethereum. A share token belongs to a particular financial product. Buying CFG is not the same transaction as subscribing to one of those products and does not, by itself, give the buyer its fund shares.
+
+## What should readers check for each product?
+
+The infrastructure is only one part of the assessment. Read the product's own documentation to establish:
+
+1. **Exposure:** which assets or strategy generate its returns, and who manages them?
+2. **Rights and access:** what claim does a share represent, and who is eligible to hold or redeem it?
+3. **Liquidity:** when are requests processed, and what conditions can delay payment?
+4. **Dependencies:** which custody, valuation, contract and operational arrangements does the product rely on?
+
+Private credit adds borrower and underwriting risk; a Treasury-oriented product has a different exposure. Neither the Centrifuge name nor the presence of a token is a substitute for examining the individual offering.
+
+For a different layer of the stack, compare [Plume's blockchain ecosystem](/projects/plume-network-explained/) with [RWA infrastructure more broadly](/rwa/rwa-infrastructure-explained/). This profile describes infrastructure, not a recommendation to buy CFG or any fund.
+
+## Primary sources
+
+- [Centrifuge — Manager guide](https://docs.centrifuge.io/user/manager/)
+- [Centrifuge — Pools](https://docs.centrifuge.io/user/concepts/pools/)
+- [Centrifuge — Vaults](https://docs.centrifuge.io/user/concepts/vaults/)
+- [Centrifuge — CFG token summary](https://docs.centrifuge.io/getting-started/token-summary/)
