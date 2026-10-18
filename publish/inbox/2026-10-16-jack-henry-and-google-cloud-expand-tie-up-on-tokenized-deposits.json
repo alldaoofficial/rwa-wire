@@ -1,23 +1,22 @@
 {
-  "title": "Jack Henry and Google Cloud expand tie-up on tokenized deposits",
-  "description": "Jack Henry and Google Cloud expand tie-up on tokenized deposits Financial-News.co.uk",
-  "why_it_matters": "",
+  "title": "Jack Henry Plans Google Cloud Ledger Integration for Tokenized Deposits",
+  "description": "The planned connection would give community banks and credit unions access to programmable payment infrastructure through their existing core technology provider.",
+  "why_it_matters": "Connecting deposit services to a bank's operating systems addresses an adoption barrier: institutions need usable integration alongside the underlying ledger technology.",
   "pubDate": "2026-10-16",
-  "category": "news",
+  "category": "institutions",
   "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Tokenized Deposits",
+    "Banking",
+    "Market Infrastructure"
   ],
   "keyTakeaways": [
-    "Jack Henry and Google Cloud expand tie-up on tokenized deposits Financial-News.co.uk",
-    ""
+    "Integration is planned; individual bank launch dates remain unspecified."
   ],
-  "body": "Jack Henry and Google Cloud expand tie-up on tokenized deposits Financial-News.co.uk",
+  "body": "Jack Henry announced on October 16 that it plans to integrate with Google Cloud Universal Ledger to support tokenized deposits for banks and credit unions. The company describes itself as the first core banking technology provider planning that connection.\n\nGoogle Cloud's managed distributed ledger supports programmable transfers and round-the-clock settlement capabilities. Jack Henry says the integration is intended to help community and regional institutions explore new payment and settlement services.\n\nThe announcement extends a relationship established in 2022. It describes planned integration and potential customer capabilities; it does not identify a completed rollout or a launch date for individual banks.",
   "sources": [
     {
-      "name": "Financial-News.co.uk",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOUlA3cjV4Z3BtaExQMUQ4UnoyUWxvVTg1cDdIWUhHVWNlRzdpei05N0wwQVNUdlFTMFpLVldGZlFlZlZOSHBMcVFySVNCSGl4cUNXYmFVZXFKRW95SDk1VXdUcnZBeksyTHRoVzBHS3g5cTVQTkZXNmJhT1ZvdVRRRS1nSDFFeTZSdnU0ejRQWjlsVVhHalFsX1JIdlNuZw?oc=5"
+      "name": "Jack Henry — official announcement",
+      "url": "https://ir.jackhenry.com/node/25531/pdf"
     }
   ],
   "newsWatch": {
@@ -33,6 +32,39 @@
     ],
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment"
+    "contentStatus": "source-reviewed"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-18T10:25:27.632678+00:00",
+    "sources": [
+      {
+        "url": "https://ir.jackhenry.com/node/25531/pdf",
+        "publishedAt": "2026-10-16",
+        "checkedAt": "2026-10-18T10:25:27.632678+00:00",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Jack Henry announced integration plans with Google's ledger.",
+        "sourceUrl": "https://ir.jackhenry.com/node/25531/pdf",
+        "anchor": "first core banking technology provider"
+      },
+      {
+        "claim": "The proposed service targets banks and credit unions.",
+        "sourceUrl": "https://ir.jackhenry.com/node/25531/pdf",
+        "anchor": "banks and credit unions"
+      },
+      {
+        "claim": "The companies established their strategic relationship in 2022.",
+        "sourceUrl": "https://ir.jackhenry.com/node/25531/pdf",
+        "anchor": "established in 2022"
+      }
+    ],
+    "contentSha256": "957d790b383be2830c7b8d98966354c07edeeb4f4b2f765f9b6ddcd6acf2f11e"
   }
 }
