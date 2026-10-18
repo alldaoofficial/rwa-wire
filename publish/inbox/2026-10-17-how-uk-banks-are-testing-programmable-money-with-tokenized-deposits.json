@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-18T15:45:00Z",
+    "reason": "This October 17 explainer repeats the Great British Tokenised Deposit live retail pilots announced on September 24, already captured by the existing UK banks tokenised-deposits article and approved pipeline record; it contains no new completed pilot or expansion."
   }
 }
