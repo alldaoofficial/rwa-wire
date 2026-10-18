@@ -1,23 +1,25 @@
 {
-  "title": "Meritz Securities and Canton Foundation Partner to Advance Tokenization of Korean Assets for Global Institutions",
-  "description": "Meritz Securities and Canton Foundation Partner to Advance Tokenization of Korean Assets for Global Institutions",
-  "why_it_matters": "",
-  "pubDate": "2026-10-18",
-  "category": "news",
+  "title": "Meritz and Canton Sign Exploratory Korea Tokenization MoU",
+  "description": "Meritz Securities and the Canton Foundation agreed to study Korean asset tokenization, institutional blockchain infrastructure and possible cross-border collateral applications.",
+  "why_it_matters": "The agreement links a Korean securities firm to Canton's institutional network, but its value depends on future regulatory clearance and operational projects that have not yet been announced.",
+  "pubDate": "2026-10-14",
+  "category": "institutions",
   "tags": [
     "Tokenization",
-    "Institutions",
-    "News Watch"
+    "South Korea",
+    "Canton Network",
+    "Market Infrastructure"
   ],
   "keyTakeaways": [
-    "Meritz Securities and Canton Foundation Partner to Advance Tokenization of Korean Assets for Global Institutions",
-    ""
+    "The MoU covers domestic financial assets, institutional infrastructure and potential cross-border applications.",
+    "The partners may study tokenized sovereign-grade debt and the use of liquid tokenized assets as collateral.",
+    "No security, live service, transaction or implementation date was announced."
   ],
-  "body": "Meritz Securities and Canton Foundation Partner to Advance Tokenization of Korean Assets for Global Institutions",
+  "body": "Meritz Securities and the Canton Foundation announced a strategic memorandum of understanding on October 14. The parties plan to evaluate tokenization of Korean financial assets and whether Canton's privacy-enabled infrastructure could support institutional activity in the country's capital markets. The agreement is exploratory: it does not launch a tokenized security, trading venue or production service.\n\nThe proposed cross-border work could involve global institutional partners and sovereign-grade debt assets. The parties also intend to study whether tokenized high-quality liquid assets could move between execution and clearing environments or serve as institutional collateral. Any expansion is expected to proceed in stages and remain subject to South Korea's developing digital-asset rules. The announcement provides no implementation timetable or named asset for issuance.",
   "sources": [
     {
-      "name": "Crowdfund Insider",
-      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPMFRwOVg5Q0pKLVBfQktjU2x4NTJPb0JwWUdjUk8tWWxTa3VoYWhHQ2tqSlVTMTZ1eUZkRHhQVldtemxlQ1ByN2JqS2JUOFlDdjZSQ3F5X2xEbGdGd1JUVU5hcGhlbXd0T2ZleEJWUWF1NGtaQXU2UmFYVUJQM2ktQXRLVmhQa3dBZXRlZm5CTXR3THltcDBwWktCcFg2cko2MTR0YnBSWGNldHpwTUdDaEs2blp3NktxYm1KQ3Ytc0E0NTFDZEcyMTZUdG56OVFVcmRqYnN2bWVpUmprYS0wcjRybjVmMHI3ZGo5NUxCZ0s2cWs?oc=5"
+      "name": "Canton Foundation and Meritz Securities — announcement via Mondo Visione",
+      "url": "https://mondovisione.com/media-and-resources/news/canton-foundation-and-meritz-securities-partner-to-advance-institutional-tokeniz-20261015/"
     }
   ],
   "newsWatch": {
@@ -27,7 +29,45 @@
     "discoveredAt": "2026-10-18T21:37:14.827687+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-18T22:07:00Z",
+    "sources": [
+      {
+        "url": "https://mondovisione.com/media-and-resources/news/canton-foundation-and-meritz-securities-partner-to-advance-institutional-tokeniz-20261015/",
+        "publishedAt": "2026-10-14",
+        "checkedAt": "2026-10-18T22:07:00Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "The parties signed a strategic memorandum of understanding.",
+        "sourceUrl": "https://mondovisione.com/media-and-resources/news/canton-foundation-and-meritz-securities-partner-to-advance-institutional-tokeniz-20261015/",
+        "anchor": "signing of a strategic Memorandum of Understanding"
+      },
+      {
+        "claim": "The partners will evaluate domestic financial asset tokenization initiatives.",
+        "sourceUrl": "https://mondovisione.com/media-and-resources/news/canton-foundation-and-meritz-securities-partner-to-advance-institutional-tokeniz-20261015/",
+        "anchor": "evaluate domestic financial asset tokenization initiatives"
+      },
+      {
+        "claim": "The cross-border exploration could include sovereign-grade debt assets.",
+        "sourceUrl": "https://mondovisione.com/media-and-resources/news/canton-foundation-and-meritz-securities-partner-to-advance-institutional-tokeniz-20261015/",
+        "anchor": "tokenized sovereign-grade debt assets"
+      },
+      {
+        "claim": "The collaboration will expand only as Korean regulation permits.",
+        "sourceUrl": "https://mondovisione.com/media-and-resources/news/canton-foundation-and-meritz-securities-partner-to-advance-institutional-tokeniz-20261015/",
+        "anchor": "as Korea's regulatory frameworks"
+      }
+    ],
+    "contentSha256": "e532b6a0ef71622094acf0d6b212e5af1b4b15c1349ba287b98fefc9cc6ef84f"
   }
 }
