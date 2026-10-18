@@ -3,7 +3,7 @@
   "description": "Chainalysis data show Japan accounts for 16.4% of geolocated tokenized Treasury holders but only 0.4% of their value, while three other markets hold 66.9% by value.",
   "why_it_matters": "The split between holder count and capital concentration shows that broader retail access does not necessarily distribute tokenized Treasury liquidity evenly across markets.",
   "pubDate": "2026-10-14",
-  "category": "research",
+  "category": "markets",
   "tags": [
     "Tokenized Treasuries",
     "RWA Data",
@@ -67,6 +67,6 @@
         "anchor": "ending July 1, 2026"
       }
     ],
-    "contentSha256": "3a4816a3417cdae85c69ada47b1e0fb0fd318d547e0b1142e68d4cdfc428f53c"
+    "contentSha256": "509d4204c93679f9b4fac553e30282de09e8cab43226e9a1f5166cf2c8e3a667"
   }
 }
