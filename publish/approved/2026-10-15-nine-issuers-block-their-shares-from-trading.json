@@ -1,0 +1,31 @@
+{
+  "id": "2026-10-15-nine-issuers-block-their-shares-from-trading",
+  "title": "Nine Issuers Block Their Shares from Trading on OKXICE's Tokenized Venue",
+  "category": "NEWS",
+  "why_it_matters": "The objections show that issuer consent safeguards can materially narrow third-party tokenized-stock listings even after a venue qualifies for the SEC's temporary exemption.",
+  "article_url": "https://therwawire.com/news/nine-issuers-block-their-shares-from-trading-on-okxice-s-tokenized-venue/",
+  "image_url": "https://therwawire.com/images/news/nine-issuers-block-their-shares-from-trading-on-okxice-s-tokenized-venue.svg",
+  "caption": "RWA WIRE // NEWS\n\nNine Issuers Block Their Shares from Trading on OKXICE's Tokenized Venue\n\nOKXICE disclosed timely objections from nine U.S.-listed issuers, preventing their tokenized shares from trading on its proposed venue under the SEC's temporary framework.\n\nFull analysis →\nhttps://therwawire.com/news/nine-issuers-block-their-shares-from-trading-on-okxice-s-tokenized-venue/",
+  "distribution": {
+    "telegram": "RWA WIRE // NEWS\n\nNine Issuers Block Their Shares from Trading on OKXICE's Tokenized Venue\n\nOKXICE disclosed timely objections from nine U.S.-listed issuers, preventing their tokenized shares from trading on its proposed venue under the SEC's temporary framework.\n\nFull analysis →\nhttps://therwawire.com/news/nine-issuers-block-their-shares-from-trading-on-okxice-s-tokenized-venue/",
+    "x": "Nine Issuers Block Their Shares from Trading on OKXICE's Tokenized Venue\n\nOKXICE disclosed timely objections from nine U.S.-listed issuers, preventing their tokenized shares from trading on its proposed venue under the SEC's temporary framework.\n\nhttps://therwawire.com/news/nine-issuers-block-their-shares-from-trading-on-okxice-s-tokenized-venue/",
+    "breaking": "RWA WIRE // NEWS\n\nNine Issuers Block Their Shares from Trading on OKXICE's Tokenized Venue\n\nhttps://therwawire.com/news/nine-issuers-block-their-shares-from-trading-on-okxice-s-tokenized-venue/",
+    "summary": "OKXICE disclosed timely objections from nine U.S.-listed issuers, preventing their tokenized shares from trading on its proposed venue under the SEC's temporary framework."
+  },
+  "sources": [
+    {
+      "name": "OKXICE — Public Notice dated October 15, 2026",
+      "url": "https://www.okx.com/cdn/assets/files/2610/F085D8D65135AB9C.pdf"
+    },
+    {
+      "name": "U.S. SEC — Tokenized Securities Venue exemption order",
+      "url": "https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-10-18-okx-s-tokenized-stocks-hit-a-wall-broadcom-coreweave-verizon-among-nine-companie.json",
+    "contentSha256": "ef749256bd7189c822bba2a9278051e6208f3a46aa44b1098428e0fe4305e9ab",
+    "approvedAt": "2026-10-18T16:48:49.123530+00:00"
+  }
+}
