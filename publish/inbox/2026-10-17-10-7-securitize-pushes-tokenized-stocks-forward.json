@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-18T15:44:00Z",
+    "reason": "The article is based on an unverified X post and materially conflates the 10.7% issuer-sponsored share of the entire tokenized-stock market with Securitize's own market share; no primary dataset was fully accessible."
   }
 }
