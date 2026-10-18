@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-18T18:25:00Z",
+    "reason": "The lead is promotional company copy republished by citybuzz and investor-newswire sites. It markets possible future licensing and partnerships around a patent allowance, without a new deployed RWA product, customer launch or independently reported commercial event."
   }
 }
