@@ -31,10 +31,10 @@
     "contentStatus": "needs-source-enrichment"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "rejected",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-18T12:41:00Z",
-    "reason": "The Startup Fortune article is the only full-text report found; no primary ETF-flow dataset or second independent full-text report verifies the claimed $639.6 million day and eight-day $3.71 billion inflow streak, which also conflicts with recent reporting of a ten-day outflow streak ending October 13."
+    "reviewedAt": "2026-10-18T18:58:00Z",
+    "reason": "The article republishes August 14, 2025 ETF-flow figures as a current October 2026 event. Farside's primary table identifies the $639.6 million day in August 2025 and shows a $69.7 million outflow on October 16, 2026, so the lead's current-news framing is false."
   }
 }
