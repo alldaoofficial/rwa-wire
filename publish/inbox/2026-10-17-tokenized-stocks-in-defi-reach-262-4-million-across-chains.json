@@ -29,5 +29,11 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedAt": "2026-10-18T11:02:49Z",
+    "reason": "The TokenPost article is the only full-text report found; no accessible primary dataset or second independent full-text report verifies the $262.4 million cross-chain total."
   }
 }
