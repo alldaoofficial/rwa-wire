@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-18T13:22:00Z",
-    "reason": "CoinDesk is the only independent full-text report found, while the underlying 79-page Citrini Research report could not be fully accessed and verified; the lead is a forecast/analysis rather than a newly documented implementation event."
+    "reviewedAt": "2026-10-18T20:53:00Z",
+    "reason": "After the retry interval, CoinDesk remains the only independent full-text report and the underlying paid Citrini Research report remains unavailable for complete verification. The item is a market forecast, not a newly documented implementation event."
   }
 }
