@@ -31,10 +31,10 @@
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "rejected",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-18T16:54:00Z",
-    "reason": "Crypto Briefing is the only full-text report found; no accessible Coinbase primary disclosure or second independent full-text report verifies the $2.3 billion outstanding-loan figure, while the tokenized-deposit examples are older, separate developments."
+    "reviewedAt": "2026-10-18T23:12:00Z",
+    "reason": "The headline misstates an old metric as a current event. Coinbase reported $2.17 billion of cumulative originations as of April 14, and contemporaneous May reporting described $2.3 billion as total originations, not loans outstanding on October 17; the tokenized-deposit examples are separate older developments."
   }
 }
