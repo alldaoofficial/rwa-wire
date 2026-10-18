@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-18T17:04:00Z",
-    "reason": "TokenPost is the only full-text report found for the October 16 snapshot; the live RWA.xyz page no longer reproduces the exact $14.69 billion, 86,753-holder and $89.27 million figures, and no primary survey document verifies the claimed settlement problems or 7% collateral buffer."
+    "reviewedAt": "2026-10-18T23:12:00Z",
+    "reason": "RWA.xyz now corroborates only the approximate market-size snapshot, showing $14.71 billion and 86,739 holders as of October 18. No primary survey document verifies the article's central claims about 203 respondents, daily settlement problems or a 7% collateral buffer, so the existing story cannot be verified without substituting a different article."
   }
 }
