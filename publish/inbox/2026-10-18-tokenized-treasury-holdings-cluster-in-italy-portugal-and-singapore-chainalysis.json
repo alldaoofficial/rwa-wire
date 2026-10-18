@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-18T18:58:00Z",
+    "reason": "This lead extracts the Italy, Portugal and Singapore value shares from the same October 14 Chainalysis report already covered by the verified Japan tokenized-Treasury article; that article already states all three shares and their combined 66.9%, so there is no new event or dataset."
   }
 }
