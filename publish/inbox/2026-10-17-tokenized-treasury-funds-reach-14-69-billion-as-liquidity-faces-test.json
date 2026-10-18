@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-18T17:04:00Z",
+    "reason": "TokenPost is the only full-text report found for the October 16 snapshot; the live RWA.xyz page no longer reproduces the exact $14.69 billion, 86,753-holder and $89.27 million figures, and no primary survey document verifies the claimed settlement problems or 7% collateral buffer."
   }
 }
