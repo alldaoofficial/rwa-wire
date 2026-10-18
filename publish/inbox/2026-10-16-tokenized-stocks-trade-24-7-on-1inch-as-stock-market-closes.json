@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-18T17:04:00Z",
+    "reason": "This coverage repackages 1inch support for bStocks and other previously integrated tokenized equities; the relevant bStocks integration was announced on October 5 and the underlying bStocks product was already covered in the existing October 15 verified article, with no new launch or expansion on October 16."
   }
 }
