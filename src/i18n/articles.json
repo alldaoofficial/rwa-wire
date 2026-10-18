@@ -769,5 +769,78 @@
       ]
     },
     "sourceSha256": "104e462fa54107c806b304adc836d1a607a719b2b58e63e70eada40741bf0cfa"
+  },
+  "okxice-nine-issuer-objections": {
+    "path": "/news/nine-issuers-block-their-shares-from-trading-on-okxice-s-tokenized-venue/",
+    "date": "2026-10-15",
+    "kind": "news",
+    "sources": [
+      ["OKXICE — Public Notice dated October 15, 2026", "https://www.okx.com/cdn/assets/files/2610/F085D8D65135AB9C.pdf"],
+      ["U.S. SEC — Tokenized Securities Venue exemption order", "https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf"]
+    ],
+    "de": {
+      "title": "Neun Emittenten verhindern den Handel ihrer tokenisierten Aktien auf OKXICE",
+      "description": "OKXICE meldete fristgerechte Einwände von neun in den USA börsennotierten Emittenten. Dadurch können deren tokenisierte Aktien nach dem befristeten SEC-Rahmen nicht auf dem geplanten Handelsplatz angeboten werden.",
+      "sections": [
+        ["Neun Einwände gegen den geplanten Handelsplatz", "OKXICE gab am 15. Oktober bekannt, dass neun Emittenten dem Angebot tokenisierter Versionen ihrer Aktien auf seiner geplanten Tokenized Securities Venue widersprochen hatten. Die Liste umfasst Cerebras Systems, AppLovin, Applied Digital, Rocket Lab, CoreWeave, Verizon, Applied Optoelectronics, Broadcom und UnitedHealth Group."],
+        ["Die Wirkung ist auf den jeweiligen Handelsplatz beschränkt", "Nach der befristeten Innovationsausnahme der SEC muss ein Handelsplatz einen Emittenten benachrichtigen, bevor er Aktien anbietet, die ein nicht mit dem Emittenten verbundener Dritter tokenisiert hat. Anschließend muss er mindestens 30 Kalendertage warten. Ein fristgerechter schriftlicher Widerspruch verhindert, dass dieser Handelsplatz die tokenisierte Aktie verfügbar macht. Er hindert einen anderen Handelsplatz nicht daran, ein eigenes Benachrichtigungsverfahren einzuleiten. Die Einwände betreffen konkret OKXICE und stellen keine allgemeine Ablehnung jeder Form der Aktientokenisierung dar."],
+        ["Geplantes Modell und ausgeschlossene Wertpapiere", "Laut OKXICE würde sein Modell eine Eins-zu-eins-Deckung durch Aktien, zugangsbeschränkte Uniswap-v4-Pools auf X Layer und Handelspaare mit Stablecoins verwenden. Die neun Wertpapiere, gegen deren Handel Einwände erhoben wurden, können jedoch auf Grundlage der aktuellen Benachrichtigungen nicht einbezogen werden."]
+      ]
+    },
+    "es": {
+      "title": "Nueve emisores impiden negociar sus acciones tokenizadas en OKXICE",
+      "description": "OKXICE comunicó objeciones presentadas dentro de plazo por nueve emisores cotizados en Estados Unidos, lo que impide ofrecer sus acciones tokenizadas en la plataforma prevista bajo el marco temporal de la SEC.",
+      "sections": [
+        ["Nueve objeciones a la plataforma prevista", "OKXICE informó el 15 de octubre de que nueve emisores se habían opuesto a que se ofrecieran versiones tokenizadas de sus acciones en su futura Tokenized Securities Venue. La lista incluye a Cerebras Systems, AppLovin, Applied Digital, Rocket Lab, CoreWeave, Verizon, Applied Optoelectronics, Broadcom y UnitedHealth Group."],
+        ["El efecto se limita a la plataforma correspondiente", "Según la exención temporal para la innovación de la SEC, una plataforma debe notificar al emisor antes de ofrecer acciones tokenizadas por un tercero no vinculado a este y esperar al menos 30 días naturales. Una objeción escrita presentada dentro de plazo impide a esa plataforma poner a disposición las acciones tokenizadas. No impide que otra plataforma inicie su propio proceso de notificación. Las objeciones afectan específicamente a OKXICE y no constituyen un rechazo general de toda tokenización de acciones."],
+        ["Modelo previsto y valores excluidos", "OKXICE afirma que su modelo utilizaría un respaldo de una acción por cada token, pools de Uniswap v4 con acceso autorizado en X Layer y pares de negociación con stablecoins. Sin embargo, los nueve valores objeto de las objeciones no pueden incluirse con las notificaciones actuales."]
+      ]
+    },
+    "fr": {
+      "title": "Neuf émetteurs empêchent la négociation de leurs actions tokenisées sur OKXICE",
+      "description": "OKXICE a signalé des objections déposées dans les délais par neuf émetteurs cotés aux États-Unis, empêchant la négociation de leurs actions tokenisées sur sa plateforme prévue dans le cadre temporaire de la SEC.",
+      "sections": [
+        ["Neuf objections à la plateforme prévue", "OKXICE a indiqué le 15 octobre que neuf émetteurs s’étaient opposés à l’offre de versions tokenisées de leurs actions sur sa future Tokenized Securities Venue. La liste comprend Cerebras Systems, AppLovin, Applied Digital, Rocket Lab, CoreWeave, Verizon, Applied Optoelectronics, Broadcom et UnitedHealth Group."],
+        ["Un effet limité à la plateforme concernée", "Dans le cadre de l’exemption temporaire pour l’innovation de la SEC, une plateforme doit notifier l’émetteur avant de proposer des actions tokenisées par un tiers qui ne lui est pas affilié et attendre au moins 30 jours calendaires. Une objection écrite déposée dans les délais empêche cette plateforme de rendre les actions tokenisées disponibles. Elle n’interdit pas à une autre plateforme d’engager sa propre procédure de notification. Les objections concernent spécifiquement OKXICE et ne constituent pas un rejet général de toute tokenisation d’actions."],
+        ["Modèle envisagé et titres exclus", "Selon OKXICE, son modèle utiliserait une couverture d’une action par token, des pools Uniswap v4 à accès autorisé sur X Layer et des paires de négociation avec des stablecoins. Les neuf titres visés par les objections ne peuvent toutefois pas être inclus au titre des notifications actuelles."]
+      ]
+    },
+    "sourceSha256": "697c8c1b091931ea15ff29050abc758424749fdd53538f326716819fcd6bdc24"
+  },
+  "chainalysis-geolocated-treasury-holders": {
+    "path": "/markets/japan-leads-geolocated-tokenized-treasury-holders-but-holds-0-4-of-value/",
+    "date": "2026-10-14",
+    "kind": "news",
+    "sources": [
+      ["Chainalysis — 2026 North America crypto adoption report", "https://www.chainalysis.com/blog/north-america-crypto-adoption-2026/"]
+    ],
+    "de": {
+      "title": "Japan führt bei geografisch zugeordneten Treasury-Token-Haltern, hält aber nur 0,4 % des Werts",
+      "description": "Laut Chainalysis entfallen auf Japan 16,4 % der geografisch zugeordneten Halter tokenisierter US-Staatsanleihen, aber nur 0,4 % ihres Werts. Drei andere Märkte vereinen 66,9 % des geografisch zugeordneten Werts auf sich.",
+      "sections": [
+        ["Halterzahl und Wert verteilen sich unterschiedlich", "Chainalysis berichtete am 14. Oktober, dass auf Japan 16,4 % der Halter tokenisierter US-Staatsanleihen mit bestimmbarem Standort, aber nur 0,4 % des entsprechenden Werts entfielen. Italien stellte 29,9 % des geografisch zugeordneten Werts, Portugal 18,8 % und Singapur 18,2 %, zusammen 66,9 %. Die Vereinigten Staaten lagen nach Wert mit 10,5 % auf Platz vier."],
+        ["Historischer Berichtszeitraum statt aktueller Momentaufnahme", "Die Zahlen beziehen sich auf den zwölfmonatigen Berichtszeitraum von Chainalysis bis zum 1. Juli 2026 und sind keine aktuelle Marktaufnahme. Das Unternehmen erfasste einen Wert tokenisierter US-Staatsanleihen von 15,42 Milliarden US-Dollar, ein Anstieg um 125 % gegenüber 6,86 Milliarden US-Dollar."],
+        ["Die Interpretation von Chainalysis", "Chainalysis deutet die Diskrepanz zwischen Halterzahl und Wert als Hinweis darauf, dass eine relativ kleine Gruppe großer ausländischer Halter einen erheblichen Teil des Marktes prägt, während eine breitere Basis von Privatanlegern kleinere Positionen hält."]
+      ]
+    },
+    "es": {
+      "title": "Japón lidera los titulares geolocalizados de deuda pública tokenizada, pero reúne el 0,4 % del valor",
+      "description": "Según Chainalysis, Japón representa el 16,4 % de los titulares geolocalizados de deuda pública estadounidense tokenizada, pero solo el 0,4 % de su valor. Otros tres mercados concentran el 66,9 % del valor geolocalizado.",
+      "sections": [
+        ["El número de titulares y el valor se distribuyen de forma distinta", "Chainalysis informó el 14 de octubre de que Japón representaba el 16,4 % de los titulares de deuda pública estadounidense tokenizada cuya ubicación podía identificarse, pero solo el 0,4 % del valor correspondiente. Italia concentraba el 29,9 % del valor geolocalizado, Portugal el 18,8 % y Singapur el 18,2 %, un 66,9 % en conjunto. Estados Unidos ocupaba el cuarto lugar por valor, con el 10,5 %."],
+        ["Un periodo histórico, no una fotografía actual del mercado", "Las cifras corresponden al periodo de información de 12 meses de Chainalysis que terminó el 1 de julio de 2026, no a una fotografía actual del mercado. La firma midió un valor de 15.420 millones de dólares en deuda pública estadounidense tokenizada, un aumento del 125 % respecto a los 6.860 millones de dólares."],
+        ["La interpretación de Chainalysis", "Chainalysis interpreta la diferencia entre el número de titulares y el valor como indicio de que un grupo relativamente pequeño de grandes titulares extranjeros impulsa una parte importante del mercado, mientras una base minorista más amplia mantiene posiciones menores."]
+      ]
+    },
+    "fr": {
+      "title": "Le Japon arrive en tête des détenteurs géolocalisés de titres du Trésor tokenisés, mais ne représente que 0,4 % de la valeur",
+      "description": "Selon Chainalysis, le Japon représente 16,4 % des détenteurs géolocalisés de titres du Trésor américain tokenisés, mais seulement 0,4 % de leur valeur. Trois autres marchés concentrent 66,9 % de la valeur géolocalisée.",
+      "sections": [
+        ["Le nombre de détenteurs et la valeur se répartissent différemment", "Chainalysis a indiqué le 14 octobre que le Japon représentait 16,4 % des détenteurs de titres du Trésor américain tokenisés dont la localisation pouvait être identifiée, mais seulement 0,4 % de la valeur correspondante. L’Italie représentait 29,9 % de la valeur géolocalisée, le Portugal 18,8 % et Singapour 18,2 %, soit 66,9 % au total. Les États-Unis se classaient au quatrième rang en valeur, avec 10,5 %."],
+        ["Une période historique, pas une photographie actuelle du marché", "Les chiffres portent sur la période de référence de 12 mois de Chainalysis se terminant le 1er juillet 2026, et non sur une photographie actuelle du marché. L’entreprise a mesuré une valeur de 15,42 milliards de dollars de titres du Trésor américain tokenisés, en hausse de 125 % par rapport à 6,86 milliards de dollars."],
+        ["L’interprétation de Chainalysis", "Chainalysis interprète l’écart entre le nombre de détenteurs et la valeur comme un indice qu’un groupe relativement restreint de grands détenteurs étrangers porte une part importante du marché, tandis qu’une base plus large de particuliers détient des positions plus petites."]
+      ]
+    },
+    "sourceSha256": "42b08a624437ec06d9fc2f7621d6b8dc5d1e5e79a3f5b276ece2cc86ed307245"
   }
 }
