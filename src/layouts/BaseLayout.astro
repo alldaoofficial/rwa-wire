@@ -24,10 +24,21 @@ const lang = languageOf(Astro.url.pathname);
 const organizationLd = {
   "@context": "https://schema.org",
   "@type": "NewsMediaOrganization",
+  "@id": "https://therwawire.com/#organization",
   name: "RWA Wire",
   url: "https://therwawire.com/",
   logo: "https://therwawire.com/favicon.svg",
   description: "Independent intelligence on real-world assets, tokenization and institutional digital finance.",
+  sameAs: ["https://t.me/RWAWireHQ", "https://x.com/RWAWireHQ"],
+};
+const websiteLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://therwawire.com/#website",
+  name: "RWA Wire",
+  alternateName: "The RWA Wire",
+  url: "https://therwawire.com/",
+  publisher: {"@id": "https://therwawire.com/#organization"},
 };
 ---
 
@@ -56,6 +67,7 @@ const organizationLd = {
       noindex={noindex}
     />
     <script type="application/ld+json" set:html={JSON.stringify(organizationLd)} />
+    {Astro.url.pathname === "/" && <script type="application/ld+json" set:html={JSON.stringify(websiteLd)} />}
   </head>
   <body class="flex min-h-screen flex-col">
     <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded focus:bg-wire focus:px-4 focus:py-2 focus:text-bg">{copy[lang].skip}</a>
