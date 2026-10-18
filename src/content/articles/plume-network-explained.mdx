@@ -1,10 +1,11 @@
 ---
 type: "PROJECT"
 category: "projects"
-title: "Plume Network Explained"
-description: "A profile of Plume, a blockchain ecosystem purpose-built for bringing real-world assets onchain and integrating them with DeFi."
+title: "What Is Plume Network? RWAfi, PLUME and Asset Tokens"
+description: "How Plume's RWA blockchain works, what PLUME pays for, and how the network differs from tokenized assets and platforms such as Centrifuge."
 pubDate: "2026-09-28"
-readingTime: "5 min read"
+updatedDate: "2026-10-18"
+readingTime: "3 min read"
 tags: ["Projects", "RWA Infrastructure"]
 projectMeta:
   sector: "RWA infrastructure"
@@ -17,25 +18,49 @@ relatedSlugs: ["rwa-infrastructure-explained", "centrifuge-explained", "chainlin
 keyTakeaways:
   - "Plume is designed as a full-stack blockchain ecosystem focused specifically on real-world asset finance."
   - "Its model combines blockchain infrastructure, tokenization tooling and DeFi-style utility for tokenized assets."
-  - "The network launched its public Genesis phase in 2025 and supports an ecosystem of RWA-focused applications."
+  - "Plume announced its public Genesis launch on June 5, 2025; the network, PLUME token and individual asset products have different roles."
 draft: false
 ---
 
-Plume is a blockchain ecosystem built around real-world asset finance, or RWAfi. Its thesis is that bringing an asset onchain is only one part of tokenization; the asset also needs distribution, liquidity and applications that can use it.
+Plume is an **EVM-compatible public blockchain ecosystem focused on real-world asset finance**, often called RWAfi. It aims to connect tokenized assets with applications for activities such as lending and trading. Plume announced its public Genesis launch on **June 5, 2025**; that is a historical launch date, not a new launch announcement.
 
-## Infrastructure model
+## What does RWAfi mean?
 
-Plume combines an EVM-compatible execution environment with infrastructure intended to simplify the onboarding and management of tokenized assets. Its ecosystem is designed to let those assets interact with lending, trading and other onchain applications.
+RWAfi combines real-world asset tokenization with decentralized-finance applications. Issuing a token is one step; allowing eligible users to transfer it or use it in an application is another.
 
-## Where it fits
+Plume provides a network on which these activities can take place. The availability of an application does not establish that every asset is suitable or eligible for every use. For the underlying process, read [how asset tokenization works](/learn/how-does-asset-tokenization-work/).
 
-This places Plume at the blockchain and distribution layer rather than in the role of a single asset issuer. The network can host products representing different underlying asset categories.
+## Plume, PLUME and asset tokens are different
 
-## What to watch
+| Term | What it refers to | What it does not establish |
+| --- | --- | --- |
+| Plume Network | The blockchain environment hosting transactions and applications. | The credit quality of a product using it. |
+| PLUME | The native token used to pay network gas fees. | A share in every asset issued on the network. |
+| Individual asset token | A token associated with a particular product or claim. | Automatic direct ownership of a physical asset or unrestricted redemption. |
 
-A purpose-built RWA ecosystem still depends on issuer quality, legal enforceability, liquidity and the security of the applications built around each asset. Network activity alone does not establish the quality of an underlying investment.
+Plume's developer documentation specifies that gas fees are paid in **PLUME rather than ETH**. Paying for a transaction and investing in an underlying financial product are separate actions.
+
+## What are Arc and Nexus?
+
+Plume describes **Arc** as tooling for creating, onboarding and managing assets, including associated compliance and data workflows. **Nexus** brings offchain data into the onchain environment.
+
+These components serve different needs: representing a product and supplying information about it. Their presence does not remove the need to assess who supplies the data, which rules apply and what the token's documentation promises.
+
+## How does Plume compare with Centrifuge?
+
+They describe different parts of the infrastructure stack. Plume focuses on a blockchain ecosystem and applications for RWAfi. [Centrifuge](/projects/centrifuge-explained/) provides asset-management infrastructure organized around pools, share classes and vaults. An individual issuer or manager remains responsible for the terms of its own financial product.
+
+For a map of these roles, see [RWA infrastructure explained](/rwa/rwa-infrastructure-explained/).
+
+## Can anyone buy and redeem assets on Plume?
+
+Do not infer eligibility from the network alone. Check each offering's access restrictions, legal claim, custody arrangements and redemption process. Public blockchain transactions do not make every financial product universally available.
+
+A purpose-built RWA ecosystem still depends on issuer quality, legal enforceability, liquidity and application security. Network activity does not establish the quality of an underlying investment, and an asset token's market liquidity can differ from its redemption terms. This profile is an explanation of the ecosystem, not an investment recommendation.
 
 ## Primary sources
 
-- [Plume — RWA Chain](https://www.plume.org/blog/rwa-chain)
+- [Plume — Overview](https://docs.plume.org/plume)
+- [Plume — Architecture](https://docs.plume.org/plume/plume-security/architecture)
+- [Plume — Gas and fees](https://docs.plume.org/plume/developers/gas-and-fees)
 - [Plume — Genesis](https://www.plume.org/blog/genesis)
