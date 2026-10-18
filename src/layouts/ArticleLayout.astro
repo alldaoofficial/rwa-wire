@@ -56,6 +56,12 @@ const projectNews = type === "PROJECT" && projectMeta ? allArticles.filter((a)=>
 const dateStr=pubDate.toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"});
 const updatedStr=updatedDate?.toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"});
 const jsonLd={"@context":"https://schema.org","@type":type==="NEWS"?"NewsArticle":"Article",headline:title,description,datePublished:pubDate.toISOString(),dateModified:(updatedDate??pubDate).toISOString(),author:{"@type":"Organization",name:author},articleSection:CATEGORIES[category as CategorySlug].label,keywords:tags.join(", "),publisher:{"@type":"Organization",name:SITE.name,logo:{"@type":"ImageObject",url:new URL("/favicon.svg",SITE.url).toString()}},mainEntityOfPage:new URL(Astro.url.pathname,SITE.url).toString()};
+const articleLd = {
+  ...jsonLd,
+  author: {...jsonLd.author, url: new URL("/about/", SITE.url).toString()},
+  publisher: {...jsonLd.publisher, "@id": "https://therwawire.com/#organization", url: SITE.url + "/"},
+  ...(heroImage ? {image: [new URL(heroImage, SITE.url).toString()]} : {}),
+};
 ---
 <BaseLayout title={title} description={description} type="article" publishedTime={pubDate} modifiedTime={updatedDate} image={heroImage}>
 <article class="wire-container py-10 sm:py-16"><div class="mx-auto max-w-[900px]">
@@ -78,5 +84,5 @@ const jsonLd={"@context":"https://schema.org","@type":type==="NEWS"?"NewsArticle
 </div></article>
   <div class="wire-container py-10"><NewsletterSignup placement="article-newsletter" /></div>
 <TelegramCTA context={type==="PROJECT"||type==="RESEARCH"?"research":"article"}/>
-<script type="application/ld+json" set:html={JSON.stringify(jsonLd)}/>
+<script type="application/ld+json" set:html={JSON.stringify(articleLd)}/>
 </BaseLayout>

@@ -27,6 +27,7 @@ for (const file of fs.readdirSync(ARTICLES).filter(f => f.endsWith(".mdx"))) {
   if (!fm) continue;
   const front = fm[1];
   if (/^draft:\s*true\s*$/m.test(front)) continue;
+  if (/^redirectTo:/m.test(front)) continue;
   const cat = front.match(/^category:\s*["']?([^"'\n]+)["']?\s*$/m)?.[1]?.trim();
   if (!cat) continue;
   const slug = file.replace(/\.mdx$/, "");

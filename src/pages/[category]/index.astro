@@ -17,18 +17,24 @@ export async function getStaticPaths() {
 const { category } = Astro.params as { category: CategorySlug };
 const meta = CATEGORIES[category];
 
-const published = await getCollection("articles", ({ data }) => !data.draft);
-const articles = published.filter(({data})=>data.category===category).sort(
+const pageTitle = category === "news" ? "RWA & Tokenization News" : meta.label;
+const pageDescription = category === "news"
+  ? "Source-led RWA news and research on tokenized assets, banks, funds and the infrastructure connecting traditional finance with blockchain markets."
+  : meta.description;
+const published = await getCollection("articles", ({ data }) => !data.draft && !data.redirectTo);
+const articles = published.filter(({data}) => category === "news"
+  ? ["NEWS", "RESEARCH"].includes(data.type) && ["news", "rwa", "tokenization", "institutions", "markets"].includes(data.category)
+  : data.category === category).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 const marketProjects = category === "markets" ? published.filter(({data})=>data.type==="PROJECT" && data.projectMeta).filter(({data})=>["tokenized securities","private credit","credit infrastructure","rwa infrastructure","interoperability"].includes(data.projectMeta!.sector.toLowerCase())).slice(0,6) : [];
 ---
 
-<BaseLayout title={meta.label} description={meta.description}>
+<BaseLayout title={pageTitle} description={pageDescription}>
   <div class="wire-container py-10 sm:py-14">
     <Breadcrumbs items={[{ label: meta.label, href: `/${category}/` }]} />
-    <h1 class="mt-4 font-serif text-3xl font-medium text-ink sm:text-4xl">{meta.label}</h1>
-    <p class="mt-2 max-w-xl text-base text-ink-muted">{meta.description}</p>
+    <h1 class="mt-4 font-serif text-3xl font-medium text-ink sm:text-4xl">{pageTitle}</h1>
+    <p class="mt-2 max-w-xl text-base text-ink-muted">{pageDescription}</p>
 
     {category === "markets" && <div class="mt-8 border-l-2 border-wire pl-4 py-1"><p class="data-label text-wire">RWA Wire // Intelligence Terminal</p><p class="mt-1 max-w-3xl text-sm leading-relaxed text-ink-muted">A consolidated view of tokenization-linked protocol markets and the underlying real-world asset economy. Live protocol data is separated from sourced market snapshots for clarity.</p></div>}
     {category === "markets" && <><MarketsDashboard /><AssetIntelligence />{marketProjects.length>0&&<section class="mt-10 border-y border-line py-6"><div class="flex items-end justify-between gap-4"><div><p class="data-label text-wire">Infrastructure map</p><h2 class="mt-2 font-serif text-2xl text-ink">Projects behind the RWA market</h2></div><a href="/projects/" class="text-[10px] uppercase tracking-[.1em] text-wire hover:underline">Explore directory →</a></div><div class="mt-5 grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-3">{marketProjects.map(p=><a href={sitePath(`/projects/${p.slug}/`)} class="group bg-bg p-5 hover:bg-surface"><p class="data-label">{p.data.projectMeta?.sector}</p><h3 class="mt-2 font-serif text-xl text-ink group-hover:text-wire">{p.data.title.replace(/ Explained$/,"")}</h3><p class="mt-2 text-xs text-ink-muted">{p.data.projectMeta?.role}</p></a>)}</div></section>}</>}
@@ -39,7 +45,7 @@ const marketProjects = category === "markets" ? published.filter(({data})=>data.
         articles.length > 0 ? (
           articles.map((entry) => (
             <ArticleCard
-              href={sitePath(`/${category}/${entry.slug}/`)}
+              href={sitePath(`/${entry.data.category}/${entry.slug}/`)}
               title={entry.data.title}
               description={entry.data.description}
               category={entry.data.category}
