@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-18T12:42:00Z",
+    "reason": "The resolved item is a paid GlobeNewswire/AINewsWire investor-relations placement promoting TruGolf; it does not report a new independently sourced event, and the underlying Polymath acquisition closed on October 8."
   }
 }
