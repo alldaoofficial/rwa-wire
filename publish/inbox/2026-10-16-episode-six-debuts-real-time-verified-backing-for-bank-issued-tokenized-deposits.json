@@ -1,23 +1,22 @@
 {
-  "title": "Episode Six Debuts Real-Time 'Verified Backing' for Bank-Issued Tokenized Deposits",
-  "description": "Episode Six Debuts Real-Time 'Verified Backing' for Bank-Issued Tokenized Deposits",
-  "why_it_matters": "",
-  "pubDate": "2026-10-16",
-  "category": "news",
+  "title": "Episode Six Adds Issuance and Redemption Checks for Tokenized Deposits",
+  "description": "Verified Backing checks funds recorded on the issuer's ledger and outstanding issuance status, while banks retain responsibility for reserve assurance and regulatory obligations.",
+  "why_it_matters": "Checking redemption requests before releasing money addresses an operational risk in tokenized banking, but ledger controls alone cannot establish actual reserve sufficiency.",
+  "pubDate": "2026-10-15",
+  "category": "institutions",
   "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Tokenized Deposits",
+    "Banking",
+    "Market Infrastructure"
   ],
   "keyTakeaways": [
-    "Episode Six Debuts Real-Time 'Verified Backing' for Bank-Issued Tokenized Deposits",
-    ""
+    "Recorded backing checks do not replace reserve assurance."
   ],
-  "body": "Episode Six Debuts Real-Time 'Verified Backing' for Bank-Issued Tokenized Deposits",
+  "body": "Episode Six announced Verified Backing on October 15 as part of its E6 Token Control Ledger. The feature covers supported bank-issued tokenized deposits and stablecoins. Before issuance, it checks the backing recorded in the ledger. At redemption, it checks that the token is genuine and remains outstanding before funds are released.\n\nThe company says the capability runs on the bank's side and is available to its customers in markets where it operates. Availability and functionality depend on the implementation and market.\n\nThe control does not hold, safeguard or attest to reserves. Issuers remain responsible for reserve, attestation, audit and regulatory obligations.",
   "sources": [
     {
-      "name": "FF News",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVkJSbG5VUnhrX1RtUHp3R0hieTJubUN4anlxMzhSaEZZajZnWlJYbWF4MzNjUnBTdVdGdTYtQmx6bEd0aUt5WE1mU0kzMlc0clM5UkE3Vk9XSF9fUXdZOGgtZTdEVU52VS1SWkdBcmZPSFhMc0ZvUnRlbnpXaDJlQlo0Yjctb1dVWDJfU2tBU2dkdjRBSzFXRXpucGdkRUdxWjF0U21tcThsbHJqbFE?oc=5"
+      "name": "Episode Six — official announcement",
+      "url": "https://episodesix.com/blog/episode-six-launches-verified-backing-for-real-time-confidence"
     }
   ],
   "newsWatch": {
@@ -27,7 +26,40 @@
     "discoveredAt": "2026-10-16T17:07:17.117639+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-18T10:25:27.632678+00:00",
+    "sources": [
+      {
+        "url": "https://episodesix.com/blog/episode-six-launches-verified-backing-for-real-time-confidence",
+        "publishedAt": "2026-10-15",
+        "checkedAt": "2026-10-18T10:25:27.632678+00:00",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "The control operates within the bank's ledger infrastructure.",
+        "sourceUrl": "https://episodesix.com/blog/episode-six-launches-verified-backing-for-real-time-confidence",
+        "anchor": "runs bank-side"
+      },
+      {
+        "claim": "Tokens must remain outstanding when presented for redemption.",
+        "sourceUrl": "https://episodesix.com/blog/episode-six-launches-verified-backing-for-real-time-confidence",
+        "anchor": "still outstanding"
+      },
+      {
+        "claim": "The feature does not attest to an issuer's reserves.",
+        "sourceUrl": "https://episodesix.com/blog/episode-six-launches-verified-backing-for-real-time-confidence",
+        "anchor": "attest to an issuer's reserves"
+      }
+    ],
+    "contentSha256": "62a5ecef737d2b1617507255532efb0d5c74423438598e563594206e75239f17"
   }
 }
