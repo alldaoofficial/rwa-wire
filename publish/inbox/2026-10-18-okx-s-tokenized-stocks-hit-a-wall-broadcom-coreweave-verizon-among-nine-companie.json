@@ -1,23 +1,28 @@
 {
-  "title": "OKX's Tokenized Stocks Hit a Wall: Broadcom, CoreWeave, Verizon Among Nine Companies Objecting",
-  "description": "OKX's Tokenized Stocks Hit a Wall: Broadcom, CoreWeave, Verizon Among Nine Companies Objecting",
-  "why_it_matters": "",
-  "pubDate": "2026-10-18",
+  "title": "Nine Issuers Block Their Shares from Trading on OKXICE's Tokenized Venue",
+  "description": "OKXICE disclosed timely objections from nine U.S.-listed issuers, preventing their tokenized shares from trading on its proposed venue under the SEC's temporary framework.",
+  "why_it_matters": "The objections show that issuer consent safeguards can materially narrow third-party tokenized-stock listings even after a venue qualifies for the SEC's temporary exemption.",
+  "pubDate": "2026-10-15",
   "category": "news",
   "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Tokenized Stocks",
+    "Regulation",
+    "OKXICE"
   ],
   "keyTakeaways": [
-    "OKX's Tokenized Stocks Hit a Wall: Broadcom, CoreWeave, Verizon Among Nine Companies Objecting",
-    ""
+    "OKXICE listed nine issuers that submitted notices objecting to tokenized trading of their shares.",
+    "A timely objection prevents that issuer's third-party-tokenized stock from trading on the objected-to venue.",
+    "The objections are venue-specific and do not constitute a general rejection of all stock tokenization."
   ],
-  "body": "OKX's Tokenized Stocks Hit a Wall: Broadcom, CoreWeave, Verizon Among Nine Companies Objecting",
+  "body": "OKXICE disclosed on October 15 that nine issuers had objected to tokenized versions of their shares being offered on its planned Tokenized Securities Venue. The list comprises Cerebras Systems, AppLovin, Applied Digital, Rocket Lab, CoreWeave, Verizon, Applied Optoelectronics, Broadcom and UnitedHealth Group.\n\nThe consequence is specific to OKXICE. Under the SEC's temporary innovation exemption, a venue must notify an issuer before offering stock tokenized by an unaffiliated third party and wait at least 30 calendar days. A timely written objection prevents that venue from making the tokenized stock available. It does not prohibit another venue from starting its own notification process. OKXICE says its model would use one-for-one share backing, permissioned Uniswap v4 pools on X Layer and stablecoin trading pairs, but the nine objected securities cannot be included under the current notices.",
   "sources": [
     {
-      "name": "FinanceFeeds",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPV1lrcmhWandNTi1LUW1CNE95TG1QLUJMVjdiMWU3TVVzTzg4ZHNyUC1qUDlMNU5xNnVmQXg5YlktdGtMXzQzcXVHcVc5eF85cWJXZEF1OXp5SnQ4RFVwR3EwcmlZSUNvZTV5Nm40cE1mb05oNTAtMlZVWGRyWU04TzlGdTZJSVNjU09zbDFaal9fZmxyVGVvcHo0NEVRejB1MTFDMTlWLWtIa1RleGZSN0hJWURqdHM?oc=5"
+      "name": "OKXICE — Public Notice dated October 15, 2026",
+      "url": "https://www.okx.com/cdn/assets/files/2610/F085D8D65135AB9C.pdf"
+    },
+    {
+      "name": "U.S. SEC — Tokenized Securities Venue exemption order",
+      "url": "https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf"
     }
   ],
   "newsWatch": {
@@ -27,7 +32,57 @@
     "discoveredAt": "2026-10-18T16:07:14.031263+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-18T16:52:00Z",
+    "sources": [
+      {
+        "url": "https://www.okx.com/cdn/assets/files/2610/F085D8D65135AB9C.pdf",
+        "publishedAt": "2026-10-15",
+        "checkedAt": "2026-10-18T16:52:00Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf",
+        "publishedAt": "2026-09-17",
+        "checkedAt": "2026-10-18T16:52:00Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "OKXICE's October 15 notice identifies nine issuers that submitted objections.",
+        "sourceUrl": "https://www.okx.com/cdn/assets/files/2610/F085D8D65135AB9C.pdf",
+        "anchor": "received a Notice of Issuer Objection"
+      },
+      {
+        "claim": "The objectors include CoreWeave, Verizon, Broadcom and UnitedHealth Group.",
+        "sourceUrl": "https://www.okx.com/cdn/assets/files/2610/F085D8D65135AB9C.pdf",
+        "anchor": "CoreWeave, Inc."
+      },
+      {
+        "claim": "OKXICE states that unaffiliated tokenizers must back each token one-for-one with the underlying stock.",
+        "sourceUrl": "https://www.okx.com/cdn/assets/files/2610/F085D8D65135AB9C.pdf",
+        "anchor": "backed one-for-one by underlying shares"
+      },
+      {
+        "claim": "The SEC requires at least 30 calendar days between issuer receipt of notice and trading.",
+        "sourceUrl": "https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf",
+        "anchor": "at least 30 calendar days"
+      },
+      {
+        "claim": "A timely issuer objection prevents the notified venue from offering that tokenized stock.",
+        "sourceUrl": "https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf",
+        "anchor": "cannot make such Tokenized NMS Stock available"
+      }
+    ],
+    "contentSha256": "ef749256bd7189c822bba2a9278051e6208f3a46aa44b1098428e0fe4305e9ab"
   }
 }
