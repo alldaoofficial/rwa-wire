@@ -22,6 +22,9 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    env:
+      # Routing imports Python modules after cleanup and must keep git clean.
+      PYTHONDONTWRITEBYTECODE: "1"
     steps:
       - uses: actions/checkout@v4
         with:
