@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-19T09:09:38Z",
+    "reason": "This is overlapping coverage of the same October 19 BlackRock tokenized-fund commentary already captured by the existing 'BlackRock’s Tokenized Fund Has a Bank Problem' inbox record; it identifies no separate launch, approval, financing or material expansion."
   }
 }
