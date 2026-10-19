@@ -1,24 +1,19 @@
 {
-  "title": "Tokenized Treasury Funds Reach $14.69 Billion as Liquidity Faces Test",
-  "description": "Tokenized Treasury Funds Reach $14.69 Billion as Liquidity Faces Test",
-  "why_it_matters": "",
+  "title": "Tokenized Treasury Funds Reach $14.69 Billion as Collateral Frictions Persist",
+  "description": "TokenPost reported $14.69 billion across 117 tokenized Treasury products on October 16, while an earlier Nasdaq survey documented persistent collateral-processing frictions.",
+  "why_it_matters": "The asset total shows expanding onchain Treasury supply, but institutional use depends on operational integration that can move collateral reliably without excess buffers.",
   "pubDate": "2026-10-17",
-  "category": "news",
-  "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
-  ],
+  "category": "markets",
+  "tags": ["Tokenized Treasuries", "Collateral", "Market Infrastructure"],
   "keyTakeaways": [
-    "Tokenized Treasury Funds Reach $14.69 Billion as Liquidity Faces Test",
-    ""
+    "TokenPost reported $14.69 billion in distributed value across 117 tokenized Treasury assets on October 16.",
+    "A February Nasdaq survey found daily settlement matching or delivery issues among 70% of respondents across the broader collateral market.",
+    "Nasdaq's finding that 52% expected live tokenized-collateral management by year-end 2026 is a forecast, not a measured adoption result."
   ],
-  "body": "Tokenized Treasury Funds Reach $14.69 Billion as Liquidity Faces Test",
+  "body": "TokenPost reported that tokenized Treasury funds represented $14.69 billion in distributed value on October 16, spanning 117 assets and 86,753 holders. Those figures describe the size and breadth of the tracked market; they do not show how much of that supply is eligible, pledged or readily transferable as institutional collateral.\n\nOperational context comes from an older Nasdaq and ValueExchange survey published on February 20. Nasdaq reported that 70% of respondents experienced settlement matching and delivery issues daily across collateral operations. The survey also found that firms maintained about 7% excess collateral on average as protection against failures. Its sample covered 203 market participants. Nasdaq said 52% expected to manage live tokenized collateral by the end of 2026, which remains a respondent forecast rather than proof that adoption has occurred. The combination highlights a gap between growing tokenized Treasury supply and the operational readiness needed to use digital assets efficiently as collateral.",
   "sources": [
-    {
-      "name": "www.tokenpost.com",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBJQW1zREx0cXc2Nk1QWnlxb0RYejdyZGtUUFFwb1RRRkpBWm1UZkF6d3V6aWdvX25DN2JrdEY4WWJrZXFIZnNlVlhZcWM4SVVPVFNtdk5TMXFKUQ?oc=5"
-    }
+    {"name": "TokenPost — market snapshot", "url": "https://www.tokenpost.com/news/investing/33782"},
+    {"name": "Nasdaq — collateral tokenization survey analysis", "url": "https://www.nasdaq.com/articles/fintech/collateral-tokenization-how-340-million-opportunity-driving-digitalized-collateral"}
   ],
   "newsWatch": {
     "score": 10,
@@ -27,14 +22,26 @@
     "discoveredAt": "2026-10-17T06:37:13.529937+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "verified",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-18T23:12:00Z",
-    "reason": "RWA.xyz now corroborates only the approximate market-size snapshot, showing $14.71 billion and 86,739 holders as of October 18. No primary survey document verifies the article's central claims about 203 respondents, daily settlement problems or a 7% collateral buffer, so the existing story cannot be verified without substituting a different article."
+    "reviewedAt": "2026-10-19T05:16:15Z",
+    "sources": [
+      {"url": "https://www.tokenpost.com/news/investing/33782", "publishedAt": "2026-10-17", "checkedAt": "2026-10-19T05:16:15Z", "kind": "news", "access": "full-text"},
+      {"url": "https://www.nasdaq.com/articles/fintech/collateral-tokenization-how-340-million-opportunity-driving-digitalized-collateral", "publishedAt": "2026-02-20", "checkedAt": "2026-10-19T05:16:15Z", "kind": "primary", "access": "full-text"}
+    ],
+    "facts": [
+      {"claim": "Tokenized Treasury funds represented $14.69 billion in distributed value on October 16.", "sourceUrl": "https://www.tokenpost.com/news/investing/33782", "anchor": "$14.69 billion in distributed value"},
+      {"claim": "The reported market snapshot covered 117 assets and 86,753 holders.", "sourceUrl": "https://www.tokenpost.com/news/investing/33782", "anchor": "117 assets and 86,753 holders"},
+      {"claim": "Nasdaq reported daily settlement matching and delivery issues among 70% of respondents.", "sourceUrl": "https://www.nasdaq.com/articles/fintech/collateral-tokenization-how-340-million-opportunity-driving-digitalized-collateral", "anchor": "plague 70% of respondents daily"},
+      {"claim": "The Nasdaq survey covered 203 participants across global collateral markets.", "sourceUrl": "https://www.nasdaq.com/articles/fintech/collateral-tokenization-how-340-million-opportunity-driving-digitalized-collateral", "anchor": "203 market participants"},
+      {"claim": "The average surveyed firm maintained about 7% excess collateral as a buffer.", "sourceUrl": "https://www.nasdaq.com/articles/fintech/collateral-tokenization-how-340-million-opportunity-driving-digitalized-collateral", "anchor": "approximately 7% excess collateral"},
+      {"claim": "More than half of surveyed firms forecast live tokenized-collateral management by end-2026.", "sourceUrl": "https://www.nasdaq.com/articles/fintech/collateral-tokenization-how-340-million-opportunity-driving-digitalized-collateral", "anchor": "by the end of 2026"}
+    ],
+    "contentSha256": "1c9a94abc564d8a62d6a36ca38c6f3230b5133422ff13a7c1a73034b8e31248d"
   }
 }
