@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-19T13:15:41Z",
+    "reason": "Current reports describe a distinct expansion of JPM Coin from Base to Ethereum, but no public October 19 J.P. Morgan release or updated technical documentation was accessible; J.P. Morgan's official product page still states that JPM Coin is issued on Base."
   }
 }
