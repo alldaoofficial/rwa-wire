@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-19T08:23:10Z",
+    "reason": "This headline recycles J.P. Morgan's November 12, 2025 launch of the JPM Coin USD deposit token on Base; no new Ethereum-network launch or material expansion was substantiated on October 19."
   }
 }
