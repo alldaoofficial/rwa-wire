@@ -915,5 +915,41 @@
       ]
     },
     "sourceSha256": "de008d53e34d6925737a821ca5af36d949cbb32b1da6e56807cabee9bf232dc8"
+  },
+  "jpm-coin-ethereum-institutional-expansion": {
+    "path": "/news/jpmorgan-will-offer-jpm-coin-deposit-tokens-on-ethereum-to-institutions/",
+    "date": "2026-10-19",
+    "kind": "news",
+    "sources": [
+      ["J.P. Morgan", "https://www.jpmorgan.com/payments/newsroom/jpm-coin-live-on-ethereum"]
+    ],
+    "de": {
+      "title": "JPMorgan erweitert JPM Coin für institutionelle Kunden auf Ethereum",
+      "description": "Kinexys ergänzt ein weiteres öffentliches Netzwerk für seinen US-Dollar-Einlagentoken. Bankkunden erhalten damit eine zusätzliche Möglichkeit, Geld parallel zu tokenisierten Vermögenswerten zu transferieren.",
+      "sections": [
+        ["Ethereum kommt zu Base hinzu", "J.P. Morgan teilte am 19. Oktober mit, dass Kinexys JPM Coin, seinen auf US-Dollar lautenden Einlagentoken mit dem Kürzel JPMD, auf Ethereum verfügbar gemacht hat. Der Zugang ist den institutionellen Kunden der Bank vorbehalten."],
+        ["Start auf Base im November 2025", "Die Erweiterung folgt auf den Start des Tokens im November 2025 auf Base, einem Layer-2-Netzwerk von Ethereum. Als Gründe für die Ausweitung nannte die Bank die Liquidität und die tokenisierten Vermögenswerte auf Ethereum."],
+        ["Institutionelle Transfers und mögliche Treasury-Vorteile", "Laut der Mitteilung unterstützt JPM Coin Peer-to-Peer-Transfers zwischen institutionellen Kunden im EVM-Ökosystem, einschließlich Base und Ethereum. Kinexys stellt die Einführung als weitere Möglichkeit für den Transfer von Großkundengeldern dar; mögliche Vorteile durch programmierbare Treasury-Prozesse bleiben eine Zukunftsperspektive."]
+      ]
+    },
+    "es": {
+      "title": "JPMorgan amplía JPM Coin a Ethereum para clientes institucionales",
+      "description": "Kinexys incorpora otra red pública para su token de depósito denominado en dólares estadounidenses, ofreciendo a los clientes bancarios una opción adicional para transferir dinero junto a los activos tokenizados.",
+      "sections": [
+        ["Ethereum se suma a Base", "J.P. Morgan anunció el 19 de octubre que Kinexys había puesto JPM Coin, su token de depósito denominado en dólares estadounidenses y con el símbolo JPMD, a disposición de sus clientes en Ethereum. El acceso está reservado a los clientes institucionales del banco."],
+        ["Lanzamiento en Base en noviembre de 2025", "La ampliación llega después del lanzamiento del token en noviembre de 2025 en Base, una red de capa 2 de Ethereum. El banco citó la liquidez y los activos tokenizados de Ethereum como motivos para extender su disponibilidad a esa red."],
+        ["Transferencias institucionales y posibles ventajas para la tesorería", "Según el comunicado, JPM Coin permite transferencias entre pares entre clientes institucionales dentro del ecosistema EVM, incluidas Base y Ethereum. Kinexys presenta el despliegue como otra opción para mover dinero mayorista; las posibles ventajas de una tesorería programable siguen siendo una posibilidad futura."]
+      ]
+    },
+    "fr": {
+      "title": "JPMorgan étend JPM Coin à Ethereum pour ses clients institutionnels",
+      "description": "Kinexys ajoute un réseau public à son offre de jeton de dépôt libellé en dollars américains, donnant aux clients bancaires un moyen supplémentaire de transférer des fonds aux côtés des actifs tokenisés.",
+      "sections": [
+        ["Ethereum rejoint Base", "J.P. Morgan a annoncé le 19 octobre que Kinexys avait rendu JPM Coin, son jeton de dépôt libellé en dollars américains portant le symbole JPMD, disponible sur Ethereum. L’accès est réservé aux clients institutionnels de la banque."],
+        ["Un lancement sur Base en novembre 2025", "Cette extension fait suite au lancement du jeton en novembre 2025 sur Base, un réseau de couche 2 d’Ethereum. La banque a cité la liquidité et les actifs tokenisés d’Ethereum parmi les raisons de cette expansion."],
+        ["Transferts institutionnels et avantages potentiels pour la trésorerie", "Selon le communiqué, JPM Coin prend en charge les transferts de pair à pair entre clients institutionnels dans l’écosystème EVM, notamment sur Base et Ethereum. Kinexys présente ce déploiement comme une option supplémentaire pour les mouvements de fonds de gros ; les avantages potentiels d’une trésorerie programmable restent des perspectives pour l’avenir."]
+      ]
+    },
+    "sourceSha256": "b6daafdc52c4cbbb6366a4073a43d833661709db3ff8aae4426681c919a3624f"
   }
 }
