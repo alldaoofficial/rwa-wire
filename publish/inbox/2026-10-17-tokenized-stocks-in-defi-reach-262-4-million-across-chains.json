@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-19T09:49:55Z",
-    "reason": "A further retry still found no accessible Token Terminal table or preserved primary snapshot reproducing the September 30 $262.4 million cross-chain total and chain breakdown. Secondary articles repeat the claim, but do not provide two independent reports or auditable source data."
+    "reviewedAt": "2026-10-19T16:38:23Z",
+    "reason": "The retry still found no accessible Token Terminal table or preserved primary snapshot reproducing the September 30 $262.4 million total and chain breakdown. The live public explorer does not reproduce that historical snapshot, while available secondary reports repeat the same unattributed dataset and do not meet the independent-reporting threshold."
   }
 }
