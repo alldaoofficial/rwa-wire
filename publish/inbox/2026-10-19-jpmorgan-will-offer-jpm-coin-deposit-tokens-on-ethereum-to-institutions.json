@@ -1,7 +1,7 @@
 {
-  "title": "JPMorgan Will Offer JPM Coin Deposit Tokens on Ethereum to Institutions",
-  "description": "JPMorgan Will Offer JPM Coin Deposit Tokens on Ethereum to Institutions",
-  "why_it_matters": "",
+  "title": "JPMorgan Expands JPM Coin to Ethereum for Institutional Clients",
+  "description": "Kinexys adds another public network for its USD deposit token, giving bank customers an additional venue for cash transfers alongside tokenized assets.",
+  "why_it_matters": "The expansion places bank deposit money closer to Ethereum collateral and counterparties, broadening institutional settlement choices across the existing EVM ecosystem.",
   "pubDate": "2026-10-19",
   "category": "news",
   "tags": [
@@ -10,14 +10,13 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "JPMorgan Will Offer JPM Coin Deposit Tokens on Ethereum to Institutions",
-    ""
+    "Institutional access; Ethereum added alongside Base."
   ],
-  "body": "JPMorgan Will Offer JPM Coin Deposit Tokens on Ethereum to Institutions",
+  "body": "J.P. Morgan said on October 19 that Kinexys had made JPM Coin, its USD deposit token with ticker JPMD, available on Ethereum. Access is for the bank’s institutional clients.\n\nThe addition follows the token’s November 2025 launch on Base, an Ethereum Layer 2 network. The bank cited Ethereum’s liquidity and tokenized assets as reasons for expanding there.\n\nAccording to the release, JPM Coin supports peer-to-peer transfers between institutional customers in the EVM ecosystem, including Base and Ethereum. Kinexys presents the rollout as another option for moving wholesale money; potential programmable treasury benefits remain prospective.",
   "sources": [
     {
-      "name": "TOKENPOST",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE0wWGZOMDYtTWJldG9NZVNmNGxWVjRiYkh0elJDSUR5VGRWRkZNR0NyTzlhaTdiZ0dHbHVoWU1VQl9TMl9iQ3VLbC1FRHFYcDZqajNiQldYalA?oc=5"
+      "name": "J.P. Morgan",
+      "url": "https://www.jpmorgan.com/payments/newsroom/jpm-coin-live-on-ethereum"
     }
   ],
   "newsWatch": {
@@ -27,14 +26,41 @@
     "discoveredAt": "2026-10-19T12:37:16.460267+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "verified",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-19T13:15:41Z",
-    "reason": "Current reports describe a distinct expansion of JPM Coin from Base to Ethereum, but no public October 19 J.P. Morgan release or updated technical documentation was accessible; J.P. Morgan's official product page still states that JPM Coin is issued on Base."
-  }
+    "reviewedAt": "2026-10-19T19:49:31Z",
+    "sources": [
+      {
+        "url": "https://www.jpmorgan.com/payments/newsroom/jpm-coin-live-on-ethereum",
+        "publishedAt": "2026-10-19",
+        "checkedAt": "2026-10-19T19:49:31Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "JPMD is now available on Ethereum for institutional clients.",
+        "sourceUrl": "https://www.jpmorgan.com/payments/newsroom/jpm-coin-live-on-ethereum",
+        "anchor": "Available to"
+      },
+      {
+        "claim": "The deposit token initially launched in November 2025.",
+        "sourceUrl": "https://www.jpmorgan.com/payments/newsroom/jpm-coin-live-on-ethereum",
+        "anchor": "launched in November 2025"
+      },
+      {
+        "claim": "The supported EVM networks include both Base and Ethereum.",
+        "sourceUrl": "https://www.jpmorgan.com/payments/newsroom/jpm-coin-live-on-ethereum",
+        "anchor": "including Base and Ethereum"
+      }
+    ],
+    "contentSha256": "066ecd4e6195441cc2399e891604aab19ff2b65e41ff9ae62f60aea03c8bbce7"
+  },
+  "slug": "jpmorgan-will-offer-jpm-coin-deposit-tokens-on-ethereum-to-institutions"
 }
