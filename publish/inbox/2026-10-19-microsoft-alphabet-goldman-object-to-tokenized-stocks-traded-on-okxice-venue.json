@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-19T14:46:10Z",
+    "reason": "The scanner headline misstates the October 15 OKXICE issuer-objection event: the current official notice and corroborating coverage identify nine objectors, not Microsoft, Alphabet or Goldman Sachs. The same nine-issuer event is already covered by the existing verified October 15 RWA Wire article, and no new objection or material expansion is evidenced."
   }
 }
