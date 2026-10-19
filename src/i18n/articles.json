@@ -842,5 +842,41 @@
       ]
     },
     "sourceSha256": "42b08a624437ec06d9fc2f7621d6b8dc5d1e5e79a3f5b276ece2cc86ed307245"
+  },
+  "meritz-canton-exploratory-korea-mou": {
+    "path": "/institutions/meritz-and-canton-sign-exploratory-korea-tokenization-mou/",
+    "date": "2026-10-14",
+    "kind": "news",
+    "sources": [
+      ["Canton Foundation and Meritz Securities — announcement via Mondo Visione", "https://mondovisione.com/media-and-resources/news/canton-foundation-and-meritz-securities-partner-to-advance-institutional-tokeniz-20261015/"]
+    ],
+    "de": {
+      "title": "Meritz und Canton unterzeichnen Absichtserklärung zur Prüfung der Tokenisierung in Korea",
+      "description": "Meritz Securities und die Canton Foundation wollen die Tokenisierung koreanischer Vermögenswerte, institutionelle Blockchain-Infrastruktur und mögliche grenzüberschreitende Anwendungen für Sicherheiten untersuchen.",
+      "sections": [
+        ["Absichtserklärung für eine ergebnisoffene Prüfung", "Meritz Securities und die Canton Foundation kündigten am 14. Oktober eine strategische Absichtserklärung an. Die Parteien wollen die Tokenisierung koreanischer Finanzanlagen prüfen und untersuchen, ob Cantons Infrastruktur mit Datenschutzfunktionen institutionelle Aktivitäten an den Kapitalmärkten des Landes unterstützen könnte. Die Vereinbarung dient der Prüfung möglicher Vorhaben: Sie startet weder ein tokenisiertes Wertpapier noch einen Handelsplatz oder einen produktiven Dienst."],
+        ["Mögliche grenzüberschreitende Anwendungen", "Die vorgeschlagenen grenzüberschreitenden Arbeiten könnten globale institutionelle Partner und Schuldtitel mit staatlicher Bonitätsqualität umfassen. Die Parteien wollen außerdem untersuchen, ob tokenisierte hochwertige liquide Vermögenswerte zwischen Handelsausführungs- und Clearing-Umgebungen übertragen oder als institutionelle Sicherheiten eingesetzt werden könnten."],
+        ["Regulatorische Grenzen und offener Zeitplan", "Ein möglicher Ausbau soll schrittweise erfolgen und weiterhin den sich entwickelnden südkoreanischen Regeln für digitale Vermögenswerte unterliegen. Die Ankündigung nennt weder einen Umsetzungszeitplan noch einen konkreten Vermögenswert für eine Emission. Auch ein bereits verfügbarer Dienst oder eine abgeschlossene Transaktion wird nicht angekündigt."]
+      ]
+    },
+    "es": {
+      "title": "Meritz y Canton firman un memorando exploratorio sobre tokenización en Corea",
+      "description": "Meritz Securities y Canton Foundation acordaron estudiar la tokenización de activos coreanos, la infraestructura blockchain institucional y posibles usos transfronterizos como garantía.",
+      "sections": [
+        ["Un memorando para estudiar posibles iniciativas", "Meritz Securities y Canton Foundation anunciaron el 14 de octubre un memorando de entendimiento estratégico. Las partes planean evaluar la tokenización de activos financieros coreanos y si la infraestructura de Canton, con funciones de privacidad, podría apoyar la actividad institucional en los mercados de capitales del país. El acuerdo es exploratorio: no pone en marcha un valor tokenizado, una plataforma de negociación ni un servicio en producción."],
+        ["Posibles aplicaciones transfronterizas", "El trabajo transfronterizo propuesto podría incluir socios institucionales globales y activos de deuda de calidad soberana. Las partes también pretenden estudiar si los activos líquidos de alta calidad tokenizados podrían transferirse entre entornos de ejecución de operaciones y compensación o utilizarse como garantía institucional."],
+        ["Límites regulatorios y calendario abierto", "Se prevé que cualquier expansión avance por etapas y siga sujeta a las normas sobre activos digitales que Corea del Sur está desarrollando. El anuncio no proporciona un calendario de implementación ni identifica un activo para su emisión. Tampoco anuncia un servicio ya operativo ni una transacción completada."]
+      ]
+    },
+    "fr": {
+      "title": "Meritz et Canton signent un protocole exploratoire sur la tokenisation en Corée",
+      "description": "Meritz Securities et la Canton Foundation ont convenu d’étudier la tokenisation d’actifs coréens, l’infrastructure blockchain institutionnelle et de possibles usages transfrontaliers comme garanties.",
+      "sections": [
+        ["Un protocole pour examiner des projets possibles", "Meritz Securities et la Canton Foundation ont annoncé le 14 octobre un protocole d’accord stratégique. Les parties prévoient d’évaluer la tokenisation d’actifs financiers coréens et de déterminer si l’infrastructure de Canton, dotée de fonctions de confidentialité, pourrait soutenir l’activité institutionnelle sur les marchés de capitaux du pays. L’accord est exploratoire : il ne lance ni titre tokenisé, ni plateforme de négociation, ni service en production."],
+        ["Des applications transfrontalières possibles", "Les travaux transfrontaliers envisagés pourraient associer des partenaires institutionnels mondiaux et porter sur des titres de dette de qualité souveraine. Les parties souhaitent également étudier si des actifs liquides de haute qualité tokenisés pourraient circuler entre les environnements d’exécution des transactions et de compensation, ou servir de garanties institutionnelles."],
+        ["Des limites réglementaires et un calendrier ouvert", "Toute expansion devrait se faire par étapes et rester soumise aux règles sud-coréennes sur les actifs numériques, encore en développement. L’annonce ne fournit ni calendrier de mise en œuvre ni actif précis destiné à être émis. Elle n’annonce pas non plus de service déjà opérationnel ou de transaction réalisée."]
+      ]
+    },
+    "sourceSha256": "f468947f1e7f871e7b6cd483af2ddb830d95f70e42e9e62a38757249fc68a18c"
   }
 }
