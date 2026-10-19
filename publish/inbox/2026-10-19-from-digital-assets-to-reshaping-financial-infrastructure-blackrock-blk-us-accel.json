@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-19T11:38:13Z",
+    "reason": "This article republishes the same October 19 Bloomberg-derived BlackRock tokenized-fund collateral analysis already recorded in the inbox. Its launches, approvals and custody examples are historical and it reports no separate new implementation milestone."
   }
 }
