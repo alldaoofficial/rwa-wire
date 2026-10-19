@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-19T09:09:38Z",
+    "reason": "The stock-price article repackages the Canadian banks' September 22 tokenized-deposit exploration announcement as current market commentary. It documents no new RBC launch, completed pilot or material expansion on October 19."
   }
 }
