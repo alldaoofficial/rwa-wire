@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-18T18:25:00Z",
-    "reason": "The accessible Token Terminal explorer does not reproduce the September 30 $262.4 million cross-chain snapshot. Other full-text articles repeat the same Token Terminal figures without independent reporting or a preserved primary dataset, so the headline total remains unverifiable."
+    "reviewedAt": "2026-10-19T00:54:00Z",
+    "reason": "After the retry interval, Token Terminal's accessible explorer still does not reproduce the September 30 $262.4 million cross-chain snapshot. Additional articles repeat the same figures, while one materially conflates the cross-chain total with Coinbase assets on Base; no preserved primary dataset supports a verified rewrite."
   }
 }
