@@ -878,5 +878,42 @@
       ]
     },
     "sourceSha256": "f468947f1e7f871e7b6cd483af2ddb830d95f70e42e9e62a38757249fc68a18c"
+  },
+  "treasury-funds-collateral-frictions": {
+    "path": "/markets/tokenized-treasury-funds-reach-14-69-billion-as-collateral-frictions-persist/",
+    "date": "2026-10-17",
+    "kind": "news",
+    "sources": [
+      ["TokenPost — market snapshot", "https://www.tokenpost.com/news/investing/33782"],
+      ["Nasdaq — collateral tokenization survey analysis", "https://www.nasdaq.com/articles/fintech/collateral-tokenization-how-340-million-opportunity-driving-digitalized-collateral"]
+    ],
+    "de": {
+      "title": "Tokenisierte Treasury-Fonds erreichen 14,69 Milliarden US-Dollar, doch Hürden beim Einsatz als Sicherheiten bleiben",
+      "description": "TokenPost meldete für den 16. Oktober 14,69 Milliarden US-Dollar über 117 tokenisierte Treasury-Produkte. Eine ältere Nasdaq-Umfrage dokumentierte anhaltende Probleme bei der Verarbeitung von Sicherheiten.",
+      "sections": [
+        ["Marktaufnahme vom 16. Oktober", "TokenPost berichtete, dass tokenisierte Treasury-Fonds am 16. Oktober einen als „distributed value“ ausgewiesenen Wert von 14,69 Milliarden US-Dollar über 117 Vermögenswerte und 86.753 Halter erreichten. Diese Zahlen beschreiben Größe und Breite des erfassten Marktes. Sie zeigen nicht, welcher Anteil als institutionelle Sicherheit zugelassen, bereits verpfändet oder ohne Weiteres übertragbar ist."],
+        ["Ältere Umfrage zu operativen Problemen", "Den operativen Kontext liefert eine ältere Umfrage von Nasdaq und ValueExchange, die am 20. Februar veröffentlicht wurde. Nasdaq zufolge hatten 70 % der Befragten täglich Probleme beim Abgleich von Abwicklungsinstruktionen und bei der Lieferung im Sicherheitenbetrieb. Die Umfrage ergab außerdem, dass Unternehmen im Durchschnitt rund 7 % zusätzliche Sicherheiten als Puffer gegen Fehlschläge vorhielten. Die Stichprobe umfasste 203 Marktteilnehmer."],
+        ["Erwartete Nutzung ist keine gemessene Einführung", "Nasdaq berichtete, dass 52 % erwarteten, bis Ende 2026 tokenisierte Sicherheiten im produktiven Betrieb zu verwalten. Dies bleibt eine Prognose der Befragten und ist kein Nachweis einer bereits erfolgten Einführung. Zusammen verdeutlichen die Angaben eine Lücke zwischen dem wachsenden Angebot tokenisierter Treasury-Produkte und der operativen Bereitschaft, digitale Vermögenswerte effizient als Sicherheiten einzusetzen."]
+      ]
+    },
+    "es": {
+      "title": "Los fondos Treasury tokenizados alcanzan 14.690 millones de dólares, pero persisten las trabas para usarlos como garantía",
+      "description": "TokenPost comunicó 14.690 millones de dólares en 117 productos Treasury tokenizados a 16 de octubre, mientras una encuesta anterior de Nasdaq documentó dificultades persistentes en la gestión operativa de garantías.",
+      "sections": [
+        ["Una fotografía del mercado a 16 de octubre", "TokenPost informó de que los fondos de deuda del Tesoro tokenizada representaban 14.690 millones de dólares en valor distribuido el 16 de octubre, repartidos entre 117 activos y 86.753 titulares. Estas cifras describen el tamaño y la amplitud del mercado analizado; no indican qué parte de esa oferta cumple los requisitos para usarse como garantía institucional, está pignorada o puede transferirse con facilidad para ese fin."],
+        ["Una encuesta anterior sobre dificultades operativas", "El contexto operativo procede de una encuesta anterior de Nasdaq y ValueExchange publicada el 20 de febrero. Nasdaq señaló que el 70 % de los encuestados experimentaba a diario problemas de conciliación de instrucciones de liquidación y de entrega en las operaciones con garantías. La encuesta también constató que las empresas mantenían, de media, alrededor de un 7 % de garantías excedentes como protección frente a fallos. La muestra abarcó a 203 participantes del mercado."],
+        ["La adopción prevista no es un resultado medido", "Nasdaq indicó que el 52 % esperaba gestionar garantías tokenizadas en producción para finales de 2026. Se trata de una previsión de los encuestados, no de una prueba de que la adopción ya haya ocurrido. En conjunto, los datos ponen de relieve la distancia entre una oferta creciente de deuda del Tesoro tokenizada y la preparación operativa necesaria para utilizar activos digitales de forma eficiente como garantía."]
+      ]
+    },
+    "fr": {
+      "title": "Les fonds du Trésor tokenisés atteignent 14,69 milliards de dollars, mais les obstacles à leur utilisation comme garanties persistent",
+      "description": "TokenPost a fait état de 14,69 milliards de dollars répartis entre 117 produits du Trésor tokenisés au 16 octobre, tandis qu’une enquête antérieure de Nasdaq documentait des difficultés persistantes de traitement des garanties.",
+      "sections": [
+        ["Une photographie du marché au 16 octobre", "TokenPost a indiqué que les fonds de titres du Trésor tokenisés représentaient 14,69 milliards de dollars en valeur distribuée le 16 octobre, répartis entre 117 actifs et 86 753 détenteurs. Ces chiffres décrivent la taille et l’étendue du marché suivi ; ils ne montrent pas quelle part de cette offre est admissible comme garantie institutionnelle, déjà donnée en garantie ou facilement transférable à cette fin."],
+        ["Une enquête antérieure sur les difficultés opérationnelles", "Le contexte opérationnel provient d’une enquête antérieure de Nasdaq et ValueExchange publiée le 20 février. Selon Nasdaq, 70 % des répondants rencontraient quotidiennement des problèmes d’appariement des instructions de règlement et de livraison dans les opérations de gestion des garanties. L’enquête a également constaté que les entreprises conservaient en moyenne environ 7 % de garanties excédentaires pour se prémunir contre les défaillances. L’échantillon comprenait 203 participants au marché."],
+        ["Une adoption attendue, pas un résultat mesuré", "Nasdaq a indiqué que 52 % prévoyaient de gérer des garanties tokenisées en production d’ici la fin de 2026. Cela reste une prévision des répondants, et non la preuve que cette adoption a déjà eu lieu. Ensemble, ces éléments soulignent l’écart entre l’offre croissante de titres du Trésor tokenisés et la préparation opérationnelle nécessaire pour utiliser efficacement les actifs numériques comme garanties."]
+      ]
+    },
+    "sourceSha256": "de008d53e34d6925737a821ca5af36d949cbb32b1da6e56807cabee9bf232dc8"
   }
 }
