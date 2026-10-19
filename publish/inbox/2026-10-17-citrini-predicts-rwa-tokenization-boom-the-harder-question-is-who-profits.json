@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-18T20:53:00Z",
-    "reason": "After the retry interval, CoinDesk remains the only independent full-text report and the underlying paid Citrini Research report remains unavailable for complete verification. The item is a market forecast, not a newly documented implementation event."
+    "reviewedAt": "2026-10-19T03:24:50Z",
+    "reason": "After another retry interval, the October 17 CoinDesk article still summarizes Citrini Research's paid October 8 investment thesis. The complete underlying report remains unavailable for verification, and no new launch, approval, financing or material implementation event is documented."
   }
 }
