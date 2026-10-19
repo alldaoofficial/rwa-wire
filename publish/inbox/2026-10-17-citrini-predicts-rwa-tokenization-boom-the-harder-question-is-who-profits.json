@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-19T03:24:50Z",
-    "reason": "After another retry interval, the October 17 CoinDesk article still summarizes Citrini Research's paid October 8 investment thesis. The complete underlying report remains unavailable for verification, and no new launch, approval, financing or material implementation event is documented."
+    "reviewedAt": "2026-10-19T11:38:13Z",
+    "reason": "A further retry confirms that CoinDesk's October 17 article revisits Citrini Research's paid October 8 investment thesis. The complete 79-page report remains inaccessible, and the coverage documents predictions and portfolio opinions rather than a new launch, approval, financing or implementation milestone."
   }
 }
