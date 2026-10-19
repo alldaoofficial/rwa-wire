@@ -1,0 +1,27 @@
+{
+  "id": "2026-10-19-jpmorgan-will-offer-jpm-coin-deposit-tokens",
+  "title": "JPMorgan Expands JPM Coin to Ethereum for Institutional Clients",
+  "category": "NEWS",
+  "why_it_matters": "The expansion places bank deposit money closer to Ethereum collateral and counterparties, broadening institutional settlement choices across the existing EVM ecosystem.",
+  "article_url": "https://therwawire.com/news/jpmorgan-will-offer-jpm-coin-deposit-tokens-on-ethereum-to-institutions/",
+  "image_url": "https://therwawire.com/images/news/jpmorgan-will-offer-jpm-coin-deposit-tokens-on-ethereum-to-institutions.svg",
+  "caption": "RWA WIRE // NEWS\n\nJPMorgan Expands JPM Coin to Ethereum for Institutional Clients\n\nKinexys adds another public network for its USD deposit token, giving bank customers an additional venue for cash transfers alongside tokenized assets.\n\nFull analysis →\nhttps://therwawire.com/news/jpmorgan-will-offer-jpm-coin-deposit-tokens-on-ethereum-to-institutions/",
+  "distribution": {
+    "telegram": "RWA WIRE // NEWS\n\nJPMorgan Expands JPM Coin to Ethereum for Institutional Clients\n\nKinexys adds another public network for its USD deposit token, giving bank customers an additional venue for cash transfers alongside tokenized assets.\n\nFull analysis →\nhttps://therwawire.com/news/jpmorgan-will-offer-jpm-coin-deposit-tokens-on-ethereum-to-institutions/",
+    "x": "JPMorgan Expands JPM Coin to Ethereum for Institutional Clients\n\nKinexys adds another public network for its USD deposit token, giving bank customers an additional venue for cash transfers alongside tokenized assets.\n\nhttps://therwawire.com/news/jpmorgan-will-offer-jpm-coin-deposit-tokens-on-ethereum-to-institutions/",
+    "breaking": "RWA WIRE // NEWS\n\nJPMorgan Expands JPM Coin to Ethereum for Institutional Clients\n\nhttps://therwawire.com/news/jpmorgan-will-offer-jpm-coin-deposit-tokens-on-ethereum-to-institutions/",
+    "summary": "Kinexys adds another public network for its USD deposit token, giving bank customers an additional venue for cash transfers alongside tokenized assets."
+  },
+  "sources": [
+    {
+      "name": "J.P. Morgan",
+      "url": "https://www.jpmorgan.com/payments/newsroom/jpm-coin-live-on-ethereum"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-10-19-jpmorgan-will-offer-jpm-coin-deposit-tokens-on-ethereum-to-institutions.json",
+    "contentSha256": "066ecd4e6195441cc2399e891604aab19ff2b65e41ff9ae62f60aea03c8bbce7",
+    "approvedAt": "2026-10-19T19:50:12.829506+00:00"
+  }
+}
