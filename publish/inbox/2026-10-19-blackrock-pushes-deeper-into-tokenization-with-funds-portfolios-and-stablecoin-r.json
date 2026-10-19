@@ -29,5 +29,11 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "reviewedAt": "2026-10-19T02:31:13Z",
+    "method": "source-enrichment-v1",
+    "reason": "The October 19 coverage recaps BlackRock's August 3 launches of BSTBL and BRSRV and portfolio-tokenization activity already covered by RWA Wire on October 3; it identifies no new approval, launch, financing or material expansion."
   }
 }
