@@ -1,0 +1,33 @@
+{
+  "title": "DTCC Details Tokenization Service",
+  "description": "DTCC Details Tokenization Service",
+  "why_it_matters": "",
+  "pubDate": "2026-10-19",
+  "category": "news",
+  "tags": [
+    "Tokenization",
+    "Institutions",
+    "News Watch"
+  ],
+  "keyTakeaways": [
+    "DTCC Details Tokenization Service",
+    ""
+  ],
+  "body": "DTCC Details Tokenization Service",
+  "sources": [
+    {
+      "name": "Markets Media",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5JSll3WjJzblMzQVlDNDM1OGxCZXVXOGRqblcyZEhSUG9sbG9uV2RSSXE4WG1TVVdJc3VqUW54QXJKaXpxQXhDc3FEYmU4dzlYcjVRbV9qd0JqTXN2ajVEYXB1XzF5U0ZGcmtaZWUxb1o?oc=5"
+    }
+  ],
+  "newsWatch": {
+    "score": 6,
+    "priority": "watchlist",
+    "sourceTrust": "specialist",
+    "discoveredAt": "2026-10-20T20:26:13.332331+00:00",
+    "requiresSourceReview": true,
+    "autoPublishEligible": false,
+    "contentStatus": "needs-source-enrichment",
+    "discoveryMode": "watchlist-research"
+  }
+}
