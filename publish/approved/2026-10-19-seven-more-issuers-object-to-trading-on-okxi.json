@@ -1,0 +1,31 @@
+{
+  "id": "2026-10-19-seven-more-issuers-object-to-trading-on-okxi",
+  "title": "Seven More Issuers Object to Trading on OKXICE's Tokenized Stock Venue",
+  "category": "NEWS",
+  "why_it_matters": "The expanded list removes more large-cap names from OKXICE's proposed roster and shows how issuer objections can narrow a venue's launch inventory.",
+  "article_url": "https://therwawire.com/news/seven-more-issuers-object-to-trading-on-okxice-s-tokenized-stock-venue/",
+  "image_url": "https://therwawire.com/images/news/seven-more-issuers-object-to-trading-on-okxice-s-tokenized-stock-venue.svg",
+  "caption": "RWA WIRE // NEWS\n\nSeven More Issuers Object to Trading on OKXICE's Tokenized Stock Venue\n\nOKXICE's October 19 notice adds Microsoft, Alphabet, Goldman Sachs and four other issuers, raising its disclosed objection count to 16.\n\nFull analysis →\nhttps://therwawire.com/news/seven-more-issuers-object-to-trading-on-okxice-s-tokenized-stock-venue/",
+  "distribution": {
+    "telegram": "RWA WIRE // NEWS\n\nSeven More Issuers Object to Trading on OKXICE's Tokenized Stock Venue\n\nOKXICE's October 19 notice adds Microsoft, Alphabet, Goldman Sachs and four other issuers, raising its disclosed objection count to 16.\n\nFull analysis →\nhttps://therwawire.com/news/seven-more-issuers-object-to-trading-on-okxice-s-tokenized-stock-venue/",
+    "x": "Seven More Issuers Object to Trading on OKXICE's Tokenized Stock Venue\n\nOKXICE's October 19 notice adds Microsoft, Alphabet, Goldman Sachs and four other issuers, raising its disclosed objection count to 16.\n\nhttps://therwawire.com/news/seven-more-issuers-object-to-trading-on-okxice-s-tokenized-stock-venue/",
+    "breaking": "RWA WIRE // NEWS\n\nSeven More Issuers Object to Trading on OKXICE's Tokenized Stock Venue\n\nhttps://therwawire.com/news/seven-more-issuers-object-to-trading-on-okxice-s-tokenized-stock-venue/",
+    "summary": "OKXICE's October 19 notice adds Microsoft, Alphabet, Goldman Sachs and four other issuers, raising its disclosed objection count to 16."
+  },
+  "sources": [
+    {
+      "name": "OKXICE — Public Notice dated October 19, 2026",
+      "url": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.19.pdf"
+    },
+    {
+      "name": "U.S. SEC — Tokenized Securities Venue exemption order",
+      "url": "https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-10-21-microsoft-and-alphabet-opt-out-of-tokenized-stocks-in-latest-blow-to-ambitious-p.json",
+    "contentSha256": "ad71ad412b145dafc4a66ccd560da35b901fc318f082dd591808dc4928b8486f",
+    "approvedAt": "2026-10-21T19:30:40.903308+00:00"
+  }
+}
