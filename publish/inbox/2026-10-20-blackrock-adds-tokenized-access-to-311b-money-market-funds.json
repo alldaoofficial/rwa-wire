@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "reviewedAt": "2026-10-21T18:16:21Z",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reason": "The October 20 report recaps BlackRock's August 4 introduction of tokenized access to selected European money-market fund share classes via J.P. Morgan's Kinexys platform; it reports no new launch, approval, financing or material expansion."
   }
 }
