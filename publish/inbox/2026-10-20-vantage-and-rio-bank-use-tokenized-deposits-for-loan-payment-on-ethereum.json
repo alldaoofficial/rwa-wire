@@ -1,8 +1,8 @@
 {
-  "title": "Vantage and Rio Bank Use Tokenized Deposits for Loan Payment on Ethereum",
-  "description": "Vantage and Rio Bank Use Tokenized Deposits for Loan Payment on Ethereum",
-  "why_it_matters": "",
-  "pubDate": "2026-10-20",
+  "title": "Vantage and Rio Bank Complete Tokenized-Deposit Loan Payment",
+  "description": "The two Texas banks completed a loan-participation principal-and-interest payment through Hazel Network in under three minutes, with servicing records updating alongside the funds.",
+  "why_it_matters": "The transaction moves tokenized deposits beyond issuance tests into a specific bank-to-bank servicing workflow, linking settlement with the notices and balance updates needed to administer a shared loan.",
+  "pubDate": "2026-10-19",
   "category": "news",
   "tags": [
     "Tokenization",
@@ -10,14 +10,19 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "Vantage and Rio Bank Use Tokenized Deposits for Loan Payment on Ethereum",
-    ""
+    "Vantage Bank sent principal and interest to Rio Bank through Hazel Network as tokenized deposits.",
+    "Participate said receipt took under three minutes and loan balances and notices updated automatically.",
+    "The transaction concerned payment and remittance for a loan participation, not tokenization of the underlying loan."
   ],
-  "body": "Vantage and Rio Bank Use Tokenized Deposits for Loan Payment on Ethereum",
+  "body": "Vantage Bank and Rio Bank completed a principal-and-interest payment for a loan participation using tokenized deposits on Hazel Network, according to loan-sales platform Participate. Vantage posted the payment in Participate, which allocated principal and interest before transmitting the funds to the buying institution's digital wallet. Participate said the process took less than three minutes and updated the related loan balances and payment notices as the funds moved.\n\nThe transaction used Hazel's bank and blockchain infrastructure; it did not tokenize ownership of the underlying loan. Participate coordinated allocations, instructions and servicing records, while Vantage supplied banking infrastructure and Custodia supplied wallets, compliance functions and blockchain operations. A June technical announcement said Hazel's reference implementation had been live on Ethereum mainnet since March 2026. Participate characterized the October transaction as the first completed payment under a collaboration announced in April.",
   "sources": [
     {
-      "name": "The Defiant",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQX0ZaMXRZQ2ZUcVJob2dVelFCcmM3dEJiUE9hdzhLMzJKRTJlSXR4WmNuRG85VExJbGR1XzJqSHZKNlB2T0tHRk5UWmZ6NHE3cE9vVTRSV1p1akJzUW5TM19ybDJtUXBkWjd6ajdlSzYtSjhsT0U5aXJlRGY2T3lfT3M0UjdSOGxIUnVNRWdwZjhVNnBzbEFuNWl3MmxCeXJQNHY2RjlBX0JKYldIb1FNMEVmb29mU0xtLXkyTFVBVQ?oc=5"
+      "name": "Participate",
+      "url": "https://participateloan.com/tokenized-deposits-loan-participation-payments/"
+    },
+    {
+      "name": "Infinant",
+      "url": "https://www.infinant.com/vantage-bank-and-custodia-release-white-paper-unveiling-hazel-network/"
     }
   ],
   "newsWatch": {
@@ -27,7 +32,52 @@
     "discoveredAt": "2026-10-21T20:37:16.806311+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-21T20:52:00+00:00",
+    "sources": [
+      {
+        "url": "https://participateloan.com/tokenized-deposits-loan-participation-payments/",
+        "publishedAt": "2026-10-19",
+        "checkedAt": "2026-10-21T20:52:00+00:00",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://www.infinant.com/vantage-bank-and-custodia-release-white-paper-unveiling-hazel-network/",
+        "publishedAt": "2026-06-30",
+        "checkedAt": "2026-10-21T20:52:00+00:00",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Principal and interest moved between Vantage Bank and Rio Bank in less than three minutes.",
+        "sourceUrl": "https://participateloan.com/tokenized-deposits-loan-participation-payments/",
+        "anchor": "in less than three minutes"
+      },
+      {
+        "claim": "Loan balances and payment notices updated automatically while the funds moved.",
+        "sourceUrl": "https://participateloan.com/tokenized-deposits-loan-participation-payments/",
+        "anchor": "payment notices updated automatically"
+      },
+      {
+        "claim": "The use case covered payment and remittance rather than ownership tokenization of the loan.",
+        "sourceUrl": "https://participateloan.com/tokenized-deposits-loan-participation-payments/",
+        "anchor": "not to tokenizing ownership"
+      },
+      {
+        "claim": "Hazel's reference implementation had been live on Ethereum mainnet since March 2026.",
+        "sourceUrl": "https://www.infinant.com/vantage-bank-and-custodia-release-white-paper-unveiling-hazel-network/",
+        "anchor": "live since March 2026"
+      }
+    ],
+    "contentSha256": "e67803c23667a7115fead80072b90b53fa28d3789e31a8ae07b5e4967698ecc3"
   }
 }
