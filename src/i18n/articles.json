@@ -951,5 +951,41 @@
       ]
     },
     "sourceSha256": "b6daafdc52c4cbbb6366a4073a43d833661709db3ff8aae4426681c919a3624f"
+  },
+  "hci-isaias-token-b-reinsurance": {
+    "path": "/news/hci-says-hurricane-isaias-will-affect-one-tokenized-reinsurance-security/",
+    "date": "2026-10-21",
+    "kind": "news",
+    "sources": [
+      ["HCI Group", "https://www.globenewswire.com/news-release/2026/10/21/3385460/0/en/hci-group-provides-update-on-the-impact-of-hurricane-isaias.html"]
+    ],
+    "de": {
+      "title": "HCI erwartet Auswirkungen von Hurrikan Isaias auf ein tokenisiertes Rückversicherungsinstrument",
+      "description": "HCI rechnet damit, dass sein Rückversicherungstoken B und einer von drei Rückversicherungstürmen von Hurrikan Isaias betroffen sein werden, erklärt den Token aber weiterhin für profitabel.",
+      "sections": [
+        ["Ein Rückversicherungsturm und ein Token betroffen", "HCI Group teilte am 21. Oktober mit, dass Schäden durch Hurrikan Isaias einen seiner drei Rückversicherungstürme getroffen haben und voraussichtlich ein tokenisiertes Rückversicherungsinstrument betreffen werden. Der Sturm traf am 9. Oktober nahe Destin in Florida als Hurrikan der Kategorie 2 auf Land."],
+        ["15 Millionen US-Dollar Selbstbehalt in Turm 3", "Betroffen ist Rückversicherungsturm 3, der Nordflorida abdeckt und einen Selbstbehalt von 15 Millionen US-Dollar einschließlich der Beteiligung von HCIs firmeneigenen Rückversicherern aufweist. Beträge oberhalb dieser Schwelle unterliegen den Rückversicherungsvereinbarungen des Unternehmens."],
+        ["Endgültige Auswirkung auf Anleger bleibt offen", "HCI erwartet, dass unter seinen Rückversicherungstoken nur Token B betroffen sein wird. Das Unternehmen erklärte dennoch, Token B bleibe profitabel. Die Mitteilung beziffert weder den Verlust des Tokens noch korrigiert sie seinen Rücknahmewert; damit bleibt die endgültige Auswirkung auf Anleger ungeklärt."]
+      ]
+    },
+    "es": {
+      "title": "HCI prevé que el huracán Isaias afecte a un instrumento de reaseguro tokenizado",
+      "description": "HCI prevé que su token de reaseguro B y una de sus tres torres de reaseguro absorban efectos del huracán Isaias, aunque afirma que el token sigue siendo rentable.",
+      "sections": [
+        ["Una torre de reaseguro y un token afectados", "HCI Group comunicó el 21 de octubre que los siniestros causados por el huracán Isaias habían afectado a una de sus tres torres de reaseguro y se esperaba que afectaran a un instrumento de reaseguro tokenizado. La tormenta tocó tierra cerca de Destin, Florida, el 9 de octubre como huracán de categoría 2."],
+        ["Una retención de 15 millones de dólares en la Torre 3", "La estructura afectada es la Torre de Reaseguro 3, que cubre el norte de Florida y tiene una retención de 15 millones de dólares, incluida la participación de las reaseguradoras cautivas de HCI. Los importes que superen ese umbral están sujetos a los contratos de reaseguro de la empresa."],
+        ["El efecto final para los inversores sigue sin resolverse", "HCI espera que solo el Token B se vea afectado entre sus tokens de reaseguro. No obstante, la empresa afirmó que el Token B sigue siendo rentable. El comunicado no cuantifica la pérdida del token ni revisa su valor de reembolso, por lo que el efecto final para los inversores continúa sin resolverse."]
+      ]
+    },
+    "fr": {
+      "title": "HCI prévoit que l’ouragan Isaias affectera un titre de réassurance tokenisé",
+      "description": "HCI prévoit que son Token B de réassurance et l’une de ses trois tours de réassurance subiront les effets de l’ouragan Isaias, tout en affirmant que le token reste rentable.",
+      "sections": [
+        ["Une tour de réassurance et un token concernés", "HCI Group a indiqué le 21 octobre que les sinistres liés à l’ouragan Isaias avaient touché l’une de ses trois tours de réassurance et devraient affecter un titre de réassurance tokenisé. La tempête a touché terre près de Destin, en Floride, le 9 octobre en tant qu’ouragan de catégorie 2."],
+        ["Une rétention de 15 millions de dollars pour la tour 3", "La structure concernée est la tour de réassurance 3, qui couvre le nord de la Floride et prévoit une rétention de 15 millions de dollars, y compris la participation des réassureurs captifs de HCI. Les montants au-delà de ce seuil relèvent des accords de réassurance de l’entreprise."],
+        ["L’effet final pour les investisseurs reste indéterminé", "HCI s’attend à ce que seul le Token B soit affecté parmi ses tokens de réassurance. L’entreprise a néanmoins déclaré que le Token B restait rentable. Le communiqué ne chiffre pas la perte du token et ne révise pas sa valeur de remboursement, de sorte que l’effet final pour les investisseurs reste indéterminé."]
+      ]
+    },
+    "sourceSha256": "3c3207914a0d8c343f7660550a78e589ca198d910eb1f8ce662d53df949fc6e5"
   }
 }
