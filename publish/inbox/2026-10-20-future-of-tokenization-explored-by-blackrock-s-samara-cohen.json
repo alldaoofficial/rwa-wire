@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "reviewedAt": "2026-10-21T19:29:08Z",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reason": "The lead is a thin aggregator recap of a conference discussion and points only to a social-media post; it documents no separate launch, approval, financing or material product expansion and provides no adequate full-text primary evidence for a news article."
   }
 }
