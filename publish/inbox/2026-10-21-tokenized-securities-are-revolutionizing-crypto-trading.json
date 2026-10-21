@@ -29,5 +29,11 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedAt": "2026-10-21T20:52:00+00:00",
+    "reason": "OneSafe is a promotional company blog and this post offers general commentary without a discrete, independently verifiable new event."
   }
 }
