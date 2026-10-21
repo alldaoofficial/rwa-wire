@@ -28,5 +28,12 @@
     "relatedCoverageTitles": [],
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "reviewedAt": "2026-10-21T18:16:21Z",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reason": "Ondo's October 21 post is promotional product positioning that summarizes existing Ondo Stocks features; it does not document a separate new launch, approval, financing or material expansion suitable for a news article."
   }
 }
