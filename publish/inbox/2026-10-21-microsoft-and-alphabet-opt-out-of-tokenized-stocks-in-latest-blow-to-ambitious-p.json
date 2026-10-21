@@ -1,23 +1,28 @@
 {
-  "title": "Microsoft and Alphabet opt out of tokenized stocks in latest blow to ambitious plan from OKK and NYSE parent firm",
-  "description": "Microsoft and Alphabet opt out of tokenized stocks in latest blow to ambitious plan from OKK and NYSE parent firm",
-  "why_it_matters": "",
-  "pubDate": "2026-10-21",
+  "title": "Seven More Issuers Object to Trading on OKXICE's Tokenized Stock Venue",
+  "description": "OKXICE's October 19 notice adds Microsoft, Alphabet, Goldman Sachs and four other issuers, raising its disclosed objection count to 16.",
+  "why_it_matters": "The expanded list removes more large-cap names from OKXICE's proposed roster and shows how issuer objections can narrow a venue's launch inventory.",
+  "pubDate": "2026-10-19",
   "category": "news",
   "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Tokenized Stocks",
+    "Regulation",
+    "OKXICE"
   ],
   "keyTakeaways": [
-    "Microsoft and Alphabet opt out of tokenized stocks in latest blow to ambitious plan from OKK and NYSE parent firm",
-    ""
+    "OKXICE's October 19 notice lists seven new issuer objections, bringing the disclosed total from nine to 16.",
+    "The new objectors are Goldman Sachs, Microsoft, Qualcomm, Caterpillar, McDonald's, Western Digital and Alphabet.",
+    "An objection blocks the relevant stock on OKXICE under the SEC framework; it is not a blanket ban on tokenization elsewhere."
   ],
-  "body": "Microsoft and Alphabet opt out of tokenized stocks in latest blow to ambitious plan from OKK and NYSE parent firm",
+  "body": "OKXICE updated its public notice on October 19 to identify seven additional issuers that objected to tokenized trading of their shares on its proposed venue. Goldman Sachs, Microsoft, Qualcomm, Caterpillar, McDonald's, Western Digital and Alphabet joined the nine issuers disclosed in the previous notice, taking the total to 16. Alphabet's two listed share classes count as one issuer.\n\nThe objections apply specifically to OKXICE's use of unaffiliated third-party tokenization under the SEC's temporary exemption. A timely objection prevents that venue from making the affected tokenized stock available. It does not prohibit issuer-sponsored tokenization or another platform operating under a separate legal arrangement. The update materially reduces the recognizable large-cap names available from OKXICE's original proposed roster, but it is not evidence that the venue has launched or begun trading.",
   "sources": [
     {
-      "name": "Fortune",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOTEpGTXJ6c3M1V3lVWXVITzBBRGFJVXp3TVhRSlBhNDBYanhiZDVJd015ODdleEtJTHFrYVpPRTl4bHpDOFR0MXVRXy1UYVdZdlFnNThtclMtb1V3U1gwZk5CNHFiSV84YmcwNXdxRENrUThuN0MyNEtJT1Ywb25qZU5VNVdQTkdZZjNfaHJiWDVNd2M?oc=5"
+      "name": "OKXICE — Public Notice dated October 19, 2026",
+      "url": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.19.pdf"
+    },
+    {
+      "name": "U.S. SEC — Tokenized Securities Venue exemption order",
+      "url": "https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf"
     }
   ],
   "newsWatch": {
@@ -27,7 +32,57 @@
     "discoveredAt": "2026-10-21T19:07:14.949704+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-21T19:29:08Z",
+    "sources": [
+      {
+        "url": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.19.pdf",
+        "publishedAt": "2026-10-19",
+        "checkedAt": "2026-10-21T19:29:08Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf",
+        "publishedAt": "2026-09-17",
+        "checkedAt": "2026-10-21T19:29:08Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "OKXICE's October 19 notice identifies 16 objecting issuers.",
+        "sourceUrl": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.19.pdf",
+        "anchor": "Notice of Issuer Objection"
+      },
+      {
+        "claim": "The seven additions include Goldman Sachs, Microsoft and Qualcomm.",
+        "sourceUrl": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.19.pdf",
+        "anchor": "Microsoft Corporation (MSFT)"
+      },
+      {
+        "claim": "Alphabet objected for both GOOG and GOOGL share classes.",
+        "sourceUrl": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.19.pdf",
+        "anchor": "Alphabet Inc. (GOOG/GOOGL)"
+      },
+      {
+        "claim": "The SEC framework requires at least 30 calendar days between issuer notice and trading.",
+        "sourceUrl": "https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf",
+        "anchor": "at least 30 calendar days"
+      },
+      {
+        "claim": "A timely objection prevents the notified venue from offering that tokenized stock.",
+        "sourceUrl": "https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf",
+        "anchor": "cannot make such Tokenized NMS Stock available"
+      }
+    ],
+    "contentSha256": "ad71ad412b145dafc4a66ccd560da35b901fc318f082dd591808dc4928b8486f"
   }
 }
