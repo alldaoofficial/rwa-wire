@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-21T21:57:00Z",
+    "reason": "Markets Media's October 19 page republishes DTCC's October 16 service details, including the $30 trillion eligible-asset estimate, 25 initial securities, and Canton and Besu launch networks. The same October 16 event is already captured in the existing DTCC Tokenization Service inbox item."
   }
 }
