@@ -1,7 +1,7 @@
 {
-  "title": "HCI Group expects Isaias losses to impact its reinsurance tower and tokenized securities",
-  "description": "HCI Group expects Isaias losses to impact its reinsurance tower and tokenized securities",
-  "why_it_matters": "",
+  "title": "HCI Says Hurricane Isaias Will Affect One Tokenized Reinsurance Security",
+  "description": "HCI expects its Token B reinsurance security and one of three reinsurance towers to absorb effects from Hurricane Isaias, while saying the token remains profitable.",
+  "why_it_matters": "The update shows how an insured catastrophe can flow through a live tokenized reinsurance structure, turning blockchain-based risk participation into a measurable loss-bearing instrument rather than a conceptual pilot.",
   "pubDate": "2026-10-21",
   "category": "news",
   "tags": [
@@ -10,14 +10,14 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "HCI Group expects Isaias losses to impact its reinsurance tower and tokenized securities",
-    ""
+    "HCI expects only Token B among its reinsurance tokens to be affected by Hurricane Isaias.",
+    "Reinsurance Tower 3 has a $15 million retention; HCI says Token B remains profitable."
   ],
-  "body": "HCI Group expects Isaias losses to impact its reinsurance tower and tokenized securities",
+  "body": "HCI Group said on October 21 that Hurricane Isaias claims affected one of its three reinsurance towers and are expected to affect one tokenized reinsurance security. The storm made landfall near Destin, Florida, on October 9 as a Category 2 hurricane.\n\nThe affected structure is Reinsurance Tower 3, which covers northern Florida and carries a $15 million retention, including participation by HCI's captive reinsurers. Amounts above that threshold are subject to the company's reinsurance agreements.\n\nHCI expects only Token B among its reinsurance tokens to be affected. The company nevertheless said Token B remains profitable. The statement does not quantify the token's loss or revise its redemption value, leaving the final investor impact unresolved.",
   "sources": [
     {
-      "name": "Artemis.bm",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQRVNyeVpQeTJGeEptMGtvVEdPX0t5Z0cyWnRTaVZPVzE1WmJONTZMQ0RMOW9YN2ZnaWdJbW1JWldiMm9KaW9VTXpkcXJ4WHVuc0JCdnNaVVA5X2FIcHYxOERSQzdpRlhwY1BoZk43eUVXZkVpR2hieFZTSDlISUlaYjlWdm9Db3NuUks5MERybWRpamRzdWE1OGlQU0NaVHJqVGh3NG9qWk9TQ0xSa1REdVlvdzhoUF9m?oc=5"
+      "name": "HCI Group",
+      "url": "https://www.globenewswire.com/news-release/2026/10/21/3385460/0/en/hci-group-provides-update-on-the-impact-of-hurricane-isaias.html"
     }
   ],
   "newsWatch": {
@@ -27,7 +27,50 @@
     "discoveredAt": "2026-10-21T16:07:17.428322+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-21T17:16:42Z",
+    "sources": [
+      {
+        "url": "https://www.globenewswire.com/news-release/2026/10/21/3385460/0/en/hci-group-provides-update-on-the-impact-of-hurricane-isaias.html",
+        "publishedAt": "2026-10-21",
+        "checkedAt": "2026-10-21T17:16:42Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Hurricane Isaias made landfall near Destin on October 9 as a Category 2 storm.",
+        "sourceUrl": "https://www.globenewswire.com/news-release/2026/10/21/3385460/0/en/hci-group-provides-update-on-the-impact-of-hurricane-isaias.html",
+        "anchor": "made landfall near Destin"
+      },
+      {
+        "claim": "Only Reinsurance Tower 3 among HCI's three towers was affected.",
+        "sourceUrl": "https://www.globenewswire.com/news-release/2026/10/21/3385460/0/en/hci-group-provides-update-on-the-impact-of-hurricane-isaias.html",
+        "anchor": "only one was impacted"
+      },
+      {
+        "claim": "The affected tower has a $15 million retention including captive-reinsurer participation.",
+        "sourceUrl": "https://www.globenewswire.com/news-release/2026/10/21/3385460/0/en/hci-group-provides-update-on-the-impact-of-hurricane-isaias.html",
+        "anchor": "$15 million retention"
+      },
+      {
+        "claim": "HCI expects only Token B among its reinsurance tokens to be affected.",
+        "sourceUrl": "https://www.globenewswire.com/news-release/2026/10/21/3385460/0/en/hci-group-provides-update-on-the-impact-of-hurricane-isaias.html",
+        "anchor": "only Token B"
+      },
+      {
+        "claim": "HCI said Token B remains profitable despite the expected hurricane impact.",
+        "sourceUrl": "https://www.globenewswire.com/news-release/2026/10/21/3385460/0/en/hci-group-provides-update-on-the-impact-of-hurricane-isaias.html",
+        "anchor": "remains profitable"
+      }
+    ],
+    "contentSha256": "677078b0c42c7d38f30f1385afa1d51810657ef21d43afc795fbd5c61711fb5a"
   }
 }
