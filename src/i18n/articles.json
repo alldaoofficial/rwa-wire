@@ -987,5 +987,79 @@
       ]
     },
     "sourceSha256": "3c3207914a0d8c343f7660550a78e589ca198d910eb1f8ce662d53df949fc6e5"
+  },
+  "okxice-seven-more-issuer-objections": {
+    "path": "/news/seven-more-issuers-object-to-trading-on-okxice-s-tokenized-stock-venue/",
+    "date": "2026-10-19",
+    "kind": "news",
+    "sources": [
+      ["OKXICE — Public Notice dated October 19, 2026", "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.19.pdf"],
+      ["U.S. SEC — Tokenized Securities Venue exemption order", "https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf"]
+    ],
+    "de": {
+      "title": "Sieben weitere Emittenten widersprechen dem Handel ihrer Aktien auf dem tokenisierten Handelsplatz von OKXICE",
+      "description": "Die OKXICE-Mitteilung vom 19. Oktober ergänzt Microsoft, Alphabet, Goldman Sachs und vier weitere Emittenten. Damit steigt die offengelegte Zahl der Widersprüche auf 16.",
+      "sections": [
+        ["Sieben neue Widersprüche erhöhen die Gesamtzahl auf 16", "OKXICE aktualisierte seine öffentliche Mitteilung am 19. Oktober und nannte sieben weitere Emittenten, die dem tokenisierten Handel ihrer Aktien auf dem geplanten Handelsplatz widersprochen haben. Goldman Sachs, Microsoft, Qualcomm, Caterpillar, McDonald’s, Western Digital und Alphabet kamen zu den neun Emittenten aus der vorherigen Mitteilung hinzu. Damit stieg die Gesamtzahl auf 16; die beiden börsennotierten Aktiengattungen von Alphabet zählen als ein Emittent."],
+        ["Der Widerspruch gilt nur für diesen Handelsplatz", "Die Widersprüche betreffen konkret die Nutzung einer nicht mit den Emittenten verbundenen Drittanbieter-Tokenisierung durch OKXICE im Rahmen der vorübergehenden Ausnahmegenehmigung der SEC. Ein fristgerechter Widerspruch verhindert, dass dieser Handelsplatz die betroffene tokenisierte Aktie anbietet. Er untersagt weder eine vom Emittenten unterstützte Tokenisierung noch das Angebot einer anderen Plattform mit einer eigenständigen rechtlichen Struktur."],
+        ["Weniger bekannte Namen, aber noch kein Handelsstart", "Die Aktualisierung reduziert die Zahl bekannter Großunternehmen im ursprünglich vorgeschlagenen OKXICE-Angebot erheblich. Sie ist jedoch kein Nachweis dafür, dass der Handelsplatz bereits gestartet ist oder der Handel begonnen hat."]
+      ]
+    },
+    "es": {
+      "title": "Siete emisores más se oponen a que sus acciones coticen en el mercado tokenizado de OKXICE",
+      "description": "El aviso de OKXICE del 19 de octubre incorpora a Microsoft, Alphabet, Goldman Sachs y otros cuatro emisores, elevando a 16 el número de objeciones comunicadas.",
+      "sections": [
+        ["Siete nuevas objeciones elevan el total a 16", "OKXICE actualizó su aviso público el 19 de octubre para identificar a siete emisores adicionales que se opusieron a la negociación tokenizada de sus acciones en el mercado propuesto. Goldman Sachs, Microsoft, Qualcomm, Caterpillar, McDonald’s, Western Digital y Alphabet se sumaron a los nueve emisores del aviso anterior, elevando el total a 16. Las dos clases de acciones cotizadas de Alphabet cuentan como un solo emisor."],
+        ["La objeción se limita a este mercado", "Las objeciones se aplican específicamente al uso por parte de OKXICE de tokenización de terceros no vinculados bajo la exención temporal de la SEC. Una objeción presentada a tiempo impide que ese mercado ofrezca la acción tokenizada afectada. No prohíbe la tokenización patrocinada por el emisor ni que otra plataforma opere bajo una estructura jurídica distinta."],
+        ["Menos grandes nombres, pero todavía sin prueba de lanzamiento", "La actualización reduce de forma sustancial los nombres reconocibles de gran capitalización incluidos en la propuesta original de OKXICE. Sin embargo, no demuestra que el mercado se haya lanzado ni que la negociación haya comenzado."]
+      ]
+    },
+    "fr": {
+      "title": "Sept émetteurs supplémentaires s’opposent à la négociation de leurs actions sur la plateforme tokenisée d’OKXICE",
+      "description": "L’avis d’OKXICE du 19 octobre ajoute Microsoft, Alphabet, Goldman Sachs et quatre autres émetteurs, portant à 16 le nombre d’objections divulguées.",
+      "sections": [
+        ["Sept nouvelles objections portent le total à 16", "OKXICE a actualisé son avis public le 19 octobre afin d’identifier sept émetteurs supplémentaires opposés à la négociation tokenisée de leurs actions sur la plateforme proposée. Goldman Sachs, Microsoft, Qualcomm, Caterpillar, McDonald’s, Western Digital et Alphabet ont rejoint les neuf émetteurs mentionnés dans l’avis précédent, portant le total à 16. Les deux catégories d’actions cotées d’Alphabet comptent comme un seul émetteur."],
+        ["L’objection ne concerne que cette plateforme", "Les objections visent précisément le recours par OKXICE à la tokenisation par des tiers non affiliés dans le cadre de l’exemption temporaire de la SEC. Une objection formulée dans les délais empêche cette plateforme de proposer l’action tokenisée concernée. Elle n’interdit ni une tokenisation soutenue par l’émetteur ni l’activité d’une autre plateforme reposant sur un dispositif juridique distinct."],
+        ["Moins de grandes capitalisations, mais aucun lancement démontré", "Cette mise à jour réduit sensiblement le nombre de grandes capitalisations reconnaissables dans la liste initialement proposée par OKXICE. Elle ne prouve toutefois pas que la plateforme a été lancée ou que les négociations ont commencé."]
+      ]
+    },
+    "sourceSha256": "883f83e358fec26236e1e21dc54b1683e4f5e6ad9d6b9775d8c0acefa252df1d"
+  },
+  "vantage-rio-bank-tokenized-deposit-payment": {
+    "path": "/news/vantage-and-rio-bank-complete-tokenized-deposit-loan-payment/",
+    "date": "2026-10-19",
+    "kind": "news",
+    "sources": [
+      ["Participate", "https://participateloan.com/tokenized-deposits-loan-participation-payments/"],
+      ["Infinant", "https://www.infinant.com/vantage-bank-and-custodia-release-white-paper-unveiling-hazel-network/"]
+    ],
+    "de": {
+      "title": "Vantage und Rio Bank schließen Kreditzahlung mit tokenisierten Einlagen ab",
+      "description": "Die beiden texanischen Banken wickelten eine Tilgungs- und Zinszahlung für eine Kreditbeteiligung in weniger als drei Minuten über Hazel Network ab; die Verwaltungsdaten wurden parallel zur Geldbewegung aktualisiert.",
+      "sections": [
+        ["Tilgung und Zinsen in weniger als drei Minuten", "Vantage Bank und Rio Bank schlossen laut der Plattform für Kreditverkäufe Participate eine Tilgungs- und Zinszahlung für eine Kreditbeteiligung mit tokenisierten Einlagen über Hazel Network ab. Vantage erfasste die Zahlung bei Participate. Die Plattform teilte Tilgung und Zinsen auf und übermittelte das Geld anschließend an die digitale Wallet des kaufenden Instituts. Participate zufolge dauerte der Prozess weniger als drei Minuten; die zugehörigen Kreditsalden und Zahlungsmitteilungen wurden während der Geldbewegung aktualisiert."],
+        ["Zahlungsabwicklung, keine Tokenisierung des Krediteigentums", "Die Transaktion nutzte die Bank- und Blockchain-Infrastruktur von Hazel, tokenisierte aber nicht das Eigentum am zugrunde liegenden Kredit. Participate koordinierte Aufteilung, Anweisungen und Verwaltungsdaten; Vantage stellte die Bankinfrastruktur bereit, während Custodia Wallets, Compliance-Funktionen und den Blockchain-Betrieb lieferte."],
+        ["Technischer Kontext und Einordnung der Transaktion", "Eine technische Mitteilung vom Juni erklärte, dass Hazels Referenzimplementierung seit März 2026 im Ethereum-Mainnet in Betrieb war. Participate bezeichnete die Transaktion vom Oktober als erste abgeschlossene Zahlung im Rahmen einer im April angekündigten Zusammenarbeit."]
+      ]
+    },
+    "es": {
+      "title": "Vantage y Rio Bank completan un pago de préstamo con depósitos tokenizados",
+      "description": "Los dos bancos de Texas completaron en menos de tres minutos un pago de principal e intereses de una participación en un préstamo a través de Hazel Network, actualizando los registros de gestión al mismo tiempo que se movían los fondos.",
+      "sections": [
+        ["Principal e intereses en menos de tres minutos", "Vantage Bank y Rio Bank completaron un pago de principal e intereses de una participación en un préstamo mediante depósitos tokenizados en Hazel Network, según la plataforma de venta de préstamos Participate. Vantage registró el pago en Participate, que distribuyó principal e intereses antes de transferir los fondos a la cartera digital de la entidad compradora. Participate afirmó que el proceso duró menos de tres minutos y actualizó los saldos del préstamo y los avisos de pago relacionados a medida que se movían los fondos."],
+        ["Liquidación del pago, no tokenización de la propiedad del préstamo", "La transacción utilizó la infraestructura bancaria y blockchain de Hazel, pero no tokenizó la propiedad del préstamo subyacente. Participate coordinó las distribuciones, las instrucciones y los registros de gestión; Vantage aportó la infraestructura bancaria, mientras que Custodia proporcionó las carteras, las funciones de cumplimiento normativo y las operaciones blockchain."],
+        ["Contexto técnico y alcance de la transacción", "Un anuncio técnico de junio señaló que la implementación de referencia de Hazel estaba activa en la red principal de Ethereum desde marzo de 2026. Participate describió la operación de octubre como el primer pago completado dentro de una colaboración anunciada en abril."]
+      ]
+    },
+    "fr": {
+      "title": "Vantage et Rio Bank réalisent un paiement de prêt au moyen de dépôts tokenisés",
+      "description": "Les deux banques texanes ont effectué en moins de trois minutes un paiement de principal et d’intérêts lié à une participation à un prêt via Hazel Network, tandis que les données de gestion étaient mises à jour avec le mouvement des fonds.",
+      "sections": [
+        ["Principal et intérêts transférés en moins de trois minutes", "Vantage Bank et Rio Bank ont réalisé un paiement de principal et d’intérêts relatif à une participation à un prêt au moyen de dépôts tokenisés sur Hazel Network, selon la plateforme de vente de prêts Participate. Vantage a enregistré le paiement dans Participate, qui a réparti le principal et les intérêts avant de transmettre les fonds au portefeuille numérique de l’établissement acheteur. Selon Participate, le processus a pris moins de trois minutes et les soldes du prêt ainsi que les avis de paiement correspondants ont été actualisés pendant le transfert des fonds."],
+        ["Règlement du paiement, pas tokenisation de la propriété du prêt", "La transaction a utilisé l’infrastructure bancaire et blockchain de Hazel, mais n’a pas tokenisé la propriété du prêt sous-jacent. Participate a coordonné les répartitions, les instructions et les données de gestion ; Vantage a fourni l’infrastructure bancaire, tandis que Custodia a fourni les portefeuilles, les fonctions de conformité et les opérations blockchain."],
+        ["Contexte technique et portée de la transaction", "Une annonce technique de juin indiquait que l’implémentation de référence de Hazel fonctionnait sur le réseau principal d’Ethereum depuis mars 2026. Participate a présenté la transaction d’octobre comme le premier paiement réalisé dans le cadre d’une collaboration annoncée en avril."]
+      ]
+    },
+    "sourceSha256": "d32738f33247932c556f37e8ddf339a9500641d151ffa03d3d73ea9acf8d5872"
   }
 }
