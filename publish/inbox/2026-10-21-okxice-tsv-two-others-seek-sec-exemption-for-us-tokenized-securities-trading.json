@@ -1,23 +1,28 @@
 {
-  "title": "OKXICE TSV, Two Others Seek SEC Exemption for US Tokenized Securities Trading",
-  "description": "OKXICE TSV, Two Others Seek SEC Exemption for US Tokenized Securities Trading",
-  "why_it_matters": "",
+  "title": "SEC Lists Three Prospective Tokenized Securities Venues",
+  "description": "The SEC now lists TSV LLC, OKXICE TSV and Kephas/Perpetuals.com as prospective operators that submitted notices under its temporary tokenized-stock framework.",
+  "why_it_matters": "The first consolidated SEC roster reveals a third prospective venue and gives the market an official way to distinguish notification from regulatory qualification.",
   "pubDate": "2026-10-21",
   "category": "news",
   "tags": [
     "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Regulation",
+    "Institutions"
   ],
   "keyTakeaways": [
-    "OKXICE TSV, Two Others Seek SEC Exemption for US Tokenized Securities Trading",
-    ""
+    "The SEC lists TSV LLC, OKXICE TSV and Kephas Corporation, doing business as Perpetuals.com.",
+    "Their notices were submitted on September 23, October 4 and October 14, respectively.",
+    "Listing does not establish that any applicant satisfies the exemption or has launched trading."
   ],
-  "body": "OKXICE TSV, Two Others Seek SEC Exemption for US Tokenized Securities Trading",
+  "body": "The U.S. Securities and Exchange Commission updated its Innovation Exemption page on October 21 to identify three parties that submitted written notices of intent to operate Tokenized Securities Venues. TSV LLC filed on September 23, OKXICE TSV on October 4, and Kephas Corporation, doing business as Perpetuals.com, on October 14.\n\nThe roster is a disclosure milestone, not an approval list. The SEC says inclusion does not establish that a person qualifies as a Tokenized Securities Venue or satisfies the exemption's conditions. The underlying September 17 order provides temporary, conditional relief for qualifying venues that use permissioned automated-market-maker liquidity pools to trade tokenized NMS stocks. None of the three entries, by itself, proves that customer trading has launched. The new consolidated list adds TSV LLC to the public picture while confirming the dates already associated with OKXICE and Perpetuals.com notices.",
   "sources": [
     {
-      "name": "bloomingbit",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9DUXF6TkRiVUw4R1l5MzNjanQ3MDBseVEyU0V1ZW9lek9UeTJDeDF3amFRLXZUcUxtc0VsMjd1N3hyeXgzU0xNY1h4MjI2ZzYwT1otMA?oc=5"
+      "name": "U.S. SEC — Innovation Exemption operator list",
+      "url": "https://www.sec.gov/about/divisions-offices/division-trading-markets/innovation-exemption"
+    },
+    {
+      "name": "U.S. SEC — Innovation Exemption order",
+      "url": "https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf"
     }
   ],
   "newsWatch": {
@@ -27,7 +32,57 @@
     "discoveredAt": "2026-10-21T22:37:17.338494+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-21T23:12:00Z",
+    "sources": [
+      {
+        "url": "https://www.sec.gov/about/divisions-offices/division-trading-markets/innovation-exemption",
+        "publishedAt": "2026-10-21",
+        "checkedAt": "2026-10-21T23:12:00Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf",
+        "publishedAt": "2026-09-17",
+        "checkedAt": "2026-10-21T23:12:00Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "The SEC roster names TSV LLC with a September 23 submission date.",
+        "sourceUrl": "https://www.sec.gov/about/divisions-offices/division-trading-markets/innovation-exemption",
+        "anchor": "TSV LLC"
+      },
+      {
+        "claim": "OKXICE TSV appears on the roster with an October 4 submission date.",
+        "sourceUrl": "https://www.sec.gov/about/divisions-offices/division-trading-markets/innovation-exemption",
+        "anchor": "OKXICE TSV"
+      },
+      {
+        "claim": "Kephas Corporation doing business as Perpetuals.com submitted notice on October 14.",
+        "sourceUrl": "https://www.sec.gov/about/divisions-offices/division-trading-markets/innovation-exemption",
+        "anchor": "Kephas Corporation d/b/a Perpetuals.com"
+      },
+      {
+        "claim": "The SEC says roster inclusion does not establish compliance with exemption conditions.",
+        "sourceUrl": "https://www.sec.gov/about/divisions-offices/division-trading-markets/innovation-exemption",
+        "anchor": "does not mean"
+      },
+      {
+        "claim": "The September order grants temporary conditional relief for qualifying tokenized securities venues.",
+        "sourceUrl": "https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf",
+        "anchor": "temporary, conditional exemptions"
+      }
+    ],
+    "contentSha256": "df629e38048a709120e74dfe6c884755540756b6c1606b205599750e04bb5477"
   }
 }
