@@ -16,11 +16,24 @@ export function getStaticPaths(){
   return topics.map(topic=>({params:{topic:topic.slug},props:{topic}}));
 }
 const { topic } = Astro.props;
-const all = await getCollection("articles", ({data}) => !data.draft);
+const all = await getCollection("articles", ({data}) => !data.draft && !data.redirectTo);
 const hay=(a:any)=>[a.data.title,a.data.description,...a.data.tags,a.data.projectMeta?.sector,a.data.projectMeta?.role,a.data.projectMeta?.assetExposure,...(a.data.projectMeta?.products??[])].filter(Boolean).join(" ").toLowerCase();
 const matches=all.map(a=>({a,score:topic.terms.reduce((n:string|number,t:string)=>Number(n)+(hay(a).includes(t)?1:0),0)+(a.slug===topic.primary?5:0)})).filter(x=>x.score>0).sort((x,y)=>y.score-x.score||y.a.data.pubDate.valueOf()-x.a.data.pubDate.valueOf());
 const projects=matches.filter(x=>x.a.data.type==="PROJECT").slice(0,6);
-const editorial=matches.filter(x=>x.a.data.type!=="PROJECT").slice(0,10);
+const guides=matches.filter(x=>["EXPLAINER","RESEARCH"].includes(x.a.data.type)).slice(0,4);
+// News chronology must not be overridden by keyword scores or evergreen guides.
+const news=matches.filter(x=>["NEWS","MARKET"].includes(x.a.data.type))
+  .sort((x,y)=>y.a.data.pubDate.valueOf()-x.a.data.pubDate.valueOf()||x.a.slug.localeCompare(y.a.slug)).slice(0,6);
+const pageTitle = `${topic.title}: Guides, News & Projects`;
+const pageDescription = `Explore ${topic.title.toLowerCase()} with RWA Wire: start with the fundamentals, read dated news and research, and find relevant project profiles.`;
+const listed = [...new Map([...guides,...news,...projects].map(({a})=>[a.slug,a])).values()];
+const collectionLd = {
+  "@context":"https://schema.org", "@type":"CollectionPage",
+  "@id":`https://therwawire.com/topics/${topic.slug}/#collection`,
+  url:`https://therwawire.com/topics/${topic.slug}/`, name:pageTitle, description:pageDescription,
+  mainEntity:{"@type":"ItemList", numberOfItems:listed.length,
+    itemListElement:listed.map((a,i)=>({"@type":"ListItem",position:i+1,name:a.data.title,url:`https://therwawire.com/${a.data.category}/${a.slug}/`}))},
+};
 const adjacent = [
   ["Real-World Assets","real-world-assets"],
   ["Tokenized Treasuries","tokenized-treasuries"],
@@ -29,13 +42,15 @@ const adjacent = [
   ["Institutional Tokenization","institutional-tokenization"],
 ].filter(([,slug])=>slug!==topic.slug);
 ---
-<BaseLayout title={topic.title} description={topic.description}>
+<BaseLayout title={pageTitle} description={pageDescription}>
 <div class="wire-container py-10 sm:py-14">
   <Breadcrumbs items={[{label:"Topics",href:"/topics/"},{label:topic.title,href:`/topics/${topic.slug}/`}]} />
-  <header class="relative mt-5 overflow-hidden border-b border-line pb-10"><div class="pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-wire/5 blur-3xl"></div><p class="data-label text-wire">RWA Wire // Topic Intelligence</p><h1 class="mt-3 max-w-4xl font-serif text-4xl text-ink sm:text-5xl">{topic.title}</h1><p class="mt-4 max-w-2xl text-base leading-relaxed text-ink-muted">{topic.description}</p><div class="mt-6 flex flex-wrap gap-2">{topic.slug==="institutional-tokenization"&&<a href="#overview" class="border border-wire px-3 py-2 text-[10px] uppercase tracking-[.08em] text-wire">Understand the topic ↓</a>}<a href="#research" class="border border-wire px-3 py-2 text-[10px] uppercase tracking-[.08em] text-wire">Start with research ↓</a>{projects.length>0&&<a href="#infrastructure" class="border border-line px-3 py-2 text-[10px] uppercase tracking-[.08em] text-ink-muted hover:text-wire">Then see who builds it ↓</a>}</div></header>
+  <header class="relative mt-5 overflow-hidden border-b border-line pb-10"><div class="pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-wire/5 blur-3xl"></div><p class="data-label text-wire">RWA Wire // Topic Intelligence</p><h1 class="mt-3 max-w-4xl font-serif text-4xl text-ink sm:text-5xl">{topic.title}: guides, news and projects</h1><p class="mt-4 max-w-2xl text-base leading-relaxed text-ink-muted">{topic.description}</p><nav aria-label={`${topic.title} reading sections`} class="mt-6 flex flex-wrap gap-2">{topic.slug==="institutional-tokenization"&&<a href="#overview" class="border border-wire px-3 py-2 text-[10px] uppercase tracking-[.08em] text-wire">Understand the topic ↓</a>}{guides.length>0&&<a href="#research" class="border border-wire px-3 py-2 text-[10px] uppercase tracking-[.08em] text-wire">Start with the guides ↓</a>}{news.length>0&&<a href="#latest-news" class="border border-line px-3 py-2 text-[10px] uppercase tracking-[.08em] text-ink-muted hover:text-wire">Latest news ↓</a>}{projects.length>0&&<a href="#infrastructure" class="border border-line px-3 py-2 text-[10px] uppercase tracking-[.08em] text-ink-muted hover:text-wire">Explore projects ↓</a>}</nav></header>
   {topic.slug==="institutional-tokenization"&&<InstitutionalTokenizationOverview />}
-  {editorial.length>0&&<section id="research" class="mt-10"><p class="data-label text-wire">Step 1 // Understand</p><h2 class="mt-2 font-serif text-2xl text-ink">Start with the core research</h2><div class="mt-4 grid gap-px bg-line md:grid-cols-2">{editorial.map(({a},i)=><a href={sitePath(`/${a.data.category}/${a.slug}/`)} class:list={["group bg-bg p-6 hover:bg-surface",i===0&&"md:col-span-2"]}><p class="data-label">{a.data.category} // {a.data.type}</p><h2 class:list={["mt-3 font-serif leading-tight text-ink group-hover:text-wire",i===0?"text-3xl":"text-xl"]}>{a.data.title}</h2><p class="mt-3 text-sm leading-relaxed text-ink-muted">{a.data.description}</p></a>)}</div></section>}
+  {guides.length>0&&<section id="research" class="mt-10 scroll-mt-24" aria-labelledby="guides-heading"><p class="data-label text-wire">Start here // Background</p><h2 id="guides-heading" class="mt-2 font-serif text-2xl text-ink">{topic.title} guides and research</h2><p class="mt-3 max-w-2xl text-sm leading-relaxed text-ink-muted">Build the background before reading the headlines. These explainers and research articles cover the structures, terminology and questions behind this topic.</p><div class="mt-4 grid gap-px bg-line md:grid-cols-2">{guides.map(({a},i)=><a href={sitePath(`/${a.data.category}/${a.slug}/`)} class="group bg-bg p-6 hover:bg-surface"><p class="data-label">{i===0?"Suggested starting point":a.data.type} // {a.data.readingTime}</p><h3 class="mt-3 font-serif text-xl leading-tight text-ink group-hover:text-wire">{a.data.title}</h3><p class="mt-3 text-sm leading-relaxed text-ink-muted">{a.data.description}</p></a>)}</div></section>}
+  {news.length>0&&<section id="latest-news" class="mt-12 scroll-mt-24 border-t border-line pt-8" aria-labelledby="news-heading"><p class="data-label text-wire">Follow the developments</p><h2 id="news-heading" class="mt-2 font-serif text-2xl text-ink">Latest {topic.title.toLowerCase()} news</h2><p class="mt-3 max-w-2xl text-sm leading-relaxed text-ink-muted">Published coverage, newest first. Each article retains its original publication date and source links.</p><div class="mt-5 grid gap-px bg-line md:grid-cols-2">{news.map(({a})=><a href={sitePath(`/${a.data.category}/${a.slug}/`)} class="group bg-bg p-6 hover:bg-surface"><p class="data-label"><time datetime={a.data.pubDate.toISOString()}>{a.data.pubDate.toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric",timeZone:"UTC"})}</time> // {a.data.category}</p><h3 class="mt-3 font-serif text-xl leading-tight text-ink group-hover:text-wire">{a.data.title}</h3><p class="mt-3 text-sm leading-relaxed text-ink-muted">{a.data.description}</p></a>)}</div><a href="/news/" class="mt-5 inline-block text-sm text-wire underline underline-offset-4">All RWA and tokenization news →</a></section>}
   {projects.length>0&&<section id="infrastructure" class="mt-12 border-t border-line pt-8"><div class="flex items-end justify-between"><div><p class="data-label text-wire">Step 2 // Connect</p><h2 class="mt-2 font-serif text-2xl text-ink">Projects connected to {topic.title}</h2></div><a href="/projects/" class="text-[10px] uppercase tracking-[.1em] text-wire">Directory →</a></div><div class="mt-5 grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-3">{projects.map(({a})=><a href={sitePath(`/projects/${a.slug}/`)} class="group bg-bg p-5 hover:bg-surface"><p class="data-label">{a.data.projectMeta?.sector}</p><h3 class="mt-2 font-serif text-xl text-ink group-hover:text-wire">{a.data.title.replace(/ Explained$/,"")}</h3><p class="mt-2 text-xs text-ink-muted">{a.data.projectMeta?.role}</p></a>)}</div></section>}
   <section class="mt-12 border-t border-line pt-7"><p class="data-label text-wire">Step 3 // Continue</p><div class="mt-4 flex flex-wrap gap-2">{adjacent.map(([label,slug])=><a href={`/topics/${slug}/`} class="border border-line px-3 py-2 text-[10px] uppercase tracking-[.08em] text-ink-muted hover:border-wire hover:text-wire">{label} →</a>)}</div></section>
 </div>
+<script type="application/ld+json" set:html={JSON.stringify(collectionLd)} />
 </BaseLayout>
