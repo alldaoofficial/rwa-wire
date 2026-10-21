@@ -1,0 +1,32 @@
+{
+  "title": "What Sets Ondo Stocks Apart",
+  "description": "",
+  "body": "",
+  "why_it_matters": "",
+  "pubDate": "2026-10-21",
+  "category": "news",
+  "tags": [
+    "RWA",
+    "Tokenization",
+    "Primary Source"
+  ],
+  "keyTakeaways": [],
+  "sources": [
+    {
+      "name": "Ondo Finance",
+      "url": "https://ondo.finance/blog/what-sets-ondo-stocks-apart"
+    }
+  ],
+  "newsWatch": {
+    "score": 6,
+    "priority": "important",
+    "sourceTrust": "primary",
+    "discoveredAt": "2026-10-21T18:07:12.643467+00:00",
+    "sourcePublishedAt": "2026-10-21T18:11:00+00:00",
+    "discoveryMode": "direct-primary",
+    "requiresSourceReview": true,
+    "relatedCoverageTitles": [],
+    "autoPublishEligible": false,
+    "contentStatus": "needs-source-enrichment"
+  }
+}
