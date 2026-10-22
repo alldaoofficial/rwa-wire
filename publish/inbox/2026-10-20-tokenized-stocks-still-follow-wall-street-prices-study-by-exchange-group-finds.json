@@ -1,23 +1,32 @@
 {
-  "title": "Tokenized Stocks Still Follow Wall Street Prices, Study by Exchange Group Finds",
-  "description": "Tokenized Stocks Still Follow Wall Street Prices, Study by Exchange Group Finds",
-  "why_it_matters": "",
+  "title": "WFE Study Finds Traditional Shares Still Lead Tokenized-Stock Price Discovery",
+  "slug": "wfe-study-traditional-shares-lead-tokenized-stock-price-discovery",
+  "description": "A World Federation of Exchanges study of 61 xStock pairs finds token prices generally adjust toward prices formed in regulated equity markets.",
+  "why_it_matters": "The findings challenge the assumption that round-the-clock token trading already creates an independent price-discovery venue for equities, while highlighting the continued importance of regulated market liquidity.",
   "pubDate": "2026-10-20",
-  "category": "news",
+  "category": "markets",
+  "reviewCategory": "MARKET STRUCTURE",
   "tags": [
     "Tokenization",
     "Institutions",
-    "News Watch"
+    "Market Structure",
+    "xStocks",
+    "Research"
   ],
   "keyTakeaways": [
-    "Tokenized Stocks Still Follow Wall Street Prices, Study by Exchange Group Finds",
-    ""
+    "The WFE analyzed 61 matched xStock and underlying-equity pairs using daily data from July 2025 through May 2026.",
+    "About 80% of the pairs were cointegrated, with the long-run price relationship close to one-for-one.",
+    "The underlying equity contributed more than 80% of the median pair's permanent price component, and no token led under the cited information-share test."
   ],
-  "body": "Tokenized Stocks Still Follow Wall Street Prices, Study by Exchange Group Finds",
+  "body": "The World Federation of Exchanges published research on October 20 finding that traditional exchange-traded shares remained the main source of price discovery for the third-party tokenized equities in its sample. The study examined 61 matched xStock and underlying-equity pairs using daily observations from July 2025 through May 2026.\n\n## What the study found\n\nAround 80% of the pairs were cointegrated, meaning their prices maintained a stable long-run relationship. That relationship was close to one-for-one. When prices diverged, the token generally made more of the adjustment back toward the underlying share price.\n\nFor the median pair, the underlying equity accounted for more than 80% of the permanent component of the common price. Under the study's Hasbrouck information-share analysis, no token led price discovery.\n\n## Limits and context\n\nThe results apply to this xStock sample, the study period and daily-frequency data. They do not establish that every tokenized-equity market will behave the same way, or that intraday trading never adds information. The WFE is also an exchange-industry association, so its institutional perspective should be considered when interpreting the conclusions.",
   "sources": [
     {
-      "name": "Finance Magnates",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPZkZsQ3YzQ3FrUEx5RUlPbUpXQkpIbm9CRlZfakpFSFJUMXpLOXJFVDZ5SUhUMzJRSlVZXzlmNEZ3bHdYTzhvVDV0VkdPbGsyTlhrZVdHaUdnNzFXWmtNZXFyN0xSUDBYQTNqM042SHFsdWhtOGt5X0t3QzJWckhEMnFoYkFFLXBZSVBqUjNxN3o4dTJaWWZmb0hXdGtfN0EyQ1dPNUQwNG1oX1c3X3h4WEhhQ1V6SThzRmsyV0RtOTZZVFBr?oc=5"
+      "name": "World Federation of Exchanges — Research Summary",
+      "url": "https://www.world-exchanges.org/our-work/articles/one-instrument-two-technologies-price-discovery-between-tokenised-and-traditional-equity-markets"
+    },
+    {
+      "name": "World Federation of Exchanges — Press Release",
+      "url": "https://www.world-exchanges.org/news/articles/wfe-research-finds-underlying-equity-markets-are-main-source-price-discovery-tokenised-equities"
     }
   ],
   "newsWatch": {
@@ -27,7 +36,62 @@
     "discoveredAt": "2026-10-20T10:37:12.870196+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-22T07:04:55Z",
+    "sources": [
+      {
+        "url": "https://www.world-exchanges.org/our-work/articles/one-instrument-two-technologies-price-discovery-between-tokenised-and-traditional-equity-markets",
+        "publishedAt": "2026-10-20",
+        "checkedAt": "2026-10-22T07:04:55Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://www.world-exchanges.org/news/articles/wfe-research-finds-underlying-equity-markets-are-main-source-price-discovery-tokenised-equities",
+        "publishedAt": "2026-10-20",
+        "checkedAt": "2026-10-22T07:04:55Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "The WFE study analyzed 61 matched token and underlying-equity pairs over the first eleven months of xStock trading.",
+        "sourceUrl": "https://www.world-exchanges.org/news/articles/wfe-research-finds-underlying-equity-markets-are-main-source-price-discovery-tokenised-equities",
+        "anchor": "61 matched token–underlying pairs"
+      },
+      {
+        "claim": "The sample period ran from July 2025 through May 2026.",
+        "sourceUrl": "https://www.world-exchanges.org/news/articles/wfe-research-finds-underlying-equity-markets-are-main-source-price-discovery-tokenised-equities",
+        "anchor": "from July 2025 to May 2026"
+      },
+      {
+        "claim": "Around 80 percent of the analyzed pairs showed cointegration and a near one-for-one long-run price relationship.",
+        "sourceUrl": "https://www.world-exchanges.org/our-work/articles/one-instrument-two-technologies-price-discovery-between-tokenised-and-traditional-equity-markets",
+        "anchor": "cointegrated for about 80 percent"
+      },
+      {
+        "claim": "When token and equity prices diverged, the token generally made most of the adjustment toward equilibrium.",
+        "sourceUrl": "https://www.world-exchanges.org/our-work/articles/one-instrument-two-technologies-price-discovery-between-tokenised-and-traditional-equity-markets",
+        "anchor": "token does most of the adjustment"
+      },
+      {
+        "claim": "For the median pair, the underlying equity contributed more than 80 percent of the permanent common-price component.",
+        "sourceUrl": "https://www.world-exchanges.org/news/articles/wfe-research-finds-underlying-equity-markets-are-main-source-price-discovery-tokenised-equities",
+        "anchor": "more than 80 percent"
+      },
+      {
+        "claim": "The token did not lead price discovery in any pair under the study's Hasbrouck information-share measure.",
+        "sourceUrl": "https://www.world-exchanges.org/news/articles/wfe-research-finds-underlying-equity-markets-are-main-source-price-discovery-tokenised-equities",
+        "anchor": "does not lead price discovery"
+      }
+    ],
+    "contentSha256": "b06fddfb004f8c1b808487fc08e5e030f37016e34f5adfbec64cdd337854ffd4"
   }
 }
