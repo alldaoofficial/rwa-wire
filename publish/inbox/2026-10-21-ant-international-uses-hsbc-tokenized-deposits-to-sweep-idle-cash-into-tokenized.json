@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-22T12:29:27Z",
-    "reason": "Ledger Insights says the claim emerged through LinkedIn posts rather than a formal announcement. No accessible full primary release or independent second full-text report verifies the HSBC tokenized-deposit and BENJI transaction details."
+    "reviewedAt": "2026-10-22T18:36:52Z",
+    "reason": "The transaction claim still derives from LinkedIn posts rather than a formal announcement, and no accessible full primary release or second independent full-text report verifies the HSBC tokenized-deposit and BENJI details."
   }
 }
