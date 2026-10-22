@@ -1165,6 +1165,39 @@
     },
     "sourceSha256": "260b652e1eb7a86f27479cf3aefcb1ef7d82c92406cbfed7d69d04ed8d578f20"
   },
+  "dune-market-data-feeds-tokenized-equity-volume": {
+    "path": "/markets/dune-launches-real-time-feeds-as-tokenized-equity-volume-tops-37b-in-q3/",
+    "date": "2026-10-22",
+    "kind": "news",
+    "sources": [
+      ["Dune Analytics via GlobeNewswire", "https://www.globenewswire.com/news-release/2026/10/22/3386238/0/en/dune-launches-real-time-market-data-feeds-as-tokenized-u-s-stocks-move-onchain.html"]
+    ],
+    "de": {
+      "title": "Dune startet Echtzeitdatenfeeds, während das Volumen tokenisierter Aktien in Q3 37 Mrd. US-Dollar übersteigt",
+      "description": "Dunes neue institutionelle Feeds vereinheitlichen Handelsdaten von mehr als 200 Onchain-Handelsplätzen; zugleich meldet das Unternehmen für Q3 2026 ein Volumen tokenisierter Aktien und ETFs von mehr als 37 Mrd. US-Dollar.",
+      "sections": [
+        ["Normalisierte Echtzeitdaten von mehr als 200 Handelsplätzen", "Dune startete am 22. Oktober Market Data Feeds und stellt institutionellen Teams damit normalisierte Echtzeit-Handelsdaten von mehr als 200 Onchain-Handelsplätzen auf zwölf Blockchains bereit. Der Spot-Feed umfasst Netzwerke wie Ethereum, Solana, Base, BNB Chain und XLayer, während der Feed für Perpetual-Kontrakte zunächst Hyperliquid und Lighter abdeckt. Jeder Datensatz enthält Preis, Umfang, Handelsrichtung, eine stabile Kennung und einen Link zu der Transaktion, über die der Handel abgewickelt wird."],
+        ["Mehr als 37 Mrd. US-Dollar Q3-Volumen bei tokenisierten Aktien und ETFs", "Dune zufolge erzeugten tokenisierte Aktien und ETFs im dritten Quartal 2026 ein Onchain-Handelsvolumen von mehr als 37 Mrd. US-Dollar; das monatliche Volumen lag dabei fast 18-mal so hoch wie im Januar. Separat meldete das Unternehmen für Q3 ein Volumen von 201 Mrd. US-Dollar bei Perpetual-Kontrakten auf Aktien, ETFs und Aktienindizes auf Hyperliquid. Diese Zahlen sind vom Unternehmen gemeldete Marktkennzahlen, keine Vermögenswerte oder Prognosen. Historische Analysedaten für Backtests werden separat angeboten."]
+      ]
+    },
+    "es": {
+      "title": "Dune lanza fuentes de datos en tiempo real mientras el volumen de acciones tokenizadas supera los 37.000 millones de dólares en el tercer trimestre",
+      "description": "Las nuevas fuentes institucionales de Dune normalizan operaciones de más de 200 mercados onchain, mientras la empresa comunica más de 37.000 millones de dólares de volumen en acciones y ETF tokenizados durante el tercer trimestre de 2026.",
+      "sections": [
+        ["Datos normalizados en tiempo real de más de 200 mercados", "Dune lanzó Market Data Feeds el 22 de octubre para proporcionar a los equipos institucionales datos normalizados de operaciones en tiempo real procedentes de más de 200 mercados onchain en doce blockchains. La fuente al contado incluye redes como Ethereum, Solana, Base, BNB Chain y XLayer, mientras que la fuente de contratos perpetuos cubre inicialmente Hyperliquid y Lighter. Cada registro incluye precio, tamaño, lado de la operación, un identificador estable y un enlace a la transacción que liquida la operación."],
+        ["Más de 37.000 millones de dólares de volumen trimestral en acciones y ETF tokenizados", "Dune afirmó que las acciones y los ETF tokenizados generaron más de 37.000 millones de dólares de volumen de negociación onchain en el tercer trimestre de 2026, con un volumen mensual casi 18 veces superior al de enero. Por separado, comunicó 201.000 millones de dólares de volumen trimestral en contratos perpetuos sobre acciones, ETF e índices bursátiles en Hyperliquid. Estas cifras son mediciones de mercado comunicadas por la empresa, no valores de activos ni previsiones. Los datos analíticos históricos para pruebas retrospectivas se ofrecen por separado."]
+      ]
+    },
+    "fr": {
+      "title": "Dune lance des flux en temps réel alors que le volume des actions tokenisées dépasse 37 milliards de dollars au troisième trimestre",
+      "description": "Les nouveaux flux institutionnels de Dune normalisent les transactions de plus de 200 plateformes onchain, tandis que l’entreprise fait état de plus de 37 milliards de dollars de volume sur les actions et ETF tokenisés au troisième trimestre 2026.",
+      "sections": [
+        ["Des données normalisées en temps réel provenant de plus de 200 plateformes", "Dune a lancé Market Data Feeds le 22 octobre afin de fournir aux équipes institutionnelles des données normalisées en temps réel sur les transactions de plus de 200 plateformes onchain réparties sur douze blockchains. Le flux au comptant couvre notamment Ethereum, Solana, Base, BNB Chain et XLayer, tandis que le flux de contrats perpétuels couvre initialement Hyperliquid et Lighter. Chaque enregistrement comprend le prix, la taille, le sens de la transaction, un identifiant stable et un lien vers la transaction assurant le règlement."],
+        ["Plus de 37 milliards de dollars de volume trimestriel sur les actions et ETF tokenisés", "Selon Dune, les actions et ETF tokenisés ont généré plus de 37 milliards de dollars de volume de négociation onchain au troisième trimestre 2026, le volume mensuel atteignant près de 18 fois son niveau de janvier. L’entreprise a par ailleurs fait état de 201 milliards de dollars de volume trimestriel sur les contrats perpétuels liés aux actions, aux ETF et aux indices boursiers sur Hyperliquid. Ces chiffres sont des mesures de marché communiquées par l’entreprise, et non des valeurs d’actifs ou des prévisions. Les données analytiques historiques destinées aux tests rétrospectifs sont proposées séparément."]
+      ]
+    },
+    "sourceSha256": "e489c85575200621a3e8b0da3d3be91b5d5833f0360a621b6e6b686f86e35efd"
+  },
   "vantage-rio-bank-tokenized-deposit-payment": {
     "path": "/news/vantage-and-rio-bank-complete-tokenized-deposit-loan-payment/",
     "date": "2026-10-19",
