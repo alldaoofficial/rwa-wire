@@ -29,5 +29,11 @@
     "autoPublishEligible": false,
     "requiresSourceReview": true,
     "contentStatus": "needs-source-enrichment"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedAt": "2026-10-22T14:46:51Z",
+    "reason": "The item reports conventional Bitcoin and Ether ETF fund flows and documents no tokenized-asset issuance, settlement, custody or other RWA event within RWA Wire's editorial scope."
   }
 }
