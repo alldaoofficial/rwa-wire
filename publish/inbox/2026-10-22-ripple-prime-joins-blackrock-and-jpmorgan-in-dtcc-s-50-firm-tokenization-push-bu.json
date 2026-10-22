@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-22T12:54:32Z",
+    "reason": "DTCC listed Ripple Prime in its 50-plus-firm Industry Working Group on May 4, 2026, and Coinpaper covered the same announcement on May 5. This lead adds no new membership, launch, approval or confirmed XRP role."
   }
 }
