@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-22T02:41:39Z",
+    "reason": "The Google News discovery link could not be resolved to a readable full publisher report, and no dated Pendle primary announcement was available to substantiate the claimed product expansion."
   }
 }
