@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-22T00:12:00Z",
+    "reason": "The article combines an MSB Intel X claim about one SAFO share class with third-party ARB technical-analysis targets. No accessible Amundi release or primary dataset verifies the reported 103.68% change, and the price-prediction framing is not a qualifying RWA event."
   }
 }
