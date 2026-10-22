@@ -31,10 +31,10 @@
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "rejected",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-22T05:48:29Z",
-    "reason": "A renewed check confirms Aave's September 25 launch, but Aave does not substantiate the current $10.1 million or market-leadership claim. Those figures remain limited to secondary and social snapshots without accessible primary data or two independent full-text reports."
+    "reviewedAt": "2026-10-22T12:29:27Z",
+    "reason": "The headline repeats Aave's September 25 launch while adding an unsubstantiated current market-leadership ranking. It documents no separate launch, approval, financing or material expansion suitable for a new brief."
   }
 }
