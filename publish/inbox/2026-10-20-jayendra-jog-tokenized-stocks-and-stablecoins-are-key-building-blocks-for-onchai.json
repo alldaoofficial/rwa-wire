@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-22T00:12:00Z",
+    "reason": "The Market Voices item preserves a deleted social-media opinion about tokenized stocks and stablecoins. It documents no new launch, filing, financing, approval or implementation milestone and provides no readable primary statement suitable for a news brief."
   }
 }
