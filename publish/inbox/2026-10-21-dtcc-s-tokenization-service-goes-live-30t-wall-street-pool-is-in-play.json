@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-22T10:09:19Z",
+    "reason": "This lead repeats DTCC's October 16 Tokenization Service announcement, including the $30 trillion eligible-asset estimate, 25 initial securities and Canton and Besu launch networks; that event is already captured in the existing DTCC Tokenization Service inbox item."
   }
 }
