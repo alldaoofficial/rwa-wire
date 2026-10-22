@@ -1025,6 +1025,42 @@
     },
     "sourceSha256": "883f83e358fec26236e1e21dc54b1683e4f5e6ad9d6b9775d8c0acefa252df1d"
   },
+  "ripple-prime-rwa-swaps": {
+    "path": "/institutions/ripple-prime-launches-24-7-institutional-rwa-swaps/",
+    "date": "2026-10-15",
+    "kind": "news",
+    "sources": [
+      ["Ripple", "https://ripple.com/ripple-press/ripple-launches-support-for-institutions-to-access-real-world-asset-perpetual-swaps/"]
+    ],
+    "de": {
+      "title": "Ripple Prime startet rund um die Uhr institutionelle Swaps auf mehr als 100 RWA-Referenzmärkte",
+      "description": "Ripple Prime bietet nun institutionelle Swaps an, die sich auf mehr als 100 kontinuierlich gehandelte Märkte für Aktien, ETFs, Metalle, Energie und Devisen beziehen.",
+      "sections": [
+        ["Kontinuierlicher Handel über mehr als 100 Referenzmärkte", "Ripple gab am 15. Oktober bekannt, dass Ripple Prime institutionelle Swaps eingeführt hat, die sich auf mehr als 100 Referenzmärkte für Aktien, Aktienindizes, börsengehandelte Fonds, Metalle, Energie und Devisen beziehen. Laut Ripple werden die Produkte durchgehend gehandelt und abgewickelt, auch außerhalb der Handelszeiten der traditionellen Märkte, auf die sie sich beziehen."],
+        ["Derivate statt direktem Eigentum", "Bei den Verträgen handelt es sich um Derivate, nicht um tokenisierte Aktien oder direktes Eigentum an Rohstoffen. Ripple Prime tritt gegenüber seinen Kunden als Vertragspartei auf, während sich die Swaps auf von Trade.xyz auf Hyperliquid gelistete Perpetual Futures beziehen. Dadurch bleibt die Kundenbeziehung innerhalb des Brokerage-Rahmens von Ripple Prime, während kryptonative Märkte als Referenzebene dienen."],
+        ["Cross-Margining, RLUSD und regionale Beschränkungen", "Ripple zufolge können Kunden die neuen Positionen mit anderen unterstützten Anlageklassen gemeinsam besichern und möglicherweise RLUSD als Sicherheit verwenden; die Verfügbarkeit unterscheidet sich jedoch je nach Rechtsordnung. Virtu wird als institutioneller Nutzer genannt. Das Angebot wird derzeit über die CIV-BVI-Lizenz von Ripple Prime bereitgestellt. Eine breitere regionale Verfügbarkeit wird als künftige Absicht beschrieben und ist noch keine abgeschlossene Einführung."]
+      ]
+    },
+    "es": {
+      "title": "Ripple Prime lanza swaps institucionales las 24 horas sobre más de 100 mercados de referencia de RWA",
+      "description": "Ripple Prime ofrece ahora swaps institucionales referenciados a más de 100 mercados continuos de acciones, ETF, metales, energía y divisas.",
+      "sections": [
+        ["Negociación continua en más de 100 mercados de referencia", "Ripple anunció el 15 de octubre que Ripple Prime había lanzado swaps institucionales vinculados a más de 100 mercados de referencia de acciones, índices bursátiles, fondos cotizados, metales, energía y divisas. Según Ripple, los productos se negocian y liquidan de forma continua, incluso fuera del horario de funcionamiento de los mercados tradicionales a los que hacen referencia."],
+        ["Derivados, no propiedad directa", "Los contratos son derivados, no acciones tokenizadas ni propiedad directa de materias primas. Ripple Prime actúa como contraparte principal de sus clientes, mientras que los swaps toman como referencia futuros perpetuos de Trade.xyz cotizados en Hyperliquid. Esta distinción mantiene la relación con el cliente dentro del marco de corretaje de Ripple Prime y utiliza los mercados nativos de las criptomonedas como capa de referencia."],
+        ["Margen cruzado, RLUSD y límites regionales", "Ripple afirma que los clientes pueden aplicar margen cruzado a las nuevas exposiciones junto con otras clases de activos admitidas y que podrían utilizar RLUSD como garantía, aunque la disponibilidad varía según la jurisdicción. Virtu figura como usuario institucional. La oferta se presta actualmente bajo la licencia CIV BVI de Ripple Prime; una disponibilidad regional más amplia se presenta como una intención futura, no como un despliegue ya completado."]
+      ]
+    },
+    "fr": {
+      "title": "Ripple Prime lance des swaps institutionnels 24 h/24 sur plus de 100 marchés de référence RWA",
+      "description": "Ripple Prime propose désormais des swaps institutionnels indexés sur plus de 100 marchés continus couvrant les actions, les ETF, les métaux, l’énergie et les devises.",
+      "sections": [
+        ["Négociation continue sur plus de 100 marchés de référence", "Ripple a annoncé le 15 octobre que Ripple Prime avait lancé des swaps institutionnels liés à plus de 100 marchés de référence couvrant les actions, les indices boursiers, les fonds négociés en bourse, les métaux, l’énergie et les devises. Selon Ripple, ces produits se négocient et se règlent en continu, y compris en dehors des heures d’ouverture des marchés traditionnels auxquels ils se réfèrent."],
+        ["Des produits dérivés, pas une propriété directe", "Les contrats sont des produits dérivés, et non des actions tokenisées ou une propriété directe de matières premières. Ripple Prime agit en qualité de contrepartie principale de ses clients, tandis que les swaps prennent pour référence des contrats à terme perpétuels de Trade.xyz cotés sur Hyperliquid. Cette distinction maintient la relation client dans le cadre de courtage de Ripple Prime tout en utilisant les marchés crypto-natifs comme couche de référence."],
+        ["Marge croisée, RLUSD et limites régionales", "Ripple indique que les clients peuvent appliquer une marge croisée aux nouvelles expositions avec d’autres catégories d’actifs prises en charge et qu’ils peuvent éventuellement utiliser RLUSD comme garantie, bien que la disponibilité varie selon les juridictions. Virtu est cité comme utilisateur institutionnel. L’offre est actuellement fournie sous la licence CIV BVI de Ripple Prime ; une disponibilité régionale plus large est présentée comme une intention future, et non comme un déploiement achevé."]
+      ]
+    },
+    "sourceSha256": "cd22c0f5073418baa9608f1b54f20f1b5aca35911ba04ec6fde5ed6e50573c58"
+  },
   "sec-tokenized-securities-venues": {
     "path": "/news/sec-lists-three-prospective-tokenized-securities-venues/",
     "date": "2026-10-21",
