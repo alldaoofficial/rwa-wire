@@ -1,23 +1,21 @@
 {
-  "title": "SoFi launches tokenized deposits for consumers with 4.2% interest as debate over stablecoins rages on",
-  "description": "SoFi launches tokenized deposits for consumers with 4.2% interest as debate over stablecoins rages on",
-  "why_it_matters": "",
+  "title": "SoFi Launches Interest-Bearing Tokenized Deposit for Consumers",
+  "description": "SoFi Earn represents deposits at SoFi Bank, offers a variable 4.40% APY as of October 20, and converts one-for-one into SoFiUSD for crypto purchases or supported wallet transfers.",
+  "why_it_matters": "The launch brings a tokenized bank deposit to retail users and separates the interest-bearing, FDIC-eligible deposit liability from the stablecoin used to move funds on blockchain rails.",
   "pubDate": "2026-10-22",
-  "category": "news",
-  "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
-  ],
+  "category": "institutions",
+  "reviewCategory": "TOKENIZED DEPOSITS",
+  "tags": ["Tokenized Deposits", "SoFi", "Banking", "Digital Money"],
   "keyTakeaways": [
-    "SoFi launches tokenized deposits for consumers with 4.2% interest as debate over stablecoins rages on",
-    ""
+    "Each SOFIE represents $1 held on deposit at SoFi Bank and is a separate product from SoFi Crypto.",
+    "The variable 4.40% APY was current as of October 20, 2026, with no minimum balance requirement.",
+    "SoFi is rolling out access through November and allows one-for-one conversion into SoFiUSD."
   ],
-  "body": "SoFi launches tokenized deposits for consumers with 4.2% interest as debate over stablecoins rages on",
+  "body": "SoFi launched SoFi Earn, or SOFIE, on October 22 as an interest-bearing tokenized deposit for consumers. Each token represents one dollar held on deposit at SoFi Bank. The bank says the product pays a variable 4.40% annual percentage yield, a rate current as of October 20, 2026, and requires no minimum balance. Funds represented by SOFIE are eligible for FDIC insurance under the agency’s applicable rules and limits.\n\nSOFIE is not a payment stablecoin. A member can convert it one-for-one into SoFiUSD, then use that stablecoin to buy crypto in the SoFi app or transfer it to a supported external wallet. The distinction matters: SOFIE is the interest-bearing bank liability, while SoFiUSD provides the blockchain transfer function. SoFi said access is rolling out to SoFi Crypto members through November.",
   "sources": [
     {
-      "name": "Fortune",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBfck0tSm82Q25NV3NaSkw0eFZ2M1FoN0o4OVcycS1VRzBNVDVzS1RBQlY0dElRZFEyRGRPSl93YXh0S1V0NDRxSk90OVlISHFwN0d1aFlsVDdsZkYxNW1Ec0hDcnBmZw?oc=5"
+      "name": "SoFi Technologies",
+      "url": "https://investors.sofi.com/news/news-details/2026/SoFi-Launches-SoFi-Earn-SOFIE-the-First-and-Only-National-Bank-Issued-Tokenized-Deposit-for-Consumers/default.aspx"
     }
   ],
   "newsWatch": {
@@ -27,7 +25,50 @@
     "discoveredAt": "2026-10-22T14:07:15.590591+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-22T14:46:51Z",
+    "sources": [
+      {
+        "url": "https://investors.sofi.com/news/news-details/2026/SoFi-Launches-SoFi-Earn-SOFIE-the-First-and-Only-National-Bank-Issued-Tokenized-Deposit-for-Consumers/default.aspx",
+        "publishedAt": "2026-10-22",
+        "checkedAt": "2026-10-22T14:46:51Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Each SOFIE token represents one dollar held on deposit at SoFi Bank.",
+        "sourceUrl": "https://investors.sofi.com/news/news-details/2026/SoFi-Launches-SoFi-Earn-SOFIE-the-First-and-Only-National-Bank-Issued-Tokenized-Deposit-for-Consumers/default.aspx",
+        "anchor": "Each SOFIE represents $1"
+      },
+      {
+        "claim": "The variable annual percentage yield was 4.40% as of October 20, 2026.",
+        "sourceUrl": "https://investors.sofi.com/news/news-details/2026/SoFi-Launches-SoFi-Earn-SOFIE-the-First-and-Only-National-Bank-Issued-Tokenized-Deposit-for-Consumers/default.aspx",
+        "anchor": "4.40% APY"
+      },
+      {
+        "claim": "Funds represented by SOFIE are eligible for FDIC insurance under applicable limits.",
+        "sourceUrl": "https://investors.sofi.com/news/news-details/2026/SoFi-Launches-SoFi-Earn-SOFIE-the-First-and-Only-National-Bank-Issued-Tokenized-Deposit-for-Consumers/default.aspx",
+        "anchor": "eligible for FDIC insurance"
+      },
+      {
+        "claim": "Members can convert SOFIE one-for-one into the SoFiUSD payment stablecoin.",
+        "sourceUrl": "https://investors.sofi.com/news/news-details/2026/SoFi-Launches-SoFi-Earn-SOFIE-the-First-and-Only-National-Bank-Issued-Tokenized-Deposit-for-Consumers/default.aspx",
+        "anchor": "convert SOFIE 1:1"
+      },
+      {
+        "claim": "SoFi is rolling out access to SoFi Crypto members through November.",
+        "sourceUrl": "https://investors.sofi.com/news/news-details/2026/SoFi-Launches-SoFi-Earn-SOFIE-the-First-and-Only-National-Bank-Issued-Tokenized-Deposit-for-Consumers/default.aspx",
+        "anchor": "rolling out to SoFi Crypto members"
+      }
+    ],
+    "contentSha256": "00825e7c62b4b29e161d5ee14712a6b6f0f5de9f47a76e582dd9895cabb4b064"
   }
 }
