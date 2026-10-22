@@ -1,23 +1,28 @@
 {
-  "title": "Ripple Prime Opens 24/7 RWA Perpetual Swaps: Institutional Capital Hits Tokenized Stocks and Commodities",
-  "description": "Ripple Prime Opens 24/7 RWA Perpetual Swaps: Institutional Capital Hits Tokenized Stocks and Commodities",
-  "why_it_matters": "",
-  "pubDate": "2026-10-20",
-  "category": "news",
+  "title": "Ripple Prime Launches 24/7 Institutional Swaps Across 100+ RWA Reference Markets",
+  "slug": "ripple-prime-launches-24-7-institutional-rwa-swaps",
+  "description": "Ripple Prime now offers institutional swaps referencing more than 100 continuous markets across equities, ETFs, metals, energy and foreign exchange.",
+  "why_it_matters": "The launch connects crypto-native perpetual markets with institutional prime brokerage, cross-margining and stablecoin collateral without representing direct ownership of the referenced assets.",
+  "pubDate": "2026-10-15",
+  "category": "institutions",
+  "reviewCategory": "DERIVATIVES",
   "tags": [
     "Tokenization",
     "Institutions",
-    "News Watch"
+    "Institutional Trading",
+    "Derivatives",
+    "Ripple Prime"
   ],
   "keyTakeaways": [
-    "Ripple Prime Opens 24/7 RWA Perpetual Swaps: Institutional Capital Hits Tokenized Stocks and Commodities",
-    ""
+    "Ripple Prime says institutional clients can trade and settle swaps tied to more than 100 reference markets around the clock.",
+    "The swaps reference Trade.xyz perpetual futures listed on Hyperliquid, while Ripple Prime acts as the client's principal counterparty.",
+    "Clients can cross-margin these exposures and may use RLUSD as collateral, subject to jurisdictional availability."
   ],
-  "body": "Ripple Prime Opens 24/7 RWA Perpetual Swaps: Institutional Capital Hits Tokenized Stocks and Commodities",
+  "body": "Ripple announced on October 15 that Ripple Prime has launched institutional swaps tied to more than 100 reference markets across equities, equity indices, exchange-traded funds, metals, energy and foreign exchange. Ripple says the products trade and settle continuously, including outside the operating hours of the traditional markets they reference.\n\n## How the structure works\n\nThe contracts are derivatives, not tokenized shares or direct ownership of commodities. Ripple Prime acts as principal to its clients, while the swaps reference perpetual futures listed by Trade.xyz on Hyperliquid. That distinction keeps the client relationship within Ripple Prime's brokerage framework while using crypto-native markets as the reference layer.\n\nRipple says clients can cross-margin the new exposures against other supported asset classes and may use RLUSD as collateral, although availability varies by jurisdiction. Virtu is named as an institutional user. The offering is currently provided through Ripple Prime's CIV BVI license, with broader regional availability described as a future intention rather than a completed rollout.",
   "sources": [
     {
-      "name": "Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPX29FMk4wbGtBQ0tCSnROYjBiWTVEYjJpUW41Y0VCM2FRRU1GcDhMY1JPVmdtOUFJb3p1Uk5abGplR1prTUl3cHhvYVp2X3l4amZndE5rU1FMRnJjclAyN2ZROTJ2UTkxdUMxVjl2VXNUYlZ6VjFyMDRoWk9mWmNRd291UW5QSjBYUjFGTHVtUnVpUQ?oc=5"
+      "name": "Ripple",
+      "url": "https://ripple.com/ripple-press/ripple-launches-support-for-institutions-to-access-real-world-asset-perpetual-swaps/"
     }
   ],
   "newsWatch": {
@@ -27,7 +32,45 @@
     "discoveredAt": "2026-10-20T11:37:15.513850+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-22T02:53:18Z",
+    "sources": [
+      {
+        "url": "https://ripple.com/ripple-press/ripple-launches-support-for-institutions-to-access-real-world-asset-perpetual-swaps/",
+        "publishedAt": "2026-10-15",
+        "checkedAt": "2026-10-22T02:53:18Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Ripple Prime launched institutional RWA swaps covering more than 100 reference markets.",
+        "sourceUrl": "https://ripple.com/ripple-press/ripple-launches-support-for-institutions-to-access-real-world-asset-perpetual-swaps/",
+        "anchor": "more than 100 reference markets"
+      },
+      {
+        "claim": "Ripple says the referenced markets can be traded and settled continuously.",
+        "sourceUrl": "https://ripple.com/ripple-press/ripple-launches-support-for-institutions-to-access-real-world-asset-perpetual-swaps/",
+        "anchor": "traded and settled 24/7"
+      },
+      {
+        "claim": "The swaps reference Trade.xyz perpetual futures listed on Hyperliquid.",
+        "sourceUrl": "https://ripple.com/ripple-press/ripple-launches-support-for-institutions-to-access-real-world-asset-perpetual-swaps/",
+        "anchor": "reference perpetual futures contracts"
+      },
+      {
+        "claim": "Clients can cross-margin the new swaps against other supported asset classes.",
+        "sourceUrl": "https://ripple.com/ripple-press/ripple-launches-support-for-institutions-to-access-real-world-asset-perpetual-swaps/",
+        "anchor": "cross-margin RWA swap exposures"
+      }
+    ],
+    "contentSha256": "85558e0389ca35ef4cf568b79d19c9629285ed8efe4a7aacca69c7765b5a64dd"
   }
 }
