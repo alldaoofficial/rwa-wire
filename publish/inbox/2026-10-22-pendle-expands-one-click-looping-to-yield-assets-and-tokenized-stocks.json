@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-22T15:28:56Z",
-    "reason": "The accessible article page still does not expose its full report, and no readable Pendle primary documentation or second independent full-text report was found to verify the launch details."
+    "reviewedAt": "2026-10-22T21:35:05Z",
+    "reason": "The publisher page still exposes only a loading shell and summary. No readable Pendle primary documentation or second independent full-text report verifies the Base, Aave and fee-waiver details; apparent copies explicitly source the same report."
   }
 }
