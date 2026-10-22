@@ -1,0 +1,110 @@
+{
+  "version": "2.1",
+  "generatedAt": "2026-10-22T21:21:08Z",
+  "status": "dry_run",
+  "source": "CoinGecko",
+  "sourceFetchedAt": "2026-10-22T21:21:08.615306Z",
+  "assetCount": 8,
+  "basket": {
+    "average24h": -2.1208013323005317,
+    "median24h": -5.192269082291135,
+    "up": 2,
+    "down": 6,
+    "flat": 0,
+    "spreadPctPoints": 34.812078721964525
+  },
+  "leader": {
+    "id": "zebec-protocol",
+    "symbol": "ZBCN",
+    "name": "Zebec",
+    "price": 0.00063674,
+    "change24h": 24.283739529172415,
+    "volume24h": 6036.840789173342
+  },
+  "weakest": {
+    "id": "plume",
+    "symbol": "PLUME",
+    "name": "Plume",
+    "price": 0.0167795,
+    "change24h": -10.52833919279211,
+    "volume24h": 17744280.38723558
+  },
+  "highestVolume": {
+    "id": "chainlink",
+    "symbol": "LINK",
+    "name": "Chainlink",
+    "price": 11.98,
+    "change24h": -5.437328281495095,
+    "volume24h": 246155554.50971103
+  },
+  "marketRead": "Breadth is weak with 2/8 tracked assets positive. ZBCN is the standout move at +24.3%. Dispersion is elevated: 34.8 percentage points separate the strongest and weakest tracked assets.",
+  "xMarketRead": "Broad weakness: 6/8 tracked assets are red. ZBCN leads at +24.3%.",
+  "assets": [
+    {
+      "id": "zebec-protocol",
+      "symbol": "ZBCN",
+      "name": "Zebec",
+      "price": 0.00063674,
+      "change24h": 24.283739529172415,
+      "volume24h": 6036.840789173342
+    },
+    {
+      "id": "goldfinch",
+      "symbol": "GFI",
+      "name": "Goldfinch",
+      "price": 0.03909071,
+      "change24h": 0.5413455762928979,
+      "volume24h": 63570.71475947237
+    },
+    {
+      "id": "clearpool",
+      "symbol": "CPOOL",
+      "name": "Clearpool",
+      "price": 0.02804456,
+      "change24h": -3.304562464601562,
+      "volume24h": 1635774.1641425698
+    },
+    {
+      "id": "polymesh",
+      "symbol": "POLYX",
+      "name": "Polymesh",
+      "price": 0.03398765,
+      "change24h": -4.947209883087175,
+      "volume24h": 154882.38830362266
+    },
+    {
+      "id": "chainlink",
+      "symbol": "LINK",
+      "name": "Chainlink",
+      "price": 11.98,
+      "change24h": -5.437328281495095,
+      "volume24h": 246155554.50971103
+    },
+    {
+      "id": "ondo-finance",
+      "symbol": "ONDO",
+      "name": "Ondo",
+      "price": 0.431129,
+      "change24h": -7.896567965846015,
+      "volume24h": 111708831.20447105
+    },
+    {
+      "id": "centrifuge",
+      "symbol": "CFG",
+      "name": "Centrifuge",
+      "price": 0.111714,
+      "change24h": -9.677487976047608,
+      "volume24h": 392171.21516468015
+    },
+    {
+      "id": "plume",
+      "symbol": "PLUME",
+      "name": "Plume",
+      "price": 0.0167795,
+      "change24h": -10.52833919279211,
+      "volume24h": 17744280.38723558
+    }
+  ],
+  "telegram": "RWA WIRE // MARKET PULSE\n\nTracked RWA tokens are broadly lower over 24h.\nBreadth: 2 up / 6 down\nBasket: avg -2.1% · median -5.2%\n\nTop movers\n▲ ZBCN +24.3% · $0.0006\n▲ GFI +0.5% · $0.0391\n▼ CPOOL -3.3% · $0.0280\n\nWeakest movers\n▼ ONDO -7.9% · $0.4311\n▼ CFG -9.7% · $0.1117\n▼ PLUME -10.5% · $0.0168\n\nMARKET READ\nBreadth is weak with 2/8 tracked assets positive. ZBCN is the standout move at +24.3%. Dispersion is elevated: 34.8 percentage points separate the strongest and weakest tracked assets.\n\nData: CoinGecko · 24h change",
+  "x": "RWA WIRE // MARKET PULSE\n\nRWA basket: -2.1% avg · 2/8 green\nZBCN +24.3% | GFI +0.5% | CPOOL -3.3%\n\nBroad weakness: 6/8 tracked assets are red. ZBCN leads at +24.3%.\n\nData: CoinGecko"
+}
