@@ -1,23 +1,24 @@
 {
-  "title": "Tech giant LG CNS taps Chainlink to scale Korea’s tokenized finance and stablecoin markets",
-  "description": "Tech giant LG CNS taps Chainlink to scale Korea’s tokenized finance and stablecoin markets",
-  "why_it_matters": "",
+  "title": "LG CNS and Chainlink Partner on Korea Digital-Asset Infrastructure",
+  "description": "LG CNS plans to integrate Chainlink infrastructure into its digital-asset platform while the companies develop technical standards and institutional solutions for Korea.",
+  "why_it_matters": "The partnership links a major Korean enterprise technology provider with cross-chain and data infrastructure, potentially reducing integration friction for regulated tokenized assets without yet constituting a live market launch.",
   "pubDate": "2026-10-22",
-  "category": "news",
+  "category": "institutions",
   "tags": [
     "Tokenization",
     "Institutions",
     "News Watch"
   ],
   "keyTakeaways": [
-    "Tech giant LG CNS taps Chainlink to scale Korea’s tokenized finance and stablecoin markets",
-    ""
+    "LG CNS plans to apply Chainlink infrastructure to its Digital Asset Platform Solution.",
+    "The companies will work on technical standards and solutions for Korean institutions.",
+    "The announcement describes a partnership, not a launched stablecoin or tokenized-securities product."
   ],
-  "body": "Tech giant LG CNS taps Chainlink to scale Korea’s tokenized finance and stablecoin markets",
+  "body": "Chainlink and LG CNS announced a strategic partnership on October 22 to support regulated digital-asset infrastructure in Korea. The companies said Chainlink's cross-chain, data and orchestration capabilities will be applied to LG CNS's Digital Asset Platform Solution. They also plan to develop technical standards and solutions for Korean financial institutions.\n\nThe stated scope includes interoperability between systems and networks, access to external data and potential infrastructure for tokenized money and securities. LG CNS described the work as supporting institutional adoption, while Chainlink framed it as an expansion of its Korean presence. The announcement establishes a collaboration and development agenda; it does not document the launch of a commercial stablecoin, a tokenized-security issuance or a production service for customers.",
   "sources": [
     {
-      "name": "Cryptonews.net",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1fdm9faExlbkxWekM2Y1hEZWJUTUJXWWNFQzZ6Wlh4dWtZQ0FHRG9FZUdOTFN1LXhpMWRVNUE3bHJFU2kyLUxncjBnUXpYVjB6czVTamVXazJxTERz?oc=5"
+      "name": "Chainlink — LG CNS partnership announcement",
+      "url": "https://www.prnewswire.com/news-releases/chainlink-partners-with-lg-cns-to-power-koreas-digital-asset-market-302917379.html"
     }
   ],
   "newsWatch": {
@@ -27,7 +28,50 @@
     "discoveredAt": "2026-10-22T22:37:17.053463+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-22T22:39:35.076856+00:00",
+    "sources": [
+      {
+        "url": "https://www.prnewswire.com/news-releases/chainlink-partners-with-lg-cns-to-power-koreas-digital-asset-market-302917379.html",
+        "publishedAt": "2026-10-22",
+        "checkedAt": "2026-10-22T22:39:35.076856+00:00",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Chainlink and LG CNS entered a strategic partnership.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/chainlink-partners-with-lg-cns-to-power-koreas-digital-asset-market-302917379.html",
+        "anchor": "entered a strategic partnership"
+      },
+      {
+        "claim": "Chainlink infrastructure will be applied to LG CNS's digital-asset platform solution.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/chainlink-partners-with-lg-cns-to-power-koreas-digital-asset-market-302917379.html",
+        "anchor": "cross-chain, data, and orchestration infrastructure"
+      },
+      {
+        "claim": "The companies plan to work on technical standards.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/chainlink-partners-with-lg-cns-to-power-koreas-digital-asset-market-302917379.html",
+        "anchor": "advancing technical standards"
+      },
+      {
+        "claim": "The planned solutions are intended for Korean institutions.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/chainlink-partners-with-lg-cns-to-power-koreas-digital-asset-market-302917379.html",
+        "anchor": "solutions for Korean institutions"
+      },
+      {
+        "claim": "LG CNS highlighted interoperability and real-world data as partnership objectives.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/chainlink-partners-with-lg-cns-to-power-koreas-digital-asset-market-302917379.html",
+        "anchor": "secure interoperability and real-world data"
+      }
+    ],
+    "contentSha256": "84faa5c2348d4c7ecc86fb591cff3df41b0e766d0e133f2f9dede6fecf815d37"
   }
 }
