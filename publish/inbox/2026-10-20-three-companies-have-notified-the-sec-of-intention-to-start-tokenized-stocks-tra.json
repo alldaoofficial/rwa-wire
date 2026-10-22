@@ -31,10 +31,10 @@
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "duplicate",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-21T21:57:00Z",
-    "reason": "The SEC's September 17 order verifies the Tokenized Securities Venue framework, but no accessible primary filing or full-text notice was found that identifies the claimed three companies and their notification dates. The aggregated headline alone is insufficient to verify a new event."
+    "reviewedAt": "2026-10-22T04:22:10Z",
+    "reason": "Duplicate of the already verified and published event covered as 'SEC Lists Three Prospective Tokenized Securities Venues', which identifies the same three SEC venue notifications from TSV LLC, OKXICE TSV, and Kephas/Perpetuals.com."
   }
 }
