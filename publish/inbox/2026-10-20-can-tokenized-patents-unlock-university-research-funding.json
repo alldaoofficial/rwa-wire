@@ -31,10 +31,10 @@
     "discoveryMode": "high-trust-headline"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "rejected",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-22T01:42:35Z",
-    "reason": "The cited journal article could not be read in full, and only one independent full-text secondary report was available; the study's technical and legal claims therefore lack sufficient source evidence."
+    "reviewedAt": "2026-10-22T07:55:52Z",
+    "reason": "The article is general analysis built around an inaccessible journal paper rather than a new launch, approval, financing or material expansion; its technical and legal claims also lack sufficient full-text primary evidence."
   }
 }
