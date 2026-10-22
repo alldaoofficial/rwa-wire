@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-22T01:42:35Z",
+    "reason": "The cited journal article could not be read in full, and only one independent full-text secondary report was available; the study's technical and legal claims therefore lack sufficient source evidence."
   }
 }
