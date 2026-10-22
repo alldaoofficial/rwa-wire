@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-22T04:22:10Z",
+    "reason": "The full Unchained report attributes an approximately $20 million weekly figure to a Coinbase executive, but explicitly says he did not define whether it represents trading volume, token issuance, or net deposits. No independent primary metric or second full-text report verifies the figure, so the lead is not sufficiently evidenced."
   }
 }
