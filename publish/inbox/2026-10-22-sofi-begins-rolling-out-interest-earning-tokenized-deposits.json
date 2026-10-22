@@ -29,5 +29,11 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedAt": "2026-10-22T15:28:56Z",
+    "reason": "This is the same October 22 SoFi Earn (SOFIE) consumer tokenized-deposit launch already covered by the source-reviewed article SoFi Launches Interest-Bearing Tokenized Deposit for Consumers."
   }
 }
