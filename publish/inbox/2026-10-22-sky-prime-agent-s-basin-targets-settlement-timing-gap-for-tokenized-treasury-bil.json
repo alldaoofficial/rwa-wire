@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "reviewedAt": "2026-10-22T07:55:52Z",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reason": "The October 22 lead recycles Grove's May 14, 2026 Basin introduction and reports no new launch, approval, financing or material expansion; the underlying event is outside the 48-hour news window."
   }
 }
