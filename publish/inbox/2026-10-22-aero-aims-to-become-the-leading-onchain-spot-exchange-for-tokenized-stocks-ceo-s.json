@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "reviewedAt": "2026-10-22T19:39:13Z",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reason": "The accessible reporting describes a CEO ambition for Aero to lead tokenized-stock spot trading, not a concrete launch, approval, financing or material product expansion; the publisher full text was also inaccessible for complete review."
   }
 }
