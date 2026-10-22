@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-22T02:41:39Z",
-    "reason": "The Google News discovery link could not be resolved to a readable full publisher report, and no dated Pendle primary announcement was available to substantiate the claimed product expansion."
+    "reviewedAt": "2026-10-22T09:18:32Z",
+    "reason": "The publisher page exposes only a headline and summary while its full report remains unavailable, and Pendle's accessible product pages do not document a dated PendleLoop launch or the claimed tokenized-stock functionality; the technical expansion therefore remains insufficiently evidenced."
   }
 }
