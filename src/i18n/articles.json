@@ -1132,6 +1132,39 @@
     },
     "sourceSha256": "ee5ae3ebbe4d9e24bc1b0e4eca06a3d2799e024018d1067e20060ddd4a17866d"
   },
+  "sofi-earn-tokenized-deposit": {
+    "path": "/institutions/sofi-launches-interest-bearing-tokenized-deposit-for-consumers/",
+    "date": "2026-10-22",
+    "kind": "news",
+    "sources": [
+      ["SoFi Technologies", "https://investors.sofi.com/news/news-details/2026/SoFi-Launches-SoFi-Earn-SOFIE-the-First-and-Only-National-Bank-Issued-Tokenized-Deposit-for-Consumers/default.aspx"]
+    ],
+    "de": {
+      "title": "SoFi startet verzinsliche tokenisierte Einlage für Verbraucher",
+      "description": "SoFi Earn bildet Einlagen bei der SoFi Bank ab, bietet mit Stand vom 20. Oktober eine variable jährliche Rendite von 4,40 % und lässt sich eins zu eins in SoFiUSD für Kryptokäufe oder Übertragungen an unterstützte Wallets umwandeln.",
+      "sections": [
+        ["Ein Dollar Einlage je SOFIE", "SoFi führte am 22. Oktober SoFi Earn, kurz SOFIE, als verzinsliche tokenisierte Einlage für Verbraucher ein. Jeder Token entspricht einem US-Dollar, der als Einlage bei der SoFi Bank gehalten wird. Nach Angaben der Bank bietet das Produkt eine variable jährliche Rendite von 4,40 %, wobei dieser Zinssatz am 20. Oktober 2026 galt, und verlangt kein Mindestguthaben. Die durch SOFIE repräsentierten Gelder kommen nach den geltenden Regeln und Höchstgrenzen der FDIC für deren Einlagensicherung infrage."],
+        ["SOFIE ist kein Zahlungs-Stablecoin", "Ein Mitglied kann SOFIE eins zu eins in SoFiUSD umwandeln und diesen Stablecoin anschließend in der SoFi-App zum Kauf von Kryptowährungen verwenden oder an eine unterstützte externe Wallet übertragen. Die Unterscheidung ist wesentlich: SOFIE ist die verzinsliche Bankverbindlichkeit, während SoFiUSD die Übertragungsfunktion auf der Blockchain bereitstellt. Laut SoFi wird der Zugang für Mitglieder von SoFi Crypto schrittweise bis Ende November freigeschaltet."]
+      ]
+    },
+    "es": {
+      "title": "SoFi lanza un depósito tokenizado con intereses para consumidores",
+      "description": "SoFi Earn representa depósitos en SoFi Bank, ofrece una rentabilidad anual variable del 4,40 % vigente el 20 de octubre y puede convertirse uno a uno en SoFiUSD para comprar criptomonedas o transferirlas a monederos compatibles.",
+      "sections": [
+        ["Un dólar depositado por cada SOFIE", "SoFi lanzó el 22 de octubre SoFi Earn, o SOFIE, como depósito tokenizado con intereses para consumidores. Cada token representa un dólar estadounidense mantenido en depósito en SoFi Bank. Según el banco, el producto paga una rentabilidad porcentual anual variable del 4,40 %, un tipo vigente el 20 de octubre de 2026, y no exige saldo mínimo. Los fondos representados por SOFIE pueden acogerse al seguro de la FDIC conforme a las normas y los límites aplicables de la agencia."],
+        ["SOFIE no es una stablecoin de pago", "Un miembro puede convertir SOFIE uno a uno en SoFiUSD y después utilizar esa stablecoin para comprar criptomonedas en la aplicación de SoFi o transferirla a un monedero externo compatible. La distinción es importante: SOFIE es el pasivo bancario que genera intereses, mientras que SoFiUSD proporciona la función de transferencia mediante blockchain. SoFi indicó que el acceso se está habilitando gradualmente para los miembros de SoFi Crypto durante noviembre."]
+      ]
+    },
+    "fr": {
+      "title": "SoFi lance un dépôt tokenisé rémunéré destiné aux particuliers",
+      "description": "SoFi Earn représente des dépôts auprès de SoFi Bank, offre un rendement annuel variable de 4,40 % au 20 octobre et peut être converti à parité en SoFiUSD pour acheter des cryptomonnaies ou effectuer des transferts vers des portefeuilles pris en charge.",
+      "sections": [
+        ["Un dollar en dépôt pour chaque SOFIE", "SoFi a lancé le 22 octobre SoFi Earn, ou SOFIE, sous la forme d’un dépôt tokenisé rémunéré destiné aux particuliers. Chaque token représente un dollar américain détenu en dépôt auprès de SoFi Bank. Selon la banque, le produit verse un rendement annuel variable de 4,40 %, taux en vigueur au 20 octobre 2026, et n’exige aucun solde minimum. Les fonds représentés par SOFIE peuvent bénéficier de l’assurance de la FDIC conformément aux règles et plafonds applicables de l’agence."],
+        ["SOFIE n’est pas un stablecoin de paiement", "Un membre peut convertir SOFIE à parité en SoFiUSD, puis utiliser ce stablecoin pour acheter des cryptomonnaies dans l’application SoFi ou le transférer vers un portefeuille externe pris en charge. La distinction est importante : SOFIE constitue la dette bancaire rémunérée, tandis que SoFiUSD assure la fonction de transfert sur la blockchain. SoFi a indiqué que l’accès était progressivement ouvert aux membres de SoFi Crypto au cours du mois de novembre."]
+      ]
+    },
+    "sourceSha256": "260b652e1eb7a86f27479cf3aefcb1ef7d82c92406cbfed7d69d04ed8d578f20"
+  },
   "vantage-rio-bank-tokenized-deposit-payment": {
     "path": "/news/vantage-and-rio-bank-complete-tokenized-deposit-loan-payment/",
     "date": "2026-10-19",
