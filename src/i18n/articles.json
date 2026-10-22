@@ -1025,6 +1025,43 @@
     },
     "sourceSha256": "883f83e358fec26236e1e21dc54b1683e4f5e6ad9d6b9775d8c0acefa252df1d"
   },
+  "wfe-xstock-price-discovery": {
+    "path": "/markets/wfe-study-traditional-shares-lead-tokenized-stock-price-discovery/",
+    "date": "2026-10-20",
+    "kind": "news",
+    "sources": [
+      ["World Federation of Exchanges — Research Summary", "https://www.world-exchanges.org/our-work/articles/one-instrument-two-technologies-price-discovery-between-tokenised-and-traditional-equity-markets"],
+      ["World Federation of Exchanges — Press Release", "https://www.world-exchanges.org/news/articles/wfe-research-finds-underlying-equity-markets-are-main-source-price-discovery-tokenised-equities"]
+    ],
+    "de": {
+      "title": "WFE-Studie: Traditionelle Aktien führen weiterhin die Preisfindung tokenisierter Aktien an",
+      "description": "Eine Studie der World Federation of Exchanges zu 61 xStock-Paaren kommt zu dem Ergebnis, dass sich Tokenpreise im Allgemeinen an die auf regulierten Aktienmärkten gebildeten Preise anpassen.",
+      "sections": [
+        ["61 xStock-Paare über elf Monate untersucht", "Die World Federation of Exchanges veröffentlichte am 20. Oktober eine Studie, der zufolge traditionelle börsengehandelte Aktien in der untersuchten Stichprobe weiterhin die wichtigste Quelle der Preisfindung für von Drittanbietern tokenisierte Aktien waren. Analysiert wurden 61 Paare aus xStock und zugrunde liegender Aktie anhand täglicher Beobachtungen von Juli 2025 bis Mai 2026."],
+        ["Traditionelle Aktien bestimmten überwiegend den gemeinsamen Preis", "Rund 80 % der Paare waren kointegriert, ihre Preise wiesen also langfristig eine stabile Beziehung auf. Diese Beziehung lag nahe bei eins zu eins. Wichen die Preise voneinander ab, nahm im Allgemeinen der Token den größeren Teil der Anpassung zurück an den Preis der zugrunde liegenden Aktie vor.", "Beim Median-Paar entfielen mehr als 80 % der dauerhaften Komponente des gemeinsamen Preises auf die zugrunde liegende Aktie. Nach der Hasbrouck-Informationsanteilsanalyse der Studie führte bei keinem Paar der Token die Preisfindung an."],
+        ["Grenzen und institutioneller Kontext", "Die Ergebnisse gelten für diese xStock-Stichprobe, den untersuchten Zeitraum und Daten mit täglicher Frequenz. Sie belegen weder, dass sich jeder Markt für tokenisierte Aktien gleich verhalten wird, noch dass der Intraday-Handel niemals zusätzliche Informationen liefert. Zudem ist die WFE ein Verband der Börsenbranche; ihre institutionelle Perspektive sollte bei der Interpretation der Schlussfolgerungen berücksichtigt werden."]
+      ]
+    },
+    "es": {
+      "title": "Un estudio de la WFE concluye que las acciones tradicionales aún lideran la formación de precios de las acciones tokenizadas",
+      "description": "Un estudio de la Federación Mundial de Bolsas sobre 61 pares de xStocks concluye que los precios de los tokens suelen ajustarse hacia los precios formados en los mercados de valores regulados.",
+      "sections": [
+        ["Análisis de 61 pares de xStocks durante once meses", "La Federación Mundial de Bolsas publicó el 20 de octubre un estudio que concluye que las acciones negociadas en bolsas tradicionales seguían siendo la principal fuente de formación de precios para las acciones tokenizadas por terceros incluidas en la muestra. El estudio examinó 61 pares formados por un xStock y su acción subyacente mediante observaciones diarias desde julio de 2025 hasta mayo de 2026."],
+        ["Las acciones tradicionales dominaron el precio común", "Alrededor del 80 % de los pares estaban cointegrados, lo que significa que sus precios mantenían una relación estable a largo plazo. Esa relación se aproximaba a uno a uno. Cuando los precios divergían, por lo general era el token el que realizaba la mayor parte del ajuste de vuelta hacia el precio de la acción subyacente.", "En el par mediano, la acción subyacente representaba más del 80 % del componente permanente del precio común. Según el análisis de cuota de información de Hasbrouck utilizado por el estudio, ningún token lideró la formación de precios."],
+        ["Límites y contexto institucional", "Los resultados se aplican a esta muestra de xStocks, al periodo estudiado y a datos de frecuencia diaria. No demuestran que todos los mercados de acciones tokenizadas se comporten de la misma manera ni que la negociación intradía nunca aporte información. La WFE es además una asociación del sector bursátil, por lo que su perspectiva institucional debe tenerse en cuenta al interpretar las conclusiones."]
+      ]
+    },
+    "fr": {
+      "title": "Une étude de la WFE conclut que les actions traditionnelles dominent encore la formation des prix des actions tokenisées",
+      "description": "Une étude de la Fédération mondiale des bourses portant sur 61 paires de xStocks conclut que les prix des tokens s’ajustent généralement vers ceux formés sur les marchés d’actions réglementés.",
+      "sections": [
+        ["61 paires de xStocks étudiées sur onze mois", "La Fédération mondiale des bourses a publié le 20 octobre une étude concluant que les actions négociées sur les bourses traditionnelles restaient la principale source de formation des prix pour les actions tokenisées par des tiers de son échantillon. L’étude a examiné 61 paires associant un xStock à son action sous-jacente, à partir d’observations quotidiennes allant de juillet 2025 à mai 2026."],
+        ["Les actions traditionnelles dominaient le prix commun", "Environ 80 % des paires étaient cointégrées, ce qui signifie que leurs prix conservaient une relation stable à long terme. Cette relation était proche d’un rapport de un pour un. Lorsque les prix divergeaient, le token effectuait généralement la plus grande partie de l’ajustement vers le prix de l’action sous-jacente.", "Pour la paire médiane, l’action sous-jacente représentait plus de 80 % de la composante permanente du prix commun. Selon l’analyse de la part d’information de Hasbrouck employée dans l’étude, aucun token ne dominait la formation des prix."],
+        ["Limites et contexte institutionnel", "Les résultats concernent cet échantillon de xStocks, la période étudiée et des données quotidiennes. Ils n’établissent ni que tous les marchés d’actions tokenisées se comporteront de la même manière, ni que les échanges intrajournaliers n’apportent jamais d’information. La WFE étant aussi une association du secteur boursier, sa perspective institutionnelle doit être prise en compte dans l’interprétation des conclusions."]
+      ]
+    },
+    "sourceSha256": "3d04576d1de8b6c5c3cfe5cd2547be5f6cc81e4d4d0d424b272a17e69673b792"
+  },
   "ripple-prime-rwa-swaps": {
     "path": "/institutions/ripple-prime-launches-24-7-institutional-rwa-swaps/",
     "date": "2026-10-15",
