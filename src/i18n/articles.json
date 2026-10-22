@@ -1025,6 +1025,40 @@
     },
     "sourceSha256": "883f83e358fec26236e1e21dc54b1683e4f5e6ad9d6b9775d8c0acefa252df1d"
   },
+  "sec-tokenized-securities-venues": {
+    "path": "/news/sec-lists-three-prospective-tokenized-securities-venues/",
+    "date": "2026-10-21",
+    "kind": "news",
+    "sources": [
+      ["U.S. SEC — Innovation Exemption operator list", "https://www.sec.gov/about/divisions-offices/division-trading-markets/innovation-exemption"],
+      ["U.S. SEC — Innovation Exemption order", "https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf"]
+    ],
+    "de": {
+      "title": "SEC führt drei potenzielle Handelsplätze für tokenisierte Wertpapiere auf",
+      "description": "Die SEC führt nun TSV LLC, OKXICE TSV und Kephas/Perpetuals.com als potenzielle Betreiber, die im Rahmen ihrer vorübergehenden Regelung für tokenisierte Aktien Anzeigen eingereicht haben.",
+      "sections": [
+        ["Drei Anzeigen mit Einreichungsdaten", "Die US-Börsenaufsicht Securities and Exchange Commission aktualisierte am 21. Oktober ihre Seite zur Innovation Exemption und nannte drei Parteien, die schriftliche Absichtsanzeigen zum Betrieb von Handelsplätzen für tokenisierte Wertpapiere eingereicht haben. TSV LLC reichte seine Anzeige am 23. September ein, OKXICE TSV am 4. Oktober und Kephas Corporation, tätig unter dem Namen Perpetuals.com, am 14. Oktober."],
+        ["Offenlegung ist keine Genehmigung", "Die Liste markiert einen Offenlegungsschritt und ist keine Genehmigungsliste. Nach Angaben der SEC belegt eine Aufnahme weder, dass eine Person als Handelsplatz für tokenisierte Wertpapiere qualifiziert ist, noch dass sie die Bedingungen der Ausnahme erfüllt. Die zugrunde liegende Anordnung vom 17. September gewährt qualifizierten Handelsplätzen, die erlaubnisbasierte Liquiditätspools automatisierter Market Maker für den Handel tokenisierter NMS-Aktien verwenden, eine vorübergehende und an Bedingungen geknüpfte Befreiung. Keiner der drei Einträge beweist für sich genommen, dass der Kundenhandel begonnen hat. Die neue konsolidierte Liste ergänzt TSV LLC im öffentlichen Gesamtbild und bestätigt zugleich die bereits mit den Anzeigen von OKXICE und Perpetuals.com verbundenen Daten."]
+      ]
+    },
+    "es": {
+      "title": "La SEC incluye tres posibles mercados de valores tokenizados",
+      "description": "La SEC incluye ahora a TSV LLC, OKXICE TSV y Kephas/Perpetuals.com como posibles operadores que presentaron notificaciones bajo su marco temporal para acciones tokenizadas.",
+      "sections": [
+        ["Tres notificaciones y sus fechas de presentación", "La Comisión de Bolsa y Valores de Estados Unidos actualizó el 21 de octubre su página sobre la Exención de Innovación para identificar a tres entidades que presentaron notificaciones escritas de su intención de operar Mercados de Valores Tokenizados. TSV LLC presentó la suya el 23 de septiembre, OKXICE TSV el 4 de octubre y Kephas Corporation, que opera como Perpetuals.com, el 14 de octubre."],
+        ["La divulgación no equivale a una aprobación", "La lista constituye un hito de divulgación, no una lista de aprobaciones. La SEC señala que la inclusión no demuestra que una persona reúna los requisitos para ser un Mercado de Valores Tokenizados ni que cumpla las condiciones de la exención. La orden subyacente del 17 de septiembre concede un alivio temporal y condicionado a los mercados que cumplan los requisitos y utilicen fondos de liquidez de creadores de mercado automatizados con permisos para negociar acciones NMS tokenizadas. Ninguna de las tres entradas demuestra por sí sola que haya comenzado la negociación para clientes. La nueva lista consolidada incorpora a TSV LLC al panorama público y confirma las fechas ya asociadas a las notificaciones de OKXICE y Perpetuals.com."]
+      ]
+    },
+    "fr": {
+      "title": "La SEC recense trois plateformes potentielles de titres tokenisés",
+      "description": "La SEC recense désormais TSV LLC, OKXICE TSV et Kephas/Perpetuals.com parmi les opérateurs potentiels ayant déposé un avis dans le cadre de son dispositif temporaire pour les actions tokenisées.",
+      "sections": [
+        ["Trois avis et leurs dates de dépôt", "La Securities and Exchange Commission des États-Unis a actualisé le 21 octobre sa page consacrée à l’Innovation Exemption afin d’identifier trois parties ayant soumis des avis écrits de leur intention d’exploiter des plateformes de titres tokenisés. TSV LLC a déposé son avis le 23 septembre, OKXICE TSV le 4 octobre et Kephas Corporation, exerçant sous le nom de Perpetuals.com, le 14 octobre."],
+        ["La publication ne vaut pas approbation", "Cette liste constitue une étape de transparence, et non une liste d’approbations. La SEC précise qu’une inscription n’établit ni qu’une personne remplit les critères pour être une plateforme de titres tokenisés, ni qu’elle satisfait aux conditions de l’exemption. L’ordonnance sous-jacente du 17 septembre accorde un allègement temporaire et conditionnel aux plateformes admissibles qui utilisent des pools de liquidité de teneurs de marché automatisés soumis à autorisation pour négocier des actions NMS tokenisées. Aucune des trois inscriptions ne prouve à elle seule que la négociation pour les clients a commencé. La nouvelle liste consolidée ajoute TSV LLC au tableau public tout en confirmant les dates déjà associées aux avis d’OKXICE et de Perpetuals.com."]
+      ]
+    },
+    "sourceSha256": "ee5ae3ebbe4d9e24bc1b0e4eca06a3d2799e024018d1067e20060ddd4a17866d"
+  },
   "vantage-rio-bank-tokenized-deposit-payment": {
     "path": "/news/vantage-and-rio-bank-complete-tokenized-deposit-loan-payment/",
     "date": "2026-10-19",
