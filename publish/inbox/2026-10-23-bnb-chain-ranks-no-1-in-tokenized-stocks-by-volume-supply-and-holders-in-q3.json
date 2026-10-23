@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-23T14:25:32Z",
-    "reason": "The full crypto.news report still attributes the Q3 ranking to an unavailable Blockworks quarterly report, while BNB Chain and Blockworks expose only social posts. A new BNB-focused article restates the same supplied report and is not independent corroboration, so the underlying dataset and methodology remain unreadable."
+    "reviewedAt": "2026-10-23T20:29:17Z",
+    "reason": "The full crypto.news report attributes the Q3 ranking and figures to a Blockworks quarterly report that remains unavailable in readable form. BNB Chain and Blockworks expose only social summaries, while later articles repeat the same dataset rather than independently corroborating it, so the underlying methodology cannot be verified."
   }
 }
