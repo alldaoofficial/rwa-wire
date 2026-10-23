@@ -1,23 +1,29 @@
 {
-  "title": "HSBC launches RedCoin stablecoin, plans HK$100 tokenized fund investments",
-  "description": "HSBC launches RedCoin stablecoin, plans HK$100 tokenized fund investments",
-  "why_it_matters": "",
+  "title": "HSBC Launches RedCoin Payments on PayMe",
+  "description": "HSBC's Hong Kong dollar-referenced RedCoin is now usable for PayMe transfers and merchant payments, while tokenized investment subscriptions remain a planned feature.",
+  "why_it_matters": "The launch puts a regulated bank-issued stablecoin into an established retail payment channel, but separates today's payment utility from future tokenized-investment access.",
   "pubDate": "2026-10-23",
-  "category": "news",
+  "category": "institutions",
   "tags": [
+    "Stablecoins",
     "Tokenization",
-    "Institutions",
-    "News Watch"
+    "HSBC",
+    "Hong Kong"
   ],
   "keyTakeaways": [
-    "HSBC launches RedCoin stablecoin, plans HK$100 tokenized fund investments",
-    ""
+    "HSBC RedCoin can now be used for person-to-person transfers and payments to participating PayMe merchants.",
+    "HSBC says RedCoin is issued under HKMA stablecoin licence FRS02 and designed for one-to-one Hong Kong dollar redemption.",
+    "Subscriptions to tokenized investment products through the HSBC HK App are still described as coming soon."
   ],
-  "body": "HSBC launches RedCoin stablecoin, plans HK$100 tokenized fund investments",
+  "body": "HSBC has launched payment use of its Hong Kong dollar-referenced RedCoin stablecoin through PayMe. Users can make person-to-person transfers and pay participating merchants from a RedCoin balance. HSBC says the coin is issued under stablecoin issuer licence FRS02 from the Hong Kong Monetary Authority and is designed to be redeemable one-for-one for Hong Kong dollars.\n\nThe bank says RedCoin is fully backed by high-quality, highly liquid segregated assets. Its official transparency page reported HKD 80,581,048.16 in circulating par value on October 23, 2026, against HKD 81,581,048.16 of reserve assets.\n\nTokenized investments are not part of the current launch. HSBC labels subscriptions through its Hong Kong app as coming soon. The bank also says RedCoin wallets are not bank accounts and are not covered by Hong Kong's Deposit Protection Scheme.",
   "sources": [
     {
-      "name": "Crypto News",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBnVE9hZTdOcVotZUl3a1NwZ25UcVpBa2NUMlo1cGJRRndYdEViekctM1Q1VzRNYXd2WTZRWDBVQjRYbG03WkRaTzFVSE5uQmJETmFzWjNlUnJDU0ZQeDJ3V3EwQmx4VXUxdkRTaXRJaVpxXzcydUE?oc=5"
+      "name": "HSBC Hong Kong — RedCoin product and transparency page",
+      "url": "https://www.hsbc.com.hk/stablecoins/"
+    },
+    {
+      "name": "CoinPedia — RedCoin PayMe launch report",
+      "url": "https://coinpedia.org/news/hsbc-launches-redcoin-stablecoin-for-3-3-million-payme-users-in-hong-kong/amp/"
     }
   ],
   "newsWatch": {
@@ -27,7 +33,62 @@
     "discoveredAt": "2026-10-23T10:37:16.654057+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-23T10:50:45Z",
+    "sources": [
+      {
+        "url": "https://www.hsbc.com.hk/stablecoins/",
+        "publishedAt": "2026-10-23",
+        "checkedAt": "2026-10-23T10:50:45Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://coinpedia.org/news/hsbc-launches-redcoin-stablecoin-for-3-3-million-payme-users-in-hong-kong/amp/",
+        "publishedAt": "2026-10-23",
+        "checkedAt": "2026-10-23T10:50:45Z",
+        "kind": "news",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "HSBC RedCoin is issued under HKMA stablecoin issuer licence FRS02.",
+        "sourceUrl": "https://www.hsbc.com.hk/stablecoins/",
+        "anchor": "stablecoin issuer licence"
+      },
+      {
+        "claim": "RedCoin can be used for PayMe person-to-person transfers.",
+        "sourceUrl": "https://www.hsbc.com.hk/stablecoins/",
+        "anchor": "Peer-to-Peer (P2P) transfers"
+      },
+      {
+        "claim": "HSBC describes tokenized investment subscriptions through its app as a future feature.",
+        "sourceUrl": "https://www.hsbc.com.hk/stablecoins/",
+        "anchor": "Tokenised investments (coming soon)"
+      },
+      {
+        "claim": "RedCoin is designed to be redeemable one-for-one for Hong Kong dollars.",
+        "sourceUrl": "https://www.hsbc.com.hk/stablecoins/",
+        "anchor": "redeemable 1:1 for HKD"
+      },
+      {
+        "claim": "The official page reported HKD 80,581,048.16 in circulating par value on October 23.",
+        "sourceUrl": "https://www.hsbc.com.hk/stablecoins/",
+        "anchor": "HKD 80,581,048.16"
+      },
+      {
+        "claim": "CoinPedia reported that the PayMe rollout began on October 23, 2026.",
+        "sourceUrl": "https://coinpedia.org/news/hsbc-launches-redcoin-stablecoin-for-3-3-million-payme-users-in-hong-kong/amp/",
+        "anchor": "starting October 23, 2026"
+      }
+    ],
+    "contentSha256": "cfca07024e659ffb207670fbd966fd5514016aa4ba6ca067afa55958574d2f62"
   }
 }
