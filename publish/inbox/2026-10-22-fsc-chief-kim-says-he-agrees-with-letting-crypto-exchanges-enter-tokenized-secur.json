@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-22T17:21:49Z",
-    "reason": "The accessible report describes agreement with a proposal's intent and a future review, while no official hearing transcript or primary decision confirms a rule change or market-entry approval."
+    "reviewedAt": "2026-10-23T00:39:29Z",
+    "reason": "After the retry interval, accessible reports still describe agreement with a proposal's intent and a future review. No official hearing transcript, rule change or market-entry approval was found."
   }
 }
