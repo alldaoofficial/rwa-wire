@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "requiresSourceReview": true,
     "contentStatus": "needs-source-enrichment"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-23T14:25:32Z",
+    "reason": "This report concerns daily spot Bitcoin ETF fund flows and does not describe a tokenized real-world asset, tokenization infrastructure, or a material RWA event."
   }
 }
