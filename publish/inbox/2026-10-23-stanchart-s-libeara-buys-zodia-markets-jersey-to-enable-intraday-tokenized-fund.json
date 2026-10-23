@@ -1,25 +1,17 @@
 {
-  "title": "StanChart’s Libeara buys Zodia Markets Jersey to enable intraday tokenized fund dealing",
-  "description": "StanChart’s Libeara buys Zodia Markets Jersey to enable intraday tokenized fund dealing",
-  "why_it_matters": "",
+  "title": "Libeara Agrees to Acquire Zodia Markets' Jersey Entity",
+  "description": "Libeara has signed an agreement to buy Zodia Markets' regulated Jersey entity, subject to approval, adding a potential European base for its tokenization business.",
+  "why_it_matters": "The transaction would give Libeara a regulated Jersey operating entity, extending the institutional footprint behind its tokenized-asset infrastructure beyond its Singapore-licensed business.",
   "pubDate": "2026-10-23",
-  "category": "news",
-  "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
-  ],
+  "category": "institutions",
+  "tags": ["Tokenization", "Institutions", "Libeara", "Zodia Markets"],
   "keyTakeaways": [
-    "StanChart’s Libeara buys Zodia Markets Jersey to enable intraday tokenized fund dealing",
-    ""
+    "Libeara signed a definitive agreement to acquire Zodia Markets (Jersey) Limited; financial terms were not disclosed.",
+    "Completion remains subject to regulatory approval, so the acquisition has not yet closed.",
+    "Libeara plans to rename the entity Libeara (Jersey) Limited after completion."
   ],
-  "body": "StanChart’s Libeara buys Zodia Markets Jersey to enable intraday tokenized fund dealing",
-  "sources": [
-    {
-      "name": "Ledger Insights",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPcXJPVEJJaF9ham82VUt1X2JQOFZpOVZZZ0hZWUNqN1YwVV9oMktwRG80cFoycVlaak9KUW1vR29jQW5aX2gyUW1wd1BRbkE4UFk4MDNEbzFLX3FrV1VCNUV2T3dQVzd0eC1XRTJ5SHNrX1VkQ1BsZ1E2aFZTZmJxTUpHVzdlZ3RqZ2ptdmtsUElSTTd6Qzl3bXNOTGZhczNyRXJvRlNoQlNBSlFfamthTlNTZkx5U1QwbXc?oc=5"
-    }
-  ],
+  "body": "Libeara has entered a definitive agreement to acquire Zodia Markets (Jersey) Limited from the Zodia Markets group. The companies did not disclose the transaction's financial terms, and completion remains subject to regulatory approval. The announcement is therefore an agreed acquisition, not a completed transfer.\n\nThe target is regulated by the Jersey Financial Services Commission for investment business and is supervised as a virtual asset service provider, according to Libeara. After completion, Libeara plans to rename it Libeara (Jersey) Limited.\n\nLibeara already holds a Capital Markets Services licence from the Monetary Authority of Singapore. The Jersey acquisition would add a regulated European operating base to a group that says its infrastructure has supported more than US$1 billion of regulated tokenized assets. The official release did not announce a live intraday fund-dealing service.",
+  "sources": [{"name": "Libeara — acquisition announcement", "url": "https://libeara.com/libeara-to-acquire-zodia-markets-jersey-limited-from-zodia-markets/"}],
   "newsWatch": {
     "score": 8,
     "priority": "important",
@@ -27,7 +19,27 @@
     "discoveredAt": "2026-10-23T09:37:17.560371+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-23T10:30:59Z",
+    "sources": [{
+      "url": "https://libeara.com/libeara-to-acquire-zodia-markets-jersey-limited-from-zodia-markets/",
+      "publishedAt": "2026-10-23",
+      "checkedAt": "2026-10-23T10:30:59Z",
+      "kind": "primary",
+      "access": "full-text"
+    }],
+    "facts": [
+      {"claim": "Libeara entered a definitive agreement to acquire Zodia Markets (Jersey) Limited.", "sourceUrl": "https://libeara.com/libeara-to-acquire-zodia-markets-jersey-limited-from-zodia-markets/", "anchor": "entered into a definitive agreement"},
+      {"claim": "The transaction's financial terms were not disclosed.", "sourceUrl": "https://libeara.com/libeara-to-acquire-zodia-markets-jersey-limited-from-zodia-markets/", "anchor": "Terms of the transaction were not disclosed"},
+      {"claim": "Completion is subject to regulatory approval.", "sourceUrl": "https://libeara.com/libeara-to-acquire-zodia-markets-jersey-limited-from-zodia-markets/", "anchor": "subject to regulatory approval"},
+      {"claim": "The entity is to be renamed Libeara (Jersey) Limited after completion.", "sourceUrl": "https://libeara.com/libeara-to-acquire-zodia-markets-jersey-limited-from-zodia-markets/", "anchor": "renamed Libeara (Jersey) Limited"}
+    ],
+    "contentSha256": "467797bcce1b2183d6df92a508b82868ee01e29b204730257db6f86fbbafec01"
   }
 }
