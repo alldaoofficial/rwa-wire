@@ -6,15 +6,15 @@
     "CBMixwFBVV95cUxObS00cHVoeFZOd2dkSFZaZGlrLWwzLVVmTFI0cXI5TVV5cEZoU28ycmd0OGZabU92My1wUHNQNnZPemtJamdueTRFUWllMGF0bDU2TkVCZVVHd1lBcVdnb3NDMnFRekFtVXBIbEQteHhORVk1UHlOXzE2Q1FHLU1xbkVVSzQ0bG00b1pmanZZbXEzNGhIbEEwZFNDeG1lcnlEbmViOUlRdW1SWGlUcHlZUllsM0RqUkhxbkE0VDlLY1R1LUpBYVZ3",
     "CBMivgFBVV95cUxQWXRWdzRPd0JVOWxoT3R3N19rZ2RoQ0FrY3N4eUtKZ0NTTjZSRHlwRFJacjVpLTVidnNmZmRPTk9wRG4tTG1MOE5DMEdDbHNKLVViYTIzcmhQdmtDa3NuZENYVXlISlR2b2dtcmpOY1RHYlBuU0E5NzNDUVliSkl2TFlWeG5UN1BWWTJhOWhJMkxsU1V1eUpNc2hxU0RVU3JvR3JKa0Z3QnQzRnp5N09Pb2M3NzFBSjIwc0J5Wk93"
   ],
-  "lastRun": "2026-10-23T13:37:20.736815+00:00",
+  "lastRun": "2026-10-23T18:30:21.882101+00:00",
   "lastDiagnostics": {
-    "rawItems": 157,
-    "uniqueItems": 105,
-    "qualified": 1,
-    "blocked": 7,
+    "rawItems": 154,
+    "uniqueItems": 113,
+    "qualified": 0,
+    "blocked": 5,
     "untrusted": 43,
-    "lowSignal": 54
+    "lowSignal": 65
   },
-  "lastResult": "candidate",
+  "lastResult": "no-qualified-story",
   "lastCandidate": "publish/inbox/2026-10-23-bitcoin-etfs-swing-back-to-net-outflows-as-636-million-in-withdrawals-erase-prev.json"
 }
