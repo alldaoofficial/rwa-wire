@@ -1334,5 +1334,74 @@
       ]
     },
     "sourceSha256": "b4ba4dbe277b5ad4c173001f2f6043ca96a795535f48fad78302e0a6b9649c85"
+  },
+  "archax-chainlink-govy-pricing": {
+    "path": "/institutions/archax-adds-chainlink-pricing-to-tokenized-treasury-product/",
+    "date": "2026-10-19",
+    "kind": "news",
+    "sources": [
+      ["Archax", "https://archax.com/insights/archax-adopts-chainlink-to-unlock-tokenised-u-s-treasuries-as-programmable-collateral"]
+    ],
+    "de": {
+      "title": "Archax ergänzt tokenisiertes Treasury-Produkt um Chainlink-Preisdaten",
+      "description": "Archax integrierte Chainlink Data Streams in $GOVY, sein automatisch rollierendes tokenisiertes US-Treasury-Produkt, um Bewertungen in möglichen Kredit-, Sicherheiten- und Treasury-Prozessen zu unterstützen.",
+      "sections": [
+        ["Aktuelle Preisdaten für das tokenisierte Treasury-Produkt $GOVY", "Archax teilte am 19. Oktober mit, Chainlink Data Streams als Quelle aktueller Preisdaten für $GOVY eingeführt zu haben. Das automatisch rollierende tokenisierte US-Treasury-Produkt verschafft berechtigten Anlegern rechtlich durchsetzbares Engagement in kurzfristigen US-Schatzwechseln, die im Verhältnis eins zu eins reguliert verwahrt werden. Northern Trust verwahrt die zugrunde liegenden Wertpapiere. Nach Angaben von Archax wird jeder fällige Schatzwechsel durch ein gleichwertiges kurzfristiges Wertpapier ersetzt."],
+        ["Ermöglichte Anwendungsfälle, aber noch kein aktiver Kreditmarkt", "Die Preisintegration soll Bewertungen in Onchain-Kredit-, Sicherheiten-, Margin- und Treasury-Management-Prozessen unterstützen. Archax nennt außerdem Übertragungen zwischen berechtigten Wallets auf einer Whitelist sowie Zeichnung und Rückgabe mit unterstützten Stablecoins. Die Ankündigung beschreibt technische Fähigkeiten und mögliche Anwendungen; sie nennt weder einen aktiven Kreditgeber noch einen festgelegten Sicherheitenabschlag oder einen gestarteten $GOVY-Kreditmarkt."]
+      ]
+    },
+    "es": {
+      "title": "Archax añade precios de Chainlink a su producto de bonos del Tesoro tokenizados",
+      "description": "Archax integró Chainlink Data Streams en $GOVY, su producto tokenizado de letras del Tesoro estadounidense con renovación automática, para respaldar valoraciones en posibles procesos de préstamo, garantía y tesorería.",
+      "sections": [
+        ["Precios actuales para el producto tokenizado del Tesoro $GOVY", "Archax comunicó el 19 de octubre que había adoptado Chainlink Data Streams para suministrar precios actuales a $GOVY. El producto tokenizado de letras del Tesoro estadounidense con renovación automática ofrece a inversores admisibles una exposición jurídicamente exigible a letras del Tesoro a corto plazo mantenidas uno a uno en custodia regulada. Northern Trust custodia los valores subyacentes y, según Archax, cada letra que vence se sustituye por un valor equivalente a corto plazo."],
+        ["Casos de uso habilitados, pero todavía sin mercado de crédito activo", "La integración de precios pretende respaldar valoraciones en procesos onchain de préstamo, garantía, margen y gestión de tesorería. Archax también menciona transferencias entre carteras admisibles incluidas en una lista blanca, así como suscripciones y reembolsos mediante stablecoins compatibles. El anuncio describe capacidades y posibles aplicaciones; no identifica un prestamista activo, un recorte de garantía asignado ni un mercado de crédito de $GOVY ya lanzado."]
+      ]
+    },
+    "fr": {
+      "title": "Archax ajoute les prix de Chainlink à son produit de bons du Trésor tokenisés",
+      "description": "Archax a intégré Chainlink Data Streams à $GOVY, son produit tokenisé de bons du Trésor américain à renouvellement automatique, afin d’étayer les valorisations dans de potentiels processus de prêt, de collatéral et de trésorerie.",
+      "sections": [
+        ["Des prix actualisés pour le produit tokenisé du Trésor $GOVY", "Archax a indiqué le 19 octobre avoir adopté Chainlink Data Streams afin de fournir des prix actualisés à $GOVY. Ce produit tokenisé de bons du Trésor américain à renouvellement automatique procure aux investisseurs éligibles une exposition juridiquement opposable à des bons du Trésor à court terme conservés à parité auprès d’un dépositaire réglementé. Northern Trust conserve les titres sous-jacents et, selon Archax, chaque bon arrivant à échéance est remplacé par un titre à court terme équivalent."],
+        ["Des usages rendus possibles, mais pas encore de marché du crédit actif", "L’intégration des prix vise à étayer les valorisations dans les processus onchain de prêt, de collatéral, de marge et de gestion de trésorerie. Archax mentionne aussi les transferts entre portefeuilles éligibles inscrits sur liste blanche ainsi que la souscription et le rachat au moyen de stablecoins pris en charge. L’annonce décrit des capacités et des applications potentielles ; elle ne mentionne ni prêteur actif, ni décote de collatéral définie, ni marché du crédit $GOVY déjà lancé."]
+      ]
+    },
+    "sourceSha256": "370fb46cc1c1d573ca99fcb4b22f23be08ab9e3da65e8f8fb8930600d7fbc67b"
+  },
+  "jpmorgan-tokenized-money-market-funds-solana": {
+    "path": "/institutions/j-p-morgan-adds-two-tokenized-money-market-funds-to-solana/",
+    "date": "2026-10-22",
+    "kind": "news",
+    "sources": [
+      ["J.P. Morgan Asset Management — Solana expansion announcement", "https://www.prnewswire.com/news-releases/jp-morgan-asset-management-expands-access-to-its-tokenized-money-market-funds-on-solana-302917188.html"]
+    ],
+    "de": {
+      "title": "J.P. Morgan bringt zwei tokenisierte Geldmarktfonds auf Solana",
+      "description": "J.P. Morgan Asset Management stellt MONY und JLTXX über seine Plattform Morgan Money qualifizierten US-Anlegern auf Solana zur Verfügung.",
+      "sections": [
+        ["MONY und JLTXX werden auf Solana verfügbar", "J.P. Morgan Asset Management hat zwei tokenisierte Geldmarktfonds auf Solana erweitert. Der My OnChain Net Yield Fund (MONY) und der JPMorgan OnChain Liquidity–Token Money Market Fund (JLTXX) stehen nach der Mitteilung des Unternehmens vom 22. Oktober nun qualifizierten US-Anlegern auf dem Netzwerk zur Verfügung."],
+        ["Unterschiedliche Fondsstrukturen und keine Angabe zum Solana-Volumen", "MONY ist ein Privatplatzierungsfonds nach Rule 506(c), der Zugang zu Renditen in US-Dollar bietet. JLTXX ist ein registrierter staatlicher Geldmarktfonds, dessen Anlagekonzept Stablecoin-Emittenten unter dem GENIUS Act unterstützen soll. Die Mitteilung nannte keine Höhe der auf Solana eingesetzten Vermögenswerte."],
+        ["Vertrieb über Morgan Money, kein Retail-Start", "Anleger zeichnen Fondsanteile und geben sie über J.P. Morgans Plattform Morgan Money zurück; anschließend erhalten sie Tokenbestände an ihren Blockchain-Adressen. Die Erweiterung ist ein Multichain-Vertriebsschritt für bestehende Fonds, kein Produktstart für Privatanleger und keine Prognose für den SOL-Kurs."]
+      ]
+    },
+    "es": {
+      "title": "J.P. Morgan incorpora dos fondos monetarios tokenizados a Solana",
+      "description": "J.P. Morgan Asset Management ha puesto MONY y JLTXX a disposición de inversores estadounidenses cualificados en Solana a través de su plataforma Morgan Money.",
+      "sections": [
+        ["MONY y JLTXX pasan a estar disponibles en Solana", "J.P. Morgan Asset Management ha ampliado dos fondos monetarios tokenizados a Solana. My OnChain Net Yield Fund (MONY) y JPMorgan OnChain Liquidity–Token Money Market Fund (JLTXX) ya están disponibles en la red para inversores estadounidenses cualificados, según el anuncio de la firma del 22 de octubre."],
+        ["Estructuras distintas y sin cifra de activos desplegados en Solana", "MONY es un fondo de colocación privada conforme a la Rule 506(c) que ofrece acceso a rendimientos en dólares estadounidenses. JLTXX es un fondo monetario gubernamental registrado, diseñado para invertir de una manera que respalde a emisores de stablecoins en virtud de la GENIUS Act. El comunicado no reveló el volumen de activos desplegados en Solana."],
+        ["Distribución mediante Morgan Money, no un lanzamiento minorista", "Los inversores utilizan la plataforma Morgan Money de J.P. Morgan para suscribir y reembolsar, y después reciben saldos tokenizados en sus direcciones blockchain. La ampliación es un paso de distribución multicadena para fondos existentes, no el lanzamiento de un producto minorista ni una predicción sobre el precio de SOL."]
+      ]
+    },
+    "fr": {
+      "title": "J.P. Morgan ajoute deux fonds monétaires tokenisés à Solana",
+      "description": "J.P. Morgan Asset Management a rendu MONY et JLTXX accessibles sur Solana aux investisseurs américains qualifiés via sa plateforme Morgan Money.",
+      "sections": [
+        ["MONY et JLTXX deviennent accessibles sur Solana", "J.P. Morgan Asset Management a étendu deux fonds monétaires tokenisés à Solana. My OnChain Net Yield Fund (MONY) et JPMorgan OnChain Liquidity–Token Money Market Fund (JLTXX) sont désormais accessibles sur le réseau aux investisseurs américains qualifiés, selon l’annonce de l’entreprise du 22 octobre."],
+        ["Deux structures distinctes, sans montant d’actifs déployés sur Solana", "MONY est un fonds de placement privé relevant de la Rule 506(c) qui donne accès à des rendements en dollars américains. JLTXX est un fonds monétaire gouvernemental enregistré, conçu pour investir de manière à soutenir les émetteurs de stablecoins dans le cadre du GENIUS Act. Le communiqué n’a pas indiqué le montant des actifs déployés sur Solana."],
+        ["Distribution via Morgan Money, pas de lancement grand public", "Les investisseurs utilisent la plateforme Morgan Money de J.P. Morgan pour souscrire et demander le rachat, puis reçoivent des soldes tokenisés à leurs adresses blockchain. Cette extension constitue une étape de distribution multichaîne pour des fonds existants, et non le lancement d’un produit grand public ou une prévision concernant le prix du SOL."]
+      ]
+    },
+    "sourceSha256": "8961bbc34c414bb1a0af851e5f2367ef708f50add2829ccf1e45862cb4882217"
   }
 }
