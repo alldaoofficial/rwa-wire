@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-23T00:39:29Z",
-    "reason": "HSBC's social post names the participating systems, but social posts are not sufficient full-text sources under the review policy. No formal primary announcement or second independent full-text report verifies the transaction details."
+    "reviewedAt": "2026-10-23T08:10:52Z",
+    "reason": "After another retry interval, the accessible full report still says the news emerged from LinkedIn posts rather than a formal announcement. No admissible primary release or second independent full-text report verifies the pilot details."
   }
 }
