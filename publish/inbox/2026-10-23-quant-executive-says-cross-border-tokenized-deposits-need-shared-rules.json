@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-23T10:50:45Z",
+    "reason": "The report is conference commentary about possible future cross-border rulebooks. Its only completed implementation example repeats the UK tokenized-deposit transactions already covered by RWA Wire, and it reports no new launch, approval, financing or material expansion."
   }
 }
