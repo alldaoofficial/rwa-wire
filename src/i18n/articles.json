@@ -1267,5 +1267,72 @@
       ]
     },
     "sourceSha256": "d32738f33247932c556f37e8ddf339a9500641d151ffa03d3d73ea9acf8d5872"
+  },
+  "hsbc-redcoin-payme-payments": {
+    "path": "/institutions/hsbc-launches-redcoin-payments-on-payme/",
+    "date": "2026-10-23",
+    "kind": "news",
+    "sources": [
+      ["HSBC Hong Kong — RedCoin product and transparency page", "https://www.hsbc.com.hk/stablecoins/"],
+      ["CoinPedia — RedCoin PayMe launch report", "https://coinpedia.org/news/hsbc-launches-redcoin-stablecoin-for-3-3-million-payme-users-in-hong-kong/amp/"]
+    ],
+    "de": {
+      "title": "HSBC führt RedCoin-Zahlungen über PayMe ein",
+      "description": "HSBCs an den Hongkong-Dollar gekoppelter RedCoin kann nun für PayMe-Überweisungen und Zahlungen bei teilnehmenden Händlern verwendet werden; Zeichnungen tokenisierter Anlagen bleiben eine geplante Funktion.",
+      "sections": [
+        ["RedCoin wird für PayMe-Zahlungen nutzbar", "HSBC hat die Zahlungsnutzung seines an den Hongkong-Dollar gekoppelten Stablecoins RedCoin über PayMe gestartet. Nutzer können Überweisungen zwischen Privatpersonen vornehmen und bei teilnehmenden Händlern aus einem RedCoin-Guthaben bezahlen. Laut HSBC wird der Coin unter der Stablecoin-Emittentenlizenz FRS02 der Hong Kong Monetary Authority ausgegeben und ist für die Einlösung im Verhältnis eins zu eins in Hongkong-Dollar ausgelegt."],
+        ["Reserven, Anlegerschutz und noch ausstehende Funktionen", "Die Bank erklärt, RedCoin sei vollständig durch hochwertige, hochliquide und getrennt verwahrte Vermögenswerte gedeckt. Die offizielle Transparenzseite wies am 23. Oktober 2026 einen umlaufenden Nennwert von HKD 80,581,048.16 und Reservevermögen von HKD 81,581,048.16 aus. Tokenisierte Anlagen sind nicht Teil des aktuellen Starts: HSBC bezeichnet Zeichnungen über seine Hongkong-App als demnächst verfügbar. Die Bank weist außerdem darauf hin, dass RedCoin-Wallets keine Bankkonten sind und nicht unter Hongkongs Deposit Protection Scheme fallen."]
+      ]
+    },
+    "es": {
+      "title": "HSBC lanza pagos con RedCoin en PayMe",
+      "description": "RedCoin, la moneda de HSBC referenciada al dólar de Hong Kong, ya puede utilizarse para transferencias en PayMe y pagos a comercios participantes, mientras que las suscripciones a inversiones tokenizadas siguen siendo una función prevista.",
+      "sections": [
+        ["RedCoin se habilita para pagos en PayMe", "HSBC ha lanzado el uso para pagos de su stablecoin RedCoin, referenciada al dólar de Hong Kong, a través de PayMe. Los usuarios pueden realizar transferencias entre particulares y pagar a comercios participantes desde un saldo en RedCoin. HSBC afirma que la moneda se emite al amparo de la licencia FRS02 para emisores de stablecoins de la Autoridad Monetaria de Hong Kong y que está diseñada para canjearse uno por uno por dólares de Hong Kong."],
+        ["Reservas, protección de depósitos y funciones pendientes", "El banco afirma que RedCoin está totalmente respaldada por activos segregados de alta calidad y gran liquidez. Su página oficial de transparencia comunicó el 23 de octubre de 2026 un valor nominal en circulación de HKD 80,581,048.16, frente a HKD 81,581,048.16 en activos de reserva. Las inversiones tokenizadas no forman parte del lanzamiento actual: HSBC señala que las suscripciones a través de su aplicación de Hong Kong estarán disponibles próximamente. El banco también indica que las carteras RedCoin no son cuentas bancarias y no están cubiertas por el Deposit Protection Scheme de Hong Kong."]
+      ]
+    },
+    "fr": {
+      "title": "HSBC lance les paiements RedCoin sur PayMe",
+      "description": "RedCoin, la monnaie de HSBC référencée au dollar de Hong Kong, peut désormais être utilisée pour les transferts PayMe et les paiements auprès des commerçants participants, tandis que la souscription à des investissements tokenisés reste une fonctionnalité prévue.",
+      "sections": [
+        ["RedCoin devient utilisable pour les paiements PayMe", "HSBC a lancé l’usage de son stablecoin RedCoin, référencé au dollar de Hong Kong, pour les paiements via PayMe. Les utilisateurs peuvent effectuer des transferts entre particuliers et régler des commerçants participants à partir d’un solde RedCoin. HSBC indique que la monnaie est émise dans le cadre de la licence d’émetteur de stablecoins FRS02 de la Hong Kong Monetary Authority et qu’elle est conçue pour être remboursable à parité en dollars de Hong Kong."],
+        ["Réserves, protection des dépôts et fonctionnalités à venir", "La banque affirme que RedCoin est intégralement adossée à des actifs ségrégués de grande qualité et très liquides. Sa page officielle de transparence faisait état, le 23 octobre 2026, d’une valeur nominale en circulation de HKD 80,581,048.16, contre HKD 81,581,048.16 d’actifs de réserve. Les investissements tokenisés ne font pas partie du lancement actuel : HSBC présente les souscriptions via son application de Hong Kong comme une fonctionnalité à venir. La banque précise également que les portefeuilles RedCoin ne sont pas des comptes bancaires et ne sont pas couverts par le Deposit Protection Scheme de Hong Kong."]
+      ]
+    },
+    "sourceSha256": "133d13a165bb946c39a7e224fdc2dd6a52798caa7064222d5765872b053f0c3f"
+  },
+  "libeara-zodia-markets-jersey-acquisition": {
+    "path": "/institutions/libeara-agrees-to-acquire-zodia-markets-jersey-entity/",
+    "date": "2026-10-23",
+    "kind": "news",
+    "sources": [
+      ["Libeara — acquisition announcement", "https://libeara.com/libeara-to-acquire-zodia-markets-jersey-limited-from-zodia-markets/"]
+    ],
+    "de": {
+      "title": "Libeara vereinbart Übernahme der Jersey-Gesellschaft von Zodia Markets",
+      "description": "Libeara hat die Übernahme der regulierten Jersey-Gesellschaft von Zodia Markets vereinbart. Der Abschluss steht noch unter regulatorischem Vorbehalt und könnte eine europäische Basis für das Tokenisierungsgeschäft schaffen.",
+      "sections": [
+        ["Vereinbarte Übernahme, noch kein abgeschlossener Eigentumsübergang", "Libeara hat mit der Zodia Markets Group eine verbindliche Vereinbarung zur Übernahme von Zodia Markets (Jersey) Limited geschlossen. Die Unternehmen legten die finanziellen Bedingungen der Transaktion nicht offen; der Abschluss bedarf noch der regulatorischen Genehmigung. Es handelt sich daher um eine vereinbarte Übernahme und nicht um einen bereits vollzogenen Eigentumsübergang. Libeara zufolge ist die Zielgesellschaft für das Investmentgeschäft durch die Jersey Financial Services Commission reguliert und wird als Anbieter von Dienstleistungen für virtuelle Vermögenswerte beaufsichtigt. Nach Abschluss plant Libeara die Umbenennung in Libeara (Jersey) Limited."],
+        ["Mögliche europäische Basis, aber kein angekündigter Intraday-Dienst", "Libeara besitzt bereits eine Capital-Markets-Services-Lizenz der Monetary Authority of Singapore. Mit der Jersey-Übernahme würde eine regulierte europäische Betriebsbasis zu einer Gruppe hinzukommen, deren Infrastruktur nach eigenen Angaben mehr als 1 Mrd. US-Dollar an regulierten tokenisierten Vermögenswerten unterstützt hat. Die offizielle Mitteilung kündigte keinen aktiven Intraday-Handelsdienst für Fonds an."]
+      ]
+    },
+    "es": {
+      "title": "Libeara acuerda adquirir la entidad de Zodia Markets en Jersey",
+      "description": "Libeara ha acordado comprar la entidad regulada de Zodia Markets en Jersey. El cierre sigue sujeto a aprobación regulatoria y podría aportar una base europea a su negocio de tokenización.",
+      "sections": [
+        ["Una adquisición acordada, no una transferencia ya completada", "Libeara ha firmado un acuerdo definitivo con el grupo Zodia Markets para adquirir Zodia Markets (Jersey) Limited. Las empresas no revelaron las condiciones financieras de la operación y el cierre sigue sujeto a aprobación regulatoria. Por tanto, se trata de una adquisición acordada, no de una transferencia ya completada. Según Libeara, la entidad objetivo está regulada por la Jersey Financial Services Commission para actividades de inversión y está supervisada como proveedor de servicios de activos virtuales. Tras el cierre, Libeara prevé cambiar su nombre a Libeara (Jersey) Limited."],
+        ["Una posible base europea, sin servicio intradía anunciado", "Libeara ya posee una licencia de Capital Markets Services de la Autoridad Monetaria de Singapur. La adquisición en Jersey añadiría una base operativa regulada en Europa a un grupo cuya infraestructura, según la propia empresa, ha respaldado más de 1.000 millones de dólares estadounidenses en activos tokenizados regulados. El comunicado oficial no anunció un servicio activo de negociación intradía de fondos."]
+      ]
+    },
+    "fr": {
+      "title": "Libeara convient d’acquérir l’entité de Zodia Markets à Jersey",
+      "description": "Libeara a conclu un accord pour racheter l’entité réglementée de Zodia Markets à Jersey. La finalisation reste soumise à une approbation réglementaire et pourrait fournir une base européenne à ses activités de tokenisation.",
+      "sections": [
+        ["Une acquisition convenue, pas encore un transfert réalisé", "Libeara a conclu un accord définitif avec le groupe Zodia Markets afin d’acquérir Zodia Markets (Jersey) Limited. Les entreprises n’ont pas communiqué les conditions financières de l’opération et sa finalisation reste soumise à une approbation réglementaire. Il s’agit donc d’une acquisition convenue et non d’un transfert déjà réalisé. Selon Libeara, l’entité cible est réglementée par la Jersey Financial Services Commission pour les activités d’investissement et supervisée en tant que prestataire de services sur actifs virtuels. Après la finalisation, Libeara prévoit de la renommer Libeara (Jersey) Limited."],
+        ["Une base européenne potentielle, sans service intrajournalier annoncé", "Libeara détient déjà une licence Capital Markets Services délivrée par la Monetary Authority of Singapore. L’acquisition à Jersey ajouterait une base opérationnelle européenne réglementée à un groupe dont l’infrastructure a, selon l’entreprise, pris en charge plus de 1 milliard de dollars américains d’actifs tokenisés réglementés. Le communiqué officiel n’a pas annoncé de service actif de négociation intrajournalière de fonds."]
+      ]
+    },
+    "sourceSha256": "b4ba4dbe277b5ad4c173001f2f6043ca96a795535f48fad78302e0a6b9649c85"
   }
 }
