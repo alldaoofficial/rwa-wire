@@ -1,33 +1,74 @@
 {
-  "title": "JPMorgan Brings Tokenized Funds to Solana: Why Solana Price Still Fell 3%",
-  "description": "JPMorgan Brings Tokenized Funds to Solana: Why Solana Price Still Fell 3%",
-  "why_it_matters": "",
-  "pubDate": "2026-10-23",
-  "category": "news",
+  "title": "J.P. Morgan Adds Two Tokenized Money Market Funds to Solana",
+  "description": "J.P. Morgan Asset Management has made MONY and JLTXX available on Solana to qualified U.S. investors through its Morgan Money platform.",
+  "why_it_matters": "The expansion gives institutional investors and stablecoin issuers another public-blockchain route into J.P. Morgan-managed cash products, extending the funds beyond a single network without opening them to retail trading.",
+  "pubDate": "2026-10-22",
+  "category": "institutions",
   "tags": [
     "Tokenization",
     "Institutions",
-    "News Watch"
+    "Money Market Funds",
+    "Solana",
+    "J.P. Morgan"
   ],
   "keyTakeaways": [
-    "JPMorgan Brings Tokenized Funds to Solana: Why Solana Price Still Fell 3%",
-    ""
+    "J.P. Morgan Asset Management made MONY and JLTXX available on Solana to qualified U.S. investors.",
+    "MONY is a Rule 506(c) private-placement fund, while JLTXX is a registered government money market fund designed to support stablecoin issuers under the GENIUS Act.",
+    "Subscriptions and redemptions run through Morgan Money, with investors receiving token balances at approved blockchain addresses."
   ],
-  "body": "JPMorgan Brings Tokenized Funds to Solana: Why Solana Price Still Fell 3%",
+  "body": "J.P. Morgan Asset Management has expanded two tokenized money market funds to Solana. My OnChain Net Yield Fund (MONY) and JPMorgan OnChain Liquidity–Token Money Market Fund (JLTXX) are now available on the network to qualified U.S. investors, according to the firm's October 22 announcement.\n\nMONY is a Rule 506(c) private-placement fund offering access to U.S. dollar yields. JLTXX is a registered government money market fund designed to invest in a way that supports stablecoin issuers under the GENIUS Act. The release did not disclose assets deployed on Solana.\n\nInvestors use J.P. Morgan's Morgan Money platform to subscribe and redeem, then receive token balances at their blockchain addresses. The expansion is a multi-chain distribution step for existing funds, not a retail product launch or a prediction about the price of SOL.",
   "sources": [
     {
-      "name": "CryptoTicker",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNOTY5SUt0VFJoNVBpaWpKQWtsdjFubl9tQ3hOSkI3MGUwTkdqTDFtVC1BSjdSX19JTkpCTHczYmIxRFJNZ1JYSXFHTHByOWRkVFllVmd6bFZRX3lldVNQOU1jRUVVTExOek1HWXdwN0pqTVFVYzNFeDMtcEhhWUlib1FmUkk?oc=5"
+      "name": "J.P. Morgan Asset Management — Solana expansion announcement",
+      "url": "https://www.prnewswire.com/news-releases/jp-morgan-asset-management-expands-access-to-its-tokenized-money-market-funds-on-solana-302917188.html"
     }
   ],
   "newsWatch": {
     "score": 11,
     "priority": "watchlist",
-    "sourceTrust": "unknown",
+    "sourceTrust": "primary",
     "discoveredAt": "2026-10-23T17:37:14.045206+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-23T18:18:13Z",
+    "sources": [
+      {
+        "url": "https://www.prnewswire.com/news-releases/jp-morgan-asset-management-expands-access-to-its-tokenized-money-market-funds-on-solana-302917188.html",
+        "publishedAt": "2026-10-22",
+        "checkedAt": "2026-10-23T18:18:13Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "MONY and JLTXX are now available on Solana to qualified U.S. investors.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/jp-morgan-asset-management-expands-access-to-its-tokenized-money-market-funds-on-solana-302917188.html",
+        "anchor": "now available on the Solana blockchain"
+      },
+      {
+        "claim": "MONY is a Rule 506(c) private-placement fund.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/jp-morgan-asset-management-expands-access-to-its-tokenized-money-market-funds-on-solana-302917188.html",
+        "anchor": "506(c) private placement fund"
+      },
+      {
+        "claim": "JLTXX is a registered government money market fund.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/jp-morgan-asset-management-expands-access-to-its-tokenized-money-market-funds-on-solana-302917188.html",
+        "anchor": "registered government money market fund"
+      },
+      {
+        "claim": "Investors can subscribe and redeem through Morgan Money.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/jp-morgan-asset-management-expands-access-to-its-tokenized-money-market-funds-on-solana-302917188.html",
+        "anchor": "subscribe and redeem"
+      }
+    ],
+    "contentSha256": "709d94152ffc54cfa4f6efba249dc6b8f0f1b49c17c24d2e30a5a2d9e27f2faa"
   }
 }
