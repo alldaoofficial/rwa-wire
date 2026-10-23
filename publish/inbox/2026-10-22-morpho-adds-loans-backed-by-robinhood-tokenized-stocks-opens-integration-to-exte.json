@@ -1,23 +1,34 @@
 {
-  "title": "Morpho Adds Loans Backed by Robinhood Tokenized Stocks, Opens Integration to External Apps",
-  "description": "Morpho Adds Loans Backed by Robinhood Tokenized Stocks, Opens Integration to External Apps",
-  "why_it_matters": "",
+  "title": "Morpho Opens Stablecoin Loans Against Robinhood Stock Tokens",
+  "description": "Morpho markets on Robinhood Chain now let eligible users borrow stablecoins against selected Robinhood Stock Tokens, including tokenized equity exposures.",
+  "why_it_matters": "The launch moves Robinhood Stock Tokens beyond trading into programmable collateral, while introducing liquidation and oracle risks tied to equity-market hours and token-specific lending thresholds.",
   "pubDate": "2026-10-22",
-  "category": "news",
+  "category": "markets",
   "tags": [
     "Tokenization",
     "Institutions",
-    "News Watch"
+    "DeFi",
+    "Robinhood Chain",
+    "Collateral"
   ],
   "keyTakeaways": [
-    "Morpho Adds Loans Backed by Robinhood Tokenized Stocks, Opens Integration to External Apps",
-    ""
+    "Morpho markets on Robinhood Chain accept selected Stock Tokens as collateral for stablecoin borrowing.",
+    "Morpho's live dashboard lists stock-token collateral including NVDA, GOOGL and AAPL, with USDG among the borrowing assets.",
+    "Robinhood Stock Tokens provide economic exposure rather than legal or beneficial ownership of the referenced shares."
   ],
-  "body": "Morpho Adds Loans Backed by Robinhood Tokenized Stocks, Opens Integration to External Apps",
+  "body": "Morpho has opened lending markets on Robinhood Chain that use selected Robinhood Stock Tokens as collateral for stablecoin loans. The protocol's live dashboard lists stock-linked collateral including NVDA, GOOGL, AAPL and SPCX, with USDG used across several displayed markets. Independent reports dated October 22 and 23 confirm that eligible users can borrow stablecoins without selling the tokens and that applications can connect to the markets.\n\nThe tokens provide economic exposure to referenced shares; they do not confer legal or beneficial ownership of the underlying companies. Borrowers also face DeFi-specific risks. A position can be liquidated when debt exceeds its market threshold, and equity-linked oracle updates may follow market schedules even while onchain activity continues. The launch is therefore a collateral integration, not a conventional securities-backed bank loan.",
   "sources": [
     {
-      "name": "bloomingbit",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE95eE0zMDZScVlfbjVIT3RMRjBldkxSVWQ0clZJS0Z1Z2pKUXZYZDI0anBsMUtRUzhzTlRjTTlZdGxudmpGdE96ZVhEekNtaGN2RUVyeQ?oc=5"
+      "name": "Morpho — Robinhood Chain network data",
+      "url": "https://data.morpho.org/chain/robinhood-chain"
+    },
+    {
+      "name": "crypto.news — Robinhood Chain stock-token lending report",
+      "url": "https://crypto.news/robinhood-chain-1-14b-tvl-morpho-stock-token-loans/"
+    },
+    {
+      "name": "Bloomingbit — Morpho stock-token collateral report",
+      "url": "https://en.bloomingbit.io/feed/news/122752"
     }
   ],
   "newsWatch": {
@@ -27,14 +38,64 @@
     "discoveredAt": "2026-10-22T15:37:16.151220+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "verified",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-23T13:23:26Z",
-    "reason": "Robinhood's July 1 product page confirms that Stock Tokens may be used as DeFi collateral and that Morpho powers a separate USDG lending product, but it does not document this Morpho market launch. The event-specific primary statements remain social posts; one report exposes only a loading shell and another is inaccessible, so the launch and external-app claim lack a readable primary source or two independent full-text reports."
+    "reviewedAt": "2026-10-23T20:29:17Z",
+    "sources": [
+      {
+        "url": "https://data.morpho.org/chain/robinhood-chain",
+        "publishedAt": "2026-10-22",
+        "checkedAt": "2026-10-23T20:29:17Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://crypto.news/robinhood-chain-1-14b-tvl-morpho-stock-token-loans/",
+        "publishedAt": "2026-10-22",
+        "checkedAt": "2026-10-23T20:29:17Z",
+        "kind": "news",
+        "access": "full-text"
+      },
+      {
+        "url": "https://en.bloomingbit.io/feed/news/122752",
+        "publishedAt": "2026-10-23",
+        "checkedAt": "2026-10-23T20:29:17Z",
+        "kind": "news",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Morpho's Robinhood Chain deployment lists stock-token collateral markets using USDG.",
+        "sourceUrl": "https://data.morpho.org/chain/robinhood-chain",
+        "anchor": "NVDA/USDG(62.5%)"
+      },
+      {
+        "claim": "The live Morpho dashboard lists GOOGL and AAPL among collateral assets.",
+        "sourceUrl": "https://data.morpho.org/chain/robinhood-chain",
+        "anchor": "GOOGL AAPL"
+      },
+      {
+        "claim": "Eligible holders can borrow stablecoins against Robinhood Stock Tokens through Morpho.",
+        "sourceUrl": "https://crypto.news/robinhood-chain-1-14b-tvl-morpho-stock-token-loans/",
+        "anchor": "use its Stock Tokens as collateral"
+      },
+      {
+        "claim": "Robinhood Stock Tokens do not grant rights in the referenced issuer.",
+        "sourceUrl": "https://crypto.news/robinhood-chain-1-14b-tvl-morpho-stock-token-loans/",
+        "anchor": "without granting legal or beneficial rights"
+      },
+      {
+        "claim": "Morpho permits external applications to integrate the stock-token lending markets.",
+        "sourceUrl": "https://en.bloomingbit.io/feed/news/122752",
+        "anchor": "external applications"
+      }
+    ],
+    "contentSha256": "e4743fcdbc262659c44bce3cdd14bc9d4f0d6bd3fd9d218f9d03b805f2f735ea"
   }
 }
