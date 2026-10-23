@@ -1165,6 +1165,39 @@
     },
     "sourceSha256": "260b652e1eb7a86f27479cf3aefcb1ef7d82c92406cbfed7d69d04ed8d578f20"
   },
+  "lg-cns-chainlink-korea-digital-asset-infrastructure": {
+    "path": "/institutions/lg-cns-and-chainlink-partner-on-korea-digital-asset-infrastructure/",
+    "date": "2026-10-22",
+    "kind": "news",
+    "sources": [
+      ["Chainlink — LG CNS partnership announcement", "https://www.prnewswire.com/news-releases/chainlink-partners-with-lg-cns-to-power-koreas-digital-asset-market-302917379.html"]
+    ],
+    "de": {
+      "title": "LG CNS und Chainlink kooperieren bei Koreas Digital-Asset-Infrastruktur",
+      "description": "LG CNS plant, Chainlink-Infrastruktur in seine Digital-Asset-Plattformlösung zu integrieren, während die Unternehmen technische Standards und institutionelle Lösungen für Korea entwickeln.",
+      "sections": [
+        ["Strategische Partnerschaft für regulierte Infrastruktur", "Chainlink und LG CNS kündigten am 22. Oktober eine strategische Partnerschaft zur Unterstützung regulierter Digital-Asset-Infrastruktur in Korea an. Nach Angaben der Unternehmen sollen Chainlinks Funktionen für Cross-Chain-Verbindungen, Daten und Orchestrierung auf die Digital Asset Platform Solution von LG CNS angewendet werden. Zudem wollen sie technische Standards und Lösungen für koreanische Finanzinstitute entwickeln."],
+        ["Entwicklungsplan, noch kein kommerzieller Produktstart", "Der angekündigte Umfang umfasst die Interoperabilität zwischen Systemen und Netzwerken, den Zugang zu externen Daten sowie potenzielle Infrastruktur für tokenisiertes Geld und tokenisierte Wertpapiere. LG CNS beschrieb die Arbeit als Unterstützung der institutionellen Einführung, während Chainlink sie als Ausbau seiner Präsenz in Korea einordnete. Die Ankündigung begründet eine Zusammenarbeit und einen Entwicklungsplan; sie dokumentiert weder den Start eines kommerziellen Stablecoins noch die Emission tokenisierter Wertpapiere oder einen produktiven Dienst für Kunden."]
+      ]
+    },
+    "es": {
+      "title": "LG CNS y Chainlink colaboran en la infraestructura de activos digitales de Corea",
+      "description": "LG CNS prevé integrar la infraestructura de Chainlink en su solución de plataforma de activos digitales, mientras ambas empresas desarrollan estándares técnicos y soluciones institucionales para Corea.",
+      "sections": [
+        ["Una alianza estratégica para infraestructura regulada", "Chainlink y LG CNS anunciaron el 22 de octubre una alianza estratégica para apoyar la infraestructura regulada de activos digitales en Corea. Las empresas señalaron que las capacidades de Chainlink para operaciones entre cadenas, datos y orquestación se aplicarán a la Digital Asset Platform Solution de LG CNS. También prevén desarrollar estándares técnicos y soluciones para instituciones financieras coreanas."],
+        ["Un plan de desarrollo, todavía sin lanzamiento comercial", "El alcance declarado incluye la interoperabilidad entre sistemas y redes, el acceso a datos externos y una posible infraestructura para dinero y valores tokenizados. LG CNS presentó el trabajo como un apoyo a la adopción institucional, mientras que Chainlink lo enmarcó como una ampliación de su presencia en Corea. El anuncio establece una colaboración y una agenda de desarrollo; no documenta el lanzamiento de una stablecoin comercial, una emisión de valores tokenizados ni un servicio en producción para clientes."]
+      ]
+    },
+    "fr": {
+      "title": "LG CNS et Chainlink s’associent autour de l’infrastructure d’actifs numériques en Corée",
+      "description": "LG CNS prévoit d’intégrer l’infrastructure de Chainlink à sa solution de plateforme d’actifs numériques, tandis que les deux entreprises développent des normes techniques et des solutions institutionnelles pour la Corée.",
+      "sections": [
+        ["Un partenariat stratégique pour une infrastructure réglementée", "Chainlink et LG CNS ont annoncé le 22 octobre un partenariat stratégique visant à soutenir l’infrastructure réglementée des actifs numériques en Corée. Selon les entreprises, les capacités interchaînes, de données et d’orchestration de Chainlink seront appliquées à la Digital Asset Platform Solution de LG CNS. Elles prévoient également de développer des normes techniques et des solutions destinées aux institutions financières coréennes."],
+        ["Un programme de développement, sans lancement commercial à ce stade", "Le périmètre annoncé comprend l’interopérabilité entre systèmes et réseaux, l’accès à des données externes ainsi qu’une infrastructure potentielle pour la monnaie et les titres tokenisés. LG CNS a présenté ces travaux comme un soutien à l’adoption institutionnelle, tandis que Chainlink les a décrits comme une expansion de sa présence en Corée. L’annonce établit une collaboration et un programme de développement ; elle ne documente ni le lancement d’un stablecoin commercial, ni une émission de titres tokenisés, ni un service de production destiné aux clients."]
+      ]
+    },
+    "sourceSha256": "5bfa43b845d288b1e1d072f2ad8a4e2fd579501ffca7ac0c95b36e790efc5145"
+  },
   "dune-market-data-feeds-tokenized-equity-volume": {
     "path": "/markets/dune-launches-real-time-feeds-as-tokenized-equity-volume-tops-37b-in-q3/",
     "date": "2026-10-22",
