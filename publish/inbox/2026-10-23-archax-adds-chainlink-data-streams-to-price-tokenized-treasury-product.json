@@ -1,23 +1,21 @@
 {
-  "title": "Archax Adds Chainlink Data Streams to Price Tokenized Treasury Product",
-  "description": "Archax Adds Chainlink Data Streams to Price Tokenized Treasury Product",
-  "why_it_matters": "",
-  "pubDate": "2026-10-23",
-  "category": "news",
-  "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
-  ],
+  "title": "Archax Adds Chainlink Pricing to Tokenized Treasury Product",
+  "description": "Archax integrated Chainlink Data Streams with $GOVY, its auto-rolling tokenized U.S. Treasury product, to support valuation in potential lending, collateral and treasury workflows.",
+  "why_it_matters": "Reliable machine-readable pricing is a necessary infrastructure layer before tokenized Treasury exposure can be assessed and managed inside automated credit and collateral systems.",
+  "pubDate": "2026-10-19",
+  "category": "institutions",
+  "reviewCategory": "INSTITUTIONAL TOKENIZATION",
+  "tags": ["Tokenized Treasuries", "Chainlink", "Archax", "Collateral"],
   "keyTakeaways": [
-    "Archax Adds Chainlink Data Streams to Price Tokenized Treasury Product",
-    ""
+    "Archax adopted Chainlink Data Streams to provide current pricing inputs for $GOVY.",
+    "$GOVY represents eligible investors' exposure to short-dated U.S. Treasury bills held one-to-one in regulated custody.",
+    "Archax describes lending and collateral as enabled use cases; it did not announce a live lender or credit market."
   ],
-  "body": "Archax Adds Chainlink Data Streams to Price Tokenized Treasury Product",
+  "body": "Archax said on October 19 that it adopted Chainlink Data Streams to supply current pricing inputs for $GOVY, its auto-rolling tokenized U.S. Treasury product. $GOVY gives eligible investors legally enforceable exposure to short-dated Treasury bills held one-to-one in regulated custody. Northern Trust holds the underlying securities, and Archax says each maturing bill is replaced with an equivalent short-dated security.\n\nThe pricing integration is intended to support valuation in onchain lending, collateral, margin and treasury-management workflows. Archax also lists transfers between eligible whitelisted wallets and subscription or redemption using supported stablecoins. The announcement describes capabilities and prospective applications; it does not identify a live lender, an assigned collateral haircut or a launched $GOVY credit market.",
   "sources": [
     {
-      "name": "TOKENPOST",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB2T19RbENUemNYZ2RGNFMzbklMSW1BdmJMbVA2TXpQSFRmejJ0MTV4UHVRUXZSZjg2ODZqY1AyQ2YzNkFGTDBkQk5tUWFkTXR4NUI3T0pweDM?oc=5"
+      "name": "Archax",
+      "url": "https://archax.com/insights/archax-adopts-chainlink-to-unlock-tokenised-u-s-treasuries-as-programmable-collateral"
     }
   ],
   "newsWatch": {
@@ -27,14 +25,50 @@
     "discoveredAt": "2026-10-23T10:07:17.571778+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "verified",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-23T10:30:59Z",
-    "reason": "Two independent full-text reports describe the integration, but the linked Archax technical announcement could not be read in full. Because the pricing and custody claims require primary technical documentation, the lead remains held without changing its article text."
+    "reviewedAt": "2026-10-23T17:28:05Z",
+    "sources": [
+      {
+        "url": "https://archax.com/insights/archax-adopts-chainlink-to-unlock-tokenised-u-s-treasuries-as-programmable-collateral",
+        "publishedAt": "2026-10-19",
+        "checkedAt": "2026-10-23T17:28:05Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Archax announced its adoption of Chainlink Data Streams on October 19, 2026.",
+        "sourceUrl": "https://archax.com/insights/archax-adopts-chainlink-to-unlock-tokenised-u-s-treasuries-as-programmable-collateral",
+        "anchor": "adopted Chainlink"
+      },
+      {
+        "claim": "$GOVY provides eligible investors exposure to short-dated U.S. Treasury bills held one-to-one in regulated custody.",
+        "sourceUrl": "https://archax.com/insights/archax-adopts-chainlink-to-unlock-tokenised-u-s-treasuries-as-programmable-collateral",
+        "anchor": "held 1:1 in regulated custody"
+      },
+      {
+        "claim": "Northern Trust is the custodian for the Treasury securities underlying $GOVY.",
+        "sourceUrl": "https://archax.com/insights/archax-adopts-chainlink-to-unlock-tokenised-u-s-treasuries-as-programmable-collateral",
+        "anchor": "Northern Trust as the custodian"
+      },
+      {
+        "claim": "Archax says maturing bills are automatically replaced with equivalent short-dated securities.",
+        "sourceUrl": "https://archax.com/insights/archax-adopts-chainlink-to-unlock-tokenised-u-s-treasuries-as-programmable-collateral",
+        "anchor": "automatically replaced"
+      },
+      {
+        "claim": "The integration is intended to enable lending, collateral and treasury-management applications.",
+        "sourceUrl": "https://archax.com/insights/archax-adopts-chainlink-to-unlock-tokenised-u-s-treasuries-as-programmable-collateral",
+        "anchor": "on-chain lending, collateral"
+      }
+    ],
+    "contentSha256": "6dfe3dd3ca3423dc1e442a51ae3004d28d92709869b039a39401bb21c8711d40"
   }
 }
