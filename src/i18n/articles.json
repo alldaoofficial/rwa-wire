@@ -1403,5 +1403,40 @@
       ]
     },
     "sourceSha256": "8961bbc34c414bb1a0af851e5f2367ef708f50add2829ccf1e45862cb4882217"
+  },
+  "morpho-robinhood-stock-token-loans": {
+    "path": "/markets/morpho-opens-stablecoin-loans-against-robinhood-stock-tokens/",
+    "date": "2026-10-22",
+    "kind": "news",
+    "sources": [
+      ["Morpho — Robinhood Chain network data", "https://data.morpho.org/chain/robinhood-chain"],
+      ["crypto.news — Robinhood Chain stock-token lending report", "https://crypto.news/robinhood-chain-1-14b-tvl-morpho-stock-token-loans/"],
+      ["Bloomingbit — Morpho stock-token collateral report", "https://en.bloomingbit.io/feed/news/122752"]
+    ],
+    "de": {
+      "title": "Morpho ermöglicht Stablecoin-Kredite gegen Robinhood Stock Tokens",
+      "description": "Morpho-Märkte auf Robinhood Chain ermöglichen berechtigten Nutzern nun, Stablecoins gegen ausgewählte Robinhood Stock Tokens zu leihen, darunter tokenisierte Aktienengagements.",
+      "sections": [
+        ["Ausgewählte Stock Tokens dienen als Kreditsicherheit", "Morpho hat auf Robinhood Chain Kreditmärkte eröffnet, die ausgewählte Robinhood Stock Tokens als Sicherheit für Stablecoin-Kredite verwenden. Das Live-Dashboard des Protokolls führt aktienbezogene Sicherheiten wie NVDA, GOOGL, AAPL und SPCX auf; USDG wird in mehreren der angezeigten Märkte als Kreditvermögenswert genutzt. Unabhängige Berichte vom 22. und 23. Oktober bestätigen, dass berechtigte Nutzer Stablecoins leihen können, ohne die Token zu verkaufen, und dass Anwendungen eine Verbindung zu den Märkten herstellen können."],
+        ["Wirtschaftliches Engagement ohne Aktienbesitz und mit DeFi-Risiken", "Die Token vermitteln ein wirtschaftliches Engagement in den referenzierten Aktien, gewähren jedoch weder rechtliches noch wirtschaftliches Eigentum an den zugrunde liegenden Unternehmen. Kreditnehmer tragen außerdem DeFi-spezifische Risiken: Eine Position kann liquidiert werden, wenn die Schulden ihren Marktschwellenwert überschreiten. Zudem können Oracle-Aktualisierungen für aktienbezogene Werte den Handelszeiten der Märkte folgen, obwohl die Onchain-Aktivität weiterläuft. Der Start ist daher eine Sicherheitenintegration und kein herkömmlicher, durch Wertpapiere besicherter Bankkredit."]
+      ]
+    },
+    "es": {
+      "title": "Morpho habilita préstamos en stablecoins con Robinhood Stock Tokens como garantía",
+      "description": "Los mercados de Morpho en Robinhood Chain permiten ahora que usuarios admisibles pidan stablecoins prestadas contra determinados Robinhood Stock Tokens, incluidas exposiciones tokenizadas a acciones.",
+      "sections": [
+        ["Determinados Stock Tokens pasan a utilizarse como garantía", "Morpho ha abierto mercados de préstamo en Robinhood Chain que utilizan determinados Robinhood Stock Tokens como garantía para préstamos en stablecoins. El panel en directo del protocolo muestra garantías vinculadas a acciones, entre ellas NVDA, GOOGL, AAPL y SPCX, y USDG se utiliza como activo de préstamo en varios de los mercados mostrados. Informes independientes de los días 22 y 23 de octubre confirman que los usuarios admisibles pueden pedir stablecoins prestadas sin vender los tokens y que las aplicaciones pueden conectarse a los mercados."],
+        ["Exposición económica sin propiedad accionarial y con riesgos DeFi", "Los tokens proporcionan exposición económica a las acciones de referencia, pero no otorgan propiedad jurídica ni beneficiaria sobre las empresas subyacentes. Los prestatarios también afrontan riesgos específicos de DeFi: una posición puede liquidarse cuando la deuda supera su umbral de mercado. Además, las actualizaciones de los oráculos vinculados a acciones pueden seguir los horarios de los mercados aunque la actividad onchain continúe. Por tanto, el lanzamiento es una integración de garantías, no un préstamo bancario convencional respaldado por valores."]
+      ]
+    },
+    "fr": {
+      "title": "Morpho ouvre des prêts en stablecoins garantis par des Robinhood Stock Tokens",
+      "description": "Les marchés Morpho sur Robinhood Chain permettent désormais aux utilisateurs éligibles d’emprunter des stablecoins contre certains Robinhood Stock Tokens, notamment des expositions tokenisées à des actions.",
+      "sections": [
+        ["Certains Stock Tokens sont acceptés comme collatéral", "Morpho a ouvert sur Robinhood Chain des marchés de prêt utilisant certains Robinhood Stock Tokens comme collatéral pour des emprunts en stablecoins. Le tableau de bord en direct du protocole répertorie des collatéraux liés à des actions, notamment NVDA, GOOGL, AAPL et SPCX, tandis que l’USDG sert d’actif emprunté sur plusieurs marchés affichés. Des articles indépendants datés des 22 et 23 octobre confirment que les utilisateurs éligibles peuvent emprunter des stablecoins sans vendre les tokens et que des applications peuvent se connecter à ces marchés."],
+        ["Une exposition économique sans propriété des actions et avec des risques DeFi", "Les tokens procurent une exposition économique aux actions de référence, mais ne confèrent aucun droit de propriété juridique ou bénéficiaire sur les entreprises sous-jacentes. Les emprunteurs sont également exposés à des risques propres à la DeFi : une position peut être liquidée lorsque la dette dépasse son seuil de marché. En outre, les mises à jour des oracles liés aux actions peuvent suivre les horaires des marchés alors même que l’activité onchain se poursuit. Ce lancement constitue donc une intégration de collatéral, et non un prêt bancaire classique garanti par des titres."]
+      ]
+    },
+    "sourceSha256": "b1f61be3c80a99eadde0d8ef5a33f5dd90d7854d75bdbfc0e0547c29489d888a"
   }
 }
