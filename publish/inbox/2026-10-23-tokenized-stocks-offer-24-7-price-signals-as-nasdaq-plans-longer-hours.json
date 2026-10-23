@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-23T18:18:13Z",
+    "reason": "The item is market commentary linking continuous tokenized-stock prices to Nasdaq's previously announced extended-hours plans. It identifies no new launch, filing, approval, financing or material expansion, and the Google News lead could not be resolved to a distinct primary event suitable for a news brief."
   }
 }
