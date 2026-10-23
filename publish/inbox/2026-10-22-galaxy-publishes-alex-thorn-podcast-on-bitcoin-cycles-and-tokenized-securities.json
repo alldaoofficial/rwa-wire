@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-23T03:10:46Z",
+    "reason": "Galaxy's October 22 page is a general podcast episode summarizing market commentary on Bitcoin cycles, tokenized securities, cybersecurity and stablecoins; it documents no new launch, approval, financing or material implementation milestone."
   }
 }
