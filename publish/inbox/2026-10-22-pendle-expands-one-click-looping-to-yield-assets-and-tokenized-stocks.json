@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-23T13:23:26Z",
-    "reason": "The publisher page still exposes only a loading shell and summary. Pendle's event-specific announcement remains available only as a social post, while the additional pages found are derivative summaries rather than independent full-text reporting; the Base, Aave and fee-waiver details therefore remain insufficiently verified."
+    "reviewedAt": "2026-10-23T21:39:31Z",
+    "reason": "The Defiant page still exposes only a loading shell, and no accessible Pendle product announcement or technical documentation was found. Other pages were derivative summaries rather than two independent full-text reports, so the product details remain insufficiently verified."
   }
 }
