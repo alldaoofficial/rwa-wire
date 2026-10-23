@@ -1,4 +1,5 @@
 ---
+import BitunixCampaignCard from "@/components/BitunixCampaignCard.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { AFFILIATE_URL } from "@/config/site";
 
@@ -26,6 +27,8 @@ const feeRows = [
         <a href={AFFILIATE_URL} target="_blank" rel="noopener noreferrer sponsored" data-affiliate-placement="bitunix-guide-hero" class="inline-flex rounded bg-wire px-6 py-3 text-sm font-semibold text-bg hover:bg-wire/90">Open Bitunix →</a>
         <a href="/affiliate-disclosure/" class="inline-flex border border-line px-6 py-3 text-sm font-semibold text-ink hover:border-wire">Read affiliate disclosure</a>
       </div>
+
+      <BitunixCampaignCard placement="guide-bitunix-october" />
 
       <div class="mt-14 grid gap-px border border-line bg-line md:grid-cols-3">
         <div class="bg-bg p-6"><p class="data-label">Markets</p><p class="mt-2 text-sm text-ink">Spot + perpetual futures</p></div>

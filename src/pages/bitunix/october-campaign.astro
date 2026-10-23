@@ -1,0 +1,47 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { bitunixCampaign as campaign } from "@/config/bitunixCampaign";
+import { sitePath } from "@/utils/paths";
+const deposits = [
+  ["100 USDT", "3 days", "4,000 USDT", "20 USDT", "20 USDT"],
+  ["500 USDT", "4 days", "20,000 USDT", "+80 USDT", "100 USDT"],
+  ["1,000 USDT", "5 days", "50,000 USDT", "+100 USDT", "200 USDT"],
+  ["2,000 USDT", "7 days", "100,000 USDT", "+200 USDT", "400 USDT"],
+];
+const volumes = [["100,000 USDT", "15 USDT"], ["500,000 USDT", "40 USDT"], ["1,000,000 USDT", "80 USDT"], ["5,000,000 USDT", "400 USDT"], ["10,000,000 USDT", "800 USDT"]];
+const ended = Date.now() > Date.parse(campaign.end);
+---
+<BaseLayout title="Bitunix × 0xcrlt October Campaign | RWA Wire" description="Deposit, holding and trading requirements for the Bitunix partner campaign, plus bonus restrictions and risks." noindex={!campaign.approved}>
+  <div class="wire-container py-12 sm:py-16"><div class="mx-auto max-w-[980px]">
+    <p class="eyebrow text-wire">Advertisement // Affiliate partnership</p>
+    <h1 class="mt-4 font-serif text-4xl leading-tight text-ink sm:text-5xl">Bitunix × 0xcrlt<br />October campaign</h1>
+    <p class="mt-5 text-lg text-ink-muted">14 October 2026, 00:00 – 27 October 2026, 23:59:59 UTC.</p>
+    <p class="mt-3 text-sm leading-6 text-ink-muted">RWA Wire may receive a commission through its partner link. This promotion is separate from our editorial coverage. Rewards are futures bonus vouchers, not a promise of withdrawable cash or trading profit.</p>
+    {!campaign.approved && <div class="mt-8 border border-amber-400/50 bg-amber-400/10 p-5" role="note">
+      <h2 class="font-semibold text-ink">Draft — reward rules require clarification</h2>
+      <p class="mt-2 text-sm leading-6 text-ink-muted">The event description says rewards accumulate. Rule 11 says only the highest tier is awarded and lower tiers do not accumulate. The tables below reproduce the event description; total entitlements are not verified. Do not rely on the advertised totals until Bitunix resolves this conflict.</p>
+    </div>}
+    {ended && <p class="mt-6 border border-line p-5 font-semibold text-ink">This campaign has ended. This page is retained for reference.</p>}
+    <section class="mt-12"><p class="eyebrow text-wire">01 // Registration perk</p><h2 class="mt-3 font-serif text-3xl text-ink">VIP2 trial</h2><p class="mt-4 leading-7 text-ink-muted">The campaign page lists a VIP2 trial for 30 days. Registration must use the designated referral link; verify your eligibility and the available benefits on Bitunix.</p></section>
+    <section class="mt-12"><p class="eyebrow text-wire">02 // New registrations only</p><h2 class="mt-3 font-serif text-3xl text-ink">Deposit, hold and trade</h2>
+      <p class="mt-4 leading-7 text-ink-muted">For users registering during the campaign. All listed requirements apply: net deposit, transfer to the futures account, the holding period and qualifying futures trading volume. The page limits this event to 100 participants on a first-come basis.</p>
+      <div class="mt-6 overflow-x-auto border border-line"><table class="w-full min-w-[660px] text-left text-sm"><caption class="p-4 text-left text-xs text-ink-muted">Advertised deposit-event milestones — cumulative totals conflict with rule 11.</caption><thead class="bg-panel"><tr>{["Net deposit", "Hold", "Futures volume", "Advertised voucher", "Advertised total"].map(label => <th scope="col" class="p-4 text-ink">{label}</th>)}</tr></thead><tbody>{deposits.map(row => <tr class="border-t border-line">{row.map(cell => <td class="p-4 text-ink-muted">{cell}</td>)}</tr>)}</tbody></table></div>
+      <p class="mt-3 text-xs leading-5 text-ink-muted">Net deposit means deposits minus withdrawals before the event ends. Internal transfers and crypto gifts do not count as qualifying deposits.</p>
+    </section>
+    <section class="mt-12"><p class="eyebrow text-wire">03 // Eligible new and existing users</p><h2 class="mt-3 font-serif text-3xl text-ink">Trading-volume milestones</h2><p class="mt-4 leading-7 text-ink-muted">The event description lists these total futures bonuses at each milestone. It says additional rewards are issued as milestones are reached, once per milestone; rule 11 contradicts that statement. Eligibility still depends on the campaign's referral and account rules.</p>
+      <div class="mt-6 overflow-x-auto border border-line"><table class="w-full text-left text-sm"><thead class="bg-panel"><tr><th scope="col" class="p-4 text-ink">Futures trading volume</th><th scope="col" class="p-4 text-ink">Advertised total futures bonus</th></tr></thead><tbody>{volumes.map(row => <tr class="border-t border-line">{row.map(cell => <td class="p-4 text-ink-muted">{cell}</td>)}</tr>)}</tbody></table></div>
+    </section>
+    <section class="mt-12 border border-line bg-surface p-6"><h2 class="font-serif text-2xl text-ink">Important voucher restrictions</h2><ul class="mt-4 list-disc space-y-3 pl-5 text-sm leading-6 text-ink-muted">
+      <li>Deposit rewards are exclusive futures bonuses. Only one can be used at a time, and a matching futures-account asset balance is required to activate it.</li>
+      <li>Deposit vouchers have no activation deadline; after activation they expire in 14 days. Volume rewards activate when issued and expire after 14 days.</li>
+      <li>The rules describe a 50% loss/fee deduction ratio for deposit rewards and also say personal funds are used first. Review the exact mechanics with Bitunix.</li>
+      <li>Only positions held longer than three minutes qualify. Trades using platform bonuses or other issued benefits are excluded.</li>
+      <li>Account, identity and regional restrictions apply. New-user rewards exclude Bangladesh, Indonesia, India, Abkhazia, Pakistan, Nigeria and Sri Lanka. Availability elsewhere must still be checked.</li>
+    </ul></section>
+    <section class="mt-10 border-t border-line pt-8"><h2 class="font-serif text-2xl text-ink">Read the conditions before participating</h2><p class="mt-4 leading-7 text-ink-muted">Fees, funding and trading losses can exceed any reward. Derivatives can lead to liquidation and loss of capital. Do not increase trading activity solely to reach a bonus threshold.</p>
+      <div class="mt-6 flex flex-wrap gap-3">{campaign.approved && !ended && <a href={campaign.url} target="_blank" rel="noopener noreferrer sponsored" data-affiliate-placement="bitunix-october-campaign" class="rounded bg-wire px-6 py-3 text-sm font-semibold text-bg">View official campaign →</a>}
+      <a href={campaign.url} target="_blank" rel="noopener noreferrer sponsored" class="border border-line px-6 py-3 text-sm text-ink">Official rules / source</a><a href={sitePath("/bitunix/")} class="border border-line px-6 py-3 text-sm text-ink">Platform guide</a></div>
+      <p class="mt-4 text-xs leading-5 text-ink-muted">Source checked 14 October 2026 (Europe/Berlin). Dates are from the official page's campaign data. Bitunix may change or cancel the event; its current English terms govern participation. Combined entitlements across events have not been verified.</p>
+    </section>
+  </div></div>
+</BaseLayout>
