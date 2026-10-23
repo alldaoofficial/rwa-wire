@@ -1,0 +1,35 @@
+{
+  "id": "2026-10-22-morpho-opens-stablecoin-loans-against-robinh",
+  "title": "Morpho Opens Stablecoin Loans Against Robinhood Stock Tokens",
+  "category": "MARKETS",
+  "why_it_matters": "The launch moves Robinhood Stock Tokens beyond trading into programmable collateral, while introducing liquidation and oracle risks tied to equity-market hours and token-specific lending thresholds.",
+  "article_url": "https://therwawire.com/markets/morpho-opens-stablecoin-loans-against-robinhood-stock-tokens/",
+  "image_url": "https://therwawire.com/images/news/morpho-opens-stablecoin-loans-against-robinhood-stock-tokens.svg",
+  "caption": "RWA WIRE // MARKETS\n\nMorpho Opens Stablecoin Loans Against Robinhood Stock Tokens\n\nMorpho markets on Robinhood Chain now let eligible users borrow stablecoins against selected Robinhood Stock Tokens, including tokenized equity exposures.\n\nFull analysis →\nhttps://therwawire.com/markets/morpho-opens-stablecoin-loans-against-robinhood-stock-tokens/",
+  "distribution": {
+    "telegram": "RWA WIRE // MARKETS\n\nMorpho Opens Stablecoin Loans Against Robinhood Stock Tokens\n\nMorpho markets on Robinhood Chain now let eligible users borrow stablecoins against selected Robinhood Stock Tokens, including tokenized equity exposures.\n\nFull analysis →\nhttps://therwawire.com/markets/morpho-opens-stablecoin-loans-against-robinhood-stock-tokens/",
+    "x": "Morpho Opens Stablecoin Loans Against Robinhood Stock Tokens\n\nMorpho markets on Robinhood Chain now let eligible users borrow stablecoins against selected Robinhood Stock Tokens, including tokenized equity exposures.\n\nhttps://therwawire.com/markets/morpho-opens-stablecoin-loans-against-robinhood-stock-tokens/",
+    "breaking": "RWA WIRE // MARKETS\n\nMorpho Opens Stablecoin Loans Against Robinhood Stock Tokens\n\nhttps://therwawire.com/markets/morpho-opens-stablecoin-loans-against-robinhood-stock-tokens/",
+    "summary": "Morpho markets on Robinhood Chain now let eligible users borrow stablecoins against selected Robinhood Stock Tokens, including tokenized equity exposures."
+  },
+  "sources": [
+    {
+      "name": "Morpho — Robinhood Chain network data",
+      "url": "https://data.morpho.org/chain/robinhood-chain"
+    },
+    {
+      "name": "crypto.news — Robinhood Chain stock-token lending report",
+      "url": "https://crypto.news/robinhood-chain-1-14b-tvl-morpho-stock-token-loans/"
+    },
+    {
+      "name": "Bloomingbit — Morpho stock-token collateral report",
+      "url": "https://en.bloomingbit.io/feed/news/122752"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-10-22-morpho-adds-loans-backed-by-robinhood-tokenized-stocks-opens-integration-to-exte.json",
+    "contentSha256": "e4743fcdbc262659c44bce3cdd14bc9d4f0d6bd3fd9d218f9d03b805f2f735ea",
+    "approvedAt": "2026-10-23T20:30:45.345466+00:00"
+  }
+}
