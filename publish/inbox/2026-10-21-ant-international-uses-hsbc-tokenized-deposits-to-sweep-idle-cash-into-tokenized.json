@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-23T08:10:52Z",
-    "reason": "After another retry interval, the accessible full report still says the news emerged from LinkedIn posts rather than a formal announcement. No admissible primary release or second independent full-text report verifies the pilot details."
+    "reviewedAt": "2026-10-23T15:33:21Z",
+    "reason": "The accessible report still says the BENJI sweep emerged from LinkedIn posts rather than a formal announcement. HSBC and Ant publish related tokenized-deposit material, but neither documents this transaction, and no second independent full-text report verifies its details."
   }
 }
