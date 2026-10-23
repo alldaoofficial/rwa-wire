@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-23T10:30:59Z",
+    "reason": "Two independent full-text reports describe the integration, but the linked Archax technical announcement could not be read in full. Because the pricing and custody claims require primary technical documentation, the lead remains held without changing its article text."
   }
 }
