@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-24T16:44:23Z",
+    "reason": "The underlying Microsoft, Alphabet and McDonald's objections were already recorded from OKXICE's October 19 notice and published as Seven More Issuers Object to Trading on OKXICE's Tokenized Stock Venue. This later analysis adds commentary, not a distinct event."
   }
 }
