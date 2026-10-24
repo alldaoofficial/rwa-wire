@@ -31,10 +31,10 @@
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "rejected",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-24T04:20:57Z",
-    "reason": "The Google News lead could not be resolved to a readable Coinfomania article, and searches found no accessible original report or concrete primary event behind the generic regulatory commentary. Search snippets are insufficient for source enrichment."
+    "reviewedAt": "2026-10-24T10:34:05Z",
+    "reason": "The resolved Coinfomania page is generic commentary derived from an X post, identifies no concrete new event or primary document, and includes an AI-generated summary. It does not meet RWA Wire's source standard."
   }
 }
