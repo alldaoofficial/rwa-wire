@@ -1,23 +1,24 @@
 {
-  "title": "Temple Names tZERO as Its Tokenized Securities Trading Partner",
-  "description": "Temple Names tZERO as Its Tokenized Securities Trading Partner",
-  "why_it_matters": "",
-  "pubDate": "2026-10-23",
-  "category": "news",
+  "title": "Temple Selects tZERO to Operate Its Tokenized Securities ATS",
+  "description": "Temple Digital Group engaged tZERO Securities as broker-dealer and ATS operator for a planned Canton-based tokenized securities platform; implementation and launch timing remain pending.",
+  "why_it_matters": "The agreement separates Temple's trading technology from the regulated operator layer, illustrating how tokenization platforms can enter securities markets by integrating an existing broker-dealer and ATS instead of building those functions internally.",
+  "pubDate": "2026-10-22",
+  "category": "institutions",
   "tags": [
     "Tokenization",
     "Institutions",
-    "News Watch"
+    "Canton Network"
   ],
   "keyTakeaways": [
-    "Temple Names tZERO as Its Tokenized Securities Trading Partner",
-    ""
+    "tZERO Securities will serve as the registered broker-dealer and ATS operator for Temple's planned tokenized securities platform on Canton.",
+    "Temple will provide its matching, RFQ and order-book technology while integrating tZERO's client onboarding and transaction services.",
+    "The companies have not announced a launch date; implementation and product availability are still pending."
   ],
-  "body": "Temple Names tZERO as Its Tokenized Securities Trading Partner",
+  "body": "Temple Digital Group has engaged tZERO Securities to operate the regulated broker-dealer and alternative trading system layer for Temple's planned tokenized securities platform on the Canton Network. Temple will pair its proprietary trading stack with tZERO's client onboarding and transaction services.\n\nTemple's technology includes a matching engine, request-for-quote module and central limit order book designed for tokenized National Market System securities and exchange-traded products. The company also describes settlement infrastructure supporting atomic delivery-versus-payment and repo transactions on Canton. tZERO Securities, an SEC-registered broker-dealer and FINRA/SIPC member, is expected to operate the dedicated venue. This is an infrastructure agreement, not a completed launch: implementation remains pending, and the companies said launch timing and product availability will be announced separately.",
   "sources": [
     {
-      "name": "www.tokenpost.com",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBvQnBleDE5Wm5tdWhlRVFqQzVJZDVTSl9Xck5wbnQ1TUx1SkxqcGxBYXhFamVVNjBtTGp6Rl83Qno3UUhHdnVYcUItNnRucXJBdWlIZDNJLXA?oc=5"
+      "name": "tZERO",
+      "url": "https://www.tzero.com/news/tzero-selected-by-temple-digital-group-as-infrastructure-provider-for-tokenized-securities"
     }
   ],
   "newsWatch": {
@@ -27,7 +28,45 @@
     "discoveredAt": "2026-10-24T13:07:16.966071+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-24T13:30:24Z",
+    "sources": [
+      {
+        "url": "https://www.tzero.com/news/tzero-selected-by-temple-digital-group-as-infrastructure-provider-for-tokenized-securities",
+        "publishedAt": "2026-10-22",
+        "checkedAt": "2026-10-24T13:30:24Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Temple engaged tZERO Securities as registered broker-dealer and ATS operator for its Canton-based tokenized securities platform.",
+        "sourceUrl": "https://www.tzero.com/news/tzero-selected-by-temple-digital-group-as-infrastructure-provider-for-tokenized-securities",
+        "anchor": "registered broker-dealer and alternative trading system"
+      },
+      {
+        "claim": "The operating infrastructure covered by the agreement includes client onboarding and transaction services.",
+        "sourceUrl": "https://www.tzero.com/news/tzero-selected-by-temple-digital-group-as-infrastructure-provider-for-tokenized-securities",
+        "anchor": "client onboarding and transaction services"
+      },
+      {
+        "claim": "Temple's stack includes matching, RFQ and order-book components for tokenized securities and exchange-traded products.",
+        "sourceUrl": "https://www.tzero.com/news/tzero-selected-by-temple-digital-group-as-infrastructure-provider-for-tokenized-securities",
+        "anchor": "matching engine, an RFQ module"
+      },
+      {
+        "claim": "Implementation remains pending and the companies have not yet announced launch timing or product availability.",
+        "sourceUrl": "https://www.tzero.com/news/tzero-selected-by-temple-digital-group-as-infrastructure-provider-for-tokenized-securities",
+        "anchor": "Implementation is pending"
+      }
+    ],
+    "contentSha256": "a6c755f49b6a9f6e8d68f6642fbed233b6e553f8808da86d315d18f2e13ea223"
   }
 }
