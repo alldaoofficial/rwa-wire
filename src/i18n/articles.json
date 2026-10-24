@@ -2216,5 +2216,59 @@
       ]
     },
     "sourceSha256": "3ff4fc1688ff65850caa951ac613846ece0f5f523ee1af771c7a43d3cdc6a16f"
+  },
+  "six-more-issuers-object-to-okxice-tokenized-stock-trading": {
+    "path": "/news/six-more-issuers-object-to-okxice-tokenized-stock-trading/",
+    "date": "2026-10-23",
+    "kind": "news",
+    "sources": [
+      [
+        "OKXICE — Public Notice dated October 23, 2026",
+        "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.23.pdf"
+      ]
+    ],
+    "de": {
+      "title": "Sechs weitere Emittenten widersprechen dem Handel tokenisierter Aktien auf OKXICE",
+      "description": "Die OKXICE-Mitteilung vom 23. Oktober ergänzt Arm, Wells Fargo, Moderna, Cisco, Intuit und Marvell und erhöht die offengelegte Zahl widersprechender Emittenten von 16 auf 22.",
+      "sections": [
+        [
+          "Sechs weitere Emittenten in der aktualisierten Mitteilung",
+          "OKXICE hat seine öffentliche Mitteilung am 23. Oktober aktualisiert und sechs weitere Emittenten benannt, die dem tokenisierten Handel ihrer Aktien auf dem geplanten Handelsplatz widersprochen haben. Arm Holdings, Wells Fargo, Moderna, Cisco Systems, Intuit und Marvell Technology kamen zu den 16 Emittenten aus der Fassung vom 19. Oktober hinzu. Damit steigt die offengelegte Gesamtzahl auf 22."
+        ],
+        [
+          "Widersprüche gelten nur für den geplanten OKXICE-Handelsplatz",
+          "Die Widersprüche betreffen tokenisierte Aktien, die von einem nicht verbundenen Dritten geschaffen und über OKXICE im Rahmen des befristeten Regelungsrahmens der SEC angeboten werden. Sie verhindern den Handel dieser Instrumente auf diesem Handelsplatz, verbieten jedoch weder vom Emittenten unterstützte Token noch den Handel auf einem anderen Handelsplatz mit gesonderter Mitteilung. OKXICE bleibt ein geplanter Handelsplatz und ist kein bestätigt aktiver Markt. Die Mitteilung beschreibt zugangsbeschränkte Uniswap-v4-Pools auf XLayer, die Überprüfung der Teilnehmer und eine Eins-zu-eins-Deckung der Drittanbieter-Token durch Aktien, nennt jedoch weder einen Starttermin noch Gründe für die einzelnen Widersprüche."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Otros seis emisores se oponen a la negociación de acciones tokenizadas en OKXICE",
+      "description": "El aviso de OKXICE del 23 de octubre añade a Arm, Wells Fargo, Moderna, Cisco, Intuit y Marvell, elevando de 16 a 22 el número de emisores que han presentado objeciones.",
+      "sections": [
+        [
+          "Seis emisores adicionales en el aviso actualizado",
+          "OKXICE actualizó su aviso público el 23 de octubre para identificar a otros seis emisores que se opusieron a la negociación tokenizada de sus acciones en el mercado previsto. Arm Holdings, Wells Fargo, Moderna, Cisco Systems, Intuit y Marvell Technology se sumaron a los 16 emisores incluidos en la versión del 19 de octubre, con lo que el total divulgado ascendió a 22."
+        ],
+        [
+          "Las objeciones se limitan al mercado previsto de OKXICE",
+          "Las objeciones afectan a acciones tokenizadas creadas por un tercero no afiliado y ofrecidas a través de OKXICE bajo el marco temporal de la SEC. Impiden que esos instrumentos se negocien en este mercado, pero no prohíben los tokens respaldados por el propio emisor ni la negociación en otro mercado que opere con un aviso distinto. OKXICE sigue siendo un mercado previsto, no un mercado cuya actividad esté confirmada. El aviso describe pools autorizados de Uniswap v4 en XLayer, controles de los participantes y respaldo uno a uno con acciones para los tokens de terceros, pero no indica una fecha de lanzamiento ni los motivos de cada objeción."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Six émetteurs supplémentaires s’opposent à la négociation d’actions tokenisées sur OKXICE",
+      "description": "L’avis d’OKXICE du 23 octobre ajoute Arm, Wells Fargo, Moderna, Cisco, Intuit et Marvell, portant de 16 à 22 le nombre déclaré d’émetteurs ayant formulé une objection.",
+      "sections": [
+        [
+          "Six émetteurs supplémentaires dans l’avis actualisé",
+          "OKXICE a mis à jour son avis public le 23 octobre afin d’identifier six émetteurs supplémentaires qui se sont opposés à la négociation tokenisée de leurs actions sur la future plateforme. Arm Holdings, Wells Fargo, Moderna, Cisco Systems, Intuit et Marvell Technology ont rejoint les 16 émetteurs figurant dans la version du 19 octobre, portant le total déclaré à 22."
+        ],
+        [
+          "Les objections se limitent à la future plateforme OKXICE",
+          "Les objections concernent des actions tokenisées créées par un tiers non affilié et proposées sur OKXICE dans le cadre temporaire de la SEC. Elles empêchent la négociation de ces instruments sur cette plateforme, mais n’interdisent ni les tokens soutenus par l’émetteur ni une autre plateforme fonctionnant sous un avis distinct. OKXICE reste une plateforme en projet et non un marché dont l’activité est confirmée. L’avis décrit des pools Uniswap v4 permissionnés sur XLayer, la vérification des participants et une couverture action pour action des tokens de tiers, mais ne précise ni date de lancement ni motif des objections individuelles."
+        ]
+      ]
+    },
+    "sourceSha256": "eacdfbc46b948518fd350074a78e2075d703b2a474be8da6744d047251a5e9c0"
   }
 }
