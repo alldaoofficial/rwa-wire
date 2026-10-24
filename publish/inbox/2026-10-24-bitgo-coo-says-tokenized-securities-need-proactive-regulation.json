@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-24T21:12:54Z",
+    "reason": "This is the same BitGo COO commentary derived from an X post that was already reviewed and rejected in the Regulatory Catch-Up lead. It adds no distinct filing, launch, approval, financing or material expansion."
   }
 }
