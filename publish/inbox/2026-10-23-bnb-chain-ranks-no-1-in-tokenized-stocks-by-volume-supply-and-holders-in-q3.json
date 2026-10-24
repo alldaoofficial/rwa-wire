@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-24T02:47:21Z",
-    "reason": "A fresh retry found only BNB Chain and Blockworks social summaries plus derivative reposts of the Q3 figures. The underlying Blockworks report and methodology remain unavailable as readable full text, so the ranking and metrics cannot be independently verified."
+    "reviewedAt": "2026-10-24T09:14:38Z",
+    "reason": "A second fresh retry found a readable crypto.news article and derivative summaries, but the underlying Blockworks Q3 report and methodology remain unavailable as readable full text. Social posts do not support independent verification of the cross-chain ranking, exclusions or metrics."
   }
 }
