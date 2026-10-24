@@ -2162,5 +2162,59 @@
       ]
     },
     "sourceSha256": "414f39c02469e815eb7532f46fb1cf255ab4e1d8b4f9353284c9bf97a2a68b3f"
+  },
+  "temple-tzero-tokenized-securities-ats": {
+    "path": "/institutions/temple-selects-tzero-to-operate-its-tokenized-securities-ats/",
+    "date": "2026-10-22",
+    "kind": "news",
+    "sources": [
+      [
+        "tZERO",
+        "https://www.tzero.com/news/tzero-selected-by-temple-digital-group-as-infrastructure-provider-for-tokenized-securities"
+      ]
+    ],
+    "de": {
+      "title": "Temple wählt tZERO als Betreiber seines ATS für tokenisierte Wertpapiere",
+      "description": "Temple Digital Group hat tZERO Securities als Broker-Dealer und ATS-Betreiber für eine geplante, auf Canton basierende Plattform für tokenisierte Wertpapiere verpflichtet; Umsetzung und Starttermin stehen noch aus.",
+      "sections": [
+        [
+          "tZERO soll die regulierte Betreiberrolle übernehmen",
+          "Temple Digital Group hat tZERO Securities damit beauftragt, für Temples geplante Plattform für tokenisierte Wertpapiere auf dem Canton Network die regulierte Broker-Dealer- und Alternative-Trading-System-Ebene zu betreiben. Temple will seine eigene Handelsinfrastruktur mit der Kundenaufnahme und den Transaktionsdienstleistungen von tZERO verbinden."
+        ],
+        [
+          "Handelstechnik und Abwicklung sind geplant, aber noch nicht gestartet",
+          "Temples Technologie umfasst eine Matching-Engine, ein Request-for-Quote-Modul und ein zentrales Limit-Orderbuch für tokenisierte Wertpapiere des National Market System sowie börsengehandelte Produkte. Das Unternehmen beschreibt außerdem eine Abwicklungsinfrastruktur auf Canton, die atomare Lieferung gegen Zahlung und Repo-Transaktionen unterstützen soll. tZERO Securities, ein bei der SEC registrierter Broker-Dealer sowie Mitglied von FINRA und SIPC, soll den dafür vorgesehenen Handelsplatz betreiben. Es handelt sich um eine Infrastrukturvereinbarung und nicht um einen abgeschlossenen Start: Die Umsetzung steht noch aus; Starttermin und Produktverfügbarkeit wollen die Unternehmen gesondert bekannt geben."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Temple elige a tZERO para operar su ATS de valores tokenizados",
+      "description": "Temple Digital Group ha contratado a tZERO Securities como bróker-dealer y operador del ATS de una plataforma prevista de valores tokenizados basada en Canton; la implementación y la fecha de lanzamiento siguen pendientes.",
+      "sections": [
+        [
+          "tZERO asumirá la función de operador regulado",
+          "Temple Digital Group ha contratado a tZERO Securities para operar la capa regulada de bróker-dealer y sistema alternativo de negociación de su plataforma prevista de valores tokenizados en Canton Network. Temple combinará su propia infraestructura de negociación con los servicios de incorporación de clientes y transacciones de tZERO."
+        ],
+        [
+          "Tecnología de negociación y liquidación prevista, pero aún sin lanzamiento",
+          "La tecnología de Temple incluye un motor de casación, un módulo de solicitud de cotización y un libro central de órdenes limitadas diseñados para valores tokenizados del National Market System y productos cotizados. La empresa también describe una infraestructura de liquidación en Canton capaz de admitir entrega contra pago atómica y operaciones de recompra. Se prevé que tZERO Securities, un bróker-dealer registrado ante la SEC y miembro de FINRA y SIPC, opere el mercado específico. Se trata de un acuerdo de infraestructura, no de un lanzamiento completado: la implementación sigue pendiente y las empresas indicaron que anunciarán por separado la fecha de lanzamiento y la disponibilidad de los productos."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Temple choisit tZERO pour exploiter son ATS de titres tokenisés",
+      "description": "Temple Digital Group a retenu tZERO Securities comme courtier-négociant et exploitant de l’ATS d’une future plateforme de titres tokenisés fondée sur Canton ; la mise en œuvre et la date de lancement restent en attente.",
+      "sections": [
+        [
+          "tZERO doit assurer le rôle d’opérateur réglementé",
+          "Temple Digital Group a retenu tZERO Securities pour exploiter la couche réglementée de courtier-négociant et de système alternatif de négociation de sa future plateforme de titres tokenisés sur Canton Network. Temple associera sa propre infrastructure de négociation aux services d’intégration des clients et de transaction de tZERO."
+        ],
+        [
+          "Technologies de négociation et de règlement prévues, mais pas encore lancées",
+          "La technologie de Temple comprend un moteur d’appariement, un module de demande de cotation et un carnet central d’ordres à cours limité conçus pour les titres tokenisés du National Market System et les produits négociés en bourse. L’entreprise décrit également une infrastructure de règlement sur Canton capable de prendre en charge la livraison atomique contre paiement et les opérations de pension. tZERO Securities, courtier-négociant enregistré auprès de la SEC et membre de la FINRA et de la SIPC, devrait exploiter la plateforme dédiée. Il s’agit d’un accord d’infrastructure et non d’un lancement achevé : la mise en œuvre reste en attente, et les entreprises ont indiqué que le calendrier de lancement et la disponibilité des produits seraient annoncés séparément."
+        ]
+      ]
+    },
+    "sourceSha256": "3ff4fc1688ff65850caa951ac613846ece0f5f523ee1af771c7a43d3cdc6a16f"
   }
 }
