@@ -34,7 +34,7 @@
         "status": "held",
         "method": "source-enrichment-v1",
         "reviewedBy": "RWA Wire Source Review",
-        "reviewedAt": "2026-10-23T23:10:16Z",
-        "reason": "Reuters reports six additional issuer objections from a regulatory document it reviewed, but the updated OKXICE notice is not publicly accessible and other coverage could not independently inspect it. Primary documentation is required before publishing this regulatory development."
+        "reviewedAt": "2026-10-24T06:18:49Z",
+        "reason": "Reuters' full report confirms the objection count rose from 16 to 22 and names Wells Fargo, Arm Holdings and Intuit, but the updated OKXICE notice remains inaccessible and the other three additions cannot be verified from primary documentation. The regulatory development remains held pending a readable official notice."
     }
 }
