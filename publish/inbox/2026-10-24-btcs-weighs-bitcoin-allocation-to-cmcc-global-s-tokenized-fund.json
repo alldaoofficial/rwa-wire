@@ -1,23 +1,25 @@
 {
-  "title": "BTCS Weighs Bitcoin Allocation to CMCC Global’s Tokenized Fund",
-  "description": "BTCS Weighs Bitcoin Allocation to CMCC Global’s Tokenized Fund",
-  "why_it_matters": "",
-  "pubDate": "2026-10-24",
-  "category": "news",
+  "title": "CMCC Global Opens Two Tokenized Fund Offerings on Bitfinex Securities",
+  "description": "CMCC Global has opened subscriptions for tokenized interests in its Crest and Liberty Bitcoin Accumulation funds through Bitfinex Securities in El Salvador.",
+  "why_it_matters": "The offerings put multi-manager digital-asset strategies into regulated token form, adding issuance, distribution and secondary-market infrastructure beyond tokenized stocks and cash-like funds.",
+  "pubDate": "2026-10-22",
+  "category": "institutions",
   "tags": [
     "Tokenization",
     "Institutions",
-    "News Watch"
+    "CMCC Global",
+    "Bitfinex Securities"
   ],
   "keyTakeaways": [
-    "BTCS Weighs Bitcoin Allocation to CMCC Global’s Tokenized Fund",
-    ""
+    "CMCC Global is tokenizing interests in its Crest and Liberty Bitcoin Accumulation funds using Tether's Hadron platform.",
+    "Subscriptions are open through Bitfinex Securities until October 30, 2026, subject to investor eligibility.",
+    "BTCS intends to anchor the Liberty offering with an undisclosed triple-digit Bitcoin allocation, but the investment is not reported as completed."
   ],
-  "body": "BTCS Weighs Bitcoin Allocation to CMCC Global’s Tokenized Fund",
+  "body": "CMCC Global announced on October 22 that subscriptions had opened for tokenized interests in two existing multi-manager funds: the U.S.-dollar-denominated Crest Fund and the Bitcoin-denominated Liberty Bitcoin Accumulation Fund. Tether's Hadron platform provides the tokenization infrastructure, while Bitfinex Securities handles the offering and planned secondary trading under its El Salvador framework.\n\nThe subscription period runs through October 30, 2026, for eligible investors. CMCC said each token represents the relevant participating fund interest on a one-for-one economic basis and remains subject to KYC and AML controls. Crest tokens are offered at US$10, while LBAF tokens are priced at 0.0001 BTC.\n\nBTCS S.A. has agreed to act as an anchor investor and intends to allocate an undisclosed triple-digit amount of Bitcoin to LBAF. That wording describes an intended allocation, not a completed transfer. CMCC says Crest targets returns above U.S. Treasury-bill yields, while LBAF targets net annualized returns of 8% to 12% measured in Bitcoin; these are investment objectives, not guaranteed outcomes.",
   "sources": [
     {
-      "name": "www.tokenpost.com",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9tRmU2dHlqQllDVFdEcXExa2sxY1JRRmVrVDlCY1h6aW8xTmFoTEpCNTRMLUZtOVVSZnRhdEdiMmc0MmNVcXFMazFJODI0Q3NOYVRMWVMxUmo?oc=5"
+      "name": "CMCC Global — tokenized funds announcement",
+      "url": "https://www.prnewswire.com/news-releases/cmcc-global-partners-with-tether-and-bitfinex-securities-to-launch-the-first-tokenised-fund-of-funds-under-el-salvadors-digital-asset-framework-302916813.html"
     }
   ],
   "newsWatch": {
@@ -27,7 +29,40 @@
     "discoveredAt": "2026-10-24T11:37:15.259088+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-24T12:41:36Z",
+    "sources": [
+      {
+        "url": "https://www.prnewswire.com/news-releases/cmcc-global-partners-with-tether-and-bitfinex-securities-to-launch-the-first-tokenised-fund-of-funds-under-el-salvadors-digital-asset-framework-302916813.html",
+        "publishedAt": "2026-10-22",
+        "checkedAt": "2026-10-24T12:41:36Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "CMCC Global announced tokenization of its Crest and Liberty Bitcoin Accumulation funds.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/cmcc-global-partners-with-tether-and-bitfinex-securities-to-launch-the-first-tokenised-fund-of-funds-under-el-salvadors-digital-asset-framework-302916813.html",
+        "anchor": "tokenisation of two of its flagship funds"
+      },
+      {
+        "claim": "Bitfinex Securities provides issuance, distribution and trading for the fund tokens.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/cmcc-global-partners-with-tether-and-bitfinex-securities-to-launch-the-first-tokenised-fund-of-funds-under-el-salvadors-digital-asset-framework-302916813.html",
+        "anchor": "distributed and traded through regulated venue Bitfinex Securities"
+      },
+      {
+        "claim": "The subscription period for both tokenized fund offerings had opened.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/cmcc-global-partners-with-tether-and-bitfinex-securities-to-launch-the-first-tokenised-fund-of-funds-under-el-salvadors-digital-asset-framework-302916813.html",
+        "anchor": "subscription period for both offerings is now open"
+      }
+    ],
+    "contentSha256": "28ea411127de3ec85ead3a1f1493fd7b535227f84d3151db3a36d1720ebe9c87"
   }
 }
