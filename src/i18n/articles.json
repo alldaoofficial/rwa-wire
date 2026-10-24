@@ -1438,5 +1438,42 @@
       ]
     },
     "sourceSha256": "b1f61be3c80a99eadde0d8ef5a33f5dd90d7854d75bdbfc0e0547c29489d888a"
+  },
+  "sec-fy2027-tokenization-exam-priorities": {
+    "path": "/institutions/sec-adds-tokenization-to-fiscal-2027-examination-priorities/",
+    "date": "2026-10-23",
+    "kind": "news",
+    "sources": [
+      ["U.S. Securities and Exchange Commission — FY 2027 Examination Priorities", "https://www.sec.gov/files/2027-exam-priorities.pdf"],
+      ["U.S. Securities and Exchange Commission — Press Release 2026-109", "https://www.sec.gov/newsroom/press-releases/2026-109-sec-announces-fiscal-year-2027-examination-priorities"]
+    ],
+    "de": {
+      "title": "SEC nimmt Tokenisierung in ihre Prüfungsprioritäten für das Geschäftsjahr 2027 auf",
+      "description": "Die Prüfungsabteilung der SEC wird Tokenisierung bei Clearingstellen und Unternehmen im Geltungsbereich von Regulation SCI im Rahmen ihres risikobasierten Programms für das Geschäftsjahr 2027 untersuchen.",
+      "sections": [
+        ["Risikobasiertes Programm für mehr als 34.000 Registrierte", "Die U.S. Securities and Exchange Commission nahm Tokenisierung am 23. Oktober in die Prüfungsprioritäten ihrer Division of Examinations für das Geschäftsjahr 2027 auf. Der jährliche Plan dient als Leitfaden für ein risikobasiertes Programm, das mehr als 34.000 bei der SEC Registrierte umfasst. Die Behörde betont jedoch, dass die veröffentlichten Prioritäten keine vollständige Liste aller möglichen Prüfungsthemen darstellen."],
+        ["Tokenisierung in zwei Bereichen der Marktinfrastruktur", "Bei Prüfungen von Clearingstellen wird Tokenisierung zusammen mit dem Betrieb, der Wertpapierleihe, dem Ausfallmanagement sowie Wiederherstellungs- und Abwicklungsplänen betrachtet. Prüfungen nach Regulation Systems Compliance and Integrity richten den Fokus außerdem auf tokenisierte Wertpapiere, verlängerte Handelszeiten, fortgeschrittene Rechentechnik und Risiken durch Technologieanbieter."],
+        ["Prüfungsschwerpunkt, keine neue Regel oder Durchsetzungsmaßnahme", "Das Dokument kündigt weder eine neue Vorschrift noch eine Durchsetzungsmaßnahme an. Es zeigt vielmehr, in welchen Bereichen die Prüfer erhöhte Risiken für Betrieb, Unternehmensführung und Anlegerschutz erwarten, wenn regulierte Unternehmen Infrastruktur für tokenisierte Wertpapiere einführen."]
+      ]
+    },
+    "es": {
+      "title": "La SEC incorpora la tokenización a sus prioridades de examen para el ejercicio fiscal 2027",
+      "description": "La División de Exámenes de la SEC analizará la tokenización en las agencias de compensación y las entidades sujetas a Regulation SCI como parte de su programa basado en riesgos para el ejercicio fiscal 2027.",
+      "sections": [
+        ["Un programa basado en riesgos para más de 34.000 entidades registradas", "La Comisión de Bolsa y Valores de Estados Unidos incorporó el 23 de octubre la tokenización a las prioridades de examen de su División de Exámenes para el ejercicio fiscal 2027. El plan anual orienta un programa basado en riesgos que abarca a más de 34.000 entidades registradas ante la SEC. Sin embargo, la autoridad advierte que las prioridades publicadas no constituyen una lista exhaustiva de los posibles temas de examen."],
+        ["La tokenización aparece en dos áreas de infraestructura de mercado", "Los exámenes de las agencias de compensación evaluarán la tokenización junto con las operaciones, el préstamo de valores, la gestión de incumplimientos y los planes de recuperación y liquidación. Las revisiones conforme a Regulation Systems Compliance and Integrity también se centrarán en los valores tokenizados, la ampliación de los horarios de negociación, la computación avanzada y el riesgo de los proveedores tecnológicos."],
+        ["Una prioridad supervisora, no una nueva norma ni una medida de ejecución", "El documento no anuncia una nueva norma ni una medida de ejecución. Señala los ámbitos en los que los examinadores prevén mayores riesgos operativos, de gobernanza y de protección de los inversores a medida que las empresas reguladas adoptan infraestructura para valores tokenizados."]
+      ]
+    },
+    "fr": {
+      "title": "La SEC inscrit la tokenisation parmi ses priorités d’examen pour l’exercice 2027",
+      "description": "La Division of Examinations de la SEC examinera la tokenisation au sein des agences de compensation et des entités soumises à Regulation SCI dans le cadre de son programme fondé sur les risques pour l’exercice 2027.",
+      "sections": [
+        ["Un programme fondé sur les risques couvrant plus de 34 000 entités enregistrées", "La Securities and Exchange Commission des États-Unis a inscrit, le 23 octobre, la tokenisation parmi les priorités d’examen de sa Division of Examinations pour l’exercice 2027. Le plan annuel oriente un programme fondé sur les risques couvrant plus de 34 000 entités enregistrées auprès de la SEC. L’autorité précise toutefois que les priorités publiées ne constituent pas une liste exhaustive des sujets susceptibles d’être examinés."],
+        ["La tokenisation apparaît dans deux domaines de l’infrastructure de marché", "Les examens des agences de compensation aborderont la tokenisation aux côtés des opérations, du prêt de titres, de la gestion des défaillances ainsi que des plans de redressement et de cessation d’activité. Les examens menés au titre de Regulation Systems Compliance and Integrity porteront également sur les titres tokenisés, l’allongement des horaires de négociation, l’informatique avancée et les risques liés aux fournisseurs de technologies."],
+        ["Une priorité de supervision, pas une nouvelle règle ni une mesure coercitive", "Le document n’annonce ni nouvelle règle ni mesure coercitive. Il indique les domaines dans lesquels les examinateurs anticipent des risques accrus pour les opérations, la gouvernance et la protection des investisseurs à mesure que les entreprises réglementées adoptent une infrastructure pour les titres tokenisés."]
+      ]
+    },
+    "sourceSha256": "22bdd86c229447fa5d3410e087562363e6302630b4ec7e40180c271226545f50"
   }
 }
