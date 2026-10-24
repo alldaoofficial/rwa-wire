@@ -1,23 +1,24 @@
 {
-    "title": "Wells Fargo, Intuit Join Growing Corporate Revolt Against Tokenized Stocks: Reuters",
-    "description": "Wells Fargo, Intuit Join Growing Corporate Revolt Against Tokenized Stocks: Reuters",
-    "why_it_matters": "",
+  "title": "Six More Issuers Object to OKXICE Tokenized-Stock Trading",
+  "description": "OKXICE's October 23 notice adds Arm, Wells Fargo, Moderna, Cisco, Intuit and Marvell, raising its disclosed issuer-objection count from 16 to 22.",
+  "why_it_matters": "The growing opt-out list further narrows OKXICE's potential launch inventory and shows issuers using the SEC framework's venue-specific objection right before trading begins.",
     "pubDate": "2026-10-23",
     "category": "news",
     "tags": [
-        "Tokenization",
-        "Institutions",
-        "News Watch"
+    "Tokenized Stocks",
+    "Regulation",
+    "OKXICE"
     ],
     "keyTakeaways": [
-        "Wells Fargo, Intuit Join Growing Corporate Revolt Against Tokenized Stocks: Reuters",
-        ""
+    "OKXICE's October 23 public notice names 22 objecting issuers, six more than its October 19 version.",
+    "The six additions are Arm, Wells Fargo, Moderna, Cisco, Intuit and Marvell.",
+    "The objections apply to unaffiliated third-party tokens on OKXICE; they are not blanket bans on tokenization elsewhere."
     ],
-    "body": "Wells Fargo, Intuit Join Growing Corporate Revolt Against Tokenized Stocks: Reuters",
+  "body": "OKXICE updated its public notice on October 23 to identify six additional issuers that objected to tokenized trading of their shares on the planned venue. Arm Holdings, Wells Fargo, Moderna, Cisco Systems, Intuit and Marvell Technology joined the 16 issuers listed in the October 19 version, taking the disclosed total to 22.\n\nThe objections concern tokenized shares created by an unaffiliated third party and offered through OKXICE under the SEC's temporary framework. They prevent those instruments from trading on this venue; they do not prohibit issuer-sponsored tokens or another venue operating under a separate notice. OKXICE remains a planned venue, not a confirmed live market. Its notice describes permissioned Uniswap v4 pools on XLayer, participant screening and one-for-one share backing for third-party tokens, but it gives no launch date or reasons for the individual objections.",
     "sources": [
         {
-            "name": "Cryptonews.net",
-            "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9RbmdjVDZRbndnZmhiWnRUX2UtTFNjZmtZTGw2eXk1YnYzc0NIV1NTcVFFWF9HbDZGbWJhcGN1QlhmUEtjT2pCc2VxYTZvLUY0TTBaSllZUGI?oc=5"
+      "name": "OKXICE — Public Notice dated October 23, 2026",
+      "url": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.23.pdf"
         }
     ],
     "newsWatch": {
@@ -27,14 +28,45 @@
         "discoveredAt": "2026-10-23T23:07:16.344606+00:00",
         "requiresSourceReview": true,
         "autoPublishEligible": false,
-        "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
         "discoveryMode": "watchlist-research"
     },
     "sourceReview": {
-        "status": "held",
+    "status": "verified",
         "method": "source-enrichment-v1",
         "reviewedBy": "RWA Wire Source Review",
-        "reviewedAt": "2026-10-24T12:42:51Z",
-        "reason": "Reuters' full report still confirms a rise from 16 to 22 objections and names Wells Fargo, Arm Holdings and Intuit, but current searches did not locate a readable updated OKXICE notice or another primary regulatory document identifying all six additions. The regulatory claim remains held pending primary documentation."
+    "reviewedAt": "2026-10-24T19:24:06Z",
+    "sources": [
+      {
+        "url": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.23.pdf",
+        "publishedAt": "2026-10-23",
+        "checkedAt": "2026-10-24T19:24:06Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "The updated OKXICE public notice is dated October 23, 2026.",
+        "sourceUrl": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.23.pdf",
+        "anchor": "Date: October 23, 2026"
+      },
+      {
+        "claim": "The notice lists 22 issuers that submitted objections.",
+        "sourceUrl": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.23.pdf",
+        "anchor": "Notice of Issuer Objection"
+      },
+      {
+        "claim": "The six additions include Wells Fargo, Arm, Moderna, Cisco, Intuit and Marvell.",
+        "sourceUrl": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.23.pdf",
+        "anchor": "Wells Fargo & Company"
+      },
+      {
+        "claim": "OKXICE describes permissioned Uniswap v4 liquidity pools deployed on XLayer.",
+        "sourceUrl": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.23.pdf",
+        "anchor": "Uniswap v4 liquidity pools"
+      }
+    ],
+    "contentSha256": "4c6ab0a11001133d0616a7f5e3dc0342720dd96b7dafab8a5f5dd1765a684d0d"
     }
 }
