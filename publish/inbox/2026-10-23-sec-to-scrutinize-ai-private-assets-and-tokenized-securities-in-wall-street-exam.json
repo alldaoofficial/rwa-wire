@@ -1,24 +1,20 @@
 {
-  "title": "SEC to scrutinize AI, private assets and tokenized securities in Wall Street exams",
-  "description": "SEC to scrutinize AI, private assets and tokenized securities in Wall Street exams",
-  "why_it_matters": "",
+  "title": "SEC Adds Tokenization to Fiscal 2027 Examination Priorities",
+  "description": "The SEC's Division of Examinations will scrutinize tokenization at clearing agencies and Regulation SCI entities as part of its risk-based fiscal 2027 program.",
+  "why_it_matters": "Tokenization is moving from a policy experiment into the SEC's recurring supervisory work, raising the compliance stakes for market infrastructure that records, clears or operates tokenized securities.",
   "pubDate": "2026-10-23",
-  "category": "news",
-  "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
-  ],
+  "category": "institutions",
+  "reviewCategory": "REGULATION",
+  "tags": ["SEC", "Tokenization", "Market Infrastructure", "Regulation"],
   "keyTakeaways": [
-    "SEC to scrutinize AI, private assets and tokenized securities in Wall Street exams",
-    ""
+    "The SEC named tokenization among fiscal 2027 risks associated with evolving market infrastructure.",
+    "Clearing-agency examinations will cover tokenization alongside operations, securities lending and default-risk controls.",
+    "Regulation SCI reviews will examine tokenized securities together with extended trading hours and other technology trends."
   ],
-  "body": "SEC to scrutinize AI, private assets and tokenized securities in Wall Street exams",
+  "body": "The U.S. Securities and Exchange Commission added tokenization to the Division of Examinations' fiscal 2027 priorities on October 23. The annual plan guides a risk-based program covering more than 34,000 registrants, but the SEC says it is not an exhaustive list of examination topics.\n\nTokenization appears in two market-infrastructure areas. Examinations of clearing agencies will review it alongside operations, securities lending, default management, recovery and wind-down. Reviews under Regulation Systems Compliance and Integrity will also focus on tokenized securities, extended trading hours, advanced computing and technology-vendor risk.\n\nThe document does not announce a new rule or enforcement action. It signals where examiners expect heightened operational, governance and investor-protection risks as regulated firms adopt tokenized securities infrastructure.",
   "sources": [
-    {
-      "name": "Mezha.net",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPZzVyRWFXNzJzUHpyXy1VN0ZQanBDajFNMGNkVVBra3YzSlJEUVZEMWk3MzFyYU9UZTV5UTdXWWtLaHJrN3dFaUs4Y0hta1hCZjVFSEx6N3hhYUxOTUVKMFZOSDhFVXktUnIyRVNhQzRkVWVuYnlpX2J5WTViMnhfeWtR?oc=5"
-    }
+    {"name": "U.S. Securities and Exchange Commission — FY 2027 Examination Priorities", "url": "https://www.sec.gov/files/2027-exam-priorities.pdf"},
+    {"name": "U.S. Securities and Exchange Commission — Press Release 2026-109", "url": "https://www.sec.gov/newsroom/press-releases/2026-109-sec-announces-fiscal-year-2027-examination-priorities"}
   ],
   "newsWatch": {
     "score": 9,
@@ -27,7 +23,25 @@
     "discoveredAt": "2026-10-24T02:37:14.575544+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-24T02:47:21Z",
+    "sources": [
+      {"url": "https://www.sec.gov/files/2027-exam-priorities.pdf", "publishedAt": "2026-10-23", "checkedAt": "2026-10-24T02:47:21Z", "kind": "primary", "access": "full-text"},
+      {"url": "https://www.sec.gov/newsroom/press-releases/2026-109-sec-announces-fiscal-year-2027-examination-priorities", "publishedAt": "2026-10-23", "checkedAt": "2026-10-24T02:47:21Z", "kind": "primary", "access": "full-text"}
+    ],
+    "facts": [
+      {"claim": "The examination program covers more than 34,000 SEC registrants across multiple regulated market-participant categories.", "sourceUrl": "https://www.sec.gov/newsroom/press-releases/2026-109-sec-announces-fiscal-year-2027-examination-priorities", "anchor": "more than 34,000 registrants"},
+      {"claim": "The SEC identified tokenization as a risk associated with evolving market infrastructure.", "sourceUrl": "https://www.sec.gov/newsroom/press-releases/2026-109-sec-announces-fiscal-year-2027-examination-priorities", "anchor": "including Treasury clearing reforms, tokenization"},
+      {"claim": "Clearing-agency examinations will include tokenization among several operational and risk-management focus areas.", "sourceUrl": "https://www.sec.gov/files/2027-exam-priorities.pdf", "anchor": "operations, and tokenization"},
+      {"claim": "Regulation SCI examinations will focus on tokenized securities and extended trading hours among emerging trends.", "sourceUrl": "https://www.sec.gov/files/2027-exam-priorities.pdf", "anchor": "tokenization of securities, extended trading hours"},
+      {"claim": "The SEC said its published fiscal 2027 priorities do not exhaust all matters examiners may review.", "sourceUrl": "https://www.sec.gov/newsroom/press-releases/2026-109-sec-announces-fiscal-year-2027-examination-priorities", "anchor": "not an exhaustive list"}
+    ],
+    "contentSha256": "888f947f7b21bf42c872a241a0987ac6f2a579f0d9e08d9c15090a6320f42f28"
   }
 }
