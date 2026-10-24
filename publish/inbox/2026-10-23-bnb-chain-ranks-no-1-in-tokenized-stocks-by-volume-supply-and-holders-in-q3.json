@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-24T16:44:23Z",
-    "reason": "The Blockworks quarterly-report index still does not expose a readable BNB Chain Q3 report, while its accessible analytics pages provide chart labels without the report methodology. Social posts and syndicated summaries are insufficient to verify the cross-chain ranking, exclusions and Q3 metrics."
+    "reviewedAt": "2026-10-24T23:30:36Z",
+    "reason": "The Blockworks Q3 material is still exposed only through an X article and search excerpts rather than a fully readable publisher report with methodology. The available social post and syndicated reports are insufficient to verify the cross-chain ranking, exclusions and quarter-end metrics."
   }
 }
