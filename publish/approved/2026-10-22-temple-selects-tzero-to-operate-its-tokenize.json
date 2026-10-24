@@ -1,0 +1,27 @@
+{
+  "id": "2026-10-22-temple-selects-tzero-to-operate-its-tokenize",
+  "title": "Temple Selects tZERO to Operate Its Tokenized Securities ATS",
+  "category": "INSTITUTIONS",
+  "why_it_matters": "The agreement separates Temple's trading technology from the regulated operator layer, illustrating how tokenization platforms can enter securities markets by integrating an existing broker-dealer and ATS instead of building those functions internally.",
+  "article_url": "https://therwawire.com/institutions/temple-selects-tzero-to-operate-its-tokenized-securities-ats/",
+  "image_url": "https://therwawire.com/images/news/temple-selects-tzero-to-operate-its-tokenized-securities-ats.svg",
+  "caption": "RWA WIRE // INSTITUTIONS\n\nTemple Selects tZERO to Operate Its Tokenized Securities ATS\n\nTemple Digital Group engaged tZERO Securities as broker-dealer and ATS operator for a planned Canton-based tokenized securities platform; implementation and launch timing remain pending.\n\nFull analysis →\nhttps://therwawire.com/institutions/temple-selects-tzero-to-operate-its-tokenized-securities-ats/",
+  "distribution": {
+    "telegram": "RWA WIRE // INSTITUTIONS\n\nTemple Selects tZERO to Operate Its Tokenized Securities ATS\n\nTemple Digital Group engaged tZERO Securities as broker-dealer and ATS operator for a planned Canton-based tokenized securities platform; implementation and launch timing remain pending.\n\nFull analysis →\nhttps://therwawire.com/institutions/temple-selects-tzero-to-operate-its-tokenized-securities-ats/",
+    "x": "Temple Selects tZERO to Operate Its Tokenized Securities ATS\n\nTemple Digital Group engaged tZERO Securities as broker-dealer and ATS operator for a planned Canton-based tokenized securities platform; implementation and launch timing remain pending.\n\nhttps://therwawire.com/institutions/temple-selects-tzero-to-operate-its-tokenized-securities-ats/",
+    "breaking": "RWA WIRE // INSTITUTIONS\n\nTemple Selects tZERO to Operate Its Tokenized Securities ATS\n\nhttps://therwawire.com/institutions/temple-selects-tzero-to-operate-its-tokenized-securities-ats/",
+    "summary": "Temple Digital Group engaged tZERO Securities as broker-dealer and ATS operator for a planned Canton-based tokenized securities platform; implementation and launch timing remain pending."
+  },
+  "sources": [
+    {
+      "name": "tZERO",
+      "url": "https://www.tzero.com/news/tzero-selected-by-temple-digital-group-as-infrastructure-provider-for-tokenized-securities"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-10-23-temple-names-tzero-as-its-tokenized-securities-trading-partner.json",
+    "contentSha256": "a6c755f49b6a9f6e8d68f6642fbed233b6e553f8808da86d315d18f2e13ea223",
+    "approvedAt": "2026-10-24T13:31:55.687916+00:00"
+  }
+}
