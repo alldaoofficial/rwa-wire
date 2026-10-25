@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-25T14:43:00Z",
+    "reason": "The item is an educational market-mechanics explainer built around a hypothetical closed-market trade, not a new launch, approval, financing, filing or material implementation event; the publisher also did not expose readable full article text for factual enrichment."
   }
 }
