@@ -1,8 +1,8 @@
 {
-  "title": "Solana Policy Institute Urges SEC to Tighten Blockchain Test for Tokenized Stocks",
-  "description": "Solana Policy Institute Urges SEC to Tighten Blockchain Test for Tokenized Stocks",
-  "why_it_matters": "",
-  "pubDate": "2026-10-24",
+  "title": "Solana Policy Institute Asks SEC for Control-Based Ledger Test",
+  "description": "The Solana Policy Institute asked the SEC to define permissionless ledgers for tokenized-stock venues through five control and access factors.",
+  "why_it_matters": "The requested guidance could affect which blockchain architectures tokenized securities venues can use under the SEC exemption, making network governance a compliance design issue rather than only a technical choice.",
+  "pubDate": "2026-10-22",
   "category": "news",
   "tags": [
     "Tokenization",
@@ -10,14 +10,15 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "Solana Policy Institute Urges SEC to Tighten Blockchain Test for Tokenized Stocks",
-    ""
+    "The Solana Policy Institute asked the SEC to use a functional, control-based definition of a public, permissionless ledger.",
+    "Its proposed five-factor test covers open-source code, transaction access, transparent rules and concentrated authority over validation, inclusion, finality or censorship.",
+    "The letter is a policy request, not SEC guidance or a change to the existing exemption."
   ],
-  "body": "Solana Policy Institute Urges SEC to Tighten Blockchain Test for Tokenized Stocks",
+  "body": "The Solana Policy Institute asked the U.S. Securities and Exchange Commission to clarify what qualifies as a public, permissionless distributed ledger for tokenized securities venues. Its October 22 comment supports a functional, control-based standard rather than a prescribed network architecture.\n\nThe group proposed five considerations: open-source code; open reading and transaction submission; execution under pre-established transparent rules; whether one person or controlled group has persistent authority over sequencing, validation, inclusion, finality or consensus changes; and whether anyone can unilaterally censor use or receive preferential permissions.\n\nThe letter also says temporary, disclosed incident-response measures should not automatically disqualify a network. These are recommendations from an industry policy group, not SEC guidance, an approval or a change to the exemption.",
   "sources": [
     {
-      "name": "www.tokenpost.com",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBldV9kZnd2Y2h2Yl9TYlhhYVU5VkxSeVMwSzJMd1hrQmJ5aFRLaGJzbUt2REJHekZJSFpMM0hxU3A0bEtqelMtTWQ1RFNaelcweHVYLUZPWnhJVk0?oc=5"
+      "name": "Solana Policy Institute — SEC comment letter",
+      "url": "https://www.sec.gov/comments/4-927/4927-1106380-3893468.pdf"
     }
   ],
   "newsWatch": {
@@ -27,14 +28,50 @@
     "discoveredAt": "2026-10-24T20:07:16.290789+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "verified",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-25T03:38:31Z",
-    "reason": "A second review found the full October 22 Better Markets filing, but not the Solana Policy Institute comment described by the single TokenPost report. Without that primary document, the reported network-governance claims remain unverified."
+    "reviewedAt": "2026-10-25T09:59:00Z",
+    "sources": [
+      {
+        "url": "https://www.sec.gov/comments/4-927/4927-1106380-3893468.pdf",
+        "publishedAt": "2026-10-22",
+        "checkedAt": "2026-10-25T09:59:00Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "The institute asked the SEC to define permissionless ledgers through a functional test focused on control.",
+        "sourceUrl": "https://www.sec.gov/comments/4-927/4927-1106380-3893468.pdf",
+        "anchor": "functional, control-based standard"
+      },
+      {
+        "claim": "The letter says the existing exemption does not define public, permissionless distributed ledger.",
+        "sourceUrl": "https://www.sec.gov/comments/4-927/4927-1106380-3893468.pdf",
+        "anchor": "does not define the term"
+      },
+      {
+        "claim": "The proposed factors include whether a ledger's protocol and underlying code are fully open source.",
+        "sourceUrl": "https://www.sec.gov/comments/4-927/4927-1106380-3893468.pdf",
+        "anchor": "fully open source"
+      },
+      {
+        "claim": "The proposed test asks whether transactions execute under pre-established and transparent protocol rules.",
+        "sourceUrl": "https://www.sec.gov/comments/4-927/4927-1106380-3893468.pdf",
+        "anchor": "pre-established, transparent protocol rules"
+      },
+      {
+        "claim": "The institute says disclosed incident-response powers should be temporary and limited to addressing the incident.",
+        "sourceUrl": "https://www.sec.gov/comments/4-927/4927-1106380-3893468.pdf",
+        "anchor": "temporary and limited"
+      }
+    ],
+    "contentSha256": "b0bff238ef0bf156139afc30168604fa45f922d6aaecc532d0c632b922ae2e70"
   }
 }
