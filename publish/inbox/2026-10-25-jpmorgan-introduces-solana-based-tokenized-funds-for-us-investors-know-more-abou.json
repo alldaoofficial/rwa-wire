@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-25T08:10:49Z",
+    "reason": "This is secondary coverage of J.P. Morgan Asset Management’s October 22, 2026 expansion of MONY and JLTXX to Solana, already verified from the issuer’s primary release and published by RWA Wire; it contains no separate launch, approval, financing or material expansion."
   }
 }
