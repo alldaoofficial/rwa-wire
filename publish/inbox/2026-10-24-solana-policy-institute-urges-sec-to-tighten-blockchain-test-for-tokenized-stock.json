@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-24T21:12:54Z",
-    "reason": "The single TokenPost report refers to an October 22 Solana Policy Institute comment, but the underlying comment letter could not be located and read in full on the SEC or institute sites. Secondary summaries are insufficient for the regulatory and technical claims."
+    "reviewedAt": "2026-10-25T03:38:31Z",
+    "reason": "A second review found the full October 22 Better Markets filing, but not the Solana Policy Institute comment described by the single TokenPost report. Without that primary document, the reported network-governance claims remain unverified."
   }
 }
