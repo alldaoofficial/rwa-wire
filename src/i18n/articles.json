@@ -2270,5 +2270,71 @@
       ]
     },
     "sourceSha256": "eacdfbc46b948518fd350074a78e2075d703b2a474be8da6744d047251a5e9c0"
+  },
+  "solana-policy-institute-control-based-ledger-test": {
+    "path": "/news/solana-policy-institute-asks-sec-for-control-based-ledger-test/",
+    "date": "2026-10-22",
+    "kind": "news",
+    "sources": [
+      [
+        "Solana Policy Institute — SEC comment letter",
+        "https://www.sec.gov/comments/4-927/4927-1106380-3893468.pdf"
+      ]
+    ],
+    "de": {
+      "title": "Solana Policy Institute fordert von der SEC einen kontrollbasierten Ledger-Test",
+      "description": "Das Solana Policy Institute hat die SEC aufgefordert, erlaubnisfreie Ledger für Handelsplätze tokenisierter Aktien anhand von fünf Kontroll- und Zugangsfaktoren zu definieren.",
+      "sections": [
+        [
+          "Funktionaler Standard statt vorgeschriebener Netzwerkarchitektur",
+          "Das Solana Policy Institute hat die US-Börsenaufsicht SEC aufgefordert, klarzustellen, was bei Handelsplätzen für tokenisierte Wertpapiere als öffentlicher, erlaubnisfreier Distributed Ledger gilt. Die Stellungnahme vom 22. Oktober unterstützt einen funktionalen, kontrollbasierten Standard statt einer vorgeschriebenen Netzwerkarchitektur."
+        ],
+        [
+          "Fünf Faktoren zu Zugang, Regeln und Kontrolle",
+          "Die Gruppe schlug fünf Prüfpunkte vor: quelloffener Code; offener Lesezugriff und die offene Einreichung von Transaktionen; die Ausführung nach vorab festgelegten, transparenten Regeln; die Frage, ob eine einzelne Person oder eine kontrollierte Gruppe dauerhaft über Reihenfolge, Validierung, Aufnahme, Finalität oder Änderungen des Konsensmechanismus bestimmen kann; sowie die Frage, ob jemand die Nutzung einseitig zensieren oder bevorzugte Berechtigungen erhalten kann."
+        ],
+        [
+          "Empfehlung einer Branchenorganisation, keine SEC-Leitlinie",
+          "In dem Schreiben heißt es außerdem, dass zeitlich begrenzte und offengelegte Maßnahmen zur Reaktion auf Vorfälle ein Netzwerk nicht automatisch disqualifizieren sollten. Es handelt sich um Empfehlungen einer Branchenorganisation und nicht um eine Leitlinie oder Genehmigung der SEC oder eine Änderung der bestehenden Ausnahmegenehmigung."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Solana Policy Institute pide a la SEC una prueba del ledger basada en el control",
+      "description": "Solana Policy Institute pidió a la SEC que defina los ledgers sin permisos para los mercados de acciones tokenizadas mediante cinco factores de control y acceso.",
+      "sections": [
+        [
+          "Un estándar funcional en lugar de una arquitectura de red prescrita",
+          "Solana Policy Institute pidió a la Comisión de Bolsa y Valores de Estados Unidos que aclare qué se considera un ledger distribuido público y sin permisos para los mercados de valores tokenizados. Su comentario del 22 de octubre respalda un estándar funcional basado en el control, en lugar de una arquitectura de red prescrita."
+        ],
+        [
+          "Cinco factores sobre acceso, reglas y control",
+          "El grupo propuso cinco aspectos: código de fuente abierta; lectura abierta y presentación abierta de transacciones; ejecución conforme a reglas transparentes establecidas de antemano; si una persona o un grupo controlado posee autoridad persistente sobre la secuenciación, validación, inclusión, firmeza o cambios en el consenso; y si alguien puede censurar unilateralmente el uso u obtener permisos preferentes."
+        ],
+        [
+          "Recomendación de un grupo del sector, no directrices de la SEC",
+          "La carta también afirma que las medidas temporales y divulgadas de respuesta a incidentes no deberían descalificar automáticamente a una red. Se trata de recomendaciones de un grupo de política del sector, no de directrices ni de una aprobación de la SEC, y tampoco modifican la exención existente."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Solana Policy Institute demande à la SEC un test du registre fondé sur le contrôle",
+      "description": "Solana Policy Institute a demandé à la SEC de définir les registres sans permission pour les plateformes d’actions tokenisées au moyen de cinq facteurs de contrôle et d’accès.",
+      "sections": [
+        [
+          "Une norme fonctionnelle plutôt qu’une architecture de réseau imposée",
+          "Solana Policy Institute a demandé à la Securities and Exchange Commission des États-Unis de préciser ce qui constitue un registre distribué public et sans permission pour les plateformes de titres tokenisés. Son commentaire du 22 octobre soutient une norme fonctionnelle fondée sur le contrôle plutôt qu’une architecture de réseau imposée."
+        ],
+        [
+          "Cinq facteurs relatifs à l’accès, aux règles et au contrôle",
+          "Le groupe a proposé cinq critères : un code source ouvert ; un accès ouvert à la lecture et à la soumission de transactions ; une exécution selon des règles transparentes établies à l’avance ; l’existence éventuelle d’une autorité persistante détenue par une personne ou un groupe contrôlé sur le séquençage, la validation, l’inclusion, la finalité ou les modifications du consensus ; et la possibilité pour quiconque de censurer unilatéralement l’utilisation ou de bénéficier d’autorisations préférentielles."
+        ],
+        [
+          "Une recommandation sectorielle, pas une position de la SEC",
+          "La lettre indique également que des mesures temporaires et divulguées de réponse aux incidents ne devraient pas automatiquement disqualifier un réseau. Il s’agit de recommandations formulées par un groupe de politique sectorielle, et non de lignes directrices ou d’une approbation de la SEC, ni d’une modification de l’exemption existante."
+        ]
+      ]
+    },
+    "sourceSha256": "f3c29b9815fa2dd6a4d3141903a561297dee98854b4f405a2cd4e9cab039d090"
   }
 }
