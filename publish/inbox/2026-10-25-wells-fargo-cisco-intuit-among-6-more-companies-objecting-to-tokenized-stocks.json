@@ -34,5 +34,12 @@
     "requiresSourceReview": true,
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-25T17:30:00Z",
+    "reason": "This is the same October 23 OKXICE notice update already covered by RWA Wire: Arm, Wells Fargo, Moderna, Cisco, Intuit and Marvell increased the disclosed issuer-objection count from 16 to 22."
   }
 }
