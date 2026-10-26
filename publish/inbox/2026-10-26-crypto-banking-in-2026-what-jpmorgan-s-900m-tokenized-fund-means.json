@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-26T03:08:10Z",
+    "reason": "This commentary repeats J.P. Morgan Asset Management's October 22 expansion of MONY and JLTXX to Solana, already covered and published as 'J.P. Morgan Adds Two Tokenized Money Market Funds to Solana'; it identifies no separate launch, approval, financing or material expansion."
   }
 }
