@@ -2336,5 +2336,71 @@
       ]
     },
     "sourceSha256": "f3c29b9815fa2dd6a4d3141903a561297dee98854b4f405a2cd4e9cab039d090"
+  },
+  "hong-kong-tokenized-public-funds-secondary-trading": {
+    "path": "/institutions/hong-kong-opens-24-7-secondary-trading-for-two-tokenized-public-funds/",
+    "date": "2026-10-26",
+    "kind": "news",
+    "sources": [
+      [
+        "Hong Kong SFC — secondary trading approval",
+        "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR174"
+      ]
+    ],
+    "de": {
+      "title": "Hongkong eröffnet 24/7-Sekundärhandel für zwei tokenisierte Publikumsfonds",
+      "description": "Hongkongs Wertpapieraufsicht hat den durchgehenden Sekundärhandel zweier tokenisierter Geldmarktfonds auf einer von der SFC lizenzierten Plattform für virtuelle Vermögenswerte genehmigt.",
+      "sections": [
+        [
+          "Durchgehender Handel für zwei bestehende Fonds",
+          "Hongkongs Securities and Futures Commission hat den Sekundärhandel zweier bestehender tokenisierter Publikums-Geldmarktfonds auf einer von der SFC lizenzierten Handelsplattform für virtuelle Vermögenswerte genehmigt. Der rund um die Uhr verfügbare Handel mit dem ChinaAMC HKD Digital Money Market Fund und dem ChinaAMC USD Digital Money Market Fund begann am 26. Oktober 2026."
+        ],
+        [
+          "Regulierter Pilot mit Preis-, Liquiditäts- und Offenlegungsvorgaben",
+          "Die Genehmigung setzt einen im April 2026 eingeführten Rahmen für den pilotweisen Sekundärhandel von SFC-zugelassenen tokenisierten Fonds um. Nach Angaben der Aufsicht betreffen die Schutzvorkehrungen den Betrieb des Handelskanals, eine faire Preisbildung, die Bereitstellung von Liquidität und die Offenlegung. Es handelt sich um einen gestarteten Sekundärmarkt und nicht lediglich um eine Genehmigung für einen künftigen Handelsbeginn."
+        ],
+        [
+          "Zunächst nur Geldmarktfonds; Erweiterung bleibt offen",
+          "Die erste Gruppe ist auf tokenisierte Geldmarktfonds begrenzt. Die SFC will den Handel beobachten und könnte den Kreis zugelassener Produkte später erweitern; diese Erweiterung ist noch nicht beschlossen. Die Aufsicht nannte außerdem mögliche künftige Verbindungen zu tokenisierten Einlagen aus Project Ensemble, kündigte eine solche Integration jedoch nicht als bereits betriebsbereit an."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Hong Kong abre la negociación secundaria 24/7 de dos fondos tokenizados de oferta pública",
+      "description": "El regulador de valores de Hong Kong aprobó la negociación secundaria ininterrumpida de dos fondos monetarios tokenizados en una plataforma de activos virtuales autorizada por la SFC.",
+      "sections": [
+        [
+          "Negociación ininterrumpida para dos fondos existentes",
+          "La Comisión de Valores y Futuros de Hong Kong aprobó la negociación secundaria de dos fondos monetarios tokenizados de oferta pública ya existentes en una plataforma de negociación de activos virtuales autorizada por la SFC. La negociación disponible las 24 horas del ChinaAMC HKD Digital Money Market Fund y del ChinaAMC USD Digital Money Market Fund comenzó el 26 de octubre de 2026."
+        ],
+        [
+          "Un piloto regulado con salvaguardas sobre precios, liquidez y divulgación",
+          "La aprobación aplica el marco introducido en abril de 2026 para probar la negociación secundaria de fondos tokenizados autorizados por la SFC. Según el regulador, las salvaguardas abarcan el funcionamiento del canal de negociación, la formación de precios justos, la provisión de liquidez y la divulgación de información. Se trata de un mercado secundario ya operativo, no solo de una autorización para iniciar la negociación en el futuro."
+        ],
+        [
+          "Alcance inicial limitado a fondos monetarios",
+          "El primer grupo se limita a fondos monetarios tokenizados. La SFC supervisará la negociación y podría considerar más adelante ampliar el conjunto de productos admisibles; esa ampliación sigue siendo una posibilidad futura. El regulador también señaló posibles conexiones futuras con depósitos tokenizados desarrollados en Project Ensemble, pero no anunció que esa integración estuviera operativa."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Hong Kong ouvre la négociation secondaire 24 h/24 de deux fonds tokenisés destinés au public",
+      "description": "Le régulateur hongkongais des valeurs mobilières a approuvé la négociation secondaire en continu de deux fonds monétaires tokenisés sur une plateforme d’actifs virtuels agréée par la SFC.",
+      "sections": [
+        [
+          "Une négociation en continu pour deux fonds existants",
+          "La Securities and Futures Commission de Hong Kong a approuvé la négociation secondaire de deux fonds monétaires tokenisés existants et autorisés à la distribution publique sur une plateforme de négociation d’actifs virtuels agréée par la SFC. La négociation accessible 24 heures sur 24 du ChinaAMC HKD Digital Money Market Fund et du ChinaAMC USD Digital Money Market Fund a débuté le 26 octobre 2026."
+        ],
+        [
+          "Un dispositif pilote encadrant les prix, la liquidité et l’information",
+          "L’approbation met en œuvre un cadre instauré en avril 2026 pour tester la négociation secondaire de fonds tokenisés autorisés par la SFC. Selon le régulateur, les garanties portent sur l’exploitation du canal de négociation, la formation de prix équitables, l’apport de liquidité et l’information publiée. Il s’agit d’un lancement effectif sur le marché secondaire, et non d’une simple autorisation en vue d’une négociation future."
+        ],
+        [
+          "Un périmètre initial limité aux fonds monétaires",
+          "La première série de produits est limitée aux fonds monétaires tokenisés. La SFC suivra les échanges et pourra envisager d’élargir ultérieurement la gamme des produits admissibles ; cet élargissement reste prospectif. Le régulateur a aussi évoqué de possibles liens futurs avec les dépôts tokenisés développés dans le cadre de Project Ensemble, sans annoncer que cette intégration était opérationnelle."
+        ]
+      ]
+    },
+    "sourceSha256": "e0c949e70892b5bf82e8721c5c5a8ff0565f8112adaf0292ae47aca2b38d2489"
   }
 }
