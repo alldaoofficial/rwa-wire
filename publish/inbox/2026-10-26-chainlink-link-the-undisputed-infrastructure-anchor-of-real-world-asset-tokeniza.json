@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-26T16:45:20Z",
+    "reason": "The resolved source is a promotional Binance Square community post making broad investment claims about LINK. It does not document a distinct launch, approval, financing or material product expansion from an accountable primary source."
   }
 }
