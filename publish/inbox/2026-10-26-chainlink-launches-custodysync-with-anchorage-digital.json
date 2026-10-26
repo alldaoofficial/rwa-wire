@@ -1,0 +1,79 @@
+{
+  "title": "Chainlink Launches CustodySync With Anchorage Digital",
+  "description": "Chainlink introduced CustodySync with Anchorage Digital as launch partner to coordinate custodied collateral with DeFi lending systems without moving client assets out of qualified custody.",
+  "why_it_matters": "The product targets a practical barrier to institutional DeFi lending: synchronizing collateral balances, pricing and loan events while a regulated custodian retains control of the assets.",
+  "pubDate": "2026-10-26",
+  "category": "institutions",
+  "tags": [
+    "Chainlink",
+    "Anchorage Digital",
+    "Institutional DeFi",
+    "Custody",
+    "Lending"
+  ],
+  "keyTakeaways": [
+    "Chainlink introduced CustodySync with Anchorage Digital Bank as the official launch partner.",
+    "The design keeps collateral under qualified custody while synchronizing balances, pricing and loan events with an onchain lending market.",
+    "Chainlink did not identify a specific lending market, live loan volume or completed institutional borrowing transaction in the announcement."
+  ],
+  "body": "Chainlink introduced CustodySync on October 26, 2026, with Anchorage Digital Bank as its official launch partner. The solution is designed to synchronize a qualified custodian's collateral-management system with an onchain lending market across deposits, borrowing, repayment and liquidation. Anchorage's Atlas Collateral Management product is intended to support the institutional tri-party structure and collateral-agent functions.\n\nClient collateral remains with the custodian, whose system serves as the source of truth for balances. Chainlink Proof of Reserve publishes custody balances onchain, while a transfer-restricted receipt token represents the custodied assets inside the lending integration. Chainlink Data Feeds and Data Streams are designed to supply matching prices to the onchain market and the custodian's offchain system.\n\nThe announcement names Anchorage as the first qualified custodian building with CustodySync. It does not name a specific lending protocol, disclose live loan volume or document a completed borrowing transaction. Chainlink also cautions that features may vary by custodian and that not every described feature may be available through Anchorage.",
+  "sources": [
+    {
+      "name": "Chainlink — CustodySync announcement",
+      "url": "https://chain.link/blog/introducing-chainlink-custodysync"
+    }
+  ],
+  "newsWatch": {
+    "score": 6,
+    "priority": "watchlist",
+    "sourceTrust": "primary",
+    "discoveredAt": "2026-10-26T17:19:35Z",
+    "requiresSourceReview": true,
+    "autoPublishEligible": false,
+    "contentStatus": "source-reviewed",
+    "discoveryMode": "agent-primary"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-26T17:19:35Z",
+    "sources": [
+      {
+        "url": "https://chain.link/blog/introducing-chainlink-custodysync",
+        "publishedAt": "2026-10-26",
+        "checkedAt": "2026-10-26T17:19:35Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Chainlink introduced CustodySync as a solution linking qualified custody with DeFi lending systems.",
+        "sourceUrl": "https://chain.link/blog/introducing-chainlink-custodysync",
+        "anchor": "CustodySync is a new solution"
+      },
+      {
+        "claim": "Anchorage Digital Bank is the product's official launch partner.",
+        "sourceUrl": "https://chain.link/blog/introducing-chainlink-custodysync",
+        "anchor": "official launch partner"
+      },
+      {
+        "claim": "The architecture keeps institutional collateral with the qualified custodian.",
+        "sourceUrl": "https://chain.link/blog/introducing-chainlink-custodysync",
+        "anchor": "Collateral stays with the custodian"
+      },
+      {
+        "claim": "The lending integration represents custodied assets with a restricted receipt token.",
+        "sourceUrl": "https://chain.link/blog/introducing-chainlink-custodysync",
+        "anchor": "transfer-restricted receipt token"
+      },
+      {
+        "claim": "Anchorage is the first qualified custodian building with CustodySync.",
+        "sourceUrl": "https://chain.link/blog/introducing-chainlink-custodysync",
+        "anchor": "first qualified custodian to build with CustodySync"
+      }
+    ],
+    "contentSha256": "92f45f15325b994a67dc57f19719adcd9c7a15f0c319681fa2cc0bc79378e9c2"
+  }
+}
