@@ -1,33 +1,74 @@
 {
-  "title": "Aviva Backs Tokenized Fund Share Class on XRP Ledger With £50M",
-  "description": "Aviva Backs Tokenized Fund Share Class on XRP Ledger With £50M",
-  "why_it_matters": "",
+  "title": "Aviva Launches £50M Tokenized Sterling Fund Share Class on XRPL",
+  "description": "Aviva Investors launched a tokenized share class of its £22 billion Sterling Liquidity Fund on the XRP Ledger and invested £50 million in the new class.",
+  "why_it_matters": "The launch extends a major European asset manager's tokenized money market offering from dollars into sterling while preserving the existing regulated fund structure.",
   "pubDate": "2026-10-26",
-  "category": "news",
+  "category": "institutions",
   "tags": [
     "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Money Market Funds",
+    "Aviva Investors",
+    "XRP Ledger",
+    "Institutional Adoption"
   ],
   "keyTakeaways": [
-    "Aviva Backs Tokenized Fund Share Class on XRP Ledger With £50M",
-    ""
+    "Aviva Investors launched a tokenized share class of its Sterling Liquidity Fund on the XRP Ledger.",
+    "Aviva invested £50 million in the new share class; the conventional fund has approximately £22 billion in assets under management.",
+    "The digital-twin structure represents holdings onchain while retaining the existing offchain fund, custody and investor protections."
   ],
-  "body": "Aviva Backs Tokenized Fund Share Class on XRP Ledger With £50M",
+  "body": "Aviva Investors and Ripple launched a tokenized share class of the Aviva Investors Sterling Liquidity Fund on the XRP Ledger on October 26, 2026. Aviva invested £50 million in the new class. The conventional Ireland-domiciled UCITS money market fund has approximately £22 billion in assets under management, but that full amount was not moved onchain.\n\nThe product uses a digital-twin model: fund holdings are represented through a digital access layer while the existing offchain fund structure remains in place. Eligible investors need digital wallets, and BNY continues to hold the fund assets as custodian. Komainu supports digital-asset custody and Licuido supplies tokenization infrastructure.\n\nThis is Aviva Investors' second tokenized fund share class after its USD Liquidity Fund launch in July 2026. Aviva and Ripple reported more than £86 million invested across the two tokenized offerings. The sterling fund retains the conventional product's investment objective, risk profile, daily liquidity and regulatory protections.",
   "sources": [
     {
-      "name": "Bitcoin Foundation",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNVVRsUkt4SGtvUTd0YkxZVmE0RnAybEZvakNmSUxuZkJCR1gyTHltdFhwUnVGZDdkWkVWZUVsVlNZN2dPN21vUGdkTTJBcVB1Vjd6OFBQWUJ5QkFTMTA2NDdUR2pxeWwzQmdfWnJQN1lvN3cyNF9Xb3lLQ3FWX1o4X1hTSHhjYkVRQXVBWTlmaHl4Z3J5NGxaaVRTNnplUjM2SVNYbFBoZTdvdw?oc=5"
+      "name": "Aviva Investors and Ripple — Sterling Liquidity Fund launch",
+      "url": "https://ripple.com/ripple-press/aviva-investors-expands-its-tokenised-offering-with-the-launch-of-a-sterling-liquidity-fund-tokenised-share-class/"
     }
   ],
   "newsWatch": {
     "score": 8,
     "priority": "watchlist",
-    "sourceTrust": "unknown",
+    "sourceTrust": "primary",
     "discoveredAt": "2026-10-26T14:07:20.056606+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-26T15:41:42Z",
+    "sources": [
+      {
+        "url": "https://ripple.com/ripple-press/aviva-investors-expands-its-tokenised-offering-with-the-launch-of-a-sterling-liquidity-fund-tokenised-share-class/",
+        "publishedAt": "2026-10-26",
+        "checkedAt": "2026-10-26T15:41:42Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Aviva Investors launched a tokenized share class for its Sterling Liquidity Fund.",
+        "sourceUrl": "https://ripple.com/ripple-press/aviva-investors-expands-its-tokenised-offering-with-the-launch-of-a-sterling-liquidity-fund-tokenised-share-class/",
+        "anchor": "launched a new tokenised share class"
+      },
+      {
+        "claim": "Aviva invested £50 million in the new tokenized share class.",
+        "sourceUrl": "https://ripple.com/ripple-press/aviva-investors-expands-its-tokenised-offering-with-the-launch-of-a-sterling-liquidity-fund-tokenised-share-class/",
+        "anchor": "with an investment of £50m"
+      },
+      {
+        "claim": "The tokenized Sterling Liquidity Fund is available on the XRP Ledger.",
+        "sourceUrl": "https://ripple.com/ripple-press/aviva-investors-expands-its-tokenised-offering-with-the-launch-of-a-sterling-liquidity-fund-tokenised-share-class/",
+        "anchor": "available on the XRP Ledger"
+      },
+      {
+        "claim": "The new share class is restricted to eligible investors using digital wallets.",
+        "sourceUrl": "https://ripple.com/ripple-press/aviva-investors-expands-its-tokenised-offering-with-the-launch-of-a-sterling-liquidity-fund-tokenised-share-class/",
+        "anchor": "available to eligible investors with digital wallets"
+      }
+    ],
+    "contentSha256": "2fc69353404bcd2f0cf3e640efb299d5c8d055c4b9af95114a23af944af47a94"
   }
 }
