@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-26T01:20:41Z",
+    "reason": "This repeats Securitize's October 8 launch of 12 share-backed U.S. stock tokens on Solana, already covered by the published article 'Securitize launches share-backed stock tokens with security entitlements'; it adds no separate launch, approval, financing or material expansion."
   }
 }
