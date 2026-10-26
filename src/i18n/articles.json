@@ -2468,5 +2468,71 @@
       ]
     },
     "sourceSha256": "9dfa154e468652d1c4d3f51127b38ec7aba269d85b66475634ef40ee883efd12"
+  },
+  "chainlink-custodysync-anchorage-digital": {
+    "path": "/institutions/chainlink-launches-custodysync-with-anchorage-digital/",
+    "date": "2026-10-26",
+    "kind": "news",
+    "sources": [
+      [
+        "Chainlink — CustodySync announcement",
+        "https://chain.link/blog/introducing-chainlink-custodysync"
+      ]
+    ],
+    "de": {
+      "title": "Chainlink startet CustodySync mit Anchorage Digital",
+      "description": "Chainlink hat CustodySync mit Anchorage Digital als Startpartner eingeführt, um verwahrte Sicherheiten mit DeFi-Kreditsystemen zu koordinieren, ohne Kundenvermögen aus qualifizierter Verwahrung zu übertragen.",
+      "sections": [
+        [
+          "Verbindung zwischen qualifizierter Verwahrung und Onchain-Krediten",
+          "Chainlink hat CustodySync am 26. Oktober 2026 mit Anchorage Digital Bank als offiziellem Startpartner vorgestellt. Die Lösung soll das Sicherheitenmanagement eines qualifizierten Verwahrers bei Einzahlungen, Kreditaufnahme, Rückzahlung und Liquidation mit einem Onchain-Kreditmarkt synchronisieren. Anchorage Atlas Collateral Management soll die institutionelle Drei-Parteien-Struktur und die Aufgaben des Sicherheitenagenten unterstützen."
+        ],
+        [
+          "Sicherheiten bleiben beim Verwahrer",
+          "Die Kundensicherheiten bleiben beim Verwahrer, dessen System als maßgebliche Quelle für die Bestände dient. Chainlink Proof of Reserve veröffentlicht die Verwahrbestände onchain, während ein übertragungsbeschränkter Empfangstoken die verwahrten Vermögenswerte innerhalb der Kreditintegration abbildet. Chainlink Data Feeds und Data Streams sollen dem Onchain-Markt und dem Offchain-System des Verwahrers übereinstimmende Preise liefern."
+        ],
+        [
+          "Noch kein benannter Kreditmarkt oder abgeschlossener Kredit",
+          "Anchorage ist laut Ankündigung der erste qualifizierte Verwahrer, der CustodySync integriert. Chainlink nennt weder ein bestimmtes Kreditprotokoll noch ein laufendes Kreditvolumen oder eine abgeschlossene institutionelle Kreditaufnahme. Das Unternehmen weist außerdem darauf hin, dass Funktionen je nach Verwahrer variieren können und möglicherweise nicht alle beschriebenen Funktionen über Anchorage verfügbar sind."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Chainlink lanza CustodySync con Anchorage Digital",
+      "description": "Chainlink presentó CustodySync con Anchorage Digital como socio de lanzamiento para coordinar garantías custodiadas con sistemas de préstamos DeFi sin sacar los activos de los clientes de la custodia cualificada.",
+      "sections": [
+        [
+          "Conexión entre la custodia cualificada y los préstamos onchain",
+          "Chainlink presentó CustodySync el 26 de octubre de 2026 con Anchorage Digital Bank como socio oficial de lanzamiento. La solución está diseñada para sincronizar el sistema de gestión de garantías de un custodio cualificado con un mercado de préstamos onchain durante los depósitos, la obtención y devolución de préstamos y las liquidaciones. Atlas Collateral Management de Anchorage está destinado a respaldar la estructura institucional tripartita y las funciones del agente de garantías."
+        ],
+        [
+          "Las garantías permanecen con el custodio",
+          "Las garantías de los clientes permanecen con el custodio, cuyo sistema actúa como fuente de referencia para los saldos. Chainlink Proof of Reserve publica los saldos custodiados onchain, mientras que un token de recibo con transferencias restringidas representa los activos custodiados dentro de la integración de préstamos. Chainlink Data Feeds y Data Streams están diseñados para proporcionar precios coincidentes al mercado onchain y al sistema offchain del custodio."
+        ],
+        [
+          "Sin mercado de préstamos identificado ni operación completada",
+          "El anuncio presenta a Anchorage como el primer custodio cualificado que desarrolla una integración con CustodySync. Chainlink no identifica un protocolo de préstamos concreto, no comunica un volumen de préstamos activo ni documenta una operación institucional de préstamo completada. La empresa también advierte que las funciones pueden variar según el custodio y que no todas las funciones descritas tienen por qué estar disponibles a través de Anchorage."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Chainlink lance CustodySync avec Anchorage Digital",
+      "description": "Chainlink a présenté CustodySync avec Anchorage Digital comme partenaire de lancement afin de coordonner des garanties conservées avec des systèmes de prêt DeFi sans sortir les actifs des clients d’une conservation qualifiée.",
+      "sections": [
+        [
+          "Un lien entre conservation qualifiée et prêts onchain",
+          "Chainlink a présenté CustodySync le 26 octobre 2026 avec Anchorage Digital Bank comme partenaire officiel de lancement. La solution est conçue pour synchroniser le système de gestion des garanties d’un dépositaire qualifié avec un marché de prêt onchain lors des dépôts, emprunts, remboursements et liquidations. Atlas Collateral Management d’Anchorage doit prendre en charge la structure institutionnelle tripartite et les fonctions d’agent des garanties."
+        ],
+        [
+          "Les garanties restent chez le dépositaire",
+          "Les garanties des clients restent chez le dépositaire, dont le système fait foi pour les soldes. Chainlink Proof of Reserve publie les soldes conservés onchain, tandis qu’un token de reçu soumis à des restrictions de transfert représente les actifs conservés au sein de l’intégration de prêt. Chainlink Data Feeds et Data Streams sont conçus pour fournir des prix concordants au marché onchain et au système offchain du dépositaire."
+        ],
+        [
+          "Aucun marché de prêt désigné ni emprunt finalisé",
+          "L’annonce présente Anchorage comme le premier dépositaire qualifié à développer une intégration avec CustodySync. Chainlink ne désigne aucun protocole de prêt précis, ne communique aucun volume de prêt en cours et ne documente aucune opération d’emprunt institutionnelle finalisée. L’entreprise précise également que les fonctionnalités peuvent varier selon le dépositaire et que toutes celles décrites ne seront pas nécessairement disponibles par l’intermédiaire d’Anchorage."
+        ]
+      ]
+    },
+    "sourceSha256": "2aef65cc830ef969f710c691b0596dba56ae893ce8551100b3ffc16c83fdb784"
   }
 }
