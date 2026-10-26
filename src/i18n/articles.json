@@ -2402,5 +2402,71 @@
       ]
     },
     "sourceSha256": "e0c949e70892b5bf82e8721c5c5a8ff0565f8112adaf0292ae47aca2b38d2489"
+  },
+  "aviva-tokenized-sterling-fund-share-class-xrpl": {
+    "path": "/institutions/aviva-launches-50m-tokenized-sterling-fund-share-class-on-xrpl/",
+    "date": "2026-10-26",
+    "kind": "news",
+    "sources": [
+      [
+        "Aviva Investors and Ripple — Sterling Liquidity Fund launch",
+        "https://ripple.com/ripple-press/aviva-investors-expands-its-tokenised-offering-with-the-launch-of-a-sterling-liquidity-fund-tokenised-share-class/"
+      ]
+    ],
+    "de": {
+      "title": "Aviva startet tokenisierte Sterling-Fondsanteilsklasse über £50 Mio. auf XRPL",
+      "description": "Aviva Investors hat eine tokenisierte Anteilsklasse seines Sterling Liquidity Fund mit einem Gesamtvolumen von rund £22 Mrd. auf dem XRP Ledger gestartet und £50 Mio. in die neue Anteilsklasse investiert.",
+      "sections": [
+        [
+          "Tokenisierte Sterling-Anteilsklasse mit £50 Mio. Startinvestment",
+          "Aviva Investors und Ripple haben am 26. Oktober 2026 eine tokenisierte Anteilsklasse des Aviva Investors Sterling Liquidity Fund auf dem XRP Ledger gestartet. Aviva investierte £50 Mio. in die neue Anteilsklasse. Der konventionelle, in Irland domizilierte UCITS-Geldmarktfonds verwaltet rund £22 Mrd.; dieser Gesamtbetrag wurde jedoch nicht vollständig onchain übertragen."
+        ],
+        [
+          "Digitaler Zwilling bei unveränderter Fonds- und Verwahrstruktur",
+          "Das Produkt verwendet ein Digital-Twin-Modell: Fondsbestände werden über eine digitale Zugangsschicht abgebildet, während die bestehende Offchain-Fondsstruktur erhalten bleibt. Zugelassene Anleger benötigen digitale Wallets. BNY hält die Fondsvermögenswerte weiterhin als Verwahrer, Komainu unterstützt die Verwahrung digitaler Vermögenswerte und Licuido stellt die Tokenisierungsinfrastruktur bereit."
+        ],
+        [
+          "Zweite tokenisierte Anteilsklasse von Aviva Investors",
+          "Nach dem Start des USD Liquidity Fund im Juli 2026 ist dies die zweite tokenisierte Fondsanteilsklasse von Aviva Investors. Aviva und Ripple meldeten über beide tokenisierten Angebote hinweg Investitionen von mehr als £86 Mio. Der Sterling-Fonds behält das Anlageziel, das Risikoprofil, die tägliche Liquidität und den regulatorischen Schutz des konventionellen Produkts bei."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Aviva lanza en XRPL una clase tokenizada de un fondo en libras con £50 millones",
+      "description": "Aviva Investors lanzó en XRP Ledger una clase tokenizada de su Sterling Liquidity Fund, que gestiona alrededor de £22.000 millones, e invirtió £50 millones en la nueva clase.",
+      "sections": [
+        [
+          "Una clase tokenizada en libras con una inversión inicial de £50 millones",
+          "Aviva Investors y Ripple lanzaron el 26 de octubre de 2026 una clase tokenizada del Aviva Investors Sterling Liquidity Fund en XRP Ledger. Aviva invirtió £50 millones en la nueva clase. El fondo monetario UCITS convencional, domiciliado en Irlanda, gestiona aproximadamente £22.000 millones, pero esa cantidad total no se trasladó íntegramente a la cadena."
+        ],
+        [
+          "Un gemelo digital que conserva la estructura del fondo y la custodia",
+          "El producto utiliza un modelo de gemelo digital: las participaciones del fondo se representan mediante una capa de acceso digital, mientras se mantiene la estructura existente del fondo fuera de la cadena. Los inversores admisibles necesitan monederos digitales. BNY continúa custodiando los activos del fondo, Komainu presta apoyo para la custodia de activos digitales y Licuido proporciona la infraestructura de tokenización."
+        ],
+        [
+          "Segunda clase tokenizada de Aviva Investors",
+          "Esta es la segunda clase tokenizada de un fondo de Aviva Investors, después del lanzamiento de su USD Liquidity Fund en julio de 2026. Aviva y Ripple informaron de más de £86 millones invertidos entre las dos ofertas tokenizadas. El fondo en libras conserva el objetivo de inversión, el perfil de riesgo, la liquidez diaria y las protecciones regulatorias del producto convencional."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Aviva lance sur XRPL une part tokenisée d’un fonds en livres dotée de 50 M£",
+      "description": "Aviva Investors a lancé sur XRP Ledger une part tokenisée de son Sterling Liquidity Fund, qui gère environ 22 Md£, et a investi 50 M£ dans cette nouvelle part.",
+      "sections": [
+        [
+          "Une part tokenisée en livres assortie d’un investissement initial de 50 M£",
+          "Aviva Investors et Ripple ont lancé le 26 octobre 2026 une part tokenisée de l’Aviva Investors Sterling Liquidity Fund sur XRP Ledger. Aviva a investi 50 M£ dans cette nouvelle part. Le fonds monétaire UCITS conventionnel, domicilié en Irlande, gère environ 22 Md£, mais l’intégralité de ce montant n’a pas été transférée onchain."
+        ],
+        [
+          "Un jumeau numérique qui maintient la structure du fonds et la conservation",
+          "Le produit repose sur un modèle de jumeau numérique : les participations du fonds sont représentées par une couche d’accès numérique, tandis que la structure existante du fonds hors chaîne reste en place. Les investisseurs éligibles doivent disposer de portefeuilles numériques. BNY continue de conserver les actifs du fonds, Komainu fournit un soutien à la conservation des actifs numériques et Licuido apporte l’infrastructure de tokenisation."
+        ],
+        [
+          "Deuxième part de fonds tokenisée d’Aviva Investors",
+          "Il s’agit de la deuxième part de fonds tokenisée d’Aviva Investors après le lancement de son USD Liquidity Fund en juillet 2026. Aviva et Ripple ont fait état de plus de 86 M£ investis dans les deux offres tokenisées. Le fonds en livres conserve l’objectif d’investissement, le profil de risque, la liquidité quotidienne et les protections réglementaires du produit conventionnel."
+        ]
+      ]
+    },
+    "sourceSha256": "9dfa154e468652d1c4d3f51127b38ec7aba269d85b66475634ef40ee883efd12"
   }
 }
