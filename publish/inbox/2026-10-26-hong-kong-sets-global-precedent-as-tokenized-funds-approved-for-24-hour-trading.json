@@ -1,33 +1,74 @@
 {
-  "title": "Hong Kong Sets Global Precedent as Tokenized Funds Approved for 24-Hour Trading on Licensed Platforms",
-  "description": "Hong Kong Sets Global Precedent as Tokenized Funds Approved for 24-Hour Trading on Licensed Platforms",
-  "why_it_matters": "",
+  "title": "Hong Kong Opens 24/7 Secondary Trading for Two Tokenized Public Funds",
+  "description": "Hong Kong's securities regulator approved around-the-clock secondary trading of two ChinaAMC tokenized money market funds on an SFC-licensed virtual asset platform.",
+  "why_it_matters": "The approval moves regulated tokenized funds beyond issuance into continuous secondary-market trading, testing pricing, liquidity and investor safeguards on licensed infrastructure.",
   "pubDate": "2026-10-26",
-  "category": "news",
+  "category": "institutions",
   "tags": [
     "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Hong Kong",
+    "Money Market Funds",
+    "Regulation",
+    "SFC"
   ],
   "keyTakeaways": [
-    "Hong Kong Sets Global Precedent as Tokenized Funds Approved for 24-Hour Trading on Licensed Platforms",
-    ""
+    "The SFC approved around-the-clock secondary trading of two existing tokenized public money market funds on a licensed virtual asset trading platform.",
+    "Trading began on October 26 for the ChinaAMC HKD Digital Money Market Fund and ChinaAMC USD Digital Money Market Fund.",
+    "The pilot operates under an April 2026 framework covering fair pricing, liquidity provision, trading-channel operation and disclosure."
   ],
-  "body": "Hong Kong Sets Global Precedent as Tokenized Funds Approved for 24-Hour Trading on Licensed Platforms",
+  "body": "Hong Kong's Securities and Futures Commission approved secondary trading of two existing tokenized public money market funds on an SFC-licensed virtual asset trading platform. Around-the-clock trading began on October 26, 2026, for the ChinaAMC HKD Digital Money Market Fund and ChinaAMC USD Digital Money Market Fund.\n\nThe approval implements a framework introduced in April 2026 for piloting secondary trading of SFC-authorized tokenized funds. The regulator says the safeguards cover operation of the trading channel, fair pricing, liquidity provision and disclosure. This is a live secondary-market launch, not merely an authorization for future trading.\n\nThe first batch is limited to tokenized money market funds. The SFC said it will monitor trading and may consider expanding the eligible product scope later; that expansion remains prospective. The regulator also identified potential future links with tokenized deposits developed under Project Ensemble, but did not announce that integration as operational.",
   "sources": [
     {
-      "name": "BigGo Finance",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE0waEpYQWpnRkVlVWY1alBHNDRRNUVoOG9qcF9GbkpUTTNCVG9jb1J6Z0VmS1pvek50eVhyaW04M2tLc3k4RHdxcGhrS1lWbHU4TXBvamNjOGx2SnEwWTZUNTNIQ2lFLUhvZDFnclU2eDhOVFV1V0E?oc=5"
+      "name": "Hong Kong SFC — secondary trading approval",
+      "url": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR174"
     }
   ],
   "newsWatch": {
     "score": 8,
     "priority": "watchlist",
-    "sourceTrust": "unknown",
+    "sourceTrust": "primary",
     "discoveredAt": "2026-10-26T05:37:13.337279+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-26T06:41:45Z",
+    "sources": [
+      {
+        "url": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR174",
+        "publishedAt": "2026-10-26",
+        "checkedAt": "2026-10-26T06:41:45Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "The SFC approved secondary trading of tokenized public funds on a licensed virtual asset trading platform.",
+        "sourceUrl": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR174",
+        "anchor": "approved the world’s first secondary trading"
+      },
+      {
+        "claim": "Around-the-clock secondary trading of the two funds began on October 26, 2026.",
+        "sourceUrl": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR174",
+        "anchor": "available around-the-clock, began today"
+      },
+      {
+        "claim": "The first approved products include the ChinaAMC HKD Digital Money Market Fund.",
+        "sourceUrl": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR174",
+        "anchor": "ChinaAMC HKD Digital Money Market Fund"
+      },
+      {
+        "claim": "The regulatory safeguards cover pricing, liquidity provision and investor-facing disclosure.",
+        "sourceUrl": "https://apps.sfc.hk/edistributionWeb/gateway/EN/news-and-announcements/news/doc?refNo=26PR174",
+        "anchor": "fair pricing, liquidity provision and disclosure"
+      }
+    ],
+    "contentSha256": "566b2580381fa8fc54f7aca4ed53e6cbfc29bb16b4236a4f452ff50aa61f7609"
   }
 }
