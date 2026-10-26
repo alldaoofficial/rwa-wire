@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-26T13:50:00Z",
+    "reason": "The underlying event is OKXICE's October 23 notice raising the disclosed issuer-objection count to 22. It is already verified and published as 'Six More Issuers Object to OKXICE Tokenized-Stock Trading'; this later headline adds no separate objection, approval, launch, financing or material expansion."
   }
 }
