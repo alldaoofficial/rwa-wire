@@ -2674,5 +2674,79 @@
       ]
     },
     "sourceSha256": "589401787adfaa556c0310cd0a2433ba65f12d0f9a9ed81bc29ffe8fe93c620f"
+  },
+  "bstocks-moves-ahead-of-ondo-tokenized-stock-value": {
+    "path": "/news/bstocks-moves-ahead-of-ondo-tokenized-stock-value/",
+    "date": "2026-10-26",
+    "kind": "news",
+    "sources": [
+      [
+        "RWA.xyz — Tokenized Stocks league table",
+        "https://app.rwa.xyz/stocks"
+      ],
+      [
+        "RWA.xyz — bStocks platform profile",
+        "https://app.rwa.xyz/platforms/bstocks"
+      ],
+      [
+        "Coinfomania — Binance’s Tokenized Stocks Surpass Ondo’s, ARK Invest",
+        "https://coinfomania.com/binances-tokenized-stocks-surpass-ondos-ark-invest/"
+      ]
+    ],
+    "de": {
+      "title": "bStocks überholt Ondo beim Wert tokenisierter Aktien auf RWA.xyz",
+      "description": "RWA.xyz führte bStocks am 27. Oktober mit einem Wert von 1,3 Mrd. US-Dollar vor Ondo mit 914,1 Mio. US-Dollar auf Platz eins der Plattformen für tokenisierte Aktien.",
+      "sections": [
+        [
+          "bStocks führt die Rangliste nach Wert an",
+          "Coinfomania berichtete am 26. Oktober, dass ein Repost von ARK Invest auf den Vorsprung von bStocks gegenüber Ondo hingewiesen hatte. Eine am 27. Oktober geprüfte aktuelle Marktübersicht von RWA.xyz zeigte bStocks unabhängig davon mit einem Wert verteilter tokenisierter Aktien von 1,3 Mrd. US-Dollar an der Spitze der Rangliste, verglichen mit 914,1 Mio. US-Dollar für Ondo."
+        ],
+        [
+          "Höherer Wert trotz weniger Produkte",
+          "Die Rangfolge misst den Wert tokenisierter Aktien und nicht die Zahl der verfügbaren Produkte. RWA.xyz zählte in derselben Tabelle 99 bStocks-Produkte und 408 Ondo-Produkte. Das separate bStocks-Profil wies zum 27. Oktober einen Wert verteilter Vermögenswerte von 1,33 Mrd. US-Dollar, 1.580.086 Halter und ein monatliches Transfervolumen von 9,37 Mrd. US-Dollar aus."
+        ],
+        [
+          "Zertifikate statt direkter Aktienbeteiligungen",
+          "RWA.xyz beschreibt bStocks als Zertifikate, die von BTech Holdings Limited, einem Unternehmen der Binance-Gruppe, ausgegeben werden und Beteiligungen an den vom Emittenten gehaltenen zugrunde liegenden Wertpapieren abbilden. Die Momentaufnahme dokumentiert eine aktuelle Veränderung der Rangfolge; sie belegt weder, dass bStocks den Vorsprung behalten wird, noch dass die Produkte direktes Eigentum an den Aktien der zugrunde liegenden Unternehmen vermitteln."
+        ]
+      ]
+    },
+    "es": {
+      "title": "bStocks supera a Ondo por valor de acciones tokenizadas en RWA.xyz",
+      "description": "RWA.xyz situó a bStocks el 27 de octubre en el primer puesto entre las plataformas de acciones tokenizadas, con un valor de 1.300 millones de dólares frente a los 914,1 millones de Ondo.",
+      "sections": [
+        [
+          "bStocks encabeza la clasificación por valor",
+          "Coinfomania informó el 26 de octubre de que una publicación compartida por ARK Invest había destacado que bStocks adelantó a Ondo. Una instantánea actual del mercado de RWA.xyz, revisada el 27 de octubre, mostró de forma independiente a bStocks en el primer puesto de su clasificación de acciones tokenizadas distribuidas, con un valor de 1.300 millones de dólares, frente a los 914,1 millones de Ondo."
+        ],
+        [
+          "Más valor pese a tener menos productos",
+          "La clasificación mide el valor de las acciones tokenizadas, no el número de productos disponibles. RWA.xyz contabilizó 99 productos de bStocks y 408 de Ondo en la misma tabla. El perfil separado de bStocks indicó al 27 de octubre un valor de activos distribuidos de 1.330 millones de dólares, 1.580.086 titulares y un volumen mensual de transferencias de 9.370 millones de dólares."
+        ],
+        [
+          "Certificados, no propiedad directa de las acciones",
+          "RWA.xyz describe bStocks como certificados emitidos por BTech Holdings Limited, una filial del grupo Binance, que representan intereses en los valores subyacentes mantenidos por el emisor. La instantánea documenta un cambio actual en la clasificación; no demuestra que bStocks vaya a conservar el primer puesto ni que los productos otorguen la propiedad directa de las acciones de las empresas subyacentes."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "bStocks devance Ondo par la valeur des actions tokenisées sur RWA.xyz",
+      "description": "RWA.xyz a classé bStocks au premier rang des plateformes d’actions tokenisées le 27 octobre, avec une valeur de 1,3 Md$ contre 914,1 M$ pour Ondo.",
+      "sections": [
+        [
+          "bStocks prend la tête du classement en valeur",
+          "Coinfomania a rapporté le 26 octobre qu’une publication repartagée par ARK Invest avait mis en avant le passage de bStocks devant Ondo. Une vue instantanée du marché de RWA.xyz consultée le 27 octobre a indépendamment placé bStocks en tête de son classement des actions tokenisées distribuées, avec une valeur de 1,3 Md$, contre 914,1 M$ pour Ondo."
+        ],
+        [
+          "Une valeur supérieure malgré moins de produits",
+          "Le classement mesure la valeur des actions tokenisées et non le nombre de produits disponibles. RWA.xyz recensait dans le même tableau 99 produits bStocks et 408 produits Ondo. Le profil distinct de bStocks affichait au 27 octobre une valeur d’actifs distribués de 1,33 Md$, 1 580 086 détenteurs et un volume mensuel de transferts de 9,37 Md$."
+        ],
+        [
+          "Des certificats, pas une détention directe des actions",
+          "RWA.xyz décrit les bStocks comme des certificats émis par BTech Holdings Limited, une société affiliée au groupe Binance, représentant des intérêts dans les titres sous-jacents détenus par l’émetteur. Cette vue instantanée atteste d’un changement actuel dans le classement ; elle n’établit ni que bStocks conservera la première place, ni que les produits confèrent une propriété directe des actions des sociétés sous-jacentes."
+        ]
+      ]
+    },
+    "sourceSha256": "fb7f403b06452a8a7b036ee5b1b2454a3b0165f003a6d812245c8d4fbd2fb5a4"
   }
 }
