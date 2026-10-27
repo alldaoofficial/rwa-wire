@@ -2608,5 +2608,71 @@
       ]
     },
     "sourceSha256": "d895d64c7a00497aebcea321f7684c9304afb7ae9c3248dfe955909898301b3c"
+  },
+  "blackrock-sbi-startale-tokenized-mmfs-jpysc-mou": {
+    "path": "/institutions/blackrock-sbi-startale-tokenized-mmfs-jpysc-mou/",
+    "date": "2026-10-27",
+    "kind": "news",
+    "sources": [
+      [
+        "SBI Holdings — Official MoU announcement",
+        "https://www.sbigroup.co.jp/english/news/pdf/2026/1027_a_en.pdf"
+      ]
+    ],
+    "de": {
+      "title": "BlackRock, SBI und Startale unterzeichnen Absichtserklärung zu tokenisierten Geldmarktfonds und JPYSC",
+      "description": "BlackRock, SBI Holdings und Startale haben eine Absichtserklärung unterzeichnet, um zu prüfen, wie tokenisierte Geldmarktfonds mit dem auf Yen lautenden Stablecoin JPYSC verbunden werden könnten.",
+      "sections": [
+        [
+          "Gemeinsame Prüfung eines digitalen Finanzökosystems",
+          "BlackRock Financial Management und BlackRock Japan haben am 27. Oktober mit SBI Holdings und Startale eine Absichtserklärung unterzeichnet. Die Parteien wollen ein Ökosystem für digitale Vermögenswerte untersuchen, das tokenisierte Geldmarktfonds mit JPYSC verbinden könnte, einem auf Yen lautenden, als Trust strukturierten Stablecoin."
+        ],
+        [
+          "Technik, Geschäftsmodelle und Regulierung",
+          "Die Arbeiten gliedern sich in drei Bereiche: technische Anforderungen und Infrastruktur, mögliche Geschäfts- und Vertriebsmodelle sowie regulatorische Fragen und Marktentwicklung. Die Gruppe beabsichtigt außerdem, Finanzinstitute, Unternehmen und weitere Interessengruppen in Japan und auf internationaler Ebene einzubeziehen."
+        ],
+        [
+          "Erkundungsvereinbarung, keine Produkteinführung",
+          "Die Ankündigung beschreibt eine Erkundungsvereinbarung und keinen Produktstart. Sie nennt weder einen bestimmten Fonds noch eine Blockchain-Integration, ein kommerzielles Produkt oder einen Zeitplan für die Bereitstellung. Unmittelbar bedeutet die Vereinbarung, dass BlackRock gemeinsam mit SBI und Startale prüft, wie tokenisierte Fondsanteile und reguliertes digitales Geld in Japans Onchain-Finanzinfrastruktur zusammenspielen könnten."
+        ]
+      ]
+    },
+    "es": {
+      "title": "BlackRock, SBI y Startale firman un memorando sobre fondos monetarios tokenizados y JPYSC",
+      "description": "BlackRock, SBI Holdings y Startale firmaron un memorando para estudiar cómo podrían conectarse los fondos monetarios tokenizados con JPYSC, una stablecoin denominada en yenes.",
+      "sections": [
+        [
+          "Estudio conjunto de un ecosistema financiero digital",
+          "BlackRock Financial Management y BlackRock Japan firmaron el 27 de octubre un memorando de entendimiento con SBI Holdings y Startale. Las partes explorarán un ecosistema de activos digitales que podría conectar fondos monetarios tokenizados con JPYSC, una stablecoin denominada en yenes y estructurada como un trust."
+        ],
+        [
+          "Tecnología, modelos de negocio y regulación",
+          "El trabajo se organiza en tres ámbitos: requisitos técnicos e infraestructura; posibles modelos de negocio y distribución; y consideraciones regulatorias y desarrollo del mercado. El grupo también pretende colaborar con instituciones financieras, empresas y otras partes interesadas de Japón y de otros países."
+        ],
+        [
+          "Un acuerdo exploratorio, no un lanzamiento",
+          "El anuncio describe un acuerdo exploratorio, no el lanzamiento de un producto. No identifica ningún fondo concreto, integración con una blockchain, producto comercial ni calendario de implementación. Su importancia inmediata reside en que BlackRock se une a SBI y Startale para evaluar cómo podrían interactuar las participaciones tokenizadas de fondos y el dinero digital regulado en la infraestructura financiera onchain de Japón."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "BlackRock, SBI et Startale signent un protocole d’accord sur les fonds monétaires tokenisés et JPYSC",
+      "description": "BlackRock, SBI Holdings et Startale ont signé un protocole d’accord afin d’étudier comment des fonds monétaires tokenisés pourraient être reliés à JPYSC, un stablecoin libellé en yens.",
+      "sections": [
+        [
+          "Étude conjointe d’un écosystème financier numérique",
+          "BlackRock Financial Management et BlackRock Japan ont signé le 27 octobre un protocole d’accord avec SBI Holdings et Startale. Les parties étudieront un écosystème d’actifs numériques qui pourrait relier des fonds monétaires tokenisés à JPYSC, un stablecoin libellé en yens et structuré sous forme de trust."
+        ],
+        [
+          "Technologie, modèles économiques et réglementation",
+          "Les travaux s’articulent autour de trois axes : les exigences techniques et l’infrastructure ; les modèles économiques et les modes de distribution possibles ; ainsi que les considérations réglementaires et le développement du marché. Le groupe entend également associer des institutions financières, des entreprises et d’autres parties prenantes au Japon et à l’international."
+        ],
+        [
+          "Un accord exploratoire, pas un lancement",
+          "L’annonce porte sur un accord exploratoire et non sur le lancement d’un produit. Elle ne désigne aucun fonds précis, aucune intégration blockchain, aucun produit commercial et aucun calendrier de déploiement. À ce stade, l’accord signifie que BlackRock rejoint SBI et Startale pour évaluer comment des parts de fonds tokenisées et de la monnaie numérique réglementée pourraient interagir au sein de l’infrastructure financière onchain du Japon."
+        ]
+      ]
+    },
+    "sourceSha256": "589401787adfaa556c0310cd0a2433ba65f12d0f9a9ed81bc29ffe8fe93c620f"
   }
 }
