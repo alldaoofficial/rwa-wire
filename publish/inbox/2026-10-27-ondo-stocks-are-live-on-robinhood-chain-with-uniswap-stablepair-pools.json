@@ -1,0 +1,32 @@
+{
+  "title": "Ondo Stocks Are Live on Robinhood Chain With Uniswap StablePair Pools",
+  "description": "",
+  "body": "",
+  "why_it_matters": "",
+  "pubDate": "2026-10-27",
+  "category": "news",
+  "tags": [
+    "RWA",
+    "Tokenization",
+    "Primary Source"
+  ],
+  "keyTakeaways": [],
+  "sources": [
+    {
+      "name": "Ondo Finance",
+      "url": "https://ondo.finance/blog/ondo-stocks-live-on-robinhood-chain-and-uniswap"
+    }
+  ],
+  "newsWatch": {
+    "score": 6,
+    "priority": "important",
+    "sourceTrust": "primary",
+    "discoveredAt": "2026-10-27T15:37:12.107515+00:00",
+    "sourcePublishedAt": "2026-10-27T12:54:00+00:00",
+    "discoveryMode": "direct-primary",
+    "requiresSourceReview": true,
+    "relatedCoverageTitles": [],
+    "autoPublishEligible": false,
+    "contentStatus": "needs-source-enrichment"
+  }
+}
