@@ -1,0 +1,27 @@
+{
+  "id": "2026-10-27-bitgo-plans-wtgxx-access-through-institution",
+  "title": "BitGo Plans WTGXX Access Through Institutional Custody Platform",
+  "category": "INTEGRATION",
+  "why_it_matters": "The planned integration would place fund subscription, redemption, custody and settlement inside one institutional environment, reducing operational handoffs without changing the fund's investment risks.",
+  "article_url": "https://therwawire.com/institutions/bitgo-plans-wtgxx-access-through-institutional-custody-platform/",
+  "image_url": "https://therwawire.com/images/news/bitgo-plans-wtgxx-access-through-institutional-custody-platform.svg",
+  "caption": "RWA WIRE // INTEGRATION\n\nBitGo Plans WTGXX Access Through Institutional Custody Platform\n\nBitGo Bank & Trust plans to let eligible institutional clients access WisdomTree's tokenized Treasury money-market fund through BitGo Mint.\n\nFull analysis →\nhttps://therwawire.com/institutions/bitgo-plans-wtgxx-access-through-institutional-custody-platform/",
+  "distribution": {
+    "telegram": "RWA WIRE // INTEGRATION\n\nBitGo Plans WTGXX Access Through Institutional Custody Platform\n\nBitGo Bank & Trust plans to let eligible institutional clients access WisdomTree's tokenized Treasury money-market fund through BitGo Mint.\n\nFull analysis →\nhttps://therwawire.com/institutions/bitgo-plans-wtgxx-access-through-institutional-custody-platform/",
+    "x": "BitGo Plans WTGXX Access Through Institutional Custody Platform\n\nBitGo Bank & Trust plans to let eligible institutional clients access WisdomTree's tokenized Treasury money-market fund through BitGo Mint.\n\nhttps://therwawire.com/institutions/bitgo-plans-wtgxx-access-through-institutional-custody-platform/",
+    "breaking": "RWA WIRE // INTEGRATION\n\nBitGo Plans WTGXX Access Through Institutional Custody Platform\n\nhttps://therwawire.com/institutions/bitgo-plans-wtgxx-access-through-institutional-custody-platform/",
+    "summary": "BitGo Bank & Trust plans to let eligible institutional clients access WisdomTree's tokenized Treasury money-market fund through BitGo Mint."
+  },
+  "sources": [
+    {
+      "name": "BitGo and WisdomTree — WTGXX integration announcement via Business Wire",
+      "url": "https://www.businesswire.com/news/home/20261027597776/en/BitGo-to-Integrate-WisdomTree-Tokenized-Money-Market-Fund-into-Institutional-Custody-and-Settlement-Platform"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-10-27-bitgo-to-integrate-wisdomtree-tokenized-money-market-fund-into-institutional-cus.json",
+    "contentSha256": "09c5e550ab0f48296d444fc88439ba26a956c4199df8a9bf48bc89458d4b5780",
+    "approvedAt": "2026-10-27T11:18:40.231539+00:00"
+  }
+}
