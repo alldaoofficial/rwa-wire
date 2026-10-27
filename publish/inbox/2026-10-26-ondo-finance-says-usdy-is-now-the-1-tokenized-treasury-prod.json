@@ -31,10 +31,10 @@
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "duplicate",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-27T04:34:12Z",
-    "reason": "A renewed review found only October 13-14 secondary coverage of an Ondo social post and contemporaneous RWA.xyz values. No dated Ondo release or historical primary dataset establishes a new October 26 ranking-change event, while the cited values also place USYC above USDY."
+    "reviewedAt": "2026-10-27T11:17:27Z",
+    "reason": "The claim repeats the USDY-versus-BUIDL ranking event already captured on October 18. The October 26 item is an Altcoin Buzz social post republished by KuCoin, not a new Ondo announcement or ranking-change event."
   }
 }
