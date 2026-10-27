@@ -27,7 +27,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-27T15:20:28Z",
-    "reason": "A fresh retry still finds only Jesse Pollak's attributed claim and derivative coverage. Token Terminal's public pages do not expose the dated cohort data needed to verify that 75% of participants were new to Aave, and no independent full-text report substantiates that classification."
+    "reviewedAt": "2026-10-27T22:28:07Z",
+    "reason": "A further retry still finds only Jesse Pollak's attributed claim and derivative coverage. Token Terminal's public pages do not expose the dated cohort data needed to verify that 75% of participants were new to Aave, and no independent full-text report substantiates that classification."
   }
 }
