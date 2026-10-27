@@ -2946,5 +2946,141 @@
       ]
     },
     "sourceSha256": "4364a2aa69f207a93ba37dae25222782f135821800e802f2afa33671b470df9f"
+  },
+  "further-chainlink-ace-adgm-compliance-platform": {
+    "path": "/institutions/further-chainlink-ace-adgm-compliance-platform/",
+    "date": "2026-10-27",
+    "kind": "news",
+    "sources": [
+      [
+        "Chainlink — Further Asset Management integration announcement",
+        "https://chain.link/press-releases/further-asset-management-leverages-chainlink-to-power-tokenized-asset-compliance-platform-within-abu-dhabi-global-market-adgm"
+      ]
+    ],
+    "de": {
+      "title": "Further bindet Chainlink ACE in ADGM-Compliance-Plattform ein",
+      "description": "Further Asset Management hat Chainlink ACE in Anubis integriert, um konfigurierte Compliance-Regeln auf Transaktionen mit tokenisierten Vermögenswerten anzuwenden – zunächst in ADGM-bezogenen Abläufen.",
+      "sections": [
+        [
+          "Regelprüfung vor der Transaktionsausführung",
+          "Further Asset Management gab am 27. Oktober bekannt, Chainlinks Automated Compliance Engine in Anubis integriert zu haben, seine Plattform für maschinenlesbare regulatorische Abläufe. Die erste Bereitstellung konzentriert sich auf die Compliance tokenisierter Vermögenswerte im Abu Dhabi Global Market. Anubis prüft Transaktionen vor ihrer Ausführung anhand konfigurierter Regeln; die Kontrollen sollen die anwendbaren Anforderungen der Financial Services Regulatory Authority unterstützen."
+        ],
+        [
+          "Technische Kontrollen, keine regulatorische Genehmigung",
+          "Die ersten Regelsätze betreffen unter anderem Ausgabe, Kundenidentifizierung, Geldwäscheprüfungen, Eigentum, Handel, Verwahrung und Sanktionen. Laut Further ermöglicht Chainlink ACE eine einheitliche Anwendung von Regeln und nachvollziehbare Compliance-Entscheidungen, während sich Regeln ändern lassen, ohne Token-Verträge neu bereitzustellen. Dabei handelt es sich um technische Kontrollen, die an regulatorischen Anforderungen ausgerichtet sind; die Mitteilung besagt nicht, dass ADGM oder die FSRA Anubis oder einen tokenisierten Vermögenswert genehmigt haben."
+        ],
+        [
+          "Breitere Bereitstellung bleibt geplant",
+          "Further plant, Anubis auf weitere Länder und Gegenparteien auszuweiten. Ein vorgesehenes Dashboard soll Anbietern von Dienstleistungen für virtuelle Vermögenswerte und Aufsichtsbehörden Einblick geben, wie unterstützte Transaktionen bewertet werden. Further und Chainlink kündigten weitere Meilensteine für den Beginn der institutionellen Nutzung an; die breitere Bereitstellung bleibt daher Zukunftsplanung."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Further integra Chainlink ACE en su plataforma de cumplimiento para ADGM",
+      "description": "Further Asset Management ha integrado Chainlink ACE en Anubis para aplicar políticas de cumplimiento configuradas a transacciones con activos tokenizados, inicialmente en procesos relacionados con ADGM.",
+      "sections": [
+        [
+          "Evaluación de reglas antes de ejecutar transacciones",
+          "Further Asset Management anunció el 27 de octubre que ha integrado Automated Compliance Engine de Chainlink en Anubis, su plataforma para procesos regulatorios legibles por máquinas. El despliegue inicial se centra en el cumplimiento de activos tokenizados dentro de Abu Dhabi Global Market. Anubis evalúa las transacciones frente a políticas configuradas antes de ejecutarlas, con controles concebidos para respaldar los requisitos aplicables de la Financial Services Regulatory Authority."
+        ],
+        [
+          "Controles técnicos, no aprobación regulatoria",
+          "Los conjuntos iniciales de reglas abarcan, entre otros ámbitos, emisión, identificación de clientes, controles contra el blanqueo de capitales, propiedad, negociación, custodia y sanciones. Further afirma que Chainlink ACE permite aplicar políticas de forma coherente y generar decisiones de cumplimiento trazables, al tiempo que las reglas pueden cambiar sin volver a desplegar los contratos de los tokens. Son controles técnicos configurados en torno a requisitos regulatorios; el anuncio no afirma que ADGM o la FSRA hayan aprobado Anubis ni ningún activo tokenizado."
+        ],
+        [
+          "El despliegue más amplio sigue siendo futuro",
+          "Further prevé ampliar Anubis a más jurisdicciones y contrapartes. Un panel previsto daría a los proveedores de servicios de activos virtuales y a los reguladores visibilidad sobre cómo se evalúan las transacciones compatibles. Further y Chainlink indicaron que habrá nuevos hitos a medida que las instituciones empiecen a adoptar la plataforma, por lo que el despliegue más amplio sigue siendo prospectivo."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Further intègre Chainlink ACE à sa plateforme de conformité pour l’ADGM",
+      "description": "Further Asset Management a intégré Chainlink ACE à Anubis afin d’appliquer des politiques de conformité configurées aux transactions d’actifs tokenisés, d’abord dans des processus liés à l’ADGM.",
+      "sections": [
+        [
+          "Évaluation des règles avant l’exécution des transactions",
+          "Further Asset Management a annoncé le 27 octobre avoir intégré l’Automated Compliance Engine de Chainlink à Anubis, sa plateforme de processus réglementaires lisibles par machine. Le déploiement initial porte sur la conformité des actifs tokenisés au sein de l’Abu Dhabi Global Market. Anubis évalue les transactions au regard de politiques configurées avant leur exécution, au moyen de contrôles conçus pour soutenir les exigences applicables de la Financial Services Regulatory Authority."
+        ],
+        [
+          "Des contrôles techniques, pas une approbation réglementaire",
+          "Les premiers ensembles de règles couvrent notamment l’émission, l’identification des clients, les contrôles contre le blanchiment d’argent, la propriété, la négociation, la conservation et les sanctions. Selon Further, Chainlink ACE permet une application cohérente des politiques et des décisions de conformité traçables, tout en autorisant la modification des règles sans redéployer les contrats des tokens. Il s’agit de contrôles techniques configurés autour d’exigences réglementaires ; l’annonce n’indique pas que l’ADGM ou la FSRA a approuvé Anubis ou un actif tokenisé."
+        ],
+        [
+          "Un déploiement plus large encore prospectif",
+          "Further prévoit d’étendre Anubis à davantage de juridictions et de contreparties. Un tableau de bord prévu donnerait aux prestataires de services sur actifs virtuels et aux régulateurs une visibilité sur la manière dont les transactions prises en charge sont évaluées. Further et Chainlink ont indiqué que d’autres étapes suivraient à mesure que les institutions commenceraient à adopter la plateforme ; le déploiement plus large reste donc prospectif."
+        ]
+      ]
+    },
+    "sourceSha256": "d3b3d2258783dd228c10bfb18bfa2cbc7533f48eb371f4bec5198fccf08f4916"
+  },
+  "ibm-ionq-oracle-intel-okxice-objections-26": {
+    "path": "/news/ibm-ionq-oracle-intel-okxice-objections-26/",
+    "date": "2026-10-26",
+    "kind": "news",
+    "sources": [
+      [
+        "OKXICE — Public Notice dated October 26, 2026",
+        "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.26.pdf"
+      ],
+      [
+        "U.S. SEC — Statement on the Innovation Exemption",
+        "https://www.sec.gov/newsroom/speeches-statements/atkins-innovation-exemption-bridge-toward-durable-rulemaking-091726"
+      ]
+    ],
+    "de": {
+      "title": "IBM, IonQ, Oracle und Intel erhöhen OKXICE-Einwände auf 26",
+      "description": "Die OKXICE-Mitteilung vom 26. Oktober ergänzt IBM, IonQ, Oracle und Intel in der handelsplatzbezogenen Liste der Emittenteneinwände und erhöht die ausgewiesene Gesamtzahl von 22 auf 26.",
+      "sections": [
+        [
+          "Vier weitere Emittenten widersprechen",
+          "OKXICE aktualisierte seine öffentliche Mitteilung am 26. Oktober und nahm IBM, IonQ, Oracle und Intel in die Liste der Emittenten auf, die dem tokenisierten Handel ihrer Aktien auf dem geplanten Handelsplatz widersprechen. Die Primärquelle nennt nun 26 widersprechende Emittenten, nach 22 in der Fassung vom 23. Oktober. Die vier Namen erweitern die handelsplatzbezogene Einwandliste und sind keine Wiederholung früherer Angaben."
+        ],
+        [
+          "Einwände gelten für Drittanbieter-Token auf OKXICE",
+          "Die Einwände betreffen tokenisierte NMS-Aktien, die von einem nicht verbundenen Dritten erstellt wurden und im Rahmen der vorläufigen Innovation Exemption der SEC über OKXICE gehandelt werden sollen. Laut SEC müssen Emittenten widersprechen und den Handel ihrer Wertpapiere auf einem Handelsplatz für tokenisierte Wertpapiere verhindern können. Die Mitteilungen stoppen daher diese Drittanbieterinstrumente auf OKXICE im Rahmen der Ausnahme; sie verbieten weder eine vom Emittenten getragene Tokenisierung noch Vereinbarungen auf anderen Handelsplätzen."
+        ],
+        [
+          "Geplanter Handelsplatz ohne Starttermin",
+          "OKXICE bleibt ein geplanter, zugangsbeschränkter Handelsplatz und ist kein bestätigter Live-Markt. Die Mitteilung vom 26. Oktober beschreibt Uniswap-v4-Pools auf XLayer, Identitäts- und Sanktionsprüfungen der Teilnehmer sowie eine Eins-zu-eins-Deckung nicht verbundener Drittanbieter-Token. Sie nennt weder einen Grund für die Entscheidungen der vier Unternehmen noch einen Starttermin."
+        ]
+      ]
+    },
+    "es": {
+      "title": "IBM, IonQ, Oracle e Intel elevan a 26 las objeciones a OKXICE",
+      "description": "El aviso de OKXICE del 26 de octubre añade IBM, IonQ, Oracle e Intel a su lista de objeciones de emisores específica del mercado y eleva el total divulgado de 22 a 26.",
+      "sections": [
+        [
+          "Cuatro emisores más presentan objeciones",
+          "OKXICE actualizó su aviso público el 26 de octubre para añadir IBM, IonQ, Oracle e Intel a los emisores que se oponen a la negociación tokenizada de sus acciones en el mercado previsto. El aviso principal nombra ahora a 26 emisores con objeciones, frente a los 22 de la versión del 23 de octubre. Las cuatro incorporaciones amplían la lista de objeciones específica del mercado y no repiten divulgaciones anteriores."
+        ],
+        [
+          "Las objeciones se limitan a tokens de terceros en OKXICE",
+          "Las objeciones afectan a acciones NMS tokenizadas creadas por un tercero no afiliado y propuestas para su negociación mediante OKXICE al amparo de la exención temporal de innovación de la SEC. La SEC afirma que los emisores deben poder oponerse e impedir que sus valores se negocien en un mercado de valores tokenizados. Por tanto, los avisos bloquean estos instrumentos de terceros en OKXICE bajo la exención; no prohíben la tokenización promovida por el emisor ni acuerdos en otros mercados."
+        ],
+        [
+          "Un mercado previsto sin fecha de lanzamiento",
+          "OKXICE continúa siendo un mercado previsto y autorizado solo para participantes admitidos, no un mercado cuya actividad esté confirmada. Su aviso del 26 de octubre describe pools de Uniswap v4 en XLayer, controles de identidad y sanciones de los participantes y respaldo uno a uno de los tokens de terceros no afiliados. El aviso no explica las decisiones de las cuatro empresas ni indica una fecha de lanzamiento."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "IBM, IonQ, Oracle et Intel portent à 26 les objections à OKXICE",
+      "description": "L’avis d’OKXICE du 26 octobre ajoute IBM, IonQ, Oracle et Intel à sa liste d’objections d’émetteurs propre à la plateforme et porte le total déclaré de 22 à 26.",
+      "sections": [
+        [
+          "Quatre émetteurs supplémentaires s’opposent",
+          "OKXICE a actualisé son avis public le 26 octobre afin d’ajouter IBM, IonQ, Oracle et Intel aux émetteurs qui s’opposent à la négociation tokenisée de leurs actions sur la plateforme prévue. L’avis principal nomme désormais 26 émetteurs opposés, contre 22 dans la version du 23 octobre. Ces quatre ajouts étendent la liste d’objections propre à la plateforme et ne répètent pas les informations précédentes."
+        ],
+        [
+          "Des objections limitées aux tokens de tiers sur OKXICE",
+          "Les objections concernent des actions NMS tokenisées créées par un tiers non affilié et proposées à la négociation via OKXICE dans le cadre de l’exemption temporaire d’innovation de la SEC. Selon la SEC, les émetteurs doivent pouvoir s’opposer à la négociation de leurs titres sur une plateforme de titres tokenisés et l’empêcher. Les avis bloquent donc ces instruments de tiers sur OKXICE au titre de l’exemption ; ils n’interdisent ni la tokenisation portée par l’émetteur ni des dispositifs sur d’autres plateformes."
+        ],
+        [
+          "Une plateforme prévue sans date de lancement",
+          "OKXICE reste une plateforme prévue et soumise à autorisation, et non un marché dont l’activité est confirmée. Son avis du 26 octobre décrit des pools Uniswap v4 sur XLayer, des contrôles d’identité et de sanctions des participants ainsi qu’une couverture un pour un des tokens de tiers non affiliés. L’avis ne donne aucune raison aux décisions des quatre entreprises et ne précise aucune date de lancement."
+        ]
+      ]
+    },
+    "sourceSha256": "362b80b8b6e3f146cd7a38e0c28163a7236cb81d4192e1b4721856a62b9e199e"
   }
 }
