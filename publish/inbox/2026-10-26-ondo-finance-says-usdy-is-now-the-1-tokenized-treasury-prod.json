@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-26T22:16:50Z",
-    "reason": "No dated Ondo primary announcement or historical primary dataset was available to establish when USDY became the largest tokenized Treasury product. The live RWA.xyz page shows current values but does not prove the claimed ranking-change event or its October 26 date."
+    "reviewedAt": "2026-10-27T04:34:12Z",
+    "reason": "A renewed review found only October 13-14 secondary coverage of an Ondo social post and contemporaneous RWA.xyz values. No dated Ondo release or historical primary dataset establishes a new October 26 ranking-change event, while the cited values also place USYC above USDY."
   }
 }
