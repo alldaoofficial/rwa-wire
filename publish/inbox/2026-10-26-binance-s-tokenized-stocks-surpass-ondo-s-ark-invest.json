@@ -1,23 +1,36 @@
 {
-  "title": "Binance’s Tokenized Stocks Surpass Ondo’s, ARK Invest",
-  "description": "Binance’s Tokenized Stocks Surpass Ondo’s, ARK Invest",
-  "why_it_matters": "",
+  "title": "bStocks Moves Ahead of Ondo by Tokenized Stock Value on RWA.xyz",
+  "slug": "bstocks-moves-ahead-of-ondo-tokenized-stock-value",
+  "description": "RWA.xyz ranked bStocks first among tokenized-stock platforms on October 27, with $1.3 billion of value versus $914.1 million for Ondo.",
+  "why_it_matters": "The ranking marks a measurable competitive shift since bStocks crossed $1 billion, while showing that product count and capital concentration can tell different market-share stories.",
   "pubDate": "2026-10-26",
   "category": "news",
+  "reviewCategory": "MARKET",
   "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Tokenized Stocks",
+    "bStocks",
+    "Ondo",
+    "Binance",
+    "Market Data"
   ],
   "keyTakeaways": [
-    "Binance’s Tokenized Stocks Surpass Ondo’s, ARK Invest",
-    ""
+    "RWA.xyz ranked bStocks first by distributed tokenized-stock value at $1.3 billion on October 27, ahead of Ondo at $914.1 million.",
+    "The data provider counted 99 bStocks products and 408 Ondo products, so the ranking reflects value rather than breadth of listings.",
+    "RWA.xyz identifies BTech Holdings Limited, a Binance group affiliate, as the issuer of the certificate-based bStocks products."
   ],
-  "body": "Binance’s Tokenized Stocks Surpass Ondo’s, ARK Invest",
+  "body": "Coinfomania reported on October 26 that an ARK Invest repost had highlighted bStocks moving ahead of Ondo. A live RWA.xyz market snapshot reviewed on October 27 independently showed bStocks at the top of its distributed tokenized-stock league table with $1.3 billion of value, compared with $914.1 million for Ondo.\n\nThe ranking measures tokenized-stock value, not the number of available products. RWA.xyz counted 99 bStocks entries and 408 Ondo entries in the same table. Its separate bStocks profile reported $1.33 billion of distributed asset value, 1,580,086 holders and $9.37 billion of monthly transfer volume as of October 27.\n\nRWA.xyz describes bStocks as certificates issued by BTech Holdings Limited, a Binance group affiliate, representing interests in underlying securities held by the issuer. The snapshot documents a current ranking change; it does not establish that bStocks will retain the lead or that the products confer direct ownership of underlying company shares.",
   "sources": [
     {
-      "name": "Coinfomania",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUU9QTzdDQThNOUpzcVNLb2xaZHdWb24yVkl5NEw4V1ZwTW1mVm42WERTeERkOUhSQTFuanJtQks1YXJsRjUwUjNUTk5RX3htb0NzeHNwSEpDSlFSWGRPUGVoMktadnc4UXRDcGU3eVFrQnQ5QUFXWnNKR3JGYzU4eg?oc=5"
+      "name": "RWA.xyz — Tokenized Stocks league table",
+      "url": "https://app.rwa.xyz/stocks"
+    },
+    {
+      "name": "RWA.xyz — bStocks platform profile",
+      "url": "https://app.rwa.xyz/platforms/bstocks"
+    },
+    {
+      "name": "Coinfomania — Binance’s Tokenized Stocks Surpass Ondo’s, ARK Invest",
+      "url": "https://coinfomania.com/binances-tokenized-stocks-surpass-ondos-ark-invest/"
     }
   ],
   "newsWatch": {
@@ -27,14 +40,69 @@
     "discoveredAt": "2026-10-26T19:37:16.603328+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "verified",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-27T03:20:07Z",
-    "reason": "The report still relies on an attributed social-media repost. No readable primary dataset or issuer statement verifies the claimed ranking reversal or the cited weekend minting figure."
+    "reviewedAt": "2026-10-27T10:08:53Z",
+    "sources": [
+      {
+        "url": "https://app.rwa.xyz/stocks",
+        "publishedAt": "2026-10-27",
+        "checkedAt": "2026-10-27T10:08:53Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://app.rwa.xyz/platforms/bstocks",
+        "publishedAt": "2026-10-27",
+        "checkedAt": "2026-10-27T10:08:53Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://coinfomania.com/binances-tokenized-stocks-surpass-ondos-ark-invest/",
+        "publishedAt": "2026-10-26",
+        "checkedAt": "2026-10-27T10:08:53Z",
+        "kind": "news",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "RWA.xyz ranked bStocks first with $1.3 billion of distributed tokenized-stock value on October 27.",
+        "sourceUrl": "https://app.rwa.xyz/stocks",
+        "anchor": "1 | bStocks"
+      },
+      {
+        "claim": "RWA.xyz ranked Ondo second with $914.1 million of distributed tokenized-stock value.",
+        "sourceUrl": "https://app.rwa.xyz/stocks",
+        "anchor": "2 | Ondo"
+      },
+      {
+        "claim": "The league table counted 99 bStocks products and 408 Ondo products.",
+        "sourceUrl": "https://app.rwa.xyz/stocks",
+        "anchor": "RWA Count"
+      },
+      {
+        "claim": "RWA.xyz reported $1.33 billion of distributed asset value for bStocks on October 27.",
+        "sourceUrl": "https://app.rwa.xyz/platforms/bstocks",
+        "anchor": "Distributed Asset Value"
+      },
+      {
+        "claim": "RWA.xyz identifies BTech Holdings Limited, a Binance group affiliate, as the bStocks issuer.",
+        "sourceUrl": "https://app.rwa.xyz/platforms/bstocks",
+        "anchor": "issued by BTech Holdings Limited"
+      },
+      {
+        "claim": "Coinfomania reported the ranking claim on October 26 after an ARK Invest repost amplified it.",
+        "sourceUrl": "https://coinfomania.com/binances-tokenized-stocks-surpass-ondos-ark-invest/",
+        "anchor": "ARK Invest amplified a post"
+      }
+    ],
+    "contentSha256": "13b3dbb456eb2d41e0b183e3905812c3b7a99ec3c454620b35b6f0a72201063d"
   }
 }
