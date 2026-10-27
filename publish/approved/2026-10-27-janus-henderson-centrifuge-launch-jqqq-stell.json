@@ -1,0 +1,27 @@
+{
+  "id": "2026-10-27-janus-henderson-centrifuge-launch-jqqq-stell",
+  "title": "Janus Henderson and Centrifuge Launch JQQQ on Stellar",
+  "category": "FUND LAUNCH",
+  "why_it_matters": "JQQQ extends tokenized funds from cash and credit into a major equity benchmark, while its structure shows how investor eligibility and shareholder-right limits carry into onchain distribution.",
+  "article_url": "https://therwawire.com/institutions/janus-henderson-centrifuge-launch-jqqq-stellar/",
+  "image_url": "https://therwawire.com/images/news/janus-henderson-centrifuge-launch-jqqq-stellar.svg",
+  "caption": "RWA WIRE // FUND LAUNCH\n\nJanus Henderson and Centrifuge Launch JQQQ on Stellar\n\nJanus Henderson and Centrifuge launched JQQQ, a blockchain-native fund offering licensed Nasdaq-100 exposure to eligible non-U.S. investors on Stellar.\n\nFull analysis →\nhttps://therwawire.com/institutions/janus-henderson-centrifuge-launch-jqqq-stellar/",
+  "distribution": {
+    "telegram": "RWA WIRE // FUND LAUNCH\n\nJanus Henderson and Centrifuge Launch JQQQ on Stellar\n\nJanus Henderson and Centrifuge launched JQQQ, a blockchain-native fund offering licensed Nasdaq-100 exposure to eligible non-U.S. investors on Stellar.\n\nFull analysis →\nhttps://therwawire.com/institutions/janus-henderson-centrifuge-launch-jqqq-stellar/",
+    "x": "Janus Henderson and Centrifuge Launch JQQQ on Stellar\n\nJanus Henderson and Centrifuge launched JQQQ, a blockchain-native fund offering licensed Nasdaq-100 exposure to eligible non-U.S. investors on Stellar.\n\nhttps://therwawire.com/institutions/janus-henderson-centrifuge-launch-jqqq-stellar/",
+    "breaking": "RWA WIRE // FUND LAUNCH\n\nJanus Henderson and Centrifuge Launch JQQQ on Stellar\n\nhttps://therwawire.com/institutions/janus-henderson-centrifuge-launch-jqqq-stellar/",
+    "summary": "Janus Henderson and Centrifuge launched JQQQ, a blockchain-native fund offering licensed Nasdaq-100 exposure to eligible non-U.S. investors on Stellar."
+  },
+  "sources": [
+    {
+      "name": "Janus Henderson — JQQQ launch announcement",
+      "url": "https://www.janushenderson.com/corporate/press-releases/janus-henderson-and-centrifuge-launch-blockchain-native-fund-tracking-the-nasdaq-100-index-jqqq/"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-10-27-exclusive-janus-launches-first-tokenized-fund-licensing-the-nasdaq-100-index.json",
+    "contentSha256": "843249c71bb459e7bea03b08dccc4ac03c8845778a8e83037d9dff9a78e9ab38",
+    "approvedAt": "2026-10-27T19:32:05.022250+00:00"
+  }
+}
