@@ -1,23 +1,32 @@
 {
-  "title": "Intel, Oracle, IBM Join Objections to OKX-ICE Tokenized Stock Venue, Bringing Total to 26",
-  "description": "Intel, Oracle, IBM Join Objections to OKX-ICE Tokenized Stock Venue, Bringing Total to 26 Decrypt",
-  "why_it_matters": "",
-  "pubDate": "2026-10-27",
+  "title": "IBM, IonQ, Oracle and Intel Bring OKXICE Objections to 26",
+  "slug": "ibm-ionq-oracle-intel-okxice-objections-26",
+  "description": "OKXICE's October 26 notice adds IBM, IonQ, Oracle and Intel to its venue-specific issuer-objection list, increasing the disclosed total from 22 to 26.",
+  "why_it_matters": "Four additional opt-outs further reduce OKXICE's proposed stock universe and show that major technology issuers are actively using the SEC framework's objection mechanism before trading starts.",
+  "pubDate": "2026-10-26",
   "category": "news",
+  "reviewCategory": "TOKENIZED STOCKS",
   "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Tokenized Stocks",
+    "Regulation",
+    "OKXICE",
+    "IBM",
+    "Intel"
   ],
   "keyTakeaways": [
-    "Intel, Oracle, IBM Join Objections to OKX-ICE Tokenized Stock Venue, Bringing Total to 26 Decrypt",
-    ""
+    "OKXICE's October 26 public notice lists 26 objecting issuers, four more than the venue disclosed on October 23.",
+    "The additions are IBM, IonQ, Oracle and Intel, all identified in the venue's primary notice.",
+    "The objections block unaffiliated third-party tokens on this venue under the SEC exemption; they are not general bans on tokenization."
   ],
-  "body": "Intel, Oracle, IBM Join Objections to OKX-ICE Tokenized Stock Venue, Bringing Total to 26 Decrypt",
+  "body": "OKXICE updated its public notice on October 26 to add IBM, IonQ, Oracle and Intel to the issuers objecting to tokenized trading of their shares on the planned venue. The primary notice now names 26 objecting issuers, up from 22 in the October 23 version. The four additions are a new expansion of the venue-specific objection list, not a restatement of the earlier disclosures.\n\nThe objections concern tokenized NMS stocks created by an unaffiliated third party and proposed for trading through OKXICE under the SEC's temporary Innovation Exemption. The SEC says issuers must be able to object and prevent their securities from trading on a tokenized securities venue. Accordingly, the notices stop these third-party instruments from trading on OKXICE under the exemption; they do not prohibit issuer-sponsored tokenization or arrangements on other venues.\n\nOKXICE remains a planned, permissioned venue rather than a confirmed live market. Its October 26 notice describes Uniswap v4 pools on XLayer, participant identity and sanctions screening, and one-for-one backing for unaffiliated third-party tokens. The notice provides no reason for the four companies' decisions and no launch date.",
   "sources": [
     {
-      "name": "Decrypt",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPT1JJOGx0Y2FTd3Vob1FhUUI0US1XUTc0aEtHVFlkdGoyNEtQZ2MwX01ReHFLWEs3RFhXWjh0cV9ZNjRGUVNWUkR5MmlOdlNSR0xwZnkyWHZPOW9oX1R6LVJtZDNTbjRmSXRDWVZrbGUtMmxvV1BvX2R3SlpURTlxa2x0YWZZX1F2SGlheUd4Qk9XblhxWGpSajVjdFVXdw?oc=5"
+      "name": "OKXICE — Public Notice dated October 26, 2026",
+      "url": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.26.pdf"
+    },
+    {
+      "name": "U.S. SEC — Statement on the Innovation Exemption",
+      "url": "https://www.sec.gov/newsroom/speeches-statements/atkins-innovation-exemption-bridge-toward-durable-rulemaking-091726"
     }
   ],
   "newsWatch": {
@@ -33,6 +42,61 @@
     ],
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment"
+    "contentStatus": "source-reviewed"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-27T22:28:07Z",
+    "sources": [
+      {
+        "url": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.26.pdf",
+        "publishedAt": "2026-10-26",
+        "checkedAt": "2026-10-27T22:28:07Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://www.sec.gov/newsroom/speeches-statements/atkins-innovation-exemption-bridge-toward-durable-rulemaking-091726",
+        "publishedAt": "2026-09-17",
+        "checkedAt": "2026-10-27T22:28:07Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "OKXICE dated the revised public notice October 26, 2026.",
+        "sourceUrl": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.26.pdf",
+        "anchor": "Date: October 26, 2026"
+      },
+      {
+        "claim": "The revised notice lists 26 issuers that submitted objections.",
+        "sourceUrl": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.26.pdf",
+        "anchor": "received a Notice of Issuer Objection"
+      },
+      {
+        "claim": "IBM and IonQ appear among the newly added objecting issuers.",
+        "sourceUrl": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.26.pdf",
+        "anchor": "International Business Machines Corporation"
+      },
+      {
+        "claim": "Oracle and Intel appear as the final two objecting issuers in the notice.",
+        "sourceUrl": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.26.pdf",
+        "anchor": "Oracle Corporation (ORCL)"
+      },
+      {
+        "claim": "The venue is equally owned by ICE and OKC USA Holding.",
+        "sourceUrl": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.26.pdf",
+        "anchor": "50% owned by ICE"
+      },
+      {
+        "claim": "The SEC framework requires venues to give issuers an opportunity to object.",
+        "sourceUrl": "https://www.sec.gov/newsroom/speeches-statements/atkins-innovation-exemption-bridge-toward-durable-rulemaking-091726",
+        "anchor": "Issuers must have the opportunity to object"
+      }
+    ],
+    "contentSha256": "68a3d89497817193dd20b79359b39cc8f84f7f497456307b724470661371a2b9"
   }
 }
