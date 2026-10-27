@@ -2748,5 +2748,71 @@
       ]
     },
     "sourceSha256": "fb7f403b06452a8a7b036ee5b1b2454a3b0165f003a6d812245c8d4fbd2fb5a4"
+  },
+  "bitgo-wtgxx-institutional-custody-platform": {
+    "path": "/institutions/bitgo-plans-wtgxx-access-through-institutional-custody-platform/",
+    "date": "2026-10-27",
+    "kind": "news",
+    "sources": [
+      [
+        "BitGo and WisdomTree — WTGXX integration announcement via Business Wire",
+        "https://www.businesswire.com/news/home/20261027597776/en/BitGo-to-Integrate-WisdomTree-Tokenized-Money-Market-Fund-into-Institutional-Custody-and-Settlement-Platform"
+      ]
+    ],
+    "de": {
+      "title": "BitGo plant WTGXX-Zugang über institutionelle Verwahrplattform",
+      "description": "BitGo Bank & Trust plant, berechtigten institutionellen Kunden über BitGo Mint Zugang zum tokenisierten Treasury-Geldmarktfonds WTGXX von WisdomTree zu ermöglichen.",
+      "sections": [
+        [
+          "Geplante Integration für institutionelle Kunden",
+          "BitGo Bank & Trust kündigte am 27. Oktober an, den WisdomTree Treasury Money Market Digital Fund WTGXX für berechtigte institutionelle Kunden in BitGo Mint integrieren zu wollen. Die Unternehmen beschreiben eine künftige Integration und keinen bereits verfügbaren Dienst."
+        ],
+        [
+          "Kauf, Rückgabe und Abwicklung auf einer Plattform",
+          "Nach der Bereitstellung sollen berechtigte Kunden Kauf- und Rückgabeanweisungen über BitGo Bank & Trust einreichen und zwischen US-Dollar, unterstützten Stablecoins und Fondsanteilen wechseln können, ohne sich separat bei WisdomTree registrieren zu müssen. BitGo plant außerdem, über sein Abwicklungssystem Go Network die Peer-to-Peer-Umbuchung wirtschaftlicher Beteiligungen zwischen berechtigten Kunden zu unterstützen."
+        ],
+        [
+          "Starttermin und Funktionen bleiben eingeschränkt",
+          "Der Startzeitpunkt befindet sich noch in Entwicklung und kann sich ändern. Funktionen für Sicherheiten, Peer-to-Peer-Übertragungen und bestimmte Stablecoin-Dienste könnten zum Start fehlen. BitGo Bank & Trust soll für WTGXX die Betreuung der Anteilseigner und die Unterkontenführung übernehmen, ist jedoch weder Anlageberater noch Broker-Dealer oder Vertriebsstelle des Fonds. Fondsanteile sind Anlagen und keine Bankeinlagen; sie sind nicht durch die FDIC versichert."
+        ]
+      ]
+    },
+    "es": {
+      "title": "BitGo prevé ofrecer acceso a WTGXX mediante su plataforma de custodia institucional",
+      "description": "BitGo Bank & Trust prevé permitir que clientes institucionales elegibles accedan al fondo monetario tokenizado de deuda del Tesoro WTGXX de WisdomTree a través de BitGo Mint.",
+      "sections": [
+        [
+          "Integración prevista para clientes institucionales",
+          "BitGo Bank & Trust anunció el 27 de octubre que prevé integrar el WisdomTree Treasury Money Market Digital Fund, WTGXX, en BitGo Mint para clientes institucionales elegibles. Las empresas describen una integración futura, no un servicio que ya esté operativo."
+        ],
+        [
+          "Compra, reembolso y liquidación en una misma plataforma",
+          "Una vez disponible, se prevé que los clientes elegibles puedan presentar instrucciones de compra y reembolso a través de BitGo Bank & Trust y cambiar entre dólares estadounidenses, stablecoins compatibles y participaciones del fondo sin tener que registrarse por separado en WisdomTree. BitGo también prevé admitir la reasignación entre pares de derechos económicos entre clientes elegibles mediante su sistema de liquidación Go Network."
+        ],
+        [
+          "El lanzamiento y algunas funciones siguen pendientes",
+          "El calendario de lanzamiento continúa en desarrollo y puede cambiar. Las funciones de garantía, las transferencias entre pares y determinados servicios con stablecoins podrían no estar disponibles en el lanzamiento. BitGo Bank & Trust prestará servicios a los accionistas y llevará la contabilidad de subcuentas de WTGXX, pero no es el asesor de inversiones, bróker-dealer ni distribuidor del fondo. Las participaciones del fondo son inversiones, no depósitos bancarios, y no están aseguradas por la FDIC."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "BitGo prévoit un accès à WTGXX via sa plateforme de conservation institutionnelle",
+      "description": "BitGo Bank & Trust prévoit de permettre aux clients institutionnels éligibles d’accéder au fonds monétaire tokenisé en bons du Trésor WTGXX de WisdomTree via BitGo Mint.",
+      "sections": [
+        [
+          "Une intégration prévue pour les clients institutionnels",
+          "BitGo Bank & Trust a annoncé le 27 octobre son intention d’intégrer le WisdomTree Treasury Money Market Digital Fund, WTGXX, à BitGo Mint pour les clients institutionnels éligibles. Les entreprises décrivent une intégration future, et non un service déjà opérationnel."
+        ],
+        [
+          "Souscription, rachat et règlement sur une même plateforme",
+          "Une fois le service disponible, les clients éligibles devraient pouvoir transmettre leurs instructions de souscription et de rachat par l’intermédiaire de BitGo Bank & Trust et passer des dollars américains aux stablecoins pris en charge ou aux parts du fonds sans devoir s’inscrire séparément auprès de WisdomTree. BitGo prévoit également de permettre la réaffectation de gré à gré des intérêts économiques entre clients éligibles au moyen de son système de règlement Go Network."
+        ],
+        [
+          "Le calendrier et certaines fonctions restent incertains",
+          "Le calendrier de lancement est toujours en cours d’élaboration et peut changer. Les fonctions de garantie, les transferts de gré à gré et certains services liés aux stablecoins pourraient ne pas être disponibles au lancement. BitGo Bank & Trust assurera les services aux actionnaires et la tenue des sous-comptes de WTGXX, mais n’est ni le conseiller en investissement, ni le courtier-négociant, ni le distributeur du fonds. Les parts du fonds sont des investissements et non des dépôts bancaires ; elles ne sont pas assurées par la FDIC."
+        ]
+      ]
+    },
+    "sourceSha256": "ce5d5a3b8726bf92e0ef1db274315dd4fb7f0c89d4c6448cd450a1bbc6e8db14"
   }
 }
