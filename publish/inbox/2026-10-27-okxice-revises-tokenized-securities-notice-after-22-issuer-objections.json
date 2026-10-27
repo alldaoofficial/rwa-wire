@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-27T13:25:28Z",
+    "reason": "The October 26 document revision identifies no new issuer objection, launch, approval or material venue expansion. Its substantive event remains the 22 objections disclosed on October 23, already verified and published as 'Six More Issuers Object to OKXICE Tokenized-Stock Trading'."
   }
 }
