@@ -1,23 +1,30 @@
 {
-  "title": "BlackRock, SBI, and Startale Sign MOU to Explore Tokenized Funds and JPYSC Stablecoin",
-  "description": "BlackRock, SBI, and Startale Sign MOU to Explore Tokenized Funds and JPYSC Stablecoin",
-  "why_it_matters": "",
+  "title": "BlackRock, SBI and Startale Sign MoU on Tokenized MMFs and JPYSC",
+  "slug": "blackrock-sbi-startale-tokenized-mmfs-jpysc-mou",
+  "description": "BlackRock, SBI Holdings and Startale signed an MoU to study how tokenized money-market funds could connect with the yen-denominated JPYSC stablecoin.",
+  "why_it_matters": "The agreement brings a global asset manager into a Japanese onchain-settlement initiative, but it remains an exploratory framework rather than a product launch or deployment commitment.",
   "pubDate": "2026-10-27",
-  "category": "news",
+  "category": "institutions",
+  "reviewCategory": "PARTNERSHIP",
   "tags": [
     "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Money Market Funds",
+    "Stablecoins",
+    "Japan",
+    "BlackRock",
+    "SBI Holdings",
+    "Startale"
   ],
   "keyTakeaways": [
-    "BlackRock, SBI, and Startale Sign MOU to Explore Tokenized Funds and JPYSC Stablecoin",
-    ""
+    "BlackRock Financial Management and BlackRock Japan signed the MoU with SBI Holdings and Startale.",
+    "The parties will examine technical infrastructure, business and distribution models, and regulatory and market-development considerations.",
+    "The announcement describes exploration only and does not disclose a product, launch date or production deployment."
   ],
-  "body": "BlackRock, SBI, and Startale Sign MOU to Explore Tokenized Funds and JPYSC Stablecoin",
+  "body": "BlackRock Financial Management and BlackRock Japan signed a memorandum of understanding with SBI Holdings and Startale on October 27. The parties will explore a digital-asset ecosystem that could connect tokenized money-market funds with JPYSC, a yen-denominated trust-type stablecoin.\n\nThe work is organized around three areas: technical requirements and infrastructure; potential business models and distribution; and regulatory considerations and market development. The group also intends to engage financial institutions, businesses and other stakeholders in Japan and internationally.\n\nThe announcement is an exploratory agreement, not a launch notice. It names no specific fund, blockchain integration, commercial product or delivery schedule. The immediate significance is that BlackRock is joining SBI and Startale to assess how tokenized fund interests and regulated digital cash might interact in Japan's onchain financial infrastructure.",
   "sources": [
     {
-      "name": "KuCoin",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTWtHX2owQ0FvSVFSei1BTWZHOGJZLWNPWVRUT1M2RWYxdkhUSkF0MHVfamN5RXNwWDFnNlp6MkliYU1iSkhTLV9oT01IMHU2ZlQzUFctT040cUtPQUFPNTFWMko1RXVhYzZaajg4RUVmdVBlbHVpd1BPRmFGMmktMEllUDloUmN3NThGakhMeGl4N1UyanpNeFZrYU1YM0FFdEhQUENGWEZSVkJlS3ZMeFRqRms3TzRI?oc=5"
+      "name": "SBI Holdings — Official MoU announcement",
+      "url": "https://www.sbigroup.co.jp/english/news/pdf/2026/1027_a_en.pdf"
     }
   ],
   "newsWatch": {
@@ -27,7 +34,50 @@
     "discoveredAt": "2026-10-27T03:07:16.398280+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-27T03:18:46Z",
+    "sources": [
+      {
+        "url": "https://www.sbigroup.co.jp/english/news/pdf/2026/1027_a_en.pdf",
+        "publishedAt": "2026-10-27",
+        "checkedAt": "2026-10-27T03:18:46Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "BlackRock entities signed a memorandum of understanding with SBI Holdings and Startale.",
+        "sourceUrl": "https://www.sbigroup.co.jp/english/news/pdf/2026/1027_a_en.pdf",
+        "anchor": "signed a memorandum of understanding"
+      },
+      {
+        "claim": "The parties will explore connecting tokenized money-market funds with the JPYSC yen stablecoin.",
+        "sourceUrl": "https://www.sbigroup.co.jp/english/news/pdf/2026/1027_a_en.pdf",
+        "anchor": "connecting tokenized money market funds"
+      },
+      {
+        "claim": "The MoU covers technical requirements and infrastructure for potential connectivity between the assets.",
+        "sourceUrl": "https://www.sbigroup.co.jp/english/news/pdf/2026/1027_a_en.pdf",
+        "anchor": "Technology and infrastructure"
+      },
+      {
+        "claim": "The parties will examine potential business models and distribution opportunities under the MoU.",
+        "sourceUrl": "https://www.sbigroup.co.jp/english/news/pdf/2026/1027_a_en.pdf",
+        "anchor": "Business and distribution"
+      },
+      {
+        "claim": "The MoU also includes regulatory considerations and broader market-development work.",
+        "sourceUrl": "https://www.sbigroup.co.jp/english/news/pdf/2026/1027_a_en.pdf",
+        "anchor": "Regulation and market development"
+      }
+    ],
+    "contentSha256": "f9087d67e30ae16d40ae8216b0274a2655e9c379633a2a4aba770c292e7f69ab"
   }
 }
