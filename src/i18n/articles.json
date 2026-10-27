@@ -2880,5 +2880,71 @@
       ]
     },
     "sourceSha256": "e75ca2183b070ee9a60a3646c2ce42ba1a1e98cc83baf50c47d7d5d9a93a550b"
+  },
+  "janus-henderson-centrifuge-launch-jqqq-stellar": {
+    "path": "/institutions/janus-henderson-centrifuge-launch-jqqq-stellar/",
+    "date": "2026-10-27",
+    "kind": "news",
+    "sources": [
+      [
+        "Janus Henderson — JQQQ launch announcement",
+        "https://www.janushenderson.com/corporate/press-releases/janus-henderson-and-centrifuge-launch-blockchain-native-fund-tracking-the-nasdaq-100-index-jqqq/"
+      ]
+    ],
+    "de": {
+      "title": "Janus Henderson und Centrifuge starten JQQQ auf Stellar",
+      "description": "Janus Henderson und Centrifuge haben JQQQ gestartet, einen Blockchain-nativen Fonds mit lizenzierter Nasdaq-100-Exponierung für berechtigte Anleger außerhalb der USA auf Stellar.",
+      "sections": [
+        [
+          "Blockchain-nativer Fonds mit Nasdaq-Lizenz",
+          "Janus Henderson und Centrifuge kündigten am 27. Oktober den Start von JQQQ an. Der Blockchain-native Fonds strebt an, den Nasdaq-100 Index unter einer Lizenz von Nasdaq nachzubilden, und nutzt die Infrastruktur von Centrifuge für Ausgabe und Betrieb. Janus Henderson verwaltet die Strategie; rechtlich ist der Fonds als abgegrenztes Portfolio der Anemoy Capital SPC Limited strukturiert."
+        ],
+        [
+          "Exklusiv auf Stellar und nicht für US-Personen",
+          "JQQQ startete ausschließlich im Stellar-Netzwerk. Der Fonds steht nur berechtigten Anlegern in Ländern offen, in denen er rechtmäßig angeboten werden darf, und ist für US-Personen nicht verfügbar. Laut Janus Henderson umfasst die breitere Onchain-Plattform des Unternehmens inzwischen institutionelle Strategien im Wert von mehr als 1 Mrd. US-Dollar aus den Bereichen US-Staatsanleihen, strukturierte Kredite und börsennotierte Aktien."
+        ],
+        [
+          "Indirekte Exponierung ohne Aktionärsrechte",
+          "Das Produkt vermittelt eine indirekte wirtschaftliche Exponierung gegenüber einer zugrunde liegenden Anlagestrategie, die den Nasdaq-100 nachbildet. Inhaber erhalten weder wirtschaftliches Eigentum am Index noch Aktionärsrechte an dessen Bestandteilen. Janus Henderson warnt außerdem vor Blockchain-, Smart-Contract-, Wallet- und Drittplattformrisiken bei tokenisierten Anteilen. Mögliche Nutzungen als Sicherheit oder für Kredite würden von unabhängigen Drittanbietern abhängen und könnten nicht jedem Anleger oder in jedem Land zur Verfügung stehen."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Janus Henderson y Centrifuge lanzan JQQQ en Stellar",
+      "description": "Janus Henderson y Centrifuge lanzaron JQQQ, un fondo nativo de blockchain con exposición autorizada al Nasdaq-100 para inversores elegibles fuera de Estados Unidos en Stellar.",
+      "sections": [
+        [
+          "Fondo nativo de blockchain con licencia de Nasdaq",
+          "Janus Henderson y Centrifuge anunciaron el 27 de octubre el lanzamiento de JQQQ. El fondo nativo de blockchain busca replicar el índice Nasdaq-100 bajo licencia de Nasdaq y utiliza la infraestructura de Centrifuge para su emisión y funcionamiento. Janus Henderson gestiona la estrategia, mientras que la estructura jurídica es una cartera segregada de Anemoy Capital SPC Limited."
+        ],
+        [
+          "Exclusivo de Stellar y no disponible para personas estadounidenses",
+          "JQQQ se lanzó exclusivamente en la red Stellar. El fondo solo está disponible para inversores elegibles en jurisdicciones donde pueda ofrecerse legalmente y no está disponible para personas estadounidenses. Janus Henderson afirma que su plataforma onchain más amplia ya incluye más de 1.000 millones de dólares en estrategias institucionales de deuda del Tesoro de Estados Unidos, crédito estructurado y renta variable cotizada."
+        ],
+        [
+          "Exposición indirecta sin derechos de accionista",
+          "El producto proporciona exposición económica indirecta a una estrategia de inversión subyacente que replica el Nasdaq-100. No otorga a sus titulares la titularidad efectiva del índice ni derechos de accionista en las empresas que lo componen. Janus Henderson también advierte de los riesgos de blockchain, contratos inteligentes, carteras y plataformas de terceros asociados a las participaciones tokenizadas. Los posibles usos como garantía o en préstamos dependerían de terceros independientes y podrían no estar disponibles para todos los inversores o jurisdicciones."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Janus Henderson et Centrifuge lancent JQQQ sur Stellar",
+      "description": "Janus Henderson et Centrifuge ont lancé JQQQ, un fonds natif de la blockchain offrant une exposition sous licence au Nasdaq-100 aux investisseurs éligibles hors des États-Unis sur Stellar.",
+      "sections": [
+        [
+          "Un fonds natif de la blockchain sous licence Nasdaq",
+          "Janus Henderson et Centrifuge ont annoncé le 27 octobre le lancement de JQQQ. Ce fonds natif de la blockchain vise à répliquer l’indice Nasdaq-100 dans le cadre d’une licence accordée par Nasdaq et utilise l’infrastructure de Centrifuge pour son émission et son fonctionnement. Janus Henderson gère la stratégie, tandis que la structure juridique prend la forme d’un portefeuille distinct d’Anemoy Capital SPC Limited."
+        ],
+        [
+          "Exclusivement sur Stellar et indisponible aux personnes américaines",
+          "JQQQ a été lancé exclusivement sur le réseau Stellar. Le fonds est réservé aux investisseurs éligibles dans les juridictions où il peut être légalement proposé et n’est pas disponible aux personnes américaines. Selon Janus Henderson, sa plateforme onchain au sens large comprend désormais plus de 1 Md$ de stratégies institutionnelles couvrant les bons du Trésor américain, le crédit structuré et les actions cotées."
+        ],
+        [
+          "Une exposition indirecte sans droits d’actionnaire",
+          "Le produit procure une exposition économique indirecte à une stratégie d’investissement sous-jacente qui réplique le Nasdaq-100. Il ne confère aux détenteurs ni la propriété effective de l’indice ni des droits d’actionnaire dans les sociétés qui le composent. Janus Henderson avertit également des risques liés à la blockchain, aux contrats intelligents, aux portefeuilles et aux plateformes tierces pour les parts tokenisées. D’éventuels usages comme garantie ou dans le cadre de prêts dépendraient de tiers indépendants et pourraient ne pas être accessibles à tous les investisseurs ou dans toutes les juridictions."
+        ]
+      ]
+    },
+    "sourceSha256": "4364a2aa69f207a93ba37dae25222782f135821800e802f2afa33671b470df9f"
   }
 }
