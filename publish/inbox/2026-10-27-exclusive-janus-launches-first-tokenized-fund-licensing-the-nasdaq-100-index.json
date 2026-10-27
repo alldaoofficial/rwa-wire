@@ -1,23 +1,28 @@
 {
-  "title": "Exclusive | Janus Launches First Tokenized Fund Licensing the Nasdaq-100 Index",
-  "description": "Exclusive | Janus Launches First Tokenized Fund Licensing the Nasdaq-100 Index",
-  "why_it_matters": "",
+  "title": "Janus Henderson and Centrifuge Launch JQQQ on Stellar",
+  "slug": "janus-henderson-centrifuge-launch-jqqq-stellar",
+  "description": "Janus Henderson and Centrifuge launched JQQQ, a blockchain-native fund offering licensed Nasdaq-100 exposure to eligible non-U.S. investors on Stellar.",
+  "why_it_matters": "JQQQ extends tokenized funds from cash and credit into a major equity benchmark, while its structure shows how investor eligibility and shareholder-right limits carry into onchain distribution.",
   "pubDate": "2026-10-27",
-  "category": "news",
+  "category": "institutions",
+  "reviewCategory": "FUND LAUNCH",
   "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Tokenized Funds",
+    "Janus Henderson",
+    "Centrifuge",
+    "Nasdaq-100",
+    "Stellar"
   ],
   "keyTakeaways": [
-    "Exclusive | Janus Launches First Tokenized Fund Licensing the Nasdaq-100 Index",
-    ""
+    "JQQQ seeks to track the Nasdaq-100 Index under a license from Nasdaq and operates on Centrifuge infrastructure.",
+    "The fund launched exclusively on Stellar and is available only to eligible investors outside the United States.",
+    "JQQQ provides indirect economic exposure and does not give holders beneficial ownership or shareholder rights in the index."
   ],
-  "body": "Exclusive | Janus Launches First Tokenized Fund Licensing the Nasdaq-100 Index",
+  "body": "Janus Henderson and Centrifuge announced the launch of JQQQ on October 27. The blockchain-native fund seeks to track the Nasdaq-100 Index under a license from Nasdaq and uses Centrifuge infrastructure for issuance and operation. Janus Henderson manages the strategy, while the legal structure is a segregated portfolio of Anemoy Capital SPC Limited.\n\nJQQQ launched exclusively on the Stellar network. The fund is available only to eligible investors in jurisdictions where it may lawfully be offered and is not available to U.S. persons. Janus Henderson says its broader onchain platform now includes more than $1 billion in institutional strategies spanning U.S. Treasuries, structured credit and public equities.\n\nThe product provides indirect economic exposure to an underlying investment strategy tracking the Nasdaq-100. It does not give holders beneficial ownership of the index or shareholder rights in its constituent companies. Janus Henderson also warns that tokenized shares introduce blockchain, smart-contract, wallet and third-party-platform risks. Potential collateral or lending uses would depend on independent third parties and may not be available to every investor or jurisdiction.",
   "sources": [
     {
-      "name": "WSJ",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMVRDUk5HZ1pKaElISURfelZaUTVLQXgzQzRTWGxmT2UwQ2tidGlLT1ZJdXFaOEhGejRVMDk2eU9qTDB1Vk9xWWlMN3BCa2tNajhaNWxFMXpGSXd0UG1xY25ncjdyWWZZeHpwdDV5MEZoWm5HZVJpc3pHRnZGM2lpNHhkQzdvYTg5Ny1Gb1FHbDU3aU5ra0ZyalJBbDc3cHRENGlOMTMwcTllbkFHaWo5ZXpRTQ?oc=5"
+      "name": "Janus Henderson — JQQQ launch announcement",
+      "url": "https://www.janushenderson.com/corporate/press-releases/janus-henderson-and-centrifuge-launch-blockchain-native-fund-tracking-the-nasdaq-100-index-jqqq/"
     }
   ],
   "newsWatch": {
@@ -27,14 +32,50 @@
     "discoveredAt": "2026-10-27T12:07:15.713281+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "high-trust-headline"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "verified",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-27T12:37:58Z",
-    "reason": "The Wall Street Journal report is fully readable, but no Janus Henderson, Nasdaq, Centrifuge or Stellar primary release or product document was found, and no second independent full-text report verifies the JQQQ launch terms."
+    "reviewedAt": "2026-10-27T19:30:36Z",
+    "sources": [
+      {
+        "url": "https://www.janushenderson.com/corporate/press-releases/janus-henderson-and-centrifuge-launch-blockchain-native-fund-tracking-the-nasdaq-100-index-jqqq/",
+        "publishedAt": "2026-10-27",
+        "checkedAt": "2026-10-27T19:30:36Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Janus Henderson and Centrifuge announced JQQQ's launch on October 27, 2026.",
+        "sourceUrl": "https://www.janushenderson.com/corporate/press-releases/janus-henderson-and-centrifuge-launch-blockchain-native-fund-tracking-the-nasdaq-100-index-jqqq/",
+        "anchor": "launch of JQQQ"
+      },
+      {
+        "claim": "JQQQ seeks to track the Nasdaq-100 Index under a license from Nasdaq.",
+        "sourceUrl": "https://www.janushenderson.com/corporate/press-releases/janus-henderson-and-centrifuge-launch-blockchain-native-fund-tracking-the-nasdaq-100-index-jqqq/",
+        "anchor": "under license from Nasdaq"
+      },
+      {
+        "claim": "The fund launched exclusively on the Stellar network.",
+        "sourceUrl": "https://www.janushenderson.com/corporate/press-releases/janus-henderson-and-centrifuge-launch-blockchain-native-fund-tracking-the-nasdaq-100-index-jqqq/",
+        "anchor": "exclusively on the Stellar network"
+      },
+      {
+        "claim": "The fund is restricted to eligible investors and is unavailable to U.S. persons.",
+        "sourceUrl": "https://www.janushenderson.com/corporate/press-releases/janus-henderson-and-centrifuge-launch-blockchain-native-fund-tracking-the-nasdaq-100-index-jqqq/",
+        "anchor": "not available to U.S. persons"
+      },
+      {
+        "claim": "JQQQ provides indirect exposure and does not convey beneficial ownership of the Nasdaq-100 Index.",
+        "sourceUrl": "https://www.janushenderson.com/corporate/press-releases/janus-henderson-and-centrifuge-launch-blockchain-native-fund-tracking-the-nasdaq-100-index-jqqq/",
+        "anchor": "does not constitute beneficial ownership"
+      }
+    ],
+    "contentSha256": "843249c71bb459e7bea03b08dccc4ac03c8845778a8e83037d9dff9a78e9ab38"
   }
 }
