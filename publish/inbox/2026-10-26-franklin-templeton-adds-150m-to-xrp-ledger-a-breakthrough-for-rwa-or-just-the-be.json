@@ -1,24 +1,20 @@
 {
-  "title": "FRANKLIN TEMPLETON ADDS $150M TO XRP LEDGER: A BREAKTHROUGH FOR RWA — OR JUST THE BEGINNING?",
-  "description": "FRANKLIN TEMPLETON ADDS $150M TO XRP LEDGER: A BREAKTHROUGH FOR RWA — OR JUST THE BEGINNING?",
-  "why_it_matters": "",
-  "pubDate": "2026-10-26",
-  "category": "news",
-  "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
-  ],
+  "title": "Franklin Templeton Adds About $150M of sgBENJI Shares on XRP Ledger",
+  "description": "Franklin Templeton's sgBENJI share count on XRP Ledger rose by roughly 144.4 million shares on October 22, taking the recorded supply to 192.7 million shares, or about $200 million at the displayed $1.039 price.",
+  "why_it_matters": "The issuance materially expands the XRP Ledger footprint of a regulated money-market fund, but the single-holder concentration shows that tokenized supply growth does not yet demonstrate broad investor distribution or secondary-market activity.",
+  "pubDate": "2026-10-22",
+  "category": "institutions",
+  "tags": ["Tokenization", "Institutions", "XRP Ledger", "Money Market Funds"],
   "keyTakeaways": [
-    "FRANKLIN TEMPLETON ADDS $150M TO XRP LEDGER: A BREAKTHROUGH FOR RWA — OR JUST THE BEGINNING?",
-    ""
+    "XRP Ledger records show 192,698,409.6219078 sgBENJI shares outstanding after the token was updated on October 22, 2026.",
+    "CoinDesk identified two October 22 batches of 72,184,793 shares each, representing about $150 million at the recorded $1.039 share price.",
+    "One ledger address held the entire recorded supply, so the data does not establish how many beneficial investors are represented."
   ],
-  "body": "FRANKLIN TEMPLETON ADDS $150M TO XRP LEDGER: A BREAKTHROUGH FOR RWA — OR JUST THE BEGINNING?",
+  "body": "Franklin Templeton's sgBENJI tokenized money-market fund share count on XRP Ledger increased substantially on October 22. The ledger explorer Bithomp records 192,698,409.6219078 shares outstanding, one active holder and a last update at 04:13 UTC. CoinDesk reported that two batches of 72,184,793 shares were added at 02:58 and 04:13 UTC. At the recorded $1.039 share price, those additions represent about $150 million and bring the displayed supply value close to $200 million.\n\nFranklin Templeton's Singapore product sheet says the token represents shares in the Franklin OnChain U.S. Dollar Short-Term Money Market Fund. The fund invests in high-quality U.S.-dollar debt and money-market instruments, while its register combines blockchain records with possible off-chain information. The document names Stellar and XRP Ledger as supported public networks.\n\nThe ledger shows the entire supply in one address. That concentration does not prove a single beneficial owner, and the available sources do not identify the investor or investors behind the address. The event therefore documents a large issuance on XRP Ledger, not broad distribution or secondary-market adoption.",
   "sources": [
-    {
-      "name": "Binance",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1uSHZ5SlYzTDR6ZDhYWG5Qel9WUjVkak9ZdjRsQV9wdmEyX0U5Vno1UjNPUTJaNVZlRzZ1QkpJN0p5UVpNM1V4U1pmdkdfUXV0X2IyMTNHYzlJSWtkVVBMaUszdHhDZWVQ?oc=5"
-    }
+    {"name": "Bithomp — sgBENJI XRP Ledger token record", "url": "https://bithomp.com/token/064E27366D15D1F5614B4D4E3183F835BCD62E7F6FD9FFD8"},
+    {"name": "Franklin Templeton Singapore — Product Highlights Sheet", "url": "https://www.franklintempleton.com.sg/download/en-sg/product-highlights-sheet/02ca723d-8616-488d-80a4-eb60705742dd/PHS_41715_en_SG.pdf"},
+    {"name": "CoinDesk — Franklin Templeton adds $150 million in fund shares to XRP Ledger", "url": "https://www.coindesk.com/markets/2026/10/24/franklin-templeton-adds-usd150-million-in-fund-shares-to-xrp-ledger-all-in-one-wallet"}
   ],
   "newsWatch": {
     "score": 5,
@@ -27,7 +23,28 @@
     "discoveredAt": "2026-10-26T23:37:17.253030+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-27T00:02:04Z",
+    "sources": [
+      {"url": "https://bithomp.com/token/064E27366D15D1F5614B4D4E3183F835BCD62E7F6FD9FFD8", "publishedAt": "2026-10-22", "checkedAt": "2026-10-27T00:02:04Z", "kind": "primary", "access": "full-text"},
+      {"url": "https://www.franklintempleton.com.sg/download/en-sg/product-highlights-sheet/02ca723d-8616-488d-80a4-eb60705742dd/PHS_41715_en_SG.pdf", "publishedAt": "2026-09-21", "checkedAt": "2026-10-27T00:02:04Z", "kind": "primary", "access": "full-text"},
+      {"url": "https://www.coindesk.com/markets/2026/10/24/franklin-templeton-adds-usd150-million-in-fund-shares-to-xrp-ledger-all-in-one-wallet", "publishedAt": "2026-10-24", "checkedAt": "2026-10-27T00:02:04Z", "kind": "news", "access": "full-text"}
+    ],
+    "facts": [
+      {"claim": "The ledger record shows 192,698,409.6219078 sgBENJI shares outstanding.", "sourceUrl": "https://bithomp.com/token/064E27366D15D1F5614B4D4E3183F835BCD62E7F6FD9FFD8", "anchor": "Outstanding 192,698,409.6219078"},
+      {"claim": "The ledger record lists one active holder for the token.", "sourceUrl": "https://bithomp.com/token/064E27366D15D1F5614B4D4E3183F835BCD62E7F6FD9FFD8", "anchor": "Holders 1"},
+      {"claim": "The token record was last updated on October 22 at 04:13 UTC.", "sourceUrl": "https://bithomp.com/token/064E27366D15D1F5614B4D4E3183F835BCD62E7F6FD9FFD8", "anchor": "Last updated 10/22/2026 04:13"},
+      {"claim": "Franklin Templeton's register currently supports both Stellar and XRP Ledger.", "sourceUrl": "https://www.franklintempleton.com.sg/download/en-sg/product-highlights-sheet/02ca723d-8616-488d-80a4-eb60705742dd/PHS_41715_en_SG.pdf", "anchor": "Stellar and XRP Ledger public blockchain networks"},
+      {"claim": "The fund targets current income while seeking capital preservation and liquidity.", "sourceUrl": "https://www.franklintempleton.com.sg/download/en-sg/product-highlights-sheet/02ca723d-8616-488d-80a4-eb60705742dd/PHS_41715_en_SG.pdf", "anchor": "preservation of capital and liquidity"},
+      {"claim": "CoinDesk reported two additions of 72,184,793 shares on October 22.", "sourceUrl": "https://www.coindesk.com/markets/2026/10/24/franklin-templeton-adds-usd150-million-in-fund-shares-to-xrp-ledger-all-in-one-wallet", "anchor": "two batches of just over 72,184,793 shares"},
+      {"claim": "The public address may represent one investor or multiple beneficial investors.", "sourceUrl": "https://www.coindesk.com/markets/2026/10/24/franklin-templeton-adds-usd150-million-in-fund-shares-to-xrp-ledger-all-in-one-wallet", "anchor": "one investor or several remains unclear"}
+    ],
+    "contentSha256": "e91be4c66c1fe4997b1a635a94553b54c1d55a889af9bbab73e4405f05150e15"
   }
 }
