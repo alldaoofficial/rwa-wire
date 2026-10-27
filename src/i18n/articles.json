@@ -2534,5 +2534,79 @@
       ]
     },
     "sourceSha256": "2aef65cc830ef969f710c691b0596dba56ae893ce8551100b3ffc16c83fdb784"
+  },
+  "franklin-templeton-sgbenji-xrp-ledger": {
+    "path": "/institutions/franklin-templeton-adds-about-150m-of-sgbenji-shares-on-xrp-ledger/",
+    "date": "2026-10-22",
+    "kind": "news",
+    "sources": [
+      [
+        "Bithomp — sgBENJI XRP Ledger token record",
+        "https://bithomp.com/token/064E27366D15D1F5614B4D4E3183F835BCD62E7F6FD9FFD8"
+      ],
+      [
+        "Franklin Templeton Singapore — Product Highlights Sheet",
+        "https://www.franklintempleton.com.sg/download/en-sg/product-highlights-sheet/02ca723d-8616-488d-80a4-eb60705742dd/PHS_41715_en_SG.pdf"
+      ],
+      [
+        "CoinDesk — Franklin Templeton adds $150 million in fund shares to XRP Ledger",
+        "https://www.coindesk.com/markets/2026/10/24/franklin-templeton-adds-usd150-million-in-fund-shares-to-xrp-ledger-all-in-one-wallet"
+      ]
+    ],
+    "de": {
+      "title": "Franklin Templeton fügt dem XRP Ledger sgBENJI-Anteile im Wert von rund 150 Mio. US-Dollar hinzu",
+      "description": "Die Zahl der sgBENJI-Anteile von Franklin Templeton auf dem XRP Ledger stieg am 22. Oktober um rund 144,4 Millionen auf 192,7 Millionen; beim ausgewiesenen Preis von 1,039 US-Dollar entspricht dies insgesamt etwa 200 Mio. US-Dollar.",
+      "sections": [
+        [
+          "Zwei neue Anteilspakete im Wert von rund 150 Mio. US-Dollar",
+          "Die Zahl der tokenisierten sgBENJI-Geldmarktfondsanteile von Franklin Templeton auf dem XRP Ledger ist am 22. Oktober deutlich gestiegen. Der Ledger-Explorer Bithomp weist 192.698.409,6219078 ausstehende Anteile, einen aktiven Halter und eine letzte Aktualisierung um 04:13 UTC aus. CoinDesk berichtete von zwei Paketen mit jeweils 72.184.793 Anteilen, die um 02:58 und 04:13 UTC hinzugefügt wurden. Beim ausgewiesenen Anteilspreis von 1,039 US-Dollar entsprechen diese Zugänge rund 150 Mio. US-Dollar und erhöhen den angezeigten Gesamtwert auf knapp 200 Mio. US-Dollar."
+        ],
+        [
+          "Anteile eines kurzfristigen US-Dollar-Geldmarktfonds",
+          "Laut dem Produktinformationsblatt von Franklin Templeton Singapore repräsentiert der Token Anteile am Franklin OnChain U.S. Dollar Short-Term Money Market Fund. Der Fonds investiert in hochwertige, auf US-Dollar lautende Schuld- und Geldmarktinstrumente. Sein Register kombiniert Blockchain-Aufzeichnungen gegebenenfalls mit Offchain-Informationen; als unterstützte öffentliche Netzwerke nennt das Dokument Stellar und den XRP Ledger."
+        ],
+        [
+          "Große Ausgabe, aber kein Beleg für breite Verteilung",
+          "Der Ledger zeigt den gesamten Bestand unter einer einzigen Adresse. Diese Konzentration beweist nicht, dass es nur einen wirtschaftlich Berechtigten gibt, und die verfügbaren Quellen identifizieren die hinter der Adresse stehenden Anleger nicht. Das Ereignis belegt daher eine große Ausgabe auf dem XRP Ledger, nicht jedoch eine breite Verteilung oder eine Nutzung am Sekundärmarkt."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Franklin Templeton añade al XRP Ledger unos 150 millones de dólares en participaciones de sgBENJI",
+      "description": "El número de participaciones de sgBENJI de Franklin Templeton en XRP Ledger aumentó en unos 144,4 millones el 22 de octubre, hasta 192,7 millones, equivalentes a cerca de 200 millones de dólares al precio mostrado de 1,039 dólares.",
+      "sections": [
+        [
+          "Dos nuevos lotes valorados en unos 150 millones de dólares",
+          "El número de participaciones tokenizadas del fondo monetario sgBENJI de Franklin Templeton en XRP Ledger aumentó considerablemente el 22 de octubre. El explorador Bithomp registra 192.698.409,6219078 participaciones en circulación, un titular activo y una última actualización a las 04:13 UTC. CoinDesk informó de dos lotes de 72.184.793 participaciones cada uno, añadidos a las 02:58 y a las 04:13 UTC. Al precio registrado de 1,039 dólares por participación, esas incorporaciones representan unos 150 millones de dólares y elevan el valor mostrado del suministro a cerca de 200 millones de dólares."
+        ],
+        [
+          "Participaciones de un fondo monetario en dólares a corto plazo",
+          "La ficha del producto de Franklin Templeton Singapore indica que el token representa participaciones del Franklin OnChain U.S. Dollar Short-Term Money Market Fund. El fondo invierte en instrumentos de deuda y del mercado monetario de alta calidad denominados en dólares estadounidenses. Su registro combina datos de blockchain con posible información offchain, y el documento identifica Stellar y XRP Ledger como redes públicas compatibles."
+        ],
+        [
+          "Una gran emisión, pero no una prueba de distribución amplia",
+          "El ledger muestra todo el suministro en una sola dirección. Esa concentración no demuestra que exista un único beneficiario efectivo, y las fuentes disponibles no identifican al inversor o a los inversores representados por la dirección. Por tanto, el acontecimiento documenta una gran emisión en XRP Ledger, no una distribución amplia ni adopción en el mercado secundario."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Franklin Templeton ajoute environ 150 M$ de parts sgBENJI sur XRP Ledger",
+      "description": "Le nombre de parts sgBENJI de Franklin Templeton sur XRP Ledger a augmenté d’environ 144,4 millions le 22 octobre pour atteindre 192,7 millions, soit près de 200 M$ au prix affiché de 1,039 $.",
+      "sections": [
+        [
+          "Deux nouveaux lots d’une valeur d’environ 150 M$",
+          "Le nombre de parts tokenisées du fonds monétaire sgBENJI de Franklin Templeton sur XRP Ledger a fortement augmenté le 22 octobre. L’explorateur Bithomp recense 192 698 409,6219078 parts en circulation, un détenteur actif et une dernière mise à jour à 04 h 13 UTC. CoinDesk a fait état de deux lots de 72 184 793 parts chacun, ajoutés à 02 h 58 et 04 h 13 UTC. Au prix enregistré de 1,039 $ par part, ces ajouts représentent environ 150 M$ et portent la valeur affichée de l’offre à près de 200 M$."
+        ],
+        [
+          "Des parts d’un fonds monétaire à court terme en dollars",
+          "La fiche produit de Franklin Templeton Singapore indique que le token représente des parts du Franklin OnChain U.S. Dollar Short-Term Money Market Fund. Le fonds investit dans des instruments de dette et du marché monétaire de haute qualité libellés en dollars américains. Son registre combine les données de blockchain avec d’éventuelles informations offchain, et le document désigne Stellar et XRP Ledger comme réseaux publics pris en charge."
+        ],
+        [
+          "Une émission importante, mais pas la preuve d’une large distribution",
+          "Le registre montre que l’intégralité de l’offre se trouve à une seule adresse. Cette concentration ne prouve pas l’existence d’un unique bénéficiaire effectif, et les sources disponibles n’identifient pas le ou les investisseurs représentés par cette adresse. L’événement atteste donc d’une émission importante sur XRP Ledger, et non d’une large distribution ou d’une adoption sur le marché secondaire."
+        ]
+      ]
+    },
+    "sourceSha256": "d895d64c7a00497aebcea321f7684c9304afb7ae9c3248dfe955909898301b3c"
   }
 }
