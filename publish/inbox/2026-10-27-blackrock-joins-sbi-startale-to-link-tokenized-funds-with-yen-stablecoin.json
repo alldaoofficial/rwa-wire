@@ -1,0 +1,43 @@
+{
+  "title": "BlackRock joins SBI, Startale to link tokenized funds with yen stablecoin",
+  "description": "BlackRock joins SBI, Startale to link tokenized funds with yen stablecoin Crypto News",
+  "why_it_matters": "",
+  "pubDate": "2026-10-27",
+  "category": "news",
+  "tags": [
+    "Tokenization",
+    "Institutions",
+    "News Watch"
+  ],
+  "keyTakeaways": [
+    "BlackRock joins SBI, Startale to link tokenized funds with yen stablecoin Crypto News",
+    ""
+  ],
+  "body": "BlackRock joins SBI, Startale to link tokenized funds with yen stablecoin Crypto News",
+  "sources": [
+    {
+      "name": "Crypto News",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5FVzJUYkgzUl93NTdxcGlTNHRDVmlDOUtJOEVFLVhrMVZZeWx4Tmxzb3o4ajV1a3RZNGMzRVktdHpYT09zRGt6LS1rUUQzejBWaXZ0YlVNVlFvc0xUbURrSGswQ0dIcGRlcjBYdjNjMzU2UXM?oc=5"
+    },
+    {
+      "name": "bloomingbit",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5WX2FpYmlLYjZuUmF4NjBzWjNpRWFQVy1wQ1JQSEJYaDd3WjJxbmVpanozWl9XZ2t5eDhDZTZUMTVTdm9TdjlfbVpPNTJOMzZvZGpkQg?oc=5"
+    }
+  ],
+  "newsWatch": {
+    "score": 12,
+    "priority": "important",
+    "sourceTrust": "specialist",
+    "discoveredAt": "2026-10-27T08:37:21.395030+00:00",
+    "confirmationMode": "two-independent-specialist-sources",
+    "originalDiscoveryTitle": "BlackRock Explores Linking Tokenized Funds With Japanese Yen Stablecoin JPYSC",
+    "originalDiscoverySource": "Hokanews",
+    "confirmationSources": [
+      "Crypto News",
+      "bloomingbit"
+    ],
+    "requiresSourceReview": true,
+    "autoPublishEligible": false,
+    "contentStatus": "needs-source-enrichment"
+  }
+}
