@@ -1,0 +1,27 @@
+{
+  "id": "2026-10-27-ondo-brings-15-tokenized-stocks-to-robinhood",
+  "title": "Ondo Brings 15 Tokenized Stocks to Robinhood Chain",
+  "category": "INTEGRATION",
+  "why_it_matters": "The integration creates a direct exchange route between two issuers' tokens tracking the same securities, adding liquidity and weekend arbitrage paths to Robinhood Chain's stock-token market.",
+  "article_url": "https://therwawire.com/markets/ondo-brings-15-tokenized-stocks-to-robinhood-chain/",
+  "image_url": "https://therwawire.com/images/news/ondo-brings-15-tokenized-stocks-to-robinhood-chain.svg",
+  "caption": "RWA WIRE // INTEGRATION\n\nOndo Brings 15 Tokenized Stocks to Robinhood Chain\n\nOndo has bridged 15 tokenized stocks and ETFs to Robinhood Chain, including 11 assets paired with corresponding Robinhood tokens in Uniswap v4 pools.\n\nFull analysis →\nhttps://therwawire.com/markets/ondo-brings-15-tokenized-stocks-to-robinhood-chain/",
+  "distribution": {
+    "telegram": "RWA WIRE // INTEGRATION\n\nOndo Brings 15 Tokenized Stocks to Robinhood Chain\n\nOndo has bridged 15 tokenized stocks and ETFs to Robinhood Chain, including 11 assets paired with corresponding Robinhood tokens in Uniswap v4 pools.\n\nFull analysis →\nhttps://therwawire.com/markets/ondo-brings-15-tokenized-stocks-to-robinhood-chain/",
+    "x": "Ondo Brings 15 Tokenized Stocks to Robinhood Chain\n\nOndo has bridged 15 tokenized stocks and ETFs to Robinhood Chain, including 11 assets paired with corresponding Robinhood tokens in Uniswap v4 pools.\n\nhttps://therwawire.com/markets/ondo-brings-15-tokenized-stocks-to-robinhood-chain/",
+    "breaking": "RWA WIRE // INTEGRATION\n\nOndo Brings 15 Tokenized Stocks to Robinhood Chain\n\nhttps://therwawire.com/markets/ondo-brings-15-tokenized-stocks-to-robinhood-chain/",
+    "summary": "Ondo has bridged 15 tokenized stocks and ETFs to Robinhood Chain, including 11 assets paired with corresponding Robinhood tokens in Uniswap v4 pools."
+  },
+  "sources": [
+    {
+      "name": "Ondo Finance — Robinhood Chain and Uniswap launch announcement",
+      "url": "https://ondo.finance/blog/ondo-stocks-live-on-robinhood-chain-and-uniswap"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-10-27-ondo-stocks-are-live-on-robinhood-chain-with-uniswap-stablepair-pools.json",
+    "contentSha256": "c7015a65925ba438dfa2853a78bfd444e19feda24e8489a23d0f01c78df34775",
+    "approvedAt": "2026-10-27T15:56:44.666927+00:00"
+  }
+}
