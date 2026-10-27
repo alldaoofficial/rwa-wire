@@ -2814,5 +2814,71 @@
       ]
     },
     "sourceSha256": "ce5d5a3b8726bf92e0ef1db274315dd4fb7f0c89d4c6448cd450a1bbc6e8db14"
+  },
+  "ondo-brings-15-tokenized-stocks-to-robinhood-chain": {
+    "path": "/markets/ondo-brings-15-tokenized-stocks-to-robinhood-chain/",
+    "date": "2026-10-27",
+    "kind": "news",
+    "sources": [
+      [
+        "Ondo Finance — Robinhood Chain and Uniswap launch announcement",
+        "https://ondo.finance/blog/ondo-stocks-live-on-robinhood-chain-and-uniswap"
+      ]
+    ],
+    "de": {
+      "title": "Ondo bringt 15 tokenisierte Aktien und ETFs auf die Robinhood Chain",
+      "description": "Ondo hat 15 tokenisierte Aktien und ETFs auf die Robinhood Chain übertragen; für 11 davon bestehen Uniswap-v4-Pools mit entsprechenden Robinhood-Token auf dieselben Wertpapiere.",
+      "sections": [
+        [
+          "15 Ondo-Produkte über die Bridge verfügbar",
+          "Ondo Finance gab am 27. Oktober bekannt, dass 15 seiner tokenisierten Aktien und ETFs nun über die Ondo Bridge auf der Robinhood Chain verfügbar sind. Nutzer können die Vermögenswerte von Ethereum oder der BNB Chain übertragen, wo Ondo Prägung und Rückgabe unterstützt. Die Einführung ist von den bereits bestehenden Morpho-Kreditmärkten für von Robinhood ausgegebene Aktien-Token zu unterscheiden."
+        ],
+        [
+          "Elf Paare in Uniswap-v4-StablePair-Pools",
+          "Für elf Ondo-Produkte bestehen Uniswap-v4-StablePair-Pools mit Robinhood Stock Tokens, die auf dieselben Wertpapiere verweisen. Die Paare umfassen Token mit Bezug zu Nvidia, Apple, Tesla, Meta, Alphabet, Strategy, Circle, GameStop, SpaceX, dem SPDR S&P 500 ETF und dem Invesco QQQ ETF. Vier weitere Ondo-Produkte sind ohne entsprechende Robinhood-Token-Paare verfügbar."
+        ],
+        [
+          "Mögliche Wochenendroute unter Zugangsbeschränkungen",
+          "Ondo zufolge können seine Aktien-Token rund um die Uhr geprägt und zurückgegeben werden. Dadurch entsteht für berechtigte Händler eine mögliche Wochenendroute, wenn Robinhood Stock Tokens weiter gehandelt werden, das Prägungs- und Rückgabefenster von Robinhood jedoch geschlossen ist. Das StablePair-Modell passt die Gebühren für Liquiditätsanbieter an, wenn die gekoppelten Token von ihrem erwarteten Wechselkurs abweichen. Die Verfügbarkeit unterliegt weiterhin geografischen und weiteren Einschränkungen."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Ondo lleva 15 acciones y ETF tokenizados a Robinhood Chain",
+      "description": "Ondo ha trasladado 15 acciones y ETF tokenizados a Robinhood Chain; 11 de ellos cuentan con pools de Uniswap v4 frente a tokens equivalentes de Robinhood referidos a los mismos valores.",
+      "sections": [
+        [
+          "Quince productos de Ondo disponibles mediante el puente",
+          "Ondo Finance anunció el 27 de octubre que 15 de sus acciones y ETF tokenizados ya están disponibles en Robinhood Chain mediante Ondo Bridge. Los usuarios pueden trasladar los activos desde Ethereum o BNB Chain, redes en las que Ondo admite la emisión y el reembolso. Este despliegue es distinto de los mercados de préstamos ya existentes de Morpho para tokens de acciones emitidos por Robinhood."
+        ],
+        [
+          "Once pares en pools StablePair de Uniswap v4",
+          "Once de los productos de Ondo tienen pools StablePair de Uniswap v4 frente a Robinhood Stock Tokens referidos a los mismos valores. La lista emparejada incluye tokens vinculados a Nvidia, Apple, Tesla, Meta, Alphabet, Strategy, Circle, GameStop, SpaceX, el SPDR S&P 500 ETF y el Invesco QQQ ETF. Otros cuatro productos de Ondo están activos sin pares equivalentes de tokens de Robinhood."
+        ],
+        [
+          "Posible vía de fin de semana sujeta a restricciones",
+          "Ondo afirma que sus tokens de acciones pueden emitirse y reembolsarse durante las 24 horas. Esto crea una posible vía de fin de semana para operadores elegibles cuando los Robinhood Stock Tokens siguen negociándose pero la ventana de emisión y reembolso de Robinhood está cerrada. El diseño StablePair ajusta las comisiones de los proveedores de liquidez cuando los tokens emparejados se desvían de su tipo de cambio previsto. La disponibilidad continúa sujeta a restricciones jurisdiccionales y de otro tipo."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Ondo apporte 15 actions et ETF tokenisés sur Robinhood Chain",
+      "description": "Ondo a transféré 15 actions et ETF tokenisés sur Robinhood Chain ; 11 d’entre eux disposent de pools Uniswap v4 face aux tokens Robinhood correspondants liés aux mêmes titres.",
+      "sections": [
+        [
+          "Quinze produits Ondo disponibles via le pont",
+          "Ondo Finance a annoncé le 27 octobre que 15 de ses actions et ETF tokenisés sont désormais disponibles sur Robinhood Chain par l’intermédiaire d’Ondo Bridge. Les utilisateurs peuvent transférer les actifs depuis Ethereum ou BNB Chain, où Ondo prend en charge l’émission et le rachat. Ce déploiement est distinct des marchés de prêt Morpho déjà ouverts pour les tokens d’actions émis par Robinhood."
+        ],
+        [
+          "Onze paires dans des pools StablePair d’Uniswap v4",
+          "Onze produits Ondo disposent de pools StablePair d’Uniswap v4 face à des Robinhood Stock Tokens se rapportant aux mêmes titres. La liste appariée comprend des tokens liés à Nvidia, Apple, Tesla, Meta, Alphabet, Strategy, Circle, GameStop, SpaceX, au SPDR S&P 500 ETF et à l’Invesco QQQ ETF. Quatre autres produits Ondo sont disponibles sans paire correspondante de tokens Robinhood."
+        ],
+        [
+          "Une voie potentielle le week-end, sous réserve de restrictions",
+          "Ondo indique que ses tokens d’actions peuvent être émis et rachetés en continu. Cela crée une voie potentielle le week-end pour les opérateurs éligibles lorsque les Robinhood Stock Tokens continuent de se négocier, mais que la fenêtre d’émission et de rachat de Robinhood est fermée. Le modèle StablePair ajuste les frais des fournisseurs de liquidité lorsque les tokens appariés s’écartent de leur taux de change attendu. La disponibilité reste soumise à des restrictions juridictionnelles et autres."
+        ]
+      ]
+    },
+    "sourceSha256": "e75ca2183b070ee9a60a3646c2ce42ba1a1e98cc83baf50c47d7d5d9a93a550b"
   }
 }
