@@ -1,23 +1,28 @@
 {
-  "title": "Further Asset Management Leverages Chainlink To Power Tokenized Asset Compliance Platform Within Abu Dhabi Global Market (ADGM)",
-  "description": "Further Asset Management Leverages Chainlink To Power Tokenized Asset Compliance Platform Within Abu Dhabi Global Market (ADGM)",
-  "why_it_matters": "",
+  "title": "Further Embeds Chainlink ACE in ADGM Compliance Platform",
+  "slug": "further-chainlink-ace-adgm-compliance-platform",
+  "description": "Further Asset Management has integrated Chainlink ACE into Anubis to apply configured compliance policies to tokenized-asset transactions, initially for ADGM-related workflows.",
+  "why_it_matters": "The integration moves jurisdiction-specific compliance checks into transaction execution, giving tokenized-asset operators a programmable control layer while leaving regulatory authorization and legal accountability unchanged.",
   "pubDate": "2026-10-27",
-  "category": "news",
+  "category": "institutions",
+  "reviewCategory": "COMPLIANCE INFRASTRUCTURE",
   "tags": [
     "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Chainlink",
+    "Further Asset Management",
+    "ADGM",
+    "Compliance"
   ],
   "keyTakeaways": [
-    "Further Asset Management Leverages Chainlink To Power Tokenized Asset Compliance Platform Within Abu Dhabi Global Market (ADGM)",
-    ""
+    "Further has embedded Chainlink's Automated Compliance Engine in its Anubis platform for machine-readable regulatory workflows.",
+    "The initial deployment applies configured policies before tokenized-asset transactions execute in ADGM-related workflows.",
+    "Further plans a dashboard for compliance-decision visibility, but the announcement is not an ADGM regulatory approval."
   ],
-  "body": "Further Asset Management Leverages Chainlink To Power Tokenized Asset Compliance Platform Within Abu Dhabi Global Market (ADGM)",
+  "body": "Further Asset Management announced on October 27 that it has integrated Chainlink's Automated Compliance Engine into Anubis, its platform for machine-readable regulatory workflows. The initial deployment focuses on tokenized-asset compliance within Abu Dhabi Global Market. Anubis evaluates transactions against configured policies before execution, with controls designed to support applicable Financial Services Regulatory Authority requirements.\n\nThe initial rule sets cover areas including issuance, customer identification, anti-money-laundering checks, ownership, trading, custody and sanctions. Further says Chainlink ACE supports consistent policy application and traceable compliance decisions while allowing rules to change without redeploying token contracts. These are technical controls configured around regulatory requirements; the announcement does not state that ADGM or the FSRA approved Anubis or any tokenized asset.\n\nFurther plans to expand Anubis to more jurisdictions and counterparties. A planned dashboard would give virtual-asset service providers and regulators visibility into how supported transactions are assessed. Further and Chainlink said additional milestones will follow as institutions begin adopting the platform, so broader deployment remains prospective.",
   "sources": [
     {
-      "name": "Chainlink",
-      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPOFJlNEY5NVRzeU00c2Y2NXJkdG9wUGZlM2FRZUlwUDhzT1BydEVvVlNqT0twS3RwdDM5a3lqWGNIdVVvYi1TTmVXOGV4X1BUcTJuVmhtc1hQb2djNmUybGVXaU0zVUJOQnB0eXNhS0xFTjFMdTZxLWtJek45UzRfT01wNHVrd3N4WXdkWldocTlqSm5lMFNJVTNfYlNudlNYRi1jS2JfbEVUbVRWR2hiUjRoa1dacGpuTjVseUtaOWJNd2ZhNWFHRFpEU0RjbDY2dHVrVzlQaDJFTTZZQkR4bC15WUNGQlpFSS1URDIwSDk?oc=5"
+      "name": "Chainlink — Further Asset Management integration announcement",
+      "url": "https://chain.link/press-releases/further-asset-management-leverages-chainlink-to-power-tokenized-asset-compliance-platform-within-abu-dhabi-global-market-adgm"
     }
   ],
   "newsWatch": {
@@ -27,7 +32,50 @@
     "discoveredAt": "2026-10-27T20:07:20.873347+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-27T20:24:00Z",
+    "sources": [
+      {
+        "url": "https://chain.link/press-releases/further-asset-management-leverages-chainlink-to-power-tokenized-asset-compliance-platform-within-abu-dhabi-global-market-adgm",
+        "publishedAt": "2026-10-27",
+        "checkedAt": "2026-10-27T20:24:00Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Further Asset Management adopted Chainlink for compliance workflows in its Anubis platform.",
+        "sourceUrl": "https://chain.link/press-releases/further-asset-management-leverages-chainlink-to-power-tokenized-asset-compliance-platform-within-abu-dhabi-global-market-adgm",
+        "anchor": "has adopted Chainlink"
+      },
+      {
+        "claim": "The initial deployment focuses on tokenized-asset compliance workflows within ADGM.",
+        "sourceUrl": "https://chain.link/press-releases/further-asset-management-leverages-chainlink-to-power-tokenized-asset-compliance-platform-within-abu-dhabi-global-market-adgm",
+        "anchor": "initial deployment within ADGM"
+      },
+      {
+        "claim": "Chainlink ACE evaluates transactions and applies configured policies before execution.",
+        "sourceUrl": "https://chain.link/press-releases/further-asset-management-leverages-chainlink-to-power-tokenized-asset-compliance-platform-within-abu-dhabi-global-market-adgm",
+        "anchor": "applies configured policies"
+      },
+      {
+        "claim": "Compliance teams can update rules without redeploying token contracts, according to Chainlink.",
+        "sourceUrl": "https://chain.link/press-releases/further-asset-management-leverages-chainlink-to-power-tokenized-asset-compliance-platform-within-abu-dhabi-global-market-adgm",
+        "anchor": "without having to redeploy token contracts"
+      },
+      {
+        "claim": "Further plans a dashboard showing how supported transactions are assessed against configured rules.",
+        "sourceUrl": "https://chain.link/press-releases/further-asset-management-leverages-chainlink-to-power-tokenized-asset-compliance-platform-within-abu-dhabi-global-market-adgm",
+        "anchor": "A planned dashboard"
+      }
+    ],
+    "contentSha256": "0ed26c1fccf28c052c7c85232d7c03c3f31111fb158e327a42d3e753b390e31b"
   }
 }
