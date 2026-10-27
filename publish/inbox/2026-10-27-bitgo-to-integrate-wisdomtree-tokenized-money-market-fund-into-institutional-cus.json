@@ -1,23 +1,28 @@
 {
-  "title": "BitGo to Integrate WisdomTree Tokenized Money Market Fund into Institutional Custody and Settlement Platform",
-  "description": "BitGo to Integrate WisdomTree Tokenized Money Market Fund into Institutional Custody and Settlement Platform",
-  "why_it_matters": "",
+  "title": "BitGo Plans WTGXX Access Through Institutional Custody Platform",
+  "slug": "bitgo-plans-wtgxx-access-through-institutional-custody-platform",
+  "description": "BitGo Bank & Trust plans to let eligible institutional clients access WisdomTree's tokenized Treasury money-market fund through BitGo Mint.",
+  "why_it_matters": "The planned integration would place fund subscription, redemption, custody and settlement inside one institutional environment, reducing operational handoffs without changing the fund's investment risks.",
   "pubDate": "2026-10-27",
-  "category": "news",
+  "category": "institutions",
+  "reviewCategory": "INTEGRATION",
   "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Tokenized Funds",
+    "Money Market Funds",
+    "BitGo",
+    "WisdomTree",
+    "Institutional Custody"
   ],
   "keyTakeaways": [
-    "BitGo to Integrate WisdomTree Tokenized Money Market Fund into Institutional Custody and Settlement Platform",
-    ""
+    "Eligible institutional clients are expected to access WTGXX through BitGo Mint after the integration goes live.",
+    "BitGo says clients would be able to submit purchase and redemption instructions and move between supported cash, stablecoins and fund shares on-platform.",
+    "Launch timing remains in development, and collateral, peer-to-peer transfer and some stablecoin functions may not be available at launch."
   ],
-  "body": "BitGo to Integrate WisdomTree Tokenized Money Market Fund into Institutional Custody and Settlement Platform",
+  "body": "BitGo Bank & Trust announced on October 27 that it plans to integrate the WisdomTree Treasury Money Market Digital Fund, WTGXX, into BitGo Mint for eligible institutional clients. The companies describe a future integration rather than a service that is already live.\n\nOnce available, eligible clients are expected to submit purchase and redemption instructions through BitGo Bank & Trust and move between U.S. dollars, supported stablecoins and fund shares without separately onboarding with WisdomTree. BitGo also plans to support peer-to-peer reallocation of beneficial interests between eligible clients through its Go Network settlement system.\n\nThe announcement includes important limits. Launch timing remains under development and may change. Collateral functionality, peer-to-peer transfers and certain stablecoin services may not be available at launch. BitGo Bank & Trust will provide shareholder servicing and sub-accounting for WTGXX, but is not the fund's investment adviser, broker-dealer or distributor. Fund shares are investments rather than bank deposits and are not FDIC-insured.",
   "sources": [
     {
-      "name": "Business Wire",
-      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNbzNZM2p3Tkxka2M2V2o1aG50UmtPMnZLdDVlSXhSS19sWkFRUGY4U1o4OFBKdDdZTF9NcGhHWU5HaTIxRWVPVDQzN3ItSDFvXzkwUkdrZF9zd2xVSzJScFFwRHI5eDUwNGkxcHY1S1IzX3dEYXJHMUVIUzc4aVVDQ1Y4QkVpY3FpdkNpMWVpVDlsUEVkelEwZFZDRDFmSjJuc0FjcW02blp3QWJzWlFLVFI0S3VUUVplaXppc0gxQXVWd1RTYlJiQjZMX0VjclluM1VJVVBLS0RoTlBkbHFobWxjMmNVMjRFenRxdE83ZS0xdXc4YXA2cQ?oc=5"
+      "name": "BitGo and WisdomTree — WTGXX integration announcement via Business Wire",
+      "url": "https://www.businesswire.com/news/home/20261027597776/en/BitGo-to-Integrate-WisdomTree-Tokenized-Money-Market-Fund-into-Institutional-Custody-and-Settlement-Platform"
     }
   ],
   "newsWatch": {
@@ -27,7 +32,55 @@
     "discoveredAt": "2026-10-27T10:07:17.961124+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-27T11:17:27Z",
+    "sources": [
+      {
+        "url": "https://www.businesswire.com/news/home/20261027597776/en/BitGo-to-Integrate-WisdomTree-Tokenized-Money-Market-Fund-into-Institutional-Custody-and-Settlement-Platform",
+        "publishedAt": "2026-10-27",
+        "checkedAt": "2026-10-27T11:17:27Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "BitGo Bank & Trust plans to provide eligible institutional clients access to WTGXX through BitGo Mint.",
+        "sourceUrl": "https://www.businesswire.com/news/home/20261027597776/en/BitGo-to-Integrate-WisdomTree-Tokenized-Money-Market-Fund-into-Institutional-Custody-and-Settlement-Platform",
+        "anchor": "access WTGXX"
+      },
+      {
+        "claim": "Eligible clients are expected to submit purchase and redemption instructions through BitGo Bank & Trust.",
+        "sourceUrl": "https://www.businesswire.com/news/home/20261027597776/en/BitGo-to-Integrate-WisdomTree-Tokenized-Money-Market-Fund-into-Institutional-Custody-and-Settlement-Platform",
+        "anchor": "purchase and redemption instructions"
+      },
+      {
+        "claim": "The planned integration would support movement between U.S. dollars, supported stablecoins and WTGXX fund shares.",
+        "sourceUrl": "https://www.businesswire.com/news/home/20261027597776/en/BitGo-to-Integrate-WisdomTree-Tokenized-Money-Market-Fund-into-Institutional-Custody-and-Settlement-Platform",
+        "anchor": "move between USD"
+      },
+      {
+        "claim": "BitGo plans peer-to-peer reallocation of beneficial interests between eligible clients through Go Network.",
+        "sourceUrl": "https://www.businesswire.com/news/home/20261027597776/en/BitGo-to-Integrate-WisdomTree-Tokenized-Money-Market-Fund-into-Institutional-Custody-and-Settlement-Platform",
+        "anchor": "peer-to-peer between eligible BitGo clients"
+      },
+      {
+        "claim": "The announcement says launch timing is still in development and may change or never become available.",
+        "sourceUrl": "https://www.businesswire.com/news/home/20261027597776/en/BitGo-to-Integrate-WisdomTree-Tokenized-Money-Market-Fund-into-Institutional-Custody-and-Settlement-Platform",
+        "anchor": "launch timing"
+      },
+      {
+        "claim": "Collateral, peer-to-peer transfer and certain stablecoin services may not be available when the integration launches.",
+        "sourceUrl": "https://www.businesswire.com/news/home/20261027597776/en/BitGo-to-Integrate-WisdomTree-Tokenized-Money-Market-Fund-into-Institutional-Custody-and-Settlement-Platform",
+        "anchor": "may not be available at launch"
+      }
+    ],
+    "contentSha256": "09c5e550ab0f48296d444fc88439ba26a956c4199df8a9bf48bc89458d4b5780"
   }
 }
