@@ -39,5 +39,12 @@
     "requiresSourceReview": true,
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-27T09:40:27Z",
+    "reason": "This is repeat coverage of the October 27 BlackRock, SBI Holdings and Startale MoU on tokenized money-market funds and JPYSC, already source-reviewed, published and recorded in the pipeline."
   }
 }
