@@ -27,7 +27,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-27T01:14:18Z",
-    "reason": "The flash item attributes $9.57 million of Aave collateral, $4.08 million of USDC borrowing and a 75% new-user share to a social comment, but no fully readable primary record or independent report establishes the new-user metric. Base's accessible Aave page confirms only the earlier September launch."
+    "reviewedAt": "2026-10-27T07:41:44Z",
+    "reason": "The publisher page and official Base posts repeat $9.57 million deposited, $4.08 million borrowed and a 75% new-to-Aave share, but the cited Token Terminal material does not expose a dated, reproducible view supporting the user-classification metric. No independent full-text report verifies it."
   }
 }
