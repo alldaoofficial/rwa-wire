@@ -1,0 +1,35 @@
+{
+  "id": "2026-10-27-robinhood-ceo-durable-rules-sec-tokenization",
+  "title": "Robinhood CEO Calls for Durable Rules Beyond SEC Tokenization Exemption",
+  "category": "NEWS",
+  "why_it_matters": "A temporary trading pathway can support experiments, but institutions planning long-lived tokenized equity products still face policy-reversal risk beyond the exemption's five-year term.",
+  "article_url": "https://therwawire.com/news/robinhood-ceo-durable-rules-sec-tokenization-exemption/",
+  "image_url": "https://therwawire.com/images/news/robinhood-ceo-durable-rules-sec-tokenization-exemption.svg",
+  "caption": "RWA WIRE // NEWS\n\nRobinhood CEO Calls for Durable Rules Beyond SEC Tokenization Exemption\n\nVlad Tenev backed the SEC's five-year tokenized-stock exemption but said lasting rulemaking or legislation is needed before customers commit serious assets.\n\nFull analysis →\nhttps://therwawire.com/news/robinhood-ceo-durable-rules-sec-tokenization-exemption/",
+  "distribution": {
+    "telegram": "RWA WIRE // NEWS\n\nRobinhood CEO Calls for Durable Rules Beyond SEC Tokenization Exemption\n\nVlad Tenev backed the SEC's five-year tokenized-stock exemption but said lasting rulemaking or legislation is needed before customers commit serious assets.\n\nFull analysis →\nhttps://therwawire.com/news/robinhood-ceo-durable-rules-sec-tokenization-exemption/",
+    "x": "Robinhood CEO Calls for Durable Rules Beyond SEC Tokenization Exemption\n\nVlad Tenev backed the SEC's five-year tokenized-stock exemption but said lasting rulemaking or legislation is needed before customers commit serious assets.\n\nhttps://therwawire.com/news/robinhood-ceo-durable-rules-sec-tokenization-exemption/",
+    "breaking": "RWA WIRE // NEWS\n\nRobinhood CEO Calls for Durable Rules Beyond SEC Tokenization Exemption\n\nhttps://therwawire.com/news/robinhood-ceo-durable-rules-sec-tokenization-exemption/",
+    "summary": "Vlad Tenev backed the SEC's five-year tokenized-stock exemption but said lasting rulemaking or legislation is needed before customers commit serious assets."
+  },
+  "sources": [
+    {
+      "name": "Robinhood Investor Relations",
+      "url": "https://investors.robinhood.com/news-releases/news-release-details/robinhood-reports-third-quarter-2026-results"
+    },
+    {
+      "name": "StockAnalysis Earnings Call Transcript",
+      "url": "https://stockanalysis.com/stocks/hood/transcripts/718711-q3-2026/"
+    },
+    {
+      "name": "U.S. Securities and Exchange Commission",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-90-sec-issues-innovation-exemption-facilitate-trading-tokenized-nms-stock-request-comment"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-10-28-robinhood-ceo-says-us-tokenized-stocks-face-long-term-hurdle-from-regulatory-unc.json",
+    "contentSha256": "df5d5586a1685bffecb79d8149022ea5858f81838d53c4a8b02287d252e0a478",
+    "approvedAt": "2026-10-28T09:48:36.499510+00:00"
+  }
+}
