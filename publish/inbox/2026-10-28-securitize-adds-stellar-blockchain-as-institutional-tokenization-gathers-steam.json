@@ -29,5 +29,13 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-28T09:45:49Z",
+    "reason": "CoinDesk's full report says Securitize announced Stellar support at Meridian 2026, but neither Securitize nor Stellar has published an accessible primary release or technical documentation, and no second independent full-text report was found. The report names no live product, deployment address, launch timetable or transaction, so the new integration cannot yet be documented to the required standard."
   }
 }
+
