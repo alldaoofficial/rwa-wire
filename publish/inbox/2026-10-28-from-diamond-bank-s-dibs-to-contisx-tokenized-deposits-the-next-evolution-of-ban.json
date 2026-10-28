@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-28T15:49:41Z",
+    "reason": "This Tekedia article promotes the same ContiSX paid proof-of-concept offering already reviewed in publish/inbox/2026-10-28-contisx-poc-for-tokenized-deposits-with-banks.json. It adds no participating bank, completed pilot, regulatory approval or commercial launch, so it is not a distinct event."
   }
 }
