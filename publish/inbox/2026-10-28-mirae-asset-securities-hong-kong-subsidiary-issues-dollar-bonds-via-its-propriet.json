@@ -1,23 +1,27 @@
 {
-  "title": "Mirae Asset Securities’ Hong Kong Subsidiary Issues Dollar Bonds via Its Proprietary Tokenization Platform",
-  "description": "Mirae Asset Securities’ Hong Kong Subsidiary Issues Dollar Bonds via Its Proprietary Tokenization Platform",
-  "why_it_matters": "",
+  "title": "Mirae Asset HK Issues Tokenized Funding Notes on Solana",
+  "slug": "mirae-asset-hk-tokenized-funding-notes-solana",
+  "description": "Mirae Asset Securities completed a private placement of six-month dollar floating-rate notes to professional investors through Solana and Marketnode.",
+  "why_it_matters": "The issuance puts an established Hong Kong structured-note programme onto public blockchain rails while keeping distribution within existing professional-investor restrictions.",
   "pubDate": "2026-10-28",
-  "category": "news",
+  "category": "institutions",
+  "reviewCategory": "ISSUANCE",
   "tags": [
     "Tokenization",
     "Institutions",
-    "News Watch"
+    "Solana",
+    "Hong Kong"
   ],
   "keyTakeaways": [
-    "Mirae Asset Securities’ Hong Kong Subsidiary Issues Dollar Bonds via Its Proprietary Tokenization Platform",
-    ""
+    "Mirae Asset Securities (HK) completed a tokenized funding-note issuance for eligible institutional investors on Solana.",
+    "The securities are six-month US dollar floating-rate notes issued under a US$3 billion guaranteed structured-note programme.",
+    "Marketnode acted as authorised distributor, and the notes were privately placed with professional investors rather than offered to retail buyers."
   ],
-  "body": "Mirae Asset Securities’ Hong Kong Subsidiary Issues Dollar Bonds via Its Proprietary Tokenization Platform",
+  "body": "Mirae Asset Securities (HK) completed a tokenized funding-note issuance for eligible institutional investors on Solana. The company said the securities are US dollar-denominated six-month floating-rate notes issued in Hong Kong under its US$3 billion Guaranteed Structured Note Programme. The US$3 billion figure is the programme ceiling, not the size of this issuance, which the release did not disclose.\n\nMarketnode, a Singapore-regulated digital market infrastructure operator, acted as authorised distributor. Mirae Asset Securities managed token issuance, payments and lifecycle administration. The company described the transaction as an extension of its existing structured-product business into digital distribution, not as a retail launch.\n\nThe notes were offered only through a private placement to eligible professional investors under Hong Kong law. Mirae Asset Securities also stated that the securities were not authorised by or registered with Hong Kong's Securities and Futures Commission.",
   "sources": [
     {
-      "name": "파이낸셜뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1ObDRVTnJHcUY5UjZNQkd6VzZnTnB6THRSTjdyZHNqQi1vSHpvM1o0YVRjRFRuWEFGZkVHYnNvZ3liZngwRGJUcjlLWVhtcWQtV2xMUE5YZGQ?oc=5"
+      "name": "Mirae Asset Securities (HK) — tokenized funding-note issuance",
+      "url": "https://www.prnewswire.com/apac/news-releases/mirae-asset-securities-expands-digital-distribution-of-funding-notes-with-solana-foundation-and-marketnode-302921641.html"
     }
   ],
   "newsWatch": {
@@ -27,7 +31,45 @@
     "discoveredAt": "2026-10-28T02:07:21.858121+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-28T23:54:19Z",
+    "sources": [
+      {
+        "url": "https://www.prnewswire.com/apac/news-releases/mirae-asset-securities-expands-digital-distribution-of-funding-notes-with-solana-foundation-and-marketnode-302921641.html",
+        "publishedAt": "2026-10-28",
+        "checkedAt": "2026-10-28T23:54:19Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Mirae Asset Securities completed a tokenized funding-note issuance on Solana for eligible institutional investors.",
+        "sourceUrl": "https://www.prnewswire.com/apac/news-releases/mirae-asset-securities-expands-digital-distribution-of-funding-notes-with-solana-foundation-and-marketnode-302921641.html",
+        "anchor": "tokenised funding note issuance"
+      },
+      {
+        "claim": "The securities are US dollar-denominated six-month floating-rate notes issued in Hong Kong.",
+        "sourceUrl": "https://www.prnewswire.com/apac/news-releases/mirae-asset-securities-expands-digital-distribution-of-funding-notes-with-solana-foundation-and-marketnode-302921641.html",
+        "anchor": "six-month floating rate notes"
+      },
+      {
+        "claim": "Marketnode supported the transaction as the authorised distributor.",
+        "sourceUrl": "https://www.prnewswire.com/apac/news-releases/mirae-asset-securities-expands-digital-distribution-of-funding-notes-with-solana-foundation-and-marketnode-302921641.html",
+        "anchor": "acting as an authorised distributor"
+      },
+      {
+        "claim": "The notes were privately placed only with eligible professional investors.",
+        "sourceUrl": "https://www.prnewswire.com/apac/news-releases/mirae-asset-securities-expands-digital-distribution-of-funding-notes-with-solana-foundation-and-marketnode-302921641.html",
+        "anchor": "private placement to eligible professional investors"
+      }
+    ],
+    "contentSha256": "40e555443da942768dc0fc543b836c658e26900aa782a0af97661a7d5bb0076b"
   }
 }
