@@ -1,23 +1,28 @@
 {
-  "title": "Deutsche Bank Facilitates Siemens’ €100M Tokenized Securities Settlement Using Central Bank Money",
-  "description": "Deutsche Bank Facilitates Siemens’ €100M Tokenized Securities Settlement Using Central Bank Money",
-  "why_it_matters": "",
-  "pubDate": "2026-10-28",
-  "category": "news",
+  "title": "BayernLB Settles €100M Tokenized Commercial Paper via Pontes",
+  "slug": "bayernlb-settles-100m-tokenized-commercial-paper-pontes",
+  "description": "BayernLB issued €100 million of tokenized commercial paper to Siemens and completed same-day settlement in central bank money through Pontes.",
+  "why_it_matters": "The transaction moves Germany's institutional tokenization work from an earlier Eurosystem trial into live issuer-side use, combining blockchain-based securities transfer with central-bank-money settlement.",
+  "pubDate": "2026-10-27",
+  "category": "institutions",
+  "reviewCategory": "SETTLEMENT",
   "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Tokenized Securities",
+    "BayernLB",
+    "Siemens",
+    "Pontes",
+    "Central Bank Money"
   ],
   "keyTakeaways": [
-    "Deutsche Bank Facilitates Siemens’ €100M Tokenized Securities Settlement Using Central Bank Money",
-    ""
+    "BayernLB issued €100 million of tokenized commercial paper, with Siemens as investor.",
+    "The security transfer used SWIAT while the payment settled through the Eurosystem's Pontes infrastructure.",
+    "DekaBank served as custodian and payment provider; Deutsche Bank provided payment services for Siemens."
   ],
-  "body": "Deutsche Bank Facilitates Siemens’ €100M Tokenized Securities Settlement Using Central Bank Money",
+  "body": "BayernLB announced on October 27 that it had issued €100 million of tokenized commercial paper and settled the transaction on the same day through the Eurosystem's Pontes infrastructure. Siemens was the investor. BayernLB said issuance, blockchain-based register maintenance and payment were completed within minutes.\n\nThe security transfer ran on SWIAT's private permissioned blockchain, with SWIAT also acting as the crypto-securities registrar. Payment settled in central bank money through Pontes. SWIAT's External Asset Synchronizer connected the two systems so that the securities and cash legs could be transferred together.\n\nDekaBank acted as custodian and payment service provider, while Deutsche Bank provided payment services for Siemens. BayernLB described this as its first live use of Pontes and the first same-day Pontes transaction from the German market. The roles differ from a 2024 Eurosystem trial, when Siemens issued a digital bond and BayernLB participated as an investor. In the new transaction, BayernLB was the issuer and Siemens supplied the investment capital.",
   "sources": [
     {
-      "name": "Blockzeit",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOcnpSZnhlaFVLYmtPQWZ1WVdkbkVpeEtJRmdBME41dTVRTTVaek9WclIwVXFteWZuN2djTmpWTlVNM3NRaFZDRlJiUndOcWpOVkFyUjRoSGxTNTFsbm1nMWdscEYxdEI0czVkWFVHbE93bzV1QTJTTE9XSGdZNWtkNkxKeVk2Z29meHgwRG1qUWpXX09fYWVWSHR3?oc=5"
+      "name": "BayernLB — first same-day Pontes transaction",
+      "url": "https://www.bayernlb.de/internet/de/blb/resp/bayernlb_rd/nachricht_384074.jsp"
     }
   ],
   "newsWatch": {
@@ -27,7 +32,45 @@
     "discoveredAt": "2026-10-28T23:07:17.107806+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-28T23:46:54Z",
+    "sources": [
+      {
+        "url": "https://www.bayernlb.de/internet/de/blb/resp/bayernlb_rd/nachricht_384074.jsp",
+        "publishedAt": "2026-10-27",
+        "checkedAt": "2026-10-28T23:46:54Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "BayernLB issued and settled the security through Pontes in central bank money on the same day.",
+        "sourceUrl": "https://www.bayernlb.de/internet/de/blb/resp/bayernlb_rd/nachricht_384074.jsp",
+        "anchor": "taggleich über PONTES in Zentralbankgeld abgewickelt"
+      },
+      {
+        "claim": "The transaction involved €100 million of commercial paper, with Siemens as investor.",
+        "sourceUrl": "https://www.bayernlb.de/internet/de/blb/resp/bayernlb_rd/nachricht_384074.jsp",
+        "anchor": "Commercial Paper über 100 Mio. Euro"
+      },
+      {
+        "claim": "The tokenized security moved across SWIAT's private permissioned blockchain.",
+        "sourceUrl": "https://www.bayernlb.de/internet/de/blb/resp/bayernlb_rd/nachricht_384074.jsp",
+        "anchor": "private, zugangsbeschränkte Blockchain von SWIAT"
+      },
+      {
+        "claim": "Deutsche Bank provided payment services for Siemens in the transaction.",
+        "sourceUrl": "https://www.bayernlb.de/internet/de/blb/resp/bayernlb_rd/nachricht_384074.jsp",
+        "anchor": "Deutsche Bank als Zahlungsdienstleister von Siemens"
+      }
+    ],
+    "contentSha256": "f9ec4d40e2269c1d6affb92b1d7bcfaa3d1bee728a741e711617ed25f6f26668"
   }
 }
