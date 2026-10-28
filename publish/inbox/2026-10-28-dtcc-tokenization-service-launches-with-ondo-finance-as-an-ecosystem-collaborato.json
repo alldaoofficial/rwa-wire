@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-28T13:47:36Z",
+    "reason": "This lead covers the same October 28 DTCC Tokenization Service launch already captured in publish/inbox/2026-10-28-dtcc-tokenization-service-goes-live-marking-major-milestone-in-the-adoption-of-d.json. Ondo's ecosystem-collaborator role is part of that launch, not a separate event."
   }
 }
