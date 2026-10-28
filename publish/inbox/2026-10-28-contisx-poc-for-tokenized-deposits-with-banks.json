@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-28T14:19:14Z",
+    "reason": "The Tekedia page solicits paid proof-of-concept engagements for ContiSX. It names no participating bank, completed pilot, commercial launch or regulatory approval, so it is promotional outreach rather than a verifiable RWA event."
   }
 }
