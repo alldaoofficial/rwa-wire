@@ -3362,5 +3362,71 @@
       ]
     },
     "sourceSha256": "c73e21d451a6e89d5d090c281e04debffda4059e956d6649a1aa09bab69200c0"
+  },
+  "securitize-plans-stellar-integration-future-tokenized-assets": {
+    "path": "/institutions/securitize-plans-stellar-integration-future-tokenized-assets/",
+    "date": "2026-10-28",
+    "kind": "news",
+    "sources": [
+      [
+        "Stellar — Securitize integration announcement",
+        "https://stellar.org/press/securitize-to-integrate-with-stellar-network"
+      ]
+    ],
+    "de": {
+      "title": "Securitize plant Stellar-Integration für künftige tokenisierte Vermögenswerte",
+      "description": "Securitize plant, Stellar in seine institutionelle Tokenisierungsinfrastruktur zu integrieren, hat jedoch weder unterstützte Vermögenswerte noch einen Fertigstellungstermin genannt.",
+      "sections": [
+        [
+          "Geplante Integration für Ausgabe und Verwaltung",
+          "Securitize kündigte am 28. Oktober an, das Stellar-Netzwerk in seine Tokenisierungsinfrastruktur integrieren zu wollen. Die geplante Verbindung soll es Securitize ermöglichen, die Ausgabe und laufende Verwaltung tokenisierter Finanzanlagen auf Stellar für institutionelle Vermögensverwalter zu unterstützen. Die Ankündigung erfolgte im Umfeld der Meridian 2026 in Lissabon."
+        ],
+        [
+          "Noch kein abgeschlossener Einsatz oder Produktstart",
+          "Es handelt sich um eine geplante Integration, nicht um einen abgeschlossenen Einsatz oder einen Produktstart. Securitize und die Stellar Development Foundation nannten weder einen ersten Vermögenswert noch einen teilnehmenden Emittenten, einen Starttermin oder einen aktiven Smart Contract. Laut Mitteilung sollen Einzelheiten zu den unterstützten Vermögenswerten später bekannt gegeben werden; zugleich wird darauf hingewiesen, dass sich die Integration verzögern, ändern oder ausbleiben könnte."
+        ],
+        [
+          "Rund 5 Mrd. US-Dollar beziehen sich auf die gesamte Plattform",
+          "Securitize bezeichnete das Vorhaben als Erweiterung seines Multichain-Ansatzes. Das Unternehmen meldete zum 30. September 2026 tokenisierte Wertpapiere im Umfang von rund 5 Mrd. US-Dollar auf seiner Plattform. Diese plattformweite Zahl steht jedoch nicht für bereits auf Stellar ausgegebene Vermögenswerte. Die praktische Wirkung wird davon abhängen, welche Vermögensverwalter und Produkte das Netzwerk nach Abschluss der Integration tatsächlich nutzen."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Securitize planea integrar Stellar para futuros activos tokenizados",
+      "description": "Securitize planea incorporar Stellar a su infraestructura institucional de tokenización, pero no ha indicado qué activos serán compatibles ni una fecha de finalización.",
+      "sections": [
+        [
+          "Una integración prevista para la emisión y la gestión",
+          "Securitize anunció el 28 de octubre que planea integrar la red Stellar en su infraestructura de tokenización. La conexión propuesta permitiría a Securitize respaldar la emisión y la gestión continua de activos financieros tokenizados en Stellar para gestoras de activos institucionales. El anuncio se realizó en el marco de Meridian 2026 en Lisboa."
+        ],
+        [
+          "Aún no es un despliegue completado ni un lanzamiento de producto",
+          "Se trata de una integración prevista, no de un despliegue completado ni del lanzamiento de un producto. Securitize y la Stellar Development Foundation no identificaron un primer activo, un emisor participante, una fecha de lanzamiento ni un contrato activo. El comunicado señala que los detalles sobre los activos compatibles se anunciarán más adelante y advierte de que la integración podría retrasarse, cambiar o no completarse."
+        ],
+        [
+          "Los aproximadamente 5.000 millones de dólares corresponden a toda la plataforma",
+          "Securitize describió el plan como una ampliación de su enfoque multichain. La empresa informó de aproximadamente 5.000 millones de dólares en valores tokenizados en su plataforma a 30 de septiembre de 2026, pero esa cifra de toda la plataforma no representa activos ya emitidos en Stellar. El impacto práctico dependerá de qué gestoras y productos utilicen la red una vez completada la integración."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Securitize prévoit d’intégrer Stellar pour de futurs actifs tokenisés",
+      "description": "Securitize prévoit d’ajouter Stellar à son infrastructure institutionnelle de tokenisation, mais n’a indiqué ni les actifs pris en charge ni une date d’achèvement.",
+      "sections": [
+        [
+          "Une intégration prévue pour l’émission et la gestion",
+          "Securitize a annoncé le 28 octobre son intention d’intégrer le réseau Stellar à son infrastructure de tokenisation. La connexion envisagée permettrait à Securitize de prendre en charge l’émission et la gestion continue d’actifs financiers tokenisés sur Stellar pour des gestionnaires d’actifs institutionnels. L’annonce a été faite à l’occasion de Meridian 2026 à Lisbonne."
+        ],
+        [
+          "Ni déploiement achevé ni lancement de produit à ce stade",
+          "Il s’agit d’une intégration prévue, et non d’un déploiement achevé ou du lancement d’un produit. Securitize et la Stellar Development Foundation n’ont identifié ni premier actif, ni émetteur participant, ni date de lancement, ni contrat opérationnel. Le communiqué indique que les actifs pris en charge seront précisés ultérieurement et avertit que l’intégration pourrait être retardée, modifiée ou ne pas être menée à terme."
+        ],
+        [
+          "Les quelque 5 Md$ concernent l’ensemble de la plateforme",
+          "Securitize a présenté ce projet comme une extension de son approche multichaîne. L’entreprise déclarait environ 5 Md$ de titres tokenisés sur sa plateforme au 30 septembre 2026, mais ce montant à l’échelle de la plateforme ne correspond pas à des actifs déjà émis sur Stellar. L’incidence pratique dépendra des gestionnaires et des produits qui utiliseront le réseau une fois l’intégration achevée."
+        ]
+      ]
+    },
+    "sourceSha256": "da93e869893b6414280d96108535928fef42ef9030ac3e1087dc0499cccf6a95"
   }
 }
