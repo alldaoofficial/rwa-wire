@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-28T00:49:55Z",
+    "reason": "The discovery is a flash summary of a TRON DAO social post promoting an interview recorded at TOKEN2049 in early October. It identifies no new launch, product, transaction or dated development on October 27, and the underlying remarks repeat previously published plans and forecasts."
   }
 }
