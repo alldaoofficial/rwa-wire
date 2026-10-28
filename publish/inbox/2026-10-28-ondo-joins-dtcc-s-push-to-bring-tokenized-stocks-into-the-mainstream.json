@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-28T19:21:25Z",
+    "reason": "TheStreet coverage concerns Ondo's participation around the October 28 production launch of DTCC's Tokenization Service, the same event already source-reviewed, published and receipted by RWA Wire; it identifies no separate new approval, launch, financing or material expansion."
   }
 }
