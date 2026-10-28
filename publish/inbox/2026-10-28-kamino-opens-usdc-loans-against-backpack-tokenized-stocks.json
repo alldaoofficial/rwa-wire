@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-28T17:34:16Z",
-    "reason": "The live Backpack Market and Backpack's issuer asset list support that a new market exists, but no accessible full-text Kamino launch document was found. The available launch coverage is limited to derivative summaries and does not provide two independent reputable full reports or primary technical documentation for the collateral, pricing and risk parameters."
+    "reviewedAt": "2026-10-28T23:46:54Z",
+    "reason": "Kamino's official launch-blog URL and live Backpack Market now exist, but the launch page returned no readable full text and the application did not expose the market's technical parameters in the retrieved page. The Defiant provides one full report; Solana Compass identifies itself as community-run, while other available articles are derivative summaries or rehosts. The evidence therefore still lacks readable primary technical documentation or two independent reputable full reports."
   }
 }
