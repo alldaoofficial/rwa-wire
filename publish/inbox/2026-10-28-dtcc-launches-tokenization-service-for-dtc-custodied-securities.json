@@ -34,5 +34,12 @@
     "requiresSourceReview": true,
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-28T15:32:39Z",
+    "reason": "Securities.io reports the same October 28 launch of the DTCC Tokenization Service already source-reviewed, published and recorded in publish/inbox/2026-10-28-dtcc-tokenization-service-goes-live-marking-major-milestone-in-the-adoption-of-d.json. It adds no separate launch, approval, financing or material expansion event."
   }
 }
