@@ -1,0 +1,27 @@
+{
+  "id": "2026-10-27-lynq-zerobeta-tokenized-treasury-collateral",
+  "title": "Lynq and ZeroBeta Connect Tokenized Treasuries to Collateral Workflows",
+  "category": "TOKENIZED TREASURIES",
+  "why_it_matters": "The connection links collateral instructions, margin monitoring and settlement on one rail, but the absence of disclosed users or transaction volumes leaves actual adoption unproven.",
+  "article_url": "https://therwawire.com/institutions/lynq-zerobeta-tokenized-treasury-collateral-workflows/",
+  "image_url": "https://therwawire.com/images/news/lynq-zerobeta-tokenized-treasury-collateral-workflows.svg",
+  "caption": "RWA WIRE // TOKENIZED TREASURIES\n\nLynq and ZeroBeta Connect Tokenized Treasuries to Collateral Workflows\n\nZeroBeta's BlueShift risk platform has certified connectivity to Lynq, enabling eligible tokenized Treasury holdings to support borrowing and trading margin while interest continues to accrue.\n\nFull analysis →\nhttps://therwawire.com/institutions/lynq-zerobeta-tokenized-treasury-collateral-workflows/",
+  "distribution": {
+    "telegram": "RWA WIRE // TOKENIZED TREASURIES\n\nLynq and ZeroBeta Connect Tokenized Treasuries to Collateral Workflows\n\nZeroBeta's BlueShift risk platform has certified connectivity to Lynq, enabling eligible tokenized Treasury holdings to support borrowing and trading margin while interest continues to accrue.\n\nFull analysis →\nhttps://therwawire.com/institutions/lynq-zerobeta-tokenized-treasury-collateral-workflows/",
+    "x": "Lynq and ZeroBeta Connect Tokenized Treasuries to Collateral Workflows\n\nZeroBeta's BlueShift risk platform has certified connectivity to Lynq, enabling eligible tokenized Treasury holdings to support borrowing and trading margin while interest continues to accrue.\n\nhttps://therwawire.com/institutions/lynq-zerobeta-tokenized-treasury-collateral-workflows/",
+    "breaking": "RWA WIRE // TOKENIZED TREASURIES\n\nLynq and ZeroBeta Connect Tokenized Treasuries to Collateral Workflows\n\nhttps://therwawire.com/institutions/lynq-zerobeta-tokenized-treasury-collateral-workflows/",
+    "summary": "ZeroBeta's BlueShift risk platform has certified connectivity to Lynq, enabling eligible tokenized Treasury holdings to support borrowing and trading margin while interest continues to accrue."
+  },
+  "sources": [
+    {
+      "name": "Lynq — ZeroBeta integration announcement",
+      "url": "https://lynq.network/zerobeta-integrates-to-the-lynq-platform-enabling-mutual-clients-to-use-tokenized-collateral/"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-10-28-lynq-and-zerobeta-make-tokenized-treasury-collateral-earn-yield.json",
+    "contentSha256": "abcd48ca38d12d136f67855562a4bec0d69d8e40ce1e20a92fc55f37bd1bb626",
+    "approvedAt": "2026-10-28T06:42:20.427816+00:00"
+  }
+}
