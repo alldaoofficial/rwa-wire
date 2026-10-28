@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-28T21:17:22Z",
+    "reason": "The Finovate item is an advisory list about considerations before banks launch tokenized deposits, not a documented approval, financing, product introduction, pilot result or material expansion. It provides no new event suitable for a news brief."
   }
 }
