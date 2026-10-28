@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-28T15:49:41Z",
+    "reason": "The accessible Coinfomania page is an AI-generated summary of a Fireblocks social post and provides generic market commentary rather than a verifiable new event. It names no new pilot, participant commitment, transaction, launch date or primary document, so the social-post derivative is not an acceptable source for an RWA Wire article."
   }
 }
