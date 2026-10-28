@@ -29,5 +29,13 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-28T08:27:12Z",
+    "reason": "The resolved Cryptonews.net item republishes eCryptoGraph's report and both rely on an October 25 Token Terminal social snapshot. Token Terminal's readable public page does not expose the dated historical values or underlying pool records needed to verify the $300 million total, 2,451.5% annual change or chain and issuer breakdown; no second independent full-text report was found."
   }
 }
+
