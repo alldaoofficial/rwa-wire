@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-28T17:34:16Z",
+    "reason": "The live Backpack Market and Backpack's issuer asset list support that a new market exists, but no accessible full-text Kamino launch document was found. The available launch coverage is limited to derivative summaries and does not provide two independent reputable full reports or primary technical documentation for the collateral, pricing and risk parameters."
   }
 }
