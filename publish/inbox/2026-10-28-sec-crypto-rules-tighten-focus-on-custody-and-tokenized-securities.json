@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-28T17:34:16Z",
+    "reason": "The Crypto Daily article combines the SEC's October 1 custody-rule proposal with its October 23 fiscal 2027 examination priorities and reports no new October 28 action. The tokenized-securities examination event is already verified and published as 'SEC Adds Tokenization to Fiscal 2027 Examination Priorities'; the custody proposal is older than the 48-hour news window."
   }
 }
