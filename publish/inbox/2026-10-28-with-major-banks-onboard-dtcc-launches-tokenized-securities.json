@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-28T18:25:44Z",
+    "reason": "The American Banker headline covers the October 28 production launch of DTCC's Tokenization Service, the same event already source-reviewed, published and receipted by RWA Wire; it identifies no separate approval, financing, introduction or material expansion."
   }
 }
