@@ -1,25 +1,22 @@
 {
-  "title": "Lynq and ZeroBeta Make Tokenized Treasury Collateral Earn Yield",
-  "description": "Lynq and ZeroBeta Make Tokenized Treasury Collateral Earn Yield",
-  "why_it_matters": "",
-  "pubDate": "2026-10-28",
-  "category": "news",
-  "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
-  ],
+  "title": "Lynq and ZeroBeta Connect Tokenized Treasuries to Collateral Workflows",
+  "slug": "lynq-zerobeta-tokenized-treasury-collateral-workflows",
+  "description": "ZeroBeta's BlueShift risk platform has certified connectivity to Lynq, enabling eligible tokenized Treasury holdings to support borrowing and trading margin while interest continues to accrue.",
+  "why_it_matters": "The connection links collateral instructions, margin monitoring and settlement on one rail, but the absence of disclosed users or transaction volumes leaves actual adoption unproven.",
+  "pubDate": "2026-10-27",
+  "category": "institutions",
+  "reviewCategory": "TOKENIZED TREASURIES",
+  "tags": ["Tokenized Treasuries", "Collateral", "Lynq", "ZeroBeta", "Avalanche"],
   "keyTakeaways": [
-    "Lynq and ZeroBeta Make Tokenized Treasury Collateral Earn Yield",
-    ""
+    "ZeroBeta's BlueShift platform has certified connectivity to Lynq's settlement and collateral mobility network.",
+    "The integration supports secured borrowing and digital-asset trading margin using eligible tokenized Treasury holdings.",
+    "Lynq says collateral can remain on its Avalanche-based rail and continue accruing interest, but it disclosed no completed transaction or pledged amount."
   ],
-  "body": "Lynq and ZeroBeta Make Tokenized Treasury Collateral Earn Yield",
-  "sources": [
-    {
-      "name": "Coin Gabbar",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQOE1qdnRLMEtNQU9WQ3E1MzZYNTB2ZThrb1NncGtIS09DVnRWTmVudnJZa0Z1ODduUDY2QnVEX0MtcVQyRjZxcU96bW1lYmZRUTdXSnhyY2c5UkgxS09tYVpqMXhXM1lXalhwNS16alJJd3U2Nmp2VFNoOE1fM0hLaUpjUFlfY3M?oc=5"
-    }
-  ],
+  "body": "Lynq and ZeroBeta announced on October 27 that ZeroBeta's BlueShift risk and collateral platform has certified connectivity to Lynq's settlement and collateral mobility network. The companies say the integration lets institutions use eligible tokenized Treasury holdings for secured borrowing or digital-asset trading margin while the underlying asset continues accruing interest.\n\nBlueShift sets collateral terms, monitors margin and sends pledge, top-up or release instructions. Lynq holds the collateral and executes those instructions on its Avalanche-based settlement rail. For lending, BlueShift can adjust pledged collateral as its value moves against an agreed threshold. For trading, it calculates margin for positions and orders before directing Lynq to pledge or release the asset.\n\nThe announcement describes an operational connection, not demonstrated market usage. It names no lender, exchange or trading desk that has completed a transaction through the integration and discloses no collateral amount, borrowing rate, haircut or margin threshold. Lynq separately reports more than $89 million in platform assets and over 40 institutional firms onboarded, but those network-wide figures do not measure adoption of the ZeroBeta workflow.",
+  "sources": [{
+    "name": "Lynq — ZeroBeta integration announcement",
+    "url": "https://lynq.network/zerobeta-integrates-to-the-lynq-platform-enabling-mutual-clients-to-use-tokenized-collateral/"
+  }],
   "newsWatch": {
     "score": 9,
     "priority": "watchlist",
@@ -27,7 +24,48 @@
     "discoveredAt": "2026-10-28T06:37:16.248145+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-28T06:40:30Z",
+    "sources": [{
+      "url": "https://lynq.network/zerobeta-integrates-to-the-lynq-platform-enabling-mutual-clients-to-use-tokenized-collateral/",
+      "publishedAt": "2026-10-27",
+      "checkedAt": "2026-10-28T06:40:30Z",
+      "kind": "primary",
+      "access": "full-text"
+    }],
+    "facts": [
+      {
+        "claim": "Lynq and ZeroBeta announced their partnership on October 27, 2026.",
+        "sourceUrl": "https://lynq.network/zerobeta-integrates-to-the-lynq-platform-enabling-mutual-clients-to-use-tokenized-collateral/",
+        "anchor": "27 October, 2026"
+      },
+      {
+        "claim": "ZeroBeta's BlueShift platform certified connectivity to Lynq's settlement platform.",
+        "sourceUrl": "https://lynq.network/zerobeta-integrates-to-the-lynq-platform-enabling-mutual-clients-to-use-tokenized-collateral/",
+        "anchor": "certified connectivity to Lynq"
+      },
+      {
+        "claim": "The integration supports secured borrowing and lending with tokenized Treasury collateral.",
+        "sourceUrl": "https://lynq.network/zerobeta-integrates-to-the-lynq-platform-enabling-mutual-clients-to-use-tokenized-collateral/",
+        "anchor": "Secured borrowing and lending"
+      },
+      {
+        "claim": "The same connection supports tokenized Treasury assets as digital-asset trading margin.",
+        "sourceUrl": "https://lynq.network/zerobeta-integrates-to-the-lynq-platform-enabling-mutual-clients-to-use-tokenized-collateral/",
+        "anchor": "Margin for digital-asset trading"
+      },
+      {
+        "claim": "Lynq's institutional settlement network is built on Avalanche.",
+        "sourceUrl": "https://lynq.network/zerobeta-integrates-to-the-lynq-platform-enabling-mutual-clients-to-use-tokenized-collateral/",
+        "anchor": "Built on Avalanche"
+      }
+    ],
+    "contentSha256": "abcd48ca38d12d136f67855562a4bec0d69d8e40ce1e20a92fc55f37bd1bb626"
   }
 }
