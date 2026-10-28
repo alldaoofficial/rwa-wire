@@ -3222,5 +3222,75 @@
       ]
     },
     "sourceSha256": "11c2305ed70ef57fe005eec57faa6c55a93590bce9ea59334bd1947197f78cb8"
+  },
+  "dtcc-launches-tokenization-service-on-canton-and-private-besu": {
+    "path": "/news/dtcc-launches-tokenization-service-on-canton-and-private-besu/",
+    "date": "2026-10-28",
+    "kind": "news",
+    "sources": [
+      [
+        "The Depository Trust & Clearing Corporation via Business Wire",
+        "https://www.businesswire.com/news/home/20261027462327/en/DTCC-Tokenization-Service-Goes-Live-Marking-Major-Milestone-in-the-Adoption-of-Digital-Assets"
+      ],
+      [
+        "U.S. Securities and Exchange Commission",
+        "https://www.sec.gov/files/tm/no-action/dtc-nal-121125.pdf"
+      ]
+    ],
+    "de": {
+      "title": "DTCC startet Tokenisierungsdienst auf Canton und einer privaten Besu-Umgebung",
+      "description": "DTC hat einen Dienst zur Tokenisierung geeigneter verwahrter Wertpapiere gestartet; 20 Teilnehmer haben Zugangsvereinbarungen unterzeichnet, und zunächst werden zwei private Netzwerke unterstützt.",
+      "sections": [
+        [
+          "Tokenisierte Ansprüche auf bei DTC verwahrte Wertpapiere",
+          "Die Depository Trust Company, eine Tochtergesellschaft der DTCC, startete am 28. Oktober den DTCC Tokenization Service. Der Dienst ermöglicht berechtigten Nutzern, tokenisierte Abbildungen von bei DTC verwahrten Wertpapieren zu erzeugen und Ansprüche zwischen traditioneller und tokenisierter Form umzuwandeln. Laut DTCC behalten die tokenisierten Ansprüche die Eigentumsrechte, den Anlegerschutz und die wirtschaftlichen Ansprüche ihrer traditionellen Gegenstücke."
+        ],
+        [
+          "Start auf zwei privaten Netzwerken mit 20 Zugangspartnern",
+          "Der Dienst ist zunächst mit dem Canton Network und dem privaten Besu-Netzwerk der DTCC verbunden. Weitere Netzwerke sind für 2027 geplant. Zwanzig DTC-Teilnehmer, darunter Bank of America, Citi, Fidelity Investments, J.P. Morgan, Morgan Stanley, State Street und UBS, haben Vereinbarungen über den Zugang zum Dienst unterzeichnet. Weitere Nutzer sollen laut DTCC fortlaufend aufgenommen werden."
+        ],
+        [
+          "Dreijähriger Pilot mit begrenztem Kreis geeigneter Vermögenswerte",
+          "Das No-Action-Schreiben der SEC vom Dezember 2025 begrenzt den genehmigten Pilotversuch auf drei Jahre. Als geeignete Vermögenswerte nennt es bestimmte Aktien aus dem Russell 1000, ETFs auf große Indizes und US-Staatsanleihen. Der Start schafft produktive Infrastruktur; die unterzeichneten Zugangsvereinbarungen belegen jedoch nicht, dass jeder Teilnehmer bereits Vermögenswerte tokenisiert oder übertragen hat."
+        ]
+      ]
+    },
+    "es": {
+      "title": "DTCC lanza un servicio de tokenización en Canton y una red Besu privada",
+      "description": "DTC ha lanzado un servicio para tokenizar valores elegibles bajo custodia; 20 participantes han firmado acuerdos de acceso y al principio se admiten dos redes privadas.",
+      "sections": [
+        [
+          "Derechos tokenizados sobre valores custodiados en DTC",
+          "The Depository Trust Company, filial de DTCC, lanzó el DTCC Tokenization Service el 28 de octubre. El servicio permite a los usuarios elegibles emitir representaciones tokenizadas de valores custodiados en DTC y convertir derechos entre su forma tradicional y tokenizada. Según DTCC, los derechos tokenizados conservan los derechos de propiedad, las protecciones de los inversores y los derechos económicos de sus equivalentes tradicionales."
+        ],
+        [
+          "Inicio en dos redes privadas con 20 participantes con acceso",
+          "El servicio se conecta inicialmente a Canton Network y a la red Besu privada de DTCC. Se prevén redes adicionales para 2027. Veinte participantes de DTC, entre ellos Bank of America, Citi, Fidelity Investments, J.P. Morgan, Morgan Stanley, State Street y UBS, han firmado acuerdos para acceder al servicio. DTCC afirmó que incorporará a más usuarios de forma continua."
+        ],
+        [
+          "Un piloto de tres años con activos elegibles limitados",
+          "La carta de no acción de la SEC de diciembre de 2025 limita el piloto autorizado a tres años. Define como activos elegibles determinadas acciones del Russell 1000, ETF sobre grandes índices y valores del Tesoro estadounidense. El lanzamiento establece infraestructura de producción, pero los acuerdos de acceso firmados no demuestran que todos los participantes ya hayan tokenizado o transferido activos."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "DTCC lance un service de tokenisation sur Canton et un réseau Besu privé",
+      "description": "DTC a lancé un service de tokenisation de titres éligibles conservés en dépôt ; 20 participants ont signé des accords d’accès et deux réseaux privés sont pris en charge dans un premier temps.",
+      "sections": [
+        [
+          "Des droits tokenisés sur des titres conservés chez DTC",
+          "The Depository Trust Company, filiale de DTCC, a lancé le DTCC Tokenization Service le 28 octobre. Le service permet aux utilisateurs éligibles de créer des représentations tokenisées de titres conservés chez DTC et de convertir les droits entre leur forme traditionnelle et leur forme tokenisée. Selon DTCC, les droits tokenisés conservent les droits de propriété, les protections des investisseurs et les droits économiques de leurs équivalents traditionnels."
+        ],
+        [
+          "Un lancement sur deux réseaux privés avec 20 participants ayant signé un accès",
+          "Le service est d’abord connecté à Canton Network et au réseau Besu privé de DTCC. Des réseaux supplémentaires sont prévus pour 2027. Vingt participants de DTC, dont Bank of America, Citi, Fidelity Investments, J.P. Morgan, Morgan Stanley, State Street et UBS, ont signé des accords d’accès au service. DTCC a indiqué que d’autres utilisateurs seraient intégrés progressivement."
+        ],
+        [
+          "Un pilote de trois ans limité à certains actifs éligibles",
+          "La lettre de non-intervention de la SEC de décembre 2025 limite le pilote autorisé à trois ans. Elle définit les actifs éligibles comme certaines actions du Russell 1000, des ETF sur de grands indices et des titres du Trésor américain. Le lancement met en place une infrastructure de production, mais les accords d’accès signés ne démontrent pas que chaque participant a déjà tokenisé ou transféré des actifs."
+        ]
+      ]
+    },
+    "sourceSha256": "7018faae427deffbb31082bc110f051902715ba743a60ef0152b9e68ee78f1aa"
   }
 }
