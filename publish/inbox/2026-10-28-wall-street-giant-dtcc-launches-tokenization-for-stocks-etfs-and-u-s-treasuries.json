@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-28T13:47:36Z",
+    "reason": "CoinDesk's October 28 report covers the same DTCC Tokenization Service launch already captured in publish/inbox/2026-10-28-dtcc-tokenization-service-goes-live-marking-major-milestone-in-the-adoption-of-d.json. It adds no distinct launch, approval, financing or material expansion event."
   }
 }
