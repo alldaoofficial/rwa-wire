@@ -1,0 +1,38 @@
+{
+  "title": "DTCC Launches Tokenization Service for DTC-Custodied Securities",
+  "description": "DTCC Launches Tokenization Service for DTC-Custodied Securities Securities.io",
+  "why_it_matters": "",
+  "pubDate": "2026-10-28",
+  "category": "news",
+  "tags": [
+    "Tokenization",
+    "Institutions",
+    "News Watch"
+  ],
+  "keyTakeaways": [
+    "DTCC Launches Tokenization Service for DTC-Custodied Securities Securities.io",
+    ""
+  ],
+  "body": "DTCC Launches Tokenization Service for DTC-Custodied Securities Securities.io",
+  "sources": [
+    {
+      "name": "Securities.io",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPOHVvdnFCdWJ0QTc3SS01MXdBdmVkTXBVSTgxc3BtVFZlbG9YVEZpbmVPNWNSTkFJdEJ3QU5sUWRZSW13RUxPNnhRVTRkYnJrdnoycDhiZl9EdTRkQzN2VHhZbThsdi1uU3Y2LW9LeGNHbV9OTjdHQng1Z1FBeF93NzE1NWJSVWl0ckNyNTIwUmt2OU95?oc=5"
+    }
+  ],
+  "newsWatch": {
+    "score": 13,
+    "priority": "breaking",
+    "sourceTrust": "primary",
+    "discoveredAt": "2026-10-28T14:37:20.122019+00:00",
+    "confirmationMode": "independent-high-trust-source",
+    "originalDiscoveryTitle": "Major Banks Sign on as DTCC Launches Tokenized Securities Service",
+    "originalDiscoverySource": "Bitcoin News",
+    "confirmationSources": [
+      "Securities.io"
+    ],
+    "requiresSourceReview": true,
+    "autoPublishEligible": false,
+    "contentStatus": "needs-source-enrichment"
+  }
+}
