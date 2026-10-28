@@ -3292,5 +3292,75 @@
       ]
     },
     "sourceSha256": "7018faae427deffbb31082bc110f051902715ba743a60ef0152b9e68ee78f1aa"
+  },
+  "spiko-aum-crosses-3b-after-monthly-rise": {
+    "path": "/markets/spiko-aum-crosses-3b-after-monthly-rise/",
+    "date": "2026-10-21",
+    "kind": "news",
+    "sources": [
+      [
+        "TokenPost — Spiko AUM crosses $3 billion",
+        "https://www.tokenpost.com/news/business/36904"
+      ],
+      [
+        "Spiko — October 6 company update",
+        "https://www.spiko.io/blog/weve-raised-90m-to-make-cash-earn-for-everyone"
+      ]
+    ],
+    "de": {
+      "title": "Spikos verwaltetes Vermögen überschreitet nach 14 % Monatswachstum 3 Mrd. US-Dollar",
+      "description": "TokenPost berichtete, dass Spikos verwaltetes Vermögen am 21. Oktober die Marke von 3 Mrd. US-Dollar überschritt, nachdem es innerhalb von 30 Tagen um rund 374 Mio. US-Dollar gestiegen war.",
+      "sections": [
+        [
+          "14,07 % Wachstum innerhalb von 30 Tagen",
+          "TokenPost berichtete am 21. Oktober, dass Spikos verwaltetes Vermögen nach einem Anstieg von 14,07 % innerhalb von 30 Tagen die Marke von 3 Mrd. US-Dollar überschritten habe. Der Bericht bezifferte den monatlichen Zuwachs auf rund 374 Mio. US-Dollar und erklärte, der Anstieg von 2 Mrd. auf 3 Mrd. US-Dollar habe weniger als vier Monate gedauert."
+        ],
+        [
+          "Mehr als 10.000 Kunden in über 25 Ländern",
+          "Der Meilenstein folgt auf Spikos Unternehmensupdate vom 6. Oktober. Darin meldete das Unternehmen 2,7 Mrd. US-Dollar in seinen Fonds und ein Wachstum auf mehr als das Fünffache innerhalb von zwölf Monaten. Laut dieser Primärquelle nutzten außerdem mehr als 10.000 Unternehmen und Privatpersonen in über 25 Ländern die Plattform. Spiko bietet Fonds in Euro, US-Dollar, Pfund Sterling und Schweizer Franken an."
+        ],
+        [
+          "Aggregiertes Fondsvermögen, kein Tokenpreis",
+          "Die Zahlen beschreiben das gesamte Vermögen von Spikos Fondspalette, nicht den Preis eines Tokens oder ein einzelnes Blockchain-Produkt. Währungsumrechnung, Zeichnungen, Rücknahmen und Unterschiede im Produktumfang können Vergleiche mit Onchain-Ranglisten Dritter beeinflussen. Die zugänglichen Quellen dokumentieren keine reproduzierbare Grundlage für die separate Schlagzeilenbehauptung eines exakten Jahreswachstums von 536 %; diese Zahl wurde deshalb ausgeschlossen."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Los activos gestionados por Spiko superan los 3.000 millones de dólares tras subir un 14 % en un mes",
+      "description": "TokenPost informó de que los activos gestionados por Spiko superaron los 3.000 millones de dólares el 21 de octubre, tras aumentar unos 374 millones de dólares en 30 días.",
+      "sections": [
+        [
+          "Un crecimiento del 14,07 % en 30 días",
+          "TokenPost informó el 21 de octubre de que los activos gestionados por Spiko habían superado los 3.000 millones de dólares después de aumentar un 14,07 % en 30 días. El informe cifró el incremento mensual en unos 374 millones de dólares y señaló que el avance de 2.000 millones a 3.000 millones de dólares tardó menos de cuatro meses."
+        ],
+        [
+          "Más de 10.000 clientes en más de 25 países",
+          "El hito sigue a la actualización corporativa de Spiko del 6 de octubre, que informó de 2.700 millones de dólares depositados en sus fondos y de un crecimiento superior a cinco veces en doce meses. Esa fuente primaria también afirmó que más de 10.000 empresas y particulares de más de 25 países utilizaban la plataforma. Spiko ofrece fondos denominados en euros, dólares, libras esterlinas y francos suizos."
+        ],
+        [
+          "Activos agregados de varios fondos, no el precio de un token",
+          "Las cifras describen los activos agregados de toda la gama de fondos de Spiko, no el precio de un token ni un único producto de blockchain. La conversión de divisas, las suscripciones, los reembolsos y las diferencias de cobertura entre productos pueden afectar a las comparaciones con clasificaciones onchain de terceros. Las fuentes accesibles no documentan una base reproducible para la afirmación separada de un crecimiento anual exacto del 536 %, por lo que esa cifra se excluyó."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Les actifs sous gestion de Spiko dépassent 3 Md$ après une hausse mensuelle de 14 %",
+      "description": "TokenPost a indiqué que les actifs sous gestion de Spiko avaient dépassé 3 Md$ le 21 octobre, après une progression d’environ 374 M$ en 30 jours.",
+      "sections": [
+        [
+          "Une progression de 14,07 % en 30 jours",
+          "TokenPost a indiqué le 21 octobre que les actifs sous gestion de Spiko avaient dépassé 3 Md$ après une hausse de 14,07 % en 30 jours. Le média a chiffré l’augmentation mensuelle à environ 374 M$ et précisé que le passage de 2 Md$ à 3 Md$ avait pris moins de quatre mois."
+        ],
+        [
+          "Plus de 10 000 clients dans plus de 25 pays",
+          "Ce seuil fait suite à la mise à jour de Spiko du 6 octobre, qui faisait état de 2,7 Md$ placés dans ses fonds et d’une multiplication par plus de cinq en douze mois. Cette source primaire indiquait également que plus de 10 000 entreprises et particuliers dans plus de 25 pays utilisaient la plateforme. Spiko propose des fonds libellés en euros, dollars, livres sterling et francs suisses."
+        ],
+        [
+          "Des actifs agrégés sur plusieurs fonds, et non le prix d’un token",
+          "Les chiffres décrivent les actifs agrégés de la gamme de fonds de Spiko, et non le prix d’un token ou un produit blockchain unique. La conversion des devises, les souscriptions, les rachats et les différences de périmètre des produits peuvent influer sur les comparaisons avec les classements onchain de tiers. Les sources accessibles ne fournissent aucune base reproductible pour l’affirmation distincte d’une croissance annuelle exacte de 536 % ; ce chiffre a donc été exclu."
+        ]
+      ]
+    },
+    "sourceSha256": "c73e21d451a6e89d5d090c281e04debffda4059e956d6649a1aa09bab69200c0"
   }
 }
