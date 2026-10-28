@@ -3148,5 +3148,79 @@
       ]
     },
     "sourceSha256": "e73de06c6def36ec285dbd59c82f21a780e9ca466e987b91a0ed9a66d3f5ed4b"
+  },
+  "robinhood-ceo-durable-rules-sec-tokenization-exemption": {
+    "path": "/news/robinhood-ceo-durable-rules-sec-tokenization-exemption/",
+    "date": "2026-10-27",
+    "kind": "news",
+    "sources": [
+      [
+        "Robinhood Investor Relations",
+        "https://investors.robinhood.com/news-releases/news-release-details/robinhood-reports-third-quarter-2026-results"
+      ],
+      [
+        "StockAnalysis Earnings Call Transcript",
+        "https://stockanalysis.com/stocks/hood/transcripts/718711-q3-2026/"
+      ],
+      [
+        "U.S. Securities and Exchange Commission",
+        "https://www.sec.gov/newsroom/press-releases/2026-90-sec-issues-innovation-exemption-facilitate-trading-tokenized-nms-stock-request-comment"
+      ]
+    ],
+    "de": {
+      "title": "Robinhood-CEO fordert dauerhafte Regeln über die SEC-Ausnahme für Tokenisierung hinaus",
+      "description": "Vlad Tenev begrüßte die fünfjährige SEC-Ausnahme für tokenisierte Aktien, erklärte jedoch, dass dauerhafte Regulierung oder Gesetzgebung nötig sei, bevor Kunden bedeutende Vermögenswerte einsetzen.",
+      "sections": [
+        [
+          "Vorübergehende Erleichterung reicht für dauerhafte Nutzung nicht aus",
+          "Robinhood-CEO Vlad Tenev unterstützte in der Telefonkonferenz zu den Ergebnissen des dritten Quartals am 27. Oktober die Innovationsausnahme der SEC für tokenisierte Aktien, argumentierte jedoch, dass eine vorübergehende Erleichterung für eine dauerhafte Nutzung nicht ausreiche. Die Unsicherheit über die regulatorische Lage nach fünf Jahren könne Kunden davon abhalten, bedeutende Vermögenswerte einzusetzen; zusätzliche Regulierung oder Gesetzgebung bleibe daher erforderlich."
+        ],
+        [
+          "Private Aktien-Token sind zunächst für Märkte außerhalb der USA vorgesehen",
+          "Tenev sagte außerdem, Robinhood beabsichtige, einzelne Token privater Unternehmen außerhalb der USA einzuführen, sobald die regulatorischen Rahmenbedingungen geschaffen seien. In den USA bezeichnete er die Anforderungen für akkreditierte Anleger als zusätzliche Einschränkung und nannte keinen Starttermin."
+        ],
+        [
+          "Bedingte SEC-Ausnahme mit einer Laufzeit von fünf Jahren",
+          "Die SEC erließ ihre bedingte Ausnahme am 17. September. Sie erlaubt qualifizierten Handelsplätzen für tokenisierte Wertpapiere, zugangsbeschränkte automatisierte Market Maker und Liquiditätspools zu nutzen. Zu den Bedingungen gehören gleichwertige Aktionärsrechte und die Benachrichtigung des Emittenten. Die Erleichterung endet fünf Jahre nach ihrer Veröffentlichung. Tenevs Aussagen sind eine politische Position und eine Produktabsicht, kein bestätigter Start in den USA und keine Prognose für gesetzgeberische Maßnahmen."
+        ]
+      ]
+    },
+    "es": {
+      "title": "El CEO de Robinhood pide reglas duraderas más allá de la exención de tokenización de la SEC",
+      "description": "Vlad Tenev respaldó la exención de cinco años de la SEC para acciones tokenizadas, pero afirmó que harán falta normas o legislación duraderas antes de que los clientes comprometan activos importantes.",
+      "sections": [
+        [
+          "El alivio temporal no basta para una adopción duradera",
+          "El CEO de Robinhood, Vlad Tenev, respaldó la exención de innovación de la SEC para acciones tokenizadas durante la presentación de resultados del tercer trimestre de la compañía el 27 de octubre, pero sostuvo que el alivio temporal no basta para una adopción duradera. Dijo que la incertidumbre sobre la situación regulatoria al cabo de cinco años podría disuadir a los clientes de comprometer activos importantes y que siguen siendo necesarias normas adicionales o legislación."
+        ],
+        [
+          "Los tokens de empresas privadas se plantean primero fuera de Estados Unidos",
+          "Tenev también dijo que Robinhood pretende lanzar tokens individuales de acciones de empresas privadas fuera de Estados Unidos cuando existan los acuerdos regulatorios necesarios. En Estados Unidos, señaló los requisitos para inversores acreditados como una limitación adicional y no dio una fecha de lanzamiento."
+        ],
+        [
+          "Una exención condicional de la SEC durante cinco años",
+          "La SEC emitió su exención condicional el 17 de septiembre. Permite a los centros de negociación de valores tokenizados que cumplan los requisitos utilizar creadores de mercado automatizados autorizados y fondos de liquidez, con condiciones que incluyen derechos equivalentes para los accionistas y notificación al emisor. El alivio expira cinco años después de su publicación. Las declaraciones de Tenev son una posición regulatoria y una intención de producto, no un lanzamiento confirmado en Estados Unidos ni una previsión de actuación legislativa."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Le PDG de Robinhood appelle à des règles durables au-delà de l’exemption de la SEC sur la tokenisation",
+      "description": "Vlad Tenev a soutenu l’exemption de cinq ans accordée par la SEC aux actions tokenisées, tout en estimant qu’une réglementation ou une législation durable serait nécessaire avant que les clients n’engagent des actifs importants.",
+      "sections": [
+        [
+          "Un allègement temporaire ne suffit pas à une adoption durable",
+          "Lors de la présentation des résultats du troisième trimestre de Robinhood le 27 octobre, son PDG Vlad Tenev a soutenu l’exemption d’innovation de la SEC pour les actions tokenisées, tout en affirmant qu’un allègement temporaire ne suffisait pas à une adoption durable. Selon lui, l’incertitude sur la situation réglementaire au bout de cinq ans pourrait dissuader les clients d’engager des actifs importants, et une réglementation supplémentaire ou une législation reste nécessaire."
+        ],
+        [
+          "Des tokens d’entreprises privées envisagés d’abord hors des États-Unis",
+          "Tenev a également déclaré que Robinhood comptait lancer des tokens individuels d’actions d’entreprises privées hors des États-Unis une fois les dispositifs réglementaires en place. Aux États-Unis, il a présenté les exigences applicables aux investisseurs accrédités comme une contrainte supplémentaire et n’a donné aucune date de lancement."
+        ],
+        [
+          "Une exemption conditionnelle de la SEC valable cinq ans",
+          "La SEC a accordé son exemption conditionnelle le 17 septembre. Elle permet aux plateformes de titres tokenisés admissibles d’utiliser des teneurs de marché automatisés soumis à autorisation et des pools de liquidité, sous réserve de conditions comprenant des droits équivalents pour les actionnaires et une notification à l’émetteur. L’allègement expire cinq ans après sa publication. Les propos de Tenev constituent une position réglementaire et une intention de produit, et non un lancement confirmé aux États-Unis ni une prévision d’action législative."
+        ]
+      ]
+    },
+    "sourceSha256": "11c2305ed70ef57fe005eec57faa6c55a93590bce9ea59334bd1947197f78cb8"
   }
 }
