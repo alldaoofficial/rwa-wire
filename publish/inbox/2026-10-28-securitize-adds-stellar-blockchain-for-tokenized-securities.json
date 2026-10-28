@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-28T15:32:39Z",
+    "reason": "This lead covers the same October 28 Securitize plan to integrate Stellar already captured in publish/inbox/2026-10-28-securitize-adds-stellar-blockchain-as-institutional-tokenization-gathers-steam.json. The event remains subject to that file's six-hour held-review retry interval; a second inbox record must not bypass the hold."
   }
 }
