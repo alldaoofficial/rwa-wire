@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-28T21:17:22Z",
+    "reason": "Akchabar republishes the 390.4% tokenized-equity growth figure from Binance Research's September 18 report using data dated September 15. RWA Wire already covered and contextualized the same September Binance Research market-size development; the October 28 article adds no new event or updated primary measurement."
   }
 }
