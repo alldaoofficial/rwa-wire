@@ -1,23 +1,27 @@
 {
-  "title": "Securitize adds Stellar blockchain as institutional tokenization gathers steam",
-  "description": "Securitize adds Stellar blockchain as institutional tokenization gathers steam",
-  "why_it_matters": "",
+  "title": "Securitize Plans Stellar Integration for Future Tokenized Assets",
+  "slug": "securitize-plans-stellar-integration-future-tokenized-assets",
+  "description": "Securitize plans to add Stellar to its institutional tokenization infrastructure, but has not named supported assets or a completion date.",
+  "why_it_matters": "Adding Stellar would give asset managers another regulated issuance and administration route, while the open timetable shows that this is infrastructure planning rather than a live product launch.",
   "pubDate": "2026-10-28",
-  "category": "news",
+  "category": "institutions",
+  "reviewCategory": "INFRASTRUCTURE",
   "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Tokenization Infrastructure",
+    "Securitize",
+    "Stellar",
+    "Institutional Assets"
   ],
   "keyTakeaways": [
-    "Securitize adds Stellar blockchain as institutional tokenization gathers steam",
-    ""
+    "Securitize announced plans to integrate Stellar into its institutional tokenization infrastructure.",
+    "The proposed integration would support issuance and management of tokenized financial assets on Stellar.",
+    "No supported asset, issuer, deployment date or completed integration was announced."
   ],
-  "body": "Securitize adds Stellar blockchain as institutional tokenization gathers steam",
+  "body": "Securitize announced on October 28 that it plans to integrate the Stellar network into its tokenization infrastructure. The proposed connection would let Securitize support the issuance and ongoing management of tokenized financial assets on Stellar for institutional asset managers. The announcement accompanied Meridian 2026 in Lisbon.\n\nThis is a planned integration, not a completed deployment or product launch. Securitize and the Stellar Development Foundation did not identify a first asset, participating issuer, launch date or live contract. The release says details about supported assets will be announced later and warns that the integration could be delayed, changed or not completed.\n\nSecuritize described the plan as an extension of its multichain approach. The company reported approximately $5 billion in tokenized securities on its platform as of September 30, 2026, but that platform-wide figure does not represent assets already issued on Stellar. The practical impact will depend on which managers and products use the network after integration is completed.",
   "sources": [
     {
-      "name": "CoinDesk",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOSkotQjBfczZQYk02RkYxdmhsYU54NHRKOHNERkl0bGlFTUxVamtnUGNVMTZ6ZDZyVHMxQThvRGVJTHJ1YmIxYjBmRGNtMUdqZ0otTzlGOXBjYy1tQmd1alBDZ3RJcEJNcmQ3cVpxUWo3VkxZblppekJHVVpXNUgzYU9Ueko0S3I0TUlfNVVVY1FkYTJiTHE2dkl5RGQ0UnMzZl8zVi1RbElvdTJ5bnBVLVR1SlJVYnV0RzN2SEpXa00?oc=5"
+      "name": "Stellar — Securitize integration announcement",
+      "url": "https://stellar.org/press/securitize-to-integrate-with-stellar-network"
     }
   ],
   "newsWatch": {
@@ -27,15 +31,46 @@
     "discoveredAt": "2026-10-28T09:07:24.651468+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "high-trust-headline"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "verified",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-28T09:45:49Z",
-    "reason": "CoinDesk's full report says Securitize announced Stellar support at Meridian 2026, but neither Securitize nor Stellar has published an accessible primary release or technical documentation, and no second independent full-text report was found. The report names no live product, deployment address, launch timetable or transaction, so the new integration cannot yet be documented to the required standard."
+    "reviewedAt": "2026-10-28T22:42:25Z",
+    "sources": [
+      {
+        "url": "https://stellar.org/press/securitize-to-integrate-with-stellar-network",
+        "publishedAt": "2026-10-28",
+        "checkedAt": "2026-10-28T22:42:25Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Securitize announced a planned Stellar integration on October 28, 2026.",
+        "sourceUrl": "https://stellar.org/press/securitize-to-integrate-with-stellar-network",
+        "anchor": "plans to integrate with the Stellar network"
+      },
+      {
+        "claim": "The proposed integration would support issuance and management of tokenized financial assets on Stellar.",
+        "sourceUrl": "https://stellar.org/press/securitize-to-integrate-with-stellar-network",
+        "anchor": "issuance and management"
+      },
+      {
+        "claim": "The announcement did not identify the assets that would use the integration.",
+        "sourceUrl": "https://stellar.org/press/securitize-to-integrate-with-stellar-network",
+        "anchor": "Additional details about assets supported"
+      },
+      {
+        "claim": "Securitize reported approximately $5 billion in platform tokenized securities as of September 30, 2026.",
+        "sourceUrl": "https://stellar.org/press/securitize-to-integrate-with-stellar-network",
+        "anchor": "approximately $5B"
+      }
+    ],
+    "contentSha256": "402b4a590d086ec2534d70c09dcd52de6b00708b945bbceb1a935b3eb242b04d"
   }
 }
 
