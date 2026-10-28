@@ -1,0 +1,31 @@
+{
+  "id": "2026-10-28-dtcc-launches-tokenization-service-on-canton",
+  "title": "DTCC Launches Tokenization Service on Canton and Private Besu",
+  "category": "NEWS",
+  "why_it_matters": "The launch moves tokenized securities into a major U.S. depository's operating framework, while access remains permissioned, time-limited and tied to DTC custody.",
+  "article_url": "https://therwawire.com/news/dtcc-launches-tokenization-service-on-canton-and-private-besu/",
+  "image_url": "https://therwawire.com/images/news/dtcc-launches-tokenization-service-on-canton-and-private-besu.svg",
+  "caption": "RWA WIRE // NEWS\n\nDTCC Launches Tokenization Service on Canton and Private Besu\n\nDTC has launched a service for tokenizing eligible custodied securities, with 20 participants signed for access and two private networks supported initially.\n\nFull analysis →\nhttps://therwawire.com/news/dtcc-launches-tokenization-service-on-canton-and-private-besu/",
+  "distribution": {
+    "telegram": "RWA WIRE // NEWS\n\nDTCC Launches Tokenization Service on Canton and Private Besu\n\nDTC has launched a service for tokenizing eligible custodied securities, with 20 participants signed for access and two private networks supported initially.\n\nFull analysis →\nhttps://therwawire.com/news/dtcc-launches-tokenization-service-on-canton-and-private-besu/",
+    "x": "DTCC Launches Tokenization Service on Canton and Private Besu\n\nDTC has launched a service for tokenizing eligible custodied securities, with 20 participants signed for access and two private networks supported initially.\n\nhttps://therwawire.com/news/dtcc-launches-tokenization-service-on-canton-and-private-besu/",
+    "breaking": "RWA WIRE // NEWS\n\nDTCC Launches Tokenization Service on Canton and Private Besu\n\nhttps://therwawire.com/news/dtcc-launches-tokenization-service-on-canton-and-private-besu/",
+    "summary": "DTC has launched a service for tokenizing eligible custodied securities, with 20 participants signed for access and two private networks supported initially."
+  },
+  "sources": [
+    {
+      "name": "The Depository Trust & Clearing Corporation via Business Wire",
+      "url": "https://www.businesswire.com/news/home/20261027462327/en/DTCC-Tokenization-Service-Goes-Live-Marking-Major-Milestone-in-the-Adoption-of-Digital-Assets"
+    },
+    {
+      "name": "U.S. Securities and Exchange Commission",
+      "url": "https://www.sec.gov/files/tm/no-action/dtc-nal-121125.pdf"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-10-28-dtcc-tokenization-service-goes-live-marking-major-milestone-in-the-adoption-of-d.json",
+    "contentSha256": "022f169cd2235a53aa53c3fafa22eb707a4c099c5482ebb03c46938c3c488090",
+    "approvedAt": "2026-10-28T14:21:09.218945+00:00"
+  }
+}
