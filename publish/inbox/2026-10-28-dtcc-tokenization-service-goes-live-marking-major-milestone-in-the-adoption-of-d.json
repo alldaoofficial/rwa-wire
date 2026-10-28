@@ -1,7 +1,7 @@
 {
-  "title": "DTCC Tokenization Service Goes Live, Marking Major Milestone in the Adoption of Digital Assets",
-  "description": "DTCC Tokenization Service Goes Live, Marking Major Milestone in the Adoption of Digital Assets",
-  "why_it_matters": "",
+  "title": "DTCC Launches Tokenization Service on Canton and Private Besu",
+  "description": "DTC has launched a service for tokenizing eligible custodied securities, with 20 participants signed for access and two private networks supported initially.",
+  "why_it_matters": "The launch moves tokenized securities into a major U.S. depository's operating framework, while access remains permissioned, time-limited and tied to DTC custody.",
   "pubDate": "2026-10-28",
   "category": "news",
   "tags": [
@@ -10,14 +10,19 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "DTCC Tokenization Service Goes Live, Marking Major Milestone in the Adoption of Digital Assets",
-    ""
+    "DTC launched the service with integrations to Canton Network and DTCC's private Besu network.",
+    "Twenty DTC participants have signed access agreements, with further onboarding planned on a rolling basis.",
+    "The SEC no-action relief covers a three-year pilot for specified Russell 1000 shares, major-index ETFs and U.S. Treasuries."
   ],
-  "body": "DTCC Tokenization Service Goes Live, Marking Major Milestone in the Adoption of Digital Assets",
+  "body": "The Depository Trust Company, a DTCC subsidiary, launched the DTCC Tokenization Service on October 28. The service lets eligible users mint tokenized representations of securities held at DTC and convert entitlements between traditional and tokenized form. DTCC says the tokenized entitlements retain the ownership rights, investor protections and economic entitlements of their traditional counterparts.\n\nThe service initially connects to the Canton Network and DTCC's private Besu network. Additional networks are planned for 2027. Twenty DTC participants, including Bank of America, Citi, Fidelity Investments, J.P. Morgan, Morgan Stanley, State Street and UBS, have signed agreements to access the service; DTCC said further users will be onboarded on a rolling basis.\n\nThe SEC's December 2025 no-action letter limits the authorized pilot to three years and defines eligible assets as specified Russell 1000 shares, major-index ETFs and U.S. Treasury securities. The launch establishes production infrastructure, but signed access agreements do not show that every participant has already tokenized or transferred assets.",
   "sources": [
     {
-      "name": "Business Wire",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNamlnNV9UWXBHMHpfOUZJd2E3aFBVbXFLXzZkSHlvdFhjQUVtRy1OYjdwNVBmWGRhaWRBZmpzTlVzZG1QMjdZQk5PcnNtRVJIdGtoRDVYYTQwNGFjekozRmtQUWJ4d3VsZk9NeENVLXdsUFEyMU51TE9wMTV6OWVWWlF5Q3JaeG1MM3l5UVB5QU9nQllhRnJfb2hpN09ZMDNCN3VVemxWQnNOeE1zMGZhdGJTdEpmMTdjTzY2OHhvajRUVktkNlkySlJBRzA5TVFlbTNtYXBtRjhUbmlfRFduTUJiSTk?oc=5"
+      "name": "The Depository Trust & Clearing Corporation via Business Wire",
+      "url": "https://www.businesswire.com/news/home/20261027462327/en/DTCC-Tokenization-Service-Goes-Live-Marking-Major-Milestone-in-the-Adoption-of-Digital-Assets"
+    },
+    {
+      "name": "U.S. Securities and Exchange Commission",
+      "url": "https://www.sec.gov/files/tm/no-action/dtc-nal-121125.pdf"
     }
   ],
   "newsWatch": {
@@ -27,7 +32,62 @@
     "discoveredAt": "2026-10-28T12:07:18.629708+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-28T14:19:14Z",
+    "sources": [
+      {
+        "url": "https://www.businesswire.com/news/home/20261027462327/en/DTCC-Tokenization-Service-Goes-Live-Marking-Major-Milestone-in-the-Adoption-of-Digital-Assets",
+        "publishedAt": "2026-10-28",
+        "checkedAt": "2026-10-28T14:19:14Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://www.sec.gov/files/tm/no-action/dtc-nal-121125.pdf",
+        "publishedAt": "2025-12-11",
+        "checkedAt": "2026-10-28T14:19:14Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "DTC launched the DTCC Tokenization Service on October 28, 2026.",
+        "sourceUrl": "https://www.businesswire.com/news/home/20261027462327/en/DTCC-Tokenization-Service-Goes-Live-Marking-Major-Milestone-in-the-Adoption-of-Digital-Assets",
+        "anchor": "today launched the DTCC Tokenization Service"
+      },
+      {
+        "claim": "Tokenized securities retain the ownership rights, investor protections and economic entitlements of their traditional counterparts.",
+        "sourceUrl": "https://www.businesswire.com/news/home/20261027462327/en/DTCC-Tokenization-Service-Goes-Live-Marking-Major-Milestone-in-the-Adoption-of-Digital-Assets",
+        "anchor": "retain the ownership rights"
+      },
+      {
+        "claim": "Twenty DTC participants have signed agreements to access the service.",
+        "sourceUrl": "https://www.businesswire.com/news/home/20261027462327/en/DTCC-Tokenization-Service-Goes-Live-Marking-Major-Milestone-in-the-Adoption-of-Digital-Assets",
+        "anchor": "20 DTC Participants"
+      },
+      {
+        "claim": "The launch integrations are Canton Network and DTCC's private Besu network.",
+        "sourceUrl": "https://www.businesswire.com/news/home/20261027462327/en/DTCC-Tokenization-Service-Goes-Live-Marking-Major-Milestone-in-the-Adoption-of-Digital-Assets",
+        "anchor": "Canton Network and DTCC's private Besu network"
+      },
+      {
+        "claim": "The SEC staff letter limits eligible securities to specified Russell 1000 shares, U.S. Treasuries and major-index ETFs.",
+        "sourceUrl": "https://www.sec.gov/files/tm/no-action/dtc-nal-121125.pdf",
+        "anchor": "Eligible Securities: limited to"
+      },
+      {
+        "claim": "The SEC staff no-action position expires three years after the pilot launches.",
+        "sourceUrl": "https://www.sec.gov/files/tm/no-action/dtc-nal-121125.pdf",
+        "anchor": "three years from the date DTC launches"
+      }
+    ],
+    "contentSha256": "022f169cd2235a53aa53c3fafa22eb707a4c099c5482ebb03c46938c3c488090"
   }
 }
