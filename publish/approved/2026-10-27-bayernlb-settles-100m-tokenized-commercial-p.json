@@ -1,0 +1,27 @@
+{
+  "id": "2026-10-27-bayernlb-settles-100m-tokenized-commercial-p",
+  "title": "BayernLB Settles €100M Tokenized Commercial Paper via Pontes",
+  "category": "SETTLEMENT",
+  "why_it_matters": "The transaction moves Germany's institutional tokenization work from an earlier Eurosystem trial into live issuer-side use, combining blockchain-based securities transfer with central-bank-money settlement.",
+  "article_url": "https://therwawire.com/institutions/bayernlb-settles-100m-tokenized-commercial-paper-pontes/",
+  "image_url": "https://therwawire.com/images/news/bayernlb-settles-100m-tokenized-commercial-paper-pontes.svg",
+  "caption": "RWA WIRE // SETTLEMENT\n\nBayernLB Settles €100M Tokenized Commercial Paper via Pontes\n\nBayernLB issued €100 million of tokenized commercial paper to Siemens and completed same-day settlement in central bank money through Pontes.\n\nFull analysis →\nhttps://therwawire.com/institutions/bayernlb-settles-100m-tokenized-commercial-paper-pontes/",
+  "distribution": {
+    "telegram": "RWA WIRE // SETTLEMENT\n\nBayernLB Settles €100M Tokenized Commercial Paper via Pontes\n\nBayernLB issued €100 million of tokenized commercial paper to Siemens and completed same-day settlement in central bank money through Pontes.\n\nFull analysis →\nhttps://therwawire.com/institutions/bayernlb-settles-100m-tokenized-commercial-paper-pontes/",
+    "x": "BayernLB Settles €100M Tokenized Commercial Paper via Pontes\n\nBayernLB issued €100 million of tokenized commercial paper to Siemens and completed same-day settlement in central bank money through Pontes.\n\nhttps://therwawire.com/institutions/bayernlb-settles-100m-tokenized-commercial-paper-pontes/",
+    "breaking": "RWA WIRE // SETTLEMENT\n\nBayernLB Settles €100M Tokenized Commercial Paper via Pontes\n\nhttps://therwawire.com/institutions/bayernlb-settles-100m-tokenized-commercial-paper-pontes/",
+    "summary": "BayernLB issued €100 million of tokenized commercial paper to Siemens and completed same-day settlement in central bank money through Pontes."
+  },
+  "sources": [
+    {
+      "name": "BayernLB — first same-day Pontes transaction",
+      "url": "https://www.bayernlb.de/internet/de/blb/resp/bayernlb_rd/nachricht_384074.jsp"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-10-28-deutsche-bank-facilitates-siemens-100m-tokenized-securities-settlement-using-cen.json",
+    "contentSha256": "f9ec4d40e2269c1d6affb92b1d7bcfaa3d1bee728a741e711617ed25f6f26668",
+    "approvedAt": "2026-10-28T23:49:18.386029+00:00"
+  }
+}
