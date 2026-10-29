@@ -3828,5 +3828,137 @@
       ]
     },
     "sourceSha256": "ef00cf9886793fc202c9b5aa07857cfbed3b6a85465430bf0477e6e07ce37aea"
+  },
+  "ecb-t1-cutover-tokenized-settlement-upgrades": {
+    "path": "/institutions/ecb-t1-cutover-tokenized-settlement-upgrades/",
+    "date": "2026-10-29",
+    "kind": "news",
+    "sources": [
+      [
+        "ECB",
+        "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp261029~e9b57c3495.en.html"
+      ]
+    ],
+    "de": {
+      "title": "EZB legt Fahrplan für T+1-Umstellung und tokenisierte Abwicklung vor",
+      "description": "Die EZB plant Änderungen an den T2S-Prozessen für Juni 2027 vor Europas T+1-Umstellung im Oktober und skizziert stufenweise Pontes-Erweiterungen bis 2028.",
+      "sections": [
+        [
+          "Europas T+1-Umstellung ist für den 11. Oktober 2027 geplant",
+          "EZB-Direktoriumsmitglied Piero Cipollone erklärte, Europa werde seinen regulären Wertpapierabwicklungszyklus am 11. Oktober 2027 von T+2 auf T+1 verkürzen. Das Eurosystem plant bereits für Juni 2027 Änderungen an den nächtlichen Abwicklungsprozessen von TARGET2-Securities, also noch vor der Umstellung."
+        ],
+        [
+          "Pontes soll bis 2028 stufenweise erweitert werden",
+          "Cipollone stellte den Zeitplan gemeinsam mit den Tokenisierungsarbeiten des Eurosystems vor. Pontes wickelt seit dem 21. September 2026 Transaktionen mit tokenisierten Großkundenvermögenswerten in Zentralbankgeld ab. Die EZB plant, die Betriebszeiten bis Mitte 2027 deutlich zu verlängern, auf der DLT-Plattform des Eurosystems möglicherweise schon 2027 sofortige Finalität anzubieten und 2028 eine durchgehende Verfügbarkeit zu erreichen."
+        ],
+        [
+          "Neue Plattformen ersetzen T2S nicht",
+          "Die Rede stellte tokenisierte Plattformen nicht als Ersatz für die bestehende Infrastruktur dar. Laut Cipollone wird T2S weiter betrieben, während neue Plattformen entstehen; Interoperabilität sei nötig, um neue digitale Silos zu verhindern. Appia soll bis 2028 einen Bauplan für ein integriertes europäisches Ökosystem tokenisierter Finanzmärkte erarbeiten."
+        ]
+      ]
+    },
+    "es": {
+      "title": "El BCE traza la transición a T+1 y las mejoras de la liquidación tokenizada",
+      "description": "El BCE programó cambios en los procesos de T2S para junio de 2027 antes de la migración europea a T+1 en octubre y detalló mejoras graduales de Pontes hasta 2028.",
+      "sections": [
+        [
+          "La transición europea a T+1 está prevista para el 11 de octubre de 2027",
+          "Piero Cipollone, miembro del Comité Ejecutivo del BCE, afirmó que Europa reducirá su ciclo ordinario de liquidación de valores de T+2 a T+1 el 11 de octubre de 2027. El Eurosistema prevé modificar los procesos nocturnos de liquidación de TARGET2-Securities en junio de 2027, antes de la transición."
+        ],
+        [
+          "Pontes se ampliará por fases hasta 2028",
+          "Cipollone presentó el calendario junto con los trabajos de tokenización del Eurosistema. Pontes liquida operaciones mayoristas con activos tokenizados en dinero de banco central desde el 21 de septiembre de 2026. El BCE prevé ampliar considerablemente su horario operativo a mediados de 2027, ofrecer firmeza inmediata en la plataforma DLT del Eurosistema ya en 2027 y alcanzar una disponibilidad continua en 2028."
+        ],
+        [
+          "Las nuevas plataformas no sustituyen a T2S",
+          "El discurso no presentó las plataformas tokenizadas como sustitutas de la infraestructura existente. Cipollone afirmó que T2S seguirá funcionando mientras se desarrollan nuevas plataformas y que la interoperabilidad será necesaria para evitar nuevos silos digitales. Se espera que Appia elabore para 2028 un plan para un ecosistema europeo integrado de finanzas tokenizadas."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "La BCE trace le passage à T+1 et les améliorations du règlement tokenisé",
+      "description": "La BCE prévoit des modifications des processus T2S en juin 2027 avant le passage européen à T+1 en octobre et détaille des améliorations progressives de Pontes jusqu’en 2028.",
+      "sections": [
+        [
+          "Le passage européen à T+1 est prévu le 11 octobre 2027",
+          "Piero Cipollone, membre du directoire de la BCE, a déclaré que l’Europe ramènerait son cycle standard de règlement des titres de T+2 à T+1 le 11 octobre 2027. L’Eurosystème prévoit de modifier les processus de règlement nocturne de TARGET2-Securities en juin 2027, avant le basculement."
+        ],
+        [
+          "Pontes doit évoluer par étapes jusqu’en 2028",
+          "Cipollone a présenté ce calendrier parallèlement aux travaux de tokenisation de l’Eurosystème. Depuis le 21 septembre 2026, Pontes règle en monnaie de banque centrale des opérations de gros portant sur des actifs tokenisés. La BCE prévoit d’allonger sensiblement ses horaires de fonctionnement d’ici mi-2027, d’offrir une finalité immédiate sur la plateforme DLT de l’Eurosystème dès 2027 et de viser une disponibilité continue en 2028."
+        ],
+        [
+          "Les nouvelles plateformes ne remplacent pas T2S",
+          "Le discours n’a pas présenté les plateformes tokenisées comme un remplacement de l’infrastructure existante. Selon Cipollone, T2S continuera de fonctionner pendant le développement des nouvelles plateformes, l’interopérabilité étant nécessaire pour éviter de nouveaux silos numériques. Appia devrait produire d’ici 2028 un schéma directeur pour un écosystème européen intégré de finance tokenisée."
+        ]
+      ]
+    },
+    "sourceSha256": "7d9c304bf300c8e5334e097856af94fb2065eb8fd61c300a7eb2bcb4310392e3"
+  },
+  "ondo-seven-intelligent-portfolios-solana": {
+    "path": "/markets/ondo-seven-intelligent-portfolios-solana/",
+    "date": "2026-10-29",
+    "kind": "news",
+    "sources": [
+      [
+        "Ondo Finance — Intelligent Portfolios on Solana",
+        "https://ondo.finance/blog/intelligent-portfolios-go-live-on-solana"
+      ]
+    ],
+    "de": {
+      "title": "Ondo bringt sieben Intelligent Portfolios auf Solana",
+      "description": "Ondo startete auf Solana sieben Intelligent Portfolios als einzelne Token für zugelassene Anleger außerhalb der USA, verteilt auf Ertrags-, Wachstums- und Themenstrategien.",
+      "sections": [
+        [
+          "Sieben Portfolio-Token für zugelassene Anleger außerhalb der USA",
+          "Ondo Finance gab am 29. Oktober bekannt, dass sieben Intelligent Portfolios auf Solana für zugelassene Anleger außerhalb der USA live sind. Jedes Produkt ist ein einzelner Token, der Zugang zu einem festgelegten Portfolio aus Ondo Stocks bietet, sodass Anleger nicht jeden Bestandteil separat kaufen und neu gewichten müssen. Laut Ondo bestehen die zugrunde liegenden Positionen aus tokenisierten Aktien und börsengehandelten Fonds, die durch Wertpapiere gedeckt sind."
+        ],
+        [
+          "Drei Strategien von BlackRock für Ondo",
+          "Das Angebot umfasst drei Ertragsprodukte, zwei Wachstumsprodukte und zwei Themenprodukte. Drei der sieben Token nutzen von BlackRock für Ondo entwickelte Portfoliostrategien: BLKHIon, BLKGRWon und BLKDIGon. Die übrigen Token zielen auf bestimmte Ertragsniveaus, eine Kombination aus Magnificent 7 und Krypto oder ein Thema rund um künstliche Intelligenz. BlackRocks Rolle betrifft die Strategien; Ondo setzt die tokenisierten Produkte um und vertreibt sie."
+        ],
+        [
+          "Frühere 45 Mio. US-Dollar TVL sind keine Solana-Prognose",
+          "Nach Angaben von Ondo sind Allokations-, Neugewichtungs- und Gebührenlogik in Smart Contracts codiert; Neugewichtungen erfolgen nach vorgegebenen Zeitplänen. Bestände, Gewichtungen und Anpassungen sind onchain sichtbar. Das Unternehmen berichtete, dass die früheren Versionen auf Ethereum und BNB Chain in ihren ersten Handelswochen zusammen mehr als 45 Mio. US-Dollar Total Value Locked erreicht hätten. Diese am 29. Oktober gemeldete historische Zahl ist keine Prognose für die Solana-Erweiterung."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Ondo lleva siete Intelligent Portfolios a Solana",
+      "description": "Ondo lanzó en Solana siete Intelligent Portfolios representados por un único token para inversores elegibles fuera de Estados Unidos, con estrategias de renta, crecimiento y temáticas.",
+      "sections": [
+        [
+          "Siete tokens de cartera para inversores elegibles fuera de Estados Unidos",
+          "Ondo Finance anunció el 29 de octubre que siete Intelligent Portfolios ya están disponibles en Solana para inversores elegibles fuera de Estados Unidos. Cada producto es un único token que ofrece exposición a una cartera definida de Ondo Stocks, sin que el titular tenga que comprar y reequilibrar cada componente por separado. Según Ondo, las posiciones subyacentes son acciones tokenizadas y fondos cotizados respaldados por valores."
+        ],
+        [
+          "Tres estrategias desarrolladas por BlackRock para Ondo",
+          "La oferta incluye tres productos de renta, dos de crecimiento y dos temáticos. Tres de los siete utilizan estrategias de cartera desarrolladas por BlackRock para Ondo: BLKHIon, BLKGRWon y BLKDIGon. Los demás tokens buscan niveles de renta específicos, una asignación a las Magnificent 7 y criptoactivos, o una temática de inteligencia artificial. El papel de BlackRock se limita a las estrategias; Ondo implementa y distribuye los productos tokenizados."
+        ],
+        [
+          "Los 45 millones de dólares anteriores de TVL no son una previsión para Solana",
+          "Ondo afirma que la lógica de asignación, reequilibrio y comisiones está codificada en contratos inteligentes y que los reequilibrios se ejecutan según calendarios preestablecidos. Las posiciones, ponderaciones y modificaciones son visibles onchain. La empresa informó de que las versiones anteriores en Ethereum y BNB Chain habían superado conjuntamente los 45 millones de dólares en valor total bloqueado durante sus primeras semanas de negociación. Esa cifra histórica comunicada el 29 de octubre no es una previsión para la expansión en Solana."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Ondo déploie sept Intelligent Portfolios sur Solana",
+      "description": "Ondo a lancé sur Solana sept Intelligent Portfolios sous forme de token unique pour les investisseurs éligibles hors des États-Unis, couvrant des stratégies de revenu, de croissance et thématiques.",
+      "sections": [
+        [
+          "Sept tokens de portefeuille pour les investisseurs éligibles hors des États-Unis",
+          "Ondo Finance a annoncé le 29 octobre que sept Intelligent Portfolios étaient opérationnels sur Solana pour les investisseurs éligibles hors des États-Unis. Chaque produit est un token unique donnant accès à un portefeuille défini d’Ondo Stocks, sans que le détenteur ait à acheter et rééquilibrer séparément chaque composante. Selon Ondo, les positions sous-jacentes sont des actions tokenisées et des fonds négociés en bourse adossés à des titres."
+        ],
+        [
+          "Trois stratégies développées par BlackRock pour Ondo",
+          "La gamme comprend trois produits de revenu, deux produits de croissance et deux produits thématiques. Trois des sept utilisent des stratégies de portefeuille développées par BlackRock pour Ondo : BLKHIon, BLKGRWon et BLKDIGon. Les autres tokens ciblent des niveaux de revenu déterminés, une allocation aux Magnificent 7 et aux cryptoactifs, ou un thème consacré à l’intelligence artificielle. Le rôle de BlackRock porte sur les stratégies ; Ondo met en œuvre et distribue les produits tokenisés."
+        ],
+        [
+          "Les 45 M$ de TVL antérieurs ne constituent pas une prévision pour Solana",
+          "Ondo indique que les règles d’allocation, de rééquilibrage et de frais sont encodées dans des contrats intelligents, les rééquilibrages intervenant selon des calendriers prédéfinis. Les positions, pondérations et ajustements sont visibles onchain. L’entreprise a déclaré que les versions antérieures sur Ethereum et BNB Chain avaient dépassé ensemble 45 M$ de valeur totale verrouillée au cours de leurs premières semaines de négociation. Ce chiffre historique communiqué le 29 octobre n’est pas une prévision pour l’extension à Solana."
+        ]
+      ]
+    },
+    "sourceSha256": "63964be66c27d4f6a22aba03a56906aee2042f7496528a966e840009b3bd1c2e"
   }
 }
