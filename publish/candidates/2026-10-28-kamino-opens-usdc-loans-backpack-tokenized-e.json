@@ -1,0 +1,21 @@
+{
+  "id": "2026-10-28-kamino-opens-usdc-loans-backpack-tokenized-e",
+  "title": "Kamino Opens USDC Loans Against Four Backpack Tokenized Equities",
+  "category": "COLLATERAL",
+  "why_it_matters": "The launch turns tokenized equity positions from trading inventory into borrowing collateral, while isolating market risk and exposing borrowers to asset-specific liquidation conditions.",
+  "article_url": "https://therwawire.com/markets/kamino-opens-usdc-loans-backpack-tokenized-equities/",
+  "image_url": "https://therwawire.com/images/news/kamino-opens-usdc-loans-backpack-tokenized-equities.svg",
+  "caption": "RWA WIRE // COLLATERAL\n\nKamino Opens USDC Loans Against Four Backpack Tokenized Equities\n\nKamino's isolated Backpack Market accepts four Backpack Securities tokens as collateral for USDC borrowing, with per-asset risk parameters and liquidation exposure.\n\nFull analysis →\nhttps://therwawire.com/markets/kamino-opens-usdc-loans-backpack-tokenized-equities/",
+  "distribution": {
+    "telegram": "RWA WIRE // COLLATERAL\n\nKamino Opens USDC Loans Against Four Backpack Tokenized Equities\n\nKamino's isolated Backpack Market accepts four Backpack Securities tokens as collateral for USDC borrowing, with per-asset risk parameters and liquidation exposure.\n\nFull analysis →\nhttps://therwawire.com/markets/kamino-opens-usdc-loans-backpack-tokenized-equities/",
+    "x": "Kamino Opens USDC Loans Against Four Backpack Tokenized Equities\n\nKamino's isolated Backpack Market accepts four Backpack Securities tokens as collateral for USDC borrowing, with per-asset risk parameters and liquidation exposure.\n\nhttps://therwawire.com/markets/kamino-opens-usdc-loans-backpack-tokenized-equities/",
+    "breaking": "RWA WIRE // COLLATERAL\n\nKamino Opens USDC Loans Against Four Backpack Tokenized Equities\n\nhttps://therwawire.com/markets/kamino-opens-usdc-loans-backpack-tokenized-equities/",
+    "summary": "Kamino's isolated Backpack Market accepts four Backpack Securities tokens as collateral for USDC borrowing, with per-asset risk parameters and liquidation exposure."
+  },
+  "sources": [
+    {
+      "name": "Kamino — Backpack Securities tokenized-equities integration",
+      "url": "https://kamino.com/blog/kamino-integrates-backpack-securities-tokenized-equities"
+    }
+  ]
+}
