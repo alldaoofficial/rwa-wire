@@ -1,23 +1,36 @@
 {
-  "title": "33 Wall Street Giants Block Tokenized Stocks, But Apple and Tesla Stay Silent",
-  "description": "33 Wall Street Giants Block Tokenized Stocks, But Apple and Tesla Stay Silent",
-  "why_it_matters": "",
-  "pubDate": "2026-10-29",
+  "title": "JPMorgan, AMD and Coca-Cola Lift OKXICE Objections to 33",
+  "slug": "jpmorgan-amd-coca-cola-okxice-objections-33",
+  "description": "OKXICE's October 27 notice adds seven issuers to its venue-specific objection list, raising the disclosed total from 26 to 33.",
+  "why_it_matters": "The one-day increase further narrows OKXICE's potential stock universe and makes issuer participation a practical constraint before the planned venue begins operating.",
+  "pubDate": "2026-10-27",
   "category": "news",
+  "reviewCategory": "TOKENIZED STOCKS",
   "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Tokenized Stocks",
+    "Regulation",
+    "OKXICE",
+    "JPMorgan",
+    "AMD"
   ],
   "keyTakeaways": [
-    "33 Wall Street Giants Block Tokenized Stocks, But Apple and Tesla Stay Silent",
-    ""
+    "OKXICE's October 27 public notice lists 33 objecting issuers, seven more than the October 26 version.",
+    "The additions are JPMorgan Chase, AMD, Applied Materials, Coca-Cola, Adobe, Dell Technologies and Sandisk.",
+    "The SEC describes OKXICE as a notified prospective venue; inclusion on its list does not establish that exemption conditions are satisfied."
   ],
-  "body": "33 Wall Street Giants Block Tokenized Stocks, But Apple and Tesla Stay Silent",
+  "body": "OKXICE updated its public notice on October 27 to identify 33 issuers that objected to tokenized trading of their shares on the planned venue. The previous notice, dated October 26, listed 26. The seven additions are JPMorgan Chase, Advanced Micro Devices, Applied Materials, Coca-Cola, Adobe, Dell Technologies and Sandisk. This is a new expansion of the venue-specific list rather than a recap of earlier objections.\n\nThe objections concern unaffiliated third-party tokenized versions of the companies' stocks on OKXICE. They do not amount to general prohibitions on issuer-sponsored tokenization or activity on other venues. The public notice does not state why the seven companies objected.\n\nOKXICE is still a prospective venue. The SEC's Innovation Exemption page says a tokenized securities venue must publish its notice at least 30 calendar days before operating. It also cautions that listing OKXICE as a notifier does not establish that the venue satisfies the exemption's conditions or that the SEC has validated its notice.",
   "sources": [
     {
-      "name": "BeInCrypto",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE13ZGxSTTQxTlBVR1duNnBueC04SjU0Z0VVM2RoYUZVYlJnc0lDUVpZMWVaTVB2b09SdUxXS3k2V0N5S05HUVNyTGZjZ0VEREt5LXlDZEd5RV9OLXZ5SVpmdE5rOXlTckFYZEtWOVBFWUFhQQ?oc=5"
+      "name": "OKXICE — Public Notice dated October 27, 2026",
+      "url": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.27.pdf"
+    },
+    {
+      "name": "U.S. SEC — Innovation Exemption venue notices",
+      "url": "https://www.sec.gov/about/divisions-offices/division-trading-markets/innovation-exemption"
+    },
+    {
+      "name": "Decrypt — seven additional OKXICE issuer objections",
+      "url": "https://decrypt.co/382043/jpmorgan-coca-cola-7-more-companies-objecting-okx-ice-tokenized-stocks"
     }
   ],
   "newsWatch": {
@@ -27,7 +40,69 @@
     "discoveredAt": "2026-10-29T00:37:15.783061+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-29T00:57:30Z",
+    "sources": [
+      {
+        "url": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.27.pdf",
+        "publishedAt": "2026-10-27",
+        "checkedAt": "2026-10-29T00:57:30Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://www.sec.gov/about/divisions-offices/division-trading-markets/innovation-exemption",
+        "publishedAt": "2026-10-20",
+        "checkedAt": "2026-10-29T00:57:30Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://decrypt.co/382043/jpmorgan-coca-cola-7-more-companies-objecting-okx-ice-tokenized-stocks",
+        "publishedAt": "2026-10-28",
+        "checkedAt": "2026-10-29T00:57:30Z",
+        "kind": "news",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "The revised OKXICE public notice is dated October 27, 2026.",
+        "sourceUrl": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.27.pdf",
+        "anchor": "Date: October 27, 2026"
+      },
+      {
+        "claim": "The primary notice lists 33 issuers that submitted objections.",
+        "sourceUrl": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.27.pdf",
+        "anchor": "received a Notice of Issuer Objection"
+      },
+      {
+        "claim": "The additions include JPMorgan Chase, AMD and Applied Materials.",
+        "sourceUrl": "https://decrypt.co/382043/jpmorgan-coca-cola-7-more-companies-objecting-okx-ice-tokenized-stocks",
+        "anchor": "Advanced Micro Devices, Adobe, Applied Materials, and Sandisk"
+      },
+      {
+        "claim": "Coca-Cola, Adobe, Dell Technologies and Sandisk complete the seven additions.",
+        "sourceUrl": "https://decrypt.co/382043/jpmorgan-coca-cola-7-more-companies-objecting-okx-ice-tokenized-stocks",
+        "anchor": "JPMorgan Chase, Coca-Cola, and Dell Technologies"
+      },
+      {
+        "claim": "The seven additions raised the disclosed objection count from 26 to 33.",
+        "sourceUrl": "https://decrypt.co/382043/jpmorgan-coca-cola-7-more-companies-objecting-okx-ice-tokenized-stocks",
+        "anchor": "bring the total to 33"
+      },
+      {
+        "claim": "The SEC requires a venue notice at least 30 days before operations begin.",
+        "sourceUrl": "https://www.sec.gov/about/divisions-offices/division-trading-markets/innovation-exemption",
+        "anchor": "At least 30 calendar days before operating"
+      }
+    ],
+    "contentSha256": "0c3b0e80b4286e04588cc6dbbdde2b52535b91e2463ec9219043578ad6137958"
   }
 }
