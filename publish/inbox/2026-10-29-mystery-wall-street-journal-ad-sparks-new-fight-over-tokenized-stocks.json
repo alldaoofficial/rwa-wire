@@ -1,23 +1,39 @@
 {
-  "title": "Mystery Wall Street Journal ad sparks new fight over tokenized stocks",
-  "description": "Mystery Wall Street Journal ad sparks new fight over tokenized stocks",
-  "why_it_matters": "",
-  "pubDate": "2026-10-29",
+  "title": "Securitize Counters Anti-Tokenization WSJ Ad With Full-Page Response",
+  "slug": "securitize-counters-anti-tokenization-wsj-ad",
+  "description": "Securitize answered a nonprofit's Wall Street Journal warning with its own full-page ad promoting one-for-one-backed, regulated tokenized shares.",
+  "why_it_matters": "The competing ads expose a practical issuer-education battle: venue-specific third-party tokens, synthetic trackers and regulated security entitlements carry different rights and oversight.",
+  "pubDate": "2026-10-28",
   "category": "news",
+  "reviewCategory": "POLICY",
   "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Tokenized Stocks",
+    "Securitize",
+    "Regulation",
+    "Market Structure"
   ],
   "keyTakeaways": [
-    "Mystery Wall Street Journal ad sparks new fight over tokenized stocks",
-    ""
+    "The Common Sense Leadership Fund used an October 24-25 Wall Street Journal ad to urge public-company CEOs to resist third-party stock tokenization.",
+    "Securitize responded on October 28 with a full-page ad presenting one-for-one backing, shareholder rights and verified investors as its regulated model.",
+    "The SEC exemption is temporary and conditional; its issuer objection process applies after a venue gives written notice for a third-party token."
   ],
-  "body": "Mystery Wall Street Journal ad sparks new fight over tokenized stocks",
+  "body": "A policy fight over tokenized stocks moved into paid newspaper advertising. CoinDesk reported that the Common Sense Leadership Fund placed a full-page warning in The Wall Street Journal's October 24-25 weekend edition. The ad addressed public-company CEOs, described third-party tokenization as a threat and urged them to act. CoinDesk said the nonprofit's ultimate campaign financing was not disclosed.\n\nSecuritize answered with its own full-page Journal ad on October 28. The company presented a different model: tokens backed one-for-one by actual shares, carrying voting and dividend rights, offered through an SEC-registered broker-dealer to verified investors. Those are Securitize's claims about its structure, not a blanket description of every tokenized stock product.\n\nThe regulatory distinction matters. The SEC's September 17 order is temporary and conditional. For stock tokenized by an unaffiliated third party, a covered venue must provide the issuer written notice and an opportunity to object. CoinDesk also reported that the first ad linked to a Nasdaq FAQ, while Nasdaq denied involvement with the campaign. The advertising exchange is a new event, separate from the previously reported OKXICE issuer objections, and does not establish that either ad caused any issuer decision.",
   "sources": [
     {
-      "name": "CoinDesk",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZjI2X2ZyYm9MRWY2eDdlaGw5VnNaVFhJSDhwd00wQ3VfNnFIX0RmWWJVSnB5VU43MzlDZkdWZ1JUR3NzQ2VmVDlNSXNYa20taV9YRkcyUGR6djBUNzVyOVRBeDhVdXJMSTExcU8yOGh3d1ZGZXhoUUFzNFUzcGFFRFZ1RmFxaGxpMW9hd2xhdC1GZHdpeU9uN19TZXFMX0RTbnJlOUxYT1p5d3ZxdkFYLWFR?oc=5"
+      "name": "CoinDesk — competing Wall Street Journal tokenization ads",
+      "url": "https://www.coindesk.com/policy/2026/10/28/mystery-wall-street-journal-ad-sparks-new-fight-over-tokenized-stocks"
+    },
+    {
+      "name": "Common Sense Leadership Fund — Wall Street Journal advertisement",
+      "url": "https://cdn.sanity.io/images/s3y3vcno/production/aff34b69f6d1a67d2dffe648c9ce499bfa204420-4032x2268.jpg"
+    },
+    {
+      "name": "Securitize — Wall Street Journal response advertisement",
+      "url": "https://cdn.sanity.io/images/s3y3vcno/production/8fe9a2cfe95705c92443b9b6101bc2267301bf50-4987x2805.jpg"
+    },
+    {
+      "name": "U.S. SEC — Innovation Exemption press release",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-90-sec-issues-innovation-exemption-facilitate-trading-tokenized-nms-stock-request-comment"
     }
   ],
   "newsWatch": {
@@ -27,7 +43,81 @@
     "discoveredAt": "2026-10-29T03:37:14.459629+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-29T03:45:37Z",
+    "sources": [
+      {
+        "url": "https://www.coindesk.com/policy/2026/10/28/mystery-wall-street-journal-ad-sparks-new-fight-over-tokenized-stocks",
+        "publishedAt": "2026-10-28",
+        "checkedAt": "2026-10-29T03:45:37Z",
+        "kind": "news",
+        "access": "full-text"
+      },
+      {
+        "url": "https://cdn.sanity.io/images/s3y3vcno/production/aff34b69f6d1a67d2dffe648c9ce499bfa204420-4032x2268.jpg",
+        "publishedAt": "2026-10-24",
+        "checkedAt": "2026-10-29T03:45:37Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://cdn.sanity.io/images/s3y3vcno/production/8fe9a2cfe95705c92443b9b6101bc2267301bf50-4987x2805.jpg",
+        "publishedAt": "2026-10-28",
+        "checkedAt": "2026-10-29T03:45:37Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://www.sec.gov/newsroom/press-releases/2026-90-sec-issues-innovation-exemption-facilitate-trading-tokenized-nms-stock-request-comment",
+        "publishedAt": "2026-09-17",
+        "checkedAt": "2026-10-29T03:45:37Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "The nonprofit advertisement addressed public-company chief executives and framed third-party tokens as their problem.",
+        "sourceUrl": "https://cdn.sanity.io/images/s3y3vcno/production/aff34b69f6d1a67d2dffe648c9ce499bfa204420-4032x2268.jpg",
+        "anchor": "YOUR STOCK. THEIR TOKENS. YOUR PROBLEM."
+      },
+      {
+        "claim": "CoinDesk identified the sponsor as the Common Sense Leadership Fund and said its ultimate campaign financing remained unclear.",
+        "sourceUrl": "https://www.coindesk.com/policy/2026/10/28/mystery-wall-street-journal-ad-sparks-new-fight-over-tokenized-stocks",
+        "anchor": "Who ultimately financed the campaign remains unclear"
+      },
+      {
+        "claim": "Securitize's October 28 response said tokenization done correctly should follow Wall Street rules.",
+        "sourceUrl": "https://cdn.sanity.io/images/s3y3vcno/production/8fe9a2cfe95705c92443b9b6101bc2267301bf50-4987x2805.jpg",
+        "anchor": "TOKENIZATION DONE RIGHT PLAYS BY THEM"
+      },
+      {
+        "claim": "The Securitize advertisement described its model as backed one-for-one by real shares with voting and dividend rights.",
+        "sourceUrl": "https://cdn.sanity.io/images/s3y3vcno/production/8fe9a2cfe95705c92443b9b6101bc2267301bf50-4987x2805.jpg",
+        "anchor": "backed 1:1 by a real share"
+      },
+      {
+        "claim": "Nasdaq told CoinDesk it had no connection to the nonprofit advertisement or its use of Nasdaq's FAQ.",
+        "sourceUrl": "https://www.coindesk.com/policy/2026/10/28/mystery-wall-street-journal-ad-sparks-new-fight-over-tokenized-stocks",
+        "anchor": "had no connection to the advertisement"
+      },
+      {
+        "claim": "The SEC characterized its tokenized-stock venue relief as temporary and conditional.",
+        "sourceUrl": "https://www.sec.gov/newsroom/press-releases/2026-90-sec-issues-innovation-exemption-facilitate-trading-tokenized-nms-stock-request-comment",
+        "anchor": "temporary, conditional exemptive relief"
+      },
+      {
+        "claim": "Covered venues must give issuers written notice and an opportunity to object before third-party tokenized stock trading.",
+        "sourceUrl": "https://www.sec.gov/newsroom/press-releases/2026-90-sec-issues-innovation-exemption-facilitate-trading-tokenized-nms-stock-request-comment",
+        "anchor": "written notice and an opportunity to object"
+      }
+    ],
+    "contentSha256": "c0743dea3e85699c769c9e8afce9fb17ec79c3425d9adfea48cd034351873930"
   }
 }
