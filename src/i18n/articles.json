@@ -3692,5 +3692,141 @@
       ]
     },
     "sourceSha256": "5675082375e8ecca144439ac74fb485e049280e44d3bd354ca909736d5359a22"
+  },
+  "bayernlb-settles-100m-tokenized-commercial-paper-pontes": {
+    "path": "/institutions/bayernlb-settles-100m-tokenized-commercial-paper-pontes/",
+    "date": "2026-10-27",
+    "kind": "news",
+    "sources": [
+      [
+        "BayernLB — first same-day Pontes transaction",
+        "https://www.bayernlb.de/internet/de/blb/resp/bayernlb_rd/nachricht_384074.jsp"
+      ]
+    ],
+    "de": {
+      "title": "BayernLB wickelt tokenisiertes Commercial Paper über 100 Mio. Euro via Pontes ab",
+      "description": "BayernLB emittierte tokenisiertes Commercial Paper über 100 Mio. Euro an Siemens und schloss die taggleiche Abwicklung in Zentralbankgeld über Pontes ab.",
+      "sections": [
+        [
+          "Taggleiche Abwicklung über 100 Mio. Euro",
+          "BayernLB gab am 27. Oktober bekannt, tokenisiertes Commercial Paper über 100 Mio. Euro emittiert und die Transaktion noch am selben Tag über die Pontes-Infrastruktur des Eurosystems abgewickelt zu haben. Siemens war der Investor. Nach Angaben der BayernLB wurden Emission, blockchainbasierte Registerführung und Zahlung innerhalb weniger Minuten abgeschlossen."
+        ],
+        [
+          "Wertpapierübertragung auf SWIAT, Zahlung in Zentralbankgeld",
+          "Die Wertpapierübertragung erfolgte auf der privaten, zugangsbeschränkten Blockchain von SWIAT; SWIAT fungierte zugleich als Kryptowertpapierregisterführer. Die Zahlung wurde über Pontes in Zentralbankgeld abgewickelt. Der External Asset Synchronizer von SWIAT verband beide Systeme, damit Wertpapier- und Zahlungsseite gemeinsam übertragen werden konnten."
+        ],
+        [
+          "BayernLB diesmal als Emittent",
+          "DekaBank war Verwahrer und Zahlungsdienstleister, während Deutsche Bank die Zahlungsdienste für Siemens erbrachte. BayernLB bezeichnete die Transaktion als ihren ersten Live-Einsatz von Pontes und als erste taggleiche Pontes-Transaktion aus dem deutschen Markt. Die Rollen unterscheiden sich von einem Eurosystem-Test im Jahr 2024: Damals emittierte Siemens eine digitale Anleihe und BayernLB war Investor; bei der neuen Transaktion war BayernLB der Emittent und Siemens stellte das Anlagekapital bereit."
+        ]
+      ]
+    },
+    "es": {
+      "title": "BayernLB liquida 100 millones de euros en pagarés tokenizados mediante Pontes",
+      "description": "BayernLB emitió 100 millones de euros en pagarés tokenizados para Siemens y completó el mismo día la liquidación en dinero de banco central a través de Pontes.",
+      "sections": [
+        [
+          "Liquidación en el mismo día por 100 millones de euros",
+          "BayernLB anunció el 27 de octubre que había emitido 100 millones de euros en pagarés tokenizados y liquidado la operación ese mismo día mediante la infraestructura Pontes del Eurosistema. Siemens fue el inversor. Según BayernLB, la emisión, el mantenimiento del registro basado en blockchain y el pago se completaron en cuestión de minutos."
+        ],
+        [
+          "Transferencia en SWIAT y pago en dinero de banco central",
+          "La transferencia de los valores se realizó en la blockchain privada y autorizada de SWIAT, que también actuó como registrador de los criptoactivos financieros. El pago se liquidó en dinero de banco central a través de Pontes. El External Asset Synchronizer de SWIAT conectó ambos sistemas para que las partes de valores y efectivo pudieran transferirse conjuntamente."
+        ],
+        [
+          "BayernLB asumió esta vez el papel de emisor",
+          "DekaBank actuó como custodio y proveedor de servicios de pago, mientras que Deutsche Bank prestó los servicios de pago a Siemens. BayernLB describió la operación como su primer uso en producción de Pontes y la primera transacción Pontes con liquidación en el mismo día procedente del mercado alemán. Los papeles difieren de una prueba del Eurosistema de 2024: entonces Siemens emitió un bono digital y BayernLB participó como inversor; en la nueva operación BayernLB fue el emisor y Siemens aportó el capital de inversión."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "BayernLB règle 100 M€ de papier commercial tokenisé via Pontes",
+      "description": "BayernLB a émis 100 M€ de papier commercial tokenisé pour Siemens et réalisé le même jour le règlement en monnaie de banque centrale via Pontes.",
+      "sections": [
+        [
+          "Un règlement le jour même pour 100 M€",
+          "BayernLB a annoncé le 27 octobre avoir émis 100 M€ de papier commercial tokenisé et réglé l’opération le jour même par l’intermédiaire de l’infrastructure Pontes de l’Eurosystème. Siemens était l’investisseur. Selon BayernLB, l’émission, la tenue du registre sur blockchain et le paiement ont été réalisés en quelques minutes."
+        ],
+        [
+          "Transfert sur SWIAT et paiement en monnaie de banque centrale",
+          "Le transfert des titres s’est effectué sur la blockchain privée et permissionnée de SWIAT, qui assurait également la tenue du registre des crypto-titres. Le paiement a été réglé en monnaie de banque centrale via Pontes. L’External Asset Synchronizer de SWIAT a relié les deux systèmes afin que les volets titres et espèces puissent être transférés ensemble."
+        ],
+        [
+          "BayernLB intervient cette fois comme émetteur",
+          "DekaBank a agi comme conservateur et prestataire de services de paiement, tandis que Deutsche Bank a fourni les services de paiement à Siemens. BayernLB a présenté l’opération comme sa première utilisation en production de Pontes et la première transaction Pontes réglée le jour même issue du marché allemand. Les rôles diffèrent d’un essai de l’Eurosystème mené en 2024 : Siemens avait alors émis une obligation numérique et BayernLB participé comme investisseur ; dans la nouvelle opération, BayernLB était l’émetteur et Siemens apportait le capital investi."
+        ]
+      ]
+    },
+    "sourceSha256": "c4987e9c6110403f5df27130dfad5d330ac35e675fcfac760f28d3d1f576ae64"
+  },
+  "seven-stars-opens-tokenized-difc-credit-fund": {
+    "path": "/institutions/seven-stars-opens-tokenized-difc-credit-fund/",
+    "date": "2026-10-27",
+    "kind": "news",
+    "sources": [
+      [
+        "EnterpriseAM — Seven Stars fund launch and sponsor interview",
+        "https://enterpriseam.com/uae/2026/10/29/dubais-new-tokenized-fund-for-uk-law-firms-targets-a-16-annual-return/"
+      ],
+      [
+        "DFSA — Public register",
+        "https://www.dfsa.ae/public-register/firms"
+      ]
+    ],
+    "de": {
+      "title": "Seven Stars öffnet tokenisierten DIFC-Kreditfonds für Finanzierungen britischer Kanzleien",
+      "description": "Seven Stars Fund CEIC öffnete in Dubai als tokenisierter Private-Credit-Fonds für professionelle Anleger und finanziert regulierte britische Kanzleien und Schadenregulierer.",
+      "sections": [
+        [
+          "Zeichnung für professionelle Anleger geöffnet",
+          "Seven Stars Fund CEIC öffnete am 27. Oktober die Zeichnung für professionelle Anleger. Das geschlossene DIFC-Vehikel soll vorrangig besicherte Kredite mit voller Rückgriffsmöglichkeit an regulierte britische Anwaltskanzleien und Schadenregulierungsunternehmen vergeben, die Ansprüche auf Verbraucherentschädigung verfolgen. Truleum Venture Partners ist der von der DFSA zugelassene Manager, Apex Group der Administrator und Tokeny stellt die ERC-3643-Infrastruktur für die Ausgabe bereit."
+        ],
+        [
+          "16 % sind ein Ziel, keine realisierte oder garantierte Rendite",
+          "Der Fonds strebt 250 Mio. GBP an, hat eine feste Obergrenze von 400 Mio. GBP und verlangt eine Mindestanlage von 50.000 USD. Der Sponsor zielt auf eine jährliche Rendite von 16 %, doch dieser Wert ist weder eine realisierte Rendite noch eine Garantie. EnterpriseAM berichtete, dass der Fonds bei seiner Öffnung noch keine Zusagen erhalten und keine Kredite vergeben hatte. Ein erster Abschluss von rund 50 Mio. GBP wird für das erste Quartal 2027 erwartet."
+        ],
+        [
+          "Regulierter Start mit fortbestehendem Kreditrisiko",
+          "Der Start geht wesentlich über die 2025 angekündigte Struktur hinaus, weil Zeichnungen nun innerhalb eines regulierten Fondsrahmens möglich sind. Das Kreditrisiko bleibt bestehen: Die Kreditnehmer müssen unabhängig vom Ausgang einzelner Forderungen zurückzahlen, doch ihre Rückzahlungsfähigkeit hängt weiterhin von der Entwicklung ihrer Forderungsportfolios ab."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Seven Stars abre un fondo de crédito tokenizado en el DIFC para financiar bufetes británicos",
+      "description": "Seven Stars Fund CEIC abrió en Dubái como fondo tokenizado de crédito privado para inversores profesionales, destinado a financiar bufetes y gestoras de reclamaciones regulados del Reino Unido.",
+      "sections": [
+        [
+          "Suscripciones abiertas a inversores profesionales",
+          "Seven Stars Fund CEIC abrió sus suscripciones a inversores profesionales el 27 de octubre. El vehículo cerrado del DIFC concederá préstamos sénior garantizados y con recurso pleno a bufetes británicos regulados y empresas de gestión de reclamaciones que tramitan solicitudes de reparación de consumidores. Truleum Venture Partners es la gestora autorizada por la DFSA, Apex Group es el administrador y Tokeny suministra la infraestructura de emisión ERC-3643."
+        ],
+        [
+          "El 16 % es un objetivo, no una rentabilidad obtenida ni garantizada",
+          "El fondo tiene un objetivo de 250 millones de GBP, un límite máximo de 400 millones de GBP y una inversión mínima de 50.000 USD. El patrocinador aspira a una rentabilidad anual del 16 %, pero esa cifra no es una rentabilidad obtenida ni una garantía. EnterpriseAM informó de que el fondo no tenía compromisos ni había concedido préstamos cuando abrió. Espera un primer cierre de unos 50 millones de GBP en el primer trimestre de 2027."
+        ],
+        [
+          "Inicio regulado con riesgo de crédito persistente",
+          "El lanzamiento supone un avance sustancial respecto de la estructura anunciada en 2025 porque las suscripciones ya están abiertas dentro de un marco de fondo regulado. El riesgo de crédito se mantiene: los prestatarios deben devolver los préstamos con independencia del resultado de cada reclamación, pero su capacidad de pago sigue dependiendo del comportamiento de sus carteras de reclamaciones."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Seven Stars ouvre au DIFC un fonds de crédit tokenisé finançant des cabinets britanniques",
+      "description": "Seven Stars Fund CEIC a ouvert à Dubaï comme fonds tokenisé de crédit privé destiné aux investisseurs professionnels et au financement de cabinets et gestionnaires de réclamations réglementés au Royaume-Uni.",
+      "sections": [
+        [
+          "Souscriptions ouvertes aux investisseurs professionnels",
+          "Seven Stars Fund CEIC a ouvert ses souscriptions aux investisseurs professionnels le 27 octobre. Ce véhicule fermé du DIFC accordera des prêts senior garantis et avec recours intégral à des cabinets d’avocats britanniques réglementés et à des sociétés de gestion de réclamations traitant des demandes d’indemnisation de consommateurs. Truleum Venture Partners est le gestionnaire agréé par la DFSA, Apex Group l’administrateur et Tokeny fournit l’infrastructure d’émission ERC-3643."
+        ],
+        [
+          "Les 16 % constituent un objectif, et non un rendement réalisé ou garanti",
+          "Le fonds vise 250 M GBP, avec un plafond ferme de 400 M GBP et un investissement minimum de 50 000 USD. Le promoteur cible un rendement annuel de 16 %, mais ce chiffre n’est ni un rendement réalisé ni une garantie. EnterpriseAM a indiqué que le fonds n’avait encore reçu aucun engagement et n’avait accordé aucun prêt lors de son ouverture. Il prévoit une première clôture d’environ 50 M GBP au premier trimestre 2027."
+        ],
+        [
+          "Un lancement réglementé qui conserve un risque de crédit",
+          "Le lancement marque une avancée importante par rapport à la structure annoncée en 2025, car les souscriptions sont désormais ouvertes dans le cadre d’un fonds réglementé. Le risque de crédit demeure : les emprunteurs doivent rembourser indépendamment de l’issue de chaque réclamation, mais leur capacité de remboursement dépend toujours de la performance de leurs portefeuilles de créances."
+        ]
+      ]
+    },
+    "sourceSha256": "ef00cf9886793fc202c9b5aa07857cfbed3b6a85465430bf0477e6e07ce37aea"
   }
 }
