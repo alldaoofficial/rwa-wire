@@ -3428,5 +3428,149 @@
       ]
     },
     "sourceSha256": "da93e869893b6414280d96108535928fef42ef9030ac3e1087dc0499cccf6a95"
+  },
+  "mirae-asset-hk-tokenized-funding-notes-solana": {
+    "path": "/institutions/mirae-asset-hk-tokenized-funding-notes-solana/",
+    "date": "2026-10-28",
+    "kind": "news",
+    "sources": [
+      [
+        "Mirae Asset Securities (HK) — tokenized funding-note issuance",
+        "https://www.prnewswire.com/apac/news-releases/mirae-asset-securities-expands-digital-distribution-of-funding-notes-with-solana-foundation-and-marketnode-302921641.html"
+      ]
+    ],
+    "de": {
+      "title": "Mirae Asset HK emittiert tokenisierte Finanzierungsschuldverschreibungen auf Solana",
+      "description": "Mirae Asset Securities schloss über Solana und Marketnode eine Privatplatzierung sechsmonatiger variabel verzinslicher US-Dollar-Schuldverschreibungen bei professionellen Anlegern ab.",
+      "sections": [
+        [
+          "Sechsmonatige US-Dollar-Schuldverschreibungen auf Solana",
+          "Mirae Asset Securities (HK) schloss auf Solana eine Emission tokenisierter Finanzierungsschuldverschreibungen für zugelassene institutionelle Anleger ab. Nach Angaben des Unternehmens handelt es sich um in Hongkong ausgegebene, auf US-Dollar lautende und variabel verzinsliche Schuldverschreibungen mit sechsmonatiger Laufzeit im Rahmen seines garantierten strukturierten Schuldverschreibungsprogramms über 3 Mrd. US-Dollar. Die 3 Mrd. US-Dollar sind die Obergrenze des Programms, nicht das Volumen dieser Emission; dieses wurde in der Mitteilung nicht offengelegt."
+        ],
+        [
+          "Marketnode als autorisierter Vertriebsplatz",
+          "Marketnode, ein in Singapur regulierter Betreiber digitaler Marktinfrastruktur, fungierte als autorisierter Vertriebspartner. Mirae Asset Securities übernahm die Tokenausgabe, Zahlungen und die Verwaltung über den gesamten Lebenszyklus. Das Unternehmen beschrieb die Transaktion als Erweiterung seines bestehenden Geschäfts mit strukturierten Produkten um den digitalen Vertrieb, nicht als Start eines Angebots für Privatanleger."
+        ],
+        [
+          "Privatplatzierung ausschließlich für professionelle Anleger",
+          "Die Schuldverschreibungen wurden nach hongkongischem Recht ausschließlich im Wege einer Privatplatzierung zugelassenen professionellen Anlegern angeboten. Mirae Asset Securities erklärte außerdem, dass die Wertpapiere weder von der Securities and Futures Commission Hongkongs genehmigt noch bei ihr registriert wurden."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Mirae Asset HK emite notas de financiación tokenizadas en Solana",
+      "description": "Mirae Asset Securities completó mediante Solana y Marketnode una colocación privada de notas en dólares a tipo variable, con vencimiento a seis meses, entre inversores profesionales.",
+      "sections": [
+        [
+          "Notas en dólares a seis meses emitidas en Solana",
+          "Mirae Asset Securities (HK) completó en Solana una emisión de notas de financiación tokenizadas para inversores institucionales elegibles. Según la empresa, son notas a tipo variable denominadas en dólares estadounidenses, con vencimiento a seis meses y emitidas en Hong Kong bajo su programa garantizado de notas estructuradas de 3.000 millones de dólares. Los 3.000 millones de dólares son el límite del programa, no el tamaño de esta emisión, que no se reveló en el comunicado."
+        ],
+        [
+          "Marketnode actuó como distribuidor autorizado",
+          "Marketnode, operador de infraestructura de mercado digital regulado en Singapur, actuó como distribuidor autorizado. Mirae Asset Securities gestionó la emisión de los tokens, los pagos y la administración durante todo el ciclo de vida. La empresa describió la operación como una ampliación de su negocio existente de productos estructurados hacia la distribución digital, no como un lanzamiento minorista."
+        ],
+        [
+          "Colocación privada solo para inversores profesionales",
+          "Las notas se ofrecieron exclusivamente mediante una colocación privada a inversores profesionales elegibles conforme a la legislación de Hong Kong. Mirae Asset Securities también declaró que los valores no habían sido autorizados ni registrados por la Securities and Futures Commission de Hong Kong."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Mirae Asset HK émet des titres de financement tokenisés sur Solana",
+      "description": "Mirae Asset Securities a réalisé via Solana et Marketnode un placement privé de titres à taux variable en dollars, d’une durée de six mois, auprès d’investisseurs professionnels.",
+      "sections": [
+        [
+          "Des titres en dollars à six mois émis sur Solana",
+          "Mirae Asset Securities (HK) a réalisé sur Solana une émission de titres de financement tokenisés destinée aux investisseurs institutionnels éligibles. Selon l’entreprise, il s’agit de titres à taux variable libellés en dollars américains, d’une durée de six mois et émis à Hong Kong dans le cadre de son programme garanti de titres structurés de 3 Md$. Les 3 Md$ constituent le plafond du programme, et non le montant de cette émission, que le communiqué n’a pas révélé."
+        ],
+        [
+          "Marketnode comme distributeur autorisé",
+          "Marketnode, opérateur d’infrastructure de marché numérique réglementé à Singapour, a agi en qualité de distributeur autorisé. Mirae Asset Securities a géré l’émission des tokens, les paiements et l’administration de leur cycle de vie. L’entreprise a présenté l’opération comme une extension de son activité existante de produits structurés vers la distribution numérique, et non comme un lancement destiné au grand public."
+        ],
+        [
+          "Un placement privé réservé aux investisseurs professionnels",
+          "Les titres ont été proposés uniquement dans le cadre d’un placement privé auprès d’investisseurs professionnels éligibles au regard du droit hongkongais. Mirae Asset Securities a également indiqué que les titres n’avaient été ni autorisés ni enregistrés auprès de la Securities and Futures Commission de Hong Kong."
+        ]
+      ]
+    },
+    "sourceSha256": "f0229ad8c0bb2eeca77d03979617310d97eedb3cb75b4763ab909a9307d8d40e"
+  },
+  "securitize-counters-anti-tokenization-wsj-ad": {
+    "path": "/news/securitize-counters-anti-tokenization-wsj-ad/",
+    "date": "2026-10-28",
+    "kind": "news",
+    "sources": [
+      [
+        "CoinDesk — competing Wall Street Journal tokenization ads",
+        "https://www.coindesk.com/policy/2026/10/28/mystery-wall-street-journal-ad-sparks-new-fight-over-tokenized-stocks"
+      ],
+      [
+        "Common Sense Leadership Fund — Wall Street Journal advertisement",
+        "https://cdn.sanity.io/images/s3y3vcno/production/aff34b69f6d1a67d2dffe648c9ce499bfa204420-4032x2268.jpg"
+      ],
+      [
+        "Securitize — Wall Street Journal response advertisement",
+        "https://cdn.sanity.io/images/s3y3vcno/production/8fe9a2cfe95705c92443b9b6101bc2267301bf50-4987x2805.jpg"
+      ],
+      [
+        "U.S. SEC — Innovation Exemption press release",
+        "https://www.sec.gov/newsroom/press-releases/2026-90-sec-issues-innovation-exemption-facilitate-trading-tokenized-nms-stock-request-comment"
+      ]
+    ],
+    "de": {
+      "title": "Securitize kontert Anti-Tokenisierungsanzeige im WSJ mit ganzseitiger Antwort",
+      "description": "Securitize antwortete auf die Warnung einer gemeinnützigen Organisation im Wall Street Journal mit einer eigenen ganzseitigen Anzeige für regulierte, eins zu eins durch Aktien gedeckte Token.",
+      "sections": [
+        [
+          "Der Streit um tokenisierte Aktien erreicht bezahlte Zeitungsanzeigen",
+          "Der politische Streit um tokenisierte Aktien verlagerte sich in bezahlte Zeitungsanzeigen. CoinDesk berichtete, dass der Common Sense Leadership Fund in der Wochenendausgabe des Wall Street Journal vom 24. und 25. Oktober eine ganzseitige Warnung schaltete. Die Anzeige richtete sich an Vorstandsvorsitzende börsennotierter Unternehmen, bezeichnete die Tokenisierung durch Dritte als Bedrohung und forderte sie zum Handeln auf. Laut CoinDesk wurde nicht offengelegt, wer die Kampagne der gemeinnützigen Organisation letztlich finanzierte."
+        ],
+        [
+          "Securitize wirbt für sein reguliertes Modell",
+          "Securitize antwortete am 28. Oktober mit einer eigenen ganzseitigen Anzeige im Journal. Das Unternehmen stellte ein anderes Modell vor: Token, die eins zu eins durch tatsächliche Aktien gedeckt sind, Stimm- und Dividendenrechte vermitteln und über einen bei der SEC registrierten Broker-Dealer verifizierten Anlegern angeboten werden. Dabei handelt es sich um Securitizes Aussagen über die eigene Struktur, nicht um eine allgemeine Beschreibung jedes Produkts mit tokenisierten Aktien."
+        ],
+        [
+          "Befristete SEC-Ausnahme und keine belegte Wirkung auf Emittenten",
+          "Die regulatorische Unterscheidung ist wesentlich. Die Anordnung der SEC vom 17. September ist befristet und an Bedingungen geknüpft. Bei Aktien, die von einem nicht verbundenen Dritten tokenisiert werden, muss ein erfasster Handelsplatz den Emittenten schriftlich informieren und ihm Gelegenheit zum Widerspruch geben. CoinDesk berichtete außerdem, dass die erste Anzeige auf häufig gestellte Fragen von Nasdaq verwies, während Nasdaq jede Beteiligung an der Kampagne bestritt. Der Anzeigenabtausch ist ein neues Ereignis, getrennt von den zuvor berichteten Einwänden von Emittenten gegen OKXICE, und belegt nicht, dass eine der Anzeigen eine Emittentenentscheidung verursacht hat."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Securitize responde a un anuncio antitokenización en el WSJ con una página completa",
+      "description": "Securitize respondió a la advertencia publicada por una organización sin ánimo de lucro en The Wall Street Journal con un anuncio a página completa que promociona acciones tokenizadas reguladas y respaldadas uno a uno.",
+      "sections": [
+        [
+          "La disputa sobre las acciones tokenizadas llega a la publicidad de pago",
+          "La disputa política sobre las acciones tokenizadas se trasladó a la publicidad de pago en la prensa. CoinDesk informó de que el Common Sense Leadership Fund publicó una advertencia a página completa en la edición de fin de semana de The Wall Street Journal del 24 y 25 de octubre. El anuncio se dirigía a los consejeros delegados de empresas cotizadas, describía la tokenización por terceros como una amenaza y les instaba a actuar. Según CoinDesk, no se reveló quién financió en última instancia la campaña de la organización sin ánimo de lucro."
+        ],
+        [
+          "Securitize promociona su modelo regulado",
+          "Securitize respondió el 28 de octubre con su propio anuncio a página completa en el Journal. La empresa presentó un modelo diferente: tokens respaldados uno a uno por acciones reales, con derechos de voto y dividendos, ofrecidos a inversores verificados mediante un bróker-dealer registrado ante la SEC. Se trata de las afirmaciones de Securitize sobre su propia estructura, no de una descripción general de todos los productos de acciones tokenizadas."
+        ],
+        [
+          "Exención temporal de la SEC y ningún efecto demostrado sobre los emisores",
+          "La distinción regulatoria es importante. La orden de la SEC del 17 de septiembre es temporal y está sujeta a condiciones. Cuando una acción es tokenizada por un tercero no afiliado, un centro de negociación cubierto debe notificarlo por escrito al emisor y darle la oportunidad de oponerse. CoinDesk también informó de que el primer anuncio enlazaba a unas preguntas frecuentes de Nasdaq, mientras que Nasdaq negó estar implicada en la campaña. El intercambio publicitario es un acontecimiento nuevo, separado de las objeciones de emisores a OKXICE comunicadas anteriormente, y no demuestra que ninguno de los anuncios causara decisión alguna de un emisor."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Securitize répond à une publicité anti-tokenisation dans le WSJ par une pleine page",
+      "description": "Securitize a répondu à l’avertissement publié par une organisation à but non lucratif dans The Wall Street Journal par sa propre pleine page en faveur d’actions tokenisées réglementées et adossées une pour une.",
+      "sections": [
+        [
+          "Le débat sur les actions tokenisées gagne la publicité payante",
+          "Le débat politique sur les actions tokenisées s’est déplacé vers la publicité payante dans la presse. CoinDesk a rapporté que le Common Sense Leadership Fund avait publié un avertissement en pleine page dans l’édition du week-end des 24 et 25 octobre du Wall Street Journal. La publicité s’adressait aux dirigeants de sociétés cotées, présentait la tokenisation par des tiers comme une menace et les appelait à agir. Selon CoinDesk, le financement final de la campagne de l’organisation à but non lucratif n’a pas été rendu public."
+        ],
+        [
+          "Securitize met en avant son modèle réglementé",
+          "Securitize a répondu le 28 octobre par sa propre publicité en pleine page dans le Journal. L’entreprise a présenté un modèle différent : des tokens adossés une pour une à des actions réelles, assortis de droits de vote et de dividende, et proposés à des investisseurs vérifiés par l’intermédiaire d’un courtier-négociant enregistré auprès de la SEC. Il s’agit des affirmations de Securitize sur sa propre structure, et non d’une description générale de tous les produits d’actions tokenisées."
+        ],
+        [
+          "Une exemption temporaire de la SEC sans effet démontré sur les émetteurs",
+          "La distinction réglementaire est importante. L’ordonnance de la SEC du 17 septembre est temporaire et assortie de conditions. Lorsqu’une action est tokenisée par un tiers non affilié, une plateforme couverte doit en informer l’émetteur par écrit et lui donner la possibilité de s’y opposer. CoinDesk a également indiqué que la première publicité renvoyait vers une FAQ de Nasdaq, tandis que Nasdaq a nié toute implication dans la campagne. Cet échange publicitaire constitue un nouvel événement, distinct des objections d’émetteurs à OKXICE déjà rapportées, et n’établit pas que l’une ou l’autre publicité ait provoqué une décision d’un émetteur."
+        ]
+      ]
+    },
+    "sourceSha256": "fffb4a18dfe0333a433e1e2f85cfd0ab2abc9a30edc3f7391bc992265d2ce93a"
   }
 }
