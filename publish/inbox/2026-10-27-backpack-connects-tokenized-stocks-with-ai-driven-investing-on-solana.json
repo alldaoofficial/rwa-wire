@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-29T04:34:11Z",
-    "reason": "The accessible reports still derive CircuitAI support, automated-rebalancing and fee claims from Backpack and Circuit social posts. Backpack's full product pages document token issuance and redemption but not the CircuitAI integration, and no accessible full primary technical announcement substantiates the integration workflow."
+    "reviewedAt": "2026-10-29T12:25:58Z",
+    "reason": "The retry still finds only Backpack and Circuit social posts plus derivative coverage for the CircuitAI integration, automated rebalancing and fee claims. Backpack's full product and partner pages document issuance, redemption and integration patterns but not this specific CircuitAI workflow."
   }
 }
