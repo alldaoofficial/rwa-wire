@@ -3572,5 +3572,125 @@
       ]
     },
     "sourceSha256": "fffb4a18dfe0333a433e1e2f85cfd0ab2abc9a30edc3f7391bc992265d2ce93a"
+  },
+  "binance-adds-five-bstocks-margin-collateral-october-28": {
+    "path": "/markets/binance-adds-five-bstocks-margin-collateral-october-28/",
+    "date": "2026-10-28",
+    "kind": "news",
+    "sources": [
+      [
+        "Binance — five bStocks collateral announcement",
+        "https://www.binance.com/en/support/announcement/detail/3f180bddad424ea5b7a00148433721dc"
+      ]
+    ],
+    "de": {
+      "title": "Binance nimmt fünf weitere bStocks als Margin-Sicherheiten auf",
+      "description": "Binance hat fünf mit Unternehmen und gehebelten ETFs verknüpfte bStocks in drei Margin-Systemen als Sicherheiten zugelassen; eine Kreditaufnahme gegen die Token bleibt ausgeschlossen.",
+      "sections": [
+        [
+          "Fünf neue Sicherheiten in drei Margin-Systemen",
+          "Binance nahm am 28. Oktober um 12:00 Uhr UTC fünf bStocks als zulässige Sicherheiten auf: BSPB für Bending Spoons, GEVB für GE Vernova, APPB für AppLovin sowie SKDDB und SKUUB für zwei gehebelte SK-Hynix-ETFs von GraniteShares. Die Token sind in Cross Margin, Portfolio Margin und Portfolio Margin Pro verfügbar; entsprechende Handelspaare stehen für den Margin-Handel bereit. Binance erklärt ausdrücklich, dass eine Kreditaufnahme gegen die fünf Token derzeit nicht unterstützt wird."
+        ],
+        [
+          "Zertifikate ohne direktes Eigentum und mit Zugangsbeschränkungen",
+          "Die Erweiterung ist durch Produkt- und Nutzeranforderungen begrenzt. Reguläre Nutzer sowie Nutzer der VIP-Stufen 1 und 2 müssen einen Eignungsfragebogen ausfüllen; gesperrte Regionen bleiben ausgeschlossen. Binance stuft bStocks als Zertifikate ein, die Finanzinstrumente abbilden, nicht als Aktien der genannten Unternehmen oder Anteile der betreffenden Fonds. Die Produkte vermitteln kein direktes Eigentum, werden auf Grundlage eines in Abu Dhabi Global Market genehmigten Prospekts angeboten und stehen US-Personen nicht zur Verfügung. Die Ankündigung erweitert damit die Sicherheitenoptionen der Börse, nicht den allgemeinen Zugang zu den zugrunde liegenden Wertpapieren."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Binance incorpora cinco bStocks más como garantía para operaciones con margen",
+      "description": "Binance añadió cinco bStocks vinculados a empresas y ETF apalancados como garantía en tres sistemas de margen, mientras que el préstamo contra los tokens sigue sin estar disponible.",
+      "sections": [
+        [
+          "Cinco nuevas garantías en tres sistemas de margen",
+          "Binance incorporó el 28 de octubre a las 12:00 UTC cinco bStocks como activos de garantía elegibles: BSPB para Bending Spoons, GEVB para GE Vernova, APPB para AppLovin, y SKDDB y SKUUB para dos ETF apalancados sobre SK Hynix de GraniteShares. Los tokens están disponibles en Cross Margin, Portfolio Margin y Portfolio Margin Pro, con los correspondientes pares habilitados para la negociación con margen. Binance afirma expresamente que, por ahora, no se admite el préstamo contra estos cinco tokens."
+        ],
+        [
+          "Certificados sin propiedad directa y con acceso restringido",
+          "La ampliación está limitada por los requisitos del producto y de elegibilidad de los usuarios. Los usuarios regulares y los de los niveles VIP 1 y VIP 2 deben completar un cuestionario de idoneidad, y las regiones restringidas siguen excluidas. Binance clasifica los bStocks como certificados que representan instrumentos financieros, no como acciones de las empresas o participaciones de los fondos de referencia. Los productos no confieren propiedad directa, se ofrecen bajo un folleto aprobado en Abu Dhabi Global Market y no están disponibles para personas estadounidenses. Por tanto, el anuncio amplía las opciones de garantía en la plataforma, no el acceso general a los valores subyacentes."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Binance ajoute cinq bStocks supplémentaires comme garanties sur marge",
+      "description": "Binance a ajouté cinq bStocks liés à des entreprises et à des ETF à effet de levier comme garanties dans trois systèmes de marge, tandis que l’emprunt contre ces tokens reste indisponible.",
+      "sections": [
+        [
+          "Cinq nouvelles garanties dans trois systèmes de marge",
+          "Binance a ajouté le 28 octobre à 12 h 00 UTC cinq bStocks comme actifs de garantie éligibles : BSPB pour Bending Spoons, GEVB pour GE Vernova, APPB pour AppLovin, ainsi que SKDDB et SKUUB pour deux ETF GraniteShares à effet de levier sur SK Hynix. Les tokens sont disponibles dans Cross Margin, Portfolio Margin et Portfolio Margin Pro, avec les paires correspondantes ouvertes au trading sur marge. Binance précise expressément que l’emprunt contre ces cinq tokens n’est pas pris en charge à ce stade."
+        ],
+        [
+          "Des certificats sans propriété directe et soumis à des restrictions d’accès",
+          "L’extension reste limitée par les conditions du produit et d’éligibilité des utilisateurs. Les utilisateurs ordinaires ainsi que les clients VIP 1 et VIP 2 doivent remplir un questionnaire d’adéquation, et les régions soumises à restriction restent exclues. Binance classe les bStocks comme des certificats représentant des instruments financiers, et non comme des actions des entreprises ou des parts des fonds de référence. Les produits ne confèrent aucune propriété directe, sont proposés dans le cadre d’un prospectus approuvé dans l’Abu Dhabi Global Market et ne sont pas accessibles aux personnes américaines. L’annonce élargit donc les possibilités de garantie sur la plateforme, et non l’accès général aux titres sous-jacents."
+        ]
+      ]
+    },
+    "sourceSha256": "5833156c4ee5f15c0d813cf526fa71dd8fa0e6f881e1574b82e12f7e3e8446b3"
+  },
+  "clearstream-cssf-control-agent-tokenized-fund-shares": {
+    "path": "/institutions/clearstream-cssf-control-agent-tokenized-fund-shares/",
+    "date": "2026-10-28",
+    "kind": "news",
+    "sources": [
+      [
+        "Clearstream — Control Agent authorization announcement",
+        "https://www.clearstream.com/clearstream-en/newsroom/261028-5667846"
+      ]
+    ],
+    "de": {
+      "title": "Clearstream erhält CSSF-Genehmigung als Control Agent für tokenisierte Fondsanteile",
+      "description": "Clearstream erhielt von der CSSF die Genehmigung, nach Luxemburgs Blockchain Law IV als Control Agent für die Ausgabe tokenisierter Fondsanteile tätig zu werden.",
+      "sections": [
+        [
+          "Genehmigung als Control Agent nach Blockchain Law IV",
+          "Clearstream teilte am 28. Oktober mit, dass die luxemburgische Commission de Surveillance du Secteur Financier das Unternehmen als Control Agent nach Blockchain Law IV genehmigt habe. In dieser Rolle kann Clearstream tokenisierte Emissionen überwachen, indem es das zentrale Emissionskonto auf einem Distributed Ledger führt, Bestände bei den verschiedenen kontoführenden Stellen nachverfolgt und das ausgegebene Volumen mit den erfassten Positionen abstimmt."
+        ],
+        [
+          "Ausgewählte Anteilsklassen in bestehenden UCITS- und AIF-Strukturen",
+          "Der geplante Dienst ist für ausgewählte Anteilsklassen innerhalb bestehender Umbrella-Strukturen für UCITS oder alternative Investmentfonds vorgesehen. Transferstellen, Fondsadministratoren, Verwahrstellen und Depotbanken können ihre bisherigen Aufgaben beibehalten, während Clearstream die DLT-Schicht für Ausgabe und Kontrolle bereitstellt."
+        ],
+        [
+          "Regulatorischer Meilenstein, aber noch kein vollständig operativer Dienst",
+          "Clearstream beschreibt eine zugangsbeschränkte Umgebung, die Zeichnungen, Übertragungen und Rücknahmen nach validierten Anweisungen unterstützt. Eine Whitelist soll den Besitz auf autorisierte Wertpapierkonten begrenzen. Die Genehmigung ist ein regulatorischer Meilenstein, aber kein Beleg dafür, dass die vollständige Plattform bereits in Betrieb ist: Clearstream erklärt, dass sein integrierter Control-Agent-Dienst weiterhin unter dem Vorbehalt des Abschlusses der regulatorischen CSSF-Verfahren steht."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Clearstream obtiene la autorización de la CSSF como agente de control para participaciones tokenizadas",
+      "description": "Clearstream recibió la autorización de la CSSF para actuar como agente de control en la emisión de participaciones tokenizadas conforme a la Blockchain Law IV de Luxemburgo.",
+      "sections": [
+        [
+          "Autorización como agente de control bajo la Blockchain Law IV",
+          "Clearstream afirmó el 28 de octubre que la Commission de Surveillance du Secteur Financier de Luxemburgo le había autorizado a actuar como agente de control en virtud de la Blockchain Law IV. Esta función permite a Clearstream supervisar emisiones tokenizadas manteniendo la cuenta central de emisión en un registro distribuido, siguiendo las posiciones entre las entidades que llevan las cuentas y conciliando el volumen emitido con las posiciones registradas."
+        ],
+        [
+          "Clases de participaciones seleccionadas en estructuras UCITS y AIF existentes",
+          "El servicio previsto está diseñado para clases de participaciones seleccionadas dentro de estructuras paraguas existentes de UCITS o fondos de inversión alternativos. Los agentes de transferencias, administradores de fondos, custodios y depositarios pueden conservar sus funciones actuales, mientras Clearstream aporta la capa de emisión y control mediante DLT."
+        ],
+        [
+          "Un hito regulatorio, pero aún no un servicio plenamente operativo",
+          "Clearstream describe un entorno autorizado que admite suscripciones, transferencias y reembolsos tras recibir instrucciones validadas. Una lista blanca pretende limitar la tenencia a cuentas de valores autorizadas. La autorización es un hito regulatorio, pero no demuestra que toda la plataforma ya esté operativa: Clearstream señala que su servicio integrado de agente de control sigue sujeto a la finalización de los procesos regulatorios de la CSSF."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Clearstream obtient l’autorisation de la CSSF comme agent de contrôle pour des parts tokenisées",
+      "description": "Clearstream a reçu l’autorisation de la CSSF pour agir comme agent de contrôle lors de l’émission de parts de fonds tokenisées au titre de la Blockchain Law IV luxembourgeoise.",
+      "sections": [
+        [
+          "Une autorisation d’agent de contrôle au titre de la Blockchain Law IV",
+          "Clearstream a indiqué le 28 octobre que la Commission de Surveillance du Secteur Financier du Luxembourg l’avait autorisé à agir comme agent de contrôle au titre de la Blockchain Law IV. Ce rôle permet à Clearstream de superviser les émissions tokenisées en tenant le compte central d’émission sur un registre distribué, en suivant les avoirs auprès des différents teneurs de compte et en rapprochant le volume émis des positions enregistrées."
+        ],
+        [
+          "Des catégories de parts sélectionnées dans des structures UCITS et FIA existantes",
+          "Le service prévu vise des catégories de parts sélectionnées au sein de structures à compartiments existantes d’UCITS ou de fonds d’investissement alternatifs. Les agents de transfert, administrateurs de fonds, conservateurs et dépositaires peuvent conserver leurs fonctions actuelles, tandis que Clearstream fournit la couche DLT d’émission et de contrôle."
+        ],
+        [
+          "Une étape réglementaire, mais pas encore un service pleinement opérationnel",
+          "Clearstream décrit un environnement permissionné prenant en charge les souscriptions, transferts et rachats après validation des instructions. Une liste blanche doit limiter la détention aux comptes-titres autorisés. L’autorisation constitue une étape réglementaire, mais ne prouve pas que l’ensemble de la plateforme soit déjà opérationnel : Clearstream précise que son service intégré d’agent de contrôle reste soumis à l’achèvement des procédures réglementaires de la CSSF."
+        ]
+      ]
+    },
+    "sourceSha256": "5675082375e8ecca144439ac74fb485e049280e44d3bd354ca909736d5359a22"
   }
 }
