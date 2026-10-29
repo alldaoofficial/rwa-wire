@@ -1,0 +1,84 @@
+{
+  "title": "Ondo Brings Seven Intelligent Portfolios to Solana",
+  "slug": "ondo-seven-intelligent-portfolios-solana",
+  "description": "Ondo launched seven single-token Intelligent Portfolios on Solana for eligible non-U.S. investors, spanning income, growth and thematic strategies.",
+  "why_it_matters": "The expansion moves portfolio-level tokenization beyond Ethereum and BNB Chain, giving Solana users programmatically rebalanced exposure to baskets of tokenized equities and ETFs.",
+  "pubDate": "2026-10-29",
+  "category": "markets",
+  "reviewCategory": "PRODUCT EXPANSION",
+  "tags": [
+    "Ondo Finance",
+    "Solana",
+    "Tokenized Equities",
+    "Tokenized ETFs",
+    "Intelligent Portfolios"
+  ],
+  "keyTakeaways": [
+    "Seven Ondo Intelligent Portfolios are live on Solana for eligible investors outside the United States.",
+    "Each token provides exposure to a defined basket of Ondo Stocks with programmed allocation, fee and rebalancing logic.",
+    "Three portfolio strategies were developed by BlackRock for use by Ondo; the lineup also includes targeted-income and thematic products."
+  ],
+  "body": "Ondo Finance announced on October 29 that seven Intelligent Portfolios are live on Solana for eligible investors outside the United States. Each product is a single token that provides exposure to a defined portfolio of Ondo Stocks rather than requiring the holder to buy and rebalance every constituent separately. The underlying positions are tokenized equities and exchange-traded funds backed by securities, according to Ondo.\n\nThe lineup includes three income products, two growth products and two thematic products. Three of the seven use portfolio strategies developed by BlackRock for Ondo: BLKHIon, BLKGRWon and BLKDIGon. The other tokens target specified income levels, a Magnificent 7 and crypto allocation, or an artificial-intelligence theme. BlackRock's role concerns the strategies; Ondo implements and distributes the tokenized products.\n\nOndo says allocation, rebalancing and fee logic are encoded in smart contracts, with rebalancing performed under preset schedules. Holdings, weights and rebalances are visible onchain. The company reported that the earlier Ethereum and BNB Chain versions had exceeded $45 million in total value locked during their first weeks of trading. That historical figure is Ondo's October 29 report, not a forecast for the Solana expansion.",
+  "sources": [
+    {
+      "name": "Ondo Finance — Intelligent Portfolios on Solana",
+      "url": "https://ondo.finance/blog/intelligent-portfolios-go-live-on-solana"
+    }
+  ],
+  "newsWatch": {
+    "score": 6,
+    "priority": "watchlist",
+    "sourceTrust": "primary",
+    "discoveredAt": "2026-10-29T14:59:46Z",
+    "requiresSourceReview": true,
+    "autoPublishEligible": false,
+    "contentStatus": "source-reviewed",
+    "discoveryMode": "agent-primary",
+    "relatedCoverageTitles": [
+      "BlackRock and Ondo portfolio strategies extend tokenization beyond single assets"
+    ]
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-29T14:59:46Z",
+    "sources": [
+      {
+        "url": "https://ondo.finance/blog/intelligent-portfolios-go-live-on-solana",
+        "publishedAt": "2026-10-29",
+        "checkedAt": "2026-10-29T14:59:46Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Ondo launched seven Intelligent Portfolios on the Solana network.",
+        "sourceUrl": "https://ondo.finance/blog/intelligent-portfolios-go-live-on-solana",
+        "anchor": "live on Solana"
+      },
+      {
+        "claim": "The products are available to eligible investors outside the United States.",
+        "sourceUrl": "https://ondo.finance/blog/intelligent-portfolios-go-live-on-solana",
+        "anchor": "eligible investors globally (outside the U.S.)"
+      },
+      {
+        "claim": "Each token provides exposure to a defined portfolio strategy.",
+        "sourceUrl": "https://ondo.finance/blog/intelligent-portfolios-go-live-on-solana",
+        "anchor": "exposure to a professionally designed investment strategy"
+      },
+      {
+        "claim": "The portfolio smart contracts apply rebalancing according to preset rules.",
+        "sourceUrl": "https://ondo.finance/blog/intelligent-portfolios-go-live-on-solana",
+        "anchor": "rebalancing following preset rules"
+      },
+      {
+        "claim": "Three of the portfolio strategies were developed by BlackRock for Ondo.",
+        "sourceUrl": "https://ondo.finance/blog/intelligent-portfolios-go-live-on-solana",
+        "anchor": "strategies developed by BlackRock"
+      }
+    ],
+    "contentSha256": "cbab2522fece2370280fc7878f4765c66fe989feed36bd21a36366f8da233cb5"
+  }
+}
