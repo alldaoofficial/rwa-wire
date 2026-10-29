@@ -29,5 +29,11 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedAt": "2026-10-29T10:36:27Z",
+    "reason": "TOKENPOST covers the same October 28 production launch of the DTCC Tokenization Service already source-reviewed, published and receipted by RWA Wire; it adds no separate launch, approval, financing or material expansion."
   }
 }
