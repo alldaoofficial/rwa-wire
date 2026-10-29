@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-29T00:57:30Z",
-    "reason": "TokenPost attributes the comparison to an October 27 RWA.xyz snapshot, but the live category pages now show October 28 values and do not expose the historical holder, value and transfer-volume snapshot. Other accessible reports repeat or partially approximate the figures rather than independently reproducing the complete comparison, so the exact metrics remain unverified."
+    "reviewedAt": "2026-10-29T12:54:56Z",
+    "reason": "TokenPost attributes the comparison to an October 27 RWA.xyz snapshot, but the historical category snapshot remains unavailable from readable RWA.xyz pages. The only additional full page found reproduces TokenPost rather than independently verifying the exact distributed-value, holder and transfer-volume figures, so the metrics remain unverified."
   }
 }
