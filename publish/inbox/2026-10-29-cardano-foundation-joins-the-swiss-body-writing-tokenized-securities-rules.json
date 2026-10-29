@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-29T14:59:46Z",
+    "reason": "The October 29 membership claim is currently confirmed only through first-party LinkedIn posts. CMTA's readable news and members pages do not yet publish the membership as full text, while available full articles depend on those social posts or reproduce the same report. CMTA's October 7 primary documentation verifies the earlier CIP-0113 recognition, not the later membership event."
   }
 }
