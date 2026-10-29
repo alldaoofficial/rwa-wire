@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-29T17:41:53Z",
+    "reason": "This roster is a recap of three already captured events: Ondo's October 27 Robinhood Chain launch, DTCC's October 28 production launch and OKXICE's previously reported issuer-objection updates. It introduces no separate approval, launch or expansion event."
   }
 }
