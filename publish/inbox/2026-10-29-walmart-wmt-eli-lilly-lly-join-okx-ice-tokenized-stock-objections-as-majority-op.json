@@ -1,23 +1,28 @@
 {
-  "title": "Walmart (WMT), Eli Lilly (LLY) join OKX–ICE tokenized stock objections as majority opts out",
-  "description": "Walmart (WMT), Eli Lilly (LLY) join OKX–ICE tokenized stock objections as majority opts out CoinDesk",
-  "why_it_matters": "",
-  "pubDate": "2026-10-29",
+  "title": "Walmart and Eli Lilly Lift OKXICE Objections to 38",
+  "description": "OKXICE's October 28 notice adds five issuers, taking disclosed objections to its proposed tokenized-securities venue from 33 to 38.",
+  "why_it_matters": "The growing objection list is narrowing the initial issuer set available to a high-profile U.S. test of onchain stock trading.",
+  "pubDate": "2026-10-28",
   "category": "news",
   "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Tokenized Stocks",
+    "OKXICE",
+    "Market Structure"
   ],
   "keyTakeaways": [
-    "Walmart (WMT), Eli Lilly (LLY) join OKX–ICE tokenized stock objections as majority opts out CoinDesk",
-    ""
+    "Walmart, Eli Lilly, Carnival, Arcos Dorados and Cigna appear as the five latest additions to OKXICE's cumulative objection list.",
+    "The October 28 notice contains 38 objecting issuers, up from 33 in the prior update.",
+    "OKXICE says its proposed venue would use permissioned Uniswap v4 pools on XLayer with stablecoin pairs."
   ],
-  "body": "Walmart (WMT), Eli Lilly (LLY) join OKX–ICE tokenized stock objections as majority opts out CoinDesk",
+  "body": "OKXICE's public notice dated October 28 lists 38 issuers that have objected to inclusion on its proposed tokenized-securities venue. The five latest additions are Walmart, Eli Lilly, Carnival, Arcos Dorados and Cigna, raising the disclosed total from 33 in the previous update. The notice records objections but does not give each issuer's reasons.\n\nOKXICE describes the planned venue as a joint venture between Intercontinental Exchange and OKC USA. Its design would place tokenized U.S. securities in permissioned Uniswap v4 liquidity pools on XLayer, paired with stablecoins. The notice also says the platform is not SEC-registered for activities conducted under the cited exemption. The latest additions therefore represent issuer opt-outs from a proposed market-structure pilot, not a rejection of tokenization in every form.",
   "sources": [
     {
+      "name": "OKXICE Public Notice — October 28, 2026",
+      "url": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.28.pdf"
+    },
+    {
       "name": "CoinDesk",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNZHBFQk8xVkMtdk9BR2o4eDFFXzhaX2poT2J1WTg5Sy13ZTRuUnhRT3hRWmRMNTh2bm5QcmZUYy1VOFdOMU50bTQ1NTJZSDdYMmQ0OUhDUGpuY09tYm5KX3pIY1M0WklHZ05pTVhyWVBfTkF0RlVnTjhIWFMzRlFRVV9NbnVGS3BPa2RQX2RINW9CaWc3LUdMSjZqMHhKQkFjSHpPU1R5NllSTDVKaDlORXRsRV9hRHFyQWFqbFlIcw?oc=5"
+      "url": "https://www.coindesk.com/business/2026/10/29/walmart-eli-lilly-join-growing-pushback-against-okx-ice-tokenized-stock-plans"
     }
   ],
   "newsWatch": {
@@ -33,6 +38,51 @@
     ],
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment"
+    "contentStatus": "source-reviewed"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-29T17:41:53Z",
+    "sources": [
+      {
+        "url": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.28.pdf",
+        "publishedAt": "2026-10-28",
+        "checkedAt": "2026-10-29T17:41:53Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://www.coindesk.com/business/2026/10/29/walmart-eli-lilly-join-growing-pushback-against-okx-ice-tokenized-stock-plans",
+        "publishedAt": "2026-10-29",
+        "checkedAt": "2026-10-29T17:41:53Z",
+        "kind": "news",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "The current public notice is dated October 28, 2026.",
+        "sourceUrl": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.28.pdf",
+        "anchor": "Date: October 28, 2026"
+      },
+      {
+        "claim": "The notice lists Walmart and Eli Lilly among the objecting issuers.",
+        "sourceUrl": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.28.pdf",
+        "anchor": "Eli Lilly and Company; Walmart Inc."
+      },
+      {
+        "claim": "OKXICE describes permissioned Uniswap v4 pools on XLayer as part of the venue design.",
+        "sourceUrl": "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.28.pdf",
+        "anchor": "permissioned Uniswap v4 liquidity pools"
+      },
+      {
+        "claim": "The five additions bring disclosed objections to 38.",
+        "sourceUrl": "https://www.coindesk.com/business/2026/10/29/walmart-eli-lilly-join-growing-pushback-against-okx-ice-tokenized-stock-plans",
+        "anchor": "bringing disclosed objections to 38"
+      }
+    ],
+    "contentSha256": "4529439e785bb3b808065072890a50d27860f2f4e97c65c32cbb6fe6e0ecf8e3"
   }
 }
