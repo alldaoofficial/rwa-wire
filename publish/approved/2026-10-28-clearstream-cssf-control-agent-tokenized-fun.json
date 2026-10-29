@@ -1,0 +1,27 @@
+{
+  "id": "2026-10-28-clearstream-cssf-control-agent-tokenized-fun",
+  "title": "Clearstream Gains CSSF Control-Agent Authorization for Tokenized Fund Shares",
+  "category": "FUND INFRASTRUCTURE",
+  "why_it_matters": "The authorization gives established fund operators a regulated route to add tokenized share classes without replacing their existing administrators, custodians or depositaries.",
+  "article_url": "https://therwawire.com/institutions/clearstream-cssf-control-agent-tokenized-fund-shares/",
+  "image_url": "https://therwawire.com/images/news/clearstream-cssf-control-agent-tokenized-fund-shares.svg",
+  "caption": "RWA WIRE // FUND INFRASTRUCTURE\n\nClearstream Gains CSSF Control-Agent Authorization for Tokenized Fund Shares\n\nClearstream received CSSF authorization to act as a Control Agent for tokenized fund-share issuance under Luxembourg's Blockchain Law IV.\n\nFull analysis →\nhttps://therwawire.com/institutions/clearstream-cssf-control-agent-tokenized-fund-shares/",
+  "distribution": {
+    "telegram": "RWA WIRE // FUND INFRASTRUCTURE\n\nClearstream Gains CSSF Control-Agent Authorization for Tokenized Fund Shares\n\nClearstream received CSSF authorization to act as a Control Agent for tokenized fund-share issuance under Luxembourg's Blockchain Law IV.\n\nFull analysis →\nhttps://therwawire.com/institutions/clearstream-cssf-control-agent-tokenized-fund-shares/",
+    "x": "Clearstream Gains CSSF Control-Agent Authorization for Tokenized Fund Shares\n\nClearstream received CSSF authorization to act as a Control Agent for tokenized fund-share issuance under Luxembourg's Blockchain Law IV.\n\nhttps://therwawire.com/institutions/clearstream-cssf-control-agent-tokenized-fund-shares/",
+    "breaking": "RWA WIRE // FUND INFRASTRUCTURE\n\nClearstream Gains CSSF Control-Agent Authorization for Tokenized Fund Shares\n\nhttps://therwawire.com/institutions/clearstream-cssf-control-agent-tokenized-fund-shares/",
+    "summary": "Clearstream received CSSF authorization to act as a Control Agent for tokenized fund-share issuance under Luxembourg's Blockchain Law IV."
+  },
+  "sources": [
+    {
+      "name": "Clearstream — Control Agent authorization announcement",
+      "url": "https://www.clearstream.com/clearstream-en/newsroom/261028-5667846"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-10-28-clearstream-to-propel-tokenized-fund-distribution-as-authorized-control-agent-un.json",
+    "contentSha256": "cffa3207a206d9d4b457d2db17412c3c49741070d4d85f8ab54adab3b472a19d",
+    "approvedAt": "2026-10-29T04:52:41.900256+00:00"
+  }
+}
