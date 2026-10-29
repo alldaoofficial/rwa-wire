@@ -1,23 +1,28 @@
 {
-  "title": "Clearstream to propel tokenized fund distribution as authorized Control Agent under Luxembourg’s Blockchain Law IV",
-  "description": "Clearstream to propel tokenized fund distribution as authorized Control Agent under Luxembourg’s Blockchain Law IV",
-  "why_it_matters": "",
+  "title": "Clearstream Gains CSSF Control-Agent Authorization for Tokenized Fund Shares",
+  "slug": "clearstream-cssf-control-agent-tokenized-fund-shares",
+  "description": "Clearstream received CSSF authorization to act as a Control Agent for tokenized fund-share issuance under Luxembourg's Blockchain Law IV.",
+  "why_it_matters": "The authorization gives established fund operators a regulated route to add tokenized share classes without replacing their existing administrators, custodians or depositaries.",
   "pubDate": "2026-10-28",
-  "category": "news",
+  "category": "institutions",
+  "reviewCategory": "FUND INFRASTRUCTURE",
   "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Clearstream",
+    "Tokenized Funds",
+    "Luxembourg",
+    "CSSF",
+    "DLT"
   ],
   "keyTakeaways": [
-    "Clearstream to propel tokenized fund distribution as authorized Control Agent under Luxembourg’s Blockchain Law IV",
-    ""
+    "Luxembourg's CSSF authorized Clearstream to act as a Control Agent under Blockchain Law IV.",
+    "Asset managers will be able to tokenize selected share classes inside existing UCITS or AIF umbrella structures while retaining established service providers.",
+    "Clearstream says the integrated permissioned-DLT service remains subject to completion of CSSF regulatory processes."
   ],
-  "body": "Clearstream to propel tokenized fund distribution as authorized Control Agent under Luxembourg’s Blockchain Law IV",
+  "body": "Clearstream said on October 28 that Luxembourg's Commission de Surveillance du Secteur Financier authorized it to act as a Control Agent under Blockchain Law IV. The role lets Clearstream oversee tokenized issuance by maintaining the central issuance account on a distributed ledger, tracking holdings across account keepers and reconciling issued volume with recorded positions.\n\nThe planned service is designed for selected share classes within existing UCITS or alternative-investment-fund umbrella structures. Transfer agents, fund administrators, custodians and depositaries can retain their current roles while Clearstream supplies the DLT issuance and control layer.\n\nClearstream describes a permissioned environment supporting subscriptions, transfers and redemptions after validated instructions, with whitelisting intended to restrict holdings to authorized securities accounts. The authorization is a regulatory milestone, not evidence that the full platform is already operational: Clearstream states that its integrated Control Agent service remains subject to completion of CSSF regulatory processes.",
   "sources": [
     {
-      "name": "FX News Group",
-      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPVTR5Q3NTVlZmOTUtdVpRdW1OOEFaOXF1Z2xDTjR1cEJ6NEp6VmgtRUc0aGYyeFlLS3M0SGNaZHRYUHJZemY4VWUtZktSa0toWUhnczM1Y0N3OWl1OUNZTHF2ZUFhNzdLSWt1dllNTnJMZjhucHo2aW5IVXFYdkxpRU1GOEVFTVpIaWhtbm5jemVyczhPRHdtVXZ1ZHU4NkI0WV9KRTZ3MmFHd1ZQdk1URkd3aTFyRnRvUks2dldPN3hMVGJoTXFqbzJpRUsxdHpVU05ocUhzS2tlRjg2Sk8zS09QczNDNkQ2UWlIYWZaRzlVMUVJaFE?oc=5"
+      "name": "Clearstream — Control Agent authorization announcement",
+      "url": "https://www.clearstream.com/clearstream-en/newsroom/261028-5667846"
     }
   ],
   "newsWatch": {
@@ -27,14 +32,50 @@
     "discoveredAt": "2026-10-28T10:37:17.624838+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "verified",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-28T20:40:17Z",
-    "reason": "Multiple full specialist reports describe Clearstream's Control Agent authorization and planned DLT service, but no fully accessible Clearstream release or CSSF authorization record was found to substantiate the regulatory and technical claims from a primary source; the reports also state that completion of regulatory processes remains pending."
+    "reviewedAt": "2026-10-29T04:51:34Z",
+    "sources": [
+      {
+        "url": "https://www.clearstream.com/clearstream-en/newsroom/261028-5667846",
+        "publishedAt": "2026-10-28",
+        "checkedAt": "2026-10-29T04:51:34Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "The CSSF authorized Clearstream to act as a Control Agent under Luxembourg's Blockchain Law IV.",
+        "sourceUrl": "https://www.clearstream.com/clearstream-en/newsroom/261028-5667846",
+        "anchor": "backed by regulatory authorization"
+      },
+      {
+        "claim": "The Control Agent maintains the central issuance account on a distributed ledger.",
+        "sourceUrl": "https://www.clearstream.com/clearstream-en/newsroom/261028-5667846",
+        "anchor": "maintains the central issuance account"
+      },
+      {
+        "claim": "Managers can tokenize selected share classes within existing UCITS or AIF umbrella structures.",
+        "sourceUrl": "https://www.clearstream.com/clearstream-en/newsroom/261028-5667846",
+        "anchor": "existing umbrella structures"
+      },
+      {
+        "claim": "The integrated DLT service remains subject to completion of CSSF regulatory processes.",
+        "sourceUrl": "https://www.clearstream.com/clearstream-en/newsroom/261028-5667846",
+        "anchor": "subject to the completion"
+      },
+      {
+        "claim": "Clearstream plans to use account whitelisting so only authorized securities accounts can hold or receive shares.",
+        "sourceUrl": "https://www.clearstream.com/clearstream-en/newsroom/261028-5667846",
+        "anchor": "only authorized securities accounts"
+      }
+    ],
+    "contentSha256": "cffa3207a206d9d4b457d2db17412c3c49741070d4d85f8ab54adab3b472a19d"
   }
 }
