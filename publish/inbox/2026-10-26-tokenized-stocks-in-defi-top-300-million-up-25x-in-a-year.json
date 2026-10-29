@@ -34,8 +34,8 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-28T23:54:19Z",
-    "reason": "The resolved article and newer full reports still rely on Token Terminal's October 25 social snapshot. Token Terminal's readable explorer shows a current tokenized-stock market-cap table but does not reproduce the dated DeFi-deposit total, annual comparison or chain and issuer breakdown. Social excerpts and derivative reports cannot replace reproducible primary data, so the claimed $300 million and 2,451.5% change remain unverified."
+    "reviewedAt": "2026-10-29T14:30:00Z",
+    "reason": "The resolved article and additional reports still trace the figures to Token Terminal's October 25 social snapshot. Token Terminal's readable current explorer exposes market-cap and generic DeFi-use views but does not reproduce the dated deposit total, 2,451.5% annual change, or the reported chain and issuer breakdown. The historical claims therefore remain unverified from full primary data."
   }
 }
 
