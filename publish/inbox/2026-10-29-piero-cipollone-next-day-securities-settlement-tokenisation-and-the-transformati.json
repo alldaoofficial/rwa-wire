@@ -1,20 +1,26 @@
 {
-  "title": "Piero Cipollone: Next-day securities settlement, tokenisation and the transformation of Europe’s financial infrastructure",
-  "description": "",
-  "body": "",
-  "why_it_matters": "",
+  "title": "ECB Maps T+1 Cutover and Tokenized Settlement Upgrades",
+  "slug": "ecb-t1-cutover-tokenized-settlement-upgrades",
+  "description": "The ECB set June 2027 T2S process changes ahead of Europe’s October T+1 migration and outlined phased Pontes upgrades through 2028.",
+  "body": "ECB Executive Board member Piero Cipollone said Europe will shorten its standard securities settlement cycle from T+2 to T+1 on October 11, 2027. The Eurosystem plans changes to TARGET2-Securities night-time settlement processes in June 2027, ahead of the cutover.\n\nCipollone presented the timetable alongside the Eurosystem’s tokenization work. Pontes has settled wholesale tokenized-asset transactions in central bank money since September 21, 2026. The ECB plans to extend its operating hours significantly by mid-2027, offer immediate finality on the Eurosystem DLT platform as early as 2027, and target continuous availability in 2028.\n\nThe speech did not describe tokenized platforms as replacing existing infrastructure. Cipollone said T2S will continue operating while new platforms develop, with interoperability needed to prevent new digital silos. Appia is expected to produce a blueprint for an integrated European tokenized-finance ecosystem by 2028.",
+  "why_it_matters": "Europe is coordinating a conventional settlement-cycle reduction with tokenized central-bank-money rails, creating a dated implementation path rather than treating DLT modernization as a standalone experiment.",
   "pubDate": "2026-10-29",
-  "category": "news",
+  "category": "institutions",
+  "reviewCategory": "Infrastructure",
   "tags": [
     "RWA",
     "Tokenization",
     "Primary Source"
   ],
-  "keyTakeaways": [],
+  "keyTakeaways": [
+    "Europe’s T+1 securities-settlement cutover is scheduled for October 11, 2027.",
+    "T2S night-time settlement process changes are planned for June 2027.",
+    "Pontes upgrades are phased, with longer hours in 2027 and continuous availability targeted for 2028."
+  ],
   "sources": [
     {
       "name": "ECB",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261029~e9b57c3495.en.html"
+      "url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp261029~e9b57c3495.en.html"
     }
   ],
   "newsWatch": {
@@ -27,6 +33,49 @@
     "requiresSourceReview": true,
     "relatedCoverageTitles": [],
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment"
+    "contentStatus": "source-reviewed"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-29T16:16:05Z",
+    "sources": [
+      {
+        "url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp261029~e9b57c3495.en.html",
+        "publishedAt": "2026-10-29",
+        "checkedAt": "2026-10-29T16:16:05Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Europe will move its standard securities settlement cycle to T+1 on October 11, 2027.",
+        "sourceUrl": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp261029~e9b57c3495.en.html",
+        "anchor": "Europe will move to T+1 settlement"
+      },
+      {
+        "claim": "T2S night-time settlement process changes are planned for June 2027.",
+        "sourceUrl": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp261029~e9b57c3495.en.html",
+        "anchor": "planned for June 2027"
+      },
+      {
+        "claim": "Pontes has enabled wholesale tokenized-asset settlement in central bank money since September 21, 2026.",
+        "sourceUrl": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp261029~e9b57c3495.en.html",
+        "anchor": "Since 21 September, Pontes has enabled"
+      },
+      {
+        "claim": "The Eurosystem plans significantly longer Pontes operating hours by mid-2027.",
+        "sourceUrl": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp261029~e9b57c3495.en.html",
+        "anchor": "extending the operating hours significantly"
+      },
+      {
+        "claim": "The ECB targets continuous Pontes availability in 2028.",
+        "sourceUrl": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp261029~e9b57c3495.en.html",
+        "anchor": "24/7/365 availability in 2028"
+      }
+    ],
+    "contentSha256": "700cc9197abcf8b1981c601ba6b468495610d72b1cbd95efc02ae69c48cc72a0"
   }
 }
