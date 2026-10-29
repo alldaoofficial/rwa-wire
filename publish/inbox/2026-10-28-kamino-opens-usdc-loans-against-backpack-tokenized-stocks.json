@@ -1,23 +1,28 @@
 {
-  "title": "Kamino Opens USDC Loans Against Backpack Tokenized Stocks",
-  "description": "Kamino Opens USDC Loans Against Backpack Tokenized Stocks",
-  "why_it_matters": "",
+  "title": "Kamino Opens USDC Loans Against Four Backpack Tokenized Equities",
+  "slug": "kamino-opens-usdc-loans-backpack-tokenized-equities",
+  "description": "Kamino's isolated Backpack Market accepts four Backpack Securities tokens as collateral for USDC borrowing, with per-asset risk parameters and liquidation exposure.",
+  "why_it_matters": "The launch turns tokenized equity positions from trading inventory into borrowing collateral, while isolating market risk and exposing borrowers to asset-specific liquidation conditions.",
   "pubDate": "2026-10-28",
-  "category": "news",
+  "category": "markets",
+  "reviewCategory": "COLLATERAL",
   "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Tokenized Equities",
+    "Kamino",
+    "Backpack Securities",
+    "Solana",
+    "USDC"
   ],
   "keyTakeaways": [
-    "Kamino Opens USDC Loans Against Backpack Tokenized Stocks",
-    ""
+    "Eligible users can borrow USDC against Backpack Securities' MU, SKHY, SPCX and SNDK tokens on Kamino.",
+    "The Backpack Market is isolated, with separate reserves and asset-specific loan-to-value, liquidation and borrow-cap settings.",
+    "Backpack Securities states that each token is issued 1:1 against an underlying share; borrowers still face liquidation and smart-contract risk."
   ],
-  "body": "Kamino Opens USDC Loans Against Backpack Tokenized Stocks",
+  "body": "Kamino has opened an isolated Backpack Market that lets eligible users supply four Backpack Securities tokens as collateral and borrow USDC. The supported assets are tokenized Micron (MU), SK Hynix (SKHY), SpaceX (SPCX) and SanDisk (SNDK) positions on Solana. Kamino does not issue, custody or redeem the tokens.\n\nKamino says the market has its own parameters and reserves, limiting direct spillover from liquidity shortfalls or bad debt in its other markets. Each collateral asset has separate loan-to-value, liquidation and borrow-cap settings established by the market manager according to liquidity and oracle coverage. Users can deposit, borrow, repay and withdraw around the clock, but continuous access does not remove price or liquidation risk.\n\nBackpack Securities states that each token is issued 1:1 against an underlying share and that eligible Backpack account holders can redeem it, subject to its terms. Kamino warns that those protections do not cover tokens deposited into the lending protocol, smart-contract losses or liquidation. The arrangement therefore adds credit utility to the four tokenized positions without making the borrowing risk equivalent to holding shares in a conventional brokerage account.",
   "sources": [
     {
-      "name": "The Defiant",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQRWZKSXpUeENZRzlONTEwN0tQamYzWnhlU3pmX0hXWTRUSVZJNEZMU0VaT3FlQmV3WV9fVG1aZC1wbzhRSTJYMXpGNXpQNkxLcHJyZW8zLWltZFZjUXkwZXhmY2ttZEgyRWhWeTVMbXhaUlRvWWZTOUNNd2Q1NkJFVjJPM1kzUkU5LUc1YVhXbmhHa3M?oc=5"
+      "name": "Kamino — Backpack Securities tokenized-equities integration",
+      "url": "https://kamino.com/blog/kamino-integrates-backpack-securities-tokenized-equities"
     }
   ],
   "newsWatch": {
@@ -27,14 +32,50 @@
     "discoveredAt": "2026-10-28T17:07:25.989332+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "verified",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-10-28T23:46:54Z",
-    "reason": "Kamino's official launch-blog URL and live Backpack Market now exist, but the launch page returned no readable full text and the application did not expose the market's technical parameters in the retrieved page. The Defiant provides one full report; Solana Compass identifies itself as community-run, while other available articles are derivative summaries or rehosts. The evidence therefore still lacks readable primary technical documentation or two independent reputable full reports."
+    "reviewedAt": "2026-10-29T12:54:56Z",
+    "sources": [
+      {
+        "url": "https://kamino.com/blog/kamino-integrates-backpack-securities-tokenized-equities",
+        "publishedAt": "2026-10-29",
+        "checkedAt": "2026-10-29T12:54:56Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Four Backpack Securities tokenized equities are live as collateral in Kamino's Backpack Market.",
+        "sourceUrl": "https://kamino.com/blog/kamino-integrates-backpack-securities-tokenized-equities",
+        "anchor": "now live as collateral"
+      },
+      {
+        "claim": "Eligible holders can borrow USDC against the supported tokenized equity positions.",
+        "sourceUrl": "https://kamino.com/blog/kamino-integrates-backpack-securities-tokenized-equities",
+        "anchor": "borrow USDC against"
+      },
+      {
+        "claim": "The Backpack Market is isolated and maintains its own parameters and reserves.",
+        "sourceUrl": "https://kamino.com/blog/kamino-integrates-backpack-securities-tokenized-equities",
+        "anchor": "isolated market with its own parameters"
+      },
+      {
+        "claim": "Backpack Securities states that each token is issued one-for-one against an underlying share.",
+        "sourceUrl": "https://kamino.com/blog/kamino-integrates-backpack-securities-tokenized-equities",
+        "anchor": "issued 1:1 against an underlying share"
+      },
+      {
+        "claim": "Borrowers remain subject to liquidation when collateral values fall.",
+        "sourceUrl": "https://kamino.com/blog/kamino-integrates-backpack-securities-tokenized-equities",
+        "anchor": "subject to liquidation"
+      }
+    ],
+    "contentSha256": "22c787414c8878f5373a7b47ce93bec69207d0944be8f34f30001df3357cf009"
   }
 }
