@@ -29,5 +29,11 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedAt": "2026-10-29T09:31:10Z",
+    "reason": "The underlying Stellar page is promotional treasury-solution copy, not a new launch, approval, financing or material rollout; the secondary item only repackages those platform claims."
   }
 }
