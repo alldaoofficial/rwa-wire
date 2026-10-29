@@ -1,0 +1,32 @@
+{
+  "title": "Piero Cipollone: Next-day securities settlement, tokenisation and the transformation of Europe’s financial infrastructure",
+  "description": "",
+  "body": "",
+  "why_it_matters": "",
+  "pubDate": "2026-10-29",
+  "category": "news",
+  "tags": [
+    "RWA",
+    "Tokenization",
+    "Primary Source"
+  ],
+  "keyTakeaways": [],
+  "sources": [
+    {
+      "name": "ECB",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261029~e9b57c3495.en.html"
+    }
+  ],
+  "newsWatch": {
+    "score": 6,
+    "priority": "important",
+    "sourceTrust": "primary",
+    "discoveredAt": "2026-10-29T16:07:13.579968+00:00",
+    "sourcePublishedAt": "2026-10-29T15:50:00+00:00",
+    "discoveryMode": "direct-primary",
+    "requiresSourceReview": true,
+    "relatedCoverageTitles": [],
+    "autoPublishEligible": false,
+    "contentStatus": "needs-source-enrichment"
+  }
+}
