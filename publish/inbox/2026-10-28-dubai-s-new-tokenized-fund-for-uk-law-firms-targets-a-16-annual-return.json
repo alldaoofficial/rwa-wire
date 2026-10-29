@@ -1,23 +1,32 @@
 {
-  "title": "Dubai’s new tokenized fund for UK law firms targets a 16% annual return",
-  "description": "Dubai’s new tokenized fund for UK law firms targets a 16% annual return",
-  "why_it_matters": "",
-  "pubDate": "2026-10-28",
-  "category": "news",
+  "title": "Seven Stars Opens Tokenized DIFC Credit Fund for UK Law-Firm Lending",
+  "slug": "seven-stars-opens-tokenized-difc-credit-fund",
+  "description": "Seven Stars Fund CEIC opened to professional investors in Dubai as a tokenized private-credit fund financing regulated UK law firms and claims managers.",
+  "why_it_matters": "The launch moves a previously announced tokenized litigation-finance concept into a regulated subscription phase, but the fund begins without commitments and its 16% return remains a sponsor target rather than a realized result.",
+  "pubDate": "2026-10-27",
+  "category": "institutions",
+  "reviewCategory": "FUND LAUNCH",
   "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Tokenized Funds",
+    "Private Credit",
+    "DIFC",
+    "Seven Stars",
+    "ERC-3643"
   ],
   "keyTakeaways": [
-    "Dubai’s new tokenized fund for UK law firms targets a 16% annual return",
-    ""
+    "Seven Stars Fund CEIC opened to professional investors on October 27 as a DFSA-regulated exempt credit fund in the DIFC.",
+    "The fund targets GBP 250 million, has a GBP 400 million hard cap and issues interests as ERC-3643 security tokens through Tokeny.",
+    "The sponsor targets a 16% annual return, but the fund had no commitments or loans at launch and expects a roughly GBP 50 million first close in Q1 2027."
   ],
-  "body": "Dubai’s new tokenized fund for UK law firms targets a 16% annual return",
+  "body": "Seven Stars Fund CEIC opened for subscriptions from professional investors on October 27. The closed-ended DIFC vehicle will provide senior-secured, full-recourse loans to regulated UK law firms and claims management companies pursuing consumer-redress claims. Truleum Venture Partners is the DFSA-authorized manager, Apex Group is the administrator, and Tokeny supplies the ERC-3643 issuance infrastructure.\n\nThe fund targets GBP 250 million, with a GBP 400 million hard cap and a USD 50,000 minimum investment. Its sponsor is targeting a 16% annual return, but that figure is a target, not a realized yield or guarantee. EnterpriseAM reported that the fund had no commitments and had made no loans when it opened. It expects an initial close of about GBP 50 million in Q1 2027.\n\nThe launch is a material step beyond the structure announced in 2025 because subscriptions are now open within a regulated fund framework. Credit risk remains: borrowers owe repayment regardless of individual claim outcomes, but their ability to repay still depends on the performance of their claims portfolios.",
   "sources": [
     {
-      "name": "EnterpriseAM",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQR3Uzd2NoaWlNeGFSVE5tWktzRkdHMjhMOU8yUnpmZ2Z5ZmNUNjdmVHdNRU45Y2lHblNvRkpUb0x6aUdFZWJzTXBHUmtodnRJTVZhMGpCMmIzMW1hMnVfLWhhc2lTeDAwaGFwZ0Q5d28yT1BjaHBTTlNRSnJjMmswdFdYUnV0amgzVkNwU0pXclJnUXA3bFBRQ3BpdlNtbnUyeVRlWnpyTTR0Z2t2cGhz?oc=5"
+      "name": "EnterpriseAM — Seven Stars fund launch and sponsor interview",
+      "url": "https://enterpriseam.com/uae/2026/10/29/dubais-new-tokenized-fund-for-uk-law-firms-targets-a-16-annual-return/"
+    },
+    {
+      "name": "DFSA — Public register",
+      "url": "https://www.dfsa.ae/public-register/firms"
     }
   ],
   "newsWatch": {
@@ -27,7 +36,57 @@
     "discoveredAt": "2026-10-29T04:07:14.843933+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-10-29T04:34:11Z",
+    "sources": [
+      {
+        "url": "https://enterpriseam.com/uae/2026/10/29/dubais-new-tokenized-fund-for-uk-law-firms-targets-a-16-annual-return/",
+        "publishedAt": "2026-10-29",
+        "checkedAt": "2026-10-29T04:34:11Z",
+        "kind": "news",
+        "access": "full-text"
+      },
+      {
+        "url": "https://www.dfsa.ae/public-register/firms",
+        "publishedAt": "2026-10-29",
+        "checkedAt": "2026-10-29T04:34:11Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "The fund opened to professional investors during the week of October 27, 2026.",
+        "sourceUrl": "https://enterpriseam.com/uae/2026/10/29/dubais-new-tokenized-fund-for-uk-law-firms-targets-a-16-annual-return/",
+        "anchor": "opened to professional investors this week"
+      },
+      {
+        "claim": "The fund had no commitments and had made no loans when reported on October 29.",
+        "sourceUrl": "https://enterpriseam.com/uae/2026/10/29/dubais-new-tokenized-fund-for-uk-law-firms-targets-a-16-annual-return/",
+        "anchor": "has no commitments yet"
+      },
+      {
+        "claim": "The sponsor is targeting a 16% annual return rather than reporting a realized result.",
+        "sourceUrl": "https://enterpriseam.com/uae/2026/10/29/dubais-new-tokenized-fund-for-uk-law-firms-targets-a-16-annual-return/",
+        "anchor": "targeting a 16% annual return"
+      },
+      {
+        "claim": "Fund interests are issued as ERC-3643 security tokens on Tokeny's platform.",
+        "sourceUrl": "https://enterpriseam.com/uae/2026/10/29/dubais-new-tokenized-fund-for-uk-law-firms-targets-a-16-annual-return/",
+        "anchor": "issued as ERC-3643 security tokens"
+      },
+      {
+        "claim": "The DFSA public register identifies Truleum Venture Partners Limited under reference F008013.",
+        "sourceUrl": "https://www.dfsa.ae/public-register/firms",
+        "anchor": "Truleum Venture Partners Limited F008013"
+      }
+    ],
+    "contentSha256": "bae9889231dbfddbd29398b402fe02fdcdd0e1d1fbeda10a52f4714c64c5f2eb"
   }
 }
