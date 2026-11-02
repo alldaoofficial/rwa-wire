@@ -7,15 +7,15 @@
     "CBMitgFBVV95cUxQb3BkanZCV2lLY2pmNXRjRmx2aHlEVDdqaEdzRm1sc0k0V2E1dktzdG93VDVKVk5zRkpTVzk2R0R4Nzc5aEFlczhPcGk0d1ItT2ZhYWZ3U2c2OUZkTFZTSEh2V1BSTUhYcUExcmlMalkzVkZYZy1rMS1lXzlBMkJSY1NKaFlHSU9LYXI5TmktSWNHMjBvWThpbmNsN0RzNE1KZTRBM0VMTWhsb2JXb3FoMkFmYW8wQQ",
     "CBMixwFBVV95cUxObS00cHVoeFZOd2dkSFZaZGlrLWwzLVVmTFI0cXI5TVV5cEZoU28ycmd0OGZabU92My1wUHNQNnZPemtJamdueTRFUWllMGF0bDU2TkVCZVVHd1lBcVdnb3NDMnFRekFtVXBIbEQteHhORVk1UHlOXzE2Q1FHLU1xbkVVSzQ0bG00b1pmanZZbXEzNGhIbEEwZFNDeG1lcnlEbmViOUlRdW1SWGlUcHlZUllsM0RqUkhxbkE0VDlLY1R1LUpBYVZ3"
   ],
-  "lastRun": "2026-11-02T07:47:27.908968+00:00",
+  "lastRun": "2026-11-02T18:34:14.160483+00:00",
   "lastDiagnostics": {
-    "rawItems": 129,
-    "uniqueItems": 81,
-    "qualified": 1,
-    "blocked": 5,
-    "untrusted": 38,
-    "lowSignal": 37
+    "rawItems": 126,
+    "uniqueItems": 88,
+    "qualified": 0,
+    "blocked": 3,
+    "untrusted": 44,
+    "lowSignal": 41
   },
-  "lastResult": "candidate",
+  "lastResult": "no-qualified-story",
   "lastCandidate": "publish/inbox/2026-11-02-bitcoin-etfs-lost-643-million-in-outflows-friday-and-2026-is-barely-green-now.json"
 }
