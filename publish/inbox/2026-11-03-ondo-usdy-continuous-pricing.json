@@ -1,0 +1,91 @@
+{
+  "title": "Ondo Activates Continuous Pricing for USDY",
+  "slug": "ondo-usdy-continuous-pricing",
+  "description": "Ondo replaced USDY's once-daily price update with an onchain oracle that calculates a continuously accruing price whenever an integration reads it.",
+  "why_it_matters": "Continuous pricing lets wallets and protocols value short USDY holding periods more precisely, reducing a timing mismatch between tokenized Treasury yield and always-on markets.",
+  "pubDate": "2026-11-03",
+  "category": "markets",
+  "reviewCategory": "TOKENIZED TREASURIES",
+  "tags": [
+    "Ondo Finance",
+    "USDY",
+    "Tokenized Treasuries",
+    "Oracles"
+  ],
+  "keyTakeaways": [
+    "USDY's price is now calculated continuously when the oracle is read instead of updating once per day.",
+    "Existing integrations can migrate to the USDY Oracle Wrapper; the previous oracle remains live through the end of 2026.",
+    "Instant minting and redemption remain limited to eligible holders outside the United States and are subject to operational downtime."
+  ],
+  "body": "Ondo Finance said on November 3 that continuous pricing is live for USDY, replacing the token's previous once-daily price update. The ContinuousPriceOracle stores a price and annual rate, then calculates an updated price whenever an application reads it. That design lets wallets, exchanges and lending protocols reflect yield accrued during shorter holding periods rather than waiting for the next daily update.\n\nNew integrations are directed to the USDY Oracle Wrapper. Ondo says applications already using the wrapper switch automatically, while other integrations should point to the wrapper deployed on each supported chain. The prior oracle will remain available through the end of 2026 to provide a migration window.\n\nOndo also links the pricing change to its instant minting and redemption flow. Eligible holders outside the United States can enter and exit USDY around the clock at the continuously updated price, subject to scheduled maintenance and other downtime. This is an oracle and product-pricing upgrade, not a change to USDY's eligibility restrictions or a guarantee of uninterrupted liquidity.",
+  "sources": [
+    {
+      "name": "Ondo Finance — USDY Continuous Pricing",
+      "url": "https://ondo.finance/blog/usdy-continuous-pricing"
+    },
+    {
+      "name": "Ondo Finance Documentation — USDY Price Oracle",
+      "url": "https://docs.ondo.finance/developer-guides/usdy-instant-manager-integration"
+    }
+  ],
+  "newsWatch": {
+    "score": 6,
+    "priority": "watchlist",
+    "sourceTrust": "primary",
+    "discoveredAt": "2026-11-04T07:09:51Z",
+    "requiresSourceReview": true,
+    "autoPublishEligible": false,
+    "contentStatus": "source-reviewed",
+    "discoveryMode": "agent-primary"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-04T07:09:51Z",
+    "sources": [
+      {
+        "url": "https://ondo.finance/blog/usdy-continuous-pricing",
+        "publishedAt": "2026-11-03",
+        "checkedAt": "2026-11-04T07:09:51Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://docs.ondo.finance/developer-guides/usdy-instant-manager-integration",
+        "publishedAt": "2026-11-03",
+        "checkedAt": "2026-11-04T07:09:51Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Ondo announced continuous pricing for USDY on November 3, 2026.",
+        "sourceUrl": "https://ondo.finance/blog/usdy-continuous-pricing",
+        "anchor": "Continuous pricing is now live for USDY"
+      },
+      {
+        "claim": "The previous USDY oracle will remain available through the end of 2026.",
+        "sourceUrl": "https://ondo.finance/blog/usdy-continuous-pricing",
+        "anchor": "through the end of 2026"
+      },
+      {
+        "claim": "Instant minting and redemption are offered to eligible holders outside the United States.",
+        "sourceUrl": "https://ondo.finance/blog/usdy-continuous-pricing",
+        "anchor": "eligible holders outside the U.S."
+      },
+      {
+        "claim": "The ContinuousPriceOracle calculates USDY's current price whenever it is read.",
+        "sourceUrl": "https://docs.ondo.finance/developer-guides/usdy-instant-manager-integration",
+        "anchor": "calculates the current price every time"
+      },
+      {
+        "claim": "The updated oracle makes USDY's price grow continuously rather than once daily.",
+        "sourceUrl": "https://docs.ondo.finance/developer-guides/usdy-instant-manager-integration",
+        "anchor": "price grows continuously instead of once a day"
+      }
+    ],
+    "contentSha256": "501b09b14687dbb0aa25fafd81c99c40de6621285d329b11d862f0edaffc39f2"
+  }
+}
