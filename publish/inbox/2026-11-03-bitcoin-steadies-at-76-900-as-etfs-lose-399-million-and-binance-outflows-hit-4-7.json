@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "requiresSourceReview": true,
     "contentStatus": "needs-source-enrichment"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-04T11:35:59Z",
+    "reason": "The full CoinDesk article is a daily crypto-market report about Bitcoin price action, spot Bitcoin ETF flows, exchange withdrawals and derivatives positioning. It does not document a tokenized real-world asset, tokenization infrastructure or another material RWA event."
   }
 }
