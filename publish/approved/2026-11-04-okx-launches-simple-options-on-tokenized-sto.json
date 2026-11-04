@@ -1,0 +1,31 @@
+{
+  "id": "2026-11-04-okx-launches-simple-options-on-tokenized-sto",
+  "title": "OKX Launches Simple Options on Tokenized Stocks",
+  "category": "NEWS",
+  "why_it_matters": "The launch adds defined-risk and income strategies to tokenized equities while keeping settlement, collateral and trading inside OKX's digital-asset platform.",
+  "article_url": "https://therwawire.com/news/okx-launches-simple-options-on-tokenized-stocks/",
+  "image_url": "https://therwawire.com/images/news/okx-launches-simple-options-on-tokenized-stocks.svg",
+  "caption": "RWA WIRE // NEWS\n\nOKX Launches Simple Options on Tokenized Stocks\n\nOKX launched a request-for-quote options product for four tokenized stocks, offering fully funded European-style calls and puts around the clock.\n\nFull analysis →\nhttps://therwawire.com/news/okx-launches-simple-options-on-tokenized-stocks/",
+  "distribution": {
+    "telegram": "RWA WIRE // NEWS\n\nOKX Launches Simple Options on Tokenized Stocks\n\nOKX launched a request-for-quote options product for four tokenized stocks, offering fully funded European-style calls and puts around the clock.\n\nFull analysis →\nhttps://therwawire.com/news/okx-launches-simple-options-on-tokenized-stocks/",
+    "x": "OKX Launches Simple Options on Tokenized Stocks\n\nOKX launched a request-for-quote options product for four tokenized stocks, offering fully funded European-style calls and puts around the clock.\n\nhttps://therwawire.com/news/okx-launches-simple-options-on-tokenized-stocks/",
+    "breaking": "RWA WIRE // NEWS\n\nOKX Launches Simple Options on Tokenized Stocks\n\nhttps://therwawire.com/news/okx-launches-simple-options-on-tokenized-stocks/",
+    "summary": "OKX launched a request-for-quote options product for four tokenized stocks, offering fully funded European-style calls and puts around the clock."
+  },
+  "sources": [
+    {
+      "name": "OKX — We're Bringing Options to Tokenized Stocks",
+      "url": "https://www.okx.com/en-au/learn/simple-options-tokenized-stocks-launch"
+    },
+    {
+      "name": "OKX — Introduction to Simple Options",
+      "url": "https://www.okx.com/en-gb/help/introduction-to-simple-options"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-11-04-okx-launches-simple-options-based-on-tokenized-stocks-with-24-7-trading.json",
+    "contentSha256": "66b8549ff14a4bc6a53b0022a9f31b8dec128bd55cc64775fdc2f2d4395dbad2",
+    "approvedAt": "2026-11-04T14:55:10.891665+00:00"
+  }
+}
