@@ -1,0 +1,31 @@
+{
+  "id": "2026-11-03-ondo-asks-sec-to-adapt-transfer-agent-rules",
+  "title": "Ondo Asks SEC to Adapt Transfer-Agent Rules for Onchain Securities",
+  "category": "REGULATION",
+  "why_it_matters": "Transfer-agent rules determine how tokenized positions connect to authoritative ownership records, so the final framework could shape interoperability, compliance costs and public-blockchain participation.",
+  "article_url": "https://therwawire.com/news/ondo-asks-sec-to-adapt-transfer-agent-rules-for-onchain-securities/",
+  "image_url": "https://therwawire.com/images/news/ondo-asks-sec-to-adapt-transfer-agent-rules-for-onchain-securities.svg",
+  "caption": "RWA WIRE // REGULATION\n\nOndo Asks SEC to Adapt Transfer-Agent Rules for Onchain Securities\n\nOndo urged the SEC to preserve direct and intermediated holding routes, recognize public-blockchain records and reduce repeated reviews for routine tokenized-security transfers.\n\nFull analysis →\nhttps://therwawire.com/news/ondo-asks-sec-to-adapt-transfer-agent-rules-for-onchain-securities/",
+  "distribution": {
+    "telegram": "RWA WIRE // REGULATION\n\nOndo Asks SEC to Adapt Transfer-Agent Rules for Onchain Securities\n\nOndo urged the SEC to preserve direct and intermediated holding routes, recognize public-blockchain records and reduce repeated reviews for routine tokenized-security transfers.\n\nFull analysis →\nhttps://therwawire.com/news/ondo-asks-sec-to-adapt-transfer-agent-rules-for-onchain-securities/",
+    "x": "Ondo Asks SEC to Adapt Transfer-Agent Rules for Onchain Securities\n\nOndo urged the SEC to preserve direct and intermediated holding routes, recognize public-blockchain records and reduce repeated reviews for routine tokenized-security transfers.\n\nhttps://therwawire.com/news/ondo-asks-sec-to-adapt-transfer-agent-rules-for-onchain-securities/",
+    "breaking": "RWA WIRE // REGULATION\n\nOndo Asks SEC to Adapt Transfer-Agent Rules for Onchain Securities\n\nhttps://therwawire.com/news/ondo-asks-sec-to-adapt-transfer-agent-rules-for-onchain-securities/",
+    "summary": "Ondo urged the SEC to preserve direct and intermediated holding routes, recognize public-blockchain records and reduce repeated reviews for routine tokenized-security transfers."
+  },
+  "sources": [
+    {
+      "name": "Ondo Finance — SEC transfer-agent rules comment letter",
+      "url": "https://www.sec.gov/comments/S7-2026-30/s7202630-1119059-3983287.pdf"
+    },
+    {
+      "name": "U.S. Securities and Exchange Commission — Transfer Agent Rules proposal",
+      "url": "https://www.sec.gov/rules-regulations/2026/09/s7-2026-30"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-11-04-wall-street-s-transfer-agent-rules-need-an-onchain-upgrade.json",
+    "contentSha256": "b0ada4872e95650f053e17f2cd02fc1a56e1cfac24c20df591a152fef6f32629",
+    "approvedAt": "2026-11-04T23:39:10.517778+00:00"
+  }
+}
