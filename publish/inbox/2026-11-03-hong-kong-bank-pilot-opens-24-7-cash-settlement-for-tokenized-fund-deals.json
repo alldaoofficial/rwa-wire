@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-04T12:38:31Z",
+    "reason": "The CryptoSlate report covers the same November 2 Hong Kong event already captured in publish/inbox/2026-11-02-standard-chartered-launches-24-7-tokenized-deposits-in-hong-kong.json: Standard Chartered's tokenised-deposit launch and EnsembleTX's 24/7 interbank settlement in tokenised central-bank money. It adds no separate launch, approval or material expansion."
   }
 }
