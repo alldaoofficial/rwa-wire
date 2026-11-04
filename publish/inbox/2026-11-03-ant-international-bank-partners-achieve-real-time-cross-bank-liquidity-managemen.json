@@ -1,23 +1,30 @@
 {
-  "title": "Ant International, bank partners achieve real-time cross-bank liquidity management via tokenized deposits",
-  "description": "Ant International, bank partners achieve real-time cross-bank liquidity management via tokenized deposits",
-  "why_it_matters": "",
-  "pubDate": "2026-11-03",
-  "category": "news",
+  "title": "Ant Completes Live Cross-Bank Tokenized-Deposit Transfers in Hong Kong",
+  "description": "Ant International completed live HKD transfers with three banks through EnsembleTX, using tokenized deposits settled in central-bank money and WhaleRTP instructions.",
+  "why_it_matters": "The transactions demonstrate a corporate treasury workflow moving tokenized commercial-bank money across multiple banks with central-bank-money settlement, rather than remaining an internal bank transfer or sandbox concept.",
+  "pubDate": "2026-11-02",
+  "category": "institutions",
   "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Tokenized Deposits",
+    "Institutional Payments",
+    "Ant International",
+    "EnsembleTX",
+    "Hong Kong"
   ],
   "keyTakeaways": [
-    "Ant International, bank partners achieve real-time cross-bank liquidity management via tokenized deposits",
-    ""
+    "Ant International completed live HKD interbank transactions with Bank of China (Hong Kong), China Construction Bank (Asia) and HSBC during September and October 2026.",
+    "WhaleRTP initiated the transfers using tokenized deposits, while HKMA central-bank money provided interbank settlement under EnsembleTX.",
+    "Ant said payment instructions reached final receipt within five minutes and gave its treasury 24/7 liquidity access."
   ],
-  "body": "Ant International, bank partners achieve real-time cross-bank liquidity management via tokenized deposits",
+  "body": "Ant International disclosed live Hong Kong-dollar interbank transfers completed during September and October 2026 with Bank of China (Hong Kong), China Construction Bank (Asia) and HSBC. Ant's WhaleRTP wholesale settlement platform initiated the payments using tokenized deposits, while the Hong Kong Monetary Authority's EnsembleTX infrastructure settled the interbank leg in tokenized central-bank money. Ant said each transfer moved from payment instruction to final receipt within five minutes.\n\nThe transactions form a concrete corporate-treasury use case for moving liquidity across banks outside conventional operating windows. HKMA separately confirmed that EnsembleTX now supports 24/7 settlement and has expanded to 12 participating banks and 20 industry pioneers. Ant says the setup reduced reliance on prefunding, but it did not publish transaction values or an independently measured capital reduction. Its proposed move toward AI-directed agentic treasury remains a future plan, not part of the completed transfers.",
   "sources": [
     {
-      "name": "The Standard (HK)",
-      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOTlRzWnFiZXZ6V1VFQXdudllVYk5hN1VxTjVwcXhPbVlOZzVWaTlMSnpXYWMydVdnTThnOVlJNkxDV09VajhKTjNyNDMtbTBfSGJFUnRrdDc2UHh3a0lQVE5NNmhlbklQTXBZa3lEc1NmczFXdjZHVEdTOWpkY1NuTzA0bVhkZVF0X0p0QXYxeE5pOHNEZjlIeGFEa1RUZGx5eXFSLXdvMEdaMG52a1gyMHVudHBPQy02UkF2NTFOS2ZqeWFCbEhMUFhrZ005SUFTdEtmVlRtSUQwTURheE9BMHNJb05pcHdWaWE4Wm54aw?oc=5"
+      "name": "Ant International — Live Cross-Bank Transfers under EnsembleTX",
+      "url": "https://www.businesswire.com/news/home/20261102286689/en/Ant-International-and-Bank-Partners-Achieve-Real-Time-Cross-Bank-Liquidity-Management-through-Tokenised-Deposits-via-CeBM-under-HKMAs-EnsembleTX"
+    },
+    {
+      "name": "Hong Kong Monetary Authority — EnsembleTX 24/7 CeBM Settlement",
+      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261102-5/"
     }
   ],
   "newsWatch": {
@@ -27,7 +34,62 @@
     "discoveredAt": "2026-11-03T08:37:19.514044+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-04T19:42:19Z",
+    "sources": [
+      {
+        "url": "https://www.businesswire.com/news/home/20261102286689/en/Ant-International-and-Bank-Partners-Achieve-Real-Time-Cross-Bank-Liquidity-Management-through-Tokenised-Deposits-via-CeBM-under-HKMAs-EnsembleTX",
+        "publishedAt": "2026-11-02",
+        "checkedAt": "2026-11-04T19:42:19Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261102-5/",
+        "publishedAt": "2026-11-02",
+        "checkedAt": "2026-11-04T19:42:19Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Ant completed live HKD interbank transactions with BOCHK, CCB (Asia) and HSBC during September and October 2026.",
+        "sourceUrl": "https://www.businesswire.com/news/home/20261102286689/en/Ant-International-and-Bank-Partners-Achieve-Real-Time-Cross-Bank-Liquidity-Management-through-Tokenised-Deposits-via-CeBM-under-HKMAs-EnsembleTX",
+        "anchor": "between September and October 2026"
+      },
+      {
+        "claim": "WhaleRTP initiated transfers using tokenized deposits settled through HKMA central-bank money.",
+        "sourceUrl": "https://www.businesswire.com/news/home/20261102286689/en/Ant-International-and-Bank-Partners-Achieve-Real-Time-Cross-Bank-Liquidity-Management-through-Tokenised-Deposits-via-CeBM-under-HKMAs-EnsembleTX",
+        "anchor": "WhaleRTP"
+      },
+      {
+        "claim": "Ant said transfers moved from payment instruction to final receipt within five minutes.",
+        "sourceUrl": "https://www.businesswire.com/news/home/20261102286689/en/Ant-International-and-Bank-Partners-Achieve-Real-Time-Cross-Bank-Liquidity-Management-through-Tokenised-Deposits-via-CeBM-under-HKMAs-EnsembleTX",
+        "anchor": "within five minutes"
+      },
+      {
+        "claim": "Ant said the infrastructure gave it round-the-clock liquidity access.",
+        "sourceUrl": "https://www.businesswire.com/news/home/20261102286689/en/Ant-International-and-Bank-Partners-Achieve-Real-Time-Cross-Bank-Liquidity-Management-through-Tokenised-Deposits-via-CeBM-under-HKMAs-EnsembleTX",
+        "anchor": "24/7 liquidity access"
+      },
+      {
+        "claim": "HKMA said EnsembleTX now supports interbank settlement in tokenized central-bank money on a 24/7 basis.",
+        "sourceUrl": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261102-5/",
+        "anchor": "24/7 basis"
+      },
+      {
+        "claim": "HKMA reported 12 participating banks and 20 industry pioneers in EnsembleTX.",
+        "sourceUrl": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261102-5/",
+        "anchor": "12 and 20 respectively"
+      }
+    ],
+    "contentSha256": "b42c28bdf8a28bd5dba3b928ca6d85c406e1e7d19441423092da915047eaddd7"
   }
 }
