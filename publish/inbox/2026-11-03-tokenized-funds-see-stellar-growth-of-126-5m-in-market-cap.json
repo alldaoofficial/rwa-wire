@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-04T12:38:31Z",
+    "reason": "The Coinfomania article derives the $126.5 million 24-hour change solely from a community post by @RWAFoundation_. It provides no reproducible primary dataset, named fund-level changes or independent full-text reporting, so the metric cannot support source enrichment."
   }
 }
