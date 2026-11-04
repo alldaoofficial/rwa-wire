@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-04T14:13:51Z",
+    "reason": "The Coin Gabbar page is a general educational comparison of tokenized Treasury funds and bank deposits. It documents no new launch, approval, financing, implementation milestone or dated dataset suitable for an RWA Wire news brief."
   }
 }
