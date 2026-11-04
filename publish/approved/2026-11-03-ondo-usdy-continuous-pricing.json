@@ -1,0 +1,31 @@
+{
+  "id": "2026-11-03-ondo-usdy-continuous-pricing",
+  "title": "Ondo Activates Continuous Pricing for USDY",
+  "category": "TOKENIZED TREASURIES",
+  "why_it_matters": "Continuous pricing lets wallets and protocols value short USDY holding periods more precisely, reducing a timing mismatch between tokenized Treasury yield and always-on markets.",
+  "article_url": "https://therwawire.com/markets/ondo-usdy-continuous-pricing/",
+  "image_url": "https://therwawire.com/images/news/ondo-usdy-continuous-pricing.svg",
+  "caption": "RWA WIRE // TOKENIZED TREASURIES\n\nOndo Activates Continuous Pricing for USDY\n\nOndo replaced USDY's once-daily price update with an onchain oracle that calculates a continuously accruing price whenever an integration reads it.\n\nFull analysis →\nhttps://therwawire.com/markets/ondo-usdy-continuous-pricing/",
+  "distribution": {
+    "telegram": "RWA WIRE // TOKENIZED TREASURIES\n\nOndo Activates Continuous Pricing for USDY\n\nOndo replaced USDY's once-daily price update with an onchain oracle that calculates a continuously accruing price whenever an integration reads it.\n\nFull analysis →\nhttps://therwawire.com/markets/ondo-usdy-continuous-pricing/",
+    "x": "Ondo Activates Continuous Pricing for USDY\n\nOndo replaced USDY's once-daily price update with an onchain oracle that calculates a continuously accruing price whenever an integration reads it.\n\nhttps://therwawire.com/markets/ondo-usdy-continuous-pricing/",
+    "breaking": "RWA WIRE // TOKENIZED TREASURIES\n\nOndo Activates Continuous Pricing for USDY\n\nhttps://therwawire.com/markets/ondo-usdy-continuous-pricing/",
+    "summary": "Ondo replaced USDY's once-daily price update with an onchain oracle that calculates a continuously accruing price whenever an integration reads it."
+  },
+  "sources": [
+    {
+      "name": "Ondo Finance — USDY Continuous Pricing",
+      "url": "https://ondo.finance/blog/usdy-continuous-pricing"
+    },
+    {
+      "name": "Ondo Finance Documentation — USDY Price Oracle",
+      "url": "https://docs.ondo.finance/developer-guides/usdy-instant-manager-integration"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-11-03-ondo-usdy-continuous-pricing.json",
+    "contentSha256": "501b09b14687dbb0aa25fafd81c99c40de6621285d329b11d862f0edaffc39f2",
+    "approvedAt": "2026-11-04T07:12:48.110363+00:00"
+  }
+}
