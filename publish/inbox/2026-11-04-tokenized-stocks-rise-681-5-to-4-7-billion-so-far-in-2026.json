@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-04T09:10:41Z",
+    "reason": "The reported $4.7 billion value is a rounded restatement of the October 28 $4.64 billion tokenized-stock market-cap snapshot already captured in the pipeline; it is not a separate launch, approval, financing or material expansion."
   }
 }
