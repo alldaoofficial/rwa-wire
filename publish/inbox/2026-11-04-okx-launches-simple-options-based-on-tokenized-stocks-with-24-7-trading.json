@@ -1,23 +1,29 @@
 {
-  "title": "OKX Launches ‘Simple Options’ Based on Tokenized Stocks, With 24/7 Trading",
-  "description": "OKX Launches ‘Simple Options’ Based on Tokenized Stocks, With 24/7 Trading",
-  "why_it_matters": "",
+  "title": "OKX Launches Simple Options on Tokenized Stocks",
+  "description": "OKX launched a request-for-quote options product for four tokenized stocks, offering fully funded European-style calls and puts around the clock.",
+  "why_it_matters": "The launch adds defined-risk and income strategies to tokenized equities while keeping settlement, collateral and trading inside OKX's digital-asset platform.",
   "pubDate": "2026-11-04",
   "category": "news",
   "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Tokenized Stocks",
+    "Options",
+    "OKX",
+    "Derivatives"
   ],
   "keyTakeaways": [
-    "OKX Launches ‘Simple Options’ Based on Tokenized Stocks, With 24/7 Trading",
-    ""
+    "OKX launched Simple Options on tokenized NVDA, SPCX, MU and GOOGL for eligible customers in specified regions.",
+    "The fully funded European-style contracts support buying and selling calls and puts through an OTC request-for-quote model.",
+    "Trading is available 24/7 from 0.01 contract, equivalent to one tokenized share, with premium and cash settlement in USDT."
   ],
-  "body": "OKX Launches ‘Simple Options’ Based on Tokenized Stocks, With 24/7 Trading",
+  "body": "OKX launched Simple Options on November 4 for eligible customers across Southeast Asia, Northeast Asia, the CIS region, MENA and Türkiye. The initial underlyings are tokenized NVDA, SPCX, MU and GOOGL, with more planned. The European-style contracts let users buy or sell calls and puts through an over-the-counter request-for-quote process.\n\nPositions are fully funded rather than margined. Buyers pay the premium upfront, while sellers set aside tokenized shares or USDT, so the product does not use liquidation for insufficient margin. Trading and quote requests are available 24/7. The minimum size is 0.01 contract, representing one tokenized share, while a standard contract represents 100 shares. Premiums and cash settlement are denominated in USDT. Contracts settle at 16:00 Hong Kong time on expiry, and positions can be closed earlier when a quote is available before the cutoff.",
   "sources": [
     {
-      "name": "bloomingbit",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBJRG1Xd2I3UzBQd2NCQ2J4WmNwczRtbTMwVUNEcGJNVEJsOTZnUVFvZ21rc0phakMybHI3YVNqMzF2LUM3U2xEdWphcURPbDdqTzFXYQ?oc=5"
+      "name": "OKX — We're Bringing Options to Tokenized Stocks",
+      "url": "https://www.okx.com/en-au/learn/simple-options-tokenized-stocks-launch"
+    },
+    {
+      "name": "OKX — Introduction to Simple Options",
+      "url": "https://www.okx.com/en-gb/help/introduction-to-simple-options"
     }
   ],
   "newsWatch": {
@@ -27,14 +33,67 @@
     "discoveredAt": "2026-11-04T07:37:17.121698+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "verified",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-04T08:13:52Z",
-    "reason": "OKX's full product documentation proves the tokenized-stock option terms but is dated October 22; the November 4 launch date appears only in derivative reports, and no readable dated official launch announcement was found."
+    "reviewedAt": "2026-11-04T14:52:56Z",
+    "sources": [
+      {
+        "url": "https://www.okx.com/en-au/learn/simple-options-tokenized-stocks-launch",
+        "publishedAt": "2026-11-04",
+        "checkedAt": "2026-11-04T14:52:56Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://www.okx.com/en-gb/help/introduction-to-simple-options",
+        "publishedAt": "2026-10-22",
+        "checkedAt": "2026-11-04T14:52:56Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "OKX launched Simple Options on November 4, 2026.",
+        "sourceUrl": "https://www.okx.com/en-au/learn/simple-options-tokenized-stocks-launch",
+        "anchor": "launching Simple Options"
+      },
+      {
+        "claim": "The initial underlyings are tokenized NVDA, SPCX, MU and GOOGL.",
+        "sourceUrl": "https://www.okx.com/en-au/learn/simple-options-tokenized-stocks-launch",
+        "anchor": "NVDA, SPCX, MU, and GOOGL"
+      },
+      {
+        "claim": "The minimum position is 0.01 contract, representing one tokenized share.",
+        "sourceUrl": "https://www.okx.com/en-au/learn/simple-options-tokenized-stocks-launch",
+        "anchor": "0.01 contract"
+      },
+      {
+        "claim": "Simple Options is available for trading around the clock.",
+        "sourceUrl": "https://www.okx.com/en-au/learn/simple-options-tokenized-stocks-launch",
+        "anchor": "available 24/7"
+      },
+      {
+        "claim": "Contracts are European-style and settle at 16:00 UTC+8 on expiry.",
+        "sourceUrl": "https://www.okx.com/en-au/learn/simple-options-tokenized-stocks-launch",
+        "anchor": "settle at 16:00 UTC+8"
+      },
+      {
+        "claim": "The product uses an over-the-counter request-for-quote trading model.",
+        "sourceUrl": "https://www.okx.com/en-gb/help/introduction-to-simple-options",
+        "anchor": "OTC RFQ"
+      },
+      {
+        "claim": "Premiums and cash settlement are denominated in USDT.",
+        "sourceUrl": "https://www.okx.com/en-gb/help/introduction-to-simple-options",
+        "anchor": "Premium and cash settlement currency"
+      }
+    ],
+    "contentSha256": "66b8549ff14a4bc6a53b0022a9f31b8dec128bd55cc64775fdc2f2d4395dbad2"
   }
 }
