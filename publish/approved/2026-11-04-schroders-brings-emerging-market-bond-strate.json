@@ -1,0 +1,27 @@
+{
+  "id": "2026-11-04-schroders-brings-emerging-market-bond-strate",
+  "title": "Schroders Brings Emerging-Market Bond Strategy to Solana",
+  "category": "INSTITUTIONS",
+  "why_it_matters": "The launch broadens onchain fixed income beyond cash-like Treasury and money-market products by adding an actively managed strategy exposed to emerging-market sovereign, corporate and currency risks.",
+  "article_url": "https://therwawire.com/institutions/schroders-brings-emerging-market-bond-strategy-to-solana/",
+  "image_url": "https://therwawire.com/images/news/schroders-brings-emerging-market-bond-strategy-to-solana.svg",
+  "caption": "RWA WIRE // INSTITUTIONS\n\nSchroders Brings Emerging-Market Bond Strategy to Solana\n\nCentrifuge launched tokenized exposure to Schroders' Emerging Market Bond strategy on Solana, marking the asset manager's first deployment on the network.\n\nFull analysis →\nhttps://therwawire.com/institutions/schroders-brings-emerging-market-bond-strategy-to-solana/",
+  "distribution": {
+    "telegram": "RWA WIRE // INSTITUTIONS\n\nSchroders Brings Emerging-Market Bond Strategy to Solana\n\nCentrifuge launched tokenized exposure to Schroders' Emerging Market Bond strategy on Solana, marking the asset manager's first deployment on the network.\n\nFull analysis →\nhttps://therwawire.com/institutions/schroders-brings-emerging-market-bond-strategy-to-solana/",
+    "x": "Schroders Brings Emerging-Market Bond Strategy to Solana\n\nCentrifuge launched tokenized exposure to Schroders' Emerging Market Bond strategy on Solana, marking the asset manager's first deployment on the network.\n\nhttps://therwawire.com/institutions/schroders-brings-emerging-market-bond-strategy-to-solana/",
+    "breaking": "RWA WIRE // INSTITUTIONS\n\nSchroders Brings Emerging-Market Bond Strategy to Solana\n\nhttps://therwawire.com/institutions/schroders-brings-emerging-market-bond-strategy-to-solana/",
+    "summary": "Centrifuge launched tokenized exposure to Schroders' Emerging Market Bond strategy on Solana, marking the asset manager's first deployment on the network."
+  },
+  "sources": [
+    {
+      "name": "Centrifuge — Schroders Emerging Markets Debt Strategy on Solana",
+      "url": "https://centrifuge.io/blog/schroders-centrifuge"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-11-04-schroders-launches-tokenized-emerging-markets-debt-fund-on-solana-with-centrifug.json",
+    "contentSha256": "cc41c713729634dbaf9259f9d23bc28c38f591fa1a95b66f89bff5ba6fdd1a52",
+    "approvedAt": "2026-11-04T18:13:30.510814+00:00"
+  }
+}
