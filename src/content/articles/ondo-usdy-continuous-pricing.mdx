@@ -1,0 +1,32 @@
+---
+type: "NEWS"
+category: "markets"
+title: "Ondo Activates Continuous Pricing for USDY"
+description: "Ondo replaced USDY's once-daily price update with an onchain oracle that calculates a continuously accruing price whenever an integration reads it."
+pubDate: "2026-11-03"
+readingTime: "1 min read"
+heroImage: "/images/news/ondo-usdy-continuous-pricing.svg"
+heroImageAlt: "RWA Wire editorial visual for Ondo Activates Continuous Pricing for USDY"
+tags: ["Ondo Finance", "USDY", "Tokenized Treasuries", "Oracles"]
+relatedSlugs: []
+showTradingCTA: false
+keyTakeaways:
+  - "USDY's price is now calculated continuously when the oracle is read instead of updating once per day."
+  - "Existing integrations can migrate to the USDY Oracle Wrapper; the previous oracle remains live through the end of 2026."
+  - "Instant minting and redemption remain limited to eligible holders outside the United States and are subject to operational downtime."
+---
+
+Ondo Finance said on November 3 that continuous pricing is live for USDY, replacing the token's previous once-daily price update. The ContinuousPriceOracle stores a price and annual rate, then calculates an updated price whenever an application reads it. That design lets wallets, exchanges and lending protocols reflect yield accrued during shorter holding periods rather than waiting for the next daily update.
+
+New integrations are directed to the USDY Oracle Wrapper. Ondo says applications already using the wrapper switch automatically, while other integrations should point to the wrapper deployed on each supported chain. The prior oracle will remain available through the end of 2026 to provide a migration window.
+
+Ondo also links the pricing change to its instant minting and redemption flow. Eligible holders outside the United States can enter and exit USDY around the clock at the continuously updated price, subject to scheduled maintenance and other downtime. This is an oracle and product-pricing upgrade, not a change to USDY's eligibility restrictions or a guarantee of uninterrupted liquidity.
+
+---
+
+**Sources**
+
+- [Ondo Finance — USDY Continuous Pricing](https://ondo.finance/blog/usdy-continuous-pricing)
+- [Ondo Finance Documentation — USDY Price Oracle](https://docs.ondo.finance/developer-guides/usdy-instant-manager-integration)
+
+*RWA Wire separates reported facts from its market-context analysis. Source links are provided for verification.*
