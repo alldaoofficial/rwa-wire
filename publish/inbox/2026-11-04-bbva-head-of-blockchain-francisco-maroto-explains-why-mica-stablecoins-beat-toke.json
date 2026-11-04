@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-04T23:36:36Z",
+    "reason": "This is another headline about the same MERGE Madrid 2026 comments from BBVA and Santander already reviewed in publish/inbox/2026-11-04-bbva-and-santander-put-corporate-stablecoins-ahead-of-tokenized-deposits.json. It adds no launch, approval, financing, transaction or implementation milestone."
   }
 }
