@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-04T07:09:51Z",
+    "reason": "The OneBullEx page is an exchange-branded promotional article that extrapolates from a crypto exchange hack; it documents no tokenized-securities incident, platform response or other new RWA event and contains an incorrect February 2026 timeline."
   }
 }
