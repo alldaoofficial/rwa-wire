@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-04T15:48:56Z",
+    "reason": "The November 3 article is an investor-oriented analysis of a Borsa Istanbul Review paper published on October 31. It reports no new launch, approval, financing, transaction or material implementation milestone within the review window."
   }
 }
