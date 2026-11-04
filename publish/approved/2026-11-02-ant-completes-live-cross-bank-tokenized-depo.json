@@ -1,0 +1,31 @@
+{
+  "id": "2026-11-02-ant-completes-live-cross-bank-tokenized-depo",
+  "title": "Ant Completes Live Cross-Bank Tokenized-Deposit Transfers in Hong Kong",
+  "category": "INSTITUTIONS",
+  "why_it_matters": "The transactions demonstrate a corporate treasury workflow moving tokenized commercial-bank money across multiple banks with central-bank-money settlement, rather than remaining an internal bank transfer or sandbox concept.",
+  "article_url": "https://therwawire.com/institutions/ant-completes-live-cross-bank-tokenized-deposit-transfers-in-hong-kong/",
+  "image_url": "https://therwawire.com/images/news/ant-completes-live-cross-bank-tokenized-deposit-transfers-in-hong-kong.svg",
+  "caption": "RWA WIRE // INSTITUTIONS\n\nAnt Completes Live Cross-Bank Tokenized-Deposit Transfers in Hong Kong\n\nAnt International completed live HKD transfers with three banks through EnsembleTX, using tokenized deposits settled in central-bank money and WhaleRTP instructions.\n\nFull analysis →\nhttps://therwawire.com/institutions/ant-completes-live-cross-bank-tokenized-deposit-transfers-in-hong-kong/",
+  "distribution": {
+    "telegram": "RWA WIRE // INSTITUTIONS\n\nAnt Completes Live Cross-Bank Tokenized-Deposit Transfers in Hong Kong\n\nAnt International completed live HKD transfers with three banks through EnsembleTX, using tokenized deposits settled in central-bank money and WhaleRTP instructions.\n\nFull analysis →\nhttps://therwawire.com/institutions/ant-completes-live-cross-bank-tokenized-deposit-transfers-in-hong-kong/",
+    "x": "Ant Completes Live Cross-Bank Tokenized-Deposit Transfers in Hong Kong\n\nAnt International completed live HKD transfers with three banks through EnsembleTX, using tokenized deposits settled in central-bank money and WhaleRTP instructions.\n\nhttps://therwawire.com/institutions/ant-completes-live-cross-bank-tokenized-deposit-transfers-in-hong-kong/",
+    "breaking": "RWA WIRE // INSTITUTIONS\n\nAnt Completes Live Cross-Bank Tokenized-Deposit Transfers in Hong Kong\n\nhttps://therwawire.com/institutions/ant-completes-live-cross-bank-tokenized-deposit-transfers-in-hong-kong/",
+    "summary": "Ant International completed live HKD transfers with three banks through EnsembleTX, using tokenized deposits settled in central-bank money and WhaleRTP instructions."
+  },
+  "sources": [
+    {
+      "name": "Ant International — Live Cross-Bank Transfers under EnsembleTX",
+      "url": "https://www.businesswire.com/news/home/20261102286689/en/Ant-International-and-Bank-Partners-Achieve-Real-Time-Cross-Bank-Liquidity-Management-through-Tokenised-Deposits-via-CeBM-under-HKMAs-EnsembleTX"
+    },
+    {
+      "name": "Hong Kong Monetary Authority — EnsembleTX 24/7 CeBM Settlement",
+      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261102-5/"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-11-03-ant-international-bank-partners-achieve-real-time-cross-bank-liquidity-managemen.json",
+    "contentSha256": "b42c28bdf8a28bd5dba3b928ca6d85c406e1e7d19441423092da915047eaddd7",
+    "approvedAt": "2026-11-04T19:44:09.573227+00:00"
+  }
+}
