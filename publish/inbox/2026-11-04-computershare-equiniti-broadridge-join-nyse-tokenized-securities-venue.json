@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-04T18:11:10Z",
+    "reason": "The report covers the same November 2 NYSE transfer-agent expansion already captured in publish/inbox/2026-11-02-nyse-adds-four-firms-to-planned-tokenized-securities-trading-venue.json and publish/inbox/2026-11-02-nyse-expands-transfer-agent-network-for-tokenized-securities.json. The named agreements with Broadridge, Computershare, Equiniti and Superstate are the same underlying announcement, not a later launch, approval or expansion."
   }
 }
