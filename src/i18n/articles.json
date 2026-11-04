@@ -4088,5 +4088,117 @@
       ]
     },
     "sourceSha256": "53a17981b52ac79a4edb8b7851a018584f054d88df3260dd288c2e85c76a1903"
+  },
+  "schroders-brings-emerging-market-bond-strategy-to-solana": {
+    "path": "/institutions/schroders-brings-emerging-market-bond-strategy-to-solana/",
+    "date": "2026-11-04",
+    "kind": "news",
+    "sources": [
+      [
+        "Centrifuge — Schroders Emerging Markets Debt Strategy on Solana",
+        "https://centrifuge.io/blog/schroders-centrifuge"
+      ]
+    ],
+    "de": {
+      "title": "Schroders bringt Schwellenländer-Anleihenstrategie auf Solana",
+      "description": "Centrifuge startete auf Solana einen tokenisierten Zugang zu Schroders’ Emerging Market Bond Strategy und damit die erste Bereitstellung des Vermögensverwalters auf diesem Netzwerk.",
+      "sections": [
+        [
+          "Aktiv verwaltete Schwellenländeranleihen auf Solana",
+          "Centrifuge startete am 4. November auf Solana einen tokenisierten Zugang zur Emerging Market Bond Strategy des Schroder International Selection Fund. Die Bereitstellung ist Schroders’ erste auf diesem Netzwerk und bringt eine aktiv verwaltete Schwellenländer-Anleihenstrategie in den Vertrieb über eine öffentliche Blockchain. Die zugrunde liegenden Anlagekompetenzen umfassen Staats-, Unternehmens- und Lokalwährungsanleihen und unterscheiden sich damit von den Barmitteln und kurzfristigen Staatsanleihen, die festverzinsliche Onchain-Produkte bislang dominiert haben."
+        ],
+        [
+          "Zugang und Liquiditätswege bleiben offen",
+          "Schroders investiert seit mehr als 50 Jahren in Schwellenländeranleihen und verfügt in dieser Anlageklasse über mehr als 40 spezialisierte Fachkräfte. Centrifuge stellt die Tokenisierungsinfrastruktur bereit. Laut Ankündigung startet der Fonds zunächst auf Solana; sie nennt jedoch weder die Anlegerberechtigung und Zeichnungsbedingungen noch die Vermögenswerte der tokenisierten Anteilsklasse oder bestätigte Integrationen als Sicherheit beziehungsweise in DeFi. Diese Angaben bleiben für die Beurteilung des praktischen Zugangs und der Liquidität wesentlich."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Schroders lleva su estrategia de bonos emergentes a Solana",
+      "description": "Centrifuge lanzó en Solana acceso tokenizado a la estrategia Emerging Market Bond de Schroders, la primera implementación de la gestora en esta red.",
+      "sections": [
+        [
+          "Deuda emergente de gestión activa en Solana",
+          "Centrifuge lanzó el 4 de noviembre en Solana acceso tokenizado a la estrategia Emerging Market Bond del Schroder International Selection Fund. Es la primera implementación de Schroders en la red y lleva una estrategia de deuda emergente de gestión activa a la distribución mediante una cadena de bloques pública. Las capacidades de inversión subyacentes abarcan deuda soberana, corporativa y denominada en moneda local, en contraste con el efectivo y la deuda pública de corta duración que han predominado en la renta fija onchain."
+        ],
+        [
+          "El acceso y las vías de liquidez no están detallados",
+          "Schroders invierte en deuda de mercados emergentes desde hace más de 50 años y cuenta con más de 40 profesionales especializados en esta clase de activos. Centrifuge proporciona la infraestructura de tokenización. El anuncio indica que el fondo se lanza inicialmente en Solana, pero no especifica la elegibilidad de los inversores, las condiciones de suscripción, los activos de la clase de participaciones tokenizada ni integraciones confirmadas como garantía o en DeFi. Esos datos siguen siendo importantes para evaluar el acceso práctico y la liquidez."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Schroders déploie sa stratégie obligataire émergente sur Solana",
+      "description": "Centrifuge a lancé sur Solana un accès tokenisé à la stratégie Emerging Market Bond de Schroders, première implantation du gestionnaire d’actifs sur ce réseau.",
+      "sections": [
+        [
+          "Une stratégie de dette émergente active sur Solana",
+          "Centrifuge a lancé le 4 novembre sur Solana un accès tokenisé à la stratégie Emerging Market Bond du Schroder International Selection Fund. Il s’agit du premier déploiement de Schroders sur ce réseau, qui ouvre la distribution sur une blockchain publique à une stratégie de dette émergente gérée activement. Les capacités d’investissement sous-jacentes couvrent les dettes souveraines, d’entreprise et en monnaie locale, plutôt que les liquidités et les titres publics à courte échéance qui dominaient jusqu’ici les produits obligataires onchain."
+        ],
+        [
+          "Les modalités d’accès et de liquidité restent à préciser",
+          "Schroders investit dans la dette émergente depuis plus de 50 ans et compte plus de 40 professionnels spécialisés dans cette classe d’actifs. Centrifuge fournit l’infrastructure de tokenisation. L’annonce indique que le fonds est d’abord lancé sur Solana, mais ne précise ni l’éligibilité des investisseurs, ni les conditions de souscription, ni les actifs de la classe de parts tokenisée, ni d’éventuelles intégrations confirmées comme collatéral ou dans la DeFi. Ces éléments restent essentiels pour évaluer l’accès pratique et la liquidité."
+        ]
+      ]
+    },
+    "sourceSha256": "ccc2144dbbb830fef1d4a9084b5095e62957ccb6c9ed58578c24891fe3e4995b"
+  },
+  "ant-completes-live-cross-bank-tokenized-deposit-transfers-in-hong-kong": {
+    "path": "/institutions/ant-completes-live-cross-bank-tokenized-deposit-transfers-in-hong-kong/",
+    "date": "2026-11-02",
+    "kind": "news",
+    "sources": [
+      [
+        "Ant International — Live Cross-Bank Transfers under EnsembleTX",
+        "https://www.businesswire.com/news/home/20261102286689/en/Ant-International-and-Bank-Partners-Achieve-Real-Time-Cross-Bank-Liquidity-Management-through-Tokenised-Deposits-via-CeBM-under-HKMAs-EnsembleTX"
+      ],
+      [
+        "Hong Kong Monetary Authority — EnsembleTX 24/7 CeBM Settlement",
+        "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261102-5/"
+      ]
+    ],
+    "de": {
+      "title": "Ant schließt Live-Transfers tokenisierter Einlagen zwischen Banken ab",
+      "description": "Ant International wickelte mit drei Banken Live-Transfers in Hongkong-Dollar über EnsembleTX ab; WhaleRTP initiierte die Übertragungen mit tokenisierten Einlagen, deren Interbankenabschnitt in Zentralbankgeld abgewickelt wurde.",
+      "sections": [
+        [
+          "Live-Transaktionen mit drei Hongkonger Banken",
+          "Ant International meldete Live-Interbankentransaktionen in Hongkong-Dollar, die im September und Oktober 2026 mit Bank of China (Hong Kong), China Construction Bank (Asia) und HSBC abgeschlossen wurden. Ants Wholesale-Abwicklungsplattform WhaleRTP initiierte die Zahlungen mit tokenisierten Einlagen, während die EnsembleTX-Infrastruktur der Hong Kong Monetary Authority den Interbankenabschnitt in tokenisiertem Zentralbankgeld abwickelte. Laut Ant dauerte es bei jeder Übertragung von der Zahlungsanweisung bis zum endgültigen Eingang höchstens fünf Minuten."
+        ],
+        [
+          "24/7-Abwicklung, aber keine offengelegten Transaktionswerte",
+          "Die Transaktionen zeigen einen konkreten Corporate-Treasury-Anwendungsfall für die Verlagerung von Liquidität zwischen Banken außerhalb herkömmlicher Betriebszeiten. Die HKMA bestätigte gesondert, dass EnsembleTX nun eine Abwicklung rund um die Uhr unterstützt und auf 12 teilnehmende Banken sowie 20 Branchenpioniere erweitert wurde. Ant zufolge verringerte die Struktur die Abhängigkeit von Vorfinanzierung; das Unternehmen veröffentlichte jedoch weder Transaktionswerte noch eine unabhängig gemessene Kapitalreduzierung. Der vorgeschlagene Übergang zu einer KI-gesteuerten agentischen Treasury-Funktion ist ein Zukunftsplan und war nicht Teil der abgeschlossenen Transfers."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Ant completa transferencias bancarias en vivo con depósitos tokenizados",
+      "description": "Ant International completó transferencias en vivo en dólares de Hong Kong con tres bancos mediante EnsembleTX; WhaleRTP inició las transferencias con depósitos tokenizados y el tramo interbancario se liquidó en dinero de banco central.",
+      "sections": [
+        [
+          "Transacciones en vivo con tres bancos de Hong Kong",
+          "Ant International comunicó transferencias interbancarias en dólares de Hong Kong completadas durante septiembre y octubre de 2026 con Bank of China (Hong Kong), China Construction Bank (Asia) y HSBC. WhaleRTP, la plataforma de liquidación mayorista de Ant, inició los pagos mediante depósitos tokenizados, mientras que la infraestructura EnsembleTX de la Autoridad Monetaria de Hong Kong liquidó el tramo interbancario en dinero tokenizado del banco central. Ant afirmó que cada transferencia pasó de la instrucción de pago a la recepción final en un máximo de cinco minutos."
+        ],
+        [
+          "Liquidación permanente sin importes de transacción publicados",
+          "Las transacciones constituyen un caso concreto de tesorería corporativa para mover liquidez entre bancos fuera de los horarios operativos convencionales. La HKMA confirmó por separado que EnsembleTX ya permite liquidar las 24 horas y que se ha ampliado a 12 bancos participantes y 20 pioneros del sector. Ant sostiene que la estructura redujo la dependencia de la prefinanciación, pero no publicó los importes de las transacciones ni una medición independiente de la reducción de capital. El paso propuesto hacia una tesorería agéntica dirigida por inteligencia artificial es un plan futuro y no formó parte de las transferencias completadas."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Ant réalise des transferts bancaires en direct avec des dépôts tokenisés",
+      "description": "Ant International a réalisé avec trois banques des transferts en dollars de Hong Kong via EnsembleTX ; WhaleRTP a initié les transferts au moyen de dépôts tokenisés et la jambe interbancaire a été réglée en monnaie de banque centrale.",
+      "sections": [
+        [
+          "Des transactions en direct avec trois banques de Hong Kong",
+          "Ant International a annoncé des transferts interbancaires en dollars de Hong Kong réalisés en septembre et octobre 2026 avec Bank of China (Hong Kong), China Construction Bank (Asia) et HSBC. WhaleRTP, la plateforme de règlement de gros d’Ant, a initié les paiements à l’aide de dépôts tokenisés, tandis que l’infrastructure EnsembleTX de l’Autorité monétaire de Hong Kong a réglé la jambe interbancaire en monnaie de banque centrale tokenisée. Selon Ant, chaque transfert est passé de l’instruction de paiement à la réception définitive dans un délai maximal de cinq minutes."
+        ],
+        [
+          "Un règlement continu sans montant de transaction publié",
+          "Les transactions constituent un cas d’usage concret de trésorerie d’entreprise pour déplacer des liquidités entre banques en dehors des horaires habituels. La HKMA a confirmé séparément qu’EnsembleTX permet désormais un règlement 24 h/24 et 7 j/7 et réunit 12 banques participantes ainsi que 20 pionniers du secteur. Ant affirme que le dispositif a réduit le recours au préfinancement, mais n’a publié ni la valeur des transactions ni une mesure indépendante de la réduction de capital. Le projet d’évolution vers une trésorerie agentique pilotée par l’intelligence artificielle reste futur et ne faisait pas partie des transferts réalisés."
+        ]
+      ]
+    },
+    "sourceSha256": "53fe8e92ab2cd8bd7e7521022490ad8ffed3a231ec04fe50b9120380328c08f0"
   }
 }
