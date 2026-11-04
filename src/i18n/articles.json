@@ -4030,5 +4030,63 @@
       ]
     },
     "sourceSha256": "73d6fa7b8b9a049d5d0fa09a0ef9aba3e2c332c56821a0a4b5e61e9fa105567d"
+  },
+  "okx-launches-simple-options-on-tokenized-stocks": {
+    "path": "/news/okx-launches-simple-options-on-tokenized-stocks/",
+    "date": "2026-11-04",
+    "kind": "news",
+    "sources": [
+      [
+        "OKX — We're Bringing Options to Tokenized Stocks",
+        "https://www.okx.com/en-au/learn/simple-options-tokenized-stocks-launch"
+      ],
+      [
+        "OKX — Introduction to Simple Options",
+        "https://www.okx.com/en-gb/help/introduction-to-simple-options"
+      ]
+    ],
+    "de": {
+      "title": "OKX startet Simple Options auf tokenisierte Aktien",
+      "description": "OKX startete ein Optionsprodukt mit Angebotsanfrage für vier tokenisierte Aktien und bietet rund um die Uhr vollständig finanzierte europäische Call- und Put-Optionen an.",
+      "sections": [
+        [
+          "Vier tokenisierte Aktien zum Start",
+          "OKX startete Simple Options am 4. November für zugelassene Kunden in Südostasien, Nordostasien, der GUS-Region, der MENA-Region und der Türkei. Die ersten Basiswerte sind tokenisierte NVDA, SPCX, MU und GOOGL; weitere sind geplant. Über einen außerbörslichen Request-for-Quote-Prozess können Nutzer europäische Call- und Put-Optionen kaufen oder verkaufen."
+        ],
+        [
+          "Vollständig finanziert und rund um die Uhr handelbar",
+          "Die Positionen sind vollständig finanziert und nicht mit Margin unterlegt. Käufer zahlen die Prämie im Voraus, während Verkäufer tokenisierte Aktien oder USDT hinterlegen; daher sieht das Produkt keine Liquidation wegen unzureichender Margin vor. Handel und Angebotsanfragen sind rund um die Uhr möglich. Die Mindestgröße beträgt 0,01 Kontrakt und entspricht einer tokenisierten Aktie, während ein Standardkontrakt 100 Aktien entspricht. Prämien und Barausgleich lauten auf USDT. Die Kontrakte werden am Verfallstag um 16:00 Uhr Hongkonger Zeit abgerechnet; Positionen können vorher geschlossen werden, wenn vor dem Annahmeschluss ein Angebot verfügbar ist."
+        ]
+      ]
+    },
+    "es": {
+      "title": "OKX lanza Simple Options sobre acciones tokenizadas",
+      "description": "OKX lanzó un producto de opciones mediante solicitud de cotización para cuatro acciones tokenizadas, con opciones call y put de estilo europeo, totalmente financiadas y disponibles las 24 horas.",
+      "sections": [
+        [
+          "Cuatro acciones tokenizadas en el lanzamiento",
+          "OKX lanzó Simple Options el 4 de noviembre para clientes elegibles de Asia Sudoriental, Asia Nororiental, la región de la CEI, MENA y Türkiye. Los primeros subyacentes son NVDA, SPCX, MU y GOOGL tokenizados, y se prevé añadir más. Los contratos de estilo europeo permiten comprar o vender opciones call y put mediante un proceso extrabursátil de solicitud de cotización."
+        ],
+        [
+          "Financiación total y negociación permanente",
+          "Las posiciones están totalmente financiadas, en vez de utilizar margen. Los compradores pagan la prima por adelantado y los vendedores reservan acciones tokenizadas o USDT, por lo que el producto no recurre a liquidaciones por margen insuficiente. La negociación y las solicitudes de cotización están disponibles las 24 horas. El tamaño mínimo es de 0,01 contrato, equivalente a una acción tokenizada, mientras que un contrato estándar representa 100 acciones. Las primas y la liquidación en efectivo están denominadas en USDT. Los contratos se liquidan a las 16:00, hora de Hong Kong, el día de vencimiento; las posiciones pueden cerrarse antes si hay una cotización disponible antes de la hora límite."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "OKX lance Simple Options sur des actions tokenisées",
+      "description": "OKX a lancé un produit d’options sur quatre actions tokenisées fondé sur des demandes de cotation, avec des calls et puts de style européen entièrement financés et disponibles en continu.",
+      "sections": [
+        [
+          "Quatre actions tokenisées au lancement",
+          "OKX a lancé Simple Options le 4 novembre pour les clients éligibles d’Asie du Sud-Est, d’Asie du Nord-Est, de la région de la CEI, de la région MENA et de Türkiye. Les premiers sous-jacents sont NVDA, SPCX, MU et GOOGL tokenisés, d’autres devant suivre. Ces contrats de style européen permettent d’acheter ou de vendre des options d’achat et de vente au moyen d’un processus de demande de cotation de gré à gré."
+        ],
+        [
+          "Des positions entièrement financées et négociables en continu",
+          "Les positions sont entièrement financées plutôt que sur marge. Les acheteurs règlent la prime à l’avance, tandis que les vendeurs immobilisent des actions tokenisées ou des USDT ; le produit ne prévoit donc pas de liquidation pour insuffisance de marge. La négociation et les demandes de cotation sont disponibles 24 h/24 et 7 j/7. La taille minimale est de 0,01 contrat, soit une action tokenisée, tandis qu’un contrat standard représente 100 actions. Les primes et le règlement en espèces sont libellés en USDT. Les contrats sont réglés à 16 h, heure de Hong Kong, à l’échéance ; les positions peuvent être clôturées plus tôt si une cotation est disponible avant l’heure limite."
+        ]
+      ]
+    },
+    "sourceSha256": "53a17981b52ac79a4edb8b7851a018584f054d88df3260dd288c2e85c76a1903"
   }
 }
