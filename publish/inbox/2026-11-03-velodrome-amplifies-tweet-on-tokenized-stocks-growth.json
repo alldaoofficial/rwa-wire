@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-04T10:47:16Z",
+    "reason": "The resolved publisher article is based only on Velodrome amplifying a community post. It provides no specific volume, price, launch, approval or other independently verifiable event, and the underlying social post is insufficient evidence for source enrichment."
   }
 }
