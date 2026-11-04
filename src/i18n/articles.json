@@ -3960,5 +3960,75 @@
       ]
     },
     "sourceSha256": "63964be66c27d4f6a22aba03a56906aee2042f7496528a966e840009b3bd1c2e"
+  },
+  "ondo-usdy-continuous-pricing": {
+    "path": "/markets/ondo-usdy-continuous-pricing/",
+    "date": "2026-11-03",
+    "kind": "news",
+    "sources": [
+      [
+        "Ondo Finance — USDY Continuous Pricing",
+        "https://ondo.finance/blog/usdy-continuous-pricing"
+      ],
+      [
+        "Ondo Finance Documentation — USDY Price Oracle",
+        "https://docs.ondo.finance/developer-guides/usdy-instant-manager-integration"
+      ]
+    ],
+    "de": {
+      "title": "Ondo aktiviert kontinuierliche Preisberechnung für USDY",
+      "description": "Ondo ersetzte die einmal tägliche Preisaktualisierung von USDY durch ein Onchain-Orakel, das bei jedem Abruf durch eine Integration einen fortlaufend anwachsenden Preis berechnet.",
+      "sections": [
+        [
+          "Preisberechnung bei jedem Abruf statt einmal täglich",
+          "Ondo Finance teilte am 3. November mit, dass die kontinuierliche Preisberechnung für USDY live ist und die bisherige einmal tägliche Aktualisierung ersetzt. Der ContinuousPriceOracle speichert einen Preis und einen jährlichen Zinssatz und berechnet bei jedem Abruf durch eine Anwendung einen aktualisierten Preis. Dadurch können Wallets, Börsen und Kreditprotokolle die während kürzerer Haltedauern aufgelaufenen Erträge abbilden, statt auf die nächste tägliche Aktualisierung zu warten."
+        ],
+        [
+          "Migration über den USDY Oracle Wrapper",
+          "Neue Integrationen werden auf den USDY Oracle Wrapper verwiesen. Laut Ondo wechseln Anwendungen, die den Wrapper bereits verwenden, automatisch; andere Integrationen sollen auf den auf jeder unterstützten Chain bereitgestellten Wrapper verweisen. Das bisherige Orakel bleibt bis Ende 2026 verfügbar und schafft damit ein Migrationsfenster."
+        ],
+        [
+          "Zugangsregeln und mögliche Ausfallzeiten bleiben bestehen",
+          "Ondo verknüpft die Preisänderung außerdem mit seinem Verfahren für sofortige Ausgabe und Rücknahme. Zugelassene Inhaber außerhalb der USA können USDY rund um die Uhr zum fortlaufend aktualisierten Preis erwerben und zurückgeben, vorbehaltlich geplanter Wartung und anderer Ausfallzeiten. Es handelt sich um eine Verbesserung des Orakels und der Produktpreisberechnung, nicht um eine Änderung der USDY-Zugangsbeschränkungen oder eine Garantie ununterbrochener Liquidität."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Ondo activa la valoración continua de USDY",
+      "description": "Ondo sustituyó la actualización diaria del precio de USDY por un oráculo onchain que calcula un precio de acumulación continua cada vez que una integración lo consulta.",
+      "sections": [
+        [
+          "Cálculo del precio en cada consulta en lugar de una vez al día",
+          "Ondo Finance comunicó el 3 de noviembre que la valoración continua de USDY ya está activa y sustituye la anterior actualización diaria del precio del token. ContinuousPriceOracle almacena un precio y una tasa anual y calcula un precio actualizado cada vez que una aplicación lo consulta. Este diseño permite que monederos, bolsas y protocolos de préstamo reflejen el rendimiento acumulado durante periodos de tenencia más cortos, sin esperar a la siguiente actualización diaria."
+        ],
+        [
+          "Migración mediante USDY Oracle Wrapper",
+          "Las nuevas integraciones deben utilizar USDY Oracle Wrapper. Ondo afirma que las aplicaciones que ya usan el wrapper cambian automáticamente, mientras que las demás integraciones deben apuntar al wrapper desplegado en cada cadena compatible. El oráculo anterior seguirá disponible hasta finales de 2026 para ofrecer un periodo de migración."
+        ],
+        [
+          "Se mantienen las restricciones de acceso y las posibles interrupciones",
+          "Ondo también vincula el cambio de valoración con su sistema de acuñación y reembolso instantáneos. Los titulares elegibles fuera de Estados Unidos pueden entrar y salir de USDY las 24 horas al precio actualizado continuamente, con sujeción al mantenimiento programado y otras interrupciones. Se trata de una mejora del oráculo y de la valoración del producto, no de un cambio en las restricciones de elegibilidad de USDY ni de una garantía de liquidez ininterrumpida."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Ondo active la valorisation continue d’USDY",
+      "description": "Ondo a remplacé la mise à jour quotidienne du prix d’USDY par un oracle onchain qui calcule un prix à accumulation continue chaque fois qu’une intégration le consulte.",
+      "sections": [
+        [
+          "Un prix calculé à chaque consultation plutôt qu’une fois par jour",
+          "Ondo Finance a annoncé le 3 novembre que la valorisation continue d’USDY était opérationnelle et remplaçait l’ancienne mise à jour quotidienne du prix du token. ContinuousPriceOracle conserve un prix et un taux annuel, puis calcule un prix actualisé chaque fois qu’une application le consulte. Ce mécanisme permet aux portefeuilles, aux plateformes d’échange et aux protocoles de prêt de refléter le rendement accumulé sur des durées de détention plus courtes, sans attendre la prochaine mise à jour quotidienne."
+        ],
+        [
+          "Migration via USDY Oracle Wrapper",
+          "Les nouvelles intégrations sont orientées vers USDY Oracle Wrapper. Selon Ondo, les applications qui utilisent déjà le wrapper basculent automatiquement, tandis que les autres intégrations doivent pointer vers le wrapper déployé sur chaque blockchain prise en charge. L’ancien oracle restera disponible jusqu’à la fin de 2026 afin de ménager une période de migration."
+        ],
+        [
+          "Les restrictions d’accès et les interruptions possibles demeurent",
+          "Ondo associe également ce changement de valorisation à son dispositif de création et de rachat instantanés. Les détenteurs éligibles hors des États-Unis peuvent entrer dans USDY et en sortir à toute heure au prix actualisé en continu, sous réserve des opérations de maintenance programmées et d’autres interruptions. Il s’agit d’une amélioration de l’oracle et de la valorisation du produit, et non d’une modification des restrictions d’éligibilité d’USDY ni d’une garantie de liquidité ininterrompue."
+        ]
+      ]
+    },
+    "sourceSha256": "73d6fa7b8b9a049d5d0fa09a0ef9aba3e2c332c56821a0a4b5e61e9fa105567d"
   }
 }
