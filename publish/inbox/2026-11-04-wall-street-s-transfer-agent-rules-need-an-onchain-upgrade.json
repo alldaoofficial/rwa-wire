@@ -1,20 +1,31 @@
 {
-  "title": "Wall Street’s Transfer Agent Rules Need an Onchain Upgrade",
-  "description": "",
-  "body": "",
-  "why_it_matters": "",
-  "pubDate": "2026-11-04",
+  "title": "Ondo Asks SEC to Adapt Transfer-Agent Rules for Onchain Securities",
+  "description": "Ondo urged the SEC to preserve direct and intermediated holding routes, recognize public-blockchain records and reduce repeated reviews for routine tokenized-security transfers.",
+  "body": "Ondo Finance submitted a November 3 comment letter on the SEC's proposed transfer-agent rule overhaul. The filing supports modernization but asks the agency to preserve distinct issuer, intermediary and linked-security records, recognize authorized agents serving investors and provide predictable electronic connections to issuers' transfer agents.\n\nOndo also argues that a transfer agent can control legally effective record changes without controlling a public blockchain's consensus. It recommends protected offchain identity records for routine downstream activity, documented program-level legal reviews when material facts remain unchanged, and transaction-level escalation when facts or risks change.\n\nThe SEC proposal would amend transfer-agent rules and forms, add two rules and rescind one existing rule. Ondo's letter is advocacy submitted during that rulemaking; it does not change current law or establish that the SEC will adopt the requested framework.",
+  "why_it_matters": "Transfer-agent rules determine how tokenized positions connect to authoritative ownership records, so the final framework could shape interoperability, compliance costs and public-blockchain participation.",
+  "pubDate": "2026-11-03",
   "category": "news",
+  "reviewCategory": "regulation",
   "tags": [
-    "RWA",
-    "Tokenization",
-    "Primary Source"
+    "Ondo Finance",
+    "SEC",
+    "Transfer Agents",
+    "Tokenized Securities"
   ],
-  "keyTakeaways": [],
+  "keyTakeaways": [
+    "Ondo filed its comment on November 3 in the SEC's transfer-agent rulemaking.",
+    "The company wants reliable electronic access to both direct-registration and intermediated holding systems.",
+    "Ondo says record control on a public blockchain need not require control of network consensus.",
+    "The filing is a policy request, not an adopted SEC rule."
+  ],
   "sources": [
     {
-      "name": "Ondo Finance",
-      "url": "https://ondo.finance/blog/ondo-comment-letter-sec-transfer-agent-rules"
+      "name": "Ondo Finance — SEC transfer-agent rules comment letter",
+      "url": "https://www.sec.gov/comments/S7-2026-30/s7202630-1119059-3983287.pdf"
+    },
+    {
+      "name": "U.S. Securities and Exchange Commission — Transfer Agent Rules proposal",
+      "url": "https://www.sec.gov/rules-regulations/2026/09/s7-2026-30"
     }
   ],
   "newsWatch": {
@@ -27,6 +38,61 @@
     "requiresSourceReview": true,
     "relatedCoverageTitles": [],
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment"
+    "contentStatus": "source-reviewed"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-04T23:36:36Z",
+    "sources": [
+      {
+        "url": "https://www.sec.gov/comments/S7-2026-30/s7202630-1119059-3983287.pdf",
+        "publishedAt": "2026-11-03",
+        "checkedAt": "2026-11-04T23:36:36Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://www.sec.gov/rules-regulations/2026/09/s7-2026-30",
+        "publishedAt": "2026-09-01",
+        "checkedAt": "2026-11-04T23:36:36Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Ondo dated its SEC transfer-agent comment letter November 3, 2026.",
+        "sourceUrl": "https://www.sec.gov/comments/S7-2026-30/s7202630-1119059-3983287.pdf",
+        "anchor": "November 3, 2026"
+      },
+      {
+        "claim": "Ondo asked the SEC to connect onchain investors to direct and intermediated securities holding systems.",
+        "sourceUrl": "https://www.sec.gov/comments/S7-2026-30/s7202630-1119059-3983287.pdf",
+        "anchor": "Connect onchain investors to both holding systems"
+      },
+      {
+        "claim": "The letter says record control on public blockchains need not include control over network consensus.",
+        "sourceUrl": "https://www.sec.gov/comments/S7-2026-30/s7202630-1119059-3983287.pdf",
+        "anchor": "without controlling network consensus"
+      },
+      {
+        "claim": "Ondo asked the SEC to permit stablecoins and tokenized deposits for authorized transfer-agent payment functions.",
+        "sourceUrl": "https://www.sec.gov/comments/S7-2026-30/s7202630-1119059-3983287.pdf",
+        "anchor": "qualifying payment stablecoins and tokenized deposits"
+      },
+      {
+        "claim": "The SEC proposal would amend existing transfer-agent rules and forms and introduce two new rules.",
+        "sourceUrl": "https://www.sec.gov/rules-regulations/2026/09/s7-2026-30",
+        "anchor": "introduce two new rules"
+      },
+      {
+        "claim": "The SEC listed November 3, 2026 as the public-comment deadline for the proposal.",
+        "sourceUrl": "https://www.sec.gov/rules-regulations/2026/09/s7-2026-30",
+        "anchor": "Public Comments Due"
+      }
+    ],
+    "contentSha256": "b0ada4872e95650f053e17f2cd02fc1a56e1cfac24c20df591a152fef6f32629"
   }
 }
