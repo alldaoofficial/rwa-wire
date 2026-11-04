@@ -1,23 +1,20 @@
 {
-  "title": "Schroders launches tokenized emerging markets debt fund on Solana with Centrifuge",
-  "description": "Schroders launches tokenized emerging markets debt fund on Solana with Centrifuge",
-  "why_it_matters": "",
+  "title": "Schroders Brings Emerging-Market Bond Strategy to Solana",
+  "description": "Centrifuge launched tokenized exposure to Schroders' Emerging Market Bond strategy on Solana, marking the asset manager's first deployment on the network.",
+  "why_it_matters": "The launch broadens onchain fixed income beyond cash-like Treasury and money-market products by adding an actively managed strategy exposed to emerging-market sovereign, corporate and currency risks.",
   "pubDate": "2026-11-04",
-  "category": "news",
-  "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
-  ],
+  "category": "institutions",
+  "tags": ["Tokenized Funds", "Emerging Markets", "Schroders", "Centrifuge", "Solana"],
   "keyTakeaways": [
-    "Schroders launches tokenized emerging markets debt fund on Solana with Centrifuge",
-    ""
+    "Centrifuge launched tokenized exposure to the Schroder International Selection Fund Emerging Market Bond strategy on Solana.",
+    "The product is Schroders' first deployment on Solana and adds emerging-market sovereign, corporate and local-currency exposure to onchain markets.",
+    "Schroders has managed emerging-market debt for more than 50 years and has more than 40 dedicated investment professionals in the asset class."
   ],
-  "body": "Schroders launches tokenized emerging markets debt fund on Solana with Centrifuge",
+  "body": "Centrifuge launched tokenized exposure to the Schroder International Selection Fund Emerging Market Bond strategy on Solana on November 4. The deployment is Schroders' first on the network and brings an actively managed emerging-market debt strategy into public-blockchain distribution. The underlying investment capabilities span sovereign, corporate and local-currency debt rather than the cash and short-duration government securities that have dominated onchain fixed income.\n\nSchroders has invested in emerging-market debt for more than 50 years and has more than 40 dedicated professionals in the asset class. Centrifuge is providing the tokenization infrastructure. The announcement says the fund initially launches on Solana, but it does not specify investor eligibility, subscription terms, assets in the tokenized share class or any confirmed collateral or DeFi integrations. Those details remain important for evaluating practical access and liquidity.",
   "sources": [
     {
-      "name": "The Block",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPa05lclBTOURFMjRsVHFPcmtTTFpjMVVNb0p3dWd0MW1uOFhudGlOSFFiNkp1dG9JeHc0eG15NVdmRU1zaFgxb0tJQ3JMNFM2WTdDY3FoT0FrcjVFdWR3d2ZDT1pwUDN4bzFnLV9GMWpvbF9JN0I5eHhqRkkyTnVRZ0UyNUpWM3FXdTZlWkt3V3d6eE42eE04SG5yQzRnaHhjbXZ5RkowN2ppZGI2Y2pqNnJtdWxjR0drWnZIeQ?oc=5"
+      "name": "Centrifuge — Schroders Emerging Markets Debt Strategy on Solana",
+      "url": "https://centrifuge.io/blog/schroders-centrifuge"
     }
   ],
   "newsWatch": {
@@ -27,7 +24,50 @@
     "discoveredAt": "2026-11-04T16:37:22.794877+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-04T18:11:10Z",
+    "sources": [
+      {
+        "url": "https://centrifuge.io/blog/schroders-centrifuge",
+        "publishedAt": "2026-11-04",
+        "checkedAt": "2026-11-04T18:11:10Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Centrifuge launched an emerging-market debt strategy managed by Schroders on Solana.",
+        "sourceUrl": "https://centrifuge.io/blog/schroders-centrifuge",
+        "anchor": "emerging markets debt strategy"
+      },
+      {
+        "claim": "The tokenized exposure references the Schroder International Selection Fund Emerging Market Bond strategy.",
+        "sourceUrl": "https://centrifuge.io/blog/schroders-centrifuge",
+        "anchor": "Schroder International Selection Fund Emerging Market Bond"
+      },
+      {
+        "claim": "The launch is Schroders' first deployment on Solana.",
+        "sourceUrl": "https://centrifuge.io/blog/schroders-centrifuge",
+        "anchor": "first deployment on Solana"
+      },
+      {
+        "claim": "Schroders has invested in emerging-market debt for more than 50 years.",
+        "sourceUrl": "https://centrifuge.io/blog/schroders-centrifuge",
+        "anchor": "more than 50 years"
+      },
+      {
+        "claim": "Schroders has more than 40 dedicated emerging-market debt investment professionals.",
+        "sourceUrl": "https://centrifuge.io/blog/schroders-centrifuge",
+        "anchor": "more than 40 dedicated"
+      }
+    ],
+    "contentSha256": "cc41c713729634dbaf9259f9d23bc28c38f591fa1a95b66f89bff5ba6fdd1a52"
   }
 }
