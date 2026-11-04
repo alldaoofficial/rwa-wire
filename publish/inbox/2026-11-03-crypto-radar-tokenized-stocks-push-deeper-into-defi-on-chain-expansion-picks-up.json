@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-04T10:47:16Z",
+    "reason": "The November 4 Asia Business Daily article is a thematic recap rather than a new event. Its Ondo/Robinhood Chain liquidity-pool and tokenized-stock collateral developments are already captured in the October 27 Ondo and October 22 Morpho pipeline items, while Bybit first announced the planned Mantle mStocks product on October 13; the article reports no subsequent launch, approval or material expansion."
   }
 }
