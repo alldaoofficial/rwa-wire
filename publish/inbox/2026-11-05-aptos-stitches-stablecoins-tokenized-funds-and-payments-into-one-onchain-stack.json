@@ -1,23 +1,28 @@
 {
-  "title": "Aptos stitches stablecoins, tokenized funds and payments into one onchain stack",
-  "description": "Aptos stitches stablecoins, tokenized funds and payments into one onchain stack",
-  "why_it_matters": "",
-  "pubDate": "2026-11-05",
+  "title": "Bullish Adds Aptos and Ethereum to Tokenized-Equity Network Plan",
+  "slug": "bullish-aptos-ethereum-tokenized-equity-networks",
+  "description": "Bullish named Solana, Aptos and Ethereum as initial networks for its issuer-sponsored equity tokenization service after demonstrating a 61 million-share transfer on Solana.",
+  "why_it_matters": "Adding Aptos and Ethereum would give issuers multiple public-chain options while keeping the authoritative ownership register with a transfer agent, a key link between token infrastructure and legal shareholder records.",
+  "pubDate": "2026-11-03",
   "category": "news",
+  "reviewCategory": "infrastructure",
   "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Tokenized Equities",
+    "Aptos",
+    "Ethereum",
+    "Bullish"
   ],
   "keyTakeaways": [
-    "Aptos stitches stablecoins, tokenized funds and payments into one onchain stack",
-    ""
+    "Bullish named Solana, Aptos and Ethereum as the initial networks for its equity tokenization service on November 3.",
+    "Aptos and Ethereum support is planned; the announcement does not say that tokenized shares are already live on either network.",
+    "Bullish and Equiniti demonstrated a transfer of 61 million reserved Bullish shares on Solana at the NYSE on October 27.",
+    "The service is designed to keep the official ownership record with the transfer agent."
   ],
-  "body": "Aptos stitches stablecoins, tokenized funds and payments into one onchain stack",
+  "body": "Bullish named Solana, Aptos and Ethereum as the initial network partners for its issuer-sponsored equity tokenization service on November 3. Solana is the existing foundation; Bullish said it plans to extend the same capabilities to Aptos and Ethereum. The announcement is therefore a network roadmap, not evidence that tokenized shares are already live on the two additional chains.\n\nThe decision follows an October 27 demonstration at the New York Stock Exchange. Bullish and transfer agent Equiniti moved 61 million reserved Bullish shares on Solana, with Equiniti administering the transfer. Bullish says its multi-network model would let issuers reach investors across several public blockchains while the transfer agent retains the official ownership record.\n\nThat structure is important for regulated equities because the onchain token is intended to remain connected to the issuer's shareholder register. The release does not identify the first third-party issuer for Aptos or Ethereum or give a launch date for either integration.",
   "sources": [
     {
-      "name": "Crypto Briefing",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPczZhUll4cHlMS2pEY1p5TXJjcFVHWDVwMk9UTkZ3WVE4bUVJVmtXdF9xMlc4OHFpVGx5NHhyN1JLdG1XeXFLNkxlTGFIeHhvbWdwWWZXWW5IcFVYcWxBaE9hdlROWjRuNDFodnFXc3ZJNXpiNTBlY0dwR0RMcThfRldaQQ?oc=5"
+      "name": "Bullish — network partners and NYSE tokenized-share demonstration",
+      "url": "https://www.bullish.com/us/news-insights/bullish-and-equiniti-transfer-61-million-tokenized-shares-at-the-nyse-and-has-selected-solana-aptos-and-ethereum-as-its-initial-network-partners"
     }
   ],
   "newsWatch": {
@@ -27,14 +32,46 @@
     "discoveredAt": "2026-11-05T02:37:14.520569+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "verified",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-05T10:56:54Z",
-    "reason": "The Google News URL still does not resolve to a readable original article. Accessible copies compile existing Aptos integrations, while the newest Bullish partnership claim traces to an unconfirmed social post and has no matching dated announcement from Aptos or Bullish. No new event can be verified from full-text primary evidence."
+    "reviewedAt": "2026-11-05T20:42:12Z",
+    "sources": [
+      {
+        "url": "https://www.bullish.com/us/news-insights/bullish-and-equiniti-transfer-61-million-tokenized-shares-at-the-nyse-and-has-selected-solana-aptos-and-ethereum-as-its-initial-network-partners",
+        "publishedAt": "2026-11-03",
+        "checkedAt": "2026-11-05T20:42:12Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "independentReporting": false,
+    "facts": [
+      {
+        "claim": "Bullish selected Solana, Aptos and Ethereum as the first networks for its equity tokenization service.",
+        "sourceUrl": "https://www.bullish.com/us/news-insights/bullish-and-equiniti-transfer-61-million-tokenized-shares-at-the-nyse-and-has-selected-solana-aptos-and-ethereum-as-its-initial-network-partners",
+        "anchor": "initial network partners"
+      },
+      {
+        "claim": "Bullish plans to add Aptos and Ethereum to capabilities already demonstrated on Solana.",
+        "sourceUrl": "https://www.bullish.com/us/news-insights/bullish-and-equiniti-transfer-61-million-tokenized-shares-at-the-nyse-and-has-selected-solana-aptos-and-ethereum-as-its-initial-network-partners",
+        "anchor": "expand to Aptos and Ethereum"
+      },
+      {
+        "claim": "Bullish and Equiniti demonstrated the transfer of 61 million reserved Bullish shares on Solana.",
+        "sourceUrl": "https://www.bullish.com/us/news-insights/bullish-and-equiniti-transfer-61-million-tokenized-shares-at-the-nyse-and-has-selected-solana-aptos-and-ethereum-as-its-initial-network-partners",
+        "anchor": "61 million tokenized reserved Bullish shares"
+      },
+      {
+        "claim": "The proposed multi-network model keeps the authoritative ownership record with the transfer agent.",
+        "sourceUrl": "https://www.bullish.com/us/news-insights/bullish-and-equiniti-transfer-61-million-tokenized-shares-at-the-nyse-and-has-selected-solana-aptos-and-ethereum-as-its-initial-network-partners",
+        "anchor": "official record of ownership stays"
+      }
+    ],
+    "contentSha256": "a6cd953f3db263ee5849e9137526cd583c02fbbd414000af97f140554ede6a85"
   }
 }
