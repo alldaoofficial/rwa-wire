@@ -4,15 +4,8 @@
   "why_it_matters": "",
   "pubDate": "2026-11-03",
   "category": "news",
-  "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
-  ],
-  "keyTakeaways": [
-    "Tokenized Stocks Put Banks’ Round-the-Clock Operations to the Test",
-    ""
-  ],
+  "tags": ["Tokenization", "Institutions", "News Watch"],
+  "keyTakeaways": ["Tokenized Stocks Put Banks’ Round-the-Clock Operations to the Test", ""],
   "body": "Tokenized Stocks Put Banks’ Round-the-Clock Operations to the Test",
   "sources": [
     {
@@ -29,5 +22,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-05T00:14:57Z",
+    "reason": "The November 3 article is a market-analysis feature built around Flowdesk commentary, Token Terminal's October 29 comparison and existing provider documentation. It reports no new launch, approval, financing, completed transaction or material rollout, and explicitly characterizes the four-to-five-year view as management outlook rather than an evidence-backed forecast."
   }
 }
