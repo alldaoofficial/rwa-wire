@@ -4464,5 +4464,71 @@
       ]
     },
     "sourceSha256": "f1cd570c5a4eafa11ce6a93cd21229cdfebc4f2565a1f28782b10bd83bda49b4"
+  },
+  "apex-chainlink-t-rex-demonstrate-swift-aligned-onchain-bond-compliance": {
+    "path": "/institutions/apex-chainlink-t-rex-demonstrate-swift-aligned-onchain-bond-compliance/",
+    "date": "2026-11-04",
+    "kind": "news",
+    "sources": [
+      [
+        "Apex Group — Swift-aligned onchain bond compliance framework",
+        "https://www.apexgroup.com/insights/apex-group-chainlink-t-rex-network-and-the-erc-3643-association-demonstrate-interoperable-compliance-for-on-chain-capital-markets-aligned-with-swift-standards/"
+      ]
+    ],
+    "de": {
+      "title": "Apex, Chainlink und T-REX demonstrieren Swift-konforme Onchain-Compliance für Anleihen",
+      "description": "Apex Group, Chainlink und T-REX haben eine Demonstration zur Anleihe-Compliance umgesetzt, die ERC-3643-Kontrollen mit Swift-Standards und Cross-Chain-Infrastruktur verbindet.",
+      "sections": [
+        [
+          "Modularer Compliance-Rahmen für Onchain-Anleihen",
+          "Apex Group, Chainlink, T-REX Network und die ERC-3643 Association haben einen modularen Compliance-Rahmen für Onchain-Anleihen demonstriert, der an Swift-Standards ausgerichtet ist. Die erste Umsetzung bildet eine Anleihe über die T-REX-Infrastruktur ab, wendet Identitäts-, Anlegerzulassungs- und Übertragungskontrollen nach ERC-3643 an und nutzt die Swift-Taxonomie, damit die Darstellung des Vermögenswerts mit etablierten Marktpraktiken übereinstimmt."
+        ],
+        [
+          "Richtlinien, Daten und Netzwerke in einem Konzept",
+          "Chainlink steuert CCIP für netzwerkübergreifende Tokenübertragungen, seine Automated Compliance Engine zur Durchsetzung von Richtlinien und Data Streams für die Preisbildung bei. T-REX stellt die Bereitstellung und eine einheitliche Datenquelle über unterstützte Blockchain-Netzwerke hinweg bereit, während Apex das regulierte Umfeld für die Betreuung der Vermögenswerte liefert. Das Konzept soll Institutionen ermöglichen, Compliance-Anforderungen einmal zu definieren und netzwerkübergreifend wiederzuverwenden."
+        ],
+        [
+          "Demonstration statt Emission oder Produktionsstart",
+          "Swift ist außerdem der ERC-3643 Association beigetreten. Die Ankündigung stellt die Arbeit als Umsetzungsdemonstration im Zusammenhang mit dem Singapore FinTech Festival dar; sie nennt weder einen neuen Anleiheemittenten noch ein Emissionsvolumen, eine Kapitalaufnahme oder einen Produktionsstart."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Apex, Chainlink y T-REX demuestran el cumplimiento onchain para bonos alineado con Swift",
+      "description": "Apex Group, Chainlink y T-REX implementaron una demostración de cumplimiento para bonos que combina controles ERC-3643 con estándares de Swift e infraestructura entre cadenas.",
+      "sections": [
+        [
+          "Un marco modular de cumplimiento para bonos onchain",
+          "Apex Group, Chainlink, T-REX Network y la ERC-3643 Association demostraron un marco modular de cumplimiento para bonos onchain alineado con los estándares de Swift. La implementación inicial representa un bono mediante la infraestructura de T-REX, aplica controles ERC-3643 de identidad, elegibilidad de inversores y transferencias, y utiliza la taxonomía de Swift para mantener la representación del activo en consonancia con las prácticas de mercado establecidas."
+        ],
+        [
+          "Políticas, datos y redes dentro de un mismo diseño",
+          "Chainlink aporta CCIP para las transferencias de tokens entre cadenas, su Automated Compliance Engine para aplicar políticas y Data Streams para la fijación de precios. T-REX proporciona el despliegue y una única fuente de registro en las redes blockchain compatibles, mientras que Apex aporta el entorno regulado de servicios para activos. El diseño pretende permitir que las instituciones definan una vez los requisitos de cumplimiento y los reutilicen entre redes."
+        ],
+        [
+          "Una demostración, no una emisión ni un lanzamiento en producción",
+          "Swift también se ha incorporado a la ERC-3643 Association. El anuncio presenta el trabajo como una demostración de implementación vinculada al Singapore FinTech Festival; no identifica un nuevo emisor de bonos, un importe de emisión, una captación de capital ni un lanzamiento en producción."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Apex, Chainlink et T-REX démontrent une conformité onchain des obligations alignée sur Swift",
+      "description": "Apex Group, Chainlink et T-REX ont mis en œuvre une démonstration de conformité obligataire combinant les contrôles ERC-3643, les normes Swift et une infrastructure inter-chaînes.",
+      "sections": [
+        [
+          "Un cadre de conformité modulaire pour les obligations onchain",
+          "Apex Group, Chainlink, T-REX Network et l’ERC-3643 Association ont présenté un cadre de conformité modulaire pour les obligations onchain, aligné sur les normes Swift. La première mise en œuvre représente une obligation au moyen de l’infrastructure T-REX, applique les contrôles ERC-3643 relatifs à l’identité, à l’éligibilité des investisseurs et aux transferts, et utilise la taxonomie Swift afin de maintenir la représentation de l’actif en cohérence avec les pratiques de marché établies."
+        ],
+        [
+          "Politiques, données et réseaux réunis dans un même dispositif",
+          "Chainlink fournit CCIP pour les transferts de tokens entre chaînes, son Automated Compliance Engine pour l’application des politiques et Data Streams pour la tarification. T-REX assure le déploiement et une source de référence unique sur les réseaux blockchain pris en charge, tandis qu’Apex fournit l’environnement réglementé de services aux actifs. Le dispositif vise à permettre aux institutions de définir une seule fois les exigences de conformité et de les réutiliser sur plusieurs réseaux."
+        ],
+        [
+          "Une démonstration, sans émission ni lancement en production",
+          "Swift a également rejoint l’ERC-3643 Association. L’annonce présente ces travaux comme une démonstration de mise en œuvre liée au Singapore FinTech Festival ; elle ne mentionne ni nouvel émetteur obligataire, ni montant d’émission, ni levée de capitaux, ni lancement en production."
+        ]
+      ]
+    },
+    "sourceSha256": "a9c3a0e87a552b4bb1650ab8bbce4a09ada4154d334cfea3da87567271ccef63"
   }
 }
