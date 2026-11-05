@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-05T23:40:07Z",
+    "reason": "The accessible coverage resolves to one Coinfomania report and its Cryptonews.net syndication, while Mamo's full first-party product page and announcement were not accessible. An official social post alone is insufficient to verify product mechanics and availability, and there are not two independent full-text reports."
   }
 }
