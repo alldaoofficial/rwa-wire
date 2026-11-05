@@ -1,24 +1,22 @@
 {
-  "title": "Digital Chamber Pushes SEC for Regulatory Flexibility in Tokenized Securities and Blockchain Records",
-  "description": "Digital Chamber Pushes SEC for Regulatory Flexibility in Tokenized Securities and Blockchain Records",
-  "why_it_matters": "",
-  "pubDate": "2026-11-05",
+  "title": "Digital Chamber Urges SEC to Keep Transfer-Agent Rules Blockchain-Neutral",
+  "slug": "digital-chamber-urges-sec-to-keep-transfer-agent-rules-blockchain-neutral",
+  "description": "The Digital Chamber asked the SEC to recognize distributed ledgers as official ownership records and preserve flexible transfer-agent structures for tokenized securities.",
+  "why_it_matters": "The final rule could determine whether public blockchains and specialized providers can support regulated ownership records without duplicative databases or blanket intermediary liability.",
+  "pubDate": "2026-11-03",
   "category": "news",
-  "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
-  ],
+  "reviewCategory": "regulation",
+  "tags": ["Digital Chamber", "SEC", "Transfer Agents", "Tokenized Securities"],
   "keyTakeaways": [
-    "Digital Chamber Pushes SEC for Regulatory Flexibility in Tokenized Securities and Blockchain Records",
-    ""
+    "The Digital Chamber filed its comment on November 3 in the SEC's transfer-agent rulemaking.",
+    "It asked the SEC to confirm that distributed ledgers may form all or part of the official master securityholder file.",
+    "The group supports multiple-agent structures and function-based registration tests for tokenization technology providers.",
+    "The filing is advocacy on a proposed rule and does not change current law."
   ],
-  "body": "Digital Chamber Pushes SEC for Regulatory Flexibility in Tokenized Securities and Blockchain Records",
+  "body": "The Digital Chamber submitted a November 3 comment on the SEC's proposed transfer-agent rule overhaul. It supports electronic modernization but asks the agency to state explicitly that a distributed ledger may constitute all or part of the official master securityholder file without a mandatory offchain duplicate.\n\nThe group also recommends allowing lead, sub-transfer-agent and co-equal structures for a single securities issue, including arrangements that divide responsibility between conventional and tokenized positions or across blockchains. It argues that registration should follow the regulated function performed, rather than treating software developers, node operators or tokenization providers as transfer agents solely because they supply technology.\n\nThe letter separately opposes the proposed Section 5 gatekeeping duty, requests electronic contact alternatives and supports direct examination of reliable onchain records. These are policy requests in an open rulemaking; the SEC has not adopted them or issued a final rule.",
   "sources": [
-    {
-      "name": "Crypto Economy",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPaFJGMW96WFBXZnFDZnpSWmhCNDZnQmFRVVE3STFnRnhnMjc0Sl9vQXQ2U3hncEhrcGtWcE5lZEJpYkVWMkxzTV9rWTJMQ2IybUJmUVJJdm5NMW02bjh3a0tITFNHb3BEcmR3MXhWcmRFMkFTd3RhX1g3RGZUX0Nlem1jM3FKRUVBTU1oZHVrRl9OMWt0X3ViT0VpWmlNLTJ6bXRiR2hnTWNGdVVYVlhCekg0YTNLaGxydXFiVU16S000WWRJSlNn?oc=5"
-    }
+    {"name": "Digital Chamber — SEC transfer-agent rules comment letter", "url": "https://www.sec.gov/comments/S7-2026-30/s7202630-1118519-3982586.pdf"},
+    {"name": "U.S. Securities and Exchange Commission — Transfer Agent Rules proposal", "url": "https://www.sec.gov/rules-regulations/2026/09/s7-2026-30"}
   ],
   "newsWatch": {
     "score": 10,
@@ -27,7 +25,26 @@
     "discoveredAt": "2026-11-05T00:37:14.357996+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-05T01:29:29Z",
+    "sources": [
+      {"url": "https://www.sec.gov/comments/S7-2026-30/s7202630-1118519-3982586.pdf", "publishedAt": "2026-11-03", "checkedAt": "2026-11-05T01:29:29Z", "kind": "primary", "access": "full-text"},
+      {"url": "https://www.sec.gov/rules-regulations/2026/09/s7-2026-30", "publishedAt": "2026-09-01", "checkedAt": "2026-11-05T01:29:29Z", "kind": "primary", "access": "full-text"}
+    ],
+    "facts": [
+      {"claim": "The Digital Chamber submitted its transfer-agent comment on November 3, 2026.", "sourceUrl": "https://www.sec.gov/comments/S7-2026-30/s7202630-1118519-3982586.pdf", "anchor": "November 3, 2026"},
+      {"claim": "The group asked the SEC to confirm that distributed ledgers may serve as the official master securityholder file.", "sourceUrl": "https://www.sec.gov/comments/S7-2026-30/s7202630-1118519-3982586.pdf", "anchor": "DLT may serve as the official MSF"},
+      {"claim": "The letter supports lead, sub-transfer-agent and co-equal arrangements for tokenized and conventional positions.", "sourceUrl": "https://www.sec.gov/comments/S7-2026-30/s7202630-1118519-3982586.pdf", "anchor": "lead/sub-transfer-agent and co-equal arrangements"},
+      {"claim": "The Digital Chamber argues that registration should depend on regulated functions rather than technology labels.", "sourceUrl": "https://www.sec.gov/comments/S7-2026-30/s7202630-1118519-3982586.pdf", "anchor": "functions, not technology labels"},
+      {"claim": "The filing urges the SEC not to adopt the proposed new transfer-agent gatekeeping provision.", "sourceUrl": "https://www.sec.gov/comments/S7-2026-30/s7202630-1118519-3982586.pdf", "anchor": "should not adopt that provision"},
+      {"claim": "The SEC page identifies the transfer-agent package as a proposed rule, not a final rule.", "sourceUrl": "https://www.sec.gov/rules-regulations/2026/09/s7-2026-30", "anchor": "Proposed Rule"}
+    ],
+    "contentSha256": "f03066f197ddc151c7228fb66b352d8e78e7ec03b3a869dbd2d93005d2f0febc"
   }
 }
