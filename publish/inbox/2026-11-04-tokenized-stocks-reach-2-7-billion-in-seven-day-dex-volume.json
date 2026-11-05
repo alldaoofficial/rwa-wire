@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-05T04:53:22Z",
-    "reason": "Secondary reports repeat the $2.7 billion weekly DEX-volume figure, but the cited Token Terminal public pages do not expose the dated weekly snapshot or issuer breakdown in reproducible full text. The primary dataset therefore remains unverifiable."
+    "reviewedAt": "2026-11-05T10:56:54Z",
+    "reason": "TokenPost and Crypto Briefing repeat the $2.7 billion seven-day DEX-volume figure and Aero's 28.3% share, but Token Terminal's public explorer still does not expose the dated venue-level snapshot in reproducible full text. The primary measurement therefore remains unverifiable."
   }
 }
