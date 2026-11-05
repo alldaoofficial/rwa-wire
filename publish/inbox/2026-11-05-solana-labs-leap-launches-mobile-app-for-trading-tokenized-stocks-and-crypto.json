@@ -1,24 +1,22 @@
 {
-  "title": "Solana Labs’ Leap Launches Mobile App for Trading Tokenized Stocks and Crypto",
-  "description": "Solana Labs’ Leap Launches Mobile App for Trading Tokenized Stocks and Crypto Decrypt",
-  "why_it_matters": "",
+  "title": "Solana Labs' Leap Opens Beta App for Tokenized Assets on iPhone",
+  "slug": "solana-labs-leap-beta-tokenized-assets-iphone",
+  "description": "Solana Labs company Leap opened an early-access iPhone beta for trading tokenized stocks, ETFs, metals, currencies and crypto on Solana.",
+  "why_it_matters": "Leap packages several tokenized asset classes into a consumer mobile interface, testing whether Solana can move tokenized markets beyond specialist trading terminals.",
   "pubDate": "2026-11-05",
   "category": "news",
-  "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
-  ],
+  "reviewCategory": "markets",
+  "tags": ["Solana", "Tokenized Stocks", "Mobile Trading", "Tokenization"],
   "keyTakeaways": [
-    "Solana Labs’ Leap Launches Mobile App for Trading Tokenized Stocks and Crypto Decrypt",
-    ""
+    "Leap opened its mobile trading app in beta on November 5, 2026.",
+    "Early access is available on iPhone through Apple's public TestFlight program; Android availability is planned.",
+    "The app covers tokenized stocks, ETFs, metals, currencies and crypto on Solana, subject to regional restrictions.",
+    "Leap charges no platform fee at launch, although network and routing costs still apply."
   ],
-  "body": "Solana Labs’ Leap Launches Mobile App for Trading Tokenized Stocks and Crypto Decrypt",
+  "body": "Leap, a company under Solana Labs, opened an early-access beta of its mobile trading app on November 5. The iPhone app is distributed through Apple's public TestFlight program and is not available in the United Kingdom or other restricted regions. An Android version is planned but has not launched.\n\nThe app brings tokenized stocks, exchange-traded funds, metals, currencies and crypto into one interface on Solana. It also pairs price charts with curated news and tracks profit and loss across account activity. Trades execute as onchain swaps. Leap charges no platform fee at launch, although users still face network and routing costs. The company says it may introduce fees later; that remains a plan rather than a current charge. The beta status and geographic limits mean this is an early product release, not unrestricted general availability.",
   "sources": [
-    {
-      "name": "Decrypt",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxObjhrMzhkQ1p5MTlsZjdTaHZzSjRESm51NFFHSUNiWG96azlFRk9Iams3c3pFTklhV3ROaFN3ajE2VlJ0WEhURW5ZdXdhZkZNTEdfcmhZV2loUEZJZ0hPaE5RUkI3bVd0RHFVbGluTmo2a2J4d0pmaUx4T1cwVzJHN3hlbXRSU1VQQnVybWZUNA?oc=5"
-    }
+    {"name": "Decrypt — Solana Labs' Leap launches mobile app", "url": "https://decrypt.co/382609/solana-labs-leap-launches-mobile-app-tokenized-stocks-crypto"},
+    {"name": "TheStreet — Solana Labs' new app Leap", "url": "https://www.thestreet.com/crypto/innovation/solana-labs-new-app-leap-lets-you-trade-stocks-and-crypto"}
   ],
   "newsWatch": {
     "score": 7,
@@ -28,11 +26,29 @@
     "confirmationMode": "independent-high-trust-source",
     "originalDiscoveryTitle": "Solana Labs’ Leap Launches Mobile App for Trading Tokenized Stocks and Crypto",
     "originalDiscoverySource": "Yahoo Finance",
-    "confirmationSources": [
-      "Decrypt"
-    ],
+    "confirmationSources": ["Decrypt"],
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment"
+    "contentStatus": "source-reviewed"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-05T18:13:20Z",
+    "sources": [
+      {"url": "https://decrypt.co/382609/solana-labs-leap-launches-mobile-app-tokenized-stocks-crypto", "publishedAt": "2026-11-05", "checkedAt": "2026-11-05T18:13:20Z", "kind": "news", "access": "full-text"},
+      {"url": "https://www.thestreet.com/crypto/innovation/solana-labs-new-app-leap-lets-you-trade-stocks-and-crypto", "publishedAt": "2026-11-05", "checkedAt": "2026-11-05T18:13:20Z", "kind": "news", "access": "full-text"}
+    ],
+    "independentReporting": true,
+    "facts": [
+      {"claim": "Leap launched a beta version of its mobile trading app on November 5.", "sourceUrl": "https://decrypt.co/382609/solana-labs-leap-launches-mobile-app-tokenized-stocks-crypto", "anchor": "launched a beta of its mobile trading app"},
+      {"claim": "The beta supports tokenized stocks, ETFs, metals, currencies and crypto.", "sourceUrl": "https://decrypt.co/382609/solana-labs-leap-launches-mobile-app-tokenized-stocks-crypto", "anchor": "stocks, ETFs, metals, currencies, and crypto"},
+      {"claim": "The early-access app is distributed on iPhone through TestFlight.", "sourceUrl": "https://decrypt.co/382609/solana-labs-leap-launches-mobile-app-tokenized-stocks-crypto", "anchor": "early access on iPhone"},
+      {"claim": "TheStreet independently reported that Leap opened the app in beta.", "sourceUrl": "https://www.thestreet.com/crypto/innovation/solana-labs-new-app-leap-lets-you-trade-stocks-and-crypto", "anchor": "opened its trading app in beta"},
+      {"claim": "Trades in the app execute as onchain swaps.", "sourceUrl": "https://www.thestreet.com/crypto/innovation/solana-labs-new-app-leap-lets-you-trade-stocks-and-crypto", "anchor": "executed as an onchain swap"},
+      {"claim": "An Android version is planned but not yet available.", "sourceUrl": "https://www.thestreet.com/crypto/innovation/solana-labs-new-app-leap-lets-you-trade-stocks-and-crypto", "anchor": "Android version is coming soon"}
+    ],
+    "contentSha256": "265aadb028d6507041f3d789051744d2c7e7e2014e059efecacf2864968e39bf"
   }
 }
