@@ -1,24 +1,21 @@
 {
-  "title": "MVL taps Kaia's tokenized fund for first institutional mobility private credit loan",
-  "description": "MVL taps Kaia's tokenized fund for first institutional mobility private credit loan",
-  "why_it_matters": "",
+  "title": "Kaia Yield8 Adds Its First Mobility Loan Through MVL's Musubi",
+  "slug": "kaia-yield8-first-mobility-loan-mvl-musubi",
+  "description": "Kaia Investment Partners added a loan to Cambodian electric-vehicle operator ONiON Mobility as Yield8's fifth private-credit position and first mobility exposure.",
+  "why_it_matters": "The transaction connects a tokenized private-credit fund to operating EV lease revenue while keeping the loan, invoice disclosures and limited onchain payment reserve legally and economically distinct.",
   "pubDate": "2026-11-05",
   "category": "news",
-  "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
-  ],
+  "reviewCategory": "private-credit",
+  "tags": ["Private Credit", "Kaia", "MVL", "Tokenized Funds"],
   "keyTakeaways": [
-    "MVL taps Kaia's tokenized fund for first institutional mobility private credit loan",
-    ""
+    "The ONiON Mobility loan is Yield8's fifth portfolio position and its first in mobility.",
+    "Electric-vehicle lease revenue is intended to repay the loan.",
+    "The referenced invoice pool provides disclosure and is not collateral for the loan.",
+    "A USDC payment reserve is locked in a smart contract, but it only covers the deposited amount and does not guarantee principal or returns."
   ],
-  "body": "MVL taps Kaia's tokenized fund for first institutional mobility private credit loan",
+  "body": "Kaia Investment Partners added a loan to ONiON Mobility, an electric-vehicle operator in Cambodia, to its tokenized private-credit fund Yield8. The position is the fund's fifth investment and its first mobility exposure. MVL's mobility-finance platform Musubi facilitated the transaction.\n\nONiON Mobility's electric-vehicle lease revenue is intended to repay the loan. Yield8 investors receive reporting linked to a pool of lease invoices, but those invoices are provided for disclosure and are not collateral. A USDC payment reserve is locked in a smart contract to support distributions. The reserve only covers the amount deposited and does not guarantee repayment of principal or investment returns. Kaia Investment Partners says it may evaluate further Musubi-originated loans, but any additional allocations remain prospective rather than committed portfolio positions.",
   "sources": [
-    {
-      "name": "Dealroom",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbnZjenlnMXRLWnJ1VVBVeUZtQ3lBSUlUMEVhcWFyR2lyaGlFTy1LSW5velBCd1RZc0tCeF9kX0ljdlZnRFlUY0JDcEJUZVE5bnBERVFpQ05MYjc2bl80MEVac3p5UHR3S1ZVVlFtRk5yVFJWU1NRWmk2UlZ1M2VGcTJTaWs1YjdPaTZ5UWlHa19aclN5WHBTOUlXdjFWYjRQZ2tSdWxuZnVneWhlcXdEbFUtQm9ZR2Zj?oc=5"
-    }
+    {"name": "Kaia — Yield8 expands Asian private-credit portfolio with ONiON Mobility", "url": "https://blog.kaia.io/yield8-expands-asian-private-credit-portfolio-with-onion-mobility/"}
   ],
   "newsWatch": {
     "score": 11,
@@ -27,7 +24,23 @@
     "discoveredAt": "2026-11-05T17:37:15.778690+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-05T18:13:20Z",
+    "sources": [
+      {"url": "https://blog.kaia.io/yield8-expands-asian-private-credit-portfolio-with-onion-mobility/", "publishedAt": "2026-11-05", "checkedAt": "2026-11-05T18:13:20Z", "kind": "primary", "access": "full-text"}
+    ],
+    "facts": [
+      {"claim": "The ONiON Mobility loan is Yield8's fifth portfolio position and first mobility position.", "sourceUrl": "https://blog.kaia.io/yield8-expands-asian-private-credit-portfolio-with-onion-mobility/", "anchor": "fifth position and its first in mobility"},
+      {"claim": "Yield8's exposure to ONiON Mobility is structured as a loan.", "sourceUrl": "https://blog.kaia.io/yield8-expands-asian-private-credit-portfolio-with-onion-mobility/", "anchor": "Yield8's exposure is a loan"},
+      {"claim": "The referenced lease invoices are disclosed but do not serve as collateral.", "sourceUrl": "https://blog.kaia.io/yield8-expands-asian-private-credit-portfolio-with-onion-mobility/", "anchor": "invoices are there for disclosure"},
+      {"claim": "The payment reserve does not guarantee principal or returns.", "sourceUrl": "https://blog.kaia.io/yield8-expands-asian-private-credit-portfolio-with-onion-mobility/", "anchor": "does not guarantee principal or returns"}
+    ],
+    "contentSha256": "90bb074bd02f36d052b2b96d1f127f954faf59d685a6eb529ba06a04c40edd49"
   }
 }
