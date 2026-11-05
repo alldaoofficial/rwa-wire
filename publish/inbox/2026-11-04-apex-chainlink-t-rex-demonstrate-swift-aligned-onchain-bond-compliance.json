@@ -1,0 +1,83 @@
+{
+  "title": "Apex, Chainlink and T-REX Demonstrate Swift-Aligned Onchain Bond Compliance",
+  "slug": "apex-chainlink-t-rex-demonstrate-swift-aligned-onchain-bond-compliance",
+  "description": "Apex Group, Chainlink and T-REX implemented a bond-compliance demonstration that combines ERC-3643 controls with Swift standards and cross-chain infrastructure.",
+  "why_it_matters": "Reusable identity and transfer rules could reduce the cost of distributing regulated tokenized bonds across networks while preserving a consistent compliance record.",
+  "pubDate": "2026-11-04",
+  "category": "institutions",
+  "reviewCategory": "infrastructure",
+  "tags": [
+    "Apex Group",
+    "Chainlink",
+    "T-REX Network",
+    "ERC-3643",
+    "Swift",
+    "Tokenized Bonds"
+  ],
+  "keyTakeaways": [
+    "The participants demonstrated a modular compliance framework for representing and managing bonds onchain.",
+    "ERC-3643 applies identity, investor-eligibility and transfer rules at the asset level.",
+    "Chainlink supplies CCIP, ACE and Data Streams, while T-REX maintains a single source of record across supported networks.",
+    "The announcement describes an implementation demonstration, not a new bond issuance or production-market launch."
+  ],
+  "body": "Apex Group, Chainlink, T-REX Network and the ERC-3643 Association demonstrated a modular compliance framework for onchain bonds aligned with Swift standards. The initial implementation represents a bond through T-REX infrastructure, applies ERC-3643 identity, investor-eligibility and transfer controls, and uses Swift taxonomy to keep the asset representation consistent with established market practices.\n\nChainlink contributes CCIP for cross-chain token transfers, its Automated Compliance Engine for policy enforcement and Data Streams for pricing. T-REX provides deployment and a single source of record across supported blockchain networks, while Apex supplies the regulated asset-servicing environment. The design is intended to let institutions define compliance requirements once and reuse them across networks.\n\nSwift has also joined the ERC-3643 Association. The announcement presents the work as an implementation demonstration connected to the Singapore FinTech Festival; it does not identify a new bond issuer, issuance amount, capital raise or production launch.",
+  "sources": [
+    {
+      "name": "Apex Group — Swift-aligned onchain bond compliance framework",
+      "url": "https://www.apexgroup.com/insights/apex-group-chainlink-t-rex-network-and-the-erc-3643-association-demonstrate-interoperable-compliance-for-on-chain-capital-markets-aligned-with-swift-standards/"
+    }
+  ],
+  "newsWatch": {
+    "score": 6,
+    "priority": "watchlist",
+    "sourceTrust": "primary",
+    "discoveredAt": "2026-11-05T15:07:31Z",
+    "requiresSourceReview": true,
+    "autoPublishEligible": false,
+    "contentStatus": "source-reviewed",
+    "discoveryMode": "agent-primary"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-05T15:07:31Z",
+    "sources": [
+      {
+        "url": "https://www.apexgroup.com/insights/apex-group-chainlink-t-rex-network-and-the-erc-3643-association-demonstrate-interoperable-compliance-for-on-chain-capital-markets-aligned-with-swift-standards/",
+        "publishedAt": "2026-11-04",
+        "checkedAt": "2026-11-05T15:07:31Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "The four participants implemented a modular compliance framework for onchain bonds.",
+        "sourceUrl": "https://www.apexgroup.com/insights/apex-group-chainlink-t-rex-network-and-the-erc-3643-association-demonstrate-interoperable-compliance-for-on-chain-capital-markets-aligned-with-swift-standards/",
+        "anchor": "implemented a modular compliance framework"
+      },
+      {
+        "claim": "Swift joined the ERC-3643 Association as part of the initiative.",
+        "sourceUrl": "https://www.apexgroup.com/insights/apex-group-chainlink-t-rex-network-and-the-erc-3643-association-demonstrate-interoperable-compliance-for-on-chain-capital-markets-aligned-with-swift-standards/",
+        "anchor": "Swift has joined the ERC-3643 Association"
+      },
+      {
+        "claim": "The framework is designed so compliance requirements can be reused across blockchain networks.",
+        "sourceUrl": "https://www.apexgroup.com/insights/apex-group-chainlink-t-rex-network-and-the-erc-3643-association-demonstrate-interoperable-compliance-for-on-chain-capital-markets-aligned-with-swift-standards/",
+        "anchor": "implemented once and reused"
+      },
+      {
+        "claim": "The bond demonstration uses Swift standards and taxonomy to align with existing capital-markets processes.",
+        "sourceUrl": "https://www.apexgroup.com/insights/apex-group-chainlink-t-rex-network-and-the-erc-3643-association-demonstrate-interoperable-compliance-for-on-chain-capital-markets-aligned-with-swift-standards/",
+        "anchor": "using Swift standards and taxonomy"
+      },
+      {
+        "claim": "T-REX provides distribution through a single source of record across supported networks.",
+        "sourceUrl": "https://www.apexgroup.com/insights/apex-group-chainlink-t-rex-network-and-the-erc-3643-association-demonstrate-interoperable-compliance-for-on-chain-capital-markets-aligned-with-swift-standards/",
+        "anchor": "across supported blockchain networks"
+      }
+    ],
+    "contentSha256": "cf545d47a041fd6ef91916f81db4b2cb7c5b60c787c67bd8a2155a2337c25766"
+  }
+}
