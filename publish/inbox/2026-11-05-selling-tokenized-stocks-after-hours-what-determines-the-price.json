@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-05T14:49:30Z",
-    "reason": "The Google News RSS URL did not resolve to a readable The Defiant article, and no direct publisher URL or full-text original could be located. Accessible related material explains after-hours pricing but does not establish whether this lead reports a distinct new event, so its claims and semantic novelty cannot be verified."
+    "reviewedAt": "2026-11-05T22:29:16Z",
+    "reason": "The direct The Defiant article remains inaccessible and the Google News URL does not provide readable full text. Available excerpts describe general after-hours execution, liquidity and redemption mechanics rather than a dated launch, approval or material expansion. The complete claims and any semantic novelty therefore cannot be verified."
   }
 }
