@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-05T00:22:20Z",
+    "reason": "The full article is speculative cryptocurrency price analysis based on Grok forecasts and affiliate-led investment framing. It reports no new RWA launch, approval, financing or material rollout."
   }
 }
