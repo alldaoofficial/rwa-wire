@@ -4646,5 +4646,137 @@
       ]
     },
     "sourceSha256": "d0310e2f3e1979fd59cedcdb1994c6f6e327c6a5dd4b39eb1349abbf25dcb4c0"
+  },
+  "bullish-aptos-ethereum-tokenized-equity-networks": {
+    "path": "/news/bullish-aptos-ethereum-tokenized-equity-networks/",
+    "date": "2026-11-03",
+    "kind": "news",
+    "sources": [
+      [
+        "Bullish — network partners and NYSE tokenized-share demonstration",
+        "https://www.bullish.com/us/news-insights/bullish-and-equiniti-transfer-61-million-tokenized-shares-at-the-nyse-and-has-selected-solana-aptos-and-ethereum-as-its-initial-network-partners"
+      ]
+    ],
+    "de": {
+      "title": "Bullish nimmt Aptos und Ethereum in den Plan für tokenisierte Aktien auf",
+      "description": "Bullish nannte Solana, Aptos und Ethereum als erste Netzwerke für seinen von Emittenten getragenen Tokenisierungsdienst für Aktien, nachdem das Unternehmen auf Solana die Übertragung von 61 Millionen Aktien demonstriert hatte.",
+      "sections": [
+        [
+          "Drei Netzwerke, aber Aptos und Ethereum bleiben geplant",
+          "Bullish nannte am 3. November Solana, Aptos und Ethereum als erste Netzwerkpartner für seinen von Emittenten getragenen Tokenisierungsdienst für Aktien. Solana bildet die bestehende Grundlage; Bullish will dieselben Funktionen auf Aptos und Ethereum ausweiten. Die Ankündigung ist daher ein Netzwerkfahrplan und kein Beleg dafür, dass tokenisierte Aktien auf den beiden zusätzlichen Blockchains bereits live sind."
+        ],
+        [
+          "Demonstration von 61 Millionen Aktien auf Solana",
+          "Die Entscheidung folgt auf eine Demonstration vom 27. Oktober an der New York Stock Exchange. Bullish und der Transferagent Equiniti übertrugen 61 Millionen reservierte Bullish-Aktien auf Solana, wobei Equiniti die Übertragung verwaltete. Laut Bullish würde das Mehrnetzwerkmodell Emittenten ermöglichen, Anleger über mehrere öffentliche Blockchains zu erreichen, während der Transferagent das offizielle Eigentumsregister führt."
+        ],
+        [
+          "Verbindung zum Aktionärsregister und offene Startfragen",
+          "Diese Struktur ist für regulierte Aktien wichtig, weil der Onchain-Token mit dem Aktionärsregister des Emittenten verbunden bleiben soll. Die Mitteilung nennt weder den ersten Drittemittenten für Aptos oder Ethereum noch einen Starttermin für eine der beiden Integrationen."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Bullish incorpora Aptos y Ethereum a su plan de acciones tokenizadas",
+      "description": "Bullish designó a Solana, Aptos y Ethereum como redes iniciales para su servicio de tokenización de acciones patrocinado por emisores, tras demostrar en Solana una transferencia de 61 millones de acciones.",
+      "sections": [
+        [
+          "Tres redes, pero Aptos y Ethereum siguen en fase de planificación",
+          "Bullish designó el 3 de noviembre a Solana, Aptos y Ethereum como socios de red iniciales para su servicio de tokenización de acciones patrocinado por emisores. Solana es la base existente; Bullish afirmó que pretende extender las mismas capacidades a Aptos y Ethereum. El anuncio es, por tanto, una hoja de ruta de redes y no prueba que las acciones tokenizadas ya estén operativas en las dos cadenas adicionales."
+        ],
+        [
+          "Demostración de 61 millones de acciones en Solana",
+          "La decisión sigue a una demostración realizada el 27 de octubre en la Bolsa de Nueva York. Bullish y el agente de transferencias Equiniti trasladaron 61 millones de acciones reservadas de Bullish en Solana, con Equiniti administrando la transferencia. Bullish afirma que su modelo multirred permitiría a los emisores llegar a inversores en varias blockchains públicas mientras el agente de transferencias conserva el registro oficial de propiedad."
+        ],
+        [
+          "Vínculo con el registro de accionistas y fechas aún abiertas",
+          "Esa estructura es importante para las acciones reguladas porque el token onchain debe permanecer vinculado al registro de accionistas del emisor. El comunicado no identifica al primer emisor externo que utilizará Aptos o Ethereum ni ofrece una fecha de lanzamiento para ninguna de las dos integraciones."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Bullish ajoute Aptos et Ethereum à son projet d’actions tokenisées",
+      "description": "Bullish a désigné Solana, Aptos et Ethereum comme premiers réseaux de son service de tokenisation d’actions soutenu par les émetteurs, après avoir démontré sur Solana le transfert de 61 millions d’actions.",
+      "sections": [
+        [
+          "Trois réseaux, mais Aptos et Ethereum restent au stade du projet",
+          "Bullish a désigné le 3 novembre Solana, Aptos et Ethereum comme premiers partenaires réseau de son service de tokenisation d’actions soutenu par les émetteurs. Solana constitue la base existante ; Bullish prévoit d’étendre les mêmes fonctionnalités à Aptos et Ethereum. L’annonce représente donc une feuille de route réseau et ne prouve pas que des actions tokenisées soient déjà disponibles sur les deux chaînes supplémentaires."
+        ],
+        [
+          "Démonstration de 61 millions d’actions sur Solana",
+          "Cette décision fait suite à une démonstration organisée le 27 octobre à la Bourse de New York. Bullish et l’agent de transfert Equiniti ont transféré 61 millions d’actions réservées de Bullish sur Solana, Equiniti administrant l’opération. Selon Bullish, son modèle multiréseau permettrait aux émetteurs d’atteindre des investisseurs sur plusieurs blockchains publiques, tandis que l’agent de transfert conserverait le registre officiel de propriété."
+        ],
+        [
+          "Lien avec le registre des actionnaires et calendrier encore ouvert",
+          "Cette structure est importante pour les actions réglementées, car le token onchain doit rester lié au registre des actionnaires de l’émetteur. Le communiqué n’identifie ni le premier émetteur tiers pour Aptos ou Ethereum, ni une date de lancement pour l’une ou l’autre intégration."
+        ]
+      ]
+    },
+    "sourceSha256": "1e81210ea5c098601f103e1e51c999d5c61fa1aba583bd319efed1898fae4a1c"
+  },
+  "eurex-hybrid-clearing-digital-securities-margin-collateral": {
+    "path": "/news/eurex-hybrid-clearing-digital-securities-margin-collateral/",
+    "date": "2026-11-02",
+    "kind": "news",
+    "sources": [
+      [
+        "Eurex Clearing — hybrid CCP announcement",
+        "https://www.eurexgroup.com/dbg-en/media/news-stories/press-releases/Eurex-Clearing-to-Become-the-World-s-First-Hybrid-CCP--5678008"
+      ]
+    ],
+    "de": {
+      "title": "Eurex plant hybrides Clearing für digitale Wertpapiere und Marginsicherheiten",
+      "description": "Eurex Clearing will native digitale Wertpapiere in sein bestehendes Repo-, Clearing- und Marginsystem integrieren, darunter ESM-Emissionen und den ECB-GC-Pooling-Sicherheitenkorb.",
+      "sections": [
+        [
+          "Ein gemeinsamer Rahmen für traditionelle und digitale Instrumente",
+          "Eurex Clearing kündigte am 2. November an, native digitale Wertpapiere in denselben Rahmen, dasselbe Regelwerk und dasselbe Risikomodell wie traditionelle Instrumente integrieren zu wollen. Die Änderung wurde noch nicht als abgeschlossener Produktionsstart dargestellt."
+        ],
+        [
+          "Repo-Handel, Clearing und Nutzung als Marginsicherheit",
+          "Nach dem Plan sollen qualifizierte digitale Instrumente, darunter Emissionen des Europäischen Stabilitätsmechanismus, im GC-Pooling-Segment von Eurex Repo gehandelt, über Eurex Clearing abgewickelt und als Marginsicherheiten zugelassen werden. Eurex beabsichtigt außerdem, die Instrumente in den ECB-GC-Pooling-Sicherheitenkorb aufzunehmen."
+        ],
+        [
+          "Bestehende Infrastruktur, aber noch ohne Starttermin",
+          "Das Modell soll Teilnehmern ermöglichen, vorhandene Clearingbeziehungen und Infrastruktur zu nutzen, statt eine getrennte digitale Marktstruktur aufzubauen. Laut Eurex soll die Bündelung traditioneller und digitaler Instrumente in derselben geclearten Umgebung verhindern, dass sich Liquidität auf parallele Märkte verteilt. Die Ankündigung nennt weder einen Starttermin noch ein Transaktionsvolumen oder eine bestätigte Nutzung durch Teilnehmer; diese Punkte bleiben offene Umsetzungsfragen."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Eurex planea compensación híbrida para valores digitales y garantías de margen",
+      "description": "Eurex Clearing planea incorporar valores digitales nativos a su marco actual de repos, compensación y márgenes, incluidas emisiones del MEDE y la cesta de garantías ECB GC Pooling.",
+      "sections": [
+        [
+          "Un marco común para instrumentos tradicionales y digitales",
+          "Eurex Clearing anunció el 2 de noviembre que planea integrar valores digitales nativos en el mismo marco, reglamento y modelo de riesgo utilizados para los instrumentos tradicionales. El cambio todavía no se ha presentado como un despliegue en producción completado."
+        ],
+        [
+          "Negociación de repos, compensación y uso como garantía de margen",
+          "Según el plan, los instrumentos digitales que cumplan los requisitos, incluidas emisiones del Mecanismo Europeo de Estabilidad, se negociarían en el segmento GC Pooling de Eurex Repo, se compensarían a través de Eurex Clearing y podrían utilizarse como garantía de margen. Eurex también pretende incluirlos en la cesta de garantías ECB GC Pooling."
+        ],
+        [
+          "Infraestructura existente, pero aún sin fecha de lanzamiento",
+          "El modelo busca que los participantes utilicen sus relaciones e infraestructura de compensación existentes en lugar de crear una estructura separada para el mercado digital. Eurex afirma que concentrar instrumentos tradicionales y digitales en el mismo entorno compensado debería evitar que la liquidez se divida entre mercados paralelos. El anuncio no especifica fecha de lanzamiento, volumen de transacciones ni adopción confirmada por participantes, por lo que siguen siendo cuestiones abiertas de implementación."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Eurex prévoit une compensation hybride pour les titres numériques et les garanties de marge",
+      "description": "Eurex Clearing prévoit d’intégrer des titres numériques natifs à son cadre existant de pension livrée, de compensation et de marge, notamment les émissions du MES et le panier de garanties ECB GC Pooling.",
+      "sections": [
+        [
+          "Un cadre commun aux instruments traditionnels et numériques",
+          "Eurex Clearing a annoncé le 2 novembre son intention d’intégrer les titres numériques natifs au même cadre, au même règlement et au même modèle de risque que les instruments traditionnels. Cette évolution n’a pas encore été présentée comme un déploiement en production achevé."
+        ],
+        [
+          "Pensions livrées, compensation et garanties de marge",
+          "Selon le projet, les instruments numériques admissibles, notamment les émissions du Mécanisme européen de stabilité, seraient négociés dans le segment GC Pooling d’Eurex Repo, compensés par Eurex Clearing et admis comme garanties de marge. Eurex prévoit également de les intégrer au panier de garanties ECB GC Pooling."
+        ],
+        [
+          "Une infrastructure existante, mais aucun calendrier de lancement",
+          "Le modèle vise à permettre aux participants d’utiliser leurs relations et infrastructures de compensation existantes au lieu de créer une structure distincte pour le marché numérique. Eurex estime que le regroupement des instruments traditionnels et numériques dans un même environnement compensé devrait éviter de répartir la liquidité entre des marchés parallèles. L’annonce ne précise ni date de lancement, ni volume de transactions, ni adoption confirmée par des participants ; ces éléments restent des questions de mise en œuvre ouvertes."
+        ]
+      ]
+    },
+    "sourceSha256": "37442dca3ee976a8a39a992d41f36b2b42ff32d7e6e7e385eca26f4514e1aa63"
   }
 }
