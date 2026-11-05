@@ -1,23 +1,28 @@
 {
-  "title": "Tokenized collateral brings custody and settlement closer together",
-  "description": "Tokenized collateral brings custody and settlement closer together",
-  "why_it_matters": "",
-  "pubDate": "2026-11-05",
+  "title": "Eurex Plans Hybrid Clearing for Digital Securities and Margin Collateral",
+  "slug": "eurex-hybrid-clearing-digital-securities-margin-collateral",
+  "description": "Eurex Clearing plans to bring native digital securities into its existing repo, clearing and margin framework, including ESM issuances and the ECB GC Pooling basket.",
+  "why_it_matters": "The plan would let institutions finance and post qualifying digital securities through existing clearing relationships, reducing the operational split between tokenized issuance and established collateral markets.",
+  "pubDate": "2026-11-02",
   "category": "news",
+  "reviewCategory": "infrastructure",
   "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Eurex",
+    "Digital Securities",
+    "Collateral",
+    "Clearing"
   ],
   "keyTakeaways": [
-    "Tokenized collateral brings custody and settlement closer together",
-    ""
+    "Eurex Clearing announced the hybrid-CCP plan on November 2, 2026.",
+    "Native digital instruments are planned for trading in Eurex Repo's GC Pooling segment and clearing through Eurex Clearing.",
+    "Qualifying digital securities, including European Stability Mechanism issuances, are intended to become eligible margin collateral.",
+    "The instruments are also planned for inclusion in the ECB GC Pooling collateral basket."
   ],
-  "body": "Tokenized collateral brings custody and settlement closer together",
+  "body": "Eurex Clearing announced on November 2 that it plans to integrate native digital securities into the same framework, rulebook and risk model used for traditional instruments. The change has not yet been presented as a completed production rollout.\n\nUnder the plan, qualifying digital instruments, including European Stability Mechanism issuances, would trade in Eurex Repo's GC Pooling segment, clear through Eurex Clearing and become eligible as margin collateral. Eurex also intends to include the instruments in the ECB GC Pooling collateral basket.\n\nThe model is designed to let participants use existing clearing relationships and infrastructure rather than establish a separate digital-market setup. Eurex says concentrating traditional and digital instruments in the same cleared environment should avoid splitting liquidity across parallel markets. The announcement does not specify a launch date, transaction volume or confirmed participant adoption, so those remain open implementation questions.",
   "sources": [
     {
-      "name": "Crypto News",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA5OUNXR0ZRR2pwMHBVSmtsYWFNTzRBYWZGMWx0eklLeThpZlkxdkZEaThDNW5sRDFKT2YxOTBhNWF4dEtLXy1rQnVtOGV0QXV6NDBPZjlybElpNjV1SXE2RHhXb2tCdXMyRU9ZN0RYTTE0RFVI?oc=5"
+      "name": "Eurex Clearing — hybrid CCP announcement",
+      "url": "https://www.eurexgroup.com/dbg-en/media/news-stories/press-releases/Eurex-Clearing-to-Become-the-World-s-First-Hybrid-CCP--5678008"
     }
   ],
   "newsWatch": {
@@ -27,7 +32,46 @@
     "discoveredAt": "2026-11-05T21:37:15.730432+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-05T22:28:15Z",
+    "sources": [
+      {
+        "url": "https://www.eurexgroup.com/dbg-en/media/news-stories/press-releases/Eurex-Clearing-to-Become-the-World-s-First-Hybrid-CCP--5678008",
+        "publishedAt": "2026-11-02",
+        "checkedAt": "2026-11-05T22:28:15Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "independentReporting": false,
+    "facts": [
+      {
+        "claim": "Eurex plans to combine traditional and digital instruments within one clearing framework and risk model.",
+        "sourceUrl": "https://www.eurexgroup.com/dbg-en/media/news-stories/press-releases/Eurex-Clearing-to-Become-the-World-s-First-Hybrid-CCP--5678008",
+        "anchor": "one clearing framework"
+      },
+      {
+        "claim": "Native digital instruments are planned to qualify for use as margin collateral at Eurex Clearing.",
+        "sourceUrl": "https://www.eurexgroup.com/dbg-en/media/news-stories/press-releases/Eurex-Clearing-to-Become-the-World-s-First-Hybrid-CCP--5678008",
+        "anchor": "eligible as margin collateral"
+      },
+      {
+        "claim": "The planned trading venue for the digital instruments is Eurex Repo's GC Pooling segment.",
+        "sourceUrl": "https://www.eurexgroup.com/dbg-en/media/news-stories/press-releases/Eurex-Clearing-to-Become-the-World-s-First-Hybrid-CCP--5678008",
+        "anchor": "Eurex Repo in its GC Pooling segment"
+      },
+      {
+        "claim": "Eurex intends the digital instruments to qualify for the ECB GC Pooling collateral basket.",
+        "sourceUrl": "https://www.eurexgroup.com/dbg-en/media/news-stories/press-releases/Eurex-Clearing-to-Become-the-World-s-First-Hybrid-CCP--5678008",
+        "anchor": "eligible collateral of the ECB GC Pooling basket"
+      }
+    ],
+    "contentSha256": "6dbd50061188aad900fd2cc938c0d0fded2ba9dffe1ed1bcb4bdde71b4db17e0"
   }
 }
