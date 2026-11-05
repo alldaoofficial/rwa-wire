@@ -4340,5 +4340,129 @@
       ]
     },
     "sourceSha256": "7ca05e079953ad269a5893580fc4d0642a2c5029ea75bdc70d99264febcd734f"
+  },
+  "twelve-more-issuers-lift-okxice-objections-to-50": {
+    "path": "/news/twelve-more-issuers-lift-okxice-objections-to-50/",
+    "date": "2026-10-30",
+    "kind": "news",
+    "sources": [
+      [
+        "OKXICE — Public Notice dated October 30, 2026",
+        "https://www.okx.com/cdn/assets/okfe/web3-activities/okxicetsv/notices/OKXICE_Tokenized_Securities_Venue_Public_Notice_26.10.30.pdf"
+      ],
+      [
+        "U.S. Securities and Exchange Commission — Innovation Exemption venue notices",
+        "https://www.sec.gov/about/divisions-offices/division-trading-markets/innovation-exemption"
+      ]
+    ],
+    "de": {
+      "title": "Zwölf weitere Emittenten erhöhen die OKXICE-Einwände auf 50",
+      "description": "Die OKXICE-Mitteilung vom 30. Oktober ergänzt zwölf Emittenten, darunter Nvidia, Nike, Costco und Reddit, und erhöht die Zahl der Einwände gegen den geplanten Handelsplatz für tokenisierte Aktien von 38 auf 50.",
+      "sections": [
+        [
+          "Zwölf neue Einwände in der Mitteilung vom 30. Oktober",
+          "Die öffentliche OKXICE-Mitteilung vom 30. Oktober führt 50 Emittenten auf, die dem tokenisierten Handel ihrer Aktien auf dem geplanten Handelsplatz widersprochen haben. In der Fassung vom 28. Oktober waren es 38. Hinzugekommen sind CrowdStrike, Corning, Micron Technology, IREN, USA Rare Earth, Bloom Energy, Nike, Nvidia, Palo Alto Networks, Costco, Reddit und Hewlett Packard Enterprise."
+        ],
+        [
+          "Begrenzung auf OKXICE und weiterhin kein Starttermin",
+          "Die Einwände betreffen nicht mit den Emittenten verbundene Token auf NMS-Aktien, die OKXICE im Rahmen der befristeten Innovation Exemption der SEC anbieten will. Sie verhindern die betroffenen Instrumente auf diesem Handelsplatz, verbieten aber weder eine vom Emittenten unterstützte Tokenisierung noch andere Vereinbarungen auf anderen Plattformen. OKXICE beschreibt einen zugangsbeschränkten Markt mit Stablecoin-Handelspaaren und einer Eins-zu-eins-Aktienunterlegung; die Mitteilung nennt jedoch weder einen Starttermin noch die Gründe der einzelnen Emittenten. Die SEC warnt gesondert, dass die Aufnahme eines geplanten Handelsplatzes in ihre Liste nicht belegt, dass er die Bedingungen der Ausnahme erfüllt."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Doce emisores más elevan a 50 las objeciones a OKXICE",
+      "description": "El aviso de OKXICE del 30 de octubre añade doce emisores, entre ellos Nvidia, Nike, Costco y Reddit, y eleva de 38 a 50 las objeciones a su plataforma propuesta de acciones tokenizadas.",
+      "sections": [
+        [
+          "Doce nuevas objeciones en el aviso del 30 de octubre",
+          "El aviso público de OKXICE fechado el 30 de octubre enumera 50 emisores que se opusieron a la negociación tokenizada de sus acciones en la plataforma propuesta. La versión del 28 de octubre incluía 38. Los doce añadidos son CrowdStrike, Corning, Micron Technology, IREN, USA Rare Earth, Bloom Energy, Nike, Nvidia, Palo Alto Networks, Costco, Reddit y Hewlett Packard Enterprise."
+        ],
+        [
+          "Alcance limitado a OKXICE y todavía sin fecha de lanzamiento",
+          "Las objeciones se refieren a tokens de acciones NMS de terceros no afiliados que OKXICE pretende ofrecer bajo la Innovation Exemption temporal de la SEC. Impiden que los instrumentos afectados se negocien en esta plataforma, pero no prohíben la tokenización respaldada por el emisor ni acuerdos distintos en otros mercados. OKXICE describe un mercado autorizado que utilizaría pares con stablecoins y respaldo de acciones uno a uno; sin embargo, el aviso no ofrece fecha de lanzamiento ni explica las objeciones individuales. La SEC advierte por separado que incluir una plataforma prospectiva en su lista no demuestra que cumpla las condiciones de la exención."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Douze émetteurs supplémentaires portent à 50 les objections à OKXICE",
+      "description": "L’avis d’OKXICE du 30 octobre ajoute douze émetteurs, dont Nvidia, Nike, Costco et Reddit, et fait passer de 38 à 50 les objections à sa future plateforme d’actions tokenisées.",
+      "sections": [
+        [
+          "Douze nouvelles objections dans l’avis du 30 octobre",
+          "L’avis public d’OKXICE daté du 30 octobre recense 50 émetteurs opposés à la négociation tokenisée de leurs actions sur la plateforme envisagée. La version du 28 octobre en comptait 38. Les douze nouveaux noms sont CrowdStrike, Corning, Micron Technology, IREN, USA Rare Earth, Bloom Energy, Nike, Nvidia, Palo Alto Networks, Costco, Reddit et Hewlett Packard Enterprise."
+        ],
+        [
+          "Une portée limitée à OKXICE et toujours aucune date de lancement",
+          "Les objections concernent des tokens d’actions NMS de tiers non affiliés qu’OKXICE souhaite proposer dans le cadre de l’Innovation Exemption temporaire de la SEC. Elles empêchent la présence des instruments concernés sur cette plateforme, mais n’interdisent ni une tokenisation soutenue par l’émetteur ni d’autres dispositifs ailleurs. OKXICE décrit un marché à accès autorisé utilisant des paires en stablecoins et une couverture en actions à raison d’une pour une ; l’avis ne fournit toutefois ni date de lancement ni motif propre à chaque objection. La SEC précise séparément que l’inscription d’une plateforme prospective sur sa liste ne démontre pas qu’elle respecte les conditions de l’exemption."
+        ]
+      ]
+    },
+    "sourceSha256": "be9e990ae8a7dbd877dac618bdec45148816b797a76f75e394498c06a41016d1"
+  },
+  "kamino-opens-usdc-loans-backpack-tokenized-equities": {
+    "path": "/markets/kamino-opens-usdc-loans-backpack-tokenized-equities/",
+    "date": "2026-10-28",
+    "kind": "news",
+    "sources": [
+      [
+        "Kamino — Backpack Securities tokenized-equities integration",
+        "https://kamino.com/blog/kamino-integrates-backpack-securities-tokenized-equities"
+      ]
+    ],
+    "de": {
+      "title": "Kamino ermöglicht USDC-Kredite gegen vier tokenisierte Backpack-Aktien",
+      "description": "Kaminos isolierter Backpack Market akzeptiert vier Token von Backpack Securities als Sicherheiten für USDC-Kredite, mit eigenen Risikoparametern je Vermögenswert und Liquidationsrisiko.",
+      "sections": [
+        [
+          "Vier tokenisierte Positionen als Kreditsicherheiten",
+          "Kamino hat einen isolierten Backpack Market eröffnet, in dem zugelassene Nutzer vier Token von Backpack Securities als Sicherheiten hinterlegen und USDC leihen können. Unterstützt werden tokenisierte Positionen auf Micron (MU), SK Hynix (SKHY), SpaceX (SPCX) und SanDisk (SNDK) auf Solana. Kamino gibt die Token nicht aus, verwahrt sie nicht und löst sie nicht ein."
+        ],
+        [
+          "Getrennte Reserven und eigene Risikoparameter",
+          "Laut Kamino verfügt der Markt über eigene Parameter und Reserven, um direkte Auswirkungen von Liquiditätsengpässen oder uneinbringlichen Forderungen auf andere Kamino-Märkte zu begrenzen. Für jeden Sicherheitenwert legt der Marktmanager anhand der Liquidität und Orakelabdeckung eigene Beleihungs-, Liquidations- und Kreditobergrenzen fest. Ein- und Auszahlungen, Kreditaufnahme und Rückzahlung sind rund um die Uhr möglich; der kontinuierliche Zugang beseitigt jedoch weder Preis- noch Liquidationsrisiken."
+        ],
+        [
+          "Eins-zu-eins-Unterlegung bedeutet kein Brokerage-Äquivalent",
+          "Backpack Securities erklärt, jeden Token eins zu eins gegen eine zugrunde liegende Aktie auszugeben und zugelassenen Backpack-Kontoinhabern eine Einlösung nach Maßgabe seiner Bedingungen zu ermöglichen. Kamino warnt, dass dieser Schutz weder bei in das Kreditprotokoll eingezahlten Token noch bei Smart-Contract-Verlusten oder Liquidationen greift. Die vier Positionen erhalten damit eine Kreditfunktion, ohne dass das Risiko der Kreditaufnahme dem Halten von Aktien in einem herkömmlichen Brokerage-Konto entspricht."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Kamino permite préstamos en USDC con cuatro acciones tokenizadas de Backpack",
+      "description": "El mercado aislado Backpack de Kamino acepta cuatro tokens de Backpack Securities como garantía para préstamos en USDC, con parámetros de riesgo por activo y exposición a liquidaciones.",
+      "sections": [
+        [
+          "Cuatro posiciones tokenizadas como garantía",
+          "Kamino abrió un mercado Backpack aislado que permite a usuarios elegibles aportar cuatro tokens de Backpack Securities como garantía y pedir prestado USDC. Los activos admitidos son posiciones tokenizadas de Micron (MU), SK Hynix (SKHY), SpaceX (SPCX) y SanDisk (SNDK) en Solana. Kamino no emite, custodia ni reembolsa los tokens."
+        ],
+        [
+          "Reservas separadas y parámetros de riesgo propios",
+          "Según Kamino, el mercado dispone de sus propios parámetros y reservas, lo que limita la transmisión directa de déficits de liquidez o deuda incobrable a sus otros mercados. Para cada garantía, el gestor establece umbrales propios de préstamo sobre valor, liquidación y límites de crédito en función de la liquidez y la cobertura de los oráculos. Los usuarios pueden depositar, pedir prestado, reembolsar y retirar las 24 horas, pero el acceso continuo no elimina el riesgo de precio ni de liquidación."
+        ],
+        [
+          "El respaldo uno a uno no equivale a una cuenta de valores",
+          "Backpack Securities afirma que cada token se emite uno a uno contra una acción subyacente y que los titulares elegibles de cuentas Backpack pueden reembolsarlo, sujeto a sus condiciones. Kamino advierte que esas protecciones no cubren los tokens depositados en el protocolo de préstamo, las pérdidas de contratos inteligentes ni la liquidación. Por tanto, el sistema añade utilidad crediticia a las cuatro posiciones sin equiparar el riesgo del préstamo al de mantener acciones en una cuenta de valores convencional."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Kamino ouvre des prêts en USDC garantis par quatre actions tokenisées de Backpack",
+      "description": "Le marché Backpack isolé de Kamino accepte quatre tokens de Backpack Securities comme garanties pour emprunter des USDC, avec des paramètres de risque propres à chaque actif et une exposition à la liquidation.",
+      "sections": [
+        [
+          "Quatre positions tokenisées comme garanties",
+          "Kamino a ouvert un marché Backpack isolé permettant aux utilisateurs éligibles de déposer quatre tokens de Backpack Securities en garantie et d’emprunter des USDC. Les actifs pris en charge sont des positions tokenisées sur Micron (MU), SK Hynix (SKHY), SpaceX (SPCX) et SanDisk (SNDK) sur Solana. Kamino n’émet pas les tokens, ne les conserve pas et n’en assure pas le remboursement."
+        ],
+        [
+          "Des réserves séparées et des paramètres de risque distincts",
+          "Selon Kamino, le marché dispose de ses propres paramètres et réserves, ce qui limite la propagation directe aux autres marchés des déficits de liquidité ou des créances irrécouvrables. Pour chaque garantie, le gestionnaire fixe des seuils distincts de ratio prêt-valeur, de liquidation et de plafond d’emprunt en fonction de la liquidité et de la couverture des oracles. Les utilisateurs peuvent déposer, emprunter, rembourser et retirer à toute heure, mais cet accès continu ne supprime ni le risque de prix ni celui de liquidation."
+        ],
+        [
+          "La couverture à raison d’une pour une n’équivaut pas à un compte-titres",
+          "Backpack Securities affirme que chaque token est émis à raison d’une unité pour une action sous-jacente et que les titulaires éligibles d’un compte Backpack peuvent demander son remboursement, sous réserve de ses conditions. Kamino avertit que ces protections ne couvrent ni les tokens déposés dans le protocole de prêt, ni les pertes liées aux contrats intelligents, ni la liquidation. Le dispositif ajoute donc une fonction de crédit aux quatre positions sans rendre le risque d’emprunt équivalent à la détention d’actions sur un compte-titres classique."
+        ]
+      ]
+    },
+    "sourceSha256": "f1cd570c5a4eafa11ce6a93cd21229cdfebc4f2565a1f28782b10bd83bda49b4"
   }
 }
