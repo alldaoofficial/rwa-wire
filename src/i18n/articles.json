@@ -4200,5 +4200,145 @@
       ]
     },
     "sourceSha256": "53fe8e92ab2cd8bd7e7521022490ad8ffed3a231ec04fe50b9120380328c08f0"
+  },
+  "ondo-asks-sec-to-adapt-transfer-agent-rules-for-onchain-securities": {
+    "path": "/news/ondo-asks-sec-to-adapt-transfer-agent-rules-for-onchain-securities/",
+    "date": "2026-11-03",
+    "kind": "news",
+    "sources": [
+      [
+        "Ondo Finance — SEC transfer-agent rules comment letter",
+        "https://www.sec.gov/comments/S7-2026-30/s7202630-1119059-3983287.pdf"
+      ],
+      [
+        "U.S. Securities and Exchange Commission — Transfer Agent Rules proposal",
+        "https://www.sec.gov/rules-regulations/2026/09/s7-2026-30"
+      ]
+    ],
+    "de": {
+      "title": "Ondo fordert angepasste SEC-Transfer-Agent-Regeln für Onchain-Wertpapiere",
+      "description": "Ondo forderte die SEC auf, direkte und intermediär geführte Verwahrwege zu erhalten, Aufzeichnungen auf öffentlichen Blockchains anzuerkennen und wiederholte Prüfungen routinemäßiger Transfers tokenisierter Wertpapiere zu verringern.",
+      "sections": [
+        [
+          "Stellungnahme zur geplanten Reform der Transfer-Agent-Regeln",
+          "Ondo Finance reichte am 3. November eine Stellungnahme zur geplanten Überarbeitung der SEC-Regeln für Transfer Agents ein. Das Unternehmen unterstützt die Modernisierung, fordert die Behörde jedoch auf, getrennte Aufzeichnungen für Emittenten, Intermediäre und verknüpfte Wertpapiere beizubehalten, bevollmächtigte Vertreter von Anlegern anzuerkennen und berechenbare elektronische Verbindungen zu den Transfer Agents der Emittenten bereitzustellen."
+        ],
+        [
+          "Rechtlich wirksame Änderungen ohne Kontrolle des Netzwerkkonsenses",
+          "Ondo argumentiert außerdem, dass ein Transfer Agent rechtlich wirksame Änderungen an Aufzeichnungen kontrollieren kann, ohne den Konsens einer öffentlichen Blockchain zu kontrollieren. Empfohlen werden geschützte Offchain-Identitätsdaten für routinemäßige nachgelagerte Aktivitäten, dokumentierte rechtliche Prüfungen auf Programmebene, solange wesentliche Tatsachen unverändert bleiben, sowie eine Eskalation auf Transaktionsebene, wenn sich Tatsachen oder Risiken ändern."
+        ],
+        [
+          "Forderung ändert weder Recht noch SEC-Regel",
+          "Der SEC-Vorschlag würde Regeln und Formulare für Transfer Agents ändern, zwei Regeln hinzufügen und eine bestehende Regel aufheben. Ondos Schreiben ist Interessenvertretung im Rahmen dieses Regelsetzungsverfahrens. Es ändert das geltende Recht nicht und belegt nicht, dass die SEC den geforderten Rahmen annehmen wird."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Ondo pide adaptar las reglas de agentes de transferencia a los valores onchain",
+      "description": "Ondo instó a la SEC a mantener las vías de tenencia directa e intermediada, reconocer los registros en cadenas de bloques públicas y reducir revisiones repetidas para transferencias rutinarias de valores tokenizados.",
+      "sections": [
+        [
+          "Comentario sobre la reforma propuesta de los agentes de transferencia",
+          "Ondo Finance presentó el 3 de noviembre una carta de comentarios sobre la revisión propuesta por la SEC de las reglas de agentes de transferencia. La empresa apoya la modernización, pero pide al organismo que conserve registros diferenciados para emisores, intermediarios y valores vinculados, reconozca a agentes autorizados que representen a los inversores y proporcione conexiones electrónicas previsibles con los agentes de transferencia de los emisores."
+        ],
+        [
+          "Cambios jurídicamente efectivos sin controlar el consenso de la red",
+          "Ondo también sostiene que un agente de transferencia puede controlar cambios jurídicamente efectivos en los registros sin controlar el consenso de una cadena de bloques pública. Recomienda registros de identidad offchain protegidos para la actividad rutinaria posterior, revisiones jurídicas documentadas a nivel de programa cuando los hechos sustanciales no cambien y un análisis a nivel de transacción cuando cambien los hechos o los riesgos."
+        ],
+        [
+          "La petición no modifica la ley ni las reglas de la SEC",
+          "La propuesta de la SEC modificaría las reglas y formularios de agentes de transferencia, añadiría dos reglas y derogaría una regla existente. La carta de Ondo es una posición de incidencia presentada durante ese proceso normativo. No modifica la legislación vigente ni demuestra que la SEC vaya a adoptar el marco solicitado."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Ondo demande d’adapter les règles des agents de transfert aux titres onchain",
+      "description": "Ondo a demandé à la SEC de préserver les modes de détention directe et intermédiée, de reconnaître les registres sur blockchain publique et de réduire les examens répétés des transferts courants de titres tokenisés.",
+      "sections": [
+        [
+          "Une réponse à la réforme proposée des agents de transfert",
+          "Ondo Finance a soumis le 3 novembre une lettre de commentaires sur la refonte proposée par la SEC des règles applicables aux agents de transfert. L’entreprise soutient la modernisation, mais demande à l’autorité de préserver des registres distincts pour les émetteurs, les intermédiaires et les titres liés, de reconnaître les mandataires autorisés des investisseurs et d’assurer des connexions électroniques prévisibles avec les agents de transfert des émetteurs."
+        ],
+        [
+          "Des modifications juridiquement effectives sans contrôler le consensus",
+          "Ondo affirme également qu’un agent de transfert peut contrôler les modifications juridiquement effectives des registres sans contrôler le consensus d’une blockchain publique. L’entreprise recommande des données d’identité offchain protégées pour les activités courantes en aval, des examens juridiques documentés au niveau du programme lorsque les faits importants restent inchangés, ainsi qu’une remontée au niveau de la transaction lorsque les faits ou les risques évoluent."
+        ],
+        [
+          "La demande ne modifie ni le droit ni les règles de la SEC",
+          "La proposition de la SEC modifierait les règles et formulaires applicables aux agents de transfert, ajouterait deux règles et en abrogerait une. La lettre d’Ondo constitue une prise de position dans le cadre de cette procédure réglementaire. Elle ne modifie pas le droit en vigueur et ne prouve pas que la SEC adoptera le cadre demandé."
+        ]
+      ]
+    },
+    "sourceSha256": "f046a27ffbffed9affa561f71a52416312dab2fa8d643705fc437b4412efd971"
+  },
+  "digital-chamber-urges-sec-to-keep-transfer-agent-rules-blockchain-neutral": {
+    "path": "/news/digital-chamber-urges-sec-to-keep-transfer-agent-rules-blockchain-neutral/",
+    "date": "2026-11-03",
+    "kind": "news",
+    "sources": [
+      [
+        "Digital Chamber — SEC transfer-agent rules comment letter",
+        "https://www.sec.gov/comments/S7-2026-30/s7202630-1118519-3982586.pdf"
+      ],
+      [
+        "U.S. Securities and Exchange Commission — Transfer Agent Rules proposal",
+        "https://www.sec.gov/rules-regulations/2026/09/s7-2026-30"
+      ]
+    ],
+    "de": {
+      "title": "Digital Chamber fordert blockchainneutrale SEC-Regeln für Transfer Agents",
+      "description": "Die Digital Chamber forderte die SEC auf, Distributed Ledgers als offizielle Eigentumsaufzeichnungen anzuerkennen und flexible Transfer-Agent-Strukturen für tokenisierte Wertpapiere zu erhalten.",
+      "sections": [
+        [
+          "Distributed Ledger als offizielle Hauptdatei der Wertpapierinhaber",
+          "Die Digital Chamber reichte am 3. November eine Stellungnahme zur geplanten Überarbeitung der SEC-Regeln für Transfer Agents ein. Sie unterstützt die elektronische Modernisierung, fordert die Behörde jedoch auf, ausdrücklich klarzustellen, dass ein Distributed Ledger die offizielle Hauptdatei der Wertpapierinhaber vollständig oder teilweise bilden kann, ohne dass zwingend ein Offchain-Duplikat geführt werden muss."
+        ],
+        [
+          "Flexible Agentenstrukturen und funktionsbezogene Registrierung",
+          "Die Gruppe empfiehlt außerdem, für eine einzelne Wertpapieremission Strukturen mit einem leitenden Transfer Agent, Unter-Transfer-Agents oder gleichberechtigten Transfer Agents zuzulassen. Dazu gehören Modelle, die Verantwortlichkeiten zwischen herkömmlichen und tokenisierten Positionen oder über mehrere Blockchains verteilen. Eine Registrierung sollte sich nach der tatsächlich ausgeübten regulierten Funktion richten; Softwareentwickler, Node-Betreiber oder Tokenisierungsanbieter sollten nicht allein deshalb als Transfer Agents gelten, weil sie Technologie bereitstellen."
+        ],
+        [
+          "Offenes Regelsetzungsverfahren ohne verabschiedete Regel",
+          "Das Schreiben wendet sich gesondert gegen die vorgeschlagene Gatekeeper-Pflicht nach Section 5, fordert elektronische Kontaktalternativen und unterstützt die direkte Prüfung verlässlicher Onchain-Aufzeichnungen. Dies sind politische Forderungen in einem offenen Regelsetzungsverfahren. Die SEC hat sie weder angenommen noch eine endgültige Regel erlassen."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Digital Chamber pide reglas de agentes de transferencia neutrales a la blockchain",
+      "description": "Digital Chamber pidió a la SEC que reconozca los registros distribuidos como registros oficiales de propiedad y mantenga estructuras flexibles de agentes de transferencia para valores tokenizados.",
+      "sections": [
+        [
+          "El registro distribuido como archivo maestro oficial de titulares",
+          "Digital Chamber presentó el 3 de noviembre un comentario sobre la revisión propuesta por la SEC de las reglas de agentes de transferencia. Apoya la modernización electrónica, pero pide al organismo que declare expresamente que un registro distribuido puede constituir la totalidad o parte del archivo maestro oficial de titulares de valores, sin exigir un duplicado offchain."
+        ],
+        [
+          "Estructuras flexibles y registro basado en funciones",
+          "El grupo también recomienda permitir estructuras con un agente de transferencia principal, subagentes o agentes de igual rango para una misma emisión de valores. Esto incluye modelos que repartan responsabilidades entre posiciones convencionales y tokenizadas o entre varias cadenas de bloques. Sostiene que la obligación de registro debe depender de la función regulada realizada, en lugar de considerar agentes de transferencia a desarrolladores de software, operadores de nodos o proveedores de tokenización únicamente por aportar tecnología."
+        ],
+        [
+          "Un proceso normativo abierto sin regla definitiva",
+          "La carta se opone por separado al deber de control propuesto en la Section 5, solicita alternativas electrónicas de contacto y respalda el examen directo de registros onchain fiables. Son peticiones de política pública en un proceso normativo abierto. La SEC no las ha adoptado ni ha emitido una regla definitiva."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Digital Chamber demande des règles neutres vis-à-vis des blockchains",
+      "description": "Digital Chamber a demandé à la SEC de reconnaître les registres distribués comme registres officiels de propriété et de préserver des structures flexibles d’agents de transfert pour les titres tokenisés.",
+      "sections": [
+        [
+          "Le registre distribué comme fichier maître officiel des détenteurs",
+          "Digital Chamber a soumis le 3 novembre un commentaire sur la refonte proposée par la SEC des règles relatives aux agents de transfert. L’organisation soutient la modernisation électronique, mais demande à l’autorité d’indiquer explicitement qu’un registre distribué peut constituer tout ou partie du fichier maître officiel des détenteurs de titres, sans imposer de copie offchain."
+        ],
+        [
+          "Des structures flexibles et une inscription fondée sur les fonctions",
+          "Le groupe recommande aussi d’autoriser, pour une même émission, des structures comprenant un agent de transfert principal, des sous-agents ou des agents de même rang. Ces dispositifs pourraient répartir les responsabilités entre positions conventionnelles et tokenisées ou entre plusieurs blockchains. Selon lui, l’obligation d’inscription doit dépendre de la fonction réglementée exercée, au lieu de traiter les développeurs de logiciels, les opérateurs de nœuds ou les prestataires de tokenisation comme des agents de transfert au seul motif qu’ils fournissent une technologie."
+        ],
+        [
+          "Une procédure ouverte sans règle définitive",
+          "La lettre s’oppose séparément à l’obligation de contrôle proposée au titre de la Section 5, demande des moyens de contact électroniques et soutient l’examen direct de registres onchain fiables. Il s’agit de demandes de politique publique formulées dans une procédure réglementaire ouverte. La SEC ne les a pas adoptées et n’a publié aucune règle définitive."
+        ]
+      ]
+    },
+    "sourceSha256": "7ca05e079953ad269a5893580fc4d0642a2c5029ea75bdc70d99264febcd734f"
   }
 }
