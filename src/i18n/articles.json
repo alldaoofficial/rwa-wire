@@ -4530,5 +4530,121 @@
       ]
     },
     "sourceSha256": "a9c3a0e87a552b4bb1650ab8bbce4a09ada4154d334cfea3da87567271ccef63"
+  },
+  "ondo-tops-rwa-xyz-distributed-platform-ranking-november-2026": {
+    "path": "/news/ondo-tops-rwa-xyz-distributed-platform-ranking-november-2026/",
+    "date": "2026-11-05",
+    "kind": "news",
+    "sources": [
+      [
+        "RWA.xyz — Tokenization Platforms",
+        "https://app.rwa-xyz.com/platforms"
+      ],
+      [
+        "Securities.io — Ondo leads RWA.xyz distributed tokenization ranking",
+        "https://www.securities.io/ondo-leads-rwa-xyz-distributed-tokenization-ranking-at-4-07-billion/"
+      ]
+    ],
+    "de": {
+      "title": "Ondo übernimmt Platz eins im RWA.xyz-Ranking verteilter Tokenisierungsplattformen",
+      "description": "RWA.xyz führte Ondo am 5. November unter 203 verteilten Tokenisierungsplattformen auf Platz eins, mit 4,07 Mrd. US-Dollar an Vermögenswerten ohne Stablecoins in 484 Assets.",
+      "sections": [
+        [
+          "Ondo führt die Momentaufnahme vom 5. November an",
+          "RWA.xyz führte Ondo in seiner Momentaufnahme vom 5. November auf Platz eins unter 203 verteilten Tokenisierungsplattformen. Die Tabelle wies für Ondo 4.066.170.187 US-Dollar an Real-World-Asset-Wert ohne Stablecoins aus, verteilt auf 484 Assets und 568.129 Inhaber. Securitize lag mit 3.969.035.764 US-Dollar, 50 Assets und 1.493 Inhabern auf Platz zwei."
+        ],
+        [
+          "Abgrenzung des Rankings und zeitliche Einschränkung",
+          "Der Vergleich erfasst Plattformen, die Blockchain als Vertriebsschicht nutzen, sodass Anleger Vermögenswerte über Wallets oder Verwahrer zeichnen, halten und verwalten können. Die getrennte Kategorie der repräsentierten Plattformen von RWA.xyz, bei der Blockchain zur Registerführung ohne Onchain-Vertrieb an Anleger eingesetzt wird, ist nicht enthalten. Ondos Gesamtwert umfasst mehrere Anlageklassen, darunter Treasury-Produkte und tokenisierte Aktien; die Gesamtführung bedeutet daher nicht Platz eins in jeder einzelnen Kategorie. Die Zahlen sind eine datierte Marktaufnahme und können sich mit Vermögenswerten, Zeichnungen und Rücknahmen verändern."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Ondo alcanza el primer puesto del ranking de plataformas de tokenización distribuida de RWA.xyz",
+      "description": "RWA.xyz situó a Ondo en primer lugar entre 203 plataformas de tokenización distribuida el 5 de noviembre, con 4.070 millones de dólares en activos no estables repartidos entre 484 activos.",
+      "sections": [
+        [
+          "Ondo lidera la instantánea del 5 de noviembre",
+          "RWA.xyz situó a Ondo en primer lugar entre 203 plataformas de tokenización distribuida en su instantánea del 5 de noviembre. La tabla registró 4.066.170.187 dólares de valor en activos del mundo real de Ondo, excluidas las stablecoins, distribuidos entre 484 activos y 568.129 titulares. Securitize ocupó el segundo puesto con 3.969.035.764 dólares, 50 activos y 1.493 titulares."
+        ],
+        [
+          "Alcance del ranking y límite temporal",
+          "La comparación abarca plataformas que utilizan blockchain como capa de distribución, permitiendo a los inversores suscribir, mantener y gestionar activos mediante monederos o custodios. No incluye la categoría separada de plataformas representadas de RWA.xyz, donde blockchain se usa para llevar registros sin distribución onchain a inversores. El total de Ondo comprende varias clases de activos, incluidos productos del Tesoro y acciones tokenizadas, por lo que el liderazgo general no debe interpretarse como el primer puesto en cada categoría individual. Las cifras son una instantánea fechada del mercado y pueden variar con el valor de los activos, las suscripciones y los reembolsos."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Ondo prend la tête du classement RWA.xyz des plateformes de tokenisation distribuée",
+      "description": "RWA.xyz a classé Ondo au premier rang de 203 plateformes de tokenisation distribuée le 5 novembre, avec 4,07 milliards de dollars d’actifs hors stablecoins répartis sur 484 actifs.",
+      "sections": [
+        [
+          "Ondo en tête de l’instantané du 5 novembre",
+          "RWA.xyz a classé Ondo au premier rang de 203 plateformes de tokenisation distribuée dans son instantané du 5 novembre. Le tableau recensait 4 066 170 187 dollars de valeur d’actifs du monde réel d’Ondo, hors stablecoins, répartis sur 484 actifs et 568 129 détenteurs. Securitize arrivait en deuxième position avec 3 969 035 764 dollars, 50 actifs et 1 493 détenteurs."
+        ],
+        [
+          "Périmètre du classement et limite temporelle",
+          "La comparaison porte sur les plateformes qui utilisent la blockchain comme couche de distribution, permettant aux investisseurs de souscrire, détenir et gérer des actifs par l’intermédiaire de portefeuilles ou de dépositaires. Elle n’inclut pas la catégorie distincte des plateformes représentées de RWA.xyz, où la blockchain sert à la tenue des registres sans distribution onchain aux investisseurs. Le total d’Ondo couvre plusieurs classes d’actifs, notamment des produits du Trésor et des actions tokenisées ; sa première place globale ne signifie donc pas qu’il arrive en tête de chaque catégorie. Ces chiffres constituent un instantané daté du marché et peuvent évoluer avec la valeur des actifs, les souscriptions et les rachats."
+        ]
+      ]
+    },
+    "sourceSha256": "9bca69509760a21b0da9ae39f203f7b66d36a525b02edacc2be69ac91c3af258"
+  },
+  "amundi-tokenizes-stoxx-europe-600-fund-share-class-ethereum": {
+    "path": "/news/amundi-tokenizes-stoxx-europe-600-fund-share-class-ethereum/",
+    "date": "2026-11-05",
+    "kind": "news",
+    "sources": [
+      [
+        "Amundi — Tokenisation moves into index investing",
+        "https://about.amundi.com/article/amundi-extends-tokenisation-index-investing"
+      ],
+      [
+        "Markets Media — Amundi unveils tokenised access to a flagship index fund",
+        "https://www.marketsmedia.com/amundi-unveils-tokenised-access-to-a-flagship-index-fund/"
+      ]
+    ],
+    "de": {
+      "title": "Amundi tokenisiert eine Anteilsklasse des STOXX-Europe-600-Fonds auf Ethereum",
+      "description": "Amundi hat gemeinsam mit CACEIS eine auf Ethereum ausgegebene Anteilsklasse seines Core-STOXX-Europe-600-Fonds eingeführt und erweitert damit sein Tokenisierungsprogramm von Cash-Management-Produkten auf Aktienindexanlagen.",
+      "sections": [
+        [
+          "Tokenisierte Anteilsklasse für einen europäischen Aktienindexfonds",
+          "Amundi führte am 5. November eine tokenisierte Anteilsklasse seines Core-STOXX-Europe-600-Fonds ein und weitete damit sein Digital-Asset-Programm von Cash-Management-Produkten auf europäische Aktienindexanlagen aus. Die neue Anteilsklasse wurde auf der öffentlichen Ethereum-Blockchain ausgegeben und gemeinsam mit CACEIS entwickelt, das die Technologie und Infrastruktur für die Tokenisierung der Fondsanteile bereitstellt."
+        ],
+        [
+          "Zusätzlicher Vertriebsweg statt Ersatz des bestehenden Fonds",
+          "Der zugrunde liegende Fonds bleibt Teil des bestehenden Betriebsmodells von Amundi und weiterhin über traditionelle Vertriebskanäle verfügbar. Die tokenisierte Anteilsklasse ergänzt daher eine blockchainbasierte Darstellung und einen zusätzlichen Vertriebsweg, anstatt den herkömmlichen Fonds zu ersetzen. Amundi bezeichnet die Einführung als Teil einer schrittweisen Strategie und beabsichtigt, weitere tokenisierte Fonds für institutionelle Kunden und digitale Plattformen zu entwickeln. Dieses breitere Angebot bleibt ein Ziel und ist noch keine abgeschlossene Produkteinführung."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Amundi tokeniza en Ethereum una clase de participaciones del fondo STOXX Europe 600",
+      "description": "Amundi lanzó con CACEIS una clase de participaciones de su fondo Core STOXX Europe 600 emitida en Ethereum, ampliando su programa de tokenización desde productos de gestión de efectivo hacia la inversión en índices bursátiles.",
+      "sections": [
+        [
+          "Una clase tokenizada para un fondo de renta variable europea",
+          "Amundi lanzó el 5 de noviembre una clase de participaciones tokenizada de su fondo Core STOXX Europe 600, ampliando su programa de activos digitales desde productos de gestión de efectivo hacia la inversión en índices bursátiles europeos. La nueva clase se emitió en la blockchain pública de Ethereum y se desarrolló con CACEIS, que aporta la tecnología y la infraestructura para tokenizar las participaciones del fondo."
+        ],
+        [
+          "Una vía adicional, no la sustitución del fondo convencional",
+          "El fondo subyacente sigue formando parte del modelo operativo existente de Amundi y continúa disponible mediante canales de distribución tradicionales. Por tanto, la clase tokenizada añade una representación basada en blockchain y una vía de distribución adicional, en lugar de sustituir al fondo convencional. Amundi presenta el lanzamiento como parte de una estrategia gradual y afirma que pretende desarrollar más fondos tokenizados para clientes institucionales y plataformas digitales. Esa gama más amplia sigue siendo una aspiración, no un despliegue de productos ya completado."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Amundi tokenise sur Ethereum une part du fonds STOXX Europe 600",
+      "description": "Amundi a lancé avec CACEIS une part de son fonds Core STOXX Europe 600 émise sur Ethereum, étendant son programme de tokenisation des produits de gestion de trésorerie à l’investissement indiciel en actions.",
+      "sections": [
+        [
+          "Une part tokenisée pour un fonds indiciel d’actions européennes",
+          "Amundi a lancé le 5 novembre une part tokenisée de son fonds Core STOXX Europe 600, étendant son programme d’actifs numériques des produits de gestion de trésorerie à l’investissement indiciel en actions européennes. La nouvelle part a été émise sur la blockchain publique Ethereum et développée avec CACEIS, qui fournit la technologie et l’infrastructure nécessaires à la tokenisation des parts du fonds."
+        ],
+        [
+          "Une voie supplémentaire, sans remplacer le fonds traditionnel",
+          "Le fonds sous-jacent reste intégré au modèle opérationnel existant d’Amundi et demeure accessible par les canaux de distribution traditionnels. La part tokenisée ajoute donc une représentation fondée sur la blockchain et une voie de distribution supplémentaire, au lieu de remplacer le fonds conventionnel. Amundi présente ce lancement comme une étape d’une stratégie progressive et indique vouloir développer davantage de fonds tokenisés pour les clients institutionnels et les plateformes numériques. Cette gamme élargie reste une ambition, et non un déploiement de produits achevé."
+        ]
+      ]
+    },
+    "sourceSha256": "d0310e2f3e1979fd59cedcdb1994c6f6e327c6a5dd4b39eb1349abbf25dcb4c0"
   }
 }
