@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-05T00:22:20Z",
+    "reason": "The discovery resolves to a dynamic Yahoo Finance quote/news index for SGOV-USD, not a dated publisher report or a new RWA event. No launch, approval, financing or material rollout is evidenced."
   }
 }
