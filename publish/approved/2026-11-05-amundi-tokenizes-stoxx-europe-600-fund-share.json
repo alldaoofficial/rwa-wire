@@ -1,0 +1,31 @@
+{
+  "id": "2026-11-05-amundi-tokenizes-stoxx-europe-600-fund-share",
+  "title": "Amundi Tokenizes STOXX Europe 600 Fund Share Class on Ethereum",
+  "category": "FUND-LAUNCH",
+  "why_it_matters": "The launch moves a large asset manager's tokenized-fund work from cash-like products into broad European equity exposure while retaining the fund's existing operating model and traditional distribution route.",
+  "article_url": "https://therwawire.com/news/amundi-tokenizes-stoxx-europe-600-fund-share-class-ethereum/",
+  "image_url": "https://therwawire.com/images/news/amundi-tokenizes-stoxx-europe-600-fund-share-class-ethereum.svg",
+  "caption": "RWA WIRE // FUND-LAUNCH\n\nAmundi Tokenizes STOXX Europe 600 Fund Share Class on Ethereum\n\nAmundi launched an Ethereum-issued share class of its Core STOXX Europe 600 fund with CACEIS, extending its tokenization program from cash-management products into equity index investing.\n\nFull analysis →\nhttps://therwawire.com/news/amundi-tokenizes-stoxx-europe-600-fund-share-class-ethereum/",
+  "distribution": {
+    "telegram": "RWA WIRE // FUND-LAUNCH\n\nAmundi Tokenizes STOXX Europe 600 Fund Share Class on Ethereum\n\nAmundi launched an Ethereum-issued share class of its Core STOXX Europe 600 fund with CACEIS, extending its tokenization program from cash-management products into equity index investing.\n\nFull analysis →\nhttps://therwawire.com/news/amundi-tokenizes-stoxx-europe-600-fund-share-class-ethereum/",
+    "x": "Amundi Tokenizes STOXX Europe 600 Fund Share Class on Ethereum\n\nAmundi launched an Ethereum-issued share class of its Core STOXX Europe 600 fund with CACEIS, extending its tokenization program from cash-management products into equity index investing.\n\nhttps://therwawire.com/news/amundi-tokenizes-stoxx-europe-600-fund-share-class-ethereum/",
+    "breaking": "RWA WIRE // FUND-LAUNCH\n\nAmundi Tokenizes STOXX Europe 600 Fund Share Class on Ethereum\n\nhttps://therwawire.com/news/amundi-tokenizes-stoxx-europe-600-fund-share-class-ethereum/",
+    "summary": "Amundi launched an Ethereum-issued share class of its Core STOXX Europe 600 fund with CACEIS, extending its tokenization program from cash-management products into equity index investing."
+  },
+  "sources": [
+    {
+      "name": "Amundi — Tokenisation moves into index investing",
+      "url": "https://about.amundi.com/article/amundi-extends-tokenisation-index-investing"
+    },
+    {
+      "name": "Markets Media — Amundi unveils tokenised access to a flagship index fund",
+      "url": "https://www.marketsmedia.com/amundi-unveils-tokenised-access-to-a-flagship-index-fund/"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-11-05-amundi-tokenized-fund-launch-expands-offerings-on-ethereum.json",
+    "contentSha256": "1c6f9eaf8c1b244fcf33c9cb69661dd00bed0822e986309885eb92360351b216",
+    "approvedAt": "2026-11-05T19:28:30.006393+00:00"
+  }
+}
