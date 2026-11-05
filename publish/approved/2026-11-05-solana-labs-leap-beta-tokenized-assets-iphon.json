@@ -1,0 +1,31 @@
+{
+  "id": "2026-11-05-solana-labs-leap-beta-tokenized-assets-iphon",
+  "title": "Solana Labs' Leap Opens Beta App for Tokenized Assets on iPhone",
+  "category": "MARKETS",
+  "why_it_matters": "Leap packages several tokenized asset classes into a consumer mobile interface, testing whether Solana can move tokenized markets beyond specialist trading terminals.",
+  "article_url": "https://therwawire.com/news/solana-labs-leap-beta-tokenized-assets-iphone/",
+  "image_url": "https://therwawire.com/images/news/solana-labs-leap-beta-tokenized-assets-iphone.svg",
+  "caption": "RWA WIRE // MARKETS\n\nSolana Labs' Leap Opens Beta App for Tokenized Assets on iPhone\n\nSolana Labs company Leap opened an early-access iPhone beta for trading tokenized stocks, ETFs, metals, currencies and crypto on Solana.\n\nFull analysis →\nhttps://therwawire.com/news/solana-labs-leap-beta-tokenized-assets-iphone/",
+  "distribution": {
+    "telegram": "RWA WIRE // MARKETS\n\nSolana Labs' Leap Opens Beta App for Tokenized Assets on iPhone\n\nSolana Labs company Leap opened an early-access iPhone beta for trading tokenized stocks, ETFs, metals, currencies and crypto on Solana.\n\nFull analysis →\nhttps://therwawire.com/news/solana-labs-leap-beta-tokenized-assets-iphone/",
+    "x": "Solana Labs' Leap Opens Beta App for Tokenized Assets on iPhone\n\nSolana Labs company Leap opened an early-access iPhone beta for trading tokenized stocks, ETFs, metals, currencies and crypto on Solana.\n\nhttps://therwawire.com/news/solana-labs-leap-beta-tokenized-assets-iphone/",
+    "breaking": "RWA WIRE // MARKETS\n\nSolana Labs' Leap Opens Beta App for Tokenized Assets on iPhone\n\nhttps://therwawire.com/news/solana-labs-leap-beta-tokenized-assets-iphone/",
+    "summary": "Solana Labs company Leap opened an early-access iPhone beta for trading tokenized stocks, ETFs, metals, currencies and crypto on Solana."
+  },
+  "sources": [
+    {
+      "name": "Decrypt — Solana Labs' Leap launches mobile app",
+      "url": "https://decrypt.co/382609/solana-labs-leap-launches-mobile-app-tokenized-stocks-crypto"
+    },
+    {
+      "name": "TheStreet — Solana Labs' new app Leap",
+      "url": "https://www.thestreet.com/crypto/innovation/solana-labs-new-app-leap-lets-you-trade-stocks-and-crypto"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-11-05-solana-labs-leap-launches-mobile-app-for-trading-tokenized-stocks-and-crypto.json",
+    "contentSha256": "265aadb028d6507041f3d789051744d2c7e7e2014e059efecacf2864968e39bf",
+    "approvedAt": "2026-11-05T18:16:56.481342+00:00"
+  }
+}
