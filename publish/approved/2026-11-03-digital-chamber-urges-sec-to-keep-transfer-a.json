@@ -1,0 +1,31 @@
+{
+  "id": "2026-11-03-digital-chamber-urges-sec-to-keep-transfer-a",
+  "title": "Digital Chamber Urges SEC to Keep Transfer-Agent Rules Blockchain-Neutral",
+  "category": "REGULATION",
+  "why_it_matters": "The final rule could determine whether public blockchains and specialized providers can support regulated ownership records without duplicative databases or blanket intermediary liability.",
+  "article_url": "https://therwawire.com/news/digital-chamber-urges-sec-to-keep-transfer-agent-rules-blockchain-neutral/",
+  "image_url": "https://therwawire.com/images/news/digital-chamber-urges-sec-to-keep-transfer-agent-rules-blockchain-neutral.svg",
+  "caption": "RWA WIRE // REGULATION\n\nDigital Chamber Urges SEC to Keep Transfer-Agent Rules Blockchain-Neutral\n\nThe Digital Chamber asked the SEC to recognize distributed ledgers as official ownership records and preserve flexible transfer-agent structures for tokenized securities.\n\nFull analysis →\nhttps://therwawire.com/news/digital-chamber-urges-sec-to-keep-transfer-agent-rules-blockchain-neutral/",
+  "distribution": {
+    "telegram": "RWA WIRE // REGULATION\n\nDigital Chamber Urges SEC to Keep Transfer-Agent Rules Blockchain-Neutral\n\nThe Digital Chamber asked the SEC to recognize distributed ledgers as official ownership records and preserve flexible transfer-agent structures for tokenized securities.\n\nFull analysis →\nhttps://therwawire.com/news/digital-chamber-urges-sec-to-keep-transfer-agent-rules-blockchain-neutral/",
+    "x": "Digital Chamber Urges SEC to Keep Transfer-Agent Rules Blockchain-Neutral\n\nThe Digital Chamber asked the SEC to recognize distributed ledgers as official ownership records and preserve flexible transfer-agent structures for tokenized securities.\n\nhttps://therwawire.com/news/digital-chamber-urges-sec-to-keep-transfer-agent-rules-blockchain-neutral/",
+    "breaking": "RWA WIRE // REGULATION\n\nDigital Chamber Urges SEC to Keep Transfer-Agent Rules Blockchain-Neutral\n\nhttps://therwawire.com/news/digital-chamber-urges-sec-to-keep-transfer-agent-rules-blockchain-neutral/",
+    "summary": "The Digital Chamber asked the SEC to recognize distributed ledgers as official ownership records and preserve flexible transfer-agent structures for tokenized securities."
+  },
+  "sources": [
+    {
+      "name": "Digital Chamber — SEC transfer-agent rules comment letter",
+      "url": "https://www.sec.gov/comments/S7-2026-30/s7202630-1118519-3982586.pdf"
+    },
+    {
+      "name": "U.S. Securities and Exchange Commission — Transfer Agent Rules proposal",
+      "url": "https://www.sec.gov/rules-regulations/2026/09/s7-2026-30"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-11-05-digital-chamber-pushes-sec-for-regulatory-flexibility-in-tokenized-securities-an.json",
+    "contentSha256": "f03066f197ddc151c7228fb66b352d8e78e7ec03b3a869dbd2d93005d2f0febc",
+    "approvedAt": "2026-11-05T01:32:07.832772+00:00"
+  }
+}
