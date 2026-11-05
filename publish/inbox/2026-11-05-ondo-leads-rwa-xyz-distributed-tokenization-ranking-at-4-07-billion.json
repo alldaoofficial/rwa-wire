@@ -1,23 +1,32 @@
 {
-  "title": "Ondo Leads RWA.xyz Distributed Tokenization Ranking at $4.07 Billion",
-  "description": "Ondo Leads RWA.xyz Distributed Tokenization Ranking at $4.07 Billion",
-  "why_it_matters": "",
+  "title": "Ondo Moves to Top of RWA.xyz Distributed-Platform Ranking",
+  "slug": "ondo-tops-rwa-xyz-distributed-platform-ranking-november-2026",
+  "description": "RWA.xyz ranked Ondo first among 203 distributed tokenization platforms on November 5, with $4.07 billion of non-stablecoin asset value across 484 assets.",
+  "why_it_matters": "Ondo's overall platform lead combines Treasury products, tokenized stocks and other assets, showing how a multi-product issuer can outrank single-category platforms even without leading every underlying asset class.",
   "pubDate": "2026-11-05",
   "category": "news",
+  "reviewCategory": "market-data",
   "tags": [
-    "Tokenization",
-    "Institutions",
-    "News Watch"
+    "Ondo Finance",
+    "RWA.xyz",
+    "Tokenization Platforms",
+    "Market Data"
   ],
   "keyTakeaways": [
-    "Ondo Leads RWA.xyz Distributed Tokenization Ranking at $4.07 Billion",
-    ""
+    "RWA.xyz ranked Ondo first among 203 distributed tokenization platforms as of November 5, 2026.",
+    "The table recorded $4,066,170,187 of Ondo asset value excluding stablecoins across 484 assets.",
+    "RWA.xyz counted 568,129 holders for Ondo, while second-place Securitize had 1,493 holders.",
+    "The ranking covers platforms that use blockchain for investor distribution; it excludes the separate represented-asset platform category."
   ],
-  "body": "Ondo Leads RWA.xyz Distributed Tokenization Ranking at $4.07 Billion",
+  "body": "RWA.xyz ranked Ondo first among 203 distributed tokenization platforms in its November 5 snapshot. The table recorded $4,066,170,187 of Ondo real-world asset value excluding stablecoins, spread across 484 assets and 568,129 holders. Securitize ranked second with $3,969,035,764 across 50 assets and 1,493 holders.\n\nThe comparison covers platforms that use blockchain as a distribution layer, allowing investors to subscribe, hold and manage assets through wallets or custodians. It does not include RWA.xyz's separate represented-platform category, where blockchain is used for recordkeeping without onchain investor distribution. Ondo's total spans several asset classes, including Treasury products and tokenized stocks, so the overall lead should not be read as first place in every individual category. The figures are a dated market snapshot and can change with asset values, subscriptions and redemptions.",
   "sources": [
     {
-      "name": "Securities.io",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOUmhUM19zdlhlMk1fR292OEk0dkI3X3J1MlNFbU42ZTdDVmRQU2NJRUtoMEJwTGtUSGxGSllQOVFxMjM5SVJ5ZXk1OHBNZVdka2tTLVpnX3p5eTF6ak5IcmFiS3RzQkxJTExZYkxvY3Jsc0hjUXhsdlhVTk90MEhjSFlnNzVvS1ZHWkhLVjZ4czZIMFVQMm92S0R3?oc=5"
+      "name": "RWA.xyz — Tokenization Platforms",
+      "url": "https://app.rwa-xyz.com/platforms"
+    },
+    {
+      "name": "Securities.io — Ondo leads RWA.xyz distributed tokenization ranking",
+      "url": "https://www.securities.io/ondo-leads-rwa-xyz-distributed-tokenization-ranking-at-4-07-billion/"
     }
   ],
   "newsWatch": {
@@ -27,7 +36,62 @@
     "discoveredAt": "2026-11-05T15:37:18.138102+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-05T19:26:02Z",
+    "sources": [
+      {
+        "url": "https://app.rwa-xyz.com/platforms",
+        "publishedAt": "2026-11-05",
+        "checkedAt": "2026-11-05T19:26:02Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://www.securities.io/ondo-leads-rwa-xyz-distributed-tokenization-ranking-at-4-07-billion/",
+        "publishedAt": "2026-11-05",
+        "checkedAt": "2026-11-05T19:26:02Z",
+        "kind": "news",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "The RWA.xyz platform table is dated November 5, 2026.",
+        "sourceUrl": "https://app.rwa-xyz.com/platforms",
+        "anchor": "as of 11/05/2026"
+      },
+      {
+        "claim": "RWA.xyz ranked Ondo first among distributed tokenization platforms.",
+        "sourceUrl": "https://app.rwa-xyz.com/platforms",
+        "anchor": "1 | Ondo"
+      },
+      {
+        "claim": "The table recorded $4,066,170,187 of Ondo value excluding stablecoins.",
+        "sourceUrl": "https://app.rwa-xyz.com/platforms",
+        "anchor": "$4,066,170,187"
+      },
+      {
+        "claim": "RWA.xyz counted 484 Ondo assets and 568,129 holders.",
+        "sourceUrl": "https://app.rwa-xyz.com/platforms",
+        "anchor": "484 | $4,066,170,187 | 568,129"
+      },
+      {
+        "claim": "Securitize ranked second with $3,969,035,764 in the same table.",
+        "sourceUrl": "https://app.rwa-xyz.com/platforms",
+        "anchor": "Securitize | 50 | $3,969,035,764"
+      },
+      {
+        "claim": "Securities.io reported the first-place designation as a defined tokenization segment.",
+        "sourceUrl": "https://www.securities.io/ondo-leads-rwa-xyz-distributed-tokenization-ranking-at-4-07-billion/",
+        "anchor": "defined segment of tokenization"
+      }
+    ],
+    "contentSha256": "e025f4efd2a888c3059aa483a9a99587545677e6b0c0cb4e63e6cc74c2f7022f"
   }
 }
