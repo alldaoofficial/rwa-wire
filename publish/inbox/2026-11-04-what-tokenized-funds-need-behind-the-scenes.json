@@ -31,10 +31,10 @@
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "rejected",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-04T21:30:12Z",
-    "reason": "The Google News lead could not be resolved to a readable Commercial Appeal article, and no independent full-text report or identifiable primary announcement established a new RWA event."
+    "reviewedAt": "2026-11-05T06:12:29Z",
+    "reason": "The lead republishes a vendor-authored FluidRWA research and procurement article dated October 21, not a new November 4 RWA event. It contains no new launch, approval, financing or material rollout."
   }
 }
