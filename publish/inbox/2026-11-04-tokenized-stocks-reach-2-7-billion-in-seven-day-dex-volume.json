@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-04T21:30:12Z",
-    "reason": "TokenPost's full report states the seven-day DEX-volume figure and Aero share but cites no reproducible dataset or primary source. No second independent full-text report was found, so the metric cannot yet be verified."
+    "reviewedAt": "2026-11-05T04:53:22Z",
+    "reason": "Secondary reports repeat the $2.7 billion weekly DEX-volume figure, but the cited Token Terminal public pages do not expose the dated weekly snapshot or issuer breakdown in reproducible full text. The primary dataset therefore remains unverifiable."
   }
 }
