@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-05T04:53:22Z",
+    "reason": "The Google News discovery URL does not resolve to a readable publisher article, and Aptos's official newsroom shows no matching new dated announcement. Existing Aptos pages describe earlier infrastructure and integrations, so no current event can be verified from full-text evidence."
   }
 }
