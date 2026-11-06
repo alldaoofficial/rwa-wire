@@ -9,15 +9,15 @@
     "CBMikwJBVV95cUxNYjVVMXVNcVA4NXM1VzVCZGlkTHFSZjJTUW1hNXUzUWJWcG1oR0NFUjVvSHppNEc4cTAyQmttSlVxS0tYTmN3MlNRcHNtNGRJRGptTkFUdG5hbUUtcTdWcjByOWc4Vk5QTVlNOTVtSmpJME41TF9JTU9CYUpOSm03N1BPdkh0V3h0NkdWT3VRY3RCYWU5cFg1R2NTVWZVUjlsZVdOZVpZdTBJZDlnazZ2NEE2QmpxeGJ6LTdUcWlpb0R2NmVDTWg2MmQxbExMRm9ZZ2JJMVFrZTdENXRSTjFOU2o5LTJSZDRvVmZBcmdRVFoyVlRjcEV0SVgweFEzb2ZSYVQzX2pYZ2dWbnNwbTU0X2JUcw",
     "CBMitgFBVV95cUxQb3BkanZCV2lLY2pmNXRjRmx2aHlEVDdqaEdzRm1sc0k0V2E1dktzdG93VDVKVk5zRkpTVzk2R0R4Nzc5aEFlczhPcGk0d1ItT2ZhYWZ3U2c2OUZkTFZTSEh2V1BSTUhYcUExcmlMalkzVkZYZy1rMS1lXzlBMkJSY1NKaFlHSU9LYXI5TmktSWNHMjBvWThpbmNsN0RzNE1KZTRBM0VMTWhsb2JXb3FoMkFmYW8wQQ"
   ],
-  "lastRun": "2026-11-06T08:01:27.869849+00:00",
+  "lastRun": "2026-11-06T16:01:44.391350+00:00",
   "lastDiagnostics": {
-    "rawItems": 97,
-    "uniqueItems": 71,
-    "qualified": 1,
+    "rawItems": 99,
+    "uniqueItems": 74,
+    "qualified": 0,
     "blocked": 2,
-    "untrusted": 28,
-    "lowSignal": 40
+    "untrusted": 36,
+    "lowSignal": 36
   },
-  "lastResult": "candidate",
+  "lastResult": "no-qualified-story",
   "lastCandidate": "publish/inbox/2026-11-06-bitcoin-and-ethereum-etfs-end-six-days-of-outflows-with-252-5m-haul.json"
 }
