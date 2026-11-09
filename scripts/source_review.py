@@ -104,7 +104,7 @@ def review_reasons(brief, now=None, check_digest=True):
             published = datetime.strptime(str(row.get("publishedAt")), "%Y-%m-%d").date()
         except ValueError:
             published = None
-        if not direct_source(url) or not date or not now - timedelta(days=7) <= date <= now + timedelta(minutes=10):
+        if not direct_source(url) or not date or not (now - timedelta(days=7)).date() <= date <= (now + timedelta(minutes=10)).date():
             reasons.append("invalid_source_evidence")
         if not published or published > now.date():
             reasons.append("source_date_required")
