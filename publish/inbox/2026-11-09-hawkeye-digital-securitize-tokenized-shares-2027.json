@@ -27,7 +27,8 @@
   "newsWatch": {
     "score": 9,
     "autoPublishEligible": false,
-    "contentStatus": "source-reviewed"
+    "contentStatus": "source-reviewed",
+    "pipelineRetest": "source-review-date-type-fix-2026-11-09"
   },
   "sourceReview": {
     "method": "source-enrichment-v1",
