@@ -1,0 +1,36 @@
+name: Recover reviewed RWA candidates
+
+on:
+  schedule:
+    - cron: "22,52 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: rwa-wire-reviewed-candidate-recovery
+  cancel-in-progress: false
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Find fully reviewed ungenerated brief
+        id: queue
+        run: |
+          BRIEF_PATH="$(python3 scripts/pending_reviewed_candidates.py)"
+          echo "brief_path=$BRIEF_PATH" >> "$GITHUB_OUTPUT"
+          if [ -n "$BRIEF_PATH" ]; then
+            echo "Found reviewed brief: $BRIEF_PATH" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "No fully reviewed brief awaiting generation." >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Dispatch candidate generation
+        if: steps.queue.outputs.brief_path != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRIEF_PATH: ${{ steps.queue.outputs.brief_path }}
+        run: gh workflow run candidate-generator.yml --ref main -f brief_path="$BRIEF_PATH"
