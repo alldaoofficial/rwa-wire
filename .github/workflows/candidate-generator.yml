@@ -41,6 +41,23 @@ jobs:
       - name: Check content before creating public files
         id: quality
         run: python3 scripts/news_quality.py "$BRIEF_PATH" --github-output
+      - name: Explain withheld publication
+        if: steps.quality.outputs.eligible != 'true'
+        env:
+          BRIEF_PATH: ${{ env.BRIEF_PATH }}
+        run: |
+          echo '## Publication withheld: source review or quality incomplete' >> "$GITHUB_STEP_SUMMARY"
+          echo "Brief: \`$BRIEF_PATH\`" >> "$GITHUB_STEP_SUMMARY"
+          python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json, os, sys
+          sys.path.insert(0, 'scripts')
+          from news_quality import quality_reasons
+          with open(os.environ['BRIEF_PATH'], encoding='utf-8') as handle:
+              brief = json.load(handle)
+          for reason in quality_reasons(brief):
+              print('- ' + reason)
+          print('No article was generated or published. A successful workflow run does not imply publication.')
+          PY
       - name: Generate article, visual and candidate
         if: steps.quality.outputs.eligible == 'true'
         run: python3 scripts/candidate_generator.py "$BRIEF_PATH"
