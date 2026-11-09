@@ -1,0 +1,70 @@
+{
+  "title": "Hawkeye Digital taps Securitize for issuer-backed tokenized shares on Ethereum",
+  "slug": "hawkeye-digital-securitize-tokenized-shares-2027",
+  "description": "Hawkeye Digital has announced an agreement with Securitize to tokenize its existing HWKE common stock on Ethereum. Eligible shareholders are expected to gain an optional tokenized holding route in 2027, while ordinary OTC trading continues.",
+  "why_it_matters": "This is an issuer-sponsored model for representing actual shares onchain rather than synthetic stock exposure. The proposed transfer-agent reconciliation and preserved voting and dividend rights are significant, but the program remains planned and restricted to eligible holders.",
+  "body": "Hawkeye Digital announced on November 6 that it has agreed with Securitize Transfer Agent to develop an optional program for tokenizing its common stock, initially on Ethereum. The announcement was furnished as an exhibit to Hawkeye's Form 8-K filed with the US Securities and Exchange Commission.\n\nUnder the proposed structure, eligible shareholders would hold the same HWKE common stock that trades on OTC Markets, not a synthetic instrument or a wrapped price-tracking token. Hawkeye says the tokenized shares would preserve existing shareholder rights, including voting and dividends. The tokenized holdings would be recorded onchain and reconciled with the company's official shareholder register.\n\nParticipating investors would first move their shares from brokerage custody into direct registration with the transfer agent. They would then complete identity-verification and anti-money-laundering checks before converting their holdings through Securitize. Conversion back to book-entry form is also contemplated, subject to applicable procedures.\n\nThe company expects tokenized HWKE shares to become available in 2027. The announcement does not establish that the service is already live or open to all investors. Traditional OTC trading in HWKE is expected to continue, and participation in tokenization would remain optional. The planned launch and operational features are forward-looking and subject to implementation and regulatory risks.",
+  "sources": [
+    {
+      "name": "Hawkeye Digital SEC Exhibit 99.1, November 6, 2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1750777/000168316826008384/hawkeye_ex9901.htm"
+    }
+  ],
+  "pubDate": "2026-11-09",
+  "category": "news",
+  "reviewCategory": "RWA",
+  "tags": [
+    "Tokenization",
+    "Equities",
+    "Ethereum",
+    "Securitize"
+  ],
+  "keyTakeaways": [
+    "Hawkeye and Securitize announced an issuer-backed plan to tokenize existing HWKE shares.",
+    "Tokenized holdings would preserve ordinary shareholder rights and reconcile with the official register.",
+    "The optional program is expected in 2027 and is not yet operational."
+  ],
+  "newsWatch": {
+    "score": 9,
+    "autoPublishEligible": false,
+    "contentStatus": "source-reviewed"
+  },
+  "sourceReview": {
+    "method": "source-enrichment-v1",
+    "status": "verified",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-09T15:16:27.780Z",
+    "sources": [
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1750777/000168316826008384/hawkeye_ex9901.htm",
+        "kind": "primary",
+        "access": "full-text",
+        "publishedAt": "2026-11-06",
+        "checkedAt": "2026-11-09T15:16:27.780Z"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Hawkeye and Securitize agreed to tokenize HWKE common stock initially on Ethereum.",
+        "anchor": "tokenize the Company’s common stock on Ethereum",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1750777/000168316826008384/hawkeye_ex9901.htm"
+      },
+      {
+        "claim": "The proposed tokenized shares preserve dividend and voting rights of ordinary shares.",
+        "anchor": "including dividends and voting",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1750777/000168316826008384/hawkeye_ex9901.htm"
+      },
+      {
+        "claim": "Eligible shareholders must complete identity and anti money laundering verification before tokenization.",
+        "anchor": "identity verification and anti-money-laundering checks",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1750777/000168316826008384/hawkeye_ex9901.htm"
+      },
+      {
+        "claim": "Hawkeye expects tokenized HWKE shares to become available in 2027.",
+        "anchor": "expected to become available in 2027",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1750777/000168316826008384/hawkeye_ex9901.htm"
+      }
+    ],
+    "contentSha256": "f7c618d511be26d62912baa826920941b85cfc75e041912c0d0c8779305fd69d"
+  }
+}
