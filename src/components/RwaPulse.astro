@@ -1,0 +1,53 @@
+---
+import { getCollection } from "astro:content";
+import { sitePath } from "../utils/paths";
+
+const entries = (await getCollection("articles", ({ data }) => !data.draft && data.type !== "EXPLAINER" && data.type !== "PROJECT"))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const latest = entries.slice(0, 3);
+const newest = latest[0]?.data.pubDate;
+const ageDays = newest ? Math.floor((Date.now() - newest.valueOf()) / 86400000) : null;
+const current = ageDays !== null && ageDays <= 2;
+const label = current ? "Latest verified coverage" : "Latest available coverage";
+const topics = [
+  { title: "Institutional adoption", desc: "Funds, banks and real-world deployment", href: "/topics/institutional-tokenization/" },
+  { title: "Tokenized securities", desc: "Equities, bonds and investment products", href: "/topics/tokenized-securities/" },
+  { title: "Market signals", desc: "Follow market context and data", href: "/#market" },
+];
+---
+<section id="pulse" class="border-b border-line bg-[radial-gradient(circle_at_92%_8%,rgba(46,212,122,.09),transparent_35%)]">
+  <div class="wire-container py-12 sm:py-16">
+    <div class="flex flex-wrap items-end justify-between gap-5 border-b border-line pb-6">
+      <div>
+        <p class="eyebrow text-wire">The RWA Wire // Daily intelligence</p>
+        <h2 class="mt-2 font-serif text-3xl font-medium text-ink sm:text-4xl">RWA Pulse</h2>
+        <p class="mt-3 max-w-2xl text-sm leading-6 text-ink-muted">A quick, source-led view of what changed in tokenized finance. No invented signals, no artificial urgency.</p>
+      </div>
+      <a href={sitePath("/news/")} class="text-xs font-semibold uppercase tracking-wider text-wire hover:text-ink">Explore all coverage →</a>
+    </div>
+    <div class="mt-6 flex flex-wrap items-center gap-3">
+      <span class="border border-line px-3 py-2 font-mono text-[10px] uppercase tracking-wider text-ink-muted">{label}</span>
+      {newest && <span class="text-xs text-ink-muted">Most recent article: <time datetime={newest.toISOString()}>{newest.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" })}</time></span>}
+      {!current && <span class="text-xs text-ink-muted">No new verified article in the past 48 hours. Older coverage is shown transparently.</span>}
+    </div>
+    <div class="mt-6 grid gap-px border border-line bg-line lg:grid-cols-3">
+      {latest.map((entry, index) => (
+        <a class="group bg-bg p-5 transition-colors hover:bg-surface" href={sitePath(`/${entry.data.category}/${entry.slug}/`)}>
+          <p class="font-mono text-[10px] text-wire">0{index + 1} // {entry.data.category.toUpperCase()}</p>
+          <h3 class="mt-3 font-serif text-xl leading-snug text-ink group-hover:text-wire">{entry.data.title}</h3>
+          <p class="mt-3 line-clamp-3 text-sm leading-6 text-ink-muted">{entry.data.description}</p>
+          <p class="mt-5 text-xs font-medium text-wire">Read verified coverage →</p>
+        </a>
+      ))}
+    </div>
+    <div class="mt-8 grid gap-3 md:grid-cols-3">
+      {topics.map((topic) => (
+        <a href={sitePath(topic.href)} class="group border border-line p-4 hover:border-wire">
+          <p class="text-sm font-semibold text-ink group-hover:text-wire">{topic.title} →</p>
+          <p class="mt-1 text-xs leading-5 text-ink-muted">{topic.desc}</p>
+        </a>
+      ))}
+    </div>
+    <p class="mt-5 text-xs leading-5 text-ink-muted">Pulse is a reading dashboard, not a real-time trading signal or investment recommendation. Dates refer to publication, not market-data refresh times.</p>
+  </div>
+</section>
