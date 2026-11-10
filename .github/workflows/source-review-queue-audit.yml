@@ -1,0 +1,55 @@
+name: Source review queue audit
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/source-review-queue-audit.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: rwa-wire-source-review-queue-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect unreviewed discovery queue
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: |
+          python3 - <<'PY'
+          import json
+          import pathlib
+          import sys
+          from datetime import datetime, timezone
+
+          sys.path.insert(0, 'scripts')
+          from source_review import queue
+
+          now = datetime.now(timezone.utc).isoformat()
+          pending = queue(limit=5)
+          print(f'Source-review queue audit at {now}: {len(pending)} actionable leads')
+          summary = pathlib.Path(__import__('os').environ['GITHUB_STEP_SUMMARY'])
+          with summary.open('a', encoding='utf-8') as out:
+              out.write('## RWA Wire source-review queue\n\n')
+              out.write(f'Audited at {now}.\n\n')
+              if not pending:
+                  out.write('No recent actionable leads.\n')
+              else:
+                  out.write(f'**{len(pending)} unreviewed leads** (up to five displayed).\n\n')
+                  for item in pending:
+                      out.write(f"- `{item['path']}` — {item['title']}\n")
+                  out.write('\n**Action required:** These leads require source reading and editorial verification by the connected research agent. This workflow does not fabricate source reviews or publish unverified material.\n')
+          if pending:
+              print('BLOCKED: Source-review agent has not yet verified these leads.')
+              for item in pending:
+                  print(item['path'])
+          PY
