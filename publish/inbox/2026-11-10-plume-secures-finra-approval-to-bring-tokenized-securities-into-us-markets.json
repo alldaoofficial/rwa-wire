@@ -29,5 +29,11 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedAt": "2026-11-10T19:12:35.098Z",
+    "reason": "Same November 10, 2026 Kimber Digital Securities FINRA membership and SEC broker-dealer registration event as existing earlier inbox lead publish/inbox/2026-11-10-plume-unit-registers-as-broker-dealer-for-tokenized-securities.json. Primary Plume press release confirms both headlines describe the same announcement."
   }
 }
