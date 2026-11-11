@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-11T13:16:46Z",
+    "reason": "Official OKX Nov 11 launch announcement was read and confirms Nov 23 planned launch, 24/7 eligible US access, 70+ assets and 59 ETFs. However, original source_review.py seal and news_quality.py cannot be executed: local GitHub checkout fails DNS resolution (Could not resolve host: github.com). Hold for six-hour retry; no unsealed verified status."
   }
 }
