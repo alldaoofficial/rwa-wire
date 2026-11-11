@@ -31,10 +31,10 @@
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "rejected",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-11T14:13:04Z",
-    "reason": "The Google News discovery URL could not be opened or resolved to the claimed November 11 Coinfomania full-text article. Publisher searches found older, repetitive Base tokenized-stock commentary, but no verifiable new November 11 event, primary announcement, or three distinct supported facts. Hold for at least six hours before retry; no article content or publication flags changed."
+    "reviewedAt": "2026-11-11T23:12:19.442Z",
+    "reason": "Full Coinfomania article dated 2026-11-11 at https://coinfomania.com/bases-insight-on-tokenized-stocks-a-step-forward-for-crypto/ is social-media commentary about a Base tweet and engagement (148 likes, 46 replies), not a separately verified product launch, filing, or institutional tokenization event. No independent primary announcement or three material event facts. Reject promotional/community discussion; no article generated."
   }
 }
