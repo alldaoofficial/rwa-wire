@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-11T02:13:03.515Z",
+    "reason": "Full Korea Herald interview/report published 2026-11-10 is accessible, but it is a single secondary publisher. No independently read Ondo primary transcript or second independent full-text report corroborating at least three interview-specific facts; source-enrichment requires primary or two independent reports. Retry after six hours."
   }
 }
