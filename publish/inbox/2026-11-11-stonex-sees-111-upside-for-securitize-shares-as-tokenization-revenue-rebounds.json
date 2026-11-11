@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-11T17:10:54Z",
+    "reason": "Six-hour retry hold: original Nov 11 The Block report could not be located and read in full; Google News RSS URL is unresolved. Oct 12 StoneX coverage is a separate earlier report. No primary StoneX research note or two independent full-text reports verified the 111% claim, date and three distinct facts."
   }
 }
