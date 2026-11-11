@@ -4778,5 +4778,83 @@
       ]
     },
     "sourceSha256": "37442dca3ee976a8a39a992d41f36b2b42ff32d7e6e7e385eca26f4514e1aa63"
+  },
+  "hawkeye-digital-securitize-tokenized-shares-2027": {
+    "path": "/news/hawkeye-digital-securitize-tokenized-shares-2027/",
+    "date": "2026-11-09",
+    "kind": "news",
+    "sources": [
+      [
+        "Hawkeye Digital SEC Exhibit 99.1, November 6, 2026",
+        "https://www.sec.gov/Archives/edgar/data/1750777/000168316826008384/hawkeye_ex9901.htm"
+      ]
+    ],
+    "de": {
+      "title": "Hawkeye Digital beauftragt Securitize mit emittentengestützten tokenisierten Aktien auf Ethereum",
+      "description": "Hawkeye Digital hat mit Securitize vereinbart, seine bestehenden HWKE-Stammaktien auf Ethereum zu tokenisieren. Berechtigte Aktionäre sollen 2027 optional eine tokenisierte Verwahrung nutzen können, während der reguläre OTC-Handel fortgeführt wird.",
+      "sections": [
+        [
+          "Emittentengestützter Plan für bestehende HWKE-Aktien",
+          "Hawkeye Digital gab am 6. November bekannt, mit Securitize Transfer Agent die Entwicklung eines optionalen Programms zur Tokenisierung seiner Stammaktien vereinbart zu haben, zunächst auf Ethereum. Die Ankündigung wurde als Anlage zu Hawkeyes bei der US-Börsenaufsicht SEC eingereichtem Form 8-K veröffentlicht."
+        ],
+        [
+          "Dieselben Aktien und Aktionärsrechte statt synthetischer Abbildung",
+          "Nach der geplanten Struktur würden berechtigte Aktionäre dieselben HWKE-Stammaktien halten, die an den OTC Markets gehandelt werden, und kein synthetisches Instrument oder einen verpackten Token, der lediglich den Kurs nachbildet. Laut Hawkeye sollen die tokenisierten Aktien bestehende Aktionärsrechte einschließlich Stimmrecht und Dividenden bewahren. Die Bestände würden onchain erfasst und mit dem offiziellen Aktionärsregister des Unternehmens abgeglichen."
+        ],
+        [
+          "Direktregistrierung und Identitätsprüfung vor der Umwandlung",
+          "Teilnehmende Anleger müssten ihre Aktien zunächst aus der Verwahrung bei einem Broker in die Direktregistrierung beim Transferagenten übertragen. Anschließend wären Identitäts- und Geldwäscheprüfungen erforderlich, bevor die Bestände über Securitize umgewandelt werden könnten. Auch die Rückumwandlung in eine buchmäßig geführte Form ist vorgesehen, vorbehaltlich der jeweils geltenden Verfahren."
+        ],
+        [
+          "Für 2027 erwartet, aber noch nicht in Betrieb",
+          "Das Unternehmen erwartet, dass tokenisierte HWKE-Aktien 2027 verfügbar werden. Die Ankündigung belegt weder, dass der Dienst bereits live ist, noch dass er allen Anlegern offenstehen wird. Der traditionelle OTC-Handel mit HWKE soll fortgesetzt werden, und die Teilnahme an der Tokenisierung bliebe freiwillig. Der geplante Start und die betrieblichen Funktionen sind zukunftsgerichtet und mit Umsetzungs- sowie regulatorischen Risiken verbunden."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Hawkeye Digital encarga a Securitize acciones tokenizadas respaldadas por el emisor en Ethereum",
+      "description": "Hawkeye Digital acordó con Securitize tokenizar sus acciones ordinarias HWKE existentes en Ethereum. Se espera que los accionistas elegibles puedan optar por una vía de tenencia tokenizada en 2027, mientras continúa la negociación ordinaria OTC.",
+      "sections": [
+        [
+          "Un plan respaldado por el emisor para las acciones HWKE existentes",
+          "Hawkeye Digital anunció el 6 de noviembre que acordó con Securitize Transfer Agent desarrollar un programa opcional para tokenizar sus acciones ordinarias, inicialmente en Ethereum. El anuncio se presentó como anexo al formulario 8-K de Hawkeye registrado ante la Comisión de Bolsa y Valores de Estados Unidos."
+        ],
+        [
+          "Las mismas acciones y derechos, no una exposición sintética",
+          "Según la estructura propuesta, los accionistas elegibles mantendrían las mismas acciones ordinarias HWKE que cotizan en OTC Markets, no un instrumento sintético ni un token envuelto que solo replique el precio. Hawkeye afirma que las acciones tokenizadas conservarían los derechos actuales de los accionistas, incluidos el voto y los dividendos. Las tenencias se registrarían onchain y se conciliarían con el registro oficial de accionistas de la empresa."
+        ],
+        [
+          "Registro directo y verificación de identidad antes de la conversión",
+          "Los inversores participantes tendrían que trasladar primero sus acciones desde la custodia de un bróker al registro directo con el agente de transferencias. Después completarían verificaciones de identidad y controles contra el blanqueo de capitales antes de convertir sus tenencias mediante Securitize. También se contempla la conversión de vuelta al formato de anotación en cuenta, sujeta a los procedimientos aplicables."
+        ],
+        [
+          "Previsto para 2027, pero todavía no está operativo",
+          "La empresa espera que las acciones HWKE tokenizadas estén disponibles en 2027. El anuncio no demuestra que el servicio ya esté activo ni que vaya a estar abierto a todos los inversores. Se espera que continúe la negociación tradicional OTC de HWKE y la participación en la tokenización seguiría siendo opcional. El lanzamiento previsto y sus funciones operativas son declaraciones prospectivas y están sujetos a riesgos de implementación y regulatorios."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Hawkeye Digital choisit Securitize pour des actions tokenisées adossées à l’émetteur sur Ethereum",
+      "description": "Hawkeye Digital a conclu un accord avec Securitize pour tokeniser ses actions ordinaires HWKE existantes sur Ethereum. Les actionnaires admissibles devraient pouvoir opter pour une détention tokenisée en 2027, tandis que la négociation OTC ordinaire se poursuivra.",
+      "sections": [
+        [
+          "Un projet soutenu par l’émetteur pour les actions HWKE existantes",
+          "Hawkeye Digital a annoncé le 6 novembre avoir conclu un accord avec Securitize Transfer Agent afin de développer un programme facultatif de tokenisation de ses actions ordinaires, initialement sur Ethereum. L’annonce a été déposée en annexe du formulaire 8-K de Hawkeye auprès de la Securities and Exchange Commission des États-Unis."
+        ],
+        [
+          "Les mêmes actions et droits, et non une exposition synthétique",
+          "Selon la structure proposée, les actionnaires admissibles détiendraient les mêmes actions ordinaires HWKE que celles négociées sur OTC Markets, et non un instrument synthétique ou un token enveloppé suivant uniquement le cours. Hawkeye indique que les actions tokenisées préserveraient les droits existants des actionnaires, notamment le droit de vote et les dividendes. Les positions seraient enregistrées onchain et rapprochées du registre officiel des actionnaires de la société."
+        ],
+        [
+          "Inscription directe et vérification d’identité avant la conversion",
+          "Les investisseurs participants devraient d’abord transférer leurs actions de la conservation auprès d’un courtier vers une inscription directe auprès de l’agent de transfert. Ils devraient ensuite effectuer des contrôles d’identité et de lutte contre le blanchiment d’argent avant de convertir leurs positions par l’intermédiaire de Securitize. Une reconversion sous forme d’inscription en compte est également envisagée, sous réserve des procédures applicables."
+        ],
+        [
+          "Une disponibilité attendue en 2027, mais pas encore opérationnelle",
+          "La société prévoit que les actions HWKE tokenisées seront disponibles en 2027. L’annonce n’établit ni que le service est déjà actif, ni qu’il sera accessible à tous les investisseurs. La négociation traditionnelle OTC de HWKE devrait se poursuivre et la participation à la tokenisation resterait facultative. Le lancement prévu et les fonctionnalités opérationnelles sont prospectifs et soumis à des risques de mise en œuvre et de réglementation."
+        ]
+      ]
+    },
+    "sourceSha256": "3f43c10faa575cdf23280ffc89f3cfdc8d3d81cb177db40d635260509579ead0"
   }
 }
