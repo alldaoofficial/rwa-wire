@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-11T16:14:24.732Z",
+    "reason": "Same underlying OKXICE / OKX and ICE tokenized-securities venue announcement, with planned November 23, 2026 launch, as existing inbox item publish/inbox/2026-11-11-okxice-sets-nov-23-launch-for-tokenized-securities-venue-under-sec-innovation-ex.json (discovered 2026-11-11T13:07:15Z). No separate event; do not generate another article."
   }
 }
