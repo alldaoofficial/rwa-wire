@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-11T02:13:01.573Z",
+    "reason": "Source resolves to a KuCoin-hosted user social commentary post (0xCaptain, 2026-11-10), not original issuer documentation or independent reporting. Assertions about 13 new Securitize products and backing cannot be verified from this community post; promotional/opinion discovery excluded."
   }
 }
