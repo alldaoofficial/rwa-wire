@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-11T15:15:43.298Z",
+    "reason": "Duplicate of existing inbox event: publish/inbox/2026-11-11-okxice-sets-nov-23-launch-for-tokenized-securities-venue-under-sec-innovation-ex.json (same OKXICE planned November 23 tokenized securities venue launch). New headline adds Direxion ETF roster detail but does not establish a separate event. No article generated; autoPublishEligible remains false."
   }
 }
