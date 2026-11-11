@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-11T22:19:02.383Z",
+    "reason": "Duplicate event coverage: Cointelegraph's 2026-11-11 report https://cointelegraph.com/news/okxice-tokenized-stocks-blue-chips-push-back reiterates OKXICE's planned 2026-11-23 tokenized-stock venue launch and previously reported issuer objections (67 reported by CoinDesk on 2026-11-06). Existing inbox lead publish/inbox/2026-11-11-okxice-sets-nov-23-launch-for-tokenized-securities-venue-under-sec-innovation-ex.json covers the same launch. No separate new announcement established; do not create a second article."
   }
 }
