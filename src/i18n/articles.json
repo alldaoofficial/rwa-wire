@@ -4856,5 +4856,117 @@
       ]
     },
     "sourceSha256": "3f43c10faa575cdf23280ffc89f3cfdc8d3d81cb177db40d635260509579ead0"
+  },
+  "kaia-yield8-first-mobility-loan-mvl-musubi": {
+    "path": "/news/kaia-yield8-first-mobility-loan-mvl-musubi/",
+    "date": "2026-11-05",
+    "kind": "news",
+    "sources": [
+      [
+        "Kaia — Yield8 expands Asian private-credit portfolio with ONiON Mobility",
+        "https://blog.kaia.io/yield8-expands-asian-private-credit-portfolio-with-onion-mobility/"
+      ]
+    ],
+    "de": {
+      "title": "Kaia Yield8 fügt über MVLs Musubi erstmals einen Mobilitätskredit hinzu",
+      "description": "Kaia Investment Partners hat seinem tokenisierten Private-Credit-Fonds Yield8 einen Kredit an den kambodschanischen Elektrofahrzeugbetreiber ONiON Mobility hinzugefügt – die fünfte Position des Fonds und sein erstes Mobilitätsengagement.",
+      "sections": [
+        [
+          "Fünfte Position und erstes Mobilitätsengagement",
+          "Kaia Investment Partners hat seinem tokenisierten Private-Credit-Fonds Yield8 einen Kredit an ONiON Mobility, einen Betreiber von Elektrofahrzeugen in Kambodscha, hinzugefügt. Die Position ist die fünfte Anlage des Fonds und sein erstes Engagement im Mobilitätssektor. MVLs Mobilitätsfinanzierungsplattform Musubi vermittelte die Transaktion."
+        ],
+        [
+          "Leasingeinnahmen, Offenlegung und begrenzte Reserve",
+          "Die Einnahmen aus dem Leasing der Elektrofahrzeuge von ONiON Mobility sollen zur Rückzahlung des Kredits dienen. Yield8-Anleger erhalten Berichte, die mit einem Pool von Leasingrechnungen verknüpft sind; diese Rechnungen dienen jedoch nur der Offenlegung und nicht als Kreditsicherheit. Eine USDC-Zahlungsreserve ist in einem Smart Contract hinterlegt, um Ausschüttungen zu unterstützen. Die Reserve deckt nur den eingezahlten Betrag ab und garantiert weder die Rückzahlung des Kapitals noch Anlagerenditen. Kaia Investment Partners könnte weitere von Musubi vermittelte Kredite prüfen, doch zusätzliche Zuteilungen sind lediglich mögliche künftige und keine zugesagten Portfoliopositionen."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Kaia Yield8 añade su primer préstamo de movilidad mediante Musubi de MVL",
+      "description": "Kaia Investment Partners añadió a su fondo tokenizado de crédito privado Yield8 un préstamo al operador camboyano de vehículos eléctricos ONiON Mobility, la quinta posición del fondo y su primera exposición a movilidad.",
+      "sections": [
+        [
+          "Quinta posición y primera exposición a movilidad",
+          "Kaia Investment Partners añadió a su fondo tokenizado de crédito privado Yield8 un préstamo a ONiON Mobility, operador de vehículos eléctricos en Camboya. La posición es la quinta inversión del fondo y su primera exposición al sector de la movilidad. La plataforma de financiación de movilidad Musubi, de MVL, facilitó la operación."
+        ],
+        [
+          "Ingresos por arrendamiento, divulgación y reserva limitada",
+          "Se prevé que los ingresos por el arrendamiento de vehículos eléctricos de ONiON Mobility sirvan para devolver el préstamo. Los inversores de Yield8 reciben informes vinculados a un conjunto de facturas de arrendamiento, pero esas facturas se facilitan con fines informativos y no constituyen garantía del préstamo. Una reserva de pagos en USDC está bloqueada en un contrato inteligente para respaldar las distribuciones. La reserva solo cubre el importe depositado y no garantiza la devolución del principal ni los rendimientos de la inversión. Kaia Investment Partners podría evaluar otros préstamos originados por Musubi, pero cualquier asignación adicional es prospectiva y no una posición ya comprometida en la cartera."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Kaia Yield8 ajoute son premier prêt lié à la mobilité via Musubi de MVL",
+      "description": "Kaia Investment Partners a ajouté à son fonds tokenisé de crédit privé Yield8 un prêt à l’opérateur cambodgien de véhicules électriques ONiON Mobility, soit la cinquième position du fonds et sa première exposition à la mobilité.",
+      "sections": [
+        [
+          "Cinquième position et première exposition à la mobilité",
+          "Kaia Investment Partners a ajouté à son fonds tokenisé de crédit privé Yield8 un prêt à ONiON Mobility, un opérateur de véhicules électriques au Cambodge. Il s’agit du cinquième investissement du fonds et de sa première exposition au secteur de la mobilité. Musubi, la plateforme de financement de la mobilité de MVL, a facilité l’opération."
+        ],
+        [
+          "Revenus locatifs, information et réserve limitée",
+          "Les revenus tirés de la location des véhicules électriques d’ONiON Mobility doivent servir à rembourser le prêt. Les investisseurs de Yield8 reçoivent des rapports liés à un ensemble de factures de location, mais celles-ci sont fournies à des fins d’information et ne constituent pas une garantie du prêt. Une réserve de paiement en USDC est immobilisée dans un contrat intelligent afin de soutenir les distributions. Cette réserve ne couvre que le montant déposé et ne garantit ni le remboursement du principal ni les rendements. Kaia Investment Partners pourrait examiner d’autres prêts originés par Musubi, mais toute allocation supplémentaire reste une possibilité future et non une position de portefeuille engagée."
+        ]
+      ]
+    },
+    "sourceSha256": "b559cd11e697ede54f7216c78af5919d4f283d255881461c6ce722ced63b0d7b"
+  },
+  "solana-labs-leap-beta-tokenized-assets-iphone": {
+    "path": "/news/solana-labs-leap-beta-tokenized-assets-iphone/",
+    "date": "2026-11-05",
+    "kind": "news",
+    "sources": [
+      [
+        "Decrypt — Solana Labs' Leap launches mobile app",
+        "https://decrypt.co/382609/solana-labs-leap-launches-mobile-app-tokenized-stocks-crypto"
+      ],
+      [
+        "TheStreet — Solana Labs' new app Leap",
+        "https://www.thestreet.com/crypto/innovation/solana-labs-new-app-leap-lets-you-trade-stocks-and-crypto"
+      ]
+    ],
+    "de": {
+      "title": "Solana Labs’ Leap öffnet iPhone-Beta für tokenisierte Vermögenswerte",
+      "description": "Das zu Solana Labs gehörende Unternehmen Leap hat eine Early-Access-Beta für das iPhone eröffnet, über die tokenisierte Aktien, ETFs, Metalle, Währungen und Kryptowährungen auf Solana gehandelt werden können.",
+      "sections": [
+        [
+          "Early-Access-Beta mit regionalen Beschränkungen",
+          "Leap, ein Unternehmen unter dem Dach von Solana Labs, öffnete am 5. November die Early-Access-Beta seiner mobilen Handels-App. Die iPhone-App wird über Apples öffentliches TestFlight-Programm bereitgestellt und ist im Vereinigten Königreich sowie in anderen ausgeschlossenen Regionen nicht verfügbar. Eine Android-Version ist geplant, wurde aber noch nicht veröffentlicht."
+        ],
+        [
+          "Mehrere Anlageklassen in einer Solana-Oberfläche",
+          "Die App bündelt tokenisierte Aktien, börsengehandelte Fonds, Metalle, Währungen und Kryptowährungen in einer Oberfläche auf Solana. Sie verbindet außerdem Preischarts mit kuratierten Nachrichten und erfasst Gewinne und Verluste über die Kontoaktivität hinweg. Transaktionen werden als Onchain-Swaps ausgeführt. Leap erhebt zum Start keine Plattformgebühr; Netzwerk- und Routingkosten fallen dennoch an. Das Unternehmen könnte später Gebühren einführen, doch dies ist ein Plan und keine derzeitige Belastung. Beta-Status und geografische Grenzen machen das Angebot zu einer frühen Produktveröffentlichung, nicht zu einer uneingeschränkt allgemein verfügbaren App."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Leap de Solana Labs abre una beta para activos tokenizados en iPhone",
+      "description": "Leap, empresa de Solana Labs, abrió una beta de acceso anticipado para iPhone que permite negociar acciones tokenizadas, ETF, metales, divisas y criptoactivos en Solana.",
+      "sections": [
+        [
+          "Beta de acceso anticipado con restricciones regionales",
+          "Leap, una empresa de Solana Labs, abrió el 5 de noviembre una beta de acceso anticipado de su aplicación móvil de negociación. La aplicación para iPhone se distribuye a través del programa público TestFlight de Apple y no está disponible en el Reino Unido ni en otras regiones restringidas. Está prevista una versión para Android, pero todavía no se ha lanzado."
+        ],
+        [
+          "Varias clases de activos en una interfaz sobre Solana",
+          "La aplicación reúne acciones tokenizadas, fondos cotizados, metales, divisas y criptoactivos en una sola interfaz sobre Solana. También combina gráficos de precios con noticias seleccionadas y hace un seguimiento de las ganancias y pérdidas de la actividad de la cuenta. Las operaciones se ejecutan como intercambios onchain. Leap no cobra comisión de plataforma en el lanzamiento, aunque los usuarios siguen asumiendo los costes de red y enrutamiento. La empresa podría introducir comisiones más adelante, pero eso es un plan y no un cargo vigente. El estado beta y los límites geográficos hacen que se trate de un lanzamiento temprano, no de una disponibilidad general sin restricciones."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Leap de Solana Labs ouvre une bêta pour les actifs tokenisés sur iPhone",
+      "description": "Leap, une société de Solana Labs, a ouvert sur iPhone une bêta en accès anticipé permettant de négocier sur Solana des actions tokenisées, des ETF, des métaux, des devises et des cryptoactifs.",
+      "sections": [
+        [
+          "Une bêta en accès anticipé soumise à des restrictions régionales",
+          "Leap, une société appartenant à Solana Labs, a ouvert le 5 novembre la bêta en accès anticipé de son application mobile de négociation. L’application iPhone est distribuée par l’intermédiaire du programme public TestFlight d’Apple et n’est pas disponible au Royaume-Uni ni dans d’autres régions soumises à des restrictions. Une version Android est prévue, mais n’a pas encore été lancée."
+        ],
+        [
+          "Plusieurs classes d’actifs dans une interface sur Solana",
+          "L’application réunit des actions tokenisées, des fonds négociés en bourse, des métaux, des devises et des cryptoactifs dans une même interface sur Solana. Elle associe également des graphiques de prix à des actualités sélectionnées et suit les gains et pertes liés à l’activité du compte. Les transactions sont exécutées sous forme d’échanges onchain. Leap ne facture aucun frais de plateforme au lancement, mais les utilisateurs supportent toujours les coûts de réseau et de routage. La société pourrait introduire des frais ultérieurement, mais il s’agit d’un projet et non d’un prélèvement actuel. Le statut de bêta et les limites géographiques en font une version précoce du produit, et non une offre généralement accessible sans restriction."
+        ]
+      ]
+    },
+    "sourceSha256": "b371a5ea6b0bf89624eac6bebb5321b290034cf32cb9e41d3a135e717e41343c"
   }
 }
