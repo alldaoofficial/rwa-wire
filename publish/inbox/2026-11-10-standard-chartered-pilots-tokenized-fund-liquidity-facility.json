@@ -29,5 +29,11 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedAt": "2026-11-11T00:13:40Z",
+    "reason": "Official Standard Chartered press release dated 2026-11-10 confirms a completed pilot with Ant International of a redemption liquidity facility for tokenised money-market-fund investments, enabling liquidity before the underlying redemption settlement cycle. Primary full text: https://www.sc.com/en/press-release/standard-chartered-pilots-redemption-liquidity-facility-for-ant-internationals-investment-in-tokenised-money-market-funds/ . Evidence is available, but source_review.py seal and news_quality.py cannot be executed because local Git checkout fails DNS resolution of github.com; hold pending executable seal, without modifying unsealed article fields."
   }
 }
