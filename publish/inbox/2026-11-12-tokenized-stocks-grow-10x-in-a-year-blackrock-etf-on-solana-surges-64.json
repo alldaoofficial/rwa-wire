@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-12T10:19:22.176Z",
-    "reason": "Read full AMBCrypto report dated 2026-11-11, but original Token Terminal and rwa.xyz data for 10x stock growth and SHVon 64.39% change were not independently validated. CryptoNews mirror syndicates the same report, not a second independent source. The headline also risks conflating a tokenized ETF representation with BlackRock-issued Solana tokens. Retry no sooner than six hours."
+    "reviewedAt": "2026-11-12T23:20:14Z",
+    "reason": "Read full AMBCrypto article dated 2026-11-11 (https://ambcrypto.com/spacex-on-chain-blackrock-on-solana-ondo-builds-the-tails-tokenizations-breakout-year/) and its KuCoin syndicated copy dated 2026-11-12. Both are the same reporting, not independent corroboration. Article attributes tenfold tokenized-stock growth ($485M to $4.82B) to Token Terminal and SHVon 64.39% 30-day increase to rwa.xyz; the underlying dated primary snapshots were not recovered, and live rwa.xyz metrics cannot independently establish those historical numbers. Headline risks implying BlackRock directly issued the Solana representation. No seal or article permitted; retry no earlier than 2026-11-13T05:20:14Z."
   }
 }
