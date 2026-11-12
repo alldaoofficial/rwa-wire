@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-12T04:16:54Z",
+    "reason": "Barron's full original article could not be independently read; only a summarized result was accessible. The 10 November stock rally and $5bn tokenized-asset figure overlap existing Securitize Q3 coverage. Recheck event-level duplicates and full primary market/issuer evidence after six hours; no verified seal."
   }
 }
