@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-12T18:19:13Z",
+    "reason": "TokenPost full-text report dated November 11 attributes a 62% after-hours tokenized-stock volume statistic to an X post, but the underlying post, measured week, calculation and amplification by Uniswap could not be verified against an accessible original primary record. Uniswap's November 10 blog is a separate policy/venue commentary, not corroboration of the claimed X amplification. Three independently verified event-specific facts and exact primary anchors are unavailable. Retry no sooner than six hours."
   }
 }
