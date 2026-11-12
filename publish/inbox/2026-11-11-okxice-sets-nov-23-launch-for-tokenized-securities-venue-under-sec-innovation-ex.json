@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-11T21:15:00Z",
-    "reason": "Six-hour retry hold: full official OKX announcement dated 2026-11-11 was read at https://www.okx.com/learn/okxice-tsv-launch and confirms planned Nov 23 start, 70+ assets including 59 Direxion ETFs, eligible US users and non-SEC-approved temporary exemption. However, required source_review.py seal and news_quality.py cannot be run against a current repository snapshot because local git ls-remote fails DNS resolution (Could not resolve host: github.com). Do not mark verified without original executable checks; retry after six hours."
+    "reviewedAt": "2026-11-12T05:10:13Z",
+    "reason": "Full official OKX release dated 2026-11-11 was re-read at https://www.okx.com/learn/okxice-tsv-launch: planned November 23 launch, 70+ proposed assets including 59 Direxion ETFs, Uniswap v4 AMM on X Layer, eligible US users only, and venue explicitly not SEC-approved. These are announcement claims, not evidence of a completed launch or regulatory approval. The mandatory original source_review.py seal and news_quality.py cannot execute on a current checkout because local git fetch still fails DNS resolution for github.com. Retry after six hours; do not mark verified without a tested seal."
   }
 }
