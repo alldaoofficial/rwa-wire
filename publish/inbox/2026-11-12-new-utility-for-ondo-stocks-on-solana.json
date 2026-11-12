@@ -28,5 +28,12 @@
     "relatedCoverageTitles": [],
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-12T15:19:51.818Z",
+    "reason": "Ondo primary article URL could not be opened in full text; search returned older Ondo collateral articles but not the November 12 Spout announcement. Three new event-specific facts and exact source anchors cannot be verified. Retry no sooner than six hours."
   }
 }
