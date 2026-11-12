@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-12T13:18:06.955Z",
+    "reason": "Unable to verify the reported $157.37m BUIDL-on-Aptos and $191.11m aggregate figures against a dated, fully readable primary dataset or two independent full-text reports; Google News RSS is not a direct source."
   }
 }
