@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-11T17:10:54Z",
-    "reason": "Six-hour retry hold: original Nov 11 The Block report could not be located and read in full; Google News RSS URL is unresolved. Oct 12 StoneX coverage is a separate earlier report. No primary StoneX research note or two independent full-text reports verified the 111% claim, date and three distinct facts."
+    "reviewedAt": "2026-11-12T00:12:19Z",
+    "reason": "Six-hour retry hold. Read full The Block report dated 2026-11-11 (https://www.theblock.co/news/markets/2026-11-11-stonex-sees-111-upside-for-securitize-shares-as-tokenization-revenue-rebounds-437910), full TronWeekly coverage dated 2026-11-11 (https://www.tronweekly.com/stonex-maintains-18-securitize-target-as/), and Securitize's primary Q3 release dated 2026-11-09 (https://investors.securitize.io/news/news-details/2026/Securitize-Reports-Third-Quarter-2026-Results/default.aspx). Securitize confirms Q3 $18.6m revenue and $5bn average tokenized assets; The Block reports StoneX $18 target and 2026 $72.4m forecast. StoneX's original analyst note is unavailable, and independence of TronWeekly's target reporting from The Block is not established. No verified seal: local git ls-remote to github.com fails DNS resolution, preventing required original script execution on a current checkout. Retry no earlier than six hours; keep article and flags untouched."
   }
 }
