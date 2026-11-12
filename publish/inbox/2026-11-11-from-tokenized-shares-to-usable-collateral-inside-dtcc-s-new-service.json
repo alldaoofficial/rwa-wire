@@ -31,10 +31,11 @@
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "duplicate",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-12T01:12:23Z",
-    "reason": "Feature article dated 2026-11-11 analyzes DTCC tokenization service launched 2026-10-28; no independently established new event on 2026-11-11. Do not repackage earlier launch as new news. Recheck event-level duplication after six hours."
+    "reviewedAt": "2026-11-12T07:14:46Z",
+    "reason": "Event-level duplicate: November 11 feature revisits DTCC Tokenization Service launched October 28, 2026, with no independently verified new November 11 event. RWA Wire already published the launch in distribution package 2026-10-28-dtcc-launches-tokenization-service-on-canton (commit 93c287bdb57f67858ffc8f55c1022dbedafa014b). Original October 28 launch also documented by CoinDesk; do not repackage analysis as breaking news.",
+    "duplicateOf": "2026-10-28-dtcc-launches-tokenization-service-on-canton"
   }
 }
