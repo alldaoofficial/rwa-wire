@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-12T10:19:22.176Z",
-    "reason": "Fireblocks full original commentary dated 2026-11-11 was read, but its central Standard Chartered Hong Kong tokenized-deposit launch occurred the previous week. Existing-event duplication against published RWA Wire coverage has not been conclusively excluded; do not repackage older launch as new news. Retry no sooner than six hours."
+    "reviewedAt": "2026-11-12T17:15:08.802Z",
+    "reason": "Rechecked full Fireblocks original commentary dated November 11, 2026. It describes Standard Chartered's tokenized-deposit launch as occurring the previous week, not on November 11 or 12. Fireblocks' 2027 network integration is exploratory. Duplicate-event screening against existing published RWA Wire articles and distribution receipts remains incomplete; cannot certify a new, non-duplicate November 12 event. Retry no sooner than six hours."
   }
 }
