@@ -33,7 +33,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-12T15:19:51.818Z",
-    "reason": "Ondo primary article URL could not be opened in full text; search returned older Ondo collateral articles but not the November 12 Spout announcement. Three new event-specific facts and exact source anchors cannot be verified. Retry no sooner than six hours."
+    "reviewedAt": "2026-11-12T22:15:00Z",
+    "reason": "Full Ondo Finance original announcement dated 2026-11-12 (https://ondo.finance/blog/ondo-stocks-as-collateral-on-spout) and Ondo's full PRNewswire release were accessed and confirm planned Spout collateral support on Solana, up-to-50% USDC borrowing, and covered-call-funded lender returns. The separate Ondo/Spout scanner lead is already marked duplicate. However required scripts/source_review.py seal and scripts/news_quality.py cannot be run against a current repository checkout: local git fails with 'Could not resolve host: github.com'. No verified seal may be claimed. Retry no earlier than 2026-11-13T04:15:00Z."
   }
 }
