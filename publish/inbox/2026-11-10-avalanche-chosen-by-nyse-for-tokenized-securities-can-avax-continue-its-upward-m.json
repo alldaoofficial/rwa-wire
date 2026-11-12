@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-12T01:12:23Z",
-    "reason": "Ava Labs primary release dated 2026-11-09 confirms NYSE-affiliated planned ATS will use Avalanche as clearing firm's core ledger, subject to regulatory approval. Full-text primary evidence found, but mandatory source_review.py seal and news_quality.py execution blocked: local Git checkout failed DNS resolution of github.com. Do not mark verified without seal; retry after six hours."
+    "reviewedAt": "2026-11-12T07:14:59Z",
+    "reason": "Full-text Ava Labs primary release dated November 9 confirms Avalanche will provide core ledger technology to the clearing firm for a planned NYSE-affiliated tokenized-securities ATS; regulatory approval is still pending, no launch date confirmed. Independent CoinDesk November 9 reporting distinguishes the customized Avalanche chain from public Avalanche. However this run could not execute mandatory source_review.py seal and news_quality.py against an up-to-date local repository snapshot; therefore no valid content digest or verified quality gate can be claimed. Retry no sooner than six hours after reviewedAt."
   }
 }
