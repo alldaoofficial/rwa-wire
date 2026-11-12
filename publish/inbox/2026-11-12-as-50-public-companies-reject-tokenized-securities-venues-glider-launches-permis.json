@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-12T14:15:00.725Z",
+    "reason": "Promotional company-launch press release syndicated through GlobeNewswire and Manila Times; no independent reporting or verified original full-text evidence for a publishable news event. The headline's 50-company objection count refers to earlier OKXICE developments, not independently verified new Glider reporting."
   }
 }
