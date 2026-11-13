@@ -5,7 +5,7 @@ on:
     paths:
       - "publish/inbox/*.json"
   schedule:
-    - cron: "25 * * * *"
+    - cron: "10,25,40,55 * * * *"
   workflow_dispatch:
     inputs:
       brief_path:
