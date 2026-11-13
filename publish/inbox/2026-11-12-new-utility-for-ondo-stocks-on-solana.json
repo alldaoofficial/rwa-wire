@@ -1,8 +1,8 @@
 {
-  "title": "New Utility for Ondo Stocks on Solana",
-  "description": "",
-  "body": "",
-  "why_it_matters": "",
+  "title": "Ondo Stocks to Back USDC Loans on Spout via Solana Covered-Call Strategy",
+  "description": "Ondo says Spout plans USDC loans against tokenized stocks on Solana, with borrowing capped at 50% of collateral value and option premiums replacing loan interest.",
+  "body": "Ondo Finance announced on November 12 that Spout Finance plans to accept Ondo Stocks as collateral for USDC borrowing when the service launches on Solana. The proposed loans would cover up to 50% of the value of deposited tokenized stocks and ETFs. Spout says it would charge borrowers no interest, instead generating returns for lenders through premiums earned from covered-call options. The process relies on Alpaca’s Instant Tokenization Network to redeem Ondo tokens into underlying shares held in a brokerage account, against which Spout would sell calls. Borrowers would surrender gains above the relevant option strike price when calls are exercised. Ondo also warns that falling collateral values could require additional backing or lead to liquidation. The company describes Spout as part of its $250 million Ondo Catalyst initiative. The announcement outlines a future service, not evidence that the lending product is already live.",
+  "why_it_matters": "The proposal connects tokenized equities to onchain credit using real shares and conventional options markets. Borrowers would trade some potential share-price upside for interest-free USDC access, while remaining exposed to collateral declines and liquidation risk.",
   "pubDate": "2026-11-12",
   "category": "news",
   "tags": [
@@ -10,10 +10,15 @@
     "Tokenization",
     "Primary Source"
   ],
-  "keyTakeaways": [],
+  "keyTakeaways": [
+    "Spout plans to accept Ondo tokenized stocks and ETFs as collateral for USDC loans on Solana.",
+    "Proposed borrowing is limited to 50% of collateral value, according to Ondo.",
+    "Covered-call option premiums would fund lenders, while borrowers surrender some potential upside.",
+    "Ondo describes a planned launch and warns of liquidation risk if collateral values fall."
+  ],
   "sources": [
     {
-      "name": "Ondo Finance",
+      "name": "Ondo Finance official announcement",
       "url": "https://ondo.finance/blog/ondo-stocks-as-collateral-on-spout"
     }
   ],
@@ -30,10 +35,50 @@
     "contentStatus": "needs-source-enrichment"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "verified",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-12T22:15:00Z",
-    "reason": "Full Ondo Finance original announcement dated 2026-11-12 (https://ondo.finance/blog/ondo-stocks-as-collateral-on-spout) and Ondo's full PRNewswire release were accessed and confirm planned Spout collateral support on Solana, up-to-50% USDC borrowing, and covered-call-funded lender returns. The separate Ondo/Spout scanner lead is already marked duplicate. However required scripts/source_review.py seal and scripts/news_quality.py cannot be run against a current repository checkout: local git fails with 'Could not resolve host: github.com'. No verified seal may be claimed. Retry no earlier than 2026-11-13T04:15:00Z."
+    "reviewedAt": "2026-11-13T20:18:12Z",
+    "sources": [
+      {
+        "url": "https://ondo.finance/blog/ondo-stocks-as-collateral-on-spout",
+        "publishedAt": "2026-11-12",
+        "checkedAt": "2026-11-13T20:18:12Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Spout plans to accept Ondo Stocks as collateral on the Solana network.",
+        "sourceUrl": "https://ondo.finance/blog/ondo-stocks-as-collateral-on-spout",
+        "anchor": "collateral on Solana"
+      },
+      {
+        "claim": "Borrowers may obtain USDC loans of up to half the collateral value.",
+        "sourceUrl": "https://ondo.finance/blog/ondo-stocks-as-collateral-on-spout",
+        "anchor": "up to 50%"
+      },
+      {
+        "claim": "Spout intends to use covered calls rather than borrower interest to fund lender returns.",
+        "sourceUrl": "https://ondo.finance/blog/ondo-stocks-as-collateral-on-spout",
+        "anchor": "options premiums fund lender returns"
+      },
+      {
+        "claim": "The mechanism uses Alpaca's Instant Tokenization Network to access underlying shares.",
+        "sourceUrl": "https://ondo.finance/blog/ondo-stocks-as-collateral-on-spout",
+        "anchor": "Instant Tokenization Network"
+      },
+      {
+        "claim": "Borrowers can lose upside above the option strike price when calls are sold.",
+        "sourceUrl": "https://ondo.finance/blog/ondo-stocks-as-collateral-on-spout",
+        "anchor": "above the strike price"
+      },
+      {
+        "claim": "Spout belongs to Ondo Catalyst, a 250 million dollar ecosystem initiative.",
+        "sourceUrl": "https://ondo.finance/blog/ondo-stocks-as-collateral-on-spout",
+        "anchor": "$250M initiative"
+      }
+    ]
   }
 }
