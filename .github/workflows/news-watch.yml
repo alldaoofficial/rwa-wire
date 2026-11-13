@@ -10,7 +10,7 @@ on:
   # GitHub's scheduler remains only as a backup. The primary trigger is an
   # external scheduler calling workflow_dispatch.
   schedule:
-    - cron: "7,37 * * * *"
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
   repository_dispatch:
     types: [rwa-news-watch]
