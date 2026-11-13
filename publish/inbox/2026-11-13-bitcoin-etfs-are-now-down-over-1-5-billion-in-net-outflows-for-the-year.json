@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "requiresSourceReview": true,
     "contentStatus": "needs-source-enrichment"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-13T17:17:40.051Z",
+    "reason": "CoinDesk's November 13 ETF-flow story was traced to its direct publisher URL, but accessible full text is chiefly reproduced by syndication/aggregator sites citing CoinDesk and SoSoValue, not two independent full-text reports or independently inspected primary flow records. The source-enrichment evidence requirement is unmet; do not treat copied reporting as independent corroboration. Retry no sooner than six hours after reviewedAt."
   }
 }
