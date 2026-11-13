@@ -1,8 +1,8 @@
 {
-  "title": "GTN Hires Former Gemini Europe CEO to Lead Its Push Into Tokenized Securities",
-  "description": "GTN Hires Former Gemini Europe CEO to Lead Its Push Into Tokenized Securities",
-  "why_it_matters": "",
-  "pubDate": "2026-11-12",
+  "title": "GTN Appoints Mark Jennings to Lead Tokenized Securities Strategy",
+  "description": "GTN named former Gemini Europe chief Mark Jennings as global head of digital assets on November 10, tasking him with tokenized securities strategy across its existing multi-market brokerage infrastructure.",
+  "why_it_matters": "The appointment places tokenization leadership inside a brokerage technology provider already serving banks and investment platforms. GTN's existing market connectivity could help partners explore on-chain securities, but the announcement does not establish a live tokenized-stock product or a confirmed launch timetable.",
+  "pubDate": "2026-11-10",
   "category": "news",
   "tags": [
     "Tokenization",
@@ -10,14 +10,16 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "GTN Hires Former Gemini Europe CEO to Lead Its Push Into Tokenized Securities",
-    ""
+    "Mark Jennings was appointed GTN's global head of digital assets on November 10, 2026.",
+    "He previously led Gemini Europe and held senior positions at Kraken, including Crypto Facilities.",
+    "GTN says its brokerage infrastructure spans more than 90 markets and up to eight asset classes.",
+    "The company describes a tokenization strategy, not the launch of a new tokenized securities venue."
   ],
-  "body": "GTN Hires Former Gemini Europe CEO to Lead Its Push Into Tokenized Securities",
+  "body": "GTN appointed Mark Jennings as its global head of digital assets on November 10, 2026, putting a former Gemini Europe executive in charge of the brokerage infrastructure provider's tokenized securities strategy. The Dubai-based company said Jennings will work on enabling platforms to connect traditional securities markets with digital-asset services through GTN's existing market access.\n\nJennings previously served as CEO of Gemini Europe, overseeing the exchange's expansion in the region. Earlier, he held senior roles at Kraken, including leadership of Crypto Facilities, the firm's UK-regulated derivatives venue. GTN also highlighted its October appointment of former Saxo Bank executive Daniel Endler as group chief product officer.\n\nGTN describes its current brokerage infrastructure as covering more than 90 markets and up to eight asset classes through a single API. Those figures describe the company's existing capabilities, not tokenized assets already available for trading. The November announcement concerns management and strategic direction; it does not specify a launch date, a new securities product, or completed on-chain settlement.",
   "sources": [
     {
-      "name": "FinanceFeeds",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWURENW92dnRWNWpyaEJ1M3V6ckZyenJIY3lyZ0pVSEYzNHkydUJoOWk1bnN0QlFXbFBKZkZWSFhEdG9zS3dTTkNaWC11VW9udFAyVnhCNHJfczNqOXhGeFRDTkN5bTFFdDc3NVU2TjlDd3FDc3JDcl8wMVRXTFVRaTVpOWFtaE5wWTRlN1BXUXRpT3dpVld3M1piTXFaVGxwT1RYcHF3?oc=5"
+      "name": "GTN announcement via CNW",
+      "url": "https://www.newswire.ca/news-releases/gtn-appoints-former-gemini-and-kraken-executive-mark-jennings-as-global-head-of-digital-assets-810038457.html"
     }
   ],
   "newsWatch": {
@@ -31,10 +33,45 @@
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "verified",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-12T19:16:18Z",
-    "reason": "Primary GTN announcement dated 2026-11-10 was read in full (Newswire.ca), corroborated by full FinanceFeeds and Finance Magnates coverage. Evidence is sufficient for a substantive review, but required source_review.py seal and news_quality.py cannot be executed on a current repository checkout because github.com DNS resolution fails in the local execution environment. Do not publish; retry no earlier than 2026-11-13T01:16:18Z."
+    "reviewedAt": "2026-11-13T22:12:44.879Z",
+    "sources": [
+      {
+        "url": "https://www.newswire.ca/news-releases/gtn-appoints-former-gemini-and-kraken-executive-mark-jennings-as-global-head-of-digital-assets-810038457.html",
+        "publishedAt": "2026-11-10",
+        "checkedAt": "2026-11-13T22:12:44.879Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "GTN announced Mark Jennings as global head of digital assets on November 10, 2026.",
+        "sourceUrl": "https://www.newswire.ca/news-releases/gtn-appoints-former-gemini-and-kraken-executive-mark-jennings-as-global-head-of-digital-assets-810038457.html",
+        "anchor": "global head of digital assets"
+      },
+      {
+        "claim": "Jennings previously served as the chief executive of Gemini Europe, leading regional expansion.",
+        "sourceUrl": "https://www.newswire.ca/news-releases/gtn-appoints-former-gemini-and-kraken-executive-mark-jennings-as-global-head-of-digital-assets-810038457.html",
+        "anchor": "CEO of Gemini Europe"
+      },
+      {
+        "claim": "His earlier Kraken positions included chief executive of the regulated Crypto Facilities derivatives venue.",
+        "sourceUrl": "https://www.newswire.ca/news-releases/gtn-appoints-former-gemini-and-kraken-executive-mark-jennings-as-global-head-of-digital-assets-810038457.html",
+        "anchor": "CEO of Crypto Facilities"
+      },
+      {
+        "claim": "GTN appointed Daniel Endler as its first group chief product officer in October.",
+        "sourceUrl": "https://www.newswire.ca/news-releases/gtn-appoints-former-gemini-and-kraken-executive-mark-jennings-as-global-head-of-digital-assets-810038457.html",
+        "anchor": "first group chief product officer"
+      },
+      {
+        "claim": "GTN says its existing brokerage coverage extends across more than 90 markets and eight asset classes.",
+        "sourceUrl": "https://www.newswire.ca/news-releases/gtn-appoints-former-gemini-and-kraken-executive-mark-jennings-as-global-head-of-digital-assets-810038457.html",
+        "anchor": "90+ markets and up to 8 asset classes"
+      }
+    ]
   }
 }
