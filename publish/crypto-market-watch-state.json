@@ -13,15 +13,15 @@
     "CBMimAFBVV95cUxPekpIWFJCVjVhcjFIRjZqci1nUk43djNFLXlxTVNOaElOZjlpWUxTZVlJSTY4SFZEZnN0c0ZhTVpqQnZXV2FhWVVhOHFpVTQ3a1hWTmFPY2U3Uzl4MTlreGhFU3lrWjFlTTlMNTJpakV3b0RMTzRvWXFtY184UktPMXhjdXVjaVl0Q3JSV1pMV1prYlFnRm5ldA",
     "CBMiwgFBVV95cUxPd1NQWXBGbGVxMFl3dDZVN1VZZk9HN1Z1dEFmQUI0b2R2bU5MdWVRV1BHTVRYMklKTTJNckFDS1doUTlJWGt5SUhkWTZ2QXBtZXBBODdQRDZqTE4wOGNWZW94Z05GRnJjMkRHRVRDN04wTlNOX2xjbnVSS2ZwNm5oYTBrS3ZreUxQeUlEQnJFLUZlTHZJQlZYTml5S0ctYWFvQm9JaWxiRTVQbmxJRXJmVUhaa2JYTXg3SkJUMkJIZUtBQQ"
   ],
-  "lastRun": "2026-11-13T12:24:21.010998+00:00",
+  "lastRun": "2026-11-13T20:32:43.004671+00:00",
   "lastDiagnostics": {
-    "rawItems": 113,
-    "uniqueItems": 80,
-    "qualified": 1,
-    "blocked": 4,
-    "untrusted": 29,
-    "lowSignal": 46
+    "rawItems": 112,
+    "uniqueItems": 84,
+    "qualified": 0,
+    "blocked": 5,
+    "untrusted": 35,
+    "lowSignal": 44
   },
-  "lastResult": "candidate",
+  "lastResult": "no-qualified-story",
   "lastCandidate": "publish/inbox/2026-11-13-bitcoin-etfs-are-now-down-over-1-5-billion-in-net-outflows-for-the-year.json"
 }
