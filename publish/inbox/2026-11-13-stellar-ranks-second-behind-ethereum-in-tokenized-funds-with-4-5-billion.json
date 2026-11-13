@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-13T14:17:49.988Z",
+    "reason": "The November 13 headline asserts $4.5 billion and second place in tokenized funds, but the accessible Stellar primary page reports $4 billion as of September 1, 2026, and the available independent reporting uses older or differently defined RWA metrics. No current dated primary dataset or two independent full-text reports verify the exact new ranking and $4.5 billion claim. Recheck no sooner than six hours after reviewedAt."
   }
 }
