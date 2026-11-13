@@ -1,0 +1,90 @@
+name: RWA Wire Seal Reviewed Inbox
+
+on:
+  push:
+    paths:
+      - "publish/inbox/*.json"
+  workflow_dispatch:
+    inputs:
+      brief_path:
+        description: "Existing verified inbox JSON path"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: rwa-wire-seal-reviewed-inbox
+  cancel-in-progress: false
+
+jobs:
+  seal:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Find reviewed briefs
+        id: discover
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          INPUT_PATH: ${{ inputs.brief_path }}
+        run: |
+          python3 - <<'PY'
+          import json, os, pathlib, subprocess
+          if os.environ["EVENT_NAME"] == "workflow_dispatch":
+              paths = [os.environ["INPUT_PATH"]]
+          else:
+              paths = subprocess.check_output(
+                  ["git", "diff-tree", "--no-commit-id", "--name-only", "-r", "HEAD", "--", "publish/inbox/"],
+                  text=True).splitlines()
+          reviewed = []
+          for name in paths:
+              path = pathlib.PurePosixPath(name)
+              if (len(path.parts) != 3 or path.parts[:2] != ("publish", "inbox")
+                  or path.suffix != ".json" or ".." in path.parts):
+                  continue
+              if not pathlib.Path(name).is_file():
+                  continue
+              brief = json.loads(pathlib.Path(name).read_text(encoding="utf-8"))
+              review = brief.get("sourceReview") or {}
+              if (review.get("status") == "verified"
+                  and review.get("method") == "source-enrichment-v1"
+                  and not review.get("contentSha256")):
+                  reviewed.append(name)
+          pathlib.Path("/tmp/rwa-reviewed-paths").write_text("\n".join(reviewed) + ("\n" if reviewed else ""))
+          print("Eligible review drafts:", reviewed)
+          PY
+      - name: Seal and validate attested reviews
+        run: |
+          while IFS= read -r brief; do
+            [ -n "$brief" ] || continue
+            python3 scripts/source_review.py seal "$brief" --output "$brief.sealed"
+            python3 scripts/news_quality.py "$brief.sealed"
+            mv "$brief.sealed" "$brief"
+          done < /tmp/rwa-reviewed-paths
+      - name: Commit validated seals and dispatch generator
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ ! -s /tmp/rwa-reviewed-paths ]; then
+            echo "No newly attested source reviews to seal." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          while IFS= read -r brief; do git add -- "$brief"; done < /tmp/rwa-reviewed-paths
+          git diff --cached --quiet && exit 0
+          git commit -m "Seal validated RWA Wire source reviews"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && break
+            if [ "$attempt" -eq 3 ]; then exit 1; fi
+            sleep 3
+          done
+          while IFS= read -r brief; do
+            [ -n "$brief" ] || continue
+            gh workflow run candidate-generator.yml --ref main -f brief_path="$brief"
+            echo "Dispatched Candidate Generator for $brief" >> "$GITHUB_STEP_SUMMARY"
+          done < /tmp/rwa-reviewed-paths
