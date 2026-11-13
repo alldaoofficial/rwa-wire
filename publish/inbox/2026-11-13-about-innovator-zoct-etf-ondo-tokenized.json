@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-13T14:17:53.977Z",
+    "reason": "The discovery is an evergreen Coinbase asset-description/price listing for ZOCTON, not a dated issuer announcement or independently reported new RWA event. Coinbase's asset page supplies no dated launch or material change; publishing it as November 13 news would be misleading."
   }
 }
