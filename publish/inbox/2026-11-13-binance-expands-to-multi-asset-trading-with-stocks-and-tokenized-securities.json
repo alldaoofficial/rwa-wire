@@ -33,7 +33,8 @@
   "sourceReview": {
     "status": "held",
     "method": "source-enrichment-v1",
-    "reviewedAt": "2026-11-13T03:11:10Z",
-    "reason": "The Google News discovery link does not establish a readable original Blockchain News article or a new November 13 product launch. Binance's official stock/bStocks expansion was announced in June 2026; the November 12 official TradFi perpetual-contract notice describes derivatives, not new tokenized securities. A distinct current announcement and three independently anchored facts for this headline remain unverified. Retry no sooner than six hours after reviewedAt."
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-13T09:17:48Z",
+    "reason": "Full Blockchain.News report dated 2026-11-13 02:33 UTC was located (https://blockchain.news/news/binance-multi-asset-trading-stocks-tokenized-securities), but its claims of 7,000+ US stocks/ETFs, 24/5 trading, stablecoin settlement and 80% emerging-market volume have no linked dated Binance primary announcement or second independent full-text confirmation. Binance official bStocks collateral notices from 2026-09-30 and 2026-10-07 describe earlier, jurisdiction-restricted tokenized securities functionality, not this claimed November 13 launch. No independently verified new event or three primary-anchored facts; hold for six hours, retry no earlier than 2026-11-13T15:17:48Z."
   }
 }
