@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-13T18:12:04Z",
+    "reason": "The November 13 U.Today full-text report attributes $44.9M daily tokenized-fund growth and comparative Solana/Ethereum figures to Token Terminal/RWA Foundation, but no dated accessible original dataset or independent second full-text report verifies the 24-hour figures. Existing Stellar ranking inbox item is also held, so avoid overlapping unverified coverage. Google News discovery URL is unresolved. Retry no sooner than six hours after reviewedAt."
   }
 }
