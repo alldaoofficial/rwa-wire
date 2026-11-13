@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-13T15:13:02.843Z",
+    "reason": "Duplicate of the November 11 OKXICE announcement already queued at publish/inbox/2026-11-11-okxice-sets-nov-23-launch-for-tokenized-securities-venue-under-sec-innovation-ex.json. The full OKX primary announcement (https://www.okx.com/en-eu/learn/okxice-tsv-launch, published 2026-11-11) describes the same ICE/OKX joint venture, planned November 23 launch, 70+ proposed securities and 59 Direxion ETFs. This lead adds no distinct new event. No article or direct publication."
   }
 }
