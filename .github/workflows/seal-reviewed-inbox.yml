@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - "publish/inbox/*.json"
+  schedule:
+    - cron: "25 * * * *"
   workflow_dispatch:
     inputs:
       brief_path:
@@ -36,6 +38,8 @@ jobs:
           import json, os, pathlib, subprocess
           if os.environ["EVENT_NAME"] == "workflow_dispatch":
               paths = [os.environ["INPUT_PATH"]]
+          elif os.environ["EVENT_NAME"] == "schedule":
+              paths = [str(p) for p in sorted(pathlib.Path("publish/inbox").glob("*.json"), reverse=True)]
           else:
               paths = subprocess.check_output(
                   ["git", "diff-tree", "--no-commit-id", "--name-only", "-r", "HEAD", "--", "publish/inbox/"],
@@ -54,6 +58,8 @@ jobs:
                   and review.get("method") == "source-enrichment-v1"
                   and not review.get("contentSha256")):
                   reviewed.append(name)
+                  if os.environ["EVENT_NAME"] == "schedule":
+                      break
           pathlib.Path("/tmp/rwa-reviewed-paths").write_text("\n".join(reviewed) + ("\n" if reviewed else ""))
           print("Eligible review drafts:", reviewed)
           PY
