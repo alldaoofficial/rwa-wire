@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-14T02:19:56Z",
-    "reason": "Rechecked full Binance primary press release dated 2026-07-15 (https://www.prnewswire.com/apac/news-releases/binance-launches-us-stocks-trading-and-previews-bstocks-tokenized-securities-302825381.html): it already announced access to 7,000+ U.S. stocks/ETFs and previewed tokenized equities. Binance's 2026-10-21 bStocks collateral notice (https://www.binance.bh/en/support/announcement/detail/3afa938f499d403382d01d0c0644507e) describes an earlier jurisdiction-restricted feature, not a new 2026-11-13 multi-asset launch. No dated new Binance primary release or two independent full-text reports substantiate the November 13 headline as a fresh event. Hold for six hours; do not recycle the July launch or imply universal availability."
+    "reviewedAt": "2026-11-14T12:13:46Z",
+    "reason": "Full Binance primary release dated 2026-07-15 (https://www.prnewswire.com/apac/news-releases/binance-launches-us-stocks-trading-and-previews-bstocks-tokenized-securities-302825381.html) already announces 7,000+ U.S. stocks and ETFs and a tokenized-securities preview. Binance's full 2026-10-15 bStocks release (https://www.prnewswire.com/news-releases/binances-bstocks-become-the-fastest-tokenized-equity-product-to-surpass-1-billion-in-assets-under-management-302909927.html) describes an existing product, and the 2026-10-21 Binance collateral announcement predates this headline. No full primary announcement dated November 13 or two independent full-text reports substantiate a distinct November launch. Remain held; retry at least six hours after this review; do not misdate or recycle prior events."
   }
 }
