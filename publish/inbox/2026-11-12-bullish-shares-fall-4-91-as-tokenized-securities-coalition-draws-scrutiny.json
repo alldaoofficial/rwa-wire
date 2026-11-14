@@ -33,7 +33,8 @@
   "sourceReview": {
     "status": "held",
     "method": "source-enrichment-v1",
-    "reviewedAt": "2026-11-14T01:10:57Z",
-    "reason": "The accessible Bullish primary releases establish the Issuer Sponsored Token Coalition was announced on 2026-09-24, with additional members announced on 2026-10-26, not a distinct 2026-11-12 coalition event. The scanx.trade full original report and an independent dated source corroborating the claimed 4.91% share-price move and its alleged connection to coalition scrutiny were not verified. Do not recast an older announcement or infer causation from a price change; retry after six hours with dated primary market data and full original reporting."
+    "reviewedAt": "2026-11-14T07:14:01.820Z",
+    "reason": "Retry 2026-11-14: Full Bullish investor-relations announcement dated 2026-09-24 confirms the Issuer Sponsored Token Coalition was established in September, not newly formed on 2026-11-12. A dated, independent full report or primary exchange record substantiating the claimed 4.91% Bullish share-price decline and any causal connection to coalition scrutiny was not found. No distinct November development verified. Hold for a minimum six-hour retry; do not infer causality or recycle the September announcement.",
+    "reviewedBy": "RWA Wire Source Review"
   }
 }
