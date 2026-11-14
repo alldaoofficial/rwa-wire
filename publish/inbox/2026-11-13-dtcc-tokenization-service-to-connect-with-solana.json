@@ -28,7 +28,7 @@
     "discoveredAt": "2026-11-14T15:37:12.942763+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
@@ -71,6 +71,7 @@
         "sourceUrl": "https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-to-connect-with-solana",
         "anchor": "same investor protections, ownership rights"
       }
-    ]
+    ],
+    "contentSha256": "ae9f31d8d80371d7e707c26a481572ec27e01866c0f58883233413dff6251f1d"
   }
 }
