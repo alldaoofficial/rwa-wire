@@ -3,9 +3,19 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700&family=Inter:wght@400;500;600;700&display=swap");
 @layer base {
-html{scroll-behavior:smooth} body{@apply bg-bg text-ink font-sans antialiased;font-feature-settings:"cv11","ss01";background-image:radial-gradient(circle at 50% -20%,rgba(46,212,122,.045),transparent 34%)} h1,h2,h3,h4{@apply font-serif text-ink} ::selection{background-color:#2ed47a33;color:#f5f7fa} a{@apply transition-colors duration-150}:focus-visible{outline:2px solid #2ed47a;outline-offset:2px}
+html{scroll-behavior:smooth} body{@apply bg-bg text-ink font-sans antialiased;font-feature-settings:"cv11","ss01";background-image:radial-gradient(circle at 15% -15%,rgba(85,219,161,.075),transparent 38%)} h1,h2,h3,h4{@apply font-serif text-ink} ::selection{background-color:#55dba133;color:#f5f7fa} a{@apply transition-colors duration-150}:focus-visible{outline:2px solid #55dba1;outline-offset:2px}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
 }
 @layer components {
-.wire-container{@apply mx-auto w-full max-w-wire px-5 sm:px-8 lg:px-10}.wire-slash{@apply text-wire}.eyebrow{@apply text-[10px] font-semibold uppercase tracking-[0.16em] text-ink-muted}.section-rule{@apply border-t border-line}.editorial-grid{background-image:linear-gradient(#1e252d 1px,transparent 1px),linear-gradient(90deg,#1e252d 1px,transparent 1px);background-size:42px 42px;opacity:.45}.data-label{@apply text-[10px] font-semibold uppercase tracking-[.15em] text-ink-muted}.article-reading h2{@apply mt-14 border-t border-line pt-8 text-3xl}.article-reading h3{@apply mt-10 text-2xl}.article-reading p{@apply leading-[1.8]}.article-reading h2+p,.article-reading h3+p{@apply mt-4}.article-reading blockquote{@apply border-l-2 border-wire bg-surface px-5 py-3}.article-reading ul,.article-reading ol{@apply my-6}.article-reading li{@apply my-2}
+.wire-container{@apply mx-auto w-full max-w-wire px-5 sm:px-8 lg:px-10}.wire-slash{@apply text-wire}.eyebrow{@apply text-[10px] font-semibold uppercase tracking-[0.16em] text-ink-muted}.section-rule{@apply border-t border-line}.editorial-grid{background-image:linear-gradient(#2a3640 1px,transparent 1px),linear-gradient(90deg,#2a3640 1px,transparent 1px);background-size:42px 42px;opacity:.45}.data-label{@apply text-[10px] font-semibold uppercase tracking-[.15em] text-ink-muted}.article-reading h2{@apply mt-14 border-t border-line pt-8 text-3xl}.article-reading h3{@apply mt-10 text-2xl}.article-reading p{@apply leading-[1.8]}.article-reading h2+p,.article-reading h3+p{@apply mt-4}.article-reading blockquote{@apply border-l-2 border-wire bg-surface px-5 py-3}.article-reading ul,.article-reading ol{@apply my-6}.article-reading li{@apply my-2}
+}
+/* Institutional Dark v2: shared editorial surfaces and responsive rhythm. */
+@layer components {
+  .wire-panel{@apply rounded-2xl border border-line bg-surface shadow-[0_12px_36px_rgba(0,0,0,.13)]}
+  .wire-panel-hover{@apply transition duration-200 hover:-translate-y-0.5 hover:border-wire/40 hover:bg-surface-raised}
+  .wire-kicker{@apply text-[11px] font-semibold uppercase tracking-[.13em] text-wire}
+  .wire-display{@apply font-serif text-[clamp(2.6rem,5.2vw,5rem)] font-medium leading-[1.02] tracking-[-.035em] text-ink}
+  .wire-lede{@apply max-w-2xl text-base leading-7 text-ink-muted sm:text-lg sm:leading-8}
+  .wire-action{@apply inline-flex min-h-[44px] items-center justify-center rounded-lg border border-line px-5 py-3 text-sm font-semibold text-ink transition hover:border-wire/60 hover:bg-surface-raised}
+  .wire-action-primary{@apply border-wire bg-wire text-bg hover:bg-wire/90}
 }
