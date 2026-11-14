@@ -1,0 +1,27 @@
+{
+  "id": "2026-11-12-ondo-stocks-to-back-usdc-loans-on-spout-via",
+  "title": "Ondo Stocks to Back USDC Loans on Spout via Solana Covered-Call Strategy",
+  "category": "NEWS",
+  "why_it_matters": "The proposal connects tokenized equities to onchain credit using real shares and conventional options markets. Borrowers would trade some potential share-price upside for interest-free USDC access, while remaining exposed to collateral declines and liquidation risk.",
+  "article_url": "https://therwawire.com/news/ondo-stocks-to-back-usdc-loans-on-spout-via-solana-covered-call-strategy/",
+  "image_url": "https://therwawire.com/images/news/ondo-stocks-to-back-usdc-loans-on-spout-via-solana-covered-call-strategy.svg",
+  "caption": "RWA WIRE // NEWS\n\nOndo Stocks to Back USDC Loans on Spout via Solana Covered-Call Strategy\n\nOndo says Spout plans USDC loans against tokenized stocks on Solana, with borrowing capped at 50% of collateral value and option premiums replacing loan interest.\n\nFull analysis →\nhttps://therwawire.com/news/ondo-stocks-to-back-usdc-loans-on-spout-via-solana-covered-call-strategy/",
+  "distribution": {
+    "telegram": "RWA WIRE // NEWS\n\nOndo Stocks to Back USDC Loans on Spout via Solana Covered-Call Strategy\n\nOndo says Spout plans USDC loans against tokenized stocks on Solana, with borrowing capped at 50% of collateral value and option premiums replacing loan interest.\n\nFull analysis →\nhttps://therwawire.com/news/ondo-stocks-to-back-usdc-loans-on-spout-via-solana-covered-call-strategy/",
+    "x": "Ondo Stocks to Back USDC Loans on Spout via Solana Covered-Call Strategy\n\nOndo says Spout plans USDC loans against tokenized stocks on Solana, with borrowing capped at 50% of collateral value and option premiums replacing loan interest.\n\nhttps://therwawire.com/news/ondo-stocks-to-back-usdc-loans-on-spout-via-solana-covered-call-strategy/",
+    "breaking": "RWA WIRE // NEWS\n\nOndo Stocks to Back USDC Loans on Spout via Solana Covered-Call Strategy\n\nhttps://therwawire.com/news/ondo-stocks-to-back-usdc-loans-on-spout-via-solana-covered-call-strategy/",
+    "summary": "Ondo says Spout plans USDC loans against tokenized stocks on Solana, with borrowing capped at 50% of collateral value and option premiums replacing loan interest."
+  },
+  "sources": [
+    {
+      "name": "Ondo Finance official announcement",
+      "url": "https://ondo.finance/blog/ondo-stocks-as-collateral-on-spout"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-11-12-new-utility-for-ondo-stocks-on-solana.json",
+    "contentSha256": "172985dbb76294a35c3d82017de81c59ccc3dd9bbc5e9934160fd932e21a655f",
+    "approvedAt": "2026-11-14T16:07:19.649732+00:00"
+  }
+}
