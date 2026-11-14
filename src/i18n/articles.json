@@ -5034,5 +5034,137 @@
       ]
     },
     "sourceSha256": "346106793f1a2d998fbed5d317343864a63e16da1c8dd270b5792b5e3aed82dc"
+  },
+  "dtcc-plans-solana-integration-for-tokenized-securities-in-second-half-of-2027": {
+    "path": "/news/dtcc-plans-solana-integration-for-tokenized-securities-in-second-half-of-2027/",
+    "date": "2026-11-12",
+    "kind": "news",
+    "sources": [
+      [
+        "DTCC",
+        "https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-to-connect-with-solana"
+      ]
+    ],
+    "de": {
+      "title": "DTCC plant Solana-Integration für tokenisierte Wertpapiere in der zweiten Jahreshälfte 2027",
+      "description": "DTCC will seinen im Oktober gestarteten Tokenization Service in der zweiten Jahreshälfte 2027 mit Solana verbinden und damit geeignete, bei DTC verwahrte Vermögenswerte auf ein weiteres Blockchain-Netzwerk ausweiten.",
+      "sections": [
+        [
+          "Geplante Solana-Anbindung für die zweite Jahreshälfte 2027",
+          "Die Depository Trust & Clearing Corporation gab am 12. November bekannt, dass sie ihren Tokenization Service mit der Solana-Blockchain verbinden will. Das Unternehmen erwartet, dass geeignete Wertpapiere, die bei seiner Tochter Depository Trust Company verwahrt werden, in der zweiten Jahreshälfte 2027 in tokenisierter Form auf Solana verfügbar werden. Dabei handelt es sich um eine geplante Integration und nicht um einen bereits abgeschlossenen Solana-Start."
+        ],
+        [
+          "Erweiterung des im Oktober gestarteten Dienstes",
+          "DTCC startete seinen Tokenization Service am 28. Oktober 2026. Die geplante Solana-Anbindung soll die Umwandlung geeigneter traditioneller Bestände in tokenisierte Darstellungen sowie zugehörige Funktionen über den Lebenszyklus der Token unterstützen. DTCC beschreibt die Erweiterung als Teil einer Multi-Chain-Strategie, die bestehende Wertpapierinfrastruktur mit Blockchain-Netzwerken verbindet."
+        ],
+        [
+          "Bestehende Rechte und Schutzmechanismen sollen erhalten bleiben",
+          "Nach Angaben von DTCC sollen die über den Dienst dargestellten Wertpapiere die Eigentumsrechte, den Anlegerschutz und die regulatorischen Schutzmechanismen ihrer traditionell gehaltenen Gegenstücke bewahren. Die Ankündigung belegt nicht, dass diese Vermögenswerte bereits auf Solana gehandelt oder abgewickelt werden. Der entscheidende nächste Meilenstein ist die Umsetzung der Netzwerkintegration im Jahr 2027."
+        ]
+      ]
+    },
+    "es": {
+      "title": "DTCC prevé integrar Solana para valores tokenizados en el segundo semestre de 2027",
+      "description": "DTCC afirma que su Tokenization Service se conectará con Solana en el segundo semestre de 2027, ampliando a otra red blockchain el servicio lanzado en octubre para activos elegibles bajo custodia de DTC.",
+      "sections": [
+        [
+          "Una conexión con Solana prevista para el segundo semestre de 2027",
+          "Depository Trust & Clearing Corporation anunció el 12 de noviembre que prevé conectar su Tokenization Service con la blockchain Solana. La empresa espera que los valores elegibles custodiados por su filial Depository Trust Company estén disponibles de forma tokenizada en Solana durante el segundo semestre de 2027. Se trata de una integración prevista, no de un lanzamiento en Solana ya completado."
+        ],
+        [
+          "Ampliación del servicio lanzado en octubre",
+          "DTCC lanzó su Tokenization Service el 28 de octubre de 2026. La conexión propuesta con Solana pretende facilitar la conversión de posiciones tradicionales elegibles en representaciones tokenizadas y las correspondientes funciones del ciclo de vida de los tokens. DTCC presenta la ampliación como parte de una estrategia multicadena que conecta la infraestructura de valores existente con redes blockchain."
+        ],
+        [
+          "Se conservarían los derechos y salvaguardias existentes",
+          "Según DTCC, los valores representados mediante el servicio conservarían los derechos de propiedad, la protección de los inversores y las salvaguardias regulatorias de sus equivalentes mantenidos de forma tradicional. El anuncio no demuestra que estos activos ya se negocien o liquiden en Solana. El principal hito pendiente es la entrega de la integración de la red en 2027."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "DTCC prévoit une intégration à Solana pour les titres tokenisés au second semestre 2027",
+      "description": "DTCC indique que son Tokenization Service sera connecté à Solana au second semestre 2027, étendant à un autre réseau blockchain le service lancé en octobre pour les actifs admissibles conservés par DTC.",
+      "sections": [
+        [
+          "Une connexion à Solana prévue au second semestre 2027",
+          "La Depository Trust & Clearing Corporation a annoncé le 12 novembre son intention de connecter son Tokenization Service à la blockchain Solana. La société prévoit que les titres admissibles conservés auprès de sa filiale Depository Trust Company seront disponibles sous forme tokenisée sur Solana au second semestre 2027. Il s’agit d’une intégration prévue, et non d’un lancement déjà achevé sur Solana."
+        ],
+        [
+          "Extension du service lancé en octobre",
+          "DTCC a lancé son Tokenization Service le 28 octobre 2026. La connexion proposée à Solana doit permettre de convertir des positions traditionnelles admissibles en représentations tokenisées et de prendre en charge les fonctions associées au cycle de vie des tokens. DTCC présente cette extension comme un élément d’une stratégie multichaîne reliant l’infrastructure existante des titres aux réseaux blockchain."
+        ],
+        [
+          "Les droits et protections existants doivent être préservés",
+          "Selon DTCC, les titres représentés par l’intermédiaire du service doivent conserver les droits de propriété, les protections des investisseurs et les garanties réglementaires de leurs équivalents détenus de manière traditionnelle. L’annonce n’établit pas que ces actifs sont déjà négociés ou réglés sur Solana. La prochaine étape essentielle est la mise en œuvre de l’intégration du réseau en 2027."
+        ]
+      ]
+    },
+    "sourceSha256": "7f413f24b70b5651314720ee4bb0b6c5b4e63a074f9c877bc645270b71ff0303"
+  },
+  "ondo-stocks-to-back-usdc-loans-on-spout-via-solana-covered-call-strategy": {
+    "path": "/news/ondo-stocks-to-back-usdc-loans-on-spout-via-solana-covered-call-strategy/",
+    "date": "2026-11-12",
+    "kind": "news",
+    "sources": [
+      [
+        "Ondo Finance official announcement",
+        "https://ondo.finance/blog/ondo-stocks-as-collateral-on-spout"
+      ]
+    ],
+    "de": {
+      "title": "Ondo Stocks sollen USDC-Kredite bei Spout über eine Solana-Covered-Call-Strategie besichern",
+      "description": "Ondo zufolge plant Spout USDC-Kredite gegen tokenisierte Aktien auf Solana, begrenzt auf 50 % des Sicherheitenwerts; Optionsprämien sollen Kreditzinsen ersetzen.",
+      "sections": [
+        [
+          "Geplante USDC-Kredite gegen Ondo Stocks",
+          "Ondo Finance gab am 12. November bekannt, dass Spout Finance nach dem geplanten Start auf Solana Ondo Stocks als Sicherheit für USDC-Kredite akzeptieren will. Die vorgesehenen Kredite sollen bis zu 50 % des Werts der hinterlegten tokenisierten Aktien und ETFs abdecken."
+        ],
+        [
+          "Covered Calls statt Kreditzinsen",
+          "Spout will den Kreditnehmern keine Zinsen berechnen und stattdessen Erträge für Kreditgeber aus Prämien gedeckter Kaufoptionen erzielen. Der Prozess nutzt Alpacas Instant Tokenization Network, um Ondo-Token in die zugrunde liegenden, in einem Brokerage-Konto gehaltenen Aktien einzulösen, auf die Spout Call-Optionen verkaufen würde. Werden die Optionen ausgeübt, verzichten Kreditnehmer auf Kursgewinne oberhalb des jeweiligen Ausübungspreises."
+        ],
+        [
+          "Liquidationsrisiko und noch kein Live-Produkt",
+          "Ondo warnt außerdem, dass fallende Sicherheitenwerte zusätzliche Deckung erforderlich machen oder zu einer Liquidation führen könnten. Das Unternehmen bezeichnet Spout als Teil seiner 250 Millionen US-Dollar schweren Initiative Ondo Catalyst. Die Ankündigung beschreibt einen künftigen Dienst und ist kein Beleg dafür, dass das Kreditprodukt bereits live ist."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Ondo Stocks respaldará préstamos en USDC de Spout mediante una estrategia de covered calls en Solana",
+      "description": "Ondo afirma que Spout prevé conceder préstamos en USDC contra acciones tokenizadas en Solana, con un límite del 50 % del valor de la garantía y primas de opciones en lugar de intereses.",
+      "sections": [
+        [
+          "Préstamos en USDC previstos contra Ondo Stocks",
+          "Ondo Finance anunció el 12 de noviembre que Spout Finance prevé aceptar Ondo Stocks como garantía para préstamos en USDC cuando el servicio se lance en Solana. Los préstamos propuestos cubrirían hasta el 50 % del valor de las acciones tokenizadas y los ETF depositados."
+        ],
+        [
+          "Covered calls en lugar de intereses",
+          "Spout afirma que no cobraría intereses a los prestatarios y que generaría rendimientos para los prestamistas mediante las primas obtenidas de opciones de compra cubiertas. El proceso utiliza Instant Tokenization Network de Alpaca para canjear los tokens de Ondo por las acciones subyacentes mantenidas en una cuenta de corretaje, sobre las que Spout vendería opciones de compra. Si se ejercen, los prestatarios renunciarían a las ganancias por encima del precio de ejercicio correspondiente."
+        ],
+        [
+          "Riesgo de liquidación y producto aún no activo",
+          "Ondo también advierte de que una caída del valor de la garantía podría exigir respaldo adicional o provocar una liquidación. La empresa describe Spout como parte de su iniciativa Ondo Catalyst, dotada con 250 millones de dólares. El anuncio presenta un servicio futuro y no demuestra que el producto de préstamo ya esté activo."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Les Ondo Stocks doivent garantir des prêts en USDC sur Spout via une stratégie de covered calls sur Solana",
+      "description": "Selon Ondo, Spout prévoit des prêts en USDC garantis par des actions tokenisées sur Solana, plafonnés à 50 % de la valeur des garanties, les primes d’options remplaçant les intérêts.",
+      "sections": [
+        [
+          "Des prêts en USDC prévus contre des Ondo Stocks",
+          "Ondo Finance a annoncé le 12 novembre que Spout Finance prévoit d’accepter les Ondo Stocks comme garanties de prêts en USDC lors du lancement du service sur Solana. Les prêts proposés pourraient atteindre 50 % de la valeur des actions tokenisées et des ETF déposés."
+        ],
+        [
+          "Des covered calls plutôt que des intérêts",
+          "Spout indique qu’aucun intérêt ne serait facturé aux emprunteurs et que les rendements des prêteurs proviendraient des primes tirées d’options d’achat couvertes. Le processus repose sur l’Instant Tokenization Network d’Alpaca pour convertir les tokens Ondo en actions sous-jacentes détenues sur un compte de courtage, sur lesquelles Spout vendrait des options d’achat. En cas d’exercice, les emprunteurs renonceraient aux gains supérieurs au prix d’exercice concerné."
+        ],
+        [
+          "Risque de liquidation et produit pas encore opérationnel",
+          "Ondo avertit également qu’une baisse de la valeur des garanties pourrait nécessiter un apport supplémentaire ou entraîner une liquidation. L’entreprise présente Spout comme faisant partie de son initiative Ondo Catalyst de 250 millions de dollars. L’annonce décrit un service futur et ne prouve pas que le produit de prêt est déjà opérationnel."
+        ]
+      ]
+    },
+    "sourceSha256": "a9499acdc3e5d2d5968b82dd59a9befab12afd951d4edd0a338d4eaeefa475a9"
   }
 }
