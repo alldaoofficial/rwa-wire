@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-14T17:11:08Z",
+    "reason": "Full Coinfomania report dated 2026-11-14 repeats Token Terminal social-media figures ($4.81bn, 9.1x, xStocks $1.14bn), but no dated full-text primary Token Terminal dataset or two independent full-text reports could be verified. TokenPost discovery resolves only through Google News. Cannot independently establish measurement definitions, observation date, or three primary-supported factual anchors. Retry no sooner than six hours."
   }
 }
