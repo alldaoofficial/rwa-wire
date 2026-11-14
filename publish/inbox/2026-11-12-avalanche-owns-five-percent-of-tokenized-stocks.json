@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-12T21:17:33Z",
-    "reason": "Full The Block newsletter (12 Nov 2026) accessed, but the headline's specific Avalanche five-percent share is not substantiated in the readable article body. No dated primary dataset or two independent full-text reports verifying the exact percentage; hold for at least six hours. Google News discovery URL is not a direct source."
+    "reviewedAt": "2026-11-14T02:19:56Z",
+    "reason": "Rechecked 2026-11-12 coverage: TechFlow (https://www.techflowpost.com/en-US/newsletter/144418) attributes a roughly 5% Avalanche C-Chain tokenized-stock market share as of 2026-11-08 to The Block citing RWA.xyz, while WorldPing and other mirrors explicitly repeat The Block rather than independent reporting. A dated directly readable RWA.xyz primary dataset validating the exact denominator and share, or two independent reputable full-text investigations, was not verified. The original discovery link remains a Google News redirect. Hold for six hours pending primary data; do not present syndicated repeats as independent corroboration."
   }
 }
