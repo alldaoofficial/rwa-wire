@@ -27,6 +27,8 @@ export const AFFILIATE_URL = "https://www.bitunix.com/register?vipCode=0xcrlt";
 
 export const NAV_LINKS = [
   { label: "News", href: "/news/" },
+  { label: "Pulse", href: "/pulse/" },
+  { label: "Radar", href: "/radar/" },
   { label: "Markets", href: "/markets/" },
   { label: "Map", href: "/map/" },
   { label: "Projects", href: "/projects/" },
