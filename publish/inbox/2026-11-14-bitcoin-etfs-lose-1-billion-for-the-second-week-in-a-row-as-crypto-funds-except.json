@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "requiresSourceReview": true,
     "contentStatus": "needs-source-enrichment"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-14T22:20:10.376Z",
+    "reason": "The Block full report dated 2026-11-14 was read, but its ETF flow figures are attributed to SoSoValue. A dated full primary SoSoValue dataset or second independent full-text report was not verified in this review; do not promote a single secondary report as independent corroboration. Retry after six hours."
   }
 }
