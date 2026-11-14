@@ -29,5 +29,11 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedAt": "2026-11-14T09:16:24Z",
+    "reason": "The Nov 12 AMBCrypto full report attributes the $607m Solana supply, 75% xStocks share, 2,102 products and 1.89m holder addresses to Blockworks, but a dated original Blockworks dataset establishing these figures was not verified. KuCoin reproduces the same AMBCrypto story, not independent reporting. The separately corroborated Nov 11 UK/EU xStocks expansion is already the subject of earlier xStocks review commits; do not repackage it as a new market-share event. Retry after six hours with original dated dataset or two independent full reports."
   }
 }
