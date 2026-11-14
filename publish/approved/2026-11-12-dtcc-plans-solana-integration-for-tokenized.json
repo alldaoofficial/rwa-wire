@@ -1,0 +1,27 @@
+{
+  "id": "2026-11-12-dtcc-plans-solana-integration-for-tokenized",
+  "title": "DTCC Plans Solana Integration for Tokenized Securities in Second Half of 2027",
+  "category": "NEWS",
+  "why_it_matters": "The planned connection could expand where regulated securities entitlements can be represented and managed onchain while retaining conventional investor protections. It is a future integration, not evidence that DTCC-backed Solana securities are already available.",
+  "article_url": "https://therwawire.com/news/dtcc-plans-solana-integration-for-tokenized-securities-in-second-half-of-2027/",
+  "image_url": "https://therwawire.com/images/news/dtcc-plans-solana-integration-for-tokenized-securities-in-second-half-of-2027.svg",
+  "caption": "RWA WIRE // NEWS\n\nDTCC Plans Solana Integration for Tokenized Securities in Second Half of 2027\n\nDTCC says its Tokenization Service will connect to Solana in the second half of 2027, extending a service launched in October to another blockchain network for eligible DTC-custodied assets.\n\nFull analysis →\nhttps://therwawire.com/news/dtcc-plans-solana-integration-for-tokenized-securities-in-second-half-of-2027/",
+  "distribution": {
+    "telegram": "RWA WIRE // NEWS\n\nDTCC Plans Solana Integration for Tokenized Securities in Second Half of 2027\n\nDTCC says its Tokenization Service will connect to Solana in the second half of 2027, extending a service launched in October to another blockchain network for eligible DTC-custodied assets.\n\nFull analysis →\nhttps://therwawire.com/news/dtcc-plans-solana-integration-for-tokenized-securities-in-second-half-of-2027/",
+    "x": "DTCC Plans Solana Integration for Tokenized Securities in Second Half of 2027\n\nDTCC says its Tokenization Service will connect to Solana in the second half of 2027, extending a service launched in October to another blockchain network for eligible DTC-custodied assets.\n\nhttps://therwawire.com/news/dtcc-plans-solana-integration-for-tokenized-securities-in-second-half-of-2027/",
+    "breaking": "RWA WIRE // NEWS\n\nDTCC Plans Solana Integration for Tokenized Securities in Second Half of 2027\n\nhttps://therwawire.com/news/dtcc-plans-solana-integration-for-tokenized-securities-in-second-half-of-2027/",
+    "summary": "DTCC says its Tokenization Service will connect to Solana in the second half of 2027, extending a service launched in October to another blockchain network for eligible DTC-custodied assets."
+  },
+  "sources": [
+    {
+      "name": "DTCC",
+      "url": "https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-to-connect-with-solana"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-11-13-dtcc-tokenization-service-to-connect-with-solana.json",
+    "contentSha256": "ae9f31d8d80371d7e707c26a481572ec27e01866c0f58883233413dff6251f1d",
+    "approvedAt": "2026-11-14T16:15:13.851306+00:00"
+  }
+}
