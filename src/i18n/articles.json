@@ -5166,5 +5166,71 @@
       ]
     },
     "sourceSha256": "a9499acdc3e5d2d5968b82dd59a9befab12afd951d4edd0a338d4eaeefa475a9"
+  },
+  "minna-no-bank-and-trek-labs-japan-sign-agreement-to-explore-yen-banking-and-tokenized-deposits": {
+    "path": "/news/minna-no-bank-and-trek-labs-japan-sign-agreement-to-explore-yen-banking-and-tokenized-deposits/",
+    "date": "2026-11-12",
+    "kind": "news",
+    "sources": [
+      [
+        "Minna no Bank official announcement (Japanese)",
+        "https://corporate.minna-no-ginko.com/information/corporate/2026/11/12/892/"
+      ]
+    ],
+    "de": {
+      "title": "Minna no Bank und Trek Labs Japan vereinbaren Prüfung von Yen-Banking und tokenisierten Einlagen",
+      "description": "Die japanische Minna no Bank hat mit dem Backpack-nahen Unternehmen Trek Labs Japan eine Grundsatzvereinbarung geschlossen, um Ein- und Auszahlungen in Yen zu prüfen; tokenisierte Einlagen bleiben eine künftige Möglichkeit.",
+      "sections": [
+        [
+          "Grundsatzvereinbarung für eine geplante japanische Plattform",
+          "Minna no Bank teilte am 12. November 2026 mit, eine Grundsatzvereinbarung mit Trek Labs Japan geschlossen zu haben. Die Parteien wollen prüfen, wie Finanzfunktionen der Bank in einer geplanten japanischen Web3-Infrastruktur und Kryptohandelsplattform eingesetzt werden könnten. Trek Labs Japan gehört zu der Gruppe hinter der Backpack-Wallet und der Backpack-Handelsplattform."
+        ],
+        [
+          "Yen-Funktionen hängen von der Börsenregistrierung ab",
+          "Das erste Konzept sieht vor, Ein- und Auszahlungen in japanischen Yen über das Banking-as-a-Service-Geschäft der Bank zu integrieren. Voraussetzung dafür ist, dass Trek Labs Japan in Japan als Betreiber einer Kryptobörse registriert wird."
+        ],
+        [
+          "Tokenisierte Einlagen bleiben eine längerfristige Idee",
+          "Als längerfristiges Prüfgebiet nennt die Bank den möglichen Einsatz tokenisierter Einlagen, deren Ausgabe Minna no Bank selbst erwägt, sowie Verknüpfungen zu Anlagediensten innerhalb der Bank-App. Die Ankündigung beschreibt eine untersuchte Zusammenarbeit und keinen gestarteten Einlagen-Token, keine genehmigte Börse und keine bereits aktive Bankintegration. Weitere Einzelheiten sollen die Unternehmen gesondert bekannt geben."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Minna no Bank y Trek Labs Japan acuerdan explorar servicios bancarios en yenes y depósitos tokenizados",
+      "description": "Minna no Bank, de Japón, firmó un acuerdo básico con Trek Labs Japan, vinculada a Backpack, para estudiar depósitos y retiradas en yenes; los depósitos tokenizados siguen siendo una posibilidad futura.",
+      "sections": [
+        [
+          "Acuerdo básico para una plataforma japonesa prevista",
+          "Minna no Bank anunció el 12 de noviembre de 2026 que había firmado un acuerdo básico con Trek Labs Japan. Las partes estudiarán cómo utilizar las funciones financieras del banco en una infraestructura Web3 y una plataforma de negociación de criptoactivos previstas en Japón. Trek Labs Japan pertenece al grupo que opera la cartera y la plataforma de negociación Backpack."
+        ],
+        [
+          "Las funciones en yenes dependen del registro como exchange",
+          "El concepto inicial integraría depósitos y retiradas en yenes japoneses mediante el negocio de banca como servicio de la entidad. Esta integración está condicionada a que Trek Labs Japan obtenga en Japón el registro como operador de intercambio de criptoactivos."
+        ],
+        [
+          "Los depósitos tokenizados siguen siendo una idea a largo plazo",
+          "Como área de estudio a más largo plazo, el banco menciona el posible uso de depósitos tokenizados cuya emisión está considerando la propia Minna no Bank, además de enlaces a servicios de inversión dentro de la aplicación bancaria. El anuncio describe una cooperación en estudio, no un token de depósito ya lanzado, un exchange aprobado ni una integración bancaria operativa. Las empresas indicaron que comunicarán más detalles por separado."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Minna no Bank et Trek Labs Japan s’accordent pour étudier des services bancaires en yens et des dépôts tokenisés",
+      "description": "La banque japonaise Minna no Bank a conclu un accord de principe avec Trek Labs Japan, liée à Backpack, afin d’étudier les dépôts et retraits en yens ; les dépôts tokenisés restent une possibilité future.",
+      "sections": [
+        [
+          "Un accord de principe pour une future plateforme japonaise",
+          "Minna no Bank a annoncé le 12 novembre 2026 avoir conclu un accord de principe avec Trek Labs Japan. Les parties examineront l’utilisation des fonctions financières de la banque dans une infrastructure Web3 et une plateforme de négociation de cryptoactifs prévues au Japon. Trek Labs Japan appartient au groupe qui exploite le portefeuille et la plateforme de négociation Backpack."
+        ],
+        [
+          "Les fonctions en yens dépendent de l’enregistrement de la plateforme",
+          "Le concept initial intégrerait les dépôts et retraits en yens japonais par l’intermédiaire de l’activité Banking-as-a-Service de la banque. Cette intégration est conditionnée à l’enregistrement de Trek Labs Japan comme opérateur de plateforme d’échange de cryptoactifs au Japon."
+        ],
+        [
+          "Les dépôts tokenisés restent une idée à plus long terme",
+          "À plus long terme, la banque évoque l’utilisation éventuelle de dépôts tokenisés que Minna no Bank envisage elle-même d’émettre, ainsi que des liens vers des services d’investissement au sein de son application. L’annonce porte sur une coopération à l’étude, et non sur un token de dépôt déjà lancé, une plateforme agréée ou une intégration bancaire opérationnelle. Les entreprises ont indiqué que des précisions supplémentaires seraient communiquées séparément."
+        ]
+      ]
+    },
+    "sourceSha256": "326cfd4bc18f9cd46a7676faa56c808e84d3efff3abc4a5a16168a28d389285c"
   }
 }
