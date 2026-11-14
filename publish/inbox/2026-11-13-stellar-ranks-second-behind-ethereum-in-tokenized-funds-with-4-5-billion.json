@@ -28,7 +28,7 @@
     "discoveredAt": "2026-11-13T14:07:14.664004+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
@@ -71,6 +71,7 @@
         "sourceUrl": "https://tokenterminal.com/resources/newsletter/stellar-is-now-the-2-chain-for-tokenized-funds",
         "anchor": "from $1.0m to $538.7m"
       }
-    ]
+    ],
+    "contentSha256": "bb204152f8480f2486d1b70d2784f9ec149dd13ef5d4728ff470707a004d6a45"
   }
 }
