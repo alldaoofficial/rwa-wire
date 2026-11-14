@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-14T02:19:56Z",
-    "reason": "Rechecked 2026-11-12 coverage: TechFlow (https://www.techflowpost.com/en-US/newsletter/144418) attributes a roughly 5% Avalanche C-Chain tokenized-stock market share as of 2026-11-08 to The Block citing RWA.xyz, while WorldPing and other mirrors explicitly repeat The Block rather than independent reporting. A dated directly readable RWA.xyz primary dataset validating the exact denominator and share, or two independent reputable full-text investigations, was not verified. The original discovery link remains a Google News redirect. Hold for six hours pending primary data; do not present syndicated repeats as independent corroboration."
+    "reviewedAt": "2026-11-14T12:13:46Z",
+    "reason": "The complete TechFlow report dated 2026-11-12 (https://www.techflowpost.com/en-US/newsletter/144418) attributes Avalanche C-Chain's approximately 5% tokenized-stock share as of November 8, $3.73bn total capitalization and 287 assets above $1m to The Block citing RWA.xyz. WorldPing (https://worldping.lovable.app/news/crypto/avalanche-owns-five-percent-of-tokenized-stocks-nyoonh) explicitly credits The Block and is not independent reporting. No directly inspected dated RWA.xyz dataset or two independent full-text investigations establish the precise share and denominator. Remain held; retry at least six hours after this review."
   }
 }
