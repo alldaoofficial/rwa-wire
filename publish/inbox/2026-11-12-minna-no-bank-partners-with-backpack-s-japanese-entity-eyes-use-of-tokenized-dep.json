@@ -30,7 +30,7 @@
     "discoveredAt": "2026-11-12T10:37:19.568166+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
@@ -78,6 +78,7 @@
         "sourceUrl": "https://corporate.minna-no-ginko.com/information/corporate/2026/11/12/892/",
         "anchor": "みんなの銀行アプリ内"
       }
-    ]
+    ],
+    "contentSha256": "6f61cb91059636c44a6bd383e86b1d8177850b519d64e29955fc5ee23ffb547c"
   }
 }
