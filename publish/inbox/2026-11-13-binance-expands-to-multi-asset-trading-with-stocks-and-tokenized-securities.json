@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-13T09:17:48Z",
-    "reason": "Full Blockchain.News report dated 2026-11-13 02:33 UTC was located (https://blockchain.news/news/binance-multi-asset-trading-stocks-tokenized-securities), but its claims of 7,000+ US stocks/ETFs, 24/5 trading, stablecoin settlement and 80% emerging-market volume have no linked dated Binance primary announcement or second independent full-text confirmation. Binance official bStocks collateral notices from 2026-09-30 and 2026-10-07 describe earlier, jurisdiction-restricted tokenized securities functionality, not this claimed November 13 launch. No independently verified new event or three primary-anchored facts; hold for six hours, retry no earlier than 2026-11-13T15:17:48Z."
+    "reviewedAt": "2026-11-14T02:19:56Z",
+    "reason": "Rechecked full Binance primary press release dated 2026-07-15 (https://www.prnewswire.com/apac/news-releases/binance-launches-us-stocks-trading-and-previews-bstocks-tokenized-securities-302825381.html): it already announced access to 7,000+ U.S. stocks/ETFs and previewed tokenized equities. Binance's 2026-10-21 bStocks collateral notice (https://www.binance.bh/en/support/announcement/detail/3afa938f499d403382d01d0c0644507e) describes an earlier jurisdiction-restricted feature, not a new 2026-11-13 multi-asset launch. No dated new Binance primary release or two independent full-text reports substantiate the November 13 headline as a fresh event. Hold for six hours; do not recycle the July launch or imply universal availability."
   }
 }
