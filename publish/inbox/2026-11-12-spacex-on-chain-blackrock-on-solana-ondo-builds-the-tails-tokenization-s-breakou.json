@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-14T03:13:40.654Z",
-    "reason": "Full AMBCrypto article dated 2026-11-11 is a multi-event market roundup, not a newly verified single announcement. Cryptonews.net, NBTC and RWA Signal repeat or summarize the same reporting, not independent corroboration. Time-sensitive Token Terminal/RWA.xyz figures (including $337.8bn total and $423m SHVon) lack a checked dated primary dataset; direct issuer evidence for the claims was not verified. Do not publish until primary data or two genuinely independent full reports corroborate a specific new event. Retry no earlier than six hours after reviewedAt."
+    "reviewedAt": "2026-11-14T11:11:03Z",
+    "reason": "Rechecked the complete AMBCrypto roundup dated Nov 11 (https://ambcrypto.com/spacex-on-chain-blackrock-on-solana-ondo-builds-the-tails-tokenizations-breakout-year/). RWA Signal explicitly attributes its Nov 12 summary to AMBCrypto, so it is not independent reporting. The article's time-sensitive $337.8bn market capitalization, 15,304 assets, 62% outside-hours trading and $423m SHVon figures cite Token Terminal, a social post and RWA.xyz without a directly checked dated primary data snapshot. Other Ondo BlackRock portfolio launches in the available independent reports occurred in September/October, not a new Nov 12 launch. No new single event supported by a primary source or two independent full reports. Retain held; retry no earlier than six hours after reviewedAt."
   }
 }
