@@ -9,14 +9,14 @@ const recent = (await getCollection("articles", ({ data }) => !data.draft && ["n
 <BaseLayout title="RWA Pulse | Daily Tokenized Finance Market Snapshot" description="Your daily RWA market snapshot: tracked token prices, 24-hour performance, market breadth and the latest source-led tokenization coverage.">
   <section class="wire-container py-14 sm:py-20">
     <p class="wire-kicker">Daily intelligence / RWA Pulse</p>
-    <h1 class="wire-display mt-5">The market in 60 seconds.</h1>
-    <p class="wire-lede mt-6">A repeatable daily check-in: the latest available market snapshot, followed by developments worth reading. Market data reflects a tracked token basket, not the value of all tokenized real-world assets.</p>
+    <h1 data-reveal class="wire-display mt-5">The market in 60 seconds.</h1>
+    <p data-reveal class="wire-lede mt-6">A repeatable daily check-in: the latest available market snapshot, followed by developments worth reading. Market data reflects a tracked token basket, not the value of all tokenized real-world assets.</p>
     <div class="mt-8 flex flex-wrap gap-3"><a href="#pulse-market" class="wire-action">Market snapshot ↓</a><a href="#pulse-news" class="wire-action">Latest coverage ↓</a><a href={sitePath("/radar/")} class="wire-action wire-action-primary">Explore RWA Radar →</a></div>
   </section>
   <div id="pulse-market"><MarketDashboard /></div>
   <section id="pulse-news" class="wire-container py-12 sm:py-16">
     <div class="flex items-end justify-between gap-4 border-b border-line pb-4"><div><p class="eyebrow text-wire">Editorial desk</p><h2 class="mt-2 font-serif text-2xl text-ink">Latest verified coverage</h2></div><a class="text-xs text-wire" href={sitePath("/news/")}>All news →</a></div>
-    <div class="divide-y divide-line">
+    <div data-reveal class="divide-y divide-line">
       {recent.map((entry) => <a href={sitePath(`/${entry.data.category}/${entry.slug}/`)} class="block rounded-xl px-4 py-6 transition hover:bg-surface/60"><p class="font-mono text-[10px] uppercase tracking-wider text-ink-muted">{entry.data.category} · {entry.data.pubDate.toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric",timeZone:"UTC"})}</p><h3 class="mt-2 font-serif text-xl leading-snug text-ink sm:text-2xl">{entry.data.title}</h3><p class="mt-2 max-w-3xl text-sm leading-6 text-ink-muted">{entry.data.description}</p></a>)}
     </div>
   </section>
