@@ -1,7 +1,7 @@
 {
-  "title": "Stellar Ranks Second Behind Ethereum in Tokenized Funds With $4.5 Billion",
-  "description": "Stellar Ranks Second Behind Ethereum in Tokenized Funds With $4.5 Billion",
-  "why_it_matters": "",
+  "title": "Stellar Rises to Second Place in Tokenized Funds as Token Terminal Tracks $4.5B",
+  "description": "Token Terminal's November 12 data places Stellar behind only Ethereum in tokenized fund value, with Spiko, Franklin Templeton and Ondo driving its expansion.",
+  "why_it_matters": "Stellar's rise highlights how tokenized fund adoption can spread across issuers and investor segments rather than depend on a single product. The figures measure fund market capitalization, not trading liquidity or returns to XLM holders.",
   "pubDate": "2026-11-13",
   "category": "news",
   "tags": [
@@ -10,14 +10,15 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "Stellar Ranks Second Behind Ethereum in Tokenized Funds With $4.5 Billion",
-    ""
+    "Token Terminal ranks Stellar second for tokenized funds at $4.5 billion, behind Ethereum.",
+    "Spiko's Stellar funds reached $2.1 billion, including approximately $1.6 billion in eurSAFO.",
+    "Franklin Templeton's Stellar fund value reached $1.3 billion; Ondo's USDY reached $538.7 million."
   ],
-  "body": "Stellar Ranks Second Behind Ethereum in Tokenized Funds With $4.5 Billion",
+  "body": "Stellar has become the second-largest blockchain for tokenized funds by market capitalization, according to a November 12, 2026 analysis published by onchain data provider Token Terminal. The firm estimates $4.5 billion in tokenized funds on Stellar, up from $675.2 million and eighth place one year earlier. Ethereum remains the largest network by this measure.\n\nThe expansion spans several issuers. Token Terminal reports that Spiko's funds on Stellar reached $2.1 billion, including approximately $1.6 billion in its eurSAFO euro money market fund. Franklin Templeton's tokenized funds on the network rose to $1.3 billion, with its BENJI product accounting for most of that amount. Ondo's USDY fund on Stellar reached $538.7 million, compared with about $1 million a year earlier.\n\nThese are provider-reported market capitalization estimates for tokenized funds, not measures of secondary-market turnover, investor profits or the value of Stellar's native token. The mix of institutional cash-management products and Treasury-linked funds illustrates how issuance demand is broadening across different investor groups.",
   "sources": [
     {
-      "name": "Cryptonews.net",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5UT04zbkZEQkRVRXR3RzAxd21jXzFGdVF0MjM5WEI5bW5FanFZcEJkT0kzQ0UzeUFFeFR1Tmt4RVU2VjhVUnNFaDlmaHAtdVZ6WFZrSTE3eGgtOWVP?oc=5"
+      "name": "Token Terminal — The Snapshot, November 12, 2026",
+      "url": "https://tokenterminal.com/resources/newsletter/stellar-is-now-the-2-chain-for-tokenized-funds"
     }
   ],
   "newsWatch": {
@@ -31,10 +32,45 @@
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "verified",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-13T14:17:49.988Z",
-    "reason": "The November 13 headline asserts $4.5 billion and second place in tokenized funds, but the accessible Stellar primary page reports $4 billion as of September 1, 2026, and the available independent reporting uses older or differently defined RWA metrics. No current dated primary dataset or two independent full-text reports verify the exact new ranking and $4.5 billion claim. Recheck no sooner than six hours after reviewedAt."
+    "reviewedAt": "2026-11-14T13:19:03.091Z",
+    "sources": [
+      {
+        "url": "https://tokenterminal.com/resources/newsletter/stellar-is-now-the-2-chain-for-tokenized-funds",
+        "publishedAt": "2026-11-12",
+        "checkedAt": "2026-11-14T13:19:03.091Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Token Terminal ranked Stellar second among chains for tokenized funds, with $4.5 billion in market capitalization.",
+        "sourceUrl": "https://tokenterminal.com/resources/newsletter/stellar-is-now-the-2-chain-for-tokenized-funds",
+        "anchor": "second largest chain for tokenized funds"
+      },
+      {
+        "claim": "A year before the November 2026 report, Stellar ranked eighth with $675.2 million in tokenized funds.",
+        "sourceUrl": "https://tokenterminal.com/resources/newsletter/stellar-is-now-the-2-chain-for-tokenized-funds",
+        "anchor": "ranked eighth, with only $675.2m"
+      },
+      {
+        "claim": "Spiko tokenized funds on Stellar reached $2.1 billion, including $1.6 billion attributed to eurSAFO.",
+        "sourceUrl": "https://tokenterminal.com/resources/newsletter/stellar-is-now-the-2-chain-for-tokenized-funds",
+        "anchor": "to $2.1b in market cap"
+      },
+      {
+        "claim": "Franklin Templeton tokenized funds on Stellar reached $1.3 billion, predominantly through the BENJI product.",
+        "sourceUrl": "https://tokenterminal.com/resources/newsletter/stellar-is-now-the-2-chain-for-tokenized-funds",
+        "anchor": "record $1.3b in market cap"
+      },
+      {
+        "claim": "Ondo's USDY tokenized fund on Stellar reached $538.7 million after starting the period near $1 million.",
+        "sourceUrl": "https://tokenterminal.com/resources/newsletter/stellar-is-now-the-2-chain-for-tokenized-funds",
+        "anchor": "from $1.0m to $538.7m"
+      }
+    ]
   }
 }
