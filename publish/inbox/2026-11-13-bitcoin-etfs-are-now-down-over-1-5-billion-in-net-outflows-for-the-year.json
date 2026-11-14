@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-13T17:17:40.051Z",
-    "reason": "CoinDesk's November 13 ETF-flow story was traced to its direct publisher URL, but accessible full text is chiefly reproduced by syndication/aggregator sites citing CoinDesk and SoSoValue, not two independent full-text reports or independently inspected primary flow records. The source-enrichment evidence requirement is unmet; do not treat copied reporting as independent corroboration. Retry no sooner than six hours after reviewedAt."
+    "reviewedAt": "2026-11-14T00:20:09.750Z",
+    "reason": "Rechecked 2026-11-14 UTC: the full CoinDesk November 13 report attributes $1.56B year-to-date U.S. spot Bitcoin ETF outflows and weekly redemptions to SoSoValue. BeInCrypto's independent November 6 full report only documents an earlier $502M deficit through November 5, not the November 13 $1.56B figure. No dated full primary SoSoValue dataset or independent second full-text report corroborating the November 13 total was inspected. Hold; retry no sooner than six hours after reviewedAt."
   }
 }
