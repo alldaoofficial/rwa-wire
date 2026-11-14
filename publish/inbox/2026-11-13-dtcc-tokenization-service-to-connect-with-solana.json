@@ -1,8 +1,8 @@
 {
-  "title": "DTCC Tokenization Service to Connect with Solana",
-  "description": "DTCC Tokenization Service to Connect with Solana",
-  "why_it_matters": "",
-  "pubDate": "2026-11-13",
+  "title": "DTCC Plans Solana Integration for Tokenized Securities in Second Half of 2027",
+  "description": "DTCC says its Tokenization Service will connect to Solana in the second half of 2027, extending a service launched in October to another blockchain network for eligible DTC-custodied assets.",
+  "why_it_matters": "The planned connection could expand where regulated securities entitlements can be represented and managed onchain while retaining conventional investor protections. It is a future integration, not evidence that DTCC-backed Solana securities are already available.",
+  "pubDate": "2026-11-12",
   "category": "news",
   "tags": [
     "Tokenization",
@@ -10,14 +10,15 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "DTCC Tokenization Service to Connect with Solana",
-    ""
+    "DTCC announced the Solana integration plan on November 12, 2026, with availability targeted for the second half of 2027.",
+    "The existing DTCC Tokenization Service launched on October 28, 2026.",
+    "DTCC says eligible DTC-custodied assets will retain established ownership rights and regulatory safeguards across integrated networks."
   ],
-  "body": "DTCC Tokenization Service to Connect with Solana",
+  "body": "The Depository Trust & Clearing Corporation announced on November 12 that it plans to connect its Tokenization Service to the Solana blockchain. The company expects eligible securities held at its Depository Trust Company subsidiary to become available in tokenized form on Solana during the second half of 2027. This is a planned integration, not a completed Solana launch.\n\nDTCC launched its Tokenization Service on October 28, 2026. The proposed Solana connection is intended to support conversion of eligible traditional holdings into tokenized representations and related token lifecycle functions. DTCC describes the expansion as part of a multi-chain strategy linking existing securities infrastructure with blockchain networks.\n\nAccording to DTCC, securities represented through the service are intended to preserve the ownership rights, investor protections and regulatory safeguards of their traditionally held counterparts. The announcement does not establish that these assets are already trading or settling on Solana. The key milestone to monitor is delivery of the network integration in 2027.",
   "sources": [
     {
-      "name": "Markets Media",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNel9BV0JUTFdBTE5LcWRONGlkdVdLNFh5S0xJb1kzQnY4amlicXBUc2pqcGpGazVQYjJ4RWRFT0Uwd2FCMmdhSG80SnpmS2VpTU9qYkwyU1R5MnZjcnE1V09uUGNDcmVWOVRjTW0zMjNRcnZJWHF1ZURKTEQyZ1V5bnZoSHk?oc=5"
+      "name": "DTCC",
+      "url": "https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-to-connect-with-solana"
     }
   ],
   "newsWatch": {
@@ -29,5 +30,47 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-14T16:14:16.702Z",
+    "sources": [
+      {
+        "url": "https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-to-connect-with-solana",
+        "publishedAt": "2026-11-12",
+        "checkedAt": "2026-11-14T16:14:16.702Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "DTCC announced plans on November 12, 2026 to connect its tokenization service with the Solana blockchain.",
+        "sourceUrl": "https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-to-connect-with-solana",
+        "anchor": "November 12, 2026"
+      },
+      {
+        "claim": "The company expects the Solana integration to become available during the second half of 2027.",
+        "sourceUrl": "https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-to-connect-with-solana",
+        "anchor": "second half of 2027"
+      },
+      {
+        "claim": "DTCC stated that its Tokenization Service had already launched on October 28, 2026.",
+        "sourceUrl": "https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-to-connect-with-solana",
+        "anchor": "DTS launched on Oct. 28"
+      },
+      {
+        "claim": "The proposed integration is designed to enable conversion of eligible traditional assets into tokenized representations.",
+        "sourceUrl": "https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-to-connect-with-solana",
+        "anchor": "rapid conversion of eligible traditional assets"
+      },
+      {
+        "claim": "DTCC says tokenized securities on integrated networks will retain traditional investor protections and ownership rights.",
+        "sourceUrl": "https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-to-connect-with-solana",
+        "anchor": "same investor protections, ownership rights"
+      }
+    ]
   }
 }
