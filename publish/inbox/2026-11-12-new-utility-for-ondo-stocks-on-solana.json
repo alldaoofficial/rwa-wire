@@ -32,7 +32,7 @@
     "requiresSourceReview": true,
     "relatedCoverageTitles": [],
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment"
+    "contentStatus": "source-reviewed"
   },
   "sourceReview": {
     "status": "verified",
@@ -79,6 +79,7 @@
         "sourceUrl": "https://ondo.finance/blog/ondo-stocks-as-collateral-on-spout",
         "anchor": "$250M initiative"
       }
-    ]
+    ],
+    "contentSha256": "172985dbb76294a35c3d82017de81c59ccc3dd9bbc5e9934160fd932e21a655f"
   }
 }
