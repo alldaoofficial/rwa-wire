@@ -1,0 +1,23 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import MarketDashboard from "@/components/MarketDashboard.astro";
+import { getCollection } from "astro:content";
+import { sitePath } from "../utils/paths";
+const recent = (await getCollection("articles", ({ data }) => !data.draft && ["news","markets","rwa","tokenization","institutions"].includes(data.category)))
+  .sort((a,b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()).slice(0,5);
+---
+<BaseLayout title="RWA Pulse | Daily Tokenized Finance Market Snapshot" description="Your daily RWA market snapshot: tracked token prices, 24-hour performance, market breadth and the latest source-led tokenization coverage.">
+  <section class="wire-container py-10 sm:py-14">
+    <p class="eyebrow text-wire">Daily intelligence // RWA Pulse</p>
+    <h1 class="mt-3 font-serif text-4xl text-ink sm:text-5xl">The market in 60 seconds.</h1>
+    <p class="mt-4 max-w-2xl text-sm leading-6 text-ink-muted">A repeatable daily check-in: the latest available market snapshot, followed by developments worth reading. Market data reflects a tracked token basket, not the value of all tokenized real-world assets.</p>
+    <div class="mt-6 flex flex-wrap gap-3 text-xs"><a href="#pulse-market" class="border border-line px-4 py-2 text-ink hover:border-wire">Market snapshot ↓</a><a href="#pulse-news" class="border border-line px-4 py-2 text-ink hover:border-wire">Latest coverage ↓</a><a href={sitePath("/radar/")} class="border border-wire/50 px-4 py-2 text-wire hover:bg-surface">Explore RWA Radar →</a></div>
+  </section>
+  <div id="pulse-market"><MarketDashboard /></div>
+  <section id="pulse-news" class="wire-container py-12 sm:py-16">
+    <div class="flex items-end justify-between gap-4 border-b border-line pb-4"><div><p class="eyebrow text-wire">Editorial desk</p><h2 class="mt-2 font-serif text-2xl text-ink">Latest verified coverage</h2></div><a class="text-xs text-wire" href={sitePath("/news/")}>All news →</a></div>
+    <div class="divide-y divide-line">
+      {recent.map((entry) => <a href={sitePath(`/${entry.data.category}/${entry.slug}/`)} class="block py-5 hover:bg-surface/50"><p class="font-mono text-[10px] uppercase tracking-wider text-ink-muted">{entry.data.category} · {entry.data.pubDate.toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric",timeZone:"UTC"})}</p><h3 class="mt-2 font-serif text-xl text-ink">{entry.data.title}</h3><p class="mt-2 max-w-3xl text-sm leading-6 text-ink-muted">{entry.data.description}</p></a>)}
+    </div>
+  </section>
+</BaseLayout>
