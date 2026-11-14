@@ -5,16 +5,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        bg: "#080A0D",
-        surface: "#11151A",
-        "surface-raised": "#161B22",
-        line: "#1E252D",
-        ink: "#F5F7FA",
-        "ink-muted": "#8B949E",
+        bg: "#0B1015",
+        surface: "#121A21",
+        "surface-raised": "#1B2630",
+        line: "#2A3640",
+        ink: "#F0F5F4",
+        "ink-muted": "#A2AFB8",
         wire: {
-          DEFAULT: "#2ED47A",
-          dim: "#1F8F57",
-          soft: "#173226",
+          DEFAULT: "#55DBA1",
+          dim: "#26976C",
+          soft: "#173D33",
         },
       },
       fontFamily: {
