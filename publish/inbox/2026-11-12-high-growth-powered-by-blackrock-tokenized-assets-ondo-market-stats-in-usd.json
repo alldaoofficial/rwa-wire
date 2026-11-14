@@ -34,5 +34,12 @@
     "requiresSourceReview": true,
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-14T22:20:07.921Z",
+    "reason": "Discovery resolves to Binance/CoinMarketCap BLKHIon price and market-statistics pages, not a dated new announcement. Binance explicitly says the token is not listed there; the scanner headline conflates a token name with a BlackRock corporate announcement. No reportable fresh RWA event."
   }
 }
