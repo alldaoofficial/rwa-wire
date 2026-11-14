@@ -4968,5 +4968,71 @@
       ]
     },
     "sourceSha256": "b371a5ea6b0bf89624eac6bebb5321b290034cf32cb9e41d3a135e717e41343c"
+  },
+  "stellar-rises-to-second-place-in-tokenized-funds-as-token-terminal-tracks-4-5b": {
+    "path": "/news/stellar-rises-to-second-place-in-tokenized-funds-as-token-terminal-tracks-4-5b/",
+    "date": "2026-11-13",
+    "kind": "news",
+    "sources": [
+      [
+        "Token Terminal — The Snapshot, November 12, 2026",
+        "https://tokenterminal.com/resources/newsletter/stellar-is-now-the-2-chain-for-tokenized-funds"
+      ]
+    ],
+    "de": {
+      "title": "Stellar steigt bei tokenisierten Fonds auf Platz zwei, Token Terminal erfasst 4,5 Milliarden US-Dollar",
+      "description": "Die Daten von Token Terminal vom 12. November sehen Stellar beim Wert tokenisierter Fonds nur hinter Ethereum; Spiko, Franklin Templeton und Ondo treiben das Wachstum.",
+      "sections": [
+        [
+          "Stellar erreicht Platz zwei bei tokenisierten Fonds",
+          "Stellar ist nach Marktkapitalisierung zur zweitgrößten Blockchain für tokenisierte Fonds aufgestiegen. Das geht aus einer am 12. November 2026 veröffentlichten Analyse des Onchain-Datenanbieters Token Terminal hervor. Das Unternehmen schätzt den Wert tokenisierter Fonds auf Stellar auf 4,5 Milliarden US-Dollar, nach 675,2 Millionen US-Dollar und Platz acht ein Jahr zuvor. Ethereum bleibt nach diesem Maßstab das größte Netzwerk."
+        ],
+        [
+          "Spiko, Franklin Templeton und Ondo treiben das Wachstum",
+          "Das Wachstum verteilt sich auf mehrere Emittenten. Token Terminal zufolge erreichten Spikos Fonds auf Stellar 2,1 Milliarden US-Dollar, darunter rund 1,6 Milliarden US-Dollar im Euro-Geldmarktfonds eurSAFO. Franklin Templetons tokenisierte Fonds im Netzwerk stiegen auf 1,3 Milliarden US-Dollar, wobei das BENJI-Produkt den größten Teil dieses Betrags ausmachte. Ondos USDY-Fonds auf Stellar erreichte 538,7 Millionen US-Dollar, verglichen mit etwa 1 Million US-Dollar ein Jahr zuvor."
+        ],
+        [
+          "Marktkapitalisierung ist weder Umsatz noch Anlegerrendite",
+          "Bei den Zahlen handelt es sich um vom Datenanbieter gemeldete Schätzungen der Marktkapitalisierung tokenisierter Fonds. Sie messen weder den Sekundärmarktumsatz noch Anlegergewinne oder den Wert des nativen Stellar-Tokens. Die Kombination aus institutionellen Cash-Management-Produkten und an US-Staatsanleihen gekoppelten Fonds verdeutlicht, wie sich die Emissionsnachfrage auf unterschiedliche Anlegergruppen ausweitet."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Stellar sube al segundo puesto en fondos tokenizados, con 4.500 millones de dólares según Token Terminal",
+      "description": "Los datos de Token Terminal del 12 de noviembre sitúan a Stellar solo por detrás de Ethereum en valor de fondos tokenizados, impulsado por Spiko, Franklin Templeton y Ondo.",
+      "sections": [
+        [
+          "Stellar alcanza el segundo puesto en fondos tokenizados",
+          "Stellar se ha convertido en la segunda blockchain por capitalización de mercado de fondos tokenizados, según un análisis publicado el 12 de noviembre de 2026 por el proveedor de datos onchain Token Terminal. La firma estima que los fondos tokenizados en Stellar suman 4.500 millones de dólares, frente a 675,2 millones de dólares y el octavo puesto un año antes. Ethereum sigue siendo la mayor red según esta métrica."
+        ],
+        [
+          "Spiko, Franklin Templeton y Ondo impulsan el crecimiento",
+          "La expansión abarca varios emisores. Token Terminal informa de que los fondos de Spiko en Stellar alcanzaron 2.100 millones de dólares, incluidos aproximadamente 1.600 millones de dólares en su fondo monetario en euros eurSAFO. Los fondos tokenizados de Franklin Templeton en la red aumentaron hasta 1.300 millones de dólares, con su producto BENJI representando la mayor parte de esa cantidad. El fondo USDY de Ondo en Stellar alcanzó 538,7 millones de dólares, frente a cerca de 1 millón de dólares un año antes."
+        ],
+        [
+          "La capitalización no equivale a volumen ni a rentabilidad",
+          "Las cifras son estimaciones de capitalización de mercado de fondos tokenizados comunicadas por el proveedor, no mediciones del volumen negociado en el mercado secundario, de los beneficios de los inversores ni del valor del token nativo de Stellar. La combinación de productos institucionales de gestión de efectivo y fondos vinculados a bonos del Tesoro muestra cómo la demanda de emisión se amplía entre distintos grupos de inversores."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Stellar se hisse au deuxième rang des fonds tokenisés, avec 4,5 milliards de dollars selon Token Terminal",
+      "description": "Les données de Token Terminal du 12 novembre placent Stellar derrière le seul Ethereum pour la valeur des fonds tokenisés, portée par Spiko, Franklin Templeton et Ondo.",
+      "sections": [
+        [
+          "Stellar atteint la deuxième place pour les fonds tokenisés",
+          "Stellar est devenue la deuxième blockchain en matière de capitalisation des fonds tokenisés, selon une analyse publiée le 12 novembre 2026 par le fournisseur de données onchain Token Terminal. La société estime à 4,5 milliards de dollars la valeur des fonds tokenisés sur Stellar, contre 675,2 millions de dollars et une huitième place un an plus tôt. Ethereum reste le premier réseau selon cet indicateur."
+        ],
+        [
+          "Spiko, Franklin Templeton et Ondo soutiennent la progression",
+          "Cette expansion repose sur plusieurs émetteurs. Selon Token Terminal, les fonds de Spiko sur Stellar ont atteint 2,1 milliards de dollars, dont environ 1,6 milliard de dollars dans son fonds monétaire en euros eurSAFO. Les fonds tokenisés de Franklin Templeton sur le réseau ont progressé à 1,3 milliard de dollars, son produit BENJI représentant l’essentiel de ce montant. Le fonds USDY d’Ondo sur Stellar a atteint 538,7 millions de dollars, contre environ 1 million de dollars un an auparavant."
+        ],
+        [
+          "La capitalisation ne mesure ni les échanges ni les rendements",
+          "Ces chiffres sont des estimations de capitalisation des fonds tokenisés communiquées par le fournisseur, et non des mesures des volumes sur le marché secondaire, des gains des investisseurs ou de la valeur du token natif de Stellar. La combinaison de produits institutionnels de gestion de trésorerie et de fonds liés aux bons du Trésor illustre l’élargissement de la demande d’émission à différents groupes d’investisseurs."
+        ]
+      ]
+    },
+    "sourceSha256": "346106793f1a2d998fbed5d317343864a63e16da1c8dd270b5792b5e3aed82dc"
   }
 }
