@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-15T01:19:57Z",
-    "reason": "TokenPost Nov 14 coverage reports Plume CEO Yin's general remarks on access to short-dated U.S. Treasury bills and SK Hynix, but the direct full article and original interview/statement were not verifiably retrieved. No independently corroborated dated announcement or three distinct source-anchored facts; Google News RSS is not an original source. Retry no sooner than six hours."
+    "reviewedAt": "2026-11-15T08:13:00Z",
+    "reason": "Full TokenPost Nov 14 article (https://www.tokenpost.com/news/people/57578) now read: it summarizes Chris Yin's access comments about short-dated US Treasury bills, SK Hynix and stablecoins. TokenPost Nov 11 coverage (https://www.tokenpost.com/news/people/54804) and Nov 11 Wu Blockchain podcast coverage indicate these remarks originate from an earlier discussion, not a newly announced Nov 14 product launch. Gate's Nov 11 report repeats the same interview and does not independently establish a new event. Original podcast/transcript and three independently anchored fresh facts have not been verified; leave held, retry no sooner than six hours."
   }
 }
