@@ -29,7 +29,7 @@
     "discoveredAt": "2026-11-12T19:07:14.800828+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
@@ -72,6 +72,7 @@
         "sourceUrl": "https://www.newswire.ca/news-releases/gtn-appoints-former-gemini-and-kraken-executive-mark-jennings-as-global-head-of-digital-assets-810038457.html",
         "anchor": "90+ markets"
       }
-    ]
+    ],
+    "contentSha256": "af934d36287641c105c69d0d40324b320c5fe77e1b6bcf904a00cbd0e83a3d10"
   }
 }
