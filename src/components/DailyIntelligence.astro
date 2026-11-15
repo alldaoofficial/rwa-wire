@@ -10,7 +10,7 @@ const latest=articles.filter(a=>a.data.pubDate.valueOf()<=now&&now-a.data.pubDat
 const previous=articles.filter(a=>a.data.pubDate.valueOf()<=now&&now-a.data.pubDate.valueOf()<7*86400000);
 const selected=(latest.length?latest:previous).slice(0,6);
 const windowLabel=latest.length?"Past 24 hours":"Past 7 days";
-const categories=[
+const categories: {label:string;test:RegExp}[]=[
  {label:"Institutions",test:/institution|bank|asset manager|custody|brokerage|partnership/i},
  {label:"Funds & treasuries",test:/fund|treasur|bond|money.market|credit|etf/i},
  {label:"Regulation",test:/regulat|compliance|licens|legislat|policy|sec\b|mica/i},
