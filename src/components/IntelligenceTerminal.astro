@@ -33,7 +33,7 @@ const assets=Object.entries(meta).map(([id,m])=>{const a=(markets.assets as Reco
  return {id,...m,price:typeof a?.usd==="number"?a.usd:null,change:typeof a?.usd_24h_change==="number"?a.usd_24h_change:null,volume:typeof a?.usd_24h_vol==="number"?a.usd_24h_vol:null,cap:typeof a?.usd_market_cap==="number"&&a.usd_market_cap>0?a.usd_market_cap:null};
 });
 const priced=assets.filter(a=>a.change!==null);
-const sectorRows=["Infrastructure","Tokenized assets","Private credit","Real estate","Payments"].map(sector=>{const group=priced.filter(a=>a.sector===sector);const mean=group.length?group.reduce((sum,a)=>sum+a.change,0)/group.length:0;return {sector,count:group.length,mean,width:Math.min(100,Math.abs(mean)*4)};});
+const sectorRows=["Infrastructure","Tokenized assets","Private credit","Real estate","Payments"].map(sector=>{const group=priced.filter(a=>a.sector===sector);const mean=group.length?group.reduce((sum,a)=>sum+(a.change??0),0)/group.length:0;return {sector,count:group.length,mean,width:Math.min(100,Math.abs(mean)*4)};});
 const up=priced.filter(a=>(a.change??0)>0).length;
 const avg=priced.length?priced.reduce((sum,a)=>sum+(a.change??0),0)/priced.length:0;
 const volume=assets.reduce((sum,a)=>sum+(a.volume??0),0);
@@ -51,7 +51,7 @@ const price=(v:number)=>"$"+v.toFixed(v<.1?5:v<1?4:2);
     <div class="terminal-card" data-reveal><p class="terminal-label">Tracked basket · 24h average</p><p class:list={["mt-3 font-mono text-3xl font-semibold",avg>=0?"text-wire":"text-rose-400"]}>{avg>0?"+":""}{avg.toFixed(2)}%</p><p class="mt-2 text-xs text-ink-muted">Equal-weighted token change</p></div>
     <div class="terminal-card" data-reveal><p class="terminal-label">Market breadth</p><p class="mt-3 font-mono text-3xl font-semibold text-ink">{up}<span class="text-base text-ink-muted"> / {priced.length}</span></p><div class="mt-3 h-1.5 overflow-hidden rounded-full bg-bg"><div class="h-full rounded-full bg-wire" style={`width:${priced.length?up/priced.length*100:0}%`}></div></div><p class="mt-2 text-xs text-ink-muted">Tracked tokens advancing</p></div>
     <div class="terminal-card" data-reveal><p class="terminal-label">Tracked 24h volume</p><p class="mt-3 font-mono text-3xl font-semibold text-ink">{fmt(volume)}</p><p class="mt-2 text-xs text-ink-muted">Sum of available token volumes</p></div>
-    <div class="terminal-card" data-reveal><p class="terminal-label">Market temperature</p><p class="mt-3 font-sans text-2xl font-semibold text-ink">{up===assets.length?"Broad strength":up===0?"Broad weakness":"Mixed breadth"}</p><p class="mt-2 text-xs text-ink-muted">Derived from this tracked basket</p></div>
+    <div class="terminal-card" data-reveal><p class="terminal-label">Market temperature</p><p class="mt-3 font-sans text-2xl font-semibold text-ink">{priced.length===0?"No data":up===priced.length?"Broad strength":up===0?"Broad weakness":"Mixed breadth"}</p><p class="mt-2 text-xs text-ink-muted">Derived from this tracked basket</p></div>
   </div>
   <div class="grid gap-4 xl:grid-cols-[minmax(0,1.75fr)_minmax(300px,.85fr)]">
     <div class="terminal-card min-w-0 p-0" data-reveal>
