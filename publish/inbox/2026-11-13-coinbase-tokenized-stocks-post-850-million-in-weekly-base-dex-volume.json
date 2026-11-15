@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-15T11:19:00Z",
-    "reason": "Read full TokenPost Nov 13 report https://www.tokenpost.com/news/investing/56960. Its $850m weekly Base DEX volume, $1.3bn 30-day volume, B20 beneficial-claim custody and Aerodrome concentration lack a directly accessible primary data release or two independent reputable full-text reports. Mempool Brief repeats the same specific figures and is not demonstrated independent; Digital Track aggregates TokenPost. No independently anchored three-fact ledger. Retry no sooner than six hours (after 2026-11-15T17:19:00Z)."
+    "reviewedAt": "2026-11-15T18:18:00Z",
+    "reason": "Rechecked 2026-11-15 after prior six-hour hold. Full EconoTimes report dated Nov 14 (https://econotimes.com/Coinbase-Tokenized-Stocks-Record-About-850-Million-in-Weekly-Base-DEX-Volume-1776809) repeats TokenPost's $850m weekly, $1.3bn 30-day and $1.2bn Coinbase-issuer figures, but carries TokenPost.ai imagery and near-identical framing, so independent reporting is not established. Earlier Crypto.news Sept 13 (https://crypto.news/base-tokenized-stock-volume-reaches-100-million/) verifies historical Base trading, not this Nov 13 weekly window. No accessible original Token Terminal or Base data snapshot independently supports the exact $850m weekly claim with three fresh facts. Remains held; retry no sooner than 2026-11-16T00:18:00Z."
   }
 }
