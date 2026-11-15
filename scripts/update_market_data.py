@@ -17,6 +17,23 @@ ASSETS = {
     "goldfinch": ("GFI", "Goldfinch"),
     "clearpool": ("CPOOL", "Clearpool"),
     "mantra-dao": ("OM", "MANTRA"),
+    "reserve-rights-token": ("RSR", "Reserve Rights"),
+    "origintrail": ("TRAC", "OriginTrail"),
+    "origin-protocol": ("OGN", "Origin Protocol"),
+    "truefi": ("TRU", "TrueFi"),
+    "polytrade": ("TRADE", "Polytrade"),
+    "propchain": ("PROPC", "Propchain"),
+    "realio-network": ("RIO", "Realio Network"),
+    "dusk-network": ("DUSK", "Dusk"),
+    "chex-token": ("CHEX", "Chintai"),
+    "landshare": ("LAND", "Landshare"),
+    "boson-protocol": ("BOSON", "Boson Protocol"),
+    "stobox-token": ("STBU", "Stobox"),
+    "brickken": ("BKN", "Brickken"),
+    "parcl": ("PRCL", "Parcl"),
+    "tokenfi": ("TOKEN", "TokenFi"),
+    "ix-swap": ("IXS", "IX Swap"),
+
 }
 OUT = Path("public/data/markets.json")
 HEADERS = {"Accept": "application/json", "User-Agent": "RWA-Wire/1.0"}
