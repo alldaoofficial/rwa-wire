@@ -1,7 +1,7 @@
 {
-  "title": "Bitcoin ETFs lose $1 billion for the second week in a row as crypto funds, except one, continue bleeding",
-  "description": "Bitcoin ETFs lose $1 billion for the second week in a row as crypto funds, except one, continue bleeding The Block",
-  "why_it_matters": "",
+  "title": "U.S. Bitcoin ETFs record a second straight $1 billion weekly outflow",
+  "description": "U.S. spot Bitcoin ETFs lost roughly $1.07 billion during November 9–13, according to The Block's analysis of SoSoValue data, while Farside's daily fund-flow table independently shows losses on each of the five trading days.",
+  "why_it_matters": "The back-to-back weekly redemptions provide a measurable signal of weakening demand for regulated Bitcoin investment vehicles. The distinction between daily fund flows and market prices matters: withdrawals reflect ETF subscriptions and redemptions, not a direct measure of investors selling coins on exchanges.",
   "pubDate": "2026-11-14",
   "category": "markets",
   "reviewCategory": "CRYPTO MARKET",
@@ -12,14 +12,19 @@
     "Institutions"
   ],
   "keyTakeaways": [
-    "Bitcoin ETFs lose $1 billion for the second week in a row as crypto funds, except one, continue bleeding The Block",
-    ""
+    "The Block reports approximately $1.07 billion of U.S. spot Bitcoin ETF outflows for November 9–13.",
+    "Farside Investors records net outflows on each of the five trading days in that week.",
+    "Farside shows November 13 net outflows of about $185.4 million, including $143.5 million from IBIT and $41.9 million from FBTC."
   ],
-  "body": "Bitcoin ETFs lose $1 billion for the second week in a row as crypto funds, except one, continue bleeding The Block",
+  "body": "U.S. spot Bitcoin exchange-traded funds recorded another week of heavy net withdrawals during November 9–13, 2026. The Block reported approximately $1.07 billion in weekly outflows, citing its analysis of SoSoValue figures, after roughly $1.28 billion had left the funds in the preceding week. That marked two consecutive weeks with more than $1 billion in redemptions.\n\nA separate daily fund-flow table maintained by Farside Investors shows net outflows on all five trading days of November 9–13. Its figures include approximately $201 million on Monday, $95 million on Tuesday, $300 million on Wednesday, $284 million on Thursday and $185 million on Friday. The final session's losses included about $143.5 million from BlackRock's IBIT and $41.9 million from Fidelity's FBTC.\n\nThese figures describe flows into and out of listed investment products, rather than Bitcoin's total trading volume. They also come from two data compilations with slightly different rounding. The sustained withdrawals offer a useful measure of institutional-market sentiment, but do not by themselves establish what caused the redemptions or predict subsequent prices.",
   "sources": [
     {
-      "name": "The Block",
-      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOd2RhQ3lIWVBkNjRaQ1ZucjBhNkItQ21qZi1NMFhuRE1Kd0FPMWhsb0F6eWVLVkpRVDZtSHJoQWdCQ0RacUNkdEJLQ1dHLVdHYzN4MkpUdU1od1FUcm8ybmdUdFEzb25BYTl0WUtJQy1oQ21nSnRybXBUbFExQmpmZDN2b3g2dTRZMjRHWE9FVlZ5UldzMVhMb0ZiWktmcjJHOElUYndGbG5XQS10dm5oLTlQQkphTEFTYUZubTVRbUpyV0pWV3VuV2ZESVpyOHdvSG9ieW5Bck9sTDFHUVhHZWY0WGJXYW9yelBHcA?oc=5"
+      "name": "Farside Investors — Bitcoin ETF Flow",
+      "url": "https://farside.co.uk/btc/"
+    },
+    {
+      "name": "The Block — Bitcoin ETF weekly flows",
+      "url": "https://www.theblock.co/news/markets/2026-11-14-bitcoin-etfs-lose-1-billion-for-the-second-week-in-a-row-as-crypto-funds-except-one-continue-bleeding-440337"
     }
   ],
   "cryptoWatch": {
@@ -31,10 +36,57 @@
     "contentStatus": "needs-source-enrichment"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "verified",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-14T22:20:10.376Z",
-    "reason": "The Block full report dated 2026-11-14 was read, but its ETF flow figures are attributed to SoSoValue. A dated full primary SoSoValue dataset or second independent full-text report was not verified in this review; do not promote a single secondary report as independent corroboration. Retry after six hours."
+    "reviewedAt": "2026-11-15T06:10:44Z",
+    "sources": [
+      {
+        "url": "https://farside.co.uk/btc/",
+        "publishedAt": "2026-11-13",
+        "checkedAt": "2026-11-15T06:10:44Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://www.theblock.co/news/markets/2026-11-14-bitcoin-etfs-lose-1-billion-for-the-second-week-in-a-row-as-crypto-funds-except-one-continue-bleeding-440337",
+        "publishedAt": "2026-11-14",
+        "checkedAt": "2026-11-15T06:10:44Z",
+        "kind": "news",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Farside's daily table records a net outflow of 201 million dollars on November 9.",
+        "sourceUrl": "https://farside.co.uk/btc/",
+        "anchor": "09 Nov 2026"
+      },
+      {
+        "claim": "Farside's daily table records a net outflow of 299.8 million dollars on November 11.",
+        "sourceUrl": "https://farside.co.uk/btc/",
+        "anchor": "(299.8)"
+      },
+      {
+        "claim": "On November 13, BlackRock IBIT had a net outflow of 143.5 million dollars.",
+        "sourceUrl": "https://farside.co.uk/btc/",
+        "anchor": "(143.5)"
+      },
+      {
+        "claim": "On November 13, Fidelity FBTC recorded a net outflow of 41.9 million dollars.",
+        "sourceUrl": "https://farside.co.uk/btc/",
+        "anchor": "(41.9)"
+      },
+      {
+        "claim": "The Block reported 1.07 billion dollars in Bitcoin ETF outflows for the week ending November 13.",
+        "sourceUrl": "https://www.theblock.co/news/markets/2026-11-14-bitcoin-etfs-lose-1-billion-for-the-second-week-in-a-row-as-crypto-funds-except-one-continue-bleeding-440337",
+        "anchor": "$1.07 billion in net outflows"
+      },
+      {
+        "claim": "The Block reported a combined 2.35 billion dollars of Bitcoin ETF outflows over two weeks.",
+        "sourceUrl": "https://www.theblock.co/news/markets/2026-11-14-bitcoin-etfs-lose-1-billion-for-the-second-week-in-a-row-as-crypto-funds-except-one-continue-bleeding-440337",
+        "anchor": "$2.35 billion over two weeks"
+      }
+    ]
   }
 }
