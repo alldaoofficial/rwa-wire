@@ -5232,5 +5232,75 @@
       ]
     },
     "sourceSha256": "326cfd4bc18f9cd46a7676faa56c808e84d3efff3abc4a5a16168a28d389285c"
+  },
+  "u-s-bitcoin-etfs-record-a-second-straight-1-billion-weekly-outflow": {
+    "path": "/markets/u-s-bitcoin-etfs-record-a-second-straight-1-billion-weekly-outflow/",
+    "date": "2026-11-14",
+    "kind": "news",
+    "sources": [
+      [
+        "Farside Investors — Bitcoin ETF Flow",
+        "https://farside.co.uk/btc/"
+      ],
+      [
+        "The Block — Bitcoin ETF weekly flows",
+        "https://www.theblock.co/news/markets/2026-11-14-bitcoin-etfs-lose-1-billion-for-the-second-week-in-a-row-as-crypto-funds-except-one-continue-bleeding-440337"
+      ]
+    ],
+    "de": {
+      "title": "US-Bitcoin-ETFs verzeichnen zweite Woche in Folge Abflüsse von 1 Milliarde US-Dollar",
+      "description": "US-Spot-Bitcoin-ETFs verloren vom 9. bis 13. November laut einer Analyse von The Block auf Basis von SoSoValue-Daten rund 1,07 Milliarden US-Dollar; die tägliche Fondsflusstabelle von Farside weist unabhängig davon an allen fünf Handelstagen Abflüsse aus.",
+      "sections": [
+        [
+          "Zweite Woche mit Abflüssen von mehr als 1 Milliarde US-Dollar",
+          "US-amerikanische Spot-Bitcoin-ETFs verzeichneten in der Woche vom 9. bis 13. November 2026 erneut hohe Nettoabflüsse. The Block berichtete auf Grundlage einer Analyse von SoSoValue-Zahlen von wöchentlichen Abflüssen in Höhe von rund 1,07 Milliarden US-Dollar, nachdem in der Vorwoche etwa 1,28 Milliarden US-Dollar aus den Fonds abgeflossen waren. Damit lagen die Rückgaben zwei Wochen in Folge über 1 Milliarde US-Dollar."
+        ],
+        [
+          "Farside zeigt Abflüsse an allen fünf Handelstagen",
+          "Eine separate tägliche Fondsflusstabelle von Farside Investors weist für alle fünf Handelstage vom 9. bis 13. November Nettoabflüsse aus. Die Zahlen umfassen rund 201 Millionen US-Dollar am Montag, 95 Millionen US-Dollar am Dienstag, 300 Millionen US-Dollar am Mittwoch, 284 Millionen US-Dollar am Donnerstag und 185 Millionen US-Dollar am Freitag. Die Verluste der letzten Sitzung enthielten etwa 143,5 Millionen US-Dollar beim IBIT von BlackRock und 41,9 Millionen US-Dollar beim FBTC von Fidelity."
+        ],
+        [
+          "Produktflüsse sind nicht das gesamte Bitcoin-Handelsvolumen",
+          "Die Zahlen beschreiben Zu- und Abflüsse börsennotierter Anlageprodukte und nicht das gesamte Handelsvolumen von Bitcoin. Sie stammen zudem aus zwei Datensammlungen mit leicht unterschiedlicher Rundung. Die anhaltenden Abflüsse liefern einen Anhaltspunkt für die Stimmung am institutionellen Markt, erklären für sich genommen aber weder die Ursachen der Rückgaben noch sagen sie spätere Kurse voraus."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Los ETF de bitcoin de EE. UU. registran una segunda semana consecutiva con salidas de 1.000 millones de dólares",
+      "description": "Los ETF de bitcoin al contado de EE. UU. perdieron alrededor de 1.070 millones de dólares entre el 9 y el 13 de noviembre, según el análisis de The Block de datos de SoSoValue, mientras que la tabla diaria de Farside muestra salidas en las cinco sesiones.",
+      "sections": [
+        [
+          "Segunda semana con salidas superiores a 1.000 millones de dólares",
+          "Los ETF de bitcoin al contado de Estados Unidos registraron otra semana de fuertes retiradas netas entre el 9 y el 13 de noviembre de 2026. The Block informó de aproximadamente 1.070 millones de dólares en salidas semanales a partir de su análisis de cifras de SoSoValue, después de que alrededor de 1.280 millones de dólares salieran de los fondos la semana anterior. Fue la segunda semana consecutiva con reembolsos superiores a 1.000 millones de dólares."
+        ],
+        [
+          "Farside muestra salidas en las cinco sesiones",
+          "Una tabla diaria independiente de flujos de fondos mantenida por Farside Investors muestra salidas netas en las cinco sesiones bursátiles del 9 al 13 de noviembre. Sus cifras incluyen aproximadamente 201 millones de dólares el lunes, 95 millones el martes, 300 millones el miércoles, 284 millones el jueves y 185 millones el viernes. Las pérdidas de la última sesión incluyeron unos 143,5 millones de dólares del IBIT de BlackRock y 41,9 millones del FBTC de Fidelity."
+        ],
+        [
+          "Los flujos de productos no son el volumen total de bitcoin",
+          "Estas cifras describen entradas y salidas de productos de inversión cotizados, no el volumen total de negociación de bitcoin. También proceden de dos recopilaciones de datos con redondeos ligeramente distintos. Las retiradas sostenidas ofrecen una medida útil del sentimiento del mercado institucional, pero por sí solas no determinan las causas de los reembolsos ni predicen los precios posteriores."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Les ETF bitcoin américains enregistrent une deuxième semaine consécutive de sorties de 1 milliard de dollars",
+      "description": "Les ETF bitcoin au comptant américains ont perdu environ 1,07 milliard de dollars du 9 au 13 novembre, selon l’analyse par The Block des données de SoSoValue, tandis que le tableau quotidien de Farside montre des sorties lors des cinq séances.",
+      "sections": [
+        [
+          "Deuxième semaine de sorties supérieures à 1 milliard de dollars",
+          "Les ETF bitcoin au comptant américains ont enregistré une nouvelle semaine de retraits nets importants du 9 au 13 novembre 2026. The Block a fait état d’environ 1,07 milliard de dollars de sorties hebdomadaires à partir de son analyse des chiffres de SoSoValue, après quelque 1,28 milliard de dollars de sorties la semaine précédente. Il s’agit de la deuxième semaine consécutive de rachats supérieurs à 1 milliard de dollars."
+        ],
+        [
+          "Farside relève des sorties lors des cinq séances",
+          "Un tableau quotidien distinct des flux de fonds tenu par Farside Investors fait apparaître des sorties nettes lors des cinq séances du 9 au 13 novembre. Ses chiffres comprennent environ 201 millions de dollars le lundi, 95 millions le mardi, 300 millions le mercredi, 284 millions le jeudi et 185 millions le vendredi. Les pertes de la dernière séance comprenaient environ 143,5 millions de dollars pour l’IBIT de BlackRock et 41,9 millions de dollars pour le FBTC de Fidelity."
+        ],
+        [
+          "Les flux de produits ne représentent pas le volume total du bitcoin",
+          "Ces chiffres décrivent les entrées et sorties de produits d’investissement cotés, et non le volume total des échanges de bitcoin. Ils proviennent aussi de deux compilations de données dont les arrondis diffèrent légèrement. Les retraits persistants fournissent une mesure utile du sentiment du marché institutionnel, mais ne permettent pas à eux seuls d’établir la cause des rachats ni de prévoir les prix ultérieurs."
+        ]
+      ]
+    },
+    "sourceSha256": "969cf813b01e7dadf11d49289006bc812b70c12b5cbcc92d63c4b443e8a1ae92"
   }
 }
