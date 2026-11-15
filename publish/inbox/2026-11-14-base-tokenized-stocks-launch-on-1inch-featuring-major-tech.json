@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-14T20:15:20.478Z",
-    "reason": "Rechecked 2026-11-14 full-text TokenPost report identifying MSFT, SONY, TTWO and AMD on Base via 1inch. 1inch primary blog dated 2026-08-24 (updated 2026-09-08) confirms tokenized stocks on Base via 1inch already existed; 2026-10-14 primary overview lists Microsoft among supported Base-linked equities. No dated 1inch primary release independently establishes a new 2026-11-14 launch of these four assets, and no two independently reported full-text sources with three distinct newly verified facts were established. Keep held; retry no sooner than six hours after reviewedAt."
+    "reviewedAt": "2026-11-15T13:17:27Z",
+    "reason": "New evidence located: 1inch-branded Bybit social post dated 2026-11-12 explicitly lists TTWOc, SONYc, MSFTc and AMDc on Base, with 24/7 swaps in dApp/Wallet (https://www.bybit.com/en-GB/social/user/3VplvM). DexSheet full Nov 12 report (https://dexsheet.com/changes/2026-11-12-1inch-adds-four-tokenized-stocks-on-base/) and TokenPost full Nov 14 report (https://www.tokenpost.com/news/business/57334) corroborate an addition, not initial Base launch; 1inch first launched Base tokenized equities in Aug. Before verified handoff, establish that the Bybit account is an authenticated official 1inch primary publisher, check independent reporting/duplicate publication, and anchor three distinct claims in the final article. No fabricated ledger or digest. Retry after 2026-11-15T19:17:27Z."
   }
 }
