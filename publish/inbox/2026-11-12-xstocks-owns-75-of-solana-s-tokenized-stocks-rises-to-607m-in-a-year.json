@@ -33,7 +33,8 @@
   "sourceReview": {
     "status": "held",
     "method": "source-enrichment-v1",
-    "reviewedAt": "2026-11-14T09:16:24Z",
-    "reason": "The Nov 12 AMBCrypto full report attributes the $607m Solana supply, 75% xStocks share, 2,102 products and 1.89m holder addresses to Blockworks, but a dated original Blockworks dataset establishing these figures was not verified. KuCoin reproduces the same AMBCrypto story, not independent reporting. The separately corroborated Nov 11 UK/EU xStocks expansion is already the subject of earlier xStocks review commits; do not repackage it as a new market-share event. Retry after six hours with original dated dataset or two independent full reports."
+    "reviewedAt": "2026-11-15T00:10:36.449Z",
+    "reason": "Rechecked AMBCrypto's complete Nov 12 report, which attributes $607m tokenized-equity supply on Solana, 75% xStocks share, 2,102 products and 1.89m holders to Blockworks. A dated full original Blockworks dataset establishing these exact measures was not located. The Nov 12 Wall Street Journal report independently confirms the separate launch of 200+ UK and European tokenized stocks, but does not corroborate the $607m or 75% metrics; it cannot validate this headline. No source-enrichment verification. Retry no sooner than six hours after this UTC review if original dated metrics or two independent full reports become available.",
+    "reviewedBy": "RWA Wire Source Review"
   }
 }
