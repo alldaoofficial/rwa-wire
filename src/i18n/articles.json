@@ -5360,5 +5360,71 @@
       ]
     },
     "sourceSha256": "fcace3afe7a3c6272cecd551b98832e16b8c9ff68173f239bf4a6a10acdab2ad"
+  },
+  "gtn-appoints-mark-jennings-to-lead-tokenized-securities-strategy": {
+    "path": "/news/gtn-appoints-mark-jennings-to-lead-tokenized-securities-strategy/",
+    "date": "2026-11-10",
+    "kind": "news",
+    "sources": [
+      [
+        "GTN announcement via CNW",
+        "https://www.newswire.ca/news-releases/gtn-appoints-former-gemini-and-kraken-executive-mark-jennings-as-global-head-of-digital-assets-810038457.html"
+      ]
+    ],
+    "de": {
+      "title": "GTN ernennt Mark Jennings zum Leiter der Strategie für tokenisierte Wertpapiere",
+      "description": "GTN ernannte den früheren Gemini-Europe-Chef Mark Jennings am 10. November zum globalen Leiter für digitale Vermögenswerte und übertrug ihm die Strategie für tokenisierte Wertpapiere innerhalb der bestehenden Multi-Market-Brokerage-Infrastruktur.",
+      "sections": [
+        [
+          "Jennings übernimmt die globale Digital-Asset-Leitung",
+          "GTN ernannte Mark Jennings am 10. November 2026 zum globalen Leiter für digitale Vermögenswerte. Damit verantwortet der frühere Gemini-Europe-Manager die Strategie des Brokerage-Infrastrukturanbieters für tokenisierte Wertpapiere. Das in Dubai ansässige Unternehmen erklärte, Jennings werde daran arbeiten, Plattformen über den bestehenden Marktzugang von GTN mit traditionellen Wertpapiermärkten und Digital-Asset-Diensten zu verbinden."
+        ],
+        [
+          "Erfahrung bei Gemini, Kraken und Crypto Facilities",
+          "Jennings war zuvor CEO von Gemini Europe und leitete die Expansion der Börse in der Region. Davor bekleidete er leitende Positionen bei Kraken, darunter die Führung von Crypto Facilities, dem britisch regulierten Derivatehandelsplatz des Unternehmens. GTN hob außerdem die Ernennung des früheren Saxo-Bank-Managers Daniel Endler zum Group Chief Product Officer im Oktober hervor."
+        ],
+        [
+          "Strategieankündigung und kein Produktstart",
+          "GTN beschreibt seine bestehende Brokerage-Infrastruktur als über eine einzige API in mehr als 90 Märkten und für bis zu acht Anlageklassen verfügbar. Diese Angaben betreffen die bestehenden Fähigkeiten des Unternehmens und nicht bereits handelbare tokenisierte Vermögenswerte. Die Mitteilung vom November betrifft Management und strategische Ausrichtung; sie nennt weder einen Starttermin noch ein neues Wertpapierprodukt oder eine abgeschlossene Onchain-Abwicklung."
+        ]
+      ]
+    },
+    "es": {
+      "title": "GTN nombra a Mark Jennings responsable de la estrategia de valores tokenizados",
+      "description": "GTN nombró el 10 de noviembre al exdirector de Gemini Europe, Mark Jennings, responsable global de activos digitales y le encargó la estrategia de valores tokenizados dentro de su actual infraestructura de corretaje multimercado.",
+      "sections": [
+        [
+          "Jennings asume la dirección global de activos digitales",
+          "GTN nombró a Mark Jennings responsable global de activos digitales el 10 de noviembre de 2026, poniendo al antiguo directivo de Gemini Europe al frente de la estrategia de valores tokenizados del proveedor de infraestructura de corretaje. La empresa, con sede en Dubái, indicó que Jennings trabajará para que las plataformas conecten los mercados tradicionales de valores con servicios de activos digitales mediante el acceso a mercados existente de GTN."
+        ],
+        [
+          "Experiencia en Gemini, Kraken y Crypto Facilities",
+          "Jennings fue anteriormente consejero delegado de Gemini Europe y supervisó la expansión regional del exchange. Antes ocupó puestos directivos en Kraken, incluida la dirección de Crypto Facilities, el mercado de derivados de la empresa regulado en el Reino Unido. GTN también destacó el nombramiento en octubre del exdirectivo de Saxo Bank Daniel Endler como director de producto del grupo."
+        ],
+        [
+          "Un anuncio estratégico, no el lanzamiento de un producto",
+          "GTN describe su infraestructura de corretaje actual como capaz de cubrir más de 90 mercados y hasta ocho clases de activos mediante una única API. Estas cifras se refieren a las capacidades existentes de la empresa, no a activos tokenizados que ya estén disponibles para negociar. El anuncio de noviembre trata sobre gestión y dirección estratégica; no especifica una fecha de lanzamiento, un nuevo producto de valores ni una liquidación onchain ya completada."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "GTN nomme Mark Jennings à la tête de sa stratégie de titres tokenisés",
+      "description": "GTN a nommé le 10 novembre l’ancien dirigeant de Gemini Europe Mark Jennings responsable mondial des actifs numériques, chargé de la stratégie de titres tokenisés au sein de son infrastructure de courtage multimarché existante.",
+      "sections": [
+        [
+          "Jennings prend la direction mondiale des actifs numériques",
+          "GTN a nommé Mark Jennings responsable mondial des actifs numériques le 10 novembre 2026, confiant à cet ancien dirigeant de Gemini Europe la stratégie de titres tokenisés du fournisseur d’infrastructures de courtage. L’entreprise basée à Dubaï a indiqué que Jennings travaillerait à permettre aux plateformes de relier les marchés traditionnels de titres aux services d’actifs numériques grâce à l’accès aux marchés existant de GTN."
+        ],
+        [
+          "Une expérience chez Gemini, Kraken et Crypto Facilities",
+          "Jennings a précédemment occupé le poste de directeur général de Gemini Europe, où il supervisait l’expansion régionale de la plateforme. Auparavant, il a exercé des fonctions de direction chez Kraken, notamment à la tête de Crypto Facilities, la plateforme de produits dérivés réglementée au Royaume-Uni du groupe. GTN a également souligné la nomination en octobre de l’ancien dirigeant de Saxo Bank Daniel Endler au poste de directeur des produits du groupe."
+        ],
+        [
+          "Une annonce stratégique, pas un lancement de produit",
+          "GTN présente son infrastructure de courtage actuelle comme couvrant plus de 90 marchés et jusqu’à huit classes d’actifs au moyen d’une seule API. Ces chiffres décrivent les capacités existantes de l’entreprise et non des actifs tokenisés déjà disponibles à la négociation. L’annonce de novembre concerne la direction et l’orientation stratégique ; elle ne précise ni date de lancement, ni nouveau produit financier, ni règlement onchain déjà achevé."
+        ]
+      ]
+    },
+    "sourceSha256": "64d988b47cde800e96b4f88272743e1b82582f8183ffb6cb346cc6685b65df61"
   }
 }
