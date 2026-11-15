@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-15T11:19:00Z",
+    "reason": "Read full TokenPost Nov 13 report https://www.tokenpost.com/news/investing/56960. Its $850m weekly Base DEX volume, $1.3bn 30-day volume, B20 beneficial-claim custody and Aerodrome concentration lack a directly accessible primary data release or two independent reputable full-text reports. Mempool Brief repeats the same specific figures and is not demonstrated independent; Digital Track aggregates TokenPost. No independently anchored three-fact ledger. Retry no sooner than six hours (after 2026-11-15T17:19:00Z)."
   }
 }
