@@ -9,16 +9,34 @@ const meta: Record<string,{symbol:string;name:string;sector:string}> = {
 "polymesh":{symbol:"POLYX",name:"Polymesh",sector:"Infrastructure"},
 "goldfinch":{symbol:"GFI",name:"Goldfinch",sector:"Private credit"},
 "clearpool":{symbol:"CPOOL",name:"Clearpool",sector:"Private credit"},
-"mantra-dao":{symbol:"OM",name:"MANTRA",sector:"Infrastructure"}
+"mantra-dao":{symbol:"OM",name:"MANTRA",sector:"Infrastructure"},
+"maple-finance":{symbol:"SYRUP",name:"Maple Finance",sector:"Private credit"},
+"zebec-protocol":{symbol:"ZBCN",name:"Zebec Network",sector:"Payments"},
+"reserve-rights-token":{symbol:"RSR",name:"Reserve Rights",sector:"Infrastructure"},
+"origintrail":{symbol:"TRAC",name:"OriginTrail",sector:"Infrastructure"},
+"origin-protocol":{symbol:"OGN",name:"Origin Protocol",sector:"Infrastructure"},
+"truefi":{symbol:"TRU",name:"TrueFi",sector:"Private credit"},
+"polytrade":{symbol:"TRADE",name:"Polytrade",sector:"Tokenized assets"},
+"propchain":{symbol:"PROPC",name:"Propchain",sector:"Real estate"},
+"realio-network":{symbol:"RIO",name:"Realio Network",sector:"Tokenized assets"},
+"dusk-network":{symbol:"DUSK",name:"Dusk",sector:"Infrastructure"},
+"chex-token":{symbol:"CHEX",name:"Chintai",sector:"Tokenized assets"},
+"landshare":{symbol:"LAND",name:"Landshare",sector:"Real estate"},
+"boson-protocol":{symbol:"BOSON",name:"Boson Protocol",sector:"Infrastructure"},
+"stobox-token":{symbol:"STBU",name:"Stobox",sector:"Tokenized assets"},
+"brickken":{symbol:"BKN",name:"Brickken",sector:"Tokenized assets"},
+"parcl":{symbol:"PRCL",name:"Parcl",sector:"Real estate"},
+"tokenfi":{symbol:"TOKEN",name:"TokenFi",sector:"Infrastructure"},
+"ix-swap":{symbol:"IXS",name:"IX Swap",sector:"Tokenized assets"}
 };
-const assets=Object.entries(markets.assets ?? {}).flatMap(([id,a])=>{
- const m=meta[id]; if(!m||typeof a.usd!=="number"||typeof a.usd_24h_change!=="number")return [];
- return [{id,...m,price:a.usd,change:a.usd_24h_change,volume:typeof a.usd_24h_vol==="number"?a.usd_24h_vol:0,cap:typeof a.usd_market_cap==="number"?a.usd_market_cap:0}];
+const assets=Object.entries(meta).map(([id,m])=>{const a=(markets.assets as Record<string,any>)[id];
+ return {id,...m,price:typeof a?.usd==="number"?a.usd:null,change:typeof a?.usd_24h_change==="number"?a.usd_24h_change:null,volume:typeof a?.usd_24h_vol==="number"?a.usd_24h_vol:null,cap:typeof a?.usd_market_cap==="number"&&a.usd_market_cap>0?a.usd_market_cap:null};
 });
-const sectorRows=["Infrastructure","Tokenized assets","Private credit"].map(sector=>{const group=assets.filter(a=>a.sector===sector);const mean=group.length?group.reduce((sum,a)=>sum+a.change,0)/group.length:0;return {sector,count:group.length,mean,width:Math.min(100,Math.abs(mean)*4)};});
-const up=assets.filter(a=>a.change>0).length;
-const avg=assets.length?assets.reduce((s,a)=>s+a.change,0)/assets.length:0;
-const volume=assets.reduce((s,a)=>s+a.volume,0);
+const priced=assets.filter(a=>a.change!==null);
+const sectorRows=["Infrastructure","Tokenized assets","Private credit","Real estate","Payments"].map(sector=>{const group=priced.filter(a=>a.sector===sector);const mean=group.length?group.reduce((sum,a)=>sum+a.change,0)/group.length:0;return {sector,count:group.length,mean,width:Math.min(100,Math.abs(mean)*4)};});
+const up=priced.filter(a=>(a.change??0)>0).length;
+const avg=priced.length?priced.reduce((sum,a)=>sum+(a.change??0),0)/priced.length:0;
+const volume=assets.reduce((sum,a)=>sum+(a.volume??0),0);
 const date=new Date(markets.fetchedAt);
 const stamp=Number.isNaN(date.valueOf())?"Unknown":date.toLocaleString("en-GB",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit",timeZone:"UTC"})+" UTC";
 const fmt=(v:number)=>v>=1e9?"$"+(v/1e9).toFixed(2)+"B":v>=1e6?"$"+(v/1e6).toFixed(1)+"M":v>=1e3?"$"+(v/1e3).toFixed(0)+"K":"$"+v.toFixed(0);
@@ -31,20 +49,20 @@ const price=(v:number)=>"$"+v.toFixed(v<.1?5:v<1?4:2);
   </div>
   <div class="mb-5 grid grid-cols-2 gap-3 lg:grid-cols-4">
     <div class="terminal-card" data-reveal><p class="terminal-label">Tracked basket · 24h average</p><p class:list={["mt-3 font-mono text-3xl font-semibold",avg>=0?"text-wire":"text-rose-400"]}>{avg>0?"+":""}{avg.toFixed(2)}%</p><p class="mt-2 text-xs text-ink-muted">Equal-weighted token change</p></div>
-    <div class="terminal-card" data-reveal><p class="terminal-label">Market breadth</p><p class="mt-3 font-mono text-3xl font-semibold text-ink">{up}<span class="text-base text-ink-muted"> / {assets.length}</span></p><div class="mt-3 h-1.5 overflow-hidden rounded-full bg-bg"><div class="h-full rounded-full bg-wire" style={`width:${assets.length?up/assets.length*100:0}%`}></div></div><p class="mt-2 text-xs text-ink-muted">Tracked tokens advancing</p></div>
+    <div class="terminal-card" data-reveal><p class="terminal-label">Market breadth</p><p class="mt-3 font-mono text-3xl font-semibold text-ink">{up}<span class="text-base text-ink-muted"> / {priced.length}</span></p><div class="mt-3 h-1.5 overflow-hidden rounded-full bg-bg"><div class="h-full rounded-full bg-wire" style={`width:${priced.length?up/priced.length*100:0}%`}></div></div><p class="mt-2 text-xs text-ink-muted">Tracked tokens advancing</p></div>
     <div class="terminal-card" data-reveal><p class="terminal-label">Tracked 24h volume</p><p class="mt-3 font-mono text-3xl font-semibold text-ink">{fmt(volume)}</p><p class="mt-2 text-xs text-ink-muted">Sum of available token volumes</p></div>
     <div class="terminal-card" data-reveal><p class="terminal-label">Market temperature</p><p class="mt-3 font-sans text-2xl font-semibold text-ink">{up===assets.length?"Broad strength":up===0?"Broad weakness":"Mixed breadth"}</p><p class="mt-2 text-xs text-ink-muted">Derived from this tracked basket</p></div>
   </div>
   <div class="grid gap-4 xl:grid-cols-[minmax(0,1.75fr)_minmax(300px,.85fr)]">
     <div class="terminal-card min-w-0 p-0" data-reveal>
-      <div class="flex flex-wrap items-center justify-between gap-3 border-b border-line px-5 py-5"><div><p class="terminal-label">01 / Market monitor</p><h2 class="mt-1 font-sans text-xl font-semibold text-ink">RWA-linked token screener</h2></div><span class="text-xs text-ink-muted">{assets.length} assets tracked</span></div>
+      <div class="flex flex-wrap items-center justify-between gap-3 border-b border-line px-5 py-5"><div><p class="terminal-label">01 / Market monitor</p><h2 class="mt-1 font-sans text-xl font-semibold text-ink">RWA-linked token screener</h2></div><span class="text-xs text-ink-muted">{assets.length} projects · {priced.length} with 24h data</span></div>
       <div class="flex flex-wrap items-center gap-2 border-b border-line px-5 py-4">
         <label class="sr-only" for="desk-filter">Filter assets</label><input id="desk-filter" type="search" placeholder="Search tokens..." class="min-w-0 flex-1 rounded-lg border border-line bg-bg px-3 py-2.5 text-sm text-ink placeholder:text-ink-muted focus:border-wire focus:outline-none" />
-        <label class="sr-only" for="desk-sector">Sector</label><select id="desk-sector" class="rounded-lg border border-line bg-bg px-3 py-2.5 text-sm text-ink"><option value="all">All sectors</option><option>Infrastructure</option><option>Tokenized assets</option><option>Private credit</option></select>
+        <label class="sr-only" for="desk-sector">Sector</label><select id="desk-sector" class="rounded-lg border border-line bg-bg px-3 py-2.5 text-sm text-ink"><option value="all">All sectors</option><option>Infrastructure</option><option>Tokenized assets</option><option>Private credit</option><option>Real estate</option><option>Payments</option></select>
         <label class="sr-only" for="desk-sort">Sort assets</label><select id="desk-sort" class="rounded-lg border border-line bg-bg px-3 py-2.5 text-sm text-ink"><option value="change">24h change ↓</option><option value="volume">Volume ↓</option><option value="cap">Market cap ↓</option><option value="name">Name A–Z</option></select>
         <button id="desk-favorites" type="button" aria-pressed="false" class="rounded-lg border border-line px-3 py-2.5 text-sm text-ink-muted hover:border-wire">☆ Watchlist</button>
       </div>
-      <div class="overflow-x-auto"><table class="w-full min-w-[590px] text-left text-sm"><thead><tr class="border-b border-line text-[11px] uppercase tracking-wider text-ink-muted"><th class="px-5 py-3">Asset</th><th class="px-3 py-3 text-right">Price</th><th class="px-3 py-3 text-right">24h</th><th class="px-3 py-3 text-right">Volume</th><th class="px-3 py-3 text-right">Market cap</th><th class="px-5 py-3 text-right">Save</th></tr></thead><tbody id="desk-rows">{assets.map(a=><tr data-token-row data-name={a.name.toLowerCase()+" "+a.symbol.toLowerCase()} data-sector={a.sector} data-change={a.change} data-volume={a.volume} data-cap={a.cap} data-id={a.id} class="border-b border-line/60 transition-colors hover:bg-white/[.035]"><td class="px-5 py-3"><span class="font-semibold text-ink">{a.symbol}</span><span class="ml-2 text-xs text-ink-muted">{a.name}</span><span class="block text-[10px] text-ink-muted">{a.sector}</span></td><td class="px-3 py-3 text-right font-mono text-xs">{price(a.price)}</td><td class:list={["px-3 py-3 text-right font-mono text-xs font-semibold",a.change>=0?"text-wire":"text-rose-400"]}>{a.change>0?"+":""}{a.change.toFixed(2)}%</td><td class="px-3 py-3 text-right font-mono text-xs text-ink-muted">{fmt(a.volume)}</td><td class="px-3 py-3 text-right font-mono text-xs text-ink-muted">{a.cap?fmt(a.cap):"—"}</td><td class="px-5 py-3 text-right"><button type="button" data-save={a.id} class="rounded-md px-2 py-1 text-xl text-ink-muted hover:text-wire" aria-label={`Save ${a.symbol} to watchlist`} aria-pressed="false">☆</button></td></tr>)}</tbody></table></div>
+      <div class="overflow-x-auto"><table class="w-full min-w-[590px] text-left text-sm"><thead><tr class="border-b border-line text-[11px] uppercase tracking-wider text-ink-muted"><th class="px-5 py-3">Asset</th><th class="px-3 py-3 text-right">Price</th><th class="px-3 py-3 text-right">24h</th><th class="px-3 py-3 text-right">Volume</th><th class="px-3 py-3 text-right">Market cap</th><th class="px-5 py-3 text-right">Save</th></tr></thead><tbody id="desk-rows">{assets.map(a=><tr data-token-row data-name={a.name.toLowerCase()+" "+a.symbol.toLowerCase()} data-sector={a.sector} data-change={a.change??-99999} data-volume={a.volume??-1} data-cap={a.cap??-1} data-id={a.id} class="border-b border-line/60 transition-colors hover:bg-white/[.035]"><td class="px-5 py-3"><span class="font-semibold text-ink">{a.symbol}</span><span class="ml-2 text-xs text-ink-muted">{a.name}</span><span class="block text-[10px] text-ink-muted">{a.sector}</span></td><td class="px-3 py-3 text-right font-mono text-xs">{a.price===null?"—":price(a.price)}</td><td class:list={["px-3 py-3 text-right font-mono text-xs font-semibold",(a.change??0)>=0?"text-wire":"text-rose-400"]}>{a.change===null?"N/A":`${a.change>0?"+":""}${a.change.toFixed(2)}%`}</td><td class="px-3 py-3 text-right font-mono text-xs text-ink-muted">{a.volume===null?"—":fmt(a.volume)}</td><td class="px-3 py-3 text-right font-mono text-xs text-ink-muted">{a.cap===null?"—":fmt(a.cap)}</td><td class="px-5 py-3 text-right"><button type="button" data-save={a.id} class="rounded-md px-2 py-1 text-xl text-ink-muted hover:text-wire" aria-label={`Save ${a.symbol} to watchlist`} aria-pressed="false">☆</button></td></tr>)}</tbody></table></div>
       <p id="desk-empty" class="hidden px-5 py-8 text-center text-sm text-ink-muted">No assets match your filters. Try another sector or search.</p>
       <div class="flex flex-wrap justify-between gap-2 border-t border-line px-5 py-4 text-xs text-ink-muted"><span>Watchlist saved on this device only</span><span>Source: {markets.source} · Snapshot {stamp}</span></div>
     </div>
@@ -53,7 +71,7 @@ const price=(v:number)=>"$"+v.toFixed(v<.1?5:v<1?4:2);
       <div class="terminal-card" data-reveal><p class="terminal-label">03 / Research shortcuts</p><h2 class="mt-2 font-sans text-xl font-semibold">Go beyond prices</h2><div class="mt-5 grid gap-2"><a href={sitePath("/radar/")} class="terminal-link">Institutional Radar <span>↗</span></a><a href={sitePath("/projects/")} class="terminal-link">Project intelligence <span>↗</span></a><a href={sitePath("/news/")} class="terminal-link">Latest verified reporting <span>↗</span></a><a href={sitePath("/pulse/")} class="terminal-link">Daily Pulse <span>↗</span></a></div></div>
     </div>
   </div>
-  <p class="mt-4 text-xs leading-5 text-ink-muted">Market data is a cached snapshot, not a live trading feed. Token performance is not the same as the value or performance of underlying tokenized real-world assets. No investment advice.</p>
+  <p class="mt-4 text-xs leading-5 text-ink-muted">The project universe is curated; missing prices are shown as unavailable rather than estimated. Market data is a cached snapshot, not a live trading feed. Token performance is not the same as the value or performance of underlying tokenized real-world assets. No investment advice.</p>
 </section>
 <script>
   const rows=Array.from(document.querySelectorAll<HTMLTableRowElement>("[data-token-row]"));
