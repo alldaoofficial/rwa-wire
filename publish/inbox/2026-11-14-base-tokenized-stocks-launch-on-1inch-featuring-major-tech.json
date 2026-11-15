@@ -32,7 +32,7 @@
     "discoveredAt": "2026-11-14T14:07:18.823095+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
@@ -78,7 +78,8 @@
         "sourceUrl": "https://coinfomania.com/base-tokenized-stocks-launch-on-1inch-featuring-major-tech/",
         "anchor": "traded 24/7 via the 1inch dApp"
       }
-    ]
+    ],
+    "contentSha256": "f5812bb7388057cdd43c75c02031b5ff00c86183c6a6996a471f1782295db84e"
   },
   "slug": "1inch-adds-four-stock-linked-tokens-on-base"
 }
