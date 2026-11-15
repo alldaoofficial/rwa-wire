@@ -1,6 +1,7 @@
 ---
 import markets from "../../public/data/markets.json";
 import { sitePath } from "../utils/paths";
+import MarketHistoryChart from "./MarketHistoryChart.astro";
 const meta: Record<string,{symbol:string;name:string;sector:string}> = {
 "chainlink":{symbol:"LINK",name:"Chainlink",sector:"Infrastructure"},
 "ondo-finance":{symbol:"ONDO",name:"Ondo Finance",sector:"Tokenized assets"},
@@ -73,6 +74,7 @@ const price=(v:number)=>"$"+v.toFixed(v<.1?5:v<1?4:2);
       <div class="terminal-card" data-reveal><p class="terminal-label">04 / Research shortcuts</p><h2 class="mt-2 font-sans text-xl font-semibold">Go beyond prices</h2><div class="mt-5 grid gap-2"><a href={sitePath("/radar/")} class="terminal-link">Institutional Radar <span>↗</span></a><a href={sitePath("/projects/")} class="terminal-link">Project intelligence <span>↗</span></a><a href={sitePath("/news/")} class="terminal-link">Latest verified reporting <span>↗</span></a><a href={sitePath("/pulse/")} class="terminal-link">Daily Pulse <span>↗</span></a></div></div>
     </div>
   </div>
+  <div class="mt-5"><MarketHistoryChart /></div>
   <p class="mt-4 text-xs leading-5 text-ink-muted">The project universe is curated; missing prices are shown as unavailable rather than estimated. Market data is a cached snapshot, not a live trading feed. Token performance is not the same as the value or performance of underlying tokenized real-world assets. No investment advice.</p>
 </section>
 <script>
