@@ -33,7 +33,7 @@
     "discoveredAt": "2026-11-14T20:48:48.434865+00:00",
     "autoPublishEligible": false,
     "requiresSourceReview": true,
-    "contentStatus": "needs-source-enrichment"
+    "contentStatus": "source-reviewed"
   },
   "sourceReview": {
     "status": "verified",
@@ -87,6 +87,7 @@
         "sourceUrl": "https://www.theblock.co/news/markets/2026-11-14-bitcoin-etfs-lose-1-billion-for-the-second-week-in-a-row-as-crypto-funds-except-one-continue-bleeding-440337",
         "anchor": "$2.35 billion over two weeks"
       }
-    ]
+    ],
+    "contentSha256": "cf610db2b80d40faed101c8c0e43356993fff6376c517d46fdbde38d5d513327"
   }
 }
