@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-14T23:15:56Z",
-    "reason": "Rechecked after six-hour hold on 2026-11-14: no dated full-text Token Terminal primary dataset for the claimed $4.81bn and 9.1x comparison could be established. Cointelegraph's full Nov 11 report quotes a different $4.9bn Token Terminal snapshot and xStocks $1.1bn, but this does not verify the exact Nov 14 claim, observation date, or methodology. Independent corroboration of the same measurement remains insufficient. Hold and retry no sooner than six hours."
+    "reviewedAt": "2026-11-15T14:14:22Z",
+    "reason": "Rechecked 2026-11-15 against full Nov 10 TheStreet report (https://www.thestreet.com/crypto/markets/binances-bstocks-leads-4-8b-tokenized-stock-market-with-31-share), which attributes about $4.8bn on Nov 10 to Token Terminal but does not establish $4.81bn or 9.1x on Nov 14. Castle Labs' dated Nov 14 CoinGecko-based analysis (https://castlelabs.io/research/tokenized-stocks) reports $2.84bn across 1,664 tokens, illustrating materially different dataset coverage. No dated full original Token Terminal dataset or comparable independent full-text corroboration of the exact $4.81bn and 9.1x measurement was found. No three-fact verified ledger; keep held and retry no sooner than 2026-11-15T20:14:22Z."
   }
 }
