@@ -5302,5 +5302,63 @@
       ]
     },
     "sourceSha256": "969cf813b01e7dadf11d49289006bc812b70c12b5cbcc92d63c4b443e8a1ae92"
+  },
+  "1inch-adds-four-stock-linked-tokens-on-base": {
+    "path": "/news/1inch-adds-four-stock-linked-tokens-on-base/",
+    "date": "2026-11-14",
+    "kind": "news",
+    "sources": [
+      [
+        "TokenPost",
+        "https://www.tokenpost.com/news/business/57334"
+      ],
+      [
+        "Coinfomania",
+        "https://coinfomania.com/base-tokenized-stocks-launch-on-1inch-featuring-major-tech/"
+      ]
+    ],
+    "de": {
+      "title": "1inch erweitert Base um vier aktiengebundene Token, darunter Microsoft und AMD",
+      "description": "Die November-Erweiterung ergänzt das Base-Angebot von 1inch um Token mit Bezug zu Microsoft, AMD, Sony und Take-Two; Swaps sind über die App und Wallet zugänglich.",
+      "sections": [
+        [
+          "Vier weitere aktiengebundene Token auf Base",
+          "1inch hat die auf Base zugängliche Auswahl aktiengebundener Token erweitert und Instrumente mit Bezug zu Microsoft, Advanced Micro Devices, Sony und Take-Two Interactive hinzugefügt. TokenPost berichtete am 14. November über die vier Ergänzungen, während Coinfomania die neue Gruppe separat beschrieb und auf eine Mitteilung des 1inch-Accounts aus dem November verwies. Die Token werden als über die dezentrale Anwendung und Wallet von 1inch verfügbar dargestellt und nicht über die Oberfläche eines herkömmlichen Aktienbrokers."
+        ],
+        [
+          "Rund-um-die-Uhr-Zugang mit offenen Einschränkungen",
+          "Die Berichte beschreiben einen Handelszugang rund um die Uhr, der sich von den regulären Handelszeiten traditioneller Aktienbörsen unterscheidet. Die Erweiterung darf nicht mit der erstmaligen Einführung aktiengebundener Token auf Base verwechselt werden: Sie ergänzt ein bereits bestehendes Angebot um weitere Namen. Keiner der beiden Berichte belegt Handelsvolumen, durchgängig vorhandene Liquidität, eine weltweite geografische Verfügbarkeit oder die Rechtsposition, die jeder Token vermittelt. Bevor Nutzer die Instrumente mit direkt gehaltenen Aktien gleichsetzen können, sind für diese Einzelheiten emittentenspezifische Unterlagen erforderlich."
+        ]
+      ]
+    },
+    "es": {
+      "title": "1inch añade cuatro tokens vinculados a acciones en Base, incluidos Microsoft y AMD",
+      "description": "La ampliación de noviembre incorpora al servicio de 1inch en Base tokens vinculados a Microsoft, AMD, Sony y Take-Two; los swaps son accesibles mediante la aplicación y la cartera.",
+      "sections": [
+        [
+          "Cuatro tokens adicionales vinculados a acciones en Base",
+          "1inch ha ampliado la selección de tokens vinculados a acciones accesibles en Base con instrumentos asociados a Microsoft, Advanced Micro Devices, Sony y Take-Two Interactive. TokenPost informó de las cuatro incorporaciones el 14 de noviembre, mientras que Coinfomania describió por separado el nuevo grupo y enlazó a un anuncio publicado en noviembre por la cuenta de 1inch. Los tokens se presentan como accesibles mediante la aplicación descentralizada y la cartera de 1inch, no a través de la interfaz de un bróker de acciones convencional."
+        ],
+        [
+          "Acceso permanente con limitaciones aún abiertas",
+          "Los informes describen acceso a la negociación las 24 horas, una característica distinta del horario ordinario de las bolsas tradicionales. La ampliación no debe confundirse con la introducción inicial de tokens vinculados a acciones en Base: añade nombres a una oferta ya existente. Ninguno de los dos informes demuestra volumen de negociación, liquidez constante, disponibilidad geográfica universal ni los derechos jurídicos que transmite cada token. Esos detalles requieren documentación específica del emisor antes de que los usuarios puedan equiparar estos instrumentos con acciones poseídas directamente."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "1inch ajoute quatre tokens liés à des actions sur Base, dont Microsoft et AMD",
+      "description": "L’élargissement de novembre ajoute à l’offre de 1inch sur Base des tokens liés à Microsoft, AMD, Sony et Take-Two ; les swaps sont accessibles via l’application et le portefeuille.",
+      "sections": [
+        [
+          "Quatre tokens supplémentaires liés à des actions sur Base",
+          "1inch a élargi la sélection de tokens liés à des actions accessible sur Base en ajoutant des instruments associés à Microsoft, Advanced Micro Devices, Sony et Take-Two Interactive. TokenPost a fait état des quatre ajouts le 14 novembre, tandis que Coinfomania a décrit séparément ce nouveau groupe et renvoyé vers une annonce publiée en novembre par le compte de 1inch. Les tokens sont présentés comme accessibles via l’application décentralisée et le portefeuille de 1inch, et non par l’interface d’un courtier en actions classique."
+        ],
+        [
+          "Un accès permanent, avec des limites encore ouvertes",
+          "Les articles décrivent un accès aux échanges 24 heures sur 24, qui diffère des séances ordinaires des places boursières traditionnelles. Cet élargissement ne doit pas être confondu avec l’introduction initiale de tokens liés à des actions sur Base : il ajoute de nouveaux noms à une offre existante. Aucun des deux articles n’établit le volume des échanges, une liquidité constante, une disponibilité géographique universelle ou les droits juridiques conférés par chaque token. Ces éléments exigent une documentation propre à l’émetteur avant que les utilisateurs puissent assimiler ces instruments à des actions détenues directement."
+        ]
+      ]
+    },
+    "sourceSha256": "fcace3afe7a3c6272cecd551b98832e16b8c9ff68173f239bf4a6a10acdab2ad"
   }
 }
