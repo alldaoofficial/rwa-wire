@@ -1,7 +1,7 @@
 {
-  "title": "Base Tokenized Stocks Launch on 1inch, Featuring Major Tech",
-  "description": "Base Tokenized Stocks Launch on 1inch, Featuring Major Tech",
-  "why_it_matters": "",
+  "title": "1inch Adds Four Stock-Linked Tokens on Base, Including Microsoft and AMD",
+  "description": "The November expansion adds tokens linked to Microsoft, AMD, Sony and Take-Two to 1inch's Base offering, with swaps accessible through its app and wallet.",
+  "why_it_matters": "The addition broadens the range of equity-linked assets available through a decentralized swap interface, but around-the-clock access does not establish share ownership rights, uniform liquidity or eligibility in every jurisdiction.",
   "pubDate": "2026-11-14",
   "category": "news",
   "tags": [
@@ -10,14 +10,19 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "Base Tokenized Stocks Launch on 1inch, Featuring Major Tech",
-    ""
+    "Four stock-linked tokens associated with Microsoft, AMD, Sony and Take-Two were added to the Base offering.",
+    "TokenPost says the instruments are accessible via the 1inch decentralized application or wallet.",
+    "The reported around-the-clock availability does not establish liquidity or the holder's legal rights."
   ],
-  "body": "Base Tokenized Stocks Launch on 1inch, Featuring Major Tech",
+  "body": "1inch has expanded the selection of stock-linked tokens accessible on Base, adding instruments associated with Microsoft, Advanced Micro Devices, Sony and Take-Two Interactive. TokenPost reported the four additions on November 14, while Coinfomania separately described the new batch and linked to a November announcement by the 1inch account. The tokens are presented as available through the 1inch decentralized application and wallet, rather than through a conventional stock brokerage interface.\n\nThe reports describe trading access around the clock, a feature that differs from the regular session of traditional equity exchanges. The expansion should not be confused with the initial introduction of stock-linked tokens to Base: it adds names to an existing offering. Neither report establishes trading volume, consistent liquidity, universal geographic availability or the legal rights conveyed by each token. Those details require issuer-specific documentation before users can equate the instruments with directly held shares.",
   "sources": [
     {
-      "name": "Cryptonews.net",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1OX3JFNVU0T1hiMHdTUVp1X2tWcWtkUWRRVVdCeVRraXZKQmJ2dzdWSm9RRWhmOGJPYi0wc1Q5OWlWVzhaVGFNVzVLZ3hLR1M2bmwtamxhWQ?oc=5"
+      "name": "TokenPost",
+      "url": "https://www.tokenpost.com/news/business/57334"
+    },
+    {
+      "name": "Coinfomania",
+      "url": "https://coinfomania.com/base-tokenized-stocks-launch-on-1inch-featuring-major-tech/"
     }
   ],
   "newsWatch": {
@@ -31,10 +36,49 @@
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "verified",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-15T13:17:27Z",
-    "reason": "New evidence located: 1inch-branded Bybit social post dated 2026-11-12 explicitly lists TTWOc, SONYc, MSFTc and AMDc on Base, with 24/7 swaps in dApp/Wallet (https://www.bybit.com/en-GB/social/user/3VplvM). DexSheet full Nov 12 report (https://dexsheet.com/changes/2026-11-12-1inch-adds-four-tokenized-stocks-on-base/) and TokenPost full Nov 14 report (https://www.tokenpost.com/news/business/57334) corroborate an addition, not initial Base launch; 1inch first launched Base tokenized equities in Aug. Before verified handoff, establish that the Bybit account is an authenticated official 1inch primary publisher, check independent reporting/duplicate publication, and anchor three distinct claims in the final article. No fabricated ledger or digest. Retry after 2026-11-15T19:17:27Z."
-  }
+    "reviewedAt": "2026-11-15T19:20:26.247Z",
+    "independentReporting": true,
+    "sources": [
+      {
+        "url": "https://www.tokenpost.com/news/business/57334",
+        "publishedAt": "2026-11-14",
+        "checkedAt": "2026-11-15T19:20:26.247Z",
+        "kind": "news",
+        "access": "full-text"
+      },
+      {
+        "url": "https://coinfomania.com/base-tokenized-stocks-launch-on-1inch-featuring-major-tech/",
+        "publishedAt": "2026-11-14",
+        "checkedAt": "2026-11-15T19:20:26.247Z",
+        "kind": "news",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "TokenPost reports that 1inch brought four stock-linked tokens onto Base in its November expansion.",
+        "sourceUrl": "https://www.tokenpost.com/news/business/57334",
+        "anchor": "four stock-linked tokens"
+      },
+      {
+        "claim": "The four associated companies include Microsoft, Sony, Take-Two Interactive and Advanced Micro Devices.",
+        "sourceUrl": "https://coinfomania.com/base-tokenized-stocks-launch-on-1inch-featuring-major-tech/",
+        "anchor": "TTWO, SONY, MSFT, and AMD"
+      },
+      {
+        "claim": "TokenPost states that users can access these instruments through the decentralized application or wallet.",
+        "sourceUrl": "https://www.tokenpost.com/news/business/57334",
+        "anchor": "decentralized application (dApp) or Wallet"
+      },
+      {
+        "claim": "Coinfomania describes the new batch as accessible to traders around the clock.",
+        "sourceUrl": "https://coinfomania.com/base-tokenized-stocks-launch-on-1inch-featuring-major-tech/",
+        "anchor": "traded 24/7 via the 1inch dApp"
+      }
+    ]
+  },
+  "slug": "1inch-adds-four-stock-linked-tokens-on-base"
 }
