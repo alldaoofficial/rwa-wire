@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-16T00:13:39Z",
-    "reason": "Rechecked full TheStreet Nov 10 report (https://www.thestreet.com/crypto/markets/binances-bstocks-leads-4-8b-tokenized-stock-market-with-31-share): it attributes approximately $4.8bn to Token Terminal on Nov 10, not the precise Nov 14 $4.81bn or 9.1x annual multiple. Full TokenPost Nov 11 tracker report (https://www.tokenpost.com/news/investing/54294) discusses 5,859 tokens across 18 chains and late-October $3.7bn-$4.64bn estimates, not this precise measurement. Castle Labs' full Nov 15 CoinGecko-based snapshot (https://castlelabs.io/research/tokenized-stocks) reports $2.77bn across 1,664 tokens, reflecting a materially different universe. No original dated comparable dataset or independent full-text verification of the exact headline figures and three supported facts. Retry no sooner than 2026-11-16T06:13:39Z."
+    "reviewedAt": "2026-11-16T07:24:56.552Z",
+    "reason": "Rechecked original-data discovery and full Nov 11 TokenPost report (https://www.tokenpost.com/news/investing/54294), plus Token Terminal's own Sep 24 newsletter (https://landing.tokenterminal.dev/resources/newsletter/token-terminal-hits-10-000-tokenized-asset-listings). Available sources describe different dates, asset universes and valuations; neither directly establishes exactly $4.81bn on Nov 14 nor a 9.1x year-over-year comparison. No dated underlying dataset and three distinct supported headline facts; held for six-hour retry."
   }
 }
