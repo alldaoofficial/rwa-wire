@@ -47,17 +47,17 @@ const price=(v:number)=>"$"+v.toFixed(v<.1?5:v<1?4:2);
 ---
 <section class="wire-container py-7 sm:py-10" aria-labelledby="desk-title" id="intelligence-desk">
   <div class="mb-6 flex flex-wrap items-center justify-between gap-3">
-    <div><p class="wire-kicker">The RWA Wire / Intelligence terminal</p><h1 id="desk-title" class="mt-2 font-sans text-3xl font-bold tracking-tight text-ink sm:text-4xl">Your tokenization dashboard<span class="text-wire">.</span></h1><p class="mt-2 text-sm text-ink-muted">Markets, institutions and verified developments. One daily destination.</p></div>
+    <div><p class="wire-kicker">The RWA Wire / Intelligence terminal</p><h1 id="desk-title" class="mt-2 font-sans text-3xl font-bold tracking-tight text-ink sm:text-4xl">RWA market intelligence<span class="text-wire">.</span></h1><p class="mt-2 text-sm text-ink-muted">Explore token prices, sector breadth, your watchlist and observed historical data.</p></div>
     <div class="flex items-center gap-2 rounded-xl border border-line bg-surface px-4 py-3 text-xs text-ink-muted"><span class="h-2 w-2 rounded-full bg-wire"></span><span>Latest cached snapshot · {stamp}</span></div>
   </div>
   <div class="mb-5 grid grid-cols-2 gap-3 lg:grid-cols-4">
     <div class="terminal-card wire-panel-hover" data-reveal><p class="terminal-label">Tracked basket · 24h average</p><p class:list={["mt-3 font-mono text-3xl font-semibold",avg>=0?"text-wire":"text-rose-400"]}>{avg>0?"+":""}{avg.toFixed(2)}%</p><p class="mt-2 text-xs text-ink-muted">Equal-weighted token change</p></div>
-    <div class="terminal-card" data-reveal><p class="terminal-label">Market breadth</p><p class="mt-3 font-mono text-3xl font-semibold text-ink">{up}<span class="text-base text-ink-muted"> / {priced.length}</span></p><div class="mt-3 h-1.5 overflow-hidden rounded-full bg-bg"><div class="h-full rounded-full bg-wire" style={`width:${priced.length?up/priced.length*100:0}%`}></div></div><p class="mt-2 text-xs text-ink-muted">Tracked tokens advancing</p></div>
+    <div class="terminal-card wire-panel-hover" data-reveal><p class="terminal-label">Market breadth</p><p class="mt-3 font-mono text-3xl font-semibold text-ink">{up}<span class="text-base text-ink-muted"> / {priced.length}</span></p><div class="mt-3 h-1.5 overflow-hidden rounded-full bg-bg"><div class="h-full rounded-full bg-wire" style={`width:${priced.length?up/priced.length*100:0}%`}></div></div><p class="mt-2 text-xs text-ink-muted">Tracked tokens advancing</p></div>
     <div class="terminal-card" data-reveal><p class="terminal-label">Tracked 24h volume</p><p class="mt-3 font-mono text-3xl font-semibold text-ink">{fmt(volume)}</p><p class="mt-2 text-xs text-ink-muted">Sum of available token volumes</p></div>
     <div class="terminal-card" data-reveal><p class="terminal-label">Market temperature</p><p class="mt-3 font-sans text-2xl font-semibold text-ink">{priced.length===0?"No data":up===priced.length?"Broad strength":up===0?"Broad weakness":"Mixed breadth"}</p><p class="mt-2 text-xs text-ink-muted">Derived from this tracked basket</p></div>
   </div>
   <div class="grid gap-4 xl:grid-cols-[minmax(0,1.75fr)_minmax(300px,.85fr)]">
-    <div class="terminal-card min-w-0 p-0" data-reveal>
+    <div class="terminal-card wire-panel-hover min-w-0 p-0" data-reveal>
       <div class="flex flex-wrap items-center justify-between gap-3 border-b border-line px-5 py-5"><div><p class="terminal-label">01 / Market monitor</p><h2 class="mt-1 font-sans text-xl font-semibold text-ink">RWA-linked token screener</h2></div><span class="text-xs text-ink-muted">{priced.length} priced tokens · {unavailable} awaiting provider data</span></div>
       <div class="flex flex-wrap items-center gap-2 border-b border-line px-5 py-4">
         <label class="sr-only" for="desk-filter">Filter assets</label><input id="desk-filter" type="search" placeholder="Search tokens..." class="min-w-0 flex-1 rounded-lg border border-line bg-bg px-3 py-2.5 text-sm text-ink placeholder:text-ink-muted focus:border-wire focus:outline-none" />
