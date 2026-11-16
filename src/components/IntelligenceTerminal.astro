@@ -10,7 +10,7 @@ const meta: Record<string,{symbol:string;name:string;sector:string}> = {
 "polymesh":{symbol:"POLYX",name:"Polymesh",sector:"Infrastructure"},
 "goldfinch":{symbol:"GFI",name:"Goldfinch",sector:"Private credit"},
 "clearpool":{symbol:"CPOOL",name:"Clearpool",sector:"Private credit"},
-"mantra-dao":{symbol:"OM",name:"MANTRA",sector:"Infrastructure"},
+"mantra-dao":{symbol:"MANTRA",name:"MANTRA",sector:"Infrastructure"},
 "maple-finance":{symbol:"SYRUP",name:"Maple Finance",sector:"Private credit"},
 "zebec-protocol":{symbol:"ZBCN",name:"Zebec Network",sector:"Payments"},
 "reserve-rights-token":{symbol:"RSR",name:"Reserve Rights",sector:"Infrastructure"},
@@ -79,7 +79,7 @@ const price=(v:number)=>"$"+v.toFixed(v<.1?5:v<1?4:2);
   <div class="mt-5 scroll-mt-24" id="market-history"><MarketHistoryChart /></div>
   <p class="mt-4 text-xs leading-5 text-ink-muted">The project universe is curated; missing prices are shown as unavailable rather than estimated. Market data is a cached snapshot, not a live trading feed. Token performance is not the same as the value or performance of underlying tokenized real-world assets. No investment advice.</p>
 </section>
-<script>
+<script define:vars={{marketApiUrl:sitePath("/api/markets")}}>
   const rows=Array.from(document.querySelectorAll<HTMLTableRowElement>("[data-token-row]"));
   const filter=document.querySelector<HTMLInputElement>("#desk-filter");
   const sector=document.querySelector<HTMLSelectElement>("#desk-sector");
@@ -104,7 +104,41 @@ const price=(v:number)=>"$"+v.toFixed(v<.1?5:v<1?4:2);
   [filter,sector,sort,unavailableToggle].forEach(el=>el?.addEventListener(el===filter?"input":"change",render));
   only?.addEventListener("click",()=>{favoritesOnly=!favoritesOnly;render();});
   document.querySelectorAll<HTMLButtonElement>("[data-save]").forEach(button=>button.addEventListener("click",()=>{const id=button.dataset.save??"";saved=saved.includes(id)?saved.filter(x=>x!==id):[...saved,id];try{localStorage.setItem(key,JSON.stringify(saved));}catch{}render();}));
+  async function refreshScreener(){
+    try{
+      const response=await fetch(marketApiUrl,{cache:"no-store"});
+      if(!response.ok)throw new Error("Market API unavailable");
+      const payload=await response.json();
+      if(!payload.assets||typeof payload.assets!=="object")throw new Error("Invalid market response");
+      const formatPrice=(value)=>"$"+value.toFixed(value<.1?5:value<1?4:2);
+      const formatCompact=(value)=>value>=1e9?"$"+(value/1e9).toFixed(2)+"B":value>=1e6?"$"+(value/1e6).toFixed(1)+"M":value>=1e3?"$"+(value/1e3).toFixed(0)+"K":"$"+value.toFixed(0);
+      for(const row of rows){
+        const quote=payload.assets[row.dataset.id];
+        const valid=quote&&typeof quote.usd==="number"&&Number.isFinite(quote.usd)&&quote.usd>0;
+        const delta=valid&&typeof quote.usd_24h_change==="number"&&Number.isFinite(quote.usd_24h_change)?quote.usd_24h_change:null;
+        const volume=valid&&typeof quote.usd_24h_vol==="number"&&Number.isFinite(quote.usd_24h_vol)?quote.usd_24h_vol:null;
+        const cap=valid&&typeof quote.usd_market_cap==="number"&&Number.isFinite(quote.usd_market_cap)&&quote.usd_market_cap>0?quote.usd_market_cap:null;
+        row.dataset.available=String(Boolean(valid&&delta!==null));
+        row.dataset.change=String(delta??-99999);
+        row.dataset.volume=String(volume??-1);
+        row.dataset.cap=String(cap??-1);
+        const cells=row.querySelectorAll("td");
+        if(cells.length<5)continue;
+        cells[1].textContent=valid?formatPrice(quote.usd):"—";
+        cells[2].textContent=delta===null?"N/A":(delta>0?"+":"")+delta.toFixed(2)+"%";
+        cells[2].classList.toggle("text-wire",delta!==null&&delta>=0);
+        cells[2].classList.toggle("text-rose-400",delta!==null&&delta<0);
+        cells[3].textContent=volume===null?"—":formatCompact(volume);
+        cells[4].textContent=cap===null?"—":formatCompact(cap);
+      }
+      render();
+    }catch{
+      // Preserve the build-time snapshot if the endpoint is unavailable.
+    }
+  }
   render();
+  refreshScreener();
+  window.setInterval(refreshScreener,60000);
 </script>
 <style>
   .terminal-card{border:1px solid #2a3640;border-radius:16px;background:#121a21;padding:20px;box-shadow:0 12px 30px #0002}
