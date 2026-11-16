@@ -28,7 +28,7 @@
     "discoveredAt": "2026-11-16T13:07:16.021342+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
@@ -71,6 +71,7 @@
         "sourceUrl": "https://www.prnewswire.com/news-releases/coinbase-and-broadridge-publish-proposed-standard-for-onchain-shareholder-communications-broadridge-launches-data-oracle-302939893.html",
         "anchor": "share structure, intermediaries and legal requirements"
       }
-    ]
+    ],
+    "contentSha256": "8abadc1f52f41af666f3c24053d3ddf0ebd348ca4980f76ca703141dfe8161e1"
   }
 }
