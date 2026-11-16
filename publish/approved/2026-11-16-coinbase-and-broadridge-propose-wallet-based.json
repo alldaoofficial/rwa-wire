@@ -1,0 +1,27 @@
+{
+  "id": "2026-11-16-coinbase-and-broadridge-propose-wallet-based",
+  "title": "Coinbase and Broadridge Propose Wallet-Based Shareholder Communications Standard",
+  "category": "NEWS",
+  "why_it_matters": "Tokenized equities need more than a trading and settlement mechanism: issuers must reach beneficial owners with notices and investors need usable governance channels. A shared wallet communications format could reduce fragmented integrations, although legal entitlements and adoption still depend on each security structure.",
+  "article_url": "https://therwawire.com/news/coinbase-and-broadridge-propose-wallet-based-shareholder-communications-standard/",
+  "image_url": "https://therwawire.com/images/news/coinbase-and-broadridge-propose-wallet-based-shareholder-communications-standard.svg",
+  "caption": "RWA WIRE // NEWS\n\nCoinbase and Broadridge Propose Wallet-Based Shareholder Communications Standard\n\nCoinbase and Broadridge published a proposed Ethereum standard for delivering shareholder materials to tokenized-share wallets, while Broadridge launched an oracle to document distribution.\n\nFull analysis →\nhttps://therwawire.com/news/coinbase-and-broadridge-propose-wallet-based-shareholder-communications-standard/",
+  "distribution": {
+    "telegram": "RWA WIRE // NEWS\n\nCoinbase and Broadridge Propose Wallet-Based Shareholder Communications Standard\n\nCoinbase and Broadridge published a proposed Ethereum standard for delivering shareholder materials to tokenized-share wallets, while Broadridge launched an oracle to document distribution.\n\nFull analysis →\nhttps://therwawire.com/news/coinbase-and-broadridge-propose-wallet-based-shareholder-communications-standard/",
+    "x": "Coinbase and Broadridge Propose Wallet-Based Shareholder Communications Standard\n\nCoinbase and Broadridge published a proposed Ethereum standard for delivering shareholder materials to tokenized-share wallets, while Broadridge launched an oracle to document distribution.\n\nhttps://therwawire.com/news/coinbase-and-broadridge-propose-wallet-based-shareholder-communications-standard/",
+    "breaking": "RWA WIRE // NEWS\n\nCoinbase and Broadridge Propose Wallet-Based Shareholder Communications Standard\n\nhttps://therwawire.com/news/coinbase-and-broadridge-propose-wallet-based-shareholder-communications-standard/",
+    "summary": "Coinbase and Broadridge published a proposed Ethereum standard for delivering shareholder materials to tokenized-share wallets, while Broadridge launched an oracle to document distribution."
+  },
+  "sources": [
+    {
+      "name": "Broadridge Financial Solutions (PR Newswire release)",
+      "url": "https://www.prnewswire.com/news-releases/coinbase-and-broadridge-publish-proposed-standard-for-onchain-shareholder-communications-broadridge-launches-data-oracle-302939893.html"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-11-16-coinbase-and-broadridge-launch-onchain-rights-standard-for-tokenized-stocks.json",
+    "contentSha256": "8abadc1f52f41af666f3c24053d3ddf0ebd348ca4980f76ca703141dfe8161e1",
+    "approvedAt": "2026-11-16T13:36:55.181690+00:00"
+  }
+}
