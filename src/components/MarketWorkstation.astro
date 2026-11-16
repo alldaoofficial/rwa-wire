@@ -87,7 +87,7 @@ const briefingWindow=recent.length?"Past 24 hours":"Past 7 days";
   }
   async function refresh(){
     try{
-      const res=await fetch("/api/markets",{cache:"no-store"});if(!res.ok)throw Error("Quote API unavailable");
+      const res=await fetch("https://dqeakkrsbgxnexucuyld.supabase.co/functions/v1/preview-market-quotes",{cache:"no-store"});if(!res.ok)throw Error("Quote API unavailable");
       const data=await res.json();
       entries=Object.entries(data.assets||{}).filter((item):item is [string,Quote]=>{const q=item[1] as Quote;return q&&typeof q.usd==="number"&&Number.isFinite(q.usd)&&q.usd>0;});
       const validChanges=entries.filter(([,q])=>typeof q.usd_24h_change==="number"&&Number.isFinite(q.usd_24h_change));
