@@ -11,9 +11,9 @@ import { sitePath } from "../utils/paths";
     <svg id="history-svg" class="hidden h-[210px] w-full" viewBox="0 0 700 210" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="180" x2="700" y2="180" stroke="#33424c" stroke-dasharray="4 6"/><line x1="0" y1="100" x2="700" y2="100" stroke="#33424c" stroke-dasharray="4 6"/><path id="history-path" d="" fill="none" stroke="#55dba1" stroke-width="3" vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round"/><circle id="history-dot" cx="0" cy="0" r="5" fill="#55dba1" class="hidden"/></svg>
   </div>
   <div class="mt-3 flex flex-wrap justify-between gap-2 text-xs text-ink-muted"><span id="history-range">Only recorded observations are shown</span><span id="history-change"></span></div>
-  <p class="mt-3 text-xs leading-5 text-ink-muted">History begins when the collector is activated. No simulated backfill, interpolation or intraday price claims. Snapshots are recorded approximately every six hours when fresh provider data is available.</p>
+  <p class="mt-3 text-xs leading-5 text-ink-muted">History begins when the collector is activated. No simulated backfill, interpolation or intraday price claims. Preview observations are recorded every five minutes when fresh provider data is available.</p>
 </div>
-<script define:vars={{historyUrl:sitePath("/data/market-history.json")}}>
+<script define:vars={{historyUrl:"https://dqeakkrsbgxnexucuyld.supabase.co/functions/v1/preview-market-history"}}>
   const assetSelect=document.querySelector("#history-asset");
   const periodSelect=document.querySelector("#history-period");
   const svg=document.querySelector("#history-svg");
@@ -58,7 +58,7 @@ import { sitePath } from "../utils/paths";
     assetSelect.disabled=false;
     periodSelect.disabled=false;
     draw();
-  }).catch(()=>{if(assetSelect)assetSelect.replaceChildren(new Option("Awaiting history",""));status.textContent="Historical observations are not available in this preview. The collection workflow runs on the production branch; no historical prices are invented.";});
+  }).catch(()=>{if(assetSelect)assetSelect.replaceChildren(new Option("Awaiting history",""));status.textContent="Historical observations are not available in this preview. The preview collector is active; historical prices are never invented.";});
   assetSelect?.addEventListener("change",draw);
   periodSelect?.addEventListener("change",draw);
 </script>
