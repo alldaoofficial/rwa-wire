@@ -1,0 +1,27 @@
+{
+  "id": "2026-11-16-hkma-and-swift-deepen-tokenized-deposit-inte",
+  "title": "HKMA and Swift deepen tokenized-deposit interoperability work under Project Ensemble",
+  "category": "NEWS",
+  "why_it_matters": "The proposed connection would link Hong Kong's domestic tokenization infrastructure with Swift's international banking network, addressing a practical barrier to moving regulated digital deposits across jurisdictions. It remains an exploration rather than a newly launched cross-border payment service.",
+  "article_url": "https://therwawire.com/news/hkma-and-swift-deepen-tokenized-deposit-interoperability-work-under-project-ensemble/",
+  "image_url": "https://therwawire.com/images/news/hkma-and-swift-deepen-tokenized-deposit-interoperability-work-under-project-ensemble.svg",
+  "caption": "RWA WIRE // NEWS\n\nHKMA and Swift deepen tokenized-deposit interoperability work under Project Ensemble\n\nHong Kong's monetary authority and Swift are examining how Swift's ledger could connect with Project Ensemble's settlement layer for cross-border payments using tokenized deposits in multiple currencies.\n\nFull analysis →\nhttps://therwawire.com/news/hkma-and-swift-deepen-tokenized-deposit-interoperability-work-under-project-ensemble/",
+  "distribution": {
+    "telegram": "RWA WIRE // NEWS\n\nHKMA and Swift deepen tokenized-deposit interoperability work under Project Ensemble\n\nHong Kong's monetary authority and Swift are examining how Swift's ledger could connect with Project Ensemble's settlement layer for cross-border payments using tokenized deposits in multiple currencies.\n\nFull analysis →\nhttps://therwawire.com/news/hkma-and-swift-deepen-tokenized-deposit-interoperability-work-under-project-ensemble/",
+    "x": "HKMA and Swift deepen tokenized-deposit interoperability work under Project Ensemble\n\nHong Kong's monetary authority and Swift are examining how Swift's ledger could connect with Project Ensemble's settlement layer for cross-border payments using tokenized deposits in multiple currencies.\n\nhttps://therwawire.com/news/hkma-and-swift-deepen-tokenized-deposit-interoperability-work-under-project-ensemble/",
+    "breaking": "RWA WIRE // NEWS\n\nHKMA and Swift deepen tokenized-deposit interoperability work under Project Ensemble\n\nhttps://therwawire.com/news/hkma-and-swift-deepen-tokenized-deposit-interoperability-work-under-project-ensemble/",
+    "summary": "Hong Kong's monetary authority and Swift are examining how Swift's ledger could connect with Project Ensemble's settlement layer for cross-border payments using tokenized deposits in multiple currencies."
+  },
+  "sources": [
+    {
+      "name": "Hong Kong Monetary Authority (official press release)",
+      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261116-4/"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-11-16-hkma-and-swift-explore-cross-border-payments-with-tokenized-deposits.json",
+    "contentSha256": "c49cfdc6475552739f2dd3598edd99e4c1262891cdb6f2b40ee1062d1859f576",
+    "approvedAt": "2026-11-16T11:53:32.742593+00:00"
+  }
+}
