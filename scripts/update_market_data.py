@@ -17,7 +17,7 @@ ASSETS = {
     "polymesh": ("POLYX", "Polymesh"),
     "goldfinch": ("GFI", "Goldfinch"),
     "clearpool": ("CPOOL", "Clearpool"),
-    "mantra-dao": ("OM", "MANTRA"),
+    "mantra-dao": ("MANTRA", "MANTRA"),
     "reserve-rights-token": ("RSR", "Reserve Rights"),
     "origintrail": ("TRAC", "OriginTrail"),
     "origin-protocol": ("OGN", "Origin Protocol"),
@@ -36,7 +36,7 @@ ASSETS = {
     "ix-swap": ("IXS", "IX Swap"),
 
 }
-COINGECKO_IDS = {"maple-finance": "syrup", "zebec-protocol": "zebec-network"}
+COINGECKO_IDS = {"maple-finance": "syrup", "zebec-protocol": "zebec-network", "mantra-dao": "mantra"}
 OUT = Path("public/data/markets.json")
 MAX_QUOTE_AGE = timedelta(hours=2)
 MIN_COVERAGE = 4
@@ -59,7 +59,10 @@ def valid_quote(value, now):
         return False
     if not isinstance(updated, (int, float)) or isinstance(updated, bool) or not math.isfinite(updated):
         return False
-    age = now - datetime.fromtimestamp(updated, timezone.utc)
+    try:
+        age = now - datetime.fromtimestamp(updated, timezone.utc)
+    except (OverflowError, OSError, ValueError):
+        return False
     return timedelta(0) <= age <= MAX_QUOTE_AGE
 
 def coingecko():
