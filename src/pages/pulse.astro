@@ -17,7 +17,7 @@ const recent = (await getCollection("articles", ({ data }) => !data.draft && ["n
     <p data-reveal class="wire-lede mt-6">A repeatable daily check-in: the latest available market snapshot, followed by developments worth reading. Market data reflects a tracked token basket, not the value of all tokenized real-world assets.</p>
     <div data-reveal class="mt-8 flex flex-wrap gap-3"><a href="#pulse-market" class="wire-action">Market snapshot ↓</a><a href="#pulse-news" class="wire-action">Latest coverage ↓</a><a href={sitePath("/radar/")} class="wire-action wire-action-primary">Explore RWA Radar →</a></div>
   </section>
-  <section id="pulse-market" class="wire-container pb-10"><div class="grid gap-4 sm:grid-cols-3" data-reveal><div class="wire-panel p-6"><p class="wire-kicker">Tracked 24h average</p><p class:list={["mt-3 font-mono text-3xl font-semibold",avg>=0?"text-wire":"text-rose-400"]}>{avg>=0?"+":""}{avg.toFixed(2)}%</p><p class="mt-2 text-xs text-ink-muted">Equal-weighted change of available tokens</p></div><div class="wire-panel p-6"><p class="wire-kicker">Market breadth</p><p class="mt-3 font-mono text-3xl font-semibold text-ink">{advancing} / {priced.length}</p><p class="mt-2 text-xs text-ink-muted">Priced tokens advancing</p></div><div class="wire-panel p-6"><p class="wire-kicker">Snapshot freshness</p><p class="mt-3 font-mono text-base font-semibold text-ink">{updated}</p><p class="mt-2 text-xs text-ink-muted">Source: {markets.source} · cached, not live</p></div></div><div class="mt-5 wire-panel flex flex-wrap items-center justify-between gap-4 p-6" data-reveal><div><h2 class="text-xl font-semibold text-ink">Want the full token screener and charts?</h2><p class="mt-2 max-w-xl text-sm text-ink-muted">All {priced.length} priced assets share the same cached dataset as RWA Intelligence. Explore sectors, filter projects and star your favorites there.</p></div><a class="wire-action wire-action-primary" href={sitePath("/intelligence/")}>Open Intelligence ↗</a></div></section>
+  <section id="pulse-market" data-market-api-url={sitePath("/api/markets")} class="wire-container pb-10"><div class="grid gap-4 sm:grid-cols-3" data-reveal><div class="wire-panel p-6"><p class="wire-kicker">Tracked 24h average</p><p class:list={["mt-3 font-mono text-3xl font-semibold",avg>=0?"text-wire":"text-rose-400"]}>{avg>=0?"+":""}{avg.toFixed(2)}%</p><p class="mt-2 text-xs text-ink-muted">Equal-weighted change of available tokens</p></div><div class="wire-panel p-6"><p class="wire-kicker">Market breadth</p><p class="mt-3 font-mono text-3xl font-semibold text-ink">{advancing} / {priced.length}</p><p class="mt-2 text-xs text-ink-muted">Priced tokens advancing</p></div><div class="wire-panel p-6"><p class="wire-kicker">Snapshot freshness</p><p class="mt-3 font-mono text-base font-semibold text-ink">{updated}</p><p class="mt-2 text-xs text-ink-muted">Source: {markets.source} · cached, not live</p></div></div><div class="mt-5 wire-panel flex flex-wrap items-center justify-between gap-4 p-6" data-reveal><div><h2 class="text-xl font-semibold text-ink">Want the full token screener and charts?</h2><p class="mt-2 max-w-xl text-sm text-ink-muted">All {priced.length} priced assets share the same cached dataset as RWA Intelligence. Explore sectors, filter projects and star your favorites there.</p></div><a class="wire-action wire-action-primary" href={sitePath("/intelligence/")}>Open Intelligence ↗</a></div></section>
   <section class="wire-container py-8 sm:py-12" data-reveal><div class="wire-panel flex flex-col gap-4 p-5 sm:flex-row sm:items-center sm:justify-between sm:p-7"><div><p class="wire-kicker">Go deeper / Historical market context</p><h2 class="mt-2 text-xl font-semibold text-ink sm:text-2xl">A daily move is only one data point.</h2><p class="mt-2 max-w-2xl text-sm leading-6 text-ink-muted">Explore recorded price observations, switch between 24 hours, 7 days and 30 days, and compare the snapshot with its available history. Charts only appear when actual observations exist.</p></div><a href={sitePath("/intelligence/#market-history")} class="wire-action shrink-0">Open history chart ↗</a></div></section>
   <section id="pulse-news" class="wire-container py-12 sm:py-16">
     <div class="flex items-end justify-between gap-4 border-b border-line pb-4"><div><p class="eyebrow text-wire">Editorial desk</p><h2 class="mt-2 font-serif text-2xl text-ink">Latest verified coverage</h2></div><a class="text-xs text-wire" href={sitePath("/news/")}>All news →</a></div>
@@ -26,3 +26,26 @@ const recent = (await getCollection("articles", ({ data }) => !data.draft && ["n
     </div>
   </section>
 </BaseLayout>
+
+<script>
+  const pulse=document.querySelector<HTMLElement>("#pulse-market");
+  const cards=pulse?.querySelectorAll<HTMLElement>(".wire-panel");
+  async function refreshPulse(){
+    try{
+      const res=await fetch(pulse?.dataset.marketApiUrl||"/api/markets",{cache:"no-store"});
+      if(!res.ok)throw Error("No quotes");
+      const data=await res.json();
+      const quotes=Object.values(data.assets||{}).filter((q:any)=>typeof q?.usd==="number"&&q.usd>0&&Number.isFinite(q.usd_24h_change)) as {usd_24h_change:number}[];
+      if(!quotes.length||!cards||cards.length<3)return;
+      const up=quotes.filter(q=>q.usd_24h_change>0).length;
+      const avg=quotes.reduce((sum,q)=>sum+q.usd_24h_change,0)/quotes.length;
+      const average=cards[0].querySelector<HTMLElement>(".font-mono");
+      const breadth=cards[1].querySelector<HTMLElement>(".font-mono");
+      const freshness=cards[2].querySelector<HTMLElement>(".font-mono");
+      if(average){average.textContent=(avg>=0?"+":"")+avg.toFixed(2)+"%";average.classList.toggle("text-wire",avg>=0);average.classList.toggle("text-rose-400",avg<0);}
+      if(breadth)breadth.textContent=up+" / "+quotes.length;
+      if(freshness)freshness.textContent=data.freshness?.kind==="provider-polled-quotes"?"Provider quotes · polled within 60s":"Delayed provider snapshot";
+    }catch{}
+  }
+  refreshPulse();window.setInterval(refreshPulse,60000);
+</script>
