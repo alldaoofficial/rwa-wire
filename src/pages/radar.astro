@@ -15,8 +15,9 @@ const signals = categories.map((group) => ({
   entries: articles.filter((entry) => {
     const haystack = [entry.data.title,entry.data.description,...entry.data.tags].join(" ").toLowerCase();
     return group.terms.some((term) => haystack.includes(term));
-  }).slice(0,5),
+  }),
 }));
+const newest = articles[0]?.data.pubDate;
 const dateLabel = (date: Date) => date.toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric",timeZone:"UTC"});
 ---
 <BaseLayout title="RWA Radar | Institutional Tokenization Developments" description="Track reported institutional adoption, tokenized funds, regulatory developments and infrastructure launches with links to RWA Wire coverage.">
@@ -28,7 +29,47 @@ const dateLabel = (date: Date) => date.toLocaleDateString("en-GB",{day:"numeric"
   </div></section>
   <div class="wire-container py-10 sm:py-14">
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{signals.map((group) => <a href={`#${group.id}`} class="border border-line bg-surface p-5 hover:border-wire/60"><p class="data-label text-wire">{group.name}</p><p class="mt-3 font-mono text-3xl text-ink">{group.entries.length}</p><p class="mt-1 text-xs text-ink-muted">Recent matching stories</p></a>)}</div>
-    <div class="mt-12 space-y-12">{signals.map((group) => <section id={group.id} class="scroll-mt-28"><div class="flex items-end justify-between gap-4 border-b border-line pb-3"><h2 class="font-serif text-2xl text-ink">{group.name}</h2><span class="font-mono text-[10px] text-ink-muted">{group.entries.length} recent matches</span></div>{group.entries.length ? <div class="divide-y divide-line">{group.entries.map((entry) => <a href={sitePath(`/${entry.data.category}/${entry.slug}/`)} class="block py-5 hover:bg-surface/50"><p class="font-mono text-[10px] uppercase tracking-wider text-ink-muted">{dateLabel(entry.data.pubDate)} · {entry.data.category}</p><h3 class="mt-2 font-serif text-lg text-ink">{entry.data.title}</h3><p class="mt-2 max-w-3xl text-sm leading-6 text-ink-muted">{entry.data.description}</p></a>)}</div> : <p class="py-5 text-sm text-ink-muted">No matching published stories yet. Check back as new reporting arrives.</p>}</section>)}</div>
+    <div class="mt-8 rounded-xl border border-line bg-surface p-4 sm:p-5" data-reveal>
+      <div class="flex flex-wrap items-end justify-between gap-3"><div><p class="data-label text-wire">Signal explorer / published reporting</p><h2 class="mt-1 text-xl font-semibold text-ink">Find developments faster</h2></div><p id="radar-status" class="text-xs text-ink-muted" aria-live="polite">Filter published coverage by topic, date or keyword.</p></div>
+      <div class="mt-4 grid gap-3 sm:grid-cols-3">
+        <label class="text-xs text-ink-muted">Search stories<input id="radar-search" type="search" placeholder="Company, fund, regulation..." class="mt-1 w-full rounded-lg border border-line bg-bg px-3 py-2.5 text-sm text-ink placeholder:text-ink-muted" /></label>
+        <label class="text-xs text-ink-muted">Topic<select id="radar-topic" class="mt-1 w-full rounded-lg border border-line bg-bg px-3 py-2.5 text-sm text-ink"><option value="all">All topics</option>{categories.map(c=><option value={c.id}>{c.name}</option>)}</select></label>
+        <label class="text-xs text-ink-muted">Published within<select id="radar-window" class="mt-1 w-full rounded-lg border border-line bg-bg px-3 py-2.5 text-sm text-ink"><option value="all">All dates</option><option value="7">7 days</option><option value="30">30 days</option><option value="90">90 days</option></select></label>
+      </div>
+      <p class="mt-3 text-xs text-ink-muted">Source: published RWA Wire articles. Topic classification uses keyword matching, not independently verified event scoring. Latest article: {newest ? dateLabel(newest) : "Unavailable"}.</p>
+    </div>
+    <div class="mt-10 space-y-10" id="radar-results">{signals.map((group) => <section id={group.id} data-radar-group class="scroll-mt-28"><div class="flex items-end justify-between gap-4 border-b border-line pb-3"><h2 class="font-serif text-2xl text-ink">{group.name}</h2><span class="font-mono text-[10px] text-ink-muted"><span data-group-count>{group.entries.length}</span> matching reports</span></div><div class="divide-y divide-line">{group.entries.map((entry) => <a data-radar-entry data-date={entry.data.pubDate.toISOString()} data-search={[entry.data.title,entry.data.description,...entry.data.tags].join(" ").toLowerCase()} href={sitePath(`/${entry.data.category}/${entry.slug}/`)} class="block py-5 hover:bg-surface/50"><p class="font-mono text-[10px] uppercase tracking-wider text-ink-muted">{dateLabel(entry.data.pubDate)} · {entry.data.category}</p><h3 class="mt-2 font-serif text-lg text-ink">{entry.data.title}</h3><p class="mt-2 max-w-3xl text-sm leading-6 text-ink-muted">{entry.data.description}</p><span class="mt-2 inline-block text-xs text-wire">Read report and sources ↗</span></a>)}</div><p data-group-empty class="hidden py-5 text-sm text-ink-muted">No published reports match these filters.</p></section>)}</div>
+    <script>
+      const search = document.querySelector<HTMLInputElement>("#radar-search");
+      const topic = document.querySelector<HTMLSelectElement>("#radar-topic");
+      const windowSelect = document.querySelector<HTMLSelectElement>("#radar-window");
+      const groups = Array.from(document.querySelectorAll<HTMLElement>("[data-radar-group]"));
+      const status = document.querySelector<HTMLElement>("#radar-status");
+      const refresh = () => {
+        const query = search?.value.toLowerCase().trim() ?? "";
+        const days = Number(windowSelect?.value ?? 0);
+        const cutoff = days > 0 ? Date.now() - days * 86400000 : 0;
+        let visible = 0;
+        groups.forEach(group => {
+          const active = topic?.value === "all" || topic?.value === group.id;
+          let count = 0;
+          group.querySelectorAll<HTMLElement>("[data-radar-entry]").forEach(entry => {
+            const match = active && (entry.dataset.search ?? "").includes(query) && (!cutoff || new Date(entry.dataset.date ?? "").valueOf() >= cutoff);
+            entry.hidden = !match;
+            if (match) count++;
+          });
+          group.hidden = !active;
+          const counter = group.querySelector<HTMLElement>("[data-group-count]");
+          if (counter) counter.textContent = String(count);
+          const empty = group.querySelector<HTMLElement>("[data-group-empty]");
+          if (empty) empty.hidden = count !== 0;
+          visible += count;
+        });
+        if (status) status.textContent = `${visible} matching topic placements · articles can appear in multiple topics`;
+      };
+      [search,topic,windowSelect].forEach(control => control?.addEventListener("input",refresh));
+      refresh();
+    </script>
     <div class="mt-12 border border-line bg-surface p-6"><p class="data-label text-wire">Make it a daily habit</p><h2 class="mt-2 font-serif text-2xl text-ink">Start with the market. Then follow the signals.</h2><a href={sitePath("/pulse/")} class="mt-4 inline-block text-sm font-semibold text-wire">Open RWA Pulse →</a></div>
   </div>
 </BaseLayout>

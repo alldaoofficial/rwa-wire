@@ -2,6 +2,19 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import { institutions } from "@/data/institutions";
+import { getCollection } from "astro:content";
+import { sitePath } from "@/utils/paths";
+const reports=(await getCollection("articles",({data})=>!data.draft&&data.type!=="EXPLAINER")).filter(a=>a.data.pubDate.valueOf()<=Date.now()).sort((a,b)=>b.data.pubDate.valueOf()-a.data.pubDate.valueOf());
+const evidence=institutions.map(i=>{const re=new RegExp("(^|[^a-z0-9])"+i.name+"(?=$|[^a-z0-9])","i");const aliases=i.slug==="jpmorgan"?[/\bjp\s?morgan\b/i]:[];const matches=reports.filter(a=>{const text=[a.data.title,a.data.description,...a.data.tags].join(" ");return re.test(text)||aliases.some(alias=>alias.test(text));});return {...i,matches,latest:matches[0]?.data.pubDate??null};}).sort((a,b)=>b.matches.length-a.matches.length);
+const total=evidence.reduce((n,i)=>n+i.matches.length,0);
+const max=Math.max(1,...evidence.map(i=>i.matches.length));
+const months=Array.from({length:6},(_,index)=>{const d=new Date();return new Date(Date.UTC(d.getUTCFullYear(),d.getUTCMonth()-5+index,1));});
+const activity=months.map(start=>{const end=new Date(Date.UTC(start.getUTCFullYear(),start.getUTCMonth()+1,1));const matches=evidence.reduce((sum,i)=>sum+i.matches.filter(a=>a.data.pubDate>=start&&a.data.pubDate<end).length,0);const unique=new Set(evidence.flatMap(i=>i.matches.filter(a=>a.data.pubDate>=start&&a.data.pubDate<end).map(a=>a.slug)));return {label:start.toLocaleDateString("en-GB",{month:"short",year:"2-digit",timeZone:"UTC"}),matches,articles:unique.size};});
+const peak=Math.max(1,...activity.map(x=>x.matches));
+const connections=evidence.flatMap((left,index)=>evidence.slice(index+1).map(right=>{const rightSlugs=new Set(right.matches.map(a=>a.slug));const shared=left.matches.filter(a=>rightSlugs.has(a.slug));return {left,right,shared};})).filter(pair=>pair.shared.length>0).sort((a,b)=>b.shared.length-a.shared.length);
+const maxConnections=Math.max(1,...connections.map(c=>c.shared.length));
+const totalConnectedReports=new Set(connections.flatMap(c=>c.shared.map(a=>a.slug))).size;
+
 ---
 <BaseLayout title="Institution Intelligence" description="Structured intelligence on institutions participating in tokenized finance and real-world asset markets.">
   <div class="wire-container py-10 sm:py-14">
@@ -11,6 +24,78 @@ import { institutions } from "@/data/institutions";
       <h1 class="mt-3 max-w-4xl font-serif text-4xl font-medium leading-tight text-ink sm:text-5xl">Institutions shaping the tokenized economy.</h1>
       <p class="mt-4 max-w-2xl text-base leading-relaxed text-ink-muted">See which banks, asset managers and market operators are active in tokenized finance — and follow their connections without needing to decode the whole market first.</p><div class="mt-6 grid max-w-3xl gap-2 sm:grid-cols-3"><div class="border border-line bg-surface/60 p-3"><p class="font-mono text-[10px] text-wire">01</p><p class="mt-1 text-xs text-ink">Choose an institution</p></div><div class="border border-line bg-surface/60 p-3"><p class="font-mono text-[10px] text-wire">02</p><p class="mt-1 text-xs text-ink">See what it is connected to</p></div><div class="border border-line bg-surface/60 p-3"><p class="font-mono text-[10px] text-wire">03</p><p class="mt-1 text-xs text-ink">Open the underlying coverage</p></div></div>
     </header>
+    <section class="mt-8 rounded-xl border border-line bg-surface p-5 sm:p-7" aria-labelledby="connections-title" data-reveal>
+      <div class="flex flex-wrap items-end justify-between gap-3"><div><p class="data-label text-wire">Institution network / Evidence-linked</p><h2 id="connections-title" class="mt-2 font-serif text-2xl text-ink">Where institutional coverage overlaps</h2></div><span class="font-mono text-xs text-ink-muted">{connections.length} covered pairs · {totalConnectedReports} unique reports</span></div>
+      <p class="mt-3 max-w-3xl text-sm leading-6 text-ink-muted">Explore institutions mentioned together in the same published report. Co-mentions do not establish a partnership, transaction, endorsement or any direct business relationship. Open the linked articles to evaluate the underlying evidence.</p>
+      {connections.length?<div class="mt-6 grid gap-3 lg:grid-cols-2">{connections.slice(0,12).map(pair=><details class="network-pair group rounded-xl border border-line bg-bg p-4 transition-colors hover:border-wire/60">
+        <summary class="cursor-pointer list-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-wire">
+          <div class="flex items-center justify-between gap-3"><div class="min-w-0"><p class="text-[10px] uppercase tracking-wider text-wire">Shared editorial coverage</p><h3 class="mt-1 text-sm font-semibold text-ink sm:text-base">{pair.left.name}<span class="mx-2 text-wire">↔</span>{pair.right.name}</h3></div><div class="shrink-0 text-right"><span class="font-mono text-xl text-ink">{pair.shared.length}</span><p class="text-[10px] text-ink-muted">shared reports</p></div></div>
+          <div class="mt-3 h-1.5 overflow-hidden rounded-full bg-surface"><div class="network-bar h-full rounded-full bg-wire" style={`--bar-width:${pair.shared.length/maxConnections*100}%`}></div></div>
+          <p class="mt-2 text-xs text-ink-muted"><span class="group-open:hidden">View supporting reports +</span><span class="hidden group-open:inline">Hide supporting reports −</span></p>
+        </summary>
+        <div class="mt-4 space-y-2 border-t border-line pt-3">{pair.shared.slice(0,8).map(a=><a class="block rounded-lg px-2 py-2 text-xs leading-5 text-ink-muted transition-colors hover:bg-surface hover:text-wire" href={sitePath(`/${a.data.category}/${a.slug}/`)}><span class="font-mono text-[10px] text-wire">{a.data.pubDate.toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric",timeZone:"UTC"})}</span> · {a.data.title} ↗</a>)}{pair.shared.length>8&&<p class="text-xs text-ink-muted">Showing 8 of {pair.shared.length} shared reports.</p>}</div>
+      </details>)}</div>:<p class="mt-6 rounded-xl border border-line bg-bg p-5 text-sm text-ink-muted">No cross-institution mentions were identified in published report metadata. Connections will appear when supported by the archive.</p>}
+      <p class="mt-5 text-xs text-ink-muted">Computed from institution names in article titles, summaries and tags; not full-text entity extraction. Only pairs with at least one shared published article appear.</p>
+    </section>
+    <section class="mt-8 rounded-xl border border-line bg-surface p-5 sm:p-7" aria-labelledby="activity-title" data-reveal>
+      <p class="data-label text-wire">Historical coverage / Six calendar months</p>
+      <h2 id="activity-title" class="mt-2 font-serif text-2xl text-ink">Institutional coverage over time</h2>
+      <p class="mt-2 max-w-3xl text-sm leading-6 text-ink-muted">Monthly counts of mentions of tracked institutions in published RWA Wire reporting. A story mentioning two institutions counts twice. This chart measures our editorial coverage, not real-world adoption or deal volume.</p>
+      <div class="mt-6 grid grid-cols-6 items-end gap-2 sm:gap-4" role="img" aria-label={activity.map(a=>`${a.label}: ${a.matches} institution mentions across ${a.articles} articles`).join("; ")}>
+        {activity.map(a=><div class="min-w-0 text-center"><p class="mb-2 font-mono text-xs text-ink">{a.matches}</p><div class="flex h-32 items-end rounded-t bg-bg"><div class="activity-bar w-full rounded-t bg-wire" title={`${a.label}: ${a.matches} institution mentions in ${a.articles} reports`} style={`--activity-height:${a.matches?Math.max(4,a.matches/peak*100):0}%`}></div></div><p class="mt-2 font-mono text-[10px] text-ink-muted">{a.label}</p><p class="mt-1 text-[10px] text-ink-muted">{a.articles} reports</p></div>)}
+      </div>
+      <p class="mt-4 text-xs leading-5 text-ink-muted">The current month is incomplete. Historical figures are reconstructed from existing published article dates and can change as the archive is updated. No missing data is estimated.</p>
+    </section>
+    <section class="mt-8 rounded-xl border border-line bg-surface p-5 sm:p-7" data-reveal aria-labelledby="coverage-title">
+      <div class="flex flex-wrap items-end justify-between gap-3"><div><p class="data-label text-wire">Institution intelligence / Coverage monitor</p><h2 id="coverage-title" class="mt-2 font-serif text-2xl text-ink">Who's appearing in verified coverage?</h2></div><span class="font-mono text-xs text-ink-muted">{total} institution–article matches · {institutions.length} tracked entities</span></div>
+      <p class="mt-3 max-w-3xl text-sm leading-6 text-ink-muted">A transparent view of how often tracked institutions are mentioned in published RWA Wire reporting. These are editorial mentions, not independently verified partnerships, capital flows, market share or adoption rankings. One article can mention several institutions.</p>
+      <div class="mt-5 grid gap-3 sm:grid-cols-[1fr_220px]"><label class="text-xs text-ink-muted">Search institutions<input id="institution-search" type="search" placeholder="Search institution or focus..." class="mt-1 w-full rounded-lg border border-line bg-bg px-3 py-2.5 text-sm text-ink placeholder:text-ink-muted" /></label><label class="text-xs text-ink-muted">Publication window<select id="institution-window" class="mt-1 w-full rounded-lg border border-line bg-bg px-3 py-2.5 text-sm text-ink"><option value="all">All published dates</option><option value="30">Last 30 days</option><option value="90">Last 90 days</option></select></label></div>
+      <p id="institution-count" class="mt-4 text-xs text-ink-muted" aria-live="polite">Showing {evidence.length} institutions</p>
+      <div class="mt-3 grid gap-3 lg:grid-cols-2">{evidence.map(i=><article data-institution data-search={[i.name,i.type,...i.focus].join(" ").toLowerCase()} data-dates={JSON.stringify(i.matches.map(a=>a.data.pubDate.valueOf()))} class="rounded-xl border border-line bg-bg p-4 sm:p-5">
+        <div class="flex items-start justify-between gap-3"><div><p class="data-label text-wire">{i.type}</p><h3 class="mt-1 text-lg font-semibold text-ink"><a class="hover:text-wire" href={sitePath(`/institutions/intelligence/${i.slug}/`)}>{i.name}</a></h3></div><div class="text-right"><span data-mention-count class="font-mono text-2xl text-ink">{i.matches.length}</span><p class="text-[10px] text-ink-muted">article mentions</p></div></div>
+        <div class="mt-3 h-2 overflow-hidden rounded-full bg-surface"><div data-mention-bar class="h-full rounded-full bg-wire" style={`width:${i.matches.length/max*100}%`}></div></div>
+        <p class="mt-3 text-xs text-ink-muted">Latest matching report: {i.latest?i.latest.toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric",timeZone:"UTC"}):"No published match"}</p>
+        <div class="mt-3 space-y-2" data-mention-list>{i.matches.slice(0,20).map(a=><a data-mention data-date={a.data.pubDate.toISOString()} href={sitePath(`/${a.data.category}/${a.slug}/`)} class="block border-t border-line pt-2 text-xs leading-5 text-ink-muted hover:text-wire"><span class="font-mono text-[10px]">{a.data.pubDate.toLocaleDateString("en-GB",{day:"numeric",month:"short",timeZone:"UTC"})}</span> · {a.data.title}</a>)}</div>
+        <p data-mention-empty class="mt-3 hidden text-xs text-ink-muted">No matching published articles in this window.</p>
+        <a href={sitePath(`/institutions/intelligence/${i.slug}/`)} class="mt-4 inline-block text-xs font-semibold text-wire">Open institution profile ↗</a>
+      </article>)}</div>
+      <p class="mt-4 text-xs leading-5 text-ink-muted">Matching uses institution names in article titles, descriptions and tags; full article bodies are not searched. Each card displays at most 20 latest matching reports. Counts reflect this publication's coverage, not all market activity.</p>
+    </section>
+    <script>
+      const cards=Array.from(document.querySelectorAll<HTMLElement>("[data-institution]"));
+      const search=document.querySelector<HTMLInputElement>("#institution-search");
+      const windowSelect=document.querySelector<HTMLSelectElement>("#institution-window");
+      const summary=document.querySelector<HTMLElement>("#institution-count");
+      function applyInstitutionFilters(){
+        const q=search?.value.toLowerCase().trim()??"";
+        const days=Number(windowSelect?.value??0);
+        const cutoff=days?Date.now()-days*86400000:0;
+        let shown=0;let max=1;
+        const counts=cards.map(card=>{
+          const dates: number[]=JSON.parse(card.dataset.dates??"[]");
+          const count=dates.filter(timestamp=>!cutoff||timestamp>=cutoff).length;
+          max=Math.max(max,count);
+          return count;
+        });
+        cards.forEach((card,index)=>{
+          const matches=(card.dataset.search??"").includes(q);
+          card.hidden=!matches;
+          if(matches)shown++;
+          const count=counts[index];
+          const countLabel=card.querySelector<HTMLElement>("[data-mention-count]");
+          if(countLabel)countLabel.textContent=String(count);
+          const bar=card.querySelector<HTMLElement>("[data-mention-bar]");
+          if(bar)bar.style.width=`${count/max*100}%`;
+          card.querySelectorAll<HTMLElement>("[data-mention]").forEach(m=>m.hidden=!!cutoff&&new Date(m.dataset.date??"").valueOf()<cutoff);
+          const empty=card.querySelector<HTMLElement>("[data-mention-empty]");
+          if(empty)empty.hidden=count!==0;
+        });
+        if(summary)summary.textContent=`Showing ${shown} institutions · article mentions in selected window (up to 20 linked reports displayed per institution)`;
+      }
+      search?.addEventListener("input",applyInstitutionFilters);
+      windowSelect?.addEventListener("change",applyInstitutionFilters);
+      applyInstitutionFilters();
+    </script>
     <section class="mt-8"><div class="mb-4"><p class="data-label text-wire">Step 1 // Choose</p><h2 class="mt-2 font-serif text-2xl text-ink">Institution directory</h2></div><div class="grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-3">
       {institutions.map(i => <a href={`/institutions/intelligence/${i.slug}/`} class="group bg-bg p-6 hover:bg-surface">
         <div class="flex items-center justify-between gap-3"><p class="data-label text-wire">{i.type}</p><span class="font-mono text-[10px] text-ink-muted">{i.status}</span></div>
@@ -21,3 +106,21 @@ import { institutions } from "@/data/institutions";
     </div></section>
   </div>
 </BaseLayout>
+
+<style>
+  .network-bar { width: var(--bar-width); transform-origin: left; }
+  .activity-bar { height: var(--activity-height); transform-origin: bottom; transition: filter 180ms ease; }
+  .activity-bar:hover { filter: brightness(1.3); }
+  .network-pair[open] { border-color: rgb(46 212 122 / .45); }
+  .network-pair summary::-webkit-details-marker { display: none; }
+  @media (prefers-reduced-motion: no-preference) {
+    .network-pair { transition: border-color 180ms ease, background-color 180ms ease, transform 180ms ease; }
+    .network-pair:hover { transform: translateY(-2px); }
+    .network-pair[open] > div { animation: network-enter 220ms ease-out both; }
+    .network-bar { animation: network-grow 850ms cubic-bezier(.2,.8,.2,1) both; }
+    .activity-bar { animation: activity-grow 850ms cubic-bezier(.2,.8,.2,1) both; }
+    @keyframes network-enter { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes network-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    @keyframes activity-grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+  }
+</style>

@@ -1,0 +1,62 @@
+name: Verify RWA market quote coverage
+
+on:
+  pull_request:
+    paths:
+      - "scripts/update_market_data.py"
+      - ".github/workflows/verify-market-coverage.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check Python syntax
+        run: python3 -m py_compile scripts/update_market_data.py
+      - name: Fetch fresh market quotes in temporary directory
+        id: fetch
+        continue-on-error: true
+        env:
+          COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
+        run: |
+          mkdir -p market-coverage
+          cd market-coverage
+          mkdir -p scripts
+          cp ../scripts/update_market_data.py scripts/
+          python3 scripts/update_market_data.py 2>&1 | tee coverage.log
+          test -f public/data/markets.json
+      - name: Write provider coverage report
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import json
+          from datetime import datetime, timezone
+          from pathlib import Path
+          root=Path("market-coverage")
+          output=root/"coverage-report.json"
+          cache=root/"public/data/markets.json"
+          if cache.exists():
+              data=json.loads(cache.read_text())
+              now=datetime.now(timezone.utc).timestamp()
+              quotes=data.get("assets",{})
+              quote_ages={key:round((now-value["last_updated_at"])/60,1) for key,value in quotes.items() if isinstance(value.get("last_updated_at"),(int,float))}
+              report={"status":"retrieved","source":data.get("source"),"fetchedAt":data.get("fetchedAt"),"available":len(quotes),"asset_ids":sorted(quotes),"quote_age_minutes":quote_ages,"oldest_quote_minutes":max(quote_ages.values()) if quote_ages else None}
+          else:
+              report={"status":"provider_unavailable_or_insufficient_coverage","available":0}
+          output.write_text(json.dumps(report,indent=2)+"\n")
+          print(json.dumps(report,indent=2))
+          PY
+      - name: Upload diagnostic results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: market-coverage-report
+          path: |
+            market-coverage/coverage.log
+            market-coverage/coverage-report.json
+          if-no-files-found: warn

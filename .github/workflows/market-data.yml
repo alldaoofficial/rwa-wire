@@ -6,6 +6,7 @@ on:
     paths:
       - ".github/workflows/market-data.yml"
       - "scripts/update_market_data.py"
+      - "scripts/append_market_history.py"
   schedule:
     - cron: "*/15 * * * *"
   workflow_dispatch:
@@ -36,6 +37,10 @@ jobs:
           fi
           echo "produced=true" >> "$GITHUB_OUTPUT"
 
+      - name: Record six-hour history snapshot
+        if: steps.refresh.outputs.produced == 'true'
+        run: python3 scripts/append_market_history.py
+
       - name: Commit cache when changed
         id: commit
         if: steps.refresh.outputs.produced == 'true'
@@ -47,6 +52,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add public/data/markets.json
+          if [ -f public/data/market-history.json ]; then
+            git add public/data/market-history.json
+          fi
           if git diff --cached --quiet; then
             echo "Market cache unchanged."
             echo "changed=false" >> "$GITHUB_OUTPUT"

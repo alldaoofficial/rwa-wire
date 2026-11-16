@@ -1,0 +1,188 @@
+---
+import {sitePath} from "../utils/paths";
+import {getCollection} from "astro:content";
+const articles=(await getCollection("articles",({data})=>!data.draft&&data.type!=="EXPLAINER"&&["news","rwa","tokenization","institutions","markets"].includes(data.category))).filter(a=>a.data.pubDate.valueOf()<=Date.now()).sort((a,b)=>b.data.pubDate.valueOf()-a.data.pubDate.valueOf());
+const recent=articles.filter(a=>Date.now()-a.data.pubDate.valueOf()<=86400000);
+const briefing=(recent.length?recent:articles.filter(a=>Date.now()-a.data.pubDate.valueOf()<=7*86400000)).slice(0,4);
+const briefingWindow=recent.length?"Past 24 hours":"Past 7 days";
+---
+<section class="wire-container py-6 sm:py-8" aria-labelledby="terminal-title">
+  <div class="terminal-shell overflow-hidden rounded-2xl border border-line bg-[#0d131a]">
+    <div class="flex flex-wrap items-center justify-between gap-3 border-b border-line bg-[#111b24] px-5 py-4">
+      <div><p class="data-label text-wire">RWA Wire / Market workstation</p><h2 id="terminal-title" class="mt-1 font-sans text-xl font-semibold text-ink sm:text-2xl">Your RWA Morning Brief</h2><p class="mt-1 text-xs text-ink-muted">A daily starting point for tokenized markets · verified quotes, not execution prices</p></div>
+      <div class="flex min-w-0 flex-wrap items-center gap-3"><span id="terminal-status" role="status" class="text-xs text-ink-muted">Loading provider quotes…</span><a href={sitePath("/intelligence/")} class="wire-action !min-h-[36px] !px-3 !py-2 text-xs">Open screener ↗</a></div>
+    </div>
+    <div class="grid lg:grid-cols-[minmax(0,1.8fr)_minmax(260px,1fr)]">
+      <div class="min-w-0 border-b border-line p-4 sm:p-5 lg:border-b-0 lg:border-r">
+        <div class="flex flex-wrap items-center justify-between gap-3"><div><p class="data-label">Market heatmap / tracked tokens</p><p class="mt-1 text-xs text-ink-muted">Color indicates verified 24h price change; tile size is uniform, not market capitalization</p></div><div class="flex flex-wrap gap-2"><button id="terminal-sort-change" class="rounded-md border border-wire/60 px-3 py-1.5 text-xs text-wire" type="button">24h change</button><button id="terminal-sort-volume" class="rounded-md border border-line px-3 py-1.5 text-xs text-ink-muted" type="button">24h volume</button></div></div>
+        <div id="terminal-heatmap" class="mt-4 grid min-h-[280px] grid-cols-2 gap-2 sm:grid-cols-3 xl:grid-cols-4" aria-live="polite"><p class="col-span-full py-12 text-center text-sm text-ink-muted">Loading verified market data…</p></div>
+        <p id="terminal-coverage" class="mt-3 text-xs text-ink-muted">Missing quotes are never estimated.</p>
+      </div>
+      <div class="flex min-w-0 flex-col">
+        <div class="border-b border-line p-4 sm:p-5"><p class="data-label">Today's market breadth</p><p id="terminal-breadth" class="mt-3 font-mono text-3xl font-semibold text-ink">—</p><p class="mt-1 text-xs text-ink-muted">Advancing / priced tokens</p><div class="mt-4 h-2 overflow-hidden rounded-full bg-[#293440]"><div id="terminal-breadth-bar" class="h-full rounded-full bg-wire transition-all" style="width:0%"></div></div></div>
+        <div class="border-b border-line p-4 sm:p-5"><p class="data-label">Tracked 24h volume</p><p id="terminal-volume" class="mt-3 font-mono text-2xl font-semibold text-ink">—</p><p class="mt-1 text-xs text-ink-muted">Sum of available provider-reported volumes; not total RWA market volume</p></div>
+        <div class="flex-1 p-4 sm:p-5"><p class="data-label">Research shortcuts</p><div class="mt-3 grid gap-2 text-sm"><a href={sitePath("/pulse/")} class="rounded-lg border border-line px-3 py-3 text-ink hover:border-wire/50">Daily market pulse ↗</a><a href={sitePath("/radar/")} class="rounded-lg border border-line px-3 py-3 text-ink hover:border-wire/50">Institutional radar ↗</a><a href={sitePath("/news/")} class="rounded-lg border border-line px-3 py-3 text-ink hover:border-wire/50">Latest reporting ↗</a></div></div>
+      </div>
+    </div>
+    <div class="grid border-t border-line lg:grid-cols-[minmax(0,1.4fr)_minmax(280px,1fr)]">
+      <div class="min-w-0 border-b border-line p-4 sm:p-5 lg:border-b-0 lg:border-r">
+        <div class="flex flex-wrap items-center justify-between gap-2"><div><p class="data-label">Daily intelligence / Source-led reporting</p><h3 class="mt-1 font-sans text-lg font-semibold text-ink">What matters today</h3></div><span class="text-xs text-ink-muted">{briefingWindow} · {briefing.length} reports</span></div>
+        {briefing.length?<div class="mt-3 divide-y divide-line">{briefing.map(a=><a class="group block py-3" href={sitePath(`/${a.data.category}/${a.slug}/`)}><div class="flex flex-wrap items-center gap-2 text-[10px] uppercase tracking-wide text-ink-muted"><span>{a.data.category}</span><span>·</span><time datetime={a.data.pubDate.toISOString()}>{a.data.pubDate.toLocaleDateString("en-GB",{day:"2-digit",month:"short",timeZone:"UTC"})}</time></div><p class="mt-1 text-sm font-semibold leading-5 text-ink group-hover:text-wire">{a.data.title}</p><p class="mt-1 line-clamp-2 text-xs leading-5 text-ink-muted">{a.data.description}</p></a>)}</div>:<p class="mt-4 text-sm text-ink-muted">No verified reports published in the last seven days. Explore the archive for earlier coverage.</p>}
+        <a class="mt-3 inline-block text-xs font-semibold text-wire" href={sitePath("/news/")}>Explore all reporting ↗</a>
+      </div>
+      <div class="min-w-0 p-4 sm:p-5"><p class="data-label">Your watchlist / Since last visit</p><h3 class="mt-1 font-sans text-lg font-semibold text-ink">Projects you follow</h3><p id="terminal-watchlist-note" class="mt-2 text-xs leading-5 text-ink-muted">Saved projects stay on this device. Changes are measured against the previous visit, not a historical market close.</p><div id="terminal-watchlist-updates" class="mt-3 grid gap-2" aria-live="polite"><p class="text-xs text-ink-muted">Loading saved projects…</p></div><a class="mt-4 inline-block text-xs font-semibold text-wire" href={sitePath("/intelligence/")}>Manage your watchlist ↗</a></div>
+    </div>
+    <div class="border-t border-line p-4 sm:p-5">
+      <div class="flex flex-wrap items-center justify-between gap-3"><div><p class="data-label">Observed token performance</p><h3 class="mt-1 font-sans text-lg font-semibold text-ink">Price history / selected asset</h3><p class="mt-1 text-xs text-ink-muted">Actual preview observations only · indexed to 100 at first point</p></div><div class="flex w-full flex-wrap gap-2 sm:w-auto"><label class="sr-only" for="terminal-history-asset">Token</label><select id="terminal-history-asset" class="min-w-0 max-w-[170px] flex-1 rounded-md border border-line bg-bg px-3 py-2 text-xs text-ink"><option value="">Loading…</option></select><label class="sr-only" for="terminal-history-period">History period</label><select id="terminal-history-period" class="min-w-0 rounded-md border border-line bg-bg px-3 py-2 text-xs text-ink"><option value="1">24H</option><option value="7">7D</option><option value="30" selected>30D</option></select></div></div>
+      <div class="mt-4 rounded-lg border border-line bg-[#0a1118] p-3"><p id="terminal-history-status" role="status" class="py-12 text-center text-xs text-ink-muted">Loading verified observations…</p><svg id="terminal-history-svg" class="hidden h-[220px] w-full" viewBox="0 0 800 220" preserveAspectRatio="none" role="img" aria-label="Observed indexed token price chart"><line x1="0" y1="185" x2="800" y2="185" stroke="#33424c" stroke-dasharray="4 6"/><line x1="0" y1="100" x2="800" y2="100" stroke="#33424c" stroke-dasharray="4 6"/><path id="terminal-history-path" fill="none" stroke="#55dba1" stroke-width="2.5" vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="mt-3 flex flex-wrap justify-between gap-2 text-xs text-ink-muted"><span id="terminal-history-range">Historical data starts when collection begins</span><span id="terminal-history-change"></span></div>
+    </div>
+    <div class="flex flex-wrap items-center justify-between gap-2 border-t border-line px-5 py-3 text-[11px] text-ink-muted"><span>Market quotes are provider-polled snapshots, not tick-by-tick exchange feeds.</span><span id="terminal-updated" class="font-mono">Awaiting verified timestamp</span></div>
+  </div>
+</section>
+<script>
+  const heatmap=document.querySelector<HTMLElement>("#terminal-heatmap");
+  const status=document.querySelector<HTMLElement>("#terminal-status");
+  const coverage=document.querySelector<HTMLElement>("#terminal-coverage");
+  const breadth=document.querySelector<HTMLElement>("#terminal-breadth");
+  const bar=document.querySelector<HTMLElement>("#terminal-breadth-bar");
+  const volume=document.querySelector<HTMLElement>("#terminal-volume");
+  const updated=document.querySelector<HTMLElement>("#terminal-updated");
+  const changeBtn=document.querySelector<HTMLButtonElement>("#terminal-sort-change");
+  const volumeBtn=document.querySelector<HTMLButtonElement>("#terminal-sort-volume");
+  const names:Record<string,string>={"ondo-finance":"ONDO","chainlink":"LINK","maple-finance":"SYRUP","zebec-protocol":"ZBCN","mantra-dao":"MANTRA","reserve-rights-token":"RSR","origintrail":"TRAC","origin-protocol":"OGN","realio-network":"RIO","dusk-network":"DUSK","ix-swap":"IXS","clearpool":"CPOOL"};
+  type Quote={usd:number;usd_24h_change?:number|null;usd_24h_vol?:number|null;last_updated_at?:number};
+  let entries:[string,Quote][]=[];
+  let sortBy:"change"|"volume"="change";
+  let observations:{at:string;prices:Record<string,number>}[]=[];
+  const historyAsset=document.querySelector<HTMLSelectElement>("#terminal-history-asset");
+  const historyPeriod=document.querySelector<HTMLSelectElement>("#terminal-history-period");
+  const historySvg=document.querySelector<SVGSVGElement>("#terminal-history-svg");
+  const historyPath=document.querySelector<SVGPathElement>("#terminal-history-path");
+  const historyStatus=document.querySelector<HTMLElement>("#terminal-history-status");
+  const historyRange=document.querySelector<HTMLElement>("#terminal-history-range");
+  const historyChange=document.querySelector<HTMLElement>("#terminal-history-change");
+  const compact=(n:number)=>new Intl.NumberFormat("en-US",{notation:"compact",maximumFractionDigits:2}).format(n);
+  function draw(){
+    if(!heatmap)return;
+    const sorted=[...entries].sort((a,b)=>sortBy==="volume"?(Number(b[1].usd_24h_vol)||0)-(Number(a[1].usd_24h_vol)||0):Math.abs(Number(b[1].usd_24h_change)||0)-Math.abs(Number(a[1].usd_24h_change)||0));
+    heatmap.replaceChildren();
+    for(const [id,q] of sorted){
+      const change=typeof q.usd_24h_change==="number"&&Number.isFinite(q.usd_24h_change)?q.usd_24h_change:null;
+      const tile=document.createElement("div");
+      const positive=change!==null&&change>=0;
+      tile.className="min-w-0 cursor-pointer rounded-lg border p-3 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-300 "+(change===null?"border-line bg-[#1a222c]":positive?"border-emerald-700/40 bg-emerald-950/60":"border-rose-800/40 bg-rose-950/50");
+      const name=document.createElement("p");name.className="truncate text-xs font-bold tracking-wide text-ink";name.textContent=names[id]||id.replaceAll("-"," ").toUpperCase();
+      const price=document.createElement("p");price.className="mt-2 truncate font-mono text-[11px] text-ink-muted";price.textContent="$"+q.usd.toLocaleString("en-US",{maximumSignificantDigits:6});
+      const move=document.createElement("p");move.className="mt-2 font-mono text-lg font-semibold "+(change===null?"text-ink-muted":positive?"text-emerald-300":"text-rose-300");move.textContent=change===null?"N/A":(positive?"+":"")+change.toFixed(2)+"%";
+      tile.append(name,price,move);
+      tile.setAttribute("role","button");tile.tabIndex=0;tile.setAttribute("aria-label","View "+(names[id]||id)+" observed history");
+      const select=()=>{if(historyAsset){const available=Array.from(historyAsset.options).some(option=>option.value===id);if(!available){if(historyStatus){historyStatus.classList.remove("hidden");historyStatus.textContent="No recorded history is available for this token yet.";}historySvg?.classList.add("hidden");}else{historyAsset.value=id;drawHistory();}document.querySelector("#terminal-history-asset")?.scrollIntoView({behavior:"smooth",block:"nearest"});}};
+      tile.addEventListener("click",select);tile.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select();}});
+      heatmap.append(tile);
+    }
+    if(!entries.length){const empty=document.createElement("p");empty.className="col-span-full py-12 text-center text-sm text-ink-muted";empty.textContent="No verified quotes currently available.";heatmap.append(empty);}
+    changeBtn?.classList.toggle("text-wire",sortBy==="change");
+    volumeBtn?.classList.toggle("text-wire",sortBy==="volume");
+  }
+  async function refresh(){
+    try{
+      const res=await fetch("/api/markets",{cache:"no-store"});if(!res.ok)throw Error("Quote API unavailable");
+      const data=await res.json();
+      entries=Object.entries(data.assets||{}).filter((item):item is [string,Quote]=>{const q=item[1] as Quote;return q&&typeof q.usd==="number"&&Number.isFinite(q.usd)&&q.usd>0;});
+      const validChanges=entries.filter(([,q])=>typeof q.usd_24h_change==="number"&&Number.isFinite(q.usd_24h_change));
+      const advancing=validChanges.filter(([,q])=>Number(q.usd_24h_change)>0).length;
+      const sum=entries.reduce((s,[,q])=>s+(typeof q.usd_24h_vol==="number"&&Number.isFinite(q.usd_24h_vol)&&q.usd_24h_vol>0?q.usd_24h_vol:0),0);
+      if(breadth)breadth.textContent=advancing+" / "+validChanges.length;
+      if(bar)bar.style.width=(validChanges.length?advancing/validChanges.length*100:0)+"%";
+      if(volume)volume.textContent="$"+compact(sum);
+      if(coverage)coverage.textContent=entries.length+" / "+(data.coverage?.tracked||26)+" tracked projects with valid prices · missing quotes are excluded";
+      if(status)status.textContent=data.freshness?.delayed?"Delayed provider data":"Provider data available";
+      if(updated)updated.textContent=data.fetchedAt?"Updated "+new Date(data.fetchedAt).toLocaleString("en-GB",{timeZone:"UTC",day:"2-digit",month:"short",hour:"2-digit",minute:"2-digit"})+" UTC":"Timestamp unavailable";
+      draw();updatePersonalBrief();storeCurrentVisit();
+    }catch{if(status)status.textContent="Market feed unavailable";if(!entries.length&&heatmap)heatmap.textContent="Market data temporarily unavailable.";}
+  }
+  function drawHistory(){
+    if(!historyAsset||!historyPeriod||!historySvg||!historyPath||!historyStatus||!historyRange||!historyChange)return;
+    const id=historyAsset.value,now=Date.now(),cutoff=now-Number(historyPeriod.value)*86400000;
+    const values=observations.map(p=>({time:Date.parse(p.at),price:p.prices?.[id]})).filter(p=>Number.isFinite(p.time)&&p.time>=cutoff&&p.time<=now&&typeof p.price==="number"&&Number.isFinite(p.price)&&p.price>0);
+    if(values.length<2||values[0].time===values[values.length-1].time){
+      historySvg.classList.add("hidden");historyStatus.classList.remove("hidden");
+      historyStatus.textContent=values.length+" verified observation(s) in this period. At least two distinct timestamps are needed; history accumulates automatically.";
+      historyRange.textContent="No simulated history";historyChange.textContent="";return;
+    }
+    const base=values[0].price,normalized=values.map(p=>p.price/base*100),min=Math.min(...normalized),max=Math.max(...normalized),span=Math.max(.01,max-min),start=values[0].time,end=values[values.length-1].time;
+    historyPath.setAttribute("d",normalized.map((n,i)=>(i?"L":"M")+((values[i].time-start)/(end-start)*800).toFixed(2)+" "+(190-(n-min)/span*165).toFixed(2)).join(" "));
+    const pct=(values[values.length-1].price/base-1)*100;
+    historyPath.setAttribute("stroke",pct>=0?"#55dba1":"#fb7185");
+    historyChange.textContent=(pct>=0?"+":"")+pct.toFixed(2)+"% observed";
+    historyChange.className=pct>=0?"text-emerald-300":"text-rose-300";
+    historyRange.textContent=values.length+" observations · "+new Date(start).toLocaleString("en-GB")+" – "+new Date(end).toLocaleString("en-GB");
+    historySvg.classList.remove("hidden");historyStatus.classList.add("hidden");
+  }
+  async function refreshHistory(){
+    try{
+      const res=await fetch("https://dqeakkrsbgxnexucuyld.supabase.co/functions/v1/preview-market-history",{cache:"no-store"});
+      if(!res.ok)throw Error("History endpoint unavailable");
+      const data=await res.json();
+      observations=Array.isArray(data.points)?data.points.filter((p:any)=>p&&typeof p.at==="string"&&p.prices&&typeof p.prices==="object").sort((a:any,b:any)=>Date.parse(a.at)-Date.parse(b.at)):[];
+      if(historyAsset){
+        const previous=historyAsset.value;
+        const ids=[...new Set(observations.flatMap(p=>Object.keys(p.prices)))].sort();
+        historyAsset.replaceChildren(...ids.map(id=>new Option(names[id]||id.replaceAll("-"," ").toUpperCase(),id)));
+        if(ids.includes(previous))historyAsset.value=previous;
+        else if(ids.includes("ondo-finance"))historyAsset.value="ondo-finance";
+        if(!ids.length)historyAsset.add(new Option("Awaiting observations",""));
+      }
+      drawHistory();
+    }catch{
+      if(historyStatus){historyStatus.classList.remove("hidden");historyStatus.textContent="Verified historical observations are temporarily unavailable.";}
+      historySvg?.classList.add("hidden");
+    }
+  }
+  historyAsset?.addEventListener("change",drawHistory);
+  historyPeriod?.addEventListener("change",drawHistory);
+  refreshHistory();window.setInterval(refreshHistory,300000);
+  const savedWatchlistKey="rwa-wire-watchlist-v1";
+  const visitSnapshotKey="rwa-wire-brief-previous-visit-v1";
+  const currentVisitSnapshotKey="rwa-wire-brief-current-visit-v1";
+  const watchlistRoot=document.querySelector<HTMLElement>("#terminal-watchlist-updates");
+  type VisitRecord={at:number;prices:Record<string,number>};
+  function readVisit(key:string):VisitRecord|null{
+    try{const v=JSON.parse(localStorage.getItem(key)||"null");return v&&Number.isFinite(v.at)&&v.prices&&typeof v.prices==="object"?v:null;}catch{return null;}
+  }
+  // Keep the comparison baseline fixed throughout the current page session.
+  const previousVisit=(()=>{try{const saved=sessionStorage.getItem(currentVisitSnapshotKey);if(saved){const v=JSON.parse(saved);return v&&v.prices?v:null;}const prior=readVisit(visitSnapshotKey);if(prior)sessionStorage.setItem(currentVisitSnapshotKey,JSON.stringify(prior));return prior;}catch{return readVisit(visitSnapshotKey);}})();
+  function updatePersonalBrief(){
+    if(!watchlistRoot)return;
+    let ids:string[]=[];
+    try{const raw=JSON.parse(localStorage.getItem(savedWatchlistKey)||"[]");if(Array.isArray(raw))ids=[...new Set(raw.filter((v):v is string=>typeof v==="string"))].slice(0,12);}catch{}
+    watchlistRoot.replaceChildren();
+    if(!ids.length){const p=document.createElement("p");p.className="rounded-lg border border-dashed border-line p-3 text-xs text-ink-muted";p.textContent="Star tokens in the Intelligence screener to personalize this briefing.";watchlistRoot.append(p);return;}
+    for(const id of ids){
+      const q=entries.find(([key])=>key===id)?.[1];
+      const row=document.createElement("div");row.className="flex items-center justify-between gap-3 rounded-lg border border-line bg-[#111b24] p-3";
+      const label=document.createElement("span");label.className="truncate text-xs font-semibold text-ink";label.textContent=names[id]||id.replaceAll("-"," ").toUpperCase();
+      const value=document.createElement("span");value.className="shrink-0 font-mono text-xs text-ink-muted";
+      const old=previousVisit?.prices?.[id];
+      if(!q)value.textContent="Quote unavailable";
+      else if(typeof old==="number"&&Number.isFinite(old)&&old>0){const delta=(q.usd/old-1)*100;value.textContent=(delta>=0?"+":"")+delta.toFixed(2)+"% since visit";value.className="shrink-0 font-mono text-xs "+(delta>=0?"text-emerald-300":"text-rose-300");}
+      else value.textContent="$"+q.usd.toLocaleString("en-US",{maximumSignificantDigits:5});
+      row.append(label,value);watchlistRoot.append(row);
+    }
+  }
+  function storeCurrentVisit(){
+    if(!entries.length)return;
+    try{
+      // Save once per browsing session so 60-second refreshes do not reset the baseline.
+      if(sessionStorage.getItem("rwa-wire-brief-session-start"))return;
+      sessionStorage.setItem("rwa-wire-brief-session-start","1");
+      const prices=Object.fromEntries(entries.map(([id,q])=>[id,q.usd]));
+      localStorage.setItem(visitSnapshotKey,JSON.stringify({at:Date.now(),prices}));
+    }catch{}
+  }
+  window.addEventListener("storage",updatePersonalBrief);
+  changeBtn?.addEventListener("click",()=>{sortBy="change";draw();});
+  volumeBtn?.addEventListener("click",()=>{sortBy="volume";draw();});
+  refresh();window.setInterval(refresh,60000);
+</script>

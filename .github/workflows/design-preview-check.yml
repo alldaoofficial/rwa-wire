@@ -1,0 +1,43 @@
+name: Design preview build check
+
+on:
+  pull_request:
+    paths:
+      - "src/**"
+      - "public/**"
+      - "astro.config.mjs"
+      - "tailwind.config.mjs"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/design-preview-check.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      PUBLIC_SUPABASE_URL: ${{ vars.PUBLIC_SUPABASE_URL }}
+      PUBLIC_SUPABASE_PUBLISHABLE_KEY: ${{ vars.PUBLIC_SUPABASE_PUBLISHABLE_KEY }}
+      PUBLIC_NEWSLETTER_ENABLED: ${{ vars.PUBLIC_NEWSLETTER_ENABLED }}
+      PUBLIC_TURNSTILE_SITE_KEY: ${{ vars.PUBLIC_TURNSTILE_SITE_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Confirm preview pages
+        run: |
+          test -s dist/index.html
+          test -s dist/pulse/index.html
+          test -s dist/radar/index.html
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rwa-wire-design-build
+          path: dist/
+          retention-days: 7

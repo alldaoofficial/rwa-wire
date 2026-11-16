@@ -1,0 +1,169 @@
+---
+import markets from "../../public/data/markets.json";
+import { sitePath } from "../utils/paths";
+import MarketHistoryChart from "./MarketHistoryChart.astro";
+const meta: Record<string,{symbol:string;name:string;sector:string}> = {
+"chainlink":{symbol:"LINK",name:"Chainlink",sector:"Infrastructure"},
+"ondo-finance":{symbol:"ONDO",name:"Ondo Finance",sector:"Tokenized assets"},
+"plume":{symbol:"PLUME",name:"Plume",sector:"Infrastructure"},
+"centrifuge":{symbol:"CFG",name:"Centrifuge",sector:"Private credit"},
+"polymesh":{symbol:"POLYX",name:"Polymesh",sector:"Infrastructure"},
+"goldfinch":{symbol:"GFI",name:"Goldfinch",sector:"Private credit"},
+"clearpool":{symbol:"CPOOL",name:"Clearpool",sector:"Private credit"},
+"mantra-dao":{symbol:"MANTRA",name:"MANTRA",sector:"Infrastructure"},
+"maple-finance":{symbol:"SYRUP",name:"Maple Finance",sector:"Private credit"},
+"zebec-protocol":{symbol:"ZBCN",name:"Zebec Network",sector:"Payments"},
+"reserve-rights-token":{symbol:"RSR",name:"Reserve Rights",sector:"Infrastructure"},
+"origintrail":{symbol:"TRAC",name:"OriginTrail",sector:"Infrastructure"},
+"origin-protocol":{symbol:"OGN",name:"Origin Protocol",sector:"Infrastructure"},
+"truefi":{symbol:"TRU",name:"TrueFi",sector:"Private credit"},
+"polytrade":{symbol:"TRADE",name:"Polytrade",sector:"Tokenized assets"},
+"propchain":{symbol:"PROPC",name:"Propchain",sector:"Real estate"},
+"realio-network":{symbol:"RIO",name:"Realio Network",sector:"Tokenized assets"},
+"dusk-network":{symbol:"DUSK",name:"Dusk",sector:"Infrastructure"},
+"chex-token":{symbol:"CHEX",name:"Chintai",sector:"Tokenized assets"},
+"landshare":{symbol:"LAND",name:"Landshare",sector:"Real estate"},
+"boson-protocol":{symbol:"BOSON",name:"Boson Protocol",sector:"Infrastructure"},
+"stobox-token":{symbol:"STBU",name:"Stobox",sector:"Tokenized assets"},
+"brickken":{symbol:"BKN",name:"Brickken",sector:"Tokenized assets"},
+"parcl":{symbol:"PRCL",name:"Parcl",sector:"Real estate"},
+"tokenfi":{symbol:"TOKEN",name:"TokenFi",sector:"Infrastructure"},
+"ix-swap":{symbol:"IXS",name:"IX Swap",sector:"Tokenized assets"}
+};
+const assets=Object.entries(meta).map(([id,m])=>{const a=(markets.assets as Record<string,any>)[id];
+ return {id,...m,price:typeof a?.usd==="number"?a.usd:null,change:typeof a?.usd_24h_change==="number"?a.usd_24h_change:null,volume:typeof a?.usd_24h_vol==="number"?a.usd_24h_vol:null,cap:typeof a?.usd_market_cap==="number"&&a.usd_market_cap>0?a.usd_market_cap:null};
+});
+const priced=assets.filter(a=>a.price!==null&&a.change!==null);
+const unavailable=assets.length-priced.length;
+const sectorRows=["Infrastructure","Tokenized assets","Private credit","Real estate","Payments"].map(sector=>{const group=priced.filter(a=>a.sector===sector);const mean=group.length?group.reduce((sum,a)=>sum+(a.change??0),0)/group.length:0;return {sector,count:group.length,mean,width:Math.min(100,Math.abs(mean)*4)};});
+const movers=[...priced].sort((a,b)=>Math.abs(b.change??0)-Math.abs(a.change??0)).slice(0,8);
+const up=priced.filter(a=>(a.change??0)>0).length;
+const avg=priced.length?priced.reduce((sum,a)=>sum+(a.change??0),0)/priced.length:0;
+const volume=assets.reduce((sum,a)=>sum+(a.volume??0),0);
+const date=new Date(markets.fetchedAt);
+const stamp=Number.isNaN(date.valueOf())?"Unknown":date.toLocaleString("en-GB",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit",timeZone:"UTC"})+" UTC";
+const fmt=(v:number)=>v>=1e9?"$"+(v/1e9).toFixed(2)+"B":v>=1e6?"$"+(v/1e6).toFixed(1)+"M":v>=1e3?"$"+(v/1e3).toFixed(0)+"K":"$"+v.toFixed(0);
+const price=(v:number)=>"$"+v.toFixed(v<.1?5:v<1?4:2);
+---
+<section class="wire-container py-7 sm:py-10" aria-labelledby="desk-title" id="intelligence-desk" data-market-api-url={sitePath("/api/markets")}>
+  <div class="mb-6 flex flex-wrap items-center justify-between gap-3">
+    <div><p class="wire-kicker">The RWA Wire / Intelligence terminal</p><h1 id="desk-title" class="mt-2 font-sans text-3xl font-bold tracking-tight text-ink sm:text-4xl">RWA market intelligence<span class="text-wire">.</span></h1><p class="mt-2 text-sm text-ink-muted">Explore token prices, sector breadth, your watchlist and observed historical data.</p></div>
+    <div class="flex items-center gap-2 rounded-xl border border-line bg-surface px-4 py-3 text-xs text-ink-muted"><span class="h-2 w-2 rounded-full bg-wire"></span><span id="desk-snapshot-status">Latest cached snapshot · {stamp}</span></div>
+  </div>
+  <div class="mb-5 grid grid-cols-2 gap-3 lg:grid-cols-4">
+    <div class="terminal-card wire-panel-hover" data-reveal><p class="terminal-label">Tracked basket · 24h average</p><p id="desk-average" class:list={["mt-3 font-mono text-3xl font-semibold",avg>=0?"text-wire":"text-rose-400"]}>{avg>0?"+":""}{avg.toFixed(2)}%</p><p class="mt-2 text-xs text-ink-muted">Equal-weighted token change</p></div>
+    <div class="terminal-card wire-panel-hover" data-reveal><p class="terminal-label">Market breadth</p><p id="desk-breadth" class="mt-3 font-mono text-3xl font-semibold text-ink">{up}<span class="text-base text-ink-muted"> / {priced.length}</span></p><div class="mt-3 h-1.5 overflow-hidden rounded-full bg-bg"><div class="h-full rounded-full bg-wire" style={`width:${priced.length?up/priced.length*100:0}%`}></div></div><p class="mt-2 text-xs text-ink-muted">Tracked tokens advancing</p></div>
+    <div class="terminal-card" data-reveal><p class="terminal-label">Tracked 24h volume</p><p id="desk-total-volume" class="mt-3 font-mono text-3xl font-semibold text-ink">{fmt(volume)}</p><p class="mt-2 text-xs text-ink-muted">Sum of available token volumes</p></div>
+    <div class="terminal-card" data-reveal><p class="terminal-label">Market temperature</p><p id="desk-temperature" class="mt-3 font-sans text-2xl font-semibold text-ink">{priced.length===0?"No data":up===priced.length?"Broad strength":up===0?"Broad weakness":"Mixed breadth"}</p><p class="mt-2 text-xs text-ink-muted">Derived from this tracked basket</p></div>
+  </div>
+  <div class="grid gap-4 xl:grid-cols-[minmax(0,1.75fr)_minmax(300px,.85fr)]">
+    <div class="terminal-card wire-panel-hover min-w-0 p-0" data-reveal>
+      <div class="flex flex-wrap items-center justify-between gap-3 border-b border-line px-5 py-5"><div><p class="terminal-label">01 / Market monitor</p><h2 class="mt-1 font-sans text-xl font-semibold text-ink">RWA-linked token screener</h2></div><span id="desk-coverage" class="text-xs text-ink-muted">{priced.length} priced tokens · {unavailable} awaiting provider data</span></div>
+      <div class="flex flex-wrap items-center gap-2 border-b border-line px-5 py-4">
+        <label class="sr-only" for="desk-filter">Filter assets</label><input id="desk-filter" type="search" placeholder="Search tokens..." class="min-w-0 flex-1 rounded-lg border border-line bg-bg px-3 py-2.5 text-sm text-ink placeholder:text-ink-muted focus:border-wire focus:outline-none" />
+        <label class="sr-only" for="desk-sector">Sector</label><select id="desk-sector" class="rounded-lg border border-line bg-bg px-3 py-2.5 text-sm text-ink"><option value="all">All sectors</option><option>Infrastructure</option><option>Tokenized assets</option><option>Private credit</option><option>Real estate</option><option>Payments</option></select>
+        <label class="sr-only" for="desk-sort">Sort assets</label><select id="desk-sort" class="rounded-lg border border-line bg-bg px-3 py-2.5 text-sm text-ink"><option value="change">24h change ↓</option><option value="volume">Volume ↓</option><option value="cap">Market cap ↓</option><option value="name">Name A–Z</option></select>
+        <label class="inline-flex items-center gap-2 text-xs text-ink-muted"><input id="desk-unavailable" type="checkbox" checked class="accent-emerald-400" /> Include unavailable assets</label>
+        <button id="desk-favorites" type="button" aria-pressed="false" class="rounded-lg border border-line px-3 py-2.5 text-sm text-ink-muted hover:border-wire">☆ Watchlist</button>
+      </div>
+      <div class="overflow-x-auto"><table class="w-full min-w-[590px] text-left text-sm"><thead><tr class="border-b border-line text-[11px] uppercase tracking-wider text-ink-muted"><th class="px-5 py-3">Asset</th><th class="px-3 py-3 text-right">Price</th><th class="px-3 py-3 text-right">24h</th><th class="px-3 py-3 text-right">Volume</th><th class="px-3 py-3 text-right">Market cap</th><th class="px-5 py-3 text-right">Save</th></tr></thead><tbody id="desk-rows">{assets.map(a=><tr data-token-row data-name={a.name.toLowerCase()+" "+a.symbol.toLowerCase()} data-sector={a.sector} data-change={a.change??-99999} data-volume={a.volume??-1} data-cap={a.cap??-1} data-id={a.id} data-available={a.price!==null&&a.change!==null?"true":"false"} class="border-b border-line/60 transition-colors hover:bg-white/[.035]"><td class="px-5 py-3"><span class="font-semibold text-ink">{a.symbol}</span><span class="ml-2 text-xs text-ink-muted">{a.name}</span><span class="block text-[10px] text-ink-muted">{a.sector}</span></td><td class="px-3 py-3 text-right font-mono text-xs">{a.price===null?"—":price(a.price)}</td><td class:list={["px-3 py-3 text-right font-mono text-xs font-semibold",(a.change??0)>=0?"text-wire":"text-rose-400"]}>{a.change===null?"N/A":`${a.change>0?"+":""}${a.change.toFixed(2)}%`}</td><td class="px-3 py-3 text-right font-mono text-xs text-ink-muted">{a.volume===null?"—":fmt(a.volume)}</td><td class="px-3 py-3 text-right font-mono text-xs text-ink-muted">{a.cap===null?"—":fmt(a.cap)}</td><td class="px-5 py-3 text-right"><button type="button" data-save={a.id} class="rounded-md px-2 py-1 text-xl text-ink-muted hover:text-wire" aria-label={`Save ${a.symbol} to watchlist`} aria-pressed="false">☆</button></td></tr>)}</tbody></table></div>
+      <p id="desk-empty" class="hidden px-5 py-8 text-center text-sm text-ink-muted">No priced assets match your filters. You can enable unavailable assets to see the full tracked universe.</p>
+      <div class="flex flex-wrap justify-between gap-2 border-t border-line px-5 py-4 text-xs text-ink-muted"><span>Watchlist saved on this device only</span><span id="desk-source">Source: {markets.source} · Snapshot {stamp}</span></div>
+    </div>
+    <div class="grid content-start gap-4">
+      <div class="terminal-card" data-reveal><div class="flex items-center justify-between"><p class="terminal-label">02 / Sector coverage</p><span class="text-[10px] text-ink-muted">Tracked tokens</span></div><h2 class="mt-2 font-sans text-xl font-semibold">Market composition</h2><div class="mt-6 space-y-5">{sectorRows.map(item=><div><div class="flex items-center justify-between gap-2 text-sm"><span class="text-ink">{item.sector}</span><span class:list={["font-mono text-xs",item.mean>=0?"text-wire":"text-rose-400"]}>{item.mean>0?"+":""}{item.mean.toFixed(1)}%</span></div><div class="mt-2 h-2 overflow-hidden rounded-full bg-bg"><div class:list={["h-full rounded-full",item.mean>=0?"bg-wire":"bg-rose-400"]} style={`width:${item.width}%`}></div></div><p class="mt-1 text-[11px] text-ink-muted">{item.count} tracked assets · equal-weighted 24h average</p></div>)}</div><p class="mt-5 text-xs leading-5 text-ink-muted">This is token performance grouped by editorial categories, not sector-wide RWA asset values.</p></div>
+      <div class="terminal-card" data-reveal><p class="terminal-label">03 / 24h movers</p><h2 class="mt-2 font-sans text-xl font-semibold">Largest daily moves</h2><p class="mt-1 text-xs text-ink-muted">Absolute price changes, tracked tokens</p><div class="mt-5 space-y-3">{movers.map(a=><div class="grid grid-cols-[52px_1fr_62px] items-center gap-3 text-xs"><span class="font-semibold text-ink">{a.symbol}</span><div class="h-3 overflow-hidden rounded bg-bg"><div class:list={["h-full rounded", (a.change??0)>=0?"bg-wire":"bg-rose-400"]} style={`width:${Math.min(100,Math.abs(a.change??0)*4)}%`}></div></div><span class:list={["text-right font-mono",(a.change??0)>=0?"text-wire":"text-rose-400"]}>{(a.change??0)>0?"+":""}{(a.change??0).toFixed(1)}%</span></div>)}</div><p class="mt-4 text-[11px] text-ink-muted">Bar lengths show magnitude of 24h change; not a historical price chart.</p></div>
+      <div class="terminal-card" data-reveal><p class="terminal-label">04 / Research shortcuts</p><h2 class="mt-2 font-sans text-xl font-semibold">Go beyond prices</h2><div class="mt-5 grid gap-2"><a href={sitePath("/radar/")} class="terminal-link">Institutional Radar <span>↗</span></a><a href={sitePath("/projects/")} class="terminal-link">Project intelligence <span>↗</span></a><a href={sitePath("/news/")} class="terminal-link">Latest verified reporting <span>↗</span></a><a href={sitePath("/pulse/")} class="terminal-link">Daily Pulse <span>↗</span></a></div></div>
+    </div>
+  </div>
+  <div class="mt-5 scroll-mt-24" id="market-history"><MarketHistoryChart /></div>
+  <p class="mt-4 text-xs leading-5 text-ink-muted">The project universe is curated; missing prices are shown as unavailable rather than estimated. Market data is a cached snapshot, not a live trading feed. Token performance is not the same as the value or performance of underlying tokenized real-world assets. No investment advice.</p>
+</section>
+<script>
+  const marketApiUrl=document.querySelector<HTMLElement>("#intelligence-desk")?.dataset.marketApiUrl||"/api/markets";
+  const rows=Array.from(document.querySelectorAll<HTMLTableRowElement>("[data-token-row]"));
+  const filter=document.querySelector<HTMLInputElement>("#desk-filter");
+  const sector=document.querySelector<HTMLSelectElement>("#desk-sector");
+  const sort=document.querySelector<HTMLSelectElement>("#desk-sort");
+  const only=document.querySelector<HTMLButtonElement>("#desk-favorites");
+  const unavailableToggle=document.querySelector<HTMLInputElement>("#desk-unavailable");
+  const body=document.querySelector<HTMLTableSectionElement>("#desk-rows");
+  const empty=document.querySelector<HTMLElement>("#desk-empty");
+  const key="rwa-wire-watchlist-v1";
+  let saved:string[]=[];
+  try { const value=JSON.parse(localStorage.getItem(key)??"[]");if(Array.isArray(value))saved=value.filter((x):x is string=>typeof x==="string"); }catch{}
+  let favoritesOnly=false;
+  const render=()=>{
+    const q=filter?.value.toLowerCase().trim()??"";
+    const visible=rows.filter(row=>(row.dataset.name??"").includes(q)&&(sector?.value==="all"||row.dataset.sector===sector?.value)&&(!favoritesOnly||saved.includes(row.dataset.id??""))&&(unavailableToggle?.checked||row.dataset.available==="true"));
+    visible.sort((a,b)=>sort?.value==="name"?(a.dataset.name??"").localeCompare(b.dataset.name??""):Number(b.dataset[sort?.value as "change"|"volume"|"cap"]??0)-Number(a.dataset[sort?.value as "change"|"volume"|"cap"]??0));
+    rows.forEach(row=>{row.hidden=true;const button=row.querySelector<HTMLButtonElement>("[data-save]");if(button){const active=saved.includes(row.dataset.id??"");button.textContent=active?"★":"☆";button.setAttribute("aria-pressed",String(active));}});
+    visible.forEach(row=>{row.hidden=false;body?.append(row);});
+    if(empty)empty.classList.toggle("hidden",visible.length>0);
+    if(only){only.setAttribute("aria-pressed",String(favoritesOnly));only.textContent=favoritesOnly?"★ Watchlist":"☆ Watchlist";only.classList.toggle("text-wire",favoritesOnly);}
+  };
+  [filter,sector,sort,unavailableToggle].forEach(el=>el?.addEventListener(el===filter?"input":"change",render));
+  only?.addEventListener("click",()=>{favoritesOnly=!favoritesOnly;render();});
+  document.querySelectorAll<HTMLButtonElement>("[data-save]").forEach(button=>button.addEventListener("click",()=>{const id=button.dataset.save??"";saved=saved.includes(id)?saved.filter(x=>x!==id):[...saved,id];try{localStorage.setItem(key,JSON.stringify(saved));}catch{}render();}));
+  async function refreshScreener(){
+    try{
+      const response=await fetch(marketApiUrl,{cache:"no-store"});
+      if(!response.ok)throw new Error("Market API unavailable");
+      const payload=await response.json();
+      const snapshotStatus=document.querySelector<HTMLElement>("#desk-snapshot-status");
+      if(snapshotStatus){const age=payload.freshness?.ageMinutes;snapshotStatus.textContent=payload.freshness?.kind==="provider-polled-quotes"?"Provider quotes · refreshed within 60s":Number.isFinite(age)?`Delayed snapshot · ${age}m old`:"Snapshot time unavailable";}
+      if(!payload.assets||typeof payload.assets!=="object")throw new Error("Invalid market response");
+      const formatPrice=(value:number)=>"$"+value.toFixed(value<.1?5:value<1?4:2);
+      const formatCompact=(value:number)=>value>=1e9?"$"+(value/1e9).toFixed(2)+"B":value>=1e6?"$"+(value/1e6).toFixed(1)+"M":value>=1e3?"$"+(value/1e3).toFixed(0)+"K":"$"+value.toFixed(0);
+      for(const row of rows){
+        const quote=payload.assets[row.dataset.id??""];
+        const valid=quote&&typeof quote.usd==="number"&&Number.isFinite(quote.usd)&&quote.usd>0;
+        const delta=valid&&typeof quote.usd_24h_change==="number"&&Number.isFinite(quote.usd_24h_change)?quote.usd_24h_change:null;
+        const volume=valid&&typeof quote.usd_24h_vol==="number"&&Number.isFinite(quote.usd_24h_vol)?quote.usd_24h_vol:null;
+        const cap=valid&&typeof quote.usd_market_cap==="number"&&Number.isFinite(quote.usd_market_cap)&&quote.usd_market_cap>0?quote.usd_market_cap:null;
+        row.dataset.available=String(Boolean(valid&&delta!==null));
+        row.dataset.change=String(delta??-99999);
+        row.dataset.volume=String(volume??-1);
+        row.dataset.cap=String(cap??-1);
+        const cells=row.querySelectorAll("td");
+        if(cells.length<5)continue;
+        cells[1].textContent=valid?formatPrice(quote.usd):"—";
+        cells[2].textContent=delta===null?"N/A":(delta>0?"+":"")+delta.toFixed(2)+"%";
+        cells[2].classList.toggle("text-wire",delta!==null&&delta>=0);
+        cells[2].classList.toggle("text-rose-400",delta!==null&&delta<0);
+        cells[3].textContent=volume===null?"—":formatCompact(volume);
+        cells[4].textContent=cap===null?"—":formatCompact(cap);
+      }
+      const live=rows.filter(row=>row.dataset.available==="true");
+      const advancing=live.filter(row=>Number(row.dataset.change)>0).length;
+      const mean=live.length?live.reduce((sum,row)=>sum+Number(row.dataset.change),0)/live.length:0;
+      const totalVolume=rows.reduce((sum,row)=>sum+Math.max(0,Number(row.dataset.volume)||0),0);
+      const volumeEl=document.querySelector<HTMLElement>("#desk-total-volume");
+      const averageEl=document.querySelector<HTMLElement>("#desk-average");
+      const breadthEl=document.querySelector<HTMLElement>("#desk-breadth");
+      const temperatureEl=document.querySelector<HTMLElement>("#desk-temperature");
+      const coverageEl=document.querySelector<HTMLElement>("#desk-coverage");
+      const sourceEl=document.querySelector<HTMLElement>("#desk-source");
+      if(volumeEl)volumeEl.textContent=formatCompact(totalVolume);
+      if(averageEl){averageEl.textContent=(mean>0?"+":"")+mean.toFixed(2)+"%";averageEl.classList.toggle("text-wire",mean>=0);averageEl.classList.toggle("text-rose-400",mean<0);}
+      if(breadthEl)breadthEl.textContent=advancing+" / "+live.length;
+      if(temperatureEl)temperatureEl.textContent=!live.length?"No data":advancing===live.length?"Broad strength":advancing===0?"Broad weakness":"Mixed breadth";
+      if(coverageEl)coverageEl.textContent=live.length+" priced tokens · "+(rows.length-live.length)+" awaiting provider data";
+      if(sourceEl)sourceEl.textContent="Source: "+(payload.source||"Market provider")+" · "+(payload.fetchedAt||"Unknown timestamp");
+      render();
+    }catch{
+      // Preserve the build-time snapshot if the endpoint is unavailable.
+    }
+  }
+  render();
+  refreshScreener();
+  window.setInterval(refreshScreener,60000);
+</script>
+<style>
+  .terminal-card{border:1px solid #2a3640;border-radius:16px;background:#121a21;padding:20px;box-shadow:0 12px 30px #0002}
+  .terminal-label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#a2afb8}
+  .terminal-link{display:flex;justify-content:space-between;gap:12px;padding:12px 14px;border:1px solid #2a3640;border-radius:9px;color:#f0f5f4;font-size:13px}
+  .terminal-link:hover{border-color:#55dba1;color:#55dba1}
+  tr[hidden]{display:none}
+  @media(prefers-reduced-motion:no-preference){.terminal-card{transition:border-color .2s,transform .2s}.terminal-card:hover{border-color:#3e6156;transform:translateY(-2px)}}
+</style>

@@ -1,0 +1,31 @@
+name: Audit RWA token provider IDs
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "scripts/update_market_data.py"
+      - "scripts/audit_market_ids.py"
+      - ".github/workflows/audit-market-ids.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check audit script syntax
+        run: python3 -m py_compile scripts/audit_market_ids.py
+      - name: Compare configured tokens with CoinGecko directory
+        continue-on-error: true
+        run: python3 scripts/audit_market_ids.py
+      - name: Upload reviewable ID report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: market-id-audit
+          path: market-id-audit.json
+          if-no-files-found: warn
