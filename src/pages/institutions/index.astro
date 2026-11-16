@@ -5,9 +5,12 @@ import { institutions } from "@/data/institutions";
 import { getCollection } from "astro:content";
 import { sitePath } from "@/utils/paths";
 const reports=(await getCollection("articles",({data})=>!data.draft&&data.type!=="EXPLAINER")).filter(a=>a.data.pubDate.valueOf()<=Date.now()).sort((a,b)=>b.data.pubDate.valueOf()-a.data.pubDate.valueOf());
-const evidence=institutions.map(i=>{const re=new RegExp("(^|[^a-z0-9])"+i.name+"(?=$|[^a-z0-9])","i");const aliases=i.slug==="jpmorgan"?[/\\bjp\\s?morgan\\b/i]:[];const matches=reports.filter(a=>{const text=[a.data.title,a.data.description,...a.data.tags].join(" ");return re.test(text)||aliases.some(alias=>alias.test(text));});return {...i,matches,latest:matches[0]?.data.pubDate??null};}).sort((a,b)=>b.matches.length-a.matches.length);
+const evidence=institutions.map(i=>{const re=new RegExp("(^|[^a-z0-9])"+i.name+"(?=$|[^a-z0-9])","i");const aliases=i.slug==="jpmorgan"?[/\bjp\s?morgan\b/i]:[];const matches=reports.filter(a=>{const text=[a.data.title,a.data.description,...a.data.tags].join(" ");return re.test(text)||aliases.some(alias=>alias.test(text));});return {...i,matches,latest:matches[0]?.data.pubDate??null};}).sort((a,b)=>b.matches.length-a.matches.length);
 const total=evidence.reduce((n,i)=>n+i.matches.length,0);
 const max=Math.max(1,...evidence.map(i=>i.matches.length));
+const months=Array.from({length:6},(_,index)=>{const d=new Date();return new Date(Date.UTC(d.getUTCFullYear(),d.getUTCMonth()-5+index,1));});
+const activity=months.map(start=>{const end=new Date(Date.UTC(start.getUTCFullYear(),start.getUTCMonth()+1,1));const matches=evidence.reduce((sum,i)=>sum+i.matches.filter(a=>a.data.pubDate>=start&&a.data.pubDate<end).length,0);const unique=new Set(evidence.flatMap(i=>i.matches.filter(a=>a.data.pubDate>=start&&a.data.pubDate<end).map(a=>a.slug)));return {label:start.toLocaleDateString("en-GB",{month:"short",year:"2-digit",timeZone:"UTC"}),matches,articles:unique.size};});
+const peak=Math.max(1,...activity.map(x=>x.matches));
 ---
 <BaseLayout title="Institution Intelligence" description="Structured intelligence on institutions participating in tokenized finance and real-world asset markets.">
   <div class="wire-container py-10 sm:py-14">
@@ -17,6 +20,15 @@ const max=Math.max(1,...evidence.map(i=>i.matches.length));
       <h1 class="mt-3 max-w-4xl font-serif text-4xl font-medium leading-tight text-ink sm:text-5xl">Institutions shaping the tokenized economy.</h1>
       <p class="mt-4 max-w-2xl text-base leading-relaxed text-ink-muted">See which banks, asset managers and market operators are active in tokenized finance — and follow their connections without needing to decode the whole market first.</p><div class="mt-6 grid max-w-3xl gap-2 sm:grid-cols-3"><div class="border border-line bg-surface/60 p-3"><p class="font-mono text-[10px] text-wire">01</p><p class="mt-1 text-xs text-ink">Choose an institution</p></div><div class="border border-line bg-surface/60 p-3"><p class="font-mono text-[10px] text-wire">02</p><p class="mt-1 text-xs text-ink">See what it is connected to</p></div><div class="border border-line bg-surface/60 p-3"><p class="font-mono text-[10px] text-wire">03</p><p class="mt-1 text-xs text-ink">Open the underlying coverage</p></div></div>
     </header>
+    <section class="mt-8 rounded-xl border border-line bg-surface p-5 sm:p-7" aria-labelledby="activity-title">
+      <p class="data-label text-wire">Historical coverage / Six calendar months</p>
+      <h2 id="activity-title" class="mt-2 font-serif text-2xl text-ink">Institutional coverage over time</h2>
+      <p class="mt-2 max-w-3xl text-sm leading-6 text-ink-muted">Monthly counts of mentions of tracked institutions in published RWA Wire reporting. A story mentioning two institutions counts twice. This chart measures our editorial coverage, not real-world adoption or deal volume.</p>
+      <div class="mt-6 grid grid-cols-6 items-end gap-2 sm:gap-4" role="img" aria-label={activity.map(a=>`${a.label}: ${a.matches} institution mentions across ${a.articles} articles`).join("; ")}>
+        {activity.map(a=><div class="min-w-0 text-center"><p class="mb-2 font-mono text-xs text-ink">{a.matches}</p><div class="flex h-32 items-end rounded-t bg-bg"><div class="w-full rounded-t bg-wire" style={`height:${a.matches?Math.max(4,a.matches/peak*100):0}%`}></div></div><p class="mt-2 font-mono text-[10px] text-ink-muted">{a.label}</p><p class="mt-1 text-[10px] text-ink-muted">{a.articles} reports</p></div>)}
+      </div>
+      <p class="mt-4 text-xs leading-5 text-ink-muted">The current month is incomplete. Historical figures are reconstructed from existing published article dates and can change as the archive is updated. No missing data is estimated.</p>
+    </section>
     <section class="mt-8 rounded-xl border border-line bg-surface p-5 sm:p-7" data-reveal aria-labelledby="coverage-title">
       <div class="flex flex-wrap items-end justify-between gap-3"><div><p class="data-label text-wire">Institution intelligence / Coverage monitor</p><h2 id="coverage-title" class="mt-2 font-serif text-2xl text-ink">Who's appearing in verified coverage?</h2></div><span class="font-mono text-xs text-ink-muted">{total} institution–article matches · {institutions.length} tracked entities</span></div>
       <p class="mt-3 max-w-3xl text-sm leading-6 text-ink-muted">A transparent view of how often tracked institutions are mentioned in published RWA Wire reporting. These are editorial mentions, not independently verified partnerships, capital flows, market share or adoption rankings. One article can mention several institutions.</p>
@@ -43,7 +55,6 @@ const max=Math.max(1,...evidence.map(i=>i.matches.length));
         const cutoff=days?Date.now()-days*86400000:0;
         let shown=0;let max=1;
         const counts=cards.map(card=>{
-          const mentions=Array.from(card.querySelectorAll<HTMLElement>("[data-mention]"));
           const dates: number[]=JSON.parse(card.dataset.dates??"[]");
           const count=dates.filter(timestamp=>!cutoff||timestamp>=cutoff).length;
           max=Math.max(max,count);
