@@ -21,6 +21,8 @@ for key, (symbol, name) in catalog.items():
     symbol_candidates = [coin for coin in directory if coin.get("symbol","").casefold() == symbol.casefold()]
     name_candidates = [coin for coin in directory if coin.get("name","").casefold() == name.casefold()]
     status = "id_and_symbol_match" if exact and exact.get("symbol","").casefold() == symbol.casefold() else "id_missing_or_symbol_mismatch"
+    if key == "clearpool" and not exact:
+        status = "migration_pending_manual_verification"
     report.append({"configured_id":key,"provider_id":provider_id,"expected_symbol":symbol,"expected_name":name,"status":status,"directory_record":exact,"exact_name_symbol_candidates":candidates[:8],"symbol_candidates":symbol_candidates[:12],"name_candidates":name_candidates[:12]})
 output = Path("market-id-audit.json")
 output.write_text(json.dumps({"total":len(report),"records":report},indent=2)+"\n",encoding="utf-8")
