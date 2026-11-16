@@ -8,7 +8,7 @@ import { sitePath } from "../utils/paths";
   </div>
   <div id="history-chart" class="mt-5 min-h-[210px] rounded-xl border border-line bg-bg/50 p-4" role="img" aria-label="Historical indexed price line chart">
     <p id="history-status" class="py-16 text-center text-sm text-ink-muted">Loading observed history…</p>
-    <svg id="history-svg" class="hidden h-[210px] w-full" viewBox="0 0 700 210" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="180" x2="700" y2="180" stroke="#33424c" stroke-dasharray="4 6"/><line x1="0" y1="100" x2="700" y2="100" stroke="#33424c" stroke-dasharray="4 6"/><path id="history-path" d="" fill="none" stroke="#55dba1" stroke-width="3" vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <svg id="history-svg" class="hidden h-[210px] w-full" viewBox="0 0 700 210" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="180" x2="700" y2="180" stroke="#33424c" stroke-dasharray="4 6"/><line x1="0" y1="100" x2="700" y2="100" stroke="#33424c" stroke-dasharray="4 6"/><path id="history-path" d="" fill="none" stroke="#55dba1" stroke-width="3" vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round"/><circle id="history-dot" cx="0" cy="0" r="5" fill="#55dba1" class="hidden"/></svg>
   </div>
   <div class="mt-3 flex flex-wrap justify-between gap-2 text-xs text-ink-muted"><span id="history-range">Only recorded observations are shown</span><span id="history-change"></span></div>
   <p class="mt-3 text-xs leading-5 text-ink-muted">History begins when the collector is activated. No simulated backfill, interpolation or intraday price claims. Snapshots are recorded approximately every six hours when fresh provider data is available.</p>
@@ -19,6 +19,7 @@ import { sitePath } from "../utils/paths";
   const svg=document.querySelector("#history-svg");
   const path=document.querySelector("#history-path");
   const status=document.querySelector("#history-status");
+  const dot=document.querySelector("#history-dot");
   const range=document.querySelector("#history-range");
   const change=document.querySelector("#history-change");
   let observations=[];
@@ -27,18 +28,21 @@ import { sitePath } from "../utils/paths";
     const id=assetSelect.value;
     const cutoff=Date.now()-Number(periodSelect.value)*86400000;
     const values=observations.filter(p=>Date.parse(p.at)>=cutoff&&typeof p.prices?.[id]==="number"&&p.prices[id]>0).map(p=>({at:p.at,price:p.prices[id]}));
-    if(values.length<2){svg.classList.add("hidden");status.classList.remove("hidden");status.textContent="Not enough recorded observations for this period yet. History will build automatically after activation.";range.textContent=values.length+" observation(s) available";change.textContent="";return;}
+    if(values.length<2){svg.classList.add("hidden");dot?.classList.add("hidden");status.classList.remove("hidden");status.textContent="Not enough recorded observations for this period yet. History will build automatically after activation.";range.textContent=values.length+" observation(s) available";change.textContent="";return;}
     const baseline=values[0].price;
     const normalized=values.map(v=>v.price/baseline*100);
     const low=Math.min(...normalized),high=Math.max(...normalized),span=Math.max(high-low,.01);
     const points=normalized.map((v,i)=>[i/(normalized.length-1)*700,185-(v-low)/span*160]);
     path.setAttribute("d",points.map((p,i)=>(i?"L":"M")+p[0].toFixed(2)+" "+p[1].toFixed(2)).join(" "));
     svg.classList.remove("hidden");status.classList.add("hidden");
+    if(dot){const last=points[points.length-1];dot.setAttribute("cx",String(last[0]));dot.setAttribute("cy",String(last[1]));dot.classList.remove("hidden");}
     range.textContent=values.length+" observations · "+new Date(values[0].at).toLocaleDateString()+" – "+new Date(values[values.length-1].at).toLocaleDateString();
     const pct=(values[values.length-1].price/baseline-1)*100;
     change.textContent=(pct>=0?"+":"")+pct.toFixed(2)+"% observed period";
     change.className=pct>=0?"text-wire":"text-rose-400";
     path.setAttribute("stroke",pct>=0?"#55dba1":"#fb7185");
+    if(dot)dot.setAttribute("fill",pct>=0?"#55dba1":"#fb7185");
+    if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches && path.getTotalLength){const length=path.getTotalLength();path.style.transition="none";path.style.strokeDasharray=String(length);path.style.strokeDashoffset=String(length);requestAnimationFrame(()=>{path.style.transition="stroke-dashoffset 850ms cubic-bezier(.2,.8,.2,1)";path.style.strokeDashoffset="0";});}else{path.style.strokeDasharray="none";path.style.strokeDashoffset="0";}
   };
   fetch(historyUrl).then(r=>{if(!r.ok)throw Error("not active");return r.json()}).then(data=>{
     observations=Array.isArray(data.points)?data.points.filter(p=>p&&typeof p.at==="string"&&p.prices&&typeof p.prices==="object").sort((a,b)=>Date.parse(a.at)-Date.parse(b.at)):[];
