@@ -1,5 +1,10 @@
 ---
 import {sitePath} from "../utils/paths";
+import {getCollection} from "astro:content";
+const articles=(await getCollection("articles",({data})=>!data.draft&&data.type!=="EXPLAINER"&&["news","rwa","tokenization","institutions","markets"].includes(data.category))).filter(a=>a.data.pubDate.valueOf()<=Date.now()).sort((a,b)=>b.data.pubDate.valueOf()-a.data.pubDate.valueOf());
+const recent=articles.filter(a=>Date.now()-a.data.pubDate.valueOf()<=86400000);
+const briefing=(recent.length?recent:articles.filter(a=>Date.now()-a.data.pubDate.valueOf()<=7*86400000)).slice(0,4);
+const briefingWindow=recent.length?"Past 24 hours":"Past 7 days";
 ---
 <section class="wire-container py-6 sm:py-8" aria-labelledby="terminal-title">
   <div class="terminal-shell overflow-hidden rounded-2xl border border-line bg-[#0d131a]">
@@ -18,6 +23,14 @@ import {sitePath} from "../utils/paths";
         <div class="border-b border-line p-4 sm:p-5"><p class="data-label">Tracked 24h volume</p><p id="terminal-volume" class="mt-3 font-mono text-2xl font-semibold text-ink">—</p><p class="mt-1 text-xs text-ink-muted">Sum of available provider-reported volumes; not total RWA market volume</p></div>
         <div class="flex-1 p-4 sm:p-5"><p class="data-label">Research shortcuts</p><div class="mt-3 grid gap-2 text-sm"><a href={sitePath("/pulse/")} class="rounded-lg border border-line px-3 py-3 text-ink hover:border-wire/50">Daily market pulse ↗</a><a href={sitePath("/radar/")} class="rounded-lg border border-line px-3 py-3 text-ink hover:border-wire/50">Institutional radar ↗</a><a href={sitePath("/news/")} class="rounded-lg border border-line px-3 py-3 text-ink hover:border-wire/50">Latest reporting ↗</a></div></div>
       </div>
+    </div>
+    <div class="grid border-t border-line lg:grid-cols-[minmax(0,1.4fr)_minmax(280px,1fr)]">
+      <div class="min-w-0 border-b border-line p-4 sm:p-5 lg:border-b-0 lg:border-r">
+        <div class="flex flex-wrap items-center justify-between gap-2"><div><p class="data-label">Daily intelligence / Source-led reporting</p><h3 class="mt-1 font-sans text-lg font-semibold text-ink">What matters today</h3></div><span class="text-xs text-ink-muted">{briefingWindow} · {briefing.length} reports</span></div>
+        {briefing.length?<div class="mt-3 divide-y divide-line">{briefing.map(a=><a class="group block py-3" href={sitePath(`/${a.data.category}/${a.slug}/`)}><div class="flex flex-wrap items-center gap-2 text-[10px] uppercase tracking-wide text-ink-muted"><span>{a.data.category}</span><span>·</span><time datetime={a.data.pubDate.toISOString()}>{a.data.pubDate.toLocaleDateString("en-GB",{day:"2-digit",month:"short",timeZone:"UTC"})}</time></div><p class="mt-1 text-sm font-semibold leading-5 text-ink group-hover:text-wire">{a.data.title}</p><p class="mt-1 line-clamp-2 text-xs leading-5 text-ink-muted">{a.data.description}</p></a>)}</div>:<p class="mt-4 text-sm text-ink-muted">No verified reports published in the last seven days. Explore the archive for earlier coverage.</p>}
+        <a class="mt-3 inline-block text-xs font-semibold text-wire" href={sitePath("/news/")}>Explore all reporting ↗</a>
+      </div>
+      <div class="min-w-0 p-4 sm:p-5"><p class="data-label">Your watchlist / Since last visit</p><h3 class="mt-1 font-sans text-lg font-semibold text-ink">Projects you follow</h3><p id="terminal-watchlist-note" class="mt-2 text-xs leading-5 text-ink-muted">Saved projects stay on this device. Changes are measured against the previous visit, not a historical market close.</p><div id="terminal-watchlist-updates" class="mt-3 grid gap-2" aria-live="polite"><p class="text-xs text-ink-muted">Loading saved projects…</p></div><a class="mt-4 inline-block text-xs font-semibold text-wire" href={sitePath("/intelligence/")}>Manage your watchlist ↗</a></div>
     </div>
     <div class="border-t border-line p-4 sm:p-5">
       <div class="flex flex-wrap items-center justify-between gap-3"><div><p class="data-label">Observed token performance</p><h3 class="mt-1 font-sans text-lg font-semibold text-ink">Price history / selected asset</h3><p class="mt-1 text-xs text-ink-muted">Actual preview observations only · indexed to 100 at first point</p></div><div class="flex gap-2"><label class="sr-only" for="terminal-history-asset">Token</label><select id="terminal-history-asset" class="max-w-[160px] rounded-md border border-line bg-bg px-3 py-2 text-xs text-ink"><option value="">Loading…</option></select><label class="sr-only" for="terminal-history-period">History period</label><select id="terminal-history-period" class="rounded-md border border-line bg-bg px-3 py-2 text-xs text-ink"><option value="1">24H</option><option value="7">7D</option><option value="30" selected>30D</option></select></div></div>
@@ -86,7 +99,7 @@ import {sitePath} from "../utils/paths";
       if(coverage)coverage.textContent=entries.length+" / "+(data.coverage?.tracked||26)+" tracked projects with valid prices · missing quotes are excluded";
       if(status)status.textContent=data.freshness?.delayed?"Delayed provider data":"Provider data available";
       if(updated)updated.textContent=data.fetchedAt?"Updated "+new Date(data.fetchedAt).toLocaleString("en-GB",{timeZone:"UTC",day:"2-digit",month:"short",hour:"2-digit",minute:"2-digit"})+" UTC":"Timestamp unavailable";
-      draw();
+      draw();updatePersonalBrief();storeCurrentVisit();
     }catch{if(status)status.textContent="Market feed unavailable";if(!entries.length&&heatmap)heatmap.textContent="Market data temporarily unavailable.";}
   }
   function drawHistory(){
@@ -130,6 +143,47 @@ import {sitePath} from "../utils/paths";
   historyAsset?.addEventListener("change",drawHistory);
   historyPeriod?.addEventListener("change",drawHistory);
   refreshHistory();window.setInterval(refreshHistory,300000);
+  const savedWatchlistKey="rwa-wire-watchlist-v1";
+  const visitSnapshotKey="rwa-wire-brief-previous-visit-v1";
+  const currentVisitSnapshotKey="rwa-wire-brief-current-visit-v1";
+  const watchlistRoot=document.querySelector<HTMLElement>("#terminal-watchlist-updates");
+  type VisitRecord={at:number;prices:Record<string,number>};
+  function readVisit(key:string):VisitRecord|null{
+    try{const v=JSON.parse(localStorage.getItem(key)||"null");return v&&Number.isFinite(v.at)&&v.prices&&typeof v.prices==="object"?v:null;}catch{return null;}
+  }
+  // Keep the comparison baseline fixed throughout the current page session.
+  const previousVisit=readVisit(currentVisitSnapshotKey)||readVisit(visitSnapshotKey);
+  function updatePersonalBrief(){
+    if(!watchlistRoot)return;
+    let ids:string[]=[];
+    try{const raw=JSON.parse(localStorage.getItem(savedWatchlistKey)||"[]");if(Array.isArray(raw))ids=[...new Set(raw.filter((v):v is string=>typeof v==="string"))].slice(0,12);}catch{}
+    watchlistRoot.replaceChildren();
+    if(!ids.length){const p=document.createElement("p");p.className="rounded-lg border border-dashed border-line p-3 text-xs text-ink-muted";p.textContent="Star tokens in the Intelligence screener to personalize this briefing.";watchlistRoot.append(p);return;}
+    for(const id of ids){
+      const q=entries.find(([key])=>key===id)?.[1];
+      const row=document.createElement("div");row.className="flex items-center justify-between gap-3 rounded-lg border border-line bg-[#111b24] p-3";
+      const label=document.createElement("span");label.className="truncate text-xs font-semibold text-ink";label.textContent=names[id]||id.replaceAll("-"," ").toUpperCase();
+      const value=document.createElement("span");value.className="shrink-0 font-mono text-xs text-ink-muted";
+      const old=previousVisit?.prices?.[id];
+      if(!q)value.textContent="Quote unavailable";
+      else if(typeof old==="number"&&Number.isFinite(old)&&old>0){const delta=(q.usd/old-1)*100;value.textContent=(delta>=0?"+":"")+delta.toFixed(2)+"% since visit";value.className="shrink-0 font-mono text-xs "+(delta>=0?"text-emerald-300":"text-rose-300");}
+      else value.textContent="$"+q.usd.toLocaleString("en-US",{maximumSignificantDigits:5});
+      row.append(label,value);watchlistRoot.append(row);
+    }
+  }
+  function storeCurrentVisit(){
+    if(!entries.length)return;
+    try{
+      if(!sessionStorage.getItem("rwa-wire-brief-session-start")){
+        const prior=readVisit(visitSnapshotKey);
+        if(prior)localStorage.setItem(currentVisitSnapshotKey,JSON.stringify(prior));
+        sessionStorage.setItem("rwa-wire-brief-session-start","1");
+      }
+      const prices=Object.fromEntries(entries.map(([id,q])=>[id,q.usd]));
+      localStorage.setItem(visitSnapshotKey,JSON.stringify({at:Date.now(),prices}));
+    }catch{}
+  }
+  window.addEventListener("storage",updatePersonalBrief);
   changeBtn?.addEventListener("click",()=>{sortBy="change";draw();});
   volumeBtn?.addEventListener("click",()=>{sortBy="volume";draw();});
   refresh();window.setInterval(refresh,60000);
