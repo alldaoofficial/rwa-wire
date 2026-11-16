@@ -15,7 +15,7 @@ const categories: {label:string;test:RegExp}[]=[
  {label:"Regulation",test:/regulat|compliance|licens|legislat|policy|sec\b|mica/i},
  {label:"Infrastructure",test:/launch|blockchain|settlement|network|platform|infrastructure/i}
 ];
-const tags=(a:typeof articles[number])=>categories.filter(c=>c.test([a.data.title,a.data.description,...a.data.tags].join(" "))).map(c=>c.label);
+const tags=(a:typeof articles[number])=>categories.filter(c=>c.test.test([a.data.title,a.data.description,...a.data.tags].join(" "))).map(c=>c.label);
 ---
 <section id="daily-intelligence" class="wire-container py-10 sm:py-14" aria-labelledby="daily-title">
  <div class="flex flex-wrap items-end justify-between gap-4">
