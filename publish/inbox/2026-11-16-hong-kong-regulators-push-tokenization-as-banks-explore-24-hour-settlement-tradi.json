@@ -28,7 +28,7 @@
     "discoveredAt": "2026-11-16T02:07:19.275415+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
@@ -71,6 +71,7 @@
         "sourceUrl": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261112-3/",
         "anchor": "broaden the commercial applications"
       }
-    ]
+    ],
+    "contentSha256": "7a023608ff25ff94b5f669030b479fe7eb3603dd1ed4e016adc5217a0ae0cd2f"
   }
 }
