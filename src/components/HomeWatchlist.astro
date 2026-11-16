@@ -6,7 +6,7 @@ const snapshot=JSON.stringify(assets);
 ---
 <section class="wire-container py-8 sm:py-10" aria-labelledby="my-watchlist-title" data-reveal>
   <div class="wire-panel overflow-hidden">
-    <div class="flex flex-wrap items-center justify-between gap-3 border-b border-line p-5 sm:p-6"><div><p class="wire-kicker">My RWA Wire / Saved on this device</p><h2 id="my-watchlist-title" class="mt-2 text-xl font-semibold text-ink sm:text-2xl">Your watchlist</h2><p class="mt-1 text-xs text-ink-muted">Your starred tokens from the screener, available on this browser.</p></div><a class="wire-action" href={sitePath("/#intelligence-desk")}>Manage starred assets ↗</a></div>
+    <div class="flex flex-wrap items-center justify-between gap-3 border-b border-line p-5 sm:p-6"><div><p class="wire-kicker">My RWA Wire / Saved on this device</p><h2 id="my-watchlist-title" class="mt-2 text-xl font-semibold text-ink sm:text-2xl">Your watchlist</h2><p class="mt-1 text-xs text-ink-muted">Your starred tokens from the screener, available on this browser.</p></div><a class="wire-action" href={sitePath("/intelligence/#intelligence-desk")}>Manage starred assets ↗</a></div>
     <div id="home-watchlist" class="grid gap-3 p-5 sm:grid-cols-2 lg:grid-cols-4 sm:p-6" aria-live="polite"><p class="text-sm text-ink-muted">Loading your saved assets…</p></div>
     <p class="border-t border-line px-5 py-3 text-xs text-ink-muted">Market prices are cached provider snapshots, not live trading quotes. Favorites are stored locally; clearing browser data may remove them.</p>
   </div>
