@@ -9,7 +9,7 @@ TARGET = Path("public/data/market-history.json")
 now = datetime.now(timezone.utc)
 cache = json.loads(SOURCE.read_text(encoding="utf-8"))
 timestamp = datetime.fromisoformat(cache["fetchedAt"].replace("Z", "+00:00"))
-if now - timestamp > timedelta(hours=2):
+if timestamp > now or now - timestamp > timedelta(hours=2):
     print("Market cache is stale; skipping history append")
     raise SystemExit(0)
 history = {"schema": 1, "points": []}
@@ -25,7 +25,7 @@ prices = {
     key: round(value["usd"], 10)
     for key, value in cache.get("assets", {}).items()
     if isinstance(value, dict) and isinstance(value.get("usd"), (int, float))
-    and not isinstance(value.get("usd"), bool) and value["usd"] > 0
+    and not isinstance(value.get("usd"), bool) and math.isfinite(value["usd"]) and value["usd"] > 0
 }
 if len(prices) < 4:
     raise SystemExit("Too few valid prices for history; keeping prior data")
