@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import json
+import math
 import os
 import tempfile
 import urllib.request
@@ -51,7 +52,7 @@ def coingecko():
     if key:
         headers["x-cg-demo-api-key"] = key
     data = get_json(url, headers)
-    return {k:v for k,v in data.items() if k in ASSETS and isinstance(v,dict) and "usd" in v}
+    return {k:v for k,v in data.items() if k in ASSETS and isinstance(v,dict) and isinstance(v.get("usd"),(int,float)) and not isinstance(v.get("usd"),bool) and math.isfinite(v["usd"]) and v["usd"]>0}
 
 def coinpaprika():
     tickers = get_json("https://api.coinpaprika.com/v1/tickers?quotes=USD")
@@ -61,9 +62,12 @@ def coinpaprika():
         if not candidates:
             continue
         exact = [t for t in candidates if str(t.get("name","")).lower() == name.lower()]
-        t = (exact or candidates)[0]
+        # Never resolve ambiguous tickers by symbol alone: they can represent unrelated assets.
+        if len(exact) != 1:
+            continue
+        t = exact[0]
         q = (t.get("quotes") or {}).get("USD") or {}
-        if not isinstance(q.get("price"), (int,float)):
+        if not isinstance(q.get("price"), (int,float)) or isinstance(q.get("price"), bool) or not math.isfinite(q["price"]) or q["price"] <= 0:
             continue
         updated = t.get("last_updated")
         ts = 0
@@ -87,11 +91,15 @@ except Exception as exc:
     available = {}
 
 if len(available) < 4:
-    source = "CoinPaprika"
     try:
-        available = coinpaprika()
+        fallback = coinpaprika()
+        if len(fallback) >= 4:
+            available = fallback
+            source = "CoinPaprika"
+        else:
+            print(f"CoinPaprika returned only {len(fallback)} unambiguous assets; preserving existing cache")
     except Exception as exc:
-        raise SystemExit(f"All market providers unavailable: {exc}")
+        print(f"CoinPaprika unavailable: {exc}; preserving existing cache if provider coverage is insufficient")
 
 if len(available) < 4:
     raise SystemExit(f"Only {len(available)} tracked assets returned; refusing to replace healthy cache")
