@@ -32,7 +32,7 @@
     "discoveredAt": "2026-11-16T23:07:17.259552+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
@@ -83,6 +83,7 @@
         "sourceUrl": "https://www.tokenpost.com/news/investing/58707",
         "anchor": "42% during the first nine months"
       }
-    ]
+    ],
+    "contentSha256": "59b05123a98d940bdec784dede3b5a464aeb24d471f6adfff02b70b47b62ecf7"
   }
 }
