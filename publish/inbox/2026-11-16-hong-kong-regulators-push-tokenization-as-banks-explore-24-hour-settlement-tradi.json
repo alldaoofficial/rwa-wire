@@ -1,8 +1,8 @@
 {
-  "title": "Hong Kong Regulators Push Tokenization As Banks Explore 24-hour Settlement, Trading",
-  "description": "Hong Kong Regulators Push Tokenization As Banks Explore 24-hour Settlement, Trading",
-  "why_it_matters": "",
-  "pubDate": "2026-11-16",
+  "title": "Hong Kong Regulators Outline Next Steps for Tokenised Funds and Deposits",
+  "description": "At a November 11 seminar attended by roughly 200 financial professionals, Hong Kong's HKMA and SFC discussed linking tokenised deposits with authorised investment products after upgrades to round-the-clock settlement and fund trading.",
+  "why_it_matters": "The regulators are focusing on the connection between digital cash and tokenised investments, rather than token issuance alone. Coordinated trading and settlement infrastructure could help participating institutions use tokenised funds outside traditional operating hours, although wider commercial adoption remains a goal.",
+  "pubDate": "2026-11-12",
   "category": "news",
   "tags": [
     "Tokenization",
@@ -10,14 +10,15 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "Hong Kong Regulators Push Tokenization As Banks Explore 24-hour Settlement, Trading",
-    ""
+    "HKMA and SFC hosted an industry seminar on November 11 with approximately 200 attendees.",
+    "EnsembleTX supports 24/7 interbank settlement of tokenised deposits, according to the regulators.",
+    "The SFC has approved round-the-clock secondary trading for tokenised money market funds; broader use cases remain a future objective."
   ],
-  "body": "Hong Kong Regulators Push Tokenization As Banks Explore 24-hour Settlement, Trading",
+  "body": "Hong Kong's monetary and securities regulators are encouraging financial institutions to connect tokenised bank deposits with investment products as the city expands its digital-asset infrastructure. In a statement dated November 12, the Hong Kong Monetary Authority said it and the Securities and Futures Commission hosted a seminar the previous day attended by approximately 200 industry practitioners.\n\nThe discussion followed the upgrade of Project Ensemble's EnsembleTX infrastructure to support round-the-clock interbank settlement of tokenised deposits. Separately, the SFC has approved 24-hour secondary trading of tokenised money market funds. These are distinct capabilities: continuous settlement between participating banks does not mean every investment product is universally available.\n\nThe HKMA said it intends to work with the SFC and market participants to broaden the use of tokenised deposits for settling different investment products. SFC executive director Elisa Ng described the next challenge as connecting investment products, digital money and financial infrastructure to generate practical commercial activity. The statement did not announce a universal retail rollout or provide transaction volumes from the seminar.",
   "sources": [
     {
-      "name": "Crowdfund Insider",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcjZoYUIxUVJrV1RyU1NxT2NpUUxQbkl4OGM3MjZHY1lya0ZHdnlYWnlRSllZTHVLNkNudXJ5dW93NnRrdXNRNGZrOXdwcmVNYjlJRThPRkN5QkU0U0QtZUhsMnZGa2RkOGx4YWprZnl6Rm1ON0lYMkhBMXNiMWktRGZMOThNVUp3OUJua01DbWZBMzFSRC0yeERRV1FxYWZMOUstSGdYQmpRbHhhcl9qWV95U05TdzBIMGxyTG5tZEJvZUZDS1dtWnFWZw?oc=5"
+      "name": "Hong Kong Monetary Authority",
+      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261112-3/"
     }
   ],
   "newsWatch": {
@@ -29,5 +30,47 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-16T02:12:32.037Z",
+    "sources": [
+      {
+        "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261112-3/",
+        "publishedAt": "2026-11-12",
+        "checkedAt": "2026-11-16T02:12:32.037Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "The HKMA and SFC jointly hosted a Project Ensemble seminar on November 11, 2026.",
+        "sourceUrl": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261112-3/",
+        "anchor": "co-hosted a seminar on 11 November"
+      },
+      {
+        "claim": "Approximately 200 industry practitioners attended the seminar and shared tokenisation experience.",
+        "sourceUrl": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261112-3/",
+        "anchor": "Approximately 200 industry practitioners attended"
+      },
+      {
+        "claim": "The EnsembleTX infrastructure enables interbank settlement of tokenised deposits around the clock.",
+        "sourceUrl": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261112-3/",
+        "anchor": "24/7 interbank settlement of tokenised deposits"
+      },
+      {
+        "claim": "The SFC approved round-the-clock secondary trading for tokenised money market funds.",
+        "sourceUrl": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261112-3/",
+        "anchor": "approval of round-the-clock secondary trading"
+      },
+      {
+        "claim": "HKMA plans to broaden commercial applications of tokenised deposits to settle investment products.",
+        "sourceUrl": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261112-3/",
+        "anchor": "broaden the commercial applications"
+      }
+    ]
   }
 }
