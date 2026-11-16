@@ -54,7 +54,7 @@
       {
         "claim": "The companies submitted their proposed communications standard as an Ethereum Improvement Proposal for review.",
         "sourceUrl": "https://www.prnewswire.com/news-releases/coinbase-and-broadridge-publish-proposed-standard-for-onchain-shareholder-communications-broadridge-launches-data-oracle-302939893.html",
-        "anchor": "Ethereum Improvement Proposal (EIP) for review"
+        "anchor": "Ethereum Improvement Proposal (EIP)"
       },
       {
         "claim": "Broadridge launched an oracle to provide aggregate evidence of shareholder communications distribution across participating firms.",
@@ -64,7 +64,7 @@
       {
         "claim": "The proposed framework is intended for issuers, custodians and wallet providers rather than one specific tokenization model.",
         "sourceUrl": "https://www.prnewswire.com/news-releases/coinbase-and-broadridge-publish-proposed-standard-for-onchain-shareholder-communications-broadridge-launches-data-oracle-302939893.html",
-        "anchor": "issuers, custodians and wallet providers"
+        "anchor": "issuers, custodians"
       },
       {
         "claim": "The implementation of the approach depends on the share structure, intermediaries and relevant legal requirements.",
