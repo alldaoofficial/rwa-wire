@@ -22,7 +22,7 @@ const max=Math.max(1,...evidence.map(i=>i.matches.length));
       <p class="mt-3 max-w-3xl text-sm leading-6 text-ink-muted">A transparent view of how often tracked institutions are mentioned in published RWA Wire reporting. These are editorial mentions, not independently verified partnerships, capital flows, market share or adoption rankings. One article can mention several institutions.</p>
       <div class="mt-5 grid gap-3 sm:grid-cols-[1fr_220px]"><label class="text-xs text-ink-muted">Search institutions<input id="institution-search" type="search" placeholder="Search institution or focus..." class="mt-1 w-full rounded-lg border border-line bg-bg px-3 py-2.5 text-sm text-ink placeholder:text-ink-muted" /></label><label class="text-xs text-ink-muted">Publication window<select id="institution-window" class="mt-1 w-full rounded-lg border border-line bg-bg px-3 py-2.5 text-sm text-ink"><option value="all">All published dates</option><option value="30">Last 30 days</option><option value="90">Last 90 days</option></select></label></div>
       <p id="institution-count" class="mt-4 text-xs text-ink-muted" aria-live="polite">Showing {evidence.length} institutions</p>
-      <div class="mt-3 grid gap-3 lg:grid-cols-2">{evidence.map(i=><article data-institution data-search={[i.name,i.type,...i.focus].join(" ").toLowerCase()} class="rounded-xl border border-line bg-bg p-4 sm:p-5">
+      <div class="mt-3 grid gap-3 lg:grid-cols-2">{evidence.map(i=><article data-institution data-search={[i.name,i.type,...i.focus].join(" ").toLowerCase()} data-dates={JSON.stringify(i.matches.map(a=>a.data.pubDate.valueOf()))} class="rounded-xl border border-line bg-bg p-4 sm:p-5">
         <div class="flex items-start justify-between gap-3"><div><p class="data-label text-wire">{i.type}</p><h3 class="mt-1 text-lg font-semibold text-ink"><a class="hover:text-wire" href={sitePath(`/institutions/intelligence/${i.slug}/`)}>{i.name}</a></h3></div><div class="text-right"><span data-mention-count class="font-mono text-2xl text-ink">{i.matches.length}</span><p class="text-[10px] text-ink-muted">article mentions</p></div></div>
         <div class="mt-3 h-2 overflow-hidden rounded-full bg-surface"><div data-mention-bar class="h-full rounded-full bg-wire" style={`width:${i.matches.length/max*100}%`}></div></div>
         <p class="mt-3 text-xs text-ink-muted">Latest matching report: {i.latest?i.latest.toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric",timeZone:"UTC"}):"No published match"}</p>
@@ -44,7 +44,8 @@ const max=Math.max(1,...evidence.map(i=>i.matches.length));
         let shown=0;let max=1;
         const counts=cards.map(card=>{
           const mentions=Array.from(card.querySelectorAll<HTMLElement>("[data-mention]"));
-          const count=mentions.filter(m=>!cutoff||new Date(m.dataset.date??"").valueOf()>=cutoff).length;
+          const dates: number[]=JSON.parse(card.dataset.dates??"[]");
+          const count=dates.filter(timestamp=>!cutoff||timestamp>=cutoff).length;
           max=Math.max(max,count);
           return count;
         });
@@ -61,7 +62,7 @@ const max=Math.max(1,...evidence.map(i=>i.matches.length));
           const empty=card.querySelector<HTMLElement>("[data-mention-empty]");
           if(empty)empty.hidden=count!==0;
         });
-        if(summary)summary.textContent=`Showing ${shown} institutions · article mentions in selected window (up to 20 displayed per institution)`;
+        if(summary)summary.textContent=`Showing ${shown} institutions · article mentions in selected window (up to 20 linked reports displayed per institution)`;
       }
       search?.addEventListener("input",applyInstitutionFilters);
       windowSelect?.addEventListener("change",applyInstitutionFilters);
