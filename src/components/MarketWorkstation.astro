@@ -19,6 +19,11 @@ import {sitePath} from "../utils/paths";
         <div class="flex-1 p-4 sm:p-5"><p class="data-label">Research shortcuts</p><div class="mt-3 grid gap-2 text-sm"><a href={sitePath("/pulse/")} class="rounded-lg border border-line px-3 py-3 text-ink hover:border-wire/50">Daily market pulse ↗</a><a href={sitePath("/radar/")} class="rounded-lg border border-line px-3 py-3 text-ink hover:border-wire/50">Institutional radar ↗</a><a href={sitePath("/news/")} class="rounded-lg border border-line px-3 py-3 text-ink hover:border-wire/50">Latest reporting ↗</a></div></div>
       </div>
     </div>
+    <div class="border-t border-line p-4 sm:p-5">
+      <div class="flex flex-wrap items-center justify-between gap-3"><div><p class="data-label">Observed token performance</p><h3 class="mt-1 font-sans text-lg font-semibold text-ink">Price history / selected asset</h3><p class="mt-1 text-xs text-ink-muted">Actual preview observations only · indexed to 100 at first point</p></div><div class="flex gap-2"><label class="sr-only" for="terminal-history-asset">Token</label><select id="terminal-history-asset" class="max-w-[160px] rounded-md border border-line bg-bg px-3 py-2 text-xs text-ink"><option value="">Loading…</option></select><label class="sr-only" for="terminal-history-period">History period</label><select id="terminal-history-period" class="rounded-md border border-line bg-bg px-3 py-2 text-xs text-ink"><option value="1">24H</option><option value="7">7D</option><option value="30" selected>30D</option></select></div></div>
+      <div class="mt-4 rounded-lg border border-line bg-[#0a1118] p-3"><p id="terminal-history-status" role="status" class="py-12 text-center text-xs text-ink-muted">Loading verified observations…</p><svg id="terminal-history-svg" class="hidden h-[220px] w-full" viewBox="0 0 800 220" preserveAspectRatio="none" role="img" aria-label="Observed indexed token price chart"><line x1="0" y1="185" x2="800" y2="185" stroke="#33424c" stroke-dasharray="4 6"/><line x1="0" y1="100" x2="800" y2="100" stroke="#33424c" stroke-dasharray="4 6"/><path id="terminal-history-path" fill="none" stroke="#55dba1" stroke-width="2.5" vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="mt-3 flex flex-wrap justify-between gap-2 text-xs text-ink-muted"><span id="terminal-history-range">Historical data starts when collection begins</span><span id="terminal-history-change"></span></div>
+    </div>
     <div class="flex flex-wrap items-center justify-between gap-2 border-t border-line px-5 py-3 text-[11px] text-ink-muted"><span>Market quotes are provider-polled snapshots, not tick-by-tick exchange feeds.</span><span id="terminal-updated" class="font-mono">Awaiting verified timestamp</span></div>
   </div>
 </section>
@@ -36,6 +41,14 @@ import {sitePath} from "../utils/paths";
   type Quote={usd:number;usd_24h_change?:number|null;usd_24h_vol?:number|null;last_updated_at?:number};
   let entries:[string,Quote][]=[];
   let sortBy:"change"|"volume"="change";
+  let observations:{at:string;prices:Record<string,number>}[]=[];
+  const historyAsset=document.querySelector<HTMLSelectElement>("#terminal-history-asset");
+  const historyPeriod=document.querySelector<HTMLSelectElement>("#terminal-history-period");
+  const historySvg=document.querySelector<SVGSVGElement>("#terminal-history-svg");
+  const historyPath=document.querySelector<SVGPathElement>("#terminal-history-path");
+  const historyStatus=document.querySelector<HTMLElement>("#terminal-history-status");
+  const historyRange=document.querySelector<HTMLElement>("#terminal-history-range");
+  const historyChange=document.querySelector<HTMLElement>("#terminal-history-change");
   const compact=(n:number)=>new Intl.NumberFormat("en-US",{notation:"compact",maximumFractionDigits:2}).format(n);
   function draw(){
     if(!heatmap)return;
@@ -49,7 +62,11 @@ import {sitePath} from "../utils/paths";
       const name=document.createElement("p");name.className="truncate text-xs font-bold tracking-wide text-ink";name.textContent=names[id]||id.replaceAll("-"," ").toUpperCase();
       const price=document.createElement("p");price.className="mt-2 truncate font-mono text-[11px] text-ink-muted";price.textContent="$"+q.usd.toLocaleString("en-US",{maximumSignificantDigits:6});
       const move=document.createElement("p");move.className="mt-2 font-mono text-lg font-semibold "+(change===null?"text-ink-muted":positive?"text-emerald-300":"text-rose-300");move.textContent=change===null?"N/A":(positive?"+":"")+change.toFixed(2)+"%";
-      tile.append(name,price,move);heatmap.append(tile);
+      tile.append(name,price,move);
+      tile.setAttribute("role","button");tile.tabIndex=0;tile.setAttribute("aria-label","View "+(names[id]||id)+" observed history");
+      const select=()=>{if(historyAsset){historyAsset.value=id;drawHistory();document.querySelector("#terminal-history-svg")?.scrollIntoView({behavior:"smooth",block:"nearest"});}};
+      tile.addEventListener("click",select);tile.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select();}});
+      heatmap.append(tile);
     }
     if(!entries.length){const empty=document.createElement("p");empty.className="col-span-full py-12 text-center text-sm text-ink-muted";empty.textContent="No verified quotes currently available.";heatmap.append(empty);}
     changeBtn?.classList.toggle("text-wire",sortBy==="change");
@@ -72,6 +89,47 @@ import {sitePath} from "../utils/paths";
       draw();
     }catch{if(status)status.textContent="Market feed unavailable";if(!entries.length&&heatmap)heatmap.textContent="Market data temporarily unavailable.";}
   }
+  function drawHistory(){
+    if(!historyAsset||!historyPeriod||!historySvg||!historyPath||!historyStatus||!historyRange||!historyChange)return;
+    const id=historyAsset.value,now=Date.now(),cutoff=now-Number(historyPeriod.value)*86400000;
+    const values=observations.map(p=>({time:Date.parse(p.at),price:p.prices?.[id]})).filter(p=>Number.isFinite(p.time)&&p.time>=cutoff&&p.time<=now&&typeof p.price==="number"&&Number.isFinite(p.price)&&p.price>0);
+    if(values.length<2||values[0].time===values[values.length-1].time){
+      historySvg.classList.add("hidden");historyStatus.classList.remove("hidden");
+      historyStatus.textContent=values.length+" verified observation(s) in this period. At least two distinct timestamps are needed; history accumulates automatically.";
+      historyRange.textContent="No simulated history";historyChange.textContent="";return;
+    }
+    const base=values[0].price,normalized=values.map(p=>p.price/base*100),min=Math.min(...normalized),max=Math.max(...normalized),span=Math.max(.01,max-min),start=values[0].time,end=values[values.length-1].time;
+    historyPath.setAttribute("d",normalized.map((n,i)=>(i?"L":"M")+((values[i].time-start)/(end-start)*800).toFixed(2)+" "+(190-(n-min)/span*165).toFixed(2)).join(" "));
+    const pct=(values[values.length-1].price/base-1)*100;
+    historyPath.setAttribute("stroke",pct>=0?"#55dba1":"#fb7185");
+    historyChange.textContent=(pct>=0?"+":"")+pct.toFixed(2)+"% observed";
+    historyChange.className=pct>=0?"text-emerald-300":"text-rose-300";
+    historyRange.textContent=values.length+" observations · "+new Date(start).toLocaleString("en-GB")+" – "+new Date(end).toLocaleString("en-GB");
+    historySvg.classList.remove("hidden");historyStatus.classList.add("hidden");
+  }
+  async function refreshHistory(){
+    try{
+      const res=await fetch("https://dqeakkrsbgxnexucuyld.supabase.co/functions/v1/preview-market-history",{cache:"no-store"});
+      if(!res.ok)throw Error("History endpoint unavailable");
+      const data=await res.json();
+      observations=Array.isArray(data.points)?data.points.filter((p:any)=>p&&typeof p.at==="string"&&p.prices&&typeof p.prices==="object").sort((a:any,b:any)=>Date.parse(a.at)-Date.parse(b.at)):[];
+      if(historyAsset){
+        const previous=historyAsset.value;
+        const ids=[...new Set(observations.flatMap(p=>Object.keys(p.prices)))].sort();
+        historyAsset.replaceChildren(...ids.map(id=>new Option(names[id]||id.replaceAll("-"," ").toUpperCase(),id)));
+        if(ids.includes(previous))historyAsset.value=previous;
+        else if(ids.includes("ondo-finance"))historyAsset.value="ondo-finance";
+        if(!ids.length)historyAsset.add(new Option("Awaiting observations",""));
+      }
+      drawHistory();
+    }catch{
+      if(historyStatus){historyStatus.classList.remove("hidden");historyStatus.textContent="Verified historical observations are temporarily unavailable.";}
+      historySvg?.classList.add("hidden");
+    }
+  }
+  historyAsset?.addEventListener("change",drawHistory);
+  historyPeriod?.addEventListener("change",drawHistory);
+  refreshHistory();window.setInterval(refreshHistory,300000);
   changeBtn?.addEventListener("click",()=>{sortBy="change";draw();});
   volumeBtn?.addEventListener("click",()=>{sortBy="volume";draw();});
   refresh();window.setInterval(refresh,60000);
