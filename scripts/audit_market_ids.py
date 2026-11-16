@@ -29,6 +29,6 @@ for row in report:
     print(f"{row['status']}: {row['expected_symbol']} ({row['configured_id']})")
     if row["status"] != "id_and_symbol_match":
         print("  Exact name + symbol:",", ".join(c["id"] for c in row["exact_name_symbol_candidates"]) or "none")
-        print("  Symbol candidates:",", ".join(f"{c[\'id\']} ({c[\'name\']})" for c in row["symbol_candidates"]) or "none")
-        print("  Name candidates:",", ".join(f"{c[\'id\']} ({c[\'symbol\']})" for c in row["name_candidates"]) or "none")
+        print("  Symbol candidates:",", ".join(f"{c['id']} ({c['name']})" for c in row["symbol_candidates"]) or "none")
+        print("  Name candidates:",", ".join(f"{c['id']} ({c['symbol']})" for c in row["name_candidates"]) or "none")
 print("Report saved to market-id-audit.json; no IDs changed automatically.")
