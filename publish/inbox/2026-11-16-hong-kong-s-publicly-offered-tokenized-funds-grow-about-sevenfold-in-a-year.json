@@ -1,7 +1,7 @@
 {
-  "title": "Hong Kong’s Publicly Offered Tokenized Funds Grow About Sevenfold in a Year",
-  "description": "Hong Kong’s Publicly Offered Tokenized Funds Grow About Sevenfold in a Year",
-  "why_it_matters": "",
+  "title": "Hong Kong Finance Chief Says Public Tokenized Funds Grew Sevenfold in a Year",
+  "description": "At a November 16 regulatory forum, Financial Secretary Paul Chan reported sevenfold growth in publicly offered tokenized funds and described round-the-clock money-market fund trading.",
+  "why_it_matters": "The government’s new growth statement signals broader distribution of regulated tokenized investment products, while its proposed licensing expansion underscores that operational adoption remains tied to investor protection and supervision.",
   "pubDate": "2026-11-16",
   "category": "news",
   "tags": [
@@ -10,14 +10,15 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "Hong Kong’s Publicly Offered Tokenized Funds Grow About Sevenfold in a Year",
-    ""
+    "Paul Chan reported approximately sevenfold annual growth in publicly offered tokenized funds, without publishing the underlying measurement series in his speech.",
+    "Two tokenized money market funds have traded around the clock on a licensed Hong Kong platform since October, according to Chan.",
+    "Hong Kong plans a bill before year-end extending digital-asset licensing to dealing, advice, management and custody."
   ],
-  "body": "Hong Kong’s Publicly Offered Tokenized Funds Grow About Sevenfold in a Year",
+  "body": "Hong Kong Financial Secretary Paul Chan said on November 16 that tokenized funds offered to the public in the city had grown roughly sevenfold over one year. Speaking at the Bloomberg Global Regulatory Forum 2026, Chan described tokenization as moving beyond pilots into routine financial use.\n\nHe also said two tokenized money market funds had been trading around the clock on a licensed platform since October. The speech did not provide the underlying starting and ending fund values or define the precise measure behind the sevenfold comparison, so the figure should be treated as an official statement rather than an independently reconstructed market series.\n\nChan outlined a further regulatory step: Hong Kong intends to introduce legislation before the end of 2026 extending licensing to digital-asset dealing, advisory, management and custody services. He emphasized applying conventional product requirements alongside safeguards for new risks. Separately, he said two of the first 36 stablecoin licence applicants had received licences in April and subsequently launched Hong Kong dollar stablecoins.",
   "sources": [
     {
-      "name": "www.tokenpost.com",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE10ek9PSHBxc3dDdGZScXlrb21sYmZIRkFNVGJqc2Z5cUV3S0JVTkRKaXU5UmVnUEpVUnFGOHpYa05hdUppSXhZeGlfQ2txYXhqWEFKWVdGQUVINW8?oc=5"
+      "name": "Hong Kong Government — Financial Secretary keynote speech",
+      "url": "https://www.info.gov.hk/gia/general/202611/16/P2026111600447.htm"
     }
   ],
   "newsWatch": {
@@ -31,10 +32,45 @@
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "verified",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-16T09:55:05Z",
-    "reason": "Full TokenPost Nov 16 report (https://www.tokenpost.com/news/regulation/58160) attributes roughly sevenfold year-on-year growth to Paul Chan but provides no comparable dated starting/ending fund AUM figures or directly accessible original Nov 16 statement. SFC-related reporting dated Oct 9 (https://clb.org.hk/en/business/SFC-17-tokenised-retail-products-launched-AUM-reaches-US-1-3-5e0acd) instead reports 78% annual growth for 17 tokenised products, while Nov 6 analysis (https://www.blockhead.co/2026/11/06/hong-kongs-sfc-counts-17-tokenised-retail-products-and-floats-a-tokenised-gold-etf-as-its-next-pilot/) traces an older sevenfold comparison to March 2026 and warns metrics may not be comparable. The Oct 26 24/7 trading development is already covered in a separate reviewed Hong Kong inbox story. Sevenfold claim, metric dates and independent fresh event are insufficiently verified; retry no sooner than six hours."
+    "reviewedAt": "2026-11-16T17:14:09.815Z",
+    "sources": [
+      {
+        "url": "https://www.info.gov.hk/gia/general/202611/16/P2026111600447.htm",
+        "publishedAt": "2026-11-16",
+        "checkedAt": "2026-11-16T17:14:09.815Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Financial Secretary Paul Chan delivered the keynote address at Bloomberg Global Regulatory Forum 2026 on November 16.",
+        "sourceUrl": "https://www.info.gov.hk/gia/general/202611/16/P2026111600447.htm",
+        "anchor": "Bloomberg Global Regulatory Forum 2026"
+      },
+      {
+        "claim": "Chan reported that publicly offered tokenized funds in Hong Kong had grown about sevenfold within one year.",
+        "sourceUrl": "https://www.info.gov.hk/gia/general/202611/16/P2026111600447.htm",
+        "anchor": "grown about seven-fold in a year"
+      },
+      {
+        "claim": "Two tokenized money market funds have traded around the clock on a licensed platform since October.",
+        "sourceUrl": "https://www.info.gov.hk/gia/general/202611/16/P2026111600447.htm",
+        "anchor": "traded around the clock"
+      },
+      {
+        "claim": "Hong Kong intends to introduce a bill before the end of 2026 to extend licensing across several digital asset activities.",
+        "sourceUrl": "https://www.info.gov.hk/gia/general/202611/16/P2026111600447.htm",
+        "anchor": "Before the end of this year"
+      },
+      {
+        "claim": "Chan stated that two of 36 initial stablecoin applicants received licences in April and subsequently launched Hong Kong dollar stablecoins.",
+        "sourceUrl": "https://www.info.gov.hk/gia/general/202611/16/P2026111600447.htm",
+        "anchor": "two received licences in April"
+      }
+    ]
   }
 }
