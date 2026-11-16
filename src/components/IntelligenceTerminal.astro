@@ -51,14 +51,14 @@ const price=(v:number)=>"$"+v.toFixed(v<.1?5:v<1?4:2);
     <div class="flex items-center gap-2 rounded-xl border border-line bg-surface px-4 py-3 text-xs text-ink-muted"><span class="h-2 w-2 rounded-full bg-wire"></span><span id="desk-snapshot-status">Latest cached snapshot · {stamp}</span></div>
   </div>
   <div class="mb-5 grid grid-cols-2 gap-3 lg:grid-cols-4">
-    <div class="terminal-card wire-panel-hover" data-reveal><p class="terminal-label">Tracked basket · 24h average</p><p class:list={["mt-3 font-mono text-3xl font-semibold",avg>=0?"text-wire":"text-rose-400"]}>{avg>0?"+":""}{avg.toFixed(2)}%</p><p class="mt-2 text-xs text-ink-muted">Equal-weighted token change</p></div>
-    <div class="terminal-card wire-panel-hover" data-reveal><p class="terminal-label">Market breadth</p><p class="mt-3 font-mono text-3xl font-semibold text-ink">{up}<span class="text-base text-ink-muted"> / {priced.length}</span></p><div class="mt-3 h-1.5 overflow-hidden rounded-full bg-bg"><div class="h-full rounded-full bg-wire" style={`width:${priced.length?up/priced.length*100:0}%`}></div></div><p class="mt-2 text-xs text-ink-muted">Tracked tokens advancing</p></div>
-    <div class="terminal-card" data-reveal><p class="terminal-label">Tracked 24h volume</p><p class="mt-3 font-mono text-3xl font-semibold text-ink">{fmt(volume)}</p><p class="mt-2 text-xs text-ink-muted">Sum of available token volumes</p></div>
-    <div class="terminal-card" data-reveal><p class="terminal-label">Market temperature</p><p class="mt-3 font-sans text-2xl font-semibold text-ink">{priced.length===0?"No data":up===priced.length?"Broad strength":up===0?"Broad weakness":"Mixed breadth"}</p><p class="mt-2 text-xs text-ink-muted">Derived from this tracked basket</p></div>
+    <div class="terminal-card wire-panel-hover" data-reveal><p class="terminal-label">Tracked basket · 24h average</p><p id="desk-average" class:list={["mt-3 font-mono text-3xl font-semibold",avg>=0?"text-wire":"text-rose-400"]}>{avg>0?"+":""}{avg.toFixed(2)}%</p><p class="mt-2 text-xs text-ink-muted">Equal-weighted token change</p></div>
+    <div class="terminal-card wire-panel-hover" data-reveal><p class="terminal-label">Market breadth</p><p id="desk-breadth" class="mt-3 font-mono text-3xl font-semibold text-ink">{up}<span class="text-base text-ink-muted"> / {priced.length}</span></p><div class="mt-3 h-1.5 overflow-hidden rounded-full bg-bg"><div class="h-full rounded-full bg-wire" style={`width:${priced.length?up/priced.length*100:0}%`}></div></div><p class="mt-2 text-xs text-ink-muted">Tracked tokens advancing</p></div>
+    <div class="terminal-card" data-reveal><p class="terminal-label">Tracked 24h volume</p><p id="desk-total-volume" class="mt-3 font-mono text-3xl font-semibold text-ink">{fmt(volume)}</p><p class="mt-2 text-xs text-ink-muted">Sum of available token volumes</p></div>
+    <div class="terminal-card" data-reveal><p class="terminal-label">Market temperature</p><p id="desk-temperature" class="mt-3 font-sans text-2xl font-semibold text-ink">{priced.length===0?"No data":up===priced.length?"Broad strength":up===0?"Broad weakness":"Mixed breadth"}</p><p class="mt-2 text-xs text-ink-muted">Derived from this tracked basket</p></div>
   </div>
   <div class="grid gap-4 xl:grid-cols-[minmax(0,1.75fr)_minmax(300px,.85fr)]">
     <div class="terminal-card wire-panel-hover min-w-0 p-0" data-reveal>
-      <div class="flex flex-wrap items-center justify-between gap-3 border-b border-line px-5 py-5"><div><p class="terminal-label">01 / Market monitor</p><h2 class="mt-1 font-sans text-xl font-semibold text-ink">RWA-linked token screener</h2></div><span class="text-xs text-ink-muted">{priced.length} priced tokens · {unavailable} awaiting provider data</span></div>
+      <div class="flex flex-wrap items-center justify-between gap-3 border-b border-line px-5 py-5"><div><p class="terminal-label">01 / Market monitor</p><h2 class="mt-1 font-sans text-xl font-semibold text-ink">RWA-linked token screener</h2></div><span id="desk-coverage" class="text-xs text-ink-muted">{priced.length} priced tokens · {unavailable} awaiting provider data</span></div>
       <div class="flex flex-wrap items-center gap-2 border-b border-line px-5 py-4">
         <label class="sr-only" for="desk-filter">Filter assets</label><input id="desk-filter" type="search" placeholder="Search tokens..." class="min-w-0 flex-1 rounded-lg border border-line bg-bg px-3 py-2.5 text-sm text-ink placeholder:text-ink-muted focus:border-wire focus:outline-none" />
         <label class="sr-only" for="desk-sector">Sector</label><select id="desk-sector" class="rounded-lg border border-line bg-bg px-3 py-2.5 text-sm text-ink"><option value="all">All sectors</option><option>Infrastructure</option><option>Tokenized assets</option><option>Private credit</option><option>Real estate</option><option>Payments</option></select>
@@ -68,7 +68,7 @@ const price=(v:number)=>"$"+v.toFixed(v<.1?5:v<1?4:2);
       </div>
       <div class="overflow-x-auto"><table class="w-full min-w-[590px] text-left text-sm"><thead><tr class="border-b border-line text-[11px] uppercase tracking-wider text-ink-muted"><th class="px-5 py-3">Asset</th><th class="px-3 py-3 text-right">Price</th><th class="px-3 py-3 text-right">24h</th><th class="px-3 py-3 text-right">Volume</th><th class="px-3 py-3 text-right">Market cap</th><th class="px-5 py-3 text-right">Save</th></tr></thead><tbody id="desk-rows">{assets.map(a=><tr data-token-row data-name={a.name.toLowerCase()+" "+a.symbol.toLowerCase()} data-sector={a.sector} data-change={a.change??-99999} data-volume={a.volume??-1} data-cap={a.cap??-1} data-id={a.id} data-available={a.price!==null&&a.change!==null?"true":"false"} class="border-b border-line/60 transition-colors hover:bg-white/[.035]"><td class="px-5 py-3"><span class="font-semibold text-ink">{a.symbol}</span><span class="ml-2 text-xs text-ink-muted">{a.name}</span><span class="block text-[10px] text-ink-muted">{a.sector}</span></td><td class="px-3 py-3 text-right font-mono text-xs">{a.price===null?"—":price(a.price)}</td><td class:list={["px-3 py-3 text-right font-mono text-xs font-semibold",(a.change??0)>=0?"text-wire":"text-rose-400"]}>{a.change===null?"N/A":`${a.change>0?"+":""}${a.change.toFixed(2)}%`}</td><td class="px-3 py-3 text-right font-mono text-xs text-ink-muted">{a.volume===null?"—":fmt(a.volume)}</td><td class="px-3 py-3 text-right font-mono text-xs text-ink-muted">{a.cap===null?"—":fmt(a.cap)}</td><td class="px-5 py-3 text-right"><button type="button" data-save={a.id} class="rounded-md px-2 py-1 text-xl text-ink-muted hover:text-wire" aria-label={`Save ${a.symbol} to watchlist`} aria-pressed="false">☆</button></td></tr>)}</tbody></table></div>
       <p id="desk-empty" class="hidden px-5 py-8 text-center text-sm text-ink-muted">No priced assets match your filters. You can enable unavailable assets to see the full tracked universe.</p>
-      <div class="flex flex-wrap justify-between gap-2 border-t border-line px-5 py-4 text-xs text-ink-muted"><span>Watchlist saved on this device only</span><span>Source: {markets.source} · Snapshot {stamp}</span></div>
+      <div class="flex flex-wrap justify-between gap-2 border-t border-line px-5 py-4 text-xs text-ink-muted"><span>Watchlist saved on this device only</span><span id="desk-source">Source: {markets.source} · Snapshot {stamp}</span></div>
     </div>
     <div class="grid content-start gap-4">
       <div class="terminal-card" data-reveal><div class="flex items-center justify-between"><p class="terminal-label">02 / Sector coverage</p><span class="text-[10px] text-ink-muted">Tracked tokens</span></div><h2 class="mt-2 font-sans text-xl font-semibold">Market composition</h2><div class="mt-6 space-y-5">{sectorRows.map(item=><div><div class="flex items-center justify-between gap-2 text-sm"><span class="text-ink">{item.sector}</span><span class:list={["font-mono text-xs",item.mean>=0?"text-wire":"text-rose-400"]}>{item.mean>0?"+":""}{item.mean.toFixed(1)}%</span></div><div class="mt-2 h-2 overflow-hidden rounded-full bg-bg"><div class:list={["h-full rounded-full",item.mean>=0?"bg-wire":"bg-rose-400"]} style={`width:${item.width}%`}></div></div><p class="mt-1 text-[11px] text-ink-muted">{item.count} tracked assets · equal-weighted 24h average</p></div>)}</div><p class="mt-5 text-xs leading-5 text-ink-muted">This is token performance grouped by editorial categories, not sector-wide RWA asset values.</p></div>
@@ -134,6 +134,22 @@ const price=(v:number)=>"$"+v.toFixed(v<.1?5:v<1?4:2);
         cells[3].textContent=volume===null?"—":formatCompact(volume);
         cells[4].textContent=cap===null?"—":formatCompact(cap);
       }
+      const live=rows.filter(row=>row.dataset.available==="true");
+      const advancing=live.filter(row=>Number(row.dataset.change)>0).length;
+      const mean=live.length?live.reduce((sum,row)=>sum+Number(row.dataset.change),0)/live.length:0;
+      const totalVolume=rows.reduce((sum,row)=>sum+Math.max(0,Number(row.dataset.volume)||0),0);
+      const volumeEl=document.querySelector<HTMLElement>("#desk-total-volume");
+      const averageEl=document.querySelector<HTMLElement>("#desk-average");
+      const breadthEl=document.querySelector<HTMLElement>("#desk-breadth");
+      const temperatureEl=document.querySelector<HTMLElement>("#desk-temperature");
+      const coverageEl=document.querySelector<HTMLElement>("#desk-coverage");
+      const sourceEl=document.querySelector<HTMLElement>("#desk-source");
+      if(volumeEl)volumeEl.textContent=formatCompact(totalVolume);
+      if(averageEl){averageEl.textContent=(mean>0?"+":"")+mean.toFixed(2)+"%";averageEl.classList.toggle("text-wire",mean>=0);averageEl.classList.toggle("text-rose-400",mean<0);}
+      if(breadthEl)breadthEl.textContent=advancing+" / "+live.length;
+      if(temperatureEl)temperatureEl.textContent=!live.length?"No data":advancing===live.length?"Broad strength":advancing===0?"Broad weakness":"Mixed breadth";
+      if(coverageEl)coverageEl.textContent=live.length+" priced tokens · "+(rows.length-live.length)+" awaiting provider data";
+      if(sourceEl)sourceEl.textContent="Source: "+(payload.source||"Market provider")+" · "+(payload.fetchedAt||"Unknown timestamp");
       render();
     }catch{
       // Preserve the build-time snapshot if the endpoint is unavailable.
