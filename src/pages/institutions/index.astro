@@ -5,7 +5,7 @@ import { institutions } from "@/data/institutions";
 import { getCollection } from "astro:content";
 import { sitePath } from "@/utils/paths";
 const reports=(await getCollection("articles",({data})=>!data.draft&&data.type!=="EXPLAINER")).filter(a=>a.data.pubDate.valueOf()<=Date.now()).sort((a,b)=>b.data.pubDate.valueOf()-a.data.pubDate.valueOf());
-const evidence=institutions.map(i=>{const escaped=i.name.replace(/[.*+?^${}()|[\]\\]/g,"\\import { institutions } from "@/data/institutions";");const re=new RegExp(`(^|[^a-z0-9])${escaped}(?=$|[^a-z0-9])`,"i");const aliases=i.slug==="jpmorgan"?[/\bjp\s?morgan\b/i,/\bonyx\b/i]:i.slug==="dtcc"?[/\bdtcc\b/i]:[];const matches=reports.filter(a=>{const text=[a.data.title,a.data.description,...a.data.tags].join(" ");return re.test(text)||aliases.some(alias=>alias.test(text));});return {...i,matches,latest:matches[0]?.data.pubDate??null};}).sort((a,b)=>b.matches.length-a.matches.length);
+const evidence=institutions.map(i=>{const re=new RegExp("(^|[^a-z0-9])"+i.name+"(?=$|[^a-z0-9])","i");const aliases=i.slug==="jpmorgan"?[/\\bjp\\s?morgan\\b/i]:[];const matches=reports.filter(a=>{const text=[a.data.title,a.data.description,...a.data.tags].join(" ");return re.test(text)||aliases.some(alias=>alias.test(text));});return {...i,matches,latest:matches[0]?.data.pubDate??null};}).sort((a,b)=>b.matches.length-a.matches.length);
 const total=evidence.reduce((n,i)=>n+i.matches.length,0);
 const max=Math.max(1,...evidence.map(i=>i.matches.length));
 ---
