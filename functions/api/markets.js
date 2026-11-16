@@ -23,6 +23,7 @@ export async function onRequestGet({ request, env }) {
   const hit = await edgeCache.match(cacheKey);
   if (hit) return hit;
   let assets = {};
+  let providerError = null;
   let source = "CoinGecko";
   let fetchedAt = new Date(now).toISOString();
   try {
@@ -31,7 +32,7 @@ export async function onRequestGet({ request, env }) {
     const headers = { Accept: "application/json" };
     if (env.COINGECKO_API_KEY) headers["x-cg-demo-api-key"] = env.COINGECKO_API_KEY;
     const upstream = await fetch(providerUrl, { headers, signal: AbortSignal.timeout(7000) });
-    if (!upstream.ok) throw new Error("Quote provider unavailable");
+    if (!upstream.ok) throw new Error("CoinGecko HTTP " + upstream.status);
     const quotes = await upstream.json();
     for (const id of ids) {
       // CoinGecko's clearpool ID now resolves to CLEAR, not the legacy CPOOL
@@ -41,7 +42,8 @@ export async function onRequestGet({ request, env }) {
       if (valid(q, now)) assets[id] = q;
     }
     if (Object.keys(assets).length < 4) throw new Error("Insufficient fresh quotes");
-  } catch {
+  } catch (error) {
+    providerError = error instanceof Error ? error.message : "Unknown provider failure";
     source = "Cached provider snapshot (fallback)";
     try {
       const snapshot = await env.ASSETS.fetch(new Request(new URL("/data/markets.json", url.origin)));
@@ -56,7 +58,7 @@ export async function onRequestGet({ request, env }) {
     }
   }
   const ageMinutes = fetchedAt ? Math.max(0, Math.floor((now - Date.parse(fetchedAt)) / 60000)) : null;
-  const payload = { source, fetchedAt, assets, freshness: { ageMinutes, delayed: source.includes("fallback") || ageMinutes === null || ageMinutes > 2, kind: source === "CoinGecko" ? "provider-polled-quotes" : "cached-provider-snapshot" } };
+  const payload = { source, fetchedAt, assets, ...(providerError ? { providerStatus: providerError.startsWith("CoinGecko HTTP ") ? providerError : "Provider request failed" } : {}), freshness: { ageMinutes, delayed: source.includes("fallback") || ageMinutes === null || ageMinutes > 2, kind: source === "CoinGecko" ? "provider-polled-quotes" : "cached-provider-snapshot" } };
   const result = response(payload, 60);
   if (source === "CoinGecko") await edgeCache.put(cacheKey, result.clone());
   return result;
