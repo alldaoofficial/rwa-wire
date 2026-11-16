@@ -3,7 +3,7 @@ import { sitePath } from "../utils/paths";
 ---
 <div class="rounded-2xl border border-line bg-surface p-5 sm:p-6" data-reveal>
   <div class="flex flex-wrap items-start justify-between gap-3">
-    <div><p class="text-[11px] font-bold uppercase tracking-[.14em] text-ink-muted">04 / Historical intelligence</p><h2 class="mt-2 text-xl font-semibold text-ink">Tracked asset performance</h2><p class="mt-1 text-xs text-ink-muted">Observed USD prices · indexed to 100 at the first recorded point</p></div>
+    <div><p class="text-[11px] font-bold uppercase tracking-[.14em] text-ink-muted">04 / Historical intelligence</p><h2 class="mt-2 text-xl font-semibold text-ink">Tracked asset performance</h2><p class="mt-1 text-xs text-ink-muted">Observed USD prices · indexed to 100 at the first recorded point · time-scaled</p></div>
     <div class="flex gap-2"><label class="sr-only" for="history-asset">Asset</label><select id="history-asset" class="rounded-lg border border-line bg-bg px-3 py-2 text-sm text-ink"><option>Loading assets…</option></select><label class="sr-only" for="history-period">Period</label><select id="history-period" class="rounded-lg border border-line bg-bg px-3 py-2 text-sm text-ink"><option value="1">24H</option><option value="7">7D</option><option value="30" selected>30D</option></select></div>
   </div>
   <div id="history-chart" class="mt-5 min-h-[210px] rounded-xl border border-line bg-bg/50 p-4" role="img" aria-label="Historical indexed price line chart">
@@ -29,12 +29,14 @@ import { sitePath } from "../utils/paths";
     if(!assetSelect||!periodSelect||!svg||!path||!status||!range||!change)return;
     const id=assetSelect.value;
     const cutoff=Date.now()-Number(periodSelect.value)*86400000;
-    const values=observations.filter(p=>Date.parse(p.at)>=cutoff&&typeof p.prices?.[id]==="number"&&p.prices[id]>0).map(p=>({at:p.at,price:p.prices[id]}));
+    const values=observations.filter(p=>{const t=Date.parse(p.at);const v=p.prices?.[id];return Number.isFinite(t)&&t>=cutoff&&t<=Date.now()&&typeof v==="number"&&Number.isFinite(v)&&v>0;}).map(p=>({at:p.at,time:Date.parse(p.at),price:p.prices[id]}));
     if(values.length<2){svg.classList.add("hidden");dot?.classList.add("hidden");status.classList.remove("hidden");status.textContent="Not enough recorded observations for this period yet. History will build automatically after activation.";range.textContent=values.length+" observation(s) available";change.textContent="";return;}
     const baseline=values[0].price;
     const normalized=values.map(v=>v.price/baseline*100);
     const low=Math.min(...normalized),high=Math.max(...normalized),span=Math.max(high-low,.01);
-    const points=normalized.map((v,i)=>[i/(normalized.length-1)*700,185-(v-low)/span*160]);
+    const firstTime=values[0].time,lastTime=values[values.length-1].time;
+    if(firstTime===lastTime){svg.classList.add("hidden");status.classList.remove("hidden");status.textContent="More distinct timestamps are needed to chart this period.";return;}
+    const points=normalized.map((v,i)=>[(values[i].time-firstTime)/(lastTime-firstTime)*700,185-(v-low)/span*160]);
     path.setAttribute("d",points.map((p,i)=>(i?"L":"M")+p[0].toFixed(2)+" "+p[1].toFixed(2)).join(" "));
     svg.classList.remove("hidden");status.classList.add("hidden");
     if(dot){const last=points[points.length-1];dot.setAttribute("cx",String(last[0]));dot.setAttribute("cy",String(last[1]));dot.classList.remove("hidden");}
@@ -48,8 +50,10 @@ import { sitePath } from "../utils/paths";
   };
   fetch(historyUrl).then(r=>{if(!r.ok)throw Error("not active");return r.json()}).then(data=>{
     observations=Array.isArray(data.points)?data.points.filter(p=>p&&typeof p.at==="string"&&p.prices&&typeof p.prices==="object").sort((a,b)=>Date.parse(a.at)-Date.parse(b.at)):[];
-    const ids=[...new Set(observations.flatMap(p=>Object.keys(p.prices)))].sort();
-    if(ids.length<1){status.textContent="No historical observations are published yet. The collector starts when this feature is deployed to the main branch.";assetSelect.replaceChildren(new Option("No history yet",""));return;}
+    const counts=new Map();
+    for(const point of observations){for(const [id,price] of Object.entries(point.prices)){if(typeof price==="number"&&Number.isFinite(price)&&price>0)counts.set(id,(counts.get(id)??0)+1);}}
+    const ids=[...counts.entries()].filter(([,count])=>count>=2).map(([id])=>id).sort();
+    if(ids.length<1){status.textContent="At least two verified observations per asset are required before a historical chart can be displayed.";assetSelect.replaceChildren(new Option("Awaiting observations",""));return;}
     assetSelect.replaceChildren(...ids.map(id=>{const option=document.createElement("option");option.value=id;option.textContent=id.replaceAll("-"," ");return option;}));
     assetSelect.disabled=false;
     periodSelect.disabled=false;
