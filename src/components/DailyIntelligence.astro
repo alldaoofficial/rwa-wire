@@ -16,7 +16,7 @@ const categories: {label:string;test:RegExp}[]=[
  {label:"Regulation",test:/regulat|compliance|licens|legislat|policy|sec\b|mica/i},
  {label:"Infrastructure",test:/launch|blockchain|settlement|network|platform|infrastructure/i}
 ];
-const tags=(a:typeof articles[number])=>categories.filter(c=>c.test([a.data.title,a.data.description,...a.data.tags].join(" "))).map(c=>c.label);
+const tags=(a:typeof articles[number])=>categories.filter(c=>c.test.test([a.data.title,a.data.description,...a.data.tags].join(" "))).map(c=>c.label);
 const basket=Object.entries(markets.assets??{}).filter(([,v])=>typeof v.usd_24h_change==="number").map(([id,v])=>({id,change:v.usd_24h_change as number})).sort((a,b)=>Math.abs(b.change)-Math.abs(a.change)).slice(0,3);
 const stamp=new Date(markets.fetchedAt);
 const fresh=Number.isFinite(stamp.valueOf())&&now-stamp.valueOf()<2*3600000;
