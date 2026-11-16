@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-16T21:10:00Z",
-    "reason": "Six-hour retry hold: the CoinNess Google News discovery URL does not identify a verifiable new Solana filing on 2026-11-16. Full-text CoinDesk and The Block reports dated 2026-11-09 instead describe Formation Securities (not Solana) notifying the SEC about a planned venue, with trading targeted for early 2027. No new November 16 primary filing or distinct event established; do not publish or imply an operating platform. Retry no earlier than 2026-11-17T03:10:00Z."
+    "reviewedAt": "2026-11-16T21:10:48.274Z",
+    "reason": "Six-hour retry hold: the CoinNess Google News discovery URL does not identify a verifiable new Solana filing on 2026-11-16. Full-text CoinDesk and The Block reports dated 2026-11-09 instead describe Formation Securities (not Solana) notifying the SEC about a planned venue, with trading targeted for early 2027. No new November 16 primary filing or distinct event established; do not publish or imply an operating platform. Retry no earlier than 2026-11-17T03:10:48.274Z."
   }
 }
