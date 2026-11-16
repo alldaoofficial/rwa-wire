@@ -10,8 +10,8 @@ from pathlib import Path
 ASSETS = {
     "chainlink": ("LINK", "Chainlink"),
     "ondo-finance": ("ONDO", "Ondo"),
-    "maple-finance": ("SYRUP", "Maple Finance"),
-    "zebec-protocol": ("ZBCN", "Zebec Network"),
+    "syrup": ("SYRUP", "Maple Finance"),
+    "zebec-network": ("ZBCN", "Zebec Network"),
     "plume": ("PLUME", "Plume"),
     "centrifuge": ("CFG", "Centrifuge"),
     "polymesh": ("POLYX", "Polymesh"),
