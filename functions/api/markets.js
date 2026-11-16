@@ -71,6 +71,22 @@ export async function onRequestGet({request,env}){
   const cacheKey=new Request(new URL("/api/markets",url.origin).toString());
   const cache=caches.default,hit=await cache.match(cacheKey);
   if(hit)return hit;
+  // Preview-only persistent quote cache. It is refreshed independently of site builds.
+  try {
+    const preview = await fetch("https://dqeakkrsbgxnexucuyld.supabase.co/functions/v1/preview-market-quotes",{
+      headers:{Accept:"application/json"},signal:AbortSignal.timeout(24000)
+    });
+    if(preview.ok){
+      const data=await preview.json();
+      if(data?.assets&&Object.keys(data.assets).length>=4&&data.freshness?.kind==="provider-polled-quotes"){
+        const result=response({...data,source:data.source||"Verified preview market cache"},60);
+        await cache.put(cacheKey,result.clone());
+        return result;
+      }
+    }
+  }catch{
+    // Retain direct provider and static fallback paths for resilience.
+  }
   let assets={},sources=[],errors=[],fetchedAt=new Date(now).toISOString();
   try{
     const cg=await coingecko(env,now);
