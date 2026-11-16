@@ -32,7 +32,7 @@ const marketCacheUrl = `${import.meta.env.BASE_URL}data/markets.json`;
   async function refreshMarkets(){
     const status=document.getElementById("market-status");let cached=false;
     try{const res=await fetch(cacheUrl,{cache:"no-store"});if(res.ok){const payload=await res.json();const timestamp=Date.parse(payload.fetchedAt??"");const valid=Number.isFinite(timestamp)&&timestamp<=Date.now();const mins=valid?Math.round((Date.now()-timestamp)/60000):null;cached=render(payload.assets||{},mins===null?"Cached · time unknown":mins>120?`Delayed · ${Math.round(mins/60)}h old`:`Cached · ${mins}m old`);}}catch{}
-    try{const res=await fetch(liveUrl,{headers:{accept:"application/json"}});if(!res.ok)throw new Error();const data=await res.json();render(data,"Direct quote · "+new Date().toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"}));}catch{if(status&&!cached)status.textContent="Data temporarily unavailable";}
+    try{const res=await fetch(liveUrl,{headers:{accept:"application/json"}});if(!res.ok)throw new Error();const data=await res.json();const timestamps=ids.map(id=>data[id]?.last_updated_at).filter((v):v is number=>typeof v==="number"&&Number.isFinite(v));if(!timestamps.length)throw new Error("Missing provider timestamps");const age=Math.max(0,Math.round((Date.now()-Math.min(...timestamps)*1000)/60000));if(age>120)throw new Error("Provider quotes stale");render(data,`Provider quote · ${age}m old`);}catch{if(status&&!cached)status.textContent="Data temporarily unavailable";}
   }
   refreshMarkets();window.setInterval(refreshMarkets,60000);
 </script>
