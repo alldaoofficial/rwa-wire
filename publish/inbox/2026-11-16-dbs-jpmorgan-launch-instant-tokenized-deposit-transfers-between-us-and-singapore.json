@@ -34,7 +34,7 @@
     ],
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment"
+    "contentStatus": "source-reviewed"
   },
   "sourceReview": {
     "status": "verified",
@@ -81,6 +81,7 @@
         "sourceUrl": "https://www.dbs.com/newsroom/DBS_and_Kinexys_by_JP_Morgan_launch_industry_first_247_interoperability_solution_for_cross_border_tokenised_deposit_transfers",
         "anchor": "three-hour downtime"
       }
-    ]
+    ],
+    "contentSha256": "31b9e8a7b54f1f46747695b4ac0387f8742874eaaaf3e15316a58648ab371bd0"
   }
 }
