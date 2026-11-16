@@ -22,17 +22,52 @@ const marketCacheUrl = `${import.meta.env.BASE_URL}data/markets.json`;
   const cacheUrl=ticker?.dataset.marketCacheUrl||"/data/markets.json";
   const liveUrl="https://api.coingecko.com/api/v3/simple/price?ids="+ids.join(",")+"&vs_currencies=usd&include_24hr_change=true&include_last_updated_at=true";
   const formatPrice=(n:number)=>n>=100?"$"+n.toLocaleString(undefined,{maximumFractionDigits:2}):n>=1?"$"+n.toFixed(2):"$"+n.toFixed(4);
-  function render(data:any,label:string){
+  function render(data:Record<string,any>,label:string,requireQuoteTimestamp=false){
     let rendered=0;
-    ids.forEach(id=>{const row=document.querySelector<HTMLElement>(`[data-market="${id}"]`),item=data[id];if(!row||!item||!Number.isFinite(item.usd))return;rendered++;
-      const p=row.querySelector<HTMLElement>(".market-price"),c=row.querySelector<HTMLElement>(".market-change");if(p)p.textContent=formatPrice(item.usd);const ch=item.usd_24h_change;if(c){c.textContent=Number.isFinite(ch)?(ch>=0?"+":"")+ch.toFixed(2)+"%":"—";c.className="market-change font-mono text-[10px] "+(ch>=0?"text-wire":"text-red-400")}}
-    );
-    const status=document.getElementById("market-status");if(status&&rendered)status.textContent=label;return rendered>0;
+    const now=Date.now();
+    ids.forEach(id=>{
+      const row=document.querySelector<HTMLElement>(`[data-market="${id}"]`);
+      const item=data[id];
+      if(!row||!item||!Number.isFinite(item.usd)||item.usd<=0)return;
+      const quoteTime=Number(item.last_updated_at)*1000;
+      if(requireQuoteTimestamp&&(!Number.isFinite(quoteTime)||quoteTime<=0||quoteTime>now||now-quoteTime>120*60000))return;
+      rendered++;
+      const price=row.querySelector<HTMLElement>(".market-price");
+      const change=row.querySelector<HTMLElement>(".market-change");
+      if(price)price.textContent=formatPrice(item.usd);
+      const delta=item.usd_24h_change;
+      if(change){
+        change.textContent=Number.isFinite(delta)?(delta>=0?"+":"")+delta.toFixed(2)+"%":"—";
+        change.className="market-change font-mono text-[10px] "+(!Number.isFinite(delta)?"text-ink-muted":delta>=0?"text-wire":"text-red-400");
+      }
+    });
+    const status=document.getElementById("market-status");
+    if(status&&rendered)status.textContent=label;
+    return rendered;
   }
   async function refreshMarkets(){
-    const status=document.getElementById("market-status");let cached=false;
-    try{const res=await fetch(cacheUrl,{cache:"no-store"});if(res.ok){const payload=await res.json();const timestamp=Date.parse(payload.fetchedAt??"");const valid=Number.isFinite(timestamp)&&timestamp<=Date.now();const mins=valid?Math.round((Date.now()-timestamp)/60000):null;cached=render(payload.assets||{},mins===null?"Cached · time unknown":mins>120?`Delayed · ${Math.round(mins/60)}h old`:`Cached · ${mins}m old`);}}catch{}
-    try{const res=await fetch(liveUrl,{headers:{accept:"application/json"}});if(!res.ok)throw new Error();const data=await res.json();const timestamps=ids.map(id=>data[id]?.last_updated_at).filter((v):v is number=>typeof v==="number"&&Number.isFinite(v));if(!timestamps.length)throw new Error("Missing provider timestamps");const age=Math.max(0,Math.round((Date.now()-Math.min(...timestamps)*1000)/60000));if(age>120)throw new Error("Provider quotes stale");render(data,`Provider quote · ${age}m old`);}catch{if(status&&!cached)status.textContent="Data temporarily unavailable";}
+    const status=document.getElementById("market-status");
+    let cached=0;
+    try{
+      const res=await fetch(cacheUrl,{cache:"no-store"});
+      if(res.ok){
+        const payload=await res.json();
+        const fetched=Date.parse(payload.fetchedAt??"");
+        const age=Date.now()-fetched;
+        const valid=Number.isFinite(age)&&age>=0;
+        const label=!valid?"Snapshot · time unknown":age>120*60000?`Delayed snapshot · ${Math.round(age/3600000)}h old`:`Snapshot · ${Math.round(age/60000)}m old`;
+        cached=render(payload.assets||{},label);
+      }
+    }catch{}
+    try{
+      const res=await fetch(liveUrl,{headers:{accept:"application/json"},cache:"no-store"});
+      if(!res.ok)throw new Error("Provider unavailable");
+      const data=await res.json();
+      const fresh=render(data,"Provider quotes · updated within 2h",true);
+      if(!fresh&&status&&!cached)status.textContent="Data temporarily unavailable";
+    }catch{
+      if(status&&!cached)status.textContent="Data temporarily unavailable";
+    }
   }
   refreshMarkets();window.setInterval(refreshMarkets,60000);
 </script>
