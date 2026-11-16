@@ -1,0 +1,78 @@
+---
+import {sitePath} from "../utils/paths";
+---
+<section class="wire-container py-6 sm:py-8" aria-labelledby="terminal-title">
+  <div class="terminal-shell overflow-hidden rounded-2xl border border-line bg-[#0d131a]">
+    <div class="flex flex-wrap items-center justify-between gap-3 border-b border-line bg-[#111b24] px-5 py-4">
+      <div><p class="data-label text-wire">RWA Wire / Market workstation</p><h2 id="terminal-title" class="mt-1 font-sans text-xl font-semibold text-ink sm:text-2xl">Your RWA Morning Brief</h2><p class="mt-1 text-xs text-ink-muted">A daily starting point for tokenized markets · verified quotes, not execution prices</p></div>
+      <div class="flex items-center gap-3"><span id="terminal-status" role="status" class="text-xs text-ink-muted">Loading provider quotes…</span><a href={sitePath("/intelligence/")} class="wire-action !min-h-[36px] !px-3 !py-2 text-xs">Open screener ↗</a></div>
+    </div>
+    <div class="grid lg:grid-cols-[minmax(0,1.8fr)_minmax(260px,1fr)]">
+      <div class="min-w-0 border-b border-line p-4 sm:p-5 lg:border-b-0 lg:border-r">
+        <div class="flex flex-wrap items-center justify-between gap-3"><div><p class="data-label">Market heatmap / tracked tokens</p><p class="mt-1 text-xs text-ink-muted">Color indicates verified 24h price change; tile size is uniform, not market capitalization</p></div><div class="flex gap-2"><button id="terminal-sort-change" class="rounded-md border border-wire/60 px-3 py-1.5 text-xs text-wire" type="button">24h change</button><button id="terminal-sort-volume" class="rounded-md border border-line px-3 py-1.5 text-xs text-ink-muted" type="button">24h volume</button></div></div>
+        <div id="terminal-heatmap" class="mt-4 grid min-h-[280px] grid-cols-2 gap-2 sm:grid-cols-3 xl:grid-cols-4" aria-live="polite"><p class="col-span-full py-12 text-center text-sm text-ink-muted">Loading verified market data…</p></div>
+        <p id="terminal-coverage" class="mt-3 text-xs text-ink-muted">Missing quotes are never estimated.</p>
+      </div>
+      <div class="flex min-w-0 flex-col">
+        <div class="border-b border-line p-4 sm:p-5"><p class="data-label">Today's market breadth</p><p id="terminal-breadth" class="mt-3 font-mono text-3xl font-semibold text-ink">—</p><p class="mt-1 text-xs text-ink-muted">Advancing / priced tokens</p><div class="mt-4 h-2 overflow-hidden rounded-full bg-[#293440]"><div id="terminal-breadth-bar" class="h-full rounded-full bg-wire transition-all" style="width:0%"></div></div></div>
+        <div class="border-b border-line p-4 sm:p-5"><p class="data-label">Tracked 24h volume</p><p id="terminal-volume" class="mt-3 font-mono text-2xl font-semibold text-ink">—</p><p class="mt-1 text-xs text-ink-muted">Sum of available provider-reported volumes; not total RWA market volume</p></div>
+        <div class="flex-1 p-4 sm:p-5"><p class="data-label">Research shortcuts</p><div class="mt-3 grid gap-2 text-sm"><a href={sitePath("/pulse/")} class="rounded-lg border border-line px-3 py-3 text-ink hover:border-wire/50">Daily market pulse ↗</a><a href={sitePath("/radar/")} class="rounded-lg border border-line px-3 py-3 text-ink hover:border-wire/50">Institutional radar ↗</a><a href={sitePath("/news/")} class="rounded-lg border border-line px-3 py-3 text-ink hover:border-wire/50">Latest reporting ↗</a></div></div>
+      </div>
+    </div>
+    <div class="flex flex-wrap items-center justify-between gap-2 border-t border-line px-5 py-3 text-[11px] text-ink-muted"><span>Market quotes are provider-polled snapshots, not tick-by-tick exchange feeds.</span><span id="terminal-updated" class="font-mono">Awaiting verified timestamp</span></div>
+  </div>
+</section>
+<script>
+  const heatmap=document.querySelector<HTMLElement>("#terminal-heatmap");
+  const status=document.querySelector<HTMLElement>("#terminal-status");
+  const coverage=document.querySelector<HTMLElement>("#terminal-coverage");
+  const breadth=document.querySelector<HTMLElement>("#terminal-breadth");
+  const bar=document.querySelector<HTMLElement>("#terminal-breadth-bar");
+  const volume=document.querySelector<HTMLElement>("#terminal-volume");
+  const updated=document.querySelector<HTMLElement>("#terminal-updated");
+  const changeBtn=document.querySelector<HTMLButtonElement>("#terminal-sort-change");
+  const volumeBtn=document.querySelector<HTMLButtonElement>("#terminal-sort-volume");
+  const names:Record<string,string>={"ondo-finance":"ONDO","chainlink":"LINK","maple-finance":"SYRUP","zebec-protocol":"ZBCN","mantra-dao":"MANTRA","reserve-rights-token":"RSR","origintrail":"TRAC","origin-protocol":"OGN","realio-network":"RIO","dusk-network":"DUSK","ix-swap":"IXS","clearpool":"CPOOL"};
+  type Quote={usd:number;usd_24h_change?:number|null;usd_24h_vol?:number|null;last_updated_at?:number};
+  let entries:[string,Quote][]=[];
+  let sortBy:"change"|"volume"="change";
+  const compact=(n:number)=>new Intl.NumberFormat("en-US",{notation:"compact",maximumFractionDigits:2}).format(n);
+  function draw(){
+    if(!heatmap)return;
+    const sorted=[...entries].sort((a,b)=>sortBy==="volume"?(Number(b[1].usd_24h_vol)||0)-(Number(a[1].usd_24h_vol)||0):Math.abs(Number(b[1].usd_24h_change)||0)-Math.abs(Number(a[1].usd_24h_change)||0));
+    heatmap.replaceChildren();
+    for(const [id,q] of sorted){
+      const change=typeof q.usd_24h_change==="number"&&Number.isFinite(q.usd_24h_change)?q.usd_24h_change:null;
+      const tile=document.createElement("div");
+      const positive=change!==null&&change>=0;
+      tile.className="min-w-0 rounded-lg border p-3 transition-colors "+(change===null?"border-line bg-[#1a222c]":positive?"border-emerald-700/40 bg-emerald-950/60":"border-rose-800/40 bg-rose-950/50");
+      const name=document.createElement("p");name.className="truncate text-xs font-bold tracking-wide text-ink";name.textContent=names[id]||id.replaceAll("-"," ").toUpperCase();
+      const price=document.createElement("p");price.className="mt-2 truncate font-mono text-[11px] text-ink-muted";price.textContent="$"+q.usd.toLocaleString("en-US",{maximumSignificantDigits:6});
+      const move=document.createElement("p");move.className="mt-2 font-mono text-lg font-semibold "+(change===null?"text-ink-muted":positive?"text-emerald-300":"text-rose-300");move.textContent=change===null?"N/A":(positive?"+":"")+change.toFixed(2)+"%";
+      tile.append(name,price,move);heatmap.append(tile);
+    }
+    if(!entries.length){const empty=document.createElement("p");empty.className="col-span-full py-12 text-center text-sm text-ink-muted";empty.textContent="No verified quotes currently available.";heatmap.append(empty);}
+    changeBtn?.classList.toggle("text-wire",sortBy==="change");
+    volumeBtn?.classList.toggle("text-wire",sortBy==="volume");
+  }
+  async function refresh(){
+    try{
+      const res=await fetch("/api/markets",{cache:"no-store"});if(!res.ok)throw Error("Quote API unavailable");
+      const data=await res.json();
+      entries=Object.entries(data.assets||{}).filter((item):item is [string,Quote]=>{const q=item[1] as Quote;return q&&typeof q.usd==="number"&&Number.isFinite(q.usd)&&q.usd>0;});
+      const validChanges=entries.filter(([,q])=>typeof q.usd_24h_change==="number"&&Number.isFinite(q.usd_24h_change));
+      const advancing=validChanges.filter(([,q])=>Number(q.usd_24h_change)>0).length;
+      const sum=entries.reduce((s,[,q])=>s+(typeof q.usd_24h_vol==="number"&&Number.isFinite(q.usd_24h_vol)&&q.usd_24h_vol>0?q.usd_24h_vol:0),0);
+      if(breadth)breadth.textContent=advancing+" / "+validChanges.length;
+      if(bar)bar.style.width=(validChanges.length?advancing/validChanges.length*100:0)+"%";
+      if(volume)volume.textContent="$"+compact(sum);
+      if(coverage)coverage.textContent=entries.length+" / "+(data.coverage?.tracked||26)+" tracked projects with valid prices · missing quotes are excluded";
+      if(status)status.textContent=data.freshness?.delayed?"Delayed provider data":"Provider data available";
+      if(updated)updated.textContent=data.fetchedAt?"Updated "+new Date(data.fetchedAt).toLocaleString("en-GB",{timeZone:"UTC",day:"2-digit",month:"short",hour:"2-digit",minute:"2-digit"})+" UTC":"Timestamp unavailable";
+      draw();
+    }catch{if(status)status.textContent="Market feed unavailable";if(!entries.length&&heatmap)heatmap.textContent="Market data temporarily unavailable.";}
+  }
+  changeBtn?.addEventListener("click",()=>{sortBy="change";draw();});
+  volumeBtn?.addEventListener("click",()=>{sortBy="volume";draw();});
+  refresh();window.setInterval(refresh,60000);
+</script>
