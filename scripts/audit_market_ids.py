@@ -18,13 +18,17 @@ for key, (symbol, name) in catalog.items():
     provider_id = aliases.get(key, key)
     exact = by_id.get(provider_id)
     candidates = [coin for coin in directory if coin.get("symbol","").casefold() == symbol.casefold() and coin.get("name","").casefold() == name.casefold()]
+    symbol_candidates = [coin for coin in directory if coin.get("symbol","").casefold() == symbol.casefold()]
+    name_candidates = [coin for coin in directory if coin.get("name","").casefold() == name.casefold()]
     status = "id_and_symbol_match" if exact and exact.get("symbol","").casefold() == symbol.casefold() else "id_missing_or_symbol_mismatch"
-    report.append({"configured_id":key,"provider_id":provider_id,"expected_symbol":symbol,"expected_name":name,"status":status,"directory_record":exact,"exact_name_symbol_candidates":candidates[:8]})
+    report.append({"configured_id":key,"provider_id":provider_id,"expected_symbol":symbol,"expected_name":name,"status":status,"directory_record":exact,"exact_name_symbol_candidates":candidates[:8],"symbol_candidates":symbol_candidates[:12],"name_candidates":name_candidates[:12]})
 output = Path("market-id-audit.json")
 output.write_text(json.dumps({"total":len(report),"records":report},indent=2)+"\n",encoding="utf-8")
 print("Token directory audit:",len(report),"tracked")
 for row in report:
     print(f"{row['status']}: {row['expected_symbol']} ({row['configured_id']})")
     if row["status"] != "id_and_symbol_match":
-        print("  Candidate IDs (require human verification):",", ".join(c["id"] for c in row["exact_name_symbol_candidates"]) or "none")
+        print("  Exact name + symbol:",", ".join(c["id"] for c in row["exact_name_symbol_candidates"]) or "none")
+        print("  Symbol candidates:",", ".join(f"{c[\'id\']} ({c[\'name\']})" for c in row["symbol_candidates"]) or "none")
+        print("  Name candidates:",", ".join(f"{c[\'id\']} ({c[\'symbol\']})" for c in row["name_candidates"]) or "none")
 print("Report saved to market-id-audit.json; no IDs changed automatically.")
