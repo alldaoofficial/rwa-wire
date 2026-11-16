@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-16T01:18:51.656Z",
-    "reason": "Rechecked full Nov 13 TokenPost report (https://www.tokenpost.com/news/investing/56960), Nov 14 EconoTimes (https://econotimes.com/Coinbase-Tokenized-Stocks-Record-About-850-Million-in-Weekly-Base-DEX-Volume-1776809), and Nov 13 CryptoBriefing (https://cryptobriefing.com/weekly-dex-volume-for-coinbase-issued-tokenized-stocks-on-base-reached-850m/). CryptoBriefing attributes the $850m figure to a Token Terminal social post but supplies no independently readable dated underlying dataset; EconoTimes repeats TokenPost figures and imagery. The $1.3bn/30-day and $1.2bn issuer figures have different windows. Neither an independently verified original measurement nor three separately anchored facts establishes the headline; remain held. Retry no sooner than 2026-11-16T07:18:51.656Z."
+    "reviewedAt": "2026-11-16T07:24:59.889Z",
+    "reason": "Rechecked primary Coinbase tokenization product documentation (https://www.coinbase.com/en-gb/tokenize) and independent coverage of earlier Base trading (https://crypto.news/base-tokenized-stock-volume-reaches-100-million/). The Coinbase page confirms token design but not the claimed Nov 13 $850m weekly Base DEX volume; the Sept 13 report measures a different window. No directly accessible dated Token Terminal original measurement or independent corroboration of the precise weekly figure and three distinct event facts. Held for six-hour retry."
   }
 }
