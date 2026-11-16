@@ -4,6 +4,7 @@ import { sitePath } from "../utils/paths";
 const assets=Object.entries(markets.assets??{}).flatMap(([id,a])=>typeof a.usd==="number"&&typeof a.usd_24h_change==="number"?[{id,price:a.usd,change:a.usd_24h_change}]:[]);
 const snapshot=JSON.stringify(assets);
 const updatedAt=markets.fetchedAt;
+const apiUrl=sitePath("/api/markets");
 const snapshotDate=new Date(updatedAt);
 const snapshotLabel=Number.isFinite(snapshotDate.valueOf())?snapshotDate.toLocaleString("en-GB",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit",timeZone:"UTC"})+" UTC":"Unknown";
 ---
@@ -14,12 +15,17 @@ const snapshotLabel=Number.isFinite(snapshotDate.valueOf())?snapshotDate.toLocal
     <p class="border-t border-line px-5 py-3 text-xs text-ink-muted">Market prices are cached provider snapshots, not live trading quotes. Favorites are stored locally; clearing browser data may remove them.</p>
   </div>
 </section>
-<script define:vars={{snapshot,updatedAt}}>
+<script define:vars={{snapshot,updatedAt,apiUrl}}>
   const root=document.querySelector("#home-watchlist");
-  const assets=JSON.parse(snapshot);
+  let assets=JSON.parse(snapshot);
   const key="rwa-wire-watchlist-v1";
-  const ageHours=(Date.now()-Date.parse(updatedAt))/3600000;
-  const delayed=!Number.isFinite(ageHours)||ageHours>2;
+  let fetchedAt=updatedAt;
+  let delayed=true;
+  function refreshFreshness(){
+    const ageHours=(Date.now()-Date.parse(fetchedAt))/3600000;
+    delayed=!Number.isFinite(ageHours)||ageHours<0||ageHours>2;
+  }
+  refreshFreshness();
   function drawWatchlist(){
     if(!root)return;
     let ids=[];
@@ -31,13 +37,27 @@ const snapshotLabel=Number.isFinite(snapshotDate.valueOf())?snapshotDate.toLocal
       const card=document.createElement("div");card.className="group rounded-xl border border-line bg-bg p-4 transition-colors hover:border-wire/40 hover:bg-surface-raised";
       const name=document.createElement("p");name.className="text-xs font-semibold uppercase tracking-wide text-ink-muted";name.textContent=id.replaceAll("-"," ");
       const value=document.createElement("p");value.className="mt-3 font-mono text-xl font-semibold text-ink";value.textContent=item?"$"+item.price.toLocaleString("en-US",{maximumFractionDigits:6}):"Data unavailable";
-      const change=document.createElement("p");change.className="mt-1 font-mono text-xs "+(item?.change>=0?"text-wire":"text-rose-400");change.textContent=item?(item.change>=0?"+":"")+item.change.toFixed(2)+"% / 24h":"No current price";
+      const change=document.createElement("p");change.className="mt-1 font-mono text-xs "+(item?.change>=0?"text-wire":"text-rose-400");change.textContent=item&&Number.isFinite(item.change)?(item.change>=0?"+":"")+item.change.toFixed(2)+"% / 24h":"24h change unavailable";
       card.append(name,value,change);
       if(delayed){const note=document.createElement("p");note.className="mt-3 text-[11px] text-amber-400";note.textContent="Delayed market snapshot";card.append(note);}
       root.append(card);
     }
   }
+  async function refreshQuotes(){
+    try{
+      const response=await fetch(apiUrl,{cache:"no-store"});
+      if(!response.ok)throw new Error("Market endpoint unavailable");
+      const data=await response.json();
+      if(!data.assets||typeof data.assets!=="object")throw new Error("Invalid market data");
+      assets=Object.entries(data.assets).flatMap(([id,a])=>a&&typeof a.usd==="number"&&Number.isFinite(a.usd)&&a.usd>0?[{id,price:a.usd,change:typeof a.usd_24h_change==="number"?a.usd_24h_change:null}]:[]);
+      fetchedAt=data.fetchedAt;
+      refreshFreshness();
+      drawWatchlist();
+    }catch{refreshFreshness();drawWatchlist();}
+  }
   drawWatchlist();
+  refreshQuotes();
+  window.setInterval(refreshQuotes,60000);
   window.addEventListener("storage",drawWatchlist);
   document.querySelectorAll("[data-save]").forEach(button=>button.addEventListener("click",()=>queueMicrotask(drawWatchlist)));
 </script>
