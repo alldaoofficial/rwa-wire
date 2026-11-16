@@ -152,7 +152,7 @@ const briefingWindow=recent.length?"Past 24 hours":"Past 7 days";
     try{const v=JSON.parse(localStorage.getItem(key)||"null");return v&&Number.isFinite(v.at)&&v.prices&&typeof v.prices==="object"?v:null;}catch{return null;}
   }
   // Keep the comparison baseline fixed throughout the current page session.
-  const previousVisit=readVisit(currentVisitSnapshotKey)||readVisit(visitSnapshotKey);
+  const previousVisit=(()=>{try{const saved=sessionStorage.getItem(currentVisitSnapshotKey);if(saved){const v=JSON.parse(saved);return v&&v.prices?v:null;}const prior=readVisit(visitSnapshotKey);if(prior)sessionStorage.setItem(currentVisitSnapshotKey,JSON.stringify(prior));return prior;}catch{return readVisit(visitSnapshotKey);}})();
   function updatePersonalBrief(){
     if(!watchlistRoot)return;
     let ids:string[]=[];
@@ -175,8 +175,6 @@ const briefingWindow=recent.length?"Past 24 hours":"Past 7 days";
     if(!entries.length)return;
     try{
       if(!sessionStorage.getItem("rwa-wire-brief-session-start")){
-        const prior=readVisit(visitSnapshotKey);
-        if(prior)localStorage.setItem(currentVisitSnapshotKey,JSON.stringify(prior));
         sessionStorage.setItem("rwa-wire-brief-session-start","1");
       }
       const prices=Object.fromEntries(entries.map(([id,q])=>[id,q.usd]));
