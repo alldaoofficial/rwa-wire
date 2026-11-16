@@ -45,7 +45,7 @@ const stamp=Number.isNaN(date.valueOf())?"Unknown":date.toLocaleString("en-GB",{
 const fmt=(v:number)=>v>=1e9?"$"+(v/1e9).toFixed(2)+"B":v>=1e6?"$"+(v/1e6).toFixed(1)+"M":v>=1e3?"$"+(v/1e3).toFixed(0)+"K":"$"+v.toFixed(0);
 const price=(v:number)=>"$"+v.toFixed(v<.1?5:v<1?4:2);
 ---
-<section class="wire-container py-7 sm:py-10" aria-labelledby="desk-title" id="intelligence-desk">
+<section class="wire-container py-7 sm:py-10" aria-labelledby="desk-title" id="intelligence-desk" data-market-api-url={sitePath("/api/markets")}>
   <div class="mb-6 flex flex-wrap items-center justify-between gap-3">
     <div><p class="wire-kicker">The RWA Wire / Intelligence terminal</p><h1 id="desk-title" class="mt-2 font-sans text-3xl font-bold tracking-tight text-ink sm:text-4xl">RWA market intelligence<span class="text-wire">.</span></h1><p class="mt-2 text-sm text-ink-muted">Explore token prices, sector breadth, your watchlist and observed historical data.</p></div>
     <div class="flex items-center gap-2 rounded-xl border border-line bg-surface px-4 py-3 text-xs text-ink-muted"><span class="h-2 w-2 rounded-full bg-wire"></span><span>Latest cached snapshot · {stamp}</span></div>
@@ -79,7 +79,8 @@ const price=(v:number)=>"$"+v.toFixed(v<.1?5:v<1?4:2);
   <div class="mt-5 scroll-mt-24" id="market-history"><MarketHistoryChart /></div>
   <p class="mt-4 text-xs leading-5 text-ink-muted">The project universe is curated; missing prices are shown as unavailable rather than estimated. Market data is a cached snapshot, not a live trading feed. Token performance is not the same as the value or performance of underlying tokenized real-world assets. No investment advice.</p>
 </section>
-<script define:vars={{marketApiUrl:sitePath("/api/markets")}}>
+<script>
+  const marketApiUrl=document.querySelector<HTMLElement>("#intelligence-desk")?.dataset.marketApiUrl||"/api/markets";
   const rows=Array.from(document.querySelectorAll<HTMLTableRowElement>("[data-token-row]"));
   const filter=document.querySelector<HTMLInputElement>("#desk-filter");
   const sector=document.querySelector<HTMLSelectElement>("#desk-sector");
