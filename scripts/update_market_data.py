@@ -4,7 +4,7 @@ import math
 import os
 import tempfile
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 ASSETS = {
@@ -37,12 +37,29 @@ ASSETS = {
 
 }
 OUT = Path("public/data/markets.json")
+MAX_QUOTE_AGE = timedelta(hours=2)
+MIN_COVERAGE = 4
 HEADERS = {"Accept": "application/json", "User-Agent": "RWA-Wire/1.0"}
 
 def get_json(url, headers=None):
     req = urllib.request.Request(url, headers=headers or HEADERS)
     with urllib.request.urlopen(req, timeout=30) as response:
         return json.load(response)
+
+def valid_quote(value, now):
+    if not isinstance(value, dict):
+        return False
+    price = value.get("usd")
+    change = value.get("usd_24h_change")
+    updated = value.get("last_updated_at")
+    if not isinstance(price, (int, float)) or isinstance(price, bool) or not math.isfinite(price) or price <= 0:
+        return False
+    if change is not None and (not isinstance(change, (int, float)) or isinstance(change, bool) or not math.isfinite(change)):
+        return False
+    if not isinstance(updated, (int, float)) or isinstance(updated, bool) or not math.isfinite(updated):
+        return False
+    age = now - datetime.fromtimestamp(updated, timezone.utc)
+    return timedelta(0) <= age <= MAX_QUOTE_AGE
 
 def coingecko():
     ids = list(ASSETS)
@@ -52,7 +69,8 @@ def coingecko():
     if key:
         headers["x-cg-demo-api-key"] = key
     data = get_json(url, headers)
-    return {k:v for k,v in data.items() if k in ASSETS and isinstance(v,dict) and isinstance(v.get("usd"),(int,float)) and not isinstance(v.get("usd"),bool) and math.isfinite(v["usd"]) and v["usd"]>0}
+    now = datetime.now(timezone.utc)
+    return {k:v for k,v in data.items() if k in ASSETS and valid_quote(v, now)}
 
 def coinpaprika():
     tickers = get_json("https://api.coinpaprika.com/v1/tickers?quotes=USD")
@@ -81,7 +99,8 @@ def coinpaprika():
             "usd_24h_change": q.get("percent_change_24h"),
             "last_updated_at": ts,
         }
-    return result
+    now = datetime.now(timezone.utc)
+    return {key: value for key, value in result.items() if valid_quote(value, now)}
 
 source = "CoinGecko"
 try:
@@ -90,10 +109,10 @@ except Exception as exc:
     print(f"CoinGecko unavailable: {exc}; trying CoinPaprika")
     available = {}
 
-if len(available) < 4:
+if len(available) < MIN_COVERAGE:
     try:
         fallback = coinpaprika()
-        if len(fallback) >= 4:
+        if len(fallback) >= MIN_COVERAGE:
             available = fallback
             source = "CoinPaprika"
         else:
@@ -101,8 +120,21 @@ if len(available) < 4:
     except Exception as exc:
         print(f"CoinPaprika unavailable: {exc}; preserving existing cache if provider coverage is insufficient")
 
-if len(available) < 4:
-    raise SystemExit(f"Only {len(available)} tracked assets returned; refusing to replace healthy cache")
+if len(available) < MIN_COVERAGE:
+    raise SystemExit(f"Only {len(available)} fresh tracked assets returned; refusing to replace cache")
+
+# Prevent a provider outage or degraded fallback from silently shrinking the usable universe.
+# Compare against recent healthy cache only; old cache does not count as fresh coverage.
+if OUT.exists():
+    try:
+        previous = json.loads(OUT.read_text(encoding="utf-8"))
+        previous_time = datetime.fromisoformat(previous["fetchedAt"].replace("Z", "+00:00"))
+        if timedelta(0) <= datetime.now(timezone.utc) - previous_time <= MAX_QUOTE_AGE:
+            previous_count = sum(valid_quote(value, datetime.now(timezone.utc)) for value in previous.get("assets", {}).values())
+            if previous_count >= 8 and len(available) < max(MIN_COVERAGE, previous_count // 2):
+                raise SystemExit(f"Provider coverage degraded from {previous_count} to {len(available)}; preserving recent cache")
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        print(f"Previous cache could not be compared: {exc}")
 
 payload = {"source": source, "fetchedAt": datetime.now(timezone.utc).isoformat().replace("+00:00","Z"), "assets": available}
 OUT.parent.mkdir(parents=True, exist_ok=True)
