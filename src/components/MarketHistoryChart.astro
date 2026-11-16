@@ -22,6 +22,8 @@ import { sitePath } from "../utils/paths";
   const dot=document.querySelector("#history-dot");
   const range=document.querySelector("#history-range");
   const change=document.querySelector("#history-change");
+  if(assetSelect)assetSelect.disabled=true;
+  if(periodSelect)periodSelect.disabled=true;
   let observations=[];
   const draw=()=>{
     if(!assetSelect||!periodSelect||!svg||!path||!status||!range||!change)return;
@@ -47,9 +49,12 @@ import { sitePath } from "../utils/paths";
   fetch(historyUrl).then(r=>{if(!r.ok)throw Error("not active");return r.json()}).then(data=>{
     observations=Array.isArray(data.points)?data.points.filter(p=>p&&typeof p.at==="string"&&p.prices&&typeof p.prices==="object").sort((a,b)=>Date.parse(a.at)-Date.parse(b.at)):[];
     const ids=[...new Set(observations.flatMap(p=>Object.keys(p.prices)))].sort();
+    if(ids.length<1){status.textContent="No historical observations are published yet. The collector starts when this feature is deployed to the main branch.";assetSelect.replaceChildren(new Option("No history yet",""));return;}
     assetSelect.replaceChildren(...ids.map(id=>{const option=document.createElement("option");option.value=id;option.textContent=id.replaceAll("-"," ");return option;}));
+    assetSelect.disabled=false;
+    periodSelect.disabled=false;
     draw();
-  }).catch(()=>{status.textContent="Historical collection has not started yet. The chart will activate after the first verified snapshots are recorded.";});
+  }).catch(()=>{if(assetSelect)assetSelect.replaceChildren(new Option("Awaiting history",""));status.textContent="Historical observations are not available in this preview. The collection workflow runs on the production branch; no historical prices are invented.";});
   assetSelect?.addEventListener("change",draw);
   periodSelect?.addEventListener("change",draw);
 </script>
