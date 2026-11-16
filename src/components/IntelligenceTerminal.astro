@@ -107,7 +107,7 @@ const price=(v:number)=>"$"+v.toFixed(v<.1?5:v<1?4:2);
   document.querySelectorAll<HTMLButtonElement>("[data-save]").forEach(button=>button.addEventListener("click",()=>{const id=button.dataset.save??"";saved=saved.includes(id)?saved.filter(x=>x!==id):[...saved,id];try{localStorage.setItem(key,JSON.stringify(saved));}catch{}render();}));
   async function refreshScreener(){
     try{
-      const response=await fetch(marketApiUrl,{cache:"no-store"});
+      const response=await fetch("https://dqeakkrsbgxnexucuyld.supabase.co/functions/v1/preview-market-quotes",{cache:"no-store"});
       if(!response.ok)throw new Error("Market API unavailable");
       const payload=await response.json();
       const snapshotStatus=document.querySelector<HTMLElement>("#desk-snapshot-status");
