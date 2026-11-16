@@ -1,7 +1,7 @@
 {
-  "title": "Bitwise Sees Solana at $1,100 by 2031 in Bull Case, With Tokenized Stocks Key",
-  "description": "Bitwise Sees Solana at $1,100 by 2031 in Bull Case, With Tokenized Stocks Key",
-  "why_it_matters": "",
+  "title": "Bitwise Models Solana's 2031 Valuation Around Tokenized Stock Trading",
+  "description": "A November 16 Bitwise research paper models SOL at $1,100 in a bullish 2031 scenario versus $385 in its base case, assuming rapid growth in tokenized-equity trading and network capacity.",
+  "why_it_matters": "The model makes tokenized equity trading a measurable driver of blockchain economics, while exposing how strongly projected network fees depend on adoption, competing chains and transaction throughput. These are scenarios, not investment targets or confirmed market outcomes.",
   "pubDate": "2026-11-16",
   "category": "news",
   "tags": [
@@ -10,14 +10,19 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "Bitwise Sees Solana at $1,100 by 2031 in Bull Case, With Tokenized Stocks Key",
-    ""
+    "Bitwise's 2031 scenarios span $80 bearish, $385 base and $1,100 bullish per SOL.",
+    "The bullish model assumes 5% of global stock trading becomes tokenized and Solana handles 65% of that activity.",
+    "The model would require roughly 3.6 billion Solana transactions daily, about 23 times reported current throughput."
   ],
-  "body": "Bitwise Sees Solana at $1,100 by 2031 in Bull Case, With Tokenized Stocks Key",
+  "body": "Bitwise published a Solana valuation study on November 16, outlining scenarios rather than a prediction of guaranteed returns. Its bullish 2031 model values SOL at $1,100, compared with $385 in the base case and $80 in the bearish case, according to reporting by The Block. The optimistic outcome assumes 5% of global equity trading is tokenized and Solana captures 65% of that volume, equivalent to about $30.7 trillion in annual activity. The same scenario requires approximately 3.6 billion network transactions per day, far above the level described in the research. Separately, TokenPost reports that Bitwise presented the white paper at the Solana Breakpoint conference on November 16 and cited a 42% Solana share of tokenized-equity trading volume over the first nine months of 2026. These figures describe a narrow emerging market, not all global stock trading. Adoption, rival networks, processing capacity and actual fee capture remain major uncertainties. Bitwise also issues a Solana staking ETF, a commercial interest readers should consider when assessing its research.",
   "sources": [
     {
-      "name": "bloomingbit",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA4TTY2X2ZHbElKRFVEdnhzRkl5eFB6dEdMY3JxYmZTQktqdC0yT1R6U0RtWkktaldXT1Y5Ml9FZ2pZQmk3VC1EcDRhR05yRlYyV1VMMg?oc=5"
+      "name": "The Block",
+      "url": "https://www.theblock.co/news/markets/2026-11-16-bitwise-solana-price-prediction-1100-2031-441407"
+    },
+    {
+      "name": "TokenPost",
+      "url": "https://www.tokenpost.com/news/investing/58707"
     }
   ],
   "newsWatch": {
@@ -29,5 +34,55 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-16T23:19:33Z",
+    "independentReporting": true,
+    "sources": [
+      {
+        "url": "https://www.theblock.co/news/markets/2026-11-16-bitwise-solana-price-prediction-1100-2031-441407",
+        "publishedAt": "2026-11-16",
+        "checkedAt": "2026-11-16T23:19:33Z",
+        "kind": "news",
+        "access": "full-text"
+      },
+      {
+        "url": "https://www.tokenpost.com/news/investing/58707",
+        "publishedAt": "2026-11-16",
+        "checkedAt": "2026-11-16T23:19:33Z",
+        "kind": "news",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Bitwise modeled a 2031 bullish SOL valuation of 1100 dollars, with a base case of 385 dollars and a bear case of 80 dollars.",
+        "sourceUrl": "https://www.theblock.co/news/markets/2026-11-16-bitwise-solana-price-prediction-1100-2031-441407",
+        "anchor": "$385 in the base case"
+      },
+      {
+        "claim": "The bullish case assumes Solana captures 65 percent of trading volume for tokenized equities.",
+        "sourceUrl": "https://www.theblock.co/news/markets/2026-11-16-bitwise-solana-price-prediction-1100-2031-441407",
+        "anchor": "capturing 65% of tokenized stock trading volume"
+      },
+      {
+        "claim": "The bullish case would require Solana to clear roughly 3.6 billion transactions daily.",
+        "sourceUrl": "https://www.theblock.co/news/markets/2026-11-16-bitwise-solana-price-prediction-1100-2031-441407",
+        "anchor": "3.6 billion transactions daily"
+      },
+      {
+        "claim": "Bitwise presented the white paper at the Solana Breakpoint conference on November 16.",
+        "sourceUrl": "https://www.tokenpost.com/news/investing/58707",
+        "anchor": "at the Solana Breakpoint conference"
+      },
+      {
+        "claim": "Bitwise attributed 42 percent of tokenized equity trading volume in the first nine months of 2026 to Solana.",
+        "sourceUrl": "https://www.tokenpost.com/news/investing/58707",
+        "anchor": "42% during the first nine months"
+      }
+    ]
   }
 }
