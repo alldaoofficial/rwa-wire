@@ -1,7 +1,7 @@
 {
-  "title": "Coinbase and Broadridge Launch Onchain Rights Standard for Tokenized Stocks",
-  "description": "Coinbase and Broadridge Launch Onchain Rights Standard for Tokenized Stocks",
-  "why_it_matters": "",
+  "title": "Coinbase and Broadridge Propose Wallet-Based Shareholder Communications Standard",
+  "description": "Coinbase and Broadridge published a proposed Ethereum standard for delivering shareholder materials to tokenized-share wallets, while Broadridge launched an oracle to document distribution.",
+  "why_it_matters": "Tokenized equities need more than a trading and settlement mechanism: issuers must reach beneficial owners with notices and investors need usable governance channels. A shared wallet communications format could reduce fragmented integrations, although legal entitlements and adoption still depend on each security structure.",
   "pubDate": "2026-11-16",
   "category": "news",
   "tags": [
@@ -10,14 +10,15 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "Coinbase and Broadridge Launch Onchain Rights Standard for Tokenized Stocks",
-    ""
+    "The proposed wallet communications standard was submitted for Ethereum Improvement Proposal review, not finalized as a mandatory protocol.",
+    "Broadridge launched a supporting oracle for aggregate evidence of shareholder-message distribution.",
+    "Implementation and investor entitlements remain dependent on the security structure, intermediaries and applicable law."
   ],
-  "body": "Coinbase and Broadridge Launch Onchain Rights Standard for Tokenized Stocks",
+  "body": "Coinbase and Broadridge announced on November 16 that they had published a proposed open technical standard for sending shareholder communications to wallets holding tokenized shares. The proposal was also submitted for review as an Ethereum Improvement Proposal, meaning it should not be described as a finalized Ethereum-wide requirement.\n\nThe companies say the framework is intended for issuers, custodians and wallet providers that need a common way to deliver investor materials across different tokenization arrangements. Broadridge separately launched a data oracle intended to provide participating firms with aggregate evidence that communications have been distributed. That evidence function is distinct from establishing the legal rights attached to any particular token.\n\nBroadridge says its existing onchain governance offering already connects ProxyVote with digital wallets, enabling access to materials, holding verification and voting. The partners plan to explore additional corporate actions beyond their current communications and voting work. They also caution that practical implementation depends on share structures, intermediaries and applicable legal requirements. The announcement therefore marks a proposed interoperability framework and an oracle launch, not universal adoption by tokenized-stock issuers.",
   "sources": [
     {
-      "name": "www.tokenpost.com",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9iVTk3M2dUbGJ0UWppeGZ0OUEwWGFRM3hqS1Y4RXRrdGRZTURPQ0Rxa0M5bDUwbjREazgtWlYwNTlSUERsQkpWbFBrd2lnZEVqUzF1T0c5N0c?oc=5"
+      "name": "Broadridge Financial Solutions (PR Newswire release)",
+      "url": "https://www.prnewswire.com/news-releases/coinbase-and-broadridge-publish-proposed-standard-for-onchain-shareholder-communications-broadridge-launches-data-oracle-302939893.html"
     }
   ],
   "newsWatch": {
@@ -29,5 +30,47 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-16T13:35:24Z",
+    "sources": [
+      {
+        "url": "https://www.prnewswire.com/news-releases/coinbase-and-broadridge-publish-proposed-standard-for-onchain-shareholder-communications-broadridge-launches-data-oracle-302939893.html",
+        "publishedAt": "2026-11-16",
+        "checkedAt": "2026-11-16T13:35:24Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Coinbase and Broadridge jointly published a proposed technical standard for sending shareholder communications to tokenized-share wallets.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/coinbase-and-broadridge-publish-proposed-standard-for-onchain-shareholder-communications-broadridge-launches-data-oracle-302939893.html",
+        "anchor": "jointly developed open technical standard"
+      },
+      {
+        "claim": "The companies submitted their proposed communications standard as an Ethereum Improvement Proposal for review.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/coinbase-and-broadridge-publish-proposed-standard-for-onchain-shareholder-communications-broadridge-launches-data-oracle-302939893.html",
+        "anchor": "Ethereum Improvement Proposal (EIP) for review"
+      },
+      {
+        "claim": "Broadridge launched an oracle to provide aggregate evidence of shareholder communications distribution across participating firms.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/coinbase-and-broadridge-publish-proposed-standard-for-onchain-shareholder-communications-broadridge-launches-data-oracle-302939893.html",
+        "anchor": "launched a supporting data oracle"
+      },
+      {
+        "claim": "The proposed framework is intended for issuers, custodians and wallet providers rather than one specific tokenization model.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/coinbase-and-broadridge-publish-proposed-standard-for-onchain-shareholder-communications-broadridge-launches-data-oracle-302939893.html",
+        "anchor": "issuers, custodians and wallet providers"
+      },
+      {
+        "claim": "The implementation of the approach depends on the share structure, intermediaries and relevant legal requirements.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/coinbase-and-broadridge-publish-proposed-standard-for-onchain-shareholder-communications-broadridge-launches-data-oracle-302939893.html",
+        "anchor": "share structure, intermediaries and legal requirements"
+      }
+    ]
   }
 }
