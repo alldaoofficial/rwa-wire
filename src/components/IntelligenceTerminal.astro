@@ -48,7 +48,7 @@ const price=(v:number)=>"$"+v.toFixed(v<.1?5:v<1?4:2);
 <section class="wire-container py-7 sm:py-10" aria-labelledby="desk-title" id="intelligence-desk" data-market-api-url={sitePath("/api/markets")}>
   <div class="mb-6 flex flex-wrap items-center justify-between gap-3">
     <div><p class="wire-kicker">The RWA Wire / Intelligence terminal</p><h1 id="desk-title" class="mt-2 font-sans text-3xl font-bold tracking-tight text-ink sm:text-4xl">RWA market intelligence<span class="text-wire">.</span></h1><p class="mt-2 text-sm text-ink-muted">Explore token prices, sector breadth, your watchlist and observed historical data.</p></div>
-    <div class="flex items-center gap-2 rounded-xl border border-line bg-surface px-4 py-3 text-xs text-ink-muted"><span class="h-2 w-2 rounded-full bg-wire"></span><spanid="desk-snapshot-status">Latest cached snapshot · {stamp}</span></div>
+    <div class="flex items-center gap-2 rounded-xl border border-line bg-surface px-4 py-3 text-xs text-ink-muted"><span class="h-2 w-2 rounded-full bg-wire"></span><span id="desk-snapshot-status">Latest cached snapshot · {stamp}</span></div>
   </div>
   <div class="mb-5 grid grid-cols-2 gap-3 lg:grid-cols-4">
     <div class="terminal-card wire-panel-hover" data-reveal><p class="terminal-label">Tracked basket · 24h average</p><p class:list={["mt-3 font-mono text-3xl font-semibold",avg>=0?"text-wire":"text-rose-400"]}>{avg>0?"+":""}{avg.toFixed(2)}%</p><p class="mt-2 text-xs text-ink-muted">Equal-weighted token change</p></div>
