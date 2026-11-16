@@ -10,8 +10,8 @@ from pathlib import Path
 ASSETS = {
     "chainlink": ("LINK", "Chainlink"),
     "ondo-finance": ("ONDO", "Ondo"),
-    "syrup": ("SYRUP", "Maple Finance"),
-    "zebec-network": ("ZBCN", "Zebec Network"),
+    "maple-finance": ("SYRUP", "Maple Finance"),
+    "zebec-protocol": ("ZBCN", "Zebec Network"),
     "plume": ("PLUME", "Plume"),
     "centrifuge": ("CFG", "Centrifuge"),
     "polymesh": ("POLYX", "Polymesh"),
@@ -36,6 +36,7 @@ ASSETS = {
     "ix-swap": ("IXS", "IX Swap"),
 
 }
+COINGECKO_IDS = {"maple-finance": "syrup", "zebec-protocol": "zebec-network"}
 OUT = Path("public/data/markets.json")
 MAX_QUOTE_AGE = timedelta(hours=2)
 MIN_COVERAGE = 4
@@ -62,7 +63,7 @@ def valid_quote(value, now):
     return timedelta(0) <= age <= MAX_QUOTE_AGE
 
 def coingecko():
-    ids = list(ASSETS)
+    ids = [COINGECKO_IDS.get(key, key) for key in ASSETS]
     url = "https://api.coingecko.com/api/v3/simple/price?ids=" + ",".join(ids) + "&vs_currencies=usd&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true&include_last_updated_at=true"
     headers = dict(HEADERS)
     key = os.environ.get("COINGECKO_API_KEY", "").strip()
@@ -70,7 +71,7 @@ def coingecko():
         headers["x-cg-demo-api-key"] = key
     data = get_json(url, headers)
     now = datetime.now(timezone.utc)
-    return {k:v for k,v in data.items() if k in ASSETS and valid_quote(v, now)}
+    return {key: data[provider_id] for key in ASSETS if (provider_id := COINGECKO_IDS.get(key, key)) in data and valid_quote(data[provider_id], now)}
 
 def coinpaprika():
     tickers = get_json("https://api.coinpaprika.com/v1/tickers?quotes=USD")
