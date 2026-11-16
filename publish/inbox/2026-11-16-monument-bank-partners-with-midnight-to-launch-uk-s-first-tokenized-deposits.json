@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-16T19:16:30Z",
+    "reason": "The original Midnight Foundation announcement and Monument Bank article are dated March 25 and March 27, 2026, not November 16. CoinDesk reported a delayed rollout on September 10, with November only an expected target. No accessible primary confirmation of a new November 16 launch was established; the Google News FF News discovery link is not full original-source evidence. Do not present the March partnership as a fresh launch. Retry no sooner than 2026-11-17T01:16:30Z."
   }
 }
