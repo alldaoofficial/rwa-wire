@@ -20,7 +20,7 @@ const marketCacheUrl = `${import.meta.env.BASE_URL}data/markets.json`;
   const ids=["ondo-finance","chainlink","centrifuge","polymesh"];
   const ticker=document.querySelector<HTMLElement>("[data-market-cache-url]");
   const cacheUrl=ticker?.dataset.marketCacheUrl||"/data/markets.json";
-  const liveUrl="https://api.coingecko.com/api/v3/simple/price?ids="+ids.join(",")+"&vs_currencies=usd&include_24hr_change=true";
+  const liveUrl="https://api.coingecko.com/api/v3/simple/price?ids="+ids.join(",")+"&vs_currencies=usd&include_24hr_change=true&include_last_updated_at=true";
   const formatPrice=(n:number)=>n>=100?"$"+n.toLocaleString(undefined,{maximumFractionDigits:2}):n>=1?"$"+n.toFixed(2):"$"+n.toFixed(4);
   function render(data:any,label:string){
     let rendered=0;
