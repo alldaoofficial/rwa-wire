@@ -9,7 +9,7 @@ const marketCacheUrl = `${import.meta.env.BASE_URL}data/markets.json`;
 ---
 <section class="border-b border-line bg-surface/60" aria-label="RWA ecosystem token ticker" data-market-cache-url={marketCacheUrl}>
   <div class="wire-container flex min-h-10 items-center gap-4 overflow-x-auto py-1.5 [scrollbar-width:none]">
-    <div class="flex shrink-0 items-center gap-2 border-r border-line pr-4"><span class="h-1.5 w-1.5 rounded-full bg-wire"></span><span class="text-[10px] font-semibold uppercase tracking-[.15em] text-wire">RWA Ecosystem // Live</span></div>
+    <div class="flex shrink-0 items-center gap-2 border-r border-line pr-4"><span class="h-1.5 w-1.5 rounded-full bg-wire"></span><span class="text-[10px] font-semibold uppercase tracking-[.15em] text-wire">RWA Ecosystem // Market monitor</span></div>
     <div id="rwa-market-ticker" class="flex items-center gap-5">
       {assets.map((asset) => <div class="flex shrink-0 items-baseline gap-2" data-market={asset.id}><span class="text-[11px] font-semibold tracking-[.08em] text-ink">{asset.symbol}</span><span class="market-price font-mono text-[11px] text-ink-muted">—</span><span class="market-change font-mono text-[10px] text-ink-muted">—</span></div>)}
     </div>
@@ -31,8 +31,8 @@ const marketCacheUrl = `${import.meta.env.BASE_URL}data/markets.json`;
   }
   async function refreshMarkets(){
     const status=document.getElementById("market-status");let cached=false;
-    try{const res=await fetch(cacheUrl,{cache:"no-store"});if(res.ok){const payload=await res.json();const age=payload.fetchedAt?Math.max(0,Date.now()-new Date(payload.fetchedAt).getTime()):0;const mins=Math.round(age/60000);cached=render(payload.assets||{},mins>20?`Cached ${mins}m`:`Updated ${mins}m ago`);}}catch{}
-    try{const res=await fetch(liveUrl,{headers:{accept:"application/json"}});if(!res.ok)throw new Error();const data=await res.json();render(data,"Live · "+new Date().toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"}));}catch{if(status&&!cached)status.textContent="Data temporarily unavailable";}
+    try{const res=await fetch(cacheUrl,{cache:"no-store"});if(res.ok){const payload=await res.json();const timestamp=Date.parse(payload.fetchedAt??"");const valid=Number.isFinite(timestamp)&&timestamp<=Date.now();const mins=valid?Math.round((Date.now()-timestamp)/60000):null;cached=render(payload.assets||{},mins===null?"Cached · time unknown":mins>120?`Delayed · ${Math.round(mins/60)}h old`:`Cached · ${mins}m old`);}}catch{}
+    try{const res=await fetch(liveUrl,{headers:{accept:"application/json"}});if(!res.ok)throw new Error();const data=await res.json();render(data,"Direct quote · "+new Date().toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"}));}catch{if(status&&!cached)status.textContent="Data temporarily unavailable";}
   }
   refreshMarkets();window.setInterval(refreshMarkets,60000);
 </script>
