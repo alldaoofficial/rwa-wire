@@ -10,11 +10,11 @@ const briefingWindow=recent.length?"Past 24 hours":"Past 7 days";
   <div class="terminal-shell overflow-hidden rounded-2xl border border-line bg-[#0d131a]">
     <div class="flex flex-wrap items-center justify-between gap-3 border-b border-line bg-[#111b24] px-5 py-4">
       <div><p class="data-label text-wire">RWA Wire / Market workstation</p><h2 id="terminal-title" class="mt-1 font-sans text-xl font-semibold text-ink sm:text-2xl">Your RWA Morning Brief</h2><p class="mt-1 text-xs text-ink-muted">A daily starting point for tokenized markets · verified quotes, not execution prices</p></div>
-      <div class="flex items-center gap-3"><span id="terminal-status" role="status" class="text-xs text-ink-muted">Loading provider quotes…</span><a href={sitePath("/intelligence/")} class="wire-action !min-h-[36px] !px-3 !py-2 text-xs">Open screener ↗</a></div>
+      <div class="flex min-w-0 flex-wrap items-center gap-3"><span id="terminal-status" role="status" class="text-xs text-ink-muted">Loading provider quotes…</span><a href={sitePath("/intelligence/")} class="wire-action !min-h-[36px] !px-3 !py-2 text-xs">Open screener ↗</a></div>
     </div>
     <div class="grid lg:grid-cols-[minmax(0,1.8fr)_minmax(260px,1fr)]">
       <div class="min-w-0 border-b border-line p-4 sm:p-5 lg:border-b-0 lg:border-r">
-        <div class="flex flex-wrap items-center justify-between gap-3"><div><p class="data-label">Market heatmap / tracked tokens</p><p class="mt-1 text-xs text-ink-muted">Color indicates verified 24h price change; tile size is uniform, not market capitalization</p></div><div class="flex gap-2"><button id="terminal-sort-change" class="rounded-md border border-wire/60 px-3 py-1.5 text-xs text-wire" type="button">24h change</button><button id="terminal-sort-volume" class="rounded-md border border-line px-3 py-1.5 text-xs text-ink-muted" type="button">24h volume</button></div></div>
+        <div class="flex flex-wrap items-center justify-between gap-3"><div><p class="data-label">Market heatmap / tracked tokens</p><p class="mt-1 text-xs text-ink-muted">Color indicates verified 24h price change; tile size is uniform, not market capitalization</p></div><div class="flex flex-wrap gap-2"><button id="terminal-sort-change" class="rounded-md border border-wire/60 px-3 py-1.5 text-xs text-wire" type="button">24h change</button><button id="terminal-sort-volume" class="rounded-md border border-line px-3 py-1.5 text-xs text-ink-muted" type="button">24h volume</button></div></div>
         <div id="terminal-heatmap" class="mt-4 grid min-h-[280px] grid-cols-2 gap-2 sm:grid-cols-3 xl:grid-cols-4" aria-live="polite"><p class="col-span-full py-12 text-center text-sm text-ink-muted">Loading verified market data…</p></div>
         <p id="terminal-coverage" class="mt-3 text-xs text-ink-muted">Missing quotes are never estimated.</p>
       </div>
@@ -33,7 +33,7 @@ const briefingWindow=recent.length?"Past 24 hours":"Past 7 days";
       <div class="min-w-0 p-4 sm:p-5"><p class="data-label">Your watchlist / Since last visit</p><h3 class="mt-1 font-sans text-lg font-semibold text-ink">Projects you follow</h3><p id="terminal-watchlist-note" class="mt-2 text-xs leading-5 text-ink-muted">Saved projects stay on this device. Changes are measured against the previous visit, not a historical market close.</p><div id="terminal-watchlist-updates" class="mt-3 grid gap-2" aria-live="polite"><p class="text-xs text-ink-muted">Loading saved projects…</p></div><a class="mt-4 inline-block text-xs font-semibold text-wire" href={sitePath("/intelligence/")}>Manage your watchlist ↗</a></div>
     </div>
     <div class="border-t border-line p-4 sm:p-5">
-      <div class="flex flex-wrap items-center justify-between gap-3"><div><p class="data-label">Observed token performance</p><h3 class="mt-1 font-sans text-lg font-semibold text-ink">Price history / selected asset</h3><p class="mt-1 text-xs text-ink-muted">Actual preview observations only · indexed to 100 at first point</p></div><div class="flex gap-2"><label class="sr-only" for="terminal-history-asset">Token</label><select id="terminal-history-asset" class="max-w-[160px] rounded-md border border-line bg-bg px-3 py-2 text-xs text-ink"><option value="">Loading…</option></select><label class="sr-only" for="terminal-history-period">History period</label><select id="terminal-history-period" class="rounded-md border border-line bg-bg px-3 py-2 text-xs text-ink"><option value="1">24H</option><option value="7">7D</option><option value="30" selected>30D</option></select></div></div>
+      <div class="flex flex-wrap items-center justify-between gap-3"><div><p class="data-label">Observed token performance</p><h3 class="mt-1 font-sans text-lg font-semibold text-ink">Price history / selected asset</h3><p class="mt-1 text-xs text-ink-muted">Actual preview observations only · indexed to 100 at first point</p></div><div class="flex w-full flex-wrap gap-2 sm:w-auto"><label class="sr-only" for="terminal-history-asset">Token</label><select id="terminal-history-asset" class="min-w-0 max-w-[170px] flex-1 rounded-md border border-line bg-bg px-3 py-2 text-xs text-ink"><option value="">Loading…</option></select><label class="sr-only" for="terminal-history-period">History period</label><select id="terminal-history-period" class="min-w-0 rounded-md border border-line bg-bg px-3 py-2 text-xs text-ink"><option value="1">24H</option><option value="7">7D</option><option value="30" selected>30D</option></select></div></div>
       <div class="mt-4 rounded-lg border border-line bg-[#0a1118] p-3"><p id="terminal-history-status" role="status" class="py-12 text-center text-xs text-ink-muted">Loading verified observations…</p><svg id="terminal-history-svg" class="hidden h-[220px] w-full" viewBox="0 0 800 220" preserveAspectRatio="none" role="img" aria-label="Observed indexed token price chart"><line x1="0" y1="185" x2="800" y2="185" stroke="#33424c" stroke-dasharray="4 6"/><line x1="0" y1="100" x2="800" y2="100" stroke="#33424c" stroke-dasharray="4 6"/><path id="terminal-history-path" fill="none" stroke="#55dba1" stroke-width="2.5" vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
       <div class="mt-3 flex flex-wrap justify-between gap-2 text-xs text-ink-muted"><span id="terminal-history-range">Historical data starts when collection begins</span><span id="terminal-history-change"></span></div>
     </div>
@@ -71,13 +71,13 @@ const briefingWindow=recent.length?"Past 24 hours":"Past 7 days";
       const change=typeof q.usd_24h_change==="number"&&Number.isFinite(q.usd_24h_change)?q.usd_24h_change:null;
       const tile=document.createElement("div");
       const positive=change!==null&&change>=0;
-      tile.className="min-w-0 rounded-lg border p-3 transition-colors "+(change===null?"border-line bg-[#1a222c]":positive?"border-emerald-700/40 bg-emerald-950/60":"border-rose-800/40 bg-rose-950/50");
+      tile.className="min-w-0 cursor-pointer rounded-lg border p-3 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-300 "+(change===null?"border-line bg-[#1a222c]":positive?"border-emerald-700/40 bg-emerald-950/60":"border-rose-800/40 bg-rose-950/50");
       const name=document.createElement("p");name.className="truncate text-xs font-bold tracking-wide text-ink";name.textContent=names[id]||id.replaceAll("-"," ").toUpperCase();
       const price=document.createElement("p");price.className="mt-2 truncate font-mono text-[11px] text-ink-muted";price.textContent="$"+q.usd.toLocaleString("en-US",{maximumSignificantDigits:6});
       const move=document.createElement("p");move.className="mt-2 font-mono text-lg font-semibold "+(change===null?"text-ink-muted":positive?"text-emerald-300":"text-rose-300");move.textContent=change===null?"N/A":(positive?"+":"")+change.toFixed(2)+"%";
       tile.append(name,price,move);
       tile.setAttribute("role","button");tile.tabIndex=0;tile.setAttribute("aria-label","View "+(names[id]||id)+" observed history");
-      const select=()=>{if(historyAsset){historyAsset.value=id;drawHistory();document.querySelector("#terminal-history-svg")?.scrollIntoView({behavior:"smooth",block:"nearest"});}};
+      const select=()=>{if(historyAsset){const available=Array.from(historyAsset.options).some(option=>option.value===id);if(!available){if(historyStatus){historyStatus.classList.remove("hidden");historyStatus.textContent="No recorded history is available for this token yet.";}historySvg?.classList.add("hidden");}else{historyAsset.value=id;drawHistory();}document.querySelector("#terminal-history-asset")?.scrollIntoView({behavior:"smooth",block:"nearest"});}};
       tile.addEventListener("click",select);tile.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select();}});
       heatmap.append(tile);
     }
@@ -174,9 +174,9 @@ const briefingWindow=recent.length?"Past 24 hours":"Past 7 days";
   function storeCurrentVisit(){
     if(!entries.length)return;
     try{
-      if(!sessionStorage.getItem("rwa-wire-brief-session-start")){
-        sessionStorage.setItem("rwa-wire-brief-session-start","1");
-      }
+      // Save once per browsing session so 60-second refreshes do not reset the baseline.
+      if(sessionStorage.getItem("rwa-wire-brief-session-start"))return;
+      sessionStorage.setItem("rwa-wire-brief-session-start","1");
       const prices=Object.fromEntries(entries.map(([id,q])=>[id,q.usd]));
       localStorage.setItem(visitSnapshotKey,JSON.stringify({at:Date.now(),prices}));
     }catch{}
