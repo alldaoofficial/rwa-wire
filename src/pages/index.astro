@@ -7,7 +7,7 @@ import ArticleCard from "@/components/ArticleCard.astro";
 import ProjectCard from "@/components/ProjectCard.astro";
 import NewsletterSignup from "@/components/NewsletterSignup.astro";
 import TelegramCTA from "@/components/TelegramCTA.astro";
-import IntelligenceTerminal from "@/components/IntelligenceTerminal.astro";
+import markets from "../../public/data/markets.json";
 import DailyIntelligence from "@/components/DailyIntelligence.astro";
 import HomeWatchlist from "@/components/HomeWatchlist.astro";
 
@@ -19,7 +19,7 @@ const learnArticles = allArticles.filter((a) => a.data.category === "learn").sli
 const projectArticles = allArticles.filter((a) => a.data.category === "projects").slice(0, 3);
 ---
 <BaseLayout title="RWA News & Asset Tokenization Research" description="Follow real-world asset (RWA) tokenization news, institutional developments and source-led research. Understand tokenized stocks, funds, Treasuries and deposits.">
-  <section class="border-b border-line bg-[radial-gradient(ellipse_at_80%_0%,rgba(85,219,161,.09),transparent_52%)]"><IntelligenceTerminal /></section>
+  <section class="border-b border-line bg-[radial-gradient(ellipse_at_80%_0%,rgba(85,219,161,.09),transparent_52%)]"><div class="wire-container py-12 sm:py-16" data-reveal><p class="wire-kicker">The RWA Wire / Your daily briefing</p><h1 class="mt-4 max-w-4xl font-sans text-4xl font-bold tracking-tight text-ink sm:text-5xl">Your tokenization dashboard<span class="text-wire">.</span></h1><p class="mt-4 max-w-2xl text-base leading-7 text-ink-muted">Your watchlist, today's developments and verified reporting — without the clutter. Dive into full market research when you need it.</p><div class="mt-6 flex flex-wrap gap-3"><a class="wire-action wire-action-primary" href={sitePath("/intelligence/")}>Open RWA Intelligence ↗</a><a class="wire-action" href={sitePath("/pulse/")}>Daily Pulse ↗</a></div><p class="mt-5 text-xs text-ink-muted">Market data snapshot: {new Date(markets.fetchedAt).toLocaleString("en-GB",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit",timeZone:"UTC"})} UTC · {markets.source}</p></div></section>
   <HomeWatchlist />
   <DailyIntelligence />
   {featured && <section id="latest" class="wire-container py-12 sm:py-16"><div class="mb-8 flex items-center justify-between"><div><p class="eyebrow text-wire">Live desk //</p><h2 class="mt-1 font-serif text-2xl font-medium text-ink sm:text-3xl">Latest intelligence</h2></div><a href={sitePath("/news/")} class="text-xs font-medium uppercase tracking-[0.08em] text-ink-muted hover:text-wire">View all</a></div><div data-reveal class="grid grid-cols-1 gap-10"><FeaturedArticle href={sitePath(`/${featured.data.category}/${featured.slug}/`)} title={featured.data.title} description={featured.data.description} category={featured.data.category} pubDate={featured.data.pubDate} readingTime={featured.data.readingTime} heroImage={featured.data.heroImage}/><div><div class="mb-1 flex items-center justify-between border-b border-line pb-3"><p class="data-label">Intelligence feed</p><p class="data-label">Latest coverage</p></div><div class="grid lg:grid-cols-2 lg:gap-x-10">{latest.map((entry) => <ArticleCard compact href={sitePath(`/${entry.data.category}/${entry.slug}/`)} title={entry.data.title} description={entry.data.description} category={entry.data.category} pubDate={entry.data.pubDate} readingTime={entry.data.readingTime}/>)}</div></div></div></section>}
