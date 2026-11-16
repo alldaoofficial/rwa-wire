@@ -29,7 +29,7 @@ export const NAV_LINKS = [
   { label: "News", href: "/news/" },
   { label: "Pulse", href: "/pulse/" },
   { label: "Radar", href: "/radar/" },
-  { label: "Markets", href: "/markets/" },
+  { label: "Intelligence", href: "/intelligence/" },
   { label: "Map", href: "/map/" },
   { label: "Projects", href: "/projects/" },
   { label: "Institutions", href: "/institutions/" },
