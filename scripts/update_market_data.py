@@ -122,16 +122,6 @@ if len(available) < len(ASSETS):
     except Exception as exc:
         print(f"CoinPaprika fallback unavailable: {exc}; keeping verified CoinGecko quotes")
 
-if len(available) < MIN_COVERAGE:
-    try:
-        fallback = coinpaprika()
-        if len(fallback) >= MIN_COVERAGE:
-            available = fallback
-            source = "CoinPaprika"
-        else:
-            print(f"CoinPaprika returned only {len(fallback)} unambiguous assets; preserving existing cache")
-    except Exception as exc:
-        print(f"CoinPaprika unavailable: {exc}; preserving existing cache if provider coverage is insufficient")
 
 if len(available) < MIN_COVERAGE:
     raise SystemExit(f"Only {len(available)} fresh tracked assets returned; refusing to replace cache")
