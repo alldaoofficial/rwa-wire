@@ -1,0 +1,46 @@
+name: Refresh preview market quotes
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: preview-market-data-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: github.ref == 'refs/heads/design/institutional-dark-v2-20261115'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: design/institutional-dark-v2-20261115
+          persist-credentials: true
+      - name: Retrieve and validate market quotes
+        env:
+          COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
+        run: python3 scripts/update_market_data.py
+      - name: Verify quote freshness and minimum coverage
+        run: |
+          python3 - <<'PY'
+          import json,time
+          d=json.load(open("public/data/markets.json"))
+          a=d.get("assets",{})
+          fresh=[k for k,v in a.items() if isinstance(v.get("last_updated_at"),(int,float)) and 0<=time.time()-v["last_updated_at"]<=7200]
+          if len(fresh)<8: raise SystemExit(f"Refusing weak coverage: {len(fresh)} fresh quotes")
+          print(f"Validated {len(fresh)} fresh provider quotes")
+          PY
+      - name: Commit only refreshed preview snapshot
+        run: |
+          if git diff --quiet -- public/data/markets.json; then
+            echo "No market snapshot changes"
+            exit 0
+          fi
+          git config user.name "rwa-wire-preview-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/markets.json
+          git commit -m "data(preview): refresh validated RWA market snapshot"
+          git push origin HEAD:design/institutional-dark-v2-20261115
