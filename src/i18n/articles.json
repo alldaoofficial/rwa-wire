@@ -5558,5 +5558,137 @@
       ]
     },
     "sourceSha256": "69494f31244b30c97cd354f045f8369c5285964778401b71e1c2cdd3afb17059"
+  },
+  "coinbase-and-broadridge-propose-wallet-based-shareholder-communications-standard": {
+    "path": "/news/coinbase-and-broadridge-propose-wallet-based-shareholder-communications-standard/",
+    "date": "2026-11-16",
+    "kind": "news",
+    "sources": [
+      [
+        "Broadridge Financial Solutions (PR Newswire release)",
+        "https://www.prnewswire.com/news-releases/coinbase-and-broadridge-publish-proposed-standard-for-onchain-shareholder-communications-broadridge-launches-data-oracle-302939893.html"
+      ]
+    ],
+    "de": {
+      "title": "Coinbase und Broadridge schlagen Wallet-Standard für Aktionärskommunikation vor",
+      "description": "Coinbase und Broadridge veröffentlichten einen vorgeschlagenen Ethereum-Standard zur Übermittlung von Aktionärsunterlagen an Wallets mit tokenisierten Aktien. Zugleich startete Broadridge ein Oracle, das die Verteilung dokumentieren soll.",
+      "sections": [
+        [
+          "Technischer Vorschlag wird als Ethereum Improvement Proposal geprüft",
+          "Coinbase und Broadridge gaben am 16. November 2026 bekannt, einen vorgeschlagenen offenen technischen Standard für die Übermittlung von Aktionärskommunikation an Wallets mit tokenisierten Aktien veröffentlicht zu haben. Der Vorschlag wurde außerdem zur Prüfung als Ethereum Improvement Proposal eingereicht. Er ist daher keine endgültige oder verpflichtende Vorgabe für das gesamte Ethereum-Ökosystem."
+        ],
+        [
+          "Oracle soll die Verteilung von Mitteilungen belegen",
+          "Der Rahmen richtet sich nach Angaben der Unternehmen an Emittenten, Verwahrer und Wallet-Anbieter, die Anlegerunterlagen über unterschiedliche Tokenisierungsmodelle hinweg einheitlich zustellen müssen. Broadridge startete separat ein Daten-Oracle, das teilnehmenden Unternehmen aggregierte Nachweise über die Verteilung von Mitteilungen liefern soll. Diese Nachweisfunktion begründet nicht die rechtlichen Ansprüche, die mit einem bestimmten Token verbunden sind."
+        ],
+        [
+          "Umsetzung und Anlegerrechte bleiben von der jeweiligen Struktur abhängig",
+          "Broadridge zufolge verbindet das bestehende Onchain-Governance-Angebot ProxyVote bereits mit digitalen Wallets und ermöglicht so den Zugriff auf Unterlagen, die Prüfung von Beständen und Abstimmungen. Die Partner wollen weitere Kapitalmaßnahmen über ihre bisherige Kommunikations- und Abstimmungsarbeit hinaus untersuchen. Die praktische Umsetzung hängt jedoch von Aktienstrukturen, Intermediären und den geltenden rechtlichen Anforderungen ab. Die Ankündigung steht damit für einen vorgeschlagenen Interoperabilitätsrahmen und den Start eines Oracle, nicht für eine allgemeine Übernahme durch Emittenten tokenisierter Aktien."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Coinbase y Broadridge proponen un estándar de comunicación con accionistas basado en carteras",
+      "description": "Coinbase y Broadridge publicaron una propuesta de estándar de Ethereum para entregar documentación a los accionistas mediante carteras con acciones tokenizadas, mientras Broadridge lanzó un oráculo para documentar la distribución.",
+      "sections": [
+        [
+          "La propuesta técnica se somete a revisión como Ethereum Improvement Proposal",
+          "Coinbase y Broadridge anunciaron el 16 de noviembre de 2026 la publicación de una propuesta de estándar técnico abierto para enviar comunicaciones a los accionistas mediante carteras que contienen acciones tokenizadas. La propuesta también se presentó para su revisión como Ethereum Improvement Proposal, por lo que no constituye un requisito definitivo ni obligatorio para todo Ethereum."
+        ],
+        [
+          "Un oráculo documentará la distribución de las comunicaciones",
+          "Según las empresas, el marco está dirigido a emisores, custodios y proveedores de carteras que necesitan una forma común de entregar materiales a los inversores en distintos modelos de tokenización. Broadridge lanzó por separado un oráculo de datos destinado a proporcionar a las empresas participantes pruebas agregadas de que las comunicaciones se han distribuido. Esa función probatoria no establece los derechos jurídicos asociados a un token concreto."
+        ],
+        [
+          "La aplicación y los derechos de los inversores dependen de cada estructura",
+          "Broadridge afirma que su oferta actual de gobernanza onchain ya conecta ProxyVote con carteras digitales y permite acceder a materiales, verificar posiciones y votar. Los socios estudiarán otras acciones corporativas más allá de su trabajo actual sobre comunicación y votación. Sin embargo, la aplicación práctica depende de las estructuras accionariales, los intermediarios y los requisitos jurídicos pertinentes. El anuncio representa una propuesta de marco de interoperabilidad y el lanzamiento de un oráculo, no una adopción universal por parte de los emisores de acciones tokenizadas."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Coinbase et Broadridge proposent une norme de communication avec les actionnaires fondée sur les portefeuilles",
+      "description": "Coinbase et Broadridge ont publié un projet de norme Ethereum pour transmettre les documents destinés aux actionnaires aux portefeuilles détenant des actions tokenisées, tandis que Broadridge a lancé un oracle destiné à documenter leur distribution.",
+      "sections": [
+        [
+          "La proposition technique est soumise à l’examen sous forme d’Ethereum Improvement Proposal",
+          "Coinbase et Broadridge ont annoncé le 16 novembre 2026 avoir publié un projet de norme technique ouverte pour envoyer les communications destinées aux actionnaires aux portefeuilles détenant des actions tokenisées. La proposition a également été soumise à l’examen sous forme d’Ethereum Improvement Proposal ; elle ne constitue donc pas une exigence définitive ou obligatoire à l’échelle d’Ethereum."
+        ],
+        [
+          "Un oracle doit documenter la distribution des communications",
+          "Selon les entreprises, le cadre s’adresse aux émetteurs, aux dépositaires et aux fournisseurs de portefeuilles qui ont besoin d’une méthode commune pour transmettre des documents aux investisseurs dans différents dispositifs de tokenisation. Broadridge a lancé séparément un oracle de données destiné à fournir aux entreprises participantes des preuves agrégées de la distribution des communications. Cette fonction de preuve n’établit pas les droits juridiques attachés à un token donné."
+        ],
+        [
+          "La mise en œuvre et les droits des investisseurs dépendent de chaque structure",
+          "Broadridge indique que son offre actuelle de gouvernance onchain relie déjà ProxyVote aux portefeuilles numériques, permettant l’accès aux documents, la vérification des positions et le vote. Les partenaires prévoient d’explorer d’autres opérations sur titres au-delà de leurs travaux actuels sur les communications et le vote. La mise en œuvre pratique dépend toutefois de la structure des actions, des intermédiaires et des exigences juridiques applicables. L’annonce porte donc sur un projet de cadre d’interopérabilité et le lancement d’un oracle, et non sur une adoption universelle par les émetteurs d’actions tokenisées."
+        ]
+      ]
+    },
+    "sourceSha256": "aefd2e4254e18e2754884a2fd1a88f90e934d6176a33b12723e1fa55dfae39c2"
+  },
+  "hkma-and-swift-deepen-tokenized-deposit-interoperability-work-under-project-ensemble": {
+    "path": "/news/hkma-and-swift-deepen-tokenized-deposit-interoperability-work-under-project-ensemble/",
+    "date": "2026-11-16",
+    "kind": "news",
+    "sources": [
+      [
+        "Hong Kong Monetary Authority (official press release)",
+        "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261116-4/"
+      ]
+    ],
+    "de": {
+      "title": "HKMA und Swift vertiefen die Interoperabilitätsarbeit für tokenisierte Einlagen im Project Ensemble",
+      "description": "Hongkongs Währungsbehörde und Swift untersuchen, wie sich das Ledger von Swift mit der Abwicklungsebene von Project Ensemble für grenzüberschreitende Zahlungen mit tokenisierten Einlagen in mehreren Währungen verbinden lässt.",
+      "sections": [
+        [
+          "HKMA und Swift untersuchen eine Verbindung ihrer Abwicklungsinfrastruktur",
+          "Die Hong Kong Monetary Authority erklärte am 16. November 2026, ihre Zusammenarbeit mit Swift zur Untersuchung grenzüberschreitender Zahlungen mit tokenisierten Bankeinlagen zu vertiefen. Die Arbeiten sollen die Interoperabilität zwischen dem Ledger von Swift und der Abwicklungsebene von Hongkongs Project Ensemble untersuchen, wobei Einlagen in mehreren Währungen im Mittelpunkt stehen."
+        ],
+        [
+          "Drei Hongkonger Banken sind an den Untersuchungen beteiligt",
+          "Die HKMA nannte Bank of China (Hong Kong), Standard Chartered Bank (Hong Kong) und HSBC als beteiligte Banken. Nach Angaben der Behörde arbeitet sie seit 2023 mit Swift an der Interoperabilität zwischen digitalen Zentralbankwährungssystemen, darunter auch im Sandbox-Umfeld von Project Ensemble."
+        ],
+        [
+          "Explorative Zusammenarbeit und noch kein Produktivstart",
+          "Die neue Mitteilung beschreibt eine explorative Zusammenarbeit, nicht den Start eines kommerziell verfügbaren grenzüberschreitenden Zahlungsnetzes. Ziel ist es, die lokale tokenisierte Abwicklungsinfrastruktur mit dem internationalen Netzwerk von Swift zu verbinden und damit potenziell den grenzüberschreitenden Geldtransfer regulierter Institute zu verbessern. Technische Integration, Betriebsmodell und Zeitpunkt einer breiteren Einführung wurden nicht angegeben."
+        ]
+      ]
+    },
+    "es": {
+      "title": "La HKMA y Swift profundizan el trabajo de interoperabilidad de depósitos tokenizados en Project Ensemble",
+      "description": "La autoridad monetaria de Hong Kong y Swift estudian cómo conectar el registro de Swift con la capa de liquidación de Project Ensemble para pagos transfronterizos mediante depósitos tokenizados en varias monedas.",
+      "sections": [
+        [
+          "La HKMA y Swift estudian conectar sus infraestructuras de liquidación",
+          "La Autoridad Monetaria de Hong Kong indicó el 16 de noviembre de 2026 que está reforzando su colaboración con Swift para investigar pagos transfronterizos mediante depósitos bancarios tokenizados. El trabajo analizará la interoperabilidad entre el registro de Swift y la capa de liquidación de Project Ensemble de Hong Kong, con especial atención a depósitos denominados en varias monedas."
+        ],
+        [
+          "Tres bancos de Hong Kong participan en la exploración",
+          "La HKMA mencionó a Bank of China (Hong Kong), Standard Chartered Bank (Hong Kong) y HSBC entre los bancos participantes. El regulador señaló que trabaja con Swift desde 2023 en la interoperabilidad entre sistemas de monedas digitales de bancos centrales, incluidas actividades en el entorno de pruebas de Project Ensemble."
+        ],
+        [
+          "Una colaboración exploratoria, no un lanzamiento en producción",
+          "El nuevo anuncio describe una colaboración exploratoria, no el lanzamiento de una red de pagos transfronterizos disponible comercialmente. Su objetivo es conectar la infraestructura local de liquidación tokenizada con la red internacional de Swift y mejorar potencialmente la forma en que las instituciones reguladas transfieren dinero entre jurisdicciones. El comunicado no especificó la integración técnica, el modelo operativo ni el calendario de un despliegue más amplio."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "La HKMA et Swift approfondissent l’interopérabilité des dépôts tokenisés dans le cadre de Project Ensemble",
+      "description": "L’autorité monétaire de Hong Kong et Swift étudient comment relier le registre de Swift à la couche de règlement de Project Ensemble pour des paiements transfrontaliers utilisant des dépôts tokenisés dans plusieurs devises.",
+      "sections": [
+        [
+          "La HKMA et Swift étudient la connexion de leurs infrastructures de règlement",
+          "L’Autorité monétaire de Hong Kong a indiqué le 16 novembre 2026 qu’elle renforçait sa collaboration avec Swift afin d’étudier les paiements transfrontaliers utilisant des dépôts bancaires tokenisés. Les travaux porteront sur l’interopérabilité entre le registre de Swift et la couche de règlement de Project Ensemble à Hong Kong, en mettant l’accent sur des dépôts libellés dans plusieurs devises."
+        ],
+        [
+          "Trois banques de Hong Kong participent aux travaux exploratoires",
+          "La HKMA a cité Bank of China (Hong Kong), Standard Chartered Bank (Hong Kong) et HSBC parmi les banques participantes. L’autorité a précisé qu’elle travaillait avec Swift depuis 2023 sur l’interopérabilité entre les systèmes de monnaies numériques de banque centrale, notamment dans l’environnement de test de Project Ensemble."
+        ],
+        [
+          "Une collaboration exploratoire, sans lancement en production",
+          "La nouvelle annonce décrit une collaboration exploratoire, et non le lancement d’un réseau de paiements transfrontaliers disponible commercialement. L’objectif est de relier l’infrastructure locale de règlement tokenisé au réseau international de Swift afin d’améliorer potentiellement la manière dont les établissements réglementés transfèrent de l’argent d’un territoire à l’autre. Le communiqué ne précise ni l’intégration technique, ni le modèle opérationnel, ni le calendrier d’un déploiement plus large."
+        ]
+      ]
+    },
+    "sourceSha256": "7bd458bef3ff058fd166b948b27db33c7700fe0c1d538f971e6fdc1ea325a0ba"
   }
 }
