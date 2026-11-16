@@ -1,7 +1,7 @@
 {
-  "title": "HKMA and Swift Explore Cross-Border Payments with Tokenized Deposits",
-  "description": "HKMA and Swift Explore Cross-Border Payments with Tokenized Deposits",
-  "why_it_matters": "",
+  "title": "HKMA and Swift deepen tokenized-deposit interoperability work under Project Ensemble",
+  "description": "Hong Kong's monetary authority and Swift are examining how Swift's ledger could connect with Project Ensemble's settlement layer for cross-border payments using tokenized deposits in multiple currencies.",
+  "why_it_matters": "The proposed connection would link Hong Kong's domestic tokenization infrastructure with Swift's international banking network, addressing a practical barrier to moving regulated digital deposits across jurisdictions. It remains an exploration rather than a newly launched cross-border payment service.",
   "pubDate": "2026-11-16",
   "category": "news",
   "tags": [
@@ -10,14 +10,15 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "HKMA and Swift Explore Cross-Border Payments with Tokenized Deposits",
-    ""
+    "HKMA announced expanded collaboration with Swift on November 16, 2026, focused on tokenized deposits for cross-border transactions.",
+    "Bank of China (Hong Kong), Standard Chartered Bank (Hong Kong) and HSBC are among the banks involved in exploring interoperability.",
+    "The work seeks to connect Swift's ledger and Project Ensemble's settlement layer; the announcement does not claim a new production launch."
   ],
-  "body": "HKMA and Swift Explore Cross-Border Payments with Tokenized Deposits",
+  "body": "The Hong Kong Monetary Authority said on November 16, 2026, that it is strengthening its collaboration with Swift to investigate cross-border payments using tokenized bank deposits. The work will explore interoperability between Swift's ledger and the settlement layer of Hong Kong's Project Ensemble, with an emphasis on deposits denominated in multiple currencies.\n\nThe HKMA named Bank of China (Hong Kong), Standard Chartered Bank (Hong Kong) and HSBC among the banking participants. The regulator said it has worked with Swift since 2023 on interoperability between central bank digital currency systems, including activity through the Project Ensemble sandbox.\n\nThe new announcement describes an exploratory collaboration, not the launch of a commercially available cross-border payment rail. Its objective is to connect local tokenized settlement infrastructure with Swift's international network, potentially improving how regulated institutions move money across borders. The technical integration, operating model and timing of any broader deployment were not specified in the release.",
   "sources": [
     {
-      "name": "www.tokenpost.com",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5MSHlOS2pnUXJwOTVLZHREZ0hYYkJkbmt2Rk80Z2MwWFJOdnpjelp2X2V0Z2tRMl9haGVMRmp3c1FjdFV5bFhoaVpzWmdRbUtDRHhKbG5Ibmc?oc=5"
+      "name": "Hong Kong Monetary Authority (official press release)",
+      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261116-4/"
     }
   ],
   "newsWatch": {
@@ -29,5 +30,47 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-16T11:52:35.700Z",
+    "sources": [
+      {
+        "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261116-4/",
+        "publishedAt": "2026-11-16",
+        "checkedAt": "2026-11-16T11:52:35.700Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "The HKMA announced a strengthened collaboration with Swift on November 16 to explore tokenized deposits for cross-border transactions.",
+        "sourceUrl": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261116-4/",
+        "anchor": "strengthened collaboration with Swift"
+      },
+      {
+        "claim": "The proposed work investigates interoperability between Swift ledger and the settlement layer of Project Ensemble.",
+        "sourceUrl": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261116-4/",
+        "anchor": "settlement layer of Project Ensemble"
+      },
+      {
+        "claim": "Bank of China Hong Kong, Standard Chartered Hong Kong and HSBC Hong Kong are named as participants.",
+        "sourceUrl": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261116-4/",
+        "anchor": "Bank of China (Hong Kong) Limited"
+      },
+      {
+        "claim": "The payment mechanisms under examination would use tokenized deposits denominated in multiple currencies.",
+        "sourceUrl": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261116-4/",
+        "anchor": "tokenised deposits in multiple currencies"
+      },
+      {
+        "claim": "The HKMA says its collaboration with Swift on CBDC interoperability dates back to 2023.",
+        "sourceUrl": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261116-4/",
+        "anchor": "Since 2023"
+      }
+    ]
   }
 }
