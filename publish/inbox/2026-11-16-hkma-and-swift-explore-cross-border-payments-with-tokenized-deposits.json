@@ -28,7 +28,7 @@
     "discoveredAt": "2026-11-16T10:37:17.828384+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
@@ -71,6 +71,7 @@
         "sourceUrl": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261116-4/",
         "anchor": "Since 2023"
       }
-    ]
+    ],
+    "contentSha256": "c49cfdc6475552739f2dd3598edd99e4c1262891cdb6f2b40ee1062d1859f576"
   }
 }
