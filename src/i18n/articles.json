@@ -5426,5 +5426,137 @@
       ]
     },
     "sourceSha256": "64d988b47cde800e96b4f88272743e1b82582f8183ffb6cb346cc6685b65df61"
+  },
+  "dbs-jpmorgan-launch-instant-tokenized-deposit-transfers-between-us-and-singapore": {
+    "path": "/news/dbs-jpmorgan-launch-instant-tokenized-deposit-transfers-between-us-and-singapore/",
+    "date": "2026-11-16",
+    "kind": "news",
+    "sources": [
+      [
+        "DBS Bank (official announcement)",
+        "https://www.dbs.com/newsroom/DBS_and_Kinexys_by_JP_Morgan_launch_industry_first_247_interoperability_solution_for_cross_border_tokenised_deposit_transfers"
+      ]
+    ],
+    "de": {
+      "title": "DBS und JPMorgan starten sofortige Transfers tokenisierter Einlagen zwischen den USA und Singapur",
+      "description": "DBS und Kinexys by JPMorgan haben bankübergreifende Transfers tokenisierter US-Dollar-Einlagen zwischen Singapur und den Vereinigten Staaten gestartet. Ant International ist der erste Nutzer; für die Umwandlung über herkömmliche Konten bleibt eine Wochenendunterbrechung bestehen.",
+      "sections": [
+        [
+          "Bankübergreifende Verbindung geht in Betrieb",
+          "DBS und Kinexys by JPMorgan gaben am 16. November 2026 bekannt, dass institutionelle Kunden tokenisierte US-Dollar-Einlagen rund um die Uhr zwischen blockchainbasierten Konten in Singapur und den Vereinigten Staaten übertragen können. Der gestartete Dienst verbindet DBS Token Services mit dem zugangsbeschränkten Blockchain-Deposit-Account-Netzwerk von Kinexys. Damit wird ein im November 2025 angekündigtes Interoperabilitätskonzept zu einer operativen bankübergreifenden Verbindung."
+        ],
+        [
+          "Ant International ist der erste institutionelle Kunde",
+          "Ant International nutzt die Lösung als erster Kunde für Treasury- und Liquiditätsmanagement zwischen Einheiten in beiden Ländern. Nach Angaben der Banken übernimmt Partior die Orchestrierung der Abwicklung. Die Zusammenarbeit trägt außerdem zur Interoperabilitätsarbeit des Project BLOOM der Monetary Authority of Singapore bei."
+        ],
+        [
+          "Rund-um-die-Uhr-Betrieb mit einer Samstagsunterbrechung",
+          "Die Beschreibung als Rund-um-die-Uhr-Dienst gilt mit einer wichtigen Einschränkung: Transfers innerhalb des Blockchain-Einlagennetzwerks von Kinexys laufen kontinuierlich, doch beim Verschieben von Geld zwischen herkömmlichen Sichteinlagenkonten und Blockchain-Einlagenkonten besteht weiterhin jeden Samstag von 15 bis 18 Uhr Eastern Time eine dreistündige Unterbrechung. Die Banken arbeiten nach eigenen Angaben an einer Verbesserung. Der Dienst richtet sich an berechtigte Institutionen und verwendet Bankeinlagen; er ist kein öffentliches Kryptowährungs-Transfernetzwerk."
+        ]
+      ]
+    },
+    "es": {
+      "title": "DBS y JPMorgan lanzan transferencias instantáneas de depósitos tokenizados entre EE. UU. y Singapur",
+      "description": "DBS y Kinexys by JPMorgan han lanzado transferencias interbancarias de depósitos tokenizados en dólares estadounidenses entre Singapur y Estados Unidos. Ant International es el primer usuario y persiste una interrupción de fin de semana para la conversión mediante cuentas tradicionales.",
+      "sections": [
+        [
+          "Entra en funcionamiento la conexión entre bancos",
+          "DBS y Kinexys by JPMorgan anunciaron el 16 de noviembre de 2026 que los clientes institucionales pueden transferir depósitos tokenizados en dólares estadounidenses durante las 24 horas entre cuentas basadas en blockchain en Singapur y Estados Unidos. El servicio conecta DBS Token Services con la red permissionada Blockchain Deposit Account de Kinexys, convirtiendo un marco de interoperabilidad anunciado en noviembre de 2025 en una conexión interbancaria operativa."
+        ],
+        [
+          "Ant International es el primer cliente institucional",
+          "Ant International es el primer cliente que utiliza el acuerdo para gestionar la tesorería y la liquidez entre entidades de ambos países. Los bancos señalan que Partior se encarga de orquestar la liquidación. La colaboración también contribuye al trabajo de interoperabilidad del Project BLOOM de la Autoridad Monetaria de Singapur."
+        ],
+        [
+          "Servicio permanente con una interrupción los sábados",
+          "La descripción como servicio permanente tiene una limitación importante: las transferencias dentro de la red de depósitos blockchain de Kinexys funcionan de forma continua, pero el movimiento de dinero entre cuentas tradicionales de depósito a la vista y cuentas de depósito blockchain todavía se interrumpe durante tres horas cada sábado, de 15:00 a 18:00, hora del Este. Los bancos afirman que están desarrollando una mejora. Es un servicio para instituciones elegibles basado en depósitos bancarios, no una red pública de transferencias de criptomonedas."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "DBS et JPMorgan lancent des transferts instantanés de dépôts tokenisés entre les États-Unis et Singapour",
+      "description": "DBS et Kinexys by JPMorgan ont lancé des transferts interbancaires de dépôts tokenisés en dollars américains entre Singapour et les États-Unis. Ant International est le premier utilisateur et une interruption subsiste le week-end pour la conversion via les comptes traditionnels.",
+      "sections": [
+        [
+          "La connexion interbancaire devient opérationnelle",
+          "DBS et Kinexys by JPMorgan ont annoncé le 16 novembre 2026 que les clients institutionnels peuvent transférer en continu des dépôts tokenisés en dollars américains entre des comptes fondés sur la blockchain à Singapour et aux États-Unis. Le service relie DBS Token Services au réseau permissionné Blockchain Deposit Account de Kinexys, transformant un cadre d’interopérabilité annoncé en novembre 2025 en une connexion interbancaire opérationnelle."
+        ],
+        [
+          "Ant International est le premier client institutionnel",
+          "Ant International est le premier client à utiliser le dispositif pour gérer la trésorerie et les liquidités entre ses entités dans les deux pays. Selon les banques, Partior assure l’orchestration du règlement. Leur collaboration contribue également aux travaux d’interopérabilité du Project BLOOM de l’Autorité monétaire de Singapour."
+        ],
+        [
+          "Un service continu avec une interruption le samedi",
+          "La présentation comme service disponible en continu comporte une réserve importante : les transferts au sein du réseau de dépôts blockchain de Kinexys fonctionnent sans interruption, mais le déplacement de fonds entre les comptes de dépôt à vue traditionnels et les comptes de dépôt blockchain connaît encore une coupure de trois heures chaque samedi, de 15 h à 18 h, heure de l’Est. Les banques indiquent qu’une amélioration est en cours de développement. Il s’agit d’un service fondé sur des dépôts bancaires pour des institutions éligibles, et non d’un réseau public de transfert de cryptomonnaies."
+        ]
+      ]
+    },
+    "sourceSha256": "d784d1d73e1bfc30df34f53a5d5f18a384de80ca528616cd37e19a832e2b77a4"
+  },
+  "hong-kong-regulators-outline-next-steps-for-tokenised-funds-and-deposits": {
+    "path": "/news/hong-kong-regulators-outline-next-steps-for-tokenised-funds-and-deposits/",
+    "date": "2026-11-12",
+    "kind": "news",
+    "sources": [
+      [
+        "Hong Kong Monetary Authority",
+        "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261112-3/"
+      ]
+    ],
+    "de": {
+      "title": "Hongkonger Regulierer skizzieren nächste Schritte für tokenisierte Fonds und Einlagen",
+      "description": "Bei einem Seminar am 11. November mit rund 200 Finanzfachleuten erörterten HKMA und SFC die Verknüpfung tokenisierter Einlagen mit zugelassenen Anlageprodukten, nachdem Infrastruktur für kontinuierliche Abwicklung und Fondssekundärhandel eingeführt wurde.",
+      "sections": [
+        [
+          "Regulierer wollen Einlagen und Anlageprodukte verbinden",
+          "Hongkongs Währungs- und Wertpapieraufsicht ermutigt Finanzinstitute, tokenisierte Bankeinlagen mit Anlageprodukten zu verbinden, während die Stadt ihre Digital-Asset-Infrastruktur ausbaut. In einer Mitteilung vom 12. November erklärte die Hong Kong Monetary Authority, sie habe am Vortag gemeinsam mit der Securities and Futures Commission ein Seminar mit rund 200 Fachleuten aus der Branche veranstaltet."
+        ],
+        [
+          "Kontinuierliche Abwicklung und Fondssekundärhandel sind getrennte Funktionen",
+          "Der Austausch folgte auf die Aufrüstung der EnsembleTX-Infrastruktur von Project Ensemble für die rund um die Uhr verfügbare bankübergreifende Abwicklung tokenisierter Einlagen. Unabhängig davon hat die SFC den rund um die Uhr möglichen Sekundärhandel tokenisierter Geldmarktfonds genehmigt. Es handelt sich um unterschiedliche Funktionen: Eine kontinuierliche Abwicklung zwischen teilnehmenden Banken bedeutet nicht, dass jedes Anlageprodukt allgemein verfügbar ist."
+        ],
+        [
+          "Breitere kommerzielle Nutzung bleibt ein Ziel",
+          "Die HKMA will gemeinsam mit der SFC und Marktteilnehmern die Nutzung tokenisierter Einlagen für die Abwicklung verschiedener Anlageprodukte ausweiten. SFC-Exekutivdirektorin Elisa Ng bezeichnete die Verknüpfung von Anlageprodukten, digitalem Geld und Finanzinfrastruktur zur Erzeugung praktischer Geschäftstätigkeit als nächste Herausforderung. Die Mitteilung kündigte weder eine allgemeine Einführung für Privatkunden an noch nannte sie Transaktionsvolumen aus dem Seminar."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Los reguladores de Hong Kong trazan los próximos pasos para los fondos y depósitos tokenizados",
+      "description": "En un seminario celebrado el 11 de noviembre con unos 200 profesionales financieros, la HKMA y la SFC abordaron la conexión de depósitos tokenizados con productos de inversión autorizados tras introducir infraestructura para la liquidación continua y la negociación secundaria de fondos.",
+      "sections": [
+        [
+          "Los reguladores buscan conectar depósitos y productos de inversión",
+          "Los reguladores monetario y de valores de Hong Kong están animando a las instituciones financieras a conectar depósitos bancarios tokenizados con productos de inversión mientras la ciudad amplía su infraestructura de activos digitales. En un comunicado del 12 de noviembre, la Autoridad Monetaria de Hong Kong indicó que el día anterior había organizado junto con la Comisión de Valores y Futuros un seminario al que asistieron aproximadamente 200 profesionales del sector."
+        ],
+        [
+          "La liquidación continua y la negociación secundaria de fondos son funciones distintas",
+          "El debate siguió a la actualización de la infraestructura EnsembleTX de Project Ensemble para admitir la liquidación interbancaria permanente de depósitos tokenizados. Por separado, la SFC ha aprobado la negociación secundaria durante las 24 horas de fondos tokenizados del mercado monetario. Son capacidades diferentes: la liquidación continua entre bancos participantes no significa que todos los productos de inversión estén disponibles de forma universal."
+        ],
+        [
+          "Un uso comercial más amplio sigue siendo un objetivo",
+          "La HKMA pretende colaborar con la SFC y los participantes del mercado para ampliar el uso de depósitos tokenizados en la liquidación de distintos productos de inversión. Elisa Ng, directora ejecutiva de la SFC, describió como próximo reto la conexión de productos de inversión, dinero digital e infraestructura financiera para generar actividad comercial práctica. El comunicado no anunció un despliegue minorista universal ni aportó volúmenes de transacciones procedentes del seminario."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Les régulateurs de Hong Kong définissent les prochaines étapes pour les fonds et dépôts tokenisés",
+      "description": "Lors d’un séminaire organisé le 11 novembre avec environ 200 professionnels de la finance, la HKMA et la SFC ont évoqué le raccordement des dépôts tokenisés aux produits d’investissement autorisés après la mise en place d’infrastructures de règlement continu et de négociation secondaire des fonds.",
+      "sections": [
+        [
+          "Les régulateurs veulent relier dépôts et produits d’investissement",
+          "Les autorités monétaire et boursière de Hong Kong encouragent les établissements financiers à relier les dépôts bancaires tokenisés aux produits d’investissement, alors que la ville développe son infrastructure d’actifs numériques. Dans un communiqué daté du 12 novembre, l’Autorité monétaire de Hong Kong a indiqué avoir organisé la veille, avec la Commission des valeurs mobilières et des contrats à terme, un séminaire réunissant environ 200 professionnels du secteur."
+        ],
+        [
+          "Le règlement continu et la négociation secondaire des fonds sont deux fonctions distinctes",
+          "Les échanges ont suivi la mise à niveau de l’infrastructure EnsembleTX de Project Ensemble afin de permettre le règlement interbancaire continu des dépôts tokenisés. Séparément, la SFC a autorisé la négociation secondaire en continu des fonds monétaires tokenisés. Ces capacités sont distinctes : le règlement continu entre les banques participantes ne signifie pas que chaque produit d’investissement est disponible partout."
+        ],
+        [
+          "Un usage commercial plus large reste un objectif",
+          "La HKMA entend travailler avec la SFC et les acteurs du marché pour élargir l’utilisation des dépôts tokenisés dans le règlement de différents produits d’investissement. Elisa Ng, directrice exécutive de la SFC, a présenté comme prochain défi la connexion des produits d’investissement, de la monnaie numérique et des infrastructures financières afin de produire une activité commerciale concrète. Le communiqué n’a annoncé ni déploiement universel auprès du grand public ni volumes de transactions issus du séminaire."
+        ]
+      ]
+    },
+    "sourceSha256": "69494f31244b30c97cd354f045f8369c5285964778401b71e1c2cdd3afb17059"
   }
 }
