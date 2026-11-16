@@ -1,7 +1,7 @@
 {
   "title": "DBS, JPMorgan launch instant tokenized deposit transfers between US and Singapore",
-  "description": "DBS, JPMorgan launch instant tokenized deposit transfers between US and Singapore The Block",
-  "why_it_matters": "",
+  "description": "DBS and Kinexys by JPMorgan have launched cross-bank transfers of tokenized US dollar deposits between Singapore and the United States, with Ant International as the first user and a weekend legacy-account limitation.",
+  "why_it_matters": "Connecting two banks' permissioned deposit networks gives corporate treasurers a way to move dollar liquidity across jurisdictions outside normal banking hours. The Partior settlement link and its remaining legacy-account maintenance window show both the progress and practical boundaries of interoperable bank-issued digital money.",
   "pubDate": "2026-11-16",
   "category": "news",
   "tags": [
@@ -10,14 +10,15 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "DBS, JPMorgan launch instant tokenized deposit transfers between US and Singapore The Block",
-    ""
+    "DBS Token Services and Kinexys by JPMorgan now support cross-bank transfers of tokenized US dollar deposits between Singapore and the United States.",
+    "Ant International is the first institutional client using the service for treasury and liquidity management across both markets.",
+    "The system uses Partior for settlement orchestration; conversion between traditional and Kinexys blockchain accounts retains a three-hour Saturday interruption."
   ],
-  "body": "DBS, JPMorgan launch instant tokenized deposit transfers between US and Singapore The Block",
+  "body": "DBS and Kinexys by JPMorgan announced on November 16, 2026, that institutional clients can transfer tokenized US dollar deposits between blockchain-based accounts in Singapore and the United States around the clock. The launched service links DBS Token Services with Kinexys's permissioned Blockchain Deposit Account network, turning an interoperability framework announced in November 2025 into an operational cross-bank connection.\n\nAnt International is the first client to use the arrangement for treasury and liquidity management across entities in both countries. The banks say Partior provides settlement orchestration, while their collaboration also contributes to the Monetary Authority of Singapore's Project BLOOM interoperability work.\n\nThe round-the-clock description has an important qualification: transfers within Kinexys's blockchain deposit network run continuously, but moving money between traditional demand deposit accounts and blockchain deposit accounts still faces a three-hour interruption each Saturday, from 3 p.m. to 6 p.m. Eastern Time. The banks say an enhancement is being developed. This is a service for eligible institutions using bank deposits, not a public cryptocurrency transfer network.",
   "sources": [
     {
-      "name": "The Block",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOV1FlMWJQOUN3TEpjXzVtejJ5TzVHQ3pOS2VNSkhQVXdoN1h6MzVGMUJuNVNtcVRncEgyaHVrTnRWV0ZrNjNXOWMzM3NYSV9SN0JFYVF6bFM3N2NxZUZLbkdtTjluMGFrMEdkMVN2NDloZWdJT1h6Q3YtVUhQdDFaY3V1UEZ5WnNjaEh0OXM1Z0xDMzk5MDVYdHdCV0RWSWRkZmVJNXpB?oc=5"
+      "name": "DBS Bank (official announcement)",
+      "url": "https://www.dbs.com/newsroom/DBS_and_Kinexys_by_JP_Morgan_launch_industry_first_247_interoperability_solution_for_cross_border_tokenised_deposit_transfers"
     }
   ],
   "newsWatch": {
@@ -34,5 +35,52 @@
     "requiresSourceReview": true,
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-16T10:27:55Z",
+    "sources": [
+      {
+        "url": "https://www.dbs.com/newsroom/DBS_and_Kinexys_by_JP_Morgan_launch_industry_first_247_interoperability_solution_for_cross_border_tokenised_deposit_transfers",
+        "publishedAt": "2026-11-16",
+        "checkedAt": "2026-11-16T10:27:55Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "DBS and Kinexys launched a solution for transfers between tokenized dollar deposit accounts in Singapore and the United States.",
+        "sourceUrl": "https://www.dbs.com/newsroom/DBS_and_Kinexys_by_JP_Morgan_launch_industry_first_247_interoperability_solution_for_cross_border_tokenised_deposit_transfers",
+        "anchor": "instant USD transfers"
+      },
+      {
+        "claim": "The new connection links DBS Token Services with the permissioned tokenized deposit network operated by Kinexys.",
+        "sourceUrl": "https://www.dbs.com/newsroom/DBS_and_Kinexys_by_JP_Morgan_launch_industry_first_247_interoperability_solution_for_cross_border_tokenised_deposit_transfers",
+        "anchor": "connecting DBS Token Services"
+      },
+      {
+        "claim": "Ant International is the first client using the service for treasury operations across both countries.",
+        "sourceUrl": "https://www.dbs.com/newsroom/DBS_and_Kinexys_by_JP_Morgan_launch_industry_first_247_interoperability_solution_for_cross_border_tokenised_deposit_transfers",
+        "anchor": "inaugural client"
+      },
+      {
+        "claim": "The solution uses Partior to orchestrate settlement between the two bank networks.",
+        "sourceUrl": "https://www.dbs.com/newsroom/DBS_and_Kinexys_by_JP_Morgan_launch_industry_first_247_interoperability_solution_for_cross_border_tokenised_deposit_transfers",
+        "anchor": "leverages Partior"
+      },
+      {
+        "claim": "The banks originally announced their interoperability framework in November 2025 before this operational launch.",
+        "sourceUrl": "https://www.dbs.com/newsroom/DBS_and_Kinexys_by_JP_Morgan_launch_industry_first_247_interoperability_solution_for_cross_border_tokenised_deposit_transfers",
+        "anchor": "November 2025"
+      },
+      {
+        "claim": "Transfers between traditional and blockchain accounts on Kinexys still have a three-hour Saturday maintenance interruption.",
+        "sourceUrl": "https://www.dbs.com/newsroom/DBS_and_Kinexys_by_JP_Morgan_launch_industry_first_247_interoperability_solution_for_cross_border_tokenised_deposit_transfers",
+        "anchor": "three-hour downtime"
+      }
+    ]
   }
 }
