@@ -109,6 +109,19 @@ except Exception as exc:
     print(f"CoinGecko unavailable: {exc}; trying CoinPaprika")
     available = {}
 
+# Fill gaps in the CoinGecko universe instead of replacing all CoinGecko quotes.
+# CoinPaprika matches are accepted only when both the ticker and full project name match.
+if len(available) < len(ASSETS):
+    try:
+        fallback = coinpaprika()
+        added = {key: quote for key, quote in fallback.items() if key not in available}
+        available.update(added)
+        if added:
+            source = "CoinGecko + CoinPaprika" if len(available) > len(added) else "CoinPaprika"
+        print(f"Market coverage: {len(available)}/{len(ASSETS)}; {len(added)} gaps filled from CoinPaprika")
+    except Exception as exc:
+        print(f"CoinPaprika fallback unavailable: {exc}; keeping verified CoinGecko quotes")
+
 if len(available) < MIN_COVERAGE:
     try:
         fallback = coinpaprika()
