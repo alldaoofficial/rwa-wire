@@ -156,4 +156,9 @@ with tempfile.NamedTemporaryFile("w", encoding="utf-8", dir=OUT.parent, delete=F
     tmp.write("\n")
     temp_name = tmp.name
 Path(temp_name).replace(OUT)
-print(f"Cached market data for {len(available)} assets from {source} at {OUT}")
+missing = [f"{symbol} ({key})" for key, (symbol, _) in ASSETS.items() if key not in available]
+print(f"Cached market data for {len(available)}/{len(ASSETS)} assets from {source} at {OUT}")
+if missing:
+    print("Unavailable tracked assets: " + ", ".join(missing))
+else:
+    print("All tracked assets have verified provider quotes")
