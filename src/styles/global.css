@@ -28,3 +28,17 @@ html{scroll-behavior:smooth} body{@apply bg-bg text-ink font-sans antialiased;fo
 @media (prefers-reduced-motion: reduce) {
   [data-reveal] { opacity: 1 !important; transform: none !important; transition: none !important; }
 }
+
+/* Intelligence design system: consistent visual hierarchy and restrained interactions. */
+@layer components {
+  .wire-panel { @apply border-line/80; background-image: linear-gradient(155deg,rgba(255,255,255,.018),transparent 58%); }
+  .wire-panel-hover { @apply transition-[border-color,background-color,transform,box-shadow] duration-200; }
+  .wire-panel-hover:hover { box-shadow: 0 16px 38px rgba(0,0,0,.20); }
+  .wire-action { @apply rounded-xl transition-[background-color,border-color,color,transform] duration-200; }
+  .wire-action:active { transform: scale(.98); }
+  .wire-action-primary { @apply shadow-[0_6px_20px_rgba(85,219,161,.10)]; }
+  .wire-action-primary:hover { @apply shadow-[0_8px_24px_rgba(85,219,161,.17)]; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wire-panel-hover:hover, .wire-action:active { transform: none; }
+}
