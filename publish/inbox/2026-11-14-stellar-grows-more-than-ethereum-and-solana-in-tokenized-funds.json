@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-16T12:52:42.551Z",
+    "reason": "Original November 13 24-hour Token Terminal/RWA Foundation dataset for the claimed $44.9m versus $29m/$10.8m increases was not independently accessible as full primary evidence. Publisher full text and Token Terminal November 12 newsletter were read, but the newsletter reports a different measurement window. Hold pending a verifiable original daily dataset or sufficiently independent full-text corroboration; retry no sooner than six hours."
   }
 }
