@@ -1,0 +1,38 @@
+{
+  "title": "DBS, JPMorgan launch instant tokenized deposit transfers between US and Singapore",
+  "description": "DBS, JPMorgan launch instant tokenized deposit transfers between US and Singapore The Block",
+  "why_it_matters": "",
+  "pubDate": "2026-11-16",
+  "category": "news",
+  "tags": [
+    "Tokenization",
+    "Institutions",
+    "News Watch"
+  ],
+  "keyTakeaways": [
+    "DBS, JPMorgan launch instant tokenized deposit transfers between US and Singapore The Block",
+    ""
+  ],
+  "body": "DBS, JPMorgan launch instant tokenized deposit transfers between US and Singapore The Block",
+  "sources": [
+    {
+      "name": "The Block",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOV1FlMWJQOUN3TEpjXzVtejJ5TzVHQ3pOS2VNSkhQVXdoN1h6MzVGMUJuNVNtcVRncEgyaHVrTnRWV0ZrNjNXOWMzM3NYSV9SN0JFYVF6bFM3N2NxZUZLbkdtTjluMGFrMEdkMVN2NDloZWdJT1h6Q3YtVUhQdDFaY3V1UEZ5WnNjaEh0OXM1Z0xDMzk5MDVYdHdCV0RWSWRkZmVJNXpB?oc=5"
+    }
+  ],
+  "newsWatch": {
+    "score": 10,
+    "priority": "important",
+    "sourceTrust": "trusted",
+    "discoveredAt": "2026-11-16T10:07:24.371362+00:00",
+    "confirmationMode": "independent-high-trust-source",
+    "originalDiscoveryTitle": "DBS, JPMorgan’s Kinexys launch 24/7 transfers of tokenized deposits",
+    "originalDiscoverySource": "TradingView",
+    "confirmationSources": [
+      "The Block"
+    ],
+    "requiresSourceReview": true,
+    "autoPublishEligible": false,
+    "contentStatus": "needs-source-enrichment"
+  }
+}
