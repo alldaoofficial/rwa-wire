@@ -1,0 +1,14 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import IntelligenceTerminal from "@/components/IntelligenceTerminal.astro";
+import { sitePath } from "../utils/paths";
+---
+<BaseLayout title="RWA Intelligence | Token Screener, Watchlist & Market Research" description="Research tracked RWA-linked tokens, filter market data, save a personal watchlist and explore observed price history.">
+  <section class="wire-container pt-12 sm:pt-16" data-reveal>
+    <p class="wire-kicker">Research workspace / RWA Intelligence</p>
+    <h1 class="wire-display mt-4">Explore the tokenized economy.</h1>
+    <p class="wire-lede mt-5 max-w-3xl">One place for RWA-linked token data, sector context, saved assets and historical observations. Prices are cached provider snapshots, not a real-time trading feed.</p>
+    <div class="mt-6 flex flex-wrap gap-3"><a class="wire-action wire-action-primary" href="#intelligence-desk">Explore tokens ↓</a><a class="wire-action" href={sitePath("/")}>My dashboard ↗</a><a class="wire-action" href={sitePath("/institutions/")}>Institutional intelligence ↗</a></div>
+  </section>
+  <IntelligenceTerminal />
+</BaseLayout>
