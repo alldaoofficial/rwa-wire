@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-16T18:18:30Z",
+    "reason": "The Google News discovery URL is unresolved to a readable original The Block article. The $2 trillion by 2028 Standard Chartered projection appears in secondary reporting but is an earlier forecast; no accessible primary bank research or two independently verified full-text reports establish a new November 16 Japan-specific announcement. Recheck after 2026-11-17T00:18:30Z."
   }
 }
