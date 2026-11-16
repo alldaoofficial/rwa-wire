@@ -35,13 +35,17 @@ jobs:
         run: |
           python3 - <<'PY'
           import json
+          from datetime import datetime, timezone
           from pathlib import Path
           root=Path("market-coverage")
           output=root/"coverage-report.json"
           cache=root/"public/data/markets.json"
           if cache.exists():
               data=json.loads(cache.read_text())
-              report={"status":"retrieved","source":data.get("source"),"fetchedAt":data.get("fetchedAt"),"available":len(data.get("assets",{})),"asset_ids":sorted(data.get("assets",{}))}
+              now=datetime.now(timezone.utc).timestamp()
+              quotes=data.get("assets",{})
+              quote_ages={key:round((now-value["last_updated_at"])/60,1) for key,value in quotes.items() if isinstance(value.get("last_updated_at"),(int,float))}
+              report={"status":"retrieved","source":data.get("source"),"fetchedAt":data.get("fetchedAt"),"available":len(quotes),"asset_ids":sorted(quotes),"quote_age_minutes":quote_ages,"oldest_quote_minutes":max(quote_ages.values()) if quote_ages else None}
           else:
               report={"status":"provider_unavailable_or_insufficient_coverage","available":0}
           output.write_text(json.dumps(report,indent=2)+"\n")
