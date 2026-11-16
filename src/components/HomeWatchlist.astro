@@ -3,18 +3,23 @@ import markets from "../../public/data/markets.json";
 import { sitePath } from "../utils/paths";
 const assets=Object.entries(markets.assets??{}).flatMap(([id,a])=>typeof a.usd==="number"&&typeof a.usd_24h_change==="number"?[{id,price:a.usd,change:a.usd_24h_change}]:[]);
 const snapshot=JSON.stringify(assets);
+const updatedAt=markets.fetchedAt;
+const snapshotDate=new Date(updatedAt);
+const snapshotLabel=Number.isFinite(snapshotDate.valueOf())?snapshotDate.toLocaleString("en-GB",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit",timeZone:"UTC"})+" UTC":"Unknown";
 ---
 <section class="wire-container py-5 sm:py-7" aria-labelledby="my-watchlist-title" data-reveal>
   <div class="wire-panel overflow-hidden">
-    <div class="flex flex-wrap items-center justify-between gap-3 border-b border-line p-5 sm:p-6"><div><p class="wire-kicker">My RWA Wire / Saved on this device</p><h2 id="my-watchlist-title" class="mt-2 text-xl font-semibold text-ink sm:text-2xl">Your watchlist</h2><p class="mt-1 text-xs text-ink-muted">Your starred tokens from the screener, available on this browser.</p></div><a class="wire-action" href={sitePath("/intelligence/#intelligence-desk")}>Manage starred assets ↗</a></div>
+    <div class="flex flex-wrap items-center justify-between gap-3 border-b border-line p-5 sm:p-6"><div><p class="wire-kicker">My RWA Wire / Saved on this device</p><h2 id="my-watchlist-title" class="mt-2 text-xl font-semibold text-ink sm:text-2xl">Your watchlist</h2><p class="mt-1 text-xs text-ink-muted">Your starred tokens from the screener, available on this browser. · Market snapshot: {snapshotLabel}</p></div><a class="wire-action" href={sitePath("/intelligence/#intelligence-desk")}>Manage starred assets ↗</a></div>
     <div id="home-watchlist" class="grid gap-3 p-4 sm:grid-cols-2 lg:grid-cols-4 sm:p-5" aria-live="polite"><p class="text-sm text-ink-muted">Loading your saved assets…</p></div>
     <p class="border-t border-line px-5 py-3 text-xs text-ink-muted">Market prices are cached provider snapshots, not live trading quotes. Favorites are stored locally; clearing browser data may remove them.</p>
   </div>
 </section>
-<script define:vars={{snapshot}}>
+<script define:vars={{snapshot,updatedAt}}>
   const root=document.querySelector("#home-watchlist");
   const assets=JSON.parse(snapshot);
   const key="rwa-wire-watchlist-v1";
+  const ageHours=(Date.now()-Date.parse(updatedAt))/3600000;
+  const delayed=!Number.isFinite(ageHours)||ageHours>2;
   function drawWatchlist(){
     if(!root)return;
     let ids=[];
@@ -27,7 +32,9 @@ const snapshot=JSON.stringify(assets);
       const name=document.createElement("p");name.className="text-xs font-semibold uppercase tracking-wide text-ink-muted";name.textContent=id.replaceAll("-"," ");
       const value=document.createElement("p");value.className="mt-3 font-mono text-xl font-semibold text-ink";value.textContent=item?"$"+item.price.toLocaleString("en-US",{maximumFractionDigits:6}):"Data unavailable";
       const change=document.createElement("p");change.className="mt-1 font-mono text-xs "+(item?.change>=0?"text-wire":"text-rose-400");change.textContent=item?(item.change>=0?"+":"")+item.change.toFixed(2)+"% / 24h":"No current price";
-      card.append(name,value,change);root.append(card);
+      card.append(name,value,change);
+      if(delayed){const note=document.createElement("p");note.className="mt-3 text-[11px] text-amber-400";note.textContent="Delayed market snapshot";card.append(note);}
+      root.append(card);
     }
   }
   drawWatchlist();
