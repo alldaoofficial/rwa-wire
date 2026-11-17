@@ -7,7 +7,7 @@ const assets = [
 ];
 import { sitePath } from "../utils/paths";
 const marketCacheUrl = sitePath("/data/markets.json");
-const marketApiUrl = sitePath("/api/markets");
+const marketApiUrl = "https://dqeakkrsbgxnexucuyld.supabase.co/functions/v1/preview-market-quotes";
 ---
 <section class="border-b border-line bg-surface/60" aria-label="RWA ecosystem token ticker" data-market-cache-url={marketCacheUrl} data-market-api-url={marketApiUrl}>
   <div class="wire-container flex min-h-10 items-center gap-4 overflow-x-auto py-1.5 [scrollbar-width:none]">
@@ -67,11 +67,12 @@ const marketApiUrl = sitePath("/api/markets");
       const payload=await res.json();
       const age=payload.freshness?.ageMinutes;
       const label=Number.isFinite(age)?(age>120?`Delayed snapshot · ${Math.round(age/60)}h old`:`Market snapshot · ${age}m old`):"Market snapshot · time unknown";
-      const fresh=render(payload.assets||{},label,false);
-      if(!fresh&&status&&!cached)status.textContent="Data temporarily unavailable";
+      const fresh=render(payload.assets||{},label,true);
+      if(!fresh&&status)status.textContent=cached?"Delayed snapshot · live quotes unavailable":"Data temporarily unavailable";
     }catch{
-      if(status&&!cached)status.textContent="Data temporarily unavailable";
+      if(status)status.textContent=cached?"Delayed snapshot · live quotes unavailable":"Data temporarily unavailable";
     }
   }
   refreshMarkets();window.setInterval(refreshMarkets,60000);
+  document.addEventListener("visibilitychange",()=>{if(!document.hidden)refreshMarkets();});
 </script>
