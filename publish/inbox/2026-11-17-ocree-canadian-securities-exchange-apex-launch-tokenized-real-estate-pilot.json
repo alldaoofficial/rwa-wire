@@ -1,7 +1,7 @@
 {
-  "title": "Ocree, Canadian Securities Exchange, Apex launch tokenized real estate pilot",
-  "description": "Ocree, Canadian Securities Exchange, Apex launch tokenized real estate pilot",
-  "why_it_matters": "",
+  "title": "Ocree and Canadian Securities Exchange Test Tokenized Real Estate Securities in Project Bedrock",
+  "description": "Ocree's Canadian Project Bedrock pilot brings CSE market infrastructure, Apex's Tokeny tokenization platform and Tetra's CADD stablecoin together to test private real estate securities.",
+  "why_it_matters": "The pilot tests whether regulated private-market securities can move through existing Canadian dealer, exchange and custody channels rather than requiring a separate crypto-native market. Its planned secondary-trading phase could clarify the practical limits of liquidity, compliance and Canadian-dollar settlement.",
   "pubDate": "2026-11-17",
   "category": "news",
   "tags": [
@@ -10,14 +10,16 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "Ocree, Canadian Securities Exchange, Apex launch tokenized real estate pilot",
-    ""
+    "Ocree announced the next phase of Project Bedrock with the CSE, Apex Group and Tetra Digital Group on November 17.",
+    "Apex subsidiary Tokeny supplies tokenization technology, while Tetra's CADD stablecoin is intended for settlement.",
+    "Ocree's OARDS framework standardizes disclosures and compliance information for participating dealers and investors.",
+    "Secondary trading using existing equity infrastructure is a planned next phase, not an already operating market."
   ],
-  "body": "Ocree, Canadian Securities Exchange, Apex launch tokenized real estate pilot",
+  "body": "Ocree Corporation has announced the next phase of Project Bedrock, a Canadian pilot for distributing private real estate-based securities using blockchain infrastructure. The November 17 announcement names the Canadian Securities Exchange, Apex Group through Tokeny, and Tetra Digital Group as partners.\n\nThe proposed arrangement combines existing dealer, exchange and custody channels with Tokeny's tokenization technology. Tetra's Canadian-dollar CADD stablecoin is intended to support settlement. Ocree says its Asset Rating and Disclosure System, known as OARDS, will standardize investment disclosures and compliance information for dealers and investors.\n\nThe partners also plan to test secondary-market trading of private securities through established equity-trading infrastructure. That phase remains prospective; the announcement does not establish that a liquid secondary market or a broadly available commercial product is already operating.\n\nAccording to the exchange's release, the pilot is designed to work within Canadian private-placement securities requirements. Ocree Capital is described as a registered exempt market dealer, and Ocree says it has applied to the CIRO InnovateSafe program. The project therefore offers a test of how tokenized assets might integrate with existing market safeguards, rather than evidence that those safeguards or settlement arrangements have already been proven at scale.",
   "sources": [
     {
-      "name": "Ledger Insights",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNb0NoSGxEZktWUlh5X3lIUmIybkVndXhlLXliZ2VqMjBqd2VoNzZTZHRaUFg0TkhYVUVRVV9IYVdlQTZGd1FyNVItRUdoWjUwYjd6M3JzMUNlRXRaWnd1NVpYY3REZDJkLTlWQXNBVWRPa2otM1cyM19WcU10V2txOEhEYXdsd0tjY2JSdUI0Q1pUMlc0aklCOVdGNE1yMnlIRFhUaktmNXZjdw?oc=5"
+      "name": "Canadian Securities Exchange — Ocree Project Bedrock announcement",
+      "url": "https://thecse.com/news/ocree-partners-with-the-canadian-securities-exchange-apex-group-and-tetra-digital-group-to-launch-a-canadian-pilot-to-create-a-private-markets-digital-ecosystem/"
     }
   ],
   "newsWatch": {
@@ -29,5 +31,52 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-17T22:16:02Z",
+    "sources": [
+      {
+        "url": "https://thecse.com/news/ocree-partners-with-the-canadian-securities-exchange-apex-group-and-tetra-digital-group-to-launch-a-canadian-pilot-to-create-a-private-markets-digital-ecosystem/",
+        "publishedAt": "2026-11-17",
+        "checkedAt": "2026-11-17T22:16:02Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Ocree announced the next phase of Project Bedrock with CSE, Apex Group and Tetra Digital Group.",
+        "sourceUrl": "https://thecse.com/news/ocree-partners-with-the-canadian-securities-exchange-apex-group-and-tetra-digital-group-to-launch-a-canadian-pilot-to-create-a-private-markets-digital-ecosystem/",
+        "anchor": "next phase of its pilot project"
+      },
+      {
+        "claim": "Apex Group is supplying tokenization technology for the pilot through its subsidiary Tokeny.",
+        "sourceUrl": "https://thecse.com/news/ocree-partners-with-the-canadian-securities-exchange-apex-group-and-tetra-digital-group-to-launch-a-canadian-pilot-to-create-a-private-markets-digital-ecosystem/",
+        "anchor": "through the Tokeny platform"
+      },
+      {
+        "claim": "Tetra Digital Group's CADD stablecoin is planned for settlement in the Canadian pilot.",
+        "sourceUrl": "https://thecse.com/news/ocree-partners-with-the-canadian-securities-exchange-apex-group-and-tetra-digital-group-to-launch-a-canadian-pilot-to-create-a-private-markets-digital-ecosystem/",
+        "anchor": "using the CADD stablecoin"
+      },
+      {
+        "claim": "Ocree's OARDS disclosure framework will standardize information used by participating dealers and investors.",
+        "sourceUrl": "https://thecse.com/news/ocree-partners-with-the-canadian-securities-exchange-apex-group-and-tetra-digital-group-to-launch-a-canadian-pilot-to-create-a-private-markets-digital-ecosystem/",
+        "anchor": "consistent disclosure format"
+      },
+      {
+        "claim": "The planned next phase will test secondary trading using existing equity market infrastructure.",
+        "sourceUrl": "https://thecse.com/news/ocree-partners-with-the-canadian-securities-exchange-apex-group-and-tetra-digital-group-to-launch-a-canadian-pilot-to-create-a-private-markets-digital-ecosystem/",
+        "anchor": "secondary market trading using existing equity"
+      },
+      {
+        "claim": "Ocree states it has applied to the CIRO InnovateSafe program during the pilot's development.",
+        "sourceUrl": "https://thecse.com/news/ocree-partners-with-the-canadian-securities-exchange-apex-group-and-tetra-digital-group-to-launch-a-canadian-pilot-to-create-a-private-markets-digital-ecosystem/",
+        "anchor": "applied to the CIRO InnovateSafe program"
+      }
+    ]
   }
 }
