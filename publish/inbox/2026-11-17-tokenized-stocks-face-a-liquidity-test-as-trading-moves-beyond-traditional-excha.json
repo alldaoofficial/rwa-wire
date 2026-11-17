@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-17T11:15:18Z",
+    "reason": "Read full iGaming.org analysis dated November 17 (https://igaming.org/crypto/tokenized-stocks-face-a-liquidity-test-as-trading-moves-beyond-traditional-exchanges/). It is an explanatory liquidity/market-structure overview, not a separately verified November 17 announcement. Its cited $2.7bn seven-day DEX turnover refers to early November and requires independent original dataset verification; the SEC/NYSE/Nasdaq items are earlier developments. No new dated primary event with three independently verified facts is established. Hold without altering article text or scanner flags; retry no sooner than six hours."
   }
 }
