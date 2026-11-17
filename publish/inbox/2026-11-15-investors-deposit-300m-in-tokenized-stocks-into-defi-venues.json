@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-17T09:20:26Z",
-    "reason": "Six-hour retry: located Token Terminal's original social post text (mirrored by Sotwe/teapawt) stating $300M, 24x annual growth and 6.3% of tokenized stock market cap versus 2.4% a year earlier; Coinfomania's November 15 full-text story attributes these figures to Token Terminal. However the original dated Token Terminal data/chart or a direct eligible full-text primary source was not independently accessed, and a second independent full-text publisher has not been verified. Social mirrors and snippets do not meet the source-enrichment-v1 evidence ledger requirement. Hold; retry no sooner than 2026-11-17T15:20:26Z."
+    "reviewedAt": "2026-11-17T18:17:53Z",
+    "reason": "Recheck: $300m tokenized-stock deposits in DeFi were already reported from Token Terminal's October 25 data (October 26 reporting), so November 15 coverage does not establish a new milestone. Found full secondary reporting at https://www.onebullex.com/news/articles/token-terminal-tokenized-stocks-in-defi-hit-300-million-xstocks-leads-with-39-4 but not the dated primary Token Terminal full-text dataset or two independent full-text reports for the November 15 framing. Do not publish or call verified. Retry no earlier than 2026-11-18T00:17:53Z; reassess whether to mark duplicate against existing published coverage."
   }
 }
