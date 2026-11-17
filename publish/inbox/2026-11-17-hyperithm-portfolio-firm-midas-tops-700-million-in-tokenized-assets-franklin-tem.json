@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-17T08:23:29Z",
+    "reason": "The November 17 Bloomingbit headline repeats the same Hyperithm/Midas $700 million milestone and Franklin Templeton/Coinbase Ventures investors already reported in Bloomingbit's full November 9 article (https://en.bloomingbit.io/feed/news/123953); the $700 million level was reportedly reached by late September. No distinct November 17 event has been established. Hold for a new dated primary announcement or genuinely new facts; retry no sooner than six hours."
   }
 }
