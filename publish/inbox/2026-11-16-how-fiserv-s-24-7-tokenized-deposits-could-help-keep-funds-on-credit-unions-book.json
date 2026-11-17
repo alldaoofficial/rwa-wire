@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-16T16:23:57Z",
-    "reason": "Read full MarketScale analysis dated 2026-11-16 and Fiserv primary FIUSD announcement dated 2025-06-23. Article synthesizes earlier product plans and interviews; no distinct new 2026-11-16 launch or primary announcement for the proposed credit-union tokenized-deposit network established. Hold pending independent confirmation of a new event; retry no sooner than six hours."
+    "reviewedAt": "2026-11-17T07:17:22Z",
+    "reason": "Six-hour retry: read MarketScale's full November 16, 2026 analysis (https://www.marketscale.com/industries/business-services/how-fiserv-plans-to-move-credit-union-money-247-without-losing-the-deposit) and Fiserv primary announcements June 23, 2025 (FIUSD), February 12, 2026 (INDX), and October 1, 2026 (digital asset platform live). MarketScale describes a proposed tokenized-deposit routing design, not a confirmed November 16 launch. Fiserv's dated releases establish earlier separate initiatives but no new November 16 launch of the proposed credit-union network. Do not conflate INDX real-dollar settlement, FIUSD stablecoin and proposed deposit tokens. Hold pending primary confirmation of a distinct new event or two independent reputable full-text reports; retry no sooner than 2026-11-17T13:17:22Z."
   }
 }
