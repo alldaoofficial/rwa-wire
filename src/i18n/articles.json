@@ -5760,5 +5760,83 @@
       ]
     },
     "sourceSha256": "a344405ec6c91e6b8237d2aabe2c4720cea16ee7bca8f4999713e2a828fcd0bb"
+  },
+  "four-us-senators-question-sec-safeguards-for-tokenized-stock-trading": {
+    "path": "/news/four-us-senators-question-sec-safeguards-for-tokenized-stock-trading/",
+    "date": "2026-11-17",
+    "kind": "news",
+    "sources": [
+      [
+        "Senator Angela Alsobrooks — official letter and press release",
+        "https://www.alsobrooks.senate.gov/news/press-releases/alsobrooks-leads-colleagues-in-pushing-sec-for-answers-transparency-on-tokenized-stock-change/"
+      ]
+    ],
+    "de": {
+      "title": "Vier US-Senatoren hinterfragen die SEC-Schutzvorkehrungen für den Handel mit tokenisierten Aktien",
+      "description": "Vier US-Senatoren forderten die SEC auf, die Maßnahmen zur Bekämpfung von Geldwäsche, die Einwände von Emittenten und den Schutz von Privatanlegern im Rahmen ihrer im September eingeführten Ausnahmeregelung für tokenisierte Aktien zu erläutern.",
+      "sections": [
+        [
+          "Vier Senatoren verlangen Klarheit zur SEC-Ausnahmeregelung",
+          "Vier US-Senatoren haben den Vorsitzenden der Securities and Exchange Commission, Paul Atkins, aufgefordert, die Schutzvorkehrungen für den Handel mit tokenisierten Aktien im Rahmen der Innovation Exemption der Behörde vom 17. September zu erläutern. In einem am 16. November von Senatorin Angela Alsobrooks veröffentlichten Schreiben äußerte sie gemeinsam mit Catherine Cortez Masto, Mark Warner und Ruben Gallego Bedenken hinsichtlich der Kontrollen gegen illegale Finanzströme, der Zustimmung von Emittenten und des Schutzes von Privatanlegern."
+        ],
+        [
+          "Verifizierte Handelszugänge schließen spätere Wallet-Transfers nicht aus",
+          "Die Senatoren argumentieren, dass ein zugangsbeschränkter Handelsplatz nicht zwangsläufig verhindert, dass eine tokenisierte Aktie später an eine nicht verifizierte oder ausländische Wallet übertragen wird. Sie fragen außerdem, ob der Rahmen klare Pflichten zur Bekämpfung von Geldwäsche für Handelsplätze festlegt, die weder als Banken noch als Broker-Dealer registriert sind."
+        ],
+        [
+          "Einwände von Emittenten und Rechte von Privatanlegern stehen im Mittelpunkt",
+          "Mit Blick auf die Rechte der Emittenten heben die Senatoren ein 30-tägiges Einspruchsfenster hervor und erklären, dass mehr als 60 börsennotierte Unternehmen der Tokenisierung ihrer Aktien widersprochen haben. Das Schreiben fragt außerdem, wie bestmögliche Ausführung, Verwahrung und Eigentumsrechte von Anlegern funktionieren sollen, wenn Privatanleger direkt auf Handelsplätzen für tokenisierte Wertpapiere handeln."
+        ],
+        [
+          "13 Fragen mit einer Antwortfrist von 30 Tagen",
+          "Die Senatoren stellten 13 Fragen und baten innerhalb von 30 Tagen um Antworten. Ihr Schreiben fordert eine transparente Regelsetzung, statt die vorläufige Ausnahmeregelung als bereits gefestigtes Regulierungsmodell zu behandeln. Dabei handelt es sich um von den Senatoren geäußerte Bedenken und nicht um Feststellungen, dass Plattformen gegen Vorschriften verstoßen haben."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Cuatro senadores estadounidenses cuestionan las salvaguardias de la SEC para la negociación de acciones tokenizadas",
+      "description": "Cuatro senadores estadounidenses pidieron a la SEC que aclarara los controles contra el blanqueo de capitales, las objeciones de los emisores y la protección de los inversores minoristas en el marco de su exención de septiembre para acciones tokenizadas.",
+      "sections": [
+        [
+          "Cuatro senadores solicitan claridad sobre la exención de la SEC",
+          "Cuatro senadores estadounidenses han pedido al presidente de la Securities and Exchange Commission, Paul Atkins, que aclare las salvaguardias aplicables a la negociación de acciones tokenizadas bajo la Innovation Exemption de la agencia del 17 de septiembre. En una carta publicada el 16 de noviembre por la senadora Angela Alsobrooks, se sumaron Catherine Cortez Masto, Mark Warner y Ruben Gallego para plantear dudas sobre los controles contra las finanzas ilícitas, el consentimiento de los emisores y la protección de los inversores minoristas."
+        ],
+        [
+          "El acceso autorizado no impide necesariamente transferencias posteriores",
+          "Los legisladores sostienen que el acceso restringido a un centro de negociación no evita necesariamente que una acción tokenizada llegue después a una cartera no verificada o situada en el extranjero. También preguntan si el marco establece obligaciones claras contra el blanqueo de capitales para centros que no están registrados como bancos o agentes de bolsa."
+        ],
+        [
+          "Las objeciones de los emisores y los derechos de los inversores centran las preguntas",
+          "En cuanto a los derechos de los emisores, los senadores destacan un plazo de objeción de 30 días y afirman que más de 60 empresas cotizadas se han opuesto a la tokenización de sus acciones. La carta también pregunta cómo funcionarían la mejor ejecución, la custodia y los derechos de propiedad de los inversores cuando los clientes minoristas negocian directamente en plataformas de valores tokenizados."
+        ],
+        [
+          "Trece preguntas con un plazo de respuesta de 30 días",
+          "Los senadores formularon 13 preguntas y solicitaron respuestas en un plazo de 30 días. Su carta reclama una elaboración normativa transparente en lugar de tratar la exención temporal como un modelo regulatorio ya consolidado. Se trata de preocupaciones planteadas por los legisladores, no de conclusiones de que las plataformas hayan cometido infracciones."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Quatre sénateurs américains questionnent les garanties de la SEC pour la négociation d’actions tokenisées",
+      "description": "Quatre sénateurs américains ont demandé à la SEC de préciser les contrôles contre le blanchiment d’argent, les objections des émetteurs et la protection des investisseurs particuliers dans le cadre de son exemption de septembre pour les actions tokenisées.",
+      "sections": [
+        [
+          "Quatre sénateurs demandent des précisions sur l’exemption de la SEC",
+          "Quatre sénateurs américains ont demandé au président de la Securities and Exchange Commission, Paul Atkins, de préciser les garanties encadrant la négociation d’actions tokenisées au titre de l’Innovation Exemption adoptée par l’agence le 17 septembre. Dans une lettre publiée le 16 novembre par la sénatrice Angela Alsobrooks, celle-ci s’est jointe à Catherine Cortez Masto, Mark Warner et Ruben Gallego pour soulever des préoccupations concernant les contrôles contre les flux financiers illicites, le consentement des émetteurs et la protection des investisseurs particuliers."
+        ],
+        [
+          "Un accès autorisé n’empêche pas nécessairement les transferts ultérieurs",
+          "Les parlementaires estiment qu’un accès restreint à une plateforme de négociation n’empêche pas nécessairement une action tokenisée d’être ensuite transférée vers un portefeuille non vérifié ou situé à l’étranger. Ils demandent également si le cadre impose des obligations claires en matière de lutte contre le blanchiment d’argent aux plateformes qui ne sont enregistrées ni comme banques ni comme courtiers-négociants."
+        ],
+        [
+          "Les objections des émetteurs et les droits des investisseurs sont au cœur des questions",
+          "Concernant les droits des émetteurs, les sénateurs mettent en avant une période d’opposition de 30 jours et indiquent que plus de 60 sociétés cotées se sont opposées à la tokenisation de leurs actions. Leur lettre demande aussi comment la meilleure exécution, la conservation et les droits de propriété des investisseurs fonctionneraient lorsque des clients particuliers négocient directement sur des plateformes de titres tokenisés."
+        ],
+        [
+          "Treize questions et un délai de réponse de 30 jours",
+          "Les sénateurs ont soumis 13 questions et demandé des réponses dans un délai de 30 jours. Leur lettre appelle à une réglementation transparente plutôt qu’à considérer l’exemption temporaire comme un modèle réglementaire déjà établi. Il s’agit de préoccupations exprimées par les parlementaires, et non de conclusions selon lesquelles des plateformes auraient commis des infractions."
+        ]
+      ]
+    },
+    "sourceSha256": "c0a85db5de567ab083c803fd489a2cd91c0dd421209086ba8aa8d15bd70a1d4e"
   }
 }
