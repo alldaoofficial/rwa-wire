@@ -33,7 +33,7 @@
     "discoveredAt": "2026-11-17T07:37:14.592986+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "high-trust-headline"
   },
   "sourceReview": {
@@ -84,6 +84,7 @@
         "sourceUrl": "https://www.newsis.com/view/NISX20261117_0003871507",
         "anchor": "KB 포인트(포인트리)"
       }
-    ]
+    ],
+    "contentSha256": "3afd832ef16a5a696881a9ede378491d2036cc3e7d0398a98104f44810486685"
   }
 }
