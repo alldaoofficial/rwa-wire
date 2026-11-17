@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-16T18:18:30Z",
-    "reason": "The Google News discovery URL is unresolved to a readable original The Block article. The $2 trillion by 2028 Standard Chartered projection appears in secondary reporting but is an earlier forecast; no accessible primary bank research or two independently verified full-text reports establish a new November 16 Japan-specific announcement. Recheck after 2026-11-17T00:18:30Z."
+    "reviewedAt": "2026-11-17T04:13:11Z",
+    "reason": "Recheck after prior six-hour hold: resolved and read The Block's full original November 16, 2026 article (https://www.theblock.co/news/web3/2026-11-16-japan-tokenized-government-bonds-standard-chartered-rwa-2-trillion-441384). It reports a November 16 Geoffrey Kendrick bank note, $45 billion current RWA market, $2 trillion end-2028 forecast, $750 billion each for tokenized money-market funds and equities, and Japan's October 8 study group. However Standard Chartered's actual November 16 research note is not publicly verified, and other accessible November 16 stories (Cryptonomist, TronWeekly, CryptoSynk) substantially repeat the same The Block reporting; two demonstrably independent reputable full-text reports or a primary note are still missing. No verified status. Retry no sooner than 2026-11-17T10:13:11Z."
   }
 }
