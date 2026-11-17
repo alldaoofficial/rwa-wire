@@ -14,14 +14,14 @@
     "CBMiwgFBVV95cUxPR3dUV3BMQTJ0TDRtRnM5b19NeXBIbVNRVnlCbVlLTFVfZXBsdEVjcVFsYjYweTNIR181aGlrVTN2a1JQZElDSG1DdVVDeDU2VW9CdzlIMDlUMDhsbFVyQzREM0ZpQ3pTWTFXQkVNT2FtNkp2OVFsdV9icmZYNVpKdWpBQko2MXNlM0M3MVFXRE9qb1JkQ2V0eEhuTXlFQjFua2diZ0JONnRCVDdRYThhVmduOFZ4WGdoTmNCT2dQcUt3dw",
     "CBMiqAFBVV95cUxOYUNGeTZzR0JTUjFjc3FxVENCUUpCTDM1Z19fX0tFejdLMno0aFN1SS04SEh0bG9IN3F0cWpBMUpYTEYwWDNjUG56c2NLclNncTFjYmRIMGg5M3QxcTd2Y2U5Y3p2UmJoNnJyOUZ1cXRtQTc0SFdTU2RSZG92a1dyRDJHY3h3WXR3c0xFNWNqaW02ejVOYkg5VllvUmo1dUVvS2xNNUxtYjI"
   ],
-  "lastRun": "2026-11-16T18:41:45.818626+00:00",
+  "lastRun": "2026-11-17T02:31:32.078776+00:00",
   "lastDiagnostics": {
-    "rawItems": 93,
-    "uniqueItems": 72,
+    "rawItems": 84,
+    "uniqueItems": 64,
     "qualified": 0,
     "blocked": 2,
-    "untrusted": 30,
-    "lowSignal": 40
+    "untrusted": 21,
+    "lowSignal": 41
   },
   "lastResult": "no-qualified-story",
   "lastCandidate": "publish/inbox/2026-11-14-bitcoin-etfs-lose-1-billion-for-the-second-week-in-a-row-as-crypto-funds-except.json"
