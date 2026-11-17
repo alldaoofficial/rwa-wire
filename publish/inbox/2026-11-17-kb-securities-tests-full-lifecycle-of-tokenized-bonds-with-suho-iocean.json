@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-17T08:23:29Z",
+    "reason": "November 17 reports by Yonhap (https://www.yna.co.kr/amp/view/AKR20261117048600008), DigitalToday (https://www.digitaltoday.co.kr/en/view/126524/kb-securities-tests-full-bond-tokenised-securities-process-from-issuance-to-redemption) and Bloomingbit (https://en.bloomingbit.io/feed/news/124594) describe an ERC-3643 tokenized-bond pilot, DvP and ledger reconciliation above 99.9%, not a live product. However attempts to open the complete publisher articles returned DisabledError; retrieved search extracts cannot count as full-text verification, and no accessible original release was independently read. Hold pending full-text primary source or two independently read complete reports; retry no sooner than six hours."
   }
 }
