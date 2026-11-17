@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-17T03:19:09Z",
+    "reason": "Six-hour retry: Nov 15 $300M / 24x / 6.3% figures trace to Coinfomania citing Token Terminal commentary, but no dated full-text primary Token Terminal dataset or second independent full-text report was verified. Coinbrief24 and RWATimes repeat/syndicate the same report; cannot establish independent corroboration or original metric date. Recheck no sooner than 2026-11-17T09:19:09Z."
   }
 }
