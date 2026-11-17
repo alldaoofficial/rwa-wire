@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-17T03:19:09Z",
-    "reason": "Six-hour retry: Nov 15 $300M / 24x / 6.3% figures trace to Coinfomania citing Token Terminal commentary, but no dated full-text primary Token Terminal dataset or second independent full-text report was verified. Coinbrief24 and RWATimes repeat/syndicate the same report; cannot establish independent corroboration or original metric date. Recheck no sooner than 2026-11-17T09:19:09Z."
+    "reviewedAt": "2026-11-17T09:20:26Z",
+    "reason": "Six-hour retry: located Token Terminal's original social post text (mirrored by Sotwe/teapawt) stating $300M, 24x annual growth and 6.3% of tokenized stock market cap versus 2.4% a year earlier; Coinfomania's November 15 full-text story attributes these figures to Token Terminal. However the original dated Token Terminal data/chart or a direct eligible full-text primary source was not independently accessed, and a second independent full-text publisher has not been verified. Social mirrors and snippets do not meet the source-enrichment-v1 evidence ledger requirement. Hold; retry no sooner than 2026-11-17T15:20:26Z."
   }
 }
