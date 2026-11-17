@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-17T21:17:42Z",
+    "reason": "The discovery dated November 17 concerns a Monad/Uniswap v4 xStocks launch reported as occurring November 12, with an independent November 13 report already available. Full reporting was read at TokenPost (November 17) and BSC News (November 13), but the dated original Monad/xStocks announcement and evidence that the later story adds a distinct new event have not been established. Avoid republishing a potentially stale announcement. Retry no earlier than 2026-11-18T03:17:42Z."
   }
 }
