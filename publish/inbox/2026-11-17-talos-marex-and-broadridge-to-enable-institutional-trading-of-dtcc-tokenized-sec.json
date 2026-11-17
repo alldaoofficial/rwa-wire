@@ -29,7 +29,7 @@
     "discoveredAt": "2026-11-17T11:37:14.407630+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
@@ -72,6 +72,7 @@
         "sourceUrl": "https://hk.marketscreener.com/news/talos-marex-and-broadridge-to-enable-institutional-trading-of-dtcc-tokenized-securities-for-financ-ce785edcd98cf225",
         "anchor": "which launched on October 28"
       }
-    ]
+    ],
+    "contentSha256": "af5ca37a4485756f330b88e390091913684a589ead1e75fe6fc297e8cfb7a8be"
   }
 }
