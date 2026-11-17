@@ -29,7 +29,7 @@
     "discoveredAt": "2026-11-17T14:07:18.123093+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
@@ -72,6 +72,7 @@
         "sourceUrl": "https://www.alsobrooks.senate.gov/news/press-releases/alsobrooks-leads-colleagues-in-pushing-sec-for-answers-transparency-on-tokenized-stock-change/",
         "anchor": "within thirty days"
       }
-    ]
+    ],
+    "contentSha256": "ba22dfcc1ae698ab3ead66f0ea4bdb1b0d9204a84a4cb048938a52df844ddd4d"
   }
 }
