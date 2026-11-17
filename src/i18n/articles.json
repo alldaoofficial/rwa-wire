@@ -5690,5 +5690,75 @@
       ]
     },
     "sourceSha256": "7bd458bef3ff058fd166b948b27db33c7700fe0c1d538f971e6fdc1ea325a0ba"
+  },
+  "bitwise-models-solana-s-2031-valuation-around-tokenized-stock-trading": {
+    "path": "/news/bitwise-models-solana-s-2031-valuation-around-tokenized-stock-trading/",
+    "date": "2026-11-16",
+    "kind": "news",
+    "sources": [
+      [
+        "The Block",
+        "https://www.theblock.co/news/markets/2026-11-16-bitwise-solana-price-prediction-1100-2031-441407"
+      ],
+      [
+        "TokenPost",
+        "https://www.tokenpost.com/news/investing/58707"
+      ]
+    ],
+    "de": {
+      "title": "Bitwise modelliert Solanas Bewertung für 2031 anhand des Handels mit tokenisierten Aktien",
+      "description": "Eine Bitwise-Studie vom 16. November modelliert SOL in einem optimistischen Szenario für 2031 mit 1.100 US-Dollar gegenüber 385 US-Dollar im Basisszenario und stützt sich dabei auf ein schnelles Wachstum des Handels mit tokenisierten Aktien und der Netzwerkkapazität.",
+      "sections": [
+        [
+          "Drei Szenarien und keine garantierte Renditeprognose",
+          "Bitwise veröffentlichte am 16. November eine Bewertungsstudie zu Solana, die Szenarien beschreibt und keine garantierten Renditen vorhersagt. Laut Berichten von The Block bewertet das optimistische Modell SOL für 2031 mit 1.100 US-Dollar, verglichen mit 385 US-Dollar im Basisszenario und 80 US-Dollar im pessimistischen Szenario."
+        ],
+        [
+          "Das optimistische Modell setzt starkes Wachstum tokenisierter Aktien voraus",
+          "Das optimistische Ergebnis geht davon aus, dass 5 % des weltweiten Aktienhandels tokenisiert werden und Solana 65 % dieses Volumens abwickelt. Das entspräche einer jährlichen Aktivität von rund 30,7 Billionen US-Dollar. Dasselbe Szenario erfordert ungefähr 3,6 Milliarden Netzwerktransaktionen pro Tag und damit deutlich mehr als das in der Studie beschriebene derzeitige Niveau. TokenPost berichtet außerdem, dass Bitwise das Whitepaper am 16. November auf der Solana-Breakpoint-Konferenz vorstellte und Solana für die ersten neun Monate 2026 einen Anteil von 42 % am Handelsvolumen tokenisierter Aktien zuschrieb. Diese Zahlen beziehen sich auf einen engen, noch entstehenden Markt und nicht auf den gesamten weltweiten Aktienhandel."
+        ],
+        [
+          "Annahme, Kapazität und kommerzielles Interesse bleiben Unsicherheiten",
+          "Die tatsächliche Akzeptanz, konkurrierende Netzwerke, die Verarbeitungskapazität und die real erzielten Gebühren bleiben wesentliche Unsicherheiten. Bitwise ist zudem Emittent eines Solana-Staking-ETF. Dieses kommerzielle Interesse sollten Leser bei der Bewertung der Studie berücksichtigen."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Bitwise modela la valoración de Solana para 2031 en torno a la negociación de acciones tokenizadas",
+      "description": "Un estudio de Bitwise del 16 de noviembre modela SOL en 1.100 dólares para un escenario alcista en 2031, frente a 385 dólares en el escenario base, bajo supuestos de rápido crecimiento de la negociación de acciones tokenizadas y de la capacidad de la red.",
+      "sections": [
+        [
+          "Tres escenarios, no una previsión de rentabilidad garantizada",
+          "Bitwise publicó el 16 de noviembre un estudio de valoración de Solana que presenta escenarios, no una predicción de rendimientos garantizados. Según la información de The Block, el modelo alcista valora SOL en 1.100 dólares para 2031, frente a 385 dólares en el escenario base y 80 dólares en el escenario bajista."
+        ],
+        [
+          "El escenario alcista presupone un fuerte crecimiento de las acciones tokenizadas",
+          "El resultado optimista parte del supuesto de que el 5 % de la negociación mundial de acciones se tokeniza y que Solana capta el 65 % de ese volumen, equivalente a unos 30,7 billones de dólares de actividad anual. El mismo escenario exige aproximadamente 3.600 millones de transacciones diarias en la red, muy por encima del nivel actual descrito en el estudio. Por separado, TokenPost informó de que Bitwise presentó el libro blanco en la conferencia Solana Breakpoint el 16 de noviembre y atribuyó a Solana un 42 % del volumen de negociación de acciones tokenizadas durante los nueve primeros meses de 2026. Estas cifras describen un mercado emergente limitado, no toda la negociación mundial de acciones."
+        ],
+        [
+          "La adopción, la capacidad y el interés comercial siguen siendo inciertos",
+          "La adopción real, las redes competidoras, la capacidad de procesamiento y las comisiones efectivamente captadas siguen siendo incertidumbres importantes. Bitwise también emite un ETF de staking de Solana, un interés comercial que los lectores deben tener en cuenta al evaluar su investigación."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Bitwise modélise la valorisation de Solana en 2031 autour de la négociation d’actions tokenisées",
+      "description": "Une étude de Bitwise datée du 16 novembre modélise SOL à 1 100 dollars dans un scénario haussier pour 2031, contre 385 dollars dans le scénario de base, en supposant une croissance rapide de la négociation d’actions tokenisées et des capacités du réseau.",
+      "sections": [
+        [
+          "Trois scénarios, sans prévision de rendement garanti",
+          "Bitwise a publié le 16 novembre une étude de valorisation de Solana qui présente des scénarios et non une prédiction de rendements garantis. Selon les informations de The Block, le modèle haussier valorise SOL à 1 100 dollars en 2031, contre 385 dollars dans le scénario de base et 80 dollars dans le scénario baissier."
+        ],
+        [
+          "Le scénario haussier suppose une forte croissance des actions tokenisées",
+          "Le résultat optimiste suppose que 5 % de la négociation mondiale d’actions devient tokenisée et que Solana capte 65 % de ce volume, soit environ 30 700 milliards de dollars d’activité annuelle. Ce même scénario nécessiterait approximativement 3,6 milliards de transactions quotidiennes sur le réseau, bien au-dessus du niveau actuel décrit dans l’étude. Par ailleurs, TokenPost indique que Bitwise a présenté le livre blanc lors de la conférence Solana Breakpoint le 16 novembre et a attribué à Solana 42 % du volume de négociation d’actions tokenisées au cours des neuf premiers mois de 2026. Ces chiffres décrivent un marché émergent restreint, et non l’ensemble de la négociation mondiale d’actions."
+        ],
+        [
+          "L’adoption, les capacités et l’intérêt commercial restent incertains",
+          "L’adoption réelle, les réseaux concurrents, les capacités de traitement et les frais effectivement captés demeurent des incertitudes majeures. Bitwise émet également un ETF de staking Solana, un intérêt commercial que les lecteurs doivent prendre en compte lorsqu’ils évaluent cette étude."
+        ]
+      ]
+    },
+    "sourceSha256": "a344405ec6c91e6b8237d2aabe2c4720cea16ee7bca8f4999713e2a828fcd0bb"
   }
 }
