@@ -1,7 +1,7 @@
 {
-  "title": "KB Securities Tests Full Lifecycle of Tokenized Bonds With Suho Iocean",
-  "description": "KB Securities Tests Full Lifecycle of Tokenized Bonds With Suho Iocean",
-  "why_it_matters": "",
+  "title": "KB Securities and Suho Iocean Complete Tokenized Bond Lifecycle Pilot",
+  "description": "KB Securities and Suho Iocean tested simulated tokenized bonds using ERC-3643, atomic delivery-versus-payment settlement and automated ledger reconciliation exceeding 99.9%.",
+  "why_it_matters": "The pilot demonstrates how a Korean brokerage could connect tokenized securities to existing bond records, settlement controls and maturity processing. It is a technical rehearsal ahead of planned legal changes, not evidence of a live retail investment product.",
   "pubDate": "2026-11-17",
   "category": "news",
   "tags": [
@@ -10,14 +10,20 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "KB Securities Tests Full Lifecycle of Tokenized Bonds With Suho Iocean",
-    ""
+    "The November 17 announcement concerns a completed technical pilot, not a commercial tokenized-bond launch.",
+    "ERC-3643 was used to create simulated bond tokens linked to brokerage records through an API.",
+    "Delivery-versus-payment logic and automated ledger checks reportedly achieved over 99.9% reconciliation.",
+    "The trial included automated maturity redemption and token burning; stablecoin links remain prospective."
   ],
-  "body": "KB Securities Tests Full Lifecycle of Tokenized Bonds With Suho Iocean",
+  "body": "South Korea's KB Securities and blockchain infrastructure provider Suho Iocean have completed a pilot covering the lifecycle of simulated tokenized bonds, from issuance and settlement through maturity redemption. The companies reported the exercise on November 17, 2026, according to separate accounts from Yonhap and Newsis.\n\nThe project was conducted under a 2026 blockchain application programming interface development program supported by the Ministry of Science and ICT and the Korea Internet and Security Agency. KB Securities supplied the brokerage use case while Suho Iocean provided the technical infrastructure.\n\nUsing the compliance-oriented ERC-3643 standard, the pilot linked KB Securities' bond data to simulated blockchain securities. Its delivery-versus-payment design paired securities transfers with payment so that failure of either side would reverse the transaction. Automated checks between the blockchain and the brokerage's internal records reportedly produced a matching rate above 99.9%. The test also automated maturity payments and token destruction.\n\nNewsis reported a simulated small-ticket investment flow using KB reward points. The participants described possible future stablecoin integration, contingent on legislation. No public commercial launch or live stablecoin settlement was announced.",
   "sources": [
     {
-      "name": "Seoul Economic Daily",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQaVJWOWFzQUhMczliRFFMMTlaUEg4RW1lV3Y4OGlyanZ0NVhJODQxa3NieUU4aTBNZm1sZlV3TENSSjJPTm1jUkdEUmhsd3R6UXc0di1haDZmWVU3UEFHZlBpTGdxd2RLbUNfR051SkdmUnpDYVFNSGpWNUxHU05qdFg2M3I4RmpxTmpWd1RyaDN1elFUMUluSW1PRlRPcmJk?oc=5"
+      "name": "Yonhap News Agency — original reporting",
+      "url": "https://www.yna.co.kr/view/AKR20261117048600008"
+    },
+    {
+      "name": "Newsis — independent reporting",
+      "url": "https://www.newsis.com/view/NISX20261117_0003871507"
     }
   ],
   "newsWatch": {
@@ -31,10 +37,53 @@
     "discoveryMode": "high-trust-headline"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "verified",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-17T08:23:29Z",
-    "reason": "November 17 reports by Yonhap (https://www.yna.co.kr/amp/view/AKR20261117048600008), DigitalToday (https://www.digitaltoday.co.kr/en/view/126524/kb-securities-tests-full-bond-tokenised-securities-process-from-issuance-to-redemption) and Bloomingbit (https://en.bloomingbit.io/feed/news/124594) describe an ERC-3643 tokenized-bond pilot, DvP and ledger reconciliation above 99.9%, not a live product. However attempts to open the complete publisher articles returned DisabledError; retrieved search extracts cannot count as full-text verification, and no accessible original release was independently read. Hold pending full-text primary source or two independently read complete reports; retry no sooner than six hours."
+    "reviewedAt": "2026-11-17T16:17:43.243Z",
+    "independentReporting": true,
+    "sources": [
+      {
+        "url": "https://www.yna.co.kr/view/AKR20261117048600008",
+        "publishedAt": "2026-11-17",
+        "checkedAt": "2026-11-17T16:17:43.243Z",
+        "kind": "news",
+        "access": "full-text"
+      },
+      {
+        "url": "https://www.newsis.com/view/NISX20261117_0003871507",
+        "publishedAt": "2026-11-17",
+        "checkedAt": "2026-11-17T16:17:43.243Z",
+        "kind": "news",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "KB Securities and Suho Iocean reported completing a simulated tokenized bond lifecycle pilot on November 17.",
+        "sourceUrl": "https://www.yna.co.kr/view/AKR20261117048600008",
+        "anchor": "전 과정을 실증했다고"
+      },
+      {
+        "claim": "The pilot was part of a 2026 government-supported blockchain API development program involving KISA.",
+        "sourceUrl": "https://www.yna.co.kr/view/AKR20261117048600008",
+        "anchor": "2026년 블록체인 응용서비스"
+      },
+      {
+        "claim": "The pilot applied ERC-3643 and delivery-versus-payment settlement that reverses a transaction if either leg fails.",
+        "sourceUrl": "https://www.yna.co.kr/view/AKR20261117048600008",
+        "anchor": "ERC-3643"
+      },
+      {
+        "claim": "Automatic reconciliation between blockchain and brokerage ledgers reportedly achieved a match rate exceeding 99.9 percent.",
+        "sourceUrl": "https://www.newsis.com/view/NISX20261117_0003871507",
+        "anchor": "99.9% 이상의 일치율"
+      },
+      {
+        "claim": "The simulated bond investment process used KB reward points for small-ticket participation and automated maturity redemption.",
+        "sourceUrl": "https://www.newsis.com/view/NISX20261117_0003871507",
+        "anchor": "KB 포인트(포인트리)"
+      }
+    ]
   }
 }
