@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-17T12:12:44Z",
+    "reason": "Discovery is a speculative AVAX buy recommendation rather than a new independently evidenced institutional tokenization announcement. NYSE-Avalanche settlement selection was already reported on November 9; no new November 17 event established. Do not turn an investment-opinion headline into RWA news."
   }
 }
