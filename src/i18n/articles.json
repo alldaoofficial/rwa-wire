@@ -6150,5 +6150,71 @@
       ]
     },
     "sourceSha256": "ddf4d6dcd1b909d380dcfc608382bcd8e0b4efa2a158b1d6f895431531e88865"
+  },
+  "why-an-sec-director-calls-a-wsj-ad-on-tokenized-stocks-misleading": {
+    "path": "/news/why-an-sec-director-calls-a-wsj-ad-on-tokenized-stocks-misleading/",
+    "date": "2026-11-18",
+    "kind": "news",
+    "sources": [
+      [
+        "Unchained interview transcript via Yahoo Finance",
+        "https://finance.yahoo.com/video/why-sec-director-calls-wsj-110000096.html"
+      ]
+    ],
+    "de": {
+      "title": "Warum ein SEC-Direktor eine WSJ-Anzeige zu tokenisierten Aktien als „irreführend“ bezeichnet",
+      "description": "Jamie Selway, Direktor der SEC-Abteilung für Handel und Märkte, widersprach zwei Aussagen in einer im Oktober im Wall Street Journal erschienenen Anzeige gegen tokenisierte Aktien, während Brett Redfearn von Securitize Einwände von Emittenten und den Wettbewerb am Markt erörterte.",
+      "sections": [
+        [
+          "SEC-Direktor widerspricht einer Anzeige vom Oktober",
+          "In einem am 18. November veröffentlichten Ausschnitt aus einem Interview von Unchained widersprach Jamie Selway, Direktor der Abteilung für Handel und Märkte der US-Börsenaufsicht Securities and Exchange Commission, einer Anzeige, die Führungskräfte börsennotierter Unternehmen vor tokenisierten Aktien warnte. Die Anzeige erschien Ende Oktober im Wall Street Journal und wurde im Interview dem Common Sense Leadership Fund zugeschrieben."
+        ],
+        [
+          "Selway beanstandet zwei Aussagen zur Regulierung und zu Aktionärsrechten",
+          "Selway bezeichnete die Anzeige in zweierlei Hinsicht als irreführend. Erstens widersprach er der Darstellung, die betreffenden Handelsstrukturen für tokenisierte Aktien seien völlig unreguliert. Dabei verwies er auf Anforderungen für Unternehmen, die sich auf Ausnahmeregelungen stützen, darunter zugangsbeschränkte Wallets, öffentliche Bekanntmachungen und Prüfungen durch die SEC. Zweitens wies er die Annahme zurück, ein Token trenne seine Inhaber zwangsläufig von den mit dem zugrunde liegenden Wertpapier verbundenen Rechten. Seine Äußerungen beschrieben den diskutierten Rahmen; sie kündigten keine neue Regulierung an."
+        ],
+        [
+          "Securitize verweist auf Wettbewerb und Einwände von Emittenten",
+          "Brett Redfearn, Präsident von Securitize, sagte, sein Unternehmen habe mit einer eigenen Anzeige reagiert. Er argumentierte, etablierte Intermediäre könnten alternative Handelsstrukturen als Wettbewerbsbedrohung ansehen. In dem Gespräch ging es außerdem um Einwände von Emittenten gegen die Initiative für tokenisierte Aktien von OKX ICE. Diese Einwände und die Anzeige vom Oktober liefern Kontext für das Interview im November; sie sind kein Beleg für ein neu eingeführtes Handelsprodukt."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Por qué un director de la SEC califica de «engañosa» una publicidad del WSJ sobre acciones tokenizadas",
+      "description": "Jamie Selway, director de la División de Negociación y Mercados de la SEC, rebatió dos afirmaciones de una publicidad publicada en octubre en The Wall Street Journal contra las acciones tokenizadas, mientras que Brett Redfearn, de Securitize, abordó las objeciones de los emisores y la competencia del mercado.",
+      "sections": [
+        [
+          "Un director de la SEC rebate una publicidad de octubre",
+          "En un fragmento de una entrevista de Unchained publicado el 18 de noviembre, Jamie Selway, director de la División de Negociación y Mercados de la Comisión de Bolsa y Valores de Estados Unidos, cuestionó una publicidad que advertía a los directivos de empresas cotizadas sobre las acciones tokenizadas. La publicidad apareció en The Wall Street Journal a finales de octubre y, en la entrevista, se atribuyó al Common Sense Leadership Fund."
+        ],
+        [
+          "Selway cuestiona dos afirmaciones sobre regulación y derechos de los accionistas",
+          "Selway afirmó que la publicidad era engañosa en dos aspectos. En primer lugar, rechazó la sugerencia de que las estructuras de negociación de acciones tokenizadas en cuestión estuvieran totalmente desreguladas y señaló los requisitos vinculados a las entidades acogidas a exenciones, entre ellos las carteras con permisos, la notificación pública y los exámenes de la SEC. En segundo lugar, rechazó la idea de que un token separe necesariamente a sus titulares de los derechos asociados al valor subyacente. Sus comentarios describían el marco que se está debatiendo; no anunciaban una nueva regulación."
+        ],
+        [
+          "Securitize apunta a la competencia y a las objeciones de los emisores",
+          "Brett Redfearn, presidente de Securitize, dijo que su empresa había publicado una publicidad de respuesta y sostuvo que los intermediarios establecidos podrían considerar las estructuras alternativas de negociación como una amenaza competitiva. La conversación también abordó las objeciones de los emisores a la iniciativa de acciones tokenizadas de OKX ICE. Esas objeciones y la publicidad de octubre aportan contexto a la entrevista de noviembre, pero no constituyen pruebas del lanzamiento de un nuevo producto de negociación."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Pourquoi un directeur de la SEC qualifie de « trompeuse » une publicité du WSJ sur les actions tokenisées",
+      "description": "Jamie Selway, directeur de la division Trading and Markets de la SEC, a contesté deux affirmations d’une publicité parue en octobre dans le Wall Street Journal contre les actions tokenisées, tandis que Brett Redfearn, de Securitize, a évoqué les objections des émetteurs et la concurrence sur le marché.",
+      "sections": [
+        [
+          "Un directeur de la SEC conteste une publicité d’octobre",
+          "Dans un extrait d’un entretien d’Unchained publié le 18 novembre, Jamie Selway, directeur de la division Trading and Markets de la Securities and Exchange Commission américaine, a contesté une publicité mettant en garde les dirigeants de sociétés cotées contre les actions tokenisées. La publicité est parue dans le Wall Street Journal à la fin du mois d’octobre et a été attribuée, lors de l’entretien, au Common Sense Leadership Fund."
+        ],
+        [
+          "Selway conteste deux affirmations sur la réglementation et les droits des actionnaires",
+          "Selway a déclaré que la publicité était trompeuse à deux égards. Premièrement, il a contesté l’idée selon laquelle les dispositifs de négociation d’actions tokenisées concernés seraient totalement non réglementés, en citant les exigences applicables aux entités bénéficiant d’exemptions, notamment les portefeuilles soumis à autorisation, la publication d’avis et les examens de la SEC. Deuxièmement, il a rejeté l’idée qu’un jeton sépare nécessairement ses détenteurs des droits attachés au titre sous-jacent. Ses propos décrivaient le cadre en discussion ; ils n’annonçaient pas une nouvelle réglementation."
+        ],
+        [
+          "Securitize évoque la concurrence et les objections des émetteurs",
+          "Brett Redfearn, président de Securitize, a déclaré que son entreprise avait publié une publicité en réponse et a fait valoir que les intermédiaires établis pouvaient considérer les structures de négociation alternatives comme des menaces concurrentielles. La conversation a également porté sur les objections d’émetteurs à l’initiative d’actions tokenisées d’OKX ICE. Ces objections et la publicité d’octobre apportent un contexte à l’entretien de novembre, mais ne prouvent pas le lancement d’un nouveau produit de négociation."
+        ]
+      ]
+    },
+    "sourceSha256": "c0add0874f8ba7ad33b58419b01af088ecc72d3637f8abd02ce78c4dc65410fd"
   }
 }
