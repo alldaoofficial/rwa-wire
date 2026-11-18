@@ -29,7 +29,7 @@
     "discoveredAt": "2026-11-18T03:07:16.703487+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
@@ -72,6 +72,7 @@
         "sourceUrl": "https://www.wisdomtree.com/onchain/insights/blog/wisdomtree-tokenized-funds-now-available-in-singapore-via-synthesys-network",
         "anchor": "More than 80 channels"
       }
-    ]
+    ],
+    "contentSha256": "b091880ba1f9ead12d17ff79def4b15ff232c17ed770fd3210439e9ebb33359c"
   }
 }
