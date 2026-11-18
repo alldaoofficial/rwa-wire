@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-17T23:10:36Z",
-    "reason": "The Google News discovery link points to an Asia Economy (아시아경제) feature, but the full original article could not be located and read. Searches for the translated headline and Korean tokenization/securities-firm terms returned unrelated older coverage. No dated full-text primary source or two independent full-text reports establish three distinct facts and verbatim anchors. Retry no earlier than 2026-11-18T05:10:36Z."
+    "reviewedAt": "2026-11-18T06:17:09.095Z",
+    "reason": "Rechecked after retry: targeted Korean/English searches did not locate a readable November 17 Asia Economy original article. Results returned unrelated older Asia Economy coverage; no primary full text or two independent full reports verify the specific claims, publication date, and three factual anchors. Google News RSS is only a discovery link. Retry no earlier than six hours after this review. Earliest retry: 2026-11-18T12:17:09.095Z."
   }
 }
