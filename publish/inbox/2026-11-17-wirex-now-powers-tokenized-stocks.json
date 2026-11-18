@@ -29,7 +29,7 @@
     "discoveredAt": "2026-11-17T16:37:14.847027+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
@@ -72,6 +72,7 @@
         "sourceUrl": "https://www.prnewswire.com/news-releases/wirex-now-powers-tokenized-stocks-302942480.html",
         "anchor": "do not confer legal ownership"
       }
-    ]
+    ],
+    "contentSha256": "db66938e0d396ed6583300d7c182d8bee7c7f7178b9365616ed32df0051967ea"
   }
 }
