@@ -1,7 +1,7 @@
 {
-  "title": "PancakeSwap rebrands as Pancake, targets tokenized stocks, ETFs and perpetual futures",
-  "description": "PancakeSwap rebrands as Pancake, targets tokenized stocks, ETFs and perpetual futures",
-  "why_it_matters": "",
+  "title": "PancakeSwap becomes Pancake as tokenized securities join its multichain strategy",
+  "description": "PancakeSwap announced its new Pancake identity on November 18, grouping tokenized stock and ETF trading with perpetuals, yield products and developer infrastructure across more than 11 networks.",
+  "why_it_matters": "The rebrand places tokenized equities alongside mainstream DeFi trading products rather than treating them as a separate experiment. It may increase visibility for onchain securities, although the announcement provides no new regulatory authorization, custody guarantees or evidence of incremental tokenized-stock adoption.",
   "pubDate": "2026-11-18",
   "category": "news",
   "tags": [
@@ -10,14 +10,16 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "PancakeSwap rebrands as Pancake, targets tokenized stocks, ETFs and perpetual futures",
-    ""
+    "PancakeSwap announced the Pancake rebrand on November 18, 2026.",
+    "The existing Stock Terminal offers tokenized stock and ETF trading around the clock.",
+    "Pancake reports more than 11 supported chains and $4.4 trillion in cumulative platform volume.",
+    "A mobile application is planned for the coming weeks, not yet launched."
   ],
-  "body": "PancakeSwap rebrands as Pancake, targets tokenized stocks, ETFs and perpetual futures",
+  "body": "PancakeSwap announced on November 18 that it is adopting the shorter name Pancake, positioning the decentralized finance platform as a broader multichain trading and liquidity service. The company says it began in 2020 as a token-swapping venue and now operates across more than 11 blockchain networks, including BNB Chain, Base, Arbitrum, Solana and Ethereum.\n\nThe rebranded offering groups products into trading, earning and developer services. Its Stock Terminal already provides access to tokenized stocks and exchange-traded funds around the clock, alongside token swaps and perpetual futures. Other offerings include CAKE staking through Syrup Pools, Dual Investment and tools for developers to integrate liquidity and aggregation features.\n\nIn its announcement, the company reported more than 208 million users and over $4.4 trillion in cumulative trading volume. Those figures describe the overall platform, not tokenized-securities activity alone. Pancake also said it intends to release a mobile application in the coming weeks; that is a plan rather than a completed launch.\n\nFor the tokenization market, the branding shift highlights how decentralized trading venues are integrating representations of traditional securities into wider product menus. It does not itself establish new securities approvals or prove that tokenized-equity demand has increased.",
   "sources": [
     {
-      "name": "Cryptonews.net",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBDdE1lYmVMV1RBaG55Q0ZwTkRkRUdEcXVEY3YzVHBpaFd4anVjRkhzVGtObzAzOW9yNk8yeFd6ZXhQMWdqVnRDVUxtSDhXLUJ5UTdWUA?oc=5"
+      "name": "Pancake / Chainwire company announcement (hosted by Decrypt)",
+      "url": "https://decrypt.co/383521/more-than-a-swap-pancakeswap-rebrands-as-pancake-ahead-of-mobile-app-launch"
     }
   ],
   "newsWatch": {
@@ -29,5 +31,52 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-18T14:12:34Z",
+    "sources": [
+      {
+        "url": "https://decrypt.co/383521/more-than-a-swap-pancakeswap-rebrands-as-pancake-ahead-of-mobile-app-launch",
+        "publishedAt": "2026-11-18",
+        "checkedAt": "2026-11-18T14:12:34Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "PancakeSwap announced its rebranding to Pancake on November 18, 2026.",
+        "sourceUrl": "https://decrypt.co/383521/more-than-a-swap-pancakeswap-rebrands-as-pancake-ahead-of-mobile-app-launch",
+        "anchor": "rebranded as Pancake"
+      },
+      {
+        "claim": "The platform says it expanded from a single chain to more than eleven networks.",
+        "sourceUrl": "https://decrypt.co/383521/more-than-a-swap-pancakeswap-rebrands-as-pancake-ahead-of-mobile-app-launch",
+        "anchor": "11+ chains"
+      },
+      {
+        "claim": "Pancake says over 208 million users have traded on its platform.",
+        "sourceUrl": "https://decrypt.co/383521/more-than-a-swap-pancakeswap-rebrands-as-pancake-ahead-of-mobile-app-launch",
+        "anchor": "More than 208 million users"
+      },
+      {
+        "claim": "Pancake reports cumulative trading volume exceeding 4.4 trillion dollars.",
+        "sourceUrl": "https://decrypt.co/383521/more-than-a-swap-pancakeswap-rebrands-as-pancake-ahead-of-mobile-app-launch",
+        "anchor": "over $4.4 trillion"
+      },
+      {
+        "claim": "The Stock Terminal offers tokenized stocks and ETFs on a continuous schedule.",
+        "sourceUrl": "https://decrypt.co/383521/more-than-a-swap-pancakeswap-rebrands-as-pancake-ahead-of-mobile-app-launch",
+        "anchor": "tokenized stocks and ETFs 24/7"
+      },
+      {
+        "claim": "Pancake plans a mobile app launch in the coming weeks.",
+        "sourceUrl": "https://decrypt.co/383521/more-than-a-swap-pancakeswap-rebrands-as-pancake-ahead-of-mobile-app-launch",
+        "anchor": "in the coming weeks"
+      }
+    ]
   }
 }
