@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-18T08:14:54.027Z",
+    "reason": "Full original finance.biggo.com report for the claimed November 18 non-monetary-trust legislative gap could not be accessed or corroborated by two independent full-text reports. The FSC October 1 rulemaking confirms a February 4, 2027 implementation target but not this new reported industry reaction or claimed gap."
   }
 }
