@@ -28,7 +28,7 @@
     "discoveredAt": "2026-11-18T19:07:13.771431+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
@@ -76,6 +76,7 @@
         "sourceUrl": "https://finance.yahoo.com/video/why-sec-director-calls-wsj-110000096.html",
         "anchor": "OKX Ice"
       }
-    ]
+    ],
+    "contentSha256": "4681736f4f6bd2c6c61c04eb1512f2b95c93aab9e8cad573a12e3b9e376f978f"
   }
 }
