@@ -1,7 +1,7 @@
 {
-  "title": "KuCoin Lists New Tokenized Stocks as Trading Begins Today",
-  "description": "KuCoin Lists New Tokenized Stocks as Trading Begins Today",
-  "why_it_matters": "",
+  "title": "KuCoin Schedules Five Ondo Tokenized Stock Pairs for November 18",
+  "description": "KuCoin has scheduled spot trading for five Ondo-linked tokenized US equities, with Apple and Amazon pairs set for 10:00 UTC and Alphabet, Microsoft and Nvidia pairs for 11:00 UTC on November 18.",
+  "why_it_matters": "The listings expand exchange access to tokenized US equity exposure through Solana-based instruments rather than conventional shares. The distinction matters for investors assessing issuer backing, jurisdictional eligibility, token transfer infrastructure and the separate risks of exchange trading.",
   "pubDate": "2026-11-18",
   "category": "news",
   "tags": [
@@ -10,14 +10,16 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "KuCoin Lists New Tokenized Stocks as Trading Begins Today",
-    ""
+    "KuCoin announced five Ondo Stocks tokens referencing Apple, Amazon, Alphabet, Microsoft and Nvidia.",
+    "The Apple and Amazon USDT pairs are scheduled for 10:00 UTC on November 18, with three other pairs an hour later.",
+    "KuCoin lists SOL-SPL as the supported deposit network and says deposits are available immediately.",
+    "The issuer describes the instruments as backed tokens providing economic exposure, subject to jurisdictional restrictions."
   ],
-  "body": "KuCoin Lists New Tokenized Stocks as Trading Begins Today",
+  "body": "KuCoin has announced plans to list five tokenized US stock instruments issued through Ondo Stocks on its spot market on November 18, 2026. The additions reference Apple, Amazon, Alphabet Class A, Microsoft and Nvidia, using the tickers AAPLon, AMZNon, GOOGLon, MSFTon and NVDAon. The exchange's published timetable is prospective: it does not, by itself, establish that trading has already begun.\n\nAccording to KuCoin's announcement, AAPLON/USDT and AMZNON/USDT are scheduled to open at 10:00 UTC, while GOOGLON/USDT, MSFTON/USDT and NVDAON/USDT are scheduled for 11:00 UTC. Each group has a one-hour call-auction window before its planned opening. KuCoin says deposits are effective immediately on the Solana SPL network and identifies the five corresponding USDT spot pairs.\n\nThe exchange describes Ondo Stocks as a platform for issuing and redeeming tokenized exposure to publicly traded US equities and exchange-traded funds. Its announcement says the tokens are backed by the corresponding securities, with cash in transit included, and are intended for eligible investors outside the United States. That is not equivalent to a claim that every token holder owns a conventional registered share.\n\nThe listing broadens the distribution of equity-linked tokens on a centralized crypto exchange, but the announcement also warns that access depends on applicable laws and jurisdiction. Investors should distinguish scheduled market openings, token backing arrangements and trading-platform risks from the rights attached to directly held equities.",
   "sources": [
     {
-      "name": "Cryptonews.net",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBoRUxTbF9ETHNpMDdtbmdsX0Vwd3RnZFJHZ0FOOWpoeXgwNW05YjVJZUNRQWxwRzdmSnZ5cm56MERuSmhhbnlPRTZmTkFlWE0xZnE4ZjU5dw?oc=5"
+      "name": "KuCoin official listing announcement",
+      "url": "https://www.kucoin.com/announcement/en-kucoin-spot-to-list-tokenized-stocks-aaplon-amznon-googlon-msfton-and-nvdaon"
     }
   ],
   "newsWatch": {
@@ -29,5 +31,52 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-18T05:16:49.946Z",
+    "sources": [
+      {
+        "url": "https://www.kucoin.com/announcement/en-kucoin-spot-to-list-tokenized-stocks-aaplon-amznon-googlon-msfton-and-nvdaon",
+        "publishedAt": "2026-11-18",
+        "checkedAt": "2026-11-18T05:16:49.946Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "KuCoin announced five Ondo Stocks tokens tied to Apple, Amazon, Alphabet Class A, Microsoft and Nvidia.",
+        "sourceUrl": "https://www.kucoin.com/announcement/en-kucoin-spot-to-list-tokenized-stocks-aaplon-amznon-googlon-msfton-and-nvdaon",
+        "anchor": "5 new tokenized stock assets"
+      },
+      {
+        "claim": "KuCoin schedules the Apple and Amazon USDT trading pairs to open at 10:00 UTC on November 18.",
+        "sourceUrl": "https://www.kucoin.com/announcement/en-kucoin-spot-to-list-tokenized-stocks-aaplon-amznon-googlon-msfton-and-nvdaon",
+        "anchor": "will open at 10:00"
+      },
+      {
+        "claim": "The Alphabet, Microsoft and Nvidia pairs are scheduled to open at 11:00 UTC on November 18.",
+        "sourceUrl": "https://www.kucoin.com/announcement/en-kucoin-spot-to-list-tokenized-stocks-aaplon-amznon-googlon-msfton-and-nvdaon",
+        "anchor": "will open at 11:00"
+      },
+      {
+        "claim": "KuCoin identifies the Solana SPL network as supported for deposits of the five tokens.",
+        "sourceUrl": "https://www.kucoin.com/announcement/en-kucoin-spot-to-list-tokenized-stocks-aaplon-amznon-googlon-msfton-and-nvdaon",
+        "anchor": "Supported Network: SOL-SPL"
+      },
+      {
+        "claim": "The issuer's tokenized stock products are described as backed by corresponding shares or exchange-traded funds.",
+        "sourceUrl": "https://www.kucoin.com/announcement/en-kucoin-spot-to-list-tokenized-stocks-aaplon-amznon-googlon-msfton-and-nvdaon",
+        "anchor": "fully backed by the corresponding stock"
+      },
+      {
+        "claim": "The announcement states that access may be restricted based on users' jurisdictions and regulatory requirements.",
+        "sourceUrl": "https://www.kucoin.com/announcement/en-kucoin-spot-to-list-tokenized-stocks-aaplon-amznon-googlon-msfton-and-nvdaon",
+        "anchor": "only available to users in eligible jurisdictions"
+      }
+    ]
   }
 }
