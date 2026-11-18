@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-18T09:12:19Z",
-    "reason": "Six-hour retry hold: the Nov 18 Bloomingbit/Shinhan headline is visible in an aggregator, but the full original publisher report and independently corroborating full-text coverage could not be retrieved. The Google News RSS link is not a direct source; three distinct event-specific facts and verbatim source anchors cannot be verified. Related older Shinhan reports are not evidence of this new statement."
+    "reviewedAt": "2026-11-18T17:15:08Z",
+    "reason": "Retry review: November 18 Shinhan/Bloomingbit headline remains uncorroborated by accessible full original publisher text or two independent full-text reports. FSC September/October primary policy releases discuss investor limits and registration requirements but do not prove the attributed new Shinhan statement. No verifiable dated event-specific three-fact ledger or exact anchors. Hold for at least six hours before another retry."
   }
 }
