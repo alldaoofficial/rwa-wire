@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-18T17:15:08Z",
-    "reason": "Retry review: November 18 Shinhan/Bloomingbit headline remains uncorroborated by accessible full original publisher text or two independent full-text reports. FSC September/October primary policy releases discuss investor limits and registration requirements but do not prove the attributed new Shinhan statement. No verifiable dated event-specific three-fact ledger or exact anchors. Hold for at least six hours before another retry."
+    "reviewedAt": "2026-11-18T23:20:12Z",
+    "reason": "Original full Bloomingbit report dated November 18 is now accessible at https://en.bloomingbit.io/feed/news/124699 and documents Choi In-soo's same-day seminar remarks, product limits, distributed-ledger requirements, and proposed non-monetary trust legislation. However Bloomingbit is a reporter's news article, not a direct issuer/regulator primary release; a second independent full-text account or direct Shinhan/seminar primary document could not be verified. No two-source evidence ledger; keep held for at least six hours."
   }
 }
