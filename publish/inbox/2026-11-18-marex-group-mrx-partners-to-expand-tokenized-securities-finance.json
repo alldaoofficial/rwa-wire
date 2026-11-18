@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-18T20:19:57.094Z",
+    "reason": "Duplicate of November 17 Talos–Marex–Broadridge DTCC-tokenized securities financing announcement already source-reviewed in commit 6470f1626988a889d97cd151915e3f7b09db1a4b. November 18 headline offers no distinct new event."
   }
 }
