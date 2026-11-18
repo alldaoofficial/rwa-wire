@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-18T17:15:08Z",
-    "reason": "Retry review: full original November 18 finance.biggo.com report and two independent full-text reports confirming the claimed non-monetary trust legislative gap and fresh industry response remain unavailable. FSC primary releases dated September 4 and October 1 confirm the February 4, 2027 framework and existing non-monetary trust proposals, but do not substantiate a distinct November 18 event. No event-specific three-fact ledger can be built. Hold for at least six hours before another retry."
+    "reviewedAt": "2026-11-18T23:20:12Z",
+    "reason": "November 18 Bloomingbit eyewitness report https://en.bloomingbit.io/feed/news/124699 discusses a non-monetary trust amendment at the Seoul seminar, and FSC October 1 official release https://www.fsc.go.kr/no010101/87838 confirms February 4 2027 implementation plans. Neither establishes the specific claimed November 18 industry response from the finance.biggo.com discovery as a second independent full-text report. No event-specific independent evidence ledger; keep held for at least six hours."
   }
 }
