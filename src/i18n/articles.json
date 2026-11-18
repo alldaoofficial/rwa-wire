@@ -6072,5 +6072,83 @@
       ]
     },
     "sourceSha256": "0dc5ef06280826795eeabcf2bca0f3f00d3b0a6a99506907aba3ce9939dbbe3a"
+  },
+  "pancakeswap-becomes-pancake-as-tokenized-securities-join-its-multichain-strategy": {
+    "path": "/news/pancakeswap-becomes-pancake-as-tokenized-securities-join-its-multichain-strategy/",
+    "date": "2026-11-18",
+    "kind": "news",
+    "sources": [
+      [
+        "Pancake / Chainwire company announcement (hosted by Decrypt)",
+        "https://decrypt.co/383521/more-than-a-swap-pancakeswap-rebrands-as-pancake-ahead-of-mobile-app-launch"
+      ]
+    ],
+    "de": {
+      "title": "PancakeSwap wird zu Pancake und nimmt tokenisierte Wertpapiere in seine Multichain-Strategie auf",
+      "description": "PancakeSwap stellte am 18. November seine neue Identität als Pancake vor und bündelt den Handel mit tokenisierten Aktien und ETFs mit Perpetuals, Ertragsprodukten und Entwickler-Infrastruktur auf mehr als elf Netzwerken.",
+      "sections": [
+        [
+          "Pancake positioniert sich als breitere Multichain-Plattform",
+          "PancakeSwap gab am 18. November bekannt, künftig den kürzeren Namen Pancake zu verwenden. Damit positioniert sich die dezentrale Finanzplattform als umfassenderer Multichain-Dienst für Handel und Liquidität. Das Unternehmen erklärt, 2020 als Plattform für Token-Swaps gestartet zu sein und inzwischen auf mehr als elf Blockchain-Netzwerken zu arbeiten, darunter BNB Chain, Base, Arbitrum, Solana und Ethereum."
+        ],
+        [
+          "Tokenisierte Aktien und ETFs stehen neben Swaps und Perpetuals",
+          "Das neu positionierte Angebot gliedert sich in Handels-, Ertrags- und Entwicklerdienste. Das bestehende Stock Terminal ermöglicht bereits rund um die Uhr den Zugang zu tokenisierten Aktien und börsengehandelten Fonds, neben Token-Swaps und Perpetual Futures. Weitere Angebote umfassen CAKE-Staking über Syrup Pools, Dual Investment sowie Werkzeuge, mit denen Entwickler Liquiditäts- und Aggregationsfunktionen integrieren können."
+        ],
+        [
+          "Plattformzahlen sind nicht mit Wertpapieraktivität gleichzusetzen",
+          "In seiner Mitteilung nannte das Unternehmen mehr als 208 Millionen Nutzer und ein kumuliertes Handelsvolumen von über 4,4 Billionen US-Dollar. Diese Angaben beziehen sich auf die gesamte Plattform und nicht allein auf Aktivitäten mit tokenisierten Wertpapieren. Pancake kündigte außerdem an, in den kommenden Wochen eine mobile Anwendung veröffentlichen zu wollen; dabei handelt es sich um einen Plan und nicht um einen bereits abgeschlossenen Start."
+        ],
+        [
+          "Die Umbenennung schafft keine neue Wertpapierzulassung",
+          "Für den Tokenisierungsmarkt zeigt die Markenänderung, wie dezentrale Handelsplätze Abbildungen traditioneller Wertpapiere in breitere Produktangebote integrieren. Sie begründet jedoch selbst keine neuen wertpapierrechtlichen Genehmigungen und belegt auch keinen Anstieg der Nachfrage nach tokenisierten Aktien."
+        ]
+      ]
+    },
+    "es": {
+      "title": "PancakeSwap pasa a llamarse Pancake e incorpora valores tokenizados a su estrategia multicadena",
+      "description": "PancakeSwap presentó el 18 de noviembre su nueva identidad como Pancake, que agrupa la negociación de acciones y ETF tokenizados con perpetuos, productos de rendimiento e infraestructura para desarrolladores en más de once redes.",
+      "sections": [
+        [
+          "Pancake se posiciona como una plataforma multicadena más amplia",
+          "PancakeSwap anunció el 18 de noviembre que adoptará el nombre abreviado Pancake, con el que sitúa a la plataforma de finanzas descentralizadas como un servicio multicadena más amplio de negociación y liquidez. La empresa afirma que comenzó en 2020 como un mercado de intercambio de tokens y que ahora opera en más de once redes blockchain, entre ellas BNB Chain, Base, Arbitrum, Solana y Ethereum."
+        ],
+        [
+          "Acciones y ETF tokenizados junto a swaps y perpetuos",
+          "La oferta renovada agrupa sus productos en servicios de negociación, rendimiento y desarrollo. Su Stock Terminal ya proporciona acceso continuo a acciones y fondos cotizados tokenizados, junto con swaps de tokens y futuros perpetuos. Otras propuestas incluyen el staking de CAKE mediante Syrup Pools, Dual Investment y herramientas para que los desarrolladores integren funciones de liquidez y agregación."
+        ],
+        [
+          "Las cifras de la plataforma no equivalen a actividad con valores",
+          "En su anuncio, la empresa comunicó más de 208 millones de usuarios y más de 4,4 billones de dólares de volumen de negociación acumulado. Estas cifras describen el conjunto de la plataforma, no únicamente la actividad con valores tokenizados. Pancake también dijo que pretende lanzar una aplicación móvil en las próximas semanas; se trata de un plan, no de un lanzamiento ya completado."
+        ],
+        [
+          "El cambio de marca no concede nuevas autorizaciones de valores",
+          "Para el mercado de la tokenización, el cambio de identidad destaca cómo los centros de negociación descentralizados están incorporando representaciones de valores tradicionales a catálogos de productos más amplios. Sin embargo, por sí mismo no establece nuevas autorizaciones en materia de valores ni demuestra que haya aumentado la demanda de acciones tokenizadas."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "PancakeSwap devient Pancake et intègre les titres tokenisés à sa stratégie multichaîne",
+      "description": "PancakeSwap a présenté le 18 novembre sa nouvelle identité Pancake, qui regroupe la négociation d’actions et d’ETF tokenisés avec des contrats perpétuels, des produits de rendement et une infrastructure pour développeurs sur plus de onze réseaux.",
+      "sections": [
+        [
+          "Pancake se positionne comme une plateforme multichaîne plus large",
+          "PancakeSwap a annoncé le 18 novembre qu’il adoptait le nom abrégé Pancake, positionnant la plateforme de finance décentralisée comme un service multichaîne plus large de négociation et de liquidité. L’entreprise indique avoir démarré en 2020 comme plateforme d’échange de jetons et opérer désormais sur plus de onze réseaux blockchain, notamment BNB Chain, Base, Arbitrum, Solana et Ethereum."
+        ],
+        [
+          "Actions et ETF tokenisés aux côtés des swaps et des contrats perpétuels",
+          "L’offre repositionnée regroupe ses produits en services de négociation, de rendement et de développement. Son Stock Terminal donne déjà accès en continu à des actions et fonds cotés tokenisés, parallèlement aux échanges de jetons et aux contrats à terme perpétuels. Les autres offres comprennent le staking de CAKE via les Syrup Pools, Dual Investment et des outils permettant aux développeurs d’intégrer des fonctions de liquidité et d’agrégation."
+        ],
+        [
+          "Les chiffres de la plateforme ne mesurent pas l’activité sur les titres",
+          "Dans son annonce, l’entreprise a fait état de plus de 208 millions d’utilisateurs et d’un volume de négociation cumulé supérieur à 4 400 milliards de dollars. Ces chiffres concernent l’ensemble de la plateforme, et non la seule activité sur les titres tokenisés. Pancake a également déclaré prévoir le lancement d’une application mobile dans les prochaines semaines ; il s’agit d’un projet et non d’un lancement déjà réalisé."
+        ],
+        [
+          "Le changement de marque n’accorde aucune nouvelle autorisation sur les titres",
+          "Pour le marché de la tokenisation, cette évolution de marque montre comment les plateformes de négociation décentralisées intègrent des représentations de titres traditionnels à des gammes de produits plus larges. Elle n’établit toutefois à elle seule aucune nouvelle autorisation en matière de titres et ne prouve pas une hausse de la demande d’actions tokenisées."
+        ]
+      ]
+    },
+    "sourceSha256": "ddf4d6dcd1b909d380dcfc608382bcd8e0b4efa2a158b1d6f895431531e88865"
   }
 }
