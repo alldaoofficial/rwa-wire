@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-18T06:17:06.226Z",
-    "reason": "Rechecked after retry: TokenPost's full November 17 report and November 13 coverage confirm Monad announced the ten xStocks Uniswap v4 markets on November 12, not November 17. November 17 reporting discusses already-live liquidity and possible developer integrations, not a separately verified new launch. The original dated announcement and independent evidence of a distinct new event are insufficient for a fresh article; avoid recycling the November 12 launch. Retry no earlier than six hours after this review. Earliest retry: 2026-11-18T12:17:06.226Z."
+    "reviewedAt": "2026-11-18T18:13:52.920Z",
+    "reason": "Rechecked original event timing against full November 17 TokenPost report and November 13 BSCN reporting: Monad launched ten xStocks Uniswap v4 markets on November 12, 2026. November 17 coverage reiterates existing liquidity and prospective DeFi hooks/vaults/lending, not a distinct newly launched product. No verified new event merits a separate November 17 article. Retry no sooner than six hours after this review."
   }
 }
