@@ -1,8 +1,8 @@
 {
-  "title": "WisdomTree registers three tokenized funds in Singapore",
-  "description": "WisdomTree registers three tokenized funds in Singapore",
-  "why_it_matters": "",
-  "pubDate": "2026-11-18",
+  "title": "WisdomTree Registers Three Tokenized Funds in Singapore for Regulated Distribution",
+  "description": "WisdomTree's WTGXX, SPXUX and TECHX funds have been registered as restricted schemes in Singapore, with Pinetree Securities providing an initial regulated distribution route through Synthesys Network.",
+  "why_it_matters": "The development extends access to existing US-registered tokenized investment funds through Singapore's regulated intermediary framework rather than launching unrestricted retail trading. It also tests whether shared distribution infrastructure can reduce the need for separate integrations between fund managers and financial institutions.",
+  "pubDate": "2026-11-17",
   "category": "news",
   "tags": [
     "Tokenization",
@@ -10,14 +10,16 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "WisdomTree registers three tokenized funds in Singapore",
-    ""
+    "Three WisdomTree tokenized funds have been registered in Singapore as restricted schemes.",
+    "The lineup covers dollar cash management, US large-cap stocks and technology-focused equities.",
+    "Pinetree Securities is the initial Singapore distribution intermediary for eligible institutional clients.",
+    "Synthesys says its network connects more than 80 distribution channels, but each must meet regulatory and eligibility requirements."
   ],
-  "body": "WisdomTree registers three tokenized funds in Singapore",
+  "body": "WisdomTree has registered three existing tokenized investment funds in Singapore as restricted schemes, opening a regulated route for eligible investors to access different asset classes through local intermediaries. The company announced the development on November 17, 2026, alongside a distribution collaboration with Synthesys Network.\n\nThe funds are the WisdomTree Treasury Money Market Digital Fund (WTGXX), the WisdomTree 500 Digital Fund (SPXUX), and the WisdomTree Technology and Innovation 100 Digital Fund (TECHX). They respectively provide exposure to short-term US dollar assets, US large-cap equities, and technology and innovation companies. Registration as restricted schemes does not mean the products are available to all retail investors.\n\nPinetree Securities, a Singapore Capital Markets Services license holder, is the initial distribution intermediary. Its role includes onboarding and investor due diligence for qualifying institutional clients. Synthesys provides connectivity between regulated distributors and tokenized products, seeking to reduce the need for individual integrations with each fund manager.\n\nWisdomTree says more than 80 channels are connected to Synthesys Network. That figure describes potential distribution reach, not confirmed fund subscriptions or unrestricted availability. Each channel must still satisfy its own regulatory permissions and investor eligibility conditions. The announcement therefore marks an expansion of regulated access infrastructure, rather than a new exchange listing or permissionless trading launch.",
   "sources": [
     {
-      "name": "TNGlobal",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOazI5TnZRUkR6Uml6cnNHTnQ4YThlYzRfdE5hcVBXWktWUjZWWFY1U0pMUXE1MkZlWVpkaW9IM2xVRkZvVGZjd2IwUGctYzJ2OXpjajdVdkxHUWZGOFdvRWQ1bGtoeGZTRGowbU1EOFpWNzVERVltb2h0SUg0cWJHNVB2YVpXYlVLT1FOZGQyVThxdw?oc=5"
+      "name": "WisdomTree Onchain — Singapore funds announcement",
+      "url": "https://www.wisdomtree.com/onchain/insights/blog/wisdomtree-tokenized-funds-now-available-in-singapore-via-synthesys-network"
     }
   ],
   "newsWatch": {
@@ -29,5 +31,47 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-18T03:10:32Z",
+    "sources": [
+      {
+        "url": "https://www.wisdomtree.com/onchain/insights/blog/wisdomtree-tokenized-funds-now-available-in-singapore-via-synthesys-network",
+        "publishedAt": "2026-11-17",
+        "checkedAt": "2026-11-18T03:10:32Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "WisdomTree registered three tokenized funds in Singapore as restricted schemes.",
+        "sourceUrl": "https://www.wisdomtree.com/onchain/insights/blog/wisdomtree-tokenized-funds-now-available-in-singapore-via-synthesys-network",
+        "anchor": "registered in Singapore as restricted schemes"
+      },
+      {
+        "claim": "The three funds include WTGXX, SPXUX and TECHX, covering cash management and two equity strategies.",
+        "sourceUrl": "https://www.wisdomtree.com/onchain/insights/blog/wisdomtree-tokenized-funds-now-available-in-singapore-via-synthesys-network",
+        "anchor": "WTGXX"
+      },
+      {
+        "claim": "Pinetree Securities is the Singapore intermediary holding a Capital Markets Services License.",
+        "sourceUrl": "https://www.wisdomtree.com/onchain/insights/blog/wisdomtree-tokenized-funds-now-available-in-singapore-via-synthesys-network",
+        "anchor": "Capital Markets Services License"
+      },
+      {
+        "claim": "Pinetree handles onboarding and due diligence for eligible institutional clients.",
+        "sourceUrl": "https://www.wisdomtree.com/onchain/insights/blog/wisdomtree-tokenized-funds-now-available-in-singapore-via-synthesys-network",
+        "anchor": "onboarding and investor due diligence"
+      },
+      {
+        "claim": "More than eighty channels on Synthesys Network may offer the funds subject to regulatory permissions.",
+        "sourceUrl": "https://www.wisdomtree.com/onchain/insights/blog/wisdomtree-tokenized-funds-now-available-in-singapore-via-synthesys-network",
+        "anchor": "More than 80 channels"
+      }
+    ]
   }
 }
