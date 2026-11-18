@@ -1,7 +1,7 @@
 {
-  "title": "Invesco Debuts Tokenized Treasury Fund Built for Stablecoin Reserve Rules (NYSE: IVZ)",
-  "description": "Invesco Debuts Tokenized Treasury Fund Built for Stablecoin Reserve Rules (NYSE: IVZ)",
-  "why_it_matters": "",
+  "title": "Invesco launches IROXX tokenized fund for stablecoin reserve management",
+  "description": "Invesco introduced the IROXX government money market fund on November 17, combining short-term Treasury reserve assets with Superstate's FundOS infrastructure and USDC transaction support for eligible institutions.",
+  "why_it_matters": "The launch gives stablecoin issuers a regulated fund structure for holding eligible reserves while using blockchain-based ownership records. It also tests whether tokenization can improve reserve transparency without changing the underlying liquidity and investment risks of money market funds.",
   "pubDate": "2026-11-18",
   "category": "news",
   "tags": [
@@ -10,14 +10,16 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "Invesco Debuts Tokenized Treasury Fund Built for Stablecoin Reserve Rules (NYSE: IVZ)",
-    ""
+    "Invesco announced IROXX on November 17, 2026, as an actively managed government money market fund.",
+    "Superstate's FundOS provides blockchain-integrated transfer agency and recordkeeping infrastructure.",
+    "The fund targets institutional holders, including stablecoin issuers, and supports U.S. dollar and USDC transactions.",
+    "IROXX invests in short-duration Treasury securities and other eligible reserve assets rather than stablecoins themselves."
   ],
-  "body": "Invesco Debuts Tokenized Treasury Fund Built for Stablecoin Reserve Rules (NYSE: IVZ)",
+  "body": "Invesco announced the launch of its Stablecoin Reserves Onchain Fund, ticker IROXX, on November 17, 2026. The actively managed government money market fund is designed for institutional investors seeking to hold assets backing payment stablecoins in a tokenized format. Invesco says its investment strategy is structured around reserve assets eligible under the U.S. GENIUS Act.\n\nThe portfolio focuses on short-duration U.S. Treasury securities and other permitted reserve instruments. Superstate supplies its FundOS tokenization platform, including blockchain-integrated transfer agency and ownership recordkeeping. Invesco's Global Liquidity team manages the portfolio. The structure supports transactions in U.S. dollars and USDC, while dividends are reinvested daily.\n\nIROXX is organized as a registered Rule 2a-7 government money market fund within the Invesco Short-Term Investments Trust. Initial investors are expected to include stablecoin issuers and digital-asset infrastructure providers. Invesco also identifies IROXX as the first publicly registered fund launched on Superstate's FundOS platform.\n\nThe development links traditional cash management with onchain records, but tokenization does not remove investment risk. Invesco cautions that the fund is not FDIC insured, may lose value and faces blockchain operational risks. Its shares represent interests in a fund holding reserve assets, not investments in stablecoins.",
   "sources": [
     {
-      "name": "finance.biggo.com",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9HbDdSZWpXZkpMbmRnaWZ2Y2tud2RvVVZsN1pHX0NHTjQxU0liSnQ3QkcxbzJHamNuaWdwQkRqNWxIX0JDVjBtV2FGcDBXbHdqdndyWWZIWENCd3pjRl9kTFd2UFhWeFFxeDJ2MDFFUWZBVUdreHc?oc=5"
+      "name": "Invesco press release (PR Newswire)",
+      "url": "https://www.prnewswire.com/news-releases/invesco-launches-the-invesco-stablecoin-reserves-onchain-fund-bringing-invescos-established-liquidity-management-onchain-302941734.html"
     }
   ],
   "newsWatch": {
@@ -29,5 +31,52 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-18T13:18:49Z",
+    "sources": [
+      {
+        "url": "https://www.prnewswire.com/news-releases/invesco-launches-the-invesco-stablecoin-reserves-onchain-fund-bringing-invescos-established-liquidity-management-onchain-302941734.html",
+        "publishedAt": "2026-11-17",
+        "checkedAt": "2026-11-18T13:18:49Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Invesco announced the launch of the Stablecoin Reserves Onchain Fund under ticker IROXX on November 17.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/invesco-launches-the-invesco-stablecoin-reserves-onchain-fund-bringing-invescos-established-liquidity-management-onchain-302941734.html",
+        "anchor": "IROXX or the"
+      },
+      {
+        "claim": "The fund is managed by Invesco's Global Liquidity Team and uses Superstate's FundOS tokenization platform.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/invesco-launches-the-invesco-stablecoin-reserves-onchain-fund-bringing-invescos-established-liquidity-management-onchain-302941734.html",
+        "anchor": "tokenization FundOS platform"
+      },
+      {
+        "claim": "IROXX is structured as a registered Rule 2a-7 government money market fund within an Invesco trust.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/invesco-launches-the-invesco-stablecoin-reserves-onchain-fund-bringing-invescos-established-liquidity-management-onchain-302941734.html",
+        "anchor": "registered Rule 2a-7 government"
+      },
+      {
+        "claim": "The product supports transactions in both United States dollars and the USDC stablecoin.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/invesco-launches-the-invesco-stablecoin-reserves-onchain-fund-bringing-invescos-established-liquidity-management-onchain-302941734.html",
+        "anchor": "dollars and USDC"
+      },
+      {
+        "claim": "Invesco says the fund is the first publicly registered fund to launch using Superstate's FundOS.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/invesco-launches-the-invesco-stablecoin-reserves-onchain-fund-bringing-invescos-established-liquidity-management-onchain-302941734.html",
+        "anchor": "first publicly registered fund"
+      },
+      {
+        "claim": "The fund does not directly invest in stablecoins or companies that issue stablecoins.",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/invesco-launches-the-invesco-stablecoin-reserves-onchain-fund-bringing-invescos-established-liquidity-management-onchain-302941734.html",
+        "anchor": "does not invest in stablecoins"
+      }
+    ]
   }
 }
