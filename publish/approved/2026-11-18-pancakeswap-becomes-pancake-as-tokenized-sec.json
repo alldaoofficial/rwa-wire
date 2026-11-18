@@ -1,0 +1,27 @@
+{
+  "id": "2026-11-18-pancakeswap-becomes-pancake-as-tokenized-sec",
+  "title": "PancakeSwap becomes Pancake as tokenized securities join its multichain strategy",
+  "category": "NEWS",
+  "why_it_matters": "The rebrand places tokenized equities alongside mainstream DeFi trading products rather than treating them as a separate experiment. It may increase visibility for onchain securities, although the announcement provides no new regulatory authorization, custody guarantees or evidence of incremental tokenized-stock adoption.",
+  "article_url": "https://therwawire.com/news/pancakeswap-becomes-pancake-as-tokenized-securities-join-its-multichain-strategy/",
+  "image_url": "https://therwawire.com/images/news/pancakeswap-becomes-pancake-as-tokenized-securities-join-its-multichain-strategy.svg",
+  "caption": "RWA WIRE // NEWS\n\nPancakeSwap becomes Pancake as tokenized securities join its multichain strategy\n\nPancakeSwap announced its new Pancake identity on November 18, grouping tokenized stock and ETF trading with perpetuals, yield products and developer infrastructure across more than 11 networks.\n\nFull analysis →\nhttps://therwawire.com/news/pancakeswap-becomes-pancake-as-tokenized-securities-join-its-multichain-strategy/",
+  "distribution": {
+    "telegram": "RWA WIRE // NEWS\n\nPancakeSwap becomes Pancake as tokenized securities join its multichain strategy\n\nPancakeSwap announced its new Pancake identity on November 18, grouping tokenized stock and ETF trading with perpetuals, yield products and developer infrastructure across more than 11 networks.\n\nFull analysis →\nhttps://therwawire.com/news/pancakeswap-becomes-pancake-as-tokenized-securities-join-its-multichain-strategy/",
+    "x": "PancakeSwap becomes Pancake as tokenized securities join its multichain strategy\n\nPancakeSwap announced its new Pancake identity on November 18, grouping tokenized stock and ETF trading with perpetuals, yield products and developer infrastructure across more than 11 networks.\n\nhttps://therwawire.com/news/pancakeswap-becomes-pancake-as-tokenized-securities-join-its-multichain-strategy/",
+    "breaking": "RWA WIRE // NEWS\n\nPancakeSwap becomes Pancake as tokenized securities join its multichain strategy\n\nhttps://therwawire.com/news/pancakeswap-becomes-pancake-as-tokenized-securities-join-its-multichain-strategy/",
+    "summary": "PancakeSwap announced its new Pancake identity on November 18, grouping tokenized stock and ETF trading with perpetuals, yield products and developer infrastructure across more than 11 networks."
+  },
+  "sources": [
+    {
+      "name": "Pancake / Chainwire company announcement (hosted by Decrypt)",
+      "url": "https://decrypt.co/383521/more-than-a-swap-pancakeswap-rebrands-as-pancake-ahead-of-mobile-app-launch"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-11-18-pancakeswap-rebrands-as-pancake-targets-tokenized-stocks-etfs-and-perpetual-futu.json",
+    "contentSha256": "3fb753bd2d49091aace5f93b73c3bbfee35a01a0374aaf193916089fbd9ff65e",
+    "approvedAt": "2026-11-18T14:13:28.642823+00:00"
+  }
+}
