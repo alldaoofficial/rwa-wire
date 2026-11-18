@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-18T15:18:33.900Z",
-    "reason": "TokenPost's November 18 report describes the FDIC proposal published in the Federal Register on April 10, 2026, approved April 7. The original FDIC document is accessible but establishes an April proposal, not a new November regulatory action; no new decision was substantiated. Hold pending evidence of a distinct current event; retry after six hours."
+    "reviewedAt": "2026-11-18T21:18:22.149Z",
+    "reason": "FDIC primary notice dated April 7, 2026 and Federal Register publication April 10 confirm this is an April proposal, not a November 18 action. November 18 TokenPost full-text report explicitly says proposal is not final and identifies no new decision. Hold for distinct current regulatory development; retry no earlier than six hours."
   }
 }
