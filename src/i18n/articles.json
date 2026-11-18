@@ -5994,5 +5994,83 @@
       ]
     },
     "sourceSha256": "07c20ae22ab081144538a0db37b60dc807441abb07902890a0d577a0418a35ec"
+  },
+  "invesco-launches-iroxx-tokenized-fund-for-stablecoin-reserve-management": {
+    "path": "/news/invesco-launches-iroxx-tokenized-fund-for-stablecoin-reserve-management/",
+    "date": "2026-11-18",
+    "kind": "news",
+    "sources": [
+      [
+        "Invesco press release (PR Newswire)",
+        "https://www.prnewswire.com/news-releases/invesco-launches-the-invesco-stablecoin-reserves-onchain-fund-bringing-invescos-established-liquidity-management-onchain-302941734.html"
+      ]
+    ],
+    "de": {
+      "title": "Invesco startet tokenisierten IROXX-Fonds für das Management von Stablecoin-Reserven",
+      "description": "Invesco stellte am 17. November den staatlichen Geldmarktfonds IROXX vor, der kurzfristige Treasury-Reserveanlagen mit Superstates FundOS-Infrastruktur und USDC-Transaktionen für berechtigte Institutionen verbindet.",
+      "sections": [
+        [
+          "Tokenisierter Geldmarktfonds für institutionelle Reservehalter",
+          "Invesco gab am 17. November 2026 den Start seines Stablecoin Reserves Onchain Fund mit dem Ticker IROXX bekannt. Der aktiv verwaltete staatliche Geldmarktfonds richtet sich an institutionelle Anleger, die Vermögenswerte zur Deckung von Zahlungs-Stablecoins in tokenisierter Form halten möchten. Invesco zufolge orientiert sich die Anlagestrategie an Reserveanlagen, die nach dem US-amerikanischen GENIUS Act zulässig sind."
+        ],
+        [
+          "Kurzlaufende Treasuries, FundOS und USDC-Transaktionen",
+          "Das Portfolio konzentriert sich auf kurzlaufende US-Staatsanleihen und andere zulässige Reserveinstrumente. Superstate stellt seine Tokenisierungsplattform FundOS bereit, einschließlich einer blockchainintegrierten Transferstellenfunktion und der Führung von Eigentumsregistern. Das Global-Liquidity-Team von Invesco verwaltet das Portfolio. Die Struktur unterstützt Transaktionen in US-Dollar und USDC; Ausschüttungen werden täglich wiederangelegt."
+        ],
+        [
+          "Registrierter Rule-2a-7-Fonds auf Superstates Plattform",
+          "IROXX ist als registrierter staatlicher Geldmarktfonds nach Rule 2a-7 innerhalb des Invesco Short-Term Investments Trust organisiert. Zu den erwarteten ersten Anlegern zählen Stablecoin-Emittenten und Anbieter von Infrastruktur für digitale Vermögenswerte. Invesco bezeichnet IROXX zudem als den ersten öffentlich registrierten Fonds, der auf Superstates FundOS-Plattform aufgelegt wurde."
+        ],
+        [
+          "Tokenisierung beseitigt weder Anlage- noch Betriebsrisiken",
+          "Die Entwicklung verbindet traditionelles Liquiditätsmanagement mit Onchain-Registern, doch die Tokenisierung hebt Anlagerisiken nicht auf. Invesco weist darauf hin, dass der Fonds nicht durch die FDIC versichert ist, an Wert verlieren kann und operativen Blockchain-Risiken ausgesetzt ist. Die Anteile verkörpern Beteiligungen an einem Fonds, der Reserveanlagen hält; sie sind keine Investments in Stablecoins."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Invesco lanza el fondo tokenizado IROXX para la gestión de reservas de stablecoins",
+      "description": "Invesco presentó el 17 de noviembre el fondo monetario gubernamental IROXX, que combina activos de reserva del Tesoro a corto plazo con la infraestructura FundOS de Superstate y transacciones en USDC para instituciones elegibles.",
+      "sections": [
+        [
+          "Un fondo monetario tokenizado para titulares institucionales de reservas",
+          "Invesco anunció el 17 de noviembre de 2026 el lanzamiento de su Stablecoin Reserves Onchain Fund, con el símbolo IROXX. El fondo monetario gubernamental de gestión activa está concebido para inversores institucionales que buscan mantener en formato tokenizado los activos que respaldan stablecoins de pago. Según Invesco, la estrategia de inversión se estructura en torno a activos de reserva admitidos por la ley GENIUS de Estados Unidos."
+        ],
+        [
+          "Bonos del Tesoro a corto plazo, FundOS y transacciones en USDC",
+          "La cartera se centra en valores del Tesoro estadounidense de corta duración y otros instrumentos de reserva permitidos. Superstate aporta su plataforma de tokenización FundOS, que incluye funciones de agente de transferencias y registros de propiedad integrados con blockchain. El equipo Global Liquidity de Invesco gestiona la cartera. La estructura admite transacciones en dólares estadounidenses y USDC, mientras que los dividendos se reinvierten diariamente."
+        ],
+        [
+          "Un fondo registrado conforme a la Regla 2a-7 en la plataforma de Superstate",
+          "IROXX está constituido como fondo monetario gubernamental registrado conforme a la Regla 2a-7 dentro de Invesco Short-Term Investments Trust. Se espera que entre los primeros inversores figuren emisores de stablecoins y proveedores de infraestructura para activos digitales. Invesco también identifica a IROXX como el primer fondo registrado públicamente que se lanza en la plataforma FundOS de Superstate."
+        ],
+        [
+          "La tokenización no elimina los riesgos de inversión ni operativos",
+          "La iniciativa vincula la gestión tradicional de efectivo con registros onchain, pero la tokenización no elimina el riesgo de inversión. Invesco advierte de que el fondo no está asegurado por la FDIC, puede perder valor y está expuesto a riesgos operativos de blockchain. Sus participaciones representan intereses en un fondo que mantiene activos de reserva, no inversiones en stablecoins."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Invesco lance le fonds tokenisé IROXX pour la gestion des réserves de stablecoins",
+      "description": "Invesco a présenté le 17 novembre le fonds monétaire gouvernemental IROXX, qui associe des actifs de réserve du Trésor à court terme à l’infrastructure FundOS de Superstate et aux transactions en USDC pour les institutions éligibles.",
+      "sections": [
+        [
+          "Un fonds monétaire tokenisé pour les détenteurs institutionnels de réserves",
+          "Invesco a annoncé le 17 novembre 2026 le lancement de son Stablecoin Reserves Onchain Fund, sous le symbole IROXX. Ce fonds monétaire gouvernemental géré activement est destiné aux investisseurs institutionnels qui souhaitent détenir sous forme tokenisée les actifs garantissant des stablecoins de paiement. Selon Invesco, sa stratégie d’investissement est structurée autour des actifs de réserve éligibles au titre du GENIUS Act américain."
+        ],
+        [
+          "Bons du Trésor à court terme, FundOS et transactions en USDC",
+          "Le portefeuille se concentre sur des titres du Trésor américain à courte échéance et d’autres instruments de réserve autorisés. Superstate fournit sa plateforme de tokenisation FundOS, qui comprend des fonctions d’agent de transfert et de tenue des registres de propriété intégrées à la blockchain. L’équipe Global Liquidity d’Invesco gère le portefeuille. La structure prend en charge les transactions en dollars américains et en USDC, tandis que les dividendes sont réinvestis quotidiennement."
+        ],
+        [
+          "Un fonds enregistré au titre de la règle 2a-7 sur la plateforme de Superstate",
+          "IROXX est constitué comme un fonds monétaire gouvernemental enregistré au titre de la règle 2a-7 au sein de l’Invesco Short-Term Investments Trust. Les premiers investisseurs devraient notamment comprendre des émetteurs de stablecoins et des fournisseurs d’infrastructures pour actifs numériques. Invesco présente également IROXX comme le premier fonds enregistré auprès du public lancé sur la plateforme FundOS de Superstate."
+        ],
+        [
+          "La tokenisation ne supprime ni les risques d’investissement ni les risques opérationnels",
+          "Cette évolution relie la gestion traditionnelle de trésorerie aux registres onchain, mais la tokenisation ne supprime pas le risque d’investissement. Invesco avertit que le fonds n’est pas assuré par la FDIC, qu’il peut perdre de la valeur et qu’il est exposé à des risques opérationnels liés à la blockchain. Ses parts représentent des intérêts dans un fonds détenant des actifs de réserve, et non des investissements dans des stablecoins."
+        ]
+      ]
+    },
+    "sourceSha256": "0dc5ef06280826795eeabcf2bca0f3f00d3b0a6a99506907aba3ce9939dbbe3a"
   }
 }
