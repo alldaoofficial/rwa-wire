@@ -1,8 +1,8 @@
 {
-  "title": "Fed Governor Sees Stablecoins, Tokenized Deposits Coexisting in Financial System",
-  "description": "Fed Governor Sees Stablecoins, Tokenized Deposits Coexisting in Financial System",
-  "why_it_matters": "",
-  "pubDate": "2026-11-18",
+  "title": "Fed Governor Waller Says Stablecoins and Tokenized Deposits Can Serve Different Markets",
+  "description": "In a November 17 speech, Christopher Waller outlined how stablecoins, tokenized bank deposits and traditional payment rails could coexist, while warning about stranded assets and governance risks.",
+  "why_it_matters": "Waller's remarks frame tokenized settlement as an infrastructure and governance challenge rather than a contest with a single winning digital currency. For institutions issuing tokenized securities, interoperability, legal ownership and access to reliable central-bank-linked settlement could matter as much as blockchain throughput.",
+  "pubDate": "2026-11-17",
   "category": "news",
   "tags": [
     "Tokenization",
@@ -10,14 +10,16 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "Fed Governor Sees Stablecoins, Tokenized Deposits Coexisting in Financial System",
-    ""
+    "Waller described stablecoins and tokenized bank deposits as different programmable settlement instruments that may coexist.",
+    "The Fed governor said tokenized money-market funds and conventional payment methods could also play distinct roles.",
+    "He warned about lost keys, erroneous transfers and assets stranded on abandoned blockchain networks.",
+    "He argued that central-bank-linked traditional payment rails remain important to final settlement and trust."
   ],
-  "body": "Fed Governor Sees Stablecoins, Tokenized Deposits Coexisting in Financial System",
+  "body": "Federal Reserve Governor Christopher Waller said stablecoins and tokenized bank deposits could coexist as financial institutions develop payment methods for tokenized assets. Speaking at The Clearing House Annual Conference in New York on November 17, 2026, he described a market in which several forms of digital money serve different transaction needs rather than one instrument replacing the others.\n\nWaller distinguished stablecoins from tokenized deposits by their issuers, regulatory treatment and connections to established financial systems. He also pointed to tokenized money-market funds as another potential settlement asset. A company handling international payments might choose a different instrument from a securities firm settling large transactions, he suggested.\n\nThe governor emphasized that programmable settlement does not eliminate familiar operational risks. Fraud, lost private keys, mistaken transfers and assets stranded on abandoned blockchain networks all raise questions about responsibility. He called for clear governance, legal treatment and standards so tokenized claims retain ownership rights and compliance obligations when they move between platforms.\n\nWaller also cautioned against treating simultaneous, or atomic, settlement as the only useful model. Net and batch settlement may still conserve liquidity in high-volume markets. He said established payment rails and access to central-bank money should remain an important foundation for trust, even when individual tokenized transactions do not directly use central-bank money.\n\nThe speech set out policy considerations, not a new Federal Reserve product launch or a regulatory approval for any particular tokenized asset.",
   "sources": [
     {
-      "name": "Cryptonews.net",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBnRWxKc0lrcTJxSENJWG94MlZlSlRZazhMc2taSkRBak5xU1p2NEx5TnZ6MkJWUElxLXhESG1WNTNZMi1BcGRoYTBiem40MTdVQ3BuQVpNNnk?oc=5"
+      "name": "Federal Reserve Board — Christopher Waller speech, November 17, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/speech/waller20261117a.htm"
     }
   ],
   "newsWatch": {
@@ -29,5 +31,52 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-18T04:16:35.759Z",
+    "sources": [
+      {
+        "url": "https://www.federalreserve.gov/newsevents/speech/waller20261117a.htm",
+        "publishedAt": "2026-11-17",
+        "checkedAt": "2026-11-18T04:16:35.759Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Governor Christopher Waller addressed The Clearing House Annual Conference in New York on November 17, 2026.",
+        "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/waller20261117a.htm",
+        "anchor": "The Clearing House Annual Conference 2026"
+      },
+      {
+        "claim": "Waller said stablecoins and tokenized deposits both enable programmable settlement but have different issuer and regulatory models.",
+        "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/waller20261117a.htm",
+        "anchor": "both enable programmable settlement"
+      },
+      {
+        "claim": "Waller identified tokenized money market funds as another possible settlement asset alongside stablecoins and tokenized deposits.",
+        "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/waller20261117a.htm",
+        "anchor": "tokenized money market funds"
+      },
+      {
+        "claim": "Waller raised risks involving stranded assets on failed blockchain networks and responsibility for lost keys and erroneous transfers.",
+        "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/waller20261117a.htm",
+        "anchor": "stranded on failed blockchains"
+      },
+      {
+        "claim": "Waller said batch and net settlement may remain useful when markets prioritize conserving liquidity.",
+        "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/waller20261117a.htm",
+        "anchor": "net settlement and batch settlement"
+      },
+      {
+        "claim": "Waller said central bank money remains important as a foundation of trust even when it is not used in every transaction.",
+        "sourceUrl": "https://www.federalreserve.gov/newsevents/speech/waller20261117a.htm",
+        "anchor": "foundation of the system is essential"
+      }
+    ]
   }
 }
