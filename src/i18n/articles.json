@@ -5838,5 +5838,83 @@
       ]
     },
     "sourceSha256": "c0a85db5de567ab083c803fd489a2cd91c0dd421209086ba8aa8d15bd70a1d4e"
+  },
+  "wirex-adds-tokenized-us-stocks-to-its-infrastructure-and-wirex-one-app": {
+    "path": "/news/wirex-adds-tokenized-us-stocks-to-its-infrastructure-and-wirex-one-app/",
+    "date": "2026-11-17",
+    "kind": "news",
+    "sources": [
+      [
+        "Wirex — PR Newswire announcement, November 17, 2026",
+        "https://www.prnewswire.com/news-releases/wirex-now-powers-tokenized-stocks-302942480.html"
+      ]
+    ],
+    "de": {
+      "title": "Wirex nimmt tokenisierte US-Aktien in seine Infrastruktur und die Wirex-One-App auf",
+      "description": "Wirex zufolge können Partner tokenisierte US-Aktien über seine API und sein SDK integrieren, während berechtigte Wirex-One-Nutzer auf Base ausgegebene Token ohne Rechte an den zugrunde liegenden Aktien erhalten können.",
+      "sections": [
+        [
+          "Tokenisierte Aktien für berechtigte Nutzer und Infrastrukturpartner",
+          "Wirex gab am 17. November bekannt, dass tokenisierte Beteiligungen an US-Aktien über seine Infrastrukturplattform und die Wirex-One-Anwendung verfügbar sind. Nach Angaben des Unternehmens können berechtigte Kunden blockchainbasierte Token kaufen und halten, die sich auf Aktien wie Apple, Amazon und Microsoft beziehen. Der Zugang soll rund um die Uhr möglich sein und ist damit nicht auf die üblichen Börsenhandelszeiten beschränkt."
+        ],
+        [
+          "Base, Coinbase und eine nicht unabhängig geprüfte Deckungsangabe",
+          "Laut der Mitteilung laufen die Token auf dem Base-Netzwerk und werden von Coinbase ausgegeben. Wirex bezeichnet sie als im Verhältnis eins zu eins durch Aktien gedeckt. Diese Angabe stammt jedoch vom Vertriebspartner des Emittenten und stellt für sich genommen keine unabhängige Prüfung der Reserven dar. Unternehmen können das Produkt außerdem über die bestehende Infrastruktur-API und das Software Development Kit von Wirex in ihre eigenen Anwendungen integrieren."
+        ],
+        [
+          "Die genannte Nutzerzahl belegt keine Nutzung des Produkts",
+          "Wirex bezeichnet seine Wirex-One-App als erste Implementierung des Angebots und verweist auf nahezu zwei Millionen Nutzer. Diese Zahl beschreibt die vom Unternehmen angegebene Zielgruppe der App, nicht bestätigte Inhaber tokenisierter Aktien oder ein nachgewiesenes Handelsvolumen. Die Verfügbarkeit hängt von Rechtsordnung und Zugangsberechtigung ab."
+        ],
+        [
+          "Keine rechtliche Eigentümerstellung und keine Stimmrechte",
+          "Der Haftungsausschluss des Unternehmens stellt ausdrücklich klar, dass die Produkte weder das rechtliche Eigentum an den zugrunde liegenden Aktien noch Aktionärsrechte einschließlich Stimmrechten übertragen. Die Ankündigung schafft damit eine neue Vertriebsoption für tokenisierte Marktbeteiligungen, ersetzt aber nicht den direkten Besitz börsennotierter Aktien."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Wirex incorpora acciones estadounidenses tokenizadas a su infraestructura y a la aplicación Wirex One",
+      "description": "Wirex afirma que sus socios pueden integrar acciones estadounidenses tokenizadas mediante su API y su SDK, mientras que los usuarios elegibles de Wirex One pueden acceder a tokens emitidos en Base sin derechos sobre las acciones subyacentes.",
+      "sections": [
+        [
+          "Acciones tokenizadas para usuarios elegibles y socios de infraestructura",
+          "Wirex anunció el 17 de noviembre que la exposición tokenizada a acciones estadounidenses está disponible a través de su plataforma de infraestructura y de la aplicación Wirex One. Según la empresa, los clientes elegibles pueden comprar y mantener tokens basados en blockchain que hacen referencia a acciones como las de Apple, Amazon y Microsoft, con acceso continuo en lugar de limitarse al horario habitual de las bolsas."
+        ],
+        [
+          "Base, Coinbase y una afirmación de respaldo no verificada de forma independiente",
+          "Según el comunicado, los tokens funcionan en la red Base y son emitidos por Coinbase. Wirex los describe como respaldados por acciones en una proporción de uno a uno, aunque esa afirmación procede del socio de distribución del emisor y no constituye por sí misma una verificación independiente de las reservas. Wirex también ofrece el producto a empresas mediante su API de infraestructura y su kit de desarrollo de software, lo que permite a los socios integrarlo en sus propias aplicaciones."
+        ],
+        [
+          "La cifra comunicada de usuarios no demuestra la adopción del producto",
+          "Wirex presenta su aplicación Wirex One como el primer despliegue de la oferta y menciona cerca de dos millones de usuarios. Esa cifra describe la audiencia declarada de la aplicación, no titulares confirmados de acciones tokenizadas ni actividad de negociación. La disponibilidad depende de la jurisdicción y de los requisitos de elegibilidad."
+        ],
+        [
+          "Sin propiedad legal de las acciones ni derechos de voto",
+          "El descargo de responsabilidad de la empresa indica expresamente que estos productos no transfieren la propiedad legal de las acciones subyacentes ni derechos de accionista, incluidos los de voto. Por tanto, el anuncio supone una nueva opción de distribución para obtener exposición tokenizada al mercado, no un sustituto de la tenencia directa de acciones cotizadas."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Wirex ajoute des actions américaines tokenisées à son infrastructure et à l’application Wirex One",
+      "description": "Wirex affirme que ses partenaires peuvent intégrer des actions américaines tokenisées via son API et son SDK, tandis que les utilisateurs éligibles de Wirex One peuvent accéder à des jetons émis sur Base sans droits sur les actions sous-jacentes.",
+      "sections": [
+        [
+          "Des actions tokenisées pour les utilisateurs éligibles et les partenaires d’infrastructure",
+          "Wirex a annoncé le 17 novembre que l’exposition tokenisée aux actions américaines était disponible via sa plateforme d’infrastructure et l’application Wirex One. Selon l’entreprise, les clients éligibles peuvent acheter et détenir des jetons basés sur la blockchain qui font référence à des actions telles qu’Apple, Amazon et Microsoft, avec un accès continu plutôt que limité aux horaires habituels des marchés boursiers."
+        ],
+        [
+          "Base, Coinbase et une affirmation de couverture non vérifiée indépendamment",
+          "D’après le communiqué, les jetons fonctionnent sur le réseau Base et sont émis par Coinbase. Wirex les décrit comme couverts à raison d’une action pour un jeton, mais cette affirmation émane du partenaire de distribution de l’émetteur et ne constitue pas à elle seule une vérification indépendante des réserves. Wirex propose également le produit aux entreprises au moyen de son API d’infrastructure et de son kit de développement logiciel, afin que les partenaires puissent l’intégrer à leurs propres applications."
+        ],
+        [
+          "Le nombre d’utilisateurs annoncé ne prouve pas l’adoption du produit",
+          "Wirex présente son application Wirex One comme le premier déploiement de l’offre et fait état de près de deux millions d’utilisateurs. Ce chiffre décrit l’audience déclarée de l’application, et non des détenteurs confirmés d’actions tokenisées ou une activité de négociation établie. La disponibilité dépend de la juridiction et des critères d’éligibilité."
+        ],
+        [
+          "Aucune propriété juridique des actions ni aucun droit de vote",
+          "La clause de non-responsabilité de l’entreprise précise expressément que ces produits ne transfèrent ni la propriété juridique des actions sous-jacentes ni les droits des actionnaires, y compris le droit de vote. L’annonce constitue donc une nouvelle option de distribution pour une exposition tokenisée au marché, et non un substitut à la détention directe d’actions cotées."
+        ]
+      ]
+    },
+    "sourceSha256": "e93d858bb87425c0bfc24efb1ad583c357139892f0aba836ec24261bd7954ed6"
   }
 }
