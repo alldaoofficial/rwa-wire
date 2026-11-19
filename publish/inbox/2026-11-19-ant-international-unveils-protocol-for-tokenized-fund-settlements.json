@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-19T13:13:00Z",
+    "reason": "Same Ant International Whale Orchestration Protocol pilot with DBS and Franklin Templeton already reviewed and published under 2026-11-19-ant-links-tokenized-deposits-and-funds-in-whale-pilot.json; no distinct new event."
   }
 }
