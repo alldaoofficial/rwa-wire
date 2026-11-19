@@ -1,7 +1,7 @@
 {
   "title": "KuCoin announces listing of new Ondo tokenized stocks METAon, TSLAon, QQQon, SPYon, and MUon",
-  "description": "KuCoin announces listing of new Ondo tokenized stocks METAon, TSLAon, QQQon, SPYon, and MUon",
-  "why_it_matters": "",
+  "description": "KuCoin has scheduled five Ondo-linked equity and ETF tokens for USDT spot trading on November 19, with two opening windows, Solana deposits and withdrawals planned for the following day.",
+  "why_it_matters": "The listings broaden exchange-based access to tokenized U.S. equity and ETF exposure, while highlighting the distinction between price-linked securities tokens and direct share ownership. Regional eligibility and custody arrangements remain important considerations.",
   "pubDate": "2026-11-19",
   "category": "news",
   "tags": [
@@ -10,14 +10,15 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "KuCoin announces listing of new Ondo tokenized stocks METAon, TSLAon, QQQon, SPYon, and MUon",
-    ""
+    "Five Ondo-linked equity and ETF tokens are scheduled for KuCoin spot markets on November 19.",
+    "METAON and TSLAON are scheduled for 10:00 UTC; QQQON, SPYON and MUON for 11:00 UTC.",
+    "Deposits use SOL-SPL, while withdrawals are scheduled for November 20 at 10:00 UTC."
   ],
-  "body": "KuCoin announces listing of new Ondo tokenized stocks METAon, TSLAon, QQQon, SPYon, and MUon",
+  "body": "KuCoin has announced five additional Ondo Stocks products for its spot market: METAon, linked to Meta; TSLAon, linked to Tesla; QQQon, linked to the Invesco QQQ fund; SPYon, linked to the SPDR S&P 500 ETF; and MUon, linked to Micron. The exchange's November 19 notice sets two separate USDT trading windows rather than describing an already completed launch.\n\nAccording to KuCoin, METAON/USDT and TSLAON/USDT are scheduled to open at 10:00 UTC on November 19, preceded by a one-hour call auction. QQQON/USDT, SPYON/USDT and MUON/USDT are scheduled for 11:00 UTC, also following a one-hour auction. Deposits are supported through the SOL-SPL network, while withdrawals are scheduled to begin at 10:00 UTC on November 20.\n\nKuCoin describes the products as securities-backed tokens providing eligible non-U.S. investors with economic exposure to listed shares or ETFs. The announcement does not establish that token holders receive ordinary shareholder rights. Availability is subject to jurisdictional restrictions, and the planned trading windows should not be mistaken for independently confirmed executions.",
   "sources": [
     {
-      "name": "Traders Union",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQZmZOdFkweUhBc2hLcDdLTDNJdXhNaFZaUGNrdnhXdTNHV3gtQ2NhSjRxd3EzMjVZVXAtWHdaenVhWVBnUWV4NnBHelZtVGgzZDZXaVJwbGZiUDMxQ3dFYnNsdkk4SU5uYzNPZnl3eWZQQllaQi1CU0pzdG5fSDY3dVdLMzlibndkMG5HMW9oTy1iUnU4dTVN?oc=5"
+      "name": "KuCoin official listing announcement",
+      "url": "https://www.kucoin.com/announcement/en-kucoin-spot-to-list-tokenized-stocks-metaon-tslaon-qqqon-spyon-and-muon"
     }
   ],
   "newsWatch": {
@@ -29,5 +30,47 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-19T05:11:06.685Z",
+    "sources": [
+      {
+        "url": "https://www.kucoin.com/announcement/en-kucoin-spot-to-list-tokenized-stocks-metaon-tslaon-qqqon-spyon-and-muon",
+        "publishedAt": "2026-11-19",
+        "checkedAt": "2026-11-19T05:11:06.685Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "KuCoin identified five Ondo-linked instruments covering Meta, Tesla, two ETFs and Micron for its spot platform.",
+        "sourceUrl": "https://www.kucoin.com/announcement/en-kucoin-spot-to-list-tokenized-stocks-metaon-tslaon-qqqon-spyon-and-muon",
+        "anchor": "5 new tokenized stock assets"
+      },
+      {
+        "claim": "The METAON and TSLAON pairs are scheduled to open at 10:00 UTC on November 19.",
+        "sourceUrl": "https://www.kucoin.com/announcement/en-kucoin-spot-to-list-tokenized-stocks-metaon-tslaon-qqqon-spyon-and-muon",
+        "anchor": "will open at 10:00"
+      },
+      {
+        "claim": "The QQQON, SPYON and MUON pairs are scheduled to open at 11:00 UTC on November 19.",
+        "sourceUrl": "https://www.kucoin.com/announcement/en-kucoin-spot-to-list-tokenized-stocks-metaon-tslaon-qqqon-spyon-and-muon",
+        "anchor": "will open at 11:00"
+      },
+      {
+        "claim": "The notice says deposits are effective immediately on the SOL-SPL network.",
+        "sourceUrl": "https://www.kucoin.com/announcement/en-kucoin-spot-to-list-tokenized-stocks-metaon-tslaon-qqqon-spyon-and-muon",
+        "anchor": "Supported Network: SOL-SPL"
+      },
+      {
+        "claim": "The exchange schedules token withdrawals for November 20 at 10:00 UTC.",
+        "sourceUrl": "https://www.kucoin.com/announcement/en-kucoin-spot-to-list-tokenized-stocks-metaon-tslaon-qqqon-spyon-and-muon",
+        "anchor": "Withdrawals: 10:00 on November 20"
+      }
+    ]
   }
 }
