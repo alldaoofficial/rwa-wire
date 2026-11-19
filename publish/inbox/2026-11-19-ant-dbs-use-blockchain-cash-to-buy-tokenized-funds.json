@@ -31,10 +31,10 @@
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "duplicate",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-19T08:11:32.684Z",
-    "reason": "Exact Coindoo article and a direct primary announcement for the claimed Ant/DBS purchase of tokenized funds could not be retrieved. DBS primary release dated 2026-11-16 concerns cross-border tokenized deposit transfers with Kinexys, not purchases of tokenized funds; earlier Ant tokenized fund activity involved HSBC/Franklin Templeton in October and Amundi/CACEIS in June. Do not conflate these events. Retry no sooner than six hours after reviewedAt."
+    "reviewedAt": "2026-11-19T15:14:31Z",
+    "reason": "Full Coindoo article (https://coindoo.com/ant-dbs-use-blockchain-cash-buy-tokenized-funds/, dated 2026-11-19) confirms this is the same Ant International Whale Orchestration Protocol pilot with DBS Treasury Tokens and Franklin Templeton tokenized money market funds under MAS BLOOM, already source-verified in publish/inbox/2026-11-19-ant-links-tokenized-deposits-and-funds-in-whale-pilot.json and published as the corresponding RWA Wire article. No distinct event; suppress duplicate."
   }
 }
