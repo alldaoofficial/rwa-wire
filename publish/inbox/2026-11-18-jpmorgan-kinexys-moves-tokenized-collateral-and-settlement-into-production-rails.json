@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-19T07:18:54Z",
+    "reason": "The 18 November OneBullEx story is a retrospective of previously announced Kinexys production capabilities, not a distinct new event. JPMorgan's own 12 August 2026 release already described live Tokenized Collateral Network capabilities and over $4 trillion cumulative transactions; its 19 October release documented JPM Coin on Ethereum. No new dated 18 November launch is substantiated. Original: https://www.onebullex.com/news/articles/jpmorgan-kinexys-moves-tokenized-collateral-and-settlement-into-production-rails-in-2026 ; primary: https://www.jpmorgan.com/payments/newsroom/kinexys-future-of-finance-awards-2026 and https://www.jpmorgan.com/payments/newsroom/jpm-coin-live-on-ethereum"
   }
 }
