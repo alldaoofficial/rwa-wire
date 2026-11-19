@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-19T13:13:00Z",
+    "reason": "Evergreen educational explainer rather than a newly announced event; search found pre-existing October 2026 Securitize tokenized-stock launch coverage, with no distinct November 19 announcement verified."
   }
 }
