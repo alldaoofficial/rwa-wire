@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-19T08:11:32.684Z",
+    "reason": "Exact Coindoo article and a direct primary announcement for the claimed Ant/DBS purchase of tokenized funds could not be retrieved. DBS primary release dated 2026-11-16 concerns cross-border tokenized deposit transfers with Kinexys, not purchases of tokenized funds; earlier Ant tokenized fund activity involved HSBC/Franklin Templeton in October and Amundi/CACEIS in June. Do not conflate these events. Retry no sooner than six hours after reviewedAt."
   }
 }
