@@ -6216,5 +6216,71 @@
       ]
     },
     "sourceSha256": "c0add0874f8ba7ad33b58419b01af088ecc72d3637f8abd02ce78c4dc65410fd"
+  },
+  "kucoin-announces-listing-of-new-ondo-tokenized-stocks-metaon-tslaon-qqqon-spyon-and-muon": {
+    "path": "/news/kucoin-announces-listing-of-new-ondo-tokenized-stocks-metaon-tslaon-qqqon-spyon-and-muon/",
+    "date": "2026-11-19",
+    "kind": "news",
+    "sources": [
+      [
+        "KuCoin official listing announcement",
+        "https://www.kucoin.com/announcement/en-kucoin-spot-to-list-tokenized-stocks-metaon-tslaon-qqqon-spyon-and-muon"
+      ]
+    ],
+    "de": {
+      "title": "KuCoin kündigt das Listing der neuen tokenisierten Ondo-Aktien METAon, TSLAon, QQQon, SPYon und MUon an",
+      "description": "KuCoin hat fünf an Ondo gekoppelte Aktien- und ETF-Token für den USDT-Spothandel am 19. November angesetzt, mit zwei Eröffnungsfenstern, Einzahlungen über Solana und für den folgenden Tag geplanten Auszahlungen.",
+      "sections": [
+        [
+          "Fünf weitere Ondo-Stocks-Produkte für den Spotmarkt",
+          "KuCoin hat fünf weitere Ondo-Stocks-Produkte für seinen Spotmarkt angekündigt: METAon, das an Meta gekoppelt ist; TSLAon, das an Tesla gekoppelt ist; QQQon, das an den Invesco-QQQ-Fonds gekoppelt ist; SPYon, das an den SPDR S&P 500 ETF gekoppelt ist; und MUon, das an Micron gekoppelt ist. Die Mitteilung der Börse vom 19. November nennt zwei getrennte Zeitfenster für den USDT-Handel und beschreibt keinen bereits abgeschlossenen Start."
+        ],
+        [
+          "Zwei Handelsfenster mit jeweils einstündiger Call-Auktion",
+          "Laut KuCoin sollen METAON/USDT und TSLAON/USDT am 19. November um 10:00 Uhr UTC nach einer einstündigen Call-Auktion für den Handel geöffnet werden. QQQON/USDT, SPYON/USDT und MUON/USDT sind für 11:00 Uhr UTC angesetzt, ebenfalls nach einer einstündigen Auktion. Einzahlungen werden über das SOL-SPL-Netzwerk unterstützt; Auszahlungen sollen am 20. November um 10:00 Uhr UTC beginnen."
+        ],
+        [
+          "Wirtschaftliches Engagement ohne bestätigte Aktionärsrechte",
+          "KuCoin beschreibt die Produkte als durch Wertpapiere gedeckte Token, die berechtigten Anlegern außerhalb der USA ein wirtschaftliches Engagement in börsennotierten Aktien oder ETFs ermöglichen. Die Ankündigung belegt nicht, dass Tokeninhaber gewöhnliche Aktionärsrechte erhalten. Die Verfügbarkeit unterliegt regionalen Beschränkungen, und die geplanten Handelsfenster dürfen nicht mit unabhängig bestätigten Ausführungen gleichgesetzt werden."
+        ]
+      ]
+    },
+    "es": {
+      "title": "KuCoin anuncia la cotización de las nuevas acciones tokenizadas de Ondo METAon, TSLAon, QQQon, SPYon y MUon",
+      "description": "KuCoin ha programado cinco tokens de acciones y ETF vinculados a Ondo para su negociación al contado frente a USDT el 19 de noviembre, con dos ventanas de apertura, depósitos en Solana y retiradas previstas para el día siguiente.",
+      "sections": [
+        [
+          "Cinco productos adicionales de Ondo Stocks para el mercado al contado",
+          "KuCoin ha anunciado cinco productos adicionales de Ondo Stocks para su mercado al contado: METAon, vinculado a Meta; TSLAon, vinculado a Tesla; QQQon, vinculado al fondo Invesco QQQ; SPYon, vinculado al ETF SPDR S&P 500; y MUon, vinculado a Micron. El aviso de la plataforma del 19 de noviembre establece dos ventanas distintas de negociación frente a USDT, en lugar de describir un lanzamiento ya completado."
+        ],
+        [
+          "Dos ventanas de negociación con subastas de apertura de una hora",
+          "Según KuCoin, está previsto que METAON/USDT y TSLAON/USDT abran el 19 de noviembre a las 10:00 UTC, tras una subasta de apertura de una hora. QQQON/USDT, SPYON/USDT y MUON/USDT están programados para las 11:00 UTC, también después de una subasta de una hora. Los depósitos son compatibles con la red SOL-SPL, mientras que las retiradas están previstas a partir del 20 de noviembre a las 10:00 UTC."
+        ],
+        [
+          "Exposición económica sin derechos ordinarios de accionista confirmados",
+          "KuCoin describe los productos como tokens respaldados por valores que proporcionan a los inversores elegibles de fuera de Estados Unidos exposición económica a acciones cotizadas o ETF. El anuncio no demuestra que los titulares de los tokens reciban derechos ordinarios de accionista. La disponibilidad está sujeta a restricciones jurisdiccionales, y las ventanas de negociación previstas no deben confundirse con operaciones ejecutadas y confirmadas de forma independiente."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "KuCoin annonce la cotation des nouvelles actions tokenisées d’Ondo METAon, TSLAon, QQQon, SPYon et MUon",
+      "description": "KuCoin a programmé la négociation au comptant contre l’USDT de cinq jetons d’actions et d’ETF liés à Ondo le 19 novembre, avec deux fenêtres d’ouverture, des dépôts sur Solana et des retraits prévus le lendemain.",
+      "sections": [
+        [
+          "Cinq produits Ondo Stocks supplémentaires pour le marché au comptant",
+          "KuCoin a annoncé cinq produits Ondo Stocks supplémentaires pour son marché au comptant : METAon, lié à Meta ; TSLAon, lié à Tesla ; QQQon, lié au fonds Invesco QQQ ; SPYon, lié à l’ETF SPDR S&P 500 ; et MUon, lié à Micron. L’avis de la plateforme daté du 19 novembre fixe deux fenêtres distinctes de négociation contre l’USDT, au lieu de décrire un lancement déjà achevé."
+        ],
+        [
+          "Deux fenêtres de négociation précédées d’enchères d’ouverture d’une heure",
+          "Selon KuCoin, l’ouverture de METAON/USDT et TSLAON/USDT est prévue le 19 novembre à 10 h 00 UTC, après une enchère d’ouverture d’une heure. QQQON/USDT, SPYON/USDT et MUON/USDT sont programmés à 11 h 00 UTC, également après une enchère d’ouverture d’une heure. Les dépôts sont pris en charge via le réseau SOL-SPL, tandis que les retraits doivent débuter le 20 novembre à 10 h 00 UTC."
+        ],
+        [
+          "Une exposition économique sans droits ordinaires d’actionnaire confirmés",
+          "KuCoin décrit ces produits comme des jetons adossés à des titres, offrant aux investisseurs éligibles situés hors des États-Unis une exposition économique à des actions cotées ou à des ETF. L’annonce n’établit pas que les détenteurs de jetons bénéficient des droits ordinaires des actionnaires. La disponibilité dépend de restrictions juridictionnelles, et les fenêtres de négociation prévues ne doivent pas être confondues avec des transactions exécutées et confirmées de manière indépendante."
+        ]
+      ]
+    },
+    "sourceSha256": "1e73b1300274cc2e8831aabf3a5e3041286f7553b6964810997adc77fbdd12f3"
   }
 }
