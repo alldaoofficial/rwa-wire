@@ -28,7 +28,7 @@
     "discoveredAt": "2026-11-19T04:37:16.020136+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
@@ -71,6 +71,7 @@
         "sourceUrl": "https://www.kucoin.com/announcement/en-kucoin-spot-to-list-tokenized-stocks-metaon-tslaon-qqqon-spyon-and-muon",
         "anchor": "Withdrawals: 10:00 on November 20"
       }
-    ]
+    ],
+    "contentSha256": "5d3f7870b97cee7e65929caa2718a15ff81e7110376ca0bf48f6889dad20123f"
   }
 }
