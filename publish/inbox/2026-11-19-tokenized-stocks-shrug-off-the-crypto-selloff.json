@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-19T18:10:43Z",
+    "reason": "Original The Block article could not be located or read in full; Google News RSS is not a direct source, and secondary headline aggregators do not establish three independently evidenced facts. Retry after six hours; do not publish."
   }
 }
