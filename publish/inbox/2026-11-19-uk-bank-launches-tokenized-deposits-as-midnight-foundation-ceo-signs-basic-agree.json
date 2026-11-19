@@ -1,7 +1,7 @@
 {
-  "title": "UK Bank Launches Tokenized Deposits as Midnight Foundation CEO Signs Basic Agreement with Japanese Major",
-  "description": "UK Bank Launches Tokenized Deposits as Midnight Foundation CEO Signs Basic Agreement with Japanese Major",
-  "why_it_matters": "",
+  "title": "Midnight Foundation Says It Signed Japanese Payments MOU as Monument Tokenized Deposits Go Live",
+  "description": "Midnight Foundation executive Fahmi Syed told NADA NEWS that an unnamed major Japanese payments company signed an MOU, while the UK's Monument Bank has begun offering blockchain-recorded savings deposits.",
+  "why_it_matters": "The Japanese agreement points to institutional interest beyond the United Kingdom, but it is only an exploratory memorandum, not a Japanese product launch. Monument's operating savings product offers a concrete reference for evaluating the network's privacy and compliance model.",
   "pubDate": "2026-11-19",
   "category": "news",
   "tags": [
@@ -10,14 +10,19 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "UK Bank Launches Tokenized Deposits as Midnight Foundation CEO Signs Basic Agreement with Japanese Major",
-    ""
+    "Fahmi Syed told NADA NEWS that Midnight Foundation signed an MOU with an unnamed major Japanese payments company; no Japanese service launch was reported.",
+    "The foundation is discussing potential uses with Japanese banks and other enterprises, while prospective partners watch Monument Bank's UK rollout.",
+    "Midnight says Monument's live tokenized savings product pays 5.2% AER over 12 months, with an initial ceiling of £250 million in represented deposits."
   ],
-  "body": "UK Bank Launches Tokenized Deposits as Midnight Foundation CEO Signs Basic Agreement with Japanese Major",
+  "body": "Midnight Foundation executive Fahmi Syed said the organization has signed a memorandum of understanding with a major Japanese payments company, according to a November 19 interview published by NADA NEWS. The company was not identified, and the agreement should not be mistaken for a live Japanese banking or payments deployment.\n\nSyed also described meetings in Tokyo with banks and businesses handling intellectual property and medical information. NADA NEWS reported that the foundation maintains a local representative in Japan, one of its priority markets. The interview indicated that prospective partners are watching how Monument Bank's deployment performs before making further commitments.\n\nThat UK rollout provides the operational context. In a November 17 announcement, Midnight said Monument had introduced tokenized retail savings deposits through its existing banking app. The fixed-term product offers 5.2% annual equivalent rate for 12 months, with up to £250 million of deposits targeted for one-to-one sterling representation on Midnight in the initial phase. The foundation says customers need not manage crypto wallets or network fees. Japan's memorandum remains an early-stage agreement, distinct from the already launched UK product.",
   "sources": [
     {
-      "name": "BigGo Finance",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE90azN1NlVFaFdyVmJTeGRodHZNaFdsc1UwQkM1aXlzZzllZ3Nuc1dIbHE5NUp2WWxyV0tkWGtvQS1sWkZWMEtXUWZKWkNoZ0cwVHhYVGpmRTM3UmlxaGRiYzdsRWs5aVB1SnFKYmF2cE9xbzNKeFE?oc=5"
+      "name": "NADA NEWS — interview with Fahmi Syed",
+      "url": "https://www.nadanews.com/391945/"
+    },
+    {
+      "name": "Midnight — Monument Bank launch announcement",
+      "url": "https://midnight.network/blog/monument-bank-launches-the-uk-s-first-interest-bearing-tokenized-deposits-on-midnight"
     }
   ],
   "newsWatch": {
@@ -31,10 +36,57 @@
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "verified",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-19T04:10:56Z",
-    "reason": "Composite BigGo Finance headline conflates Monument Bank's already-announced November 16 tokenized savings launch with a purported separate Japanese-major basic agreement. Midnight Foundation's full original November 16 release confirms Monument's 5.2% AER, 12-month product and up-to-GBP250m first-phase cap, but does not substantiate the claimed Japanese-major agreement. The same Monument launch is already tracked in publish/inbox/2026-11-16-monument-bank-partners-with-midnight-to-launch-uk-s-first-tokenized-deposits.json. No full original source establishing a distinct November 19 event or the Japanese agreement was verified. Keep unpublished; retry no sooner than 2026-11-19T10:10:56Z."
+    "reviewedAt": "2026-11-19T14:14:52Z",
+    "sources": [
+      {
+        "url": "https://www.nadanews.com/391945/",
+        "publishedAt": "2026-11-19",
+        "checkedAt": "2026-11-19T14:14:52Z",
+        "kind": "news",
+        "access": "full-text"
+      },
+      {
+        "url": "https://midnight.network/blog/monument-bank-launches-the-uk-s-first-interest-bearing-tokenized-deposits-on-midnight",
+        "publishedAt": "2026-11-17",
+        "checkedAt": "2026-11-19T14:14:52Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Fahmi Syed told NADA NEWS the foundation signed an MOU with a major Japanese payments company.",
+        "sourceUrl": "https://www.nadanews.com/391945/",
+        "anchor": "基本合意書（MOU）を結んだ"
+      },
+      {
+        "claim": "The Japanese agreement remains at the discussion stage and no Japanese service has launched.",
+        "sourceUrl": "https://www.nadanews.com/391945/",
+        "anchor": "まだない"
+      },
+      {
+        "claim": "Syed reported meetings with major banks and companies handling intellectual property and medical data in Japan.",
+        "sourceUrl": "https://www.nadanews.com/391945/",
+        "anchor": "医療データを扱う企業"
+      },
+      {
+        "claim": "Midnight says Monument's tokenized deposit product offers a fixed 5.2 percent annual equivalent rate.",
+        "sourceUrl": "https://midnight.network/blog/monument-bank-launches-the-uk-s-first-interest-bearing-tokenized-deposits-on-midnight",
+        "anchor": "5.2% AER"
+      },
+      {
+        "claim": "The initial Monument deployment targets up to 250 million pounds of tokenized deposits.",
+        "sourceUrl": "https://midnight.network/blog/monument-bank-launches-the-uk-s-first-interest-bearing-tokenized-deposits-on-midnight",
+        "anchor": "Up to £250 million"
+      },
+      {
+        "claim": "The Monument savings product has a fixed term of twelve months and is accessed in the existing app.",
+        "sourceUrl": "https://midnight.network/blog/monument-bank-launches-the-uk-s-first-interest-bearing-tokenized-deposits-on-midnight",
+        "anchor": "fixed for 12 months"
+      }
+    ]
   }
 }
