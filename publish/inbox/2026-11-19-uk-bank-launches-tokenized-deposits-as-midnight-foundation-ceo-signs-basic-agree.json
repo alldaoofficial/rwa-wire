@@ -32,7 +32,7 @@
     "discoveredAt": "2026-11-19T04:07:16.496672+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
@@ -87,6 +87,7 @@
         "sourceUrl": "https://midnight.network/blog/monument-bank-launches-the-uk-s-first-interest-bearing-tokenized-deposits-on-midnight",
         "anchor": "fixed for 12 months"
       }
-    ]
+    ],
+    "contentSha256": "131d8fa6810875940e10c5899f521cae37582c3d8c32d9a72d42907249669489"
   }
 }
