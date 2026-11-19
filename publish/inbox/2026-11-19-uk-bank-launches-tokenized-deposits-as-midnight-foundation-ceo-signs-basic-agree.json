@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-19T04:10:56Z",
+    "reason": "Composite BigGo Finance headline conflates Monument Bank's already-announced November 16 tokenized savings launch with a purported separate Japanese-major basic agreement. Midnight Foundation's full original November 16 release confirms Monument's 5.2% AER, 12-month product and up-to-GBP250m first-phase cap, but does not substantiate the claimed Japanese-major agreement. The same Monument launch is already tracked in publish/inbox/2026-11-16-monument-bank-partners-with-midnight-to-launch-uk-s-first-tokenized-deposits.json. No full original source establishing a distinct November 19 event or the Japanese agreement was verified. Keep unpublished; retry no sooner than 2026-11-19T10:10:56Z."
   }
 }
