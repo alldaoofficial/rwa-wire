@@ -1,7 +1,7 @@
 {
-  "title": "Ant Links Tokenized Deposits and Funds in Whale Pilot",
-  "description": "Ant Links Tokenized Deposits and Funds in Whale Pilot",
-  "why_it_matters": "",
+  "title": "Ant International Tests Linked Settlement of Tokenized Deposits and Funds With DBS and Franklin Templeton",
+  "description": "Ant International announced its Whale Orchestration Protocol on November 19 after completing pilot transactions connecting DBS Treasury Tokens with Franklin Templeton's tokenized money market fund solution under Singapore's BLOOM initiative.",
+  "why_it_matters": "The pilot addresses a specific operational obstacle for corporate treasurers: transferring value between bank-deposit tokens and investment-fund tokens on separate systems. Atomic delivery-versus-payment could reduce timing gaps, but a completed pilot is not evidence of broad commercial availability.",
   "pubDate": "2026-11-19",
   "category": "news",
   "tags": [
@@ -10,14 +10,15 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "Ant Links Tokenized Deposits and Funds in Whale Pilot",
-    ""
+    "Ant announced the Whale Orchestration Protocol on November 19 as an upgrade to its WhaleRTP settlement platform.",
+    "DBS Treasury Tokens and Franklin Templeton's tokenized money market fund solution were integrated in completed pilot transactions.",
+    "The project sits within Singapore's MAS BLOOM initiative; a broad commercial rollout was not announced."
   ],
-  "body": "Ant Links Tokenized Deposits and Funds in Whale Pilot",
+  "body": "Ant International announced the Whale Orchestration Protocol on November 19, 2026, as an upgrade to its WhaleRTP blockchain-based wholesale settlement platform. The protocol is designed to link tokenized bank deposits with tokenized money market fund shares through delivery-versus-payment transactions.\n\nThe company said it had completed pilot transactions with DBS and Franklin Templeton. DBS integrated its Treasury Tokens, while Franklin Templeton contributed its tokenized money market fund solution. The participants described the tests as Singapore's first successful cross-asset interoperability between these two types of tokenized instruments.\n\nThe work was developed under the Monetary Authority of Singapore's BLOOM initiative, which focuses on interoperable digital-money arrangements. The three firms also released a whitepaper explaining the protocol and its relationship to the BLOOM Field Guide.\n\nFor corporate treasury teams, the proposed benefit is a closer connection between payment balances and short-term investments without waiting for conventional fund-settlement windows. However, the announced milestone concerns completed pilot transactions; the release does not establish a general customer launch or quantify live transaction volumes.",
   "sources": [
     {
-      "name": "The Defiant",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPcFMwenlXNWllbUtsMm81Zm9TVS02QlptaVRhRU83WTQ0VnJnYkZ5R29ubERGNkFHYVJjdDZmaC1lWVZGd3hOMnNORzZqelc1SDdhNnFMaEdRVWpDbGlRN1FnQ2w5eDhwa2Q1NUlpaHJaaFZwcWNGMGp5UTBPMi1wN0NWeDdlYmdPZnh6cS1iWmV4OXhhd2RHODJSZW9EZ21sQ3FtV3lR?oc=5"
+      "name": "Ant International (Business Wire press release)",
+      "url": "https://via.tt.se/pressmeddelande/4648104/ant-international-launches-whale-orchestration-protocol-under-mas-bloom-initiative-to-connect-tokenised-money-market-funds-and-tokenised-deposits?lang=en&publisherId=259167"
     }
   ],
   "newsWatch": {
@@ -29,5 +30,47 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-19T10:14:23Z",
+    "sources": [
+      {
+        "url": "https://via.tt.se/pressmeddelande/4648104/ant-international-launches-whale-orchestration-protocol-under-mas-bloom-initiative-to-connect-tokenised-money-market-funds-and-tokenised-deposits?lang=en&publisherId=259167",
+        "publishedAt": "2026-11-19",
+        "checkedAt": "2026-11-19T10:14:23Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Ant International announced the Whale Orchestration Protocol as an upgrade to its blockchain-based WhaleRTP wholesale settlement platform.",
+        "sourceUrl": "https://via.tt.se/pressmeddelande/4648104/ant-international-launches-whale-orchestration-protocol-under-mas-bloom-initiative-to-connect-tokenised-money-market-funds-and-tokenised-deposits?lang=en&publisherId=259167",
+        "anchor": "major upgrade"
+      },
+      {
+        "claim": "The protocol was developed under the Monetary Authority of Singapore BLOOM initiative to connect tokenized deposits and money market funds.",
+        "sourceUrl": "https://via.tt.se/pressmeddelande/4648104/ant-international-launches-whale-orchestration-protocol-under-mas-bloom-initiative-to-connect-tokenised-money-market-funds-and-tokenised-deposits?lang=en&publisherId=259167",
+        "anchor": "Developed under the Monetary Authority"
+      },
+      {
+        "claim": "Ant reported completed pilot transactions with DBS and Franklin Templeton using their respective tokenized treasury and money market fund solutions.",
+        "sourceUrl": "https://via.tt.se/pressmeddelande/4648104/ant-international-launches-whale-orchestration-protocol-under-mas-bloom-initiative-to-connect-tokenised-money-market-funds-and-tokenised-deposits?lang=en&publisherId=259167",
+        "anchor": "completed pilot transactions"
+      },
+      {
+        "claim": "The protocol supports delivery-versus-payment settlement between tokenized deposits and tokenized money market funds.",
+        "sourceUrl": "https://via.tt.se/pressmeddelande/4648104/ant-international-launches-whale-orchestration-protocol-under-mas-bloom-initiative-to-connect-tokenised-money-market-funds-and-tokenised-deposits?lang=en&publisherId=259167",
+        "anchor": "Delivery-versus-Payment (DvP) transactions"
+      },
+      {
+        "claim": "The three participants also launched a whitepaper describing the protocol within the BLOOM Field Guide framework.",
+        "sourceUrl": "https://via.tt.se/pressmeddelande/4648104/ant-international-launches-whale-orchestration-protocol-under-mas-bloom-initiative-to-connect-tokenised-money-market-funds-and-tokenised-deposits?lang=en&publisherId=259167",
+        "anchor": "launched a whitepaper"
+      }
+    ]
   }
 }
