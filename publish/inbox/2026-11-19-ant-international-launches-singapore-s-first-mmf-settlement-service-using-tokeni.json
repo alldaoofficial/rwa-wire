@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-19T16:13:50.942Z",
+    "reason": "Same 19 November Ant International Whale Orchestration Protocol pilot with DBS Treasury Tokens and Franklin Templeton tokenized money market funds already covered and published as 2026-11-19-ant-international-tests-linked-settlement-of (publication commit 2fe845dfccc900c9a12a5503b6e64d99afd0b143). Confirmed against Ant International's full primary release https://www.ant-intl.com/en/news/detail/ant-international-launches-whale-orchestration-protocol-under-mas-bloom-initiative-to-connect-tokenised-money-market-funds/ . No distinct Singapore MMF settlement launch."
   }
 }
