@@ -6282,5 +6282,83 @@
       ]
     },
     "sourceSha256": "1e73b1300274cc2e8831aabf3a5e3041286f7553b6964810997adc77fbdd12f3"
+  },
+  "ant-international-tests-linked-settlement-of-tokenized-deposits-and-funds-with-dbs-and-franklin-templeton": {
+    "path": "/news/ant-international-tests-linked-settlement-of-tokenized-deposits-and-funds-with-dbs-and-franklin-templeton/",
+    "date": "2026-11-19",
+    "kind": "news",
+    "sources": [
+      [
+        "Ant International (Business Wire press release)",
+        "https://via.tt.se/pressmeddelande/4648104/ant-international-launches-whale-orchestration-protocol-under-mas-bloom-initiative-to-connect-tokenised-money-market-funds-and-tokenised-deposits?lang=en&publisherId=259167"
+      ]
+    ],
+    "de": {
+      "title": "Ant International testet die verknüpfte Abwicklung tokenisierter Einlagen und Fonds mit DBS und Franklin Templeton",
+      "description": "Ant International stellte am 19. November sein Whale Orchestration Protocol vor, nachdem im Rahmen der singapurischen BLOOM-Initiative Pilottransaktionen abgeschlossen worden waren, die DBS Treasury Tokens mit Franklin Templetons Lösung für tokenisierte Geldmarktfonds verbanden.",
+      "sections": [
+        [
+          "Protokoll verbindet tokenisierte Einlagen und Geldmarktfonds",
+          "Ant International kündigte das Whale Orchestration Protocol am 19. November 2026 als Erweiterung seiner blockchainbasierten Großhandels-Abwicklungsplattform WhaleRTP an. Das Protokoll soll tokenisierte Bankeinlagen über Delivery-versus-Payment-Transaktionen mit Anteilen an tokenisierten Geldmarktfonds verbinden."
+        ],
+        [
+          "Pilottransaktionen mit DBS und Franklin Templeton abgeschlossen",
+          "Das Unternehmen erklärte, Pilottransaktionen mit DBS und Franklin Templeton abgeschlossen zu haben. DBS integrierte seine Treasury Tokens, während Franklin Templeton seine Lösung für tokenisierte Geldmarktfonds einbrachte. Die Beteiligten bezeichneten die Tests als Singapurs erste erfolgreiche anlageklassenübergreifende Interoperabilität zwischen diesen beiden Arten tokenisierter Instrumente."
+        ],
+        [
+          "Entwicklung im Rahmen der MAS-Initiative BLOOM",
+          "Die Arbeiten entstanden im Rahmen der BLOOM-Initiative der Monetary Authority of Singapore, die sich auf interoperable Arrangements für digitales Geld konzentriert. Die drei Unternehmen veröffentlichten außerdem ein Whitepaper, das das Protokoll und seine Beziehung zum BLOOM Field Guide erläutert."
+        ],
+        [
+          "Der abgeschlossene Pilot ist noch kein allgemeiner Marktstart",
+          "Für Corporate-Treasury-Teams besteht der vorgeschlagene Vorteil in einer engeren Verbindung zwischen Zahlungsbeständen und kurzfristigen Anlagen, ohne auf herkömmliche Abwicklungsfenster von Fonds warten zu müssen. Der bekannt gegebene Meilenstein betrifft jedoch abgeschlossene Pilottransaktionen; die Mitteilung belegt weder einen allgemeinen Kundenstart noch nennt sie Volumina aus einem laufenden Echtbetrieb."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Ant International prueba la liquidación vinculada de depósitos y fondos tokenizados con DBS y Franklin Templeton",
+      "description": "Ant International anunció el 19 de noviembre su Whale Orchestration Protocol tras completar operaciones piloto que conectaron los DBS Treasury Tokens con la solución de fondo monetario tokenizado de Franklin Templeton bajo la iniciativa BLOOM de Singapur.",
+      "sections": [
+        [
+          "Un protocolo conecta depósitos tokenizados y fondos monetarios",
+          "Ant International anunció el Whale Orchestration Protocol el 19 de noviembre de 2026 como una actualización de WhaleRTP, su plataforma de liquidación mayorista basada en blockchain. El protocolo está diseñado para vincular depósitos bancarios tokenizados con participaciones de fondos monetarios tokenizados mediante operaciones de entrega contra pago."
+        ],
+        [
+          "Operaciones piloto completadas con DBS y Franklin Templeton",
+          "La empresa afirmó que había completado operaciones piloto con DBS y Franklin Templeton. DBS integró sus Treasury Tokens, mientras que Franklin Templeton aportó su solución de fondo monetario tokenizado. Los participantes describieron las pruebas como la primera interoperabilidad entre activos realizada con éxito en Singapur entre estos dos tipos de instrumentos tokenizados."
+        ],
+        [
+          "Desarrollo bajo la iniciativa BLOOM de la MAS",
+          "El trabajo se desarrolló bajo la iniciativa BLOOM de la Autoridad Monetaria de Singapur, centrada en mecanismos interoperables de dinero digital. Las tres empresas también publicaron un documento técnico que explica el protocolo y su relación con la BLOOM Field Guide."
+        ],
+        [
+          "El piloto completado no constituye un lanzamiento general",
+          "Para los equipos de tesorería corporativa, el beneficio propuesto es una conexión más estrecha entre los saldos de pago y las inversiones a corto plazo sin esperar a las ventanas convencionales de liquidación de fondos. Sin embargo, el hito anunciado se refiere a operaciones piloto completadas; el comunicado no demuestra un lanzamiento general para clientes ni cuantifica volúmenes de transacciones en producción."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Ant International teste le règlement interconnecté de dépôts et de fonds tokenisés avec DBS et Franklin Templeton",
+      "description": "Ant International a annoncé le 19 novembre son Whale Orchestration Protocol après avoir réalisé des transactions pilotes reliant les DBS Treasury Tokens à la solution de fonds monétaire tokenisé de Franklin Templeton dans le cadre de l’initiative BLOOM de Singapour.",
+      "sections": [
+        [
+          "Un protocole relie dépôts tokenisés et fonds monétaires",
+          "Ant International a annoncé le Whale Orchestration Protocol le 19 novembre 2026 comme une évolution de WhaleRTP, sa plateforme de règlement de gros fondée sur la blockchain. Le protocole est conçu pour relier les dépôts bancaires tokenisés aux parts de fonds monétaires tokenisées au moyen de transactions de livraison contre paiement."
+        ],
+        [
+          "Des transactions pilotes réalisées avec DBS et Franklin Templeton",
+          "L’entreprise a déclaré avoir réalisé des transactions pilotes avec DBS et Franklin Templeton. DBS a intégré ses Treasury Tokens, tandis que Franklin Templeton a apporté sa solution de fonds monétaire tokenisé. Les participants ont présenté ces essais comme la première interopérabilité inter-actifs menée avec succès à Singapour entre ces deux types d’instruments tokenisés."
+        ],
+        [
+          "Un développement mené dans le cadre de l’initiative BLOOM de la MAS",
+          "Les travaux ont été menés dans le cadre de l’initiative BLOOM de la Monetary Authority of Singapore, consacrée aux dispositifs interopérables de monnaie numérique. Les trois entreprises ont également publié un livre blanc expliquant le protocole et son lien avec le BLOOM Field Guide."
+        ],
+        [
+          "Le pilote achevé ne constitue pas un lancement général",
+          "Pour les équipes de trésorerie d’entreprise, le bénéfice proposé est un lien plus étroit entre les soldes de paiement et les placements à court terme, sans attendre les fenêtres conventionnelles de règlement des fonds. Toutefois, l’étape annoncée concerne des transactions pilotes achevées ; le communiqué n’établit ni un lancement général auprès des clients ni des volumes de transactions en production."
+        ]
+      ]
+    },
+    "sourceSha256": "65c5731ce24f540e12c414536913cf625e8817c2c54be419ec7d319c63091e13"
   }
 }
