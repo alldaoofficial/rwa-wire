@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-19T21:12:33Z",
+    "reason": "Six-hour retry: the CryptoSlate full-text report corresponding to this headline and its original publication date could not be located or read. Bullish primary releases dated September 24 and November 17 document coalition developments but do not establish that the discovered headline is a distinct November 19 event. Cannot verify three headline-specific facts and exact anchors or exclude an earlier-event duplicate."
   }
 }
