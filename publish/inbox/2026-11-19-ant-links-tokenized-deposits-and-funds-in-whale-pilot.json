@@ -28,7 +28,7 @@
     "discoveredAt": "2026-11-19T09:37:16.744986+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
@@ -71,6 +71,7 @@
         "sourceUrl": "https://via.tt.se/pressmeddelande/4648104/ant-international-launches-whale-orchestration-protocol-under-mas-bloom-initiative-to-connect-tokenised-money-market-funds-and-tokenised-deposits?lang=en&publisherId=259167",
         "anchor": "launched a whitepaper"
       }
-    ]
+    ],
+    "contentSha256": "29be5b7d494e8bb3beeb852d83a04f2d56ff9ae84dd3ca6d62162ab4fccdb633"
   }
 }
