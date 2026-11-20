@@ -33,7 +33,7 @@
     "discoveredAt": "2026-11-19T20:49:35.315630+00:00",
     "autoPublishEligible": false,
     "requiresSourceReview": true,
-    "contentStatus": "needs-source-enrichment"
+    "contentStatus": "source-reviewed"
   },
   "sourceReview": {
     "status": "verified",
@@ -88,6 +88,7 @@
         "sourceUrl": "https://news.bitcoin.com/bitcoin-etf/anthropic-ipo-tests-bitcoin-etfs-blackrock-leads-306m-exit/",
         "anchor": "seven funds posted outflows"
       }
-    ]
+    ],
+    "contentSha256": "280c8e90e4dfa0f881b7ca04144fa9ee87c775e6a5382279c450a990e687153e"
   }
 }
