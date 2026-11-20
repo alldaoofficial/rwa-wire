@@ -1,7 +1,7 @@
 {
-  "title": "US spot bitcoin ETFs see $582 million in daily net outflows as November total nears $3.5 billion",
-  "description": "US spot bitcoin ETFs see $582 million in daily net outflows as November total nears $3.5 billion The Block",
-  "why_it_matters": "",
+  "title": "US Bitcoin ETFs lose $582 million on November 19 as BlackRock leads redemptions",
+  "description": "US spot Bitcoin funds recorded roughly $582 million in net withdrawals on November 19, with BlackRock's IBIT accounting for $541.1 million while Morgan Stanley's MSBT attracted new money.",
+  "why_it_matters": "The sharp divergence between IBIT redemptions and MSBT inflows shows that aggregate Bitcoin ETF flows can obscure fund-level differences. November's cumulative withdrawals also highlight pressure on regulated crypto investment products.",
   "pubDate": "2026-11-20",
   "category": "markets",
   "reviewCategory": "CRYPTO MARKET",
@@ -12,14 +12,19 @@
     "Institutions"
   ],
   "keyTakeaways": [
-    "US spot bitcoin ETFs see $582 million in daily net outflows as November total nears $3.5 billion The Block",
-    ""
+    "Farside Investors recorded approximately $582.3 million in net US spot Bitcoin ETF outflows on November 19.",
+    "BlackRock's IBIT accounted for $541.1 million in redemptions, while Morgan Stanley's MSBT received $49.6 million.",
+    "The Block reported roughly $3.47 billion in cumulative November outflows through November 19."
   ],
-  "body": "US spot bitcoin ETFs see $582 million in daily net outflows as November total nears $3.5 billion The Block",
+  "body": "US-listed spot Bitcoin exchange-traded funds registered approximately $582.3 million in net outflows on November 19, 2026, according to the daily fund-level table published by Farside Investors. The result marked a third consecutive negative trading session, following roughly $239.9 million in withdrawals on November 17 and $306.5 million on November 18.\n\nBlackRock's iShares Bitcoin Trust, or IBIT, accounted for $541.1 million of the November 19 net withdrawals. Fidelity's FBTC lost $45.9 million, Ark 21Shares' ARKB lost $31.3 million and Grayscale's GBTC lost $13.9 million. The pattern was not universal: Morgan Stanley's MSBT attracted $49.6 million, while WisdomTree's BTCW added about $0.3 million, according to Farside's table.\n\nThe Block reported that cumulative November net outflows had reached approximately $3.47 billion through November 19. That is a flow measure, not a measure of Bitcoin price losses or proof that every ETF holder sold. Differences between individual funds are important when assessing demand for listed Bitcoin exposure.",
   "sources": [
     {
-      "name": "The Block",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPQ3VVSWJtUmNqZ2I2c05rTFVodUVQY3B1V1FXR0ZYcjZvY1h1cWpqeEJ4OFFCeFhMc1lKMEwwUGFMWlFHcFNHMFpXN2U1WXZUVmRnRDk5RF9Hako5WG5Cd0VRZThMQjRPVWVQT1hzbVoxMy0yeFhPTHNweDNZTkRJWG4yVG5DVFR6UWVQTlBxb01HX2dJUmdTQmZmMzZGNy1HdE4xOUdKNURnak5TVTBVaW42ODdEczJIN2hwUVVyb2pxTnBoQVpwd3ZQTTU3RXhralR5OEZOVW0zTjJWWDRxZDlibw?oc=5"
+      "name": "Farside Investors Bitcoin ETF flows",
+      "url": "https://farside.co.uk/btc/"
+    },
+    {
+      "name": "The Block November 20 ETF report",
+      "url": "https://www.theblock.co/news/markets/2026-11-20-us-spot-bitcoin-etfs-see-582-million-in-daily-net-outflows-as-november-total-nears-3-5-billion-444217"
     }
   ],
   "cryptoWatch": {
@@ -29,5 +34,54 @@
     "autoPublishEligible": false,
     "requiresSourceReview": true,
     "contentStatus": "needs-source-enrichment"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-20T22:20:00Z",
+    "sources": [
+      {
+        "url": "https://farside.co.uk/btc/",
+        "publishedAt": "2026-11-20",
+        "checkedAt": "2026-11-20T22:20:00Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://www.theblock.co/news/markets/2026-11-20-us-spot-bitcoin-etfs-see-582-million-in-daily-net-outflows-as-november-total-nears-3-5-billion-444217",
+        "publishedAt": "2026-11-20",
+        "checkedAt": "2026-11-20T22:20:00Z",
+        "kind": "news",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Farside Investors lists net withdrawals of approximately 582.3 million dollars across US spot Bitcoin ETFs on November 19.",
+        "sourceUrl": "https://farside.co.uk/btc/",
+        "anchor": "19 Nov 2026"
+      },
+      {
+        "claim": "The November 19 fund-level table reports BlackRock IBIT net outflows of 541.1 million dollars.",
+        "sourceUrl": "https://farside.co.uk/btc/",
+        "anchor": "IBIT"
+      },
+      {
+        "claim": "Morgan Stanley MSBT registered 49.6 million dollars in net inflows on November 19.",
+        "sourceUrl": "https://www.theblock.co/news/markets/2026-11-20-us-spot-bitcoin-etfs-see-582-million-in-daily-net-outflows-as-november-total-nears-3-5-billion-444217",
+        "anchor": "MSBT attracted $49.6 million"
+      },
+      {
+        "claim": "The Block reports cumulative November ETF net withdrawals of approximately 3.47 billion dollars.",
+        "sourceUrl": "https://www.theblock.co/news/markets/2026-11-20-us-spot-bitcoin-etfs-see-582-million-in-daily-net-outflows-as-november-total-nears-3-5-billion-444217",
+        "anchor": "approximately $3.47 billion"
+      },
+      {
+        "claim": "The Block identifies November 19 as the third consecutive negative trading session for US spot Bitcoin ETFs.",
+        "sourceUrl": "https://www.theblock.co/news/markets/2026-11-20-us-spot-bitcoin-etfs-see-582-million-in-daily-net-outflows-as-november-total-nears-3-5-billion-444217",
+        "anchor": "third straight day of net outflows"
+      }
+    ]
   }
 }
