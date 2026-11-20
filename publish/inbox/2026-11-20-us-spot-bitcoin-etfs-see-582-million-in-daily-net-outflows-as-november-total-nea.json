@@ -33,7 +33,7 @@
     "discoveredAt": "2026-11-20T20:34:06.101296+00:00",
     "autoPublishEligible": false,
     "requiresSourceReview": true,
-    "contentStatus": "needs-source-enrichment"
+    "contentStatus": "source-reviewed"
   },
   "sourceReview": {
     "status": "verified",
@@ -82,6 +82,7 @@
         "sourceUrl": "https://www.theblock.co/news/markets/2026-11-20-us-spot-bitcoin-etfs-see-582-million-in-daily-net-outflows-as-november-total-nears-3-5-billion-444217",
         "anchor": "third straight day of net outflows"
       }
-    ]
+    ],
+    "contentSha256": "705035a1bd465c1a333945c3db27cd321c437542322f2effaac5a6fe15702e93"
   }
 }
