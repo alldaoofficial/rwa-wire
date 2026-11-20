@@ -28,7 +28,7 @@
     "discoveredAt": "2026-11-19T17:37:15.092770+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "high-trust-headline"
   },
   "sourceReview": {
@@ -76,6 +76,7 @@
         "sourceUrl": "https://www.theblock.co/newsletters/tokenization-briefing/2026-11-19-tokenized-stocks-shrug-off-crypto-selloff-442829",
         "anchor": "Only about 10%"
       }
-    ]
+    ],
+    "contentSha256": "482bc9ffd943ffdd764cb3cff62040995b2eb32eb4195c8709ac964b2ad45260"
   }
 }
