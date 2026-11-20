@@ -1,7 +1,7 @@
 {
   "title": "Bitcoin ETF outflows show waning crypto appetite ahead of Anthropic's Nasdaq debut",
-  "description": "Bitcoin ETF outflows show waning crypto appetite ahead of Anthropic's Nasdaq debut CoinDesk",
-  "why_it_matters": "",
+  "description": "U.S. spot Bitcoin ETFs saw nearly $2.9 billion in November withdrawals by November 19, as Anthropic's Nasdaq debut drew attention to competing demands for risk capital.",
+  "why_it_matters": "ETF redemptions provide a measurable signal of changing institutional crypto exposure, but the timing alongside a high-profile AI listing does not establish that investors directly moved funds from Bitcoin into Anthropic shares.",
   "pubDate": "2026-11-19",
   "category": "markets",
   "reviewCategory": "CRYPTO MARKET",
@@ -12,14 +12,19 @@
     "Institutions"
   ],
   "keyTakeaways": [
-    "Bitcoin ETF outflows show waning crypto appetite ahead of Anthropic's Nasdaq debut CoinDesk",
-    ""
+    "CoinDesk reported almost $2.9 billion of November spot Bitcoin ETF outflows, compared with about $500 million in October.",
+    "Bitcoin.com reported $306.42 million in net withdrawals across seven spot Bitcoin ETFs on November 18.",
+    "Anthropic's IPO attracted market attention, but the available reporting does not prove that ETF redemptions financed purchases of its shares."
   ],
-  "body": "Bitcoin ETF outflows show waning crypto appetite ahead of Anthropic's Nasdaq debut CoinDesk",
+  "body": "U.S. spot Bitcoin exchange-traded funds had recorded almost $2.9 billion in net outflows during November by the morning of November 19, according to CoinDesk's day-ahead market report. That compares with roughly $500 million in October. The report placed the withdrawals alongside Anthropic's Nasdaq debut, but the overlap alone cannot establish where the redeemed capital went.\n\nCoinDesk reported that traders on Hyperliquid had priced Anthropic-related perpetual contracts above $100 per share, compared with the company's $83 initial public offering price. It also cited a Grayscale review of eight earlier IPOs in which such contracts anticipated the opening direction in seven cases. Those historical observations are not guarantees of future pricing accuracy.\n\nSeparate reporting from Bitcoin.com described $306.42 million in net outflows from spot Bitcoin ETFs on Wednesday, November 18, across seven funds. The report said BlackRock's fund led the redemptions. Together, these figures point to weaker demand for listed Bitcoin exposure during a period of intense attention on AI equities, without proving a direct causal connection.",
   "sources": [
     {
-      "name": "CoinDesk",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQNWZIQnFSS3cweDFjY1BSaGxCNWQ2anhIMnQ1cjd2d3ZOQ25TNWhCNTlFUDBnTHpZUEtWdDlfYW1FcGlNMHpGbGRSTUtsZDVxai1QUnRNWHN2UHU1Sm9ncHFoa0daWkQtbVpIUFVCN0FWZUFHRVZZMGZ5cktvOFBFeHloLVJ5UF9qb1dJcnEza01DSnVpM3JnT2IwZkZ6RVRfMjE1Tmc1Ym5lbW52ZmluMl9YUUNVSU9JalVMRVh2d3BQU2dqQjJObw?oc=5"
+      "name": "CoinDesk — Daybook, November 19",
+      "url": "https://www.coindesk.com/daybook-us/2026/11/19/bitcoin-etf-outflows-show-waning-crypto-appetite-ahead-of-anthropic-s-nasdaq-debut"
+    },
+    {
+      "name": "Bitcoin.com — Bitcoin ETF outflows, November 19",
+      "url": "https://news.bitcoin.com/bitcoin-etf/anthropic-ipo-tests-bitcoin-etfs-blackrock-leads-306m-exit/"
     }
   ],
   "cryptoWatch": {
@@ -29,5 +34,60 @@
     "autoPublishEligible": false,
     "requiresSourceReview": true,
     "contentStatus": "needs-source-enrichment"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-20T03:19:43Z",
+    "independentReporting": true,
+    "sources": [
+      {
+        "url": "https://www.coindesk.com/daybook-us/2026/11/19/bitcoin-etf-outflows-show-waning-crypto-appetite-ahead-of-anthropic-s-nasdaq-debut",
+        "publishedAt": "2026-11-19",
+        "checkedAt": "2026-11-20T03:19:43Z",
+        "kind": "news",
+        "access": "full-text"
+      },
+      {
+        "url": "https://news.bitcoin.com/bitcoin-etf/anthropic-ipo-tests-bitcoin-etfs-blackrock-leads-306m-exit/",
+        "publishedAt": "2026-11-19",
+        "checkedAt": "2026-11-20T03:19:43Z",
+        "kind": "news",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "CoinDesk reported nearly 2.9 billion dollars in November spot Bitcoin ETF net outflows.",
+        "sourceUrl": "https://www.coindesk.com/daybook-us/2026/11/19/bitcoin-etf-outflows-show-waning-crypto-appetite-ahead-of-anthropic-s-nasdaq-debut",
+        "anchor": "almost $2.9 billion"
+      },
+      {
+        "claim": "CoinDesk contrasted the November withdrawals with approximately 500 million dollars in October.",
+        "sourceUrl": "https://www.coindesk.com/daybook-us/2026/11/19/bitcoin-etf-outflows-show-waning-crypto-appetite-ahead-of-anthropic-s-nasdaq-debut",
+        "anchor": "$500 million in October"
+      },
+      {
+        "claim": "Hyperliquid traders were pricing Anthropic shares above 100 dollars before their Nasdaq debut.",
+        "sourceUrl": "https://www.coindesk.com/daybook-us/2026/11/19/bitcoin-etf-outflows-show-waning-crypto-appetite-ahead-of-anthropic-s-nasdaq-debut",
+        "anchor": "above $100 a share"
+      },
+      {
+        "claim": "CoinDesk said Grayscale's review found seven correct opening predictions across eight prior IPOs.",
+        "sourceUrl": "https://www.coindesk.com/daybook-us/2026/11/19/bitcoin-etf-outflows-show-waning-crypto-appetite-ahead-of-anthropic-s-nasdaq-debut",
+        "anchor": "seven occasions"
+      },
+      {
+        "claim": "Bitcoin.com reported Wednesday spot Bitcoin ETF net redemptions totaling 306.42 million dollars.",
+        "sourceUrl": "https://news.bitcoin.com/bitcoin-etf/anthropic-ipo-tests-bitcoin-etfs-blackrock-leads-306m-exit/",
+        "anchor": "$306.42 million"
+      },
+      {
+        "claim": "Bitcoin.com reported that seven spot Bitcoin funds posted outflows in the Wednesday session.",
+        "sourceUrl": "https://news.bitcoin.com/bitcoin-etf/anthropic-ipo-tests-bitcoin-etfs-blackrock-leads-306m-exit/",
+        "anchor": "seven funds posted outflows"
+      }
+    ]
   }
 }
