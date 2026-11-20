@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-20T01:19:38.754Z",
+    "reason": "Original Globe and Mail full-text article for the 2026-11-19 18% Binance/tokenized-stocks claim could not be located or read. Search results returned unrelated older Binance Research statistics, insufficient to confirm event date, three facts or exact source anchors. Hold for six-hour retry."
   }
 }
