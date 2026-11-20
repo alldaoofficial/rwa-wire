@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-20T01:19:36.170Z",
-    "reason": "Full Crypto Briefing article dated 2026-11-19 was read, but its Token Terminal market figures could not be verified against the underlying original dataset and no second independent full-text report was established; syndicated copies are not independent. Hold for six-hour source verification retry."
+    "reviewedAt": "2026-11-20T07:20:14.899Z",
+    "reason": "Rechecked the full Crypto Briefing report dated 2026-11-19 and Franklin Templeton's primary release. The November $14B aggregate Treasury market and $3.5B BENJI issuance figures attributed to Token Terminal were not independently established from the underlying dataset; Franklin Templeton's January primary release does not verify those November amounts. No second independent current full-text report was found. Hold for six-hour retry."
   }
 }
