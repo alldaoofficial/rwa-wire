@@ -29,7 +29,7 @@
     "discoveredAt": "2026-11-20T05:07:15.987493+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
@@ -82,6 +82,7 @@
         "sourceUrl": "https://www.mas.gov.sg/news/media-releases/2026/mas-announces-successful-issuance-of-tokenised-mas-bills-on-the-singapore-dollar-test-network",
         "anchor": "live trials in 2027"
       }
-    ]
+    ],
+    "contentSha256": "bbba9a48aa5c892628a57143268287465c670fe0e2f5f980e678f532d6a55346"
   }
 }
