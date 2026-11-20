@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-18T21:18:19.422Z",
-    "reason": "LI.FI official August 2026 update already describes Coinbase tokenized stocks on Base distributed through 1,000+ partners; September update describes six additional Base stock tokens. October 21 LI.FI article covers Solana, not a new November 18 Base-wallet launch. No dated full-text November 18 primary release or two independent reports establishing a distinct event and three facts were found. Retry no earlier than six hours."
+    "reviewedAt": "2026-11-20T06:14:33Z",
+    "reason": "Rechecked November 17 LI.FI announcement as reproduced with its date and geographic restriction, the November 18 Blockchain.News report, and LI.FI's September product update. The original announcement is a social post, while available reporting repeats it; no direct full-text dated primary announcement or two independent complete news reports establish a distinct launch with three verifiable new facts. Existing Base tokenized-stock integrations predate this headline. Keep held, retry after six hours if original full-text primary documentation or independent reports emerge."
   }
 }
