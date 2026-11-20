@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-20T12:13:00Z",
+    "reason": "Barron's November 20 Streetwise column is commentary on the already covered OKX–ICE November 23 tokenized-equities launch and issuer objections (publish/inbox/2026-11-18-okx-ice-tokenized-stocks-open-nov-23-with-56-of-62-targets-objecting.json), not an independently announced new RWA event. The source's other points concern historical DTC settlement and opinion, so no separate news article is warranted."
   }
 }
