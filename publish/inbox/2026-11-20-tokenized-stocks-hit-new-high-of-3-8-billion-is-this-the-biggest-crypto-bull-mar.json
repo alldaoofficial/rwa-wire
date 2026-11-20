@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-20T12:12:00Z",
+    "reason": "The $3.8B tokenized-equity market-size headline is already superseded by the verified November 19 The Block briefing in publish/inbox/2026-11-19-tokenized-stocks-shrug-off-the-crypto-selloff.json, which reports the market crossing $4B on November 11. The original Futu article is unresolved and the $3.8B claim lacks a dated comparable methodology; no distinct new event is established."
   }
 }
