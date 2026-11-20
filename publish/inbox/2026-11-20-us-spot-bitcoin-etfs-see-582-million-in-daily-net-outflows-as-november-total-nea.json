@@ -39,19 +39,19 @@
     "status": "verified",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-20T22:20:00Z",
+    "reviewedAt": "2026-11-20T22:19:13Z",
     "sources": [
       {
         "url": "https://farside.co.uk/btc/",
         "publishedAt": "2026-11-20",
-        "checkedAt": "2026-11-20T22:20:00Z",
+        "checkedAt": "2026-11-20T22:18:59Z",
         "kind": "primary",
         "access": "full-text"
       },
       {
         "url": "https://www.theblock.co/news/markets/2026-11-20-us-spot-bitcoin-etfs-see-582-million-in-daily-net-outflows-as-november-total-nears-3-5-billion-444217",
         "publishedAt": "2026-11-20",
-        "checkedAt": "2026-11-20T22:20:00Z",
+        "checkedAt": "2026-11-20T22:18:59Z",
         "kind": "news",
         "access": "full-text"
       }
