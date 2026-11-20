@@ -1,8 +1,8 @@
 {
-  "title": "OKX Adds Eight Tokenized Stocks to Earn and Borrow Products",
-  "description": "OKX Adds Eight Tokenized Stocks to Earn and Borrow Products",
-  "why_it_matters": "",
-  "pubDate": "2026-11-20",
+  "title": "OKX Expands Tokenized Stock Utility With Flexible Earn and Borrowing",
+  "description": "OKX says eight tokenized equity and ETF assets are eligible for variable-interest Simple Earn subscriptions and Flexible Loan borrowing, with regional access and collateral restrictions.",
+  "why_it_matters": "The addition extends tokenized equities beyond spot trading into lending and yield products, but borrowing costs, liquidation exposure and corporate-action adjustments complicate their use as financial collateral.",
+  "pubDate": "2026-11-19",
   "category": "news",
   "tags": [
     "Tokenization",
@@ -10,14 +10,15 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "OKX Adds Eight Tokenized Stocks to Earn and Borrow Products",
-    ""
+    "Eight tokenized equity and ETF instruments are listed for Simple Earn Flexible and Flexible Loan.",
+    "Simple Earn pays variable, non-guaranteed interest; loan access depends on inventory and collateral.",
+    "Corporate actions may alter balances or interrupt transactions, and token holders do not receive shareholder rights."
   ],
-  "body": "OKX Adds Eight Tokenized Stocks to Earn and Borrow Products",
+  "body": "OKX has extended the uses of selected tokenized equities and exchange-traded fund exposures on its platform, allowing eligible customers to subscribe holdings to Simple Earn Flexible or borrow the supported tokens through Flexible Loan. In a November 19 notice, the exchange said the functionality was available from November 18, subject to account, asset and regional eligibility.\n\nThe initial list comprises xCRCL, xMSTR, xSPCX, xMU, xQQQ, xGOOGL, xINTC and xNVDA. Simple Earn Flexible offers variable interest rather than a guaranteed return, while the lending product depends on token availability, borrowing rates and collateral requirements. OKX specifies that assets committed as collateral cannot simultaneously generate Simple Earn interest.\n\nThe exchange also describes how dividends, stock splits and reverse splits can change balances or outstanding loan obligations. Transactions may be suspended during certain corporate actions. These tokenized instruments provide economic exposure, not direct ownership of company shares or voting rights. Borrowing introduces interest expense and liquidation risk. The expansion illustrates how tokenized securities are being integrated into crypto-platform credit and yield functions, while remaining distinct from conventional brokerage ownership.",
   "sources": [
     {
-      "name": "www.tokenpost.com",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBzaVlXeEVJWmFITVZ0SFN2REVMbHFXRVlyN1ZJQWQ5OXlLenlUUm5Pb0daR1hZR2hSNVMyOXkycjdDWXJfYTZuY1BicS1wcnFadk9HSWZ1OFE?oc=5"
+      "name": "OKX official product notice",
+      "url": "https://www.okx.com/help/put-your-tokenized-stocks-to-work-simple-earn-and-flexible-loan-now-supports-tokenized-stocks"
     }
   ],
   "newsWatch": {
@@ -29,5 +30,52 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-20T10:11:34Z",
+    "sources": [
+      {
+        "url": "https://www.okx.com/help/put-your-tokenized-stocks-to-work-simple-earn-and-flexible-loan-now-supports-tokenized-stocks",
+        "publishedAt": "2026-11-19",
+        "checkedAt": "2026-11-20T10:11:34Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "OKX states that eligible users can access these tokenized stock products beginning November 18, 2026.",
+        "sourceUrl": "https://www.okx.com/help/put-your-tokenized-stocks-to-work-simple-earn-and-flexible-loan-now-supports-tokenized-stocks",
+        "anchor": "Starting from 18 November 2026"
+      },
+      {
+        "claim": "The initial supported instruments include xCRCL, xMSTR, xSPCX, xMU, xQQQ, xGOOGL, xINTC and xNVDA.",
+        "sourceUrl": "https://www.okx.com/help/put-your-tokenized-stocks-to-work-simple-earn-and-flexible-loan-now-supports-tokenized-stocks",
+        "anchor": "Initial supported assets"
+      },
+      {
+        "claim": "Simple Earn Flexible permits subscriptions in supported tokenized stocks with interest rates that vary.",
+        "sourceUrl": "https://www.okx.com/help/put-your-tokenized-stocks-to-work-simple-earn-and-flexible-loan-now-supports-tokenized-stocks",
+        "anchor": "earn variable interest"
+      },
+      {
+        "claim": "Flexible Loan borrowing depends on available inventory and collateral requirements for supported tokenized stocks.",
+        "sourceUrl": "https://www.okx.com/help/put-your-tokenized-stocks-to-work-simple-earn-and-flexible-loan-now-supports-tokenized-stocks",
+        "anchor": "subject to available inventory and collateral requirements"
+      },
+      {
+        "claim": "Balances committed as collateral cannot simultaneously earn interest through Simple Earn on the platform.",
+        "sourceUrl": "https://www.okx.com/help/put-your-tokenized-stocks-to-work-simple-earn-and-flexible-loan-now-supports-tokenized-stocks",
+        "anchor": "cannot also earn Simple Earn interest"
+      },
+      {
+        "claim": "Tokenized stocks do not give their holders direct shareholder voting rights in the underlying companies.",
+        "sourceUrl": "https://www.okx.com/help/put-your-tokenized-stocks-to-work-simple-earn-and-flexible-loan-now-supports-tokenized-stocks",
+        "anchor": "do not confer shareholder rights"
+      }
+    ]
   }
 }
