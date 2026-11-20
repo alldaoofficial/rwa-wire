@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-20T21:11:03Z",
+    "reason": "Forbes original full-text article and primary confirmation of Monday US tokenized-stock availability could not be retrieved; headline-only Google News RSS discovery is insufficient to verify event date, three distinct facts, and exact evidence anchors. Retry after six hours."
   }
 }
