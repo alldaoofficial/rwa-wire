@@ -1,7 +1,7 @@
 {
-  "title": "Singapore Central Bank Successfully Issues Tokenized Securities Worth Over 12 Billion Yen",
-  "description": "Singapore Central Bank Successfully Issues Tokenized Securities Worth Over 12 Billion Yen",
-  "why_it_matters": "",
+  "title": "Singapore Issues S$100 Million in Tokenised MAS Bills Settled With Wholesale CBDC",
+  "description": "Singapore's monetary authority disclosed a four-week S$100 million native tokenised bill issuance, settled in wholesale CBDC after an auction involving five primary dealers.",
+  "why_it_matters": "The transaction tests whether a central-bank-operated ledger can handle both security issuance and payment settlement. MAS plans to expand the trial toward institutional collateral management in 2027, rather than claiming a general commercial rollout today.",
   "pubDate": "2026-11-20",
   "category": "news",
   "tags": [
@@ -10,14 +10,16 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "Singapore Central Bank Successfully Issues Tokenized Securities Worth Over 12 Billion Yen",
-    ""
+    "MAS disclosed S$100 million of four-week tokenised bills issued on 6 November 2026.",
+    "Five primary dealers took part; auction applications exceeded twice the issue size.",
+    "Wholesale CBDC settled the native issuance, with maturity scheduled for 4 December.",
+    "MAS plans additional institutional trials and collateral-management use in 2027."
   ],
-  "body": "Singapore Central Bank Successfully Issues Tokenized Securities Worth Over 12 Billion Yen",
+  "body": "Singapore's Monetary Authority of Singapore (MAS) announced on 19 November that it had issued S$100 million of tokenised MAS Bills on 6 November 2026. The four-week instruments were created directly on the central bank's Singapore Dollar Test Network and settled using wholesale central bank digital currency (CBDC), according to the authority's release. They are scheduled to mature on 4 December.\n\nFive approved primary dealers participated in the auction: DBS, HSBC's Singapore branch, OCBC, Standard Chartered Bank Singapore and UOB. MAS said total applications exceeded twice the issuance amount. Unlike securities issued through conventional systems and tokenised afterward, these bills were recorded natively on the shared ledger, reducing the need to reconcile separate records.\n\nMAS intends to rename the Singapore Dollar Test Network the SG Digital Ledger. It plans further live trials in 2027, with more participating institutions and an expanded role for tokenised bills in collateral management. The announcement describes an institutional market-infrastructure experiment, not a retail product launch or a completed nationwide replacement for traditional settlement.",
   "sources": [
     {
-      "name": "Iolite（アイオライト）",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8zTWgyT2s1MUpBOTdtc3hfNWJSQWJ3NHZxeF8zVm5RQ2l2Q0p3WnM5eS1pMjM2THhCRW9PcEdrVFNEVjBUdHRKV1c4d0ZUcEtZenhHag?oc=5"
+      "name": "Monetary Authority of Singapore — 19 November 2026 media release",
+      "url": "https://www.mas.gov.sg/news/media-releases/2026/mas-announces-successful-issuance-of-tokenised-mas-bills-on-the-singapore-dollar-test-network"
     }
   ],
   "newsWatch": {
@@ -29,5 +31,57 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-20T05:16:16.630Z",
+    "sources": [
+      {
+        "url": "https://www.mas.gov.sg/news/media-releases/2026/mas-announces-successful-issuance-of-tokenised-mas-bills-on-the-singapore-dollar-test-network",
+        "publishedAt": "2026-11-19",
+        "checkedAt": "2026-11-20T05:16:16.630Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "MAS announced the issuance of S$100 million in tokenised MAS Bills on 6 November 2026.",
+        "sourceUrl": "https://www.mas.gov.sg/news/media-releases/2026/mas-announces-successful-issuance-of-tokenised-mas-bills-on-the-singapore-dollar-test-network",
+        "anchor": "S$100 million"
+      },
+      {
+        "claim": "The issued bills had a four-week term and were created directly on the MAS-operated ledger.",
+        "sourceUrl": "https://www.mas.gov.sg/news/media-releases/2026/mas-announces-successful-issuance-of-tokenised-mas-bills-on-the-singapore-dollar-test-network",
+        "anchor": "4-week MAS Bills"
+      },
+      {
+        "claim": "The native issuance was settled using wholesale central bank digital currency.",
+        "sourceUrl": "https://www.mas.gov.sg/news/media-releases/2026/mas-announces-successful-issuance-of-tokenised-mas-bills-on-the-singapore-dollar-test-network",
+        "anchor": "wholesale Central Bank Digital Currency"
+      },
+      {
+        "claim": "Five primary dealers participated in the bill auction conducted by the central bank.",
+        "sourceUrl": "https://www.mas.gov.sg/news/media-releases/2026/mas-announces-successful-issuance-of-tokenised-mas-bills-on-the-singapore-dollar-test-network",
+        "anchor": "Five Primary Dealers"
+      },
+      {
+        "claim": "Applications for the tokenised bills exceeded twice the issuance size.",
+        "sourceUrl": "https://www.mas.gov.sg/news/media-releases/2026/mas-announces-successful-issuance-of-tokenised-mas-bills-on-the-singapore-dollar-test-network",
+        "anchor": "more than double"
+      },
+      {
+        "claim": "The tokenised bills are scheduled to mature on 4 December 2026.",
+        "sourceUrl": "https://www.mas.gov.sg/news/media-releases/2026/mas-announces-successful-issuance-of-tokenised-mas-bills-on-the-singapore-dollar-test-network",
+        "anchor": "4 December 2026"
+      },
+      {
+        "claim": "MAS plans to expand collateral management trials with more institutions during 2027.",
+        "sourceUrl": "https://www.mas.gov.sg/news/media-releases/2026/mas-announces-successful-issuance-of-tokenised-mas-bills-on-the-singapore-dollar-test-network",
+        "anchor": "live trials in 2027"
+      }
+    ]
   }
 }
