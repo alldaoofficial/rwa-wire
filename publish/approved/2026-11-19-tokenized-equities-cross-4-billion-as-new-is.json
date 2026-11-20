@@ -1,0 +1,27 @@
+{
+  "id": "2026-11-19-tokenized-equities-cross-4-billion-as-new-is",
+  "title": "Tokenized Equities Cross $4 Billion as New Issuance Offsets Market Declines",
+  "category": "NEWS",
+  "why_it_matters": "The reported divergence between new token issuance and falling equity valuations helps distinguish fresh demand for blockchain-based equity exposure from price-driven growth. Geographic restrictions remain a major constraint on who can access these instruments.",
+  "article_url": "https://therwawire.com/news/tokenized-equities-cross-4-billion-as-new-issuance-offsets-market-declines/",
+  "image_url": "https://therwawire.com/images/news/tokenized-equities-cross-4-billion-as-new-issuance-offsets-market-declines.svg",
+  "caption": "RWA WIRE // NEWS\n\nTokenized Equities Cross $4 Billion as New Issuance Offsets Market Declines\n\nThe Block's November 19 tokenization analysis reports that onchain tokenized equities first passed $4 billion on November 11, with new issuance outweighing falling underlying share prices.\n\nFull analysis →\nhttps://therwawire.com/news/tokenized-equities-cross-4-billion-as-new-issuance-offsets-market-declines/",
+  "distribution": {
+    "telegram": "RWA WIRE // NEWS\n\nTokenized Equities Cross $4 Billion as New Issuance Offsets Market Declines\n\nThe Block's November 19 tokenization analysis reports that onchain tokenized equities first passed $4 billion on November 11, with new issuance outweighing falling underlying share prices.\n\nFull analysis →\nhttps://therwawire.com/news/tokenized-equities-cross-4-billion-as-new-issuance-offsets-market-declines/",
+    "x": "Tokenized Equities Cross $4 Billion as New Issuance Offsets Market Declines\n\nThe Block's November 19 tokenization analysis reports that onchain tokenized equities first passed $4 billion on November 11, with new issuance outweighing falling underlying share prices.\n\nhttps://therwawire.com/news/tokenized-equities-cross-4-billion-as-new-issuance-offsets-market-declines/",
+    "breaking": "RWA WIRE // NEWS\n\nTokenized Equities Cross $4 Billion as New Issuance Offsets Market Declines\n\nhttps://therwawire.com/news/tokenized-equities-cross-4-billion-as-new-issuance-offsets-market-declines/",
+    "summary": "The Block's November 19 tokenization analysis reports that onchain tokenized equities first passed $4 billion on November 11, with new issuance outweighing falling underlying share prices."
+  },
+  "sources": [
+    {
+      "name": "The Block — Tokenization Briefing (Ian Devendorf, November 19, 2026)",
+      "url": "https://www.theblock.co/newsletters/tokenization-briefing/2026-11-19-tokenized-stocks-shrug-off-crypto-selloff-442829"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-11-19-tokenized-stocks-shrug-off-the-crypto-selloff.json",
+    "contentSha256": "482bc9ffd943ffdd764cb3cff62040995b2eb32eb4195c8709ac964b2ad45260",
+    "approvedAt": "2026-11-20T00:19:02.878321+00:00"
+  }
+}
