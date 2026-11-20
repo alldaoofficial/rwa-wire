@@ -36,7 +36,7 @@
     "discoveredAt": "2026-11-20T02:07:16.726352+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
@@ -99,6 +99,7 @@
         "sourceUrl": "https://crypto.news/hsbc-redcoin-stablecoin-tokenized-money-market-fund/",
         "anchor": "at least 70% of its net assets"
       }
-    ]
+    ],
+    "contentSha256": "33cd5bb6bcb3aab2da565e6620f55f1f6ff18467d8fcaba91fab0fb3b655796c"
   }
 }
