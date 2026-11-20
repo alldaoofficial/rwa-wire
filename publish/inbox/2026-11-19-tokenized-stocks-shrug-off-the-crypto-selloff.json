@@ -1,7 +1,7 @@
 {
-  "title": "Tokenized Stocks Shrug Off the Crypto Selloff",
-  "description": "Tokenized Stocks Shrug Off the Crypto Selloff",
-  "why_it_matters": "",
+  "title": "Tokenized Equities Cross $4 Billion as New Issuance Offsets Market Declines",
+  "description": "The Block's November 19 tokenization analysis reports that onchain tokenized equities first passed $4 billion on November 11, with new issuance outweighing falling underlying share prices.",
+  "why_it_matters": "The reported divergence between new token issuance and falling equity valuations helps distinguish fresh demand for blockchain-based equity exposure from price-driven growth. Geographic restrictions remain a major constraint on who can access these instruments.",
   "pubDate": "2026-11-19",
   "category": "news",
   "tags": [
@@ -10,14 +10,15 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "Tokenized Stocks Shrug Off the Crypto Selloff",
-    ""
+    "The Block reports tokenized equity value first exceeded $4 billion on November 11.",
+    "New token issuance added $1.12 billion over eleven weeks ending November 13, while price movements subtracted $339 million.",
+    "The analysis estimates only about 10% of tokenized stock value is accessible to US investors."
   ],
-  "body": "Tokenized Stocks Shrug Off the Crypto Selloff",
+  "body": "Tokenized equities surpassed $4 billion in onchain value for the first time on November 11, according to a November 19 Tokenization Briefing by The Block. The publication estimates that the sector's value has grown to about five times its level at the start of 2026, even as the broader cryptocurrency market has weakened.\n\nThe report distinguishes new issuance from changes in the market prices of the underlying shares. Over the eleven weeks ending November 13, newly minted tokens contributed $1.12 billion to sector value, while price movements reduced it by $339 million. The Block attributes roughly four-fifths of that issuance to Binance's bStocks products, with NVIDIA, SpaceX and Circle among the leading exposures.\n\nThe analysis also highlights access limitations. It estimates that only about 10% of tokenized equity value is currently accessible to US investors, with much of that exposure concentrated in crypto-related companies. A proposed November 23 expansion through OKXICE is presented as an expectation, not an accomplished launch. These figures describe onchain instruments and should not be interpreted as evidence that token holders necessarily possess the same legal rights as directly registered shareholders.",
   "sources": [
     {
-      "name": "The Block",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPd0ItQ2cwQ1Mxd2s3Y01XMFRvVGZIQktSOG9nOE5LMkd5R1lGVHdOd01PcXZwZFoyYkM3bmludWpacVozWmZ0OFdzNnJOMU1uRHZqZXNUV2gwVG1MSG5QS1Z0SFI2bXlqZ2JGbHNMbmVFUEpWQy1MZ0c3ZVZzTzZ2WUctXzhjaGU3OFR5bkhuZzBrdDF3X3JzcXVzdjZoSXhBdXZwQzJOZ2NqNDY4MUtsaDh3UkxURlhz?oc=5"
+      "name": "The Block — Tokenization Briefing (Ian Devendorf, November 19, 2026)",
+      "url": "https://www.theblock.co/newsletters/tokenization-briefing/2026-11-19-tokenized-stocks-shrug-off-crypto-selloff-442829"
     }
   ],
   "newsWatch": {
@@ -31,10 +32,50 @@
     "discoveryMode": "high-trust-headline"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "verified",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-19T18:10:43Z",
-    "reason": "Original The Block article could not be located or read in full; Google News RSS is not a direct source, and secondary headline aggregators do not establish three independently evidenced facts. Retry after six hours; do not publish."
+    "reviewedAt": "2026-11-20T00:18:21.337Z",
+    "sources": [
+      {
+        "url": "https://www.theblock.co/newsletters/tokenization-briefing/2026-11-19-tokenized-stocks-shrug-off-crypto-selloff-442829",
+        "publishedAt": "2026-11-19",
+        "checkedAt": "2026-11-20T00:18:21.337Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "The Block reported that tokenized stocks first exceeded four billion dollars in onchain value on November 11.",
+        "sourceUrl": "https://www.theblock.co/newsletters/tokenization-briefing/2026-11-19-tokenized-stocks-shrug-off-crypto-selloff-442829",
+        "anchor": "crossed $4 billion"
+      },
+      {
+        "claim": "The report estimates that tokenized equity value is about five times the level recorded at the beginning of January.",
+        "sourceUrl": "https://www.theblock.co/newsletters/tokenization-briefing/2026-11-19-tokenized-stocks-shrug-off-crypto-selloff-442829",
+        "anchor": "roughly five times"
+      },
+      {
+        "claim": "Across eleven weeks ending November 13, newly minted tokens contributed 1.12 billion dollars in value.",
+        "sourceUrl": "https://www.theblock.co/newsletters/tokenization-briefing/2026-11-19-tokenized-stocks-shrug-off-crypto-selloff-442829",
+        "anchor": "minting added $1.12 billion"
+      },
+      {
+        "claim": "The same analysis estimates that changes in underlying share prices reduced sector value by 339 million dollars.",
+        "sourceUrl": "https://www.theblock.co/newsletters/tokenization-briefing/2026-11-19-tokenized-stocks-shrug-off-crypto-selloff-442829",
+        "anchor": "price moves took away $339 million"
+      },
+      {
+        "claim": "Binance bStocks accounted for approximately four fifths of newly minted tokenized equity value over the period.",
+        "sourceUrl": "https://www.theblock.co/newsletters/tokenization-briefing/2026-11-19-tokenized-stocks-shrug-off-crypto-selloff-442829",
+        "anchor": "about four fifths"
+      },
+      {
+        "claim": "The publication estimates that only about ten percent of tokenized stock value is available to American investors.",
+        "sourceUrl": "https://www.theblock.co/newsletters/tokenization-briefing/2026-11-19-tokenized-stocks-shrug-off-crypto-selloff-442829",
+        "anchor": "Only about 10%"
+      }
+    ]
   }
 }
