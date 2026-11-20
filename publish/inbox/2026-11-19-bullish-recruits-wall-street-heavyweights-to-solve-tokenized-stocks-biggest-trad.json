@@ -1,7 +1,7 @@
 {
-  "title": "Bullish recruits Wall Street heavyweights to solve tokenized stocks’ biggest trading problem",
-  "description": "Bullish recruits Wall Street heavyweights to solve tokenized stocks’ biggest trading problem",
-  "why_it_matters": "",
+  "title": "Bullish issuer-token coalition expands to 12 firms with DRW, Flow Traders, SoFi and Superstate",
+  "description": "Bullish and Equiniti added four trading and tokenization specialists to their issuer-token standards group on November 17, bringing membership to 12 while liquidity and cross-platform trading remain work in progress.",
+  "why_it_matters": "Tokenized equities need more than blockchain issuance: brokers, transfer agents and liquidity providers must agree on ownership records and secondary-market processes. This coalition includes firms with distinct market-infrastructure roles, but participation is non-binding and does not itself establish a functioning trading venue.",
   "pubDate": "2026-11-19",
   "category": "news",
   "tags": [
@@ -10,14 +10,15 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "Bullish recruits Wall Street heavyweights to solve tokenized stocks’ biggest trading problem",
-    ""
+    "DRW, Flow Traders, SoFi and Superstate joined the Bullish–Equiniti coalition, bringing it to 12 members.",
+    "The working group plans to address liquidity mechanics, technical standards and market infrastructure for issuer tokens.",
+    "Coalition membership is non-binding and does not require token issuance, trading or liquidity commitments."
   ],
-  "body": "Bullish recruits Wall Street heavyweights to solve tokenized stocks’ biggest trading problem",
+  "body": "Bullish and transfer agent Equiniti announced on November 17 that DRW, Flow Traders, SoFi and Superstate had joined their Issuer Token Coalition. The four additions increased the working group to 12 members less than two months after its formation. The companies bring different capabilities, spanning institutional execution, market making, consumer finance and blockchain securities infrastructure.\n\nThe coalition is developing common approaches to issuer-sponsored tokenized shares. Its next work streams include liquidity arrangements, technical architecture and the commercial systems needed to connect issuers with investors and secondary markets. Bullish said the group had discussed issuer priorities at a New York Stock Exchange gathering on October 27.\n\nThe announcement is not a launch of an interoperable stock-trading network. Bullish explicitly describes membership as non-binding: joining does not oblige a firm to issue securities, provide liquidity or list products. Separately, Bullish's planned acquisition of Equiniti is expected to close in January 2027, subject to regulatory approvals and other conditions. The initiative therefore signals coordination around standards, rather than proof that tokenized shares can already trade freely across platforms.",
   "sources": [
     {
-      "name": "CryptoSlate",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOdWhRUVg2Z0hMVjdBdTBiT18zd0s2VHp4aGFybzRfRm1RVnRmS3FjaFJNT2JUZ0VXcG9RbVB1VVRBSy15X0U2RWpmZnJoWnNYdUsxeVdIbzJFN0FjVXUzdngxXzJzdWRMbkJRRDRTTWJETTZXc0N1RHhFMTM0eE1YREN6Z244TGlHaDczNkdBOEFOUkxtNTdxMHJFajhUZF9EMjFjUjZ3TTczTC00bUJTUms5dkFpLXM?oc=5"
+      "name": "Bullish investor relations — Issuer Token Coalition announcement (November 17, 2026)",
+      "url": "https://investors.bullish.com/node/8541/pdf"
     }
   ],
   "newsWatch": {
@@ -31,10 +32,50 @@
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "verified",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-19T21:12:33Z",
-    "reason": "Six-hour retry: the CryptoSlate full-text report corresponding to this headline and its original publication date could not be located or read. Bullish primary releases dated September 24 and November 17 document coalition developments but do not establish that the discovered headline is a distinct November 19 event. Cannot verify three headline-specific facts and exact anchors or exclude an earlier-event duplicate."
+    "reviewedAt": "2026-11-20T04:18:57.705Z",
+    "sources": [
+      {
+        "url": "https://investors.bullish.com/node/8541/pdf",
+        "publishedAt": "2026-11-17",
+        "checkedAt": "2026-11-20T04:18:57.705Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Bullish and Equiniti announced the addition of DRW, Flow Traders, SoFi and Superstate on November 17, 2026.",
+        "sourceUrl": "https://investors.bullish.com/node/8541/pdf",
+        "anchor": "DRW, Flow Traders, SoFi and Superstate"
+      },
+      {
+        "claim": "The four additions brought the Issuer Token Coalition to twelve participating firms.",
+        "sourceUrl": "https://investors.bullish.com/node/8541/pdf",
+        "anchor": "Coalition to 12 firms"
+      },
+      {
+        "claim": "Bullish and Equiniti hosted an issuer-focused meeting at the New York Stock Exchange on October 27.",
+        "sourceUrl": "https://investors.bullish.com/node/8541/pdf",
+        "anchor": "On Oct. 27"
+      },
+      {
+        "claim": "The coalition's next phase focuses on liquidity mechanics, technical architecture and commercial arrangements for issuer tokens.",
+        "sourceUrl": "https://investors.bullish.com/node/8541/pdf",
+        "anchor": "liquidity mechanics, standards and tech architecture"
+      },
+      {
+        "claim": "Joining the coalition does not require members to issue or list securities or provide trading liquidity.",
+        "sourceUrl": "https://investors.bullish.com/node/8541/pdf",
+        "anchor": "Participation in the Coalition is non-binding"
+      },
+      {
+        "claim": "Bullish expected its acquisition of Equiniti to close in January 2027 subject to regulatory approvals.",
+        "sourceUrl": "https://investors.bullish.com/node/8541/pdf",
+        "anchor": "expected to close in January 2027"
+      }
+    ]
   }
 }
