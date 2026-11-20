@@ -6430,5 +6430,71 @@
       ]
     },
     "sourceSha256": "7ce78790ca039d6df6aadd25cc6289a0db14448215bd8f09c93e52254d353233"
+  },
+  "tokenized-equities-cross-4-billion-as-new-issuance-offsets-market-declines": {
+    "path": "/news/tokenized-equities-cross-4-billion-as-new-issuance-offsets-market-declines/",
+    "date": "2026-11-19",
+    "kind": "news",
+    "sources": [
+      [
+        "The Block — Tokenization Briefing (Ian Devendorf, November 19, 2026)",
+        "https://www.theblock.co/newsletters/tokenization-briefing/2026-11-19-tokenized-stocks-shrug-off-crypto-selloff-442829"
+      ]
+    ],
+    "de": {
+      "title": "Tokenisierte Aktien überschreiten 4 Milliarden US-Dollar, da Neuemissionen Marktrückgänge ausgleichen",
+      "description": "Die Tokenisierungsanalyse von The Block vom 19. November berichtet, dass der Onchain-Wert tokenisierter Aktien am 11. November erstmals 4 Milliarden US-Dollar überschritt, wobei Neuemissionen die fallenden Kurse der zugrunde liegenden Aktien überwogen.",
+      "sections": [
+        [
+          "Onchain-Wert übersteigt erstmals 4 Milliarden US-Dollar",
+          "Tokenisierte Aktien überschritten am 11. November erstmals einen Onchain-Wert von 4 Milliarden US-Dollar, wie The Block in seinem Tokenization Briefing vom 19. November berichtete. Die Publikation schätzt, dass der Wert des Sektors auf etwa das Fünffache seines Niveaus zu Beginn des Jahres 2026 gestiegen ist, obwohl sich der breitere Kryptomarkt abgeschwächt hat."
+        ],
+        [
+          "Neuemissionen überwiegen fallende Aktienkurse",
+          "Der Bericht unterscheidet zwischen Neuemissionen und Veränderungen der Marktpreise der zugrunde liegenden Aktien. In den elf Wochen bis zum 13. November trugen neu geschaffene Token 1,12 Milliarden US-Dollar zum Sektorwert bei, während Preisbewegungen ihn um 339 Millionen US-Dollar verringerten. The Block führt rund vier Fünftel dieser Emissionen auf die bStocks-Produkte von Binance zurück; NVIDIA, SpaceX und Circle zählten zu den führenden Basiswerten."
+        ],
+        [
+          "Zugang für US-Anleger bleibt begrenzt",
+          "Die Analyse hebt zudem Zugangsbeschränkungen hervor. Sie schätzt, dass derzeit nur etwa 10 % des Werts tokenisierter Aktien für US-Anleger zugänglich sind, wobei sich ein großer Teil dieses Angebots auf kryptobezogene Unternehmen konzentriert. Eine vorgeschlagene Erweiterung über OKXICE am 23. November wird als Erwartung dargestellt, nicht als bereits erfolgter Start. Die Zahlen beschreiben Onchain-Instrumente und dürfen nicht als Beleg dafür verstanden werden, dass Tokeninhaber zwangsläufig dieselben gesetzlichen Rechte wie direkt eingetragene Aktionäre besitzen."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Las acciones tokenizadas superan los 4.000 millones de dólares mientras las nuevas emisiones compensan las caídas del mercado",
+      "description": "El análisis de tokenización de The Block del 19 de noviembre señala que el valor onchain de las acciones tokenizadas superó por primera vez los 4.000 millones de dólares el 11 de noviembre, ya que las nuevas emisiones pesaron más que la caída de las acciones subyacentes.",
+      "sections": [
+        [
+          "El valor onchain supera por primera vez los 4.000 millones de dólares",
+          "Las acciones tokenizadas superaron por primera vez los 4.000 millones de dólares de valor onchain el 11 de noviembre, según el Tokenization Briefing publicado por The Block el 19 de noviembre. La publicación estima que el valor del sector ha crecido hasta situarse en torno a cinco veces el nivel registrado al comienzo de 2026, incluso mientras el mercado de criptomonedas en general se ha debilitado."
+        ],
+        [
+          "Las nuevas emisiones superan el efecto de la caída de las cotizaciones",
+          "El informe distingue las nuevas emisiones de las variaciones en los precios de mercado de las acciones subyacentes. Durante las once semanas terminadas el 13 de noviembre, los tokens de nueva creación aportaron 1.120 millones de dólares al valor del sector, mientras que los movimientos de precios lo redujeron en 339 millones de dólares. The Block atribuye aproximadamente cuatro quintas partes de esas emisiones a los productos bStocks de Binance, con NVIDIA, SpaceX y Circle entre las principales exposiciones."
+        ],
+        [
+          "El acceso de los inversores estadounidenses sigue limitado",
+          "El análisis también destaca las limitaciones de acceso. Estima que actualmente solo alrededor del 10 % del valor de las acciones tokenizadas está disponible para inversores estadounidenses, y que gran parte de esa exposición se concentra en empresas vinculadas a las criptomonedas. La propuesta de expansión a través de OKXICE el 23 de noviembre se presenta como una expectativa, no como un lanzamiento ya realizado. Estas cifras describen instrumentos onchain y no deben interpretarse como prueba de que los titulares de tokens posean necesariamente los mismos derechos legales que los accionistas inscritos directamente."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Les actions tokenisées dépassent 4 milliards de dollars, les nouvelles émissions compensant le recul du marché",
+      "description": "L’analyse de la tokenisation publiée par The Block le 19 novembre indique que la valeur onchain des actions tokenisées a dépassé pour la première fois 4 milliards de dollars le 11 novembre, les nouvelles émissions ayant plus que compensé la baisse des actions sous-jacentes.",
+      "sections": [
+        [
+          "La valeur onchain dépasse pour la première fois 4 milliards de dollars",
+          "Les actions tokenisées ont dépassé pour la première fois 4 milliards de dollars de valeur onchain le 11 novembre, selon le Tokenization Briefing publié par The Block le 19 novembre. La publication estime que la valeur du secteur a atteint environ cinq fois son niveau du début de l’année 2026, alors même que l’ensemble du marché des cryptomonnaies s’est affaibli."
+        ],
+        [
+          "Les nouvelles émissions l’emportent sur la baisse des cours",
+          "Le rapport distingue les nouvelles émissions des variations des prix de marché des actions sous-jacentes. Au cours des onze semaines achevées le 13 novembre, les jetons nouvellement émis ont ajouté 1,12 milliard de dollars à la valeur du secteur, tandis que les mouvements de prix l’ont réduite de 339 millions de dollars. The Block attribue environ quatre cinquièmes de ces émissions aux produits bStocks de Binance, NVIDIA, SpaceX et Circle figurant parmi les principales expositions."
+        ],
+        [
+          "L’accès reste limité pour les investisseurs américains",
+          "L’analyse souligne également les restrictions d’accès. Elle estime qu’environ 10 % seulement de la valeur des actions tokenisées est actuellement accessible aux investisseurs américains, une grande partie de cette exposition étant concentrée dans des entreprises liées aux cryptomonnaies. Une extension proposée par l’intermédiaire d’OKXICE le 23 novembre est présentée comme une attente, et non comme un lancement déjà réalisé. Ces chiffres décrivent des instruments onchain et ne doivent pas être interprétés comme la preuve que les détenteurs de jetons disposent nécessairement des mêmes droits juridiques que les actionnaires directement inscrits."
+        ]
+      ]
+    },
+    "sourceSha256": "95020d474045955d7f989771b4499be40f013b83abbdef9af578b5ee4629390c"
   }
 }
