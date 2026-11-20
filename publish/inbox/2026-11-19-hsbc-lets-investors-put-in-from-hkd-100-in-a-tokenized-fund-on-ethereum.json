@@ -1,7 +1,7 @@
 {
-  "title": "HSBC lets investors put in from HKD 100 in a tokenized fund on Ethereum",
-  "description": "HSBC lets investors put in from HKD 100 in a tokenized fund on Ethereum",
-  "why_it_matters": "",
+  "title": "HSBC opens HK$100 RedCoin subscriptions to tokenized Hong Kong dollar fund",
+  "description": "HSBC Hong Kong customers can access a tokenized money market fund from HK$100 through RedCoin, while Ethereum records units and the official register remains off-chain.",
+  "why_it_matters": "The HK$100 entry point brings tokenized fund exposure to smaller retail investors, but its restricted wallets and off-chain ownership register show how banks are combining blockchain records with conventional fund controls.",
   "pubDate": "2026-11-19",
   "category": "news",
   "tags": [
@@ -10,14 +10,23 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "HSBC lets investors put in from HKD 100 in a tokenized fund on Ethereum",
-    ""
+    "Eligible Hong Kong customers can subscribe from HK$100 using RedCoin in the HSBC HK app.",
+    "Ethereum represents the tokenized fund units, but the official ownership register and settlement remain off-chain.",
+    "The tokenized Class SD shares its underlying fund portfolio with conventional classes and has no secondary trading market."
   ],
-  "body": "HSBC lets investors put in from HKD 100 in a tokenized fund on Ethereum",
+  "body": "HSBC has opened access to a tokenized class of its Hong Kong dollar money market fund for eligible customers using the bank's RedCoin stablecoin, according to reports published on November 19. The minimum subscription is HK$100, paid with 100 RedCoin through the HSBC HK mobile app. This extends RedCoin beyond its initial payments role following the bank's October 23 launch on PayMe.\n\nThe tokenized Class SD belongs to HSBC Global Money Funds – Hong Kong Dollar rather than representing a newly created investment portfolio. Ethereum is the initial public network used to represent units, but participation is limited to approved wallets. The fund's official ownership register and final settlement remain off-chain, and investors cannot trade the units on a secondary market. Instead, subscriptions and redemptions use authorized distributors.\n\nThe underlying fund focuses on Hong Kong dollar short-term deposits and high-quality money market instruments. Its capital-preservation objective is not a guarantee against loss. The structure illustrates a retail-facing use of digital fund units while retaining conventional custody, compliance and settlement arrangements.",
   "sources": [
     {
-      "name": "Observatorio Blockchain",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQR1l4TnVFcHZvS1AtZ244YkR3N0RpSVFfcnU4dy0yak1vbjEzTTIxTGtpTE1LS0M5R0lTYTJFMmRIeFJLSWtUcmhSbENiZl9IZFNmR1NGUk9JdmswQ08wR3lNZ0tYX1FtOFI5MUprVWRaQ09CVklRQ0tEQy1mcVEwM1NveFJTdw?oc=5"
+      "name": "HSBC Hong Kong – RedCoin launch announcement",
+      "url": "https://www.about.hsbc.com.hk/news-and-media/hsbc-redcoin-launches-today"
+    },
+    {
+      "name": "Observatorio Blockchain – HSBC tokenized fund report",
+      "url": "https://observatorioblockchain.com/tokenizacion/hsbc-fondo-ethereum-100-hkd/"
+    },
+    {
+      "name": "crypto.news – HSBC RedCoin fund report",
+      "url": "https://crypto.news/hsbc-redcoin-stablecoin-tokenized-money-market-fund/"
     }
   ],
   "newsWatch": {
@@ -29,5 +38,67 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-20T02:13:56.638Z",
+    "independentReporting": true,
+    "sources": [
+      {
+        "url": "https://www.about.hsbc.com.hk/news-and-media/hsbc-redcoin-launches-today",
+        "publishedAt": "2026-10-23",
+        "checkedAt": "2026-11-20T02:13:56.638Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://observatorioblockchain.com/tokenizacion/hsbc-fondo-ethereum-100-hkd/",
+        "publishedAt": "2026-11-19",
+        "checkedAt": "2026-11-20T02:13:56.638Z",
+        "kind": "news",
+        "access": "full-text"
+      },
+      {
+        "url": "https://crypto.news/hsbc-redcoin-stablecoin-tokenized-money-market-fund/",
+        "publishedAt": "2026-11-19",
+        "checkedAt": "2026-11-20T02:13:56.638Z",
+        "kind": "news",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "HSBC introduced its RedCoin stablecoin through the PayMe app on October 23, initially targeting payments and transfers.",
+        "sourceUrl": "https://www.about.hsbc.com.hk/news-and-media/hsbc-redcoin-launches-today",
+        "anchor": "available from today on PayMe"
+      },
+      {
+        "claim": "HSBC's tokenized money market fund allows eligible Hong Kong customers to subscribe using 100 RedCoin through its mobile banking app.",
+        "sourceUrl": "https://observatorioblockchain.com/tokenizacion/hsbc-fondo-ethereum-100-hkd/",
+        "anchor": "utilizar 100 RedCoin"
+      },
+      {
+        "claim": "The tokenized Class SD belongs to the existing HSBC Global Money Funds Hong Kong Dollar portfolio, rather than a separate new fund.",
+        "sourceUrl": "https://observatorioblockchain.com/tokenizacion/hsbc-fondo-ethereum-100-hkd/",
+        "anchor": "La nueva clase, denominada SD"
+      },
+      {
+        "claim": "Ethereum is the initial public blockchain for the tokenized units while the official register remains outside the blockchain.",
+        "sourceUrl": "https://crypto.news/hsbc-redcoin-stablecoin-tokenized-money-market-fund/",
+        "anchor": "official ownership register remains off-chain"
+      },
+      {
+        "claim": "The tokenized units can be subscribed and redeemed through the primary market but are not available for secondary market trading.",
+        "sourceUrl": "https://crypto.news/hsbc-redcoin-stablecoin-tokenized-money-market-fund/",
+        "anchor": "no secondary-market trading"
+      },
+      {
+        "claim": "The underlying fund allocates at least seventy percent of net assets to Hong Kong dollar deposits and high quality money market instruments.",
+        "sourceUrl": "https://crypto.news/hsbc-redcoin-stablecoin-tokenized-money-market-fund/",
+        "anchor": "at least 70% of its net assets"
+      }
+    ]
   }
 }
