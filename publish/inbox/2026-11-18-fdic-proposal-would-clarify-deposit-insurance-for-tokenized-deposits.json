@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-20T06:14:33Z",
-    "reason": "Rechecked the complete FDIC April 7, 2026 proposal notice and April 10 Federal Register rulemaking text against TokenPost's November 18 report. The November article recaps an April proposal, explicitly not a final rule; no distinct November 18 FDIC decision or new action was substantiated. Hold rather than repackage a seven-month-old proposal as breaking news. Retry after six hours only if a new dated primary regulatory action emerges."
+    "reviewedAt": "2026-11-20T13:13:11Z",
+    "reason": "Rechecked the FDIC's full April 7 official notice, April 10 Federal Register proposal and November 18 TokenPost report on November 20. The November coverage explicitly describes the April proposal, not a newly adopted final rule; no distinct November regulatory action was verified. Remains held; retry no sooner than six hours after this review if a new dated primary action appears."
   }
 }
