@@ -1,7 +1,7 @@
 {
-  "title": "Allfunds picks Solana to push tokenized funds past the pilot stage",
-  "description": "Allfunds picks Solana to push tokenized funds past the pilot stage",
-  "why_it_matters": "",
+  "title": "Project Harmonia Names 22 Fund Managers for Solana Distribution",
+  "description": "Allfunds and the Solana Foundation have identified 22 asset managers for Project Harmonia, with initial tokenized fund distribution targeted for early 2027.",
+  "why_it_matters": "The newly selected cohort tests whether traditional fund distributors can access blockchain-issued investment products through familiar institutional infrastructure. Admission does not mean funds are trading yet, and actual institutional demand remains unproven.",
   "pubDate": "2026-11-20",
   "category": "news",
   "tags": [
@@ -10,14 +10,19 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "Allfunds picks Solana to push tokenized funds past the pilot stage",
-    ""
+    "Project Harmonia announced a first cohort of 22 asset managers on November 16, including Apollo, Fidelity International and Schroders.",
+    "ioBuilders links Allfunds' distribution infrastructure with Solana, while Particula supports admission checks.",
+    "Initial fund availability is targeted for Q1 2027; confirmed investor flows have not yet been established."
   ],
-  "body": "Allfunds picks Solana to push tokenized funds past the pilot stage",
+  "body": "Allfunds and the Solana Foundation named the first cohort of Project Harmonia on November 16, 2026, moving their tokenized-fund distribution initiative from recruitment toward planned product launches. The group comprises 22 asset managers, including Apollo Global Management, Fidelity International and Schroders, according to reports from Blockstories and Solana Compass.\n\nThe program is designed to connect Solana-issued investment funds with Allfunds' established distribution network. Infrastructure provider ioBuilders supplies the Asseto integration layer, while Particula supports fund assessment and admission. Blockstories reports that roughly 40 managers applied and 22 were accepted, with checks covering ownership structures, legal domicile and onchain implementation.\n\nThe first products are expected to become available through Allfunds in the first quarter of 2027. Additional funds still being developed are planned for the first half of that year. These are forward-looking launch targets rather than evidence that the cohort's funds are already commercially available. The critical test will be whether institutional distributors adopt the products and generate sustained investment flows.",
   "sources": [
     {
-      "name": "Cryptonews.net",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBvb0NIVGFnZmpLckQtZkxMOEdmWGE5QzRlR3hzdmFoQUdUeVFHX3dzcmZCRlNHclhUU3NYTkQyblBUcUV6UTVwZEZVTTR2UkVpU2xvY3l4aWFSaXBH?oc=5"
+      "name": "Blockstories",
+      "url": "https://www.blockstories.io/b/allfunds-opens-its-distribution-network-to-tokenized-funds-on-solana"
+    },
+    {
+      "name": "Solana Compass",
+      "url": "https://solanacompass.com/news/apollo-schroders-wellington-and-franklin-templeton-join-project-harmonias-first-tokenized-fund-cohort-on-solana"
     }
   ],
   "newsWatch": {
@@ -29,5 +34,60 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-21T22:12:48Z",
+    "independentReporting": true,
+    "sources": [
+      {
+        "url": "https://www.blockstories.io/b/allfunds-opens-its-distribution-network-to-tokenized-funds-on-solana",
+        "publishedAt": "2026-11-20",
+        "checkedAt": "2026-11-21T22:12:48Z",
+        "kind": "news",
+        "access": "full-text"
+      },
+      {
+        "url": "https://solanacompass.com/news/apollo-schroders-wellington-and-franklin-templeton-join-project-harmonias-first-tokenized-fund-cohort-on-solana",
+        "publishedAt": "2026-11-16",
+        "checkedAt": "2026-11-21T22:12:48Z",
+        "kind": "news",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Project Harmonia's first admitted cohort contains 22 asset managers, announced during the November Solana conference.",
+        "sourceUrl": "https://www.blockstories.io/b/allfunds-opens-its-distribution-network-to-tokenized-funds-on-solana",
+        "anchor": "first 22 asset managers"
+      },
+      {
+        "claim": "Apollo, Fidelity International and Schroders are among the managers in the newly announced group.",
+        "sourceUrl": "https://www.blockstories.io/b/allfunds-opens-its-distribution-network-to-tokenized-funds-on-solana",
+        "anchor": "Apollo, Fidelity International, and Schroders"
+      },
+      {
+        "claim": "The program uses the Asseto platform provided by infrastructure company ioBuilders to connect distribution networks.",
+        "sourceUrl": "https://www.blockstories.io/b/allfunds-opens-its-distribution-network-to-tokenized-funds-on-solana",
+        "anchor": "Asseto platform"
+      },
+      {
+        "claim": "Blockstories reports approximately 40 applications and 22 admissions in the first selection round.",
+        "sourceUrl": "https://www.blockstories.io/b/allfunds-opens-its-distribution-network-to-tokenized-funds-on-solana",
+        "anchor": "around 40 managers applied"
+      },
+      {
+        "claim": "Solana Compass reports the first funds are expected to become available through Allfunds in the first quarter of 2027.",
+        "sourceUrl": "https://solanacompass.com/news/apollo-schroders-wellington-and-franklin-templeton-join-project-harmonias-first-tokenized-fund-cohort-on-solana",
+        "anchor": "Q1 2027"
+      },
+      {
+        "claim": "A second application round is expected to open during the first quarter of 2027.",
+        "sourceUrl": "https://solanacompass.com/news/apollo-schroders-wellington-and-franklin-templeton-join-project-harmonias-first-tokenized-fund-cohort-on-solana",
+        "anchor": "second application round opens"
+      }
+    ]
   }
 }
