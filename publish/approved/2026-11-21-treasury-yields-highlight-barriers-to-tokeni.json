@@ -1,0 +1,31 @@
+{
+  "id": "2026-11-21-treasury-yields-highlight-barriers-to-tokeni",
+  "title": "Treasury yields highlight barriers to tokenized money market fund adoption",
+  "category": "NEWS",
+  "why_it_matters": "Tokenized Treasury and money market products could connect blockchain liquidity with conventional short-term interest income, but investor eligibility, minimum subscriptions and redemption schedules limit whether they can replace readily transferable stablecoins.",
+  "article_url": "https://therwawire.com/news/treasury-yields-highlight-barriers-to-tokenized-money-market-fund-adoption/",
+  "image_url": "https://therwawire.com/images/news/treasury-yields-highlight-barriers-to-tokenized-money-market-fund-adoption.svg",
+  "caption": "RWA WIRE // NEWS\n\nTreasury yields highlight barriers to tokenized money market fund adoption\n\nA November 21 analysis compares stablecoin and Treasury yields, while separate November 17 reporting says recent stablecoin outflows have not flowed into tokenized funds.\n\nFull analysis →\nhttps://therwawire.com/news/treasury-yields-highlight-barriers-to-tokenized-money-market-fund-adoption/",
+  "distribution": {
+    "telegram": "RWA WIRE // NEWS\n\nTreasury yields highlight barriers to tokenized money market fund adoption\n\nA November 21 analysis compares stablecoin and Treasury yields, while separate November 17 reporting says recent stablecoin outflows have not flowed into tokenized funds.\n\nFull analysis →\nhttps://therwawire.com/news/treasury-yields-highlight-barriers-to-tokenized-money-market-fund-adoption/",
+    "x": "Treasury yields highlight barriers to tokenized money market fund adoption\n\nA November 21 analysis compares stablecoin and Treasury yields, while separate November 17 reporting says recent stablecoin outflows have not flowed into tokenized funds.\n\nhttps://therwawire.com/news/treasury-yields-highlight-barriers-to-tokenized-money-market-fund-adoption/",
+    "breaking": "RWA WIRE // NEWS\n\nTreasury yields highlight barriers to tokenized money market fund adoption\n\nhttps://therwawire.com/news/treasury-yields-highlight-barriers-to-tokenized-money-market-fund-adoption/",
+    "summary": "A November 21 analysis compares stablecoin and Treasury yields, while separate November 17 reporting says recent stablecoin outflows have not flowed into tokenized funds."
+  },
+  "sources": [
+    {
+      "name": "CCN — Treasury yields and tokenized funds analysis",
+      "url": "https://www.ccn.com/news/crypto/t-bill-yields-stablecoins-tokenized-funds/"
+    },
+    {
+      "name": "Bloomingbit — Jamie Coutts on stablecoin outflows",
+      "url": "https://en.bloomingbit.io/feed/news/124628"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-11-21-why-rising-t-bill-yields-could-drive-cash-from-stablecoins-to-tokenized-funds.json",
+    "contentSha256": "37a1d631c991ac6849715eac1f768236502f4d9d6263fd0d63a62e010676f5e2",
+    "approvedAt": "2026-11-21T17:17:26.401087+00:00"
+  }
+}
