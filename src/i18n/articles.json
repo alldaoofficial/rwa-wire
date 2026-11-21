@@ -6502,35 +6502,71 @@
     "date": "2026-11-19",
     "kind": "news",
     "sources": [
-      ["HSBC Hong Kong – RedCoin launch announcement", "https://www.about.hsbc.com.hk/news-and-media/hsbc-redcoin-launches-today"],
-      ["Observatorio Blockchain – HSBC tokenized fund report", "https://observatorioblockchain.com/tokenizacion/hsbc-fondo-ethereum-100-hkd/"],
-      ["crypto.news – HSBC RedCoin fund report", "https://crypto.news/hsbc-redcoin-stablecoin-tokenized-money-market-fund/"]
+      [
+        "HSBC Hong Kong – RedCoin launch announcement",
+        "https://www.about.hsbc.com.hk/news-and-media/hsbc-redcoin-launches-today"
+      ],
+      [
+        "Observatorio Blockchain – HSBC tokenized fund report",
+        "https://observatorioblockchain.com/tokenizacion/hsbc-fondo-ethereum-100-hkd/"
+      ],
+      [
+        "crypto.news – HSBC RedCoin fund report",
+        "https://crypto.news/hsbc-redcoin-stablecoin-tokenized-money-market-fund/"
+      ]
     ],
     "de": {
       "title": "HSBC öffnet RedCoin-Zeichnungen ab 100 HK$ für tokenisierten Hongkong-Dollar-Fonds",
       "description": "Kunden von HSBC Hongkong können über RedCoin ab 100 HK$ auf einen tokenisierten Geldmarktfonds zugreifen; Ethereum erfasst die Anteile, während das offizielle Register offchain bleibt.",
       "sections": [
-        ["Zeichnung ab 100 HK$ über die HSBC-HK-App", "HSBC hat berechtigten Kunden den Zugang zu einer tokenisierten Anteilsklasse ihres Hongkong-Dollar-Geldmarktfonds über den bankeigenen Stablecoin RedCoin eröffnet, wie aus Berichten vom 19. November hervorgeht. Die Mindestzeichnung beträgt 100 HK$ und wird in der mobilen HSBC-HK-App mit 100 RedCoin bezahlt. Damit wird RedCoin nach seinem Start am 23. Oktober auf PayMe über seine anfängliche Zahlungsfunktion hinaus eingesetzt."],
-        ["Ethereum-Anteile, aber offizielles Register und Abwicklung offchain", "Die tokenisierte Anteilsklasse SD gehört zum HSBC Global Money Funds – Hong Kong Dollar und stellt kein neu geschaffenes Anlageportfolio dar. Ethereum dient zunächst als öffentliches Netzwerk zur Abbildung der Anteile; teilnehmen können jedoch nur genehmigte Wallets. Das offizielle Eigentumsregister des Fonds und die endgültige Abwicklung bleiben offchain, und die Anleger können die Anteile nicht an einem Sekundärmarkt handeln. Zeichnungen und Rücknahmen erfolgen stattdessen über autorisierte Vertriebsstellen."],
-        ["Kapitalerhalt ist nicht garantiert", "Der zugrunde liegende Fonds konzentriert sich auf kurzfristige Einlagen in Hongkong-Dollar und hochwertige Geldmarktinstrumente. Sein Ziel des Kapitalerhalts ist keine Garantie gegen Verluste. Die Struktur zeigt eine auf Privatanleger ausgerichtete Nutzung digitaler Fondsanteile, behält dabei aber herkömmliche Verwahrungs-, Compliance- und Abwicklungsverfahren bei."]
+        [
+          "Zeichnung ab 100 HK$ über die HSBC-HK-App",
+          "HSBC hat berechtigten Kunden den Zugang zu einer tokenisierten Anteilsklasse ihres Hongkong-Dollar-Geldmarktfonds über den bankeigenen Stablecoin RedCoin eröffnet, wie aus Berichten vom 19. November hervorgeht. Die Mindestzeichnung beträgt 100 HK$ und wird in der mobilen HSBC-HK-App mit 100 RedCoin bezahlt. Damit wird RedCoin nach seinem Start am 23. Oktober auf PayMe über seine anfängliche Zahlungsfunktion hinaus eingesetzt."
+        ],
+        [
+          "Ethereum-Anteile, aber offizielles Register und Abwicklung offchain",
+          "Die tokenisierte Anteilsklasse SD gehört zum HSBC Global Money Funds – Hong Kong Dollar und stellt kein neu geschaffenes Anlageportfolio dar. Ethereum dient zunächst als öffentliches Netzwerk zur Abbildung der Anteile; teilnehmen können jedoch nur genehmigte Wallets. Das offizielle Eigentumsregister des Fonds und die endgültige Abwicklung bleiben offchain, und die Anleger können die Anteile nicht an einem Sekundärmarkt handeln. Zeichnungen und Rücknahmen erfolgen stattdessen über autorisierte Vertriebsstellen."
+        ],
+        [
+          "Kapitalerhalt ist nicht garantiert",
+          "Der zugrunde liegende Fonds konzentriert sich auf kurzfristige Einlagen in Hongkong-Dollar und hochwertige Geldmarktinstrumente. Sein Ziel des Kapitalerhalts ist keine Garantie gegen Verluste. Die Struktur zeigt eine auf Privatanleger ausgerichtete Nutzung digitaler Fondsanteile, behält dabei aber herkömmliche Verwahrungs-, Compliance- und Abwicklungsverfahren bei."
+        ]
       ]
     },
     "es": {
       "title": "HSBC abre suscripciones con RedCoin desde 100 HK$ a un fondo tokenizado en dólares de Hong Kong",
       "description": "Los clientes de HSBC Hong Kong pueden acceder desde 100 HK$ a un fondo monetario tokenizado mediante RedCoin; Ethereum registra las participaciones, mientras que el registro oficial permanece fuera de la cadena.",
       "sections": [
-        ["Suscripciones desde 100 HK$ mediante la aplicación HSBC HK", "HSBC ha abierto a clientes elegibles el acceso a una clase tokenizada de su fondo monetario en dólares de Hong Kong mediante RedCoin, la stablecoin del banco, según informaciones publicadas el 19 de noviembre. La suscripción mínima es de 100 HK$, pagados con 100 RedCoin a través de la aplicación móvil HSBC HK. Esto amplía el uso de RedCoin más allá de su función inicial de pagos tras su lanzamiento en PayMe el 23 de octubre."],
-        ["Participaciones en Ethereum, pero registro oficial y liquidación fuera de la cadena", "La clase tokenizada SD forma parte de HSBC Global Money Funds – Hong Kong Dollar y no representa una cartera de inversión de nueva creación. Ethereum es la red pública inicial utilizada para representar las participaciones, aunque el acceso está limitado a monederos aprobados. El registro oficial de propiedad del fondo y la liquidación final permanecen fuera de la cadena, y los inversores no pueden negociar las participaciones en un mercado secundario. Las suscripciones y los reembolsos se realizan, en cambio, mediante distribuidores autorizados."],
-        ["La conservación del capital no está garantizada", "El fondo subyacente se centra en depósitos a corto plazo en dólares de Hong Kong e instrumentos monetarios de alta calidad. Su objetivo de conservación del capital no constituye una garantía frente a pérdidas. La estructura ilustra un uso de participaciones digitales dirigido al público minorista, al tiempo que mantiene mecanismos convencionales de custodia, cumplimiento y liquidación."]
+        [
+          "Suscripciones desde 100 HK$ mediante la aplicación HSBC HK",
+          "HSBC ha abierto a clientes elegibles el acceso a una clase tokenizada de su fondo monetario en dólares de Hong Kong mediante RedCoin, la stablecoin del banco, según informaciones publicadas el 19 de noviembre. La suscripción mínima es de 100 HK$, pagados con 100 RedCoin a través de la aplicación móvil HSBC HK. Esto amplía el uso de RedCoin más allá de su función inicial de pagos tras su lanzamiento en PayMe el 23 de octubre."
+        ],
+        [
+          "Participaciones en Ethereum, pero registro oficial y liquidación fuera de la cadena",
+          "La clase tokenizada SD forma parte de HSBC Global Money Funds – Hong Kong Dollar y no representa una cartera de inversión de nueva creación. Ethereum es la red pública inicial utilizada para representar las participaciones, aunque el acceso está limitado a monederos aprobados. El registro oficial de propiedad del fondo y la liquidación final permanecen fuera de la cadena, y los inversores no pueden negociar las participaciones en un mercado secundario. Las suscripciones y los reembolsos se realizan, en cambio, mediante distribuidores autorizados."
+        ],
+        [
+          "La conservación del capital no está garantizada",
+          "El fondo subyacente se centra en depósitos a corto plazo en dólares de Hong Kong e instrumentos monetarios de alta calidad. Su objetivo de conservación del capital no constituye una garantía frente a pérdidas. La estructura ilustra un uso de participaciones digitales dirigido al público minorista, al tiempo que mantiene mecanismos convencionales de custodia, cumplimiento y liquidación."
+        ]
       ]
     },
     "fr": {
       "title": "HSBC ouvre les souscriptions en RedCoin dès 100 HK$ à un fonds tokenisé en dollars de Hong Kong",
       "description": "Les clients de HSBC Hong Kong peuvent accéder dès 100 HK$ à un fonds monétaire tokenisé via RedCoin ; Ethereum enregistre les parts, tandis que le registre officiel reste hors chaîne.",
       "sections": [
-        ["Des souscriptions dès 100 HK$ via l’application HSBC HK", "HSBC a ouvert aux clients éligibles l’accès à une catégorie tokenisée de son fonds monétaire en dollars de Hong Kong au moyen de RedCoin, le stablecoin de la banque, selon des informations publiées le 19 novembre. La souscription minimale s’élève à 100 HK$, réglés avec 100 RedCoin dans l’application mobile HSBC HK. Cette utilisation étend RedCoin au-delà de son rôle initial dans les paiements après son lancement sur PayMe le 23 octobre."],
-        ["Des parts sur Ethereum, mais un registre officiel et un règlement hors chaîne", "La catégorie tokenisée SD appartient au fonds HSBC Global Money Funds – Hong Kong Dollar et ne représente pas un nouveau portefeuille d’investissement. Ethereum est le premier réseau public utilisé pour représenter les parts, mais la participation est limitée aux portefeuilles approuvés. Le registre officiel de propriété du fonds et le règlement final restent hors chaîne, et les investisseurs ne peuvent pas négocier les parts sur un marché secondaire. Les souscriptions et les rachats passent à la place par des distributeurs autorisés."],
-        ["La préservation du capital n’est pas garantie", "Le fonds sous-jacent se concentre sur les dépôts à court terme en dollars de Hong Kong et les instruments monétaires de grande qualité. Son objectif de préservation du capital ne constitue pas une garantie contre les pertes. La structure illustre un usage des parts numériques destiné aux particuliers tout en conservant des dispositifs conventionnels de conservation, de conformité et de règlement."]
+        [
+          "Des souscriptions dès 100 HK$ via l’application HSBC HK",
+          "HSBC a ouvert aux clients éligibles l’accès à une catégorie tokenisée de son fonds monétaire en dollars de Hong Kong au moyen de RedCoin, le stablecoin de la banque, selon des informations publiées le 19 novembre. La souscription minimale s’élève à 100 HK$, réglés avec 100 RedCoin dans l’application mobile HSBC HK. Cette utilisation étend RedCoin au-delà de son rôle initial dans les paiements après son lancement sur PayMe le 23 octobre."
+        ],
+        [
+          "Des parts sur Ethereum, mais un registre officiel et un règlement hors chaîne",
+          "La catégorie tokenisée SD appartient au fonds HSBC Global Money Funds – Hong Kong Dollar et ne représente pas un nouveau portefeuille d’investissement. Ethereum est le premier réseau public utilisé pour représenter les parts, mais la participation est limitée aux portefeuilles approuvés. Le registre officiel de propriété du fonds et le règlement final restent hors chaîne, et les investisseurs ne peuvent pas négocier les parts sur un marché secondaire. Les souscriptions et les rachats passent à la place par des distributeurs autorisés."
+        ],
+        [
+          "La préservation du capital n’est pas garantie",
+          "Le fonds sous-jacent se concentre sur les dépôts à court terme en dollars de Hong Kong et les instruments monétaires de grande qualité. Son objectif de préservation du capital ne constitue pas une garantie contre les pertes. La structure illustre un usage des parts numériques destiné aux particuliers tout en conservant des dispositifs conventionnels de conservation, de conformité et de règlement."
+        ]
       ]
     },
     "sourceSha256": "209c61c8fa68931aa8c702d51456c847506f6e856dd92bf5e5213dfde0d318fc"
@@ -6539,32 +6575,64 @@
     "path": "/news/singapore-issues-s-100-million-in-tokenised-mas-bills-settled-with-wholesale-cbdc/",
     "date": "2026-11-20",
     "kind": "news",
-    "sources": [["Monetary Authority of Singapore — 19 November 2026 media release", "https://www.mas.gov.sg/news/media-releases/2026/mas-announces-successful-issuance-of-tokenised-mas-bills-on-the-singapore-dollar-test-network"]],
+    "sources": [
+      [
+        "Monetary Authority of Singapore — 19 November 2026 media release",
+        "https://www.mas.gov.sg/news/media-releases/2026/mas-announces-successful-issuance-of-tokenised-mas-bills-on-the-singapore-dollar-test-network"
+      ]
+    ],
     "de": {
       "title": "Singapur begibt tokenisierte MAS-Bills über 100 Millionen S$ mit Wholesale-CBDC-Abwicklung",
       "description": "Singapurs Währungsbehörde gab die native Emission vierwöchiger tokenisierter Bills über 100 Millionen S$ bekannt, die nach einer Auktion mit fünf Primärhändlern in Wholesale-CBDC abgewickelt wurde.",
       "sections": [
-        ["Vierwöchige tokenisierte Bills über 100 Millionen S$", "Die Monetary Authority of Singapore (MAS) gab am 19. November bekannt, dass sie am 6. November 2026 tokenisierte MAS-Bills über 100 Millionen S$ begeben hatte. Nach Angaben der Behörde wurden die vierwöchigen Instrumente direkt im Singapore Dollar Test Network der Zentralbank geschaffen und mit digitalem Zentralbankgeld für den Großhandel (Wholesale-CBDC) abgewickelt. Ihre Fälligkeit ist für den 4. Dezember vorgesehen."],
-        ["Fünf Primärhändler und mehr als doppelte Nachfrage", "Fünf zugelassene Primärhändler nahmen an der Auktion teil: DBS, die Singapur-Niederlassung von HSBC, OCBC, Standard Chartered Bank Singapore und UOB. Laut MAS lag das Gesamtvolumen der Gebote bei mehr als dem Doppelten des Emissionsbetrags. Anders als Wertpapiere, die über herkömmliche Systeme ausgegeben und erst danach tokenisiert werden, wurden diese Bills nativ im gemeinsamen Register erfasst, wodurch der Abgleich getrennter Aufzeichnungen reduziert wird."],
-        ["Weitere institutionelle Tests für 2027 geplant", "MAS beabsichtigt, das Singapore Dollar Test Network in SG Digital Ledger umzubenennen. Für 2027 sind weitere Live-Tests mit mehr teilnehmenden Instituten und einer erweiterten Rolle tokenisierter Bills im Sicherheitenmanagement geplant. Die Ankündigung beschreibt ein institutionelles Experiment zur Marktinfrastruktur, keinen Start für Privatanleger und keinen bereits vollzogenen landesweiten Ersatz der traditionellen Abwicklung."]
+        [
+          "Vierwöchige tokenisierte Bills über 100 Millionen S$",
+          "Die Monetary Authority of Singapore (MAS) gab am 19. November bekannt, dass sie am 6. November 2026 tokenisierte MAS-Bills über 100 Millionen S$ begeben hatte. Nach Angaben der Behörde wurden die vierwöchigen Instrumente direkt im Singapore Dollar Test Network der Zentralbank geschaffen und mit digitalem Zentralbankgeld für den Großhandel (Wholesale-CBDC) abgewickelt. Ihre Fälligkeit ist für den 4. Dezember vorgesehen."
+        ],
+        [
+          "Fünf Primärhändler und mehr als doppelte Nachfrage",
+          "Fünf zugelassene Primärhändler nahmen an der Auktion teil: DBS, die Singapur-Niederlassung von HSBC, OCBC, Standard Chartered Bank Singapore und UOB. Laut MAS lag das Gesamtvolumen der Gebote bei mehr als dem Doppelten des Emissionsbetrags. Anders als Wertpapiere, die über herkömmliche Systeme ausgegeben und erst danach tokenisiert werden, wurden diese Bills nativ im gemeinsamen Register erfasst, wodurch der Abgleich getrennter Aufzeichnungen reduziert wird."
+        ],
+        [
+          "Weitere institutionelle Tests für 2027 geplant",
+          "MAS beabsichtigt, das Singapore Dollar Test Network in SG Digital Ledger umzubenennen. Für 2027 sind weitere Live-Tests mit mehr teilnehmenden Instituten und einer erweiterten Rolle tokenisierter Bills im Sicherheitenmanagement geplant. Die Ankündigung beschreibt ein institutionelles Experiment zur Marktinfrastruktur, keinen Start für Privatanleger und keinen bereits vollzogenen landesweiten Ersatz der traditionellen Abwicklung."
+        ]
       ]
     },
     "es": {
       "title": "Singapur emite 100 millones de S$ en MAS Bills tokenizadas liquidadas con CBDC mayorista",
       "description": "La autoridad monetaria de Singapur informó de una emisión nativa de MAS Bills tokenizadas a cuatro semanas por 100 millones de S$, liquidada con CBDC mayorista tras una subasta con cinco operadores primarios.",
       "sections": [
-        ["MAS Bills tokenizadas a cuatro semanas por 100 millones de S$", "La Autoridad Monetaria de Singapur (MAS) anunció el 19 de noviembre que había emitido 100 millones de S$ en MAS Bills tokenizadas el 6 de noviembre de 2026. Según el comunicado de la autoridad, los instrumentos a cuatro semanas se crearon directamente en la Singapore Dollar Test Network del banco central y se liquidaron mediante moneda digital de banco central mayorista (CBDC). Su vencimiento está previsto para el 4 de diciembre."],
-        ["Cinco operadores primarios y solicitudes por más del doble de la emisión", "Cinco operadores primarios autorizados participaron en la subasta: DBS, la sucursal de HSBC en Singapur, OCBC, Standard Chartered Bank Singapore y UOB. La MAS afirmó que el total de solicitudes superó el doble del importe emitido. A diferencia de los valores emitidos mediante sistemas convencionales y tokenizados posteriormente, estas letras se registraron de forma nativa en el libro mayor compartido, reduciendo la necesidad de conciliar registros separados."],
-        ["Más pruebas institucionales previstas para 2027", "La MAS prevé cambiar el nombre de la Singapore Dollar Test Network a SG Digital Ledger. También planea realizar más pruebas en vivo en 2027, con un mayor número de instituciones participantes y un papel más amplio de las letras tokenizadas en la gestión de garantías. El anuncio describe un experimento institucional de infraestructura de mercado, no el lanzamiento de un producto minorista ni una sustitución nacional ya completada de la liquidación tradicional."]
+        [
+          "MAS Bills tokenizadas a cuatro semanas por 100 millones de S$",
+          "La Autoridad Monetaria de Singapur (MAS) anunció el 19 de noviembre que había emitido 100 millones de S$ en MAS Bills tokenizadas el 6 de noviembre de 2026. Según el comunicado de la autoridad, los instrumentos a cuatro semanas se crearon directamente en la Singapore Dollar Test Network del banco central y se liquidaron mediante moneda digital de banco central mayorista (CBDC). Su vencimiento está previsto para el 4 de diciembre."
+        ],
+        [
+          "Cinco operadores primarios y solicitudes por más del doble de la emisión",
+          "Cinco operadores primarios autorizados participaron en la subasta: DBS, la sucursal de HSBC en Singapur, OCBC, Standard Chartered Bank Singapore y UOB. La MAS afirmó que el total de solicitudes superó el doble del importe emitido. A diferencia de los valores emitidos mediante sistemas convencionales y tokenizados posteriormente, estas letras se registraron de forma nativa en el libro mayor compartido, reduciendo la necesidad de conciliar registros separados."
+        ],
+        [
+          "Más pruebas institucionales previstas para 2027",
+          "La MAS prevé cambiar el nombre de la Singapore Dollar Test Network a SG Digital Ledger. También planea realizar más pruebas en vivo en 2027, con un mayor número de instituciones participantes y un papel más amplio de las letras tokenizadas en la gestión de garantías. El anuncio describe un experimento institucional de infraestructura de mercado, no el lanzamiento de un producto minorista ni una sustitución nacional ya completada de la liquidación tradicional."
+        ]
       ]
     },
     "fr": {
       "title": "Singapour émet 100 millions de S$ de MAS Bills tokenisés réglés en CBDC de gros",
       "description": "L’autorité monétaire de Singapour a annoncé une émission native de MAS Bills tokenisés à quatre semaines d’un montant de 100 millions de S$, réglée en CBDC de gros après une adjudication réunissant cinq spécialistes en valeurs du Trésor.",
       "sections": [
-        ["Des MAS Bills tokenisés à quatre semaines pour 100 millions de S$", "La Monetary Authority of Singapore (MAS) a annoncé le 19 novembre avoir émis 100 millions de S$ de MAS Bills tokenisés le 6 novembre 2026. Selon le communiqué de l’autorité, ces instruments à quatre semaines ont été créés directement sur le Singapore Dollar Test Network de la banque centrale et réglés au moyen d’une monnaie numérique de banque centrale de gros (CBDC). Leur échéance est prévue le 4 décembre."],
-        ["Cinq spécialistes et des demandes supérieures à deux fois le montant émis", "Cinq spécialistes agréés ont participé à l’adjudication : DBS, la succursale singapourienne de HSBC, OCBC, Standard Chartered Bank Singapore et UOB. La MAS a indiqué que le total des demandes avait dépassé deux fois le montant de l’émission. Contrairement aux titres émis dans des systèmes conventionnels puis tokenisés, ces bills ont été inscrits nativement sur le registre partagé, réduisant la nécessité de rapprocher des registres distincts."],
-        ["D’autres essais institutionnels prévus en 2027", "La MAS entend renommer le Singapore Dollar Test Network en SG Digital Ledger. Elle prévoit d’autres essais en conditions réelles en 2027, avec davantage d’institutions participantes et un rôle accru des bills tokenisés dans la gestion des garanties. L’annonce décrit une expérimentation institutionnelle d’infrastructure de marché, et non le lancement d’un produit de détail ou le remplacement national déjà achevé du règlement traditionnel."]
+        [
+          "Des MAS Bills tokenisés à quatre semaines pour 100 millions de S$",
+          "La Monetary Authority of Singapore (MAS) a annoncé le 19 novembre avoir émis 100 millions de S$ de MAS Bills tokenisés le 6 novembre 2026. Selon le communiqué de l’autorité, ces instruments à quatre semaines ont été créés directement sur le Singapore Dollar Test Network de la banque centrale et réglés au moyen d’une monnaie numérique de banque centrale de gros (CBDC). Leur échéance est prévue le 4 décembre."
+        ],
+        [
+          "Cinq spécialistes et des demandes supérieures à deux fois le montant émis",
+          "Cinq spécialistes agréés ont participé à l’adjudication : DBS, la succursale singapourienne de HSBC, OCBC, Standard Chartered Bank Singapore et UOB. La MAS a indiqué que le total des demandes avait dépassé deux fois le montant de l’émission. Contrairement aux titres émis dans des systèmes conventionnels puis tokenisés, ces bills ont été inscrits nativement sur le registre partagé, réduisant la nécessité de rapprocher des registres distincts."
+        ],
+        [
+          "D’autres essais institutionnels prévus en 2027",
+          "La MAS entend renommer le Singapore Dollar Test Network en SG Digital Ledger. Elle prévoit d’autres essais en conditions réelles en 2027, avec davantage d’institutions participantes et un rôle accru des bills tokenisés dans la gestion des garanties. L’annonce décrit une expérimentation institutionnelle d’infrastructure de marché, et non le lancement d’un produit de détail ou le remplacement national déjà achevé du règlement traditionnel."
+        ]
       ]
     },
     "sourceSha256": "73072d534fa58ff06cf94478eeedf3c3dfcbb170927eeb56ac85d479f504b96b"
@@ -6770,5 +6838,75 @@
       ]
     },
     "sourceSha256": "f56f1acc543247f5797851efb6a33dd361e31fb941a1b872647aa39dc772debe"
+  },
+  "treasury-yields-highlight-barriers-to-tokenized-money-market-fund-adoption": {
+    "path": "/news/treasury-yields-highlight-barriers-to-tokenized-money-market-fund-adoption/",
+    "date": "2026-11-21",
+    "kind": "news",
+    "sources": [
+      [
+        "CCN — Treasury yields and tokenized funds analysis",
+        "https://www.ccn.com/news/crypto/t-bill-yields-stablecoins-tokenized-funds/"
+      ],
+      [
+        "Bloomingbit — Jamie Coutts on stablecoin outflows",
+        "https://en.bloomingbit.io/feed/news/124628"
+      ]
+    ],
+    "de": {
+      "title": "Treasury-Renditen verdeutlichen Hürden für die Verbreitung tokenisierter Geldmarktfonds",
+      "description": "Eine Analyse vom 21. November vergleicht Stablecoin- und Treasury-Renditen; separate Berichte vom 17. November besagen, dass die jüngsten Stablecoin-Abflüsse nicht in tokenisierte Fonds geflossen sind.",
+      "sections": [
+        [
+          "Höhere Treasury-Renditen und Opportunitätskosten",
+          "Höhere Renditen kurzlaufender US-Staatsanleihen werfen erneut die Frage nach den Opportunitätskosten für das Halten unverzinster Stablecoins auf. In einer Analyse vom 21. November berichtete CCN über die Schätzung des Analysten Jamie Coutts, wonach die Veränderungen des Stablecoin-Angebots und die Renditen von Treasury Bills seit 2022 eine negative Korrelation von 0,62 aufweisen. Dieser historische Zusammenhang belegt nicht, dass Anleger direkt in tokenisierte Fonds wechseln."
+        ],
+        [
+          "Vergleich von 98 Stablecoin-Pools",
+          "CCN verwies außerdem auf eine am 12. November veröffentlichte Studie von DefiLlama. Sie untersuchte 98 große Stablecoin-Pools ohne Token-Anreize und ermittelte eine mediane Basisrendite von 4,07 %, verglichen mit einer zuvor im November gemessenen Benchmarkrendite dreimonatiger Treasury Bills von 4,17 %. 48 Pools übertrafen diese Benchmark, wobei höhere Renditen zusätzliche Kredit-, Smart-Contract- und Liquiditätsrisiken mit sich bringen können."
+        ],
+        [
+          "Kein dokumentierter Zufluss in tokenisierte Fonds",
+          "In einem separaten Bericht vom 17. November beschrieb Bloomingbit Coutts’ Einschätzung, wonach das Stablecoin-Angebot seit August um 17 Milliarden US-Dollar gesunken sei und die Mittel den Kryptomarkt verließen, statt in tokenisierte Geldmarktprodukte umzuschichten. Tokenisierte Fonds können Zugang zu Treasury-Erträgen bieten, doch Mindestzeichnungen, Anlegerbeschränkungen und Rücknahmefristen können verhindern, dass sie unmittelbar als Ersatz für liquide Zahlungstoken dienen. Die mögliche Verlagerung bleibt eine Hypothese und ist kein dokumentierter Zufluss."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Los rendimientos de los bonos del Tesoro ponen de relieve las barreras para adoptar fondos monetarios tokenizados",
+      "description": "Un análisis del 21 de noviembre compara los rendimientos de las stablecoins y de los bonos del Tesoro, mientras que informaciones separadas del 17 de noviembre señalan que las recientes salidas de stablecoins no se dirigieron a fondos tokenizados.",
+      "sections": [
+        [
+          "Mayores rendimientos del Tesoro y coste de oportunidad",
+          "El aumento de los rendimientos de la deuda pública estadounidense a corto plazo reabre el debate sobre el coste de oportunidad de mantener stablecoins que no devengan intereses. En un análisis del 21 de noviembre, CCN informó de la estimación del analista Jamie Coutts de una correlación negativa de 0,62 entre los cambios en la oferta de stablecoins y los rendimientos de las letras del Tesoro desde 2022. Esa relación histórica no demuestra que los inversores estén pasando directamente a fondos tokenizados."
+        ],
+        [
+          "Comparación de 98 fondos de liquidez de stablecoins",
+          "CCN también citó un estudio de DefiLlama publicado el 12 de noviembre. El estudio examinó 98 grandes fondos de liquidez de stablecoins sin incentivos en tokens y registró un rendimiento base mediano del 4,07 %, frente a una referencia del 4,17 % para las letras del Tesoro a tres meses, medida a comienzos de noviembre. Cuarenta y ocho fondos superaron esa referencia, aunque los mayores rendimientos pueden conllevar riesgos adicionales de crédito, de contratos inteligentes y de liquidez."
+        ],
+        [
+          "No hay entradas documentadas en fondos tokenizados",
+          "En una información separada del 17 de noviembre, Bloomingbit describió la opinión de Coutts de que la oferta de stablecoins había disminuido en 17.000 millones de dólares desde agosto y que los fondos estaban saliendo del mercado cripto, en lugar de rotar hacia productos monetarios tokenizados. Los fondos tokenizados pueden ofrecer exposición a los ingresos de los bonos del Tesoro, pero los umbrales de suscripción, las restricciones para inversores y los plazos de reembolso pueden impedir que sustituyan de forma inmediata a los tokens de pago líquidos. La posible migración sigue siendo una hipótesis, no una entrada documentada."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Les rendements des bons du Trésor soulignent les obstacles à l’adoption des fonds monétaires tokenisés",
+      "description": "Une analyse du 21 novembre compare les rendements des stablecoins et des bons du Trésor, tandis qu’un article distinct du 17 novembre indique que les récentes sorties de stablecoins ne se sont pas dirigées vers des fonds tokenisés.",
+      "sections": [
+        [
+          "Hausse des rendements du Trésor et coût d’opportunité",
+          "La hausse des rendements de la dette publique américaine à court terme relance la question du coût d’opportunité lié à la détention de stablecoins non rémunérés. Dans une analyse du 21 novembre, CCN a rapporté l’estimation de l’analyste Jamie Coutts selon laquelle les variations de l’offre de stablecoins et les rendements des bons du Trésor présentent une corrélation négative de 0,62 depuis 2022. Cette relation historique ne prouve pas que les investisseurs se tournent directement vers des fonds tokenisés."
+        ],
+        [
+          "Comparaison de 98 pools de stablecoins",
+          "CCN a également cité une étude de DefiLlama publiée le 12 novembre. Celle-ci a examiné 98 grands pools de stablecoins sans incitations sous forme de jetons et fait état d’un rendement de base médian de 4,07 %, contre un taux de référence de 4,17 % pour les bons du Trésor à trois mois, mesuré plus tôt en novembre. Quarante-huit pools ont dépassé ce taux de référence, même si des rendements supérieurs peuvent s’accompagner de risques supplémentaires de crédit, de contrats intelligents et de liquidité."
+        ],
+        [
+          "Aucune entrée documentée dans les fonds tokenisés",
+          "Dans un article distinct du 17 novembre, Bloomingbit a rapporté l’avis de Coutts selon lequel l’offre de stablecoins avait diminué de 17 milliards de dollars depuis août, les capitaux quittant le marché des cryptoactifs au lieu de se réorienter vers des produits monétaires tokenisés. Les fonds tokenisés peuvent offrir une exposition aux revenus des bons du Trésor, mais les seuils de souscription, les restrictions imposées aux investisseurs et les délais de rachat peuvent les empêcher de remplacer immédiatement des jetons de paiement liquides. Cette migration potentielle demeure une hypothèse, et non une entrée de capitaux documentée."
+        ]
+      ]
+    },
+    "sourceSha256": "f96005ef0cb57a08d7258b4f582fce1ef2905184995f07a30047a44380dd4062"
   }
 }
