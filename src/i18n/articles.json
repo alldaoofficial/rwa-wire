@@ -6908,5 +6908,75 @@
       ]
     },
     "sourceSha256": "f96005ef0cb57a08d7258b4f582fce1ef2905184995f07a30047a44380dd4062"
+  },
+  "project-harmonia-names-22-fund-managers-for-solana-distribution": {
+    "path": "/news/project-harmonia-names-22-fund-managers-for-solana-distribution/",
+    "date": "2026-11-20",
+    "kind": "news",
+    "sources": [
+      [
+        "Blockstories",
+        "https://www.blockstories.io/b/allfunds-opens-its-distribution-network-to-tokenized-funds-on-solana"
+      ],
+      [
+        "Solana Compass",
+        "https://solanacompass.com/news/apollo-schroders-wellington-and-franklin-templeton-join-project-harmonias-first-tokenized-fund-cohort-on-solana"
+      ]
+    ],
+    "de": {
+      "title": "Project Harmonia benennt 22 Fondsmanager für den Vertrieb über Solana",
+      "description": "Allfunds und die Solana Foundation haben 22 Vermögensverwalter für Project Harmonia ausgewählt; der erste Vertrieb tokenisierter Fonds ist für Anfang 2027 vorgesehen.",
+      "sections": [
+        [
+          "Erste Kohorte mit 22 Vermögensverwaltern",
+          "Allfunds und die Solana Foundation haben am 16. November 2026 die erste Kohorte von Project Harmonia benannt und damit ihre Initiative für den Vertrieb tokenisierter Fonds von der Rekrutierung in Richtung geplanter Produkteinführungen weiterentwickelt. Die Gruppe umfasst 22 Vermögensverwalter, darunter Apollo Global Management, Fidelity International und Schroders, wie Blockstories und Solana Compass berichteten."
+        ],
+        [
+          "Vertriebsinfrastruktur und Zulassungsprüfung",
+          "Das Programm soll auf Solana ausgegebene Investmentfonds mit dem etablierten Vertriebsnetz von Allfunds verbinden. Der Infrastrukturanbieter ioBuilders stellt die Asseto-Integrationsschicht bereit, während Particula die Bewertung und Zulassung der Fonds unterstützt. Laut Blockstories bewarben sich rund 40 Manager, von denen 22 aufgenommen wurden. Die Prüfungen umfassten Eigentümerstrukturen, den rechtlichen Sitz und die Onchain-Umsetzung."
+        ],
+        [
+          "Geplante Einführung ist noch kein Marktnachweis",
+          "Die ersten Produkte sollen im ersten Quartal 2027 über Allfunds verfügbar werden. Weitere Fonds, die sich noch in der Entwicklung befinden, sind für das erste Halbjahr 2027 vorgesehen. Dabei handelt es sich um vorausschauende Einführungsziele und nicht um einen Beleg dafür, dass die Fonds der Kohorte bereits kommerziell verfügbar sind. Entscheidend wird sein, ob institutionelle Vertriebsstellen die Produkte annehmen und dauerhafte Investmentzuflüsse erzeugen."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Project Harmonia selecciona a 22 gestoras para la distribución en Solana",
+      "description": "Allfunds y la Solana Foundation han seleccionado a 22 gestoras de activos para Project Harmonia, con una distribución inicial de fondos tokenizados prevista para comienzos de 2027.",
+      "sections": [
+        [
+          "Primera cohorte de 22 gestoras de activos",
+          "Allfunds y la Solana Foundation anunciaron el 16 de noviembre de 2026 la primera cohorte de Project Harmonia, con lo que su iniciativa de distribución de fondos tokenizados avanzó desde la captación de participantes hacia lanzamientos de productos previstos. El grupo está formado por 22 gestoras de activos, entre ellas Apollo Global Management, Fidelity International y Schroders, según informaron Blockstories y Solana Compass."
+        ],
+        [
+          "Infraestructura de distribución y controles de admisión",
+          "El programa está diseñado para conectar fondos de inversión emitidos en Solana con la red de distribución consolidada de Allfunds. El proveedor de infraestructura ioBuilders aporta la capa de integración Asseto, mientras que Particula respalda la evaluación y admisión de los fondos. Blockstories informa de que se presentaron unas 40 gestoras y se aceptaron 22, con comprobaciones sobre las estructuras de propiedad, el domicilio legal y la implementación en cadena."
+        ],
+        [
+          "El lanzamiento previsto aún no demuestra adopción",
+          "Se espera que los primeros productos estén disponibles a través de Allfunds en el primer trimestre de 2027. Otros fondos que todavía están en desarrollo están previstos para el primer semestre de ese año. Son objetivos de lanzamiento futuros, no pruebas de que los fondos de la cohorte ya estén disponibles comercialmente. La prueba decisiva será si los distribuidores institucionales adoptan los productos y generan flujos de inversión sostenidos."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Project Harmonia sélectionne 22 sociétés de gestion pour la distribution sur Solana",
+      "description": "Allfunds et la Solana Foundation ont sélectionné 22 sociétés de gestion d’actifs pour Project Harmonia, avec une première distribution de fonds tokenisés visée pour le début de 2027.",
+      "sections": [
+        [
+          "Une première cohorte de 22 sociétés de gestion",
+          "Allfunds et la Solana Foundation ont annoncé le 16 novembre 2026 la première cohorte de Project Harmonia, faisant passer leur initiative de distribution de fonds tokenisés du recrutement à la préparation de lancements de produits. Le groupe réunit 22 sociétés de gestion d’actifs, dont Apollo Global Management, Fidelity International et Schroders, selon Blockstories et Solana Compass."
+        ],
+        [
+          "Infrastructure de distribution et contrôles d’admission",
+          "Le programme vise à relier des fonds d’investissement émis sur Solana au réseau de distribution établi d’Allfunds. Le fournisseur d’infrastructure ioBuilders apporte la couche d’intégration Asseto, tandis que Particula contribue à l’évaluation et à l’admission des fonds. Blockstories indique qu’environ 40 gestionnaires ont déposé une candidature et que 22 ont été retenus, après des vérifications portant sur les structures de détention, le domicile juridique et la mise en œuvre onchain."
+        ],
+        [
+          "Le calendrier de lancement ne prouve pas encore l’adoption",
+          "Les premiers produits devraient être accessibles par l’intermédiaire d’Allfunds au premier trimestre 2027. D’autres fonds encore en développement sont prévus pour le premier semestre de la même année. Il s’agit d’objectifs de lancement prospectifs, et non de la preuve que les fonds de la cohorte sont déjà disponibles commercialement. Le test décisif sera de savoir si les distributeurs institutionnels adoptent ces produits et génèrent des flux d’investissement durables."
+        ]
+      ]
+    },
+    "sourceSha256": "5b69c9f3f45962ca0af42103a4f76ae776de8ff5f2aef0269a3393728eb6a76d"
   }
 }
