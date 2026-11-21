@@ -31,10 +31,10 @@
     "discoveryMode": "high-trust-headline"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "duplicate",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-20T21:11:03Z",
-    "reason": "Forbes original full-text article and primary confirmation of Monday US tokenized-stock availability could not be retrieved; headline-only Google News RSS discovery is insufficient to verify event date, three distinct facts, and exact evidence anchors. Retry after six hours."
+    "reviewedAt": "2026-11-21T03:17:22Z",
+    "reason": "Full Forbes article dated Nov 20 was read at https://tollbit.forbes.com/sites/murtuza-merchant/2026/11/20/tokenized-stocks-go-live-for-americans-monday-check-these-risks-first/. Its underlying OKXICE Nov 23 planned launch was announced by OKX on Nov 11 (https://www.okx.com/en-eu/learn/okxice-tsv-launch) and repeatedly handled as an OKXICE launch lead in this repository (e.g. duplicate review commit 827c4eb8). SEC venue notice already dated Oct 4. Forbes adds risk commentary, not a new launch or confirmed live trading event; avoid another article on the same planned launch."
   }
 }
