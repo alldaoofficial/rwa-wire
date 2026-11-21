@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-21T23:11:42.955Z",
+    "reason": "Duplicate of existing verified and sealed ECB Appia invitation at publish/inbox/2026-11-21-ecb-seeks-partners-for-tokenized-deposits-and-securities-tests.json (Eurosystem announcement dated 2026-11-20; primary source https://www.ecb.europa.eu/press/intro/news/html/ecb.mipnews261120.en.html). This OneBullEx discovery restates the same Appia industry experimentation and tokenized-deposit settlement topic, without a substantiated separate trial launch. Existing story already has candidate and publication receipt; do not generate a second article."
   }
 }
