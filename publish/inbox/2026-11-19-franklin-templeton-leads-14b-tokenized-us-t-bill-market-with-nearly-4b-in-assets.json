@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-21T10:17:20Z",
-    "reason": "Fresh November 21 research found no issuer primary release or two independent full-text reports validating Franklin Templeton nearly $4B in tokenized T-bill holdings on November 19. Guardian's November 19 full report (https://guardian.security/blog/tokenized-treasuries-explained/) cites November 6 RWA.xyz data: iBENJI $1.71B and BENJI $1.16B (different products), and total tokenized Treasury distributed value $14.24B. A November 19 HokaNews report (https://www.hokanews.com/2026/11/bnb-chain-overtakes-ethereum-in.html) cites roughly $14.2B market value but calls Franklin Benji share 22.7%, not nearly $4B verified issuer holdings. These are not sufficient independent substantiation of the exact headline, especially for November 19. Do not publish; retry no earlier than six hours after reviewedAt."
+    "reviewedAt": "2026-11-21T19:18:47.235Z",
+    "reason": "Rechecked November 19 Crypto Briefing original reporting (full-text syndication at https://www.kucoin.com/news/flash/franklin-templeton-leads-14b-tokenized-us-t-bill-market-with-3-5b-in-assets): it claims $3.5B BENJI issuance and nearly $4B across tokenized products, citing Token Terminal, but KuCoin republishes the same Crypto Briefing report and is not an independent second source. November 19 HokaNews estimates a $14.2B market and 22.7% BENJI share, which does not independently substantiate nearly $4B holdings. No issuer primary release or independently corroborated matching full-text evidence found. Retain held; retry no earlier than six hours after reviewedAt."
   }
 }
