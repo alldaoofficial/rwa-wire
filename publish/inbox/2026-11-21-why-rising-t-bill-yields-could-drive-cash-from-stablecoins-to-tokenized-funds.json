@@ -32,7 +32,7 @@
     "discoveredAt": "2026-11-21T11:07:17.602081+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
@@ -88,6 +88,7 @@
         "sourceUrl": "https://en.bloomingbit.io/feed/news/124628",
         "anchor": "leaving the crypto market"
       }
-    ]
+    ],
+    "contentSha256": "37a1d631c991ac6849715eac1f768236502f4d9d6263fd0d63a62e010676f5e2"
   }
 }
