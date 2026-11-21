@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-21T05:11:33Z",
-    "reason": "Ava Labs' full original release dated November 9, 2026 (https://www.prnewswire.com/news-releases/avalanche-to-serve-as-core-ledger-technology-for-clearing-and-settlement-of-nyse-affiliated-upcoming-tokenized-securities-platform-302932803.html) confirms the NYSE-affiliated ATS/Avalanche clearing-ledger plan was announced November 9 and remains subject to regulatory approvals. No distinct November 20 event or independently sourced new Bitwise privacy/security claim was verified. Headline is stale; retain held, retry no sooner than six hours after reviewedAt if new primary evidence emerges."
+    "reviewedAt": "2026-11-21T14:20:10.247Z",
+    "reason": "Rechecked dated full-text Ava Labs and NYSE announcements of November 9, 2026; fresh web search found no distinct November 20 event or verified Bitwise privacy/security/compliance statement. The discovery is stale and lacks evidence for a new dated article. Retain held; retry no earlier than six hours after reviewedAt."
   }
 }
