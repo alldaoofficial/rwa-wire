@@ -1,0 +1,126 @@
+{
+  "version": "2.1",
+  "generatedAt": "2026-11-21T22:55:28Z",
+  "status": "dry_run",
+  "source": "CoinGecko",
+  "sourceFetchedAt": "2026-11-21T22:55:28.369316Z",
+  "assetCount": 10,
+  "basket": {
+    "average24h": -3.4402534303987364,
+    "median24h": -1.2714302922253937,
+    "up": 4,
+    "down": 6,
+    "flat": 0,
+    "spreadPctPoints": 35.1179531256833
+  },
+  "leader": {
+    "id": "zebec-protocol",
+    "symbol": "ZBCN",
+    "name": "Zebec",
+    "price": 0.00168638,
+    "change24h": 5.49738808616831,
+    "volume24h": 8980866.782478847
+  },
+  "weakest": {
+    "id": "goldfinch",
+    "symbol": "GFI",
+    "name": "Goldfinch",
+    "price": 0.02722116,
+    "change24h": -29.62056503951499,
+    "volume24h": 385623.5164389616
+  },
+  "highestVolume": {
+    "id": "chainlink",
+    "symbol": "LINK",
+    "name": "Chainlink",
+    "price": 8.58,
+    "change24h": 0.1426748114710499,
+    "volume24h": 274087960.4903874
+  },
+  "marketRead": "Breadth is split with 4/10 tracked assets positive. Dispersion is elevated: 35.1 percentage points separate the strongest and weakest tracked assets. LINK has the highest reported 24h volume in the tracked basket at $274.1M.",
+  "xMarketRead": "Mixed tape: 4 green, 6 red across 10 tracked assets. Performance spread: 35.1 pts.",
+  "assets": [
+    {
+      "id": "zebec-protocol",
+      "symbol": "ZBCN",
+      "name": "Zebec",
+      "price": 0.00168638,
+      "change24h": 5.49738808616831,
+      "volume24h": 8980866.782478847
+    },
+    {
+      "id": "polymesh",
+      "symbol": "POLYX",
+      "name": "Polymesh",
+      "price": 0.02464608,
+      "change24h": 3.409369478526779,
+      "volume24h": 717482.2418260741
+    },
+    {
+      "id": "clearpool",
+      "symbol": "CPOOL",
+      "name": "Clearpool",
+      "price": 0.02473566,
+      "change24h": 1.607009738043363,
+      "volume24h": 5799819.211892383
+    },
+    {
+      "id": "chainlink",
+      "symbol": "LINK",
+      "name": "Chainlink",
+      "price": 8.58,
+      "change24h": 0.1426748114710499,
+      "volume24h": 274087960.4903874
+    },
+    {
+      "id": "ondo-finance",
+      "symbol": "ONDO",
+      "name": "Ondo",
+      "price": 0.279849,
+      "change24h": -1.1261127985514803,
+      "volume24h": 94850749.4916992
+    },
+    {
+      "id": "mantra-dao",
+      "symbol": "OM",
+      "name": "MANTRA",
+      "price": 0.00181853,
+      "change24h": -1.4167477858993072,
+      "volume24h": 2113304.466548441
+    },
+    {
+      "id": "plume",
+      "symbol": "PLUME",
+      "name": "Plume",
+      "price": 0.01071509,
+      "change24h": -2.674548035057477,
+      "volume24h": 9947660.02159503
+    },
+    {
+      "id": "maple-finance",
+      "symbol": "SYRUP",
+      "name": "Maple",
+      "price": 0.088266,
+      "change24h": -3.0713863680661873,
+      "volume24h": 5824580.665360562
+    },
+    {
+      "id": "centrifuge",
+      "symbol": "CFG",
+      "name": "Centrifuge",
+      "price": 0.053998,
+      "change24h": -7.149616391107425,
+      "volume24h": 238404.68327898247
+    },
+    {
+      "id": "goldfinch",
+      "symbol": "GFI",
+      "name": "Goldfinch",
+      "price": 0.02722116,
+      "change24h": -29.62056503951499,
+      "volume24h": 385623.5164389616
+    }
+  ],
+  "telegram": "RWA WIRE // MARKET PULSE\n\nTracked RWA tokens are mixed over 24h.\nBreadth: 4 up / 6 down\nBasket: avg -3.4% · median -1.3%\n\nTop movers\n▲ ZBCN +5.5% · $0.0017\n▲ POLYX +3.4% · $0.0246\n▲ CPOOL +1.6% · $0.0247\n\nWeakest movers\n▼ SYRUP -3.1% · $0.0883\n▼ CFG -7.1% · $0.0540\n▼ GFI -29.6% · $0.0272\n\nMARKET READ\nBreadth is split with 4/10 tracked assets positive. Dispersion is elevated: 35.1 percentage points separate the strongest and weakest tracked assets. LINK has the highest reported 24h volume in the tracked basket at $274.1M.\n\nData: CoinGecko · 24h change",
+  "x": "RWA WIRE // MARKET PULSE\n\nRWA basket: -3.4% avg · 4/10 green\nZBCN +5.5% | POLYX +3.4% | CPOOL +1.6%\n\nMixed tape: 4 green, 6 red across 10 tracked assets. Performance spread: 35.1 pts.\n\nData: CoinGecko"
+}
