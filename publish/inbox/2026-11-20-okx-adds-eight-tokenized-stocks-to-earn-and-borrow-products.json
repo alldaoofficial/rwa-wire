@@ -35,12 +35,12 @@
     "status": "verified",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-20T10:11:34Z",
+    "reviewedAt": "2026-11-21T07:14:21.089Z",
     "sources": [
       {
         "url": "https://www.okx.com/help/put-your-tokenized-stocks-to-work-simple-earn-and-flexible-loan-now-supports-tokenized-stocks",
         "publishedAt": "2026-11-19",
-        "checkedAt": "2026-11-20T10:11:34Z",
+        "checkedAt": "2026-11-21T07:14:21.089Z",
         "kind": "primary",
         "access": "full-text"
       }
@@ -59,12 +59,12 @@
       {
         "claim": "Simple Earn Flexible permits subscriptions in supported tokenized stocks with interest rates that vary.",
         "sourceUrl": "https://www.okx.com/help/put-your-tokenized-stocks-to-work-simple-earn-and-flexible-loan-now-supports-tokenized-stocks",
-        "anchor": "earn variable interest"
+        "anchor": "variable interest"
       },
       {
         "claim": "Flexible Loan borrowing depends on available inventory and collateral requirements for supported tokenized stocks.",
         "sourceUrl": "https://www.okx.com/help/put-your-tokenized-stocks-to-work-simple-earn-and-flexible-loan-now-supports-tokenized-stocks",
-        "anchor": "subject to available inventory and collateral requirements"
+        "anchor": "available inventory and collateral requirements"
       },
       {
         "claim": "Balances committed as collateral cannot simultaneously earn interest through Simple Earn on the platform.",
