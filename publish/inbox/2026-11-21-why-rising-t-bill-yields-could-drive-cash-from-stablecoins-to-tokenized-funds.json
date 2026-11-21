@@ -1,7 +1,7 @@
 {
-  "title": "Why Rising T-Bill Yields Could Drive Cash From Stablecoins to Tokenized Funds",
-  "description": "Why Rising T-Bill Yields Could Drive Cash From Stablecoins to Tokenized Funds",
-  "why_it_matters": "",
+  "title": "Treasury yields highlight barriers to tokenized money market fund adoption",
+  "description": "A November 21 analysis compares stablecoin and Treasury yields, while separate November 17 reporting says recent stablecoin outflows have not flowed into tokenized funds.",
+  "why_it_matters": "Tokenized Treasury and money market products could connect blockchain liquidity with conventional short-term interest income, but investor eligibility, minimum subscriptions and redemption schedules limit whether they can replace readily transferable stablecoins.",
   "pubDate": "2026-11-21",
   "category": "news",
   "tags": [
@@ -10,14 +10,19 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "Why Rising T-Bill Yields Could Drive Cash From Stablecoins to Tokenized Funds",
-    ""
+    "CCN reports that analyst Jamie Coutts observed an inverse historical relationship between stablecoin supply changes and Treasury bill yields, not proof of capital rotation.",
+    "CCN cites a November 12 DeFi yield comparison in which 48 of 98 large stablecoin pools exceeded the Treasury bill benchmark.",
+    "Bloomingbit reported on November 17 that Coutts viewed a recent $17 billion stablecoin contraction as capital leaving crypto, not moving into tokenized money market funds."
   ],
-  "body": "Why Rising T-Bill Yields Could Drive Cash From Stablecoins to Tokenized Funds",
+  "body": "Higher yields on short-dated US government debt are renewing questions about the opportunity cost of holding non-interest-bearing stablecoins. In a November 21 analysis, CCN reported analyst Jamie Coutts' estimate of a negative 0.62 correlation between changes in stablecoin supply and Treasury bill yields since 2022. That historical association does not establish that investors are switching directly into tokenized funds.\\n\\nCCN also cited a DefiLlama study published November 12. The study examined 98 large stablecoin pools without token incentives, reporting a median base yield of 4.07%, compared with a 4.17% three-month Treasury bill benchmark measured earlier in November. Forty-eight pools exceeded that benchmark, although higher returns can carry additional credit, smart-contract and liquidity risks.\\n\\nSeparate November 17 reporting by Bloomingbit described Coutts' view that stablecoin supply had fallen by $17 billion since August, with funds leaving the crypto market rather than rotating into tokenized money market products. Tokenized funds can offer exposure to Treasury income, but subscription thresholds, investor restrictions and redemption windows can prevent them from serving as immediate substitutes for liquid payment tokens. The potential migration remains a hypothesis, not a documented inflow.",
   "sources": [
     {
-      "name": "CCN.com",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9rU1Rka1o3RmMycHZXSHU4X3FtdUdKUVVZTEVxQWQwc05NWU0wazB4eDEyZTJGNThHMnJVTklERk1EQTlSV095RmVQaXZvaDJNTnRxUTFjR2JiY080MERhMkt2TUc1UzVwNjVqZi1abDhqQmc4SndJSGtmbEl6dkE?oc=5"
+      "name": "CCN — Treasury yields and tokenized funds analysis",
+      "url": "https://www.ccn.com/news/crypto/t-bill-yields-stablecoins-tokenized-funds/"
+    },
+    {
+      "name": "Bloomingbit — Jamie Coutts on stablecoin outflows",
+      "url": "https://en.bloomingbit.io/feed/news/124628"
     }
   ],
   "newsWatch": {
@@ -31,10 +36,58 @@
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "verified",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-21T11:11:40.818Z",
-    "reason": "Original CCN full-text article could not be located or read from the Google News RSS discovery URL; searches for exact headline and publisher did not return the original. No dated primary release or two independent full-text reports corroborate a new November 21 event or three distinct facts. Retry after six hours."
+    "reviewedAt": "2026-11-21T17:16:23Z",
+    "independentReporting": true,
+    "sources": [
+      {
+        "url": "https://www.ccn.com/news/crypto/t-bill-yields-stablecoins-tokenized-funds/",
+        "publishedAt": "2026-11-21",
+        "checkedAt": "2026-11-21T17:16:23Z",
+        "kind": "news",
+        "access": "full-text"
+      },
+      {
+        "url": "https://en.bloomingbit.io/feed/news/124628",
+        "publishedAt": "2026-11-17",
+        "checkedAt": "2026-11-21T17:16:23Z",
+        "kind": "news",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "CCN published its analysis of Treasury yields, stablecoins and tokenized money market funds on November 21, 2026.",
+        "sourceUrl": "https://www.ccn.com/news/crypto/t-bill-yields-stablecoins-tokenized-funds/",
+        "anchor": "Published 21 November 2026"
+      },
+      {
+        "claim": "CCN attributes a negative 0.62 historical correlation between stablecoin supply changes and Treasury bill yields to analyst Jamie Coutts.",
+        "sourceUrl": "https://www.ccn.com/news/crypto/t-bill-yields-stablecoins-tokenized-funds/",
+        "anchor": "correlation of -0.62"
+      },
+      {
+        "claim": "CCN reports that a comparison of 98 stablecoin pools found a median yield of 4.07 percent.",
+        "sourceUrl": "https://www.ccn.com/news/crypto/t-bill-yields-stablecoins-tokenized-funds/",
+        "anchor": "median 30-day base annual percentage yield"
+      },
+      {
+        "claim": "CCN reports that 48 of the examined stablecoin pools outperformed the three-month Treasury bill benchmark.",
+        "sourceUrl": "https://www.ccn.com/news/crypto/t-bill-yields-stablecoins-tokenized-funds/",
+        "anchor": "Forty-eight pools beat the bill"
+      },
+      {
+        "claim": "Bloomingbit reported that Coutts estimated stablecoin supply had fallen by 17 billion dollars since August.",
+        "sourceUrl": "https://en.bloomingbit.io/feed/news/124628",
+        "anchor": "fallen by $17 billion since August"
+      },
+      {
+        "claim": "Bloomingbit reported Coutts' assessment that stablecoin outflows were leaving the crypto market rather than entering tokenized money market funds.",
+        "sourceUrl": "https://en.bloomingbit.io/feed/news/124628",
+        "anchor": "leaving the crypto market"
+      }
+    ]
   }
 }
