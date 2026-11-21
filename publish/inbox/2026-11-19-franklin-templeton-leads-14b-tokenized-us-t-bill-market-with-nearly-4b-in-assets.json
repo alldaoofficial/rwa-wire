@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-20T14:18:18Z",
-    "reason": "Rechecked 2026-11-20 against full-text Franklin Templeton April 30 primary release (BENJI suite $1.98B AUM as of April 29), RWAWeekly November 20 dataset (BENJI $1.57B as of November 18), and October 30 The Migration fund breakdown (iBENJI $1.71B, BENJI $756.5M). These figures differ by date and product scope; none establishes the headline's nearly $4B Franklin holdings or $14B Treasury-market total on November 19. No independently verifiable current primary dataset or two independent full-text reports substantiate both claims. Keep held; retry no earlier than six hours."
+    "reviewedAt": "2026-11-21T10:17:20Z",
+    "reason": "Fresh November 21 research found no issuer primary release or two independent full-text reports validating Franklin Templeton nearly $4B in tokenized T-bill holdings on November 19. Guardian's November 19 full report (https://guardian.security/blog/tokenized-treasuries-explained/) cites November 6 RWA.xyz data: iBENJI $1.71B and BENJI $1.16B (different products), and total tokenized Treasury distributed value $14.24B. A November 19 HokaNews report (https://www.hokanews.com/2026/11/bnb-chain-overtakes-ethereum-in.html) cites roughly $14.2B market value but calls Franklin Benji share 22.7%, not nearly $4B verified issuer holdings. These are not sufficient independent substantiation of the exact headline, especially for November 19. Do not publish; retry no earlier than six hours after reviewedAt."
   }
 }
