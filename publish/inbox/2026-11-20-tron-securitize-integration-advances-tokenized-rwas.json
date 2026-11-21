@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-21T05:11:33Z",
-    "reason": "Full original Securitize/TRON announcement is dated April 2026 (https://www.newsdirect.com/newsroom/securitize-integrates-with-tron-to-bring-tokenized-real-world-assets-to-one-of-the-worlds-largest-blockchains/); original HLSCOPE-on-TRON launch release is dated June 2, 2026 (https://www.webdisclosure.com/press-release/securitize-launches-private-credit-fund-on-tron-blockchain-8U11unlKnY3). No independently confirmed new November 20 integration milestone. Retain held; retry no sooner than six hours after reviewedAt if a dated primary update appears."
+    "reviewedAt": "2026-11-21T14:20:12.268Z",
+    "reason": "Rechecked full-text Securitize/TRON original integration announcement of April 10, 2026 and HLSCOPE launch announcement of June 2, 2026. Fresh web search found no separate November 20 integration milestone or new primary release. Retain held; retry no earlier than six hours after reviewedAt."
   }
 }
