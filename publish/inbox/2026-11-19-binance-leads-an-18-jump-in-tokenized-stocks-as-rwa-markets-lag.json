@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-21T00:17:47Z",
-    "reason": "Full Barchart article dated 2026-11-19 was read at https://www.webull.hk/en/news/15952830953418752. Its 17.79% 30-day tokenized-stock increase to $3.74bn is explicitly measured as of 2026-10-28, not a fresh November 19 market move; other statistics refer to September or Q3. No distinct new November 19 event is established. Do not recast historical October metrics as breaking news. Retry no earlier than six hours."
+    "reviewedAt": "2026-11-21T15:19:15.835Z",
+    "reason": "Rechecked the dated Binance Research primary report (September 29, 2026, https://www.binance.com/en/research/analysis/rewriting-the-on-chain-economy) and Binance's October 28 bStocks collateral announcement (https://www.binance.com/en/square/post/382021894810849). These document September/October market and product developments, not a new November 19 event. The previously reviewed 17.79% / $3.74bn figure was measured as of October 28; no fresh November 19 primary event or three dated new facts were substantiated. Keep held and retry no earlier than six hours after reviewedAt."
   }
 }
