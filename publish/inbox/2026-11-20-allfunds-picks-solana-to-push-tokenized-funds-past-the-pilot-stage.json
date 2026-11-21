@@ -32,7 +32,7 @@
     "discoveredAt": "2026-11-21T22:07:15.240442+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
@@ -88,6 +88,7 @@
         "sourceUrl": "https://solanacompass.com/news/apollo-schroders-wellington-and-franklin-templeton-join-project-harmonias-first-tokenized-fund-cohort-on-solana",
         "anchor": "second application round opens"
       }
-    ]
+    ],
+    "contentSha256": "3acb2547c3b22d559b1d6007c21cee60755d3db4cc0471ec591a6a86bbe53714"
   }
 }
