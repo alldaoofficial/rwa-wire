@@ -1,8 +1,8 @@
 {
-  "title": "ECB seeks partners for tokenized deposits and securities tests",
-  "description": "ECB seeks partners for tokenized deposits and securities tests Crypto News",
-  "why_it_matters": "",
-  "pubDate": "2026-11-21",
+  "title": "Eurosystem invites industry consortia to test tokenized deposits and securities",
+  "description": "In a November 20 invitation, the Eurosystem opened applications for collective industry initiatives to work on Appia's three design streams, with a December 11 deadline for the first experiments.",
+  "why_it_matters": "The invitation gives banks, infrastructure operators and technology providers a concrete route into shaping European tokenized-market design, including how deposit payments, securities and shared governance could work across institutions.",
+  "pubDate": "2026-11-20",
   "category": "news",
   "tags": [
     "Tokenization",
@@ -10,18 +10,15 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "ECB seeks partners for tokenized deposits and securities tests Crypto News",
-    ""
+    "The Eurosystem's Appia invitation covers tokenized deposits and payments, securities, and shared network governance.",
+    "Applicants must participate as collective initiatives of independent legal entities, rather than applying individually.",
+    "The first experimentation application deadline is December 11, 2026 at 12:00 CET; later submissions receive rolling consideration."
   ],
-  "body": "ECB seeks partners for tokenized deposits and securities tests Crypto News",
+  "body": "The Eurosystem invited market participants on November 20, 2026 to join analytical work and practical experimentation under its Appia initiative, which is intended to help design an integrated European tokenized financial ecosystem.\n\nThe invitation identifies three areas for collaboration: tokenized deposits and related payments, tokenized securities, and governance arrangements for shared networks. Participation is organized through collective initiatives involving independent legal entities, rather than individual applications. Applicants must identify the design streams they intend to address and demonstrate relevant expertise and capacity to contribute.\n\nThe deadline for applications to the first experimentation exercises is December 11, 2026 at 12:00 CET. Submissions received later will be considered on a rolling basis. The Eurosystem says it will assess proposals for relevance, practical experience, technical readiness, tangible outputs and resource commitments, while also considering geographic and stakeholder diversity.\n\nThis is an invitation to collaborate on research and tests, not an announcement that a new tokenized-deposit or securities platform has entered commercial operation.",
   "sources": [
     {
-      "name": "Crypto News",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8ybnhJN3h6T2xBcU1CNmUzOTNlZFc5SEhPeF85X2ZIYV90alZZZzgzN2xEc1V6OUJzWTlfT1VMcDltVEtFX2dfZk1ITTd2bTlqelB2OHV0ZUJnZXVmQ3A5TjVETmJlcWgxZy1YQ1RXaVVHOGhY?oc=5"
-    },
-    {
-      "name": "The Defiant",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQeUlVRlNaMWEtVm5TbHpJejR1T0tHb2gtQzFfdUxlR0ZUd0ZFTEx2T0t5YWM2cWpyUXU1RW4xd2JncjVjbHpxWTc1d2Y2eC0tTTgtRFNONk8weWFscG5RckxGOWVRUWQ1Q0wxbU5kZFN4UjNISWxGOHliS2N2cHhmdjBmdkVJekZmZlp2cjJSM1hCNkJFNS1FUzhB?oc=5"
+      "name": "European Central Bank — Eurosystem Appia invitation",
+      "url": "https://www.ecb.europa.eu/press/intro/news/html/ecb.mipnews261120.en.html"
     }
   ],
   "newsWatch": {
@@ -39,5 +36,52 @@
     "requiresSourceReview": true,
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-21T12:19:14Z",
+    "sources": [
+      {
+        "url": "https://www.ecb.europa.eu/press/intro/news/html/ecb.mipnews261120.en.html",
+        "publishedAt": "2026-11-20",
+        "checkedAt": "2026-11-21T12:19:14Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "The Eurosystem invited industry participants to contribute to the Appia initiative through analytical and practical activities.",
+        "sourceUrl": "https://www.ecb.europa.eu/press/intro/news/html/ecb.mipnews261120.en.html",
+        "anchor": "analytical and practical activities"
+      },
+      {
+        "claim": "The invitation identifies tokenized deposits and related payments as one of three design streams.",
+        "sourceUrl": "https://www.ecb.europa.eu/press/intro/news/html/ecb.mipnews261120.en.html",
+        "anchor": "tokenised deposits and related payments"
+      },
+      {
+        "claim": "Tokenized securities and shared network governance are the other two design streams described in the invitation.",
+        "sourceUrl": "https://www.ecb.europa.eu/press/intro/news/html/ecb.mipnews261120.en.html",
+        "anchor": "shared network governance"
+      },
+      {
+        "claim": "Applicants must apply as collective initiatives comprising independent legal entities rather than as individuals.",
+        "sourceUrl": "https://www.ecb.europa.eu/press/intro/news/html/ecb.mipnews261120.en.html",
+        "anchor": "rather than individually"
+      },
+      {
+        "claim": "The deadline for initial experimentation applications is December 11, 2026 at 12:00 CET.",
+        "sourceUrl": "https://www.ecb.europa.eu/press/intro/news/html/ecb.mipnews261120.en.html",
+        "anchor": "11 December 2026"
+      },
+      {
+        "claim": "Later applications will be assessed on a rolling basis, and technical readiness is among the selection criteria.",
+        "sourceUrl": "https://www.ecb.europa.eu/press/intro/news/html/ecb.mipnews261120.en.html",
+        "anchor": "rolling basis"
+      }
+    ]
   }
 }
