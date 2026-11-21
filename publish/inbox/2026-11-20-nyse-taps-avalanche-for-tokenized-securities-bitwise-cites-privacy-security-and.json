@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-21T14:20:10.247Z",
-    "reason": "Rechecked dated full-text Ava Labs and NYSE announcements of November 9, 2026; fresh web search found no distinct November 20 event or verified Bitwise privacy/security/compliance statement. The discovery is stale and lacks evidence for a new dated article. Retain held; retry no earlier than six hours after reviewedAt."
+    "reviewedAt": "2026-11-21T21:19:34.603Z",
+    "reason": "Rechecked November 9, 2026 Ava Labs primary release on Avalanche ledger for proposed NYSE-affiliated tokenized securities ATS; November 20 discovery does not establish a separate new event, and the attributed Bitwise privacy/security/compliance statement remains unverified. No eligible fresh article. Retry no sooner than six hours after reviewedAt."
   }
 }
