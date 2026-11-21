@@ -6638,5 +6638,71 @@
       ]
     },
     "sourceSha256": "04a75b4cd5bb10e5b0bd046ce8532a323cb8a943ec94dd98c28d055542822054"
+  },
+  "okx-expands-tokenized-stock-utility-with-flexible-earn-and-borrowing": {
+    "path": "/news/okx-expands-tokenized-stock-utility-with-flexible-earn-and-borrowing/",
+    "date": "2026-11-19",
+    "kind": "news",
+    "sources": [
+      [
+        "OKX official product notice",
+        "https://www.okx.com/help/put-your-tokenized-stocks-to-work-simple-earn-and-flexible-loan-now-supports-tokenized-stocks"
+      ]
+    ],
+    "de": {
+      "title": "OKX erweitert den Nutzen tokenisierter Aktien um Flexible Earn und Kreditaufnahme",
+      "description": "OKX zufolge können acht tokenisierte Aktien- und ETF-Instrumente für Simple Earn mit variablem Zins sowie für Kredite über Flexible Loan genutzt werden; dabei gelten regionale Zugangs- und Sicherheitenbeschränkungen.",
+      "sections": [
+        [
+          "Simple Earn und Flexible Loan für ausgewählte Token",
+          "OKX hat die Einsatzmöglichkeiten ausgewählter tokenisierter Aktien- und ETF-Engagements erweitert. Berechtigte Kunden können ihre Bestände nun in Simple Earn Flexible anlegen oder über Flexible Loan unterstützte Token ausleihen. Laut der Mitteilung vom 19. November sind die Funktionen seit dem 18. November verfügbar, sofern Konto, Vermögenswert und Region die jeweiligen Voraussetzungen erfüllen."
+        ],
+        [
+          "Acht unterstützte Instrumente und variable Konditionen",
+          "Die erste Liste umfasst xCRCL, xMSTR, xSPCX, xMU, xQQQ, xGOOGL, xINTC und xNVDA. Simple Earn bietet einen variablen, nicht garantierten Zins. Die Kreditvergabe hängt von der Verfügbarkeit der Token, den Kreditzinsen und den Anforderungen an Sicherheiten ab. Als Sicherheit hinterlegte Vermögenswerte können nicht gleichzeitig Zinsen über Simple Earn erwirtschaften."
+        ],
+        [
+          "Unternehmensmaßnahmen, Aktionärsrechte und Kreditrisiken",
+          "Dividenden, Aktiensplits und umgekehrte Aktiensplits können Guthaben oder ausstehende Kreditverpflichtungen verändern. Während bestimmter Unternehmensmaßnahmen können Transaktionen ausgesetzt werden. Die Instrumente vermitteln ein wirtschaftliches Engagement, aber weder direktes Aktieneigentum noch Stimmrechte. Die Kreditaufnahme verursacht Zinskosten und birgt ein Liquidationsrisiko. Die Erweiterung bindet tokenisierte Marktinstrumente enger in Krypto-Kredit- und Renditeprodukte ein, unterscheidet sich jedoch weiterhin vom Eigentum über ein herkömmliches Wertpapierdepot."
+        ]
+      ]
+    },
+    "es": {
+      "title": "OKX amplía la utilidad de las acciones tokenizadas con Flexible Earn y préstamos",
+      "description": "OKX afirma que ocho instrumentos tokenizados de renta variable y ETF pueden utilizarse en Simple Earn con interés variable y para obtener préstamos mediante Flexible Loan, con restricciones regionales, de acceso y de garantía.",
+      "sections": [
+        [
+          "Simple Earn y Flexible Loan para tokens seleccionados",
+          "OKX ha ampliado los usos de determinadas exposiciones tokenizadas a acciones y ETF. Los clientes que cumplan los requisitos pueden colocar ahora sus posiciones en Simple Earn Flexible o tomar prestados tokens admitidos mediante Flexible Loan. El aviso del 19 de noviembre señala que las funciones están disponibles desde el 18 de noviembre, sujetas a la elegibilidad de la cuenta, el activo y la región."
+        ],
+        [
+          "Ocho instrumentos admitidos y condiciones variables",
+          "La lista inicial incluye xCRCL, xMSTR, xSPCX, xMU, xQQQ, xGOOGL, xINTC y xNVDA. Simple Earn ofrece un interés variable que no está garantizado. La concesión de préstamos depende de la disponibilidad de tokens, los tipos de interés aplicables y los requisitos de garantía. Los activos aportados como garantía no pueden generar al mismo tiempo intereses en Simple Earn."
+        ],
+        [
+          "Operaciones corporativas, derechos del accionista y riesgos del préstamo",
+          "Los dividendos, los desdoblamientos de acciones y los contrasplits pueden modificar los saldos o las obligaciones pendientes de los préstamos. Las transacciones pueden suspenderse durante determinadas operaciones corporativas. Los instrumentos proporcionan exposición económica, pero no la propiedad directa de acciones ni derechos de voto. Pedir prestado añade costes por intereses y riesgo de liquidación. La ampliación integra más estrechamente estos instrumentos de mercado tokenizados en productos de crédito y rendimiento cripto, aunque siguen siendo distintos de la propiedad a través de un bróker convencional."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "OKX étend l’utilisation des actions tokenisées à Flexible Earn et à l’emprunt",
+      "description": "Selon OKX, huit instruments tokenisés sur actions et ETF peuvent être placés dans Simple Earn à taux variable ou servir à emprunter via Flexible Loan, sous réserve de restrictions régionales, d’accès et de garantie.",
+      "sections": [
+        [
+          "Simple Earn et Flexible Loan pour certains jetons",
+          "OKX a élargi les possibilités d’utilisation de certaines expositions tokenisées aux actions et aux ETF. Les clients éligibles peuvent désormais placer leurs avoirs dans Simple Earn Flexible ou emprunter des jetons pris en charge via Flexible Loan. L’avis du 19 novembre indique que ces fonctions sont disponibles depuis le 18 novembre, sous réserve de l’éligibilité du compte, de l’actif et de la région."
+        ],
+        [
+          "Huit instruments pris en charge et des conditions variables",
+          "La liste initiale comprend xCRCL, xMSTR, xSPCX, xMU, xQQQ, xGOOGL, xINTC et xNVDA. Simple Earn offre un taux d’intérêt variable qui n’est pas garanti. L’octroi de prêts dépend de la disponibilité des jetons, des taux d’emprunt et des exigences de garantie. Les actifs déposés en garantie ne peuvent pas simultanément produire des intérêts dans Simple Earn."
+        ],
+        [
+          "Opérations sur titres, droits des actionnaires et risques d’emprunt",
+          "Les dividendes, les fractionnements et les regroupements d’actions peuvent modifier les soldes ou les obligations de prêt en cours. Les transactions peuvent être suspendues pendant certaines opérations sur titres. Les instruments procurent une exposition économique, mais ni la propriété directe des actions ni des droits de vote. L’emprunt ajoute un coût d’intérêt et un risque de liquidation. Cette extension intègre plus étroitement les instruments de marché tokenisés aux produits de crédit et de rendement crypto, tout en restant distincte de la détention auprès d’un courtier traditionnel."
+        ]
+      ]
+    },
+    "sourceSha256": "217625b91a630e4c0ee511c6bc0b6235495d52af1eaae8e11ab4150e0155784e"
   }
 }
