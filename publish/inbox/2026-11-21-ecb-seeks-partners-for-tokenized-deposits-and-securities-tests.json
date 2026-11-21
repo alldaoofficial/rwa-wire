@@ -35,7 +35,7 @@
     ],
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment"
+    "contentStatus": "source-reviewed"
   },
   "sourceReview": {
     "status": "verified",
@@ -82,6 +82,7 @@
         "sourceUrl": "https://www.ecb.europa.eu/press/intro/news/html/ecb.mipnews261120.en.html",
         "anchor": "rolling basis"
       }
-    ]
+    ],
+    "contentSha256": "0dc9f3622c663ec683f1bc38c6a785b845a4122babc49a585d4ca178f911a6bf"
   }
 }
