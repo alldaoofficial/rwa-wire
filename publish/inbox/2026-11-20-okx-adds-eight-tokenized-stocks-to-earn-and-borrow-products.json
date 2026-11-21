@@ -28,7 +28,7 @@
     "discoveredAt": "2026-11-20T10:07:14.970635+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
@@ -76,6 +76,7 @@
         "sourceUrl": "https://www.okx.com/help/put-your-tokenized-stocks-to-work-simple-earn-and-flexible-loan-now-supports-tokenized-stocks",
         "anchor": "do not confer shareholder rights"
       }
-    ]
+    ],
+    "contentSha256": "bee6964920ab25bf8a27c04d8e8dbeae1dbc965851f9b98e19050e7ba2df4b3a"
   }
 }
