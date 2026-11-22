@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-22T06:11:51.464Z",
-    "reason": "Six-hour retry hold: full-text CryptoCompass article dated 2026-11-19 (https://cryptocompass.com/articles/blackrock-says-tokenized-assets-are-0-01-of-global-markets-pointing-to-early-stage-adoption) attributes $30-40bn on-chain assets versus $300tn traditional markets to BlackRock's Will Su, but explicitly republishes BSC News; the Binance Square copy is the same syndicated report, not independent corroboration. Neither a dated original BlackRock statement nor two independent full-text reports verifying the quotation and 0.01% calculation were established. Other historical BUIDL figures do not verify this November claim. No three independently anchored event facts; retry after six hours, do not publish."
+    "reviewedAt": "2026-11-22T12:12:07.954Z",
+    "reason": "Six-hour retry hold: renewed original-source search on 2026-11-22 did not locate a dated BlackRock statement or independent full-text reporting supporting the attributed 0.01% share and $30-40bn versus $300tn comparison. The CryptoCompass November 19 article republishes BSC News, not a separate corroborating report. BlackRock's August 4 primary release on European tokenized money-market share classes (https://www.blackrock.com/cash/en-ie/press-release-t4) discusses a different event and does not validate this claim. Three independently anchored facts for the November assertion remain unavailable; retry no earlier than six hours after reviewedAt. Do not publish."
   }
 }
