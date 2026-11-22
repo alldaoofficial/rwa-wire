@@ -1,0 +1,27 @@
+{
+  "id": "2026-11-20-maybank-and-etiqa-complete-tokenized-bond-se",
+  "title": "Maybank and Etiqa complete tokenized bond settlement pilot using bank deposits",
+  "category": "NEWS",
+  "why_it_matters": "The transaction demonstrates how a bank can coordinate digital securities and deposit-based payment within its own controlled infrastructure. Because the counterparty was Maybank's insurance arm, it does not yet establish cross-bank interoperability or a commercially available market.",
+  "article_url": "https://therwawire.com/news/maybank-and-etiqa-complete-tokenized-bond-settlement-pilot-using-bank-deposits/",
+  "image_url": "https://therwawire.com/images/news/maybank-and-etiqa-complete-tokenized-bond-settlement-pilot-using-bank-deposits.svg",
+  "caption": "RWA WIRE // NEWS\n\nMaybank and Etiqa complete tokenized bond settlement pilot using bank deposits\n\nMaybank tested delivery-versus-payment settlement of tokenized bonds against tokenized deposits with its insurance arm Etiqa, using SettleMint technology on a permissioned blockchain.\n\nFull analysis →\nhttps://therwawire.com/news/maybank-and-etiqa-complete-tokenized-bond-settlement-pilot-using-bank-deposits/",
+  "distribution": {
+    "telegram": "RWA WIRE // NEWS\n\nMaybank and Etiqa complete tokenized bond settlement pilot using bank deposits\n\nMaybank tested delivery-versus-payment settlement of tokenized bonds against tokenized deposits with its insurance arm Etiqa, using SettleMint technology on a permissioned blockchain.\n\nFull analysis →\nhttps://therwawire.com/news/maybank-and-etiqa-complete-tokenized-bond-settlement-pilot-using-bank-deposits/",
+    "x": "Maybank and Etiqa complete tokenized bond settlement pilot using bank deposits\n\nMaybank tested delivery-versus-payment settlement of tokenized bonds against tokenized deposits with its insurance arm Etiqa, using SettleMint technology on a permissioned blockchain.\n\nhttps://therwawire.com/news/maybank-and-etiqa-complete-tokenized-bond-settlement-pilot-using-bank-deposits/",
+    "breaking": "RWA WIRE // NEWS\n\nMaybank and Etiqa complete tokenized bond settlement pilot using bank deposits\n\nhttps://therwawire.com/news/maybank-and-etiqa-complete-tokenized-bond-settlement-pilot-using-bank-deposits/",
+    "summary": "Maybank tested delivery-versus-payment settlement of tokenized bonds against tokenized deposits with its insurance arm Etiqa, using SettleMint technology on a permissioned blockchain."
+  },
+  "sources": [
+    {
+      "name": "SettleMint (GlobeNewswire, November 20, 2026)",
+      "url": "https://www.globenewswire.com/news-release/2026/11/20/3407288/0/en/settlemint-supports-maybank-in-completing-its-tokenized-bond-pilot.html"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-11-20-malaysia-s-largest-bank-maybank-pilots-tokenized-government-bond-settlement.json",
+    "contentSha256": "1828007f8acf5944e07c3619f256b5d1076e35f7d0a50dae6e45d3f3b2ace287",
+    "approvedAt": "2026-11-22T07:20:33.935506+00:00"
+  }
+}
