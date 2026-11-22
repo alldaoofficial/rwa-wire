@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-22T12:12:07.954Z",
-    "reason": "Six-hour retry hold: renewed original-source search on 2026-11-22 did not locate a dated BlackRock statement or independent full-text reporting supporting the attributed 0.01% share and $30-40bn versus $300tn comparison. The CryptoCompass November 19 article republishes BSC News, not a separate corroborating report. BlackRock's August 4 primary release on European tokenized money-market share classes (https://www.blackrock.com/cash/en-ie/press-release-t4) discusses a different event and does not validate this claim. Three independently anchored facts for the November assertion remain unavailable; retry no earlier than six hours after reviewedAt. Do not publish."
+    "reviewedAt": "2026-11-22T18:19:39.370Z",
+    "reason": "Six-hour retry hold: source searches on 2026-11-22 found no dated BlackRock primary statement or two independent full-text reports substantiating the attributed 0.01% share of global markets. BlackRock's August 4 release (https://www.blackrock.com/cash/en-ie/press-release-t4) concerns European tokenized money-market share classes and does not support this figure; the AFME 2025 tokenization report uses other market measures and does not attribute 0.01% to BlackRock. Three independently anchored facts for a new November announcement cannot be established. Original Google News discovery URL remains unresolved. Do not publish; retry no earlier than six hours after reviewedAt."
   }
 }
