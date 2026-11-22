@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-22T09:16:24Z",
-    "reason": "Six-hour retry hold: fresh search on 2026-11-22 found the full original TRON/Securitize integration announcement from April 2026 (https://ct.com/press-releases/securitize-integrates-with-tron-to-bring-tokenized-real-world-assets-to-one-of-the-world-s-largest-blockchains) and the June 2, 2026 HLSCOPE launch release (https://ct.com/press-releases/securitize-launches-private-credit-fund-on-tron-blockchain). Later reports are repetitions of these earlier events, not evidence of a new November 20 integration milestone. No three distinct supported fresh event facts. Retry after 2026-11-22T15:16:24Z; do not publish."
+    "reviewedAt": "2026-11-22T15:18:16.673Z",
+    "reason": "Six-hour retry hold. Rechecked full original releases and targeted November coverage on 2026-11-22. Original Securitize/TRON integration was announced April 2026, and HLSCOPE fund launch on TRON was announced 2026-06-02. No new 2026-11-20 milestone supported by original full-text evidence; recent Securitize/Stellar announcement dated 2026-10-28 concerns a different network. https://ct.com/press-releases/securitize-launches-private-credit-fund-on-tron-blockchain ; https://investors.securitize.io/news/news-details/2026/Securitize-to-Integrate-with-Stellar-Network/default.aspx Retry no earlier than 2026-11-22T21:18:16.673Z; do not publish."
   }
 }
