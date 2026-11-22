@@ -6978,5 +6978,71 @@
       ]
     },
     "sourceSha256": "5b69c9f3f45962ca0af42103a4f76ae776de8ff5f2aef0269a3393728eb6a76d"
+  },
+  "maybank-and-etiqa-complete-tokenized-bond-settlement-pilot-using-bank-deposits": {
+    "path": "/news/maybank-and-etiqa-complete-tokenized-bond-settlement-pilot-using-bank-deposits/",
+    "date": "2026-11-20",
+    "kind": "news",
+    "sources": [
+      [
+        "SettleMint (GlobeNewswire, November 20, 2026)",
+        "https://www.globenewswire.com/news-release/2026/11/20/3407288/0/en/settlemint-supports-maybank-in-completing-its-tokenized-bond-pilot.html"
+      ]
+    ],
+    "de": {
+      "title": "Maybank und Etiqa schließen Pilotprojekt zur Abwicklung tokenisierter Anleihen mit Bankeinlagen ab",
+      "description": "Maybank testete mit ihrer Versicherungstochter Etiqa die Abwicklung tokenisierter Anleihen gegen tokenisierte Einlagen nach dem Prinzip Lieferung gegen Zahlung. Dafür kam die Technologie von SettleMint auf einer zugangsbeschränkten Blockchain zum Einsatz.",
+      "sections": [
+        [
+          "Pilottransaktion mit tokenisierten Anleihen und Einlagen",
+          "Maybank hat mit Etiqa Life Insurance Berhad, ihrer Versicherungstochter, ein Pilotprojekt zur Abwicklung tokenisierter Anleihen abgeschlossen. Dies geht aus einer Mitteilung des Technologieanbieters SettleMint vom 20. November hervor. Bei der Transaktion wurden in tokenisierter Form dargestellte Anleihen gegen tokenisierte Bankeinlagen im zugangsbeschränkten Blockchain-Netzwerk von Maybank getauscht."
+        ],
+        [
+          "Lieferung gegen Zahlung in kontrollierter Umgebung",
+          "Laut SettleMint wurde das Pilotprojekt von der Digital Asset Lifecycle Platform des Unternehmens unterstützt. Rivai Tan von Maybank beschrieb die Anordnung als einen Arbeitsablauf nach dem Prinzip Lieferung gegen Zahlung, der tokenisierte Wertpapiere, Einlagen und Verwahrprozesse über Blockchain- und herkömmliche Infrastruktur hinweg verbindet. Es handelt sich um einen kontrollierten Test und nicht um die Ankündigung eines allgemein verfügbaren Dienstes für den Handel oder die Abwicklung von Anleihen."
+        ],
+        [
+          "Nächste Phase noch ohne Starttermin",
+          "Der Mitteilung zufolge erprobt die Bank in einem umfassenderen Programm außerdem tokenisierte Einlagen und grenzüberschreitende Zahlungen nahezu in Echtzeit. Die Transaktion mit einem verbundenen Versicherungsunternehmen veranschaulicht die geplanten Abwicklungsmechanismen konkret, lässt jedoch Fragen zur Teilnahme Dritter, zur Interoperabilität und zur kommerziellen Skalierung offen. SettleMint erklärte, Maybank prüfe die nächste Phase, ohne einen Zeitplan für einen Marktstart anzukündigen."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Maybank y Etiqa completan un piloto de liquidación de bonos tokenizados con depósitos bancarios",
+      "description": "Maybank probó con su filial aseguradora Etiqa la liquidación de bonos tokenizados contra depósitos tokenizados mediante entrega contra pago, utilizando tecnología de SettleMint en una blockchain autorizada.",
+      "sections": [
+        [
+          "Transacción piloto con bonos y depósitos tokenizados",
+          "Maybank ha completado un piloto de liquidación de bonos tokenizados con Etiqa Life Insurance Berhad, su filial aseguradora, según un anuncio del 20 de noviembre del proveedor tecnológico SettleMint. La transacción intercambió bonos representados de forma tokenizada contra depósitos bancarios tokenizados en la red blockchain autorizada de Maybank."
+        ],
+        [
+          "Entrega contra pago en un entorno controlado",
+          "SettleMint indicó que su Digital Asset Lifecycle Platform respaldó el piloto. Rivai Tan, de Maybank, describió el sistema como un flujo de trabajo de entrega contra pago que combina valores tokenizados, depósitos y procesos de custodia a través de infraestructura blockchain y convencional. Se trata de una prueba controlada, no del anuncio de un servicio de negociación o liquidación de bonos disponible de forma generalizada."
+        ],
+        [
+          "La siguiente fase aún no tiene calendario de lanzamiento",
+          "Según el comunicado, el banco también ha estado probando depósitos tokenizados y pagos transfronterizos casi en tiempo real dentro de un programa más amplio. La transacción con una aseguradora vinculada ofrece una demostración concreta de los mecanismos de liquidación propuestos, pero deja sin resolver cuestiones sobre la participación de terceros, la interoperabilidad y la escala comercial. SettleMint afirmó que Maybank está evaluando la siguiente fase, sin anunciar un calendario de lanzamiento."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Maybank et Etiqa achèvent un pilote de règlement d’obligations tokenisées au moyen de dépôts bancaires",
+      "description": "Maybank a testé avec sa filiale d’assurance Etiqa le règlement, selon le principe de livraison contre paiement, d’obligations tokenisées contre des dépôts tokenisés, à l’aide de la technologie de SettleMint sur une blockchain permissionnée.",
+      "sections": [
+        [
+          "Transaction pilote portant sur des obligations et des dépôts tokenisés",
+          "Maybank a achevé un pilote de règlement d’obligations tokenisées avec Etiqa Life Insurance Berhad, sa filiale d’assurance, selon une annonce publiée le 20 novembre par le fournisseur technologique SettleMint. La transaction a consisté à échanger des obligations représentées sous forme tokenisée contre des dépôts bancaires tokenisés sur le réseau blockchain permissionné de Maybank."
+        ],
+        [
+          "Livraison contre paiement dans un environnement contrôlé",
+          "SettleMint a indiqué que sa Digital Asset Lifecycle Platform avait soutenu le pilote. Rivai Tan, de Maybank, a décrit le dispositif comme un processus de livraison contre paiement combinant des titres tokenisés, des dépôts et des processus de conservation au moyen d’infrastructures blockchain et conventionnelles. Il s’agit d’un test contrôlé, et non de l’annonce d’un service de négociation ou de règlement d’obligations largement accessible."
+        ],
+        [
+          "La prochaine phase reste sans calendrier de lancement",
+          "Selon le communiqué, la banque teste également des dépôts tokenisés et des paiements transfrontaliers quasi instantanés dans le cadre d’un programme plus large. La transaction avec une compagnie d’assurance liée fournit une démonstration concrète des mécanismes de règlement proposés, tout en laissant en suspens les questions relatives à la participation de tiers, à l’interopérabilité et au déploiement à l’échelle commerciale. SettleMint a indiqué que Maybank évaluait la prochaine phase, sans annoncer de calendrier de lancement."
+        ]
+      ]
+    },
+    "sourceSha256": "ca89fd15a717460f3b2e5f64250a460e98ec7a2915cbf334fc6626148f5a2907"
   }
 }
