@@ -28,7 +28,7 @@
     "discoveredAt": "2026-11-22T06:37:17.759910+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "high-trust-headline"
   },
   "sourceReview": {
@@ -71,6 +71,7 @@
         "sourceUrl": "https://www.globenewswire.com/news-release/2026/11/20/3407288/0/en/settlemint-supports-maybank-in-completing-its-tokenized-bond-pilot.html",
         "anchor": "near real-time cross-border payments"
       }
-    ]
+    ],
+    "contentSha256": "1828007f8acf5944e07c3619f256b5d1076e35f7d0a50dae6e45d3f3b2ace287"
   }
 }
