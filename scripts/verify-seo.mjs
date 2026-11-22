@@ -35,7 +35,7 @@ console.log(`Verified ${sitemapPaths.length} sitemap URLs resolve to self-canoni
 const brokenLinks = [];
 for (const route of sitemapPaths) {
   const html = fs.readFileSync(`dist${route}index.html`, "utf8");
-  for (const match of html.matchAll(/<a\\b[^>]*\\bhref="(\\/[^"#?]*)[^"]*"/g)) {
+  for (const match of html.matchAll(/<a\b[^>]*\bhref="(\/[^"#?]*)[^"]*"/g)) {
     const target = match[1];
     if (target.startsWith("//") || target.startsWith("/api/")) continue;
     const normalized = target.endsWith("/") ? target : `${target}/`;
