@@ -16,14 +16,14 @@
     "CBMioAFBVV95cUxQcU54SUVyeng5QXhCMi1RS00tSzQ5QjkyVElxR2hZcURCVFJZS01jaFVCZXVIMVdWZVBfMUV0VEVRdTFZeDlSM0NQREVWZ1dicWFYckY4WlJ5emtPRVI1Y3F6cWl2cTJFaHM1VDlLTHh0amdjNENDVVpJNmVCQUFwckpqcFZGQkkyNkZEU2NVOUg5RUoydnRsMkhtZHJLZVZF",
     "CBMiyAFBVV95cUxQNWZIQnFSS3cweDFjY1BSaGxCNWQ2anhIMnQ1cjd2d3ZOQ25TNWhCNTlFUDBnTHpZUEtWdDlfYW1FcGlNMHpGbGRSTUtsZDVxai1QUnRNWHN2UHU1Sm9ncHFoa0daWkQtbVpIUFVCN0FWZUFHRVZZMGZ5cktvOFBFeHloLVJ5UF9qb1dJcnEza01DSnVpM3JnT2IwZkZ6RVRfMjE1Tmc1Ym5lbW52ZmluMl9YUUNVSU9JalVMRVh2d3BQU2dqQjJObw"
   ],
-  "lastRun": "2026-11-22T16:28:08.742606+00:00",
+  "lastRun": "2026-11-22T22:36:33.721007+00:00",
   "lastDiagnostics": {
-    "rawItems": 64,
-    "uniqueItems": 49,
+    "rawItems": 73,
+    "uniqueItems": 56,
     "qualified": 0,
-    "blocked": 1,
-    "untrusted": 23,
-    "lowSignal": 25
+    "blocked": 3,
+    "untrusted": 26,
+    "lowSignal": 27
   },
   "lastResult": "no-qualified-story",
   "lastCandidate": "publish/inbox/2026-11-20-us-spot-bitcoin-etfs-see-582-million-in-daily-net-outflows-as-november-total-nea.json"
