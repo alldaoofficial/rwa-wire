@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-22T09:16:24Z",
-    "reason": "Six-hour retry hold: fresh search on 2026-11-22 found Ava Labs' full primary release dated 2026-11-09 (https://www.prnewswire.com/news-releases/avalanche-to-serve-as-core-ledger-technology-for-clearing-and-settlement-of-nyse-affiliated-upcoming-tokenized-securities-platform-302932803.html), plus independent reporting dated 2026-11-09 (https://www.theblock.co/news/business/2026-11-09-nyse-settle-tokenized-stocks-avalanche-planned-24-7-market-436208). These establish an earlier planned NYSE-affiliated ATS using Avalanche, not a new November 20 event or the headline's Bitwise privacy/security attribution. No qualifying fresh announcement or three newly dated event facts. Retry after 2026-11-22T15:16:24Z; do not publish."
+    "reviewedAt": "2026-11-22T15:18:13.852Z",
+    "reason": "Six-hour retry hold. Rechecked full original releases and targeted November coverage on 2026-11-22. The full Ava Labs announcement dated 2026-11-09 and Avalanche's project page confirm a planned NYSE-affiliated venue, not a new 2026-11-20 event. No primary support for the headline's Bitwise attribution or three facts tied to a new announcement. https://www.prnewswire.com/news-releases/avalanche-to-serve-as-core-ledger-technology-for-clearing-and-settlement-of-nyse-affiliated-upcoming-tokenized-securities-platform-302932803.html ; https://www.avalanche.com/nyse Retry no earlier than 2026-11-22T21:18:13.852Z; do not publish."
   }
 }
