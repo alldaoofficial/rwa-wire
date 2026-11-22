@@ -2,7 +2,7 @@
 type: "EXPLAINER"
 category: "rwa"
 title: "Tokenized Bonds Explained"
-description: "From sovereign debt to corporate issuance, bonds are one of the earliest and most established categories of tokenized real-world assets."
+description: "How tokenized bonds work: digital bond issuance, coupon payments, settlement, investor rights, secondary liquidity and key risks."
 pubDate: "2026-08-20"
 readingTime: "5 min read"
 tags: ["RWA", "Fixed Income"]
@@ -26,3 +26,37 @@ Issuers and underwriters running these pilots have pointed to faster settlement 
 ## Current limitations
 
 Secondary trading of tokenized bonds remains thinner than trading in established bond markets, meaning investors may find it harder to sell before maturity at a competitive price. Legal and regulatory frameworks for digital bond issuance also continue to vary by jurisdiction, which shapes which investors can participate and on which platforms.
+
+## How does a tokenized bond work?
+
+A bond is a debt obligation: investors lend money to an issuer under agreed terms for interest payments and repayment of principal. In a tokenized bond, a blockchain or other programmable ledger records the bond interest or its digital representation. The issuer still needs enforceable documentation defining who owes what, when payments are due, who maintains the official holder register and how disputes are resolved.
+
+A simplified lifecycle looks like this:
+
+1. **Issue terms:** The issuer defines principal, currency, coupon, maturity, governing law and investor eligibility.
+2. **Subscription:** Eligible investors subscribe through approved intermediaries or a platform.
+3. **Issuance and registration:** Digital bond units are allocated and recorded according to the legal issuance structure.
+4. **Servicing:** The issuer or paying agent processes coupon payments, notices and other bondholder events.
+5. **Transfer or redemption:** Eligible holders may transfer interests under applicable rules; at maturity, the issuer repays principal according to the bond terms.
+
+A smart contract may automate certain steps, but it does not guarantee that the issuer has the funds to pay.
+
+## Digital-native bonds versus tokenized existing bonds
+
+A digital-native bond may be issued with its authoritative ownership record on a distributed ledger from the start. A tokenized representation of an existing bond may instead rely on a custodian or intermediary holding the traditional security while issuing a linked digital claim. These structures can have different legal rights, operational dependencies and counterparty risks.
+
+## How are coupons and principal paid?
+
+Coupon payments can be scheduled or coordinated through programmable infrastructure, but the actual payment asset matters. Cash may settle through conventional banking rails, a tokenized bank deposit or another permitted settlement arrangement. A token transfer and a final cash payment are not necessarily the same event. Investors should verify payment dates, day-count conventions, currency, paying agent and what happens if the issuer misses a payment.
+
+## Can tokenized bonds trade before maturity?
+
+Potentially, but trading depends on eligible counterparties, permitted venues, transfer restrictions and market demand. Fast onchain settlement cannot create buyers where none exist. Some instruments may be held mainly by a small group of institutional investors, limiting price discovery and secondary liquidity.
+
+## Risks and due diligence
+
+Tokenized bonds still carry issuer credit risk, interest-rate risk, currency risk where relevant, and the possibility of losses if sold before maturity. Additional considerations include legal enforceability of the token holder's claim, custody and key management, cybersecurity, platform outages, settlement finality, and interoperability with existing market infrastructure.
+
+Before investing, review the prospectus or offering memorandum, issuer credit quality, seniority and collateral, coupon terms, maturity, custody model, legal holder register, trading restrictions, redemption mechanics and governing law.
+
+For context, read [How Does Asset Tokenization Work?](/learn/how-does-asset-tokenization-work/) and [Tokenized Funds Explained](/rwa/tokenized-funds-explained/).
