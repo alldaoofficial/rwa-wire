@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-22T00:11:55.292Z",
+    "reason": "Six-hour retry hold: the Cryptonews.net Google News discovery does not provide a verified full-text original or dated BlackRock primary statement supporting the precise 0.01% of global markets claim. Searches for the exact statistic found older BlackRock tokenization announcements and unrelated market-size estimates, not a substantiated November 20 event. No three distinct source-anchored facts or original announcement date can be established; do not publish or infer this percentage from other metrics."
   }
 }
