@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-22T00:11:55.292Z",
-    "reason": "Six-hour retry hold: the Cryptonews.net Google News discovery does not provide a verified full-text original or dated BlackRock primary statement supporting the precise 0.01% of global markets claim. Searches for the exact statistic found older BlackRock tokenization announcements and unrelated market-size estimates, not a substantiated November 20 event. No three distinct source-anchored facts or original announcement date can be established; do not publish or infer this percentage from other metrics."
+    "reviewedAt": "2026-11-22T06:11:51.464Z",
+    "reason": "Six-hour retry hold: full-text CryptoCompass article dated 2026-11-19 (https://cryptocompass.com/articles/blackrock-says-tokenized-assets-are-0-01-of-global-markets-pointing-to-early-stage-adoption) attributes $30-40bn on-chain assets versus $300tn traditional markets to BlackRock's Will Su, but explicitly republishes BSC News; the Binance Square copy is the same syndicated report, not independent corroboration. Neither a dated original BlackRock statement nor two independent full-text reports verifying the quotation and 0.01% calculation were established. Other historical BUIDL figures do not verify this November claim. No three independently anchored event facts; retry after six hours, do not publish."
   }
 }
