@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-22T10:15:37.055Z",
-    "reason": "Full Stocktwits report dated 2026-11-22 located (also syndicated verbatim by Yahoo Finance), but Bloomberg Trillions original interview/transcript for these named executives was not independently retrieved and no second independent full-text report was found. Yahoo and Stocktwits are one reporting source. Six-hour retry required; do not verify or publish."
+    "reviewedAt": "2026-11-22T17:10:42Z",
+    "reason": "Six-hour retry hold: full Stocktwits report published 2026-11-22 03:49 EST was read again. Yahoo Finance and Fund Focus reproduce the same Stocktwits article; Wisevoter, We Are Main Street, RWA Signal and other summaries appear derivative and do not establish independent original reporting. The Bloomberg Trillions podcast recording/transcript featuring Elise Terry, Anna Paglia and Janel Jackson was not independently retrieved. Thus a primary recording or two demonstrably independent full-text reports and independently anchored quotes remain unavailable. Retry no earlier than six hours after reviewedAt; do not verify or publish."
   }
 }
