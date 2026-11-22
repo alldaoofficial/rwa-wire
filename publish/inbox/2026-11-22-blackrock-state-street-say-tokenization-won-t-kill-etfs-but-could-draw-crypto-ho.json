@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-22T17:10:42Z",
-    "reason": "Six-hour retry hold: full Stocktwits report published 2026-11-22 03:49 EST was read again. Yahoo Finance and Fund Focus reproduce the same Stocktwits article; Wisevoter, We Are Main Street, RWA Signal and other summaries appear derivative and do not establish independent original reporting. The Bloomberg Trillions podcast recording/transcript featuring Elise Terry, Anna Paglia and Janel Jackson was not independently retrieved. Thus a primary recording or two demonstrably independent full-text reports and independently anchored quotes remain unavailable. Retry no earlier than six hours after reviewedAt; do not verify or publish."
+    "reviewedAt": "2026-11-22T23:11:14.507Z",
+    "reason": "Six-hour retry hold: on 2026-11-23, checked full Stocktwits original report dated 2026-11-22 and syndicated Yahoo Finance, TradingView and Fund Focus copies. Located the Bloomberg Trillions episode 'Vanguard, BlackRock and State Street Walk Onto a Stage…' dated 2026-11-20 in a podcast directory, but no full primary recording or transcript could be read and anchored; other summaries do not establish two demonstrably independent full-text reports of the executives' specific tokenization statements. Original quotes remain unverified from primary material. Retry no earlier than six hours after reviewedAt; do not verify or publish."
   }
 }
