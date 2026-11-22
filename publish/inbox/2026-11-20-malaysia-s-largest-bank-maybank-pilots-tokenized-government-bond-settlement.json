@@ -1,7 +1,7 @@
 {
-  "title": "Malaysia’s largest bank, Maybank, pilots tokenized government bond settlement",
-  "description": "Malaysia’s largest bank, Maybank, pilots tokenized government bond settlement",
-  "why_it_matters": "",
+  "title": "Maybank and Etiqa complete tokenized bond settlement pilot using bank deposits",
+  "description": "Maybank tested delivery-versus-payment settlement of tokenized bonds against tokenized deposits with its insurance arm Etiqa, using SettleMint technology on a permissioned blockchain.",
+  "why_it_matters": "The transaction demonstrates how a bank can coordinate digital securities and deposit-based payment within its own controlled infrastructure. Because the counterparty was Maybank's insurance arm, it does not yet establish cross-bank interoperability or a commercially available market.",
   "pubDate": "2026-11-20",
   "category": "news",
   "tags": [
@@ -10,14 +10,15 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "Malaysia’s largest bank, Maybank, pilots tokenized government bond settlement",
-    ""
+    "Maybank and its insurance arm Etiqa completed a pilot transaction involving tokenized bonds and tokenized deposits.",
+    "SettleMint's Digital Asset Lifecycle Platform supported settlement on Maybank's permissioned blockchain.",
+    "The pilot tested delivery-versus-payment mechanics but did not establish a commercial or cross-bank settlement network."
   ],
-  "body": "Malaysia’s largest bank, Maybank, pilots tokenized government bond settlement",
+  "body": "Maybank has completed a tokenized bond settlement pilot with Etiqa Life Insurance Berhad, its insurance arm, according to a November 20 announcement from technology provider SettleMint. The transaction exchanged bonds represented in tokenized form against tokenized bank deposits on Maybank's permissioned blockchain network.\n\nSettleMint said its Digital Asset Lifecycle Platform supported the pilot. Maybank's Rivai Tan described the arrangement as a delivery-versus-payment workflow combining tokenized securities, deposits and custody processes across blockchain and conventional infrastructure. This is a controlled test, not an announcement of a broadly available bond trading or settlement service.\n\nThe bank has also been testing tokenized deposits and near real-time cross-border payments in a wider program, the release said. The transaction with a related insurance company provides a concrete demonstration of the proposed settlement mechanics, while leaving questions about third-party participation, interoperability and commercial scale unresolved. SettleMint said Maybank is assessing its next phase rather than announcing a launch timetable.",
   "sources": [
     {
-      "name": "Ledger Insights",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPalhBMjFNNnkwdlp3SXc1dDFIUDJ2TWpPZU8tY0JIMWViUVZjRklkckZ6LVR3LTdWQXg4RnI0WGdPa3AwaEtIR1I0VEpmMmVRUkJER0twSzlhMmY3aW5NUTNsNlFGZ1pKcmhRVEdURERSLXE4MUptcC14QlFPMzViZ1hobmpGZFA1OUtsTVdYYmlZYTRJenVzSGNMNzZKRzdGQ0Fncmh1WHdrZw?oc=5"
+      "name": "SettleMint (GlobeNewswire, November 20, 2026)",
+      "url": "https://www.globenewswire.com/news-release/2026/11/20/3407288/0/en/settlemint-supports-maybank-in-completing-its-tokenized-bond-pilot.html"
     }
   ],
   "newsWatch": {
@@ -29,5 +30,47 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-22T07:19:42Z",
+    "sources": [
+      {
+        "url": "https://www.globenewswire.com/news-release/2026/11/20/3407288/0/en/settlemint-supports-maybank-in-completing-its-tokenized-bond-pilot.html",
+        "publishedAt": "2026-11-20",
+        "checkedAt": "2026-11-22T07:19:42Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Maybank completed a tokenized bond pilot transaction with its own insurance arm Etiqa Life Insurance Berhad.",
+        "sourceUrl": "https://www.globenewswire.com/news-release/2026/11/20/3407288/0/en/settlemint-supports-maybank-in-completing-its-tokenized-bond-pilot.html",
+        "anchor": "Etiqa Life Insurance Berhad"
+      },
+      {
+        "claim": "The pilot used SettleMint's Digital Asset Lifecycle Platform to enable the transaction.",
+        "sourceUrl": "https://www.globenewswire.com/news-release/2026/11/20/3407288/0/en/settlemint-supports-maybank-in-completing-its-tokenized-bond-pilot.html",
+        "anchor": "Digital Asset Lifecycle Platform"
+      },
+      {
+        "claim": "The tokenized bonds were exchanged against tokenized deposits on the bank's permissioned blockchain.",
+        "sourceUrl": "https://www.globenewswire.com/news-release/2026/11/20/3407288/0/en/settlemint-supports-maybank-in-completing-its-tokenized-bond-pilot.html",
+        "anchor": "bank's permissioned blockchain"
+      },
+      {
+        "claim": "Maybank described the transaction as a delivery-versus-payment workflow combining tokenized securities, deposits and custody.",
+        "sourceUrl": "https://www.globenewswire.com/news-release/2026/11/20/3407288/0/en/settlemint-supports-maybank-in-completing-its-tokenized-bond-pilot.html",
+        "anchor": "delivery-versus-payment workflow"
+      },
+      {
+        "claim": "The bank's wider tokenization pilot program also covers near real-time cross-border payments.",
+        "sourceUrl": "https://www.globenewswire.com/news-release/2026/11/20/3407288/0/en/settlemint-supports-maybank-in-completing-its-tokenized-bond-pilot.html",
+        "anchor": "near real-time cross-border payments"
+      }
+    ]
   }
 }
