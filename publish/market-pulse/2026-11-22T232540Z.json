@@ -1,0 +1,126 @@
+{
+  "version": "2.1",
+  "generatedAt": "2026-11-22T23:25:40Z",
+  "status": "dry_run",
+  "source": "CoinGecko",
+  "sourceFetchedAt": "2026-11-22T23:25:40.242964Z",
+  "assetCount": 10,
+  "basket": {
+    "average24h": -0.6334825224540455,
+    "median24h": 0.5599311886753902,
+    "up": 6,
+    "down": 4,
+    "flat": 0,
+    "spreadPctPoints": 13.917886457079423
+  },
+  "leader": {
+    "id": "zebec-protocol",
+    "symbol": "ZBCN",
+    "name": "Zebec",
+    "price": 0.00181276,
+    "change24h": 4.553108915915172,
+    "volume24h": 10632024.625196708
+  },
+  "weakest": {
+    "id": "clearpool",
+    "symbol": "CPOOL",
+    "name": "Clearpool",
+    "price": 0.02242562,
+    "change24h": -9.36477754116425,
+    "volume24h": 597156.4333745993
+  },
+  "highestVolume": {
+    "id": "chainlink",
+    "symbol": "LINK",
+    "name": "Chainlink",
+    "price": 8.79,
+    "change24h": 2.3556384204861915,
+    "volume24h": 155433761.32094797
+  },
+  "marketRead": "Breadth is split with 6/10 tracked assets positive. Dispersion is elevated: 13.9 percentage points separate the strongest and weakest tracked assets. LINK has the highest reported 24h volume in the tracked basket at $155.4M.",
+  "xMarketRead": "Mixed tape: 6 green, 4 red across 10 tracked assets. Performance spread: 13.9 pts.",
+  "assets": [
+    {
+      "id": "zebec-protocol",
+      "symbol": "ZBCN",
+      "name": "Zebec",
+      "price": 0.00181276,
+      "change24h": 4.553108915915172,
+      "volume24h": 10632024.625196708
+    },
+    {
+      "id": "chainlink",
+      "symbol": "LINK",
+      "name": "Chainlink",
+      "price": 8.79,
+      "change24h": 2.3556384204861915,
+      "volume24h": 155433761.32094797
+    },
+    {
+      "id": "goldfinch",
+      "symbol": "GFI",
+      "name": "Goldfinch",
+      "price": 0.02752124,
+      "change24h": 1.6232842995576753,
+      "volume24h": 138674.25087479543
+    },
+    {
+      "id": "maple-finance",
+      "symbol": "SYRUP",
+      "name": "Maple",
+      "price": 0.089485,
+      "change24h": 1.2559174043817407,
+      "volume24h": 3229382.5124946903
+    },
+    {
+      "id": "ondo-finance",
+      "symbol": "ONDO",
+      "name": "Ondo",
+      "price": 0.282949,
+      "change24h": 0.9438580437887947,
+      "volume24h": 53445651.76471714
+    },
+    {
+      "id": "plume",
+      "symbol": "PLUME",
+      "name": "Plume",
+      "price": 0.01076426,
+      "change24h": 0.17600433356198564,
+      "volume24h": 4816488.593506831
+    },
+    {
+      "id": "polymesh",
+      "symbol": "POLYX",
+      "name": "Polymesh",
+      "price": 0.02462074,
+      "change24h": -0.6125479059120876,
+      "volume24h": 462590.16595414217
+    },
+    {
+      "id": "mantra-dao",
+      "symbol": "OM",
+      "name": "MANTRA",
+      "price": 0.00180053,
+      "change24h": -0.9909996413831411,
+      "volume24h": 1506862.1729586017
+    },
+    {
+      "id": "centrifuge",
+      "symbol": "CFG",
+      "name": "Centrifuge",
+      "price": 0.050676,
+      "change24h": -6.274311553772535,
+      "volume24h": 221680.22059851082
+    },
+    {
+      "id": "clearpool",
+      "symbol": "CPOOL",
+      "name": "Clearpool",
+      "price": 0.02242562,
+      "change24h": -9.36477754116425,
+      "volume24h": 597156.4333745993
+    }
+  ],
+  "telegram": "RWA WIRE // MARKET PULSE\n\nTracked RWA tokens are mixed over 24h.\nBreadth: 6 up / 4 down\nBasket: avg -0.6% · median +0.6%\n\nTop movers\n▲ ZBCN +4.6% · $0.0018\n▲ LINK +2.4% · $8.79\n▲ GFI +1.6% · $0.0275\n\nWeakest movers\n▼ OM -1.0% · $0.0018\n▼ CFG -6.3% · $0.0507\n▼ CPOOL -9.4% · $0.0224\n\nMARKET READ\nBreadth is split with 6/10 tracked assets positive. Dispersion is elevated: 13.9 percentage points separate the strongest and weakest tracked assets. LINK has the highest reported 24h volume in the tracked basket at $155.4M.\n\nData: CoinGecko · 24h change",
+  "x": "RWA WIRE // MARKET PULSE\n\nRWA basket: -0.6% avg · 6/10 green\nZBCN +4.6% | LINK +2.4% | GFI +1.6%\n\nMixed tape: 6 green, 4 red across 10 tracked assets. Performance spread: 13.9 pts.\n\nData: CoinGecko"
+}
