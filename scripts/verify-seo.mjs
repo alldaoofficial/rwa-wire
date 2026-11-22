@@ -32,6 +32,21 @@ for (const route of sitemapPaths) {
 }
 console.log(`Verified ${sitemapPaths.length} sitemap URLs resolve to self-canonical, indexable build output.`);
 
+const brokenLinks = [];
+for (const route of sitemapPaths) {
+  const html = fs.readFileSync(`dist${route}index.html`, "utf8");
+  for (const match of html.matchAll(/<a\\b[^>]*\\bhref="(\\/[^"#?]*)[^"]*"/g)) {
+    const target = match[1];
+    if (target.startsWith("//") || target.startsWith("/api/")) continue;
+    const normalized = target.endsWith("/") ? target : `${target}/`;
+    if (!fs.existsSync(`dist${normalized}index.html`) && !fs.existsSync(`dist${target}`)) {
+      brokenLinks.push(`${route} → ${target}`);
+    }
+  }
+}
+assert.deepEqual(brokenLinks, [], "Broken internal links on sitemap pages");
+
+
 let checked = 0;
 for (const file of fs.readdirSync("src/content/articles").filter(f => f.endsWith(".mdx"))) {
   const raw = fs.readFileSync(`src/content/articles/${file}`, "utf8");
