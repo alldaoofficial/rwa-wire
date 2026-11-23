@@ -7044,5 +7044,72 @@
       ]
     },
     "sourceSha256": "ca89fd15a717460f3b2e5f64250a460e98ec7a2915cbf334fc6626148f5a2907"
+  },
+  "securitize-backs-okxice-tokenized-securities-venue-as-113-assets-enter-phased-rollout": {
+    "key": "securitize-backs-okxice-tokenized-securities-venue-as-113-assets-enter-phased-rollout",
+    "path": "/news/securitize-backs-okxice-tokenized-securities-venue-as-113-assets-enter-phased-rollout/",
+    "date": "2026-11-23",
+    "kind": "news",
+    "sources": [
+      [
+        "Securitize press release via PR Newswire",
+        "https://www.prnewswire.com/news-releases/securitize-serves-as-tokenization-provider-for-okxices-newly-launched-247-securities-trading-venue-302947862.html"
+      ]
+    ],
+    "de": {
+      "title": "Securitize unterstützt OKXICE-Handelsplatz für tokenisierte Wertpapiere beim stufenweisen Start von 113 Vermögenswerten",
+      "description": "Securitize stellt nach eigenen Angaben die Tokenisierungsinfrastruktur für den neuen US-Wertpapierhandelsplatz OKXICE bereit. Für die stufenweise Einführung sind 113 Aktien und Fonds bestätigt; der Handel ist auf berechtigte US-Kunden beschränkt.",
+      "sections": [
+        [
+          "113 Vermögenswerte für eine stufenweise Einführung",
+          "Securitize gab am 23. November bekannt, die Tokenisierungsinfrastruktur für den neu gestarteten OKXICE Tokenized Securities Venue bereitzustellen. Der Handelsplatz ist ein Gemeinschaftsunternehmen von OKX und Intercontinental Exchange, der Muttergesellschaft der New York Stock Exchange. Laut der Mitteilung des Unternehmens sind 113 Vermögenswerte für eine stufenweise Einführung bestätigt, darunter Aktien, börsengehandelte Fonds und andere börsengehandelte Produkte. Dabei handelt es sich um eine geplante Produktpalette und nicht um die Aussage, dass alle Instrumente sofort handelbar sind."
+        ],
+        [
+          "Wertpapieransprüche und Handel über X Layer",
+          "Nach Angaben von Securitize verkörpert jeder Token einen Wertpapieranspruch, der im Verhältnis eins zu eins durch eine zugrunde liegende Aktie gedeckt ist. Die jeweiligen wirtschaftlichen Rechte und Mitwirkungsrechte werden nach Maßgabe der geltenden Bedingungen weitergegeben. Der Handel nutzt automatisierte Market-Maker-Pools von Uniswap v4 auf X Layer, während Smart Contracts die Teilnahme auf berechtigte Wallets beschränken. Der Handelsplatz erklärt, weder die Vermögenswerte noch die privaten Schlüssel der Kunden zu verwahren."
+        ],
+        [
+          "US-Zugang und ausdrückliche Einschränkungen",
+          "Der Zugang ist derzeit auf berechtigte Kunden von OKX Inc. mit Sitz in den USA beschränkt, die eine Identitätsprüfung und die Aufnahme beim Handelsplatz abschließen. Das Unternehmen bezeichnet eine befristete, an Bedingungen geknüpfte SEC Innovation Exemption als regulatorische Grundlage; in der Mitteilung wird ausdrücklich klargestellt, dass die SEC den Handelsplatz weder genehmigt noch befürwortet hat. Securitize warnt außerdem, dass eine Verfügbarkeit rund um die Uhr keine durchgängige Liquidität garantiert und die Preise von den zugrunde liegenden Aktien abweichen können, wenn traditionelle Börsen geschlossen sind."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Securitize respalda la plataforma de valores tokenizados OKXICE mientras 113 activos entran en un despliegue gradual",
+      "description": "Securitize afirma que proporciona la infraestructura de tokenización para la nueva plataforma estadounidense de valores OKXICE, con 113 acciones y fondos confirmados para un despliegue gradual y la negociación limitada a clientes estadounidenses que cumplan los requisitos.",
+      "sections": [
+        [
+          "113 activos para un despliegue gradual",
+          "Securitize anunció el 23 de noviembre que proporciona la infraestructura de tokenización para la recién lanzada OKXICE Tokenized Securities Venue. La plataforma es una empresa conjunta de OKX e Intercontinental Exchange, la matriz de la Bolsa de Nueva York. Según el comunicado de la empresa, se han confirmado 113 activos para un despliegue gradual, entre ellos acciones, fondos cotizados y otros productos negociados en bolsa. Se trata de una gama de activos prevista, no de una afirmación de que todos los instrumentos puedan negociarse de inmediato."
+        ],
+        [
+          "Derechos sobre valores y negociación en X Layer",
+          "Securitize afirma que cada token representa un derecho sobre un valor respaldado uno a uno por una acción subyacente, y que los derechos económicos y de gobierno aplicables se transmiten conforme a las condiciones correspondientes. La negociación utiliza fondos de creadores de mercado automatizados de Uniswap v4 en X Layer, mientras que los contratos inteligentes restringen la participación a monederos elegibles. La plataforma sostiene que no custodia los activos ni las claves privadas de los clientes."
+        ],
+        [
+          "Acceso en Estados Unidos y limitaciones expresas",
+          "El acceso está limitado actualmente a clientes elegibles de OKX Inc. establecidos en Estados Unidos que completen la verificación de identidad y el proceso de incorporación a la plataforma. La empresa describe como base regulatoria una exención de innovación temporal y condicionada de la SEC; el comunicado señala expresamente que la SEC no ha aprobado ni respaldado la plataforma. Securitize también advierte que la disponibilidad las 24 horas del día, los 7 días de la semana, no garantiza una liquidez continua y que los precios pueden desviarse de los de las acciones subyacentes cuando las bolsas tradicionales están cerradas."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Securitize soutient la plateforme de titres tokenisés OKXICE alors que 113 actifs entament un déploiement progressif",
+      "description": "Securitize indique fournir l’infrastructure de tokenisation de la nouvelle plateforme américaine de titres OKXICE, avec 113 actions et fonds confirmés pour un déploiement progressif et des échanges réservés aux clients américains éligibles.",
+      "sections": [
+        [
+          "113 actifs prévus pour un déploiement progressif",
+          "Securitize a annoncé le 23 novembre fournir l’infrastructure de tokenisation de la nouvelle OKXICE Tokenized Securities Venue. Cette plateforme est une coentreprise d’OKX et d’Intercontinental Exchange, la société mère de la Bourse de New York. Selon le communiqué de l’entreprise, 113 actifs ont été confirmés pour un déploiement progressif, comprenant des actions, des fonds négociés en bourse et d’autres produits cotés. Il s’agit d’une gamme d’actifs prévue, et non de l’affirmation que tous ces instruments sont immédiatement négociables."
+        ],
+        [
+          "Droits sur titres et négociation sur X Layer",
+          "Securitize indique que chaque token représente un droit sur un titre adossé à raison d’un pour un à une action sous-jacente, les droits économiques et de gouvernance applicables étant transmis selon les conditions en vigueur. Les échanges utilisent des pools de teneurs de marché automatisés Uniswap v4 sur X Layer, tandis que des contrats intelligents limitent la participation aux portefeuilles éligibles. La plateforme affirme ne conserver ni les actifs ni les clés privées des clients."
+        ],
+        [
+          "Accès aux États-Unis et limites explicites",
+          "L’accès est actuellement réservé aux clients éligibles d’OKX Inc. établis aux États-Unis qui achèvent la vérification d’identité et l’intégration à la plateforme. L’entreprise présente une SEC Innovation Exemption temporaire et conditionnelle comme fondement réglementaire ; le communiqué précise expressément que la SEC n’a ni approuvé ni cautionné la plateforme. Securitize avertit également qu’une disponibilité 24 heures sur 24 et 7 jours sur 7 ne garantit pas une liquidité continue et que les prix peuvent s’écarter de ceux des actions sous-jacentes lorsque les marchés traditionnels sont fermés."
+        ]
+      ]
+    },
+    "sourceSha256": "88cf89a85b91dde1bc0282c4ed79a1a26b27652d9cc0b649f5a6e345092459c1"
   }
 }
