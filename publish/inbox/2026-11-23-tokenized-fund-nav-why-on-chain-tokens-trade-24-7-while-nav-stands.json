@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-23T08:13:17Z",
+    "reason": "Six-hour retry hold: November 23 Coin Gabbar lead 'Tokenized Fund NAV: Why On-Chain Tokens Trade 24/7 While NAV Stands' could not be resolved to a readable full original publisher article. Exact-title and publisher-domain web searches did not find that article or an identifiable dated announcement. General explanations of continuous token trading versus periodic fund NAV are not independent confirmation of a new November 23 event. No three source-anchored event facts or eligible primary/two independent full-text reports verified. Keep original discovery text and autoPublishEligible=false unchanged; retry no sooner than six hours after reviewedAt."
   }
 }
