@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-23T06:13:41.868Z",
-    "reason": "ChainCatcher article dated 2026-11-22 is a translated/compiled Token Terminal opinion; RootData and Jinse/Coinlive repeat the same material rather than independent reporting. Original dated Token Terminal full-text research and primary validation of the numerical claims were not located. Do not treat market-size comparisons or regulatory assertions as independently verified. Retry after six hours."
+    "reviewedAt": "2026-11-23T17:13:37.315Z",
+    "reason": "Rechecked full ChainCatcher report dated 2026-11-22 and RootData/Coinlive reproductions. They credit the same Token Terminal-authored thesis, so they are not two independent reports. Claims such as $4.8B tokenized-stock capitalization as of Nov 13 and regulatory exemption require primary data and documentation not independently established here. Hold the translated opinion; retry no sooner than six hours after reviewedAt."
   }
 }
