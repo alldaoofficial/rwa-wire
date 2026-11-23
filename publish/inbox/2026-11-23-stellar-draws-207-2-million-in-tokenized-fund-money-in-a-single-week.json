@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-23T20:19:37.128Z",
+    "reason": "Full BigGo Finance and Crypto Economy reports were read (23 Nov 2026), but both repeat the same Token Terminal/RWA Foundation weekly figures ($207.2m, Franklin Templeton $108m, Spiko $68.2m). The underlying primary dataset/announcement has not been independently inspected, and independence of reporting is not established. Hold for primary-source verification; retry no sooner than six hours."
   }
 }
