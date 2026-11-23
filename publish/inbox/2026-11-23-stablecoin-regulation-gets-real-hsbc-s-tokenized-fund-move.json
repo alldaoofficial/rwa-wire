@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-23T02:11:29.165Z",
+    "reason": "Discovery is a OneSafe promotional/content-marketing explainer (published 2026-11-23), with product signup calls and unrelated stablecoin-regulation claims; it is not a primary HSBC announcement or independent event report. Its HSBC claim is attributed to Crowdfund Insider, and no distinct verified 2026-11-22 HSBC original release was established. Reject this promotional lead rather than presenting it as newly verified reporting."
   }
 }
