@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-23T15:19:44Z",
+    "reason": "The purported new $10B tokenized-securities milestone conflates asset value with cumulative tokenized-stock trading volume. Solana Foundation's July 6, 2026 primary ecosystem roundup already reported $10B cumulative volume in June 2026, not $10B outstanding tokenized securities. Coinfomania's November 23 report does not provide verifiable new primary metrics or a distinct dated event; reject as stale/recycled milestone rather than publish misleading market-value claim."
   }
 }
