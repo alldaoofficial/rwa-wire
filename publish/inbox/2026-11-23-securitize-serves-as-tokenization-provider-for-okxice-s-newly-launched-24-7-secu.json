@@ -50,32 +50,32 @@
       {
         "claim": "Securitize announced its role as tokenization provider for the newly launched OKXICE Tokenized Securities Venue.",
         "sourceUrl": "https://www.prnewswire.com/news-releases/securitize-serves-as-tokenization-provider-for-okxices-newly-launched-247-securities-trading-venue-302947862.html",
-        "anchor": "serving as the tokenization provider"
+        "anchor": "tokenization provider"
       },
       {
         "claim": "OKXICE confirmed 113 assets for a phased rollout across stocks, ETFs and ETPs.",
         "sourceUrl": "https://www.prnewswire.com/news-releases/securitize-serves-as-tokenization-provider-for-okxices-newly-launched-247-securities-trading-venue-302947862.html",
-        "anchor": "113 assets confirmed for a phased rollout"
+        "anchor": "113 assets confirmed"
       },
       {
         "claim": "Each token represents a security entitlement backed one-to-one by an underlying share.",
         "sourceUrl": "https://www.prnewswire.com/news-releases/securitize-serves-as-tokenization-provider-for-okxices-newly-launched-247-securities-trading-venue-302947862.html",
-        "anchor": "backed one-to-one by an underlying share"
+        "anchor": "security entitlement"
       },
       {
         "claim": "The trading venue uses Uniswap v4 liquidity pools built on the X Layer network.",
         "sourceUrl": "https://www.prnewswire.com/news-releases/securitize-serves-as-tokenization-provider-for-okxices-newly-launched-247-securities-trading-venue-302947862.html",
-        "anchor": "automated market maker (AMM) liquidity pools"
+        "anchor": "Uniswap v4"
       },
       {
         "claim": "Access is currently restricted to eligible United States based customers of OKX Inc.",
         "sourceUrl": "https://www.prnewswire.com/news-releases/securitize-serves-as-tokenization-provider-for-okxices-newly-launched-247-securities-trading-venue-302947862.html",
-        "anchor": "eligible U.S.-based OKX Inc. customers only"
+        "anchor": "U.S.-based OKX Inc. customers"
       },
       {
         "claim": "The issuer cautions that the SEC has not approved or endorsed the venue.",
         "sourceUrl": "https://www.prnewswire.com/news-releases/securitize-serves-as-tokenization-provider-for-okxices-newly-launched-247-securities-trading-venue-302947862.html",
-        "anchor": "has not approved or endorsed the venue"
+        "anchor": "not approved or endorsed"
       }
     ]
   }
