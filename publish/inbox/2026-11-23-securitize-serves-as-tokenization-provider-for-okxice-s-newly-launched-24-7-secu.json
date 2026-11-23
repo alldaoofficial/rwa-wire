@@ -29,7 +29,7 @@
     "discoveredAt": "2026-11-23T17:37:13.794103+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
@@ -77,6 +77,7 @@
         "sourceUrl": "https://www.prnewswire.com/news-releases/securitize-serves-as-tokenization-provider-for-okxices-newly-launched-247-securities-trading-venue-302947862.html",
         "anchor": "not approved or endorsed"
       }
-    ]
+    ],
+    "contentSha256": "8fda79455c57dde55150bd983ea4469d108179995acef0ba013cd58424033a5e"
   }
 }
