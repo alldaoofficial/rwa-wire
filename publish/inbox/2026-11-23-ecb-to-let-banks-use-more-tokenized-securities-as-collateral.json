@@ -1,7 +1,7 @@
 {
-  "title": "ECB to Let Banks Use More Tokenized Securities as Collateral",
-  "description": "ECB to Let Banks Use More Tokenized Securities as Collateral",
-  "why_it_matters": "",
+  "title": "ECB Expands Tokenized Securities Eligible as Eurosystem Collateral",
+  "description": "The ECB approved collateral eligibility for securities issued on EU-licensed DLT Pilot Regime platforms, subject to T2S access and additional safeguards planned for June 2027.",
+  "why_it_matters": "The decision gives regulated tokenized securities a clearer route into central-bank refinancing operations, but preserves existing settlement and risk controls. It bridges blockchain issuance with conventional market infrastructure rather than immediately accepting assets settled exclusively on-chain.",
   "pubDate": "2026-11-23",
   "category": "news",
   "tags": [
@@ -10,14 +10,15 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "ECB to Let Banks Use More Tokenized Securities as Collateral",
-    ""
+    "The ECB approved a wider collateral route for marketable securities issued on EU DLT Pilot Regime platforms.",
+    "Eligible assets must still meet standard Eurosystem collateral criteria and TARGET2-Securities settlement requirements.",
+    "Additional requirements are expected in spring 2027, with implementation planned for June 2027."
   ],
-  "body": "ECB to Let Banks Use More Tokenized Securities as Collateral",
+  "body": "The European Central Bank announced on 23 November 2026 that its Governing Council had approved a broader route for marketable securities issued using distributed ledger technology to qualify as collateral in Eurosystem credit operations. The expansion covers assets issued on platforms licensed under the EU DLT Pilot Regime, provided they also satisfy the Eurosystem’s ordinary collateral rules and additional operational requirements.\n\nThe securities must be accessible through an eligible link to a central securities depository and settle in a system connected to TARGET2-Securities. The ECB said it expects to detail the additional requirements in spring 2027 and plans implementation in June 2027. Those safeguards will address matters including settlement finality and outsourced critical functions.\n\nThe decision builds on the ECB’s January 2026 announcement covering DLT-based issuance within central securities depositories. It does not mean that all natively on-chain securities immediately qualify. The central bank is separately examining how to accept and mobilize assets issued and settled entirely on DLT networks.",
   "sources": [
     {
-      "name": "Binance",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1rM3p2Sk9tbVI0dkhra1BVMHgwWUxBSFY4bHZqM1NtTzBja0RuWG9wSkxyUkk3WU9kbnFjMS1uQnNIbHVnWkxCQ29YbFl3TnBuVzFCVE1OMUJxMzhCQ3dXVC1TcWQ?oc=5"
+      "name": "European Central Bank — 23 November 2026 press release",
+      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261123~76b6f57b74.nl.html"
     }
   ],
   "newsWatch": {
@@ -29,5 +30,47 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-23T12:18:56.998Z",
+    "sources": [
+      {
+        "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261123~76b6f57b74.nl.html",
+        "publishedAt": "2026-11-23",
+        "checkedAt": "2026-11-23T12:18:56.998Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "The ECB Governing Council approved eligible collateral treatment for marketable assets issued on platforms licensed under the EU DLT Pilot Regime.",
+        "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261123~76b6f57b74.nl.html",
+        "anchor": "licensed under the EU DLT Pilot Regime"
+      },
+      {
+        "claim": "Eligible securities must remain accessible via a central securities depository link and settlement on TARGET2-Securities.",
+        "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261123~76b6f57b74.nl.html",
+        "anchor": "offer settlement in the TARGET2-Securities platform"
+      },
+      {
+        "claim": "The ECB expects to publish additional operational requirements in spring 2027 and implement the expanded regime in June 2027.",
+        "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261123~76b6f57b74.nl.html",
+        "anchor": "implementation planned to take effect in June 2027"
+      },
+      {
+        "claim": "The ECB identifies settlement finality and outsourcing of critical functions as matters requiring operational safeguards.",
+        "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261123~76b6f57b74.nl.html",
+        "anchor": "outsourcing of critical functions"
+      },
+      {
+        "claim": "The November decision follows an earlier ECB announcement dated 27 January 2026 about DLT-based securities issued through central securities depositories.",
+        "sourceUrl": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261123~76b6f57b74.nl.html",
+        "anchor": "announcement on 27 January 2026"
+      }
+    ]
   }
 }
