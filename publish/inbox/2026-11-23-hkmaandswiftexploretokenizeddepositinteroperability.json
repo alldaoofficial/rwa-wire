@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "high-trust-headline"
+  },
+  "sourceReview": {
+    "status": "rejected",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-23T19:13:17.524Z",
+    "reason": "Discovery is a Binance Square community hashtag/trending discussion, not a new primary announcement. HKMA's underlying Swift/Project Ensemble collaboration was officially announced on 2026-11-16, seven days before this 2026-11-23 recycled headline; no new event is substantiated. Original: https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261116-4/ . Reject community/trending repackaging rather than invent a fresh article."
   }
 }
