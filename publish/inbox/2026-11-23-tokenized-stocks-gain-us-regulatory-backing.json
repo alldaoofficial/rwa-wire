@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-23T20:19:37.128Z",
+    "reason": "Finance Monthly original full text could not be located from the Google News RSS lead. SEC Nasdaq tokenized-securities approval located is dated 18 March 2026, not a newly verified 23 November regulatory action. No dated primary evidence or two independent full-text reports establish a new event. Retry no sooner than six hours."
   }
 }
