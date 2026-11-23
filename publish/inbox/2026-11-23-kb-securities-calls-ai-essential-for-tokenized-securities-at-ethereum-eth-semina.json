@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-23T22:15:46.651Z",
+    "reason": "Full EDAILY seminar report reviewed (2026-11-23), but no primary KB Securities release or second independently accessible full-text original report was established. COINOTAG is AI-assisted secondary synthesis; Herald Business and Aju Press full pages could not be retrieved. Hold six hours before retry; do not treat headline or syndication as independent corroboration."
   }
 }
