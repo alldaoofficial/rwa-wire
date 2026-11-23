@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-23T01:16:36.354Z",
-    "reason": "Six-hour retry hold: full November 19, 2026 BSC News report (republished verbatim by CryptoCompass and Binance Square) attributes the approximate 0.01% estimate to BlackRock researcher Will Su, based on $30–40 billion on-chain RWA against over $300 trillion in stocks and bonds. However no direct dated BlackRock statement or second independent full-text report confirming that attribution was found; syndicated copies are not independent evidence. BlackRock August 4 primary release concerns separate tokenized money-market share classes. The original attribution and a distinct new event remain unverified. Do not publish; retry no sooner than six hours after reviewedAt."
+    "reviewedAt": "2026-11-23T09:12:37.285Z",
+    "reason": "Six-hour retry hold: renewed November 23 searches for the alleged BlackRock/Will Su 0.01% statement did not locate a dated BlackRock primary source or two independent full-text reports verifying that attribution. Available BlackRock 2026 remarks and fund announcements address different tokenization developments; broader market-size estimates cannot substantiate the specific attributed claim. Earlier BSC News coverage and its syndicated copies remain one reporting chain. Keep the discovery draft and autoPublishEligible=false unchanged; retry no sooner than six hours after reviewedAt."
   }
 }
