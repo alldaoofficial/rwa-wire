@@ -34,7 +34,7 @@
     "status": "held",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-23T20:19:37.128Z",
-    "reason": "Finance Monthly original full text could not be located from the Google News RSS lead. SEC Nasdaq tokenized-securities approval located is dated 18 March 2026, not a newly verified 23 November regulatory action. No dated primary evidence or two independent full-text reports establish a new event. Retry no sooner than six hours."
+    "reviewedAt": "2026-11-24T11:15:36.173Z",
+    "reason": "Original Finance Monthly headline search returned no results and the Google News RSS source could not be opened during this review. No new full-text evidence was obtained to resolve the previous hold. Retry no sooner than six hours."
   }
 }
