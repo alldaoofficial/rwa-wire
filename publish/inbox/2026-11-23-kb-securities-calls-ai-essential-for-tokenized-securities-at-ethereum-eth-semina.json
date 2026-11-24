@@ -1,7 +1,7 @@
 {
-  "title": "KB Securities Calls AI Essential for Tokenized Securities at Ethereum (ETH) Seminar",
-  "description": "KB Securities Calls AI Essential for Tokenized Securities at Ethereum (ETH) Seminar",
-  "why_it_matters": "",
+  "title": "KB Securities Prepares Multi-Chain Tokenized Securities Platform",
+  "description": "The Korean brokerage is preparing money market funds for domestic and overseas markets while examining how financial institutions can operate settlement systems around the clock.",
+  "why_it_matters": "Supporting multiple networks may reduce dependence on a single infrastructure provider, but coordination between brokerages remains an operational hurdle for continuous settlement.",
   "pubDate": "2026-11-23",
   "category": "news",
   "tags": [
@@ -10,14 +10,20 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "KB Securities Calls AI Essential for Tokenized Securities at Ethereum (ETH) Seminar",
-    ""
+    "KB Securities is designing infrastructure to accommodate multiple blockchain networks.",
+    "A money market fund is its planned initial tokenized product.",
+    "Continuous settlement across brokerages remains a challenge.",
+    "Park identified AI as important for migrating legacy processes into smart contracts."
   ],
-  "body": "KB Securities Calls AI Essential for Tokenized Securities at Ethereum (ETH) Seminar",
+  "body": "KB Securities outlined its approach to tokenized securities at an Ethereum Korea policy seminar in Seoul on November 23, according to separate reports by EDAILY and Byline Network. Park Jae-man, who leads the brokerage's AI and digital division, said the company is designing infrastructure that can accommodate different blockchain environments rather than relying on one network.\n\nEDAILY reported that the brokerage has selected a money market fund as its initial tokenized product and is preparing offerings for domestic and international markets. Park also identified continuous settlement as an industry challenge. Byline Network reported that he emphasized the difficulty of coordinating round-the-clock systems across multiple securities firms and described artificial intelligence as important for migrating existing business logic into smart contracts. The remarks describe preparations and operational goals, not a completed commercial platform launch.",
   "sources": [
     {
-      "name": "Cryptonews.net",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE81TkNqQ1VSOFBtVUZSdGdyNl9ZNUtwSVBxVXNBSkpCTWxvSkczUVlXWTdkUXNZR0pObDNmYjFRNGNkR0dWWTlrZ0g3ZGU0OGF1b3VvSXA5VjhVQQ?oc=5"
+      "name": "EDAILY",
+      "url": "https://en.edaily.co.kr/news/eda202611235381/"
+    },
+    {
+      "name": "Byline Network",
+      "url": "https://byline.network/2026/11/1123-7/"
     }
   ],
   "newsWatch": {
@@ -31,10 +37,53 @@
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
-    "status": "held",
+    "status": "verified",
     "method": "source-enrichment-v1",
     "reviewedBy": "RWA Wire Source Review",
-    "reviewedAt": "2026-11-23T22:15:46.651Z",
-    "reason": "Full EDAILY seminar report reviewed (2026-11-23), but no primary KB Securities release or second independently accessible full-text original report was established. COINOTAG is AI-assisted secondary synthesis; Herald Business and Aju Press full pages could not be retrieved. Hold six hours before retry; do not treat headline or syndication as independent corroboration."
+    "reviewedAt": "2026-11-24T08:15:38.028Z",
+    "independentReporting": true,
+    "sources": [
+      {
+        "url": "https://en.edaily.co.kr/news/eda202611235381/",
+        "publishedAt": "2026-11-23",
+        "checkedAt": "2026-11-24T08:15:38.028Z",
+        "kind": "news",
+        "access": "full-text"
+      },
+      {
+        "url": "https://byline.network/2026/11/1123-7/",
+        "publishedAt": "2026-11-23",
+        "checkedAt": "2026-11-24T08:15:38.028Z",
+        "kind": "news",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "Park spoke at an Ethereum Korea policy seminar in Seoul on November 23.",
+        "sourceUrl": "https://en.edaily.co.kr/news/eda202611235381/",
+        "anchor": "Ethereum Korea policy seminar"
+      },
+      {
+        "claim": "KB Securities selected a money market fund as its initial tokenized security product.",
+        "sourceUrl": "https://en.edaily.co.kr/news/eda202611235381/",
+        "anchor": "first tokenized security product"
+      },
+      {
+        "claim": "The brokerage is designing architecture to accommodate different blockchain infrastructures.",
+        "sourceUrl": "https://byline.network/2026/11/1123-7/",
+        "anchor": "멀티체인을 기본 철학으로 삼아"
+      },
+      {
+        "claim": "Park identified shared round-the-clock operation across securities firms as an industry challenge.",
+        "sourceUrl": "https://byline.network/2026/11/1123-7/",
+        "anchor": "24시간 시스템 공동 운영"
+      },
+      {
+        "claim": "Park described AI as essential to migrating existing securities systems to blockchain workflows.",
+        "sourceUrl": "https://en.edaily.co.kr/news/eda202611235381/",
+        "anchor": "AI is not optional but mandatory"
+      }
+    ]
   }
 }
