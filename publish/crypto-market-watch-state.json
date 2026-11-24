@@ -17,15 +17,15 @@
     "CBMimAFBVV95cUxPekpIWFJCVjVhcjFIRjZqci1nUk43djNFLXlxTVNOaElOZjlpWUxTZVlJSTY4SFZEZnN0c0ZhTVpqQnZXV2FhWVVhOHFpVTQ3a1hWTmFPY2U3Uzl4MTlreGhFU3lrWjFlTTlMNTJpakV3b0RMTzRvWXFtY184UktPMXhjdXVjaVl0Q3JSV1pMV1prYlFnRm5ldA",
     "CBMimgFBVV95cUxQNkxCamRQeFVYRTlpZTRpT2t3YVRheEZLQ1FncEtLRmo1OFNWbFRTQzlhUFNVVXM2OS01RVFkZHQtcWRfaENOcVg3NHl1ZXdYWHVmTGdhU2RVZzQ1eDc3R1VXbGhJSTI3RGZ1Sm95VnlySEozOW1JV0J5ejdlR3RYSFF3bDEyWVRUeGpoZGNNMkpCelItNXR5VXln"
   ],
-  "lastRun": "2026-11-23T15:00:05.437195+00:00",
+  "lastRun": "2026-11-24T02:23:51.622996+00:00",
   "lastDiagnostics": {
-    "rawItems": 134,
-    "uniqueItems": 103,
-    "qualified": 1,
-    "blocked": 3,
-    "untrusted": 46,
-    "lowSignal": 53
+    "rawItems": 139,
+    "uniqueItems": 105,
+    "qualified": 0,
+    "blocked": 2,
+    "untrusted": 49,
+    "lowSignal": 54
   },
-  "lastResult": "candidate",
+  "lastResult": "no-qualified-story",
   "lastCandidate": "publish/inbox/2026-11-23-spot-bitcoin-etfs-shed-1-8-billion-in-past-week-as-outflows-become-structural-an.json"
 }
