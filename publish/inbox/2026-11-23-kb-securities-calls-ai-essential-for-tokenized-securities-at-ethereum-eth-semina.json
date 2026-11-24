@@ -33,7 +33,7 @@
     "discoveredAt": "2026-11-23T21:37:16.844489+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
@@ -84,6 +84,7 @@
         "sourceUrl": "https://en.edaily.co.kr/news/eda202611235381/",
         "anchor": "AI is not optional but mandatory"
       }
-    ]
+    ],
+    "contentSha256": "181ac3fda10030d40f95806bdc6dc490bafb962b520164ca1146efd08227f850"
   }
 }
