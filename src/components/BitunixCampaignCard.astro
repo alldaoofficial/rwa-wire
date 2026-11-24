@@ -1,0 +1,19 @@
+---
+import { bitunixCampaign as campaign } from "@/config/bitunixCampaign";
+import { sitePath } from "@/utils/paths";
+const placement = Astro.props.placement ?? "bitunix-campaign-card";
+const active = campaign.approved && Date.now() >= Date.parse(campaign.start) && Date.now() <= Date.parse(campaign.end);
+---
+{active && <aside data-bitunix-campaign data-end={campaign.end} class="mt-8 border border-wire/40 bg-[linear-gradient(120deg,rgba(46,212,122,.12),transparent_75%)] p-6 sm:p-8" aria-label="Bitunix advertisement">
+  <p class="eyebrow text-wire">Advertisement // Affiliate partnership</p>
+  <h2 class="mt-3 font-serif text-2xl text-ink">Bitunix × 0xcrlt: October campaign</h2>
+  <p class="mt-3 max-w-2xl text-sm leading-6 text-ink-muted">14–27 October 2026 (UTC). Deposit rewards require a net deposit, transfer to the futures account, holding periods and qualifying trading volume. Rewards are futures bonus vouchers; conditions apply.</p>
+  <a href={sitePath(campaign.path)} data-analytics-placement={placement} class="mt-5 inline-flex rounded bg-wire px-5 py-3 text-sm font-semibold text-bg hover:bg-wire/90">Review campaign conditions →</a>
+  <p class="mt-4 text-xs leading-5 text-ink-muted">RWA Wire may earn an affiliate commission. Crypto and derivatives trading involve substantial risk.</p>
+</aside>}
+<script>
+  // Static builds can outlive an event. Remove expired placements on page load.
+  document.querySelectorAll<HTMLElement>("[data-bitunix-campaign]").forEach((card) => {
+    if (Date.now() > Date.parse(card.dataset.end ?? "")) card.remove();
+  });
+</script>
