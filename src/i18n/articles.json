@@ -7111,5 +7111,147 @@
       ]
     },
     "sourceSha256": "88cf89a85b91dde1bc0282c4ed79a1a26b27652d9cc0b649f5a6e345092459c1"
+  },
+  "kb-securities-prepares-multi-chain-tokenized-securities-platform": {
+    "key": "kb-securities-prepares-multi-chain-tokenized-securities-platform",
+    "path": "/news/kb-securities-prepares-multi-chain-tokenized-securities-platform/",
+    "date": "2026-11-23",
+    "kind": "news",
+    "sources": [
+      [
+        "EDAILY",
+        "https://en.edaily.co.kr/news/eda202611235381/"
+      ],
+      [
+        "Byline Network",
+        "https://byline.network/2026/11/1123-7/"
+      ]
+    ],
+    "de": {
+      "title": "KB Securities bereitet Multichain-Plattform für tokenisierte Wertpapiere vor",
+      "description": "Das koreanische Brokerhaus bereitet Geldmarktfonds für den Inlands- und Auslandsmarkt vor und untersucht zugleich, wie Finanzinstitute Abwicklungssysteme rund um die Uhr betreiben können.",
+      "sections": [
+        [
+          "Multichain-Ansatz für tokenisierte Wertpapiere",
+          "KB Securities stellte am 23. November auf einem Policy-Seminar von Ethereum Korea in Seoul seinen Ansatz für tokenisierte Wertpapiere vor, wie EDAILY und Byline Network unabhängig voneinander berichteten. Park Jae-man, Leiter des Bereichs KI und Digitales beim Brokerhaus, erklärte, das Unternehmen entwickle eine Infrastruktur, die unterschiedliche Blockchain-Umgebungen unterstützt, anstatt sich auf ein einziges Netzwerk zu stützen."
+        ],
+        [
+          "Geldmarktfonds als geplantes erstes Produkt",
+          "Laut EDAILY hat KB Securities einen Geldmarktfonds als erstes geplantes tokenisiertes Produkt ausgewählt und bereitet Angebote für den koreanischen sowie für internationale Märkte vor. Dies beschreibt die Produkt- und Infrastrukturplanung des Unternehmens, nicht die Verfügbarkeit eines bereits gestarteten Fonds."
+        ],
+        [
+          "Durchgängige Abwicklung bleibt eine Herausforderung",
+          "Park bezeichnete die kontinuierliche Abwicklung als Herausforderung für die Branche. Byline Network berichtete, er habe auf die Schwierigkeiten hingewiesen, Systeme mehrerer Wertpapierhäuser rund um die Uhr gemeinsam zu betreiben, und künstliche Intelligenz als wichtig für die Überführung bestehender Geschäftslogik in Smart Contracts beschrieben. Die Äußerungen betreffen Vorbereitungen und operative Ziele, nicht den abgeschlossenen Start einer kommerziellen Plattform."
+        ]
+      ]
+    },
+    "es": {
+      "title": "KB Securities prepara una plataforma multicadena de valores tokenizados",
+      "description": "La correduría coreana prepara fondos del mercado monetario para los mercados nacional e internacional, mientras estudia cómo las entidades financieras pueden operar sistemas de liquidación las 24 horas.",
+      "sections": [
+        [
+          "Enfoque multicadena para valores tokenizados",
+          "KB Securities expuso su enfoque sobre los valores tokenizados en un seminario de políticas de Ethereum Korea celebrado en Seúl el 23 de noviembre, según informaciones independientes de EDAILY y Byline Network. Park Jae-man, responsable de la división de inteligencia artificial y digital de la correduría, afirmó que la empresa está diseñando una infraestructura capaz de admitir distintos entornos blockchain, en vez de depender de una sola red."
+        ],
+        [
+          "Un fondo monetario como primer producto previsto",
+          "EDAILY informó de que KB Securities ha elegido un fondo del mercado monetario como su primer producto tokenizado previsto y está preparando ofertas para los mercados coreano e internacional. Esto describe la planificación de productos e infraestructura de la empresa, no la disponibilidad de un fondo que ya se haya lanzado."
+        ],
+        [
+          "La liquidación continua sigue siendo un reto",
+          "Park señaló que la liquidación continua constituye un desafío para el sector. Byline Network informó de que subrayó la dificultad de coordinar sistemas que funcionen las 24 horas entre varias sociedades de valores y describió la inteligencia artificial como importante para trasladar la lógica de negocio existente a contratos inteligentes. Sus comentarios se refieren a preparativos y objetivos operativos, no al lanzamiento completado de una plataforma comercial."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "KB Securities prépare une plateforme multichaîne de titres tokenisés",
+      "description": "La société de courtage coréenne prépare des fonds monétaires pour les marchés national et international, tout en étudiant la manière dont les établissements financiers peuvent exploiter des systèmes de règlement en continu.",
+      "sections": [
+        [
+          "Une approche multichaîne pour les titres tokenisés",
+          "KB Securities a présenté son approche des titres tokenisés lors d’un séminaire sur les politiques publiques organisé par Ethereum Korea à Séoul le 23 novembre, selon des articles distincts d’EDAILY et de Byline Network. Park Jae-man, qui dirige la division intelligence artificielle et numérique de la société de courtage, a indiqué que l’entreprise concevait une infrastructure capable de prendre en charge différents environnements blockchain plutôt que de dépendre d’un seul réseau."
+        ],
+        [
+          "Un fonds monétaire comme premier produit envisagé",
+          "EDAILY a rapporté que KB Securities avait retenu un fonds monétaire comme premier produit tokenisé envisagé et préparait des offres destinées aux marchés coréen et international. Il s’agit de la planification des produits et de l’infrastructure de l’entreprise, et non de la disponibilité d’un fonds déjà lancé."
+        ],
+        [
+          "Le règlement en continu reste un défi",
+          "Park a présenté le règlement en continu comme un défi pour le secteur. Byline Network a rapporté qu’il avait souligné la difficulté de coordonner des systèmes fonctionnant 24 heures sur 24 entre plusieurs sociétés de titres et décrit l’intelligence artificielle comme importante pour transférer la logique métier existante dans des contrats intelligents. Ces propos portent sur des préparatifs et des objectifs opérationnels, et non sur le lancement achevé d’une plateforme commerciale."
+        ]
+      ]
+    },
+    "sourceSha256": "b68e6ee67fc7e363dddd512b4600312af76e3c3d34c446b43779bc6a2a76342d"
+  },
+  "kb-securities-and-suho-iocean-complete-tokenized-bond-lifecycle-pilot": {
+    "key": "kb-securities-and-suho-iocean-complete-tokenized-bond-lifecycle-pilot",
+    "path": "/news/kb-securities-and-suho-iocean-complete-tokenized-bond-lifecycle-pilot/",
+    "date": "2026-11-17",
+    "kind": "news",
+    "sources": [
+      [
+        "Yonhap News Agency — original reporting",
+        "https://www.yna.co.kr/view/AKR20261117048600008"
+      ],
+      [
+        "Newsis — independent reporting",
+        "https://www.newsis.com/view/NISX20261117_0003871507"
+      ]
+    ],
+    "de": {
+      "title": "KB Securities und Suho Iocean schließen Pilotprojekt zum vollständigen Lebenszyklus tokenisierter Anleihen ab",
+      "description": "KB Securities und Suho Iocean testeten simulierte tokenisierte Anleihen mit ERC-3643, atomarer Abwicklung nach dem Prinzip Lieferung gegen Zahlung und einem automatisierten Ledger-Abgleich von mehr als 99,9 %.",
+      "sections": [
+        [
+          "Abgeschlossener technischer Pilot statt Marktstart",
+          "Das südkoreanische Wertpapierhaus KB Securities und der Blockchain-Infrastrukturanbieter Suho Iocean haben einen Pilotversuch zum vollständigen Lebenszyklus simulierter tokenisierter Anleihen abgeschlossen – von Ausgabe und Abwicklung bis zur Rückzahlung bei Fälligkeit. Die Unternehmen berichteten am 17. November 2026 über den Versuch, wie aus getrennten Berichten von Yonhap und Newsis hervorgeht. Es handelt sich um einen technischen Pilotversuch und nicht um die Einführung eines kommerziellen Produkts."
+        ],
+        [
+          "ERC-3643, Lieferung gegen Zahlung und Ledger-Abgleich",
+          "Das Projekt fand im Rahmen eines 2026 durchgeführten Programms zur Entwicklung von Blockchain-Programmierschnittstellen statt, das vom südkoreanischen Ministerium für Wissenschaft und IKT sowie der Korea Internet & Security Agency unterstützt wurde. KB Securities stellte den Anwendungsfall des Brokerhauses bereit, während Suho Iocean die technische Infrastruktur lieferte. Mit dem auf Compliance ausgerichteten Standard ERC-3643 verknüpfte der Pilot Anleihedaten von KB Securities über eine API mit simulierten Blockchain-Wertpapieren. Die Abwicklung nach dem Prinzip Lieferung gegen Zahlung koppelte Wertpapierübertragung und Zahlung so, dass bei einem Ausfall einer Seite die Transaktion rückgängig gemacht wurde. Der automatisierte Abgleich zwischen Blockchain und internen Broker-Ledgern erreichte den Berichten zufolge eine Übereinstimmungsquote von mehr als 99,9 %."
+        ],
+        [
+          "Automatisierte Fälligkeit und nur geplante Stablecoin-Anbindung",
+          "Der Test automatisierte außerdem Zahlungen bei Fälligkeit und die Vernichtung der Token. Newsis berichtete über einen simulierten Ablauf für Kleinanlagen unter Verwendung von KB-Prämienpunkten. Die Beteiligten beschrieben eine mögliche künftige Stablecoin-Anbindung, die von der Gesetzgebung abhängt. Weder ein öffentlicher kommerzieller Start noch eine live durchgeführte Abwicklung mit Stablecoins wurden angekündigt."
+        ]
+      ]
+    },
+    "es": {
+      "title": "KB Securities y Suho Iocean completan un piloto del ciclo de vida de bonos tokenizados",
+      "description": "KB Securities y Suho Iocean probaron bonos tokenizados simulados con ERC-3643, liquidación atómica mediante entrega contra pago y una conciliación automatizada de registros superior al 99,9 %.",
+      "sections": [
+        [
+          "Un piloto técnico completado, no un lanzamiento comercial",
+          "La sociedad de valores surcoreana KB Securities y el proveedor de infraestructura blockchain Suho Iocean han completado un piloto que abarca todo el ciclo de vida de bonos tokenizados simulados, desde la emisión y la liquidación hasta el reembolso al vencimiento. Las empresas informaron del ejercicio el 17 de noviembre de 2026, según informaciones separadas de Yonhap y Newsis. Se trata de un piloto técnico, no del lanzamiento de un producto comercial."
+        ],
+        [
+          "ERC-3643, entrega contra pago y conciliación de registros",
+          "El proyecto se realizó dentro de un programa de desarrollo de interfaces de programación blockchain de 2026 respaldado por el Ministerio de Ciencia y TIC de Corea del Sur y la Korea Internet & Security Agency. KB Securities aportó el caso de uso de la correduría y Suho Iocean proporcionó la infraestructura técnica. Mediante el estándar ERC-3643, orientado al cumplimiento normativo, el piloto vinculó por API los datos de bonos de KB Securities con valores simulados en blockchain. Su diseño de entrega contra pago emparejó la transferencia de valores con el pago, de modo que el fallo de cualquiera de las partes revertía la transacción. La conciliación automatizada entre la blockchain y los registros internos de la correduría logró, según los informes, una tasa de coincidencia superior al 99,9 %."
+        ],
+        [
+          "Vencimiento automatizado y conexión con stablecoins solo prevista",
+          "La prueba también automatizó los pagos al vencimiento y la destrucción de los tokens. Newsis informó de un flujo simulado de inversión de pequeño importe que utilizaba puntos de recompensa de KB. Los participantes describieron una posible integración futura con stablecoins, condicionada a la legislación. No se anunció ningún lanzamiento comercial público ni una liquidación real con stablecoins."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "KB Securities et Suho Iocean achèvent un pilote couvrant le cycle de vie d’obligations tokenisées",
+      "description": "KB Securities et Suho Iocean ont testé des obligations tokenisées simulées avec ERC-3643, un règlement atomique selon le principe de livraison contre paiement et un rapprochement automatisé des registres supérieur à 99,9 %.",
+      "sections": [
+        [
+          "Un pilote technique achevé, et non un lancement commercial",
+          "La société de titres sud-coréenne KB Securities et le fournisseur d’infrastructure blockchain Suho Iocean ont achevé un pilote couvrant l’ensemble du cycle de vie d’obligations tokenisées simulées, de l’émission et du règlement jusqu’au remboursement à l’échéance. Les entreprises ont fait état de cet exercice le 17 novembre 2026, selon des articles distincts de Yonhap et de Newsis. Il s’agit d’un pilote technique, et non du lancement d’un produit commercial."
+        ],
+        [
+          "ERC-3643, livraison contre paiement et rapprochement des registres",
+          "Le projet a été mené dans le cadre d’un programme 2026 de développement d’interfaces de programmation blockchain soutenu par le ministère sud-coréen des Sciences et des TIC et la Korea Internet & Security Agency. KB Securities a fourni le cas d’usage de la société de courtage, tandis que Suho Iocean a apporté l’infrastructure technique. À l’aide de la norme ERC-3643 axée sur la conformité, le pilote a relié par API les données obligataires de KB Securities à des titres simulés sur blockchain. Le dispositif de livraison contre paiement associait le transfert des titres au paiement, de sorte que la défaillance de l’une des deux parties entraînait l’annulation de la transaction. Le rapprochement automatisé entre la blockchain et les registres internes de la société de courtage a, selon les articles, atteint un taux de concordance supérieur à 99,9 %."
+        ],
+        [
+          "Échéance automatisée et connexion aux stablecoins seulement envisagée",
+          "Le test a également automatisé les paiements à l’échéance et la destruction des tokens. Newsis a fait état d’un parcours simulé de placement de faible montant utilisant des points de fidélité KB. Les participants ont évoqué une possible intégration future avec des stablecoins, sous réserve de l’adoption d’une législation. Aucun lancement commercial public ni règlement réel en stablecoins n’a été annoncé."
+        ]
+      ]
+    },
+    "sourceSha256": "ff7ed77dce355441a27e90673328311b8b17a3bd86e86ac0dcd4fe33d50b648c"
   }
 }
