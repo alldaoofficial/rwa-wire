@@ -1,7 +1,7 @@
 {
-  "title": "Ondo Finance Tokenized Stocks and Portfolios Now Supported in Tangem Hardware Wallet",
-  "description": "Ondo Finance Tokenized Stocks and Portfolios Now Supported in Tangem Hardware Wallet",
-  "why_it_matters": "",
+  "title": "Ondo expands tokenized securities distribution through Tangem",
+  "description": "The November 25 integration brings more than 460 equity and ETF tokens and nine portfolio products to a hardware wallet environment.",
+  "why_it_matters": "Wallet distribution can reduce the need for separate interfaces, but custody of a digital token does not eliminate exposure to its issuer or market risks.",
   "pubDate": "2026-11-25",
   "category": "news",
   "tags": [
@@ -10,14 +10,18 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "Ondo Finance Tokenized Stocks and Portfolios Now Supported in Tangem Hardware Wallet",
-    ""
+    "Three blockchain networks are supported.",
+    "Redemption remains separate from wallet custody."
   ],
-  "body": "Ondo Finance Tokenized Stocks and Portfolios Now Supported in Tangem Hardware Wallet",
+  "body": "Ondo announced its Tangem integration on November 25, extending distribution beyond conventional trading interfaces. The issuer says the supported networks are Ethereum, BNB Chain and Solana. Its portfolio products package investment strategies into individual tokens, rather than requiring users to assemble each position separately.\n\nBSCN reports that the assets appear in Tangem's real-assets section and that redemption remains a separate process handled by Ondo. The wallet provider does not issue the securities products. Regional eligibility restrictions continue to apply, and keeping private keys offline does not remove liquidity or issuer risk. The announcement therefore represents an expansion of access infrastructure, not unrestricted access to conventional brokerage accounts.",
   "sources": [
     {
-      "name": "Cryptonews.net",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE0xOHRTRF96WGlPLUFndGk3ckIxWkpQY3pneDN0Vl90MjBhaUhFUGdrNU10UEJXQ3pGUTZGajRRZG9jY25pN0J6UTRHM3BZVkVVYTNlNnJHOA?oc=5"
+      "name": "Ondo Finance official announcement",
+      "url": "https://ondo.finance/blog/ondo-assets-live-on-tangem"
+    },
+    {
+      "name": "BSCN",
+      "url": "https://bsc.news/news/ondo-tokenized-stocks-tangem-hardware-wallet"
     }
   ],
   "newsWatch": {
@@ -29,5 +33,54 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-25T19:17:17.607Z",
+    "sources": [
+      {
+        "url": "https://ondo.finance/blog/ondo-assets-live-on-tangem",
+        "publishedAt": "2026-11-25",
+        "checkedAt": "2026-11-25T19:17:17.607Z",
+        "kind": "primary",
+        "access": "full-text"
+      },
+      {
+        "url": "https://bsc.news/news/ondo-tokenized-stocks-tangem-hardware-wallet",
+        "publishedAt": "2026-11-25",
+        "checkedAt": "2026-11-25T19:17:17.607Z",
+        "kind": "news",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "The integration supports Ethereum, BNB Chain and Solana.",
+        "sourceUrl": "https://ondo.finance/blog/ondo-assets-live-on-tangem",
+        "anchor": "Ethereum, BNB Chain, and Solana"
+      },
+      {
+        "claim": "Nine portfolio products are included in the launch.",
+        "sourceUrl": "https://ondo.finance/blog/ondo-assets-live-on-tangem",
+        "anchor": "9 Intelligent Portfolios Are Live"
+      },
+      {
+        "claim": "The equity catalog exceeds 460 stock and ETF tokens.",
+        "sourceUrl": "https://ondo.finance/blog/ondo-assets-live-on-tangem",
+        "anchor": "over 460 tokenized stocks and ETFs"
+      },
+      {
+        "claim": "Redemption is handled separately through Ondo rather than Tangem.",
+        "sourceUrl": "https://bsc.news/news/ondo-tokenized-stocks-tangem-hardware-wallet",
+        "anchor": "redemption runs through Ondo"
+      },
+      {
+        "claim": "Tangem does not issue or manage the underlying products.",
+        "sourceUrl": "https://bsc.news/news/ondo-tokenized-stocks-tangem-hardware-wallet",
+        "anchor": "does not issue or manage the assets"
+      }
+    ]
   }
 }
