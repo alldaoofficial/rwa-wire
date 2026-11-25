@@ -1,0 +1,31 @@
+{
+  "id": "2026-11-25-ondo-expands-tokenized-securities-distributi",
+  "title": "Ondo expands tokenized securities distribution through Tangem",
+  "category": "NEWS",
+  "why_it_matters": "Wallet distribution can reduce the need for separate interfaces, but custody of a digital token does not eliminate exposure to its issuer or market risks.",
+  "article_url": "https://therwawire.com/news/ondo-expands-tokenized-securities-distribution-through-tangem/",
+  "image_url": "https://therwawire.com/images/news/ondo-expands-tokenized-securities-distribution-through-tangem.svg",
+  "caption": "RWA WIRE // NEWS\n\nOndo expands tokenized securities distribution through Tangem\n\nThe November 25 integration brings more than 460 equity and ETF tokens and nine portfolio products to a hardware wallet environment.\n\nFull analysis →\nhttps://therwawire.com/news/ondo-expands-tokenized-securities-distribution-through-tangem/",
+  "distribution": {
+    "telegram": "RWA WIRE // NEWS\n\nOndo expands tokenized securities distribution through Tangem\n\nThe November 25 integration brings more than 460 equity and ETF tokens and nine portfolio products to a hardware wallet environment.\n\nFull analysis →\nhttps://therwawire.com/news/ondo-expands-tokenized-securities-distribution-through-tangem/",
+    "x": "Ondo expands tokenized securities distribution through Tangem\n\nThe November 25 integration brings more than 460 equity and ETF tokens and nine portfolio products to a hardware wallet environment.\n\nhttps://therwawire.com/news/ondo-expands-tokenized-securities-distribution-through-tangem/",
+    "breaking": "RWA WIRE // NEWS\n\nOndo expands tokenized securities distribution through Tangem\n\nhttps://therwawire.com/news/ondo-expands-tokenized-securities-distribution-through-tangem/",
+    "summary": "The November 25 integration brings more than 460 equity and ETF tokens and nine portfolio products to a hardware wallet environment."
+  },
+  "sources": [
+    {
+      "name": "Ondo Finance official announcement",
+      "url": "https://ondo.finance/blog/ondo-assets-live-on-tangem"
+    },
+    {
+      "name": "BSCN",
+      "url": "https://bsc.news/news/ondo-tokenized-stocks-tangem-hardware-wallet"
+    }
+  ],
+  "automaticApproval": {
+    "method": "verified-rwa-policy-v1",
+    "sourceBrief": "publish/inbox/2026-11-25-ondo-finance-tokenized-stocks-and-portfolios-now-supported-in-tangem-hardware-wa.json",
+    "contentSha256": "d0d50de19971c5343be08815370f0cf69b9846517258b0a087c15f5b53220529",
+    "approvedAt": "2026-11-25T19:18:03.263535+00:00"
+  }
+}
