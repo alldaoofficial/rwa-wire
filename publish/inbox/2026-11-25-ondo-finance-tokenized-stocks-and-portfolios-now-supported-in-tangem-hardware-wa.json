@@ -31,7 +31,7 @@
     "discoveredAt": "2026-11-25T19:07:15.120016+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
@@ -81,6 +81,7 @@
         "sourceUrl": "https://bsc.news/news/ondo-tokenized-stocks-tangem-hardware-wallet",
         "anchor": "does not issue or manage the assets"
       }
-    ]
+    ],
+    "contentSha256": "d0d50de19971c5343be08815370f0cf69b9846517258b0a087c15f5b53220529"
   }
 }
