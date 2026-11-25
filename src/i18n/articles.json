@@ -7253,5 +7253,64 @@
       ]
     },
     "sourceSha256": "ff7ed77dce355441a27e90673328311b8b17a3bd86e86ac0dcd4fe33d50b648c"
+  },
+  "ondo-expands-tokenized-securities-distribution-through-tangem": {
+    "key": "ondo-expands-tokenized-securities-distribution-through-tangem",
+    "path": "/news/ondo-expands-tokenized-securities-distribution-through-tangem/",
+    "date": "2026-11-25",
+    "kind": "news",
+    "sources": [
+      [
+        "Ondo Finance official announcement",
+        "https://ondo.finance/blog/ondo-assets-live-on-tangem"
+      ],
+      [
+        "BSCN",
+        "https://bsc.news/news/ondo-tokenized-stocks-tangem-hardware-wallet"
+      ]
+    ],
+    "de": {
+      "title": "Ondo weitet den Vertrieb tokenisierter Wertpapiere über Tangem aus",
+      "description": "Die Integration vom 25. November bringt mehr als 460 Aktien- und ETF-Token sowie neun Portfolioprodukte in eine Hardware-Wallet-Umgebung.",
+      "sections": [
+        [
+          "Integration erweitert den Zugang über Handelsoberflächen hinaus",
+          "Ondo kündigte seine Integration mit Tangem am 25. November an und weitet damit den Vertrieb über herkömmliche Handelsoberflächen hinaus aus. Nach Angaben des Emittenten werden Ethereum, BNB Chain und Solana unterstützt. Die Portfolioprodukte bündeln Anlagestrategien in einzelnen Token, sodass Nutzer nicht jede Position selbst zusammenstellen müssen."
+        ],
+        [
+          "Verwahrung ersetzt weder Rücknahme noch Risikoprüfung",
+          "BSCN berichtet, dass die Vermögenswerte im Tangem-Bereich für Realwerte erscheinen und die Rücknahme ein separater, von Ondo abgewickelter Prozess bleibt. Der Wallet-Anbieter gibt die Wertpapierprodukte nicht aus. Regionale Zugangsbeschränkungen gelten weiterhin, und die Offline-Verwahrung privater Schlüssel beseitigt weder Liquiditäts- noch Emittentenrisiken. Die Ankündigung steht daher für einen Ausbau der Zugangsinfrastruktur und nicht für einen uneingeschränkten Zugang zu herkömmlichen Brokerage-Konten."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Ondo amplía la distribución de valores tokenizados a través de Tangem",
+      "description": "La integración del 25 de noviembre incorpora más de 460 tokens de acciones y ETF, además de nueve productos de cartera, a un entorno de monedero físico.",
+      "sections": [
+        [
+          "La integración amplía el acceso más allá de las interfaces de negociación",
+          "Ondo anunció su integración con Tangem el 25 de noviembre, ampliando la distribución más allá de las interfaces de negociación convencionales. Según el emisor, las redes compatibles son Ethereum, BNB Chain y Solana. Sus productos de cartera agrupan estrategias de inversión en tokens individuales, en lugar de exigir que los usuarios compongan cada posición por separado."
+        ],
+        [
+          "La custodia no sustituye el reembolso ni la evaluación de riesgos",
+          "BSCN informa de que los activos aparecen en la sección de activos reales de Tangem y de que el reembolso sigue siendo un proceso separado gestionado por Ondo. El proveedor del monedero no emite los productos de valores. Las restricciones regionales de elegibilidad siguen vigentes, y mantener las claves privadas fuera de línea no elimina el riesgo de liquidez ni el riesgo del emisor. Por tanto, el anuncio supone una ampliación de la infraestructura de acceso, no un acceso sin restricciones a cuentas de corretaje convencionales."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Ondo étend la distribution de titres tokenisés par l’intermédiaire de Tangem",
+      "description": "L’intégration du 25 novembre apporte plus de 460 tokens d’actions et d’ETF ainsi que neuf produits de portefeuille dans un environnement de portefeuille matériel.",
+      "sections": [
+        [
+          "L’intégration élargit l’accès au-delà des interfaces de négociation",
+          "Ondo a annoncé son intégration avec Tangem le 25 novembre, étendant ainsi la distribution au-delà des interfaces de négociation classiques. Selon l’émetteur, les réseaux pris en charge sont Ethereum, BNB Chain et Solana. Ses produits de portefeuille regroupent des stratégies d’investissement dans des tokens individuels, au lieu d’obliger les utilisateurs à constituer chaque position séparément."
+        ],
+        [
+          "La conservation ne remplace ni le rachat ni l’évaluation des risques",
+          "BSCN indique que les actifs figurent dans la section des actifs réels de Tangem et que le rachat reste un processus distinct, géré par Ondo. Le fournisseur du portefeuille n’émet pas les produits de titres. Les restrictions régionales d’éligibilité continuent de s’appliquer, et la conservation hors ligne des clés privées ne supprime ni le risque de liquidité ni le risque lié à l’émetteur. L’annonce représente donc une extension de l’infrastructure d’accès, et non un accès sans restriction à des comptes de courtage classiques."
+        ]
+      ]
+    },
+    "sourceSha256": "500d3c7a46408243cccde9d547f0ef759d49e4e3ab2fd847eef38b627292a250"
   }
 }
