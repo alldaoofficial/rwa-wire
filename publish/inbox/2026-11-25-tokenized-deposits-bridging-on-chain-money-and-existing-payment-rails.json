@@ -29,5 +29,11 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedAt": "2026-11-25T12:18:49.605Z",
+    "reason": "Original PYMNTS full text not located; aggregator summary is insufficient and no independent corroboration of a new event established."
   }
 }
