@@ -1,0 +1,126 @@
+{
+  "version": "2.1",
+  "generatedAt": "2026-11-25T19:01:52Z",
+  "status": "dry_run",
+  "source": "CoinGecko",
+  "sourceFetchedAt": "2026-11-25T19:01:52.571696Z",
+  "assetCount": 10,
+  "basket": {
+    "average24h": 9.966882717787781,
+    "median24h": 0.7851034818705878,
+    "up": 6,
+    "down": 4,
+    "flat": 0,
+    "spreadPctPoints": 114.23625126208162
+  },
+  "leader": {
+    "id": "mantra-dao",
+    "symbol": "OM",
+    "name": "MANTRA",
+    "price": 0.00343328,
+    "change24h": 105.38561738385867,
+    "volume24h": 45830126.203589655
+  },
+  "weakest": {
+    "id": "maple-finance",
+    "symbol": "SYRUP",
+    "name": "Maple",
+    "price": 0.065931,
+    "change24h": -8.850633878222945,
+    "volume24h": 8210801.024582497
+  },
+  "highestVolume": {
+    "id": "chainlink",
+    "symbol": "LINK",
+    "name": "Chainlink",
+    "price": 8.98,
+    "change24h": 1.2206536810772342,
+    "volume24h": 258159057.07119745
+  },
+  "marketRead": "Breadth is split with 6/10 tracked assets positive. OM is the standout move at +105.4%. Dispersion is elevated: 114.2 percentage points separate the strongest and weakest tracked assets.",
+  "xMarketRead": "Mixed tape: 6 green, 4 red across 10 tracked assets. OM leads at +105.4%.",
+  "assets": [
+    {
+      "id": "mantra-dao",
+      "symbol": "OM",
+      "name": "MANTRA",
+      "price": 0.00343328,
+      "change24h": 105.38561738385867,
+      "volume24h": 45830126.203589655
+    },
+    {
+      "id": "centrifuge",
+      "symbol": "CFG",
+      "name": "Centrifuge",
+      "price": 0.0482183,
+      "change24h": 6.0324625592623065,
+      "volume24h": 299546.8337839503
+    },
+    {
+      "id": "polymesh",
+      "symbol": "POLYX",
+      "name": "Polymesh",
+      "price": 0.02509374,
+      "change24h": 3.4184165555643395,
+      "volume24h": 1061771.3625156428
+    },
+    {
+      "id": "chainlink",
+      "symbol": "LINK",
+      "name": "Chainlink",
+      "price": 8.98,
+      "change24h": 1.2206536810772342,
+      "volume24h": 258159057.07119745
+    },
+    {
+      "id": "plume",
+      "symbol": "PLUME",
+      "name": "Plume",
+      "price": 0.01060392,
+      "change24h": 0.9357467082488268,
+      "volume24h": 6839270.743176939
+    },
+    {
+      "id": "zebec-protocol",
+      "symbol": "ZBCN",
+      "name": "Zebec",
+      "price": 0.00171947,
+      "change24h": 0.6344602554923489,
+      "volume24h": 8310336.109444486
+    },
+    {
+      "id": "ondo-finance",
+      "symbol": "ONDO",
+      "name": "Ondo",
+      "price": 0.276765,
+      "change24h": -0.9703981813177134,
+      "volume24h": 75404914.70539407
+    },
+    {
+      "id": "goldfinch",
+      "symbol": "GFI",
+      "name": "Goldfinch",
+      "price": 0.02604561,
+      "change24h": -3.398629637490267,
+      "volume24h": 33518.40083049768
+    },
+    {
+      "id": "clearpool",
+      "symbol": "CPOOL",
+      "name": "Clearpool",
+      "price": 0.01997891,
+      "change24h": -4.738868268594985,
+      "volume24h": 181834.5730792921
+    },
+    {
+      "id": "maple-finance",
+      "symbol": "SYRUP",
+      "name": "Maple",
+      "price": 0.065931,
+      "change24h": -8.850633878222945,
+      "volume24h": 8210801.024582497
+    }
+  ],
+  "telegram": "RWA WIRE // MARKET PULSE\n\nTracked RWA tokens are mixed over 24h.\nBreadth: 6 up / 4 down\nBasket: avg +10.0% · median +0.8%\n\nTop movers\n▲ OM +105.4% · $0.0034\n▲ CFG +6.0% · $0.0482\n▲ POLYX +3.4% · $0.0251\n\nWeakest movers\n▼ GFI -3.4% · $0.0260\n▼ CPOOL -4.7% · $0.0200\n▼ SYRUP -8.9% · $0.0659\n\nMARKET READ\nBreadth is split with 6/10 tracked assets positive. OM is the standout move at +105.4%. Dispersion is elevated: 114.2 percentage points separate the strongest and weakest tracked assets.\n\nData: CoinGecko · 24h change",
+  "x": "RWA WIRE // MARKET PULSE\n\nRWA basket: +10.0% avg · 6/10 green\nOM +105.4% | CFG +6.0% | POLYX +3.4%\n\nMixed tape: 6 green, 4 red across 10 tracked assets. OM leads at +105.4%.\n\nData: CoinGecko"
+}
