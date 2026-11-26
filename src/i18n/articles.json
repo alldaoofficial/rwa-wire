@@ -7312,5 +7312,72 @@
       ]
     },
     "sourceSha256": "500d3c7a46408243cccde9d547f0ef759d49e4e3ab2fd847eef38b627292a250"
+  },
+  "sec-sets-december-3-meeting-to-examine-tokenized-stocks-and-rules": {
+    "key": "sec-sets-december-3-meeting-to-examine-tokenized-stocks-and-rules",
+    "path": "/news/sec-sets-december-3-meeting-to-examine-tokenized-stocks-and-rules/",
+    "date": "2026-11-25",
+    "kind": "news",
+    "sources": [
+      [
+        "SEC",
+        "https://www.sec.gov/newsroom/press-releases/2026-118-sec-investor-advisory-committee-host-dec-3-virtual-meeting"
+      ]
+    ],
+    "de": {
+      "title": "SEC setzt Treffen zu tokenisierten Aktien und Regeln für den 3. Dezember an",
+      "description": "Das Anlegerberatungsgremium tagt öffentlich online; eine Sitzung befasst sich mit Aktientoken US-amerikanischer börsennotierter Unternehmen und einer möglichen regulatorischen Ausnahme.",
+      "sections": [
+        [
+          "Öffentliches Online-Treffen am 3. Dezember",
+          "Die US-Börsenaufsicht SEC gab am 25. November bekannt, dass ihr Investor Advisory Committee am 3. Dezember um 9:30 Uhr Eastern Time online zusammentritt. Eine Sitzung wird die Tokenisierung von Aktien US-amerikanischer börsennotierter Unternehmen im Zusammenhang mit der Innovationsausnahme der Behörde untersuchen."
+        ],
+        [
+          "Weitere Themen und mögliche Empfehlungen",
+          "Die Tagesordnung umfasst außerdem getrennte Erörterungen zu Insolvenz und zur Aufsicht über die Finanzberichterstattung. Die Mitglieder sollen mögliche Empfehlungen zur Trade-Through-Regel sowie Untersuchungen dazu beraten, wie gut Privatanleger private Vermögenswerte verstehen."
+        ],
+        [
+          "Beratung ist noch keine Regeländerung",
+          "Das Komitee berät die Aufsichtsbehörde, beschließt jedoch keine verbindlichen Regeln. Marktteilnehmer sollten die geplante Diskussion daher von einer formellen Entscheidung unterscheiden, die den Handel mit tokenisierten Aktien erlauben würde."
+        ]
+      ]
+    },
+    "es": {
+      "title": "La SEC convoca para el 3 de diciembre una reunión sobre acciones tokenizadas y normativa",
+      "description": "El comité asesor de inversores celebrará una reunión pública en línea, con una sesión dedicada a los tokens de acciones de empresas estadounidenses cotizadas y a una posible exención regulatoria.",
+      "sections": [
+        [
+          "Reunión pública en línea el 3 de diciembre",
+          "La Comisión de Bolsa y Valores de Estados Unidos anunció el 25 de noviembre que su Comité Asesor de Inversores se reunirá en línea el 3 de diciembre a las 9:30 a. m., hora del Este. Una sesión examinará la tokenización de acciones de empresas públicas estadounidenses en relación con la exención de innovación de la agencia."
+        ],
+        [
+          "Otros temas y posibles recomendaciones",
+          "El orden del día también incluye debates separados sobre insolvencia y supervisión de la información financiera. Se espera que los miembros estudien posibles recomendaciones relativas a la regla de protección frente a ejecuciones a precios inferiores y una investigación sobre la comprensión de los activos privados por parte de los inversores particulares."
+        ],
+        [
+          "El asesoramiento aún no constituye un cambio normativo",
+          "El comité asesora al regulador, pero no establece normas vinculantes. Por tanto, los participantes del mercado deben distinguir el debate previsto de una decisión formal que permita la negociación de acciones tokenizadas."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "La SEC fixe au 3 décembre une réunion sur les actions tokenisées et la réglementation",
+      "description": "Le comité consultatif des investisseurs se réunira publiquement en ligne, avec une séance consacrée aux tokens d’actions de sociétés américaines cotées et à une éventuelle exemption réglementaire.",
+      "sections": [
+        [
+          "Réunion publique en ligne le 3 décembre",
+          "La Securities and Exchange Commission des États-Unis a annoncé le 25 novembre que son Investor Advisory Committee se réunirait en ligne le 3 décembre à 9 h 30, heure de l’Est. Une séance examinera la tokenisation des actions de sociétés américaines cotées dans le cadre de l’exemption d’innovation de l’agence."
+        ],
+        [
+          "Autres thèmes et recommandations possibles",
+          "L’ordre du jour comprend également des discussions distinctes sur l’insolvabilité et la supervision de l’information financière. Les membres devraient examiner d’éventuelles recommandations concernant la règle de protection contre les exécutions à un prix inférieur ainsi que des recherches sur la compréhension des actifs privés par les investisseurs particuliers."
+        ],
+        [
+          "Un avis ne constitue pas encore une modification des règles",
+          "Le comité conseille le régulateur, mais n’adopte pas de règles contraignantes. Les acteurs du marché doivent donc distinguer la discussion prévue d’une décision formelle autorisant la négociation d’actions tokenisées."
+        ]
+      ]
+    },
+    "sourceSha256": "c68c7f1b7f7899f761617c0e226c05e8432ec2b6525c553fab6e74018c5cb477"
   }
 }
