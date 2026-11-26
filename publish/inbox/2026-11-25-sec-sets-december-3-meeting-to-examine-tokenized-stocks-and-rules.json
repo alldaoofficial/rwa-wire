@@ -28,7 +28,7 @@
     "discoveredAt": "2026-11-25T20:41:39.336379+00:00",
     "requiresSourceReview": true,
     "autoPublishEligible": false,
-    "contentStatus": "needs-source-enrichment",
+    "contentStatus": "source-reviewed",
     "discoveryMode": "watchlist-research"
   },
   "sourceReview": {
@@ -66,6 +66,7 @@
         "sourceUrl": "https://www.sec.gov/newsroom/press-releases/2026-118-sec-investor-advisory-committee-host-dec-3-virtual-meeting",
         "anchor": "submit findings and recommendations"
       }
-    ]
+    ],
+    "contentSha256": "d972a28e76780a19a80b1b0d815105b9e152d43a4b94a856a90a6e4b5b32981a"
   }
 }
