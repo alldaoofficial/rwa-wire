@@ -1,0 +1,126 @@
+{
+  "version": "2.1",
+  "generatedAt": "2026-11-26T18:53:21Z",
+  "status": "dry_run",
+  "source": "CoinGecko",
+  "sourceFetchedAt": "2026-11-26T18:53:21.133648Z",
+  "assetCount": 10,
+  "basket": {
+    "average24h": 1.4352889885205289,
+    "median24h": 3.261464507196962,
+    "up": 8,
+    "down": 2,
+    "flat": 0,
+    "spreadPctPoints": 23.368792149166428
+  },
+  "leader": {
+    "id": "maple-finance",
+    "symbol": "SYRUP",
+    "name": "Maple",
+    "price": 0.070654,
+    "change24h": 7.354714184370713,
+    "volume24h": 11551986.156757636
+  },
+  "weakest": {
+    "id": "mantra-dao",
+    "symbol": "OM",
+    "name": "MANTRA",
+    "price": 0.00240675,
+    "change24h": -16.014077964795714,
+    "volume24h": 41596415.809432626
+  },
+  "highestVolume": {
+    "id": "chainlink",
+    "symbol": "LINK",
+    "name": "Chainlink",
+    "price": 9.27,
+    "change24h": 2.757117935654549,
+    "volume24h": 238454002.91097268
+  },
+  "marketRead": "Breadth is strong with 8/10 tracked assets positive. Dispersion is elevated: 23.4 percentage points separate the strongest and weakest tracked assets. LINK has the highest reported 24h volume in the tracked basket at $238.5M.",
+  "xMarketRead": "Broad strength: 8/10 tracked assets are green. Performance spread: 23.4 pts.",
+  "assets": [
+    {
+      "id": "maple-finance",
+      "symbol": "SYRUP",
+      "name": "Maple",
+      "price": 0.070654,
+      "change24h": 7.354714184370713,
+      "volume24h": 11551986.156757636
+    },
+    {
+      "id": "goldfinch",
+      "symbol": "GFI",
+      "name": "Goldfinch",
+      "price": 0.02765364,
+      "change24h": 6.1775813903703805,
+      "volume24h": 25533.60196745398
+    },
+    {
+      "id": "centrifuge",
+      "symbol": "CFG",
+      "name": "Centrifuge",
+      "price": 0.04999392,
+      "change24h": 4.410502511984363,
+      "volume24h": 1222082.5008639793
+    },
+    {
+      "id": "polymesh",
+      "symbol": "POLYX",
+      "name": "Polymesh",
+      "price": 0.02613379,
+      "change24h": 4.092092564167989,
+      "volume24h": 1052401.5165874865
+    },
+    {
+      "id": "ondo-finance",
+      "symbol": "ONDO",
+      "name": "Ondo",
+      "price": 0.287622,
+      "change24h": 3.7658110787393744,
+      "volume24h": 58566469.940522395
+    },
+    {
+      "id": "chainlink",
+      "symbol": "LINK",
+      "name": "Chainlink",
+      "price": 9.27,
+      "change24h": 2.757117935654549,
+      "volume24h": 238454002.91097268
+    },
+    {
+      "id": "clearpool",
+      "symbol": "CPOOL",
+      "name": "Clearpool",
+      "price": 0.0204137,
+      "change24h": 1.4494109478335695,
+      "volume24h": 719288.7964120285
+    },
+    {
+      "id": "plume",
+      "symbol": "PLUME",
+      "name": "Plume",
+      "price": 0.01061752,
+      "change24h": 0.4865615227634206,
+      "volume24h": 4579848.211782257
+    },
+    {
+      "id": "zebec-protocol",
+      "symbol": "ZBCN",
+      "name": "Zebec",
+      "price": 0.00171675,
+      "change24h": -0.12682428588335548,
+      "volume24h": 8251069.542683848
+    },
+    {
+      "id": "mantra-dao",
+      "symbol": "OM",
+      "name": "MANTRA",
+      "price": 0.00240675,
+      "change24h": -16.014077964795714,
+      "volume24h": 41596415.809432626
+    }
+  ],
+  "telegram": "RWA WIRE // MARKET PULSE\n\nTracked RWA tokens are broadly higher over 24h.\nBreadth: 8 up / 2 down\nBasket: avg +1.4% · median +3.3%\n\nTop movers\n▲ SYRUP +7.4% · $0.0707\n▲ GFI +6.2% · $0.0277\n▲ CFG +4.4% · $0.0500\n\nWeakest movers\n▲ PLUME +0.5% · $0.0106\n▼ ZBCN -0.1% · $0.0017\n▼ OM -16.0% · $0.0024\n\nMARKET READ\nBreadth is strong with 8/10 tracked assets positive. Dispersion is elevated: 23.4 percentage points separate the strongest and weakest tracked assets. LINK has the highest reported 24h volume in the tracked basket at $238.5M.\n\nData: CoinGecko · 24h change",
+  "x": "RWA WIRE // MARKET PULSE\n\nRWA basket: +1.4% avg · 8/10 green\nSYRUP +7.4% | GFI +6.2% | CFG +4.4%\n\nBroad strength: 8/10 tracked assets are green. Performance spread: 23.4 pts.\n\nData: CoinGecko"
+}
