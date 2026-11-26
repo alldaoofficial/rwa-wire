@@ -29,5 +29,11 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "duplicate",
+    "method": "source-enrichment-v1",
+    "reviewedAt": "2026-11-26T20:19:50.544Z",
+    "reason": "Same November 26 Brussels roundtable and Roland Chai proposal as earlier inbox entry 2026-11-26-nasdaq-urges-eu-to-adopt-28th-regime-for-tokenized-securities.json; KuCoin and BloombergBit coverage refer to the same event. Retain earlier entry for review."
   }
 }
