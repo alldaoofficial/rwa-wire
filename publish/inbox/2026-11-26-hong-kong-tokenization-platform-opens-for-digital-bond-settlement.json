@@ -1,7 +1,7 @@
 {
   "title": "Hong Kong Tokenization Platform Opens for Digital Bond Settlement",
-  "description": "Hong Kong Tokenization Platform Opens for Digital Bond Settlement",
-  "why_it_matters": "",
+  "description": "The HKMA launched CMU DAP on November 25, linking ledger-based securities processing to central bank payment infrastructure and enabling round-the-clock multicurrency settlement.",
+  "why_it_matters": "Combining the cash and securities legs can reduce principal risk and operational friction for institutions, although actual adoption and cost savings remain unquantified.",
   "pubDate": "2026-11-26",
   "category": "news",
   "tags": [
@@ -10,14 +10,15 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "Hong Kong Tokenization Platform Opens for Digital Bond Settlement",
-    ""
+    "CMU OmniClear operates the new infrastructure.",
+    "Bond and cash settlement are linked on-chain.",
+    "Additional asset classes remain on the roadmap."
   ],
-  "body": "Hong Kong Tokenization Platform Opens for Digital Bond Settlement",
+  "body": "Hong Kong's monetary authority announced the launch of its CMU Digital Asset Platform on November 25. CMU OmniClear operates the infrastructure for the authority. The system handles bonds from issuance through secondary trades, interest distributions and final repayment, and can convert existing debt securities into tokenized form.\n\nIts settlement design exchanges securities and payment together on a ledger, with connections to central bank digital money and existing real-time payment infrastructure. Cash tokens enable settlement across currencies throughout the day. The operator also plans to explore support for investment funds and other real-world assets, alongside additional payment options. Those extensions are prospective rather than confirmed launch features.",
   "sources": [
     {
-      "name": "CryptoRank",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQUHN0VmRwSXJZMzllRnhXWS1Ib3BBdm5MV0VZUjQwdWktU25fM2xfbWJUTWpaYXhnX3lNajBIc19HNERpcWVweF8wRVBfclJNWVdVaWtJbWQ2STlKQXl3bS1Bdkh4bmo2ZW5YN2Fuc285c2RqWWZ4WHQ1cEtOUWxmN1o2cTBuNDl5S1p2Y0pwNVZGLU9OSHRwazVSSVV0cU9pQS15R3dn?oc=5"
+      "name": "Hong Kong Monetary Authority",
+      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261125-3/"
     }
   ],
   "newsWatch": {
@@ -29,5 +30,47 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-26T10:16:58.455Z",
+    "sources": [
+      {
+        "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261125-3/",
+        "publishedAt": "2026-11-25",
+        "checkedAt": "2026-11-26T10:16:58.455Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "The HKMA announced the platform launch on November 25, 2026.",
+        "sourceUrl": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261125-3/",
+        "anchor": "official launch of CMU Digital Asset Platform"
+      },
+      {
+        "claim": "CMU OmniClear developed and operates the platform for HKMA.",
+        "sourceUrl": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261125-3/",
+        "anchor": "Developed and operated by CMU OmniClear Limited"
+      },
+      {
+        "claim": "The platform supports conversion of existing debt securities into tokens.",
+        "sourceUrl": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261125-3/",
+        "anchor": "tokenisation of traditional debt securities"
+      },
+      {
+        "claim": "Settlement can occur around the clock across multiple currencies.",
+        "sourceUrl": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261125-3/",
+        "anchor": "24-hour settlement in multi-currencies"
+      },
+      {
+        "claim": "Funds and other real-world assets are prospective extensions.",
+        "sourceUrl": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261125-3/",
+        "anchor": "additional asset classes"
+      }
+    ]
   }
 }
