@@ -1,7 +1,7 @@
 {
   "title": "SEC Sets December 3 Meeting to Examine Tokenized Stocks and Rules",
-  "description": "SEC Sets December 3 Meeting to Examine Tokenized Stocks and Rules",
-  "why_it_matters": "",
+  "description": "The investor advisory panel will meet publicly online, with a session devoted to US listed-company equity tokens and a possible regulatory exemption.",
+  "why_it_matters": "For issuers and trading venues, the discussion offers a window into regulatory priorities, but does not itself authorize new products or change securities law.",
   "pubDate": "2026-11-25",
   "category": "news",
   "tags": [
@@ -10,14 +10,15 @@
     "News Watch"
   ],
   "keyTakeaways": [
-    "SEC Sets December 3 Meeting to Examine Tokenized Stocks and Rules",
-    ""
+    "The public meeting is scheduled for December 3.",
+    "Equity tokenization is one of three panel topics.",
+    "The committee advises the regulator; the announcement is not a rule change."
   ],
-  "body": "SEC Sets December 3 Meeting to Examine Tokenized Stocks and Rules",
+  "body": "The US Securities and Exchange Commission announced on November 25 that its Investor Advisory Committee will convene online on December 3 at 9:30 a.m. Eastern time. One session will examine the tokenization of shares in American public companies in connection with the agency's innovation exemption.\n\nThe agenda also includes separate discussions on insolvency and financial reporting supervision. Members are expected to consider possible recommendations concerning the trade-through rule and research into individual investors' understanding of private assets.\n\nThe committee provides advice to the regulator rather than making binding rules. Market participants should therefore distinguish the scheduled discussion from a formal decision permitting tokenized equity trading.",
   "sources": [
     {
-      "name": "Cryptonews.net",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5QeWk4SDhLM0JNbzRxaW1oR2FUWnZrTHRXSVNsRENSbFJiUWtKWVUtOWNQei1jSUVpNGRTZXlxT0RYM0FSaWJKZ25KaUlSc0RyaFpVaWxB?oc=5"
+      "name": "SEC",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-118-sec-investor-advisory-committee-host-dec-3-virtual-meeting"
     }
   ],
   "newsWatch": {
@@ -29,5 +30,42 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "verified",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-26T03:10:59Z",
+    "sources": [
+      {
+        "url": "https://www.sec.gov/newsroom/press-releases/2026-118-sec-investor-advisory-committee-host-dec-3-virtual-meeting",
+        "publishedAt": "2026-11-25",
+        "checkedAt": "2026-11-26T03:10:59Z",
+        "kind": "primary",
+        "access": "full-text"
+      }
+    ],
+    "facts": [
+      {
+        "claim": "The public online meeting is scheduled for December 3 at 9:30 Eastern time.",
+        "sourceUrl": "https://www.sec.gov/newsroom/press-releases/2026-118-sec-investor-advisory-committee-host-dec-3-virtual-meeting",
+        "anchor": "virtual public meeting"
+      },
+      {
+        "claim": "One panel addresses tokenization of shares in US public companies and an innovation exemption.",
+        "sourceUrl": "https://www.sec.gov/newsroom/press-releases/2026-118-sec-investor-advisory-committee-host-dec-3-virtual-meeting",
+        "anchor": "Innovation Exemption"
+      },
+      {
+        "claim": "The agenda comprises three panels including insolvency and accounting supervision.",
+        "sourceUrl": "https://www.sec.gov/newsroom/press-releases/2026-118-sec-investor-advisory-committee-host-dec-3-virtual-meeting",
+        "anchor": "consist of three panels"
+      },
+      {
+        "claim": "The committee has authority to submit recommendations to the regulator.",
+        "sourceUrl": "https://www.sec.gov/newsroom/press-releases/2026-118-sec-investor-advisory-committee-host-dec-3-virtual-meeting",
+        "anchor": "submit findings and recommendations"
+      }
+    ]
   }
 }
