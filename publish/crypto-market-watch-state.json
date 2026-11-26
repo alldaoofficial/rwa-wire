@@ -20,15 +20,15 @@
     "CBMisgFBVV95cUxNUFhzaDdWajNwYTlhWGl6LVlQazYyckdleTJWYU5KNW9XdmdHTkJWODhNM1FtUlFGMmU3eUtMZmprRS0yTlR1U3hmbFFLdUd1TEoybXBnSUhHeVhNRDI4Q2VtTUlFYkFXcTh1UzdiZjNXZFNZRnNOZVFObVM1TWFFVVNQbktpRmdzVzQ0YzBSVFA3XzNuQXJGQktWLWFyWHdXZTh5cjJNR0FBc3I0RndWeWpB",
     "CBMitgFBVV95cUxQb3BkanZCV2lLY2pmNXRjRmx2aHlEVDdqaEdzRm1sc0k0V2E1dktzdG93VDVKVk5zRkpTVzk2R0R4Nzc5aEFlczhPcGk0d1ItT2ZhYWZ3U2c2OUZkTFZTSEh2V1BSTUhYcUExcmlMalkzVkZYZy1rMS1lXzlBMkJSY1NKaFlHSU9LYXI5TmktSWNHMjBvWThpbmNsN0RzNE1KZTRBM0VMTWhsb2JXb3FoMkFmYW8wQQ"
   ],
-  "lastRun": "2026-11-25T19:27:17.229734+00:00",
+  "lastRun": "2026-11-26T02:56:06.083689+00:00",
   "lastDiagnostics": {
-    "rawItems": 109,
-    "uniqueItems": 79,
-    "qualified": 1,
+    "rawItems": 150,
+    "uniqueItems": 109,
+    "qualified": 0,
     "blocked": 3,
-    "untrusted": 39,
-    "lowSignal": 36
+    "untrusted": 45,
+    "lowSignal": 61
   },
-  "lastResult": "candidate",
+  "lastResult": "no-qualified-story",
   "lastCandidate": "publish/inbox/2026-11-25-bitcoin-holds-up-better-than-ether-as-stocks-slide-etf-outflows-hit-sixth-day.json"
 }
