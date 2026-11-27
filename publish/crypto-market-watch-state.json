@@ -21,14 +21,14 @@
     "CBMi7AFBVV95cUxOd2RhQ3lIWVBkNjRaQ1ZucjBhNkItQ21qZi1NMFhuRE1Kd0FPMWhsb0F6eWVLVkpRVDZtSHJoQWdCQ0RacUNkdEJLQ1dHLVdHYzN4MkpUdU1od1FUcm8ybmdUdFEzb25BYTl0WUtJQy1oQ21nSnRybXBUbFExQmpmZDN2b3g2dTRZMjRHWE9FVlZ5UldzMVhMb0ZiWktmcjJHOElUYndGbG5XQS10dm5oLTlQQkphTEFTYUZubTVRbUpyV0pWV3VuV2ZESVpyOHdvSG9ieW5Bck9sTDFHUVhHZWY0WGJXYW9yelBHcA",
     "CBMimgFBVV95cUxQNkxCamRQeFVYRTlpZTRpT2t3YVRheEZLQ1FncEtLRmo1OFNWbFRTQzlhUFNVVXM2OS01RVFkZHQtcWRfaENOcVg3NHl1ZXdYWHVmTGdhU2RVZzQ1eDc3R1VXbGhJSTI3RGZ1Sm95VnlySEozOW1JV0J5ejdlR3RYSFF3bDEyWVRUeGpoZGNNMkpCelItNXR5VXln"
   ],
-  "lastRun": "2026-11-27T05:11:07.286776+00:00",
+  "lastRun": "2026-11-27T15:22:03.355285+00:00",
   "lastDiagnostics": {
-    "rawItems": 96,
-    "uniqueItems": 74,
+    "rawItems": 148,
+    "uniqueItems": 111,
     "qualified": 0,
-    "blocked": 2,
-    "untrusted": 29,
-    "lowSignal": 43
+    "blocked": 6,
+    "untrusted": 46,
+    "lowSignal": 59
   },
   "lastResult": "no-qualified-story",
   "lastCandidate": "publish/inbox/2026-11-26-spot-bitcoin-etfs-are-on-track-for-their-biggest-monthly-outflow-on-record.json"
