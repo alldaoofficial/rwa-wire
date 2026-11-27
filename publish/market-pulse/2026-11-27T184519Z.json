@@ -1,0 +1,126 @@
+{
+  "version": "2.1",
+  "generatedAt": "2026-11-27T18:45:19Z",
+  "status": "dry_run",
+  "source": "CoinGecko",
+  "sourceFetchedAt": "2026-11-27T18:45:18.894518Z",
+  "assetCount": 10,
+  "basket": {
+    "average24h": 0.8504241442025011,
+    "median24h": 0.23565732305017723,
+    "up": 6,
+    "down": 4,
+    "flat": 0,
+    "spreadPctPoints": 19.968797537623097
+  },
+  "leader": {
+    "id": "centrifuge",
+    "symbol": "CFG",
+    "name": "Centrifuge",
+    "price": 0.056991,
+    "change24h": 13.859320356303776,
+    "volume24h": 2468005.51761674
+  },
+  "weakest": {
+    "id": "mantra-dao",
+    "symbol": "OM",
+    "name": "MANTRA",
+    "price": 0.00225806,
+    "change24h": -6.10947718131932,
+    "volume24h": 11130495.042519927
+  },
+  "highestVolume": {
+    "id": "chainlink",
+    "symbol": "LINK",
+    "name": "Chainlink",
+    "price": 9.36,
+    "change24h": 1.213925162333452,
+    "volume24h": 293692712.02224404
+  },
+  "marketRead": "Breadth is split with 6/10 tracked assets positive. CFG is the standout move at +13.9%. Dispersion is elevated: 20.0 percentage points separate the strongest and weakest tracked assets.",
+  "xMarketRead": "Mixed tape: 6 green, 4 red across 10 tracked assets. CFG leads at +13.9%.",
+  "assets": [
+    {
+      "id": "centrifuge",
+      "symbol": "CFG",
+      "name": "Centrifuge",
+      "price": 0.056991,
+      "change24h": 13.859320356303776,
+      "volume24h": 2468005.51761674
+    },
+    {
+      "id": "polymesh",
+      "symbol": "POLYX",
+      "name": "Polymesh",
+      "price": 0.02678749,
+      "change24h": 2.590797879661236,
+      "volume24h": 873465.1871656037
+    },
+    {
+      "id": "clearpool",
+      "symbol": "CPOOL",
+      "name": "Clearpool",
+      "price": 0.02081698,
+      "change24h": 2.019456823053003,
+      "volume24h": 443614.99193175463
+    },
+    {
+      "id": "chainlink",
+      "symbol": "LINK",
+      "name": "Chainlink",
+      "price": 9.36,
+      "change24h": 1.213925162333452,
+      "volume24h": 293692712.02224404
+    },
+    {
+      "id": "ondo-finance",
+      "symbol": "ONDO",
+      "name": "Ondo",
+      "price": 0.288217,
+      "change24h": 0.2549052251964369,
+      "volume24h": 64329037.9747979
+    },
+    {
+      "id": "plume",
+      "symbol": "PLUME",
+      "name": "Plume",
+      "price": 0.01063158,
+      "change24h": 0.21640942090391754,
+      "volume24h": 6475686.665679906
+    },
+    {
+      "id": "goldfinch",
+      "symbol": "GFI",
+      "name": "Goldfinch",
+      "price": 0.02744624,
+      "change24h": -0.7514310665261472,
+      "volume24h": 17339.853332671424
+    },
+    {
+      "id": "maple-finance",
+      "symbol": "SYRUP",
+      "name": "Maple",
+      "price": 0.070058,
+      "change24h": -1.3139706762363685,
+      "volume24h": 8769873.922280902
+    },
+    {
+      "id": "zebec-protocol",
+      "symbol": "ZBCN",
+      "name": "Zebec",
+      "price": 0.00165642,
+      "change24h": -3.4756945013449747,
+      "volume24h": 7720763.69781828
+    },
+    {
+      "id": "mantra-dao",
+      "symbol": "OM",
+      "name": "MANTRA",
+      "price": 0.00225806,
+      "change24h": -6.10947718131932,
+      "volume24h": 11130495.042519927
+    }
+  ],
+  "telegram": "RWA WIRE // MARKET PULSE\n\nTracked RWA tokens are mixed over 24h.\nBreadth: 6 up / 4 down\nBasket: avg +0.9% · median +0.2%\n\nTop movers\n▲ CFG +13.9% · $0.0570\n▲ POLYX +2.6% · $0.0268\n▲ CPOOL +2.0% · $0.0208\n\nWeakest movers\n▼ SYRUP -1.3% · $0.0701\n▼ ZBCN -3.5% · $0.0017\n▼ OM -6.1% · $0.0023\n\nMARKET READ\nBreadth is split with 6/10 tracked assets positive. CFG is the standout move at +13.9%. Dispersion is elevated: 20.0 percentage points separate the strongest and weakest tracked assets.\n\nData: CoinGecko · 24h change",
+  "x": "RWA WIRE // MARKET PULSE\n\nRWA basket: +0.9% avg · 6/10 green\nCFG +13.9% | POLYX +2.6% | CPOOL +2.0%\n\nMixed tape: 6 green, 4 red across 10 tracked assets. CFG leads at +13.9%.\n\nData: CoinGecko"
+}
