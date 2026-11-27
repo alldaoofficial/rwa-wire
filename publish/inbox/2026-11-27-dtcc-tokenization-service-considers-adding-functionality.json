@@ -29,5 +29,11 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedAt": "2026-11-27T18:17:50Z",
+    "reason": "Only one current full-text report (Markets Media interview) located; DTCC's earlier releases corroborate background but not the new November 27 functionality plans. No independent current report verified."
   }
 }
