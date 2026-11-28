@@ -29,5 +29,12 @@
     "autoPublishEligible": false,
     "contentStatus": "needs-source-enrichment",
     "discoveryMode": "watchlist-research"
+  },
+  "sourceReview": {
+    "status": "held",
+    "method": "source-enrichment-v1",
+    "reviewedBy": "RWA Wire Source Review",
+    "reviewedAt": "2026-11-28T09:19:44.593Z",
+    "reason": "Read full TokenPost report https://www.tokenpost.com/news/business/64079 dated 2026-11-28. It summarizes the January ADGM transition and June bStocks rollout, with historical September volume and hypothetical IPO applications. No new framework launch or current primary announcement substantiating this specific lead was established; independent corroboration of the current event and metrics remains missing. Retry after six hours."
   }
 }
